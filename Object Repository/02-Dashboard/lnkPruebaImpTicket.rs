@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkPruebaImpTicket</name>
+   <tag></tag>
+   <elementGuidId>ea2818bf-0963-4019-8285-0b81a83de9f5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[75]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Prueba de Impresion de Ticket' or . = 'Prueba de Impresion de Ticket') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu']) = count(//*[(text() = 'Prueba de Impresion de Ticket' or . = 'Prueba de Impresion de Ticket') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu'])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>55d563c3-c287-407a-be66-4b2b644de71e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ProcessMouseClick(event)</value>
+      <webElementGuid>cf02cd4a-cb03-4957-bafa-15d2983ac7a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Prueba de Impresion de Ticket</value>
+      <webElementGuid>2610703e-81b2-4620-bbf6-7b3125c6956f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>690a0d1c-f69a-40d1-9bd1-7fc328060983</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>4d744ce7-4147-471b-a0d4-f1eb5b1eabc1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[75]</value>
+      <webElementGuid>38918262-f6c0-40c0-a6da-8c9d4ee780d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[12]/li/span</value>
+      <webElementGuid>7d113c4f-56ec-4dbb-a410-3d30e6d786db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Totales Buzon'])[2]/following::span[1]</value>
+      <webElementGuid>7b83cf0d-7e4d-41ee-8214-954fbd3010d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cons. de existencia por denominacion'])[1]/following::span[1]</value>
+      <webElementGuid>5a6afd5b-c009-4892-85a4-1f5f6cce15c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prueba de Impresion de Ticket'])[2]/preceding::span[1]</value>
+      <webElementGuid>cb48ddfd-a411-4eb3-bf38-bb476fd19545</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Prueba de Impresion de Ticket']/parent::*</value>
+      <webElementGuid>739b3056-c817-4b09-9c2e-41ecdd537485</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[12]/li/span</value>
+      <webElementGuid>daa29080-d597-443d-acca-a2982b4f5462</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Prueba de Impresion de Ticket' or . = 'Prueba de Impresion de Ticket')]</value>
+      <webElementGuid>938c9a14-303d-4a62-aa24-f8d61d3826bd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkOperatoriaCrece 21SucMigradas</name>
+   <tag></tag>
+   <elementGuidId>02ceb12b-b0fe-425e-bc33-9da3e232840c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[57]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Operatoria en Crecer 21 Sucursales Migradas' or . = 'Operatoria en Crecer 21 Sucursales Migradas') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu']) = count(//*[(text() = 'Operatoria en Crecer 21 Sucursales Migradas' or . = 'Operatoria en Crecer 21 Sucursales Migradas') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu'])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9f02b289-34ef-4c9a-821e-4308bbc4c143</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ProcessMouseClick(event)</value>
+      <webElementGuid>ad3b2572-ab32-4b11-98a3-c194eeb78795</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Operatoria en Crecer 21 Sucursales Migradas</value>
+      <webElementGuid>ef77454a-c605-418a-8ed6-8da7185d38a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>c9a0a471-51d6-4b3b-b0d7-838065c2913a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>e238248b-fcfd-44fc-a7a4-c81af4d296aa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[57]</value>
+      <webElementGuid>8015c6f1-9b59-4b78-9079-c01ceb942b40</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[11]/li/span</value>
+      <webElementGuid>81fc96f7-bf65-4daa-88b1-03960f0d8079</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion Modulos'])[1]/following::span[1]</value>
+      <webElementGuid>fc5cd4b5-41e8-42da-bbac-74e706f163aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizaciones - MODULOS'])[1]/following::span[1]</value>
+      <webElementGuid>739f3bea-3b44-4fa8-83e0-aa94c8a5c28b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Caja'])[1]/preceding::span[1]</value>
+      <webElementGuid>8c2addb0-73f4-41b9-b669-f06dd8f4cbb4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apertura de caja'])[1]/preceding::span[2]</value>
+      <webElementGuid>ea15f58c-07a0-4e69-9865-98273ad189b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Operatoria en Crecer 21 Sucursales Migradas']/parent::*</value>
+      <webElementGuid>67c02264-d1fa-4c23-906d-66f69a3fe672</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[11]/li/span</value>
+      <webElementGuid>70f95983-0d79-40bc-a1a3-f4c6fabcfde8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Operatoria en Crecer 21 Sucursales Migradas' or . = 'Operatoria en Crecer 21 Sucursales Migradas')]</value>
+      <webElementGuid>345ee8cc-97a2-4bcd-9f57-6a40ec1b51fe</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

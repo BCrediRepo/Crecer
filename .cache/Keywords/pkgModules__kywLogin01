@@ -1,0 +1,42 @@
+{
+  "keywordFileContentHash": "F668AE50A70E3324BFB56256F4072EB5",
+  "keywordClasses": [
+    {
+      "name": "pkgModules.kywLogin01",
+      "keywordMethods": [
+        {
+          "name": "Login",
+          "parameters": [
+            {
+              "name": "ServerIP",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "SeverTest",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

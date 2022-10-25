@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se realiza la busqueda por Nombre, Documento o Tarjeta</description>
+   <name>APT01-Busqueda por paramentros</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>64062bb8-a6ef-4c5a-80c7-e3e636370e85</testCaseGuid>
+</TestCaseEntity>

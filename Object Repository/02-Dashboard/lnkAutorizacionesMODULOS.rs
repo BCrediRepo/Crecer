@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkAutorizacionesMODULOS</name>
+   <tag></tag>
+   <elementGuidId>1b69b22f-98cc-4192-853a-b3e6798f10a9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[56]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Autorizaciones - MODULOS' or . = 'Autorizaciones - MODULOS') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu']) = count(//*[(text() = 'Autorizaciones - MODULOS' or . = 'Autorizaciones - MODULOS') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu'])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f640d513-6533-454c-8a19-d811fb4a1782</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ProcessMouseClick(event)</value>
+      <webElementGuid>06e3a73d-e6df-4721-b268-ed0a8584defb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Autorizaciones - MODULOS</value>
+      <webElementGuid>b935fff5-0761-4862-a1f0-5b6b57508277</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>2f484a96-c923-4481-9cb2-a97b4bf13518</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>632c6de9-d7fe-4805-9300-f9f5563802ce</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[56]</value>
+      <webElementGuid>7637e7d8-cef5-485e-a501-ee380811f28d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[10]/li/span</value>
+      <webElementGuid>66bbd480-7f63-4416-8a41-913e148ad2ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion Tarj. de Credito y Precargadas'])[1]/following::span[1]</value>
+      <webElementGuid>d429d53c-c0c8-4509-b985-8f491aaa33ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizaciones Tarjeta de Credito'])[1]/following::span[1]</value>
+      <webElementGuid>b2759d65-6119-4446-add0-d3e22b9f3685</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion Modulos'])[1]/preceding::span[1]</value>
+      <webElementGuid>9ecddbe1-2ef4-4c82-b231-1c645b72daea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Operatoria en Crecer 21 Sucursales Migradas'])[1]/preceding::span[1]</value>
+      <webElementGuid>6eb79817-9b21-4870-8e37-92b1876eaf2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Autorizaciones - MODULOS']/parent::*</value>
+      <webElementGuid>7adb8e69-376a-4a98-82ba-5eb4fd3e3de2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[10]/li/span</value>
+      <webElementGuid>45aa5933-3f26-4e99-a7ed-625972d7494d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Autorizaciones - MODULOS' or . = 'Autorizaciones - MODULOS')]</value>
+      <webElementGuid>3e781c2a-cc21-4e5a-8396-2b2b279cea41</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
