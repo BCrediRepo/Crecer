@@ -48,14 +48,12 @@ class APTSeleccionPorNombreDocSuc {
 	@Given("Accedo a Admin de piezas con tarjeta")
 	def sccedeAdminPiezasTarjetas() {
 		println("\n Se accede APT")
-
 		//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkMenuAdmPiezasTarjetas'))
 	}
 
 	@When("Accedo a consultas al Maestro CardCarrier")
 	def accedeAcOnsultas() {
 		println("\n Se accede a consultas Master-Carrier")
-
 		//WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/lnkBusquedaNombreDoc'))
 	}
 

@@ -22,21 +22,27 @@ import javax.swing.JOptionPane as JOptionPane
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Config
+def vWindowTitle = findTestData('Modulos/Modulos').getValue(4,1)
+def vMsgError = findTestData('Errores/MensajesDeError').getValue(2,1)
+
 // Se accede a la URL
 //CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest702_IP, GlobalVariable.vTest702Name)
 CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name)
 
 //Se accede al menu Administracion de piezas
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 //Switch a la ventana de Consulta Maestro Card-Carrier
-WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
+WebUI.switchToWindowTitle (vWindowTitle)//('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'))
 
@@ -44,12 +50,19 @@ WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-Selecc
 
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/btnEjecutar'))
 
-//WebUI.verifyTextPresent(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/msgNoSeEncontraronRegistros'), true)
-
+//Se limpia y realiza una nueva busqueda
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/icoReiniciarBusqueda'))
 
-//WebUI.verifyTextPresent(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/msgNoSeEncontraronRegistros'), false)
+WebUI.clearText(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'))
 
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/btnEjecutar'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/msgNoSeEncontraronRegistros'))
+
+WebUI.verifyTextPresent(vMsgError, true)
+
+
+WebUI.delay(3)
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
