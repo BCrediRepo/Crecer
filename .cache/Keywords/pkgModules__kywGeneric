@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "2C343DCE22CAC3F75A956D3960E2CAD4",
+  "keywordFileContentHash": "9251461C89E5393199E18ED5DA12CBCD",
   "keywordClasses": [
     {
       "name": "pkgModules.kywGeneric",
@@ -22,6 +22,32 @@
             },
             {
               "name": "SeverTest",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "User",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "Password",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.Object",

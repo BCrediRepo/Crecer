@@ -26,18 +26,18 @@ import org.openqa.selenium.Keys as Keys
 def vWindowTitle = findTestData('Modulos/Modulos').getValue(4,1)
 def vMsgError = findTestData('Errores/MensajesDeError').getValue(2,1)
 
-// Se accede a la URL
-//CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest702_IP, GlobalVariable.vTest702Name)
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name)
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vUser, GlobalVariable.vPass)
+//CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name)
 
 //Se accede al menu Administracion de piezas
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
 
 WebUI.delay(5)
 
@@ -63,6 +63,7 @@ WebUI.verifyTextPresent(vMsgError, true)
 
 
 WebUI.delay(3)
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

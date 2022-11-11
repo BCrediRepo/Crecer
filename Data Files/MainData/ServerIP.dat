@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>2a715d76-6223-49ae-b277-1cb0f62d1db3</dataFileGUID>
-   <dataSourceUrl>C:\Users\fguillermet\Katalon Studio\Crecer.git\Test Data\MainData.xlsx</dataSourceUrl>
+   <dataSourceUrl>Test Data/MainData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Server IP</sheetName>

@@ -32,14 +32,14 @@ public class kywGeneric {
 	 *Servidor de pruebas																			*
 	 *----------------------------------------------------------------------------------------------*/
 	@Keyword
-	def Login(ServerIP, SeverTest) {
+	def Login(ServerIP, SeverTest, User, Password) {
 		//def vURL = 'http://' + GlobalVariable.vTest10_IP + ':8080/' + GlobalVariable.vTest10Name + '/servlet/BrowserServlet'
 		def vURL = 'http://' + ServerIP + '/' + SeverTest + '/servlet/BrowserServlet'
 		WebUI.openBrowser(vURL)
 
 		//--- Ingreso de credenciales ---
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), GlobalVariable.vUser)
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), GlobalVariable.vPass)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
 
 		//--- Validación del acceso ---

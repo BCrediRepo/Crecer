@@ -7,66 +7,66 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//frame[@id='menu856624169702']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#menu856624169702</value>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;menu856624169702&quot;)[count(. | //frame[@id = 'menu856624169702' and @name = 'menu856624169702' and @scrolling = 'auto' and @src = '../jsps/genrequest.jsp?&amp;routineName=OS.NEW.USER&amp;routineArgs=MENU&amp;skin=bccl&amp;compId=AR0011043&amp;compScreen=COMPOSITE.SCREEN_B.0043_856624169703&amp;contextRoot=&amp;windowName=menu856624169702&amp;user=B.0043&amp;WS_replaceAll=&amp;WS_parentComposite=']) = count(//frame[@id = 'menu856624169702' and @name = 'menu856624169702' and @scrolling = 'auto' and @src = '../jsps/genrequest.jsp?&amp;routineName=OS.NEW.USER&amp;routineArgs=MENU&amp;skin=bccl&amp;compId=AR0011043&amp;compScreen=COMPOSITE.SCREEN_B.0043_856624169703&amp;contextRoot=&amp;windowName=menu856624169702&amp;user=B.0043&amp;WS_replaceAll=&amp;WS_parentComposite='])]</value>
+         <value>/html[1]/frameset[1]/frame[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>frame</value>
-      <webElementGuid>3c661692-283d-4e5c-b100-d4b5d4dff233</webElementGuid>
+      <webElementGuid>baaa58bc-e5cc-43a6-887b-c9b0385332ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>menu856624169702</value>
-      <webElementGuid>9a5147b3-cd1e-4574-ab94-74c563ba8258</webElementGuid>
+      <webElementGuid>ec71ef5f-8187-4065-9420-9979cc940764</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
       <value>menu856624169702</value>
-      <webElementGuid>bc68ef27-9dfc-40b2-b260-de387e44ef88</webElementGuid>
+      <webElementGuid>21f1eab0-87d2-46ba-8f38-2f05610b2453</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>scrolling</name>
       <type>Main</type>
       <value>auto</value>
-      <webElementGuid>00c9f451-fbfb-4fb8-a290-903816dd92cc</webElementGuid>
+      <webElementGuid>3f1d1a09-2c6a-49e8-aeb7-212f2e3d3b77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
       <value>../jsps/genrequest.jsp?&amp;routineName=OS.NEW.USER&amp;routineArgs=MENU&amp;skin=bccl&amp;compId=AR0011043&amp;compScreen=COMPOSITE.SCREEN_B.0043_856624169703&amp;contextRoot=&amp;windowName=menu856624169702&amp;user=B.0043&amp;WS_replaceAll=&amp;WS_parentComposite=</value>
-      <webElementGuid>599f8f3e-e872-4507-bf6c-bf0173b830f2</webElementGuid>
+      <webElementGuid>e25213a5-b58b-4b54-a3c1-9051dbf875b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu856624169702&quot;)</value>
-      <webElementGuid>cb29271c-cb26-468b-86c9-8e7d08b60633</webElementGuid>
+      <value>/html[1]/frameset[1]/frame[2]</value>
+      <webElementGuid>ff71564c-56f6-4678-b2bd-830c278453a5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//frame[@id='menu856624169702']</value>
-      <webElementGuid>7e485e61-c616-4a45-9936-69cb033fd3ef</webElementGuid>
+      <webElementGuid>053a2511-265a-4edb-b06b-0db1d34df183</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,14 +82,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//frame[2]</value>
-      <webElementGuid>edf11f74-117f-439a-bc58-01e372a50653</webElementGuid>
+      <webElementGuid>d5215005-76e7-4198-a607-af09e4079e04</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//frame[@id = 'menu856624169702' and @name = 'menu856624169702' and @src = '../jsps/genrequest.jsp?&amp;routineName=OS.NEW.USER&amp;routineArgs=MENU&amp;skin=bccl&amp;compId=AR0011043&amp;compScreen=COMPOSITE.SCREEN_B.0043_856624169703&amp;contextRoot=&amp;windowName=menu856624169702&amp;user=B.0043&amp;WS_replaceAll=&amp;WS_parentComposite=']</value>
-      <webElementGuid>3f1d23f1-98aa-46e1-b925-1f86c60e391e</webElementGuid>
+      <value>/html[1]/frameset[1]/frame[2]</value>
+      <webElementGuid>d5ada444-6f17-45a1-bfca-377e727cddc6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

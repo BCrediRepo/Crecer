@@ -11,11 +11,11 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Administracion de Piezas con Tarjetas' or . = 'Administracion de Piezas con Tarjetas') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu']) = count(//*[(text() = 'Administracion de Piezas con Tarjetas' or . = 'Administracion de Piezas con Tarjetas') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu'])]</value>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Administracion de Piezas con Tarjetas' or . = 'Administracion de Piezas con Tarjetas') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Administracion de Piezas con Tarjetas' or . = 'Administracion de Piezas con Tarjetas') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>body.window:nth-child(2) div:nth-child(3) ul.menuMargin:nth-child(14) li.clsHasKids > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>935fd71b-6ead-4a28-9322-cfb969b2bcbf</webElementGuid>
+      <webElementGuid>1c8d94a7-a20f-4637-b612-ea72b2cba6ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>21e21e75-e178-4b28-8d43-d13e47bc2d05</webElementGuid>
+      <webElementGuid>4e11a611-58b5-4d29-a837-f18195a69dcb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Administracion de Piezas con Tarjetas</value>
-      <webElementGuid>dede6d97-2d24-40b1-8cf8-c0a373e8eec0</webElementGuid>
+      <webElementGuid>e920ebbc-3e2e-492a-819a-b1c16ad329a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>4441bfb5-0874-44a5-ae21-61fefde8c817</webElementGuid>
+      <webElementGuid>dcd27042-3c1f-4343-94b2-3c180044efc4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>f3c28ea5-a695-4878-8fdd-71a38b8e7fb6</webElementGuid>
+      <webElementGuid>b9c9fd7e-8fd0-4f5a-a084-1e46ad721bb7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[45]</value>
-      <webElementGuid>0d9cff35-ca41-4f6a-a6e4-ed2f992b66f8</webElementGuid>
+      <webElementGuid>41c3dc81-e373-48a4-88f6-11f813d088f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[8]/li/span</value>
-      <webElementGuid>77819936-6093-4ce5-ad6f-c6282e164d36</webElementGuid>
+      <webElementGuid>65dbf186-4170-4625-a41f-85722f3acd0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Baja de Datos Comerciales'])[1]/following::span[1]</value>
-      <webElementGuid>c7a677d6-fb48-42b8-ae78-f688c5f0bf99</webElementGuid>
+      <webElementGuid>f697864a-1b26-43f6-864e-5f95d3d93174</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion de Datos Comerciales'])[1]/following::span[1]</value>
-      <webElementGuid>64ac001e-08ee-4fc5-a8b2-5b501e188392</webElementGuid>
+      <webElementGuid>b16d9a5e-e560-45bb-8a63-8dad4d0c4eb4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Recepcion de Card-Carrier'])[1]/preceding::span[1]</value>
-      <webElementGuid>9c2d5d61-e7ee-4c42-9748-8c84714cd93d</webElementGuid>
+      <webElementGuid>edf195af-2022-4c77-8960-42b2de002cef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Recepcion por Precinto o Remito'])[1]/preceding::span[2]</value>
-      <webElementGuid>29cbe47c-7a37-4b15-aad2-3cfdfe640eb1</webElementGuid>
+      <webElementGuid>be19fac6-23c2-4b14-b2cf-c6baad041501</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Administracion de Piezas con Tarjetas']/parent::*</value>
-      <webElementGuid>e377d268-56f9-46bb-8c07-36e33b024463</webElementGuid>
+      <webElementGuid>013efd3f-1314-438a-a960-a8726872d128</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +122,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[8]/li/span</value>
-      <webElementGuid>d81e2dbf-7563-496c-966e-18996acdeba2</webElementGuid>
+      <webElementGuid>681cae40-c20a-4866-9a63-288e7cac003c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,6 +130,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Administracion de Piezas con Tarjetas' or . = 'Administracion de Piezas con Tarjetas')]</value>
-      <webElementGuid>86100739-969f-42c0-a76f-f7cf66128c05</webElementGuid>
+      <webElementGuid>97b9a0c6-2a29-4cbd-b395-19ee952d059a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -4,6 +4,7 @@
    <name>btnEjecutar</name>
    <tag></tag>
    <elementGuidId>7450a110-a0cb-4000-a18f-7fe35c41d75c</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,41 +12,43 @@
 						   toggleStateButton();doEnquiry()']</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEAPENQNOMBREDOC enqsel-selections enqsel-selections_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEAPENQNOMBREDOC&quot;]/td[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[@class=&quot;textbtn&quot;][count(. | //*[@class = 'textbtn' and (text() = 'Ejecutar' or . = 'Ejecutar')]) = count(//*[@class = 'textbtn' and (text() = 'Ejecutar' or . = 'Ejecutar')])]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>a.textbtn</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEAPENQNOMBREDOC enqsel-selections enqsel-selections_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEAPENQNOMBREDOC&quot;]/td[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[@class=&quot;textbtn&quot;][count(. | //a[@alt = 'Ejecutar' and @title = 'Ejecutar' and @class = 'textbtn' and @onfocus = concat(&quot;focusonKey(&quot; , &quot;'&quot; , &quot;inline&quot; , &quot;'&quot; , &quot;,event);&quot;) and @onblur = 'hideTooltip(event);' and @onclick = 'doHighlight(this);javascript:
-						   toggleStateButton();doEnquiry()' and @href = 'javascript:void(0)' and (text() = 'Ejecutar' or . = 'Ejecutar')]) = count(//a[@alt = 'Ejecutar' and @title = 'Ejecutar' and @class = 'textbtn' and @onfocus = concat(&quot;focusonKey(&quot; , &quot;'&quot; , &quot;inline&quot; , &quot;'&quot; , &quot;,event);&quot;) and @onblur = 'hideTooltip(event);' and @onclick = 'doHighlight(this);javascript:
-						   toggleStateButton();doEnquiry()' and @href = 'javascript:void(0)' and (text() = 'Ejecutar' or . = 'Ejecutar')])]</value>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>5ffbfa64-b201-44f7-8020-1e1c4f3026d1</webElementGuid>
+      <webElementGuid>5d55d6e7-70f8-422a-aa0d-3f7dc76e3e8e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
       <value>Ejecutar</value>
-      <webElementGuid>f19d9717-ac09-4ee5-b834-b7c42d7d408c</webElementGuid>
+      <webElementGuid>604d6e3f-c2ce-4f3b-aa18-f160e203733e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
       <value>Ejecutar</value>
-      <webElementGuid>2deb323b-6f14-4c99-99bb-a48e4d75a515</webElementGuid>
+      <webElementGuid>f93f2fee-a88b-4dfb-8bde-2f9e17b90e90</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,40 +56,40 @@
       <name>class</name>
       <type>Main</type>
       <value>textbtn</value>
-      <webElementGuid>06724fdb-cc03-4611-b7e5-36b8bdb4c3f7</webElementGuid>
+      <webElementGuid>4d4ca43b-d70b-488b-af36-9b3742efce0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>ada65c15-ec37-46f8-b7e7-7ad9b8ad78d2</webElementGuid>
+      <webElementGuid>c7b2960f-4c11-480a-8e29-f2823c3a39b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>67fbd5bf-6940-4ef0-8e96-12c29fd3cfc8</webElementGuid>
+      <webElementGuid>770c594b-24f0-413d-be43-ef7ac234e22c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onclick</name>
       <type>Main</type>
       <value>doHighlight(this);javascript:
 						   toggleStateButton();doEnquiry()</value>
-      <webElementGuid>892aaabc-aa64-4c8b-b42d-56191aaefe6a</webElementGuid>
+      <webElementGuid>f9ce412b-dbb3-4aea-9347-3a4422962384</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:void(0)</value>
-      <webElementGuid>c0053de5-7783-4c73-92fb-15ecd0b3b30f</webElementGuid>
+      <webElementGuid>2f0e6420-fa56-433a-a313-b79cb5463094</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +97,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ejecutar</value>
-      <webElementGuid>b3246e76-d44a-4316-b5ad-ec3c2102e7cc</webElementGuid>
+      <webElementGuid>7560ec59-a3f4-4bae-847a-da024064297f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEAPENQNOMBREDOC enqsel-selections enqsel-selections_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEAPENQNOMBREDOC&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEAPENQNOMBREDOC&quot;]/td[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[@class=&quot;textbtn&quot;]</value>
-      <webElementGuid>9c138e0e-692b-43c4-9ef3-14244abe9759</webElementGuid>
+      <webElementGuid>3c4fec9a-b55d-4850-9be5-450a98839c90</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -111,7 +114,7 @@
       <type>Main</type>
       <value>//a[@onclick='doHighlight(this);javascript:
 						   toggleStateButton();doEnquiry()']</value>
-      <webElementGuid>85f85990-7451-466d-bc2f-01f2f117a607</webElementGuid>
+      <webElementGuid>724058fe-a86d-48eb-8db1-ec4f9381c135</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +122,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[3]/div/table/tbody/tr/td/a</value>
-      <webElementGuid>b3347026-4a01-4bc0-9508-0338a66a9369</webElementGuid>
+      <webElementGuid>a2f4a669-8151-4c1e-91bd-5fec778a1ac5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +130,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Ejecutar')]</value>
-      <webElementGuid>e829c10d-946e-4a72-9a38-16389e5cbece</webElementGuid>
+      <webElementGuid>8f97fb1f-301c-4621-81fb-25de900e74a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/following::a[1]</value>
-      <webElementGuid>e269805b-50ae-47d2-bca6-d6c950571b4e</webElementGuid>
+      <webElementGuid>7d31e625-44d2-405e-914b-83b9f8623be2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -143,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/following::a[2]</value>
-      <webElementGuid>5dc8d196-1e74-4bb7-95c0-aa88fbf46feb</webElementGuid>
+      <webElementGuid>6e4440ff-2e1d-41f4-83eb-c1b941600dbe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -151,7 +154,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::a[1]</value>
-      <webElementGuid>281bf42e-2f8a-4693-8db5-0f99752c6178</webElementGuid>
+      <webElementGuid>9f81e34a-c11d-40f3-bf5e-1e67e4162d13</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -159,7 +162,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ejecutar']/parent::*</value>
-      <webElementGuid>995cc55f-68f8-4bcb-9b59-cf0e51ac3e6a</webElementGuid>
+      <webElementGuid>ae168fa3-90aa-4f17-ac7b-5437b84b73f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -167,7 +170,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'javascript:void(0)')]</value>
-      <webElementGuid>2356711a-0dee-4f72-b7b7-61cd71cb7fe0</webElementGuid>
+      <webElementGuid>56778387-0fa0-4f7e-8a5e-841e01f8e69d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -175,7 +178,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/table/tbody/tr/td/a</value>
-      <webElementGuid>b0888a28-f2fd-4f03-b71b-98ea11de9672</webElementGuid>
+      <webElementGuid>6ff47685-6a1d-4bfb-9d38-9746ca770163</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -183,6 +186,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@alt = 'Ejecutar' and @title = 'Ejecutar' and @href = 'javascript:void(0)' and (text() = 'Ejecutar' or . = 'Ejecutar')]</value>
-      <webElementGuid>198fe95f-6659-4d4b-af3d-343ab8ee2292</webElementGuid>
+      <webElementGuid>683dda15-1705-4683-b29b-e09abb46d8bd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
