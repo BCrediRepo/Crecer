@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PF07-Plazo Fijo. Consultas por Firmante. Consulta Inversiones en Plazo Fijo por Socio</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bea06279-9157-4866-a737-e77ad87f485a</testCaseGuid>
+</TestCaseEntity>

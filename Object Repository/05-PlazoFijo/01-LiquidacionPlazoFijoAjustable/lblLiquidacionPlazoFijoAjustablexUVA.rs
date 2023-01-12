@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblLiquidacionPlazoFijoAjustablexUVA</name>
+   <tag></tag>
+   <elementGuidId>c7988c23-c3c8-4c4d-afdb-2c37c17280bf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.comment.comment_BCCLCERTIFICATE.comment_BCCLCERTIFICATE_BCCLCERTUVA</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='mainTab']/tbody/tr[3]/td/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>81df2345-8044-4192-9dbf-3760337180b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>comment comment_BCCLCERTIFICATE comment_BCCLCERTIFICATE_BCCLCERTUVA</value>
+      <webElementGuid>1d0ca6d6-a3fd-4528-aa05-1907bf55ce80</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Liquidacion Plazo Fijo Ajustable x UVA</value>
+      <webElementGuid>f1adca0e-d1d8-4e90-b627-113506f48796</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainTab&quot;)/tbody[1]/tr[3]/td[@class=&quot;field field_BCCLCERTIFICATE field_BCCLCERTIFICATE_BCCLCERTUVA&quot;]/span[@class=&quot;comment comment_BCCLCERTIFICATE comment_BCCLCERTIFICATE_BCCLCERTUVA&quot;]</value>
+      <webElementGuid>886776ed-82cb-486f-a02f-6928d1c82435</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='mainTab']/tbody/tr[3]/td/span</value>
+      <webElementGuid>b542a250-24fd-4885-b108-475e578f4a81</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ctr)'])[1]/following::span[1]</value>
+      <webElementGuid>c2ebaf23-18d7-47e6-8156-96fd33d97d09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MM2134358086'])[1]/following::span[1]</value>
+      <webElementGuid>1954fe10-697b-49ad-a6a6-10f60e3f0aed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detalles Auditoria/Sucursal'])[1]/preceding::span[1]</value>
+      <webElementGuid>d8bfef87-fdad-4441-9738-fd00c7cffb22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado del registro'])[1]/preceding::span[2]</value>
+      <webElementGuid>6c06d4a8-0f51-47bf-b37f-040e89ced0f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Liquidacion Plazo Fijo Ajustable x UVA']/parent::*</value>
+      <webElementGuid>d9a3759c-0f8c-4ced-a54a-433261337d6c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td/span</value>
+      <webElementGuid>a62e4933-ca44-4581-aaf9-c849dbb0caa1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Liquidacion Plazo Fijo Ajustable x UVA' or . = 'Liquidacion Plazo Fijo Ajustable x UVA')]</value>
+      <webElementGuid>0b3ea07f-f7c4-4e05-b736-3ab766cb30bf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

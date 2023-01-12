@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtDashboardBuscador</name>
+   <name>txtNroOperacion</name>
    <tag></tag>
-   <elementGuidId>56d33fa4-9f61-4f3e-b271-40ef93317b98</elementGuidId>
+   <elementGuidId>0c951009-ec9b-4798-a974-b4c89ba98c80</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='commandValue']</value>
+         <value>//input[@id='value:2:1:1']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#commandValue</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;commandValue&quot;)[count(. | //*[@id = 'commandValue' and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[@id = 'commandValue' and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,94 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>0eea04ff-f28d-4198-acdd-50dd2c683614</webElementGuid>
+      <webElementGuid>a01a209d-5c07-48f0-a0b5-5acda7b492ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>title</name>
+      <name>type</name>
       <type>Main</type>
-      <value>Command line for input text</value>
-      <webElementGuid>a2cd1cbc-f57b-41e9-96c9-ee30059a252f</webElementGuid>
+      <value>text</value>
+      <webElementGuid>fe33a433-5b31-404b-930b-a9d685b16265</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>commandValue</value>
-      <webElementGuid>5bd9e8a6-308c-4bd5-b1bf-c897fbff494c</webElementGuid>
+      <value>value:2:1:1</value>
+      <webElementGuid>17c8462d-7a9b-4e47-8a47-a902599e2af5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>commandValue</value>
-      <webElementGuid>1a663ecf-22b6-483d-9781-bb8f6f815824</webElementGuid>
+      <value>value:2:1:1</value>
+      <webElementGuid>5f08d7e0-206d-421f-827e-b79d965bd31e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>35</value>
-      <webElementGuid>9a42d780-efe6-44cc-af5b-48e835448ab3</webElementGuid>
+      <value>20</value>
+      <webElementGuid>899a01b3-3900-4cef-9d3c-5ac36fa86db0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
+      <name>frequencydropfieldname</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>b3312a2f-8398-4b7e-8a88-7aae2593ee9d</webElementGuid>
+      <value>value:2:1:1</value>
+      <webElementGuid>4931eb5d-8d5d-46d0-a871-f8a0c0176c25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqseldata enqseldata_BCCLEMMCERTLIQUVA</value>
+      <webElementGuid>d81f3055-b120-45cc-a696-909431553f68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;commandValue&quot;)</value>
-      <webElementGuid>c6045203-a073-43aa-b11d-0c677fef0c70</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMainMenu</value>
-      <webElementGuid>71bb089f-cc99-4ae1-b859-03603dbaf8c5</webElementGuid>
+      <value>id(&quot;value:2:1:1&quot;)</value>
+      <webElementGuid>227c4e5c-e538-4670-ac45-6ccc062efe3a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='commandValue']</value>
-      <webElementGuid>c831c966-8ce3-4a5b-9a2f-34aba32a2962</webElementGuid>
+      <value>//input[@id='value:2:1:1']</value>
+      <webElementGuid>e3655534-236d-4d23-8375-70aee8274da6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='commandLineForm']/input</value>
-      <webElementGuid>713097e6-7368-4725-8bef-f305880b61c0</webElementGuid>
+      <value>//table[@id='selectiondisplay']/tbody/tr[2]/td[3]/input</value>
+      <webElementGuid>9d632265-d94d-40b9-8596-d5f7005498d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input</value>
-      <webElementGuid>5041bf2b-3c30-4732-acea-b22cf35544f3</webElementGuid>
+      <value>//tr[2]/td[3]/input</value>
+      <webElementGuid>366c20ae-090f-4613-ae9f-4293e5f3c7a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@title = 'Command line for input text' and @name = 'commandValue' and @id = 'commandValue']</value>
-      <webElementGuid>ce8ca4d5-7e23-487f-a80a-48d85d80efc5</webElementGuid>
+      <value>//input[@type = 'text' and @name = 'value:2:1:1' and @id = 'value:2:1:1']</value>
+      <webElementGuid>43c957b4-3315-4cd2-9a1e-951609c443ff</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

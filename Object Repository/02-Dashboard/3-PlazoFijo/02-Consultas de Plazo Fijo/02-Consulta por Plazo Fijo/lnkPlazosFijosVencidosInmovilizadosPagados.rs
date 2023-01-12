@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkPlazosFijosVencidosInmovilizadosPagados</name>
+   <tag></tag>
+   <elementGuidId>9c8f4eff-424c-4dcc-8315-302ab8b3c44c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.MM.VENCIDOS.PAGADOS');processMenuHeaderText('Plazos Fijos Vencidos Inmovilizados pagados')&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[3]/a[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>0b67be60-c525-4926-a6d1-77c86e952df1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.MM.VENCIDOS.PAGADOS');processMenuHeaderText('Plazos Fijos Vencidos Inmovilizados pagados')</value>
+      <webElementGuid>9f277a02-094d-4b55-bbdb-e02b6215d991</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.MM.VENCIDOS.PAGADOS');</value>
+      <webElementGuid>f11d3f77-4784-4c72-89f0-79ebf96244bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Plazos Fijos Vencidos Inmovilizados pagados </value>
+      <webElementGuid>076ce75d-c33a-4bc2-821b-f8df355b012a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[3]/a[1]</value>
+      <webElementGuid>41c042ae-059a-4021-ba45-e88ecb4bedd7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>00754ee0-09ce-495b-b79c-83e5171e474c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.MM.VENCIDOS.PAGADOS');processMenuHeaderText('Plazos Fijos Vencidos Inmovilizados pagados')&quot;]</value>
+      <webElementGuid>7643a84a-04d6-4dd0-aa2a-1086cadc020c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[13]/li/ul/li[5]/ul/li/ul/li[3]/a</value>
+      <webElementGuid>4016eaa8-85f0-4175-868a-ddb133f762aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Plazos Fijos Vencidos Inmovilizados pagados')]</value>
+      <webElementGuid>8cbc3f2d-e795-459d-afd8-13329603356e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Vencidos Inmovilizados impagos'])[1]/following::a[1]</value>
+      <webElementGuid>9b88a1bf-228c-4d9a-a9f3-b54a8f7415e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Activos'])[1]/following::a[2]</value>
+      <webElementGuid>d473caa6-c6d1-49fc-b020-b3732f00e6e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Vencidos Acreditados en cuenta'])[1]/preceding::a[1]</value>
+      <webElementGuid>82c7d9b0-3ba7-4891-bd4d-b661c7567193</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Reversados y Anulados'])[1]/preceding::a[2]</value>
+      <webElementGuid>e3c500d3-bfbc-4986-bd01-5ec110bcab9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Plazos Fijos Vencidos Inmovilizados pagados']/parent::*</value>
+      <webElementGuid>c0b38ff9-79ca-43f0-b7ca-c0e413bfdb0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.MM.VENCIDOS.PAGADOS');&quot;)]</value>
+      <webElementGuid>288d900b-88ac-49c6-9024-c5507d8e5069</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[13]/li/ul/li[5]/ul/li/ul/li[3]/a</value>
+      <webElementGuid>db884a19-4861-4758-b47f-aa27633d13d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.MM.VENCIDOS.PAGADOS&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Plazos Fijos Vencidos Inmovilizados pagados ' or . = 'Plazos Fijos Vencidos Inmovilizados pagados ')]</value>
+      <webElementGuid>0609d7e9-fbdb-4c55-b14f-314808715e8e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

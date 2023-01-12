@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkNueva Seleccion</name>
+   <tag></tag>
+   <elementGuidId>0ca7079e-6e4b-45bb-940b-3899bada4541</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cf4f7bed-4a21-4a40-b9ef-8d23d2c5c136</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:resetForm('enqsel')</value>
+      <webElementGuid>7f61c9d3-2378-442e-bc9f-73df5ec4448c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nueva Seleccion</value>
+      <webElementGuid>24a36e2b-7d1c-4cbe-82e0-cf1ff1fd08f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLMMACTIVOS&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLMMACTIVOS enqsel-selections enqsel-selections_BCCLMMACTIVOS&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLMMACTIVOS&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLMMACTIVOS&quot;]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/a[1]</value>
+      <webElementGuid>dac8fa3d-3b15-4278-91cb-f581b092443d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/a</value>
+      <webElementGuid>b394f22c-62dc-4ea3-95a5-67c8c7d6adb2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Nueva Seleccion')]</value>
+      <webElementGuid>73131098-6080-4783-830a-9a50d15b6da2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazo Fijos Activos'])[2]/following::a[1]</value>
+      <webElementGuid>424567f4-f884-448f-a808-28bef1ac2a6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::a[1]</value>
+      <webElementGuid>28444edf-99ab-495b-a5e8-634a6cffcaf9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::a[1]</value>
+      <webElementGuid>2d86eeb5-ed2c-4f85-899f-4e6b03501b48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::a[2]</value>
+      <webElementGuid>581c4f9c-e766-4c9b-bac2-7fa18fcdb0e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nueva Seleccion']/parent::*</value>
+      <webElementGuid>e7a6f970-51ca-4e52-806f-5e6893114355</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:resetForm('enqsel')&quot;)]</value>
+      <webElementGuid>3e5e4064-5549-4e63-b9f2-439b26020808</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>57863f40-4359-496e-ac71-b8391e75d1e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:resetForm(&quot; , &quot;'&quot; , &quot;enqsel&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Nueva Seleccion' or . = 'Nueva Seleccion')]</value>
+      <webElementGuid>23a661d0-703d-4313-ab29-cd4e7197f620</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

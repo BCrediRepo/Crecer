@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkNuevaSeleccion</name>
+   <tag></tag>
+   <elementGuidId>3d17b5a3-59f7-4905-850b-ad97e1f547a1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>abe7e2b3-d6d0-4cae-8c89-afb453bdbe10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:resetForm('enqsel')</value>
+      <webElementGuid>b0264fb9-3059-49e4-98ca-e8376d012db1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nueva Seleccion</value>
+      <webElementGuid>edaf2700-d5d2-4851-8859-a71e46c1c7e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEMMCERTLIQUVA&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEMMCERTLIQUVA enqsel-selections enqsel-selections_BCCLEMMCERTLIQUVA&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEMMCERTLIQUVA&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEMMCERTLIQUVA&quot;]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/a[1]</value>
+      <webElementGuid>956ac245-e10d-4ae8-a9d1-cbccaf737c95</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/a</value>
+      <webElementGuid>10cbcb7f-5dbd-40c6-91e5-dbe09a0b1dca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Nueva Seleccion')]</value>
+      <webElementGuid>d3ae00fa-350e-4573-9e41-bef9135c0672</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Liquidacion Plazo Fijo Ajustable'])[2]/following::a[1]</value>
+      <webElementGuid>bff4bb9f-b372-467e-aa5a-95c8a6fe8b8d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::a[1]</value>
+      <webElementGuid>9d5d1f50-cbe5-47a1-9881-87b455f3699d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::a[1]</value>
+      <webElementGuid>3a5a8956-1255-4f48-a464-d70ca7ad19f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::a[2]</value>
+      <webElementGuid>bfb6332a-3cb9-4b7a-ace2-3d7ae058a210</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nueva Seleccion']/parent::*</value>
+      <webElementGuid>82962103-99a6-49f7-98f6-9dd7c2badf04</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:resetForm('enqsel')&quot;)]</value>
+      <webElementGuid>21a73b34-b5c0-41b0-9e9a-95eaf78889d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>19e3d8b1-8425-4df6-85ef-06494e363e3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:resetForm(&quot; , &quot;'&quot; , &quot;enqsel&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Nueva Seleccion' or . = 'Nueva Seleccion')]</value>
+      <webElementGuid>e2e1946f-f11f-4c08-9597-ccb68e153b9f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

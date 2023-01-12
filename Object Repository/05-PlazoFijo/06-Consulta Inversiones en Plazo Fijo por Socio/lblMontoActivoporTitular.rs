@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblMontoActivoporTitular</name>
+   <tag></tag>
+   <elementGuidId>de766f21-094c-4177-95ca-ed0d1513d9b9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLNOFILEMONTOPORFIR</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>e9446dab-cca9-4f32-a513-120a5a3d5aeb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLNOFILEMONTOPORFIR</value>
+      <webElementGuid>2dadaac5-eefd-4677-a58c-7004e3d5aa1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Monto Activo por Titular</value>
+      <webElementGuid>43206a21-48ef-40e4-bd98-6b01e3001fec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLNOFILEMONTOPORFIR&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLNOFILEMONTOPORFIR enqsel-selections enqsel-selections_BCCLNOFILEMONTOPORFIR&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLNOFILEMONTOPORFIR&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLNOFILEMONTOPORFIR&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLNOFILEMONTOPORFIR&quot;]</value>
+      <webElementGuid>a747dff8-3dc9-4610-bc77-928ab5bde7ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>66b7fe4a-cce4-458e-9ae7-a40bf0b7a7b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLNOFILEMONTOPORFIR</value>
+      <webElementGuid>2a51306e-f3c3-4e68-9277-989cf3aafe22</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Monto Activo por Titular</value>
+      <webElementGuid>c436bcca-b824-4971-a87b-afc01b8f1cd7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLNOFILEMONTOPORFIR&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLNOFILEMONTOPORFIR enqsel-selections enqsel-selections_BCCLNOFILEMONTOPORFIR&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLNOFILEMONTOPORFIR&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLNOFILEMONTOPORFIR&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLNOFILEMONTOPORFIR&quot;]</value>
+      <webElementGuid>6f75a0f7-752c-4759-93be-b5ca5929bab0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>374f3533-1248-42ab-be11-44f5476488af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>d2dcabab-ae2c-48ae-8e63-9e6c05077b7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::td[5]</value>
+      <webElementGuid>5bc9c58a-ad87-4dc3-87e9-7a869c935c56</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>16219eec-23a9-4771-b7e6-6bd6e94d9dea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Monto Activo por Titular' or . = 'Monto Activo por Titular')]</value>
+      <webElementGuid>732f2aaf-9b2d-4c5d-be27-69ffb4185f0c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

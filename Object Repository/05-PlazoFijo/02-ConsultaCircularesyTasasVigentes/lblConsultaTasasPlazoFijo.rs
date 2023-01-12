@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsultaTasasPlazoFijo</name>
+   <tag></tag>
+   <elementGuidId>b737490c-cddb-4090-94b2-23bc0024d27b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>3bc6af0c-7447-4390-844c-c3c84dfa21c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta Tasas Plazo Fijo</value>
+      <webElementGuid>6a4f0a86-74ed-4c2a-8962-12f254c17626</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[1]</value>
+      <webElementGuid>d1dd7e0b-dfdf-46bf-8f43-c3c13f969e12</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      <webElementGuid>b5c7c21a-766e-454a-9d1d-7992e3067a57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
+      <webElementGuid>88e10e72-5ef1-4712-9e32-a775ad67d97b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
+      <webElementGuid>d64024e8-0c16-4c48-b0cc-6d78fedc780c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha : 25 JUL 2022'])[1]/preceding::td[1]</value>
+      <webElementGuid>f1c84c35-44f8-4607-aca8-c9a8742d2b37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Persona: F'])[1]/preceding::td[2]</value>
+      <webElementGuid>be02f086-ddd7-4efe-904d-595431b0ff95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta Tasas Plazo Fijo']/parent::*</value>
+      <webElementGuid>f907c4c1-7a45-4fd3-b362-1e430ce5c796</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th/table/tbody/tr[2]/td</value>
+      <webElementGuid>5befcced-7f5d-465c-946c-79851d162f11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Consulta Tasas Plazo Fijo' or . = 'Consulta Tasas Plazo Fijo')]</value>
+      <webElementGuid>223e3306-57eb-4afb-8181-5aae401d0ec6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

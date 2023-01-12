@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsultaIndices</name>
+   <tag></tag>
+   <elementGuidId>55d2b72f-f735-41cf-af2b-83d64cf34d46</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLEINDICESCERUVA</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>8debaf6d-0ba9-47cc-8603-1086bbd4508a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLEINDICESCERUVA</value>
+      <webElementGuid>29a145c8-3cd1-448e-b257-f03655d8f520</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta Indices</value>
+      <webElementGuid>5d5f24b0-7b0f-4024-bdf6-83d2101c0c06</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEINDICESCERUVA&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEINDICESCERUVA enqsel-selections enqsel-selections_BCCLEINDICESCERUVA&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEINDICESCERUVA&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEINDICESCERUVA&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLEINDICESCERUVA&quot;]</value>
+      <webElementGuid>cc594015-d08c-4be1-a464-7428d3e43c87</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>4e556a79-0b9b-4dc1-b49c-b1f8936b8f4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::td[4]</value>
+      <webElementGuid>aa771bda-1968-4554-814f-edef89d867db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::td[6]</value>
+      <webElementGuid>ab83323f-f82f-4695-8372-cd6e07999388</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>7960c737-f341-435f-8ad3-c9c7c64f0f9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Consulta Indices' or . = 'Consulta Indices')]</value>
+      <webElementGuid>e03ae9d3-e7f3-4393-a252-bafc213dfa25</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

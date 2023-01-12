@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTitular</name>
+   <tag></tag>
+   <elementGuidId>f4868ddd-4f49-4b16-a03c-86e2c8f91b70</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.disabled_dealbox.disabled_dealbox_BCCLMMIMM.disabled_dealbox_BCCLMMIMM_BCCLGIN</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>0efd773e-6074-457c-beba-7849b1363e25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLMMIMM disabled_dealbox_BCCLMMIMM_BCCLGIN</value>
+      <webElementGuid>36b75ad2-b716-4fb7-830f-65011a386600</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1000415088</value>
+      <webElementGuid>19bbb94a-b1e7-4953-bcde-150c7be61739</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLMMIMM disabled_dealbox_BCCLMMIMM_BCCLGIN&quot;]</value>
+      <webElementGuid>ac57a3eb-c954-4e52-ad59-d6c1dc66e824</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
+      <webElementGuid>6f3868f6-a2df-4576-a293-8715c181809e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Titular'])[1]/following::span[1]</value>
+      <webElementGuid>fc8b5537-6d4c-4ae1-8a15-ef33bb6bf0f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Firmantes del Plazo Fijo'])[1]/following::span[1]</value>
+      <webElementGuid>f5358ad3-09a6-4b61-9d35-e910f7995581</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denom.: CORIA HUGO ROQUE - CUI: 20123104146 - Doc'])[1]/preceding::span[1]</value>
+      <webElementGuid>29ae9c6c-af69-45a8-9963-b02aaa7a6eec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Circular'])[1]/preceding::span[2]</value>
+      <webElementGuid>20240b79-00f9-46cf-b7ba-2d5439e018fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='1000415088']/parent::*</value>
+      <webElementGuid>b903b888-b2fe-4206-a32d-bec4214e6ba4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/span</value>
+      <webElementGuid>33d7a20c-6c36-4862-93d9-568641d9e7d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '1000415088' or . = '1000415088')]</value>
+      <webElementGuid>1ae12c4a-4e87-46db-8119-20fd2696a074</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkConsulta Tasas</name>
+   <tag></tag>
+   <elementGuidId>0c1c422a-2d13-4210-9e88-48a8567d3583</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[10]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>2fc220ea-3832-402b-b39d-ab7fb96e671f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqDrillLink</value>
+      <webElementGuid>3719ebe0-1d03-4cb4-851b-c0db358fd2a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>bb075645-fc6d-4a1b-ac4b-4fb70d2ea685</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:drilldown('2','1_1')</value>
+      <webElementGuid>00cbf0c5-f0a4-48d8-9658-dba338516a84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta Tasas</value>
+      <webElementGuid>11da6dd2-0f4f-4cfb-954a-855238ef9a11</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLECIRCULARESCONSHABIL&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
+      <webElementGuid>3ea9d8dc-185d-40bd-90ee-600993c97ae6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[10]/a</value>
+      <webElementGuid>30af47a6-4a0a-4f5b-8d29-f7cec3a9b34c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Consulta Tasas')]</value>
+      <webElementGuid>9ed44ba4-d5ce-402e-a49e-8ca321c53068</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ver Detalle Circular'])[1]/following::a[1]</value>
+      <webElementGuid>93859b61-02f8-44c3-900f-ff1ac51e0632</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fisicas'])[1]/following::a[2]</value>
+      <webElementGuid>1dbf1e18-e520-4540-8887-5b69a6ee6672</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Especial Jubilados - BPI y C. Movil'])[1]/preceding::a[1]</value>
+      <webElementGuid>2f0c499a-002a-4a83-8fcb-96c8bf3185b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NO'])[4]/preceding::a[1]</value>
+      <webElementGuid>263f1bb6-0d73-413e-bfd4-e7a2ae9972bb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta Tasas']/parent::*</value>
+      <webElementGuid>c90972e7-793f-4e17-b9e3-042e6d1f82ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:drilldown('2','1_1')&quot;)]</value>
+      <webElementGuid>c9b50b63-3c0e-4099-a239-96e0519ed83b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[10]/a</value>
+      <webElementGuid>9463b651-c83c-467a-b7f0-0c18f36a48c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Consulta Tasas' or . = 'Consulta Tasas')]</value>
+      <webElementGuid>f3e1884e-5f5d-42ee-ae98-b2980dfbdcd7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

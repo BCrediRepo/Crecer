@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PF01-Plazo Fijo. Imprimir Liquidacion de Plazo Fijo Ajustable por UVA</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a911aa58-830d-4102-9e5b-caceebf18dae</testCaseGuid>
+</TestCaseEntity>

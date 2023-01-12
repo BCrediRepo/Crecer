@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnDropDown</name>
+   <tag></tag>
+   <elementGuidId>aeeeeb39-a15e-49ea-b21c-baf44796bfba</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr/td[4]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.dropdown_button.dropdown_button_BCCLEMMCERTLIQUVA</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>2136d3cd-a8c6-46ce-97c6-115282ea761f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/dropdown.gif</value>
+      <webElementGuid>74c8a63c-60c7-4660-8ead-d8ad93e9ce8e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown_button dropdown_button_BCCLEMMCERTLIQUVA</value>
+      <webElementGuid>faf94ee9-82c3-4959-8ce8-396496d47aa0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[1]/td[4]/a[1]/img[@class=&quot;dropdown_button dropdown_button_BCCLEMMCERTLIQUVA&quot;]</value>
+      <webElementGuid>71217035-f7bc-495d-8eba-70305d356a51</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr/td[4]/a/img</value>
+      <webElementGuid>328d4172-864b-4b3f-ad7a-561ebd7046db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/img</value>
+      <webElementGuid>1042dfa2-5d75-4a75-b6bf-bdf81e038c1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/dropdown.gif']</value>
+      <webElementGuid>4e5af99d-0c42-4f9e-8662-ef5378116ea5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

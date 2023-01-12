@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblPlazoFijosActivos</name>
+   <tag></tag>
+   <elementGuidId>e9eebe27-24f1-4e43-bf9a-4e21860fa9a5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLMMACTIVOS</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>63497db5-a145-4221-b345-517122a78ed6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLMMACTIVOS</value>
+      <webElementGuid>b56cffd2-a3af-4d51-a175-8491909cea0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Plazo Fijos Activos</value>
+      <webElementGuid>5edccbf6-1237-408a-b38c-ad90228c1581</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLMMACTIVOS&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLMMACTIVOS enqsel-selections enqsel-selections_BCCLMMACTIVOS&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLMMACTIVOS&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLMMACTIVOS&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLMMACTIVOS&quot;]</value>
+      <webElementGuid>e81fb4da-8b2c-4cbe-b566-707f09736afb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>0e0282b0-7f3a-4818-bde5-13d1bc6ea9c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::td[5]</value>
+      <webElementGuid>4ccb19d1-7627-4b82-af4a-ba56b2a855df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>b03e88f1-85f3-488f-ac0e-09bf68d34fd4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::td[5]</value>
+      <webElementGuid>83ecfec9-83c3-4f4f-87d1-9535b1e857f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>9feb84eb-ff18-4c5f-a04e-2d66b25e0a2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Plazo Fijos Activos' or . = 'Plazo Fijos Activos')]</value>
+      <webElementGuid>ed015389-4867-4178-a9a0-9bc80fe9ac93</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -64,4 +64,24 @@
       <initValue>findTestData('MainData/Users').getValue(2, 1)</initValue>
       <name>vPass</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'F02055'</initValue>
+      <name>vF02055</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'F00489'</initValue>
+      <name>vF00489</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 089</description>
+      <initValue>'F00289'</initValue>
+      <name>vF00289</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'F00043'</initValue>
+      <name>vF00043</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
