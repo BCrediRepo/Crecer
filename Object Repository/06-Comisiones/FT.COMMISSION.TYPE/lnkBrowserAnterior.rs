@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkBrowserAnterior</name>
+   <tag></tag>
+   <elementGuidId>c4231fd7-dff9-43c6-8f8b-ceea16c3d87e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1c062b3c-64b7-42cd-a767-55ec2a90cc2f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>3537938f-259b-40b0-8957-489f7c1c7854</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>CONSULTA PARAMETRIA COMISIONES</value>
+      <webElementGuid>1f8e3fb9-5f85-4535-b6d2-a6f5d57828dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryResponseCrumbs&quot;)/tbody[1]/tr[1]/td[@class=&quot;crumb crumb_FTCOMMISSIONTYPE crumb_FTCOMMISSIONTYPE_BCCLMODCOM&quot;]/a[1]/span[1]</value>
+      <webElementGuid>717b7a68-eb74-429b-a122-47f6e2959e7b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>ab5aaabc-200c-47c7-ae9b-f4d65c4c6d3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lr a:'])[1]/following::span[1]</value>
+      <webElementGuid>a62bb994-6321-4027-b64e-9601ef749ee2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Comision'])[1]/preceding::span[1]</value>
+      <webElementGuid>bb975b12-3339-41c9-903a-5249d973ca46</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.074 Caseros Centro)'])[1]/preceding::span[1]</value>
+      <webElementGuid>ffb91740-0d94-414f-9f0c-66a1b2521198</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='CONSULTA PARAMETRIA COMISIONES']/parent::*</value>
+      <webElementGuid>5d78d5aa-4833-41d5-b17b-d662f392085f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span</value>
+      <webElementGuid>7feb8275-c277-4438-9973-c6fcc8340292</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'CONSULTA PARAMETRIA COMISIONES' or . = 'CONSULTA PARAMETRIA COMISIONES')]</value>
+      <webElementGuid>06eca43c-ca6b-47b7-89ee-9683a687d73e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

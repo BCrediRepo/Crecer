@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>acf2046f-76fb-44a2-9b53-8db91d8ee27f</testCaseGuid>
+</TestCaseEntity>
