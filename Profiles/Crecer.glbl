@@ -84,4 +84,9 @@
       <initValue>'F00043'</initValue>
       <name>vF00043</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'F00474'</initValue>
+      <name>vF00474</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
