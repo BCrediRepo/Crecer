@@ -89,4 +89,9 @@
       <initValue>'F00474'</initValue>
       <name>vF00474</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>gerente operativo</description>
+      <initValue>'ANOVELLO'</initValue>
+      <name>vANOVELLO</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
