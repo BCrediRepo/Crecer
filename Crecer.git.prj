@@ -6,7 +6,11 @@
    <UUID>b23ed6e2-b293-4ab4-b367-83d195a0008e</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+<<<<<<< HEAD
    <projectFileLocation>C:\Users\Guillermo.Ameztoy\git\Crecer\Crecer.git.prj</projectFileLocation>
+=======
+   <projectFileLocation>C:\Users\gino.gutierrez\git\Crecer\Crecer.git.prj</projectFileLocation>
+>>>>>>> 1f41fe82c0ea188e5f449fb019fa4e5ef44eff6f
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

@@ -17,6 +17,9 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
 
 import internal.GlobalVariable
 
@@ -67,4 +70,21 @@ public class kywGeneric {
 		WebUI.closeBrowser()
 	}
 	//--------------------------------------------------------------------------------------------
+
 }
+
+/*----------------------------------------------------------------------------------------------*
+ *			FUNCION CAPTURA DE PANTALLA															*
+ *			nombre unico: nombre+fecha+hora																					*
+ *																								*
+ *----------------------------------------------------------------------------------------------*/
+
+@Keyword
+
+def fCapturaDePantalla(Modulo,Caso) {
+	LocalDateTime now = LocalDateTime.now()
+	DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+	String nowString = formatter.format(now)
+	WebUI.takeScreenshot('Screenshot/'+Modulo+'/'+Caso + nowString + '.png')
+}
+
