@@ -22,7 +22,7 @@
       <guid>ea7606b7-eab7-4ad2-875f-e2af125ff5b7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-PlazoFijo/PF02-Plazo Fijo. Renovación. Vence la última de las renovaciones del plazo fijo</testCaseId>
+      <testCaseId>Test Cases/04-PlazoFijo/PF02-Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posición en línea Renovómetro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

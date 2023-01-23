@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Ejecutar</name>
+   <name>lnkEjecutar</name>
    <tag></tag>
    <elementGuidId>6c29e2b9-d804-42a5-b123-b02c9cc12b0c</elementGuidId>
    <selectorCollection>
@@ -11,12 +11,12 @@
 						   toggleStateButton();doEnquiry()']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@alt = 'Ejecutar' and @title = 'Ejecutar' and @href = 'javascript:void(0)' and (text() = 'Ejecutar' or . = 'Ejecutar')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a.textbtn</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@alt = 'Ejecutar' and @title = 'Ejecutar' and @href = 'javascript:void(0)' and (text() = 'Ejecutar' or . = 'Ejecutar')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

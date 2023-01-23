@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>727144ca-2641-4845-b4b6-828a92af275a</dataFileGUID>
-   <dataSourceUrl>C:\Users\fguillermet\Katalon Studio\Crecer.git\Test Data\MainData.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Guillermo.Ameztoy\git\Crecer\Test Data\MainData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

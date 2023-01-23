@@ -70,7 +70,7 @@
       <name>vF02055</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Sucursal 089</description>
       <initValue>'F00489'</initValue>
       <name>vF00489</name>
    </GlobalVariableEntity>
@@ -80,7 +80,7 @@
       <name>vF00289</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Sucursal 043</description>
       <initValue>'F00043'</initValue>
       <name>vF00043</name>
    </GlobalVariableEntity>

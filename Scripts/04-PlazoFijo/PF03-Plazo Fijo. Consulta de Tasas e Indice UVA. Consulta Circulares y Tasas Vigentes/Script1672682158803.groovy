@@ -16,9 +16,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 //Config
 def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
+LocalDateTime now = LocalDateTime.now()
+DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+String nowString = formatter.format(now)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
@@ -38,7 +43,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consul
 WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/01-Consulta de Tasas e Indices/lnkConsultaCircularesyTasasVigentes'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,5))
 
-WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/a_Ejecutar'))
+WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lnkEjecutar'))
 //cambio a frame Consulta Circulares Vigentes
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblCircular'))
 WebUI.maximizeWindow()
@@ -49,7 +54,7 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,6))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblConsultaTasasPlazoFijo'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblConsultaTasasPlazoFijo'))
 //realizo captura de las tasas consultadas
-
+WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consulta de Tasas e Indice UVA. Consulta Circulares y Tasas Vigentes" + nowString + ".png")
 
 
 //---------------------------------------------------------------------------------------------------------------------

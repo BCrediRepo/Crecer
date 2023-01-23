@@ -16,9 +16,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 //Config
 def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
+LocalDateTime now = LocalDateTime.now()
+DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+String nowString = formatter.format(now)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
@@ -39,7 +44,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/03-Con
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/txtIDindice'), "CER.201010")
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/lnkEjecutar'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/lblFecha'))
-
+WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consulta de Tasas e Indice UVA. Consulta Indice UVA" + nowString + ".png")
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

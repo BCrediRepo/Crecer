@@ -16,9 +16,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 //Config
 def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
+LocalDateTime now = LocalDateTime.now()
+DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+String nowString = formatter.format(now)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
@@ -43,7 +48,7 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Venci
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,10))
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblTitular'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblTitular'))
-
+WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consulta. Consulta de Plazos Fijos Vencidos Inmovilizados pagados desde filial. Ver Pago" + nowString + ".png")
 
 
 //---------------------------------------------------------------------------------------------------------------------
