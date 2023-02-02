@@ -31,6 +31,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVa
 //Se accede al menu Plazo Fijo
 WebUI.maximizeWindow()
 
+WebUI.waitForElementVisible(('Object Repository/02-Dashboard/lnkPlazoFijo'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkImpresiondeCertificadosyFormularios'), 3)

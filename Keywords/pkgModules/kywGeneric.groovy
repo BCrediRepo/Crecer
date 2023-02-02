@@ -72,19 +72,3 @@ public class kywGeneric {
 	//--------------------------------------------------------------------------------------------
 
 }
-
-/*----------------------------------------------------------------------------------------------*
- *			FUNCION CAPTURA DE PANTALLA															*
- *			nombre unico: nombre+fecha+hora																					*
- *																								*
- *----------------------------------------------------------------------------------------------*/
-
-@Keyword
-
-def fCapturaDePantalla(Modulo,Caso) {
-	LocalDateTime now = LocalDateTime.now()
-	DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-	String nowString = formatter.format(now)
-	WebUI.takeScreenshot('Screenshot/'+Modulo+'/'+Caso + nowString + '.png')
-}
-
