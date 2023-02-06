@@ -1,6 +1,7 @@
 .gradle
 .classpath
 .project
+.cache
 output
 !output/.gitkeep
 build
