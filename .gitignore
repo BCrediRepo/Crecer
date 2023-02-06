@@ -8,7 +8,7 @@ build
 # project folders
 bin
 Libs
-Reports
+Reports/
 Screenshot/
 Test Data
 settings

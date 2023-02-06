@@ -7,7 +7,6 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -18,7 +17,7 @@
          <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>7b2be657-a125-4cc0-bd21-dd1a3b4953c1</webElementGuid>
+      <webElementGuid>7e09f820-8f97-47af-8126-0d5e70a5e116</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>e536fffd-ea70-4de5-a94f-46308ec958c8</webElementGuid>
+      <webElementGuid>46b23138-4a69-4810-a7aa-059eb1f7268f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +41,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Plazo Fijo</value>
-      <webElementGuid>b9e74a87-2419-4040-96f6-21cfee317cb7</webElementGuid>
+      <webElementGuid>384d2e75-5f30-4cd8-bff9-b642b5a7b636</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>4ebf90f1-0fb2-40eb-8d23-c22fa9e2f6e4</webElementGuid>
+      <webElementGuid>96fd769f-ac96-4fff-9e8a-8a74568c8efb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +57,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>bb2b1c9e-8b5c-494d-9216-4b2c0cd9867d</webElementGuid>
+      <webElementGuid>c65c61e8-d326-46c3-b21d-024c0a6ac80a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +65,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[27]</value>
-      <webElementGuid>5a7eb245-f805-4229-b609-06f13aeb2e64</webElementGuid>
+      <webElementGuid>6461823c-c054-4010-9443-64d62cc367e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/span</value>
-      <webElementGuid>f398fa64-483a-4d74-b909-c76757a3aa75</webElementGuid>
+      <webElementGuid>c919a195-8f09-4787-97ec-7b426a65c9ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Limites TD por Clase'])[1]/following::span[1]</value>
-      <webElementGuid>28765f5e-79b2-4950-b705-2fb264b3ebbc</webElementGuid>
+      <webElementGuid>98387bcc-a8a1-40ba-86fc-4944e99adc3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Aviso Viaje CABAL Debito/Credito'])[1]/following::span[1]</value>
-      <webElementGuid>8b661f87-1c1d-47ae-bfa5-f9bdf5d797f5</webElementGuid>
+      <webElementGuid>b107c030-f227-444e-94f8-a261e7f8a61f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>ead23625-a2c9-4b6c-9efe-1b5f57468ecb</webElementGuid>
+      <webElementGuid>6c6e1bb8-b82e-4f11-85cc-3931c9aeee65</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Plazo Fijo Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>a343022a-10cb-4d47-86b9-5c5199b698fb</webElementGuid>
+      <webElementGuid>2bb91422-21f0-4471-b72e-c13ae38c3640</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Plazo Fijo']/parent::*</value>
-      <webElementGuid>f25cd7e8-9daa-4113-ba69-60463dc77895</webElementGuid>
+      <webElementGuid>fd985b16-84f6-400e-bdf1-41badbd447ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +121,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[4]/li/span</value>
-      <webElementGuid>e7fcc3fc-09c1-4e3f-a32e-aba5c9af9444</webElementGuid>
+      <webElementGuid>1e8d265f-ebf2-4a07-b7ec-1c4ebba1652f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,6 +129,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Plazo Fijo' or . = 'Plazo Fijo')]</value>
-      <webElementGuid>d084e9dd-5280-4cf4-a5e2-ee7cb6c7b230</webElementGuid>
+      <webElementGuid>486b6513-b742-49d3-bfad-281290cf63eb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
