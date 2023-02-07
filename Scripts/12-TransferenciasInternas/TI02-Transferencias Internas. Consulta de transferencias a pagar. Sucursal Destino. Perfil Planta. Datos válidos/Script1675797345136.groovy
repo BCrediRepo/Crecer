@@ -28,24 +28,23 @@ String nowString = formatter.format(now)
 CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
 WebUI.maximizeWindow()
 
-//Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/13-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
-
-//Se espera la carga de BCCL.E.CONS.TINT.ALTAS
-WebUI.delay(3)
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,17))
+//Se accede al menú BCCL.E.TINTERNAS.APAGAR
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('ENQ ' + findTestData('Modulos/Modulos').getValue(4,18)))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.waitForPageLoad(3)
+WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,18))
 WebUI.maximizeWindow()
 
-//Se valida la existencia de objetos en BCCL.E.CONS.TINT.ALTAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/pageBCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/pageBCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'),3)
+//Se clickea en Ejecutar y se valida la existencia de campos principales
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/'+ 'TI01' +'.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/'+ 'TI02' +'.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
