@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de09808f-aa6c-4ebc-824a-cbba2da0bff9</testCaseGuid>
+</TestCaseEntity>
