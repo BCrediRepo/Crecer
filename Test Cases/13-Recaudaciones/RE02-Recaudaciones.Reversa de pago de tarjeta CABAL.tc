@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RE02-Recaudaciones.Reversa de pago de tarjeta CABAL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d970db3b-c6cc-4bdb-8273-e7dc6a649086</testCaseGuid>
+</TestCaseEntity>
