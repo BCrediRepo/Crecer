@@ -1,22 +1,17 @@
 .gradle
-
-bin
-
-Reports
-
-Libs
-
+.classpath
+.project
+.cache
 output
-
 !output/.gitkeep
 build
 
-.classpath
-
-.project
-
-Screenshot
-
-settings
+# project folders
+bin
+Libs
+Reports/
+Screenshot/
 Test Data
+settings
 Profiles
+
