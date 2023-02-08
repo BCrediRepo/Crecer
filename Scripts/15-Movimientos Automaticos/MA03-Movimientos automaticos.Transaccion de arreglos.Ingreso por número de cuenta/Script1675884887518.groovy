@@ -31,6 +31,10 @@ WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/
 
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkEjecutar'))
 
+WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/btnLupita'))
+
+WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/txtNroCuenta_value411'), '10430047640')
+
 Cabecera = WebUI.getText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lblMovimientosrechazaninforme'))
 
 if (Cabecera == true) {
@@ -38,13 +42,13 @@ if (Cabecera == true) {
 
     WebUI.takeScreenshot('Screenshot/Movimientos Automaticos/MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
 } else {
-	WebUI.maximizeWindow()
-	
-	WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error-MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
+    WebUI.maximizeWindow()
+
+    WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error-MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 
