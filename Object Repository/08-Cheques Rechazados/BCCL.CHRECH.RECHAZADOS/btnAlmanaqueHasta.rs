@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnAlmanaqueHasta</name>
+   <tag></tag>
+   <elementGuidId>a2da0ca6-aede-481e-9e5d-23e16c675f7b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr[3]/td[4]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>ec660a83-8757-4bb3-9daa-4ef69da3d339</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/calendar.gif</value>
+      <webElementGuid>05b98818-bbdf-434c-a041-39fda771bbaf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown_button dropdown_button_BCCLCHRECHRECHAZADOS</value>
+      <webElementGuid>91d932c9-f36c-40ef-8c39-5ac80f1f5c33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[3]/td[4]/a[1]/img[@class=&quot;dropdown_button dropdown_button_BCCLCHRECHRECHAZADOS&quot;]</value>
+      <webElementGuid>f00a38d3-a6dd-4d8e-8581-b2fc92bb07c8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr[3]/td[4]/a/img</value>
+      <webElementGuid>8aa6f802-bd94-4eef-ad19-c6cbfd4dda73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td[4]/a/img</value>
+      <webElementGuid>e3a9a547-5fab-4862-8ef4-ba839cae9237</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/calendar.gif']</value>
+      <webElementGuid>2f9e231c-820f-401d-b15e-4b68cd512da4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
