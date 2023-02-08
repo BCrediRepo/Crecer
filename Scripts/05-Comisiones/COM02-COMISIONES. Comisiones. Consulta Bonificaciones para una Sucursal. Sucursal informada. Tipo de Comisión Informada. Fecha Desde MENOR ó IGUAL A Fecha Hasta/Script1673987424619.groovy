@@ -42,11 +42,11 @@ comprobacion = WebUI.verifyTextPresent(sucursal, true)
 assert comprobacion != null
 
 
-WebUI.takeScreenshot('Screenshot/Comisiones/ConsultaBonificacionesPorSucursal.png')
+WebUI.takeScreenshot('Screenshot/COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
 
 }
 

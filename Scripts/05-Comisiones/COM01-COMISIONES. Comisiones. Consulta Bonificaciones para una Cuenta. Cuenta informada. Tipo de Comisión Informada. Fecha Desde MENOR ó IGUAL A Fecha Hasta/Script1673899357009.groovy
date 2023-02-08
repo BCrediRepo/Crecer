@@ -60,13 +60,13 @@ assert TextoDato == TextoHeader
 //WebUI.verifyMatch('TextoDato', '00740025976', true)
 WebUI.verifyElementAttributeValue(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroCuenta_d'), '', '', 0)*/
 
-WebUI.takeScreenshot('Screenshot/Comisiones/ConsultaBonificacionesPorCuenta.png' //Control de fin de script
+WebUI.takeScreenshot('Screenshot/Comisiones/COM01-ConsultaBonificacionesPorCuenta.png' //Control de fin de script
     )
 
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM01-ConsultaBonificacionesPorCuenta.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

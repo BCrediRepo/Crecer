@@ -108,11 +108,11 @@ nuevoMonto = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COM
 
 assert monto != nuevoMonto
 
-WebUI.takeScreenshot('Screenshot/Comisiones/COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana.png')
+WebUI.takeScreenshot('Screenshot/Comisiones/COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana.png')
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Comisiones/CDC01Error.png')
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Comisiones/Error-COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
