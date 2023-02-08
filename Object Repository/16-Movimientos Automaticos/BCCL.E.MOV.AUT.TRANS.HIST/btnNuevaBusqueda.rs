@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnNuevaBusqueda</name>
+   <tag></tag>
+   <elementGuidId>8e828db4-daf4-45cf-aaf6-475f0702c6ab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pane_']/div/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Pantalla de Seleccion&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>b2108339-674c-427c-a9a2-82f9aed13d3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/select.gif
+															</value>
+      <webElementGuid>5015cb3e-7d52-4e9a-b8f8-15aa39e584f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Pantalla de Seleccion</value>
+      <webElementGuid>798ba553-2c7b-40db-9cf1-9dbed5cbc42b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Pantalla de Seleccion</value>
+      <webElementGuid>7a964a2e-1d3c-4108-b305-0c1ab5ba676d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/div[@class=&quot;denqresponse denqresponse_BCCLEMOVAUTTRANSHIST&quot;]/div[@class=&quot;display_box display_box_BCCLEMOVAUTTRANSHIST&quot;]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/img[1]</value>
+      <webElementGuid>15733b6e-cd1c-4409-af68-b785f6e074dd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/div/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/a/img</value>
+      <webElementGuid>0a621500-6576-4760-a54d-fda91110f92e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Pantalla de Seleccion']</value>
+      <webElementGuid>791fc595-8a51-469d-a77d-2095de27ea75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/a/img</value>
+      <webElementGuid>a5b4e7fc-e9b6-4532-b584-a833ecdd24ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/select.gif
+															' and @alt = 'Pantalla de Seleccion' and @title = 'Pantalla de Seleccion']</value>
+      <webElementGuid>32890360-6a33-4128-b2e9-dc8298011c3d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
