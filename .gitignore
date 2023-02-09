@@ -2,6 +2,7 @@
 .classpath
 .project
 .cache
+.settings
 output
 !output/.gitkeep
 build
@@ -9,8 +10,6 @@ build
 # project folders
 bin
 Libs
-Reports/
-Screenshot/
 Test Data
 settings
 Profiles
