@@ -33,13 +33,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInte
 WebUI.click(findTestObject('Object Repository/02-Dashboard/13-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
 
 //Se espera la carga de BCCL.E.CONS.TINT.ALTAS
-WebUI.delay(3)
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,17))
+WebUI.switchToWindowIndex(1)
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS'), 5)
 WebUI.maximizeWindow()
 
 //Se valida la existencia de objetos en BCCL.E.CONS.TINT.ALTAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/pageBCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/pageBCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'),3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'),3)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
