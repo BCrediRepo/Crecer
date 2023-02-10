@@ -61,7 +61,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarje
 
 WebUI.verifyTextPresent(vMsgError, true)
 
-
 WebUI.delay(3)
 
 //---------------------------------------------------------------------------------------------------------------------
