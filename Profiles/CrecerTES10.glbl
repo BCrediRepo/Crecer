@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>CrecerTES10</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>VPN Credi </description>
+      <initValue>'https://sacrem.bancocredicoop.coop/'</initValue>
+      <name>vVPNCredicoop</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>IP de ejecucion</description>
+      <initValue>findTestData('MainData/ServerIP').getValue(2, 1)</initValue>
+      <name>vServerIPRun</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Servidor de ejecucion</description>
+      <initValue>findTestData('MainData/TestsServers').getValue(2, 1)</initValue>
+      <name>vServerNameRun</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Usuario login</description>
+      <initValue>findTestData('MainData/Users').getValue(1, 1)</initValue>
+      <name>vUser</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password de usuario login</description>
+      <initValue>findTestData('MainData/Users').getValue(2, 1)</initValue>
+      <name>vPass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 001</description>
+      <initValue>'F02055'</initValue>
+      <name>vF02055</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 089</description>
+      <initValue>'F00489'</initValue>
+      <name>vF00489</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 089</description>
+      <initValue>'F00289'</initValue>
+      <name>vF00289</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 043</description>
+      <initValue>'F00043'</initValue>
+      <name>vF00043</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 073</description>
+      <initValue>'F00073'</initValue>
+      <name>vF00073</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 073</description>
+      <initValue>'F00473'</initValue>
+      <name>vF00473</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

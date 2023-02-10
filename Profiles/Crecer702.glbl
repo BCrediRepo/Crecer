@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>Crecer</name>
+   <name>Crecer702</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>vURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>VPN Credi </description>
       <initValue>'https://sacrem.bancocredicoop.coop/'</initValue>
-      <name>vVPNCredicoop</name>
+      <name>vURLTSoftTest10</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>IP servidor Test10</description>
@@ -41,12 +46,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>IP de ejecucion</description>
-      <initValue>''</initValue>
+      <initValue>findTestData('MainData/ServerIP').getValue(2, 3)</initValue>
       <name>vServerIPRun</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Servidor de ejecucion</description>
-      <initValue>''</initValue>
+      <initValue>findTestData('MainData/TestsServers').getValue(2, 3)</initValue>
       <name>vServerNameRun</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -60,12 +65,12 @@
       <name>vPass</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Sucursal 001</description>
       <initValue>'F02055'</initValue>
       <name>vF02055</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Sucursal 089</description>
       <initValue>'F00489'</initValue>
       <name>vF00489</name>
    </GlobalVariableEntity>
@@ -75,33 +80,18 @@
       <name>vF00289</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Sucursal 043</description>
       <initValue>'F00043'</initValue>
       <name>vF00043</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'F00474'</initValue>
-      <name>vF00474</name>
+      <description>Sucursal 073</description>
+      <initValue>'F00073'</initValue>
+      <name>vF00073</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>gerente operativo</description>
-      <initValue>'ANOVELLO'</initValue>
-      <name>vANOVELLO</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'F00274'</initValue>
-      <name>vF00274</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'F02653'</initValue>
-      <name>vF02653</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>usuario Mov Automaticos</description>
-      <initValue>'F00743'</initValue>
-      <name>vF00743</name>
+      <description>Sucursal 073</description>
+      <initValue>'F00473'</initValue>
+      <name>vF00473</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

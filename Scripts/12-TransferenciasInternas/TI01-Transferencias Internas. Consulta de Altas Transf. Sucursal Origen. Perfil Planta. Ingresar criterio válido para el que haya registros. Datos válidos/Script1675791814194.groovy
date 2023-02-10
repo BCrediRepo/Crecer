@@ -25,7 +25,7 @@ DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
 String nowString = formatter.format(now)
 
 //Configuracion de ambiente
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name)
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'( GlobalVariable.vF00289, GlobalVariable.vPass)
