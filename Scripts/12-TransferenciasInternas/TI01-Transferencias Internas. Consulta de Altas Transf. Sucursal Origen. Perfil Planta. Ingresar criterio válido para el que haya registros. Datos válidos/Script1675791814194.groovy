@@ -24,8 +24,11 @@ LocalDateTime now = LocalDateTime.now()
 DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
 String nowString = formatter.format(now)
 
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name)
+
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'( GlobalVariable.vF00289, GlobalVariable.vPass)
 WebUI.maximizeWindow()
 
 //Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
