@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblBOLSIN.00010156010</name>
+   <tag></tag>
+   <elementGuidId>65eaebde-b052-4f6b-99ae-d8b481963349</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow1']/td/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>4f798ecd-00a1-4747-8cdf-5e39b3b518a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>BOLSIN.00010156010</value>
+      <webElementGuid>2f06dbf0-1009-45fb-905d-3024db74703e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_EBCCLEBCOMPERESP&quot;]/b[1]</value>
+      <webElementGuid>e9ed870f-b824-4448-a5ce-693215c8a573</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow1']/td/b</value>
+      <webElementGuid>dbf2356f-9e13-4e66-a884-166b6ad7712c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id ft com'])[1]/following::b[1]</value>
+      <webElementGuid>65a02246-3a46-4694-9af2-e64dec03c74d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto comision'])[1]/following::b[1]</value>
+      <webElementGuid>dca4b3bf-f24c-42de-b6c8-b7e6112d9a11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN'])[1]/preceding::b[1]</value>
+      <webElementGuid>de14d50e-1396-412b-8ae6-f6bc7e12e772</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN.00010197932'])[1]/preceding::b[1]</value>
+      <webElementGuid>10a7ec2f-d5cb-4ea6-9f86-48e140cd135f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='BOLSIN.00010156010']/parent::*</value>
+      <webElementGuid>2327ae89-b9fe-4064-95b3-e794b0bdefc0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//b</value>
+      <webElementGuid>0bad5afa-f2ab-44a8-9b40-8e5cb2885476</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'BOLSIN.00010156010' or . = 'BOLSIN.00010156010')]</value>
+      <webElementGuid>7118e1b5-e134-4b71-baed-620610fe0dcc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -21,33 +21,41 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
     GlobalVariable.vPass)
 
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.REP.BCRA')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
+WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
 
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue311_NroSucursal'), '074')
+WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkNuevaSeleccion'))
 
-WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
+WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkEjecutar'))
+
+WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnBusqueda'))
+
+WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFechaRepvalue511'), '20220725')
+
+WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
-sucursal = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroSucurusal'))
+Fecha = WebUI.verifyTextPresent('Fech Rep', true)
 
-comprobacion = WebUI.verifyTextPresent(sucursal, true)
+BCRA = WebUI.verifyTextPresent('Env BCRA', true)
 
-assert comprobacion != null
+Cuenta = WebUI.verifyTextPresent('Cuenta', true)
 
+assert Fecha == true
 
-WebUI.takeScreenshot('Screenshot/COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
+assert BCRA == true
+
+assert Cuenta == true
+
+WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR01-Consulta Cheques a Reportar a BCRA.Ver Detalle.png')
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/ChequesRechazados/Error-CHR01-Consulta Cheques a Reportar a BCRA.Ver Detalle.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

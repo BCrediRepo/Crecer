@@ -18,40 +18,46 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
+CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF02653, 
     GlobalVariable.vPass)
 
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?302')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
+WebUI.switchToWindowTitle('Temenos T24')
 
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue311_NroSucursal'), '074')
+WebUI.click(findTestObject('02-Dashboard/lnkRechazoDeCheques'))
 
-WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
+WebUI.click(findTestObject('02-Dashboard/6-Cheques rechazados/lnkConsultas'))
+
+WebUI.click(findTestObject('02-Dashboard/6-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
+
+WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
+
+WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/txtSucursal-value111'), '001')
+
+WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/lnkEjecutar'))
+
+WebUI.delay(60)
+
+WebUI.verifyTextPresent('Sucursal', true)
+
+NumSuc = WebUI.getText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/lblNumSucursal'))
+
+assert NumSuc == '001'
 
 WebUI.maximizeWindow()
 
-sucursal = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroSucurusal'))
-
-comprobacion = WebUI.verifyTextPresent(sucursal, true)
-
-assert comprobacion != null
-
-
-WebUI.takeScreenshot('Screenshot/COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
+WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR02-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Sucursal informada. Datos correctos.png')
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/ChequesRechazados/Error-CHR02-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Sucursal informada. Datos correctos.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

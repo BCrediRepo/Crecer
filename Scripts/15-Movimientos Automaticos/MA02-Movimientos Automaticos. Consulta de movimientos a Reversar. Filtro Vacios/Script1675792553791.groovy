@@ -18,40 +18,32 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
+CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00743, 
     GlobalVariable.vPass)
 
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.MOV.AUT.TRANS.REVM')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
+WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.REVM')
 
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue311_NroSucursal'), '074')
+WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkNuevaSeleccion'))
 
-WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
+WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkEjecutar'))
 
-WebUI.maximizeWindow()
+label = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lblMovimientosrechazaninforme'))
 
-sucursal = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroSucurusal'))
+if (label == true) {
+	WebUI.maximizeWindow()
 
-comprobacion = WebUI.verifyTextPresent(sucursal, true)
-
-assert comprobacion != null
-
-
-WebUI.takeScreenshot('Screenshot/COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
-@com.kms.katalon.core.annotation.TearDownIfFailed
-void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
+	WebUI.takeScreenshot('Screenshot/Movimientos Automaticos/MA02-Movimientos Automaticos. Consulta de movimientos a Reversar. Filtro Vacios.png')
+}else {
+	WebUI.maximizeWindow()
+	
+		WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error - MA02-Movimientos Automaticos. Consulta de movimientos a Reversar. Filtro Vacios.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

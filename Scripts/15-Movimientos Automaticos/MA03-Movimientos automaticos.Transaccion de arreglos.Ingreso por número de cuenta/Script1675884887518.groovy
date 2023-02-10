@@ -18,40 +18,37 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
+CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00743, 
     GlobalVariable.vPass)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
+WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
 
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
 
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
+WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkNuevaSeleccion'))
 
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue311_NroSucursal'), '074')
+WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkEjecutar'))
 
-WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
+WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/btnLupita'))
 
-WebUI.maximizeWindow()
+WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/txtNroCuenta_value411'), '10430047640')
 
-sucursal = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroSucurusal'))
+Cabecera = WebUI.getText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lblMovimientosrechazaninforme'))
 
-comprobacion = WebUI.verifyTextPresent(sucursal, true)
+if (Cabecera == true) {
+    WebUI.maximizeWindow()
 
-assert comprobacion != null
+    WebUI.takeScreenshot('Screenshot/Movimientos Automaticos/MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
+} else {
+    WebUI.maximizeWindow()
 
-
-WebUI.takeScreenshot('Screenshot/COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
-@com.kms.katalon.core.annotation.TearDownIfFailed
-void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
+    WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error-MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

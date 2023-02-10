@@ -18,40 +18,49 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
+CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, 
     GlobalVariable.vPass)
 
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
+
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
+
+WebUI.setText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/txtvalue111-FechaProceso'), '20220722')
+
+WebUI.click(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lnkEjecutar'))
+
+WebUI.delay(60)
+
+SucOrigenH = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'))
+
+SucOrigenT = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenT'))
+
+SucDestinoH = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucDestinoH'))
+
+SucDestinoT = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucDestinoT'))
+
+assert SucOrigenH != null
+
+assert SucOrigenT != null
+
+assert SucDestinoH != null
+
+assert SucDestinoT != null
+
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue311_NroSucursal'), '074')
-
-WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
-
-WebUI.maximizeWindow()
-
-sucursal = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroSucurusal'))
-
-comprobacion = WebUI.verifyTextPresent(sucursal, true)
-
-assert comprobacion != null
-
-
-WebUI.takeScreenshot('Screenshot/COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
+WebUI.takeScreenshot('Screenshot/Comisiones/COM04-COMISIONES. Consulta Distribución porcentaje comisiones Telecoop. Completitud.png')
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Comisiones/Error-COM04-COMISIONES. Consulta Distribución porcentaje comisiones Telecoop. Completitud.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
 

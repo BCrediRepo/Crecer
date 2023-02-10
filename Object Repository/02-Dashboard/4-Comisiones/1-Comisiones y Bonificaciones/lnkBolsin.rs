@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkBolsin</name>
+   <tag></tag>
+   <elementGuidId>8b937771-6943-43e5-9563-7fc90f4825c3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.COM.PER.ESP.BOLSIN');processMenuHeaderText('Bolsin')&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>81a08865-a4e9-454d-831e-4318999df2ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.COM.PER.ESP.BOLSIN');processMenuHeaderText('Bolsin')</value>
+      <webElementGuid>857f142d-b552-4a45-9d8f-a6fa3938d78f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.COM.PER.ESP.BOLSIN');</value>
+      <webElementGuid>e3f84c5a-b2e8-4ea8-a4ae-a8c7b6d811eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Bolsin </value>
+      <webElementGuid>aa27b6ec-f8f6-4839-9afb-36f65de7b3a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[8]/a[1]</value>
+      <webElementGuid>1ca5e9eb-ee21-4ed7-a979-3587f83c9f4c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>fd9c6766-70a0-4ff8-ad81-cc53ad325398</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.COM.PER.ESP.BOLSIN');processMenuHeaderText('Bolsin')&quot;]</value>
+      <webElementGuid>e118c10b-829b-4052-b77b-f0b03b4538d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[21]/li/ul/li/ul/li[8]/a</value>
+      <webElementGuid>ac1e7b67-31d8-4a3a-85a2-9f5064e29532</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Bolsin')]</value>
+      <webElementGuid>fd2298ec-6a54-4f80-9e93-a35392464cfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Abono Mensual Buzon a Toda Hora'])[1]/following::a[1]</value>
+      <webElementGuid>6c613c99-0ea9-454e-bc00-028f0a3bd2b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comisiones Cobrada de Interbanking'])[1]/following::a[2]</value>
+      <webElementGuid>5cb3b82e-8e0d-4d52-84cc-cfd1ebbed23a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bonificaciones'])[1]/preceding::a[1]</value>
+      <webElementGuid>46319af5-483a-4011-8025-c84cf31a8f9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta/Modificacion de Bonificaciones'])[1]/preceding::a[1]</value>
+      <webElementGuid>b04f347b-f665-4dc4-9516-5432886ec28e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Bolsin']/parent::*</value>
+      <webElementGuid>d7f447e1-d673-466c-a54f-775bd06c5c78</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.COM.PER.ESP.BOLSIN');&quot;)]</value>
+      <webElementGuid>c41541ad-b18d-46a5-b7e3-7fa39c7582bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[21]/li/ul/li/ul/li[8]/a</value>
+      <webElementGuid>231b59be-3d33-4398-9eeb-d11795ee4238</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.COM.PER.ESP.BOLSIN&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Bolsin ' or . = 'Bolsin ')]</value>
+      <webElementGuid>248c4555-2bf2-4ed8-a7b3-ac861e27ac1b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
