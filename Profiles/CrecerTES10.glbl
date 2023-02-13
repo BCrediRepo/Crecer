@@ -3,7 +3,7 @@
    <description></description>
    <name>CrecerTES10</name>
    <tag></tag>
-   <defaultProfile>false</defaultProfile>
+   <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>VPN Credi </description>
       <initValue>'https://sacrem.bancocredicoop.coop/'</initValue>
@@ -58,5 +58,30 @@
       <description>Sucursal 073</description>
       <initValue>'F00473'</initValue>
       <name>vF00473</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'F00474'</initValue>
+      <name>vF00474</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>gerente operativo</description>
+      <initValue>'ANOVELLO'</initValue>
+      <name>vANOVELLO</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'F00274'</initValue>
+      <name>vF00274</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'F02653'</initValue>
+      <name>vF02653</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>usuario Mov Automaticos</description>
+      <initValue>'F00743'</initValue>
+      <name>vF00743</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
