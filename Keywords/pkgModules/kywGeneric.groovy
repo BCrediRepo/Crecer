@@ -26,20 +26,31 @@ import internal.GlobalVariable
 public class kywGeneric {
 
 	/*----------------------------------------------------------------------------------------------*
-	 *LOGIN																							*
-	 *					    																		*
-	 *Login por defecto 																			*
+	 *CONFIGURACION DE AMBIENTE					    																		*
+	 *Configuracion de ambiente por defecto																			*
 	 *												    											*
 	 *Parametros:																					*
 	 *IP servidor																					*
 	 *Servidor de pruebas																			*
 	 *----------------------------------------------------------------------------------------------*/
 	@Keyword
-	def Login(ServerIP, SeverTest, User, Password) {
-		//def vURL = 'http://' + GlobalVariable.vTest10_IP + ':8080/' + GlobalVariable.vTest10Name + '/servlet/BrowserServlet'
+	def ConfigEnvironment(ServerIP, SeverTest) {
+		//Configuracion de ambiente y generacion de URL.
 		def vURL = 'http://' + ServerIP + '/' + SeverTest + '/servlet/BrowserServlet'
 		WebUI.openBrowser(vURL)
+	}
+	/*----------------------------------------------------------------------------------------------*
+	 *LOGIN																							*
+	 *					    																		*
+	 *Login por defecto 																			*
+	 *												    											*
+	 *Parametros:																					*
+	 *User																					*
+	 *Password																		*
+	 *----------------------------------------------------------------------------------------------*/
 
+	@Keyword
+	def Login(User, Password) {
 		//--- Ingreso de credenciales ---
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)

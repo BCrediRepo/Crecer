@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>default</name>
+   <name>CrecerTES11</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>VPN Credi </description>
       <initValue>'https://sacrem.bancocredicoop.coop/'</initValue>
-      <name>vVPNCredicoop</name>
+      <name>vURLTSoftTest10</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>IP de ejecucion</description>
-      <initValue>findTestData('MainData/ServerIP').getValue(2, 1)</initValue>
+      <initValue>findTestData('MainData/ServerIP').getValue(2, 4)</initValue>
       <name>vServerIPRun</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Servidor de ejecucion</description>
-      <initValue>findTestData('MainData/TestsServers').getValue(2, 1)</initValue>
+      <initValue>findTestData('MainData/TestsServers').getValue(2, 4)</initValue>
       <name>vServerNameRun</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
