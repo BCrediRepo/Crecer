@@ -28,7 +28,7 @@ String nowString = formatter.format(now)
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'( GlobalVariable.vF00289, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
 //Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas

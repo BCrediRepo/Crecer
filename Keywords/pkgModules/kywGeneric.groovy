@@ -26,9 +26,8 @@ import internal.GlobalVariable
 public class kywGeneric {
 
 	/*----------------------------------------------------------------------------------------------*
-	 *LOGIN																							*
-	 *					    																		*
-	 *Login por defecto 																			*
+	 *CONFIGURACION DE AMBIENTE					    																		*
+	 *Configuracion de ambiente por defecto																			*
 	 *												    											*
 	 *Parametros:																					*
 	 *IP servidor																					*
@@ -40,7 +39,16 @@ public class kywGeneric {
 		def vURL = 'http://' + ServerIP + '/' + SeverTest + '/servlet/BrowserServlet'
 		WebUI.openBrowser(vURL)
 	}
-	
+	/*----------------------------------------------------------------------------------------------*
+	 *LOGIN																							*
+	 *					    																		*
+	 *Login por defecto 																			*
+	 *												    											*
+	 *Parametros:																					*
+	 *User																					*
+	 *Password																		*
+	 *----------------------------------------------------------------------------------------------*/
+
 	@Keyword
 	def Login(User, Password) {
 		//--- Ingreso de credenciales ---
