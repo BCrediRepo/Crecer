@@ -25,8 +25,12 @@ LocalDateTime now = LocalDateTime.now()
 DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
 String nowString = formatter.format(now)
 
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF02055, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
+WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
 WebUI.maximizeWindow()
