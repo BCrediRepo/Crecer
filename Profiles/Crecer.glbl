@@ -109,4 +109,9 @@
       <initValue>'F00743'</initValue>
       <name>vF00743</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Sucursal 073</description>
+      <initValue>'F00073'</initValue>
+      <name>vF00073</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
