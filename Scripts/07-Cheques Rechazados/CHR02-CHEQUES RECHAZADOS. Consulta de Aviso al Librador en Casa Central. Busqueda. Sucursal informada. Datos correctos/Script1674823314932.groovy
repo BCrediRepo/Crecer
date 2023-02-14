@@ -17,9 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//Config
+LocalDateTime now = LocalDateTime.now()
+DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+String nowString = formatter.format(now)
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF02653, 
-    GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
+WebUI.maximizeWindow()
+
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?302')
 
