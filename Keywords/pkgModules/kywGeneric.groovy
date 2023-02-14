@@ -5,7 +5,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -17,11 +16,14 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
-
 import internal.GlobalVariable
+import com.kms.katalon.core.exception.StepFailedException
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.configuration.RunConfiguration
+import org.openqa.selenium.Keys as Keys
 
 public class kywGeneric {
 
@@ -33,6 +35,7 @@ public class kywGeneric {
 	 *IP servidor																					*
 	 *Servidor de pruebas																			*
 	 *----------------------------------------------------------------------------------------------*/
+	
 	@Keyword
 	def ConfigEnvironment(ServerIP, SeverTest) {
 		//Configuracion de ambiente y generacion de URL.
@@ -60,20 +63,38 @@ public class kywGeneric {
 		//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkMenuAutorizacionesModulos'))
 		//WebUI.delay(2)
 	}
-
-
+	
 	/*----------------------------------------------------------------------------------------------*
 	 *CONTROL DE FALLAS																				*
 	 *																								*
-	 *vImgPath: Ubicacion de la imagen capturada con el error.										*
+	 *getTestCaseName: obtengo el nombre del caso actual, definido por las 4 caracteres inciales. 	*
+	 *getTimeNow: obtener fecha actual.																*
 	 *----------------------------------------------------------------------------------------------*/
+	
 	@Keyword
-	def fFailStatus(def vImgPath){
-		WebUI.takeScreenshot(vImgPath)
+	def getTestCaseName() {
+		String testCaseName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
+		testCaseName = testCaseName.substring(0,4)
+		return testCaseName 
+	}
+	
+	@Keyword
+	def getTimeNow() {
+		Date date = new Date()
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss")
+		String currentDate = dateFormat.format(date)
+		return currentDate
+	}
+	
+	@Keyword
+	def fFailStatus(){
+		def testCaseName = getTestCaseName()
+		def date = getTimeNow()
+		WebUI.takeScreenshot('Screenshot/Fails/'+ testCaseName.substring(0,2) +'/'+ testCaseName + '-' + date +'.png')
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
-
+	
 	@Keyword
 	def fPassStatus(){
 		//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
@@ -81,5 +102,6 @@ public class kywGeneric {
 		WebUI.closeBrowser()
 	}
 	//--------------------------------------------------------------------------------------------
+
 
 }
