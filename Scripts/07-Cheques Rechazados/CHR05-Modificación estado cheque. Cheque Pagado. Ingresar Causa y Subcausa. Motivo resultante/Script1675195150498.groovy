@@ -19,10 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 /*ANTES DE CORRER ESTE SCRIPT SE DEBERÁ CAMBIAR EL ESTADO DEL CHEQUE A "PAGADO"*/
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
+////Config
+//LocalDateTime now = LocalDateTime.now()
+//DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+//String nowString = formatter.format(now)
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
