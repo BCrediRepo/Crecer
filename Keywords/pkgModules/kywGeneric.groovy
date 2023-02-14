@@ -75,7 +75,12 @@ public class kywGeneric {
 	def getTestCaseName() {
 		String testCaseName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
 		testCaseName = testCaseName.substring(0,4)
-		return testCaseName 
+		return testCaseName
+	}
+	
+	def getFolderName() {
+		String folderName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
+		return folderName
 	}
 	
 	@Keyword
@@ -90,7 +95,8 @@ public class kywGeneric {
 	def fFailStatus(){
 		def testCaseName = getTestCaseName()
 		def date = getTimeNow()
-		WebUI.takeScreenshot('Screenshot/Fails/'+ testCaseName.substring(0,2) +'/'+ testCaseName + '-' + date +'.png')
+		def folderName = getFolderName()
+		WebUI.takeScreenshot('Screenshot/Fails/'+ folderName +'/'+ testCaseName + '-' + date +'.png')
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
