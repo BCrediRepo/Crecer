@@ -19,16 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 
-//Config
-//def vWindowTitle = 'ENQ ' + findTestData('Modulos/Modulos').getValue(4, 2)
-
-//Date today = new Date()
-
-//String todaysDate = today.getDateTimeString()
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -61,19 +51,17 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Co
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lblNumeroOperacionValidacion'))
 
-WebUI.takeScreenshot(('Screenshot/Plazo Fijo/Plazo Fijo. Consultas por Plazo Fijo. Consulta Pagos Plazos Fijos' + nowString) + '.png') 
-
 
 //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
 
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

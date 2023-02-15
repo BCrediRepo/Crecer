@@ -19,10 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 /*ANTES DE CORRER ESTE SCRIPT SE DEBERÁ CAMBIAR EL ESTADO DEL CHEQUE A "PAGADO"*/
 
-////Config
-//LocalDateTime now = LocalDateTime.now()
-//DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-//String nowString = formatter.format(now)
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -54,22 +50,21 @@ WebUI.maximizeWindow()
 
 WebUI.verifyElementVisible(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/lblUltimasModificaciones'))
 
-WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR05-CHEQUES RECHAZADOS.a-Modificación estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante Envia Info al BCRA, Cobra multa y emite aviso al librador. Cta no es del sector publico.png')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarCambiosEnElRegistro'))
 
 WebUI.verifyElementVisible(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/lblAutorizadorDistinto'))
 
-WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR05-CHEQUES RECHAZADOS.b-Modificación estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante Envia Info al BCRA, Cobra multa y emite aviso al librador. Cta no es del sector publico.png')
+//---------------------------------------------------------------------------------------------------------------------
 
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/ChequesRechazados/Error-CHR05-Modificación estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante Envia Info al BCRA, Cobra multa y emite aviso al librador. Cta no es del sector publico.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

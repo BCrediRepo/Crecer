@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -56,14 +51,14 @@ WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.
 //Switch a la ventana de pago realizado
 WebUI.delay(3)
 WebUI.switchToWindowTitle('BCCL.E.EST.PAGO.TARJ')
-WebUI.takeScreenshot('Screenshot/Recaudaciones/RECAUDACIONES.Cobro de Tarjeta de Crédito  Cabal para  Personas Jurídicas' + nowString + '.png')
-
+//Captura evidencias en dicho frame
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/APT01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

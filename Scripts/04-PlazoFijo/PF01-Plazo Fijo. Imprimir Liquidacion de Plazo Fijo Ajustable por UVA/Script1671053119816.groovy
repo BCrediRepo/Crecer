@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -64,14 +59,13 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/01-LiquidacionPlazoFi
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/01-LiquidacionPlazoFijoAjustable/lblTRANSACCION FINALIZADA'))
 
-WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Imprimir Liquidacion de Plazo Fijo Ajustable por UVA" + nowString + ".png")
-
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

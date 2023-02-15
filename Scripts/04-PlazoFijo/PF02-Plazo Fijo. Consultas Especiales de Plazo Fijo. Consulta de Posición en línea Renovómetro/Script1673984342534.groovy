@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -40,15 +35,14 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,16))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblConsultadePosicionEnLinea'))
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/txtMoneda'),"PESOS")
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lnkEjecutar'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblPESOS'))
-//assert lbl con moneda
-WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posición en línea Renovómetro" + nowString + ".png")
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblPESOS'))//assert lbl con moneda
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

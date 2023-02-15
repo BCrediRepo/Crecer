@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -49,15 +44,14 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCirculares
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,6))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblConsultaTasasPlazoFijo'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblConsultaTasasPlazoFijo'))
-//realizo captura de las tasas consultadas
-WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consulta de Tasas e Indice UVA. Consulta Circulares y Tasas Vigentes" + nowString + ".png")
 
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

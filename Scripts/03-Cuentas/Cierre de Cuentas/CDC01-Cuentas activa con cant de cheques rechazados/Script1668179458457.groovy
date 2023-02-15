@@ -17,11 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -30,7 +25,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),vWindowTitle)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.CANDT.CIERRE')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana de Cierre de Cuenta
@@ -44,13 +39,13 @@ WebUI.click(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/bt
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/lblCuentasCandidatasCerradas'))
 
-WebUI.takeScreenshot('Screenshot/Cierre de Cuentas/CDC01-Cuentas activa con cant de cheques rechazados' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

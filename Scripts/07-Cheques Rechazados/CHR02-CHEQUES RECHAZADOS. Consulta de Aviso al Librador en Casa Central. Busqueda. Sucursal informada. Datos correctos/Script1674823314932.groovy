@@ -17,11 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-////Config
-//LocalDateTime now = LocalDateTime.now()
-//DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-//String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -58,15 +53,16 @@ assert NumSuc == '001'
 
 WebUI.maximizeWindow()
 
-WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR02-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Sucursal informada. Datos correctos.png')
+//---------------------------------------------------------------------------------------------------------------------
 
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/ChequesRechazados/Error-CHR02-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Sucursal informada. Datos correctos.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

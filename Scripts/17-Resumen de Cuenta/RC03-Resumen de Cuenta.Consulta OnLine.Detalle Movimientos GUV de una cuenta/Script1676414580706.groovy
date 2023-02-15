@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -44,14 +39,13 @@ WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.R
 //Verifico
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'))
-WebUI.takeScreenshot('Screenshot/Resumen de Cuenta/Resumen de Cuenta.Consulta OnLine.Detalle Movimientos GUV de una cuenta' + nowString + '.png')
-
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/APT01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

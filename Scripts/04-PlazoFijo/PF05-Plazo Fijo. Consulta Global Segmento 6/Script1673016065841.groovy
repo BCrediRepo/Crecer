@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -36,18 +31,18 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,8))
 
-//WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'))
-//WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'), 6)
 WebUI.delay(10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'))
-WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consulta Global Segmento 6" + nowString + ".png")
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

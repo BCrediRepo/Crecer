@@ -17,11 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Config
-//LocalDateTime now = LocalDateTime.now()
-//DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-//String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -60,15 +55,16 @@ assert BCRA == true
 
 assert Cuenta == true
 
-WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR01-Consulta Cheques a Reportar a BCRA.Ver Detalle.png')
 
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/ChequesRechazados/Error-CHR01-Consulta Cheques a Reportar a BCRA.Ver Detalle.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

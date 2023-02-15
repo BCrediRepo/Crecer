@@ -21,12 +21,6 @@ import java.time.format.DateTimeFormatter
 //ESTE CASO REVERSA TXN de la tabla BCCL.E.EB.CONS.REVE, Para esto se deben generar transacciones que terminen en esa tabla. Por ejemplo NOTAS DE DEBITO SIN IMPUESTOS
 //para la cuenta 11190118359
 
-
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -57,14 +51,12 @@ WebUI.click(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblTxnCompleta'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblTxnCompleta'), 6)
 
-WebUI.takeScreenshot('Screenshot/Recaudaciones/RECAUDACIONES.Reversa de pago de tarjeta CABAL' + nowString + '.png')
-
-
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/APT01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
