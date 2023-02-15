@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -60,16 +55,19 @@ if (prod.contains('PROGRESAR')){
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAceptarRegistro'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'))
-WebUI.takeScreenshot('Screenshot/Administracion de Piezas/Administracion de Piezas con Tarjetas. Carga Manual de Card-Carrier no encontrado' + nowString + '1' + '.png') 
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.closeBrowser()
 
 
 //Login - Me vuelvo a loguear para autorizar el cambio realizado anteriormente. Utilizando otro user de la misma suc.
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00473, GlobalVariable.vPass)
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Se accede al menu Administracion de piezas
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,6), findTestData('MainData/Users').getValue(2,6))
 WebUI.maximizeWindow()
 
+//Se accede al menu Administracion de piezas
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de Consulta Maestro Card-Carrier
@@ -80,7 +78,6 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Ma
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAutorizaRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAutorizaRegistro'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'))
-WebUI.takeScreenshot('Screenshot/Administracion de Piezas/Administracion de Piezas con Tarjetas. Carga Manual de Card-Carrier no encontrado' + nowString + '2' + '.png')
 
 
 //---------------------------------------------------------------------------------------------------------------------

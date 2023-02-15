@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -47,7 +42,6 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversion
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblIdPlazoFijo'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblIdPlazoFijo'))
-WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consultas por Firmante. Consulta Inversiones en Plazo Fijo por Socio" + nowString + ".png")
 
 //---------------------------------------------------------------------------------------------------------------------
 

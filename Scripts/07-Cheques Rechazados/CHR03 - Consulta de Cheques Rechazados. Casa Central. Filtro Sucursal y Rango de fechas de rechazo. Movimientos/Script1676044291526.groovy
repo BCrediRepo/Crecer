@@ -19,11 +19,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-////Config
-//LocalDateTime now = LocalDateTime.now()
-//DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-//String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -68,18 +63,21 @@ clickeable = WebUI.verifyElementClickable(findTestObject('08-Cheques Rechazados/
 
 if (clickeable == true) {
     WebUI.maximizeWindow()
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+ 
+}//Si no es true la condicion entra en el control de fallas del script
 
-    WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR03-Cheques rechazados.Consulta de Cheques Rechazados. Usuario de Casa Central. Ingresar filtro Sucursal y Rango de fechas de rechazo con datos válidos. Movimientos.png')
-} else {
-    WebUI.maximizeWindow()
 
-    WebUI.takeScreenshot('Screenshot/Fails/ChequesRechazados/Error-CHR03-Cheques rechazados.Consulta de Cheques Rechazados. Usuario de Casa Central. Ingresar filtro Sucursal y Rango de fechas de rechazo con datos válidos. Movimientos.png')
+//---------------------------------------------------------------------------------------------------------------------
 
-    WebUI.closeBrowser()
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

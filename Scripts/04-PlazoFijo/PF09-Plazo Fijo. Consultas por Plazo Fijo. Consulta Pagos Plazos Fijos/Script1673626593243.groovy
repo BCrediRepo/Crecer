@@ -19,16 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 
-//Config
-//def vWindowTitle = 'ENQ ' + findTestData('Modulos/Modulos').getValue(4, 2)
-
-//Date today = new Date()
-
-//String todaysDate = today.getDateTimeString()
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -60,8 +50,6 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Pla
 WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lblNumeroOperacionValidacion'),6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lblNumeroOperacionValidacion'))
-
-WebUI.takeScreenshot(('Screenshot/Plazo Fijo/Plazo Fijo. Consultas por Plazo Fijo. Consulta Pagos Plazos Fijos' + nowString) + '.png') 
 
 
 //---------------------------------------------------------------------------------------------------------------------

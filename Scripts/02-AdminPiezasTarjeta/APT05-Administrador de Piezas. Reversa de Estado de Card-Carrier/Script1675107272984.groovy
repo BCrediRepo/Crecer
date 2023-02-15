@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -46,7 +41,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarj
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnReversarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxnCompleta'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxnCompleta'), 6)
-WebUI.takeScreenshot('Screenshot/Administracion de Piezas/Administrador de Piezas. Reversa de Estado de Card-Carrier' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 

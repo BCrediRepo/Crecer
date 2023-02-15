@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -46,8 +41,6 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQ
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/lblHora'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/lblHora'))
-WebUI.takeScreenshot('Screenshot/Remesas/REMESAS.Consulta Instalación Remoción de Prosegur' + nowString + '.png')
-
 
 //---------------------------------------------------------------------------------------------------------------------
 

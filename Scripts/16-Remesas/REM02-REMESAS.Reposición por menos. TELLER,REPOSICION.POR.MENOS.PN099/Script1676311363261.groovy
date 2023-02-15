@@ -19,11 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -44,7 +39,6 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.M
 WebUI.click(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'))
-WebUI.takeScreenshot('Screenshot/Remesas/REMESAS.Reposición por menos. TELLER,REPOSICION.POR.MENOS.PN099' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 

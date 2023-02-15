@@ -22,17 +22,14 @@ import javax.swing.JOptionPane as JOptionPane
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// Config
-def vWindowTitle = findTestData('Modulos/Modulos').getValue(4,1)
-def vMsgError = findTestData('Errores/MensajesDeError').getValue(2,1)
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vUser, GlobalVariable.vPass)
-//CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name)
-
-//Se accede al menu Administracion de piezas
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
+//Se accede al menu Administracion de piezas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
@@ -42,7 +39,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarje
 WebUI.delay(5)
 
 //Switch a la ventana de Consulta Maestro Card-Carrier
-WebUI.switchToWindowTitle (vWindowTitle)//('BCCL.E.AP.ENQ.NOMBRE.DOC')
+WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'))
 
@@ -59,7 +56,7 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-Seleccio
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/msgNoSeEncontraronRegistros'))
 
-WebUI.verifyTextPresent(vMsgError, true)
+WebUI.verifyTextPresent(findTestData('Errores/MensajesDeError').getValue(2,1), true)
 
 WebUI.delay(3)
 

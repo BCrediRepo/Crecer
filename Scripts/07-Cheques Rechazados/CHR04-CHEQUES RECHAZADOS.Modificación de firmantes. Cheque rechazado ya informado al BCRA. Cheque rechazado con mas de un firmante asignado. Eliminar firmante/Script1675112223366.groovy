@@ -17,11 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-////Config
-//LocalDateTime now = LocalDateTime.now()
-//DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-//String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -58,22 +53,21 @@ WebUI.setText(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informad
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
-WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR04-CHEQUES RECHAZADOS.Modificación de firmantes. Cheque rechazado ya informado al BCRA. Cheque rechazado con mas de un firmante asignado. Eliminar firmante - 01.png')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnEliminarFirmante'))
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
-WebUI.takeScreenshot('Screenshot/ChequesRechazados/CHR04-CHEQUES RECHAZADOS.Modificación de firmantes. Cheque rechazado ya informado al BCRA. Cheque rechazado con mas de un firmante asignado. Eliminar firmante - 02.png')
+//---------------------------------------------------------------------------------------------------------------------
 
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/ChequesRechazados/Error-CHR04-CHEQUES RECHAZADOS.Modificación de firmantes. Cheque rechazado ya informado al BCRA. Cheque rechazado con mas de un firmante asignado. Eliminar firmante - 02.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
