@@ -20,17 +20,18 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 //Config
-def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
 LocalDateTime now = LocalDateTime.now()
 DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
 String nowString = formatter.format(now)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF02055, GlobalVariable.vPass)
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Se accede al menu Administracion de piezas
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
+//Se accede al menu Administracion de piezas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkProcesoDestruccionTarjetas'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/05-ProcDestruccionTarjetas/lnkTarjetasPlazoAtesoramientoVencido'))

@@ -24,11 +24,14 @@ LocalDateTime now = LocalDateTime.now()
 DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
 String nowString = formatter.format(now)
 
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00073, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+WebUI.maximizeWindow()
 
 //Se accede al menu 
-WebUI.maximizeWindow()
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.VISION.PAGO.TJ')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
