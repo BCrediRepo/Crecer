@@ -45,10 +45,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Con
 WebUI.takeScreenshot("Screenshot/Plazo Fijo/Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posición en línea Renovómetro" + nowString + ".png")
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

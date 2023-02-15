@@ -47,10 +47,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/TELLER,R
 WebUI.takeScreenshot('Screenshot/Remesas/REMESAS.Reposición por menos. TELLER,REPOSICION.POR.MENOS.PN099' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/APT01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

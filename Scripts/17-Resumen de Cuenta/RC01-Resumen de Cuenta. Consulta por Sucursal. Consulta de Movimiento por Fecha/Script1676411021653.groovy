@@ -52,10 +52,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuent
 WebUI.takeScreenshot('Screenshot/Resumen de Cuenta/Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Fecha' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/APT01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

@@ -47,10 +47,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/04-Cuentas/01-Cierr
 WebUI.takeScreenshot('Screenshot/Cierre de Cuentas/CDC01-Cuentas activa con cant de cheques rechazados' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

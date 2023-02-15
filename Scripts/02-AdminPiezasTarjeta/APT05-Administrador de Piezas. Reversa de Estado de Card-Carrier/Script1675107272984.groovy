@@ -49,10 +49,11 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/03-AdminPiezasTarje
 WebUI.takeScreenshot('Screenshot/Administracion de Piezas/Administrador de Piezas. Reversa de Estado de Card-Carrier' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/APT01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
