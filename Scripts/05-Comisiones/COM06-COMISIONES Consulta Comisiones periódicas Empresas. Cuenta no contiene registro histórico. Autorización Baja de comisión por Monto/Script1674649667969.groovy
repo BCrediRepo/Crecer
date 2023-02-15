@@ -23,46 +23,36 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('COM.PER.ESP')
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDesplegar'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBolsinAElegir'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnVerRegistro'))
-
 NroCuenta = WebUI.getText(findTestObject('06-Comisiones/COM.PER.ESP/lblCuenta'))
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.closeWindowTitle('COM.PER.ESP')
 
 WebUI.switchToWindowTitle('T24 - Fil.074 Caseros Centro')
-
 WebUI.click(findTestObject('02-Dashboard/lnkComisionesyBonificaciones'))
-
 WebUI.click(findTestObject('02-Dashboard/4-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
-
 WebUI.click(findTestObject('02-Dashboard/4-Comisiones/1-Comisiones y Bonificaciones/lnkBolsin'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('A/B/M Bolsin')
-
 WebUI.clearText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'))
-
 WebUI.setText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'), NroCuenta)
-
 WebUI.click(findTestObject('06-Comisiones/ABM Bolsin/lnkEjecutar'))
-
 WebUI.click(findTestObject('06-Comisiones/ABM Bolsin/lnkBaja'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('COM.PER.ESP')
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnConfirmarBajaBolsin'))
-
 WebUI.delay(10)
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 trx = WebUI.verifyElementVisible(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompleta'), FailureHandling.STOP_ON_FAILURE)
 

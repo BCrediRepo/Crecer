@@ -23,17 +23,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
-
 WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
-
 WebUI.setText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/txtvalue111-FechaProceso'), '20220722')
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lnkEjecutar'))
-
 WebUI.delay(60)
 
 SucOrigenH = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'))
@@ -53,8 +51,6 @@ assert SucDestinoH != null
 assert SucDestinoT != null
 
 WebUI.maximizeWindow()
-
-WebUI.takeScreenshot('Screenshot/Comisiones/COM04-COMISIONES. Consulta Distribución porcentaje comisiones Telecoop. Completitud.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 

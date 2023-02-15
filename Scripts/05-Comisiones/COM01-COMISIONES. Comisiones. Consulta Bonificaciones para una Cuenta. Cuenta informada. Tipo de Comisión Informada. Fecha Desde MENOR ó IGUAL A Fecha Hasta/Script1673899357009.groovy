@@ -23,11 +23,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
 //Bloque limpieza filtros (REVISAR)
@@ -38,13 +37,10 @@ WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 //WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue211_NroCuenta'), '00740025976')
-
 WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue411_FechaDesde'), '20210725')
-
 WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue511_FechaHasta'), '20220725')
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
-
 WebUI.maximizeWindow()
 
 TextoHeader = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroCuenta_h'))
@@ -60,9 +56,6 @@ assert TextoDato == TextoHeader
 /*WebUI.verifyMatch('TextoHeader', '00740025976', true)
 //WebUI.verifyMatch('TextoDato', '00740025976', true)
 WebUI.verifyElementAttributeValue(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroCuenta_d'), '', '', 0)*/
-
-WebUI.takeScreenshot('Screenshot/Comisiones/COM01-ConsultaBonificacionesPorCuenta.png' //Control de fin de script
-    )
 
 //---------------------------------------------------------------------------------------------------------------------
 	

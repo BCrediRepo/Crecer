@@ -23,29 +23,23 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONS.PARAM.COM.CREDEB')
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
-
 WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txt_value111_TipoComision'), 'CREIB')
-
 WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtvalue211Abonado'), 'A00243A')
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkEjecutar'))
-
 WebUI.maximizeWindow()
 
 monto = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lblMonto'))
-
 WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkModificarComision'))
-
 WebUI.switchToWindowTitle('FT.COMMISSION.TYPE')
 
 montoInc = monto
-
 if (montoInc == '100') {
     WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtMontoFijo'), '50')
 } else {
@@ -53,63 +47,48 @@ if (montoInc == '100') {
 }
 
 WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), '20220725')
-
 //WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnValidarRegistro'))
 WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnAceptarRegistro'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 linkAlertas = WebUI.verifyElementVisible(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
 
 if (linkAlertas == true) {
     WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
 }
-
 WebUI.closeBrowser()
 
 //Login gerente operativo
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vANOVELLO, 
-    GlobalVariable.vPass)
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,8), findTestData('MainData/Users').getValue(2,8))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/lnkComisiones'))
-
 WebUI.click(findTestObject('02-Dashboard/4-Comisiones/lnkParametrizacion'))
-
 WebUI.click(findTestObject('02-Dashboard/4-Comisiones/lnkAutorizarEliminarCambiosComisiones'))
-
 WebUI.switchToWindowTitle('Comisiones Pendientes de Autorizar')
-
 WebUI.click(findTestObject('06-Comisiones/Comisiones Pendientes de Autorizar/lnkEjecutar'))
-
 WebUI.click(findTestObject('06-Comisiones/Comisiones Pendientes de Autorizar/btnAutorizar'))
-
 WebUI.switchToWindowTitle('FT.COMMISSION.TYPE')
-
 WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnAutorizar'))
-
 WebUI.closeBrowser()
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
-    GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,7), findTestData('MainData/Users').getValue(2,7))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONS.PARAM.COM.CREDEB')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
-
 WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txt_value111_TipoComision'), 'CREIB')
-
 WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtvalue211Abonado'), 'A00243A')
-
 WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkEjecutar'))
-
 WebUI.maximizeWindow()
 
 nuevoMonto = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lblMonto'))
-
 assert monto != nuevoMonto
-
-WebUI.takeScreenshot('Screenshot/Comisiones/COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -23,18 +23,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('COM.PER.ESP')
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDrilldown'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBOLSIN.00010156010'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnEditar'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 Fecha = WebUI.getText(findTestObject('06-Comisiones/COM.PER.ESP/txtFechaHasta'))
 
@@ -53,44 +50,32 @@ if (Fecha != null) {
 }
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
-    GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,7), findTestData('MainData/Users').getValue(2,7))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('COM.PER.ESP')
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDrilldown'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBOLSIN.00010156010'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnModificar'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnAutorizarRegistro'))
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.closeBrowser()
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00274, 
-    GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('COM.PER.ESP')
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDrilldown'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBOLSIN.00010156010'))
-
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnModificar'))
-
 WebUI.maximizeWindow()
-
-WebUI.takeScreenshot('Screenshot/Comisiones/COM05-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta contiene comisión por monto. Modificación fecha IGUAL a NULL.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 
