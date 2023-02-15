@@ -44,7 +44,7 @@ WebUI.takeScreenshot('Screenshot/Tranferencias Internas/TI02-Transferencias Inte
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/'+ 'TI02' +'.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

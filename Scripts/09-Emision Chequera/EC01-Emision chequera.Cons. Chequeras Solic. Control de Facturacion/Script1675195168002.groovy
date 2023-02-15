@@ -19,12 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Config
-def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -58,7 +52,7 @@ WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision chequera.Cons. Chequer
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/APT01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

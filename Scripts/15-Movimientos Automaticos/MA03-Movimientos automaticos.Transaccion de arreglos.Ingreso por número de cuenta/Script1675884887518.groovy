@@ -50,8 +50,14 @@ if (Cabecera == true) {
     WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error-MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
 }
 
-@com.kms.katalon.core.annotation.TearDownIfPassed
-void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
