@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CHR06-CHEQUES RECHAZADOS. Proceso de Generación de información a Movs. Rechazados. Multa NO cobrada. Fecha de rechazo IGUAL a Fecha de proceso</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>20a6f8af-72e7-42e0-a53b-866d6e3693fd</testCaseGuid>
-</TestCaseEntity>

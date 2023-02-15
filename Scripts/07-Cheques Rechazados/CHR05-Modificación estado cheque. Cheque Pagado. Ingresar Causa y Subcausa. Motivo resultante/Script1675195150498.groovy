@@ -18,9 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /*ANTES DE CORRER ESTE SCRIPT SE DEBERÁ CAMBIAR EL ESTADO DEL CHEQUE A "PAGADO"*/
+
+////Config
+//LocalDateTime now = LocalDateTime.now()
+//DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+//String nowString = formatter.format(now)
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00474, 
-    GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,7), findTestData('MainData/Users').getValue(2,7))
+WebUI.maximizeWindow()
+
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.CQ.CHEQUES')
 
