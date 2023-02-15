@@ -42,6 +42,7 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
+WebUI.takeScreenshot('Screenshot/Tranferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

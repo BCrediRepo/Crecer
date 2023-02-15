@@ -18,13 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //Config
-def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
+LocalDateTime now = LocalDateTime.now()
+DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
+String nowString = formatter.format(now)
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vUser, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
+WebUI.maximizeWindow()
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),vWindowTitle)
-
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana de Cierre de Cuenta
@@ -38,6 +44,7 @@ WebUI.click(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/bt
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/lblCuentasCandidatasCerradas'))
 
+WebUI.takeScreenshot('Screenshot/Cierre de Cuentas/CDC01-Cuentas activa con cant de cheques rechazados' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

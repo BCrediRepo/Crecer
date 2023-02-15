@@ -43,6 +43,7 @@ WebUI.maximizeWindow()
 //Se valida la existencia de objetos en BCCL.E.CONS.TINT.ALTAS
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'),3)
+WebUI.takeScreenshot('Screenshot/Transferencias Internas/TI01-Transferencias Internas.Consulta de Altas Transf. Sucursal Origen.Ingresar criterio válido para el que haya registros' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

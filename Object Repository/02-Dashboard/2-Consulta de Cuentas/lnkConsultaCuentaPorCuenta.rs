@@ -6,12 +6,11 @@
    <elementGuidId>fd884f7c-ba91-46b5-9e5f-29a78467ac02</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.VER.CUENTA.AMBI');processMenuHeaderText('Consulta de Cuentas por Cuenta')&quot;]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.VER.CUENTA.AMBI');processMenuHeaderText('Consulta de Cuentas por Cuenta')&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
