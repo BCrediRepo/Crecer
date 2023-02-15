@@ -25,22 +25,24 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu Administracion de piezas
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CQ.CONS.ANUL')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana de busqueda de consulta de pedidos
 WebUI.switchToWindowTitle('Consulta de Pedidos')
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblConsulta de Pedidos'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblConsulta de Pedidos'), 6)
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
 WebUI.maximizeWindow()
-//WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision Chequera.Invocación del ENQ BCCL.CQ.CONS.ANUL con datos válidos para generar autorizaciones' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

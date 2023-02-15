@@ -25,6 +25,7 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu Administracion de piezas
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
@@ -35,6 +36,7 @@ WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), 6)
 WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), '02')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblImprentaTitulo'), 30)
@@ -43,7 +45,6 @@ WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.
 
 //Switch a la ventana de tipo de chequera
 WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.TIPO')
-
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'))
 

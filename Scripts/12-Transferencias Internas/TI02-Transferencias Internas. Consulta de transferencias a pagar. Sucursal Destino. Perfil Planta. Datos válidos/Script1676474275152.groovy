@@ -26,6 +26,7 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menú BCCL.E.TINTERNAS.APAGAR
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('ENQ ' + findTestData('Modulos/Modulos').getValue(4,18)))
@@ -33,12 +34,12 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.waitForPageLoad(3)
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,18))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se clickea en Ejecutar y se valida la existencia de campos principales
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
-WebUI.takeScreenshot('Screenshot/Tranferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
