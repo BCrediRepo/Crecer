@@ -45,10 +45,12 @@ assert comprobacion != null
 
 WebUI.takeScreenshot('Screenshot/COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
 
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM02-Comisiones/ConsultaBonificacionesPorSucursal.png')
-
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

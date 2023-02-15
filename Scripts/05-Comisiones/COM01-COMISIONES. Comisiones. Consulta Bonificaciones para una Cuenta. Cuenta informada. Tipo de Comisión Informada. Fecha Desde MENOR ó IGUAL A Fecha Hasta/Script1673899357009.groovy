@@ -64,14 +64,15 @@ WebUI.verifyElementAttributeValue(findTestObject('06-Comisiones/Comision por cue
 WebUI.takeScreenshot('Screenshot/Comisiones/COM01-ConsultaBonificacionesPorCuenta.png' //Control de fin de script
     )
 
-
+//---------------------------------------------------------------------------------------------------------------------
+	
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Error-COM01-ConsultaBonificacionesPorCuenta.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
+	
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

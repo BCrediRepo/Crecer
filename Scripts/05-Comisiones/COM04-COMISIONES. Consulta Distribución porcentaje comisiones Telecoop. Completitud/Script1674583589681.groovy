@@ -56,14 +56,16 @@ WebUI.maximizeWindow()
 
 WebUI.takeScreenshot('Screenshot/Comisiones/COM04-COMISIONES. Consulta Distribución porcentaje comisiones Telecoop. Completitud.png')
 
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Comisiones/Error-COM04-COMISIONES. Consulta Distribución porcentaje comisiones Telecoop. Completitud.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
 

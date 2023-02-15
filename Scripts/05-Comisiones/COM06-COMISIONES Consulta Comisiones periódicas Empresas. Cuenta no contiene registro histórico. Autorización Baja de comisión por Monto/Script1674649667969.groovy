@@ -72,8 +72,15 @@ if (trx == true) {
     WebUI.takeScreenshot('Screenshot/Fails/Comisiones/COM06-COMISIONES.Comisiones. Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. Autorización Baja de comisión por Monto.png')
 }
 
-@com.kms.katalon.core.annotation.TearDownIfPassed
-void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}

@@ -92,13 +92,15 @@ WebUI.maximizeWindow()
 
 WebUI.takeScreenshot('Screenshot/Comisiones/COM05-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta contiene comisión por monto. Modificación fecha IGUAL a NULL.png')
 
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Comisiones/Error-COM05-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta contiene comisión por monto. Modificación fecha IGUAL a NULL.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

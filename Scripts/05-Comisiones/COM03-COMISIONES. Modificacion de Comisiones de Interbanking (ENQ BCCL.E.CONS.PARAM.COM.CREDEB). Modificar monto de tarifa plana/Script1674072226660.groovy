@@ -111,13 +111,16 @@ assert monto != nuevoMonto
 
 WebUI.takeScreenshot('Screenshot/Comisiones/COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana.png')
 
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/Comisiones/Error-COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 
