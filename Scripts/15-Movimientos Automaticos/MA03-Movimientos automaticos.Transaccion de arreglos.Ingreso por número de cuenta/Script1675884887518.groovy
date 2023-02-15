@@ -23,31 +23,26 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,11), findTestData('MainData/Users').getValue(2,11))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
-
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkNuevaSeleccion'))
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkEjecutar'))
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/btnLupita'))
-
 WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/txtNroCuenta_value411'), '10430047640')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 Cabecera = WebUI.getText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lblMovimientosrechazaninforme'))
-
 if (Cabecera == true) {
     WebUI.maximizeWindow()
-
-    WebUI.takeScreenshot('Screenshot/Movimientos Automaticos/MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
-} else {
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+	} else {
     WebUI.maximizeWindow()
-
-    WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error-MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta.png')
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 }
 
 //---------------------------------------------------------------------------------------------------------------------

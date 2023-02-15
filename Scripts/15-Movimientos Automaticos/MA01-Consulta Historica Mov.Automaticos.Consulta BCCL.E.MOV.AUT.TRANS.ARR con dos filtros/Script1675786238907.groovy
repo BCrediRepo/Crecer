@@ -23,37 +23,31 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,11), findTestData('MainData/Users').getValue(2,11))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
-
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkConsultaMovimientosHistoricos'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.HIST')
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkNueva Seleccion'))
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkEjecutar'))
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnNuevaBusqueda'))
-
 WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/txtNroCta_value111'), '10430040953')
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkEjecutar'))
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnVista'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('Mov-Automaticos Data')
-
 trx = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/Mov-Automaticos Data/lblOperacion'))
 
 if (trx == true) {
     WebUI.maximizeWindow()
-
-    WebUI.takeScreenshot('Screenshot/Movimientos Automaticos/MA01-Consulta Historica Mov.Automaticos.Consulta BCCL.E.MOV.AUT.TRANS.ARR con dos filtros.png')
-}else {
+    CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+	}
+else {
 	WebUI.maximizeWindow()
-	
-		WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error - MA01-Consulta Historica Mov.Automaticos.Consulta BCCL.E.MOV.AUT.TRANS.ARR con dos filtros.png')
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 }
 
 //---------------------------------------------------------------------------------------------------------------------

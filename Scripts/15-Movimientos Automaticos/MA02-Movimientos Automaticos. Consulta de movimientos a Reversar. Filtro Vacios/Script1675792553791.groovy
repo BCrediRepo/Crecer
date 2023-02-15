@@ -23,27 +23,25 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,11), findTestData('MainData/Users').getValue(2,11))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.MOV.AUT.TRANS.REVM')
-
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.REVM')
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkNuevaSeleccion'))
-
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkEjecutar'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 label = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lblMovimientosrechazaninforme'))
 
 if (label == true) {
 	WebUI.maximizeWindow()
-
-	WebUI.takeScreenshot('Screenshot/Movimientos Automaticos/MA02-Movimientos Automaticos. Consulta de movimientos a Reversar. Filtro Vacios.png')
-}else {
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+	}else {
 	WebUI.maximizeWindow()
-	
-		WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error - MA02-Movimientos Automaticos. Consulta de movimientos a Reversar. Filtro Vacios.png')
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 }
 
 //---------------------------------------------------------------------------------------------------------------------
