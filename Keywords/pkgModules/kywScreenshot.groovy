@@ -19,6 +19,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 import java.text.SimpleDateFormat
 import com.kms.katalon.core.configuration.RunConfiguration
+import pkgModules.kywGeneric
+import org.openqa.selenium.Keys as Keys
 
 public class kywScreenshot {
 
@@ -28,33 +30,14 @@ public class kywScreenshot {
 	 *getTestCaseName: obtengo el nombre del caso actual, definido por las 4 caracteres inciales. 	*
 	 *getTimeNow: obtener fecha actual.																*
 	 *----------------------------------------------------------------------------------------------*/
-
-	@Keyword
-	def getTestCaseName() {
-		String testCaseName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
-		testCaseName = testCaseName.substring(0,4)
-		return testCaseName
-	}
-
-	@Keyword
-	def getFolderName() {
-		String folderName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
-		return folderName
-	}
-
-	@Keyword
-	def getTimeNow() {
-		Date date = new Date()
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss")
-		String currentDate = dateFormat.format(date)
-		return currentDate
-	}
-
+	
+	def kywG = new pkgModules.kywGeneric()
+	
 	@Keyword
 	def takeScreenshotInScript(){
-		def testCaseName = getTestCaseName()
-		def date = getTimeNow()
-		def folderName = getFolderName()
+		def testCaseName = kywG.getTestCaseName()
+		def date = kywG.getTimeNow()
+		def folderName = kywG.getFolderName()
 		WebUI.delay(3)
 		WebUI.takeScreenshot('Screenshot/'+ folderName +'/'+testCaseName+'/'+ testCaseName + '-' + date +'.png')
 	}
