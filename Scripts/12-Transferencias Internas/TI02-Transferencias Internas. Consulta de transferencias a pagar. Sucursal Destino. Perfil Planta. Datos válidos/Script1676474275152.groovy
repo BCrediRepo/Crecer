@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,21 +27,20 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
-//Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/13-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
-
-//Se espera la carga de BCCL.E.CONS.TINT.ALTAS
-WebUI.switchToWindowIndex(1)
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS'), 5)
+//Se accede al menú BCCL.E.TINTERNAS.APAGAR
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('ENQ ' + findTestData('Modulos/Modulos').getValue(4,18)))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.waitForPageLoad(3)
+WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,18))
 WebUI.maximizeWindow()
 
-//Se valida la existencia de objetos en BCCL.E.CONS.TINT.ALTAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante5'),3)
+//Se clickea en Ejecutar y se valida la existencia de campos principales
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
+WebUI.takeScreenshot('Screenshot/Tranferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

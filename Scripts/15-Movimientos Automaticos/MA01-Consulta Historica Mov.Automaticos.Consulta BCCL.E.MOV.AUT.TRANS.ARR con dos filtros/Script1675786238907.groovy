@@ -56,9 +56,14 @@ if (trx == true) {
 		WebUI.takeScreenshot('Screenshot/Fails/Movimientos Automaticos/Error - MA01-Consulta Historica Mov.Automaticos.Consulta BCCL.E.MOV.AUT.TRANS.ARR con dos filtros.png')
 }
 
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

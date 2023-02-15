@@ -78,6 +78,7 @@ public class kywGeneric {
 		return testCaseName
 	}
 
+	@Keyword
 	def getFolderName() {
 		String folderName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
 		return folderName
@@ -103,11 +104,14 @@ public class kywGeneric {
 
 	@Keyword
 	def fPassStatus(){
-		//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
-		//WebUI.delay(3)
+		def testCaseName = getTestCaseName()
+		def date = getTimeNow()
+		def folderName = getFolderName()
+		WebUI.takeScreenshot('Screenshot/'+ folderName +'/'+testCaseName+'/'+'finalStep'+ testCaseName + '-' + date +'.png')
+		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
 	//--------------------------------------------------------------------------------------------
 
-
+	
 }
