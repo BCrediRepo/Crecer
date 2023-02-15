@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -41,7 +40,7 @@ WebUI.click(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CON
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
 WebUI.maximizeWindow()
-WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision Chequera.Invocación del ENQ BCCL.CQ.CONS.ANUL con datos válidos para generar autorizaciones' + nowString + '.png')
+//WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision Chequera.Invocación del ENQ BCCL.CQ.CONS.ANUL con datos válidos para generar autorizaciones' + nowString + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

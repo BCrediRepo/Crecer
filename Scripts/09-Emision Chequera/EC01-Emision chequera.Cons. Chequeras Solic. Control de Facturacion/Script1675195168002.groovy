@@ -38,7 +38,7 @@ WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CH
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblImprentaTitulo'), 30)
-WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision chequera.Cons. Chequeras Solic. Control de Facturacion' + nowString + '01' + '.png')
+//WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision chequera.Cons. Chequeras Solic. Control de Facturacion' + nowString + '01' + '.png')
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lnkVerSolicitudes'))
 
 //Switch a la ventana de tipo de chequera
@@ -46,7 +46,7 @@ WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.TIPO')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'), 6)
-WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision chequera.Cons. Chequeras Solic. Control de Facturacion' + nowString + '02' + '.png')
+//WebUI.takeScreenshot('Screenshot/Emision Chequera/Emision chequera.Cons. Chequeras Solic. Control de Facturacion' + nowString + '02' + '.png')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
