@@ -74,14 +74,21 @@ public class kywGeneric {
 	@Keyword
 	def getTestCaseName() {
 		String testCaseName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
-		testCaseName = testCaseName.substring(0,4)
+		int indiceEspacio = testCaseName.indexOf(".");
+		testCaseName = testCaseName.substring(0,indiceEspacio)
 		return testCaseName
 	}
 
 	@Keyword
-	def getFolderName() {
-		String folderName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
-		return folderName
+	def getFolderCaseName() {
+		String folderCaseName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
+		return folderCaseName
+	}
+	
+	@Keyword
+	def getFolderMainName() {
+		String folderMainName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getParentFile().getName();
+		return folderMainName
 	}
 
 	@Keyword
@@ -96,8 +103,9 @@ public class kywGeneric {
 	def fFailStatus(){
 		def testCaseName = getTestCaseName()
 		def date = getTimeNow()
-		def folderName = getFolderName()
-		WebUI.takeScreenshot('Screenshot/Fails/'+ folderName +'/'+ testCaseName + '-' + date +'.png')
+		def folderCaseName = getFolderCaseName()
+		def folderMainName = getFolderMainName()
+		WebUI.takeScreenshot('Screenshot/Fails/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+testCaseName+'-'+date+'.png')
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
@@ -106,8 +114,9 @@ public class kywGeneric {
 	def fPassStatus(){
 		def testCaseName = getTestCaseName()
 		def date = getTimeNow()
-		def folderName = getFolderName()
-		WebUI.takeScreenshot('Screenshot/'+ folderName +'/'+testCaseName+'/'+'finalStep'+ testCaseName + '-' + date +'.png')
+		def folderCaseName = getFolderCaseName()
+		def folderMainName = getFolderMainName()
+		WebUI.takeScreenshot('Screenshot/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+'finalStep'+testCaseName+'-'+date+'.png')
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
