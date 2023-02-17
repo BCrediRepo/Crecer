@@ -53,9 +53,18 @@ public class kywGeneric {
 	 *----------------------------------------------------------------------------------------------*/
 	
 	@Keyword
-	def Login(User, Password, ServerIP, ServerTest) {
+	def LoginConEnvironment(User, Password) {
 		//--- Ingreso de credenciales ---
-		ConfigEnvironment(ServerIP, SeverTest)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
+		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
+		WebUI.delay(3)
+	}
+	
+	@Keyword
+	def LoginConEnvironment(User, Password, ServerIP, ServerTest) {
+		//--- Ingreso de credenciales ---
+		ConfigEnvironment(ServerIP, ServerTest)
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
