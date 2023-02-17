@@ -26,6 +26,7 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 //Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/13-Transferencias Internas/lnkConsultadeAltasTransfInternas'))

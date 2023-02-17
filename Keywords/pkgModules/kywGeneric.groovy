@@ -51,17 +51,33 @@ public class kywGeneric {
 	 *User																					*
 	 *Password																		*
 	 *----------------------------------------------------------------------------------------------*/
-
+	
 	@Keyword
-	def Login(User, Password) {
+	def Login(User, Password, ServerIP, ServerTest) {
+		//--- Ingreso de credenciales ---
+		ConfigEnvironment(ServerIP, SeverTest)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
+		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
+		WebUI.delay(3)
+	}
+	
+	@Keyword
+	def LoginValidacionCommandLine(User, Password) {
 		//--- Ingreso de credenciales ---
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
-
-		//--- Validación del acceso ---
-		//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkMenuAutorizacionesModulos'))
-		//WebUI.delay(2)
+		WebUI.delay(3)
+		
+		if (WebUI.verifyElementNotPresent(findTestObject('Object Repository/00-Command Line/inputCommandLine'),3)) {
+			//WebUI.closeBrowser()
+			def kywHCL = new pkgModules.kywHabilitarCL()
+			kywHCL.HabilitarCL(User)
+			}else {
+			println "Command Line habilitado."
+		}
+		
 	}
 
 	/*----------------------------------------------------------------------------------------------*
@@ -84,7 +100,7 @@ public class kywGeneric {
 		String folderCaseName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
 		return folderCaseName
 	}
-	
+
 	@Keyword
 	def getFolderMainName() {
 		String folderMainName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getParentFile().getName();
