@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkPlazoFijo</name>
+   <name>lnkPases</name>
    <tag></tag>
-   <elementGuidId>971a6dea-eccc-4c51-89c6-a7d7a37d1729</elementGuidId>
+   <elementGuidId>65de4d55-2a11-466f-b2c4-0125a993fb63</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[3]/ul[13]/li/span</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[119]</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -25,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>df5dc9ed-7df1-4787-8e28-d74242ca6be6</webElementGuid>
+      <webElementGuid>f9b860f9-f0be-4b9c-bc81-56e5a5cdaade</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,102 +30,102 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>96a2ca89-df10-480f-97f9-525084266ce9</webElementGuid>
+      <webElementGuid>ab3098da-b403-4c1c-b8a5-aecc6c59d194</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeypress</name>
+      <type>Main</type>
+      <value>ProcessKeyPress(event)</value>
+      <webElementGuid>81af3e97-ea23-4531-917d-936129891ca9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Plazo Fijo</value>
-      <webElementGuid>2a4ab961-2e73-4b6a-802d-ac52849d92d8</webElementGuid>
+      <value>Pases</value>
+      <webElementGuid>9b05c966-9d10-4e9e-80db-0b4cc85123f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>32031b2f-972c-439c-b6f2-927a36e56477</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>da453cb1-7125-4ec1-876a-bce132a3721c</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>918b5a16-568a-413c-8c46-dd4f8c4e6e8a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[27]</value>
-      <webElementGuid>ef2f5d7f-a472-4136-b03d-6a1963739aa5</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[119]</value>
+      <webElementGuid>60133931-88c6-439b-aa27-ba25d24cd792</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[4]/li/span</value>
-      <webElementGuid>85d1b5fb-3fd9-4ac9-88f2-5f28277d7d55</webElementGuid>
+      <value>//div[@id='pane_']/ul[36]/li/ul/li[6]/span</value>
+      <webElementGuid>282cae90-48e7-4f15-8c55-9f53be7be55b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Limites TD por Clase'])[1]/following::span[1]</value>
-      <webElementGuid>e08db163-a770-44c8-9274-40ccd124a4f8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion Formulas de Certificacion'])[2]/following::span[1]</value>
+      <webElementGuid>1714458d-3e05-4a7d-9db0-85d0f06a5f23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Aviso Viaje CABAL Debito/Credito'])[1]/following::span[1]</value>
-      <webElementGuid>93780b41-cb39-4023-beaa-48df46395c56</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cons/Elim Operaciones de Caja y Remesas'])[1]/following::span[1]</value>
+      <webElementGuid>8880ed9b-0584-429d-9fbd-ef449634c61d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>52866919-c726-437e-bf7c-a109691a37bb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Solicitud de Pase Entre Cajas'])[1]/preceding::span[1]</value>
+      <webElementGuid>cb3d1c20-7f31-461a-bfa6-98a01234c3dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Plazo Fijo Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>7621311a-c666-4f30-b85c-302527932ec1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pase de Tesoro a Caja'])[1]/preceding::span[1]</value>
+      <webElementGuid>232ac025-8fb4-4c2f-907c-d83955a1ca40</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Plazo Fijo']/parent::*</value>
-      <webElementGuid>dab66465-0090-4d29-9829-85436db08c6e</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Pases']/parent::*</value>
+      <webElementGuid>47d69824-49c5-4000-9fe2-fc9b59a657d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[4]/li/span</value>
-      <webElementGuid>58efe5a8-9a36-49c0-90a7-46e4c6827f50</webElementGuid>
+      <value>//ul[36]/li/ul/li[6]/span</value>
+      <webElementGuid>24709e32-bd83-462c-a7e6-0d74230b98de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Plazo Fijo' or . = 'Plazo Fijo')]</value>
-      <webElementGuid>4d3fbea9-9899-45b8-b219-5778a9aade6c</webElementGuid>
+      <value>//span[(text() = 'Pases' or . = 'Pases')]</value>
+      <webElementGuid>24a70f01-3e4d-49f8-b6bc-9ecbf5181d98</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

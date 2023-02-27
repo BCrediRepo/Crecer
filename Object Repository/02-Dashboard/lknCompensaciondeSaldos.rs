@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkPlazoFijo</name>
+   <name>lknCompensaciondeSaldos</name>
    <tag></tag>
-   <elementGuidId>971a6dea-eccc-4c51-89c6-a7d7a37d1729</elementGuidId>
+   <elementGuidId>66323da3-9286-49d1-b572-5f63fa60b7cf</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>/html/body/div[3]/ul[13]/li/span</value>
+         <value>/html/body/div[3]/ul[29]/li/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>//*[@ref_element = 'Object Repository/02-Dashboard/frmDashboardMainMenu']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -25,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>df5dc9ed-7df1-4787-8e28-d74242ca6be6</webElementGuid>
+      <webElementGuid>e13b74d9-8cd5-419f-9992-10057016065a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,23 +34,31 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>96a2ca89-df10-480f-97f9-525084266ce9</webElementGuid>
+      <webElementGuid>5591d9e9-8dc3-45db-923b-2d1070986f9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeypress</name>
+      <type>Main</type>
+      <value>ProcessKeyPress(event)</value>
+      <webElementGuid>9ecf9810-cd06-4226-9205-a9e956e19914</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Plazo Fijo</value>
-      <webElementGuid>2a4ab961-2e73-4b6a-802d-ac52849d92d8</webElementGuid>
+      <value>Compensacion de Saldos</value>
+      <webElementGuid>6f98a063-8b1e-4d64-8543-e03fd0e35768</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>32031b2f-972c-439c-b6f2-927a36e56477</webElementGuid>
+      <webElementGuid>13102853-de1b-483e-aa01-236affe50f76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,78 +66,78 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>da453cb1-7125-4ec1-876a-bce132a3721c</webElementGuid>
+      <webElementGuid>ef21d7b5-3246-49b2-beac-b1de0fbcad37</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[27]</value>
-      <webElementGuid>ef2f5d7f-a472-4136-b03d-6a1963739aa5</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[100]</value>
+      <webElementGuid>4c39d84a-65ef-4b96-8c44-d8f7ce96249c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[4]/li/span</value>
-      <webElementGuid>85d1b5fb-3fd9-4ac9-88f2-5f28277d7d55</webElementGuid>
+      <value>//div[@id='pane_']/ul[29]/li/span</value>
+      <webElementGuid>eca07ec2-ab91-4631-ac62-5176449242af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Limites TD por Clase'])[1]/following::span[1]</value>
-      <webElementGuid>e08db163-a770-44c8-9274-40ccd124a4f8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Devolucion de Impuestos en Cuenta Contable'])[1]/following::span[1]</value>
+      <webElementGuid>7081e146-4061-490b-8d14-6d0b119dea1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Aviso Viaje CABAL Debito/Credito'])[1]/following::span[1]</value>
-      <webElementGuid>93780b41-cb39-4023-beaa-48df46395c56</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro de Impuestos en Cuenta Contable'])[1]/following::span[1]</value>
+      <webElementGuid>2ce79b31-012b-434d-a090-1064ddf8b37c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>52866919-c726-437e-bf7c-a109691a37bb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Relaciones de Cuenta Espejo'])[1]/preceding::span[1]</value>
+      <webElementGuid>1fd731bc-3583-4e0f-8b9f-50449c811ff8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Plazo Fijo Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>7621311a-c666-4f30-b85c-302527932ec1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Relaciones'])[1]/preceding::span[2]</value>
+      <webElementGuid>9993fdc9-6b96-4c0a-b8f7-4743510c19c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Plazo Fijo']/parent::*</value>
-      <webElementGuid>dab66465-0090-4d29-9829-85436db08c6e</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Compensacion de Saldos']/parent::*</value>
+      <webElementGuid>4d66adb4-bda9-4510-8e9c-1ce543360111</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[4]/li/span</value>
-      <webElementGuid>58efe5a8-9a36-49c0-90a7-46e4c6827f50</webElementGuid>
+      <value>//ul[29]/li/span</value>
+      <webElementGuid>b3f91c99-c6f4-4916-b8b5-604ce99fa81c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Plazo Fijo' or . = 'Plazo Fijo')]</value>
-      <webElementGuid>4d3fbea9-9899-45b8-b219-5778a9aade6c</webElementGuid>
+      <value>//span[(text() = 'Compensacion de Saldos' or . = 'Compensacion de Saldos')]</value>
+      <webElementGuid>22fa2caf-a49d-4436-98b9-9c83d659c0d1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
