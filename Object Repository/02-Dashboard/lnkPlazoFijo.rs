@@ -6,16 +6,15 @@
    <elementGuidId>971a6dea-eccc-4c51-89c6-a7d7a37d1729</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[27]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu']) = count(//*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu'])]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Plazo Fijo' or . = 'Plazo Fijo') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>dac40ebd-d6bb-4e53-a081-d630cc170763</webElementGuid>
+      <webElementGuid>7e09f820-8f97-47af-8126-0d5e70a5e116</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>4e8f0595-0072-455d-b482-88e5906a23d8</webElementGuid>
+      <webElementGuid>46b23138-4a69-4810-a7aa-059eb1f7268f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +41,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Plazo Fijo</value>
-      <webElementGuid>b04d466a-f333-4a37-ba8c-cd439489b7bf</webElementGuid>
+      <webElementGuid>384d2e75-5f30-4cd8-bff9-b642b5a7b636</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>30be1910-d202-4bc4-b1e6-a208df538f8e</webElementGuid>
+      <webElementGuid>96fd769f-ac96-4fff-9e8a-8a74568c8efb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +57,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>de264923-b05e-42da-b9d1-a4e5b4c2eabb</webElementGuid>
+      <webElementGuid>c65c61e8-d326-46c3-b21d-024c0a6ac80a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +65,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[27]</value>
-      <webElementGuid>7d88fe5e-46c7-4e6f-8724-5bff6b223fa6</webElementGuid>
+      <webElementGuid>6461823c-c054-4010-9443-64d62cc367e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/span</value>
-      <webElementGuid>23098c59-04dc-4404-8426-26ebdc5a3f19</webElementGuid>
+      <webElementGuid>c919a195-8f09-4787-97ec-7b426a65c9ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Limites TD por Clase'])[1]/following::span[1]</value>
-      <webElementGuid>2a0c50e9-8b55-435f-bd16-f316267fe43a</webElementGuid>
+      <webElementGuid>98387bcc-a8a1-40ba-86fc-4944e99adc3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Aviso Viaje CABAL Debito/Credito'])[1]/following::span[1]</value>
-      <webElementGuid>6de49e9b-962e-4bab-b9b5-d7b42c5a3875</webElementGuid>
+      <webElementGuid>b107c030-f227-444e-94f8-a261e7f8a61f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>553bedeb-f592-4cb5-be4a-7935c514758f</webElementGuid>
+      <webElementGuid>6c6e1bb8-b82e-4f11-85cc-3931c9aeee65</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Plazo Fijo Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>ab778b77-f808-458c-8765-39ff6c74aab9</webElementGuid>
+      <webElementGuid>2bb91422-21f0-4471-b72e-c13ae38c3640</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Plazo Fijo']/parent::*</value>
-      <webElementGuid>7814f9ef-350c-49f4-a4ab-fee7c39696cd</webElementGuid>
+      <webElementGuid>fd985b16-84f6-400e-bdf1-41badbd447ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +121,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[4]/li/span</value>
-      <webElementGuid>666155c8-e7bc-4844-9573-aa8c48d3374b</webElementGuid>
+      <webElementGuid>1e8d265f-ebf2-4a07-b7ec-1c4ebba1652f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,6 +129,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Plazo Fijo' or . = 'Plazo Fijo')]</value>
-      <webElementGuid>1de7b997-847f-4f2e-b124-b1874cf63582</webElementGuid>
+      <webElementGuid>486b6513-b742-49d3-bfad-281290cf63eb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

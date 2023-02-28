@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsulta de Pedidos</name>
+   <tag></tag>
+   <elementGuidId>0770baa2-4002-4f97-9a1c-545a02e985ea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLCQCONSANUL</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>996ce227-11ea-497c-82e7-41e3bb0d34d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLCQCONSANUL</value>
+      <webElementGuid>69e02c4f-a44a-473d-bf4e-f921c5a81211</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta de Pedidos</value>
+      <webElementGuid>e28cd6b6-461f-40c9-bc09-18e7fbcac3ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLCQCONSANUL&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLCQCONSANUL enqsel-selections enqsel-selections_BCCLCQCONSANUL&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLCQCONSANUL&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLCQCONSANUL&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLCQCONSANUL&quot;]</value>
+      <webElementGuid>416e851d-37fe-4b3d-8489-81becfdc9a4e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>2b5d51f5-09ae-40f6-ba33-2d1fa12ce962</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLCQCONSANUL</value>
+      <webElementGuid>554f282c-76ba-4526-aa97-cb3352e606a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta de Pedidos</value>
+      <webElementGuid>74309424-a2c4-402f-add0-b1cda6e05e5f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLCQCONSANUL&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLCQCONSANUL enqsel-selections enqsel-selections_BCCLCQCONSANUL&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLCQCONSANUL&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLCQCONSANUL&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLCQCONSANUL&quot;]</value>
+      <webElementGuid>7affaedf-26c8-4772-81f5-d8f7d99e941a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>70db238f-6d2c-4fc7-92a4-4447586c5bbc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::td[5]</value>
+      <webElementGuid>afa5fc83-0f82-4407-b632-03ee8f749c9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/preceding::td[2]</value>
+      <webElementGuid>8a5d9037-cedc-409e-bfb8-da1737487aad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>5ce32da9-6d0c-4a5d-b58f-da2f990c49ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>f629a65b-7a35-4e3c-af78-0f55d0c89a03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Consulta de Pedidos' or . = 'Consulta de Pedidos')]</value>
+      <webElementGuid>4ad52b68-16d2-40b3-aa74-196e83c82c36</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNumeroOperacionValidacion</name>
+   <tag></tag>
+   <elementGuidId>0c6222ba-2ef6-4643-83fb-35f2d95fe56e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLEMMENTRADASCONT</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>a00aaa76-7200-4642-bedc-ad9b6882925e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLEMMENTRADASCONT</value>
+      <webElementGuid>36dd9ca8-c1a8-4d46-a969-0a864802a503</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>11918739</value>
+      <webElementGuid>3668a3f0-481c-48a6-bb27-a11a6baab633</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[1]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEMMENTRADASCONT&quot;]</value>
+      <webElementGuid>2b5c4fc6-a8e2-47cd-9d87-d4f9c2774f26</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr/td[2]</value>
+      <webElementGuid>9a718490-059a-4766-9faf-09160861e277</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Numero Operacion:'])[1]/following::td[1]</value>
+      <webElementGuid>ebe66e60-6bc5-4424-bfc0-cc634ebe7eca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
+      <webElementGuid>55a614b1-4d6e-4ded-91ff-f030c35cdc62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID Plazo Fijo:'])[1]/preceding::td[1]</value>
+      <webElementGuid>f049dfdc-b628-409e-a64c-e28aaffbfb4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MM2214015412'])[1]/preceding::td[2]</value>
+      <webElementGuid>ebfff888-6ad4-4cdb-b802-8c5edaf26cc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='11918739']/parent::*</value>
+      <webElementGuid>639ba7fd-fbc2-4290-958a-d55f65343826</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th/table/tbody/tr/td[2]</value>
+      <webElementGuid>18d62f36-3525-4abc-a7c8-1828347c9f37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '11918739' or . = '11918739')]</value>
+      <webElementGuid>38924c36-a8b5-4cb8-a4e7-57327fb646b7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

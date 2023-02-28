@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA02-Movimientos Automaticos. Consulta de movimientos a Reversar. Filtro Vacios</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbc2f45b-85c5-4338-a406-ab0292a70c59</testCaseGuid>
+</TestCaseEntity>

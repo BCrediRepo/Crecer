@@ -16,16 +16,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
-//Config
-def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
-
-//Se accede al menu Plazo Fijo
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
+//Se accede al menu Plazo Fijo
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'), 6)
@@ -43,10 +44,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/06-Co
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblIdPlazoFijo'))
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

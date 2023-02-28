@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Plazo Fijo,Firefox 108.0,,,2023-01-17 20:01:55,2023-01-17 20:04:53,"2m - 57,461s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF01-Plazo Fijo. Imprimir Liquidacion de Plazo Fijo Ajustable por UVA,Firefox 108.0,,,2023-01-17 20:01:56,2023-01-17 20:02:20,"24,758s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF02-Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posición en línea Renovómetro,Firefox 108.0,,,2023-01-17 20:02:20,2023-01-17 20:02:35,"14,489s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF03-Plazo Fijo. Consulta de Tasas e Indice UVA. Consulta Circulares y Tasas Vigentes,Firefox 108.0,,,2023-01-17 20:02:35,2023-01-17 20:02:52,"17,536s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF04-Plazo Fijo. Consulta de Tasas e Indice UVA. Consulta Indice UVA,Firefox 108.0,,,2023-01-17 20:02:52,2023-01-17 20:03:08,"15,322s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF05-Plazo Fijo. Consulta Global Segmento 6,Firefox 108.0,,,2023-01-17 20:03:08,2023-01-17 20:03:37,"29,668s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF06-Plazo Fijo. Consulta. Consulta de Plazos Fijos Vencidos Inmovilizados pagados desde filial. Ver Pago,Firefox 108.0,,,2023-01-17 20:03:37,2023-01-17 20:04:04,"26,881s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF07-Plazo Fijo. Consultas por Firmante. Consulta Inversiones en Plazo Fijo por Socio,Firefox 108.0,,,2023-01-17 20:04:04,2023-01-17 20:04:24,"19,191s",PASSED
+,,,,,,,
+Test Cases/04-PlazoFijo/PF08-Plazo Fijo. Consultas por Plazo Fijo. Consulta de Activos,Firefox 108.0,,,2023-01-17 20:04:24,2023-01-17 20:04:52,"28,590s",PASSED

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC03-Resumen de Cuenta.Consulta OnLine.Detalle Movimientos GUV de una cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d4ff3044-7655-4279-94b3-89f71b2c957c</testCaseGuid>
+</TestCaseEntity>

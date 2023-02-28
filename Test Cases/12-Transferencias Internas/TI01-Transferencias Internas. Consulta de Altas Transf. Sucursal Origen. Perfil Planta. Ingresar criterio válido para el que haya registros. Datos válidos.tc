@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TI01-Transferencias Internas. Consulta de Altas Transf. Sucursal Origen. Perfil Planta. Ingresar criterio válido para el que haya registros. Datos válidos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>71349e21-e43b-4bea-8afb-f811f82c90ea</testCaseGuid>
+</TestCaseEntity>

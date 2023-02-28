@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM05-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta contiene comisión por monto. Modificación fecha IGUAL a NULL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3f976b4b-ec2d-4fc7-b17b-1f8142b57c0d</testCaseGuid>
+</TestCaseEntity>

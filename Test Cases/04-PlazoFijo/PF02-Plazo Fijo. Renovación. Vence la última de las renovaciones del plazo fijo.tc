@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>PF02-Plazo Fijo. Renovación. Vence la última de las renovaciones del plazo fijo</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>202e0470-00b6-4f9f-b3ba-bf5694a7a8d2</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblSucDestinoH</name>
+   <tag></tag>
+   <elementGuidId>b4bbc0c3-9be6-4045-b913-5e9195e66cc9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[3]/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>6482de94-5375-4d64-9726-23321e915d19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMPORDISSUC</value>
+      <webElementGuid>d2602a82-2807-4b4d-a869-567a21970276</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>057 - Villa Urquiza</value>
+      <webElementGuid>cdb483b0-4c36-46aa-b36e-c9ac45b9c095</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[3]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMPORDISSUC&quot;]</value>
+      <webElementGuid>fd04ee29-91c8-483c-8c51-6bfef3659879</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[3]/td[2]</value>
+      <webElementGuid>85bd1b1e-ed35-4fc8-ab2a-c233e94db257</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SUC DESTINO:'])[1]/following::td[1]</value>
+      <webElementGuid>b0e85aa4-6c45-4b31-b108-06f5ac5b79ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SUC ORIGEN:'])[1]/following::td[3]</value>
+      <webElementGuid>51e8df57-9b5d-4b11-8070-24bc4134990e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal Origen'])[1]/preceding::td[2]</value>
+      <webElementGuid>cdd1d3b1-3786-423d-b548-ceebd58a2668</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal Destino'])[1]/preceding::td[2]</value>
+      <webElementGuid>9450577c-eed2-45b4-9472-316a686ca78b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='057 - Villa Urquiza']/parent::*</value>
+      <webElementGuid>1946b217-c8cd-40d1-b6ea-f5cd56e9131c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td[2]</value>
+      <webElementGuid>00e0c0fd-4d6a-4da4-a0f8-7c546fbed5a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '057 - Villa Urquiza' or . = '057 - Villa Urquiza')]</value>
+      <webElementGuid>00343432-641d-48dd-a45a-648492713ab9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

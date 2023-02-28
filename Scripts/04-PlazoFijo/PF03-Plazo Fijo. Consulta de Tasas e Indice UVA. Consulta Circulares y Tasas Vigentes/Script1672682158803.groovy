@@ -16,29 +16,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
-//Config
-def vWindowTitle = 'ENQ '+ findTestData('Modulos/Modulos').getValue(4,2)
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
-
-//Se accede al menu Plazo Fijo
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
+//Se accede al menu Plazo Fijo
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
-
-//WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkImpresiondeCertificadosyFormularios'), 3)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkImpresiondeCertificadosyFormularios'))
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/01-Impresion de Certificados y Formularios/lnkLiquidaciondePlazoFijoAjustable'))
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'), 3)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultadeTasaseIndices'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/01-Consulta de Tasas e Indices/lnkConsultaCircularesyTasasVigentes'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,5))
 
-WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/a_Ejecutar'))
+WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lnkEjecutar'))
 //cambio a frame Consulta Circulares Vigentes
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblCircular'))
 WebUI.maximizeWindow()
@@ -48,15 +44,14 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCirculares
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,6))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblConsultaTasasPlazoFijo'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblConsultaTasasPlazoFijo'))
-//realizo captura de las tasas consultadas
-
 
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
