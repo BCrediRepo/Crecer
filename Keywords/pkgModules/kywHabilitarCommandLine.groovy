@@ -19,20 +19,43 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class kywHabilitarCL {
+public class kywHabilitarCommandLine {
 
 	def kywG = new pkgModules.kywGeneric()
 	def kywS = new pkgModules.kywScreenshot()
-	def kywCL = new pkgModules.kywUserForCommandLine()
+	
+	@Keyword
+	def procesarUsuario(String usuario) {
+		// Verificar el usuario es nulo o tiene menos de dos caractes
+		if (usuario == null || usuario.length() < 2) {
+			usuario = "Usuario no valido";
+		} else {
+			char segundoCaracter = usuario.charAt(1);
+			// Verificar si el segundo caracter es una letra
+			if (Character.isLetter(segundoCaracter)) {
+				usuario = usuario;
+			} else if (Character.isDigit(segundoCaracter)) {
+				// Verificar si el usuario tiene al menos 4 caracteres
+				if (usuario.length() >= 4) {
+					usuario = usuario.substring(usuario.length() - 4);
+				} else {
+					usuario = "Usuario no valido";
+				}
+			} else {
+				usuario = "Usuario no valido";
+			}
+		}
+		return 'B.'+usuario;
+	}
 
 	@Keyword
-	def HabilitarCL(String userH) {
+	def habilitarCommandLine(String usuario) {
 		//Configuracion de ambiente
 		kywG.ConfigEnvironment(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 		//--- Ingreso de credenciales para el Login ---
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'),findTestData('MainData/Users').getValue(1,12))//GlobalVariable.vUser)
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), findTestData('MainData/Users').getValue(2,12))//GlobalVariable.vPass)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'),findTestData('MainData/Users').getValue(1,12))
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), findTestData('MainData/Users').getValue(2,12))
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
 		WebUI.delay(3)
 		WebUI.maximizeWindow()
@@ -44,10 +67,11 @@ public class kywHabilitarCL {
 
 		//Se cambia a la ventana USER PROFILE
 		WebUI.switchToWindowTitle('USER PROFILE')
-		//WebUI.maximizeWindow()
+		WebUI.delay(1)
+		WebUI.maximizeWindow()
 
 		//Se ingresa el usuario a habilitar
-		def user = kywCL.procesarUsuario(userH)
+		def user = procesarUsuario(usuario)
 		WebUI.setText(findTestObject('Object Repository/00-Command Line/inputUSER,'),(user))
 		WebUI.click(findTestObject('Object Repository/00-Command Line/btnModificarRegistro'))
 		WebUI.click(findTestObject('Object Repository/00-Command Line/USER.PROFILE/btnAgregarAtributos1'))

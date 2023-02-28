@@ -24,12 +24,14 @@ import com.kms.katalon.core.exception.StepFailedException
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.configuration.RunConfiguration
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.NoSuchElementException
 
 public class kywGeneric {
 
 	/*----------------------------------------------------------------------------------------------*
-	 *CONFIGURACION DE AMBIENTE					    																		*
-	 *Configuracion de ambiente por defecto																			*
+	 *CONFIGURACION DE AMBIENTE					    												*
+	 *Configuracion de ambiente por defecto															*
 	 *												    											*
 	 *Parametros:																					*
 	 *IP servidor																					*
@@ -42,51 +44,74 @@ public class kywGeneric {
 		def vURL = 'http://' + ServerIP + '/' + SeverTest + '/servlet/BrowserServlet'
 		WebUI.openBrowser(vURL)
 	}
+	
 	/*----------------------------------------------------------------------------------------------*
 	 *LOGIN																							*
 	 *					    																		*
 	 *Login por defecto 																			*
 	 *												    											*
-	 *Parametros:																					*
-	 *User																					*
-	 *Password																		*
+	 *Parametros Login:																				*
+	 *User																							*
+	 *Password																						*	
+	 *																								*
+	 *Parametros LoginConEnvironment:																*
+	 *User																							*
+	 *Password																						*
+	 *ServerIP																						*
+	 *ServerTest																					*
 	 *----------------------------------------------------------------------------------------------*/
-	
+
 	@Keyword
-	def LoginConEnvironment(User, Password) {
+	def Login(User, Password) {
 		//--- Ingreso de credenciales ---
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
+		WebUI.maximizeWindow()
 		WebUI.delay(3)
 	}
-	
+
 	@Keyword
 	def LoginConEnvironment(User, Password, ServerIP, ServerTest) {
 		//--- Ingreso de credenciales ---
 		ConfigEnvironment(ServerIP, ServerTest)
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
+		WebUI.maximizeWindow()
 		WebUI.delay(3)
 	}
 	
+	/*----------------------------------------------------------------------------------------------*
+	 *LOGIN VALIDACION DE COMMAND LINE			    												*
+	 *Login que verifica si existe el CommandLine, en caso de no este, ingresa con el usuario		* 
+	 *CRECEREM y habilita el CL al primer usuario.													*
+	 *												    											*
+	 *Parametros:																					*
+	 *User																							*
+	 *Password																						*
+	 *ServerIP																						*
+	 *ServerTest																					*
+	 *----------------------------------------------------------------------------------------------*/
+
 	@Keyword
-	def LoginValidacionCommandLine(User, Password) {
+	def LoginValidacionCommandLine(User, Password, ServerIP, ServerTest) {
+		def kywHabilitarCommandLine = new pkgModules.kywHabilitarCommandLine()
+		//--- Configuracion de ambiente ---
+		ConfigEnvironment(ServerIP, ServerTest)
 		//--- Ingreso de credenciales ---
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
 		WebUI.delay(3)
-		
-		if (WebUI.verifyElementNotPresent(findTestObject('Object Repository/00-Command Line/inputCommandLine'),3)) {
-			//WebUI.closeBrowser()
-			def kywHCL = new pkgModules.kywHabilitarCL()
-			kywHCL.HabilitarCL(User)
-			}else {
-			println "Command Line habilitado."
+		boolean element = WebUI.waitForElementVisible(findTestObject('Object Repository/00-Command Line/inputCommandLine'),3)
+		println(element)
+		if (element == true) {
+			println("COMMAND LINE VISIBLE")
+		}else {
+			kywHabilitarCommandLine.habilitarCommandLine(User)
+			LoginConEnvironment(User, Password, ServerIP, ServerTest)
 		}
-		
 	}
 
 	/*----------------------------------------------------------------------------------------------*

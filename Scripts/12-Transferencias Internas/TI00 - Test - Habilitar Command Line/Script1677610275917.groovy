@@ -20,8 +20,12 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 
 //Configuracion de ambiente
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+//CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.LoginValidacionCommandLine'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
+//Login F00289
+CustomKeywords.'pkgModules.kywGeneric.LoginValidacionCommandLine'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3),GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
+//Se clickea en algun despegable
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
+WebUI.closeBrowser()
