@@ -35,7 +35,7 @@ public class kywGeneric {
 	 *IP servidor																					*
 	 *Servidor de pruebas																			*
 	 *----------------------------------------------------------------------------------------------*/
-	
+
 	@Keyword
 	def ConfigEnvironment(ServerIP, SeverTest) {
 		//Configuracion de ambiente y generacion de URL.
@@ -63,26 +63,26 @@ public class kywGeneric {
 		//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkMenuAutorizacionesModulos'))
 		//WebUI.delay(2)
 	}
-	
+
 	/*----------------------------------------------------------------------------------------------*
 	 *CONTROL DE FALLAS																				*
 	 *																								*
 	 *getTestCaseName: obtengo el nombre del caso actual, definido por las 4 caracteres inciales. 	*
 	 *getTimeNow: obtener fecha actual.																*
 	 *----------------------------------------------------------------------------------------------*/
-	
+
 	@Keyword
 	def getTestCaseName() {
 		String testCaseName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
 		testCaseName = testCaseName.substring(0,4)
 		return testCaseName
 	}
-	
+
 	def getFolderName() {
 		String folderName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
 		return folderName
 	}
-	
+
 	@Keyword
 	def getTimeNow() {
 		Date date = new Date()
@@ -90,7 +90,7 @@ public class kywGeneric {
 		String currentDate = dateFormat.format(date)
 		return currentDate
 	}
-	
+
 	@Keyword
 	def fFailStatus(){
 		def testCaseName = getTestCaseName()
@@ -100,7 +100,7 @@ public class kywGeneric {
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
-	
+
 	@Keyword
 	def fPassStatus(){
 		//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
