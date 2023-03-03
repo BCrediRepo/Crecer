@@ -44,7 +44,7 @@ public class kywGeneric {
 		def vURL = 'http://' + ServerIP + '/' + SeverTest + '/servlet/BrowserServlet'
 		WebUI.openBrowser(vURL)
 	}
-	
+
 	/*----------------------------------------------------------------------------------------------*
 	 *LOGIN																							*
 	 *					    																		*
@@ -81,7 +81,7 @@ public class kywGeneric {
 		WebUI.maximizeWindow()
 		WebUI.delay(3)
 	}
-	
+
 	/*----------------------------------------------------------------------------------------------*
 	 *LOGIN VALIDACION DE COMMAND LINE			    												*
 	 *Login que verifica si existe el CommandLine, en caso de no este, ingresa con el usuario		* 
