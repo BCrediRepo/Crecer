@@ -24,12 +24,14 @@ import com.kms.katalon.core.exception.StepFailedException
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.configuration.RunConfiguration
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.NoSuchElementException
 
 public class kywGeneric {
 
 	/*----------------------------------------------------------------------------------------------*
-	 *CONFIGURACION DE AMBIENTE					    																		*
-	 *Configuracion de ambiente por defecto																			*
+	 *CONFIGURACION DE AMBIENTE					    												*
+	 *Configuracion de ambiente por defecto															*
 	 *												    											*
 	 *Parametros:																					*
 	 *IP servidor																					*
@@ -42,26 +44,74 @@ public class kywGeneric {
 		def vURL = 'http://' + ServerIP + '/' + SeverTest + '/servlet/BrowserServlet'
 		WebUI.openBrowser(vURL)
 	}
+
 	/*----------------------------------------------------------------------------------------------*
 	 *LOGIN																							*
 	 *					    																		*
 	 *Login por defecto 																			*
 	 *												    											*
-	 *Parametros:																					*
-	 *User																					*
-	 *Password																		*
+	 *Parametros Login:																				*
+	 *User																							*
+	 *Password																						*	
+	 *																								*
+	 *Parametros LoginConEnvironment:																*
+	 *User																							*
+	 *Password																						*
+	 *ServerIP																						*
+	 *ServerTest																					*
 	 *----------------------------------------------------------------------------------------------*/
 
 	@Keyword
 	def Login(User, Password) {
 		//--- Ingreso de credenciales ---
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)//GlobalVariable.vUser)
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)//GlobalVariable.vPass)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
+		WebUI.maximizeWindow()
+		WebUI.delay(3)
+	}
 
-		//--- Validación del acceso ---
-		//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkMenuAutorizacionesModulos'))
-		//WebUI.delay(2)
+	@Keyword
+	def LoginConEnvironment(User, Password, ServerIP, ServerTest) {
+		//--- Ingreso de credenciales ---
+		ConfigEnvironment(ServerIP, ServerTest)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)
+		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
+		WebUI.maximizeWindow()
+		WebUI.delay(3)
+	}
+
+	/*----------------------------------------------------------------------------------------------*
+	 *LOGIN VALIDACION DE COMMAND LINE			    												*
+	 *Login que verifica si existe el CommandLine, en caso de no este, ingresa con el usuario		* 
+	 *CRECEREM y habilita el CL al primer usuario.													*
+	 *												    											*
+	 *Parametros:																					*
+	 *User																							*
+	 *Password																						*
+	 *ServerIP																						*
+	 *ServerTest																					*
+	 *----------------------------------------------------------------------------------------------*/
+
+	@Keyword
+	def LoginValidacionCommandLine(User, Password, ServerIP, ServerTest) {
+		def kywHabilitarCommandLine = new pkgModules.kywHabilitarCommandLine()
+		//--- Configuracion de ambiente ---
+		ConfigEnvironment(ServerIP, ServerTest)
+		//--- Ingreso de credenciales ---
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'), User)
+		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)
+		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
+		WebUI.delay(3)
+		boolean element = WebUI.waitForElementVisible(findTestObject('Object Repository/00-Command Line/inputCommandLine'),3)
+		println(element)
+		if (element == true) {
+			println("COMMAND LINE VISIBLE")
+		}else {
+			kywHabilitarCommandLine.habilitarCommandLine(User)
+			LoginConEnvironment(User, Password, ServerIP, ServerTest)
+		}
 	}
 
 	/*----------------------------------------------------------------------------------------------*
@@ -74,13 +124,21 @@ public class kywGeneric {
 	@Keyword
 	def getTestCaseName() {
 		String testCaseName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
-		testCaseName = testCaseName.substring(0,4)
+		int indiceEspacio = testCaseName.indexOf(".");
+		testCaseName = testCaseName.substring(0,indiceEspacio)
 		return testCaseName
 	}
 
-	def getFolderName() {
-		String folderName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
-		return folderName
+	@Keyword
+	def getFolderCaseName() {
+		String folderCaseName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getName();
+		return folderCaseName
+	}
+
+	@Keyword
+	def getFolderMainName() {
+		String folderMainName = new File(RunConfiguration.getExecutionSource().toString()).getParentFile().getParentFile().getName();
+		return folderMainName
 	}
 
 	@Keyword
@@ -95,16 +153,21 @@ public class kywGeneric {
 	def fFailStatus(){
 		def testCaseName = getTestCaseName()
 		def date = getTimeNow()
-		def folderName = getFolderName()
-		WebUI.takeScreenshot('Screenshot/Fails/'+ folderName +'/'+ testCaseName + '-' + date +'.png')
+		def folderCaseName = getFolderCaseName()
+		def folderMainName = getFolderMainName()
+		WebUI.takeScreenshot('Screenshot/Fails/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+testCaseName+'-'+date+'.png')
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
 
 	@Keyword
 	def fPassStatus(){
-		//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
-		//WebUI.delay(3)
+		def testCaseName = getTestCaseName()
+		def date = getTimeNow()
+		def folderCaseName = getFolderCaseName()
+		def folderMainName = getFolderMainName()
+		WebUI.takeScreenshot('Screenshot/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+'finalStep'+testCaseName+'-'+date+'.png')
+		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
 	//--------------------------------------------------------------------------------------------

@@ -3,11 +3,10 @@
    <description></description>
    <name>lnkNuevaSeleccion</name>
    <tag></tag>
-   <elementGuidId>7f3c4970-d644-4014-be76-858a907227e4</elementGuidId>
+   <elementGuidId>b9753fe3-510d-4833-87ea-6a9c3eed5d5d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>56cd6ad5-89b0-46b5-aecf-b7359bb97a44</webElementGuid>
+      <webElementGuid>23294d4f-94b4-4c51-abcc-d29193293fd5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +29,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:resetForm('enqsel')</value>
-      <webElementGuid>21b07f61-a55e-434b-8349-718502228285</webElementGuid>
+      <webElementGuid>afb67657-0b68-4fda-afb8-b40bd4c107a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,15 +37,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Nueva Seleccion</value>
-      <webElementGuid>fd4ee27e-e9aa-4eb6-8a16-a660c1668de8</webElementGuid>
+      <webElementGuid>f89be430-e437-4fc4-9e81-5684f07df438</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEBRESGUV&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEBRESGUV enqsel-selections enqsel-selections_BCCLEBRESGUV&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEBRESGUV&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEBRESGUV&quot;]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/a[1]</value>
-      <webElementGuid>159d5368-c09c-43f7-b13c-7c94d8cdfcad</webElementGuid>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLERESCTAHISSALDO&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLERESCTAHISSALDO enqsel-selections enqsel-selections_BCCLERESCTAHISSALDO&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLERESCTAHISSALDO&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLERESCTAHISSALDO&quot;]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/a[1]</value>
+      <webElementGuid>31a06758-8c95-4178-8611-011a8ea089c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c10a23ac-2e0f-4c53-b20c-474e03f4a89d</webElementGuid>
+      <webElementGuid>af68db03-6d2a-41b0-a862-788f7ea2c966</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:resetForm('enqsel')</value>
-      <webElementGuid>40f9e974-ee0f-454c-9be0-ee2a7a8b0841</webElementGuid>
+      <webElementGuid>5b4b64ab-0482-44c6-ad21-8792bcb5c217</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,15 +69,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Nueva Seleccion</value>
-      <webElementGuid>9d0a5224-5966-4e47-908d-d8da24e86b56</webElementGuid>
+      <webElementGuid>db91fb6f-ec92-41cc-8799-b3e5e979f0cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEBRESGUV&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEBRESGUV enqsel-selections enqsel-selections_BCCLEBRESGUV&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEBRESGUV&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEBRESGUV&quot;]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/a[1]</value>
-      <webElementGuid>6cca6543-68c8-4bfb-9485-9b2583ac29bd</webElementGuid>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLERESCTAHISSALDO&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLERESCTAHISSALDO enqsel-selections enqsel-selections_BCCLERESCTAHISSALDO&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLERESCTAHISSALDO&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLERESCTAHISSALDO&quot;]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/a[1]</value>
+      <webElementGuid>62fae633-78f3-4fcd-a398-d5b4d249ead0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/a</value>
-      <webElementGuid>ccc5d8dd-8d3c-473d-9ae3-a8a479b9c297</webElementGuid>
+      <webElementGuid>711d6e6b-2f79-417c-a449-196b88b27e82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Nueva Seleccion')]</value>
-      <webElementGuid>777af70f-fb8f-4ea3-95cb-41a4b3bf6345</webElementGuid>
+      <webElementGuid>1e9eae89-0218-4e86-95b4-032035775064</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,15 +101,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/following::a[1]</value>
-      <webElementGuid>3b1e311a-589a-4f68-aade-65bddb4e3346</webElementGuid>
+      <webElementGuid>5a2e2be1-343a-4f4f-b0a0-d1c785301559</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.E.B.RES.GUV'])[2]/following::a[2]</value>
-      <webElementGuid>718d257c-793f-495e-9d1c-65130e240c8f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldos Historicos de Cuenta'])[2]/following::a[2]</value>
+      <webElementGuid>a502963a-7118-4326-be73-1279494b444e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::a[1]</value>
-      <webElementGuid>723785a9-4752-44aa-90cb-ba97f01130a8</webElementGuid>
+      <webElementGuid>37574c20-cab1-44da-b965-bbce0c97ba7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::a[2]</value>
-      <webElementGuid>eb341db6-fb56-4f64-9747-077368933ffa</webElementGuid>
+      <webElementGuid>f2e6f403-9cba-4e65-82b7-db572081ea01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +133,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Nueva Seleccion']/parent::*</value>
-      <webElementGuid>16167c92-89b6-4b48-b41d-b958d2fc3cc3</webElementGuid>
+      <webElementGuid>bc3db6e3-b2b9-4db1-a718-4548b341c65b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +141,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:resetForm('enqsel')&quot;)]</value>
-      <webElementGuid>d9879db0-29e7-492d-b639-e52ba278d16b</webElementGuid>
+      <webElementGuid>9dcad5a3-cfba-4e06-b68b-cb55c5e6e8de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +149,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td/a</value>
-      <webElementGuid>f1591f2a-e57c-437a-bc4b-25f6efb82f49</webElementGuid>
+      <webElementGuid>ed73e16d-7c76-448d-98ea-aa98ccb31183</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +157,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:resetForm(&quot; , &quot;'&quot; , &quot;enqsel&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Nueva Seleccion' or . = 'Nueva Seleccion')]</value>
-      <webElementGuid>71e18f16-f092-4e11-a325-f000a04a5c83</webElementGuid>
+      <webElementGuid>fe7ef7a1-2b01-4b5b-99c9-0ac783170213</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -23,30 +23,22 @@ import java.time.format.DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtFechaDesde'), '20220701')
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnEjecutar'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'), 10)
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'))
-WebUI.delay(4)
-WebUI.switchToWindowTitle('Account Charge Request')
+//Se accede al menú BCCL.E.TINTERNAS.APAGAR
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('?343'))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('Temenos T24')
 WebUI.maximizeWindow()
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'))
-
+WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/spanRegistro de Fallas de Caja'))
+WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkBaja de Sobrante de Caja'))
+WebUI.switchToWindowTitle('BCCL.E.TT.BAJA.SOBRANTE.CAJA')
+WebUI.setText(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/inputFechaDesde'), '20200725')
+WebUI.click(findTestObject('Object Repository/21-Fallas/a_Ejecutar'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/tdId'),3)
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
