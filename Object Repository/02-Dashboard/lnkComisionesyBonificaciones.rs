@@ -3,15 +3,15 @@
    <description></description>
    <name>lnkComisionesyBonificaciones</name>
    <tag></tag>
-   <elementGuidId>2161ede4-ed88-4efc-b7a8-c4605572ba8c</elementGuidId>
+   <elementGuidId>2800362f-aac9-4e2e-b773-9c591933a1fd</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[81]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>837d1961-97d6-4329-968a-c190e8c13884</webElementGuid>
+      <webElementGuid>d6929033-2e4f-4e77-80bf-40c2fe9ac70e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>f0d5db2e-5d9f-47a5-a30d-555466e59834</webElementGuid>
+      <webElementGuid>129e2205-5a92-491b-85db-833e7b4c815c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>10e8c035-9652-48f6-86d8-aa3c4e25d242</webElementGuid>
+      <webElementGuid>0e0ca39c-6893-465a-8179-d4984f98be05</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Comisiones y Bonificaciones</value>
-      <webElementGuid>e3a9b796-b0f8-4e10-8b0a-8714edc2186a</webElementGuid>
+      <webElementGuid>58265975-1851-4113-8436-01d764806778</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>ab2b17c4-9bab-47b8-91c9-8a45cd4fc907</webElementGuid>
+      <webElementGuid>c3c93f2b-b19d-4e1e-a186-0ec463c48960</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>b1b67f09-8bcd-49c8-8dd9-048cc4730760</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[81]</value>
-      <webElementGuid>0074f2b5-6b3d-4ffe-baa8-9667aecd1f26</webElementGuid>
+      <webElementGuid>3116b532-2f28-4cd4-be24-31866bc07b72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[21]/li/span</value>
-      <webElementGuid>9e03540f-e9c1-49b8-8b37-4063e1f681c1</webElementGuid>
+      <webElementGuid>b78ed349-6e7c-4fd3-ad64-1347368aa082</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Contrasiento'])[1]/following::span[1]</value>
-      <webElementGuid>784c647a-22fa-46c5-9b6f-4bf7e1ce5312</webElementGuid>
+      <webElementGuid>d2e663c6-4dd2-4b95-9632-41cef4b00963</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito Transitoria'])[1]/following::span[1]</value>
-      <webElementGuid>a5316ace-d943-4d9f-855d-42ba9d8de2a6</webElementGuid>
+      <webElementGuid>ab479955-a29c-41ab-96d5-9dbc40c5e7aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Comisiones'])[1]/preceding::span[1]</value>
-      <webElementGuid>90309787-3185-42a1-b002-7d8abbf5d1bb</webElementGuid>
+      <webElementGuid>0a862d5a-d5fe-433c-a06b-38300705533a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro Comisiones Manuales - Planta'])[1]/preceding::span[2]</value>
-      <webElementGuid>80fcdabc-501b-4a48-807b-75fea05b7cc2</webElementGuid>
+      <webElementGuid>03bb54a3-a563-4f50-8439-b1a51e3e358d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Comisiones y Bonificaciones']/parent::*</value>
-      <webElementGuid>2fcfdc08-a760-4a5b-b53f-4cff92b7711c</webElementGuid>
+      <webElementGuid>f59b731c-6ea5-42a7-818b-257237193937</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[21]/li/span</value>
-      <webElementGuid>92db8b4f-a22b-48e5-891a-d79b137f5330</webElementGuid>
+      <webElementGuid>e86d9c3d-1deb-4637-81f3-af646172433b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Comisiones y Bonificaciones' or . = 'Comisiones y Bonificaciones')]</value>
-      <webElementGuid>4960848b-b797-4843-9c1f-7e079c3eefee</webElementGuid>
+      <webElementGuid>efdab180-0ac6-419f-a2d5-fd9f70a8e9e4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

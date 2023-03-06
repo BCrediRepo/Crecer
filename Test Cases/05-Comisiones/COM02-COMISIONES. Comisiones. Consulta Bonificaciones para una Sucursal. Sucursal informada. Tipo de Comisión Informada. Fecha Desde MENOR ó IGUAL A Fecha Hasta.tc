@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM02-COMISIONES. Comisiones. Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f9e26e8d-22db-4229-aae7-cc0800b4e888</testCaseGuid>
+</TestCaseEntity>

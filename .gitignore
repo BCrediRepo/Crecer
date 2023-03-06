@@ -1,16 +1,16 @@
 .gradle
-
-bin
-
-Reports
-
-Libs
-
+.classpath
+.project
+.cache
+.settings
 output
-
 !output/.gitkeep
 build
+Crecer.git.prj
 
-.classpath
-
-.project
+# project folders
+bin
+Libs
+Screenshot/
+Reports/
+settings

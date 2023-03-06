@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM06-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. Autorización Baja de comisión por Monto</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>74c218d9-1037-4415-a1c7-d140a7cb0df1</testCaseGuid>
+</TestCaseEntity>

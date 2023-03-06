@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkPlazoFijosActivos</name>
+   <tag></tag>
+   <elementGuidId>4521e3fd-1588-4e90-9536-b5e13ec0b4ad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e424e4ba-d107-4993-af05-14b70829fd7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>97550815-f1cf-45c3-97e2-1dab6e435a37</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Plazo Fijos Activos</value>
+      <webElementGuid>5cd19978-eb00-4a69-b6af-54b6d07755e8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryResponseCrumbs&quot;)/tbody[1]/tr[1]/td[@class=&quot;crumb crumb_MMMONEYMARKET crumb_MMMONEYMARKET_BCCLGIN&quot;]/a[1]/span[1]</value>
+      <webElementGuid>32d3b750-b9c1-48b0-bc51-fa4bd7ad46e6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>6d273452-e6bc-423e-9db7-8ce65757f072</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lr a:'])[1]/following::span[1]</value>
+      <webElementGuid>6fcc5cc6-6bbd-4cde-af34-7f13ca37916b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Plazo Fijo Persona Fisica'])[1]/preceding::span[1]</value>
+      <webElementGuid>b3802128-d4cc-43a5-9b6b-454255236d52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MM-22140-15412'])[1]/preceding::span[1]</value>
+      <webElementGuid>d0c0a7bf-b99e-4a78-8b72-298a12627e19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Plazo Fijos Activos']/parent::*</value>
+      <webElementGuid>01fe5fee-e5f9-4911-80ab-a775d37cb949</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span</value>
+      <webElementGuid>2e66baf1-a5b1-43dc-bb1a-d4982c98bbad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Plazo Fijos Activos' or . = 'Plazo Fijos Activos')]</value>
+      <webElementGuid>4668ea69-da09-44d8-b059-38ea44d953be</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

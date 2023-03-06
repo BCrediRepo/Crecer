@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHR02-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Sucursal informada. Datos correctos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d221079f-2f0d-49f7-ac67-748a3f2e6351</testCaseGuid>
+</TestCaseEntity>

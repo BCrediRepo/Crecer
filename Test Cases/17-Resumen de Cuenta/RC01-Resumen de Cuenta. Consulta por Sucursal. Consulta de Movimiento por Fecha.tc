@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC01-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Fecha</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a18831aa-1b45-41ec-b4b0-77ece014cf37</testCaseGuid>
+</TestCaseEntity>

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnEjecutar</name>
+   <name>lnkConsultaFirmasPorIDCuenta</name>
    <tag></tag>
-   <elementGuidId>d8b46643-1125-4415-8a3a-92984a066fab</elementGuidId>
+   <elementGuidId>c2b812eb-dd1f-41f8-b2b1-1d66c464de18</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick='doHighlight(this);javascript:
-						   toggleStateButton();doEnquiry()']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>a.textbtn</value>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.FIRMAS.CUENTA');processMenuHeaderText('Consulta de Firmas por ID de Cuenta')&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,160 +21,134 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>f071b447-e94b-44c5-b560-50e08a8eae88</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>alt</name>
-      <type>Main</type>
-      <value>Ejecutar</value>
-      <webElementGuid>c0ee9995-30de-444d-82c2-459a5ffbe2b1</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>title</name>
-      <type>Main</type>
-      <value>Ejecutar</value>
-      <webElementGuid>2c07d539-f6ff-4227-abb4-37e0ed1be2b7</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>textbtn</value>
-      <webElementGuid>6a7a6d8f-4023-4102-90df-ca552102058c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
-      <type>Main</type>
-      <value>focusonKey('inline',event);</value>
-      <webElementGuid>fcdaa7f1-db06-4643-bc8e-cc48d3267089</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onblur</name>
-      <type>Main</type>
-      <value>hideTooltip(event);</value>
-      <webElementGuid>62e00fdd-87ef-4cc9-8cba-75b09eb344f8</webElementGuid>
+      <webElementGuid>0e1288d1-a07c-47e0-ad7b-e263b105c705</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onclick</name>
       <type>Main</type>
-      <value>doHighlight(this);javascript:
-						   toggleStateButton();doEnquiry()</value>
-      <webElementGuid>a58484e3-1d87-460c-8007-323383ebf034</webElementGuid>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.FIRMAS.CUENTA');processMenuHeaderText('Consulta de Firmas por ID de Cuenta')</value>
+      <webElementGuid>692536e6-7cfb-4aee-813c-cfd928b52440</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:void(0)</value>
-      <webElementGuid>29cf93c7-48c9-4be9-82e8-80e9b62396d6</webElementGuid>
+      <value>javascript:doenq('ENQ BCCL.E.FIRMAS.CUENTA');</value>
+      <webElementGuid>42fb7f41-1aa5-44df-9594-8b4151f6c3f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Ejecutar</value>
-      <webElementGuid>4a2c3e07-ed18-42b9-9665-3368d43b51c8</webElementGuid>
+      <value>Consulta de Firmas por ID de Cuenta </value>
+      <webElementGuid>850b61e4-57b3-4af7-8c72-308e60a077d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLCQFCERTSTOCK&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLCQFCERTSTOCK enqsel-selections enqsel-selections_BCCLCQFCERTSTOCK&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLCQFCERTSTOCK&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLCQFCERTSTOCK&quot;]/td[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[@class=&quot;textbtn&quot;]</value>
-      <webElementGuid>ba26cbda-0e5a-41e0-a893-87f367990431</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[13]/a[1]</value>
+      <webElementGuid>2c409310-fdc9-459b-975c-855004b7cd19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/2-Consulta de Cuentas/frmConsultaDeCuentas</value>
+      <webElementGuid>75ae9603-cc3a-4552-9ee2-c12cf4cf680e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@onclick='doHighlight(this);javascript:
-						   toggleStateButton();doEnquiry()']</value>
-      <webElementGuid>ca0ec0fd-8e6d-4fc1-b1a7-5788d2fba1bc</webElementGuid>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.FIRMAS.CUENTA');processMenuHeaderText('Consulta de Firmas por ID de Cuenta')&quot;]</value>
+      <webElementGuid>9f0ff9b1-e6f0-4dd9-b22d-94183180023e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[3]/div/table/tbody/tr/td/a</value>
-      <webElementGuid>9994449d-0451-40c7-b92f-697f95396a18</webElementGuid>
+      <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/ul/li[13]/a</value>
+      <webElementGuid>f7fce7de-1733-4337-9aae-71aec7818db6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Ejecutar')]</value>
-      <webElementGuid>561154bb-065a-4c52-a4ad-023a57a68e92</webElementGuid>
+      <value>//a[contains(text(),'Consulta de Firmas por ID de Cuenta')]</value>
+      <webElementGuid>2708ece2-25f2-42ea-a356-079616a31430</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/following::a[1]</value>
-      <webElementGuid>be7784c1-6405-43b6-8d5e-ea9f5a611240</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Firmas por ID Persona'])[1]/following::a[1]</value>
+      <webElementGuid>fa8a00ef-ffdc-4a57-9ce5-e9cf8ca83ec9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/following::a[2]</value>
-      <webElementGuid>bf3ca027-1db2-48c1-8add-b9e3d26aeeec</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Mov. por Fecha - Cuenta Interna'])[1]/following::a[2]</value>
+      <webElementGuid>09bcecde-29ac-4e20-b501-58a1a49ed869</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::a[1]</value>
-      <webElementGuid>0e882382-3bf7-495b-a870-2e6af24aca8a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Productos Cuentas'])[1]/preceding::a[1]</value>
+      <webElementGuid>6f57d6d7-7db6-480d-8cc9-f9abeff0eb5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Ejecutar']/parent::*</value>
-      <webElementGuid>433809d0-0dc3-4719-bcb1-0b69a77daaab</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion de cuenta'])[1]/preceding::a[2]</value>
+      <webElementGuid>7df1af74-1557-4d69-a4b6-1455ce02352e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta de Firmas por ID de Cuenta']/parent::*</value>
+      <webElementGuid>0b528136-171d-4084-aec9-7aeac8258009</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, 'javascript:void(0)')]</value>
-      <webElementGuid>de172611-6665-474e-9452-4e023e61e191</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.FIRMAS.CUENTA');&quot;)]</value>
+      <webElementGuid>df28f708-f2cb-4b4b-a72c-5702e4a5fd84</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/table/tbody/tr/td/a</value>
-      <webElementGuid>dbc00695-0ede-4e6e-9155-4dde1f4ead2f</webElementGuid>
+      <value>//li[13]/a</value>
+      <webElementGuid>cd118c10-997a-47b7-97c4-25d9e9c7e196</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@alt = 'Ejecutar' and @title = 'Ejecutar' and @href = 'javascript:void(0)' and (text() = 'Ejecutar' or . = 'Ejecutar')]</value>
-      <webElementGuid>36c981a0-b849-4e2d-872d-c3f770ffa209</webElementGuid>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.FIRMAS.CUENTA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Firmas por ID de Cuenta ' or . = 'Consulta de Firmas por ID de Cuenta ')]</value>
+      <webElementGuid>156764a8-6b76-4af4-af92-fe8c36e21505</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
