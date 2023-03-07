@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHC02-Cheque Cancelatorios. Consulta de Stock de Formulas. Usuario de Sucursal. Filtrar por Estado y Día de Emisión</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>175bf593-9165-4a33-a3c0-2888ee4d16bb</testCaseGuid>
+</TestCaseEntity>

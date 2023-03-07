@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblIMPOSICION</name>
+   <tag></tag>
+   <elementGuidId>b7a001be-34ed-4e8a-90d3-5d17e5bde2bc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[14]/td/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>bfdfe4bf-25d0-41b2-8112-8b50e92315a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>comment comment_MMMONEYMARKET comment_MMMONEYMARKET_BCCLGIN</value>
+      <webElementGuid>7e3362f2-2a9c-4c96-91f0-27946419d511</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>IMPOSICION</value>
+      <webElementGuid>31ca6696-5981-4e86-a92d-fbec6a2f90c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[14]/td[@class=&quot;field field_MMMONEYMARKET field_MMMONEYMARKET_BCCLGIN&quot;]/span[@class=&quot;comment comment_MMMONEYMARKET comment_MMMONEYMARKET_BCCLGIN&quot;]</value>
+      <webElementGuid>8380d01c-9429-4e99-acb6-fb903aaa9d28</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[14]/td/span</value>
+      <webElementGuid>f3d07884-c062-4367-ae5c-1e00587a5bf9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alcanzado Ganancias y Sellos'])[1]/following::span[2]</value>
+      <webElementGuid>03b07dbf-4c13-461d-bee4-c9e4f2b7cbd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ALCANZADO'])[1]/following::span[3]</value>
+      <webElementGuid>12c3f9a8-9b86-489e-b086-a64882cf0d45</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo de Imposicion'])[1]/preceding::span[1]</value>
+      <webElementGuid>ec3dafb6-7d50-4870-9fa5-d90b28d57fb8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CAMARA'])[1]/preceding::span[1]</value>
+      <webElementGuid>2207445b-9138-4d8a-ae7a-ea998cc5e370</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='IMPOSICION']/parent::*</value>
+      <webElementGuid>f2ff8b95-bac3-4899-ae84-df9ba5f4bef0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[14]/td/span</value>
+      <webElementGuid>c23b9e2b-2ba2-4b73-a9a3-27f0fee82e1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'IMPOSICION' or . = 'IMPOSICION')]</value>
+      <webElementGuid>c9aff0d4-efb0-4ce8-b53f-001cec22ab3d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
