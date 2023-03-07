@@ -27,29 +27,20 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/13-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
-
-//Se espera la carga de BCCL.E.CONS.TINT.ALTAS
-WebUI.switchToWindowIndex(1)
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS'), 5)
+//Se accede al menú BCCL.E.TINTERNAS.APAGAR
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('?21'))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('Temenos T24')
+WebUI.maximizeWindow()
+WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/spanConsulta Dispositivos Puntos Neutrales'))
+WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkConsulta de Faltantes en Puntos Neutrales'))
+WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP.PN')
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('Object Repository/21-Fallas/a_Ejecutar'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se valida la existencia de objetos en BCCL.E.CONS.TINT.ALTAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'),3)
+//No hay datos de Faltantes en Puntos Neutrales
 
-//---------------------------------------------------------------------------------------------------------------------
 
-//Control de fin de script
-@com.kms.katalon.core.annotation.TearDownIfFailed
-void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
-}
 
-@com.kms.katalon.core.annotation.TearDownIfPassed
-void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-}
