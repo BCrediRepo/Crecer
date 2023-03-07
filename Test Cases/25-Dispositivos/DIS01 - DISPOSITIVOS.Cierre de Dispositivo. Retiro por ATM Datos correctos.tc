@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DIS01 - DISPOSITIVOS.Cierre de Dispositivo. Retiro por ATM Datos correctos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>18d77481-7afe-497f-b216-a90431b44d41</testCaseGuid>
+</TestCaseEntity>
