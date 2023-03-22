@@ -23,7 +23,7 @@ public class kywHabilitarCommandLine {
 
 	def kywG = new pkgModules.kywGeneric()
 	def kywS = new pkgModules.kywScreenshot()
-	
+
 	@Keyword
 	def procesarUsuario(String usuario) {
 		// Verificar el usuario es nulo o tiene menos de dos caractes
@@ -80,7 +80,7 @@ public class kywHabilitarCommandLine {
 		kywS.takeScreenshotInScript()
 		WebUI.click(findTestObject('Object Repository/00-Command Line/USER.PROFILE/btnAceptarRegistro'))
 		WebUI.click(findTestObject('Object Repository/00-Command Line/USER.PROFILE/lnkAceptarAlertas'))
-		
+
 		WebUI.closeBrowser()
 	}
 }

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTxnOriginal</name>
+   <tag></tag>
+   <elementGuidId>31e6e419-5987-4f68-a797-8993a7cc7f79</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.messageWrap > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr/td[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>66055fc0-f630-45d5-94fe-bddb4d8297d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>ce501c68-9297-4fdb-a06f-ac3a6b5d0202</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA</value>
+      <webElementGuid>a907435d-2bc1-4cee-98c2-50fd18de074c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;error_box&quot;)/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[1]/td[@class=&quot;messageWrap&quot;]/span[1]</value>
+      <webElementGuid>a63508ea-5fcf-49a8-9a59-e4a4102e1957</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/8-Emision Chequera/frmEmisionChequeraFirmas</value>
+      <webElementGuid>ace05dd6-bb0c-4b39-bb6b-e6174615df1c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr/td[2]/span</value>
+      <webElementGuid>1425dd0d-8823-420c-be4d-d0ac5f1acb2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::span[1]</value>
+      <webElementGuid>51aea13d-ad32-4ee2-a2da-6deb1ccda1de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Verificacion de Firmas'])[1]/following::span[2]</value>
+      <webElementGuid>23778022-b93f-48a9-93ad-d2db970e5d82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accion'])[1]/preceding::span[1]</value>
+      <webElementGuid>d708e027-9ce9-4f27-bece-81ce46d990e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alerta.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>06bcaef2-c503-41a7-8b5f-f51987f6719a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA']/parent::*</value>
+      <webElementGuid>693649e0-3eb7-43b0-81cd-3029b7570207</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr/td/table/tbody/tr/td[2]/span</value>
+      <webElementGuid>76a87b8a-9387-4f6a-aacb-9e039824145d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA' or . = 'Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA')]</value>
+      <webElementGuid>a9f84109-b556-4bb6-98f1-0349c8fd6bae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

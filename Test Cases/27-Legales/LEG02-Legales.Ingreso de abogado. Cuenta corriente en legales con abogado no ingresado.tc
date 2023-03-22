@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LEG02-Legales.Ingreso de abogado. Cuenta corriente en legales con abogado no ingresado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e306d111-4ea3-4de4-ad7c-d6cd36b3c7dd</testCaseGuid>
+</TestCaseEntity>
