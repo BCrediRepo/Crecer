@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtSucursal</name>
+   <name>txtDashboardBuscar</name>
    <tag></tag>
-   <elementGuidId>98208beb-40c5-4221-8a4e-b053ffb1c9cf</elementGuidId>
+   <elementGuidId>b70ca7f5-eb26-47f2-b9a4-46b9454210cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='value:3:1:1']</value>
+         <key>CSS</key>
+         <value>#commandValue</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='commandValue']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,94 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>6fe0a1a5-5409-4aa6-a6bd-86f166816462</webElementGuid>
+      <webElementGuid>851ad863-437d-446d-baf0-b6aa2855bfff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>type</name>
+      <name>title</name>
       <type>Main</type>
-      <value>text</value>
-      <webElementGuid>d598d381-4811-46a1-8a38-e5b8627b91e7</webElementGuid>
+      <value>Command line for input text</value>
+      <webElementGuid>3ef8f071-647a-4354-9b22-a4d663c4fc3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>value:3:1:1</value>
-      <webElementGuid>faf70257-7594-4502-be8a-45954baae5e4</webElementGuid>
+      <value>commandValue</value>
+      <webElementGuid>ae90e86a-bee7-4b8e-ad52-3c61420e08a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>value:3:1:1</value>
-      <webElementGuid>e8ca574d-ca74-4c39-a25c-51d5fc542574</webElementGuid>
+      <value>commandValue</value>
+      <webElementGuid>70d6627a-c4b3-4be4-9fd2-16942e922e53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>20</value>
-      <webElementGuid>f0e5fd40-17fc-4cbd-b513-db06ba248484</webElementGuid>
+      <value>35</value>
+      <webElementGuid>7d3e3462-3426-47fc-8b76-c72694c283e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>frequencydropfieldname</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>value:3:1:1</value>
-      <webElementGuid>45a1cc1b-b0de-4c1d-bf51-4158701c8549</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>enqseldata enqseldata_BCCLMMACTIVOS</value>
-      <webElementGuid>117f7993-c7e3-4e58-a97c-e58fed7fff50</webElementGuid>
+      <value>0</value>
+      <webElementGuid>561846b0-0f99-42ad-bfa1-3858375d39c1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;value:3:1:1&quot;)</value>
-      <webElementGuid>8bcb2cc9-c8b0-4ed3-a4d3-e42033f0be76</webElementGuid>
+      <value>id(&quot;commandValue&quot;)</value>
+      <webElementGuid>12cd1dd6-5199-463d-99d1-1e8eacdffe58</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMainMenu</value>
+      <webElementGuid>56399b0a-d0a8-4c13-805d-3bf01a5f1d66</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='value:3:1:1']</value>
-      <webElementGuid>531136b1-59a1-416d-b5e1-1cf8d244659c</webElementGuid>
+      <value>//input[@id='commandValue']</value>
+      <webElementGuid>505bf4dd-9855-46ff-9433-c8d8700c1c14</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='selectiondisplay']/tbody/tr[3]/td[3]/input</value>
-      <webElementGuid>ba35ca50-ae96-4017-a9bf-122253cdaeab</webElementGuid>
+      <value>//form[@id='commandLineForm']/input</value>
+      <webElementGuid>18d97680-5ba2-43ee-89ff-ddc3448a4fb3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[3]/td[3]/input</value>
-      <webElementGuid>f4f0d3b8-f7cc-4b0d-9b10-42379b302b95</webElementGuid>
+      <value>//input</value>
+      <webElementGuid>8e26fd45-8576-472e-bdde-f5860b769849</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'value:3:1:1' and @id = 'value:3:1:1']</value>
-      <webElementGuid>481ca31a-e2de-4a97-a2cc-2885ac0ed439</webElementGuid>
+      <value>//input[@title = 'Command line for input text' and @name = 'commandValue' and @id = 'commandValue']</value>
+      <webElementGuid>7ed02ec4-6c10-47c8-911c-c190d0b92b50</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
