@@ -23,3 +23,36 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/spanCuentas'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/lnkCierreDeCuenta'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/lnkNomina'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
+
+WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.NOMINA')
+
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkNuevaSeleccion'))
+
+WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/txtNumeroDeCuenta'), '00010070802')
+
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkEjecutar'))
+
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkConsultaNominaCuenta'))
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
+

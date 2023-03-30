@@ -17,11 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
-
-//Login
-//CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -29,37 +24,33 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 
+// Ingreso al modulo cuentas
 
-//Ingreso al modulo Operatoria de Caja - Reemplazo
+WebUI.click(findTestObject('Object Repository/02-Dashboard/spanCuentas'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkOperatoriadeCaja-Reemplazo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/lnkCierreDeCuenta'))
 
+WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/lnkNomina'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkAltaNomina'))
 
+WebUI.switchToWindowTitle('BCCL.AC.ALTA.NOMINA')
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/01-Dispositivos/lnkRegistroDeFallasEnDispositivos'))
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkNuevaSeleccion'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/01-Dispositivos/01-Registro de Fallas en Dispositivos/lnkAltadeFaltantesdeATMCDTAS'))
+WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/txtNumeroDeCuenta'), '00010056136')
 
-WebUI.switchToWindowTitle('TELLER')
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkEjecutar'))
 
-//WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtMoneda'), "ARS")
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkAltaNomina'))
 
-WebUI.click(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/btnRETIRO'))
+WebUI.switchToWindowTitle('BCCL.NOMINA.CH')
 
-WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtComentarios'), 'PRUEBAS CRECER')
+WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/txtNumeroCheque1'), '85679469')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtMonto'), 6)
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/btnValidarReg'))
 
-WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtMonto'), '100')
-
-WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtIdDispositivo'), '08911')
-
-
-//WebUI.verifyElementPresent(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/lblDenominacionesCR'), 6)
-
-//WebUI.click(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/lblDenominacionesCR'))
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/btnAceptarReg'))
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -73,3 +64,10 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
+
+
+
+
+
+
