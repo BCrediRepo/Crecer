@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>FD02-Fallas de Dispositivos.Consulta faltante de dispositivo.PerfilGerenciaOperativa.Ingreso baja de Faltante de ATM.CuentaContable.FechaValor.Deposito.Faltante sin una baja deFaltante</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ecb6c50b-1ba0-40ad-96d2-cd0dab2e72ab</testCaseGuid>
-</TestCaseEntity>
