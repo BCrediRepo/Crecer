@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTxnCompleta</name>
+   <tag></tag>
+   <elementGuidId>f931a50e-3df6-4323-8efa-16a1840ce3cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.message</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>96385919-2cb8-472f-980e-dbe950e41b47</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>2251ec61-0463-4f95-9e18-6bc816c2f24a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Txn Completa: FT22206377892420 17:13:51 27 MAR 2023 FUNDS.TRANSFER,BCCL.IMPTOS.DEV.EFE I </value>
+      <webElementGuid>79e0321b-2add-4cec-9072-aa2f5e89e930</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_FUNDSTRANSFER display_box_FUNDSTRANSFER_BCCLIMPTOSDEVEFE&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
+      <webElementGuid>dab796e4-749a-4aa3-9c7f-e89e853396bf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      <webElementGuid>38e25dad-5f23-4639-adaa-1961533ef044</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::td[7]</value>
+      <webElementGuid>d91cbaee-2cae-4e63-9abd-d15e35001462</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FUNDS.TRANSFER,BCCL.IMPTOS.DEV.EFE'])[1]/following::td[15]</value>
+      <webElementGuid>05d01881-0a7f-4075-878e-c6f5134b57c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ALERTAS PENDIENTES DE AUTORIZACION'])[1]/preceding::td[1]</value>
+      <webElementGuid>a1051fef-017b-4504-a668-b6892ec926b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Txn Completa: FT22206377892420 17:13:51 27 MAR 2023 FUNDS.TRANSFER,BCCL.IMPTOS.DEV.EFE I']/parent::*</value>
+      <webElementGuid>4a1289e0-addb-4d65-b221-68592f9c3e18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr/td</value>
+      <webElementGuid>138e5a0b-0374-48ee-9b0c-9c7e2c764625</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Txn Completa: FT22206377892420 17:13:51 27 MAR 2023 FUNDS.TRANSFER,BCCL.IMPTOS.DEV.EFE I ' or . = 'Txn Completa: FT22206377892420 17:13:51 27 MAR 2023 FUNDS.TRANSFER,BCCL.IMPTOS.DEV.EFE I ')]</value>
+      <webElementGuid>653d3553-a9c5-497a-ab1c-d2f324912fca</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
