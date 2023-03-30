@@ -4,23 +4,21 @@
    <name>inputCommandLine</name>
    <tag></tag>
    <elementGuidId>d9ef1d49-2d1f-4a43-b903-576a8baabc97</elementGuidId>
-   <imagePath></imagePath>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#commandValue</value>
+         <key>IMAGE</key>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='commandValue']</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>id(&quot;commandValue&quot;)[count(. | //input[@title = 'Command line for input text' and @name = 'commandValue' and @id = 'commandValue' and @size = '35' and @tabindex = '0' and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMainMenu']) = count(//input[@title = 'Command line for input text' and @name = 'commandValue' and @id = 'commandValue' and @size = '35' and @tabindex = '0' and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMainMenu'])]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='commandValue']</value>
+         <key>CSS</key>
+         <value>#commandValue</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

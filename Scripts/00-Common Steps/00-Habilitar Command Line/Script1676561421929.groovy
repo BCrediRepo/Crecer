@@ -36,5 +36,5 @@ WebUI.switchToWindowTitle('USER PROFILE')
 //Se ingresa el usuario a habilitar
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 def user = CustomKeywords.'pkgModules.kywUserForCommandLine.procesarUsuario'(null)
-WebUI.setText(findTestObject('Object Repository/00-Command Line/inputUSER,'),(user))
-WebUI.click(findTestObject('Object Repository/00-Command Line/btnModificarRegistro'))
+WebUI.setText(findTestObject('Object Repository/00-Utils/01-CommandLine/inputUSER,'),(user))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/btnModificarRegistro'))

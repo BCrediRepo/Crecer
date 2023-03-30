@@ -72,14 +72,14 @@ public class kywHabilitarCommandLine {
 
 		//Se ingresa el usuario a habilitar
 		def user = procesarUsuario(usuario)
-		WebUI.setText(findTestObject('Object Repository/00-Command Line/inputUSER,'),(user))
-		WebUI.click(findTestObject('Object Repository/00-Command Line/btnModificarRegistro'))
-		WebUI.click(findTestObject('Object Repository/00-Command Line/USER.PROFILE/btnAgregarAtributos1'))
-		WebUI.click(findTestObject('Object Repository/00-Command Line/USER.PROFILE/cbAtributos2'))
-		WebUI.selectOptionByIndex(findTestObject('Object Repository/00-Command Line/USER.PROFILE/cbAtributos2'), 2)
+		WebUI.setText(findTestObject('Object Repository/00-Utils/01-CommandLine/inputUSER,'),(user))
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/btnModificarRegistro'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/btnAgregarAtributos1'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/cbAtributos2'))
+		WebUI.selectOptionByIndex(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/cbAtributos2'), 2)
 		kywS.takeScreenshotInScript()
-		WebUI.click(findTestObject('Object Repository/00-Command Line/USER.PROFILE/btnAceptarRegistro'))
-		WebUI.click(findTestObject('Object Repository/00-Command Line/USER.PROFILE/lnkAceptarAlertas'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/btnAceptarRegistro'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 		
 		WebUI.closeBrowser()
 	}
