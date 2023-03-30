@@ -18,11 +18,4 @@
       <testCaseId>Test Cases/20-Fallas/F01 - FALLAS.Consulta de sobrante ENQ BCCL.E.TT.BAJA.SOBRANTE.CAJA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>7d34cf4a-439d-4ac0-84fa-886538cbd37e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas/F02 -FALLAS.Consulta faltante PN por filial BCCL.E.EXTORNO.DISPO.GEOP.PN</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
