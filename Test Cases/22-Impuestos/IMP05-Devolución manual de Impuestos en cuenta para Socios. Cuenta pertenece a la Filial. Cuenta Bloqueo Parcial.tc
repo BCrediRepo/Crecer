@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP05-Devolución manual de Impuestos en cuenta para Socios. Cuenta pertenece a la Filial. Cuenta Bloqueo Parcial</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11d2828d-5a12-4325-9442-519bac780ba6</testCaseGuid>
+</TestCaseEntity>

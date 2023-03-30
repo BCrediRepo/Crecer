@@ -1,0 +1,76 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+//TEST CASE NAME: Devolución manual de Impuestos en efectivo. Socio. Usuario de Filial. Impuestos.  SELLOS otras Operatorias. 
+//				  Alcanzado en Córdoba. 04. Condición para el impuesto en la jurisdicción es AA
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Accedo al menu de Impuestos - Operatorias Especiales
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperatoriasEspeciales'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperatoriasEspeciales'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/03-Operatorias Especiales/lnkCobroSellado(Suc Santa Fe y Cordoba)'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/03-Operatorias Especiales/lnkCobroSellado(Suc Santa Fe y Cordoba)'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/03-Operatorias Especiales/01-Cobro Sellado/lnkDevol.SelladoenEfec(Suc.Santa FeCordoba)'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/03-Operatorias Especiales/01-Cobro Sellado/lnkDevol.SelladoenEfec(Suc.Santa FeCordoba)'))
+
+//Switch a la ventana de Movimiento de Fondos y completo los campos
+WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.maximizeWindow()
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), '30708114584')
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtNombrePersona'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtNombrePersona'), 'TEST CRECER')
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtProv.Jurisdiccion'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtProv.Jurisdiccion'), '10')
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtBaseImponible'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtBaseImponible'), '1,00')
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtId.Alicuota'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtId.Alicuota'), 'SO04AA.20170426')
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/btnvalidarRegistro'), 6)
+WebUI.click(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/btnvalidarRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/btnAceptarRegistro'), 6)
+WebUI.click(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/btnAceptarRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/lnkAceptarAlertas'), 6)
+WebUI.click(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/lnkAceptarAlertas'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/lblTxnCompleta'), 6)
+def element = WebUI.getText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/lblTxnCompleta'))
+assert element.contains('Txn Completa:')
+
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
