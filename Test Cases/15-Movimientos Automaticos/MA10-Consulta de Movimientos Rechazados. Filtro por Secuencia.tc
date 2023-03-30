@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA10-Consulta de Movimientos Rechazados. Filtro por Secuencia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca5de08a-f605-48d6-906e-796428d40a07</testCaseGuid>
+</TestCaseEntity>

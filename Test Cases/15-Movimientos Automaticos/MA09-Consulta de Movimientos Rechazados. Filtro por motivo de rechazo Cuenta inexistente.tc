@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA09-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta inexistente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dcb22fd4-48c1-4453-a048-fab5fedeef4b</testCaseGuid>
+</TestCaseEntity>
