@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lbl_CANTIDADDEDEPOSITOS</name>
+   <tag></tag>
+   <elementGuidId>cf88ac84-ab3a-4efb-867b-5998fc50a7df</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='enquiryDataSizer']/table[2]/tbody/tr[2]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>5fe7adf0-02f5-4e56-a172-8aabf492172f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>CANTIDAD DE DEPOSITOS :</value>
+      <webElementGuid>0ceb56e3-21a5-4862-b120-fc241021af90</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryDataSizer&quot;)/table[@class=&quot;enqfooter&quot;]/tbody[1]/tr[2]/td[1]</value>
+      <webElementGuid>7d476ab3-83fb-4851-b71b-dab9ef40f319</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='enquiryDataSizer']/table[2]/tbody/tr[2]/td</value>
+      <webElementGuid>2f645406-11f6-4eaf-8957-7cda387c459b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='--------------------------------------'])[1]/following::td[1]</value>
+      <webElementGuid>42d2f589-b12d-4acd-aa78-20500180f6a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='------------------------------------------------'])[2]/following::td[2]</value>
+      <webElementGuid>f0e031d8-e75d-4213-a6ec-1ab21fb27f97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='IMPORTE TOTAL DE DEPOSITOS :'])[1]/preceding::td[2]</value>
+      <webElementGuid>ba678eda-2a05-4df3-8a7d-a376291ffa89</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[5]</value>
+      <webElementGuid>9af8e50d-b6c5-4032-8303-9535a7d6daac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='CANTIDAD DE DEPOSITOS :']/parent::*</value>
+      <webElementGuid>2c1ad338-c04e-4e9d-a872-66e87ea485c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr[2]/td</value>
+      <webElementGuid>70f9125b-39b8-4eb7-aeec-c215b46c7d51</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'CANTIDAD DE DEPOSITOS :' or . = 'CANTIDAD DE DEPOSITOS :')]</value>
+      <webElementGuid>c0be87cd-a926-4f3a-9998-e2bb9a97db81</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

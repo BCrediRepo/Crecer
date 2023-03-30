@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lbl_IMPORTETOTALDEDEPOSITOS</name>
+   <tag></tag>
+   <elementGuidId>379726ec-3bdb-4507-be36-7c3475231534</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='enquiryDataSizer']/table[2]/tbody/tr[3]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>b57639b2-e376-4660-adca-0562065fa7ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>IMPORTE TOTAL DE DEPOSITOS :</value>
+      <webElementGuid>3449395d-103d-48aa-816d-92e5b062ce40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryDataSizer&quot;)/table[@class=&quot;enqfooter&quot;]/tbody[1]/tr[3]/td[1]</value>
+      <webElementGuid>c8e3ca2d-9420-45fb-b713-24bc4c74124c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='enquiryDataSizer']/table[2]/tbody/tr[3]/td</value>
+      <webElementGuid>ffcbf308-272d-4be3-9f9f-589f5db19914</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CANTIDAD DE DEPOSITOS :'])[1]/following::td[2]</value>
+      <webElementGuid>fd3af2fa-8a6c-4245-b185-5d3eaab7d00f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='--------------------------------------'])[1]/following::td[3]</value>
+      <webElementGuid>3a7235f6-f66a-4116-9d7d-bc07db5e8de9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[3]</value>
+      <webElementGuid>914a3871-6f03-48ab-b32a-6621b574b2ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.E.DEP.EFE.TAS'])[2]/preceding::td[6]</value>
+      <webElementGuid>e536afcf-48fd-46b5-b2d2-d1216646e1a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='IMPORTE TOTAL DE DEPOSITOS :']/parent::*</value>
+      <webElementGuid>e419853f-7326-4db2-af19-9e1b615015d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td</value>
+      <webElementGuid>d8bb958a-ec46-4c65-9748-9960ceadcdb9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'IMPORTE TOTAL DE DEPOSITOS :' or . = 'IMPORTE TOTAL DE DEPOSITOS :')]</value>
+      <webElementGuid>ccd914de-d089-4267-927d-8d58c1a0c399</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

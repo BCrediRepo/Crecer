@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA05-Consulta. Movimiento aceptado. Movimiento aplicado en Dolares por el importe minimo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f569984b-d6a6-4c1f-8fc4-20ce42f2d875</testCaseGuid>
+</TestCaseEntity>
