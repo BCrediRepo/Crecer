@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnAceptarReg</name>
+   <tag></tag>
+   <elementGuidId>aec4959b-82a4-4307-a93a-594c9e9e2e44</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Aceptar el registro&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>a0dbac34-8f29-4b17-802d-f0c84f5d7dce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/txncommit.gif
+															</value>
+      <webElementGuid>c5d01439-c39a-486c-82fb-d70fb4b4bb6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Aceptar el registro</value>
+      <webElementGuid>a84441bd-072b-4a0e-bcbc-ab3508b37d61</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Aceptar el registro</value>
+      <webElementGuid>02f70286-216a-4773-bf2c-9b72a95d45a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
+      <webElementGuid>9f46a7a0-5c41-4dc2-83db-cde280aa8892</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+      <webElementGuid>ea4113f3-480d-4d87-9b24-4791380ae2f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Aceptar el registro']</value>
+      <webElementGuid>47355f4a-73b0-46fe-884e-bfd149112c2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/img</value>
+      <webElementGuid>ca8ffb2c-58be-49fe-a376-b485f7c8af60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/txncommit.gif
+															' and @alt = 'Aceptar el registro' and @title = 'Aceptar el registro']</value>
+      <webElementGuid>00adeeb5-b62e-439b-aea3-3ec226c7b0a1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

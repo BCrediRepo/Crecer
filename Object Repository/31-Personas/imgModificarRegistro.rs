@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>imgModificarRegistro</name>
+   <tag></tag>
+   <elementGuidId>f230f2f1-fd4a-4614-b842-e2a9190be9ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Modifica registro&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>3bc8632c-a649-48ce-8c72-275e6d362a13</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/txnedit.gif
+															</value>
+      <webElementGuid>f5db58b5-d2e5-4bca-a059-cc2ffb4f7545</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Modifica registro</value>
+      <webElementGuid>6b1780f0-34c5-44f9-8ac5-dc53a15353b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Modifica registro</value>
+      <webElementGuid>53ef4546-232f-4365-b838-0eafa71591f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
+      <webElementGuid>3104c669-9782-4f0d-a686-87e285ed6ab8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+      <webElementGuid>67cf17db-54e6-4f71-af5b-3fe5f7d322ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Modifica registro']</value>
+      <webElementGuid>3a6d9bf6-5d8c-48e1-b5c9-082f8d845c36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/img</value>
+      <webElementGuid>faaf5989-9d89-4bba-8a4a-b97eb06bfc49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnedit.gif
+															' and @alt = 'Modifica registro' and @title = 'Modifica registro']</value>
+      <webElementGuid>98dc959f-045b-4acb-a8ec-18d2a900c199</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

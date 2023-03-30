@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Cierre de cuenta.Alta de nomina. Cuenta corriente en estado Cerrada. Todos los campos completos</name>
+   <name>CDC01-Cierre de cuenta.Alta de nomina. Cuenta corriente en estado Cerrada. Todos los campos completos</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7cd6ff45-4443-4f27-a70e-086231942130</testCaseGuid>

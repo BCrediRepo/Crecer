@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC02-Cierre de Cuenta. Consulta de Nómina de Cuenta corriente en estado Cerrada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>613dfbb2-b7b6-49b5-9a1b-0518a1abe65b</testCaseGuid>
+</TestCaseEntity>

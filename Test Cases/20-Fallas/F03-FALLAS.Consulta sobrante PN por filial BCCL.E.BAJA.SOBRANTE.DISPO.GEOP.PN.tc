@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>F03-FALLAS.Consulta sobrante PN por filial BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7dc3f004-5679-47da-a164-fa8ca5462dc8</testCaseGuid>
+</TestCaseEntity>
