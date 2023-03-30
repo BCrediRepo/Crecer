@@ -104,7 +104,7 @@ public class kywGeneric {
 		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), Password)
 		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
 		WebUI.delay(3)
-		boolean element = WebUI.waitForElementVisible(findTestObject('Object Repository/00-Command Line/inputCommandLine'),3)
+		boolean element = WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/inputCommandLine'),3)
 		println(element)
 		if (element == true) {
 			println("COMMAND LINE VISIBLE")
@@ -170,7 +170,20 @@ public class kywGeneric {
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
-	//--------------------------------------------------------------------------------------------
+	/*--------------------------------------------------------------------------------------------*
+	 *                                    LIMPIAR FILTROS DE BUSQUEDA                                                               *
+	 *                                                                                            *
+	 * -------------------------------------------------------------------------------------------*/
+
+	@Keyword
+	def LimpiarFiltroenScript() {
+		String browser = WebUI.getWindowTitle()
+		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+		WebUI.closeWindowTitle(browser)
+	}
+
+	//-----------------------------------------------------------------------------------------------
 
 
 }

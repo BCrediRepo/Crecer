@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IP02-Consultas. Partidas dadas de alta. Casa Central. Se completan filtros para los que existen registros. Ver Detalle de Partida</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2dc7ff3e-40bb-4eea-b9bc-59362f7a992a</testCaseGuid>
+</TestCaseEntity>

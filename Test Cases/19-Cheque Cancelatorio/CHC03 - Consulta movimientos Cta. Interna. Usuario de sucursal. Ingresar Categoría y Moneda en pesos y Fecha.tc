@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHC03 - Consulta movimientos Cta. Interna. Usuario de sucursal. Ingresar Categoría y Moneda en pesos y Fecha</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f0330919-4f7b-49e6-be89-c45d5262cf5f</testCaseGuid>
+</TestCaseEntity>

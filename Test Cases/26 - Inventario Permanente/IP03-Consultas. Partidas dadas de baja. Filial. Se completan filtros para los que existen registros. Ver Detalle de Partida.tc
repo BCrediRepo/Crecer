@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IP03-Consultas. Partidas dadas de baja. Filial. Se completan filtros para los que existen registros. Ver Detalle de Partida</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff0ece25-5d73-4444-adba-e8a8434d0a78</testCaseGuid>
+</TestCaseEntity>
