@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTitulo</name>
+   <tag></tag>
+   <elementGuidId>5aa73409-8241-44ab-bb6c-2bc3bb0d7707</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLENOFILEDETOPERMONEX</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>ed529639-ee97-400a-945a-835940d0eb34</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLENOFILEDETOPERMONEX</value>
+      <webElementGuid>44f1566c-248c-4a67-ba82-e33bf3e2d204</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Det. de Oper de Compra-Venta MONEX</value>
+      <webElementGuid>39aa1a72-9246-4c7f-a71b-957bfce32412</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLENOFILEDETOPERMONEX&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLENOFILEDETOPERMONEX enqsel-selections enqsel-selections_BCCLENOFILEDETOPERMONEX&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLENOFILEDETOPERMONEX&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLENOFILEDETOPERMONEX&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLENOFILEDETOPERMONEX&quot;]</value>
+      <webElementGuid>0d60dbd3-852c-42d8-8374-a64bd4951585</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>20376bb8-f2f9-4f78-94ab-2300da623867</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::td[4]</value>
+      <webElementGuid>bd96cf84-5c39-4787-acfb-9102c9e1f897</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::td[6]</value>
+      <webElementGuid>de697789-8fbd-44c7-be44-49b24090df45</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>9a435e99-a0e5-4dcb-86f2-a72ae92ea3ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Det. de Oper de Compra-Venta MONEX' or . = 'Det. de Oper de Compra-Venta MONEX')]</value>
+      <webElementGuid>74f82cf1-a4fb-478f-aaf3-b609a27bfa7e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

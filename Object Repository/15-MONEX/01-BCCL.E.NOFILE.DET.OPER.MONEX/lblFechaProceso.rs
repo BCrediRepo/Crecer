@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFechaProceso</name>
+   <tag></tag>
+   <elementGuidId>f4c71e60-7938-428c-9571-744bdae25757</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[4]/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>1e7b4445-b377-48ed-9850-1a90c0ae6c15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>field field_BCCLOPCAMBIO field_BCCLOPCAMBIO_CONSULTA</value>
+      <webElementGuid>d5ad9ca9-8e1a-4e36-a049-21ecbde1da92</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>20</value>
+      <webElementGuid>1f473690-b146-462b-bbc1-5daae6bd7f73</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Fecha Proceso</value>
+      <webElementGuid>d609ad67-b0d2-4234-98d6-ccfcc49948f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[4]/td[@class=&quot;field field_BCCLOPCAMBIO field_BCCLOPCAMBIO_CONSULTA&quot;]</value>
+      <webElementGuid>cbb6e380-bcab-4846-9c93-3ba70e2dc003</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[4]/td[2]</value>
+      <webElementGuid>bdcd76df-e4af-465d-badf-dd2049497b5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='_____________________________________________________________________________________'])[1]/following::td[2]</value>
+      <webElementGuid>d15afeea-405e-4d62-8929-38ffccd424b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Parametros Generales de la Operacion'])[1]/following::td[3]</value>
+      <webElementGuid>7e2feabc-f90c-45d8-8f56-f65ecdd62d6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Valor'])[1]/preceding::td[4]</value>
+      <webElementGuid>f024796d-3c69-4d00-8676-eed6b14f36fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[2]</value>
+      <webElementGuid>0ee2fbef-f10f-43aa-8ee5-7671eee9890e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Fecha Proceso' or . = 'Fecha Proceso')]</value>
+      <webElementGuid>adc33e4f-4895-4360-8b87-aa6e00b8891b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblBuscarInfoBoleto</name>
+   <tag></tag>
+   <elementGuidId>c05da67b-7cff-41d3-9f2d-8169de4ab8cd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[14]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.enqdrilldowncell.enqdrilldowncell_BCCLENOFILEDETOPERMONEX</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>1b60bc2a-db86-4dba-81bc-d3a90f6c642a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqdrilldowncell enqdrilldowncell_BCCLENOFILEDETOPERMONEX</value>
+      <webElementGuid>48b7e26c-6e3a-4312-b4e6-4694e4852066</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLENOFILEDETOPERMONEX&quot;]</value>
+      <webElementGuid>1dcbe6f6-3536-47dc-adab-0f61cd7d9c4b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[14]</value>
+      <webElementGuid>a65a52b5-43c0-498e-8185-9df626c56f4e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='V'])[1]/following::td[8]</value>
+      <webElementGuid>30600bf1-8bcf-49b8-aeac-679a93b6c494</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='USD'])[1]/following::td[10]</value>
+      <webElementGuid>ceb11e7c-2435-4220-8ab9-628d4e0fce79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[2]</value>
+      <webElementGuid>4480e089-e1b4-4390-ae37-d01e11832aef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::td[2]</value>
+      <webElementGuid>a2daa96e-2442-4470-a5b0-28eb12f66a0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[14]</value>
+      <webElementGuid>ca46853f-c74e-4b60-a359-ef5e60398841</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

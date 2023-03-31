@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON11 - Consulta Sucursal Finanzas. Filtro Id grupo de cotizacion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a843a2f3-28fc-4af0-b612-a302241b9aa1</testCaseGuid>
+</TestCaseEntity>

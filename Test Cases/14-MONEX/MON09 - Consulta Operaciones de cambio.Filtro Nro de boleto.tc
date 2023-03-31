@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON09 - Consulta Operaciones de cambio.Filtro Nro de boleto</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de6e82fe-ec1b-447e-b54d-e3182a851af8</testCaseGuid>
+</TestCaseEntity>

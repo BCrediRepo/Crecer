@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtSucursal</name>
+   <tag></tag>
+   <elementGuidId>155eea12-1d67-4130-9b28-1e5ffac8c3e6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='mainTab']/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.field.field_BCCLGENSUCURSAL.field_BCCLGENSUCURSAL_BCCLIGENSUCURSAL</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>016c5411-f959-4bed-a831-4e353bed37f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>field field_BCCLGENSUCURSAL field_BCCLGENSUCURSAL_BCCLIGENSUCURSAL</value>
+      <webElementGuid>59809d59-03e3-4b10-9348-b865b0369645</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>35</value>
+      <webElementGuid>9df41b71-965e-493e-b100-81f4a0734f32</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nombre Sucursal</value>
+      <webElementGuid>e3284fc8-f699-4802-b050-989e91ea5e42</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainTab&quot;)/tbody[1]/tr[1]/td[@class=&quot;field field_BCCLGENSUCURSAL field_BCCLGENSUCURSAL_BCCLIGENSUCURSAL&quot;]</value>
+      <webElementGuid>db4e8139-57ca-4379-b91d-4939d7daefa5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='mainTab']/tbody/tr/td</value>
+      <webElementGuid>4b2a7219-0b84-4081-9ed1-bcca680e7741</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.074 Caseros Centro)'])[1]/following::td[4]</value>
+      <webElementGuid>4f9187b9-2054-4bf8-8519-392ce740d0e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tabla de Sucursales'])[2]/following::td[9]</value>
+      <webElementGuid>8140176b-a733-4ff7-abd1-b212ad4b2f02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Caseros Centro'])[1]/preceding::td[2]</value>
+      <webElementGuid>f275a691-8f11-4b39-a79f-11bc2207961b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>580b00cc-30df-4e32-9e61-06e44676707c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Nombre Sucursal' or . = 'Nombre Sucursal')]</value>
+      <webElementGuid>cc55b3f3-3d87-41db-a9f4-e3162bf7afab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

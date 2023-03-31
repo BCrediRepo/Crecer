@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON03 -Consulta de Parámetros de Filiales. Sin Filtro</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f6ae6b40-033b-42ac-8311-aad9d5358c62</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblIDGrupoCotizacion</name>
+   <tag></tag>
+   <elementGuidId>c85325f0-a653-491f-ae9c-33f28a0f8f9b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr/td/span/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>d5223249-b96c-4c59-ac17-1d5d2179b12d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>value:1:1:1</value>
+      <webElementGuid>36857d3b-e699-4144-9ed9-8b81df881614</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Id Grupo Cotizacion</value>
+      <webElementGuid>a1e03b3a-0871-436a-885c-431240bf5200</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[1]/td[1]/span[1]/label[1]</value>
+      <webElementGuid>7f6cd2a6-cf0b-4dbb-9145-2ddb9f2938ab</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr/td/span/label</value>
+      <webElementGuid>2f9b199d-1b14-490c-87a7-3704d2356717</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='segundos'])[1]/following::label[1]</value>
+      <webElementGuid>873da771-4d38-42cc-b27b-fc6c0c91d791</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rejecutar cada'])[1]/following::label[1]</value>
+      <webElementGuid>8860957f-539c-4b64-9400-cd60428fc295</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[1]/preceding::label[1]</value>
+      <webElementGuid>be5a38dc-81ef-427b-bf14-1f4d31eddafd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filial'])[4]/preceding::label[1]</value>
+      <webElementGuid>a205dbd5-3378-4561-bb2f-2a42316bd5af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label</value>
+      <webElementGuid>cace7d80-b31b-4828-8e29-ae6da35b7dfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Id Grupo Cotizacion' or . = 'Id Grupo Cotizacion')]</value>
+      <webElementGuid>ed8932d7-5668-4205-b7d4-9aaa294ccb26</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

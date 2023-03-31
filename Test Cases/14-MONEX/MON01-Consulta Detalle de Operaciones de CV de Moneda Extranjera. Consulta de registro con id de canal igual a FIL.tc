@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON01-Consulta Detalle de Operaciones de CV de Moneda Extranjera. Consulta de registro con id de canal igual a FIL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5b1061b-d3e8-40d4-9bfa-14d10e7746d0</testCaseGuid>
+</TestCaseEntity>

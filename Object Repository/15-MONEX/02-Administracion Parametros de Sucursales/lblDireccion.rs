@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDireccion</name>
+   <tag></tag>
+   <elementGuidId>b2a2ec3c-94fc-4591-b623-4a69ddcc7d2b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='toolBar']/table[2]/thead/tr[2]/td/table/tbody/tr/td[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>04a7a534-80ed-4cb5-9e4c-93266258e44a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>(Fil.074 Caseros Centro)</value>
+      <webElementGuid>a12f0049-2606-4858-9b93-f4159b512b95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;toolBar&quot;)/table[2]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[3]</value>
+      <webElementGuid>023d0074-186a-47c6-a786-583ba71d8899</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='toolBar']/table[2]/thead/tr[2]/td/table/tbody/tr/td[3]</value>
+      <webElementGuid>61247584-ed34-4a8e-896e-be6b051df240</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tabla de Sucursales'])[2]/following::td[5]</value>
+      <webElementGuid>be07a3b0-547a-44d5-8af7-eb4427415de6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Parametros de Filiales'])[1]/following::td[20]</value>
+      <webElementGuid>4449799d-577e-4786-aacf-796da0086775</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nombre Sucursal'])[1]/preceding::td[3]</value>
+      <webElementGuid>5efe9df5-b3b2-4436-b0f9-b44eb3244871</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Caseros Centro'])[1]/preceding::td[5]</value>
+      <webElementGuid>d0c580ad-d352-4b40-9b74-6db3c0a09f5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='(Fil.074 Caseros Centro)']/parent::*</value>
+      <webElementGuid>2fa3d327-1c9f-43df-bbdf-0bde22798045</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td/table/tbody/tr/td[3]</value>
+      <webElementGuid>452945be-8004-43fe-8da6-8c757e643125</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '(Fil.074 Caseros Centro)' or . = '(Fil.074 Caseros Centro)')]</value>
+      <webElementGuid>cfe89fae-1943-4258-93d4-f3b450aeeda9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

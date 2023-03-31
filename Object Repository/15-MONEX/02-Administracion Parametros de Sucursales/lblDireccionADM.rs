@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDireccionADM</name>
+   <tag></tag>
+   <elementGuidId>b56003e2-5a46-40df-85c8-5035be4d57c9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='mainTab']/tbody/tr[3]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a4321df0-b8be-4ca3-9be7-f831112e1faf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLGENSUCURSAL disabled_dealbox_BCCLGENSUCURSAL_BCCLIGENSUCURSAL</value>
+      <webElementGuid>51673f4d-4510-43ad-b0b4-e638aa57cde7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Av. Justo Jose de Urquiza 4724</value>
+      <webElementGuid>2a6d9f8d-00e6-4c56-b53e-8659e05c2f31</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainTab&quot;)/tbody[1]/tr[3]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLGENSUCURSAL disabled_dealbox_BCCLGENSUCURSAL_BCCLIGENSUCURSAL&quot;]</value>
+      <webElementGuid>0efc4171-aa3d-4225-893e-42329609acb2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='mainTab']/tbody/tr[3]/td[3]/span</value>
+      <webElementGuid>af820e39-5a4c-4d68-96e5-10eb176772fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Direccion'])[1]/following::span[1]</value>
+      <webElementGuid>ddef6351-f8c3-4732-a49f-a27906a59d61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Caseros Centro'])[2]/following::span[2]</value>
+      <webElementGuid>7224f4a3-e954-4861-bd8f-3d1c917f16be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Localidad'])[1]/preceding::span[2]</value>
+      <webElementGuid>3486f9ec-ed99-4ce9-a6bc-8250088ce7c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Caseros'])[1]/preceding::span[2]</value>
+      <webElementGuid>b41b376a-99a6-4e35-a4ba-73c7bfe3a0b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Av. Justo Jose de Urquiza 4724']/parent::*</value>
+      <webElementGuid>742cd478-1e8d-40ad-ae13-d4d4376b8d3e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td[3]/span</value>
+      <webElementGuid>26641df4-eb1e-4bfc-a66f-493b2e3a2b6d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Av. Justo Jose de Urquiza 4724' or . = 'Av. Justo Jose de Urquiza 4724')]</value>
+      <webElementGuid>fcf5f63b-5ac3-4a26-9c46-c03892a8500f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

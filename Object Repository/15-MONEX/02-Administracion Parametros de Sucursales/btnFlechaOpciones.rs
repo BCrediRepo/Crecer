@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnFlechaOpciones</name>
+   <tag></tag>
+   <elementGuidId>93a9b861-6093-4aba-9825-895d934b7831</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr[2]/td[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>2b9f04fc-8525-482f-a705-a7f16e382614</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[2]/td[4]</value>
+      <webElementGuid>7dadb9bc-b6b7-4ca0-8feb-4458d323707f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr[2]/td[4]</value>
+      <webElementGuid>7139d903-602a-4b47-aab4-e9afbc5fb033</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[2]/following::td[2]</value>
+      <webElementGuid>b9686954-79fd-4fc0-b63e-c941c00c79c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filial'])[4]/following::td[3]</value>
+      <webElementGuid>1373216f-e15a-406c-b4f5-cecce23d2fd6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AR0011074 : BCCL.E.GEN.SUCURSAL.FINANZAS'])[1]/preceding::td[1]</value>
+      <webElementGuid>419d28f6-09ab-46a3-8dc1-bec2e1478724</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[2]</value>
+      <webElementGuid>d1298dec-50d3-4226-8695-1d1b3ea72f9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[4]</value>
+      <webElementGuid>5c6246f3-e49b-4c06-a0fd-c63aaac6c2c8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

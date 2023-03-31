@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>spanFechaProceso</name>
+   <tag></tag>
+   <elementGuidId>6288b4f1-0f9b-4cec-8792-3d77221f6751</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[4]/td[4]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.disabled_dealbox.disabled_dealbox_BCCLOPCAMBIO.disabled_dealbox_BCCLOPCAMBIO_CONSULTA</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>8676d07a-624a-4b9d-ae1c-c9e5960e697c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLOPCAMBIO disabled_dealbox_BCCLOPCAMBIO_CONSULTA</value>
+      <webElementGuid>594aef53-4a9b-410d-a2f8-30deee790ab9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>25 JUL 2022</value>
+      <webElementGuid>2a13e4f1-3677-4f99-bf30-664366feb9b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[4]/td[4]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLOPCAMBIO disabled_dealbox_BCCLOPCAMBIO_CONSULTA&quot;]</value>
+      <webElementGuid>8248c03f-d07d-4633-84ea-385a139b1425</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[4]/td[4]/span</value>
+      <webElementGuid>8e8e2067-18af-4d54-8087-f61888ed2a94</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Proceso'])[1]/following::span[1]</value>
+      <webElementGuid>3e2e5254-95d1-4ad3-96da-e236990fed32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='_____________________________________________________________________________________'])[1]/following::span[1]</value>
+      <webElementGuid>35b53275-2fb0-43dd-a26e-4e0f35e00295</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Valor'])[1]/preceding::span[1]</value>
+      <webElementGuid>5483f96f-0c4f-4e25-81af-34f1e47d6c3e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Canal'])[1]/preceding::span[2]</value>
+      <webElementGuid>021e18fe-52b7-41b3-8efa-fb1186e39524</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='25 JUL 2022']/parent::*</value>
+      <webElementGuid>f6715fb2-791e-4a66-b5f8-dc18250bfa58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[4]/span</value>
+      <webElementGuid>2568e482-80aa-4d5f-bb4e-5fc109b9c619</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '25 JUL 2022' or . = '25 JUL 2022')]</value>
+      <webElementGuid>387c6570-8e3b-4dbc-9d20-f18b2cc66a0a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

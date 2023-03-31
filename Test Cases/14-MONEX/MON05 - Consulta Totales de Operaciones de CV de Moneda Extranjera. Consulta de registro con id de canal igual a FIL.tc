@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON05 - Consulta Totales de Operaciones de CV de Moneda Extranjera. Consulta de registro con id de canal igual a FIL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f4bdc4c-ef70-4781-afb3-c4798601d206</testCaseGuid>
+</TestCaseEntity>

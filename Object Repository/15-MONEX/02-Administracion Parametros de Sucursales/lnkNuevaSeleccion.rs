@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkNuevaSeleccion</name>
+   <tag></tag>
+   <elementGuidId>529fee77-8c1b-4e06-abb1-11f831e37ca8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>c5c4baca-bb9b-4f88-9f09-5e4776582444</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nueva Seleccion</value>
+      <webElementGuid>d521624a-da86-45ff-87ee-79d77d5186aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEGENSUCURSALFINANZAS&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEGENSUCURSALFINANZAS enqsel-selections enqsel-selections_BCCLEGENSUCURSALFINANZAS&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEGENSUCURSALFINANZAS&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEGENSUCURSALFINANZAS&quot;]/td[2]/table[1]/tbody[1]/tr[2]/td[1]</value>
+      <webElementGuid>9c5ee955-49c5-4563-b45e-4ab43d5b725f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td</value>
+      <webElementGuid>6e633abf-e889-4905-8112-db5695365527</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/following::td[1]</value>
+      <webElementGuid>91bf75b6-f6e8-49c2-83cd-d4d3151304ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Parametros de Filiales'])[2]/following::td[4]</value>
+      <webElementGuid>963e7af8-7a30-4b04-a7bd-201b9f1ae78b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ejecutar'])[1]/preceding::td[1]</value>
+      <webElementGuid>b84074c3-b070-49c3-9ff9-2bddc3d604ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr[2]/td</value>
+      <webElementGuid>7dd04a83-5068-463b-b20e-4646fcf68f0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Nueva Seleccion' or . = 'Nueva Seleccion')]</value>
+      <webElementGuid>01bcba96-8398-41fd-9646-393b60f5618b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

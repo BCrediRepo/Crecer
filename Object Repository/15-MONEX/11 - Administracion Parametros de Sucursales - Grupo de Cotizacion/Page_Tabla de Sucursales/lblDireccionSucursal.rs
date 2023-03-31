@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDireccionSucursal</name>
+   <tag></tag>
+   <elementGuidId>5a7fdd3a-c1c8-441e-bfa8-193cc9eb9f9d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='mainTab']/tbody/tr[3]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>2bc982d6-216b-416d-b6d7-f1472d1835c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLGENSUCURSAL disabled_dealbox_BCCLGENSUCURSAL_BCCLIGENSUCURSAL</value>
+      <webElementGuid>b6d7cf62-b3bf-4482-8be3-3391719ea55d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reconquista 480</value>
+      <webElementGuid>0fdfee35-f38f-455f-a7ea-48d9c5cb93af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainTab&quot;)/tbody[1]/tr[3]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLGENSUCURSAL disabled_dealbox_BCCLGENSUCURSAL_BCCLIGENSUCURSAL&quot;]</value>
+      <webElementGuid>feadb7bb-4d96-4571-ad8b-f6355b51b40a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='mainTab']/tbody/tr[3]/td[3]/span</value>
+      <webElementGuid>b737bb23-d7e3-4b0d-aebe-a3bcc6d5dd07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Direccion'])[1]/following::span[1]</value>
+      <webElementGuid>2ef10ed9-408c-4d7d-b7d4-6e9a083488bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Centro'])[2]/following::span[2]</value>
+      <webElementGuid>6e1ee03d-3df8-426a-84db-5ddd1f469b61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Localidad'])[1]/preceding::span[2]</value>
+      <webElementGuid>c43f5c9b-2ada-4e66-9341-9a9338c12326</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capital Federal'])[1]/preceding::span[2]</value>
+      <webElementGuid>466b692c-9766-4bd8-a2a5-ce55cde4d53e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Reconquista 480']/parent::*</value>
+      <webElementGuid>6e3ed322-372e-4051-bd8f-5d9accb988e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td[3]/span</value>
+      <webElementGuid>10858f1b-5fcc-4964-ba71-ba83b55dddf5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Reconquista 480' or . = 'Reconquista 480')]</value>
+      <webElementGuid>e812f3d1-b0de-4009-a24c-e3b281df7353</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

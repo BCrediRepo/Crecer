@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON06 - CpraVta Moneda Ext.Consulta Totales de Operatoria. Contrasentar un Registro y realizar consulta de totales</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9517484f-19bb-4ea4-b561-b8265f92a0ae</testCaseGuid>
+</TestCaseEntity>
