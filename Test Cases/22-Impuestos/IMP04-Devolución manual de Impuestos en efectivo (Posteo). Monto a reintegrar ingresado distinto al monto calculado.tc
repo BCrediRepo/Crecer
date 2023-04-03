@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP04-Devolución manual de Impuestos en efectivo (Posteo). Monto a reintegrar ingresado distinto al monto calculado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e331ed8a-0081-40cc-943b-4338cfc925f9</testCaseGuid>
+</TestCaseEntity>

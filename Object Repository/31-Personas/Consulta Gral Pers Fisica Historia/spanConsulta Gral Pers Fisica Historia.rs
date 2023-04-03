@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>spanConsulta Gral Pers Fisica Historia</name>
+   <tag></tag>
+   <elementGuidId>dd33945b-0e0d-44b7-a912-44dca8a555e1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dd76a296-8869-4803-b206-b6a6a0619a07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>b0d2d493-968a-4c2c-965a-e9d52b5e7182</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta Gral Pers Fisica Historia</value>
+      <webElementGuid>78633410-f0a2-43c2-af15-44ab5995ff50</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryResponseCrumbs&quot;)/tbody[1]/tr[1]/td[@class=&quot;crumb crumb_BCCLEPERULTMODIF&quot;]/a[1]/span[1]</value>
+      <webElementGuid>ed11e12d-ba8c-4434-b22b-6e64b865409f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>fdf25f4a-8a19-4503-8f48-04705e7b67b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lr a:'])[1]/following::span[1]</value>
+      <webElementGuid>663bb389-e953-4631-9fd7-0464457da25a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Resultados1 - 2 of 2'])[1]/preceding::span[1]</value>
+      <webElementGuid>b120028d-e406-477d-a33e-a9b0e395d236</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprimir Localmente'])[1]/preceding::span[2]</value>
+      <webElementGuid>067a4f54-d524-482f-a06c-629a75417917</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta Gral Pers Fisica Historia']/parent::*</value>
+      <webElementGuid>c064df75-9ae1-4576-915d-e89c4a89acba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span</value>
+      <webElementGuid>9a62fa49-7d9e-43bc-96c4-133b515ef169</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Consulta Gral Pers Fisica Historia' or . = 'Consulta Gral Pers Fisica Historia')]</value>
+      <webElementGuid>d0179aa8-31f1-46d3-a46a-4b9d2958ce13</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectorFECHA</name>
+   <tag></tag>
+   <elementGuidId>cb0bef9a-e50d-49ec-aa9b-eef3aa6582c5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@name='operand:1:1:1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>select[name=&quot;operand:1:1:1&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>1a595316-36fd-463a-b566-91a2484293c8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>operand:1:1:1</value>
+      <webElementGuid>c37dfa33-a955-4dc7-9b12-aac398e3be68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqsel enqsel_BCCLCQSTOCKENTRYACTA</value>
+      <webElementGuid>f4fd8f69-5904-4adf-ac19-f4547b27899d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>igualmayor o igual que</value>
+      <webElementGuid>a80810d6-e715-4d1a-8020-d98fcf5cec89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[1]/td[@class=&quot;oper oper_BCCLCQSTOCKENTRYACTA&quot;]/select[@class=&quot;enqsel enqsel_BCCLCQSTOCKENTRYACTA&quot;]</value>
+      <webElementGuid>943a1a26-d509-4405-a65a-e475b92d5f23</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@name='operand:1:1:1']</value>
+      <webElementGuid>702ba284-7fa8-460f-8392-6f3c7e0c4370</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr/td[2]/select</value>
+      <webElementGuid>8d405ee6-8c46-4c9d-9e9f-d824ed20d706</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FECHA CAMBIO ESTADO'])[4]/following::select[1]</value>
+      <webElementGuid>260c0bf2-f087-499e-8453-97de8ee39269</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='segundos'])[1]/following::select[1]</value>
+      <webElementGuid>dfa58e69-b40d-4009-ae47-e85f4a509b55</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SUCURSAL'])[4]/preceding::select[1]</value>
+      <webElementGuid>48cdb61d-fd71-4866-bd17-77f3503662e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CUENTA'])[4]/preceding::select[2]</value>
+      <webElementGuid>42e5b7e2-9f4f-42c0-826b-632f023f04f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/table/tbody/tr/td[2]/select</value>
+      <webElementGuid>b11bce11-0fb1-4f82-a17e-b0e2b564ffc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'operand:1:1:1' and (text() = 'igualmayor o igual que' or . = 'igualmayor o igual que')]</value>
+      <webElementGuid>37b19c1e-b35a-4bc1-9c86-8a5259c95899</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

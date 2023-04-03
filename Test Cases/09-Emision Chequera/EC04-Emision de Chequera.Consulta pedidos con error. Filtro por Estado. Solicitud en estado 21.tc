@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EC04-Emision de Chequera.Consulta pedidos con error. Filtro por Estado. Solicitud en estado 21</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>943306ca-cd4b-4fd3-9f79-10d458243a6a</testCaseGuid>
+</TestCaseEntity>

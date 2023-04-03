@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnLargavistas</name>
+   <tag></tag>
+   <elementGuidId>5606d561-cd93-431a-bf0d-86679d4def0f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Transaction Detail&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r3']/td[11]/a/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>fcd8cf1f-e541-4184-8596-745ce7811cd9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/enquiry/drilldown/view.gif</value>
+      <webElementGuid>f560981f-685a-4d54-9b96-58c1dd1e3fcf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Transaction Detail</value>
+      <webElementGuid>8393c467-61ef-427a-800d-02f4f6c04946</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Transaction Detail</value>
+      <webElementGuid>ca599ed4-ba8a-479f-b79c-279538f09b99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r3&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLESTMTENTBOOK&quot;]/a[1]/img[1]</value>
+      <webElementGuid>20dcdaf3-ec4e-4f8f-b117-2a3ce50d605a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r3']/td[11]/a/img</value>
+      <webElementGuid>2b8652fa-969c-4113-b2fa-018e86aa82fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Transaction Detail']</value>
+      <webElementGuid>b6d9c305-ce9b-40b6-9d17-b5e8d2457f69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[11]/a/img</value>
+      <webElementGuid>fe15ad2c-e709-447a-b99a-2367ca51e8c8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/enquiry/drilldown/view.gif' and @alt = 'Transaction Detail' and @title = 'Transaction Detail']</value>
+      <webElementGuid>dbbf9ca1-ded2-497f-9365-1d647fc6ef34</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

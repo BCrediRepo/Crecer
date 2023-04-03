@@ -30,15 +30,16 @@ public class kywScreenshot {
 	 *getTestCaseName: obtengo el nombre del caso actual, definido por las 4 caracteres inciales. 	*
 	 *getTimeNow: obtener fecha actual.																*
 	 *----------------------------------------------------------------------------------------------*/
-	
+
 	def kywG = new pkgModules.kywGeneric()
-	
+
 	@Keyword
 	def takeScreenshotInScript(){
 		def testCaseName = kywG.getTestCaseName()
 		def date = kywG.getTimeNow()
-		def folderName = kywG.getFolderName()
+		def folderCaseName = kywG.getFolderCaseName()
+		def folderMainName = kywG.getFolderMainName()
 		WebUI.delay(3)
-		WebUI.takeScreenshot('Screenshot/'+ folderName +'/'+testCaseName+'/'+ testCaseName + '-' + date +'.png')
+		WebUI.takeScreenshot('Screenshot/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+testCaseName+'-'+date+'.png')
 	}
 }

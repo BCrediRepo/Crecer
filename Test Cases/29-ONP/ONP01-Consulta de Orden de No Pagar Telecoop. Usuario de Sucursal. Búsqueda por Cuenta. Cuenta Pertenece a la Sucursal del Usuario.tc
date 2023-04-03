@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ONP01-Consulta de Orden de No Pagar Telecoop. Usuario de Sucursal. Búsqueda por Cuenta. Cuenta Pertenece a la Sucursal del Usuario</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e63bafbd-9aba-4403-9050-bb562e866d37</testCaseGuid>
+</TestCaseEntity>
