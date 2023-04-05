@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PF11-Plazo Fijo. Consultas por Plazo Fijo. Consulta Plazos Fijos Vencidos Inmovilizados impagos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5a702d80-c894-48ae-a618-7557cc17c2df</testCaseGuid>
+</TestCaseEntity>
