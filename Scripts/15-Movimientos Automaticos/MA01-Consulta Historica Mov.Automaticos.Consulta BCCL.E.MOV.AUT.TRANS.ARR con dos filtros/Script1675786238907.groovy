@@ -21,43 +21,63 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,11), findTestData('MainData/Users').getValue(2,11))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 11), findTestData('MainData/Users').getValue(
+        2, 11))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
+
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkConsultaMovimientosHistoricos'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.HIST')
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkNueva Seleccion'))
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkEjecutar'))
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnNuevaBusqueda'))
+
+//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkNueva Seleccion'))
+//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkEjecutar'))
+//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnNuevaBusqueda'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
+
+WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkConsultaMovimientosHistoricos'))
+
 WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/txtNroCta_value111'), '10430040953')
+
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkEjecutar'))
+
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnVista'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('Mov-Automaticos Data')
+
 trx = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/Mov-Automaticos Data/lblOperacion'))
 
 if (trx == true) {
     WebUI.maximizeWindow()
+
     CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	}
+} //---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
 else {
-	WebUI.maximizeWindow()
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+    WebUI.maximizeWindow()
+
+    CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 }
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
