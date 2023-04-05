@@ -27,14 +27,24 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
+WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkNuevaSeleccion'))
+//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkEjecutar'))
+//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/btnLupita'))
+
+WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkNuevaSeleccion'))
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkEjecutar'))
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/btnLupita'))
+
 WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/txtNroCuenta_value411'), '10430047640')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 Cabecera = WebUI.getText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lblMovimientosrechazaninforme'))
 if (Cabecera == true) {

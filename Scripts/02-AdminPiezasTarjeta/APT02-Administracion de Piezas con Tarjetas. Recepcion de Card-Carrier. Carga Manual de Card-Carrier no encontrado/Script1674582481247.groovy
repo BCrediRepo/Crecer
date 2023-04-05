@@ -16,21 +16,33 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 5), findTestData('MainData/Users').getValue(2, 5))
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.delay(3)
+WebUI.closeWindowTitle('BCCL.AP.PIEZAS')
+
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
+
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
+
+//Continuo con la busqueda de datos
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtMARCA'), 'CABAL')
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtSUCURSAL'), '073')
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lnkEjecutar'))
@@ -42,14 +54,15 @@ WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/EditarPiezas'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/EditarPiezas'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 6)
+
 //CONSULTAR POR QUE AL HACER UN GETTEXT DE UN txtBOX me trae VACIO
 prod = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'))
-
-if (prod.contains('PROGRESAR')){ 
-	WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 'CREDITO')
-}else{
-	WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 'PROGRESAR')
+if (prod.contains('PROGRESAR')) {
+    WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 'CREDITO')
+} else {
+    WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 'PROGRESAR')
 }
+
 //txn = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'))
 //txn = txn.split(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'), 2)
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAceptarRegistro'), 6)
@@ -58,37 +71,38 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarje
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.closeBrowser()
 
-
 //Login - Me vuelvo a loguear para autorizar el cambio realizado anteriormente. Utilizando otro user de la misma suc.
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,6), findTestData('MainData/Users').getValue(2,6))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 6), findTestData('MainData/Users').getValue(2, 6))
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtTransactionId'), 6)
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtTransactionId'), numPieza) 
+WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtTransactionId'), numPieza)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgTool'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAutorizaRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAutorizaRegistro'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'))
-
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta')) 
 
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

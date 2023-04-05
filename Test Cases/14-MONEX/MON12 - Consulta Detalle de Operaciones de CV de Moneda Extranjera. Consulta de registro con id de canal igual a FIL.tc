@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON12 - Consulta Detalle de Operaciones de CV de Moneda Extranjera. Consulta de registro con id de canal igual a FIL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>080f8aa3-2f8f-44a1-8ea5-7cc34dbfb1da</testCaseGuid>
+</TestCaseEntity>

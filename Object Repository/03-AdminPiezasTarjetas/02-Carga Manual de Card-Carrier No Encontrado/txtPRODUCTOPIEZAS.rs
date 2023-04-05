@@ -6,19 +6,18 @@
    <elementGuidId>939ede3c-fc5f-4a60-b7ab-51a09b31a838</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//input[@id='fieldName:AP.PRODUCTO']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[@id = 'fieldName:AP.PRODUCTO' and @name = 'fieldName:AP.PRODUCTO' and @value = 'PROGRESAR' and @type = 'text']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='fieldName:AP.PRODUCTO']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>16482722-17e8-4827-8f4f-726dde628ff7</webElementGuid>
+      <webElementGuid>5c781706-e2e6-4337-8a48-1cddba91c48a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +33,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>07645f6d-51d9-44d0-a24e-894b526f6221</webElementGuid>
+      <webElementGuid>cadf888a-d1cd-4f84-b174-0c1e83ca58d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +41,7 @@
       <name>size</name>
       <type>Main</type>
       <value>35</value>
-      <webElementGuid>cf870892-7671-4f5f-b4a8-32d5909678d6</webElementGuid>
+      <webElementGuid>f598794b-b501-4edf-bdc3-0490f8a3148c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +49,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:AP.PRODUCTO</value>
-      <webElementGuid>875e6a92-1361-4b03-bd31-13f227e7be37</webElementGuid>
+      <webElementGuid>c872c6cf-135f-4829-ac39-f37438f41075</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +57,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:AP.PRODUCTO</value>
-      <webElementGuid>9b21dab0-8041-43de-b17c-42cabca08e68</webElementGuid>
+      <webElementGuid>64460258-9b0d-485f-8ac6-af36b76c0a76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +65,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>6923a667-e9cc-4bec-9f05-410a6e420aaf</webElementGuid>
+      <webElementGuid>36542502-bd60-425f-a908-99b0540f144a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -74,7 +73,7 @@
       <name>value</name>
       <type>Main</type>
       <value>PROGRESAR</value>
-      <webElementGuid>a58064ba-aec2-4382-9807-6d7bf69ffa4c</webElementGuid>
+      <webElementGuid>42ade1e6-e51d-4d8b-aed7-f8ee6ff93be3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -82,7 +81,7 @@
       <name>oldvalue</name>
       <type>Main</type>
       <value>PROGRESAR</value>
-      <webElementGuid>bc1fa528-f4aa-4f7f-b05e-57648cabe298</webElementGuid>
+      <webElementGuid>44e1230e-724c-4b23-9d19-033e431ed221</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -90,7 +89,7 @@
       <name>data-oldvalue</name>
       <type>Main</type>
       <value>PROGRESAR</value>
-      <webElementGuid>e56cfa4d-6283-4ca8-ac4b-cce24caeba54</webElementGuid>
+      <webElementGuid>c5270d35-02d7-4c15-8f15-6c8eb8336742</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -98,7 +97,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_BCCLAPPIEZAS</value>
-      <webElementGuid>b71875e2-cac5-431e-8933-1274b116d383</webElementGuid>
+      <webElementGuid>e89282be-ece1-41cb-bfd2-10b10b68e004</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -106,7 +105,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>35</value>
-      <webElementGuid>b4e7eb68-8d87-41a5-8a35-94ddc7e9e561</webElementGuid>
+      <webElementGuid>c009d9c2-c4ce-4a39-84ae-3cad7e33eabb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -114,7 +113,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>ae790d7c-382d-4ffa-907b-103fe2c47c33</webElementGuid>
+      <webElementGuid>f29733a0-6ace-4e17-a1af-5645aff586d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -122,7 +121,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_AP.PRODUCTO</value>
-      <webElementGuid>6e2fca1c-7137-4d69-bb9b-6f61af6b8bb2</webElementGuid>
+      <webElementGuid>5047c1fc-a2c3-47f5-9ea2-aae09ca4f770</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -130,7 +129,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'AP.PRODUCTO','issueToken');</value>
-      <webElementGuid>40ef6bc2-9a46-4f06-bbfa-5825d74d927e</webElementGuid>
+      <webElementGuid>5a2831b3-073c-40e1-8532-14168712757f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -138,7 +137,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>175c8b75-4097-4612-a325-278a89f391f2</webElementGuid>
+      <webElementGuid>f3dbc223-4994-480e-a599-356f5a27bf32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -146,7 +145,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('AP.PRODUCTO','','','issueToken')</value>
-      <webElementGuid>47815e0c-37ae-42fb-b964-f235668519f1</webElementGuid>
+      <webElementGuid>21fff8e4-2f47-4c93-8338-fa788e78018a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -154,7 +153,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:AP.PRODUCTO&quot;)</value>
-      <webElementGuid>e388b695-0bdd-48e8-a670-a04d5c4833d7</webElementGuid>
+      <webElementGuid>abc3f90a-14c9-4d0a-ba56-7756d2e4c4f8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -162,7 +161,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:AP.PRODUCTO']</value>
-      <webElementGuid>7f2bbc6c-4485-4cb2-a209-8fa50d725f2f</webElementGuid>
+      <webElementGuid>8d1e3088-02a2-4eed-a1e7-5d8aaa32c3d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -170,7 +169,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[2]/td[3]/input</value>
-      <webElementGuid>bfbbca45-f76f-416e-94fc-770095667572</webElementGuid>
+      <webElementGuid>8e2c049c-3438-41af-a985-1123d61c2ff9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -178,7 +177,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[3]/input</value>
-      <webElementGuid>6c9369ad-9a40-4b0c-9214-9428eef58fdf</webElementGuid>
+      <webElementGuid>a977ce05-de8d-4097-978b-d71dc4777fd7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -186,6 +185,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:AP.PRODUCTO' and @name = 'fieldName:AP.PRODUCTO' and @type = 'text']</value>
-      <webElementGuid>318a4688-1302-4384-af0f-0d26f7056700</webElementGuid>
+      <webElementGuid>d6e51a91-4de3-4d83-ab38-f6c83e8efbc0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
