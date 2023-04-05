@@ -28,8 +28,27 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.REJ
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Command Line/inputCommandLine'),6)
-WebUI.setText(findTestObject('Object Repository/00-Command Line/inputCommandLine'),'ENQ BCCL.E.MOV.AUT.REJ')
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.REJ')
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Abre la pestaña BCCL.E.MOV.AUT.REJ
+WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.REJ')
+
+//Maximiza la pestaña
+WebUI.maximizeWindow()
+
+//Verifica que se visualice el titulo BCCL.E.MOV.AUT.REJ
+WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblTituloBCCL.E.MOV.AUT.REJ'), 6)
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.REJ
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.REJ')
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -44,24 +63,6 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Maximiza la pestaña
 WebUI.maximizeWindow()
-
-//Verifica que se visualice el titulo BCCL.E.MOV.AUT.REJ
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblTituloBCCL.E.MOV.AUT.REJ'), 6)
-
-//Nueva seleccion
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lnkNuevaSeleccion'), 6)
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lnkNuevaSeleccion'))
-
-//Presiona botón ejecutar
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/btnEjecutar'),6)
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/btnEjecutar'))
-
-//Selecciona lupita para nueva selección
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/btnLupa'), 6)
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/btnLupa'))
-
-//Nueva seleccion
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lnkNuevaSeleccion'))
 
 //Ingresa una secuencia 
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/inputSecuencia'),'0368890')
