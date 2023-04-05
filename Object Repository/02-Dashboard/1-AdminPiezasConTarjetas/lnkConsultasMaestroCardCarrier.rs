@@ -11,13 +11,13 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Consultas al Maestro de Card-Carrier' or . = 'Consultas al Maestro de Card-Carrier') and @ref_element = 'Object Repository/02-Dashboard/AdminPiezasConTarjetas/frmAdminPiezasConTarjetas']</value>
+         <value>//*[(text() = 'Consultas al Maestro de Card-Carrier' or . = 'Consultas al Maestro de Card-Carrier') and @ref_element = 'Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/frmAdminPiezasConTarjetas']</value>
       </entry>
       <entry>
          <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>ca393eaa-1976-4f3a-8315-8a4fa51740c1</webElementGuid>
+      <webElementGuid>3a096cf2-3ae9-4242-bf72-37825c64de05</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>cc349f67-de43-4530-ac0d-6fffb758c753</webElementGuid>
+      <webElementGuid>1594910b-b8d6-4bb9-9dc5-4520c46c6164</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +41,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>cb7229ef-3ede-4e99-9c22-79d0743e174e</webElementGuid>
+      <webElementGuid>6f3bac51-db2c-4ff7-b7a2-56a75b4320da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consultas al Maestro de Card-Carrier</value>
-      <webElementGuid>95bed97d-e2dc-41ad-88a6-44611026b5a3</webElementGuid>
+      <webElementGuid>15a460c2-9c27-43cf-bd81-d8c2afc8c8a8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>00fe991d-beab-41f6-8755-c21fd99f796c</webElementGuid>
+      <webElementGuid>475b78a6-26c8-4fd8-be9d-68ca1750ad83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -65,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/frmAdminPiezasConTarjetas</value>
-      <webElementGuid>478ac423-68af-4926-8f14-c4a569047273</webElementGuid>
+      <webElementGuid>9bac863c-c553-4e8a-bf19-851f89bf9dfa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[58]</value>
-      <webElementGuid>ad2ed0d3-069a-4f26-be5a-c490ce2de72d</webElementGuid>
+      <webElementGuid>5dcbbf15-6e58-4f51-97b2-fd17a3981add</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[14]/li/ul/li[4]/span</value>
-      <webElementGuid>086469cb-d4fa-48bd-856c-193fd920ff9f</webElementGuid>
+      <webElementGuid>93d88fc2-a240-4c66-99fb-1585aa4b64ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Entrega al Socio por Nro. de PIEZA'])[1]/following::span[1]</value>
-      <webElementGuid>18ba879f-b12a-4437-b919-a86e85420bd3</webElementGuid>
+      <webElementGuid>2b90bda3-e7a7-4568-85fa-978f502a41d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Entrega de TARJETAS al SOCIO'])[1]/following::span[1]</value>
-      <webElementGuid>a4cebf82-f86b-470a-b2d0-d756fc8f5c16</webElementGuid>
+      <webElementGuid>debda543-87c4-4efa-b4fd-54bdb66bcc25</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccion por Nombre / Documento / Sucursal'])[1]/preceding::span[1]</value>
-      <webElementGuid>40be29f9-90b0-4f98-be81-6ad8ae04b288</webElementGuid>
+      <webElementGuid>bef7ab80-9295-4a45-a5bf-d908241d61f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta por Card-Carrier'])[1]/preceding::span[1]</value>
-      <webElementGuid>5636f541-726f-44ef-952d-b70fa440c218</webElementGuid>
+      <webElementGuid>f1109afa-ee44-40e7-8b17-f556e4b736be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -121,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consultas al Maestro de Card-Carrier']/parent::*</value>
-      <webElementGuid>7f0322bb-01b7-4a8b-830a-d35748dba87c</webElementGuid>
+      <webElementGuid>47d2a3ad-d3e6-4709-b68b-861aea0fa3aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -129,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[14]/li/ul/li[4]/span</value>
-      <webElementGuid>dae594e7-f09d-498e-a8da-d0379faa58ec</webElementGuid>
+      <webElementGuid>e51f6247-7d8c-4152-965d-8e0bd06746e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Consultas al Maestro de Card-Carrier' or . = 'Consultas al Maestro de Card-Carrier')]</value>
-      <webElementGuid>66bfb9ef-1a66-433d-abdb-85b343e45f06</webElementGuid>
+      <webElementGuid>bfc26872-8144-4c9a-a263-dd29454737b9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
