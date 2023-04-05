@@ -43,6 +43,7 @@ WebUI.maximizeWindow()
 //Verifica que se visualice el titulo BCCL.E.MOV.AUT.ACPT
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloBCCL.E.MOV.AUT.ACPT'), 6)
 
+//Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
