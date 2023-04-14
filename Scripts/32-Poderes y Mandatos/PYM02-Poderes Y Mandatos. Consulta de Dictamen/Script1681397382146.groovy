@@ -17,17 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?302
+// Ingreso al menu ?29
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?29')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
@@ -35,42 +36,28 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanPersonas3'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/spanDictamenes'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/spanConsulta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/lnkConsulta de Dictamen'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/spanConsultaUltimasModificaciones'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Ultimas Modificaciones/lnkConsultaUltimas modif a Pers Fisica'))
-
-WebUI.switchToWindowTitle('Consulta Gral Pers Fisica Historia')
-
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkNueva Seleccion'))
-
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkEjecutar'))
-
-//WebUI.switchToWindowTitle('BCCL.E.PER.GEN.PF.HIS')
-
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/btnLupa'))
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/txtIDpersona'), '1000873562')
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/txtNroDocumento'), '20144835')
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/txtApellido'), 'ENRICO')
-
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkEjecutar'))
+WebUI.switchToWindowTitle('BCCL.POD.MOD.TEMPLATE')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Ult Modif'))
+WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/txtCodigo De Relacion'), '1004564423')
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/spanConsulta Gral Pers Fisica Historia'))
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnValidarRegistro'))
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Historico'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnImprimirPantalla'), 6)
 
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnImprimirPantalla'))
+
+//WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblASOC SIND PROF S E ECHEVER'), 6)
+
+WebUI.closeBrowser()
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -81,10 +68,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-
-
-
 
