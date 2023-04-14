@@ -39,7 +39,9 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se valida la existencia de objetos en BCCL.E.CONS.TINT.ALTAS
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'),3)
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

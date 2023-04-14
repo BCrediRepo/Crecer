@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP10-Impuestos. Ajustes monetarios. Alta de Nota de Crédito Ajuste. Cuenta en pesos. Persistencia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb8d71d0-c974-468d-a4ec-e96a32724b56</testCaseGuid>
+</TestCaseEntity>

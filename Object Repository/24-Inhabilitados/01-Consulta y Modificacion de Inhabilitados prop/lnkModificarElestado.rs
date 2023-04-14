@@ -6,12 +6,11 @@
    <elementGuidId>44c66b79-c684-47e9-9ab5-29d664f28134</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td[11]/a</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[11]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

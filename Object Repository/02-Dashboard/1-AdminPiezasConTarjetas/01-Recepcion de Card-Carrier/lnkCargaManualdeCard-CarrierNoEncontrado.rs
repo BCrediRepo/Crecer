@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkCargaManualdeCard-CarrierNoEncontrado</name>
+   <tag></tag>
+   <elementGuidId>e3b05699-cd64-4329-8a3f-340c3d5157c6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.AP.PIEZAS,BCCL.V.AP.ALTA.MANUAL');processMenuHeaderText('Carga Manual de Card-Carrier no encontrado')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>47530eec-38e4-4b0f-b732-7981f651a3cc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('CONTRACT','BCCL.AP.PIEZAS,BCCL.V.AP.ALTA.MANUAL');processMenuHeaderText('Carga Manual de Card-Carrier no encontrado')</value>
+      <webElementGuid>f2a08970-d390-4042-a3d7-947f8262cb29</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('BCCL.AP.PIEZAS,BCCL.V.AP.ALTA.MANUAL');</value>
+      <webElementGuid>41d6c0a7-d9e9-4d99-9f01-aa559b7964f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Carga Manual de Card-Carrier no encontrado </value>
+      <webElementGuid>aea8ba18-1b2b-40de-a970-dd7bf4db3a65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[5]/a[1]</value>
+      <webElementGuid>0b4c88a8-6d14-4d7a-a83f-9d13cada5287</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.AP.PIEZAS,BCCL.V.AP.ALTA.MANUAL');processMenuHeaderText('Carga Manual de Card-Carrier no encontrado')&quot;]</value>
+      <webElementGuid>3de3212f-34df-4278-a623-7ae24df9b09d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[14]/li/ul/li/ul/li[5]/a</value>
+      <webElementGuid>31cd1ee5-ef61-46e8-ad71-cb6804c3a3a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Carga Manual de Card-Carrier no encontrado')]</value>
+      <webElementGuid>4633d99f-8517-4db4-ac5a-10399f9444b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda por Nombre o Documento'])[1]/following::a[1]</value>
+      <webElementGuid>c3281a36-7fcb-4f9c-991b-e71ec9b451d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recepcion individual de Card-Carrier'])[1]/following::a[2]</value>
+      <webElementGuid>bf2fda46-96f1-48bc-b03e-499f958f5357</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Envio a otra filal o al Activador Comercial'])[1]/preceding::a[1]</value>
+      <webElementGuid>78387a74-2bcd-418a-b294-39f3d1530b02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Envio o Entrega a AC de Card-Carrier'])[1]/preceding::a[1]</value>
+      <webElementGuid>645cfe24-d220-4395-a4e8-77ae427f1f6c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Carga Manual de Card-Carrier no encontrado']/parent::*</value>
+      <webElementGuid>d0dbc388-9ede-43ec-8126-08aae83dc3bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:docommand('BCCL.AP.PIEZAS,BCCL.V.AP.ALTA.MANUAL');&quot;)]</value>
+      <webElementGuid>a825083e-23bc-4d59-95a4-b3d42184246a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[14]/li/ul/li/ul/li[5]/a</value>
+      <webElementGuid>3d3c04b7-8b4b-4c53-831a-c4be4114f1bb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;BCCL.AP.PIEZAS,BCCL.V.AP.ALTA.MANUAL&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Carga Manual de Card-Carrier no encontrado ' or . = 'Carga Manual de Card-Carrier no encontrado ')]</value>
+      <webElementGuid>50c0cc7f-0236-4382-956d-480fe000db79</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

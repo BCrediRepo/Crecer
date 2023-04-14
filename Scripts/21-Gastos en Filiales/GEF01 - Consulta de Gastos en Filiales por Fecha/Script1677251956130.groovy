@@ -21,8 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
-        1, 4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 
 WebUI.maximizeWindow()
 
@@ -52,19 +51,20 @@ WebUI.waitForElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTO
 
 WebUI.maximizeWindow()
 
-FechaCabecera = WebUI.verifyElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha'))
+WebUI.verifyElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha'))
 
-FechaNumerica = WebUI.verifyElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lbl13072022'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lbl13072022'))
 
-if ((FechaCabecera == true) && (FechaNumerica == true)) {
-    WebUI.takeScreenshot('Screenshot/Gastos en Filiales/GEF01 - Consulta de Gastos en Filiales por Fecha.png')
-} else {
-    WebUI.takeScreenshot('Screenshot/Fails/Gastos en Filiales/Error - GEF01 - Consulta de Gastos en Filiales por Fecha.png')
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

@@ -27,11 +27,24 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.delay(3)
+WebUI.closeWindowTitle('BCCL.AP.PIEZAS')
+
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
 
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
+
+//Continuo con la busqueda de datos
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtSUCURSALPIEZA'), 6)
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtSUCURSALPIEZA'), '001')
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtESTADOPIEZA'), '001')
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/lnkEjecutar'))

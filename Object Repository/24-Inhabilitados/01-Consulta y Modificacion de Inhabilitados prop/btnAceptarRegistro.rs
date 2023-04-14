@@ -6,12 +6,12 @@
    <elementGuidId>de3f4bef-6f73-41be-a9e4-943711f51157</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>img[alt=&quot;Aceptar el registro&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

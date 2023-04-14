@@ -27,17 +27,21 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkProcesoDestruccionTarjetas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/05-ProcDestruccionTarjetas/lnkTarjetasPlazoAtesoramientoVencido'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
+
 //Switch a la ventana de Destruccion Masiva
 WebUI.switchToWindowTitle('BCCL.AP.E.AP.DESTRUCCION.MASIVA')
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/txtProducto'), 6)
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/txtProducto'), 'CREDITO')
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/ChckBxTarjeta'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/ChckBxTarjeta'))
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/imgAceptarRegistroDestruccion'))
+
 //Switch a la ventana de Confirmacion
 WebUI.switchToWindowTitle('Temenos T24')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/lblEnquiry'), 6)

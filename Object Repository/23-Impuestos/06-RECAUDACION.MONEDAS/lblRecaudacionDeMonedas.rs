@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblRecaudacionDeMonedas</name>
+   <tag></tag>
+   <elementGuidId>07570942-4447-4953-8628-69aa013b628f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='headtab']/tbody/tr/td/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.nonactive-tab > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>db2b157d-9e38-47c3-a5a8-a4acee8a527a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Recaudacion De Monedas</value>
+      <webElementGuid>4dcee9af-126e-40c8-a531-5c2c5c2bd58f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[1]/a[@class=&quot;nonactive-tab&quot;]/span[1]</value>
+      <webElementGuid>8abec455-e4c2-4c83-a549-cc127e6f9196</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='headtab']/tbody/tr/td/a/span</value>
+      <webElementGuid>ed883c05-84b3-4f1a-b345-6641f438a48e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::span[1]</value>
+      <webElementGuid>18be7b6a-59e8-4596-9ce4-89e59cbcd2c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TT22206060117046'])[1]/following::span[1]</value>
+      <webElementGuid>6e8e5e3f-50a6-47ab-be54-1a6c3642fac5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominaciones DB'])[1]/preceding::span[1]</value>
+      <webElementGuid>8e1f273d-ac67-482a-83d6-1a9243605ca3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/preceding::span[2]</value>
+      <webElementGuid>c62e1c76-b104-42f8-a74e-e0fe27c4b9e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/span</value>
+      <webElementGuid>7f8ef3b3-4396-4afc-a4e6-7caebbf02f17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Recaudacion De Monedas' or . = 'Recaudacion De Monedas')]</value>
+      <webElementGuid>963b7e5c-dfb7-4b2a-b15f-829a2446dc2c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

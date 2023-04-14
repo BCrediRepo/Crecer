@@ -28,7 +28,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('02-Dashboard/spanInventarioPermanente'))
+WebUI.click(findTestObject('02-Dashboard/lnkInventarioPermanente'))
 
 WebUI.click(findTestObject('02-Dashboard/25-Inventario Permanente/spanAltaDePartidas'))
 

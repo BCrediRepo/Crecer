@@ -15,10 +15,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.entity.global.GlobalVariableEntity
-
 import javax.swing.JFrame as JFrame
 import javax.swing.JOptionPane as JOptionPane
-
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -30,33 +28,30 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
-
 WebUI.delay(5)
 
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle ('T24 - Fil.001 Centro')
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
+
+//Vuelvo a la ventana de busqueda
+WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'))
-
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'), findTestData('MainData/Users').getValue(3,1))
-
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/btnEjecutar'))
-
-//Se limpia y realiza una nueva busqueda
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/icoReiniciarBusqueda'))
-
-WebUI.clearText(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'))
-
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/btnEjecutar'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/msgNoSeEncontraronRegistros'))
-
-WebUI.verifyTextPresent(findTestData('Errores/MensajesDeError').getValue(2,1), true)
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'), 10)
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'))
 
 WebUI.delay(3)
 

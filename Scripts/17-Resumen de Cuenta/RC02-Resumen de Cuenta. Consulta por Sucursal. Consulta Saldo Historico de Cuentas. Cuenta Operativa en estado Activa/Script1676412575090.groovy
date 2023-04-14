@@ -43,6 +43,21 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/5-SucursalPiloto/Resu
 
 //Switch a la ventana de saldos historicos de cuenta
 WebUI.switchToWindowTitle('Saldos Historicos de Cuenta')
+
+//Aplico KYW de limpieza de busqueda -- No invoco a la kyw ya que al ejecutar cambia el nombre de la ventana --
+WebUI.delay(3)
+		String browser = WebUI.getWindowTitle()
+		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+		WebUI.closeWindowTitle('BCCL.E.RES.CTA.HIS.SALDO')
+WebUI.delay(3)
+
+WebUI.switchToWindowTitle('Temenos T24')
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/5-SucursalPiloto/Resumen de Cuentas/Consultas/lnk SALDO HISTORICO DE CUENTAS'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/5-SucursalPiloto/Resumen de Cuentas/Consultas/lnk SALDO HISTORICO DE CUENTAS'))
+
+//Completo la busqueda
+WebUI.switchToWindowTitle('Saldos Historicos de Cuenta')
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), 6)
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), '05330013359')
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtFecha'), '20220701')

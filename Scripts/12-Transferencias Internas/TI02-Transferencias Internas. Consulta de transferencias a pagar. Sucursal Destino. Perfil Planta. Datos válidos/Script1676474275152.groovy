@@ -39,7 +39,9 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Se clickea en Ejecutar y se valida la existencia de campos principales
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

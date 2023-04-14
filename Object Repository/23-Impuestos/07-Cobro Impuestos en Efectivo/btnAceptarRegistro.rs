@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnValidarRegistro</name>
+   <name>btnAceptarRegistro</name>
    <tag></tag>
-   <elementGuidId>ebc08e67-1a95-4040-8614-cc644f5df815</elementGuidId>
+   <elementGuidId>c1342992-5a72-4343-aaf1-cc6eeacef2b2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>cc839711-0e65-4982-8418-d942bb020670</webElementGuid>
+      <webElementGuid>7cddfe3e-3401-4cd7-9af4-ae5d14c23be8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <type>Main</type>
       <value>../plaf/images/bccl/tools/txncommit.gif
 															</value>
-      <webElementGuid>00404aac-5397-4896-a274-565f356b0645</webElementGuid>
+      <webElementGuid>01b211f9-77be-4ede-991b-db310315238d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Aceptar el registro</value>
-      <webElementGuid>c5ce7d50-ee69-4b40-980b-fda5d4eec4e7</webElementGuid>
+      <webElementGuid>7edbb3a2-5679-4e02-834f-4e7cb579db68</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Aceptar el registro</value>
-      <webElementGuid>4eb7f496-7153-4fa8-bd4f-990ec82c0643</webElementGuid>
+      <webElementGuid>0ba11557-0731-4e46-a8e4-f5615f94c586</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
-      <webElementGuid>5caf8de6-a2aa-44d9-b15d-65e37707aecd</webElementGuid>
+      <webElementGuid>8a76ae12-f1ea-405d-bc22-cfd4171b2be5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
-      <webElementGuid>66916d67-5d5e-411c-83e2-9f5049a5a605</webElementGuid>
+      <webElementGuid>8de924ca-9ce0-4d69-a67f-ece6f4bff2c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Aceptar el registro']</value>
-      <webElementGuid>d7d39a08-bf53-47f0-9b32-4b36349686c9</webElementGuid>
+      <webElementGuid>98cc6e50-be9f-400c-a883-110da371bac7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>7b5ca725-8b31-4a5a-810a-0f623d078a6d</webElementGuid>
+      <webElementGuid>221717b2-08e2-451f-b034-dcee4ea1480e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +88,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/txncommit.gif
 															' and @alt = 'Aceptar el registro' and @title = 'Aceptar el registro']</value>
-      <webElementGuid>3104eaac-493f-4262-916a-ec988f4fccb1</webElementGuid>
+      <webElementGuid>29c78f66-2577-4fa0-97e2-c3e132787740</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

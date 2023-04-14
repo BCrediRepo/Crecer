@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanInventarioPermanente</name>
+   <name>lnkChequesCancelatorios</name>
    <tag></tag>
-   <elementGuidId>f2a96146-1307-4238-8e65-ad5c7962f368</elementGuidId>
+   <elementGuidId>d24876e9-37b4-4a55-993b-a15ebd47d0f8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[91]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[161]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>9bc50f81-e951-4c77-bd5a-c48dc88778f5</webElementGuid>
+      <webElementGuid>e3056667-3902-4ca2-8ec0-7b3753a16631</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>4980cedb-875d-4819-84f1-048328e71e97</webElementGuid>
+      <webElementGuid>90ac4187-2517-4ab2-9614-54096a1f30fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +37,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>fc745ff0-0617-472a-98df-27b91fc7dc6a</webElementGuid>
+      <webElementGuid>d93c91ec-3820-4c1a-95d6-07c3725f3928</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Inventario Permanente</value>
-      <webElementGuid>21741517-29c8-46c9-9a71-5592fe1d9ef5</webElementGuid>
+      <value>Cheques Cancelatorios</value>
+      <webElementGuid>7f7438b8-0cc7-4422-83cd-042a8b2096b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>679eb2e4-e3d6-458c-8dbb-e7a895140e10</webElementGuid>
+      <webElementGuid>75a0b8a6-c753-49f0-9872-f555be72ae17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,78 +61,78 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>880e77e8-e50c-45ef-be2e-525b909544fa</webElementGuid>
+      <webElementGuid>5f375caa-ebd7-4599-9b80-b15d78a7b80b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[161]</value>
-      <webElementGuid>bb018bc6-f1cb-41a0-a8b0-b4445b4b1e46</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[91]</value>
+      <webElementGuid>039bd57e-816d-4131-a75e-485b71d19804</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[37]/li/span</value>
-      <webElementGuid>a5ed5eba-b163-49e6-9b5a-26fcdb64bfbf</webElementGuid>
+      <value>//div[@id='pane_']/ul[27]/li/span</value>
+      <webElementGuid>1c36e3a9-aa9b-44a4-9b2b-feb9c33a2982</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar validacion BCRA'])[2]/following::span[1]</value>
-      <webElementGuid>7866a9cd-34d8-40b6-9c0e-c209ded6f557</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inventario de Cheques Financieros'])[1]/following::span[1]</value>
+      <webElementGuid>f7119eca-c845-4a4d-ae3f-fa5a90961b3f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Persona Juridica'])[2]/following::span[1]</value>
-      <webElementGuid>9ab982e8-4774-4662-8220-74399dd6a663</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Baja Cheques Financieros'])[1]/following::span[1]</value>
+      <webElementGuid>6f37dccf-c80b-4ac4-b644-7e29006ad5c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Partidas'])[1]/preceding::span[1]</value>
-      <webElementGuid>37092990-4eaf-4ddc-a763-5472f99cc0b6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Afectacion Cuentas Internas'])[1]/preceding::span[1]</value>
+      <webElementGuid>e55f1e65-62cb-4696-9362-8aaee951f750</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contra Cuenta Contable'])[1]/preceding::span[2]</value>
-      <webElementGuid>37e01d3b-40c2-4f4b-9422-85e838d6b07f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debito Cuentas Internas'])[1]/preceding::span[2]</value>
+      <webElementGuid>11d264ee-2d6d-4e85-b067-bc95d0e6c420</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Inventario Permanente']/parent::*</value>
-      <webElementGuid>41c3685d-43d1-4188-a277-24f7d93398be</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cheques Cancelatorios']/parent::*</value>
+      <webElementGuid>50aa1a38-c075-4acb-ad56-e1a473d26a43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[37]/li/span</value>
-      <webElementGuid>c7f1c2a3-a042-421a-ac60-4842249db7c1</webElementGuid>
+      <value>//ul[27]/li/span</value>
+      <webElementGuid>2eb7a88c-0401-4ffb-81c2-e9d11bee2fb2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Inventario Permanente' or . = 'Inventario Permanente')]</value>
-      <webElementGuid>da8c84ef-6e0b-4cde-ad5b-a0a35acd61de</webElementGuid>
+      <value>//span[(text() = 'Cheques Cancelatorios' or . = 'Cheques Cancelatorios')]</value>
+      <webElementGuid>5d82316d-72be-42ce-af25-40547f421ab2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

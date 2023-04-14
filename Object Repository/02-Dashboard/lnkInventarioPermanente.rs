@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkConsultasMaestroCardCarrier</name>
+   <name>lnkInventarioPermanente</name>
    <tag></tag>
-   <elementGuidId>f281522e-63be-4497-ad08-7507e17e6527</elementGuidId>
+   <elementGuidId>f2a96146-1307-4238-8e65-ad5c7962f368</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[58]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Consultas al Maestro de Card-Carrier' or . = 'Consultas al Maestro de Card-Carrier') and @ref_element = 'Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/frmAdminPiezasConTarjetas']</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[161]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -25,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3a096cf2-3ae9-4242-bf72-37825c64de05</webElementGuid>
+      <webElementGuid>9bc50f81-e951-4c77-bd5a-c48dc88778f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>1594910b-b8d6-4bb9-9dc5-4520c46c6164</webElementGuid>
+      <webElementGuid>4980cedb-875d-4819-84f1-048328e71e97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,102 +37,102 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>6f3bac51-db2c-4ff7-b7a2-56a75b4320da</webElementGuid>
+      <webElementGuid>fc745ff0-0617-472a-98df-27b91fc7dc6a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consultas al Maestro de Card-Carrier</value>
-      <webElementGuid>15a460c2-9c27-43cf-bd81-d8c2afc8c8a8</webElementGuid>
+      <value>Inventario Permanente</value>
+      <webElementGuid>21741517-29c8-46c9-9a71-5592fe1d9ef5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>475b78a6-26c8-4fd8-be9d-68ca1750ad83</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>679eb2e4-e3d6-458c-8dbb-e7a895140e10</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/frmAdminPiezasConTarjetas</value>
-      <webElementGuid>9bac863c-c553-4e8a-bf19-851f89bf9dfa</webElementGuid>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>880e77e8-e50c-45ef-be2e-525b909544fa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[58]</value>
-      <webElementGuid>5dcbbf15-6e58-4f51-97b2-fd17a3981add</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[161]</value>
+      <webElementGuid>bb018bc6-f1cb-41a0-a8b0-b4445b4b1e46</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[14]/li/ul/li[4]/span</value>
-      <webElementGuid>93d88fc2-a240-4c66-99fb-1585aa4b64ff</webElementGuid>
+      <value>//div[@id='pane_']/ul[37]/li/span</value>
+      <webElementGuid>a5ed5eba-b163-49e6-9b5a-26fcdb64bfbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entrega al Socio por Nro. de PIEZA'])[1]/following::span[1]</value>
-      <webElementGuid>2b90bda3-e7a7-4568-85fa-978f502a41d4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar validacion BCRA'])[2]/following::span[1]</value>
+      <webElementGuid>7866a9cd-34d8-40b6-9c0e-c209ded6f557</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entrega de TARJETAS al SOCIO'])[1]/following::span[1]</value>
-      <webElementGuid>debda543-87c4-4efa-b4fd-54bdb66bcc25</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Persona Juridica'])[2]/following::span[1]</value>
+      <webElementGuid>9ab982e8-4774-4662-8220-74399dd6a663</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccion por Nombre / Documento / Sucursal'])[1]/preceding::span[1]</value>
-      <webElementGuid>bef7ab80-9295-4a45-a5bf-d908241d61f6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Partidas'])[1]/preceding::span[1]</value>
+      <webElementGuid>37092990-4eaf-4ddc-a763-5472f99cc0b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta por Card-Carrier'])[1]/preceding::span[1]</value>
-      <webElementGuid>f1109afa-ee44-40e7-8b17-f556e4b736be</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contra Cuenta Contable'])[1]/preceding::span[2]</value>
+      <webElementGuid>37e01d3b-40c2-4f4b-9422-85e838d6b07f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consultas al Maestro de Card-Carrier']/parent::*</value>
-      <webElementGuid>47d2a3ad-d3e6-4709-b68b-861aea0fa3aa</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Inventario Permanente']/parent::*</value>
+      <webElementGuid>41c3685d-43d1-4188-a277-24f7d93398be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[14]/li/ul/li[4]/span</value>
-      <webElementGuid>e51f6247-7d8c-4152-965d-8e0bd06746e1</webElementGuid>
+      <value>//ul[37]/li/span</value>
+      <webElementGuid>c7f1c2a3-a042-421a-ac60-4842249db7c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consultas al Maestro de Card-Carrier' or . = 'Consultas al Maestro de Card-Carrier')]</value>
-      <webElementGuid>bfc26872-8144-4c9a-a263-dd29454737b9</webElementGuid>
+      <value>//span[(text() = 'Inventario Permanente' or . = 'Inventario Permanente')]</value>
+      <webElementGuid>da8c84ef-6e0b-4cde-ad5b-a0a35acd61de</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

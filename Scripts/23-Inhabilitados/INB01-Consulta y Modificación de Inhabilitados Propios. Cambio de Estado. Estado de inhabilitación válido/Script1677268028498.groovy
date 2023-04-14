@@ -20,16 +20,14 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vANOVELLO, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
 
 // Accedo a menu ?MNU.BCCL.SP.D3.CC2
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscar'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscar'), "?MNU.BCCL.SP.D3.CC2")
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -42,19 +40,36 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/22-Inhabilitados/lnkC
 
 WebUI.switchToWindowTitle('BCCL.E.INHAB.PROPIOS')
 
-WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/txtCUITCUIL'), "20033555211")
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('Temenos T24')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/22-Inhabilitados/lnkConsulta y Modificacion de Inhabilitados prop'))
+WebUI.switchToWindowTitle('BCCL.E.INHAB.PROPIOS')
 
-WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/txtIDPERSONA'), "1004020304")
+//Completo los campos de busqueda
+//WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtCUITCUIL'), "20033555211")
+//WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtIDPERSONA'), "1004020304")
+WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtCUITCUIL'), "27177194064")
+WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtIDPERSONA'), "1000779000")
 
-WebUI.click(findTestObject('Object Repository/24-Inhabilitados/lnkEjecutar'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/lnkEjecutar'), 6) 
+WebUI.click(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/lnkEjecutar'))
 
-WebUI.click(findTestObject('Object Repository/24-Inhabilitados/lnkModificarElestado'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/lnkModificarElestado'), 6)
+WebUI.click(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/lnkModificarElestado'))
 
-WebUI.click(findTestObject('Object Repository/24-Inhabilitados/btnValidarRegistro'))
+//INHABILITADOBAJA X CAUSA 51 O 52BAJA X ERROR CAUSA 50FINALIZADO X FILIALBAJA HISTORICANO INHAB X GOP
+//WebUI.click(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/btnValidarRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/select_Estado'), 6)
+Estado = WebUI.getText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/select_Estado'))
+if (Estado.contains('BAJA HISTORICA')) {
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/select_Estado'), 4)
+}	else {
+		WebUI.selectOptionByIndex(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/select_Estado'), 5)
+}
+WebUI.click(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('Object Repository/24-Inhabilitados/btnAceptarRegistro'))
-
-WebUI.takeScreenshot("Screenshot/Consulta y Modificación de Inhabilitados Propios. Cambio de Estado. Estado de inhabilitación válido." + nowString + ".png")
+//WebUI.takeScreenshot("Screenshot/Consulta y Modificación de Inhabilitados Propios. Cambio de Estado. Estado de inhabilitación válido." + nowString + ".png")
 
 
 //---------------------------------------------------------------------------------------------------------------------

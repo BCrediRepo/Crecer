@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtIDPERSONA</name>
+   <name>btnNuevoRegistro</name>
    <tag></tag>
-   <elementGuidId>3a8289e4-cde4-471f-8b49-42f89526b2e7</elementGuidId>
+   <elementGuidId>ed4025e2-af6e-44ea-886b-d12c051b84ff</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='value:3:1:1']</value>
+         <value>//div[@id='toolBar']/table/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[6]/a/img</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>img[alt=&quot;Nuevo Registro&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,95 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>930b9a6c-7eb8-46f1-9bbe-7f9456938a4d</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>882625e0-1ea7-4f7e-8bcd-7d7504e71ac3</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>value:3:1:1</value>
-      <webElementGuid>3288df2d-6c69-4a16-bc5c-2f663b2a2081</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>value:3:1:1</value>
-      <webElementGuid>52f783bd-4292-4382-b5ea-2256a7636e3f</webElementGuid>
+      <value>img</value>
+      <webElementGuid>6165f7a0-8d16-4121-96bd-c0e323ca48e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>size</name>
+      <name>valign</name>
       <type>Main</type>
-      <value>20</value>
-      <webElementGuid>3702620d-cc36-4f4f-8095-0d28f2a1c276</webElementGuid>
+      <value>bottom</value>
+      <webElementGuid>9045df43-64da-4205-9be2-fbdb1f0c8f4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/menu/new.gif</value>
+      <webElementGuid>76a31c19-cc1b-4b7a-b55e-d59ec0e238c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Nuevo Registro</value>
+      <webElementGuid>65f2affb-0d38-420d-9e1e-faffa039911c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Nuevo Registro</value>
+      <webElementGuid>503402c5-a9cc-4849-b59a-0669d33a5b5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>frequencydropfieldname</name>
+      <name>border</name>
       <type>Main</type>
-      <value>value:3:1:1</value>
-      <webElementGuid>2315d571-426d-427a-993c-b3cbdb5a7919</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>enqseldata enqseldata_BCCLEINHABPROPIOS</value>
-      <webElementGuid>471a0174-82ed-4111-b930-40671a396fbc</webElementGuid>
+      <value>0</value>
+      <webElementGuid>7fb56df4-6594-4552-870a-e832e2560ec9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;value:3:1:1&quot;)</value>
-      <webElementGuid>57cb7d6a-2fed-4653-bb2f-c2096e28ce3b</webElementGuid>
+      <value>id(&quot;toolBar&quot;)/table[1]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[6]/a[1]/img[1]</value>
+      <webElementGuid>dd453408-77fd-4bb6-8eed-85405b53c39b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//input[@id='value:3:1:1']</value>
-      <webElementGuid>7cb6820c-eb35-460f-8557-fdc4a67a73b9</webElementGuid>
+      <value>//div[@id='toolBar']/table/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[6]/a/img</value>
+      <webElementGuid>1ca52905-71b1-42bd-92c1-43dab6be41eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:img</name>
       <type>Main</type>
-      <value>//table[@id='selectiondisplay']/tbody/tr[3]/td[3]/input</value>
-      <webElementGuid>b3fab159-1f87-43ad-8eab-4c90f0a735ca</webElementGuid>
+      <value>//img[@alt='Nuevo Registro']</value>
+      <webElementGuid>e6869308-f0d4-4603-a131-24f196ad962a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[3]/td[3]/input</value>
-      <webElementGuid>84501ec3-0786-4aa8-bbbd-1a6b9525ae3f</webElementGuid>
+      <value>//td[6]/a/img</value>
+      <webElementGuid>72d7083e-d858-4b8f-b7f2-3dda8636db66</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'value:3:1:1' and @id = 'value:3:1:1']</value>
-      <webElementGuid>04124eea-8417-4cdc-b771-18299bdebcca</webElementGuid>
+      <value>//img[@src = '../plaf/images/bccl/menu/new.gif' and @alt = 'Nuevo Registro' and @title = 'Nuevo Registro']</value>
+      <webElementGuid>38019327-5563-44cd-b5f2-717166f1dad6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

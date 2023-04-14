@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTxnCompleta</name>
+   <tag></tag>
+   <elementGuidId>678c9292-1ffb-4303-8497-f86fe70ba9b6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.message</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>5fcb03a0-4b8e-4ab5-a2f0-ce0cc03f9d30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>e60485a4-58f7-4dd4-a7da-b142c861b8d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Txn Completa: TT22206060117046 12:05:15 10 APR 2023 TELLER,RECAUDACION.MONEDAS I </value>
+      <webElementGuid>8ef53192-3ceb-4ced-b712-4b41dd74faf6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_TELLER display_box_TELLER_RECAUDACIONMONEDAS&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
+      <webElementGuid>a38b2999-6049-4d31-be6d-8fccc50c10ac</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      <webElementGuid>ad11db5d-c868-4675-a4b7-37d8d7544cfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::td[7]</value>
+      <webElementGuid>5931f5d5-0672-4658-b0e9-03d147071a21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recaudacion De Monedas'])[1]/following::td[15]</value>
+      <webElementGuid>becfe141-a33a-4efd-b8c2-8b6068bf30e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Txn Completa: TT22206060117046 12:05:15 10 APR 2023 TELLER,RECAUDACION.MONEDAS I']/parent::*</value>
+      <webElementGuid>e50bdd25-fb89-437e-90e2-6f9e6e44523a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr/td</value>
+      <webElementGuid>f5bf546a-8a0e-4eac-8f4f-555d50e9f85a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Txn Completa: TT22206060117046 12:05:15 10 APR 2023 TELLER,RECAUDACION.MONEDAS I ' or . = 'Txn Completa: TT22206060117046 12:05:15 10 APR 2023 TELLER,RECAUDACION.MONEDAS I ')]</value>
+      <webElementGuid>0d20e60f-a394-49f7-91c8-a3043dd8353a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

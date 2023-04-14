@@ -30,7 +30,7 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('02-Dashboard/spanChequesCancelatorios'))
+WebUI.click(findTestObject('02-Dashboard/lnkChequesCancelatorios'))
 
 WebUI.click(findTestObject('02-Dashboard/18.1-Cheques Cancelatorios/spanConsultas'))
 

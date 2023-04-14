@@ -32,6 +32,16 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
+
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Completo la busqueda
+WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), 6)
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '05330013359')
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20220701')
