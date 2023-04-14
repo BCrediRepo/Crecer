@@ -32,13 +32,13 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('TELLER')
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/txtMonto'), 6)
-WebUI.setText(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/txtMonto'), '100')
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
-WebUI.click(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/txtMonto'), 6)
+WebUI.setText(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/txtMonto'), '100')
+WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'), 6)
+WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

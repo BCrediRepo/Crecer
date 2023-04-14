@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>MA08-Consulta. Movimiento aceptado. Movimiento aplicado en Pesos por el importe Total</name>
+   <name>MA08-Consulta Movimiento aceptado. Movimiento aplicado en Pesos por el importe Total</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b3618c88-6e18-4720-8f6f-c98be7cf5b6a</testCaseGuid>

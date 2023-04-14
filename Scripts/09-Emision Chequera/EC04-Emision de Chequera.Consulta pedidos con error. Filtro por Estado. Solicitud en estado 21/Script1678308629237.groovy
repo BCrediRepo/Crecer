@@ -24,7 +24,7 @@ import java.time.format.DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -39,8 +39,18 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/01
 
 //Switch a la ventana de chequeras con errores
 WebUI.switchToWindowTitle('Solicitudes Chequeras con Errores')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/01-Consulta/lnkConsultaConfdeChequerasconErrores(21)'))
+
+//Switch a la ventana de chequeras con errores
+WebUI.switchToWindowTitle('Solicitudes Chequeras con Errores')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/txtSucursal'), 6)
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/txtSucursal'), findTestData('MainData/Users').getValue(3,5))
+WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/txtSucursal'), findTestData('MainData/Users').getValue(3,9))
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/btnEjecutar'))
 
 //Resultados de la Sucursal

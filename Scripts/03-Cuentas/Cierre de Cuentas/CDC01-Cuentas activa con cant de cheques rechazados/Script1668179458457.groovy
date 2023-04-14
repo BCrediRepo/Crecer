@@ -31,6 +31,17 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de Cierre de Cuenta
 WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.CANDT.CIERRE')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Switch a la ventana de Cierre de Cuenta
+WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
+
 WebUI.click(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/txtSucursal'))
 
 WebUI.setText(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/txtSucursal'),findTestData('MainData/Users').getValue(3,1))

@@ -34,6 +34,19 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.maximizeWindow()
+
+//Se accede al menu Administracion de piezas
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CHQ.SOL.IMPRENTA')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Switch a la ventana de busqueda de consulta
+WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), 6)
 WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), '02')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

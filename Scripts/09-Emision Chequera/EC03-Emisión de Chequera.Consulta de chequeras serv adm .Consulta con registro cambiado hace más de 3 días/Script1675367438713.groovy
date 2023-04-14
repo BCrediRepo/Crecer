@@ -41,6 +41,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/01
 
 //Switch a la ventana de busqueda de consulta de chequeras
 WebUI.switchToWindowTitle('BCCL.CQ.CHEQUERAS')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/01-Consulta/lnkConsultadeChequerahastaEmitida(40)'))
+
+//Switch a la ventana de busqueda de consulta de chequeras
+WebUI.switchToWindowTitle('BCCL.CQ.CHEQUERAS')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/txtFechaDesde'), 6)
 WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/txtFechaDesde'), '20220704')
 WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/txtFechaHasta'), '20220718')

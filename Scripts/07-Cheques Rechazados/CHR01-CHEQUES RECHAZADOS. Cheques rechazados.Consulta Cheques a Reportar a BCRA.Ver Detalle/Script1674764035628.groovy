@@ -31,11 +31,22 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkNuevaSeleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkEjecutar'))
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.REP.BCRA')
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnBusqueda'))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
+WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
+
+//
+//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkNuevaSeleccion'))
+//
+//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkEjecutar'))
+//
+//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnBusqueda'))
 
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFechaRepvalue511'), '20220725')
 

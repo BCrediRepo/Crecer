@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtTituloBCCL.MOV.AUT.INP.DATA</name>
+   <tag></tag>
+   <elementGuidId>69f69da4-030b-45e2-968f-cf09ed0d8690</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_EBCCLMOVAUTINPDATA</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>efcfb12e-ce21-4a55-af0c-c6137fb4c545</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_EBCCLMOVAUTINPDATA</value>
+      <webElementGuid>e1cbcd20-6653-421d-a3c8-13798bf86d9f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>%BCCL.MOV.AUT.INP.DATA</value>
+      <webElementGuid>962cae8c-167e-44fd-a730-a5c5061fee55</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_EBCCLMOVAUTINPDATA&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_EBCCLMOVAUTINPDATA enqsel-selections enqsel-selections_EBCCLMOVAUTINPDATA&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_EBCCLMOVAUTINPDATA&quot;]/tbody[1]/tr[@class=&quot;caption caption_EBCCLMOVAUTINPDATA&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_EBCCLMOVAUTINPDATA&quot;]</value>
+      <webElementGuid>cc2f2c5b-1e96-445a-8d9b-05706a0bbea9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>91ee79ea-fd77-4188-b359-f3dcc2a8c155</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::td[5]</value>
+      <webElementGuid>b3a93264-2cef-4609-b1f1-ce6c26bfc476</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/preceding::td[2]</value>
+      <webElementGuid>3ed5dd06-c553-4072-a62e-15590c86af36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>e16809d8-e4bf-423b-96a4-538b0bca71c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>42cd6741-a412-4d73-a820-fc3d5e791c6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '%BCCL.MOV.AUT.INP.DATA' or . = '%BCCL.MOV.AUT.INP.DATA')]</value>
+      <webElementGuid>fb43a721-3324-4932-b23f-ac2adacf00c6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
