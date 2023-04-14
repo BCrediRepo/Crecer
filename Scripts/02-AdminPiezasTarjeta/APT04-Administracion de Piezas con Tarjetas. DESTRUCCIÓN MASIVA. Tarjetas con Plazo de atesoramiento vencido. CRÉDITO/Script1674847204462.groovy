@@ -28,8 +28,8 @@ WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkProcesoDestruccionTarjetas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/05-ProcDestruccionTarjetas/lnkTarjetasPlazoAtesoramientoVencido'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesoDestruccionTarjetas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/05-ProcDestruccionTarjetas/lnkTarjetasPlazoAtesoramientoVencido'))
 //Switch a la ventana de Destruccion Masiva
 WebUI.switchToWindowTitle('BCCL.AP.E.AP.DESTRUCCION.MASIVA')
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/txtProducto'), 'CREDITO')

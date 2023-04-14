@@ -29,10 +29,10 @@ WebUI.maximizeWindow()
 //Se accede al menu Plazo Fijo
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultasporPlazoFijo'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultasporPlazoFijo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,12)) 
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lblPlazoFijosActivos'))

@@ -32,9 +32,9 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
 
 WebUI.delay(5)
 

@@ -29,7 +29,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/13-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
 
 //Se espera la carga de BCCL.E.CONS.TINT.ALTAS
 WebUI.switchToWindowIndex(1)

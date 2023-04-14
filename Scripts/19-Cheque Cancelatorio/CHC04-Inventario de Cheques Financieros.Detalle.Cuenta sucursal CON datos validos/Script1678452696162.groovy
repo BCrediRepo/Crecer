@@ -38,13 +38,13 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
 
-WebUI.click(findTestObject('02-Dashboard/5-SucursalPiloto/spanD3-CC1'))
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/spanD3-CC1'))
 
-WebUI.click(findTestObject('02-Dashboard/5-SucursalPiloto/CC1/spanCC1-ChequesCertificadosyFinancieros'))
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/spanCC1-ChequesCertificadosyFinancieros'))
 
-WebUI.click(findTestObject('02-Dashboard/5-SucursalPiloto/CC1/Cheques Certificados y Financieros/spanChequesFinancieros'))
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/Cheques Certificados y Financieros/spanChequesFinancieros'))
 
-WebUI.click(findTestObject('02-Dashboard/5-SucursalPiloto/CC1/Cheques Certificados y Financieros/lnkInventarioDeChequesFinancieros'))
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/Cheques Certificados y Financieros/lnkInventarioDeChequesFinancieros'))
 
 WebUI.switchToWindowTitle('BCCL.CQ.CF.INVENTARIO')
 

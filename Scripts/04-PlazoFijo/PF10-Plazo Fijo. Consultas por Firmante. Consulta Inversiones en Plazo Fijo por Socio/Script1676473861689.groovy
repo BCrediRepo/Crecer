@@ -30,11 +30,11 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultasporFirmante'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultasporFirmante'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/03-Consulta Por Firmante/lnkConsultaInversionesEnPlazoFijoPorSocio'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/03-Consulta Por Firmante/lnkConsultaInversionesEnPlazoFijoPorSocio'))
 
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,11))
 

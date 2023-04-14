@@ -28,10 +28,10 @@ WebUI.maximizeWindow()
 
 //Se accede al menu Plazo Fijo
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
-WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'), 3)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkConsultasdePlazoFijo'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultadeTasaseIndices'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/02-Consultas de Plazo Fijo/01-Consulta de Tasas e Indices/lnkConsultaCircularesyTasasVigentes'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'), 3)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultadeTasaseIndices'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/01-Consulta de Tasas e Indices/lnkConsultaCircularesyTasasVigentes'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,5))
 
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lnkEjecutar'))

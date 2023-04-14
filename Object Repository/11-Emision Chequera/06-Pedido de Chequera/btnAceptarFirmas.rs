@@ -6,12 +6,12 @@
    <elementGuidId>d88b1322-5674-4436-8d89-e7c274046123</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Aceptar el registro&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Aceptar el registro&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -62,7 +62,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/02-Dashboard/8-Emision Chequera/frmEmisionChequeraFirmas</value>
+      <value>Object Repository/02-Dashboard/08-Emision Chequera/frmEmisionChequeraFirmas</value>
       <webElementGuid>27b103b3-9448-4efb-90ee-e3589c302936</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

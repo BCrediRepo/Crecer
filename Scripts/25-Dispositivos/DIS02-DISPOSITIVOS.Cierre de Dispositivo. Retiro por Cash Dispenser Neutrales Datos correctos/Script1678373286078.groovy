@@ -31,14 +31,14 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkOperatoriadeCaja-Reemplazo'))
 
 //Ir a Dispositivos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
 
 //Ir a cierre de Dispositivos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/spanCierredeDispositivos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/spanCierredeDispositivos'))
 
 //Ir a Dispensado de Cash Dispenser Neutrales
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/lnkCashDispenserNeutrales'),6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/lnkCashDispenserNeutrales'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/lnkCashDispenserNeutrales'),6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/lnkCashDispenserNeutrales'))
 
 //Abre la ventana Dispensado de Cash Dispenser Neutrales
 WebUI.switchToWindowTitle('TELLER')

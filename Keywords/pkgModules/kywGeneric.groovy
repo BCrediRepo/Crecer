@@ -180,7 +180,13 @@ public class kywGeneric {
 		String browser = WebUI.getWindowTitle()
 		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
 		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-		WebUI.closeWindowTitle(browser)
+		String browser2 = WebUI.getWindowTitle()
+		if (browser == browser2){
+			WebUI.closeWindowTitle(browser)
+		}else {
+			WebUI.closeWindowTitle(browser2)
+		}
+
 	}
 
 	//-----------------------------------------------------------------------------------------------

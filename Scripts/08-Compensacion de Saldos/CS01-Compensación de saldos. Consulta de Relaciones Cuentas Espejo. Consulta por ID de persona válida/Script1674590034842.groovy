@@ -32,9 +32,9 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lknCompensaciondeSaldos'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/7-Compensacion de Saldos/lknConsultas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/lknConsultas'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/7-Compensacion de Saldos/01-Consultas/lknConsultadeRelaciones'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lknConsultadeRelaciones'))
 
 WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
 

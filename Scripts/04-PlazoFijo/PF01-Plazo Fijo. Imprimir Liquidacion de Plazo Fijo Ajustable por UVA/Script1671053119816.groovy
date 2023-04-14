@@ -29,11 +29,11 @@ WebUI.maximizeWindow()
 //Se accede al menu Plazo Fijo
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkImpresiondeCertificadosyFormularios'), 3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkImpresiondeCertificadosyFormularios'), 3)
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/lnkImpresiondeCertificadosyFormularios'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkImpresiondeCertificadosyFormularios'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/3-PlazoFijo/01-Impresion de Certificados y Formularios/lnkLiquidaciondePlazoFijoAjustable'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/01-Impresion de Certificados y Formularios/lnkLiquidaciondePlazoFijoAjustable'))
 
 //Switch to other frame
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,4))

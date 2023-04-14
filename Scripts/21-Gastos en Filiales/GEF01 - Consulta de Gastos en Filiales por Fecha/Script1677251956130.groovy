@@ -34,11 +34,11 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
 
-WebUI.click(findTestObject('02-Dashboard/5-SucursalPiloto/lnkGL-EntregasGlobalLogic'))
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/lnkGL-EntregasGlobalLogic'))
 
-WebUI.click(findTestObject('02-Dashboard/5-SucursalPiloto/Global Logic/lnkGastosenFiliales'))
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/Global Logic/lnkGastosenFiliales'))
 
-WebUI.click(findTestObject('02-Dashboard/5-SucursalPiloto/Global Logic/lnkConsultadeGastosenFiliales'))
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/Global Logic/lnkConsultadeGastosenFiliales'))
 
 WebUI.switchToWindowTitle('BCCL.E.GASTOS.FILIALES')
 
