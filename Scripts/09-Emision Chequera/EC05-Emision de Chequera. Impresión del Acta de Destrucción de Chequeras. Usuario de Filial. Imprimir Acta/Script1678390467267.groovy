@@ -39,6 +39,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/02
 
 //Switch a la ventana de impresion de acta
 WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/02-Modificacion de Chequera/lnkImpresionActadeDestruccion'))
+
+//Switch a la ventana de impresion de acta
+WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/txtFECHAESTADO'), 6)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/selectorFECHA'), 1)
 WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/txtFECHAESTADO'), '20220101')

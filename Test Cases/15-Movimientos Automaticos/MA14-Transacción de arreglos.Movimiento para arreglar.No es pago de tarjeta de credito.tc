@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA14-Transacción de arreglos.Movimiento para arreglar.No es pago de tarjeta de credito</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2fcc8add-d163-4dfe-98a8-e66552d1666d</testCaseGuid>
+</TestCaseEntity>

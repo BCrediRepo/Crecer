@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>MA07-Consulta. Movimiento aceptado. Movimiento aplicado en Pesos por el importe mínimo</name>
+   <name>MA07-Consulta Movimiento aceptado. Movimiento aplicado en Pesos por el importe mínimo</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>70275653-d18c-488d-a33b-5374336090a8</testCaseGuid>

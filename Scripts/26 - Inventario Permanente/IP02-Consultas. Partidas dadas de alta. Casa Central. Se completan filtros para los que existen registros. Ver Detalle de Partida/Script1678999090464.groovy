@@ -36,11 +36,19 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.CC.ALTAS')
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/lnkNuevaSeleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/lnkEjecutar'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/btnLupita'))
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.PARTIDAS.CC.ALTAS')
+
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
+WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.CC.ALTAS')
+
+WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/txtSucursal'), '001')
 

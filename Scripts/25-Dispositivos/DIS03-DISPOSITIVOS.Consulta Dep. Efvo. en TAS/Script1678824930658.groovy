@@ -28,11 +28,8 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.DEP.EFE.TAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Command Line/inputCommandLine'),6)
-WebUI.setText(findTestObject('Object Repository/00-Command Line/inputCommandLine'),'ENQ BCCL.E.DEP.EFE.TAS')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.DEP.EFE.TAS')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
@@ -42,15 +39,21 @@ WebUI.switchToWindowTitle('BCCL.E.DEP.EFE.TAS')
 //Nueva seleccion
 WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lnkNuevaSeleccion'))
 
-//Click en ejecutar
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/btnEjecutar'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-//Selecciona buscador (Lupa)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/btnLupa'),6)
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/btnLupa'))
+//Ejecuta en la linea de comando ENQ BCCL.E.DEP.EFE.TAS
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.DEP.EFE.TAS')
 
-//Nueva seleccion
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lnkNuevaSeleccion'))
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Abre la pestaña BCCL.E.DEP.EFE.TAS
+WebUI.switchToWindowTitle('BCCL.E.DEP.EFE.TAS')
 
 //Setea un monto ARS
 WebUI.setText(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/inputMoneda'), 'ARS')

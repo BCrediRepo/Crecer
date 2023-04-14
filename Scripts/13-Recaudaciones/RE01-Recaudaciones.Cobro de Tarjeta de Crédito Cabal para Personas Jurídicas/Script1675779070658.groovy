@@ -32,6 +32,18 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.VISION.PAGO.TJ')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Se accede al menu
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.VISION.PAGO.TJ')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Switch a la ventana de busqueda de consulta
+WebUI.switchToWindowTitle('BCCL.E.VISION.PAGO.TJ')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), 6)
 WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), '1004140888')
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkEjecutar'), 6)

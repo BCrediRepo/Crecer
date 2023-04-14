@@ -34,6 +34,28 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Se accede al menu
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Switch a la ventana de busqueda de consulta
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Switch a la ventana de busqueda de consulta
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/txtUsuario'), 6)
 WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/txtUsuario'), 'B.0073')
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkEjecutar'))
@@ -47,7 +69,7 @@ WebUI.switchToWindowTitle('Movimiento de Fondos')
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/btnReversarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/btnReversarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkAceptarAlertas'), 6)
-WebUI.click(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkAceptarAlertas'))
+//WebUI.click(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkAceptarAlertas'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblTxnCompleta'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblTxnCompleta'), 6)
 

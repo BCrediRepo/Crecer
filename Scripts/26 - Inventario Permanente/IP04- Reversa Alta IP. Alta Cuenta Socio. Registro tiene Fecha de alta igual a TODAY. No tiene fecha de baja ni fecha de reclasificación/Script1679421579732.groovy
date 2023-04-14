@@ -74,11 +74,17 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.REVE')
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.REVE/lnkNuevaSeleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.REVE/lnkEjecutar'))
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.REVE/btnLupita'))
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.PARTIDAS.REVE')
+
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
+WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.REVE')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.REVE/txtCodigoIP'), '0500')
 

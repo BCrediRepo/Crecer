@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtFechaDesde</name>
+   <name>inputSBL.RETURNS</name>
    <tag></tag>
-   <elementGuidId>52f185b1-6af0-4d40-b4f0-5434e72256e9</elementGuidId>
+   <elementGuidId>5fa36bf1-8be7-406e-811d-f3020083863a</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='value:20:1:1']</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='value:4:1:1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>39d34720-f94d-4599-8f6e-f9e268daaf07</webElementGuid>
+      <webElementGuid>bd3e8e35-836d-4fd1-a3a9-eaea602d2ae2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,23 +30,23 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>619feccd-0a86-42af-9298-e59277d8edff</webElementGuid>
+      <webElementGuid>e7a4e706-38c3-4bc4-91c2-9656c6a9057c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>value:4:1:1</value>
-      <webElementGuid>fdd401af-7e62-4ea3-9255-50efcb749114</webElementGuid>
+      <value>value:20:1:1</value>
+      <webElementGuid>e870e892-cbf1-4f14-b1c1-e92d9fd0b19c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>value:4:1:1</value>
-      <webElementGuid>b24b6ab3-dd01-4904-bc2c-647063064cd2</webElementGuid>
+      <value>value:20:1:1</value>
+      <webElementGuid>c7cb4a05-8475-4c3e-9c97-2d2506f0bb12</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,70 +54,62 @@
       <name>size</name>
       <type>Main</type>
       <value>20</value>
-      <webElementGuid>55e2f5ae-f9d0-482e-9a01-0a121a77bff9</webElementGuid>
+      <webElementGuid>e417edd1-187a-41e0-a5a5-8d7621ec3cf1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>frequencydropfieldname</name>
       <type>Main</type>
-      <value>value:4:1:1</value>
-      <webElementGuid>ab7f32fe-64e4-4e15-809f-903e6c8895d4</webElementGuid>
+      <value>value:20:1:1</value>
+      <webElementGuid>2101343a-e3d1-4fbd-bcae-d3c15ea1125b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>enqseldata enqseldata_BCCLCQCHEQUERAS</value>
-      <webElementGuid>fc88452f-55e5-43d0-9002-4d8ec8fa294f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>monthdesc</name>
-      <type>Main</type>
-      <value>ENE FEB MAR ABR MAY JUN JUL AGO SEP OCT NOV DIC</value>
-      <webElementGuid>cc557fb7-cc73-488d-b534-05e51c770075</webElementGuid>
+      <value>enqseldata enqseldata_EBCCLMOVAUTINPDATA</value>
+      <webElementGuid>79eec622-a734-4752-bda0-18bae435c592</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;value:4:1:1&quot;)</value>
-      <webElementGuid>4d190357-a966-457f-9e4a-baa3b2c12e84</webElementGuid>
+      <value>id(&quot;value:20:1:1&quot;)</value>
+      <webElementGuid>8b9a90f6-db33-4f52-a06b-09b0bc58bb24</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='value:4:1:1']</value>
-      <webElementGuid>bc3122a8-79d7-4a82-9282-5203f8347614</webElementGuid>
+      <value>//input[@id='value:20:1:1']</value>
+      <webElementGuid>de723f76-a3f3-47e4-95ac-06153450c0fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='selectiondisplay']/tbody/tr[4]/td[3]/input</value>
-      <webElementGuid>dde35d6f-48e9-4446-a6ef-5c7d38d2cdb4</webElementGuid>
+      <value>//table[@id='selectiondisplay']/tbody/tr[20]/td[3]/input</value>
+      <webElementGuid>f1c7e168-6666-4f00-99a8-acacfc4602c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[4]/td[3]/input</value>
-      <webElementGuid>4cfe4c2c-af0b-40ed-af60-0ac213c12545</webElementGuid>
+      <value>//tr[20]/td[3]/input</value>
+      <webElementGuid>75ead409-a973-4b47-89c3-a15649bb3b3b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'value:4:1:1' and @id = 'value:4:1:1']</value>
-      <webElementGuid>3291939a-20e1-410b-ba19-645a607eeec5</webElementGuid>
+      <value>//input[@type = 'text' and @name = 'value:20:1:1' and @id = 'value:20:1:1']</value>
+      <webElementGuid>37dbd9f8-5fad-41c7-931c-4c52419c57bb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
