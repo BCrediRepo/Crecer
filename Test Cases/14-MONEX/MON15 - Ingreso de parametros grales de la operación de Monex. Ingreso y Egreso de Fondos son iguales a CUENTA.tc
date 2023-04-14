@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON15 - Ingreso de parametros grales de la operación de Monex. Ingreso y Egreso de Fondos son iguales a CUENTA</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4582ae8b-d30e-4b15-9a09-26f3053d8513</testCaseGuid>
+</TestCaseEntity>
