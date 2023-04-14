@@ -35,12 +35,12 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkOperatoriadeCaja-Reemplazo'))
 
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
 
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/01-Dispositivos/lnkRegistroDeFallasEnDispositivos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/lnkRegistroDeFallasEnDispositivos'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/9-OperatoriaDeCaja-Reemplazo/01-Dispositivos/01-Registro de Fallas en Dispositivos/lnkAltadeFaltantesdeATMCDTAS'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/01-Registro de Fallas en Dispositivos/lnkAltadeFaltantesdeATMCDTAS'))
 
 WebUI.switchToWindowTitle('TELLER')
 

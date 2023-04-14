@@ -6,16 +6,15 @@
    <elementGuidId>89087481-9cf2-4252-b834-c7a56309f062</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='fieldName:ACCION']</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>id(&quot;fieldName:ACCION&quot;)[count(. | //select[@class = 'dealbox dealbox_BCCLFIRMA dealbox_BCCLFIRMA_INPUT' and @name = 'fieldName:ACCION' and @id = 'fieldName:ACCION' and @tabindex = '0' and @tabname = 'tab1' and @enrifieldname = 'enri_ACCION' and @onkeyup = concat(&quot;invokeHelp(event,&quot; , &quot;'&quot; , &quot;ACCION&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;);&quot;) and @onblur = 'clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);' and @ondblclick = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;ACCION&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = '  CANCELARFORZARVERIFICAR' or . = '  CANCELARFORZARVERIFICAR')]) = count(//select[@class = 'dealbox dealbox_BCCLFIRMA dealbox_BCCLFIRMA_INPUT' and @name = 'fieldName:ACCION' and @id = 'fieldName:ACCION' and @tabindex = '0' and @tabname = 'tab1' and @enrifieldname = 'enri_ACCION' and @onkeyup = concat(&quot;invokeHelp(event,&quot; , &quot;'&quot; , &quot;ACCION&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;);&quot;) and @onblur = 'clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);' and @ondblclick = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;ACCION&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = '  CANCELARFORZARVERIFICAR' or . = '  CANCELARFORZARVERIFICAR')])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -121,7 +120,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/02-Dashboard/8-Emision Chequera/frmEmisionChequeraFirmas</value>
+      <value>Object Repository/02-Dashboard/08-Emision Chequera/frmEmisionChequeraFirmas</value>
       <webElementGuid>bd57a6eb-c821-4f14-8021-f8809430c268</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

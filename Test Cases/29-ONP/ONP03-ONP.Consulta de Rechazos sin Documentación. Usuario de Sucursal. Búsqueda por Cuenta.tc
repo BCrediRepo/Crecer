@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ONP03-ONP.Consulta de Rechazos sin Documentación. Usuario de Sucursal. Búsqueda por Cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c8d036f9-a05a-4046-bb21-f9d8247d50d7</testCaseGuid>
+</TestCaseEntity>

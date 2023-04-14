@@ -29,9 +29,14 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
+<<<<<<< HEAD
 WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkReversadeEstadodeCard-Carrier'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/08-Reversa de Estado Card-Carrier/lnkReversadeEstadodelCard-Carrier'))
 
+=======
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkReversaEstadoCardCarrier'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/07-ReversaEstadoCardCarrier/lnkReversaEstadoCardCarrier'))
+>>>>>>> ggutierrez
 //Switch a la ventana de Reversa
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnLista'), 6)

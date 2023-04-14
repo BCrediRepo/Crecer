@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkVerPlazoFijo</name>
+   <tag></tag>
+   <elementGuidId>b289433b-89b2-4fc4-9523-31bac54437ca</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[27]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.enqDrillLink</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>b2eb3e83-d8d5-43ed-bcc4-1d5b0f59db9d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqDrillLink</value>
+      <webElementGuid>b5a04321-40db-4201-9f63-571fdc622ebe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>a9c753aa-3726-49e1-a5a3-15ad8cb0cba5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:drilldown('1','1_1')</value>
+      <webElementGuid>0e311c9f-b755-42cc-b460-e3850d1ecd44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ver Plazo Fijo</value>
+      <webElementGuid>e9358013-5b70-475e-9861-10e9861f88fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLNOFILEACTIVOSFIRSEG&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
+      <webElementGuid>98416827-6fd6-4cc2-aa86-892e50e3af46</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[27]/a</value>
+      <webElementGuid>d5b9c477-0747-4f16-8f5b-5f23bb840e4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Ver Plazo Fijo')]</value>
+      <webElementGuid>e59c5136-0bea-4835-bbf8-d85bbe7ccd02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CUENTA'])[1]/following::a[1]</value>
+      <webElementGuid>99ac5a35-6cbf-46b3-8ec7-381fe86f7582</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::a[1]</value>
+      <webElementGuid>e5f748c5-42e9-4b2b-911e-0e2fd5107ff3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ver titular'])[1]/preceding::a[1]</value>
+      <webElementGuid>5590cdb2-551d-4a3d-a7b3-d242ae88e752</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RUBINI'])[2]/preceding::a[2]</value>
+      <webElementGuid>7bee1dcf-4013-4db0-a61b-14cd91c25cde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Ver Plazo Fijo']/parent::*</value>
+      <webElementGuid>cb39aaad-e7bf-4460-9ac7-773288670db7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
+      <webElementGuid>caaf1385-3e88-49dd-9c1f-5e24f8cc1abf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[27]/a</value>
+      <webElementGuid>a6aedd25-a622-4be4-8bbc-5aefa08cb6a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Ver Plazo Fijo' or . = 'Ver Plazo Fijo')]</value>
+      <webElementGuid>a8cb28e0-1b97-488f-852d-e14c7c2f068a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

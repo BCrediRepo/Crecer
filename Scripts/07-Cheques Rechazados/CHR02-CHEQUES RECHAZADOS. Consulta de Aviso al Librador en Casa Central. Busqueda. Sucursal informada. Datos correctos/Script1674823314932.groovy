@@ -33,9 +33,9 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.click(findTestObject('02-Dashboard/lnkRechazoDeCheques'))
 
-WebUI.click(findTestObject('02-Dashboard/6-Cheques rechazados/lnkConsultas'))
+WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/lnkConsultas'))
 
-WebUI.click(findTestObject('02-Dashboard/6-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
+WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 

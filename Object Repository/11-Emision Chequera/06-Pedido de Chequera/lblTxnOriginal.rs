@@ -6,12 +6,12 @@
    <elementGuidId>31e6e419-5987-4f68-a797-8993a7cc7f79</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>td.messageWrap > span</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//table[@id='messages']/tbody/tr/td[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.messageWrap > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -53,7 +53,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/02-Dashboard/8-Emision Chequera/frmEmisionChequeraFirmas</value>
+      <value>Object Repository/02-Dashboard/08-Emision Chequera/frmEmisionChequeraFirmas</value>
       <webElementGuid>ace05dd6-bb0c-4b39-bb6b-e6174615df1c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
