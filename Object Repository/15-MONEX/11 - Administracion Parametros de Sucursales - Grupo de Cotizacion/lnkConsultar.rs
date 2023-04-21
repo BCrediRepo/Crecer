@@ -6,12 +6,12 @@
    <elementGuidId>adeb67b3-db45-4106-b6d1-5f47402e69f0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td[7]/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a.enqDrillLink</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[7]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

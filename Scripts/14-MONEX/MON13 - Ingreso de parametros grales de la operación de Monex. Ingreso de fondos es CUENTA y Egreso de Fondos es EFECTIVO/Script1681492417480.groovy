@@ -55,5 +55,16 @@ WebUI.waitForElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OP
 Operadores = WebUI.verifyElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OPER.MONEX/lblCantOper'))
 
 //Realizar un Assert del mismo elemento
-assert Operadores == true //---------------------------------------------------------------------------------------------------------------------
+assert Operadores == true 
 
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}

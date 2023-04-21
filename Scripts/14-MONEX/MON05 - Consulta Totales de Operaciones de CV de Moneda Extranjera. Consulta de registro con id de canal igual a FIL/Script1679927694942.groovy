@@ -38,31 +38,36 @@ WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.N
 
 //Click en el boton "Ejecutar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 //Cambia a la ventana nueva
 WebUI.switchToWindowTitle('Total de Oper de Compra-Venta MONEX')
+
 //Maximiza la nueva ventana 
 WebUI.maximizeWindow()
+
 //Espera a que el elemento "Ejecutar" sea Clickeable
 WebUI.waitForElementClickable(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
+
 //Clickea el elemento "Ejecutar"
 WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+
 //Espera a que sea visible el elemento "Cant. Oper"
 WebUI.waitForElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OPER.MONEX/lblCantOper'), 3)
+
 //Verifica que el mismo sea visible
 Operadores = WebUI.verifyElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OPER.MONEX/lblCantOper'))
-//Realizar un Assert del mismo elemento
-assert Operadores == true
 
-//---------------------------------------------------------------------------------------------------------------------
+//Realizar un Assert del mismo elemento
+assert Operadores == true //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

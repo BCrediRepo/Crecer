@@ -53,7 +53,7 @@ WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/
 //Cambia a la ventana "Consulta de Parametros de Filiales"
 WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
 
-WebUI.sendKeys(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/Page_Consulta de Parametros de Filiales/inputcGupoCotizacion'), 
+WebUI.sendKeys(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/inputcGupoCotizacion'), 
     'USDPR001')
 
 WebUI.click(findTestObject('15-MONEX/01-BCCL.E.NOFILE.DET.OPER.MONEX/lnkEjecutar'))
@@ -62,11 +62,24 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblMasVerde'))
 
-WebUI.click(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/Page_Consulta de Parametros de Filiales/lnkConsultar'))
+WebUI.click(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/lnkConsultar'))
 
 WebUI.switchToWindowTitle('Tabla de Sucursales')
 
-Direccion = WebUI.verifyElementVisible(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/Page_Tabla de Sucursales/lblDireccionSucursal'))
+Direccion = WebUI.verifyElementVisible(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/lblDireccionSucursal'))
 
 assert Direccion == true
+
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
+
 

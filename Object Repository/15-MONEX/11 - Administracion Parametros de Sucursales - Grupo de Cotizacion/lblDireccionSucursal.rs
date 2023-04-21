@@ -6,12 +6,11 @@
    <elementGuidId>5a7fdd3a-c1c8-441e-bfa8-193cc9eb9f9d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='mainTab']/tbody/tr[3]/td[3]/span</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//table[@id='mainTab']/tbody/tr[3]/td[3]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
