@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanDictamenes</name>
+   <name>cbxSeleccion</name>
    <tag></tag>
-   <elementGuidId>8d322c58-8cb3-422a-8a51-47181a4ba211</elementGuidId>
+   <elementGuidId>65448e9c-24ce-4c68-b51f-4849431bdefb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[9]</value>
+         <value>//select[@id='drillbox:1_1']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,111 +21,103 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>08fc5465-ed1c-4d5d-90cb-59287ffce0a5</webElementGuid>
+      <value>select</value>
+      <webElementGuid>0dca63c1-5a4a-475f-9a58-0d4580cff7e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>drillbox:1_1</value>
+      <webElementGuid>6dd4b83e-769c-47c5-aa11-eb67dff1b188</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>8784236a-f9e8-4501-89c9-743f7fa02f38</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
-      <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>745709ea-f73d-4d01-a222-f83e6cbb9bec</webElementGuid>
+      <value>drillbox drillbox_BCCLEAUTHORIZATION</value>
+      <webElementGuid>adce9c02-f8e6-4569-b04b-6ccc285b07a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Dictamenes</value>
-      <webElementGuid>948f18fb-589d-4d05-924e-95eb8da1284c</webElementGuid>
+      <value>CONSULTAR TRANSACCIONAUTORIZAR TRANSACCIONELIMINAR TRANSACCION</value>
+      <webElementGuid>5064a2be-c39a-4a25-afb1-fe59ae17cfb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>0f32e234-9e57-4c0a-b989-e849d6588ef5</webElementGuid>
+      <value>id(&quot;drillbox:1_1&quot;)</value>
+      <webElementGuid>d5bdb16d-eeb6-44f0-8e49-57d02b5aadec</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[9]</value>
-      <webElementGuid>55da7263-d846-4acd-b92e-0cef1200cf6a</webElementGuid>
+      <value>//select[@id='drillbox:1_1']</value>
+      <webElementGuid>475739cf-bbec-42c9-9957-b18eb3dcac33</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/span</value>
-      <webElementGuid>457706f2-1f8d-4c1b-9d57-82d5070fd9cc</webElementGuid>
+      <value>//tr[@id='r1']/td[9]/table/tbody/tr/td/select</value>
+      <webElementGuid>c2cbe700-cefd-450c-a4be-be4af274f35b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Usuario Accion Digital'])[1]/following::span[1]</value>
-      <webElementGuid>8abfcd2c-5759-428b-b799-c746008870b4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No autorizado'])[1]/following::select[1]</value>
+      <webElementGuid>a81d1560-032f-428d-829a-48f6789ca2f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Documentos Cuestionados'])[1]/following::span[1]</value>
-      <webElementGuid>df07ad75-2364-466e-90ae-2aa65a96184f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0274'])[1]/following::select[1]</value>
+      <webElementGuid>58afd584-7493-4c80-a6df-29bef3c5eb5e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen'])[1]/preceding::span[1]</value>
-      <webElementGuid>e3d919c1-a37b-4aac-86dc-eb8aa0b77d2c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FT22206903406195'])[1]/preceding::select[1]</value>
+      <webElementGuid>4c2b562d-f819-4b33-9d5b-7c3b09ae0491</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen Con Autorizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>4ba70cb3-5bd8-4444-babf-174470a92bd4</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Dictamenes']/parent::*</value>
-      <webElementGuid>bda53cbe-1b0e-4bc0-9cf0-6bc2f9da2f80</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='USD'])[1]/preceding::select[1]</value>
+      <webElementGuid>5baaa31f-496b-4fba-982d-53538d69c285</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[2]/li/span</value>
-      <webElementGuid>7ca0fa3f-001c-4766-8dc4-a413daa187ba</webElementGuid>
+      <value>//select</value>
+      <webElementGuid>f7a50ae1-533e-4326-9ba6-d9186ccbdb2c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Dictamenes' or . = 'Dictamenes')]</value>
-      <webElementGuid>3d960423-0576-4c7a-a6b6-df257e3fdf75</webElementGuid>
+      <value>//select[@id = 'drillbox:1_1' and (text() = 'CONSULTAR TRANSACCIONAUTORIZAR TRANSACCIONELIMINAR TRANSACCION' or . = 'CONSULTAR TRANSACCIONAUTORIZAR TRANSACCIONELIMINAR TRANSACCION')]</value>
+      <webElementGuid>16aa04d6-8e29-41dd-9416-78376376dc7a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

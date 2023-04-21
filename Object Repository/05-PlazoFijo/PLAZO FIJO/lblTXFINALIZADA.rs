@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTXFINALIZADA</name>
+   <tag></tag>
+   <elementGuidId>5de62f7f-c47c-489d-be61-517e44dc82b1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.BOLD-RED.BOLD-RED_BCCLEIMMFIN</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>df1d0b63-e456-4575-aec2-3b9d6b3f0510</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>BOLD-RED BOLD-RED_BCCLEIMMFIN</value>
+      <webElementGuid>1097f3ca-8c68-43b4-95e2-b4ff9e79fe85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>TX FINALIZADA</value>
+      <webElementGuid>093e0a21-8bf8-4725-8f39-b1df32d96be6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;BOLD-RED BOLD-RED_BCCLEIMMFIN&quot;]</value>
+      <webElementGuid>29c42ab6-20a3-4b2f-92cf-3ce00bf3af43</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td</value>
+      <webElementGuid>e1046d09-85aa-4634-9c3c-d2e6220e16f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Usuario Autoriz'])[1]/following::td[1]</value>
+      <webElementGuid>79b8ce91-2516-4f31-a972-505961f57864</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Usuario Ingreso'])[1]/following::td[1]</value>
+      <webElementGuid>93e330a8-5d90-4827-8b1b-4991be4f4aeb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BENAVIDEZ JULIO ANTONIO'])[1]/preceding::td[1]</value>
+      <webElementGuid>d856c5e6-7407-4990-8fb8-2d2a74dc1af1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0274'])[1]/preceding::td[8]</value>
+      <webElementGuid>080cc93e-76d8-478d-b89f-ac27b32d02e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='TX FINALIZADA']/parent::*</value>
+      <webElementGuid>28874a26-573f-4c68-966c-a9d4d24b4838</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/table/tbody/tr/td</value>
+      <webElementGuid>2ac33df9-d219-4b31-9550-745f1ffb3d75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'TX FINALIZADA' or . = 'TX FINALIZADA')]</value>
+      <webElementGuid>c2ec470c-90d7-4c3c-91b8-5c6a3f21ed3b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

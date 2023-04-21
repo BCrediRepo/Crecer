@@ -6,19 +6,19 @@
    <elementGuidId>2d565981-1d1c-4147-95cb-afcabaa5cc55</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[54]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Autorizaciones' or . = 'Autorizaciones') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu']) = count(//*[(text() = 'Autorizaciones' or . = 'Autorizaciones') and @ref_element = 'Object Repository/02-Dashboard/Page_T24 - Fil.043 Villa Mitre/frmDashboardMenu'])]</value>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//span[@onclick='ProcessMouseClick(event)']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
+         <value>span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>e96bc22e-677e-469d-8c3c-5a118bd8a607</webElementGuid>
+      <webElementGuid>00abf953-dfb2-456e-9be0-79130b7fe546</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>83b15868-db34-447d-a704-bebc75e7b769</webElementGuid>
+      <webElementGuid>c4b991c2-b3f6-44b5-af7c-05ab79c37400</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeypress</name>
+      <type>Main</type>
+      <value>ProcessKeyPress(event)</value>
+      <webElementGuid>6a1f7f5f-5d17-49da-8513-e1df190aebb5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,15 +50,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Autorizaciones</value>
-      <webElementGuid>d071962f-80ce-4064-84e6-c58626b89c71</webElementGuid>
+      <webElementGuid>ebd849d8-841d-458b-9685-18b30336de1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>6c6ef776-4c01-4964-83bb-5a79d09d93af</webElementGuid>
+      <webElementGuid>89372c1d-db6d-467d-afc8-7d9ecc6712f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,39 +66,23 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>5c2fdd5c-9e66-400b-83af-96e97732fc1e</webElementGuid>
+      <webElementGuid>8068820e-65c5-49e6-b5a8-7bf02f1613fb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[54]</value>
-      <webElementGuid>d40b38a3-4916-4df0-8b85-0e7e86757471</webElementGuid>
+      <value>//span[@onclick='ProcessMouseClick(event)']</value>
+      <webElementGuid>2d5e4474-6f78-49b2-99a2-f20e9fda901f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[9]/li/span</value>
-      <webElementGuid>d2dbcfe1-16b9-414a-92fa-a59b4009a227</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reversa de Estado del Card-Carrier'])[1]/following::span[1]</value>
-      <webElementGuid>77381ad6-0b90-4ee1-b4ab-65032408093d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reversa de Estado de Card-Carrier'])[1]/following::span[1]</value>
-      <webElementGuid>df96b536-3369-4e50-9112-b8d689b44690</webElementGuid>
+      <value>//div[@id='pane_']/ul/li/span</value>
+      <webElementGuid>2d4fd6ec-89f0-488c-a816-35c50a76512b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,15 +90,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizaciones Pendientes'])[1]/preceding::span[1]</value>
-      <webElementGuid>5d29e06b-2b16-4bcf-b0ba-19a23dd25c40</webElementGuid>
+      <webElementGuid>4c0be394-6c9a-4588-a9b6-a2d9b44e6574</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion de Alta de Contratos'])[1]/preceding::span[1]</value>
-      <webElementGuid>5ade5abd-6ce5-4950-898f-724b33c75b06</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cons/Elimin de Tx Propias NO Autorizadas'])[1]/preceding::span[1]</value>
+      <webElementGuid>83b21042-15e0-4bbe-9dbb-c1214ae0d689</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,15 +106,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Autorizaciones']/parent::*</value>
-      <webElementGuid>242360fe-2f03-4379-908a-75dad2fdca22</webElementGuid>
+      <webElementGuid>f9d5ab5f-8758-4848-9d9b-0c12ce69e3cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[9]/li/span</value>
-      <webElementGuid>22a38212-7c3f-4f17-ab93-c6d4954335a3</webElementGuid>
+      <value>//span</value>
+      <webElementGuid>1fcf7f2e-93c8-4ca6-9446-f2ae3face151</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Autorizaciones' or . = 'Autorizaciones')]</value>
-      <webElementGuid>d45884f4-cdd6-4e32-9729-508729f63e82</webElementGuid>
+      <webElementGuid>0b211e8d-285c-4713-bd3d-5525b546c6e7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

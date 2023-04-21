@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkABM Dictamen</name>
+   <name>lnkAutorizacionesPendientes</name>
    <tag></tag>
-   <elementGuidId>cb7ed720-f59d-4099-90ea-7b989acf32e8</elementGuidId>
+   <elementGuidId>5040f308-70c6-4171-95be-27ae19e0198f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RELACION.PJ');processMenuHeaderText('A/B/M Dictamen')&quot;]</value>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','QUERY BCCL.E.AUTHORIZATION');processMenuHeaderText('Autorizaciones Pendientes')&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ul.menuMargin > li.clsHasKids > ul > li > a</value>
+         <value>a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,31 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>eca77898-f582-4355-a7c6-f4524b086769</webElementGuid>
+      <webElementGuid>5562d6bd-f1b1-465e-9787-0056f59d7e67</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onclick</name>
       <type>Main</type>
-      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.RELACION.PJ');processMenuHeaderText('A/B/M Dictamen')</value>
-      <webElementGuid>2d708a63-3abe-4461-bb17-ae97aaffdf4a</webElementGuid>
+      <value>javascript:menu_history('ENQUIRY','QUERY BCCL.E.AUTHORIZATION');processMenuHeaderText('Autorizaciones Pendientes')</value>
+      <webElementGuid>96e483ef-6753-4607-9355-848b5ef270b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:doenq('ENQ BCCL.E.RELACION.PJ');</value>
-      <webElementGuid>84be4901-f8d6-4ab0-b1cb-6ecee15d5d8e</webElementGuid>
+      <value>javascript:doenq('QUERY BCCL.E.AUTHORIZATION');</value>
+      <webElementGuid>6bac3955-6756-464e-95fc-3b42e16c2b0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>A/B/M Dictamen </value>
-      <webElementGuid>59332bb7-01ff-4de6-9d17-55e12114daeb</webElementGuid>
+      <value>Autorizaciones Pendientes </value>
+      <webElementGuid>9ecf0a33-c82d-4081-b75b-4800afb6f98a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,94 +54,94 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>266f8ee4-f6a7-4fee-8531-8709938830c1</webElementGuid>
+      <webElementGuid>e4346500-5bd8-4228-84c5-dc6bc77b8901</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>e7d83829-542a-41c1-8793-de7ca0b2d72d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RELACION.PJ');processMenuHeaderText('A/B/M Dictamen')&quot;]</value>
-      <webElementGuid>39c908bd-ceb9-4ee9-a86c-3ee41347f98c</webElementGuid>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','QUERY BCCL.E.AUTHORIZATION');processMenuHeaderText('Autorizaciones Pendientes')&quot;]</value>
+      <webElementGuid>2e844807-41fa-4068-9831-2151fd1b7b40</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/ul/li/a</value>
-      <webElementGuid>ff7959b3-e25b-4b55-8f16-5dc6b7c4bc7e</webElementGuid>
+      <value>//div[@id='pane_']/ul/li/ul/li/a</value>
+      <webElementGuid>95507b8d-1b2d-497d-acae-6f65ba374bdc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'A/B/M Dictamen')]</value>
-      <webElementGuid>ecbf784b-59e0-48ca-b8a6-2f4ed4611d58</webElementGuid>
+      <value>//a[contains(text(),'Autorizaciones Pendientes')]</value>
+      <webElementGuid>20dd9c8c-5b9a-4287-8e6a-2506d825eceb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dictamenes'])[1]/following::a[1]</value>
-      <webElementGuid>d3abffb6-af7a-43ba-a119-63611396e49d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizaciones'])[1]/following::a[1]</value>
+      <webElementGuid>c59f6706-cc81-43f4-b87a-b028adfbf586</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Usuario Accion Digital'])[1]/following::a[1]</value>
-      <webElementGuid>35f1721d-0160-49ac-9857-28f58980ca5e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cons/Elimin de Tx Propias NO Autorizadas'])[1]/preceding::a[1]</value>
+      <webElementGuid>5145b92b-0fa2-4173-a831-10b35d84ab6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen Con Autorizacion'])[1]/preceding::a[1]</value>
-      <webElementGuid>f6d6b322-0397-4b14-9fd1-232a51fc89aa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cons/Elimin de Tx Pendientes'])[1]/preceding::a[2]</value>
+      <webElementGuid>2abaeb89-4f18-4697-b5de-55f97ba56066</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion de Dictamen'])[1]/preceding::a[2]</value>
-      <webElementGuid>db863f33-de25-47a7-8d8a-8b7e16acdef4</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='A/B/M Dictamen']/parent::*</value>
-      <webElementGuid>9a146fd8-8bb2-41f4-b147-2785cb2fbaff</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Autorizaciones Pendientes']/parent::*</value>
+      <webElementGuid>5f5570e9-6d2a-4154-b086-dacb04966aaf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.RELACION.PJ');&quot;)]</value>
-      <webElementGuid>c4747c33-349e-44f8-a4ae-a0f98ac8d64d</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:doenq('QUERY BCCL.E.AUTHORIZATION');&quot;)]</value>
+      <webElementGuid>8bcb6f66-344c-46ce-8e85-8f8950fd82d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[2]/li/ul/li/a</value>
-      <webElementGuid>574e2196-73ab-4d88-82b7-757851d90025</webElementGuid>
+      <value>//a</value>
+      <webElementGuid>d77215c3-10cd-4234-9ea4-029bd5c90b7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.RELACION.PJ&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'A/B/M Dictamen ' or . = 'A/B/M Dictamen ')]</value>
-      <webElementGuid>b6cc9be5-6dfb-46ca-a539-b2286785e24c</webElementGuid>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;QUERY BCCL.E.AUTHORIZATION&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Autorizaciones Pendientes ' or . = 'Autorizaciones Pendientes ')]</value>
+      <webElementGuid>741995f4-de3d-43d4-82f2-4de3273f5284</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
