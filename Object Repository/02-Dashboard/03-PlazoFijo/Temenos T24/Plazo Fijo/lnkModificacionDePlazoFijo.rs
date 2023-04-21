@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanDictamenes</name>
+   <name>lnkModificacionDePlazoFijo</name>
    <tag></tag>
-   <elementGuidId>f33567f9-a596-4500-a782-f4fb54ff4612</elementGuidId>
+   <elementGuidId>7107f538-5db7-40dc-b597-6b85e5fcbe6b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[9]</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[54]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>03dfd25e-f241-4311-bd27-b93ae04a735c</webElementGuid>
+      <webElementGuid>d0efcfe7-6600-4edc-b600-7b4d665e4733</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>a6a64852-86f6-4d64-bd77-a82e77c7821d</webElementGuid>
+      <webElementGuid>72ea5420-1d41-4366-9f28-2b175aacb985</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,94 +38,94 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>31fc7cec-6ea6-4e0c-a08a-a4a79c56f1dd</webElementGuid>
+      <webElementGuid>09edccaf-c052-4053-abfe-d4c9c5cc6a83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Dictamenes</value>
-      <webElementGuid>6c3c8719-4960-4cb1-84a8-08ecb3c725a2</webElementGuid>
+      <value>Modificacion de Plazo Fijo</value>
+      <webElementGuid>15d2e2f6-3c69-444e-9fba-4b4b9348fa0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>521fb1fa-d61b-4a47-b9d3-276dfcf461c1</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>3a888998-c522-42ca-9e1c-b2a5ebbcbd91</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[9]</value>
-      <webElementGuid>71f80305-eccd-467a-8c3f-84c847f478ac</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[54]</value>
+      <webElementGuid>70089f26-1015-4708-b9fd-f1c26f81b861</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/span</value>
-      <webElementGuid>a7502848-d9b9-4506-8174-8c9a033fd937</webElementGuid>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[3]/span</value>
+      <webElementGuid>a9679553-0d4f-45b3-b2c9-fa27de0377a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Usuario Accion Digital'])[1]/following::span[1]</value>
-      <webElementGuid>00e5a541-3920-4145-b7d2-276f8e5474b1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Liquidacion de Plazo Fijo Ajustable'])[1]/following::span[1]</value>
+      <webElementGuid>d9fc158f-cd2c-4fce-ae6d-dbde4435d740</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Documentos Cuestionados'])[1]/following::span[1]</value>
-      <webElementGuid>29ce0115-effc-40cc-9aa4-c461731dd0ac</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Liquidacion Renovacion Automatica'])[1]/following::span[1]</value>
+      <webElementGuid>9471c51b-8a95-4278-a211-2e2f4dcf156f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen'])[1]/preceding::span[1]</value>
-      <webElementGuid>e10e4496-f2fe-4df8-ac22-c3ef7b641a50</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo y Desbloqueo'])[1]/preceding::span[1]</value>
+      <webElementGuid>d0d72c93-816f-420c-acff-ce3e8a0bcb21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen Con Autorizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>f7c3c7f0-db7f-4b18-b792-f683644b2707</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo Plazo Fijo'])[1]/preceding::span[2]</value>
+      <webElementGuid>adfaa3a6-ec6a-4573-9dce-a8c6c5601493</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Dictamenes']/parent::*</value>
-      <webElementGuid>fccf9860-c247-4aaa-a969-fc4302355db7</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Modificacion de Plazo Fijo']/parent::*</value>
+      <webElementGuid>3b9d2701-ce10-46a7-b840-79f17f69f405</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[2]/li/span</value>
-      <webElementGuid>d2f879a7-7c51-4112-b8ae-43f271bb0481</webElementGuid>
+      <value>//ul[7]/li/ul/li[3]/span</value>
+      <webElementGuid>2fb9b3e7-ab89-431c-b73c-3bc517dd1964</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Dictamenes' or . = 'Dictamenes')]</value>
-      <webElementGuid>117c8bf3-7830-4df9-b3e5-6108fc3e73d4</webElementGuid>
+      <value>//span[(text() = 'Modificacion de Plazo Fijo' or . = 'Modificacion de Plazo Fijo')]</value>
+      <webElementGuid>c35a7129-f065-4190-a80c-2f7efd435cf8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

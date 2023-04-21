@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTXPENDIENTEDEAUTORIZACION</name>
+   <tag></tag>
+   <elementGuidId>af5b7902-4c10-4a7f-989a-409fcc0f64eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.BOLD-RED.BOLD-RED_BCCLEIMMFIN</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>d2fcfd29-d9af-4dc3-84ca-c4d4b74c9d29</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>BOLD-RED BOLD-RED_BCCLEIMMFIN</value>
+      <webElementGuid>c41e0ecd-5b2c-4cb0-a096-f17ae4d17ce4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>TX PENDIENTE DE AUTORIZACION</value>
+      <webElementGuid>1c64524f-62f1-485c-a552-9c55754b00ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;BOLD-RED BOLD-RED_BCCLEIMMFIN&quot;]</value>
+      <webElementGuid>5ff49ef1-6574-43f5-9d4b-01813dd08e5e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td</value>
+      <webElementGuid>0b588a14-5582-4c6d-9c5d-f21de063b0e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Usuario Autoriz'])[1]/following::td[1]</value>
+      <webElementGuid>7d1a81b3-560d-4eca-863b-71f93c5bfec0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Usuario Ingreso'])[1]/following::td[1]</value>
+      <webElementGuid>71e833ab-122a-4601-90d6-2345e7fca3f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BENAVIDEZ JULIO ANTONIO'])[1]/preceding::td[1]</value>
+      <webElementGuid>b4d0cf32-45d6-411b-8147-45bec7112ae7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0274'])[1]/preceding::td[8]</value>
+      <webElementGuid>fb5c754c-1016-474a-ba66-048a0487a276</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='TX PENDIENTE DE AUTORIZACION']/parent::*</value>
+      <webElementGuid>4fbc3f57-f8b4-4e10-97b7-4aaddedac3a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/table/tbody/tr/td</value>
+      <webElementGuid>7b983e8b-08db-4e5d-a18c-a6e06031aa4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'TX PENDIENTE DE AUTORIZACION' or . = 'TX PENDIENTE DE AUTORIZACION')]</value>
+      <webElementGuid>29214327-b59c-4bc7-8d51-644fe67c3d77</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

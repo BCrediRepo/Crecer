@@ -36,11 +36,11 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkPlazoFijo'))
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkConsultasDePlazoFijo'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/lnkConsultasDePlazoFijo'))
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkConsultasSegmentadasPorFirmantes'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/lnkConsultasSegmentadasPorFirmantes'))
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkPlazosFijosActivos'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Consulta de plazo fijo/lnkPlazosFijosActivos'))
 
 WebUI.switchToWindowTitle('Activos Segmentados por Persona')
 
@@ -48,7 +48,7 @@ CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
 WebUI.switchToWindowTitle('Temenos T24')
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkPlazosFijosActivos'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Consulta de plazo fijo/lnkPlazosFijosActivos'))
 
 WebUI.switchToWindowTitle('Activos Segmentados por Persona')
 

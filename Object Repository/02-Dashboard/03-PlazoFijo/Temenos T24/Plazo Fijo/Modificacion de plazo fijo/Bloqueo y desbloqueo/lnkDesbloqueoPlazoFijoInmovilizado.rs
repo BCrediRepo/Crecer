@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkABM Dictamen</name>
+   <name>lnkDesbloqueoPlazoFijoInmovilizado</name>
    <tag></tag>
-   <elementGuidId>2c78cf8e-3ca5-41fc-9f98-87e32690aa74</elementGuidId>
+   <elementGuidId>73f5748e-ee16-474d-b3f2-1776b877b7e9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RELACION.PJ');processMenuHeaderText('A/B/M Dictamen')&quot;]</value>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMM.UNBLOCK');processMenuHeaderText('Desbloqueo Plazo Fijo Inmovilizado')&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ul.menuMargin > li.clsHasKids > ul > li > a</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,126 +22,126 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>1150bc5f-b474-4928-b750-e852448b76ce</webElementGuid>
+      <webElementGuid>62c6a08b-1fa0-48b9-9758-11e589b5f6c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onclick</name>
       <type>Main</type>
-      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.RELACION.PJ');processMenuHeaderText('A/B/M Dictamen')</value>
-      <webElementGuid>b9c34e13-14b0-48c9-b3cc-2aa6353ee069</webElementGuid>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMM.UNBLOCK');processMenuHeaderText('Desbloqueo Plazo Fijo Inmovilizado')</value>
+      <webElementGuid>cb675cd9-9a40-4119-b1cf-126695d7e863</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:doenq('ENQ BCCL.E.RELACION.PJ');</value>
-      <webElementGuid>3f8090e4-a7f9-4908-8516-004581e12ce1</webElementGuid>
+      <value>javascript:doenq('ENQ BCCL.E.IMM.UNBLOCK');</value>
+      <webElementGuid>04822240-78e1-4325-b89d-141dca2ddfa9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>A/B/M Dictamen </value>
-      <webElementGuid>b4859db4-ae21-4da2-a0b1-090a3e0de402</webElementGuid>
+      <value>Desbloqueo Plazo Fijo Inmovilizado </value>
+      <webElementGuid>843aa362-6823-4cb9-a3ae-b254d538680f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>c8f9f3b3-5d27-42da-acc0-04cd57f4e49b</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
+      <webElementGuid>d285005e-f6f1-4f42-8373-e4b1abed873d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RELACION.PJ');processMenuHeaderText('A/B/M Dictamen')&quot;]</value>
-      <webElementGuid>9878e841-2f52-4072-8c19-7db3948dbb2f</webElementGuid>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMM.UNBLOCK');processMenuHeaderText('Desbloqueo Plazo Fijo Inmovilizado')&quot;]</value>
+      <webElementGuid>6f4da73d-5e1b-46f2-ada2-bc3a0144415a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/ul/li/a</value>
-      <webElementGuid>9995ac38-f2e6-4154-b27a-c6c03d79c194</webElementGuid>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[3]/ul/li/ul/li[4]/a</value>
+      <webElementGuid>7656b3e3-edda-48bb-b54e-6940fb0a320a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'A/B/M Dictamen')]</value>
-      <webElementGuid>6dbeb3c4-873f-42fa-8740-d69421bfd934</webElementGuid>
+      <value>//a[contains(text(),'Desbloqueo Plazo Fijo Inmovilizado')]</value>
+      <webElementGuid>7fa924a8-b57a-4aea-95aa-cbce184eeb62</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dictamenes'])[1]/following::a[1]</value>
-      <webElementGuid>61bb8acc-7013-4c0f-b542-1a15a6afd3bd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo Plazo Fijo Inmovilizado'])[1]/following::a[1]</value>
+      <webElementGuid>9516ccab-7f58-4d2b-ab0a-9904c711b366</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Usuario Accion Digital'])[1]/following::a[1]</value>
-      <webElementGuid>74a8aa7c-b261-4b34-8ebb-1c2e9e0f5199</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Desbloqueo Plazo Fijo'])[1]/following::a[2]</value>
+      <webElementGuid>f18024bc-1422-4e13-934e-e3986b5636c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen Con Autorizacion'])[1]/preceding::a[1]</value>
-      <webElementGuid>224ee9a7-1e9e-4608-8741-e0d400790095</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Asignacion de numero de Garantia'])[1]/preceding::a[1]</value>
+      <webElementGuid>86b06757-ae52-4574-854a-79ce1a4fc3e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion de Dictamen'])[1]/preceding::a[2]</value>
-      <webElementGuid>1fc58118-e2a5-41c5-9626-918e1cc980a9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Renovacion Automatica'])[1]/preceding::a[2]</value>
+      <webElementGuid>dea38a8a-9662-4821-997a-2ae30f0ccb73</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='A/B/M Dictamen']/parent::*</value>
-      <webElementGuid>2216e18b-cdc7-40a0-98d0-fcca1fd61c37</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Desbloqueo Plazo Fijo Inmovilizado']/parent::*</value>
+      <webElementGuid>54158306-c045-4ad5-ba98-ef275c04b641</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.RELACION.PJ');&quot;)]</value>
-      <webElementGuid>f293a28b-a1bc-414c-ab61-b24b38a64927</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.IMM.UNBLOCK');&quot;)]</value>
+      <webElementGuid>e8016be4-81e4-48e8-8573-fbdc452c7efc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[2]/li/ul/li/a</value>
-      <webElementGuid>a4c673d6-42c3-442b-ae84-48b0b6a30b53</webElementGuid>
+      <value>//ul[7]/li/ul/li[3]/ul/li/ul/li[4]/a</value>
+      <webElementGuid>e1cc9354-faa7-4e6f-960a-440f5385eb49</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.RELACION.PJ&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'A/B/M Dictamen ' or . = 'A/B/M Dictamen ')]</value>
-      <webElementGuid>c6b1e08f-71d3-4202-83dd-1b1a0cb8f78d</webElementGuid>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.IMM.UNBLOCK&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Desbloqueo Plazo Fijo Inmovilizado ' or . = 'Desbloqueo Plazo Fijo Inmovilizado ')]</value>
+      <webElementGuid>35512b7f-bcf0-47f7-ab5f-f5017096c524</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
