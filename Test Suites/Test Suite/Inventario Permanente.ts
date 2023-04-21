@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Emision Chequera</name>
+   <name>Inventario Permanente</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,47 +10,47 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>7bcad69d-86ab-4e90-8b03-51693b924a42</testSuiteGuid>
+   <testSuiteGuid>5e01d3c0-8991-48c7-a408-b5665a5fe4a8</testSuiteGuid>
    <testCaseLink>
-      <guid>e8835eae-1f2e-4732-b896-f059ac74e0d6</guid>
+      <guid>37448036-9e35-4767-b103-df25a4035a5c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC01-Emision chequera.Cons. Chequeras Solic. Control de Facturacion</testCaseId>
+      <testCaseId>Test Cases/26 - Inventario Permanente/IP01-Consultas. Parametría. Codigo de IP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eea5eeb4-6fdf-4205-baa9-b4be9f52c5ad</guid>
+      <guid>46931082-083f-41ac-b0e0-75ed96e2fd48</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC02-Emision Chequera.Invocación del ENQ BCCL.CQ.CONS.ANUL con datos válidos para generar autorizaciones</testCaseId>
+      <testCaseId>Test Cases/26 - Inventario Permanente/IP02-Consultas. Partidas dadas de alta. Casa Central. Se completan filtros para los que existen registros. Ver Detalle de Partida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>85a6400a-c078-4a6b-9acf-4348e6fe57f4</guid>
+      <guid>e00f1c6a-ff02-40f8-af1a-f76320c6b82f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC03-Emisión de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace más de 3 días</testCaseId>
+      <testCaseId>Test Cases/26 - Inventario Permanente/IP03-Consultas. Partidas dadas de baja. Filial. Se completan filtros para los que existen registros. Ver Detalle de Partida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0f4f2c78-23f0-41c5-b644-4ebcd6c342f4</guid>
+      <guid>cb732c3d-3292-457d-a2d0-317634092a04</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC04-Emision de Chequera.Consulta pedidos con error. Filtro por Estado. Solicitud en estado 21</testCaseId>
+      <testCaseId>Test Cases/26 - Inventario Permanente/IP04- Reversa Alta IP. Alta Cuenta Socio. Registro tiene Fecha de alta igual a TODAY. No tiene fecha de baja ni fecha de reclasificación</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>58a31318-3fc0-403a-a322-0a54dab1c4fb</guid>
+      <guid>9d7e0fb4-0e0a-4171-a63d-4dfa19d6f7c7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC05-Emision de Chequera. Impresión del Acta de Destrucción de Chequeras. Usuario de Filial. Imprimir Acta</testCaseId>
+      <testCaseId>Test Cases/26 - Inventario Permanente/IP05-IP.Reclasificación de partida de IP. Código de IP es de CR</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a609ebed-1019-414e-82a1-271181344fc8</guid>
+      <guid>1134c681-ecf2-4d69-a473-5f6980ffd781</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC06-Emision de Chequera. Solicitud de Chequera en Sucursal. Tipo de Chequera Pago Comun</testCaseId>
+      <testCaseId>Test Cases/26 - Inventario Permanente/IP06-IP.Reclasificación de partida de IP. Por casa central online para cuenta contable con COD.RECLA.SUC igual a código operativo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

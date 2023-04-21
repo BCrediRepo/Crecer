@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Emision Chequera</name>
+   <name>Personas</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,47 +10,47 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>7bcad69d-86ab-4e90-8b03-51693b924a42</testSuiteGuid>
+   <testSuiteGuid>26f472dc-5fa3-4dd4-86b6-82952d27a934</testSuiteGuid>
    <testCaseLink>
-      <guid>e8835eae-1f2e-4732-b896-f059ac74e0d6</guid>
+      <guid>833861ba-04b0-4828-9cb1-7d3623b9ccaa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC01-Emision chequera.Cons. Chequeras Solic. Control de Facturacion</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P01-Personas . Control de Errores en Base de Socios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>eea5eeb4-6fdf-4205-baa9-b4be9f52c5ad</guid>
+      <guid>e7606258-f131-4dde-be14-25482da53abc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC02-Emision Chequera.Invocación del ENQ BCCL.CQ.CONS.ANUL con datos válidos para generar autorizaciones</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P02-Personas. Altas Masivas. Alta Masiva Autorizado. de Prosp. y Refer. pers. fisica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>85a6400a-c078-4a6b-9acf-4348e6fe57f4</guid>
+      <guid>ba553552-2414-499c-bd8a-da76c7f252ab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC03-Emisión de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace más de 3 días</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P03-Personas. Persona Física. Consulta Ultima modificación Persona Fisica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0f4f2c78-23f0-41c5-b644-4ebcd6c342f4</guid>
+      <guid>02f66369-2863-408f-a1cd-ddb21af56a8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC04-Emision de Chequera.Consulta pedidos con error. Filtro por Estado. Solicitud en estado 21</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P04-Personas. Altas Masivas. Alta Masiva Autorizado. de Prosp. y Refer. pers. Juridica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>58a31318-3fc0-403a-a322-0a54dab1c4fb</guid>
+      <guid>3af9a47f-d377-47aa-be43-7f69e2830a98</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC05-Emision de Chequera. Impresión del Acta de Destrucción de Chequeras. Usuario de Filial. Imprimir Acta</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P05-Personas. Consulta Evolución Tamaño de la Empresa</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a609ebed-1019-414e-82a1-271181344fc8</guid>
+      <guid>9461b200-2cca-4111-9639-cc902f43262b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC06-Emision de Chequera. Solicitud de Chequera en Sucursal. Tipo de Chequera Pago Comun</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P06-Personas. Consulta Gral de Grupos de Depuración. Busqueda y consulta gral de Grupos de Depu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

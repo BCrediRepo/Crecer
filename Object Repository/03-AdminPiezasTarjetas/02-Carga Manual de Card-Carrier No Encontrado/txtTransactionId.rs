@@ -6,16 +6,88 @@
    <elementGuidId>b80fe08d-81a4-498e-ba19-59a585459169</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//input[@id='transactionId'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>3d9949ab-5609-4db8-b531-fc3e5b2d0837</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>a5f30523-6f80-48b4-b8f5-13306e369c3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>transactionId</value>
+      <webElementGuid>8f4657e4-e90f-4b5c-9a68-b4dcf095d4b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>transactionId</value>
+      <webElementGuid>55006c71-0834-466d-b865-6561fc225855</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>idbox idbox_BCCLAPPIEZAS</value>
+      <webElementGuid>77c01b84-9921-4624-abaa-a55fe2645de1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>size</name>
+      <type>Main</type>
+      <value>10</value>
+      <webElementGuid>e55e9ec3-06a2-49ce-95ad-3e88c7136bb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ondblclick</name>
+      <type>Main</type>
+      <value>javascript:help('','','','issueToken')</value>
+      <webElementGuid>bbdb89db-59c1-4a2f-8725-92e7638cc7ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onfocus</name>
+      <type>Main</type>
+      <value>doFieldFocusEvent(event)</value>
+      <webElementGuid>6b714574-da29-460c-89e6-490ac85ed2c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;toolBar&quot;)/table[1]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/input[@id=&quot;transactionId&quot;]</value>
+      <webElementGuid>7d995910-708d-4103-92b5-5f3e3e79f592</webElementGuid>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -233,12 +305,12 @@
       <webElementGuid>48ca95b2-935b-41fc-b870-0fcbacb8b247</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@id='transactionId'])[2]</value>
-      <webElementGuid>54455aa7-7fae-4fd2-9144-fe1cc5c009d9</webElementGuid>
+      <webElementGuid>fc9ff543-f20d-4649-a6e8-7ff3efa8fc11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -246,7 +318,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='toolBar']/table/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/input</value>
-      <webElementGuid>c9c9b4cb-f940-4775-9f9d-fcc797e4208d</webElementGuid>
+      <webElementGuid>dbbbf208-2bf7-45f2-bd9c-b14c0dff01b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -254,7 +326,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/input</value>
-      <webElementGuid>93ba2c4b-cc34-40a3-b5ac-b6f9f351caa8</webElementGuid>
+      <webElementGuid>1c85d302-a600-4908-854f-dbb35e060afa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -262,6 +334,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @name = 'transactionId' and @id = 'transactionId']</value>
-      <webElementGuid>5cf8ca15-5477-4fc0-a9f3-a7abff4c1672</webElementGuid>
+      <webElementGuid>ac522a22-f83b-4532-a757-81fb83fc9644</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

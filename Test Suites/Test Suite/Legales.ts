@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Cierre de Cuentas</name>
+   <name>Legales</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
-   <pageLoadTimeout>2</pageLoadTimeout>
+   <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>2e5852e7-a4e5-441b-b53a-d197e69c969c</testSuiteGuid>
+   <testSuiteGuid>fa0ec7ba-65c9-4deb-9e14-e22158a0296d</testSuiteGuid>
    <testCaseLink>
-      <guid>7a22f0c0-100f-4927-b027-226eacd2b753</guid>
+      <guid>f33d504c-c70d-496a-95d9-469e3e628a62</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Cuentas/Cierre de Cuentas/CDC01-Cuentas activa con cant de cheques rechazados</testCaseId>
+      <testCaseId>Test Cases/27-Legales/LEG01-Legales.Cobranza de legales.Txn de cobranza de legales BCCL.COBRANZAS.LEGALES INPUT F3</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c125d4d5-8cc0-45a6-ba44-ab477592bd54</guid>
+      <guid>8727df81-07a3-485a-b6ed-f2c85c304cb7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC02-Cierre de Cuenta. Consulta de Nómina de Cuenta corriente en estado Cerrada</testCaseId>
+      <testCaseId>Test Cases/27-Legales/LEG02-Legales.Ingreso de abogado. Cuenta corriente en legales con abogado no ingresado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
