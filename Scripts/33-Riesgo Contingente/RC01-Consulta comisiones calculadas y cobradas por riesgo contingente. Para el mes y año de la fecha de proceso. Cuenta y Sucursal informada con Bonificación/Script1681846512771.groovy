@@ -22,39 +22,34 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?25
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisionesyBonificaciones'))
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?25')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/4-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/4-Comisiones/1-Comisiones y Bonificaciones/lnkConsulta de Comisiones Cobradas'))
 
-WebUI.switchToWindowTitle('Temenos T24')
+//Abre la pestaña BCCL.E.AC.COM.COBRADA
+WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanPersonas2'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/lnkControl de Errores en Base de Socios'))
-
-WebUI.switchToWindowTitle('BCCL.PER.CTRL.ERROR')
-
+//Maximiza la pestaña
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtTransactionId'), '1000000001.0035')
+//Ingresa el numero de la cuenta
+WebUI.setText(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/txtCuenta'), '00890010860')
 
-WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtCertCalidad'), '02')
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtPendConsegDato'), '02')
+//Presiona botón ejecutar
+WebUI.click(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lnkEjecutar'))
 
 
-
-
+//Verifica que se muestre el titulo Tipo de comision
+WebUI.waitForElementPresent(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lblTipo de Comision'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -65,6 +60,5 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
 
 

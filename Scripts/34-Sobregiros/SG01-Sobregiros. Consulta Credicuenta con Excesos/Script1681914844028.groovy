@@ -24,37 +24,41 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?25
+//Ingreso en la linea de comando ENQ BCCL.E.ACDOS
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?25')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.ACDOS')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanPersonas2'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/lnkControl de Errores en Base de Socios'))
-
-WebUI.switchToWindowTitle('BCCL.PER.CTRL.ERROR')
+WebUI.switchToWindowTitle('BCCL.E.ACDOS')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtTransactionId'), '1000000001.0035')
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
-WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.ACDOS')
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtCertCalidad'), '02')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtPendConsegDato'), '02')
+WebUI.switchToWindowTitle('BCCL.E.ACDOS')
 
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaDesde'), '20220718')
 
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaHasta'), '20220725')
 
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtEstado'), 'AC')
 
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lnkEjecutar'))
+
+WebUI.maximizeWindow()
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lblCuenta'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -65,6 +69,7 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
 
 
 
