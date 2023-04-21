@@ -45,13 +45,23 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas
 
 WebUI.switchToWindowTitle('Consulta Gral Pers Fisica Historia')
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkNueva Seleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkEjecutar'))
+WebUI.switchToWindowTitle('Temenos T24')
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Ultimas Modificaciones/lnkConsultaUltimas modif a Pers Fisica'))
+
+WebUI.switchToWindowTitle('Consulta Gral Pers Fisica Historia')
+
+//WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkNueva Seleccion'))
+//
+//WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkEjecutar'))
 
 //WebUI.switchToWindowTitle('BCCL.E.PER.GEN.PF.HIS')
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/btnLupa'))
+//WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/btnLupa'))
 
 WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/txtIDpersona'), '1000873562')
 

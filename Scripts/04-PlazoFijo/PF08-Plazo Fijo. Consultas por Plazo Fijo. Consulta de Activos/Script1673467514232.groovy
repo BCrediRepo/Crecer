@@ -35,6 +35,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consu
 WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,12)) 
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
+WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,12))
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lblPlazoFijosActivos'))
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtSucursal'), "089")
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lnkEjecutar'))

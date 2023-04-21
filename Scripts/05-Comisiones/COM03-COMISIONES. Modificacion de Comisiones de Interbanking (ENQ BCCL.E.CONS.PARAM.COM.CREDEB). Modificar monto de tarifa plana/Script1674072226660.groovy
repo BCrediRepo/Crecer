@@ -29,8 +29,18 @@ WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.C
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONS.PARAM.COM.CREDEB')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
+
 WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txt_value111_TipoComision'), 'CREIB')
-WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtvalue211Abonado'), 'A00243A')
+WebUI.setText(findTestObject('Object Repository/06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtAbonado'), 'A00243A')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkEjecutar'))
 WebUI.maximizeWindow()

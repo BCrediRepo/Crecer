@@ -36,6 +36,14 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/03-Pl
 WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosVencidosInmovilizadosPagados'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,9))
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosVencidosInmovilizadosPagados'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosVencidosInmovilizadosPagados'))
+WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,9))
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblSucursal'), 6)
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/txtSucursal'),"089")
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lnkEjecutar'))

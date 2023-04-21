@@ -26,7 +26,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), "ENQ BCCL.MM.SEGMENTADO.GLOBAL")
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,8))
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), "ENQ BCCL.MM.SEGMENTADO.GLOBAL")
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,8))

@@ -35,6 +35,16 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/spanRegistro de Fallas de Caja'))
 WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkBaja de Sobrante de Caja'))
 WebUI.switchToWindowTitle('BCCL.E.TT.BAJA.SOBRANTE.CAJA')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.switchToWindowTitle('Temenos T24')
+WebUI.maximizeWindow()
+WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkBaja de Sobrante de Caja'))
+WebUI.switchToWindowTitle('BCCL.E.TT.BAJA.SOBRANTE.CAJA')
+
 WebUI.setText(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/inputFechaDesde'), '20200725')
 WebUI.click(findTestObject('Object Repository/21-Fallas/a_Ejecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/tdId'),3)

@@ -39,6 +39,15 @@ WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Tem
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
+WebUI.switchToWindowTitle('Temenos T24')
+
+WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
+
+WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
+
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/txtSucursal-value111'), '001')
 
 WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/lnkEjecutar'))

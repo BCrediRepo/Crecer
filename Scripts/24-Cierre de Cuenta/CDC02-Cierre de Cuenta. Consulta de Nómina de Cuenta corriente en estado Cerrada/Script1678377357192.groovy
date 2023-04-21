@@ -34,6 +34,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/0
 
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.NOMINA')
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
+
+WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.NOMINA')
+
 WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkNuevaSeleccion'))
 
 WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/txtNumeroDeCuenta'), '00010070802')

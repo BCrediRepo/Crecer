@@ -41,6 +41,16 @@ WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Tem
 
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.switchToWindowTitle('Temenos T24')
+
+WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkChequesRechazados'))
+
+WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
+
 WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkNuevaSeleccion'))
 
 WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkEjecutar'))

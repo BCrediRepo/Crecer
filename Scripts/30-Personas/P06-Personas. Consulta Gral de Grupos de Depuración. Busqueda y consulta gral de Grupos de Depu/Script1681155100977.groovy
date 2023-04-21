@@ -47,6 +47,18 @@ WebUI.switchToWindowTitle('LISTADO DE GRUPOS DE DEPURACION')
 
 WebUI.maximizeWindow()
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.switchToWindowTitle('Temenos T24')
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Gral de Grupos de Depuracion/lnkBusqueda y consulta gral de Grupos de Depu'))
+
+WebUI.maximizeWindow()
+
+WebUI.switchToWindowTitle('LISTADO DE GRUPOS DE DEPURACION')
+
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Gral de Grupos de Depuracion/txtID GRUPO'), '1002163270')
 
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Gral de Grupos de Depuracion/txtESTADO'), 'AP')

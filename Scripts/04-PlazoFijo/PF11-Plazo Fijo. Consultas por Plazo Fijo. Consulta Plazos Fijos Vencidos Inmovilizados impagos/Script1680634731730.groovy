@@ -34,7 +34,17 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('PF Vencidos Inmovilizados Impagos')
 
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.MM.VENCIDOS ')
+
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
+WebUI.switchToWindowTitle('PF Vencidos Inmovilizados Impagos')
+
+//WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

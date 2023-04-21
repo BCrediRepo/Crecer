@@ -38,6 +38,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/01-Impre
 //Switch to other frame
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,4))
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/01-Impresion de Certificados y Formularios/lnkLiquidaciondePlazoFijoAjustable'))
+
+//Switch to other frame
+WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,4))
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/01-LiquidacionPlazoFijoAjustable/txtSucursal'), 3)
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/01-LiquidacionPlazoFijoAjustable/txtSucursal'))
 

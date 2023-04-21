@@ -29,7 +29,17 @@ WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.A
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
 WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
-WebUI.setText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/txtvalue111-FechaProceso'), '20220722')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
+WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
+
+WebUI.setText(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), '20220722')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lnkEjecutar'))
 WebUI.delay(60)

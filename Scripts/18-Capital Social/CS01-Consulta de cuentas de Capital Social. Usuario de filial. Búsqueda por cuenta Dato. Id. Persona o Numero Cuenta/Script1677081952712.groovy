@@ -42,13 +42,12 @@ WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSoci
 
 WebUI.switchToWindowTitle('Consulta Cuenta Capital Social')
 
-WebUI.click(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lnkNuevaSeleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
-WebUI.click(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lnkEjecutar'))
+WebUI.switchToWindowTitle('Temenos T24')
 
-WebUI.switchToWindowTitle('BCCL.E.CS.VER.CTA')
-
-WebUI.click(findTestObject('19-Capital Social/BCCL.E.CS.VER.CTA/btnLupita'))
+WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSocialPorPersonaOCuenta'))
 
 WebUI.switchToWindowTitle('Consulta Cuenta Capital Social')
 

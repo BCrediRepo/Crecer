@@ -34,6 +34,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsu
 WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultasporFirmante'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/03-Consulta Por Firmante/lnkConsultaInversionesEnPlazoFijoPorSocio'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,11))
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/03-Consulta Por Firmante/lnkConsultaInversionesEnPlazoFijoPorSocio'))
+WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,11))
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblMontoActivoporTitular'))
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtFormaDeCalculo'), "TOTAL")
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtMoneda'), "ARS")
