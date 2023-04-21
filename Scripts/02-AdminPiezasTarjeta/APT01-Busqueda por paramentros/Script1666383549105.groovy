@@ -28,21 +28,9 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-<<<<<<< HEAD
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
-=======
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkConsultasMaestroCardCarrier'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
-
->>>>>>> ggutierrez
-WebUI.delay(5)
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AP.ENQ.NOMBRE.DOC')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
@@ -50,8 +38,9 @@ WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
 //Aplico KYW de limpieza de busqueda
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowTitle ('T24 - Fil.001 Centro')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionNombreDocSuc'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AP.ENQ.NOMBRE.DOC')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Vuelvo a la ventana de busqueda
 WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')

@@ -33,13 +33,8 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 
-//Aplico KYW de limpieza de busqueda -- No invoco a la kyw ya que al ejecutar cambia el nombre de la ventana --
-WebUI.delay(3)
-		String browser = WebUI.getWindowTitle()
-		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-		WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-		WebUI.closeWindowTitle('BCCL.E.RES.CTA.MOV.FECHA')
-WebUI.delay(3)
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
 WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)

@@ -50,7 +50,7 @@ WebUI.maximizeWindow()
 WebUI.waitForElementVisible(findTestObject('Object Repository/28-Legales/02-BCCL.E.AC.CTAS.LEG/txtNombreAbogado'), 6)
 def abogadoNombre = WebUI.getText(findTestObject('Object Repository/28-Legales/02-BCCL.E.AC.CTAS.LEG/txtNombreAbogado'))
 WebUI.click(findTestObject('Object Repository/28-Legales/02-BCCL.E.AC.CTAS.LEG/txtNombreAbogado'))
-//WebUI.delay(30)
+
 if (abogadoNombre.contains('1234'))
 	WebUI.setText(findTestObject('Object Repository/28-Legales/02-BCCL.E.AC.CTAS.LEG/txtNombreAbogado'), 'CRECERTEST')
 	else

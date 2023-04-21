@@ -81,4 +81,46 @@
       <testCaseId>Test Cases/04-PlazoFijo/PF10-Plazo Fijo. Consultas por Firmante. Consulta Inversiones en Plazo Fijo por Socio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>dabddbd3-33eb-46b6-b9e0-55d166cd0283</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF11-Plazo Fijo. Consultas por Plazo Fijo. Consulta Plazos Fijos Vencidos Inmovilizados impagos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5a676923-921a-4f8c-ac3e-9ad85d6531c5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF12-Plazo Fijo. Consultas por Plazo Fijo. Consulta Plazos Fijos Vencidos Inmovilizados pagados</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f86f510c-db06-49b5-86c5-0fc368b3b5ab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF13-Plazo Fijo. Consultas por Plazo Fijo. Plazos Fijos Reversados y anulados</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bacd9f93-3dc3-42bb-8b1c-286153b60f11</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF14-Plazo Fijo. Consultas por Plazo Fijo. Plazos Fijos Vencidos Acreditados en cuenta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a3cd1bb1-0dec-40a0-9820-7515f74f9791</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF15-Plazo Fijo. Consultas Segmentadas por Firmante. Plazos Fijos Vencidos Acreditados en cuenta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>20638e41-4af1-426a-b5fe-11806b92eb2f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF16-Plazo Fijo. Consultas Segmentadas por Firmante. Plazos Fijos Activos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
