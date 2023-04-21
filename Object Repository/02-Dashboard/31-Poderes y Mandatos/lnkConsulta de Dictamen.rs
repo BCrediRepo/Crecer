@@ -3,15 +3,15 @@
    <description></description>
    <name>lnkConsulta de Dictamen</name>
    <tag></tag>
-   <elementGuidId>10cbc182-2440-4f8a-b0ca-9164532a3426</elementGuidId>
+   <elementGuidId>5a1d9e0c-46a2-44e2-bb1a-6c989b356c90</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.POD.MOD.TEMPLATE,POD.REPORT I SYSTEM');processMenuHeaderText('Consulta de Dictamen')&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>ac5d9658-6294-4712-b3f9-62218e038a07</webElementGuid>
+      <webElementGuid>9c52be76-3cc1-409d-abe1-149918cb4b0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('CONTRACT','BCCL.POD.MOD.TEMPLATE,POD.REPORT I SYSTEM');processMenuHeaderText('Consulta de Dictamen')</value>
-      <webElementGuid>d57330cc-5e01-4413-8b2b-2fcbd471d783</webElementGuid>
+      <webElementGuid>3f34d03e-8d7c-41a4-98ff-6c1d9b1889c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('BCCL.POD.MOD.TEMPLATE,POD.REPORT I SYSTEM');</value>
-      <webElementGuid>4317da40-062b-41fd-adc2-cd71863849fd</webElementGuid>
+      <webElementGuid>6ecbe8a0-8c7e-40e0-8f00-25880d9365bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Dictamen </value>
-      <webElementGuid>837070cf-fe1a-4e91-be72-78c7c969d8c8</webElementGuid>
+      <webElementGuid>1ba4a87f-ad41-43b9-93e8-7f5bbe5149df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
-      <webElementGuid>823e0524-3477-4671-b0b1-21e4eeadb144</webElementGuid>
+      <webElementGuid>f6489487-9329-407f-a011-c0c71c4f0af1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.POD.MOD.TEMPLATE,POD.REPORT I SYSTEM');processMenuHeaderText('Consulta de Dictamen')&quot;]</value>
-      <webElementGuid>3357c388-4a5f-4e2b-8a73-f790dceefd39</webElementGuid>
+      <webElementGuid>421c0adf-b422-432c-9d11-7303f25db5b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[2]/li/ul/li[4]/a</value>
-      <webElementGuid>0d3406b2-5f5c-40e9-9a72-4f1127a58cbe</webElementGuid>
+      <webElementGuid>e34448ee-2aea-4137-8d30-23e3b9b3a3b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Dictamen')]</value>
-      <webElementGuid>a514051c-b26c-44bc-a0e8-7b2137275cc0</webElementGuid>
+      <webElementGuid>b3b32ea6-144b-4425-a4e2-9a0d1f231a90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion de Dictamen'])[1]/following::a[1]</value>
-      <webElementGuid>8a8804a0-c38d-4890-b2fd-ee3af8680980</webElementGuid>
+      <webElementGuid>091f0ce8-bfed-46f0-b0ed-dcf6f1cca80f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen Con Autorizacion'])[1]/following::a[2]</value>
-      <webElementGuid>d66ab62e-1044-45d9-ba03-da6c6ae6e027</webElementGuid>
+      <webElementGuid>cdd3f7ae-fa65-4d1a-aa81-7b950b681e47</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuentas'])[1]/preceding::a[1]</value>
-      <webElementGuid>f4ac60c4-aeb0-4afb-b625-8a335466249f</webElementGuid>
+      <webElementGuid>7fcf5fa1-277e-4e61-92ba-1e77baecb067</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Bloqueos'])[1]/preceding::a[1]</value>
-      <webElementGuid>615c88a3-136d-47ff-901c-9c786e7491d0</webElementGuid>
+      <webElementGuid>fe451712-a95d-4d1f-a3b8-8f4780d89dfd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Dictamen']/parent::*</value>
-      <webElementGuid>a1a5754a-11e2-473d-8639-87929937f15d</webElementGuid>
+      <webElementGuid>c6e70ffc-e382-4b10-8349-3e5885525252</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('BCCL.POD.MOD.TEMPLATE,POD.REPORT I SYSTEM');&quot;)]</value>
-      <webElementGuid>35898615-a425-4db2-b0b3-840850e3e629</webElementGuid>
+      <webElementGuid>056e6226-7326-4dd6-81b7-5d77b5929491</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[2]/li/ul/li[4]/a</value>
-      <webElementGuid>b66f8f74-e39f-47c2-85a1-98a6eec82bf3</webElementGuid>
+      <webElementGuid>11b1f111-210a-42c4-979d-524335f83c5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;BCCL.POD.MOD.TEMPLATE,POD.REPORT I SYSTEM&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Dictamen ' or . = 'Consulta de Dictamen ')]</value>
-      <webElementGuid>6aad2fe9-4293-4412-8329-67eeb620b478</webElementGuid>
+      <webElementGuid>66ea6db9-5f60-4231-ad58-ca940012fafd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

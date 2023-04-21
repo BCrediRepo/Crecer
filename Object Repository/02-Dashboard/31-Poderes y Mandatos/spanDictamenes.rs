@@ -3,7 +3,7 @@
    <description></description>
    <name>spanDictamenes</name>
    <tag></tag>
-   <elementGuidId>f33567f9-a596-4500-a782-f4fb54ff4612</elementGuidId>
+   <elementGuidId>bf9f31fe-a48d-40df-ace0-55a02de9a9bb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>03dfd25e-f241-4311-bd27-b93ae04a735c</webElementGuid>
+      <webElementGuid>08fc5465-ed1c-4d5d-90cb-59287ffce0a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>a6a64852-86f6-4d64-bd77-a82e77c7821d</webElementGuid>
+      <webElementGuid>8784236a-f9e8-4501-89c9-743f7fa02f38</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>31fc7cec-6ea6-4e0c-a08a-a4a79c56f1dd</webElementGuid>
+      <webElementGuid>745709ea-f73d-4d01-a222-f83e6cbb9bec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Dictamenes</value>
-      <webElementGuid>6c3c8719-4960-4cb1-84a8-08ecb3c725a2</webElementGuid>
+      <webElementGuid>948f18fb-589d-4d05-924e-95eb8da1284c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>521fb1fa-d61b-4a47-b9d3-276dfcf461c1</webElementGuid>
+      <webElementGuid>0f32e234-9e57-4c0a-b989-e849d6588ef5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[9]</value>
-      <webElementGuid>71f80305-eccd-467a-8c3f-84c847f478ac</webElementGuid>
+      <webElementGuid>55da7263-d846-4acd-b92e-0cef1200cf6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[2]/li/span</value>
-      <webElementGuid>a7502848-d9b9-4506-8174-8c9a033fd937</webElementGuid>
+      <webElementGuid>457706f2-1f8d-4c1b-9d57-82d5070fd9cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Usuario Accion Digital'])[1]/following::span[1]</value>
-      <webElementGuid>00e5a541-3920-4145-b7d2-276f8e5474b1</webElementGuid>
+      <webElementGuid>8abfcd2c-5759-428b-b799-c746008870b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Documentos Cuestionados'])[1]/following::span[1]</value>
-      <webElementGuid>29ce0115-effc-40cc-9aa4-c461731dd0ac</webElementGuid>
+      <webElementGuid>df07ad75-2364-466e-90ae-2aa65a96184f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen'])[1]/preceding::span[1]</value>
-      <webElementGuid>e10e4496-f2fe-4df8-ac22-c3ef7b641a50</webElementGuid>
+      <webElementGuid>e3d919c1-a37b-4aac-86dc-eb8aa0b77d2c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M Dictamen Con Autorizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>f7c3c7f0-db7f-4b18-b792-f683644b2707</webElementGuid>
+      <webElementGuid>4ba70cb3-5bd8-4444-babf-174470a92bd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Dictamenes']/parent::*</value>
-      <webElementGuid>fccf9860-c247-4aaa-a969-fc4302355db7</webElementGuid>
+      <webElementGuid>bda53cbe-1b0e-4bc0-9cf0-6bc2f9da2f80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[2]/li/span</value>
-      <webElementGuid>d2f879a7-7c51-4112-b8ae-43f271bb0481</webElementGuid>
+      <webElementGuid>7ca0fa3f-001c-4766-8dc4-a413daa187ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Dictamenes' or . = 'Dictamenes')]</value>
-      <webElementGuid>117c8bf3-7830-4df9-b3e5-6108fc3e73d4</webElementGuid>
+      <webElementGuid>3d960423-0576-4c7a-a6b6-df257e3fdf75</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

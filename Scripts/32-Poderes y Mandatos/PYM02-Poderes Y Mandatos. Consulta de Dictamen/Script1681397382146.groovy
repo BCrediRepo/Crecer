@@ -36,7 +36,7 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/spanDictamenes'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/01-Dictamenes/spanDictamenes'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/lnkConsulta de Dictamen'))
 
