@@ -24,37 +24,30 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?25
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/spanLOACC'))
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?25')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/spanConsulta'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanPersonas2'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/lnkControl de Errores en Base de Socios'))
-
-WebUI.switchToWindowTitle('BCCL.PER.CTRL.ERROR')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/Consulta/lnkConsulta de Acuerdos Vencidos'))
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtTransactionId'), '1000000001.0035')
+WebUI.switchToWindowTitle('BCCL.E.ACDOS.VENCIDOS')
 
-WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/txtCuenta'), '00890010860')
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtCertCalidad'), '02')
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/txtFecha Desde'), '20210719')
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtPendConsegDato'), '02')
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/txtFecha Hasta'), '20220725')
 
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lnkEjecutar'))
 
-
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCuenta'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
