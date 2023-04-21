@@ -51,14 +51,14 @@ WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametro
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'))
 //Cambia a la ventana "Consulta de Parametros de Filiales"
 WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
-//Espera a que aparezca el "txtFilial" 
-WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtFilial'), 3)
-//Clickea en el boton "Nueva Seleccion" para borrar los datos de la busqueda anterior.
-WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkNuevaSeleccion'))
-//Clickea en el boton "Ejecutar"
-WebUI.click(findTestObject('15-MONEX/01-BCCL.E.NOFILE.DET.OPER.MONEX/lnkEjecutar'))
-//Clickea en el boton "Lupa" para retroceder.
-WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkLupaPantallaDeSeleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Cambiar a ventanta T24
+WebUI.switchToWindowTitle('Temenos T24')
+//Click en "Administracion Parametros  de Sucursales"
+WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'))
+//Cambia a la ventana "Consulta de Parametros de Filiales"
+WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
 //Setea el texto "074" en el textbox "txtFilial" 
 WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtFilial'), '074')
 //CLickea en el boton "Eejecutar"

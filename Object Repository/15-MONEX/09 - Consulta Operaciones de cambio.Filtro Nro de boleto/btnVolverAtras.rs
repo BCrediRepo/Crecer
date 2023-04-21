@@ -6,12 +6,12 @@
    <elementGuidId>c9ecd7ae-27e3-466d-a2a1-48be94ca7868</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='enq_toolHeader']/tbody/tr/td[2]/div/table/tbody/tr/td[2]/a/img</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>img[alt=&quot;Pantalla de Seleccion&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enq_toolHeader']/tbody/tr/td[2]/div/table/tbody/tr/td[2]/a/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

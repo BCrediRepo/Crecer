@@ -40,15 +40,13 @@ WebUI.switchToWindowTitle('Det. de Oper de Compra-Venta MONEX')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('15-MONEX/09 - Consulta Operaciones de cambio.Filtro Nro de boleto/imputNroBoleto'), '')
-
 WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
 
 WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
 
-WebUI.click(findTestObject('15-MONEX/09 - Consulta Operaciones de cambio.Filtro Nro de boleto/Page_Det. de Oper de Compra-Venta MONEX/btnVolverAtras'))
+WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/btnLupita'))
 
-WebUI.sendKeys(findTestObject('15-MONEX/09 - Consulta Operaciones de cambio.Filtro Nro de boleto/Page_Det. de Oper de Compra-Venta MONEX/inputNROBOLETO'), 
+WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtNroBoleto (1)'), 
     'OC222030092316400017')
 
 WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
