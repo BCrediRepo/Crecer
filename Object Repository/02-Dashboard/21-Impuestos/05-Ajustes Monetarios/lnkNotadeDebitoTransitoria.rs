@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkNotadeCreditoTransitoria</name>
+   <name>lnkNotadeDebitoTransitoria</name>
    <tag></tag>
-   <elementGuidId>bc83f0b0-d0e8-431d-874c-476cd1f50584</elementGuidId>
+   <elementGuidId>6fb9289d-3705-4eec-b8e5-d138e0cf3000</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACCT I F3');processMenuHeaderText('Nota de Credito Transitoria')&quot;]</value>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACDT I F3');processMenuHeaderText('Nota de Debito Transitoria')&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,39 +21,39 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>8476cc2b-6cb1-418b-8df2-e8e7fac81f29</webElementGuid>
+      <webElementGuid>c7f1ee0d-c6a4-432c-b0b7-43487f2e534a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onclick</name>
       <type>Main</type>
-      <value>javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACCT I F3');processMenuHeaderText('Nota de Credito Transitoria')</value>
-      <webElementGuid>33f7aec2-256c-4420-9c75-f1c2b611daea</webElementGuid>
+      <value>javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACDT I F3');processMenuHeaderText('Nota de Debito Transitoria')</value>
+      <webElementGuid>b1f409b1-9ef7-4f47-82c2-f37685a5fd7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:docommand('FUNDS.TRANSFER,BCCL.ACCT I F3');</value>
-      <webElementGuid>c07a0660-45d3-488a-bee9-c614ea413dc9</webElementGuid>
+      <value>javascript:docommand('FUNDS.TRANSFER,BCCL.ACDT I F3');</value>
+      <webElementGuid>1fd6b638-4307-4812-8ec2-49895b236f64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Nota de Credito Transitoria </value>
-      <webElementGuid>efdbbe2c-9e86-468c-8523-19ab3aec545c</webElementGuid>
+      <value>Nota de Debito Transitoria </value>
+      <webElementGuid>fb71751b-cf24-47f2-ac6f-be0ffa67d637</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
-      <webElementGuid>b6fc415a-0fa5-4a47-b99d-3b5bc2f37cc0</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[3]/a[1]</value>
+      <webElementGuid>df056b5b-8c3e-46fa-9f62-4cb1abbdf2d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,94 +61,94 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>86f46f4e-e993-4533-94af-44c500baff98</webElementGuid>
+      <webElementGuid>47448c11-bae9-4a44-ad0f-88d3fd805ad6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACCT I F3');processMenuHeaderText('Nota de Credito Transitoria')&quot;]</value>
-      <webElementGuid>fa85919e-68b6-447b-9646-755a35e8da07</webElementGuid>
+      <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACDT I F3');processMenuHeaderText('Nota de Debito Transitoria')&quot;]</value>
+      <webElementGuid>0ab345f3-1e5d-449c-b7ce-9f59db302513</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[20]/li/ul/li[4]/a</value>
-      <webElementGuid>7476aed6-6ef1-44b0-bdb7-4589917dcd2b</webElementGuid>
+      <value>//div[@id='pane_']/ul[20]/li/ul/li[3]/a</value>
+      <webElementGuid>7aecc7b8-95b4-452d-a25c-72fba27cd10e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Nota de Credito Transitoria')]</value>
-      <webElementGuid>ba58e23e-f818-4c34-9c46-c9fe774e5e96</webElementGuid>
+      <value>//a[contains(text(),'Nota de Debito Transitoria')]</value>
+      <webElementGuid>ec066845-d8c5-4a7f-98db-0cdfb8aca813</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito Transitoria'])[1]/following::a[1]</value>
-      <webElementGuid>e086170b-75b2-45a6-b727-f79ff0df6185</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito por Ajustes'])[1]/following::a[1]</value>
+      <webElementGuid>c4fd2215-89cd-4501-ae9e-d97ae3f221e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito por Ajustes'])[1]/following::a[2]</value>
-      <webElementGuid>d572dcf3-7532-4269-87c3-4ec557109b70</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito por Ajustes'])[1]/following::a[2]</value>
+      <webElementGuid>b47b0124-27d6-4c94-b6da-f5150d93a63d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contrasiento'])[1]/preceding::a[1]</value>
-      <webElementGuid>5e571b2b-ed81-458f-830e-2a7e227eb696</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito Transitoria'])[1]/preceding::a[1]</value>
+      <webElementGuid>c2e5fd57-a97d-40f5-a746-99700dd7dfb7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comisiones y Bonificaciones'])[1]/preceding::a[2]</value>
-      <webElementGuid>64777eed-6a58-48b5-82ec-b9949bc4e39a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contrasiento'])[1]/preceding::a[2]</value>
+      <webElementGuid>88a20296-e1ef-4d9e-a45e-a81be0ae18e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Nota de Credito Transitoria']/parent::*</value>
-      <webElementGuid>91eeadb1-e2f3-4da2-8c5e-a0ecd7d6f9e7</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Nota de Debito Transitoria']/parent::*</value>
+      <webElementGuid>60f097e3-be07-497c-9b87-30dec977e385</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,BCCL.ACCT I F3');&quot;)]</value>
-      <webElementGuid>a58558ff-dbe9-4cab-9a80-0727c4089b59</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,BCCL.ACDT I F3');&quot;)]</value>
+      <webElementGuid>05e91a3c-8549-4d7c-93dd-cc3a67bcc12b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[20]/li/ul/li[4]/a</value>
-      <webElementGuid>38c17fde-44b8-4828-98d5-abfe19af28e2</webElementGuid>
+      <value>//ul[20]/li/ul/li[3]/a</value>
+      <webElementGuid>bb1892ad-413b-497e-9823-55a396688f72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,BCCL.ACCT I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Nota de Credito Transitoria ' or . = 'Nota de Credito Transitoria ')]</value>
-      <webElementGuid>1c1db86f-6394-4c30-a5e8-e5e373c1c802</webElementGuid>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,BCCL.ACDT I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Nota de Debito Transitoria ' or . = 'Nota de Debito Transitoria ')]</value>
+      <webElementGuid>9b38bc8b-0f69-4175-8dcd-f15a0d3b123e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

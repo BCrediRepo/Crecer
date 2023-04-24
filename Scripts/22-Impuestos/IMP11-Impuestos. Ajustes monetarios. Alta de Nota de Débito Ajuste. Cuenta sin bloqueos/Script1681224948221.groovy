@@ -31,8 +31,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Accedo al menu de Ajustes Monetarios - Alta de Nota de Debito por Ajuste y completo el registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/30-Ajustes Monetarios/lnkNotadeDebitoporAjustes'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/30-Ajustes Monetarios/lnkNotadeDebitoporAjustes'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeDebitoporAjustes'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeDebitoporAjustes'))
 
 //Switch a la ventana de Nota de Credito por Ajustes
 WebUI.switchToWindowTitle('Movimiento de Fondos')
