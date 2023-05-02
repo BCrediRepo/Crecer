@@ -45,8 +45,8 @@ WebUI.switchToWindowTitle('BCCL.CQ.CHEQUERAS')
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/01-Consulta/lnkConsultadeChequerahastaEmitida(40)'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultadeChequerahastaEmitida(40)'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultadeChequerahastaEmitida(40)'))
 
 //Switch a la ventana de busqueda de consulta de chequeras
 WebUI.switchToWindowTitle('BCCL.CQ.CHEQUERAS')

@@ -67,8 +67,16 @@ if (cuenta == '90890008453') {
     WebUI.takeScreenshot('Screenshot/Fails/Capital Social/Error - CS01-Capital Social. Consulta de cuentas de Capital Social. Usuario de filial. Búsqueda por cuenta Dato. Id. Persona o Numero Cuenta.png')
 }
 
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

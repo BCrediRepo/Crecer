@@ -36,9 +36,9 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/31.1-Poderes y Mandatos/01-Dictamenes/spanDictamenes'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/01-Dictamenes/spanDictamenes'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/31.1-Poderes y Mandatos/lnkConsulta de Dictamen'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/lnkConsulta de Dictamen'))
 
 WebUI.switchToWindowTitle('BCCL.POD.MOD.TEMPLATE')
 
@@ -54,7 +54,7 @@ WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblASOC SIND PROF S E ECHEVER'), 6)
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
 //---------------------------------------------------------------------------------------------------------------------
 

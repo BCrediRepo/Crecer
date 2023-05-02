@@ -23,8 +23,7 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
 
 WebUI.maximizeWindow()
 
@@ -37,6 +36,8 @@ WebUI.click(findTestObject('02-Dashboard/18.1-Cheques Cancelatorios/spanConsulta
 WebUI.click(findTestObject('02-Dashboard/18.1-Cheques Cancelatorios/01-Consultas/lnkConsultaMovimientoCtaInterna'))
 
 WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
+
+//Se aplica la limpieza de busqueda en vez de utilizar la keyword de limpieza
 
 WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkNuevaSeleccion'))
 
@@ -65,18 +66,25 @@ WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Account Statement/btnLargav
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
+WebUI.waitForElementVisible(findTestObject('20.1-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'), 12)
+
 formulario = WebUI.verifyElementVisible(findTestObject('20.1-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'))
 
 WebUI.maximizeWindow()
 
-if (formulario == true) {
-    WebUI.takeScreenshot('Screenshot/Cheques Cancelatorios/CHC03 - Consulta movimientos Cta. Interna. Usuario de sucursal. Ingresar Categoría y Moneda en pesos y Fecha.png')
-} else {
-    WebUI.takeScreenshot('Screenshot/Cheques Cancelatorios/Fail/Error - CHC03 - Consulta movimientos Cta. Interna. Usuario de sucursal. Ingresar Categoría y Moneda en pesos y Fecha.png')
+assert formulario == true
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
-
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }

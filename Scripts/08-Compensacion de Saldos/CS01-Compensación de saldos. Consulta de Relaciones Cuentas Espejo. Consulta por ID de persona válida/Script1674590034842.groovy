@@ -24,17 +24,25 @@ DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
 String nowString = formatter.format(now)
 
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Se accede al menu Compensacion de Saldos
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lknCompensaciondeSaldos'), 6)
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lknCompensaciondeSaldos'))
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/lknConsultas'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lknConsultadeRelaciones'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'), 6)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'))
+
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'))
 
 WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
 
@@ -45,9 +53,6 @@ WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Con
 WebUI.click(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/btnEjecutar'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/lblCtaEspejo'), 6)
-
-WebUI.takeScreenshot("Screenshot/Compensacion de Saldos/Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona valida" + nowString + ".png")
-
 
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -62,6 +67,3 @@ void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 
 }
-
-
-

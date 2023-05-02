@@ -44,7 +44,7 @@ WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/02-Modificacion de Chequera/lnkImpresionActadeDestruccion'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/02-Modificacion de Chequera/lnkImpresionActadeDestruccion'))
 
 //Switch a la ventana de impresion de acta
 WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')

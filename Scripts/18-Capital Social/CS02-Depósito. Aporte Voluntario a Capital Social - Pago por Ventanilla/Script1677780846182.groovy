@@ -50,8 +50,16 @@ WebUI.switchToWindowIndex(3)
 
 WebUI.takeScreenshot('Screenshot/Capital Social/CS02-Depósito. Aporte Voluntario a Capital Social - Pago por Ventanilla.png')
 
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

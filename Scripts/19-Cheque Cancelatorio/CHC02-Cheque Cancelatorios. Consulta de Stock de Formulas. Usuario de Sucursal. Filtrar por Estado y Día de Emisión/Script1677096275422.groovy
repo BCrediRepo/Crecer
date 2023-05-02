@@ -16,19 +16,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
+WebUI.maximizeWindow()
 
 // Accedo al menu ?403
-
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscar'), "?403")
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -43,28 +41,35 @@ WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/lnkReporteI
 
 WebUI.switchToWindowTitle('Control Stock Certificacion Cheques')
 
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('Temenos T24')
+WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/lnkReporteInvFormDeCertificacion'))
+WebUI.switchToWindowTitle('Control Stock Certificacion Cheques')
+
 WebUI.setText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/txtSUCURSAL'), '089')
 
 WebUI.setText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/txtNUMERO DE CUENTA'), '00890172593')
 
 WebUI.setText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/txtNUMERO DE CHEQUE'), '22182765')
 
-WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/btnEjecutar'))
+WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lnkEjecutar'))
 
-WebUI.takeScreenshot("Screenshot/Cheque Cancelatorios. Consulta de Stock de Formulas. Usuario de Sucursal. Filtrar por Estado y Día de Emisión." + nowString + ".png")
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
+def element = WebUI.getText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
+assert element.contains('DIA DE INGRESO')
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

@@ -44,7 +44,7 @@ WebUI.switchToWindowTitle('Solicitudes Chequeras con Errores')
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/8-Emision Chequera/01-Consulta/lnkConsultaConfdeChequerasconErrores(21)'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultaConfdeChequerasconErrores(21)'))
 
 //Switch a la ventana de chequeras con errores
 WebUI.switchToWindowTitle('Solicitudes Chequeras con Errores')

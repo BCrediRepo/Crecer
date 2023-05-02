@@ -23,8 +23,7 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
 
 WebUI.maximizeWindow()
 
@@ -48,6 +47,8 @@ WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/Cheques Certifica
 
 WebUI.switchToWindowTitle('BCCL.CQ.CF.INVENTARIO')
 
+//Se aplica la limpieza de busqueda en vez de utilizar la keyword de limpieza
+
 WebUI.click(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lnkNuevaSeleccion'))
 
 WebUI.click(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lnkEjecutar'))
@@ -64,10 +65,16 @@ Sucursal = WebUI.verifyElementVisible(findTestObject('20-Cheque Certificados/BCC
 
 NumeroSucursal = WebUI.verifyElementVisible(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lbl074'), FailureHandling.STOP_ON_FAILURE)
 
-if ((Sucursal == true) && (NumeroSucursal == true)) {
-    WebUI.takeScreenshot('Screenshot/Cheques Cancelatorios/CHC04 - Inventario de Cheques Financieros.Detalle Cuenta sucursal CON datos Validos.png')
-} else {
-    WebUI.takeScreenshot('Screenshot/Cheques Cancelatorios/Fails/Error - CHC04 - Inventario de Cheques Financieros.Detalle Cuenta sucursal CON datos Validos.png')
+assert Sucursal == true
+assert NumeroSucursal == true
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

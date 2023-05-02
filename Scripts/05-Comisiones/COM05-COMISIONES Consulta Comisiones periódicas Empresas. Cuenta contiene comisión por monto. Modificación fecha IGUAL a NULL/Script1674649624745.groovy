@@ -49,14 +49,15 @@ if (Fecha != null) {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 
-//Login
+//Configuracion de ambiente y Login
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,7), findTestData('MainData/Users').getValue(2,7))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('COM.PER.ESP')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDrilldown'))
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBOLSIN.00010156010'))
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnModificar'))
@@ -64,7 +65,8 @@ WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnAutorizarRegistro'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.closeBrowser()
 
-//Login
+//Configuracion de ambiente y Login
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
