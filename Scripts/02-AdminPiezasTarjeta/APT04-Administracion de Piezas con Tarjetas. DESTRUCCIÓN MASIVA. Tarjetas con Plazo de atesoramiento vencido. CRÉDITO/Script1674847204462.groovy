@@ -30,10 +30,23 @@ WebUI.maximizeWindow()
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
 
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
 
+//<<<<<<< HEAD
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
+/*
+//
+//=======
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesoDestruccionTarjetas'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/05-ProcDestruccionTarjetas/lnkTarjetasPlazoAtesoramientoVencido'))
+//>>>>>>> ggutierrez
+
+>>>>>>> ggutierrez
 //Switch a la ventana de Destruccion Masiva
 WebUI.switchToWindowTitle('BCCL.AP.E.AP.DESTRUCCION.MASIVA')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/txtProducto'), 6)
@@ -53,12 +66,22 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/03-AdminPiezasTarje
 //---------------------------------------------------------------------------------------------------------------------
 
 ////Control de fin de script
-@com.kms.katalon.core.annotation.TearDownIfFailed
-void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
-}
+//@com.kms.katalon.core.annotation.TearDownIfFailed
+//void fTakeFailScreenshot() {
+//	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+//}
+//
+//@com.kms.katalon.core.annotation.TearDownIfPassed
+//void fPassScript() {
+//	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+//} 
+ */
 
-@com.kms.katalon.core.annotation.TearDownIfPassed
-void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-}
+
+
+
+
+
+
+
+
