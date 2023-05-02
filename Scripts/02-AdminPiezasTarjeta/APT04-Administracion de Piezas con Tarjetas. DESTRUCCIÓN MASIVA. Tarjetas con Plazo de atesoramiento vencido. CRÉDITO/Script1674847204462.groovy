@@ -29,20 +29,23 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-<<<<<<< HEAD
+
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
 
-=======
 //<<<<<<< HEAD
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/1-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkTarjetasConPlazodeAtesoramientoVencido'))
+/*
 //
 //=======
 //WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesoDestruccionTarjetas'))
 //WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/05-ProcDestruccionTarjetas/lnkTarjetasPlazoAtesoramientoVencido'))
 //>>>>>>> ggutierrez
+
 >>>>>>> ggutierrez
 //Switch a la ventana de Destruccion Masiva
 WebUI.switchToWindowTitle('BCCL.AP.E.AP.DESTRUCCION.MASIVA')
@@ -71,4 +74,14 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/03-AdminPiezasTarje
 //@com.kms.katalon.core.annotation.TearDownIfPassed
 //void fPassScript() {
 //	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-//}
+//} 
+ */
+
+
+
+
+
+
+
+
+

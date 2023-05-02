@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Tarjetas de depósito.Alta ONL de Tarjeta.Paso 3.Proceso BCCL.B.TD.ALTA.TDEPOSIT.Registro válido. Ejecución del proceso</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5212ae9d-f27f-4859-976f-b35579a6df1a</testCaseGuid>
+</TestCaseEntity>

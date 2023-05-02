@@ -17,6 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
+//Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
@@ -28,58 +31,46 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 3)
 
 //Se busca el TestBox de "Buscador"
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?58')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.NOFILE.DET.OPER.MONEX')
 
 //Click en el boton "Ejecutar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-//Cambia a la ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Espera a que aparezca el elemento "Administracion Parametros...."
-WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracion Parametros'), 
-    3)
-
-//Click en "Administracion Parametros..."
-WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracion Parametros'))
-
-//Espera a que aparezca el elemento "Administracino Parametros de Sucursales"
-WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'), 
-    3)
-
-//Click en "Administracion Parametros  de Sucursales"
-WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'))
-
-//Cambia a la ventana "Consulta de Parametros de Filiales"
-WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
-
-WebUI.sendKeys(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/inputcGupoCotizacion'), 
-    'USDPR001')
-
-WebUI.click(findTestObject('15-MONEX/01-BCCL.E.NOFILE.DET.OPER.MONEX/lnkEjecutar'))
+WebUI.switchToWindowTitle('Det. de Oper de Compra-Venta MONEX')
 
 WebUI.maximizeWindow()
 
+WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
+
+WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+
+WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/btnLupita'))
+
+WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtNroBoleto (1)'), 
+    'OC222030092316400017')
+
+WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
+
+WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+
 WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblMasVerde'))
 
-WebUI.click(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/lnkConsultar'))
+WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblBuscadorBoleto'))
 
-WebUI.switchToWindowTitle('Tabla de Sucursales')
+WebUI.switchToWindowTitle('Compra-Venta')
 
-Direccion = WebUI.verifyElementVisible(findTestObject('15-MONEX/11 - Administracion Parametros de Sucursales - Grupo de Cotizacion/lblDireccionSucursal'))
+ImporteME = WebUI.verifyElementVisible(findTestObject('15-MONEX/09 - Consulta Operaciones de cambio.Filtro Nro de boleto/lblImporteME'))
 
-assert Direccion == true
-
+assert ImporteME == true //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
 
