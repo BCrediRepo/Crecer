@@ -26,15 +26,25 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/spanLOACC'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/spanLOACC'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/spanConsulta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/span_Consulta'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/Consulta/lnkConsulta de Acuerdos Vencidos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/a_Consulta de Acuerdos Vencidos'))
 
 WebUI.maximizeWindow()
 
 WebUI.switchToWindowTitle('BCCL.E.ACDOS.VENCIDOS')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/a_Consulta de Acuerdos Vencidos'))
+
+WebUI.switchToWindowTitle('BCCL.E.ACDOS.VENCIDOS')
+
+WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/txtCuenta'), '00890010860')
 

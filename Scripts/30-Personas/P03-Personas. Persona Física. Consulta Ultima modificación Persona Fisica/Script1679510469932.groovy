@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -79,6 +79,7 @@ WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fis
 
 WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Historico'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lblLISTADOHISTORICO'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -59,11 +59,16 @@ WebUI.maximizeWindow()
 
 WebUI.switchToWindowTitle('LISTADO DE GRUPOS DE DEPURACION')
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Gral de Grupos de Depuracion/txtID GRUPO'), '1002163270')
+WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Gral de Grupos de Depuracion/txtESTADO'), 'AP')
+WebUI.setText(findTestObject('Object Repository/31-Personas/LISTADO DE GRUPOS DE DEPURACION/txtID GRUPO'), '1002163270')
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Gral de Grupos de Depuracion/lnkEjecutar'))
+WebUI.setText(findTestObject('Object Repository/31-Personas/LISTADO DE GRUPOS DE DEPURACION/txtESTADO'), 'AP')
+
+WebUI.click(findTestObject('Object Repository/31-Personas/LISTADO DE GRUPOS DE DEPURACION/lnkEjecutar'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/LISTADO DE GRUPOS DE DEPURACION/lblGRUPO'), 6)
+
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

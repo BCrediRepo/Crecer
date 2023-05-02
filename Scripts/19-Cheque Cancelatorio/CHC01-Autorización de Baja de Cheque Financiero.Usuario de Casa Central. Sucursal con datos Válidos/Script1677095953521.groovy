@@ -17,13 +17,31 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscar'), "?1")
+// Ingresamos el menu ?1 en el comandline
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscar'), '?1')
 
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
+WebUI.switchToWindowTitle('Temenos T24')
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
+
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/spanD3-CC1'))
+
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/spanCC1-ChequesCertificadosyFinancieros'))
+
+WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/Cheques Certificados y Financieros/spanChequesFinancieros'))
 
 
 

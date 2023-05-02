@@ -44,7 +44,6 @@ WebUI.setText(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.
 //Presiona botón ejecutar
 WebUI.click(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lnkEjecutar'))
 
-
 //Verifica que se muestre el titulo Tipo de comision
 WebUI.waitForElementPresent(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lblTipo de Comision'), 6)
 

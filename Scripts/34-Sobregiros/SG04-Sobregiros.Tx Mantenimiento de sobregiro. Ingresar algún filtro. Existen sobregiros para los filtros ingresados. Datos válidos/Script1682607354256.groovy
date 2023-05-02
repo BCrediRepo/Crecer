@@ -17,42 +17,61 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?1
+//Se ingresa el menu ?1 en el command line
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscar'), '?1')
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.maximizeWindow()
 
+//Se ingresa al menu "sucursal Piloto"
 WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/spanLimites y Acumuladores'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/spanD3-CC4'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/spanLimites y Acumuladores'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/spanMantenimiento de Sobregiros'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/Limites y Acumuladores/lnkParametrizacionLimitesOperativos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/spanMantenimiento'))
 
-WebUI.switchToWindowTitle('BCCL.EB.LM.LIM.PAR')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/lnkMantenimento de Sobregiro'))
+
+WebUI.switchToWindowTitle('Consulta de Sobregiros')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/txtTransactionId'), 'LM.AC.COM.REGADM')
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/btnVerRegistro'))
+WebUI.switchToWindowTitle('Temenos T24')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblDescCorta'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/lnkMantenimento de Sobregiro'))
 
+WebUI.switchToWindowTitle('Consulta de Sobregiros')
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/lnkNueva Seleccion'))
+
+//Ingresamos nro de cuenta
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtCuenta'), '00430014075')
+
+//Click en btn ejecutar
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/lnkEjecutar'))
+
+//Verificamos el lbl cuenta
+WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/lblCuenta'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -65,6 +84,7 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
 
 
 

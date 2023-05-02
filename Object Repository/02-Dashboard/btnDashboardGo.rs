@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>d40dcfa6-175b-46a4-9b84-94c9da814cfe</webElementGuid>
+      <webElementGuid>7f207932-5273-4bcf-a863-1d0626ebd1f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>cmdline_img</value>
-      <webElementGuid>9018332d-c253-46eb-aa15-173696e8039f</webElementGuid>
+      <webElementGuid>93c84bb4-d06d-4dfe-9af6-6727a2ed08db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/menu/go.gif</value>
-      <webElementGuid>0abe3217-7029-40de-a604-0b46302f3211</webElementGuid>
+      <webElementGuid>3938e859-1d14-4f1a-b41e-943c91cf3025</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Go</value>
-      <webElementGuid>69a09440-a7e0-413e-bbbd-359edda2b092</webElementGuid>
+      <webElementGuid>e8b59d21-75da-44d8-9247-65b3ec034794</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Go</value>
-      <webElementGuid>030916fc-dafd-48a2-b0eb-faf2eac73fca</webElementGuid>
+      <webElementGuid>048859ec-ff71-4887-ab82-8b1473214c39</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;cmdline_img&quot;)</value>
-      <webElementGuid>73e2b3ea-58fa-4ad0-9e51-a5efcc3cddf3</webElementGuid>
+      <webElementGuid>4e02f9ea-e4d6-4090-919e-1601a2a6475b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -74,7 +74,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMainMenu</value>
-      <webElementGuid>670172ff-8250-48a8-8a85-16fba6d0a8dd</webElementGuid>
+      <webElementGuid>5bf2d19e-b085-4cea-beaf-d6810ad6639f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//img[@id='cmdline_img']</value>
-      <webElementGuid>443591a1-f134-4909-a6eb-3e1c69fabec3</webElementGuid>
+      <webElementGuid>78594207-5f66-429e-8455-b20ce5a6b8de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='commandLineForm']/a/img</value>
-      <webElementGuid>8695a52d-a94c-4323-b7bc-05882ff933eb</webElementGuid>
+      <webElementGuid>23dfefb1-fc76-475f-bd2a-ebc83a43ca58</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Go']</value>
-      <webElementGuid>e4fa2191-217f-4503-aaa3-3743dc138027</webElementGuid>
+      <webElementGuid>f70324b0-de58-480d-a050-5d6f048073dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>e15d9560-ebd8-4392-8fb7-bdab8314b7de</webElementGuid>
+      <webElementGuid>6fbee11b-ac2d-4138-ac15-fc275716a315</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@id = 'cmdline_img' and @src = '../plaf/images/bccl/menu/go.gif' and @alt = 'Go' and @title = 'Go']</value>
-      <webElementGuid>bedad9cd-e50e-47ce-bcb4-4f0793944da6</webElementGuid>
+      <webElementGuid>7fd605de-3923-4d37-ab91-dd127de11d70</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

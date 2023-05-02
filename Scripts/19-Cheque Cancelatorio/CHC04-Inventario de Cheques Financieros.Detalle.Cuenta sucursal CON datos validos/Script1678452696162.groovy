@@ -23,12 +23,10 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscar'), '?1')
 

@@ -51,7 +51,10 @@ WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E
 
 WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/btnVerRegistro'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblDescCorta'), 6)
+
 WebUI.maximizeWindow()
+
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

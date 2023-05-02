@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SG04-Sobregiros.Tx Mantenimiento de sobregiro. Ingresar algún filtro. Existen sobregiros para los filtros ingresados. Datos válidos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0741beb9-cffb-4e2e-9a6b-1e3262867607</testCaseGuid>
+</TestCaseEntity>

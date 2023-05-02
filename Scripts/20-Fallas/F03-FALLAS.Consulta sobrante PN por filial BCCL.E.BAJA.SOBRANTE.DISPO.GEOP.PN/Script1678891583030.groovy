@@ -53,6 +53,8 @@ WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkConsul
 
 WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkNuevaSeleccion'))
 
 WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20220725')
@@ -70,6 +72,9 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/03-BCCL.
 WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 6)
 
 WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/img'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 6)
+
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
