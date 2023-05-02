@@ -50,8 +50,14 @@ WebUI.setText(findTestObject('Object Repository/31-Personas/txtCertCalidad'), '0
 
 WebUI.setText(findTestObject('Object Repository/31-Personas/txtPendConsegDato'), '02')
 
+WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
 
-
+//Espera y recibe mensaje de tx completa
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Page_BCCL.PER.CTRL.ERROR/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Page_BCCL.PER.CTRL.ERROR/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Page_BCCL.PER.CTRL.ERROR/lblTxnCompleta'))
+assert element.contains('Txn Completa:')
+WebUI.closeBrowser()
 
 
 //---------------------------------------------------------------------------------------------------------------------

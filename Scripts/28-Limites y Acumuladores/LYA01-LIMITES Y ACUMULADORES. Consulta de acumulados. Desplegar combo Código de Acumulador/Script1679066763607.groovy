@@ -52,6 +52,8 @@ WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.E
 
 WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/btnCodAcumulador'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblID'), 6)
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

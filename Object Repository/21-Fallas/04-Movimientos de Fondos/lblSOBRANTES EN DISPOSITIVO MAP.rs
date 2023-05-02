@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkComisiones</name>
+   <name>lblSOBRANTES EN DISPOSITIVO MAP</name>
    <tag></tag>
-   <elementGuidId>4db76739-deb0-4778-925c-0ca668f98d73</elementGuidId>
+   <elementGuidId>1a466e91-5b18-47e5-bca8-bc2591bc0afb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
+         <value>//span[@id='enri_TRANSACTION.TYPE']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,118 +22,118 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b7060df1-654d-4716-a9a7-ed1c6a84c6fa</webElementGuid>
+      <webElementGuid>fc8cc3f5-45ec-4fe7-8577-531fd3ed56e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>9967a9c5-0466-45cf-a07a-0d0fedf9d69b</webElementGuid>
+      <value>enrichment enrichment_FUNDSTRANSFER</value>
+      <webElementGuid>b11a3827-5f48-4821-b237-30c602b2c2bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
+      <name>id</name>
       <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>2c3f5baa-8f1a-4389-b56b-1a878461ebd0</webElementGuid>
+      <value>enri_TRANSACTION.TYPE</value>
+      <webElementGuid>bd122bd4-bc9c-4478-a524-b434f47068b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>enri_TRANSACTION.TYPE</value>
+      <webElementGuid>1c9a26dd-febf-4c08-9feb-b0247174d6bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Comisiones</value>
-      <webElementGuid>4f1cc65c-c8e7-44db-903d-0352b1ba9660</webElementGuid>
+      <value>SOBRANTES EN DISPOSITIVO MAP</value>
+      <webElementGuid>498244fc-956e-464f-a8a4-9703c73d0750</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>0a91cf95-a327-4601-848a-98e9b88b48c1</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>a853ea57-c86b-42d1-90ba-99384259fb87</webElementGuid>
+      <value>id(&quot;enri_TRANSACTION.TYPE&quot;)</value>
+      <webElementGuid>3dd7fc04-9c9c-4807-993b-ec03460e270a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
-      <webElementGuid>9cd3093e-a48a-4844-b1b3-8281bdf132ca</webElementGuid>
+      <value>//span[@id='enri_TRANSACTION.TYPE']</value>
+      <webElementGuid>5576a435-a786-47c0-80c4-d5b63e195694</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[27]/li/span</value>
-      <webElementGuid>83dbf256-070b-42bc-8d64-7c05519a899b</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr/td[4]/span</value>
+      <webElementGuid>cec9a625-da9a-4e22-b743-866293af93fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acred. Recibidas USD por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>9934745d-19e7-4ee0-91d6-fcedee5f7330</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACMS'])[1]/following::span[1]</value>
+      <webElementGuid>280b6326-c318-4cb7-9984-991cadad1371</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acreditaciones IFE por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>d4d75530-88d2-4d0e-96b3-c301b9930d24</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaction Type'])[1]/following::span[2]</value>
+      <webElementGuid>254a341f-e6b6-426c-92f0-5981de5912d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Parametrizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>f4631975-84d7-4315-ac28-6c8fde425d52</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Acct No'])[1]/preceding::span[1]</value>
+      <webElementGuid>638df9d1-379c-42ba-b8e9-c114f2116760</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizar valor de Comisiones'])[1]/preceding::span[2]</value>
-      <webElementGuid>f115f4d2-b7fe-4710-b17e-dfbdbc665d9e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCO CREDICOOP P 946'])[1]/preceding::span[2]</value>
+      <webElementGuid>1802ffb3-0aa0-4592-83b1-624981ffb0b5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Comisiones']/parent::*</value>
-      <webElementGuid>9c1698a1-0462-45cb-99bc-151cc0d0caa1</webElementGuid>
+      <value>//*/text()[normalize-space(.)='SOBRANTES EN DISPOSITIVO MAP']/parent::*</value>
+      <webElementGuid>87bb16ba-f6fa-46b0-a331-07d0189292a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[27]/li/span</value>
-      <webElementGuid>d9b6b377-f26c-4f9d-accd-ad3d3ed5d93b</webElementGuid>
+      <value>//td[4]/span</value>
+      <webElementGuid>2f34df81-e0b0-4519-b09a-81dddafc43fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Comisiones' or . = 'Comisiones')]</value>
-      <webElementGuid>913fcdab-ba9b-48ec-b6b9-fef7b14f56a8</webElementGuid>
+      <value>//span[@id = 'enri_TRANSACTION.TYPE' and @name = 'enri_TRANSACTION.TYPE' and (text() = 'SOBRANTES EN DISPOSITIVO MAP' or . = 'SOBRANTES EN DISPOSITIVO MAP')]</value>
+      <webElementGuid>bcc9852b-be7c-43c9-8a25-36ff6fd3c5e8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

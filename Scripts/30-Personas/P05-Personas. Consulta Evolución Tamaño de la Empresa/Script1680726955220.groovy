@@ -54,6 +54,8 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.switchToWindowTitle('Temenos T24')
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnk Consulta Evolucion Tamao Empresa'))
 
 WebUI.switchToWindowTitle('BCCL.PER.EVOL.TAMEMP')
@@ -61,6 +63,8 @@ WebUI.switchToWindowTitle('BCCL.PER.EVOL.TAMEMP')
 WebUI.setText(findTestObject('Object Repository/31-Personas/BCCL.PER.EVOL.TAMEMP/txtIDPersona'), '1000000011')
 
 WebUI.click(findTestObject('Object Repository/31-Personas/BCCL.PER.EVOL.TAMEMP/lnkEjecutar'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/BCCL.PER.EVOL.TAMEMP/lblNroPersona'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkComisiones</name>
+   <name>lblCuenta</name>
    <tag></tag>
-   <elementGuidId>4db76739-deb0-4778-925c-0ca668f98d73</elementGuidId>
+   <elementGuidId>2bf5318d-61dc-40f7-8fe2-5343c916ca24</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
+         <key>CSS</key>
+         <value>#columnHeaderText1</value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,119 +21,119 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>b7060df1-654d-4716-a9a7-ed1c6a84c6fa</webElementGuid>
+      <value>th</value>
+      <webElementGuid>8c46aea8-2eb1-4bd3-9b3f-2f2fd52f348a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>scope</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>9967a9c5-0466-45cf-a07a-0d0fedf9d69b</webElementGuid>
+      <value>col</value>
+      <webElementGuid>150fb94f-859a-4b6f-8632-798e16e1a732</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>2c3f5baa-8f1a-4389-b56b-1a878461ebd0</webElementGuid>
+      <value>columnHeader</value>
+      <webElementGuid>0bab7ebc-e148-4cb2-856e-567adc4c4b40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>columnHeaderText1</value>
+      <webElementGuid>35bb57dc-a983-45cd-8da1-c02cc1aae951</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Comisiones</value>
-      <webElementGuid>4f1cc65c-c8e7-44db-903d-0352b1ba9660</webElementGuid>
+      <value>Cuenta</value>
+      <webElementGuid>5f8cce74-748d-455f-923c-f9211fcf1663</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>0a91cf95-a327-4601-848a-98e9b88b48c1</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>a853ea57-c86b-42d1-90ba-99384259fb87</webElementGuid>
+      <value>id(&quot;columnHeaderText1&quot;)</value>
+      <webElementGuid>45c796d4-c0af-4029-8104-be8d189f4120</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
-      <webElementGuid>9cd3093e-a48a-4844-b1b3-8281bdf132ca</webElementGuid>
+      <value>//th[@id='columnHeaderText1']</value>
+      <webElementGuid>c5d6222c-25ac-45f1-bbd4-6e2099f1f9e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[27]/li/span</value>
-      <webElementGuid>83dbf256-070b-42bc-8d64-7c05519a899b</webElementGuid>
+      <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
+      <webElementGuid>a16b1cee-af7e-410c-989f-6487ba793d8b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acred. Recibidas USD por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>9934745d-19e7-4ee0-91d6-fcedee5f7330</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
+      <webElementGuid>e5cec201-0306-4fbc-beef-595017b94f1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acreditaciones IFE por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>d4d75530-88d2-4d0e-96b3-c301b9930d24</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
+      <webElementGuid>b0a2950e-b1e7-4359-b1fb-0940194fc5e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Parametrizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>f4631975-84d7-4315-ac28-6c8fde425d52</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/preceding::th[2]</value>
+      <webElementGuid>d1833b6b-35b1-4bdf-a15b-2480378265a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizar valor de Comisiones'])[1]/preceding::span[2]</value>
-      <webElementGuid>f115f4d2-b7fe-4710-b17e-dfbdbc665d9e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Numero Acuerdo'])[1]/preceding::th[5]</value>
+      <webElementGuid>442a45b7-4739-4795-ab15-4a533983a91e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Comisiones']/parent::*</value>
-      <webElementGuid>9c1698a1-0462-45cb-99bc-151cc0d0caa1</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cuenta']/parent::*</value>
+      <webElementGuid>034b15db-f8a6-445b-864e-91790672009d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[27]/li/span</value>
-      <webElementGuid>d9b6b377-f26c-4f9d-accd-ad3d3ed5d93b</webElementGuid>
+      <value>//tbody/tr/th</value>
+      <webElementGuid>366873b1-7660-400b-a2fa-62075cacae15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Comisiones' or . = 'Comisiones')]</value>
-      <webElementGuid>913fcdab-ba9b-48ec-b6b9-fef7b14f56a8</webElementGuid>
+      <value>//th[@id = 'columnHeaderText1' and (text() = 'Cuenta' or . = 'Cuenta')]</value>
+      <webElementGuid>9c106565-8193-41c3-9b61-a7306e2ddd10</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

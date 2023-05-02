@@ -17,44 +17,41 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanCuentas'))
+//Click en el menu LOACC del dashboard
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/spanLOACC'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/lnkCierreDeCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/span_Consulta'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/lnkNomina'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/lnkConsulta de Acuerdos a Vencer'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
-
-WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.NOMINA')
+WebUI.switchToWindowTitle('BCCL.E.ACU.PROX.A.VEC')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/lnkConsulta de Acuerdos a Vencer'))
 
-WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.NOMINA')
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkNuevaSeleccion'))
-
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/txtNumeroDeCuenta'), '00010070802')
-
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkEjecutar'))
+WebUI.switchToWindowTitle('BCCL.E.ACU.PROX.A.VEC')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/01-BCCL.AC.CONSULTA.NOMINA/lnkConsultaNominaCuenta'))
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VEC/lnkNueva Seleccion'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/02-BCCL.NOMINA.CH/lblAltaModif Nomina'), 6)
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VEC/txtFecha Hasta'), '20220802')
+
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VEC/lnkEjecutar'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VEC/lblNumero de Acuerdo'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -68,4 +65,5 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
 

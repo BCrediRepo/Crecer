@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkComisiones</name>
+   <name>spanD3-CC4</name>
    <tag></tag>
-   <elementGuidId>4db76739-deb0-4778-925c-0ca668f98d73</elementGuidId>
+   <elementGuidId>6905aa92-0bcf-4460-9bfa-7dd743cbf2f1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[222]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b7060df1-654d-4716-a9a7-ed1c6a84c6fa</webElementGuid>
+      <webElementGuid>f6ed5645-abe6-4dee-935b-e41b0466b5a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>9967a9c5-0466-45cf-a07a-0d0fedf9d69b</webElementGuid>
+      <webElementGuid>84234ab7-a908-46b6-ade8-a8fa4fb1ec41</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,102 +38,94 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>2c3f5baa-8f1a-4389-b56b-1a878461ebd0</webElementGuid>
+      <webElementGuid>7ae3bbec-babd-4601-bc3c-ff8b5bd3904d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Comisiones</value>
-      <webElementGuid>4f1cc65c-c8e7-44db-903d-0352b1ba9660</webElementGuid>
+      <value>D3 - CC4</value>
+      <webElementGuid>e830358a-f9fe-493b-9401-ff956451134b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>0a91cf95-a327-4601-848a-98e9b88b48c1</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>a853ea57-c86b-42d1-90ba-99384259fb87</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>faaaf47a-f48e-4eab-a8c0-d0a00e6bb221</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
-      <webElementGuid>9cd3093e-a48a-4844-b1b3-8281bdf132ca</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[222]</value>
+      <webElementGuid>5e843bd2-d6f2-43f3-a862-1f8598628e05</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[27]/li/span</value>
-      <webElementGuid>83dbf256-070b-42bc-8d64-7c05519a899b</webElementGuid>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[19]/span</value>
+      <webElementGuid>e3c10001-4bbb-44b9-8f36-4489d676c4ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acred. Recibidas USD por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>9934745d-19e7-4ee0-91d6-fcedee5f7330</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Movimientos Pendientes Cancelados'])[1]/following::span[1]</value>
+      <webElementGuid>4f4d4fdc-a59a-4937-bc2c-2777a1cc5a30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acreditaciones IFE por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>d4d75530-88d2-4d0e-96b3-c301b9930d24</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Movimientos Pendientes de Imputacion'])[1]/following::span[1]</value>
+      <webElementGuid>b14be7f4-c78a-4dd1-8b39-1ef9df601fc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Parametrizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>f4631975-84d7-4315-ac28-6c8fde425d52</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configuracion de Sobregiros'])[1]/preceding::span[1]</value>
+      <webElementGuid>e5afc848-b0a0-43f3-b943-aa8c4121379c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizar valor de Comisiones'])[1]/preceding::span[2]</value>
-      <webElementGuid>f115f4d2-b7fe-4710-b17e-dfbdbc665d9e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Linea Sobregiro'])[1]/preceding::span[2]</value>
+      <webElementGuid>38fb034a-587e-454b-b84d-8bc1f450480b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Comisiones']/parent::*</value>
-      <webElementGuid>9c1698a1-0462-45cb-99bc-151cc0d0caa1</webElementGuid>
+      <value>//*/text()[normalize-space(.)='D3 - CC4']/parent::*</value>
+      <webElementGuid>30d86b7e-dcae-4394-a441-82ac44a549fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[27]/li/span</value>
-      <webElementGuid>d9b6b377-f26c-4f9d-accd-ad3d3ed5d93b</webElementGuid>
+      <value>//li[19]/span</value>
+      <webElementGuid>acc3c96f-cb0c-4403-b9f8-8f21390abeb3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Comisiones' or . = 'Comisiones')]</value>
-      <webElementGuid>913fcdab-ba9b-48ec-b6b9-fef7b14f56a8</webElementGuid>
+      <value>//span[(text() = 'D3 - CC4' or . = 'D3 - CC4')]</value>
+      <webElementGuid>07bbbadf-a8f3-425d-951e-a7c88cc2900b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

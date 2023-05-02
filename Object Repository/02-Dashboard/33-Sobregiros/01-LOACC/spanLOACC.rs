@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkComisiones</name>
+   <name>spanLOACC</name>
    <tag></tag>
-   <elementGuidId>4db76739-deb0-4778-925c-0ca668f98d73</elementGuidId>
+   <elementGuidId>20fffdc0-9f3d-42ef-91eb-4e5a3e80e9ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[26]</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b7060df1-654d-4716-a9a7-ed1c6a84c6fa</webElementGuid>
+      <webElementGuid>34e3bb3f-6091-4078-a2cf-e276e108f358</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>9967a9c5-0466-45cf-a07a-0d0fedf9d69b</webElementGuid>
+      <webElementGuid>7d6f94df-7a7f-41ed-8de0-f2a120473491</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,15 +38,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>2c3f5baa-8f1a-4389-b56b-1a878461ebd0</webElementGuid>
+      <webElementGuid>41879111-5f62-40de-8097-b32f612efb7a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Comisiones</value>
-      <webElementGuid>4f1cc65c-c8e7-44db-903d-0352b1ba9660</webElementGuid>
+      <value>LOACC</value>
+      <webElementGuid>7085c4de-e803-4b0b-acef-9015d691e73f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>0a91cf95-a327-4601-848a-98e9b88b48c1</webElementGuid>
+      <webElementGuid>5552872b-1c78-4a90-97cc-d717947968aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,78 +62,78 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>a853ea57-c86b-42d1-90ba-99384259fb87</webElementGuid>
+      <webElementGuid>2bf835b0-9c9a-4d8f-b46d-b8dbe1b7b42b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
-      <webElementGuid>9cd3093e-a48a-4844-b1b3-8281bdf132ca</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[26]</value>
+      <webElementGuid>3ae35b0e-872b-4dd5-bb12-eef1a1cb47b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[27]/li/span</value>
-      <webElementGuid>83dbf256-070b-42bc-8d64-7c05519a899b</webElementGuid>
+      <value>//div[@id='pane_']/ul[5]/li/span</value>
+      <webElementGuid>26159a54-aed1-42bd-a618-9035c134b134</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acred. Recibidas USD por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>9934745d-19e7-4ee0-91d6-fcedee5f7330</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel Parcial Sdo Deudor Cta. con Cta Cble'])[1]/following::span[1]</value>
+      <webElementGuid>df580c02-5767-4c22-9f39-1870fba7a303</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acreditaciones IFE por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>d4d75530-88d2-4d0e-96b3-c301b9930d24</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Canc. Saldo Deudor Cta Irrecuperables'])[1]/following::span[1]</value>
+      <webElementGuid>eee14099-f318-49c2-baf1-55d50de65407</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Parametrizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>f4631975-84d7-4315-ac28-6c8fde425d52</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B/M'])[1]/preceding::span[1]</value>
+      <webElementGuid>d5ef14cd-594b-43f6-8538-6cbe70e54997</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizar valor de Comisiones'])[1]/preceding::span[2]</value>
-      <webElementGuid>f115f4d2-b7fe-4710-b17e-dfbdbc665d9e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de LOACC'])[1]/preceding::span[2]</value>
+      <webElementGuid>170acd1a-94e2-4bd8-850a-ff383bb25b2d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Comisiones']/parent::*</value>
-      <webElementGuid>9c1698a1-0462-45cb-99bc-151cc0d0caa1</webElementGuid>
+      <value>//*/text()[normalize-space(.)='LOACC']/parent::*</value>
+      <webElementGuid>4e2a519e-e4d2-4e5f-8671-3315239cd706</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[27]/li/span</value>
-      <webElementGuid>d9b6b377-f26c-4f9d-accd-ad3d3ed5d93b</webElementGuid>
+      <value>//ul[5]/li/span</value>
+      <webElementGuid>87780062-7269-4407-8d50-763a81f7e3ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Comisiones' or . = 'Comisiones')]</value>
-      <webElementGuid>913fcdab-ba9b-48ec-b6b9-fef7b14f56a8</webElementGuid>
+      <value>//span[(text() = 'LOACC' or . = 'LOACC')]</value>
+      <webElementGuid>d9e5ea40-47cf-42d3-b255-2a56826ea461</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
