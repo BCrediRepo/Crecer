@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>MR02-Consulta de mov pendientes cancelados. User de Suc. Filtros VacIos. Mov mas de un tipo de prod-subproducto distintos cod op. Cancelado en fecha IGUAL a SI</name>
+   <name>MR02-Consulta de mov pend cancelados. Filtros VacIos. Mov distintos cod op. Cancelado en fecha IGUAL a SI</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1c480912-0b18-4b04-86a0-ba99dccd743f</testCaseGuid>
