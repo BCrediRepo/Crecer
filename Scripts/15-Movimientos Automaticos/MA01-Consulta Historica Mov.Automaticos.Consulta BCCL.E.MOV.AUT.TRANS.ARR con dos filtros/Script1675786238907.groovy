@@ -36,20 +36,20 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.HIST')
 
-//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkNueva Seleccion'))
-//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkEjecutar'))
-//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnNuevaBusqueda'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
 
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkConsultaMovimientosHistoricos'))
 
-WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/txtNroCta_value111'), '10430040953')
+WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.HIST')
 
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/txtNumeroCuenta'),'10430040953')
+
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnVista'))
 

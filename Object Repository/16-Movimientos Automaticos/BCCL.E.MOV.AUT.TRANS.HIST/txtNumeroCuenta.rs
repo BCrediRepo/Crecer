@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtNroCta_value111</name>
+   <name>txtNumeroCuenta</name>
    <tag></tag>
-   <elementGuidId>4a94db72-5079-471a-80d6-ab2cdadf4c13</elementGuidId>
+   <elementGuidId>816c67a7-5dd9-44ac-a029-56e5c1c742e2</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='value:1:1:1']</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='value:1:1:1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>d8675908-d9cb-483a-ae2d-8fe1dc152618</webElementGuid>
+      <webElementGuid>65062f14-6130-4db4-9c76-c1280848c78a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>3861361a-c5ad-4e12-a1c0-df647db2d43b</webElementGuid>
+      <webElementGuid>42548099-5a90-4504-b41a-59c36b402575</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>name</name>
       <type>Main</type>
       <value>value:1:1:1</value>
-      <webElementGuid>83b9a765-579d-4d6e-96e4-551e2066e41b</webElementGuid>
+      <webElementGuid>c3175f32-d903-44c1-9f07-fb06632b0505</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>value:1:1:1</value>
-      <webElementGuid>a35af435-cc36-45b5-9dd2-13954509363b</webElementGuid>
+      <webElementGuid>c4c05471-2292-48ea-9cad-2c54bc5c8b63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>size</name>
       <type>Main</type>
       <value>20</value>
-      <webElementGuid>0ffa0eb6-05a0-4053-9cbf-5b8a1adb95e4</webElementGuid>
+      <webElementGuid>2f1e1b9b-c2d0-48e2-b943-e33cc86110aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>value</name>
       <type>Main</type>
       <value>10430040953</value>
-      <webElementGuid>27890b85-2f2e-40ee-88d4-3c99b2072dab</webElementGuid>
+      <webElementGuid>4d2cbc5e-32e5-49a9-a9cb-c4c6b7978013</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>frequencydropfieldname</name>
       <type>Main</type>
       <value>value:1:1:1</value>
-      <webElementGuid>15db7dcf-307c-4852-a7fb-a42950641391</webElementGuid>
+      <webElementGuid>84a01fd8-cda2-4541-8bd6-ba9df7679fc0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqseldata enqseldata_BCCLEMOVAUTTRANSHIST</value>
-      <webElementGuid>24c304eb-cb14-4a5f-8306-85f6348df93b</webElementGuid>
+      <webElementGuid>0f17bb03-b103-4671-b8d9-8eb4124a1129</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;value:1:1:1&quot;)</value>
-      <webElementGuid>dc4c1845-9f7e-4ae6-bb29-efad4a3eda85</webElementGuid>
+      <webElementGuid>9f33ef8b-868a-4c98-bcfc-dfdc3d835360</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='value:1:1:1']</value>
-      <webElementGuid>2c1304bd-67af-417b-be40-aba653cd700b</webElementGuid>
+      <webElementGuid>6a21d1da-e165-4e5f-9d01-73299ca90ab1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='selectiondisplay']/tbody/tr/td[3]/input</value>
-      <webElementGuid>7c4b4a8d-7292-4e8a-add5-8559f6e1ffb4</webElementGuid>
+      <webElementGuid>ae04ebbb-aa5c-4ee6-ac49-446a57256105</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/input</value>
-      <webElementGuid>831759fb-6faf-4f0c-a73d-3ae4724a6467</webElementGuid>
+      <webElementGuid>da2544ce-8003-4bdf-ba20-20ab52f77ba1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +118,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @name = 'value:1:1:1' and @id = 'value:1:1:1']</value>
-      <webElementGuid>6ca7b9aa-bba9-4821-a207-db72e0d4857a</webElementGuid>
+      <webElementGuid>d32da7bd-c397-478e-9ba6-2d355d79c9cd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
