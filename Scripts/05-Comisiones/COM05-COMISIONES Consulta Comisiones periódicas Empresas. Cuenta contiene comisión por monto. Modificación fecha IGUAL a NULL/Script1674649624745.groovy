@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -51,7 +51,7 @@ if (Fecha != null) {
 
 //Configuracion de ambiente y Login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,7), findTestData('MainData/Users').getValue(2,7))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,6), findTestData('MainData/Users').getValue(2,6))
 WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
@@ -61,13 +61,13 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDrilldown'))
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBOLSIN.00010156010'))
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnModificar'))
-WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnAutorizarRegistro'))
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnAutorizarRegistro'))
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.closeBrowser()
 
 //Configuracion de ambiente y Login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 

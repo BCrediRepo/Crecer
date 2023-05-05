@@ -26,38 +26,50 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ingreso en la linea de comando ENQ BCCL.E.ACDOS
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.ACDOS')
-
+// Ingreso al menu ?5
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?5')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('BCCL.E.ACDOS')
+// Cambia a la ventana Temenos T24
+WebUI.switchToWindowTitle('Temenos T24')
 
+// Maximizamos
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanCuentasPersonasJuridicas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/lnkModificacion de Denominacion de Cuenta'))
 
-WebUI.switchToWindowTitle('T24 - Fil.089 M.del Plata Ctr')
+// Cambia a la ventana BCCL.E.CTA.MOD.DENOM
+WebUI.switchToWindowTitle('BCCL.E.CTA.MOD.DENOM')
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.ACDOS')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.ACDOS')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaDesde'), '20220718')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaHasta'), '20220725')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtEstado'), 'AC')
-
-WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lnkEjecutar'))
-
+// Maximizamos
 WebUI.maximizeWindow()
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lblCuenta'), 6)
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/BCCL.E.CTA.MOD.DENOM/lnkNueva Seleccion'))
+
+//Ingresamos Nro de cuenta valido
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/BCCL.E.CTA.MOD.DENOM/txtNroDeCuenta'), '00890010860')
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/BCCL.E.CTA.MOD.DENOM/lnkEjecutar'))
+
+//Clickeamos en modificar denominacion
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/BCCL.E.CTA.MOD.DENOM/lnkModificar Denominacion'))
+
+//Cambia a la ventana CUENTAS
+WebUI.switchToWindowTitle('CUENTAS')
+
+//Modificamos los nombres
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS/txtNombre1'), 'RETIRO')
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS/txtNombreCorto'), 'RETIRO')
+
+//Validamos el registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS/btnValidarRegistro'))
+
+//Aceptamos el registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS/btnAceptarRegistro'))
+
+//Verificamos que se realizo la txn
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTAS/lblTxnCompleta'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -71,6 +83,10 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
+
+
+
 
 
 
