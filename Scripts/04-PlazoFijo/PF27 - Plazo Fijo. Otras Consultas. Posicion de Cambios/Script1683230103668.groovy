@@ -23,44 +23,42 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
-        2, 3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
+        2, 9))
 
-WebUI.maximizeWindow()
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.MM.POSICION.CAMBIO ')
 
-WebUI.click(findTestObject('02-Dashboard/lnkONP'))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaONPTelecoop'))
+WebUI.switchToWindowTitle('Posicion de Cambio')
 
-WebUI.switchToWindowTitle('Consulta de ONP Telecoop')
+WebUI.setText(findTestObject('05-PlazoFijo/Posicion de Cambio/txtPos1'), 'ARS')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+texto = WebUI.getText(findTestObject('05-PlazoFijo/Posicion de Cambio/lblPos4'))
 
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaONPTelecoop'))
-
-WebUI.switchToWindowTitle('Consulta de ONP Telecoop')
-
-WebUI.setText(findTestObject('30-ONP/Consulta de ONP Telecoop/txtNumerodeCuenta'), '00890157848')
+if (texto == 'Fecha Alta') {
+    WebUI.setText(findTestObject('05-PlazoFijo/Posicion de Cambio/txtPos4'), '20220714')
+} else {
+    WebUI.setText(findTestObject('05-PlazoFijo/Posicion de Cambio/txtPos2'), '20220714')
+}
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.verifyElementVisible(findTestObject('30-ONP/Consulta de ONP Telecoop/lblCuenta'))
+WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Posicion de Cambio/lblMonedaConsulta'))
 
-Cuenta = WebUI.getText(findTestObject('30-ONP/Consulta de ONP Telecoop/lblCuenta'))
+Moneda = WebUI.getText(findTestObject('05-PlazoFijo/Posicion de Cambio/lblMonedaConsulta'))
 
-assert Cuenta == '00890157848'
+assert Moneda == "ARS"
 
 WebUI.maximizeWindow()
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 
