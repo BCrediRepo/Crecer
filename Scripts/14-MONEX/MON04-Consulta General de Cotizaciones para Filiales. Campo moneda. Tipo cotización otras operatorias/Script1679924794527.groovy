@@ -42,17 +42,21 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia de ventana
 WebUI.switchToWindowTitle('Consulta Cotizaciones de Moneda Extranjera')
 
+WebUI.setText(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/txtUSD'), 
+    'USD')
+
 //Espera a que sea visible el texto "BCCL.E.COT.GRAL.FIL
-WebUI.waitForElementVisible(findTestObject('15-MONEX/4-BCCL.E.COT.GRAL.FIL/lblBCCL'), 3)
+WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lblAR0011001'), 
+    3)
 
 //CLick en "Ejecutar"
-WebUI.click(findTestObject('15-MONEX/4-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Maximiza la ventana
 WebUI.maximizeWindow()
 
 //Guarda en la variable "Referencia" los datos tomados anteriormente.
-Referencia = WebUI.verifyElementVisible(findTestObject('15-MONEX/4-BCCL.E.COT.GRAL.FIL/lblReferenciaBCRA'))
+Referencia = WebUI.verifyElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lblPizarradeRegionAMBA'))
 
 //Realiza un Assert 
 assert Referencia == true //---------------------------------------------------------------------------------------------------------------------

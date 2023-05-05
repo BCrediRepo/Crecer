@@ -17,17 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
+        2, 3))
+
 WebUI.maximizeWindow()
+
 //CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 // Ingreso al menu ?25
-
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?25')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -46,31 +46,45 @@ WebUI.setText(findTestObject('Object Repository/31-Personas/txtTransactionId'), 
 
 WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtCertCalidad'), '02')
+WebUI.setText(findTestObject('Object Repository/31-Personas/txtCertCalidad'), '01')
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/txtPendConsegDato'), '02')
+WebUI.setText(findTestObject('Object Repository/31-Personas/txtPendConsegDato'), '01')
 
 WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
 
+if (WebUI.verifyElementVisible(findTestObject('31-Personas/Page_BCCL.PER.CTRL.ERROR/lblRegistroError'))) {
+	WebUI.setText(findTestObject('Object Repository/31-Personas/txtTransactionId'), '1000000001.0035')
+	
+	WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
+	
+	WebUI.setText(findTestObject('Object Repository/31-Personas/txtCertCalidad'), '02')
+	
+	WebUI.setText(findTestObject('Object Repository/31-Personas/txtPendConsegDato'), '02')
+	
+	WebUI.click(findTestObject('Object Repository/31-Personas/imgModificarRegistro'))
+}
+
+
+	
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Page_BCCL.PER.CTRL.ERROR/lblTxnCompleta'),6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Page_BCCL.PER.CTRL.ERROR/lblTxnCompleta'), 6)
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Page_BCCL.PER.CTRL.ERROR/lblTxnCompleta'))
+
 def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Page_BCCL.PER.CTRL.ERROR/lblTxnCompleta'))
+
 assert element.contains('Txn Completa:')
-WebUI.closeBrowser()
 
+WebUI.closeBrowser( //---------------------------------------------------------------------------------------------------------------------
+    ) //Control de fin de script
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
 
