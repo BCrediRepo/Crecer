@@ -28,9 +28,18 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisionesyBonificaciones'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/4-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/4-Comisiones/1-Comisiones y Bonificaciones/lnkConsulta de Comisiones Cobradas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkConsultadeComisionesCobradas'))
+
+//Abre la pestaña BCCL.E.AC.COM.COBRADA
+WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkConsultadeComisionesCobradas'))
 
 //Abre la pestaña BCCL.E.AC.COM.COBRADA
 WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
