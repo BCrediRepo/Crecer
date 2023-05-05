@@ -40,14 +40,14 @@ WebUI.switchToWindowTitle('Det. de Oper de Compra-Venta MONEX')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('15-MONEX/10 - Consulta Operaciones de Cambio. Filtro sucursal boleto/bntDropdown'), 
+WebUI.click(findTestObject('15-MONEX/10 - Consulta Operaciones de Cambio. Filtro sucursal boleto/bntDropdown'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('15-MONEX/10 - Consulta Operaciones de Cambio. Filtro sucursal boleto/lnk26'), 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('15-MONEX/10 - Consulta Operaciones de Cambio. Filtro sucursal boleto/btnCentro'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('00-Utils/02-Filtros/lnkEjecutar'), 3)
 
-WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
-
-WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblMasVerde'))
 

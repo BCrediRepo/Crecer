@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblBCCL</name>
+   <name>lblAR0011001</name>
    <tag></tag>
-   <elementGuidId>ebbcc560-3354-489f-9cac-b3c06412a49f</elementGuidId>
+   <elementGuidId>3e20a839-18e4-46db-8bdf-db6ceac5d581</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr[4]/td/div</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr[4]/td/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>4023cb31-e0ba-45f3-8a5d-800ea1021f41</webElementGuid>
+      <webElementGuid>8527cdc1-de10-4d73-aa23-7ec78f29ae5d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value> table-section table-section_BCCLECOTGRALFIL enqsel-ftr enqsel-ftr_BCCLECOTGRALFIL</value>
-      <webElementGuid>b53115c1-a0fc-4e9d-9f98-58e418d7bbe9</webElementGuid>
+      <webElementGuid>ffe3bb6e-72ff-44f0-9aa0-0153ade19dc3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>AR0011001 : BCCL.E.COT.GRAL.FIL</value>
-      <webElementGuid>d3a993e9-02b2-41a1-a202-d9ed3769120b</webElementGuid>
+      <webElementGuid>860741fa-e9ee-4bd0-b7b1-96b09c47820b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLECOTGRALFIL&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLECOTGRALFIL enqsel-selections enqsel-selections_BCCLECOTGRALFIL&quot;]/tbody[1]/tr[4]/td[1]/div[@class=&quot;table-section table-section_BCCLECOTGRALFIL enqsel-ftr enqsel-ftr_BCCLECOTGRALFIL&quot;]</value>
-      <webElementGuid>f5521bf4-99d8-4dc8-8b41-bb5e54965bb4</webElementGuid>
+      <webElementGuid>fb461da5-4913-468d-99b4-897f25108ea0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr[4]/td/div</value>
-      <webElementGuid>f1d444a1-3f49-42d9-8a78-b0380b9a756a</webElementGuid>
+      <webElementGuid>be02a5eb-7687-4cef-9080-4c8a8fa18c06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[1]/following::div[1]</value>
-      <webElementGuid>a1cbd307-9e93-4e15-9cc4-a2cb2ac00c6d</webElementGuid>
+      <webElementGuid>3e293f7d-7068-46b8-b82d-9b7f340ec03a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,23 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[4]/following::div[1]</value>
-      <webElementGuid>23fe815f-e96b-4984-97cc-686bd35973b1</webElementGuid>
+      <webElementGuid>ac1ada8e-2bd2-47be-adf3-82891f96bee7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::div[2]</value>
+      <webElementGuid>a3abb0e4-98de-4996-a2bc-ca515b8a9ea3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::div[2]</value>
+      <webElementGuid>d945b0ea-cb71-4861-901c-70ff99e4defc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='AR0011001 : BCCL.E.COT.GRAL.FIL']/parent::*</value>
-      <webElementGuid>76594649-a309-4edb-a335-6e1addaf1868</webElementGuid>
+      <webElementGuid>633b514f-b0a7-4d1b-a02f-73f713fcaf6e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[4]/td/div</value>
-      <webElementGuid>f178cb64-b117-47fe-b7ed-6ffad9604246</webElementGuid>
+      <webElementGuid>ef747b4f-4ebd-49a2-92bd-c230b183c330</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'AR0011001 : BCCL.E.COT.GRAL.FIL' or . = 'AR0011001 : BCCL.E.COT.GRAL.FIL')]</value>
-      <webElementGuid>29be9b19-495c-40ea-b7e2-e4370f33fa1e</webElementGuid>
+      <webElementGuid>a15d3250-1ce9-4053-80a0-5c35cde71ce7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
