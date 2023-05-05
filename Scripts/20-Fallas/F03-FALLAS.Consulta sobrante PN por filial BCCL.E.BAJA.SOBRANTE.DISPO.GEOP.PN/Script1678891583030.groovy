@@ -21,12 +21,14 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,8), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
+        2, 3))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu ?21
-
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?21')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -43,6 +45,7 @@ WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 WebUI.switchToWindowIndex(0)
 
 WebUI.switchToWindowTitle('Temenos T24')
@@ -55,37 +58,36 @@ WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkNuevaSeleccion'))
+//WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkNuevaSeleccion'))
+WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20220726')
 
-WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20220725')
-
-WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal'), '089')
-
-WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtIdDispositivo'), '04312100000035')
-
-WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtCartuchoGaveta'), 'RETIRO')
+WebUI.setText(findTestObject('21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal1'), '073')
+//
+//WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtIdDispositivo'), '04312100000035')
+//
+//WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtCartuchoGaveta'), 'RETIRO')
 
 WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkEjecutar'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 
+    6)
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 6)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 
+    6)
 
 WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/img'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 6)
-
-
-//---------------------------------------------------------------------------------------------------------------------
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 
+    6) //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
 

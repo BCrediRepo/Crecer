@@ -34,13 +34,13 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Temenos T24')
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkPlazoFijo1'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkPlazoFijo'))
 
 WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/lnkModificacionDePlazoFijo'))
 
 WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Modificacion de plazo fijo/lnkBloqueoyDesbloqueo'))
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Modificacion de plazo fijo/Bloqueo y desbloqueo/lnkBloqueoPlazoFijoInmovilizado'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Modificacion de plazo fijo/Bloqueo y desbloqueo/lnk_BloqueoPlazoFijoInmovilizado'))
 
 WebUI.switchToWindowTitle('Bloqueo Plazo Fijo Inmovilizado')
 
@@ -48,7 +48,7 @@ CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
 WebUI.switchToWindowTitle('Temenos T24')
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Modificacion de plazo fijo/Bloqueo y desbloqueo/lnkBloqueoPlazoFijoInmovilizado'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Modificacion de plazo fijo/Bloqueo y desbloqueo/lnk_BloqueoPlazoFijoInmovilizado'))
 
 WebUI.switchToWindowTitle('Bloqueo Plazo Fijo Inmovilizado')
 

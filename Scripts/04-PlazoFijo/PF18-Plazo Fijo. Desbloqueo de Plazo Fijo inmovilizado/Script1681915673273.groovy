@@ -34,7 +34,7 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Temenos T24')
 
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkPlazoFijo1'))
+WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/lnkPlazoFijo'))
 
 WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/lnkModificacionDePlazoFijo'))
 
