@@ -41,12 +41,6 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
 
-//WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/lnkNuevaSeleccion'))
-//
-//WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/lnkEjecutar'))
-//
-//WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnLupita'))
-
 WebUI.setText(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCuenta_value111'), '02180086531')
 
 WebUI.setText(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCheque_value211'), '10013')
@@ -63,11 +57,31 @@ WebUI.setText(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informad
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
+//Agrego un nuevo firmante para luego eliminarlo validando el aceptar alertas
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))){
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
+}
+
+WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
+WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/lnkEjecutar'))
+WebUI.maximizeWindow()
+WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnEliminarFirmante'))
-
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
+
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))){
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
+}
+
+//Valido que la transaccion se complete correctamente
+WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'), 6)
+def element = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'))
+assert element.contains('Txn Completa:')
+
 
 //---------------------------------------------------------------------------------------------------------------------
 

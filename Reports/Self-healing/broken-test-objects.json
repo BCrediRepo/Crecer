@@ -1,3 +1,204 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/frmDashboardMenu",
+      "brokenLocator": "/html[1]/frameset[1]/frame[2]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//frame[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/02-Dashboard/frmDashboardMenu_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/frmDashboardMainMenu",
+      "brokenLocator": "/html[1]/frameset[1]/frame[1]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//frame[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/02-Dashboard/frmDashboardMainMenu_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/02-Dashboard/txtDashboardBuscador",
+      "brokenLocator": "id(\"commandValue\")[count(. | //*[@id \u003d \u0027commandValue\u0027 and @ref_element \u003d \u0027Object Repository/02-Dashboard/frmDashboardMenu\u0027]) \u003d count(//*[@id \u003d \u0027commandValue\u0027 and @ref_element \u003d \u0027Object Repository/02-Dashboard/frmDashboardMenu\u0027])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxnCompleta",
+      "brokenLocator": "//table[@id\u003d\u0027messages\u0027]/tbody/tr[2]/td[2]/table[2]/tbody/tr/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Nro.de Pieza\u0027])[1]/following::td[14]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxnCompleta_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha",
+      "brokenLocator": "//th[@id\u003d\u0027columnHeaderText2\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u0027Fecha\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblSucursal",
+      "brokenLocator": "",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//table[@id\u003d\u0027selectiondisplay\u0027]/tbody/tr/td/span/label",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblSucursal_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/05-PlazoFijo/Cronograma de Inversores/lblCronogramadeInversores",
+      "brokenLocator": "//table[@id\u003d\u0027enqheader\u0027]/tbody/tr/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Guardar como XML\u0027])[2]/following::td[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/05-PlazoFijo/Cronograma de Inversores/lblCronogramadeInversores_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblHora",
+      "brokenLocator": "//th[@id\u003d\u0027columnHeaderText1\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Guardar como HTML\u0027])[2]/following::th[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblHora_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS",
+      "brokenLocator": "/html[1]/body[@class\u003d\"window\"]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//body",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_DEPOSITOSDEEFECTIVOENTAS",
+      "brokenLocator": "//table[@id\u003d\u0027enqheader\u0027]/tbody/tr[2]/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Guardar como XML\u0027])[2]/following::td[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_DEPOSITOSDEEFECTIVOENTAS_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_CANTIDADDEDEPOSITOS",
+      "brokenLocator": "//div[@id\u003d\u0027enquiryDataSizer\u0027]/table[2]/tbody/tr[2]/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Favoritos\u0027])[1]/preceding::td[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_IMPORTETOTALDEDEPOSITOS",
+      "brokenLocator": "//div[@id\u003d\u0027enquiryDataSizer\u0027]/table[2]/tbody/tr[3]/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Favoritos\u0027])[1]/preceding::td[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_IMPORTETOTALDEDEPOSITOS_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnReversarRegistro",
+      "brokenLocator": "//table[@id\u003d\u0027goButton\u0027]/tbody/tr/td/table/tbody/tr/td[5]/a/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//a/img",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnReversarRegistro_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/lnkModificarElestado",
+      "brokenLocator": "//tr[@id\u003d\u0027r1\u0027]/td[11]/a",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Favoritos\u0027])[1]/preceding::a[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/06-Comisiones/COM.PER.ESP/btnAutorizarRegistro",
+      "brokenLocator": "//table[@id\u003d\u0027goButton\u0027]/tbody/tr/td/table/tbody/tr/td[4]/a/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//img[@alt\u003d\u0027Autoriza el registro\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/06-Comisiones/COM.PER.ESP/btnAutorizarRegistro_img.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkAceptarAlertas",
+      "brokenLocator": "//a[@id\u003d\u0027errorImg\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027(Fil.073 Jujuy)\u0027])[1]/following::a[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkAceptarAlertas_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblTxnCompleta",
+      "brokenLocator": "//table[@id\u003d\u0027messages\u0027]/tbody/tr[2]/td[2]/table[2]/tbody/tr/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027(Fil.073 Jujuy)\u0027])[1]/following::td[7]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblTxnCompleta_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/tituloBCCL.MOV.RECHAZADOS",
+      "brokenLocator": "//form[@id\u003d\u0027enqsel\u0027]/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "td.caption.caption_EBCCLMOVRECHAZADOS",
+      "proposedLocatorMethod": "CSS",
+      "recoveryMethod": "CSS",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/tituloBCCL.MOV.RECHAZADOS_CSS.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnAadirFirmante",
+      "brokenLocator": "//table[@id\u003d\u0027mainTab\u0027]/tbody/tr[42]/td[2]/a/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(//img[@alt\u003d\u0027Expandir Multivalor\u0027])[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnAadirFirmante_img.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnEliminarFirmante",
+      "brokenLocator": "//table[@id\u003d\u0027mainTab\u0027]/tbody/tr[45]/td[2]/a[2]/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(//img[@alt\u003d\u0027Delete Value\u0027])[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnEliminarFirmante_img.png"
+    }
+  ]
 }

@@ -25,4 +25,11 @@
       <testCaseId>Test Cases/24-Cierre de Cuenta/CDC02-Cierre de Cuenta. Consulta de Nómina de Cuenta corriente en estado Cerrada</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>39ef482c-2377-4db1-91ae-f9bd19fc4524</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC01-Cierre de cuenta.Alta de nomina. Cuenta corriente en estado Cerrada. Todos los campos completos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

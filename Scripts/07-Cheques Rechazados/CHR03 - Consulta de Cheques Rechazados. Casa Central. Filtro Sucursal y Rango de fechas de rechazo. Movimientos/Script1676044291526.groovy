@@ -51,23 +51,15 @@ WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Tem
 
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkNuevaSeleccion'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaDesde'), 6)
+
+WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaDesde'), '20220701')
+
+WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaHasta'), '20220726')
 
 WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkEjecutar'))
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/btnNuevaBusqueda'))
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/btnAlmanaqueDesde'))
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkFecha1'))
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/btnAlmanaqueHasta'))
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkFecha25'))
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkEjecutar'))
-
-WebUI.delay(10)
+WebUI.delay(20)
 
 clickeable = WebUI.verifyElementClickable(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lnkVerDetalle'))
 

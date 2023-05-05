@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP12-Impuestos.Ajustes monetarios. Alta de Nota de Débito Ajuste. Cuenta Pesos. Persistencia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb15eb4f-9384-47f2-bb81-22c6cd7dad75</testCaseGuid>
+</TestCaseEntity>

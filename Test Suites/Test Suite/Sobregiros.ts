@@ -25,4 +25,25 @@
       <testCaseId>Test Cases/34-Sobregiros/SG02-Sobregiros. Consulta de acuerdos vencidos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>bcea4a0a-ebb2-4913-b7f0-1e50355f2355</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG03-Sobregiros. Consulta monto diario utilizado. Cuenta un solo acuerdo vigente utilizado. Se ingresa fecha inicio y cuenta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f8297093-dc2c-4800-a18d-ffb7b69abef0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG04-Sobregiros.Tx Mantenimiento de sobregiro. Ingresar algún filtro. Existen sobregiros para los filtros ingresados. Datos válidos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e9bcff15-20c4-4531-8f18-69f8e772cf8a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG05-Sobregiros. Consulta Cuentas Corrientes con Excesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

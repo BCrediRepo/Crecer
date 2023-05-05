@@ -16,20 +16,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(
+        2, 4))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lknCompensaciondeSaldos'), 6)
@@ -42,28 +40,32 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/07-Co
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'))
 
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'))
-
 WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
 
-WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtIDcuenta'), "00895279268")
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('T24 - Fil.043 Villa Mitre')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'))
+WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
 
-WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtTipoRegla'), "ESP")
+WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtIDcuenta'), '00895279268')
 
-WebUI.click(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/btnEjecutar'))
+WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtTipoRegla'), 'ESP')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/lblCtaEspejo'), 6)
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
+WebUI.verifyElementPresent(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/lblCtaEspejo'), 6) 
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

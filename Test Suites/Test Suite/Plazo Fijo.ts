@@ -123,4 +123,67 @@
       <testCaseId>Test Cases/04-PlazoFijo/PF16-Plazo Fijo. Consultas Segmentadas por Firmante. Plazos Fijos Activos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ea26b19b-9ba1-4e5e-8664-432d9aca7485</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF17-Plazo Fijo. Bloqueo Plazo Fijo inmovilizado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4e9549b0-ef22-45ed-a95e-6b8dde0c1161</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF18-Plazo Fijo. Desbloqueo de Plazo Fijo inmovilizado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e30f4493-0136-4f37-bb84-c63b64173084</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF19-Plazo Fijo. Imprimir Comprobante de Plazo Fijo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cc1608cd-08d7-4548-aba6-b4d3cac9f872</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF20-Plazo Fijo. Imprimir Formulario de Renovación Automática</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>67cb65a9-960b-4b3c-b6fb-098597cdf53f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF21-Plazo Fijo. Imprimir Liquidación Renovación Automática</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd0e39aa-81b9-4d5b-997d-2f9f94513d24</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF22-Plazo Fijo. Otras Consultas. Agenda de Vencimientos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>857b1d33-c331-49d1-94e1-fa2b08ab3c7d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF23-Plazo Fijo. Otras Consultas. Consolidado analítico de saldos por sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>72bbe8e5-1ccb-4b01-9a97-fa46402b372b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF24-Plazo Fijo. Otras Consultas. Consulta de Tasas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>197c2c2c-f932-4a3f-ad5e-1d9dde06454d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF25-Plazo Fijo. Otras Consultas. Cronograma de Inversores</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

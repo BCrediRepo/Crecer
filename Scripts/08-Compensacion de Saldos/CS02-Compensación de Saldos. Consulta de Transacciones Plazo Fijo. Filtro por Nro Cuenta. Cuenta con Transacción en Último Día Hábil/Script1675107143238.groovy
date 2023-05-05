@@ -19,13 +19,12 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-LocalDateTime now = LocalDateTime.now()
-DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE
-String nowString = formatter.format(now)
-
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(GlobalVariable.vTest10_IP, GlobalVariable.vTest10Name, GlobalVariable.vF00289, GlobalVariable.vPass)
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
+WebUI.maximizeWindow()
 
 //Ingreso al menu plazo fijo
 
@@ -39,9 +38,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consu
 
 WebUI.switchToWindowTitle('Plazo Fijos Activos')
 
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('T24 - Fil.089 M.del Plata Ctr')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
+WebUI.switchToWindowTitle('Plazo Fijos Activos')
+
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtNroOperacion'), "11918739")
 
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtSucursal'), "89")
+WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtSucursal'), "089")
 
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtMoneda'), "ARS")
 
@@ -52,9 +57,6 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activ
 WebUI.switchToWindowTitle('PLAZO FIJO')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lblIMPOSICION'), 6)
-
-WebUI.takeScreenshot("Screenshot/Compensacion de Saldos/Compensacion de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transacción en Último Día Hábil" + nowString + ".png")
-
 
 
 //---------------------------------------------------------------------------------------------------------------------

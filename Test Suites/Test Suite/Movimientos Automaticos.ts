@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Moviminetos Automaticos</name>
+   <name>Movimientos Automaticos</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -135,6 +135,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/15-Movimientos Automaticos/MA18-Movimientos Automaticos. Consulta de movimientos Aceptados. Movimientos a Reversar</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2dfd4d97-964e-4639-8689-c4050cc07224</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA19-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta CGU excede el límite</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
