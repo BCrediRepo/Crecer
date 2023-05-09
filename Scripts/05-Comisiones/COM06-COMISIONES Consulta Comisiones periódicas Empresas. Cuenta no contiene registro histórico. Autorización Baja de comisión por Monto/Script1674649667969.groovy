@@ -38,7 +38,7 @@ WebUI.closeWindowTitle('COM.PER.ESP')
 
 WebUI.switchToWindowTitle('T24 - Fil.074 Caseros Centro')
 WebUI.click(findTestObject('02-Dashboard/lnkComisionesyBonificaciones'))
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
 WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkBolsin'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 

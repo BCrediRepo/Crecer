@@ -59,6 +59,8 @@ WebUI.verifyElementClickable(findTestObject('20.1-Cheque Cancelatorio/Consulta M
 
 WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
+WebUI.delay(30)
+
 WebUI.switchToWindowTitle('Account Statement')
 
 WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Account Statement/btnLargavistas'))

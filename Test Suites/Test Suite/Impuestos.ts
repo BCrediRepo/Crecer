@@ -88,4 +88,11 @@
       <testCaseId>Test Cases/22-Impuestos/IMP11-Impuestos. Ajustes monetarios. Alta de Nota de Débito Ajuste. Cuenta sin bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1a79c41d-de71-45b3-a06c-146cd4805d2d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP12-Impuestos.Ajustes monetarios. Alta de Nota de Débito Ajuste. Cuenta Pesos. Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

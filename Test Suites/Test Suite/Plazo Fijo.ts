@@ -186,4 +186,18 @@
       <testCaseId>Test Cases/04-PlazoFijo/PF25-Plazo Fijo. Otras Consultas. Cronograma de Inversores</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>7f742b9b-2cfe-4a67-a116-ec0e778490e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF26 - Plazo Fijo. Otras Consultas. Cronograma de Vencimientos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>09ccca0a-7708-4e04-b3ec-55de00cdd703</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF27 - Plazo Fijo. Otras Consultas. Posicion de Cambios</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
