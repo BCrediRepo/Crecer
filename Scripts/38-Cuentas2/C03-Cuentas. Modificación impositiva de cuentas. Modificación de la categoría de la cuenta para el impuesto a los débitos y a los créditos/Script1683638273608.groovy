@@ -17,19 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
-        2, 3))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?29
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?29')
+// Ingreso al menu ?6
+
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?6')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
@@ -37,39 +36,40 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/01-Dictamenes/spanDictamenes'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/03- Modificacion Impositiva - Temenos T24/spanCuentas'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/31-Poderes y Mandatos/lnkConsulta de Dictamen'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/03- Modificacion Impositiva - Temenos T24/lnkModificacion Impositiva de Cuentas'))
 
-WebUI.switchToWindowTitle('BCCL.POD.MOD.TEMPLATE')
+WebUI.switchToWindowTitle('CUENTAS')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/txtCodigo De Relacion'), '1004564423')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/txtModificacion de Datos Impositivo'), '00545293967')
 
-WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/btnModificarRegistro'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnAceptarRegistro'),6)
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/txtCategoriaCondicion'), '1')
 
-WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/btnValidarRegistro'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblTxnCompleta'), 6)
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/btnAceptarRregistro'))
 
-//Valido que la transaccion haya finalizado con exito
-WebUI.waitForElementVisible(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblTxnCompleta'), 6)
-def element = WebUI.getText(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/lblTxn Completa'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
 
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
+
+
+
 
