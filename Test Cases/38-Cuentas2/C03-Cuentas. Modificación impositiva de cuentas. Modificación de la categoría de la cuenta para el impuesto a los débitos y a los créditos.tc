@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>C03-Cuentas. Modificación impositiva de cuentas. Modificación de la categoría de la cuenta para el impuesto a los débitos y a los créditos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b3753019-f46a-47a3-9a6e-02ad06a241b3</testCaseGuid>
+</TestCaseEntity>

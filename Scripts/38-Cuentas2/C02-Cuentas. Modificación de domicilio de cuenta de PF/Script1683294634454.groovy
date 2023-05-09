@@ -35,3 +35,67 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 // Maximizamos
 WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/02-Temeno T24/spanCuentas'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/02-Temeno T24/spanModificacion de Cuenta'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/02-Temeno T24/lnkModificacion de Subproducto'))
+
+// Cambia a la ventana Modificacion de Subproducto
+WebUI.switchToWindowTitle('Modificacion de Subproducto')
+
+// Maximizamos
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/Modificacion de Subproducto/lnkNueva Seleccion'))
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/Modificacion de Subproducto/txtNroCuenta'), '00430014075')
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/Modificacion de Subproducto/lnkEjecutar'))
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/Modificacion de Subproducto/lnkModificar Subproducto'))
+
+// Cambia a la ventana CUENTAS
+WebUI.switchToWindowTitle('CUENTAS')
+
+// Maximizamos
+WebUI.maximizeWindow()
+
+//WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTA/txtSubProducto'), '1030')
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/39-Cuentas2/CUENTA/cbx1005'), 6)
+
+WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas2/CUENTA/cbx1005'), 3)
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTA/txtUsoCuenta'), 'COMERCIAL')
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTA/txtTarifario'), '680')
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTA/btnValidarRegistro'))
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTA/btnAceptarRegistro'))
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTA/lnkAceptarAlertas'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTA/lblTRANSACCION FINALIZADA'), 6)
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
+
+
+
+
+
+
+
