@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC03-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Fecha desde del filtro menor a la fecha del dia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>075dd8e9-5368-4d63-a49a-1653fb903a90</testCaseGuid>
+</TestCaseEntity>

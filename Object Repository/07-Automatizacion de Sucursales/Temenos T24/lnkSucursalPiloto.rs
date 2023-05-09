@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkPlazoFijo</name>
+   <name>lnkSucursalPiloto</name>
    <tag></tag>
-   <elementGuidId>1a8b04de-f1a8-4bbb-bc84-83a484af8c89</elementGuidId>
+   <elementGuidId>d70a6435-9f0d-4e55-91eb-a21bdb7054d0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[95]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[51]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>a56a001c-bf7f-4746-8458-f85515a4fa59</webElementGuid>
+      <webElementGuid>f64c195b-f7d4-4857-a371-7637fe55db68</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>ffcf02eb-56a2-4d17-8879-b67d97c03abd</webElementGuid>
+      <webElementGuid>0776eb22-b3e1-4256-8940-cd1b613df667</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +37,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>401d6336-1d21-44c6-8984-dceb9f397dd0</webElementGuid>
+      <webElementGuid>9a74074c-3dcd-4a3e-8f21-59d1b8622d45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Plazo Fijo</value>
-      <webElementGuid>43aabe7f-7273-4154-9bbb-b8000e329dc2</webElementGuid>
+      <value>Sucursal Piloto</value>
+      <webElementGuid>6b50b3db-cf62-445d-b5da-d623bee9fa97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,15 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>af14651d-e965-4b5e-8220-a1e821c0d3f5</webElementGuid>
+      <webElementGuid>c11af0e2-2db8-4922-bdfc-861538b41c2b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[51]</value>
-      <webElementGuid>bca70113-979e-4b4a-9ccb-66e738b12cf9</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[95]</value>
+      <webElementGuid>7b53431f-8521-43cb-ac56-834e2f0beadf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,47 +69,47 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/span</value>
-      <webElementGuid>1627e268-f1a7-4592-8b65-641b25d3ba5d</webElementGuid>
+      <webElementGuid>f59d60e2-d0c5-45b2-80e7-514e54b1a836</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequeras y Cheques por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>60efd01f-a001-43c1-981e-098dab18158a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transacciones propias No autorizadas'])[1]/following::span[1]</value>
+      <webElementGuid>8f465dc3-3828-4c2c-ad68-d541b8a572fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequera desde Emitida (40 - 90)'])[1]/following::span[1]</value>
-      <webElementGuid>c75b0311-70fd-42c7-a3d6-57c8033e7610</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enquiry-Unauthorised Transactions'])[1]/following::span[1]</value>
+      <webElementGuid>4a28c6b2-309c-4b8d-8471-b58fefc0993a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>ba96b82a-9cfd-40a2-a8e1-e1569f2f9461</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='D1 - Estados 1'])[1]/preceding::span[1]</value>
+      <webElementGuid>36a342dd-4d2e-4423-b2d1-70079b0e93c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Plazo Fijo Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>4b647e43-f52a-4b03-88c1-580a93af3db7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion de Operaciones'])[2]/preceding::span[2]</value>
+      <webElementGuid>af923435-3b25-4b70-baea-ddf428481ef5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Plazo Fijo']/parent::*</value>
-      <webElementGuid>bd6c5037-4c9d-4297-9e78-d5fa6c24dcb8</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Sucursal Piloto']/parent::*</value>
+      <webElementGuid>5377e171-6cdf-4c47-b5c6-0a8e76028447</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,14 +117,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[7]/li/span</value>
-      <webElementGuid>f86022ec-193a-4588-9833-21edb9369ebf</webElementGuid>
+      <webElementGuid>5a1f5596-0082-4d4e-88a9-5bd833dcb96e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Plazo Fijo' or . = 'Plazo Fijo')]</value>
-      <webElementGuid>2e7f0fea-498d-4dd1-be97-db989841d70c</webElementGuid>
+      <value>//span[(text() = 'Sucursal Piloto' or . = 'Sucursal Piloto')]</value>
+      <webElementGuid>8a917d8e-28ea-42be-94bc-28697956d47a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
