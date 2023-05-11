@@ -18,33 +18,34 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-//TEST NAME: Impuestos.Ajustes monetarios. Alta de Nota de Débito Ajuste. Cuenta en pesos. Persistencia
+//TEST NAME: Impuestos.Ajustes monetarios.. Alta de Nota de Crédito Ajuste. Fecha valor permitida
 
-//Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Accedo al menu de Ajustes Monetarios - Alta de Nota de Debito por Ajuste y completo el registro
+//Accedo al menu de Ajustes Monetarios - Alta de Nota de Credito por Ajuste y completo el registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeDebitoporAjustes'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeDebitoporAjustes'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeCreditoporAjustes'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeCreditoporAjustes'))
 
-//Switch a la ventana de Nota de Debito por Ajustes
+//Switch a la ventana de Nota de Credito por Ajustes
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 WebUI.maximizeWindow()
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtNroCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtNroCuenta'), '00730029258')
-WebUI.click(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtImporte'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtImporte'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtImporte'), '100')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtConcepto'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtConcepto'), '18201AMI')
-WebUI.click(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtImporte'))
+
+//Completo los campos necesarios para la nota de Credito
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtNroCuenta'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtNroCuenta'), '00730029258')
+WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'), '100')
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtConcepto'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtConcepto'), '18602AME')
+WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/btnAceptarRegistro'))
 
@@ -55,6 +56,7 @@ WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito po
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/lblTxnCompleta'), 6)
 def element = WebUI.getText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
+
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -67,4 +69,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
