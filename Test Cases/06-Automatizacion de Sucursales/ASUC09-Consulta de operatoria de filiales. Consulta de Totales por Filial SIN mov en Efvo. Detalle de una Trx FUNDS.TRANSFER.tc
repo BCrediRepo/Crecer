@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC09-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN mov en Efvo. Detalle de una Trx FUNDS.TRANSFER</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4196a86c-9b83-4207-8ad4-a634a7ffe23c</testCaseGuid>
+</TestCaseEntity>

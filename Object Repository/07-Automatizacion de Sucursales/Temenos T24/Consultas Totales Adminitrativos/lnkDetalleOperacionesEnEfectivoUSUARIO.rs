@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkDetalleOperacionesEnEfectivoUSUARIO</name>
+   <tag></tag>
+   <elementGuidId>6dbfcfa4-4a16-4d9c-b463-7ab8126f8e8b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALUSUARIO.ME');processMenuHeaderText('DETALLE DE OPERACIONES en Efectivo (PARA EL U')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>24d70184-3e40-4a8a-a1d4-7db4fa1f6dba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALUSUARIO.ME');processMenuHeaderText('DETALLE DE OPERACIONES en Efectivo (PARA EL U')</value>
+      <webElementGuid>bfe8ca8a-6bfa-4027-a2e8-ed4c05dc4318</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.EB.TOTALUSUARIO.ME');</value>
+      <webElementGuid>b9df719e-0bd0-4897-94b6-8a0ed22e96dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DETALLE DE OPERACIONES en Efectivo (PARA EL U </value>
+      <webElementGuid>1ad492e4-7bee-47b2-8594-04bb2fed368d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
+      <webElementGuid>36b2b63c-f851-48bd-9d66-556a0ad464f1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALUSUARIO.ME');processMenuHeaderText('DETALLE DE OPERACIONES en Efectivo (PARA EL U')&quot;]</value>
+      <webElementGuid>fb3cccfa-1147-4a33-9b27-5c5e1af700c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[7]/ul/li/ul/li/a</value>
+      <webElementGuid>90139a3c-2c5a-4b14-8ed7-6895b992c4ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'DETALLE DE OPERACIONES en Efectivo (PARA EL U')]</value>
+      <webElementGuid>2a88f16e-943c-4134-ac6b-18c7a9dc93f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTA TOTALES ADMINISTRATIVOS'])[1]/following::a[1]</value>
+      <webElementGuid>f046c1bd-a3d2-4b8f-a652-0061f7a912f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTAS OPERATORIAS DE FILIALES'])[1]/following::a[1]</value>
+      <webElementGuid>ba1b0845-6a6f-4ab3-91d6-91892b3577db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES SIN Efectivo (PARA EL'])[1]/preceding::a[1]</value>
+      <webElementGuid>839d3884-5252-4b4c-89d4-8dfef58e81e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='DETALLE DE OPERACIONES en Efectivo (PARA EL U']/parent::*</value>
+      <webElementGuid>66a22092-648f-480a-b7d7-2fe43888ce4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.EB.TOTALUSUARIO.ME');&quot;)]</value>
+      <webElementGuid>a2b470ca-d03c-4d4d-ab28-34f204dd0a43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/ul/li[7]/ul/li/ul/li/a</value>
+      <webElementGuid>57493eb8-860f-4ae9-b8d0-1fca0b07123d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.EB.TOTALUSUARIO.ME&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'DETALLE DE OPERACIONES en Efectivo (PARA EL U ' or . = 'DETALLE DE OPERACIONES en Efectivo (PARA EL U ')]</value>
+      <webElementGuid>2578cf64-0521-4d97-9905-97009938c602</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
