@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkDetalleOperacionesSinEfectivoFILIAL</name>
+   <tag></tag>
+   <elementGuidId>887cea6d-0533-473b-80a8-35d9cf213a2d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALFILIAL.SME');processMenuHeaderText('DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>32be752e-6b88-499f-97d9-623be4a0a72b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALFILIAL.SME');processMenuHeaderText('DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')</value>
+      <webElementGuid>cb1f02a6-9f79-422c-b1d5-7a3782a335eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.EB.TOTALFILIAL.SME');</value>
+      <webElementGuid>5a762c90-a3af-41e7-9716-c68928173eca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DETALLE DE OPERACIONES SIN Efectivo  (PARA LA </value>
+      <webElementGuid>2297a872-8836-4f1a-9cbe-ba0cf076eee3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
+      <webElementGuid>f8e49ded-6554-4386-a2e1-779699c0809a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALFILIAL.SME');processMenuHeaderText('DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')&quot;]</value>
+      <webElementGuid>e345737b-8bfe-48fb-aa8e-10a4bee456be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[7]/ul/li/ul/li[4]/a</value>
+      <webElementGuid>54410c16-dcf6-4c78-b4cb-a7dbd22dcea0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')]</value>
+      <webElementGuid>1901413c-20e7-4521-a944-2f011a3782f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES SIN Efectivo (PARA EL'])[1]/following::a[2]</value>
+      <webElementGuid>4d6acd95-1b99-4326-b2e4-27de750cd8fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES'])[1]/preceding::a[1]</value>
+      <webElementGuid>e8b4db29-ed19-46ba-840b-228ae53ef31e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EXISTENCIA POR DENOMINACION'])[1]/preceding::a[1]</value>
+      <webElementGuid>80b77b3b-39da-441e-899a-a5fc5fa4855a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.EB.TOTALFILIAL.SME');&quot;)]</value>
+      <webElementGuid>ebfd4281-63d1-4780-8bdf-0a3317094b84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/ul/li[7]/ul/li/ul/li[4]/a</value>
+      <webElementGuid>944f3b3e-3bee-40f2-b32a-b3b056777078</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.EB.TOTALFILIAL.SME&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA ' or . = 'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA ')]</value>
+      <webElementGuid>03c11e8e-3df7-4781-a0e8-33c0bccd1f95</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

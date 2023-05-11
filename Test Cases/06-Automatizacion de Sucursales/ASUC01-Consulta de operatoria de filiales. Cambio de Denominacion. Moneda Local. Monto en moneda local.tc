@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC01-Consulta de operatoria de filiales. Cambio de Denominacion. Moneda Local. Monto en moneda local</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3aee3be9-0f08-49b9-9260-81b1c282dfd9</testCaseGuid>
+</TestCaseEntity>

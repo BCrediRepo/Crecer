@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkAJUSTESDEDENOMINACION</name>
+   <tag></tag>
+   <elementGuidId>fbe1c5b0-e2a5-4e7e-879a-77e2d9ed7b2c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>dcdfb86c-fe23-4988-9db9-ebb73d00bb46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('NEW','TELLER,CAMBIO.DENOMINACION I F3');processMenuHeaderText('AJSUTES DE DENOMINACION')</value>
+      <webElementGuid>30fd2fd2-e3b9-469a-b229-23d0ede6e919</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('TELLER,CAMBIO.DENOMINACION I F3');</value>
+      <webElementGuid>f3145ba9-7ea4-447a-9bdd-56fb7aebc36e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>AJSUTES DE DENOMINACION </value>
+      <webElementGuid>a4f9eb2b-465a-49ee-8cd0-d98d9cc5b92b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
+      <webElementGuid>9a522d74-857a-4aa2-8414-5873c96f5d9b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,CAMBIO.DENOMINACION I F3');processMenuHeaderText('AJSUTES DE DENOMINACION')&quot;]</value>
+      <webElementGuid>b384fecd-ef42-45d1-b0e1-b6c56c3dd43f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[7]/ul/li[2]/ul/li[2]/a</value>
+      <webElementGuid>42e8a75f-e522-4948-aceb-158021a273eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'AJSUTES DE DENOMINACION')]</value>
+      <webElementGuid>b3afcf46-b429-43ea-9518-5affa1f4af16</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EXISTENCIA POR DENOMINACION'])[1]/following::a[1]</value>
+      <webElementGuid>2ad8f6ea-58e6-4bec-900e-8852fd7fc4d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES'])[1]/following::a[2]</value>
+      <webElementGuid>ad5681d2-09a3-4f3b-9511-8de17cef2a53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTA EN CAJA DE FALTANTES/EXTORNOS CAJA'])[1]/preceding::a[1]</value>
+      <webElementGuid>597b3a4f-783d-400d-95f7-9fb108ae0b1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTA EN CAJA DE SOBRANTES CAJA'])[1]/preceding::a[2]</value>
+      <webElementGuid>55c1274d-f59c-4737-851b-7ba7ebb80a8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='AJSUTES DE DENOMINACION']/parent::*</value>
+      <webElementGuid>4e3e26e5-298f-4d42-bc7d-3dc4b3f434d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:docommand('TELLER,CAMBIO.DENOMINACION I F3');&quot;)]</value>
+      <webElementGuid>07a00ad8-a355-4d9c-a1a4-c4644b3c4512</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/ul/li[7]/ul/li[2]/ul/li[2]/a</value>
+      <webElementGuid>602cce42-995b-40e3-8fb8-e8c4eb0e3eb7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;TELLER,CAMBIO.DENOMINACION I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'AJSUTES DE DENOMINACION ' or . = 'AJSUTES DE DENOMINACION ')]</value>
+      <webElementGuid>f573f3f1-59a8-4364-8007-151454fcc52c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

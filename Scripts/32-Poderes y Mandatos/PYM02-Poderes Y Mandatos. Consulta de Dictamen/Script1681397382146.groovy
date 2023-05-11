@@ -17,17 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
+        2, 3))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Ingreso al menu ?29
-
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?29')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -48,24 +49,27 @@ WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.M
 
 WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnValidarRegistro'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnImprimirPantalla'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnAceptarRegistro'),6)
 
-WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnImprimirPantalla'))
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/btnAceptarRegistro'))
 
-//WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblASOC SIND PROF S E ECHEVER'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblTxnCompleta'), 6)
 
-//WebUI.closeBrowser()
+//Valido que la transaccion haya finalizado con exito
+WebUI.waitForElementVisible(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblTxnCompleta'), 6)
+def element = WebUI.getText(findTestObject('Object Repository/33-Poderes y Mandatos/BCCL.POD.MOD.TEMPLATE/lblTxnCompleta'))
+assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

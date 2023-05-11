@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC06-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Codigo de Trx del filtro igual codigo de asignacion de faltante a Cajero</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2eda5ed6-9132-409d-af8d-1f8734a8d3ca</testCaseGuid>
+</TestCaseEntity>
