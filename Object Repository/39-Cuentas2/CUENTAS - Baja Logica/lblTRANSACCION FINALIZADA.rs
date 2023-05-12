@@ -3,15 +3,15 @@
    <description></description>
    <name>lblTRANSACCION FINALIZADA</name>
    <tag></tag>
-   <elementGuidId>09226b31-fbae-4cd4-8fda-ba2ca8fed9ef</elementGuidId>
+   <elementGuidId>a94a4297-1238-4c60-b781-3138ec6e8ca2</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr/td/span</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>span.comment.comment_ACCOUNT.comment_ACCOUNT_FIN</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr/td/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>e52e18dd-00ad-4d23-a755-e75d6422f6be</webElementGuid>
+      <webElementGuid>073babdf-f990-4657-93cd-89510849b345</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>comment comment_ACCOUNT comment_ACCOUNT_FIN</value>
-      <webElementGuid>c80239da-9c8a-4670-bc58-177beb54dae8</webElementGuid>
+      <webElementGuid>358772c0-2949-4095-8ce8-0ca6eaa6808e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>TRANSACCION FINALIZADA</value>
-      <webElementGuid>3e7fd1ac-ebc4-4e4f-ad3b-f6fe25de62de</webElementGuid>
+      <webElementGuid>e5573ca4-db21-4489-91bb-186fddc53d31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[@class=&quot;field field_ACCOUNT field_ACCOUNT_FIN&quot;]/span[@class=&quot;comment comment_ACCOUNT comment_ACCOUNT_FIN&quot;]</value>
-      <webElementGuid>97c42646-d692-4c6b-a709-a5a1765360dd</webElementGuid>
+      <webElementGuid>32fc383c-f717-4515-87bd-ed4c1175c557</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td/span</value>
-      <webElementGuid>5c000d9d-3b8d-44ff-b580-a3aa612a17c1</webElementGuid>
+      <webElementGuid>7d21a1c8-04fd-4945-a985-e9b8ef19c20c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.043 Villa Mitre)'])[1]/following::span[1]</value>
-      <webElementGuid>9839a4e6-04b1-4ef9-b249-5600aa31d403</webElementGuid>
+      <webElementGuid>0e8f3b90-d697-4e0e-b507-4fe46b33d6ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CUENTA'])[1]/following::span[2]</value>
-      <webElementGuid>58c5ba14-aa99-4f6c-89e4-e1a6aaf36580</webElementGuid>
+      <webElementGuid>877b55b3-1d9f-48cc-acf3-b72d65d6b0bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,15 +78,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='GB Denominacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>fbc1b79a-a2ab-4609-adcd-57421c9a830d</webElementGuid>
+      <webElementGuid>2dffb34f-ba5f-44fd-9437-0c23ce26e90a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='SZLAIN JORGE'])[2]/preceding::span[1]</value>
-      <webElementGuid>04250b50-483d-4e3a-b3e2-e274aeb066a1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FERNANDEZ CAVIERES IGNACIO JOAQUIN'])[2]/preceding::span[1]</value>
+      <webElementGuid>cf78dc33-5dde-4de7-95b0-8ab82b135357</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='TRANSACCION FINALIZADA']/parent::*</value>
-      <webElementGuid>df1c10ec-5ccf-428f-8b07-8a06bd565386</webElementGuid>
+      <webElementGuid>b7558792-2151-4e20-b33c-b9534207dafe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td/table/tbody/tr/td/span</value>
-      <webElementGuid>c1dd2202-9266-4b73-b430-b1e841fc4971</webElementGuid>
+      <webElementGuid>0fd46a8b-1fc0-40fc-8416-874bf3948557</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'TRANSACCION FINALIZADA' or . = 'TRANSACCION FINALIZADA')]</value>
-      <webElementGuid>829a7184-3455-4481-9a40-d0c5b1e05e71</webElementGuid>
+      <webElementGuid>2b8f1460-21b1-4488-88bf-dea40ee6b248</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

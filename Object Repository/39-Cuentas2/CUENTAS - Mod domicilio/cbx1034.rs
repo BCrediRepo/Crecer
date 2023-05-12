@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>cbx1034</name>
+   <tag></tag>
+   <elementGuidId>cbd5255b-7b3a-4990-ad11-d85b78f53302</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow2']/td/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow2 > td.coloumntddata.coloumntddata_BCCLEPRODSUBPROD > b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>d9f4d0e3-9e14-4291-8740-4051642b02ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1034</value>
+      <webElementGuid>76b80807-f278-4fd4-a4db-8db8e1d01819</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow2&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEPRODSUBPROD&quot;]/b[1]</value>
+      <webElementGuid>3c323ab4-64f4-4281-b67a-59f77de40620</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow2']/td/b</value>
+      <webElementGuid>5e76cd21-c0cd-4b97-a26a-798c5aa925f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Corriente Comercial'])[1]/following::b[1]</value>
+      <webElementGuid>f95d082c-6beb-436b-a1a5-52088bff0f99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::b[2]</value>
+      <webElementGuid>2fc9aa10-32f1-4784-966a-83560a536f49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cta Corriente Cesiones Especiales'])[1]/preceding::b[1]</value>
+      <webElementGuid>839f4ee1-a23b-4f21-a3bb-a38587e65b0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='1034']/parent::*</value>
+      <webElementGuid>0924af7e-41d6-4908-9b42-02266d97805e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td/b</value>
+      <webElementGuid>3835ce28-b097-419f-bc66-c7998d429fba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = '1034' or . = '1034')]</value>
+      <webElementGuid>0e6c6ecc-35d6-4b89-8374-404346c2bd80</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

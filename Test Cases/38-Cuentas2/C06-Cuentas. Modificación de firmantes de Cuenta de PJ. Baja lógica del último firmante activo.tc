@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>C06-Cuentas. Modificación de firmantes de Cuenta de PJ. Baja lógica del último firmante activo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>928ea81f-72eb-42ed-90c1-7aeefd3e9c44</testCaseGuid>
+</TestCaseEntity>

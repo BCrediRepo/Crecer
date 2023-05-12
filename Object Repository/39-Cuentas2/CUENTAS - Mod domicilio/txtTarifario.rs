@@ -3,7 +3,7 @@
    <description></description>
    <name>txtTarifario</name>
    <tag></tag>
-   <elementGuidId>108c79c0-4fda-4839-86c8-11dd05bba656</elementGuidId>
+   <elementGuidId>48415293-e409-43c0-9f4d-aa5fe7b581a0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>b6aaaf0f-1201-4204-bf9e-6238c084dff3</webElementGuid>
+      <webElementGuid>35643c73-ab83-45de-b0a5-d6c25cc74483</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>171af480-fb53-4aa8-8355-0e95f20c458b</webElementGuid>
+      <webElementGuid>f971294c-cb0f-4457-927c-09062990877d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>size</name>
       <type>Main</type>
       <value>3</value>
-      <webElementGuid>3548a31f-cf38-472c-b695-eca53df240a1</webElementGuid>
+      <webElementGuid>7c66bee8-e4b1-4447-994f-a3806099f221</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:L.AC.TARIFA</value>
-      <webElementGuid>37b4f505-6f6d-4e3f-bffd-7599b9d1d1d2</webElementGuid>
+      <webElementGuid>81dee57b-bd58-46d1-94d0-c3672706c91b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:L.AC.TARIFA</value>
-      <webElementGuid>f053fa20-cd0a-4bcf-9c04-6505364f31fb</webElementGuid>
+      <webElementGuid>496eb183-fa23-4f87-9d69-de3c06d23b71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,31 +62,31 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>6adef0e5-fd0c-4aa0-89cd-5531cb78beb9</webElementGuid>
+      <webElementGuid>f08617d6-286a-4ea0-baf0-46ed0e9ec4ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>680</value>
-      <webElementGuid>d6eaaa51-05fc-4e0b-8b17-e1b0ad9e3f92</webElementGuid>
+      <value>050</value>
+      <webElementGuid>37892700-3293-4d59-8446-e2d3501db1f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>oldvalue</name>
       <type>Main</type>
-      <value>680</value>
-      <webElementGuid>e0c1b09e-dd70-4b88-8c78-c4fd92021d06</webElementGuid>
+      <value>050</value>
+      <webElementGuid>1f22b4d1-2a24-4490-8455-8afbd2ef949f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-oldvalue</name>
       <type>Main</type>
-      <value>680</value>
-      <webElementGuid>fca1b8e0-8de4-4547-98e9-400a17fb8b04</webElementGuid>
+      <value>050</value>
+      <webElementGuid>f7cfef5b-8124-4f6a-b01f-afbe1143322c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_ACCOUNT dealbox_ACCOUNT_BCCLMODSUBACCCCPF</value>
-      <webElementGuid>64d4cdf1-7ed9-40a8-880f-e8dc5e419254</webElementGuid>
+      <webElementGuid>b4cf3782-f859-4aff-8099-2709fdb8974e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>3</value>
-      <webElementGuid>52bd3b56-2155-4f16-ba15-cafba4172ca3</webElementGuid>
+      <webElementGuid>b6ad06d7-177a-4663-95e6-6cca4f45137a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>2508d68a-7ef8-44ea-960c-7e08eebd4cb5</webElementGuid>
+      <webElementGuid>2b0e5cc3-c4e8-4cc7-92f9-6a3546338619</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>6718e055-47a7-4275-b33c-fbc50ae71dfb</webElementGuid>
+      <webElementGuid>254174d5-5fc8-4379-8043-153d00e2524a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>ebr</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>e5a9b979-311c-4911-89f1-ffc99e4efee1</webElementGuid>
+      <webElementGuid>aff2f39f-6078-40f0-9d05-a55b38b26ca4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_L.AC.TARIFA</value>
-      <webElementGuid>03266e0c-5d77-4b03-bb13-21dc35375a06</webElementGuid>
+      <webElementGuid>ca5b7d09-dc06-46bf-b491-d808a9bed98a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'L.AC.TARIFA','issueToken');</value>
-      <webElementGuid>9424e856-e80e-4047-b20b-33c435fcfda6</webElementGuid>
+      <webElementGuid>f87b2605-e830-477d-9f09-85b34dee7f49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>e0b49a28-3692-4d11-b9b1-b492595fa29d</webElementGuid>
+      <webElementGuid>a96e46da-a958-427d-b6ba-1f3dae65f094</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('L.AC.TARIFA','','','issueToken')</value>
-      <webElementGuid>67f1c349-26ed-4d29-8b8d-e8488eddaf4e</webElementGuid>
+      <webElementGuid>ee779d6c-bcfa-48d9-b8ff-92b985e5302a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:L.AC.TARIFA&quot;)</value>
-      <webElementGuid>5b602170-8a1f-4957-819f-10bcbbb46248</webElementGuid>
+      <webElementGuid>feb26f1d-c7e9-4791-8ed9-0120e1d74796</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -174,7 +174,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:L.AC.TARIFA']</value>
-      <webElementGuid>a854edde-9143-4135-9827-282e7089ed67</webElementGuid>
+      <webElementGuid>5c5a909f-35ef-4c37-9753-1b7f494d8aa2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,7 +182,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[10]/td[3]/input</value>
-      <webElementGuid>3cfef0d8-dcc2-4809-b0e2-09214f51f752</webElementGuid>
+      <webElementGuid>c447cd6b-1734-46a8-820a-9197a93cc82b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -190,7 +190,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[10]/td[3]/input</value>
-      <webElementGuid>58067049-93ba-4596-b33b-9db2a67cc4df</webElementGuid>
+      <webElementGuid>135aa2a4-1db6-4c5c-93ab-c269c9048fb7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -198,6 +198,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:L.AC.TARIFA' and @name = 'fieldName:L.AC.TARIFA' and @type = 'text']</value>
-      <webElementGuid>4c2c2f4a-ae0f-44c0-aacb-bebc6c36bd4f</webElementGuid>
+      <webElementGuid>6f72ba6c-989b-4347-82b6-fa6b724d060f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

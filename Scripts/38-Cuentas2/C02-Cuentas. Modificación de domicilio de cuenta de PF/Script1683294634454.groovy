@@ -62,23 +62,23 @@ WebUI.switchToWindowTitle('CUENTAS')
 // Maximizamos
 WebUI.maximizeWindow()
 
-//WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTA/txtSubProducto'), '1030')
+//Ingresamos los datos de la modificacion
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/btnListaRegistro'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/39-Cuentas2/CUENTA/cbx1005'), 6)
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/cbx1034'))
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas2/CUENTA/cbx1005'), 3)
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/txtUsoCuenta'), 'COMERCIAL')
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTA/txtUsoCuenta'), 'COMERCIAL')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/txtTarifario'), '000')
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTA/txtTarifario'), '680')
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/btnValidarRegistro'))
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTA/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTA/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/lnkAceptar Alertas'))
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTA/lnkAceptarAlertas'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTA/lblTRANSACCION FINALIZADA'), 6)
+//Verificamos que la txn se realizo
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod domicilio/lblTRANSACCION FINALIZADA'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -92,10 +92,5 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-
-
 
 
