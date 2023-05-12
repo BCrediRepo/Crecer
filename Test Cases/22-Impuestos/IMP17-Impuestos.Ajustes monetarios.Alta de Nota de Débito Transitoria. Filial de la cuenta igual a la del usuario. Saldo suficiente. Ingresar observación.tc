@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP17-Impuestos.Ajustes monetarios.Alta de Nota de Débito Transitoria. Filial de la cuenta igual a la del usuario. Saldo suficiente. Ingresar observación</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cce74561-3361-43ce-9112-945193986da9</testCaseGuid>
+</TestCaseEntity>
