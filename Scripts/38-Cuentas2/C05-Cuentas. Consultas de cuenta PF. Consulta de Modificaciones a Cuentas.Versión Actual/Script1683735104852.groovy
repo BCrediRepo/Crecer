@@ -63,6 +63,7 @@ WebUI.switchToWindowTitle('Consulta de Modificaciones a Ctas')
 // Maximizamos
 WebUI.maximizeWindow()
 
+//Ingresamos los datos para la consulta
 WebUI.click(findTestObject('Object Repository/39-Cuentas2/Consulta de Modificaciones a Ctas/lnkNueva Seleccion'))
 
 WebUI.setText(findTestObject('Object Repository/39-Cuentas2/Consulta de Modificaciones a Ctas/txtNroCuenta'), '01000395279')
@@ -70,13 +71,13 @@ WebUI.setText(findTestObject('Object Repository/39-Cuentas2/Consulta de Modifica
 WebUI.click(findTestObject('Object Repository/39-Cuentas2/Consulta de Modificaciones a Ctas/lnkEjecutar'))
 
 //Seleccionamos del cbx la opcion Ultima Modificacion
+WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas2/Cons de mod a ctas - version actual/cbxVersion Actual'), 2)
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas2/Consulta de Modificaciones a Ctas/cbxUltima Modificacion'), 0)
+//Click en btn Ejecutar
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/Cons de mod a ctas - version actual/btnEjecutar'))
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas2/Consulta de Modificaciones a Ctas/btnEjecutar'))
-
-//Verificamos el texto datos generales
-WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Ult Mod/lblDatos Generales'), 6)
+//Verificamos el texto Cuentas Remuneradas Institucionales
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Vers Act/lblCuentasRemuneradasInstitucionales'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -90,5 +91,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
 

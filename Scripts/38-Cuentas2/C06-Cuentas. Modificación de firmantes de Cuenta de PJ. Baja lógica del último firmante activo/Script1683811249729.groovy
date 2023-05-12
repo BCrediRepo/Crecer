@@ -22,44 +22,50 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,8), findTestData('MainData/Users').getValue(2,8))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?6
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?6')
-
+// Ingreso al menu ?5
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?5')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Swicht a Temenos T24
+// Cambia a la ventana Temenos T24
 WebUI.switchToWindowTitle('Temenos T24')
 
-//Maximizamos
+// Maximizamos
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/03- Modificacion Impositiva - Temenos T24/spanCuentas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanCuentasPersonasJuridicas'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/03- Modificacion Impositiva - Temenos T24/lnkModificacion Impositiva de Cuentas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/05- Baja Logica - Temenos T24/lnkModificacion y baja de firmantes'))
 
-//Switch a la ventana CUENTAS
+WebUI.switchToWindowTitle('Firmas')
+
+// Maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos los datos para la modificacion/baja
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/Firmas/txtNroCuenta'), '10430033951')
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/Firmas/lnkEjecutar'))
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/Firmas/lnkBaja de Firmas'))
+
+//Swicht a la ventana CUENTAS
 WebUI.switchToWindowTitle('CUENTAS')
 
-//Maximizamos
-WebUI.maximizeWindow()
+//Modificamos Forma de Operar
+WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Baja Logica/txtForma de Operar.1'), '02')
 
-//Ingresamos los datos para la modificacion
-WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/txtModificacion de Datos Impositivo'), '00545293967')
+//Validamos el registro 
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Baja Logica/btnValidarRegistro'))
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/btnModificarRegistro'))
+//Aceptamos el registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Baja Logica/btnAceptarRegistro'))
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/txtCategoriaCondicion'), '1')
-
-WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/btnValidarRegistro'))
-
-WebUI.click(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/btnAceptarRregistro'))
-
-//Verificamos que se haya completado la Txn
-WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Mod Imp/lblTxn Completa'), 6)
+//Verificamos que se realizo la transaccion
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas2/CUENTAS - Baja Logica/lblTRANSACCION FINALIZADA'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -73,8 +79,5 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
 
 

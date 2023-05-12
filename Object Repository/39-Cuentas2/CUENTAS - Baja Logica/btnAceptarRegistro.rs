@@ -3,15 +3,15 @@
    <description></description>
    <name>btnAceptarRegistro</name>
    <tag></tag>
-   <elementGuidId>07869d52-def2-45c4-82df-d368ee3383ce</elementGuidId>
+   <elementGuidId>2567b65f-2877-4c85-93dd-c2cf89486ca2</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>img[alt=&quot;Aceptar el registro&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>3c2d8882-5f3b-4296-902e-3977b3136579</webElementGuid>
+      <webElementGuid>12b3008a-3124-4493-a176-699d3dfaca60</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <type>Main</type>
       <value>../plaf/images/bccl/tools/txncommit.gif
 															</value>
-      <webElementGuid>e9d75b60-68af-426d-b4da-df036a152264</webElementGuid>
+      <webElementGuid>2852b54b-7e17-4c5c-a8ed-a2e1cb326c8e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Aceptar el registro</value>
-      <webElementGuid>5918d5a8-fbb3-4b10-9e27-44427cf2a4fe</webElementGuid>
+      <webElementGuid>8ad23900-0093-4490-bf10-428cde53049a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Aceptar el registro</value>
-      <webElementGuid>4260b733-dd91-49a5-bfea-7f171ff8820d</webElementGuid>
+      <webElementGuid>c9c928f9-a40a-4230-bb30-664ce461ee33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
-      <webElementGuid>533288a7-8e63-46e2-b025-36180a69fd37</webElementGuid>
+      <webElementGuid>ae6ec34b-7fa3-4f3b-9f0c-5318b78e3042</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
-      <webElementGuid>e9e47bad-6ac0-4572-8206-4ffa59372e14</webElementGuid>
+      <webElementGuid>e779bd40-8fdc-489a-aef4-795e6c9e3539</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Aceptar el registro']</value>
-      <webElementGuid>d2befbb3-d84e-47eb-b1e6-62c564a49abb</webElementGuid>
+      <webElementGuid>052debd0-f5f0-4355-bb44-91fdf991d5b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>91f436f5-bc44-42fe-8a3e-52afb09bef21</webElementGuid>
+      <webElementGuid>7e07c814-5c14-48c9-8382-596ccd657aaa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +88,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/txncommit.gif
 															' and @alt = 'Aceptar el registro' and @title = 'Aceptar el registro']</value>
-      <webElementGuid>d9033f8e-7e0f-4afd-9aba-37e7e9ebd948</webElementGuid>
+      <webElementGuid>da211652-74af-42dd-8f77-797d83dea4a0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
