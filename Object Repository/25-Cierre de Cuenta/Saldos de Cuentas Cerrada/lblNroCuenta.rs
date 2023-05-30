@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNroCuenta</name>
+   <tag></tag>
+   <elementGuidId>5bda3abc-60cb-435c-bf03-9e5297385cda</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLERESCTACER</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>a0bd48a3-32be-4466-9b30-77feef450b25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTACER</value>
+      <webElementGuid>f7c79dfa-d2c8-4328-abae-d123f6554d2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>15170000212 ENRICO EDIE AGUSTIN</value>
+      <webElementGuid>b057a809-8f5e-426b-9515-686fe47076a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTACER&quot;]</value>
+      <webElementGuid>c380cdfc-13a2-4da9-8a2d-d200b60d99ff</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
+      <webElementGuid>d7ccddb3-bda3-4945-a42c-4f7caaf99d42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nro. de Cuenta'])[1]/following::td[1]</value>
+      <webElementGuid>8b08a326-f2fd-43e1-b9db-b52ee9fa8b2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto SubProducto'])[1]/preceding::td[1]</value>
+      <webElementGuid>5582b2df-7cb7-4952-962a-11a28bb89c23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[3]</value>
+      <webElementGuid>7f7ba650-4345-455f-a337-96130be53c72</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='15170000212 ENRICO EDIE AGUSTIN']/parent::*</value>
+      <webElementGuid>60385c7a-ed68-46be-aa2c-69e183ae4ce0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]</value>
+      <webElementGuid>472401a3-e5ec-4414-b818-975e4aa78ab3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '15170000212 ENRICO EDIE AGUSTIN' or . = '15170000212 ENRICO EDIE AGUSTIN')]</value>
+      <webElementGuid>9223457e-51bf-4a58-8a03-ccf03a9907d9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
