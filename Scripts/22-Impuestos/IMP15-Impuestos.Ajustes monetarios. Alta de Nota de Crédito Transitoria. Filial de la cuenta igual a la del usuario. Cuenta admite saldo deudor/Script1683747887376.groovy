@@ -45,7 +45,6 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.closeWindowTitle('CUENTAS')
 WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
 
-
 //Accedo al menu de Ajustes Monetarios - Alta de Nota de Credito Transitoria y completo el registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'))

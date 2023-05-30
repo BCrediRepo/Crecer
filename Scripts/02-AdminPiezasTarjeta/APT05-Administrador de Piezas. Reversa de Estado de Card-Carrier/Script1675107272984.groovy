@@ -25,6 +25,7 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu Administracion de piezas
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
@@ -37,12 +38,25 @@ WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnLista'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnLista'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxndeLista'), 6)
+
+//Guardo el numero de transaccion a reversar
+numTxn = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxndeLista'))
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxndeLista'))
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnTool'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnReversarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnReversarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxnCompleta'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblTxnCompleta'), 6)
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Verifico que el estado de la pieza haya cambiado (REVERSADO)
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/txtBusquedaTransactionId'), 6)
+WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/txtBusquedaTransactionId'), numTxn)
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/btnVerRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblEstadoReve'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblEstadoReve'))
+estadoReve = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/05-Reversa de Estado de Card-Carrier/lblEstadoReve'))
+assert estadoReve.isInteger()
 
 //---------------------------------------------------------------------------------------------------------------------
 

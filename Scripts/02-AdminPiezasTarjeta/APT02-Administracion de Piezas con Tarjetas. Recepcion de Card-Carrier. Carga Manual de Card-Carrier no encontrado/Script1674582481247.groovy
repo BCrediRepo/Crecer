@@ -65,6 +65,7 @@ WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga 
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/EditarPiezas'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/EditarPiezas'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 6)
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'))
 if (prod.contains('PROGRESAR')) {
@@ -73,8 +74,6 @@ if (prod.contains('PROGRESAR')) {
     WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 'PROGRESAR')
 }
 
-//txn = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'))
-//txn = txn.split(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'), 2)
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAceptarRegistro'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblTxnCompleta'))

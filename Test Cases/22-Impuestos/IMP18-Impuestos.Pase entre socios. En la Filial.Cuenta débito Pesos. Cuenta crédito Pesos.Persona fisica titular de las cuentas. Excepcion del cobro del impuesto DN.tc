@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP18-Impuestos.Pase entre socios. En la Filial.Cuenta débito Pesos. Cuenta crédito Pesos.Persona fisica titular de las cuentas. Excepcion del cobro del impuesto DN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42d57f43-c676-4b49-b13d-951d8434d171</testCaseGuid>
+</TestCaseEntity>

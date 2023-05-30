@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkTransferenciasaOtrosBancos</name>
+   <tag></tag>
+   <elementGuidId>dcb9a6f4-d906-4782-ae84-8fc0a1161357</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.TRANS.O.BANCOS I F3');processMenuHeaderText('Transferencias a Otros Bancos')&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>8c2738d2-493a-4e51-bc4d-e2262e958bee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.TRANS.O.BANCOS I F3');processMenuHeaderText('Transferencias a Otros Bancos')</value>
+      <webElementGuid>e81b5d70-a9e0-4d0b-905e-ddc3d1c71dd8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('FUNDS.TRANSFER,BCCL.TRANS.O.BANCOS I F3');</value>
+      <webElementGuid>4fc9c096-0432-400f-81ca-95db72f60fc2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Transferencias a Otros Bancos </value>
+      <webElementGuid>a685bdfb-b183-4b8a-8088-cbda8b22aed0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
+      <webElementGuid>d0b55d26-d08b-4861-bcb6-a672ad500ff3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.TRANS.O.BANCOS I F3');processMenuHeaderText('Transferencias a Otros Bancos')&quot;]</value>
+      <webElementGuid>de8cfdcc-7d58-4c5b-959e-158642a9d3d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[29]/ul/li[56]/ul/li/ul/li/a</value>
+      <webElementGuid>4c73564e-9ec7-4fbc-981b-999e9665a999</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Transferencias a Otros Bancos')]</value>
+      <webElementGuid>b224e340-a8e9-4584-9e20-08e17209f532</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencias Online'])[1]/following::a[1]</value>
+      <webElementGuid>7c3ae190-726b-47c2-b662-bd856ab73594</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencias a Otros Bancos'])[1]/following::a[1]</value>
+      <webElementGuid>04ac19e4-e47f-4257-8563-7e3e67fdfc01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Transferencia a Otros Bancos'])[1]/preceding::a[1]</value>
+      <webElementGuid>e2aba6a1-da8c-451b-bde9-d3a3ee6a5f05</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencias Batch'])[1]/preceding::a[2]</value>
+      <webElementGuid>efa429f9-946d-4d89-baa5-3b7354f87a4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,BCCL.TRANS.O.BANCOS I F3');&quot;)]</value>
+      <webElementGuid>090bcd62-e0fd-46e2-9ed6-551aacfe15b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[56]/ul/li/ul/li/a</value>
+      <webElementGuid>7e7fa6a7-993d-4ec3-83c7-f711e9afe891</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,BCCL.TRANS.O.BANCOS I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Transferencias a Otros Bancos ' or . = 'Transferencias a Otros Bancos ')]</value>
+      <webElementGuid>f8476dde-664f-4965-bdcf-932c9a5f8a9f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

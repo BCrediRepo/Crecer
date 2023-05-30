@@ -26,6 +26,9 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.NoSuchElementException
+import java.nio.file.FileSystem
+import java.nio.file.FileSystems
+
 
 public class kywGeneric {
 
@@ -124,7 +127,10 @@ public class kywGeneric {
 	@Keyword
 	def getTestCaseName() {
 		String testCaseName = RunConfiguration.getExecutionSource().toString().substring(RunConfiguration.getExecutionSource().toString().lastIndexOf("\\")+1)
-		int indiceEspacio = testCaseName.indexOf(".");
+		def tempFilePath = new File(testCaseName).getCanonicalPath()
+		def maxPathLength = tempFilePath.length()
+		def indiceEspacio = Math.min(testCaseName.length(), maxPathLength)
+		//int indiceEspacio = testCaseName.indexOf(".");
 		testCaseName = testCaseName.substring(0,indiceEspacio)
 		return testCaseName
 	}

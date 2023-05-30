@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP21-Impuestos.Transferencias entre socios. En la Filial.Cuenta débito Pesos. Cuenta crédito Pesos.Persona fisica titular de las cuentas. Excepcion del cobro del impuesto DN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af905917-795d-4a4f-8fcd-3adf07679bf5</testCaseGuid>
+</TestCaseEntity>

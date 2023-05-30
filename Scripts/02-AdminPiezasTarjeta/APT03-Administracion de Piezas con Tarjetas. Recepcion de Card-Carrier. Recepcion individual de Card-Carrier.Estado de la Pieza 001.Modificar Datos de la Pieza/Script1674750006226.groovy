@@ -57,6 +57,7 @@ WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/editPiezasCargaManual'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/editPiezasCargaManual'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/selectEntrega'), 6)
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 entrega = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/selectEntrega'))
 if (entrega.contains('Cabal')){
@@ -69,7 +70,8 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcio
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/transactionIdPiezas'), 6)
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/transactionIdPiezas'), numPieza)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/imgVerRegistro'))
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/lblEntrega'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/lblEntrega'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP20-Impuestos.Transferencia OnLine a otros bancos.Cuenta Débito en Pesos. Suc cuenta igual Suc Origen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99d88182-50b9-4dec-87ff-397f3c5804a7</testCaseGuid>
+</TestCaseEntity>

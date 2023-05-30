@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblEntrega</name>
+   <tag></tag>
+   <elementGuidId>5b692ecb-87f1-48d1-829b-b0361b3b112e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[5]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d97ba653-c79e-4929-a507-e1406569e87d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLAPPIEZAS</value>
+      <webElementGuid>dc2775e8-0f68-4cd5-b9a4-8938bcc03603</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>CoopBan</value>
+      <webElementGuid>2b93deb3-b3eb-4712-99f4-5a3971367a15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[5]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLAPPIEZAS&quot;]</value>
+      <webElementGuid>abfa0395-18bf-4ace-a864-831c7bba3f7b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[5]/td[3]/span</value>
+      <webElementGuid>d6b2f287-3ddb-4f32-9f37-3f7edb57e586</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ap Resp Entrega'])[1]/following::span[1]</value>
+      <webElementGuid>a733a279-c4bb-4aa3-9d32-042aa4c117c8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ap Precinto'])[1]/following::span[3]</value>
+      <webElementGuid>e72ceb1e-3b95-4e90-9d3e-9580bcefd3dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ap Remito'])[1]/preceding::span[2]</value>
+      <webElementGuid>f6e3bb1d-c7f9-4425-a0f2-ce2639741cfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ap Fecha Remito'])[1]/preceding::span[4]</value>
+      <webElementGuid>dc45c8fd-348e-4b29-b472-5b0c984ad085</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='CoopBan']/parent::*</value>
+      <webElementGuid>97f7b14a-9897-49b5-ab72-e7582cc9c3b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[5]/td[3]/span</value>
+      <webElementGuid>1bbc42a5-b14f-4c86-86bb-29d39efba793</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'CoopBan' or . = 'CoopBan')]</value>
+      <webElementGuid>e254f3b0-3f06-46f8-bdb5-fadcef35ecde</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -25,11 +25,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu Administracion de piezas
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
@@ -40,16 +40,18 @@ WebUI.switchToWindowTitle('BCCL.AP.E.AP.DESTRUCCION.MASIVA')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/txtProducto'), 6)
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/txtProducto'), 'CREDITO')
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/lnkEjecutar'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/ChckBxTarjeta'), 6)
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/ChckBxTarjeta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/imgAceptarRegistroDestruccion'))
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/imgAceptarRegistroDestruccion'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Switch a la ventana de Confirmacion
 WebUI.switchToWindowTitle('Temenos T24')
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/lblEnquiry'), 6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/lblEnquiry'), 6)
-
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/04-Tarjetas con Plazo de Atesoramiento Vencido/lblEnquiry'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

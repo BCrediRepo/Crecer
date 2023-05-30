@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFAC</name>
+   <tag></tag>
+   <elementGuidId>624965bc-940f-425d-b361-9e6a6686a4eb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow11 > td.coloumntddata.coloumntddata_BCCLEMOTIVOTINT > b</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow11']/td/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>7a3a415a-2346-4d2b-9d2d-1b12ef9586fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>FAC</value>
+      <webElementGuid>7e2393e8-ca9b-46f3-a354-b8022ff93584</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow11&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEMOTIVOTINT&quot;]/b[1]</value>
+      <webElementGuid>d2fb8084-2516-48d8-b0ed-647ea4613df5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow11']/td/b</value>
+      <webElementGuid>6b431289-9537-4aa4-96bf-dba424969b77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Expensas'])[1]/following::b[1]</value>
+      <webElementGuid>88553e04-4591-4756-a2ad-84d7df40633c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EXP'])[1]/following::b[1]</value>
+      <webElementGuid>38b99090-56e2-4a56-bb70-77511769680c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Factura'])[1]/preceding::b[1]</value>
+      <webElementGuid>0e0a81ef-4d04-4d84-8b00-748199db7973</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FCE'])[1]/preceding::b[1]</value>
+      <webElementGuid>c8b722ca-3c85-4f26-a3ea-4ebfc7b6457a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='FAC']/parent::*</value>
+      <webElementGuid>3d53ccde-17bc-4e1c-9495-1a06efa9139e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[12]/td/b</value>
+      <webElementGuid>ae539527-40cc-4e4d-ba87-04b6e4ed17aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'FAC' or . = 'FAC')]</value>
+      <webElementGuid>7af1c534-afe9-4b38-a853-951b6b75a696</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
