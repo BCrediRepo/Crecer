@@ -63,6 +63,9 @@ WebUI.click(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom2'),6)
 WebUI.setText(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom2'), "1")
 
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 //Aceptar el registro
 WebUI.click(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/btnAceptarRegistro'))
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC13-Consulta de operatoria de filiales. Consulta de Totales por user SIN mov en Efvo. Detalle Trx FUNDS.TRANSFER</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c307d326-6f42-4777-aa5e-8648f42652d9</testCaseGuid>
+</TestCaseEntity>

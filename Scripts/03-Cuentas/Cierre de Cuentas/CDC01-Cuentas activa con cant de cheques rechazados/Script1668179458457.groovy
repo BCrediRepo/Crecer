@@ -24,9 +24,13 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
+//Ejecuta en la linea de comandos ENQ BCCL.E.CANDT.CIERRE
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.CANDT.CIERRE')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Switch a la ventana de Cierre de Cuenta
 WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
@@ -42,14 +46,19 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de Cierre de Cuenta
 WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
 
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.click(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/txtSucursal'))
 
 WebUI.setText(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/txtSucursal'),findTestData('MainData/Users').getValue(3,1))
 
 WebUI.click(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/btnEjecutar'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/lblCuentasCandidatasCerradas'))
-
+//Valida si se visualiza un dato del registro
+WebUI.waitForElementVisible((findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/lblCuentasCandidatasCerradas')),6)
+def element = WebUI.getText((findTestObject('Object Repository/04-Cuentas/01-Cierre de Cuentas/lblCuentasCandidatasCerradas')))
+assert element.contains('CUENTAS CANDIDATAS A SER CERRADAS')
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC20-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Tesorero.ARS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04e5d800-61ba-45dd-b445-2cf3bc5cb0ed</testCaseGuid>
+</TestCaseEntity>
