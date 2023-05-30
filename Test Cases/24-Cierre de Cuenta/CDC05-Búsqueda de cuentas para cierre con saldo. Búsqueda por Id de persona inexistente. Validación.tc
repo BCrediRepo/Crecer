@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC05-Búsqueda de cuentas para cierre con saldo. Búsqueda por Id de persona inexistente. Validación</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e23ebc08-ff31-48ec-8dd1-2103075f9907</testCaseGuid>
+</TestCaseEntity>
