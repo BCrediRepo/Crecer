@@ -80,6 +80,9 @@ WebUI.click(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.
 
 //Verifica los datos del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'))
+def element = WebUI.getText(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'))
+assert element.contains('Mov Canal')
 WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'),6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Cod Op Org'),6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Cta Interna'),6)

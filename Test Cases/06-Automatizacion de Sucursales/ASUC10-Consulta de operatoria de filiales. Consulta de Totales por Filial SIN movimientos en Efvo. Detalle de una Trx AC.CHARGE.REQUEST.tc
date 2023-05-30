@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC10-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN movimientos en Efvo. Detalle de una Trx AC.CHARGE.REQUEST</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1587adc-d2cf-49b0-bda8-1e77047fe5e5</testCaseGuid>
+</TestCaseEntity>

@@ -23,8 +23,8 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
-		2, 1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
+		2, 3))
 
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -61,6 +61,14 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('Totales Sucursal x Cod Oper.')
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowTitle('Temenos T24')
+
+//Ir a Detalle de operaciones sin efectivo (Para Filial)
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/lnkDetalleOperacionesSinEfectivoFILIAL'))
+WebUI.switchToWindowTitle('Totales Sucursal x Cod Oper.')
+
 //Verifica titulo de Detalle de operaciones sin efectivo
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/lblTituloTotales Sucursal x Cod Oper'))
 
@@ -70,7 +78,7 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 
 //Ingresa Sucursal
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/txtSucursalValue2'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/txtSucursalValue2'),'001')
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/txtSucursalValue2'),'089')
 
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -106,13 +114,10 @@ assert element.contains('Id')
 //Ver detalle de la primera transacción
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/btnVerDetalle'))
 
-//Se mueve a la ventana Compra-Venta
-WebUI.switchToWindowTitle('Compra-Venta')
-
-////Espera y verifica si se visualiza el titulo del detalle
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Compra-Venta/lblTituloParametrosGeneralesdelaOperacion'),6)
-def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Compra-Venta/lblTituloParametrosGeneralesdelaOperacion'))
-assert element2.contains('Parametros Generales de la Operacion')
+//Espera y verifica si se visualiza la primera columna del registro
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblDebitAccount'),6)
+def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblDebitAccount'))
+assert element2.contains('Debit Account')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -126,4 +131,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

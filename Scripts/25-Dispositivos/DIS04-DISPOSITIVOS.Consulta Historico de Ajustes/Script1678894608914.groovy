@@ -72,6 +72,10 @@ WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.D
 
 //Chequea que existan datos
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAPROCESO'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAPROCESO'))
+def element = WebUI.getText(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAPROCESO'))
+assert element.contains('FECHA PROCESO')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblDISPOSITIVO'),6)
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblSECUENCIA'),6)
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblMONEDA'),6)

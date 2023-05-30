@@ -66,6 +66,8 @@ WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS
 
 //Chequea que existan datos
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_DEPOSITOSDEEFECTIVOENTAS'),6)
+def element = WebUI.getText((findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_DEPOSITOSDEEFECTIVOENTAS')))
+assert element.contains('DEPOSITOS DE EFECTIVO EN TAS')
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_CANTIDADDEDEPOSITOS'),6)
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_IMPORTETOTALDEDEPOSITOS'),6)
 

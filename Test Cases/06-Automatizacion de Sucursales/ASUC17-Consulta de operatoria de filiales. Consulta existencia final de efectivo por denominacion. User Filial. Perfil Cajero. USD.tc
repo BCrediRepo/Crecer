@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC17-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero. USD</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f44538f5-b810-4519-8c9e-9a2c050855d3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC16-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. Usuario Casa Central. ARS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e37ad41d-af91-4e4f-b771-03d58516a69a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC14-Consulta de op filiales. Consulta de Totales x user SIN mov en Efvo.Casa Central. Filtro User distinto del user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>058d043c-7d07-4691-8f1e-4ff8eaa2f4fe</testCaseGuid>
+</TestCaseEntity>
