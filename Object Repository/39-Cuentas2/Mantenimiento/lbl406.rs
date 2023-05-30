@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lbl406</name>
+   <tag></tag>
+   <elementGuidId>d659c20b-80fb-4038-a6e6-e742972073c5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow4 > td.coloumntddata.coloumntddata_BCCLECUENTATARIFA > b</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow4']/td/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>ef0106ad-c202-498d-829c-3a2d9f121d43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>406</value>
+      <webElementGuid>b4a5e9ca-086f-42d2-80e8-cf5fa9b680ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow4&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLECUENTATARIFA&quot;]/b[1]</value>
+      <webElementGuid>509afbd9-4544-44b9-8f87-29acdcba0165</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas2/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>ca150084-d662-4dc6-a971-f84b6b8fd9a1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow4']/td/b</value>
+      <webElementGuid>64d44043-dc2d-4724-8ab5-bbb3dce8efea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarifa Bonif: Tarifario 412'])[1]/following::b[1]</value>
+      <webElementGuid>366dba9e-6d1f-43b4-8037-edb3d0e04d30</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarifa Bonif: Tarifario 404'])[1]/following::b[2]</value>
+      <webElementGuid>eb62ff52-dee2-49d6-a228-8b5a727cd720</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarifa Bonif 100%'])[2]/preceding::b[1]</value>
+      <webElementGuid>3bb50ac1-2f3f-403e-9fff-a6b583e148df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarifa Bonif 100% - 180 dias'])[1]/preceding::b[2]</value>
+      <webElementGuid>b83aadfc-2887-4f4a-a2c9-3ef16db06657</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='406']/parent::*</value>
+      <webElementGuid>62cef5f5-dde1-4aa6-b401-0fe5191058f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[5]/td/b</value>
+      <webElementGuid>4f66902e-329f-4ca4-bf1a-bb8fed846c8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = '406' or . = '406')]</value>
+      <webElementGuid>8afd5013-addd-4011-896b-f79752dba121</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

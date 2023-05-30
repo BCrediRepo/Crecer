@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>C09-Cuentas. Modificación de firmantes de Cuenta de PF. Baja lógica de un firmante</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>34f138e8-2e66-4d28-af55-2d3128de6d7f</testCaseGuid>
+</TestCaseEntity>
