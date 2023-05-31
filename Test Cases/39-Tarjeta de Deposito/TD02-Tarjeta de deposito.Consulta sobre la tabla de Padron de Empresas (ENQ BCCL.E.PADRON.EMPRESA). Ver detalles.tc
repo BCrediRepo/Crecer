@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TD02-Tarjeta de deposito.Consulta sobre la tabla de Padron de Empresas (ENQ BCCL.E.PADRON.EMPRESA). Ver detalles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e1957e12-da3d-44ea-abc4-27e7e32d66e8</testCaseGuid>
+</TestCaseEntity>

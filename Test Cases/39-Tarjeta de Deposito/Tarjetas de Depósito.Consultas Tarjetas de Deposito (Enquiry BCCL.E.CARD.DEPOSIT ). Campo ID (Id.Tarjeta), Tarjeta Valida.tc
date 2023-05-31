@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Tarjetas de Depósito.Consultas Tarjetas de Deposito (Enquiry BCCL.E.CARD.DEPOSIT ). Campo ID (Id.Tarjeta), Tarjeta Valida</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b7953498-e862-4aba-a376-45b7713b31b4</testCaseGuid>
-</TestCaseEntity>

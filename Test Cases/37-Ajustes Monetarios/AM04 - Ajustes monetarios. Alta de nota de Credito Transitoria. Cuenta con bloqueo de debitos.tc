@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AM04 - Ajustes monetarios. Alta de nota de Credito Transitoria. Cuenta con bloqueo de debitos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e155ef06-4c78-4803-a453-b7033386f1c5</testCaseGuid>
+</TestCaseEntity>

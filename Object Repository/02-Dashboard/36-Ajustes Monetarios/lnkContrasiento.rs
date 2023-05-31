@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkContrasiento</name>
+   <tag></tag>
+   <elementGuidId>5e4061cd-eb4c-47ad-beef-69aae9c22bea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.STMS.ENT.BOOK.CA');processMenuHeaderText('Contrasiento')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cad623c2-bb72-4fb8-9927-ba4e0f3fa8f5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.STMS.ENT.BOOK.CA');processMenuHeaderText('Contrasiento')</value>
+      <webElementGuid>a6937b66-56e6-4df0-b6dc-5741cf8ab005</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.STMS.ENT.BOOK.CA');</value>
+      <webElementGuid>698ca747-67f4-4949-be18-3cd68ca563f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Contrasiento </value>
+      <webElementGuid>350eb608-9d7a-42e4-9bd6-3d22edc40244</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[5]/a[1]</value>
+      <webElementGuid>aed00edf-3544-46ac-85de-c3264cb8107a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>2b213179-12f1-4f86-ad90-fce3e23024a7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.STMS.ENT.BOOK.CA');processMenuHeaderText('Contrasiento')&quot;]</value>
+      <webElementGuid>3590fd17-e4fd-46bf-a667-49937a874440</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[20]/li/ul/li[5]/a</value>
+      <webElementGuid>9e875e84-2a25-4549-84d6-9f172e32b524</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Contrasiento')]</value>
+      <webElementGuid>2ac2d2cc-52a8-4286-b78b-1670e9128ff0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito Transitoria'])[1]/following::a[1]</value>
+      <webElementGuid>2921d0cb-8877-4313-9fc0-a8d381c4470e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito Transitoria'])[1]/following::a[2]</value>
+      <webElementGuid>99db6432-1f98-4536-afb3-eb8d882a997e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comisiones y Bonificaciones'])[1]/preceding::a[1]</value>
+      <webElementGuid>5c2af818-67c1-4371-9efd-23593cfa0405</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comisiones'])[1]/preceding::a[1]</value>
+      <webElementGuid>4b6614a0-2c52-445c-9bc3-d10a60ca5381</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Contrasiento']/parent::*</value>
+      <webElementGuid>b7c058cc-519a-4ed5-a585-890932bc0cbf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.STMS.ENT.BOOK.CA');&quot;)]</value>
+      <webElementGuid>01bf8122-bfa6-45ba-9039-5e03adf16cdb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[20]/li/ul/li[5]/a</value>
+      <webElementGuid>2bfa628e-3c7b-4537-8079-1e2c168aff37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.STMS.ENT.BOOK.CA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Contrasiento ' or . = 'Contrasiento ')]</value>
+      <webElementGuid>caaa8721-950a-4cb3-99f4-33c7e6010c61</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnMasRotulos</name>
+   <tag></tag>
+   <elementGuidId>7e14df16-4256-4259-9e98-a16c03c9d5f9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[2]/td[2]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.ascell.ascell_BCCLCARDPADRONEMPRESA.ascell_BCCLCARDPADRONEMPRESA_ALTA</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>a89ce616-4bbc-42ca-b043-fec4a97cf547</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_BCCLCARDPADRONEMPRESA ascell_BCCLCARDPADRONEMPRESA_ALTA</value>
+      <webElementGuid>3023eb46-43f3-4444-a587-0cc2d2e93e1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/mvexpansion.gif</value>
+      <webElementGuid>1f39564c-090b-48e4-856e-6b533ccc3f4e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Expandir Multivalor</value>
+      <webElementGuid>c78f0680-52cb-43ee-b7f3-3a5bce997d2c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Expandir Multivalor</value>
+      <webElementGuid>7a2d344f-4abd-4644-a116-507941e78632</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[2]/td[@class=&quot;action_container action_container_BCCLCARDPADRONEMPRESA action_container_BCCLCARDPADRONEMPRESA_ALTA&quot;]/a[1]/img[@class=&quot;ascell ascell_BCCLCARDPADRONEMPRESA ascell_BCCLCARDPADRONEMPRESA_ALTA&quot;]</value>
+      <webElementGuid>32539647-d344-4953-9208-54ae98b01705</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[2]/td[2]/a/img</value>
+      <webElementGuid>70ff6a81-374a-4bb0-b5e2-066fb3c35989</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Expandir Multivalor']</value>
+      <webElementGuid>fefe88ad-7945-49b7-a0dd-7392972598a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[2]/a/img</value>
+      <webElementGuid>7f39b462-04e5-47a9-91b9-f137c7cb1152</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvexpansion.gif' and @alt = 'Expandir Multivalor' and @title = 'Expandir Multivalor']</value>
+      <webElementGuid>1226cea5-2b45-4195-a4cb-2b36d74eefd4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
