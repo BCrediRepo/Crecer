@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtCPIZZU02</name>
+   <tag></tag>
+   <elementGuidId>6422d7df-12fc-4598-86e7-1fe6d29e2b98</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[2]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>4695b33d-5b2a-4c01-a736-860c4574d4bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLCARDPADRONEMPRESA disabled_dealbox_BCCLCARDPADRONEMPRESA_ALTA</value>
+      <webElementGuid>02a4d5c8-0952-4a3e-89f0-28c1171d21d9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>CPIZZU02</value>
+      <webElementGuid>7fca35ad-f48d-4b58-aa2d-7b8fcc2910ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[2]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLCARDPADRONEMPRESA disabled_dealbox_BCCLCARDPADRONEMPRESA_ALTA&quot;]</value>
+      <webElementGuid>4fab6547-a69f-46f8-8f94-df8b936c8a11</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[2]/td[3]/span</value>
+      <webElementGuid>1f367a69-d7ab-4457-afa4-ddb7d512c9ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rotulo.1'])[1]/following::span[1]</value>
+      <webElementGuid>e9356acd-da2f-4ea0-811d-b913c9adb9dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Persona'])[1]/following::span[2]</value>
+      <webElementGuid>ce1fbd40-088f-431e-b8d7-f61a02db042e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Receptora.1'])[1]/preceding::span[1]</value>
+      <webElementGuid>ce8dcc93-22b1-4438-a204-b15bbe4d6114</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Comision.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>9c321e30-c383-4064-af3c-e49129c5a026</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='CPIZZU02']/parent::*</value>
+      <webElementGuid>69503e62-d0bc-40ed-a022-8f410fa0abda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[3]/span</value>
+      <webElementGuid>aa4053bf-d718-4929-9546-2eda2f14759f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'CPIZZU02' or . = 'CPIZZU02')]</value>
+      <webElementGuid>6a335fb2-adf5-4722-8735-91b2ccd5e11e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
