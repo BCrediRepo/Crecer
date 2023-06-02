@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON20-Moneda extranjera. Compra Venta. Consulta Totales de Operaciones de CV de Moneda Extranjera. Fecha ingresada dia No habil</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>61140656-6b96-424b-b9cc-c6bf49ebaccd</testCaseGuid>
+</TestCaseEntity>

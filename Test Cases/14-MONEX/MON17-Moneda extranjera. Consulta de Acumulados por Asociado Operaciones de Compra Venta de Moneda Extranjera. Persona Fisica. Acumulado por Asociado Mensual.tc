@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON17-Moneda extranjera. Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Fisica. Acumulado por Asociado Mensual</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0ae8662-7775-4776-a5de-a9ebc14a2bb1</testCaseGuid>
+</TestCaseEntity>

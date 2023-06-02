@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON21-Moneda extranjera. Compra Venta. Consulta Totales de Operatoria. Fecha ingresada igual a TODAY</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>294d576a-fd59-4451-b46e-2957c00b38fe</testCaseGuid>
+</TestCaseEntity>
