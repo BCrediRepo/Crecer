@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM10-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Hasta Menor a Fecha Desde</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f9033ac4-d47a-4e12-8fd5-05f36ac59546</testCaseGuid>
+</TestCaseEntity>

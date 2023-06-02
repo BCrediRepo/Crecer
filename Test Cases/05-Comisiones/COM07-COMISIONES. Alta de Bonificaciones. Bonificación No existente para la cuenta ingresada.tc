@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM07-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a00cf2d1-348e-4c52-9c12-014ff3749980</testCaseGuid>
+</TestCaseEntity>
