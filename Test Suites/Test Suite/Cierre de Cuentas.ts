@@ -15,7 +15,7 @@
       <guid>7a22f0c0-100f-4927-b027-226eacd2b753</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Cuentas/Cierre de Cuentas/CDC01-Cuentas activa con cant de cheques rechazados</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC09-Cuentas activa con cant de cheques rechazados</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

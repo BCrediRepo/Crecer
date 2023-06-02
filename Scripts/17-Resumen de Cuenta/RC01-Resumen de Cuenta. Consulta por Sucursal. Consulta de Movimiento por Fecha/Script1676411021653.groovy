@@ -43,18 +43,18 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Completo la busqueda
 WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtFechaDesde'), '20220701')
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnEjecutar'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), '05330013359')
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtFechaDesde'), '20220701')
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnEjecutar'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'), 10)
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'), 10)
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'))
 WebUI.delay(4)
 WebUI.switchToWindowTitle('Account Charge Request')
 WebUI.maximizeWindow()
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

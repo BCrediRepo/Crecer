@@ -16,39 +16,50 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
+
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+// Ingreso al menu ?6
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?6')
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Swicht a Temenos T24
+WebUI.switchToWindowTitle('Temenos T24')
+
+//Maximizamos
 WebUI.maximizeWindow()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/03- Modificacion Impositiva - Temenos T24/spanCuentas'))
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/03- Modificacion Impositiva - Temenos T24/lnkModificacion Impositiva de Cuentas'))
 
-//Completo la busqueda
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20220701')
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lnkEjecutar'))
-//Verifico
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'))
+//Switch a la ventana CUENTAS
+WebUI.switchToWindowTitle('CUENTAS')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos los datos para la modificacion
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Imp/txtModificacion de Datos Impositivo'), '00545293967')
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Imp/btnModificarRegistro'))
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Imp/txtCategoriaCondicion'), '1')
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Imp/btnValidarRegistro'))
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Imp/btnAceptarRregistro'))
+
+//Verificamos que se haya completado la Txn
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Imp/lblTxn Completa'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -62,3 +73,8 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
+
+
+
+

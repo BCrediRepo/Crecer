@@ -16,8 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
+
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -25,30 +24,45 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
 
-//Aplico KYW de limpieza de busqueda
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
+
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorEstado'))
+
+WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
+
+//Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Completo la busqueda
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20220701')
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lnkEjecutar'))
-//Verifico
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'))
+WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorEstado'))
+
+WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
+
+// Maximizamos
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/btnNueva Seleccion'))
+
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/txtIDCliente'), '1000873562')
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/btndropdown'))
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/lblACT'))
+
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/btnEjecutar'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/lblProducto'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -62,3 +76,10 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
+
+
+
+
+
+
