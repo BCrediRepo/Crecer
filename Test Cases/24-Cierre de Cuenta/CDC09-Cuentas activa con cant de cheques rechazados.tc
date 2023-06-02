@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC dentro de Cuantas-Cierre de Cuentas</description>
+   <name>CDC09-Cuentas activa con cant de cheques rechazados</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3ac85c8-d85a-4d5f-8c6f-3a09bd0bd8ab</testCaseGuid>
+</TestCaseEntity>

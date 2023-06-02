@@ -16,39 +16,56 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
+
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,8), findTestData('MainData/Users').getValue(2,8))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+// Ingreso al menu ?5
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?5')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+// Cambia a la ventana Temenos T24
+WebUI.switchToWindowTitle('Temenos T24')
+
+// Maximizamos
 WebUI.maximizeWindow()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanCuentasPersonasJuridicas'))
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/05- Baja Logica - Temenos T24/lnkModificacion y baja de firmantes'))
 
-//Completo la busqueda
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20220701')
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lnkEjecutar'))
-//Verifico
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'))
+WebUI.switchToWindowTitle('Firmas')
+
+// Maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos los datos para la modificacion/baja
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Firmas/txtNroCuenta'), '10430033951')
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Firmas/lnkEjecutar'))
+
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Firmas/lnkBaja de Firmas'))
+
+//Swicht a la ventana CUENTAS
+WebUI.switchToWindowTitle('CUENTAS')
+
+//Modificamos Forma de Operar
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica/txtForma de Operar.1'), '02')
+
+//Validamos el registro 
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica/btnValidarRegistro'))
+
+//Aceptamos el registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica/btnAceptarRegistro'))
+
+//Verificamos que se realizo la transaccion
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica/lblTRANSACCION FINALIZADA'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -62,3 +79,5 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
+

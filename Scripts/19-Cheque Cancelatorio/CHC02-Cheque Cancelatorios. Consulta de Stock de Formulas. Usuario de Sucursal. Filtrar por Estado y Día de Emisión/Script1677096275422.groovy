@@ -35,29 +35,29 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkChequesCertificados'))
 
-WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/lnkFormulasDeCertificacion'))
+WebUI.click(findTestObject('Object Repository/20.1-Cheque Cancelatorio/lnkFormulasDeCertificacion'))
 
-WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/lnkReporteInvFormDeCertificacion'))
+WebUI.click(findTestObject('Object Repository/20.1-Cheque Cancelatorio/lnkReporteInvFormDeCertificacion'))
 
 WebUI.switchToWindowTitle('Control Stock Certificacion Cheques')
 
 //Aplico KYW de limpieza de busqueda
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowTitle('Temenos T24')
-WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/lnkReporteInvFormDeCertificacion'))
+WebUI.click(findTestObject('Object Repository/20.1-Cheque Cancelatorio/lnkReporteInvFormDeCertificacion'))
 WebUI.switchToWindowTitle('Control Stock Certificacion Cheques')
 
-WebUI.setText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/txtSUCURSAL'), '089')
+WebUI.setText(findTestObject('Object Repository/20.1-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtSUCURSAL'), '089')
 
-WebUI.setText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/txtNUMERO DE CUENTA'), '00890172593')
+WebUI.setText(findTestObject('Object Repository/20.1-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtNUMERO DE CUENTA'), '00890172593')
 
-WebUI.setText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/txtNUMERO DE CHEQUE'), '22182765')
+WebUI.setText(findTestObject('Object Repository/20.1-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtNUMERO DE CHEQUE'), '22182765')
 
-WebUI.click(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/20.1-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lnkEjecutar'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
-def element = WebUI.getText(findTestObject('Object Repository/20-Cheque Certificados/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/20.1-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/20.1-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
+def element = WebUI.getText(findTestObject('Object Repository/20.1-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
 assert element.contains('DIA DE INGRESO')
 
 //---------------------------------------------------------------------------------------------------------------------

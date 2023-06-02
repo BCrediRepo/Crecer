@@ -16,39 +16,49 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
-//Se accede al menu
+//Ejecuta en la linea de comandos ENQ BCCL.E.CANDT.CIERRE
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.CANDT.CIERRE')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
 
-//Aplico KYW de limpieza de busqueda
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Switch a la ventana de Cierre de Cuenta
+WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
+
+//Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
+WebUI.switchToWindowIndex(0)
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.CANDT.CIERRE')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Completo la busqueda
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20220701')
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lnkEjecutar'))
-//Verifico
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/lblCuentaValor'))
+//Switch a la ventana de Cierre de Cuenta
+WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/txtSucursal'))
+
+WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/txtSucursal'),findTestData('MainData/Users').getValue(3,1))
+
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/btnEjecutar'))
+
+//Valida si se visualiza un dato del registro
+WebUI.waitForElementVisible((findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/lblCuentasCandidatasCerradas')),6)
+def element = WebUI.getText((findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/lblCuentasCandidatasCerradas')))
+assert element.contains('CUENTAS CANDIDATAS A SER CERRADAS')
 
 //---------------------------------------------------------------------------------------------------------------------
 

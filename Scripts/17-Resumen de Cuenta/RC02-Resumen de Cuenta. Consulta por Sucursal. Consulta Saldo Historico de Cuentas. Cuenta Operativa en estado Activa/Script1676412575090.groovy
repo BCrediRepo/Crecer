@@ -53,14 +53,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Res
 
 //Completo la busqueda
 WebUI.switchToWindowTitle('Saldos Historicos de Cuenta')
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtFecha'), '20220701')
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lnkEjecutar'), 6)
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lnkEjecutar'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), 6)
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), '05330013359')
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtFecha'), '20220701')
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lnkEjecutar'), 6)
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lnkEjecutar'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNumCuentaValue'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNumCuentaValue'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNumCuentaValue'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNumCuentaValue'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -31,9 +31,9 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/lnkChequesCancelatorios'))
 
-WebUI.click(findTestObject('02-Dashboard/18.1-Cheques Cancelatorios/spanConsultas'))
+WebUI.click(findTestObject('02-Dashboard/18-Cheques Cancelatorios/spanConsultas'))
 
-WebUI.click(findTestObject('02-Dashboard/18.1-Cheques Cancelatorios/01-Consultas/lnkConsultaMovimientoCtaInterna'))
+WebUI.click(findTestObject('02-Dashboard/18-Cheques Cancelatorios/01-Consultas/lnkConsultaMovimientoCtaInterna'))
 
 WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 

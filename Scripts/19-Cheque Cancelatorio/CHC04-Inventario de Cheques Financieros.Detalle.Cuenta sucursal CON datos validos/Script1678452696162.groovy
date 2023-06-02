@@ -46,21 +46,21 @@ WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/Cheques Certifica
 
 WebUI.switchToWindowTitle('BCCL.CQ.CF.INVENTARIO')
 
-WebUI.click(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lnkNuevaSeleccion'))
+WebUI.click(findTestObject('20.1-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lnkNuevaSeleccion'))
 
-WebUI.click(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lnkEjecutar'))
+WebUI.click(findTestObject('20.1-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lnkEjecutar'))
 
-WebUI.click(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/btnLupita'))
+WebUI.click(findTestObject('20.1-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/btnLupita'))
 
-WebUI.setText(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/txtCuentaDeSucursal'), '074')
+WebUI.setText(findTestObject('20.1-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/txtCuentaDeSucursal'), '074')
 
-WebUI.click(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lnkEjecutar'))
+WebUI.click(findTestObject('20.1-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
-Sucursal = WebUI.verifyElementVisible(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lblSucursal'), FailureHandling.STOP_ON_FAILURE)
+Sucursal = WebUI.verifyElementVisible(findTestObject('20.1-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lblSucursal'), FailureHandling.STOP_ON_FAILURE)
 
-NumeroSucursal = WebUI.verifyElementVisible(findTestObject('20-Cheque Certificados/BCCL.CQ.CF.INVENTARIO/lbl074'), FailureHandling.STOP_ON_FAILURE)
+NumeroSucursal = WebUI.verifyElementVisible(findTestObject('20.1-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lbl074'), FailureHandling.STOP_ON_FAILURE)
 
 if ((Sucursal == true) && (NumeroSucursal == true)) {
     WebUI.takeScreenshot('Screenshot/Cheques Cancelatorios/CHC04 - Inventario de Cheques Financieros.Detalle Cuenta sucursal CON datos Validos.png')
