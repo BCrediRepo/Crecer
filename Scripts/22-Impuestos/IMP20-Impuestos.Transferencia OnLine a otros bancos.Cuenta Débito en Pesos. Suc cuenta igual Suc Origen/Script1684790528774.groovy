@@ -72,6 +72,7 @@ WebUI.setText(findTestObject('Object Repository/23-Impuestos/13-Transferencias a
 WebUI.click(findTestObject('Object Repository/23-Impuestos/13-Transferencias a Otros Bancos/txtNombreBeneficiario'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/13-Transferencias a Otros Bancos/txtNombreBeneficiario'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/13-Transferencias a Otros Bancos/txtNombreBeneficiario'), 'EVASIO MARMETTO S A')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/13-Transferencias a Otros Bancos/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/13-Transferencias a Otros Bancos/btnAceptarRegistro'))
 

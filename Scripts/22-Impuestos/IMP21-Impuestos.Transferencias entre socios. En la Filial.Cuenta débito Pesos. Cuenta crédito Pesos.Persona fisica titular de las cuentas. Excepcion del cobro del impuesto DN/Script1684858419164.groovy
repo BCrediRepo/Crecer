@@ -50,6 +50,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transfe
 WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/02-Transferencia a Cuentas del Banco/btnMotivo'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/02-Transferencia a Cuentas del Banco/lblFAC'), 6)
 WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/02-Transferencia a Cuentas del Banco/lblFAC'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/02-Transferencia a Cuentas del Banco/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/02-Transferencia a Cuentas del Banco/btnAceptarRegistro'))
 

@@ -45,6 +45,8 @@ WebUI.click(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkNu
 
 WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txtFecha_value111'), '20220713')
 
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.click(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkEjecutar'))
 
 WebUI.maximizeWindow()
@@ -55,6 +57,15 @@ WebUI.waitForElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTO
 
 WebUI.verifyElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkVerDetalle'), 6)
+
+WebUI.click(findTestObject('Object Repository/22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkVerDetalle'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblRubro'), 6)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblRubro'))
+
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //---------------------------------------------------------------------------------------------------------------------
 

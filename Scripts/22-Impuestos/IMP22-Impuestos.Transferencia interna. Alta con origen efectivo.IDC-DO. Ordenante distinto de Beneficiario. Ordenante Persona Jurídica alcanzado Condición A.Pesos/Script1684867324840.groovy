@@ -53,6 +53,7 @@ WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Al
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdBeneficiario'), 6)
 WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdBeneficiario'), '1000873562')
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtObservaciones'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnAceptarRegistro'))
 
