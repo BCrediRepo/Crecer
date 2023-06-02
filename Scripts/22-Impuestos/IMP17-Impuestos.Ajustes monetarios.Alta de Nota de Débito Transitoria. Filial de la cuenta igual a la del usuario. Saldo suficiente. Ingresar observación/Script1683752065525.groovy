@@ -66,6 +66,8 @@ WebUI.click(findTestObject('02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkN
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
+WebUI.maximizeWindow()
+
 WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtNroCuenta'), '00730029258')
 
 WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'))
@@ -75,6 +77,8 @@ WebUI.waitForElementVisible(findTestObject('23-Impuestos/11-Nota Debito Transito
 WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'), '100')
 
 WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtConcepto'), '18299NTI')
+
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/btnValidarRegistro'))
 
@@ -89,7 +93,6 @@ label = WebUI.getText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Mo
 
 assert label.contains("Txn Completa: FT")
 
-WebUI.maximizeWindow()
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

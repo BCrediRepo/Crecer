@@ -200,4 +200,18 @@
       <testCaseId>Test Cases/04-PlazoFijo/PF27 - Plazo Fijo. Otras Consultas. Posicion de Cambios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6bf35141-5c02-4ad9-b962-1736aa15e15c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF28-Plazo Fijo. Otras Consultas. Principales Inversores</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a89a9103-0eb7-4c92-aef1-96a3b782010c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/04-PlazoFijo/PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el día</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

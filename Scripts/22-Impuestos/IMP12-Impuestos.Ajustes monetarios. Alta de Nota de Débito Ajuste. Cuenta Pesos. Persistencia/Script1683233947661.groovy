@@ -45,6 +45,7 @@ WebUI.setText(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito p
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtConcepto'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtConcepto'), '18201AMI')
 WebUI.click(findTestObject('Object Repository/23-Impuestos/09-Nota de Debito por Ajustes/txtImporte'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/btnAceptarRegistro'))
 

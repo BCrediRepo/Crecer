@@ -61,6 +61,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/12-De
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/txtBaseImponible'), '100,00')
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/txtMontoaCobrar'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/txtMontoaCobrar'), '1,20')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/btnAceptarRegistro'))
 

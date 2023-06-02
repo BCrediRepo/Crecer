@@ -46,6 +46,7 @@ WebUI.setText(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito 
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtConcepto'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtConcepto'), '18699NTE')
 WebUI.click(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtImporte'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/btnAceptarRegistro'))
 

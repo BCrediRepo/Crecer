@@ -47,6 +47,8 @@ WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento
 
 WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtConcepto'), '18299NTI')
 
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/btnValidarRegistro'))
 
 WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/btnAceptarRegistro'))
