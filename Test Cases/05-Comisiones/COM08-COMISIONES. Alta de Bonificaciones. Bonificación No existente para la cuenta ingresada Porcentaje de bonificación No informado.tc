@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM08-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada Porcentaje de bonificación No informado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2d6188c-ddf9-435d-b739-99fd7247c984</testCaseGuid>
+</TestCaseEntity>
