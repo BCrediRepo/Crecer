@@ -53,4 +53,32 @@
       <testCaseId>Test Cases/05-Comisiones/COM06-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. Autorización Baja de comisión por Monto</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>36a63dc1-3ed9-40d2-a2df-59af72e1f875</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM07-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f1d12b90-b629-4f0a-b806-388153b88b47</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM08-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada Porcentaje de bonificación No informado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>88515ad0-fa29-4bff-95be-6f2f492461f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM09-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Desde No informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d36fe845-0a3e-44d8-bd71-f303f72200a9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM10-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Hasta Menor a Fecha Desde</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
