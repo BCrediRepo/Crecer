@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD01-Búsqueda de cuentas por cuenta para desbloqueo. Completitud</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3d41e5e1-9378-457f-8689-d0506e64b285</testCaseGuid>
+</TestCaseEntity>
