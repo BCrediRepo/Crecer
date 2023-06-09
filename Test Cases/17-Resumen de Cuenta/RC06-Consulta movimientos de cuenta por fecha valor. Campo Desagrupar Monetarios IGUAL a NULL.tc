@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC06-Consulta movimientos de cuenta por fecha valor. Campo Desagrupar Monetarios IGUAL a NULL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef42a44b-824b-4c49-a6a8-0ebf0f0b7f02</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnBorrarMultivalor</name>
+   <tag></tag>
+   <elementGuidId>20fc8bac-0421-45a3-9ad3-2c6279c8cae8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[27]/td[2]/a[2]/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>b7649246-f78d-44cc-8578-a27577dd886f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_BCCLENQPARAMAGRP ascell_BCCLENQPARAMAGRP_INPUT</value>
+      <webElementGuid>34943b42-4132-4687-8593-35a36ac0c120</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/mvdelete.gif</value>
+      <webElementGuid>f2f6f786-e085-4822-bff1-e38bdee3099a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>f887403b-f0b3-48c1-9833-9867e03602b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>4f51ff33-b581-47bf-a5f9-c41058173bb8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[27]/td[@class=&quot;action_container action_container_BCCLENQPARAMAGRP action_container_BCCLENQPARAMAGRP_INPUT&quot;]/a[2]/img[@class=&quot;ascell ascell_BCCLENQPARAMAGRP ascell_BCCLENQPARAMAGRP_INPUT&quot;]</value>
+      <webElementGuid>e71a196b-0cd1-468d-85f9-f2b6f78e805c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[27]/td[2]/a[2]/img</value>
+      <webElementGuid>a9724c11-d0c0-4c2a-aba3-a4e87a9c3f72</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Delete Value'])[24]</value>
+      <webElementGuid>7693add6-7b7c-4733-a971-ad2e2e980c17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[27]/td[2]/a[2]/img</value>
+      <webElementGuid>546e2e2b-7b7f-4882-abcc-8e92f582f679</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvdelete.gif' and @alt = 'Delete Value' and @title = 'Delete Value']</value>
+      <webElementGuid>8ea1fcc4-719b-43b1-823f-1c18046d4561</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
