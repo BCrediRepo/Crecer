@@ -39,38 +39,38 @@ WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 
 //Se aplica la limpieza de busqueda en vez de utilizar la keyword de limpieza
 
-WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkNuevaSeleccion'))
+WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkNuevaSeleccion'))
 
-WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkEjecutar'))
+WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkEjecutar'))
 
 WebUI.switchToWindowTitle('BCCL.E.CHQ.CANCELA')
 
-WebUI.click(findTestObject('20.1-Cheque Cancelatorio/BCCL.E.CHQ.CANCELA/btnLupa'))
+WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.E.CHQ.CANCELA/btnLupa'))
 
 WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 
-WebUI.setText(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
+WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
 
-WebUI.setText(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtMonedaValue211'), 'ARS')
+WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtMonedaValue211'), 'ARS')
 
-WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkEjecutar'))
+WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkEjecutar'))
 
-WebUI.verifyElementClickable(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
+WebUI.verifyElementClickable(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
-WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
+WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
 WebUI.delay(30)
 
 WebUI.switchToWindowTitle('Account Statement')
 
-WebUI.click(findTestObject('20.1-Cheque Cancelatorio/Account Statement/btnLargavistas'))
+WebUI.click(findTestObject('20-Cheque Cancelatorio/Account Statement/btnLargavistas'))
 
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-WebUI.waitForElementVisible(findTestObject('20.1-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'), 12)
+WebUI.waitForElementVisible(findTestObject('20-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'), 12)
 
-formulario = WebUI.verifyElementVisible(findTestObject('20.1-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'))
+formulario = WebUI.verifyElementVisible(findTestObject('20-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'))
 
 WebUI.maximizeWindow()
 

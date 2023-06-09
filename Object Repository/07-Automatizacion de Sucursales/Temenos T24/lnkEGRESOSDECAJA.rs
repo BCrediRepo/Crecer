@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkEGRESOSDECAJA</name>
+   <tag></tag>
+   <elementGuidId>eb390fd7-7227-4096-9b4c-3b1e3ebfe929</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,EGRESOS I F3');processMenuHeaderText('EGRESOS DE CAJA')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>5d060723-743a-4487-b7df-d48358e48923</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('NEW','TELLER,EGRESOS I F3');processMenuHeaderText('EGRESOS DE CAJA')</value>
+      <webElementGuid>04eb2777-3fc8-43ab-9fe5-f94bacd33e47</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('TELLER,EGRESOS I F3');</value>
+      <webElementGuid>bce9ef2d-bfd9-4c96-8341-a40c9695256c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>EGRESOS DE CAJA </value>
+      <webElementGuid>8bf080cc-5883-409a-a581-b430c3b86b1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
+      <webElementGuid>df8e86c0-8f54-4e1f-8999-4b26a31f7db9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,EGRESOS I F3');processMenuHeaderText('EGRESOS DE CAJA')&quot;]</value>
+      <webElementGuid>3a42a8b1-eb83-4255-bd47-c5602dd0f434</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[6]/ul/li[2]/a</value>
+      <webElementGuid>9a37f17c-2aa5-46a8-9889-635fcc492023</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'EGRESOS DE CAJA')]</value>
+      <webElementGuid>fc6b829c-6d8f-489e-b072-f0613cd91cae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INGRESOS Y EGRESOS'])[1]/following::a[2]</value>
+      <webElementGuid>696c7a72-1fd5-4be5-a278-96fe5fa37f3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INGRESOS DE PLANTA'])[1]/preceding::a[1]</value>
+      <webElementGuid>e2972fdf-d707-438c-859b-bd67f607e183</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EGRESOS DE PLANTA'])[1]/preceding::a[2]</value>
+      <webElementGuid>d615943c-1532-46f1-9cf1-c3901ebd494b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='EGRESOS DE CAJA']/parent::*</value>
+      <webElementGuid>7c70bab3-2d75-47de-98dc-e5a1b2d282c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:docommand('TELLER,EGRESOS I F3');&quot;)]</value>
+      <webElementGuid>e15f5c7c-aed1-438c-8b75-acb278cc1dc8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/ul/li[6]/ul/li[2]/a</value>
+      <webElementGuid>c41ff2b7-7560-4970-be51-ada03e6a7882</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;TELLER,EGRESOS I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'EGRESOS DE CAJA ' or . = 'EGRESOS DE CAJA ')]</value>
+      <webElementGuid>f1e19e4a-eb39-4a03-8517-99ea1ea5cfbf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

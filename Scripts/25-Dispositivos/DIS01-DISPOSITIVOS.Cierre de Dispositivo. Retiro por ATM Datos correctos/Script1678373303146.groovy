@@ -83,7 +83,9 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/26-Dispositivos/01-
 
 def element = WebUI.getText(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/lblTxnCompleta'))
 
-assert element.contains('Txn Completa:') //---------------------------------------------------------------------------------------------------------------------
+assert element.contains('Txn Completa:') 
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

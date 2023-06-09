@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkINGRESOSDECAJA</name>
+   <tag></tag>
+   <elementGuidId>f34acc09-7210-42bc-96df-b6a6cd7f1d0f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,INGRESOS I F3');processMenuHeaderText('INGRESOS DE  CAJA')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>ce953bff-211e-4d25-a1b8-24a21c15b020</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('NEW','TELLER,INGRESOS I F3');processMenuHeaderText('INGRESOS DE  CAJA')</value>
+      <webElementGuid>7641eb6d-79c9-4e7a-b6ce-18b1d7dcb91e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('TELLER,INGRESOS I F3');</value>
+      <webElementGuid>f22d3749-5642-4c05-8f06-3d096a76dea6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>INGRESOS DE  CAJA </value>
+      <webElementGuid>41064bcc-46d0-47f1-9dcd-a2228f9b606a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
+      <webElementGuid>4ba500fd-3cf3-46be-8144-c8c7f1d8fabb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,INGRESOS I F3');processMenuHeaderText('INGRESOS DE  CAJA')&quot;]</value>
+      <webElementGuid>4324ba4a-80a7-42c5-abe2-bce983f36e54</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[6]/ul/li/a</value>
+      <webElementGuid>7a085ee6-d322-4bbd-8b0c-ae1a844f7a9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'INGRESOS DE  CAJA')]</value>
+      <webElementGuid>e5fdf8d5-38da-42ee-8a5b-11dba976d351</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INGRESOS Y EGRESOS'])[1]/following::a[1]</value>
+      <webElementGuid>dc907afd-6fbf-4640-bf43-b1a1148d4c43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CANCEL PARCIAL SDO DEUDOR CTA IRRECUPERABLE'])[1]/following::a[1]</value>
+      <webElementGuid>1fabdcca-0119-44bb-b2d8-7ab934c1eb48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EGRESOS DE CAJA'])[1]/preceding::a[1]</value>
+      <webElementGuid>c68d089b-b2ad-4356-bbcd-c0dca159b27e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INGRESOS DE PLANTA'])[1]/preceding::a[2]</value>
+      <webElementGuid>c8ac02a6-3f7d-4791-aa9b-d8a9c1164334</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:docommand('TELLER,INGRESOS I F3');&quot;)]</value>
+      <webElementGuid>704a80ae-15a0-46b2-bdb3-49e717ffc438</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/ul/li[6]/ul/li/a</value>
+      <webElementGuid>6b1443c7-b19b-4910-bff0-f93cf6caa27d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;TELLER,INGRESOS I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'INGRESOS DE  CAJA ' or . = 'INGRESOS DE  CAJA ')]</value>
+      <webElementGuid>0481b62d-742a-4979-a3b9-fd59f18db033</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

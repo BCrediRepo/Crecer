@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC21-Ingresos y Egresos Varios. Egreso de caja. EGRESO de CAJA con ID. Es SOCIO. Campo ID ORDENANTE igual Persona Fisica existente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9b12590e-d074-4b6e-a02a-acba963e7ced</testCaseGuid>
+</TestCaseEntity>

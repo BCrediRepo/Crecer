@@ -148,7 +148,9 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion 
 
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'))
 
-assert element.contains('Transaction Code') //---------------------------------------------------------------------------------------------------------------------
+assert element.contains('Transaction Code') 
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
