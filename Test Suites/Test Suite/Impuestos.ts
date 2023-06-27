@@ -95,4 +95,74 @@
       <testCaseId>Test Cases/22-Impuestos/IMP12-Impuestos.Ajustes monetarios. Alta de Nota de Débito Ajuste. Cuenta Pesos. Persistencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>508117ed-478e-4999-b997-cae72b819f08</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP13-Impuestos.Ajustes monetarios. Alta de Nota de Crédito Ajuste. Fecha valor permitida</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd64f66d-436d-49b0-9967-b6441d2c1962</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP14-Impuestos.Ajustes monetarios. Alta de Nota de Crédito Transitoria. Cuenta en pesos. Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aeafc30f-c9a8-4fd3-9875-22e263d2da5e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP15-Impuestos.Ajustes monetarios. Alta de Nota de Crédito Transitoria. Filial de la cuenta igual a la del usuario. Cuenta admite saldo deudor</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>27ae2e63-22d3-4bb5-9d5e-868866f3b20b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP16-Impuestos.Ajustes monetarios. Alta de Nota de Débito Transitoria. Cuenta en pesos. Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81ea170f-e713-443b-b84d-343bd1f1012f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP17-Impuestos.Ajustes monetarios.Alta de Nota de Débito Transitoria. Filial de la cuenta igual a la del usuario. Saldo suficiente. Ingresar observación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6abc91b1-b885-4dfe-a9ea-7e3c90be2e1d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP18-Impuestos.Pase entre socios. En la Filial.Cuenta débito Pesos. Cuenta crédito Pesos.Persona fisica titular de las cuentas. Excepcion del cobro del impuesto DN</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e65a1cc2-f64a-4eeb-b12a-b0f1f7838c6e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP20-Impuestos.Transferencia OnLine a otros bancos.Cuenta Débito en Pesos. Suc cuenta igual Suc Origen</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b86f4feb-02f2-4d50-9cdc-fd5bcce1ccd7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP19-Impuestos.Txn de imp con posteo. Devolución de Impuestos en Cuenta Contable. Usuario del sector Impuestos. Alta de trn.SE alcanzado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0f5b1aa2-5528-40cc-91cb-2cbce251191d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP21-Impuestos.Transferencias entre socios. En la Filial.Cuenta débito Pesos. Cuenta crédito Pesos.Persona fisica titular de las cuentas. Excepcion del cobro del impuesto DN</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6ef3e430-39b8-4795-a724-26ed605efe74</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP22-Impuestos.Transferencia interna. Alta con origen efectivo.IDC-DO. Ordenante distinto de Beneficiario. Ordenante Persona Jurídica alcanzado Condición A.Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
