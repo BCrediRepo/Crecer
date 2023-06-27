@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC17-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimientos de cuenta por Fecha Valor.Fecha Desde y Hasta vacíos.Cuenta con movimientos en fecha del día</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>327d9f76-3ca7-4416-ba5d-7c63a66963e7</testCaseGuid>
+</TestCaseEntity>
