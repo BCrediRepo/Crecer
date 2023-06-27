@@ -63,7 +63,12 @@ WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.
 //Switch a la ventana de pago realizado
 WebUI.delay(3)
 WebUI.switchToWindowTitle('BCCL.E.EST.PAGO.TARJ')
-//Captura evidencias en dicho frame
+
+//Validacion del Pago
+WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'))
+def noRec = WebUI.getText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'))
+assert noRec.contains('PAGO DE TARJETA:')
 
 //---------------------------------------------------------------------------------------------------------------------
 

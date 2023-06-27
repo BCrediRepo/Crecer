@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.AC.COM.COBRADA');processMenuHeaderText('Consulta de Comisiones Cobradas ')&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>cfb2e450-e00c-45cf-954d-389d879382d0</webElementGuid>
+      <webElementGuid>7e0378fa-8ab4-430e-b7cc-f5144cb98415</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.AC.COM.COBRADA');processMenuHeaderText('Consulta de Comisiones Cobradas ')</value>
-      <webElementGuid>441e5ebc-7fa6-465d-874e-dd0d58bd4431</webElementGuid>
+      <webElementGuid>3a0bddb5-6383-4210-9534-9f14092e4477</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.AC.COM.COBRADA');</value>
-      <webElementGuid>f308243b-77dd-46d7-af90-4483efc88a93</webElementGuid>
+      <webElementGuid>4273866f-b411-458d-a3f7-6648f0d7d806</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Comisiones Cobradas  </value>
-      <webElementGuid>20242fab-c718-4ca1-8167-24d7c4f20a4a</webElementGuid>
+      <webElementGuid>001e2a86-d424-4241-9f4e-0a841a93e45d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[3]/a[1]</value>
-      <webElementGuid>c22025f1-3c32-4277-9206-63dfad945426</webElementGuid>
+      <webElementGuid>89b0ff5b-4a7d-4afb-9703-1408c34d1c02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>5614077f-c5fb-4359-a75c-c8575931483b</webElementGuid>
+      <webElementGuid>d1f2de2d-cc21-48ed-b245-10631e42e28e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.AC.COM.COBRADA');processMenuHeaderText('Consulta de Comisiones Cobradas ')&quot;]</value>
-      <webElementGuid>7b049370-c92a-4e7e-beb3-fe405af11a5d</webElementGuid>
+      <webElementGuid>6122c34f-1929-442f-a070-a281cc91ead3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[21]/li/ul/li/ul/li[3]/a</value>
-      <webElementGuid>9e01e63c-616b-440d-aebf-04713ed1c163</webElementGuid>
+      <webElementGuid>a0725b2c-6c5c-406f-b23b-a88083156822</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Comisiones Cobradas')]</value>
-      <webElementGuid>e86eeb9e-134e-445e-930d-2865992bd569</webElementGuid>
+      <webElementGuid>ccad9360-dc80-4d78-b5b3-4a9e805e6064</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizacion reciclado de Comisiones'])[1]/following::a[1]</value>
-      <webElementGuid>33f6bd89-a731-41b8-9cba-868c65a85f44</webElementGuid>
+      <webElementGuid>ded0de62-f39e-4510-82b1-0ab7878859e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro Comisiones Manuales - Planta'])[1]/following::a[2]</value>
-      <webElementGuid>64a8f859-cf33-48e9-9908-b0e810c736b5</webElementGuid>
+      <webElementGuid>b5b1912a-c114-4568-b902-4aeb7ea566a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Calculo Com. Riesgo Contingente'])[1]/preceding::a[1]</value>
-      <webElementGuid>da2e17d7-fb4e-4050-97a9-ed49b7e36554</webElementGuid>
+      <webElementGuid>d0dc9e7b-4cfe-4c9a-9531-2638d36eb4e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Calculo de Com. Regu. Administrativa'])[1]/preceding::a[2]</value>
-      <webElementGuid>364ab389-b01c-4d5d-8a15-3823ce4d37da</webElementGuid>
+      <webElementGuid>826ce895-bf16-48ee-b415-0f83ccdb6f35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Comisiones Cobradas']/parent::*</value>
-      <webElementGuid>e08e5689-8b53-48bc-9d57-e7a4ecee6d4b</webElementGuid>
+      <webElementGuid>7bd45d62-c246-442f-91c6-219064c62986</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.AC.COM.COBRADA');&quot;)]</value>
-      <webElementGuid>98cc3a7d-2683-470a-9a54-a7d75669286b</webElementGuid>
+      <webElementGuid>2873fcb1-a0f1-4f12-9262-654320ed7f2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[21]/li/ul/li/ul/li[3]/a</value>
-      <webElementGuid>c754cc74-fd58-486a-be7e-86c3a63c2f6a</webElementGuid>
+      <webElementGuid>516456fe-2f41-405c-ab02-c960f6ee9675</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.AC.COM.COBRADA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Comisiones Cobradas  ' or . = 'Consulta de Comisiones Cobradas  ')]</value>
-      <webElementGuid>c6ab54fe-a079-4ae3-94e8-b2d092fd8dbf</webElementGuid>
+      <webElementGuid>d47025e0-4af7-4ea9-94f6-d38837c6366e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
