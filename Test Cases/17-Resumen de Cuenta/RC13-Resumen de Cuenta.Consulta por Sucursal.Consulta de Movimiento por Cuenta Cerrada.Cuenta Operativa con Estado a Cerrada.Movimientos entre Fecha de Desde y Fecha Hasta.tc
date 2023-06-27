@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC13-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimiento por Cuenta Cerrada.Cuenta Operativa con Estado a Cerrada.Movimientos entre Fecha de Desde y Fecha Hasta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>687a4691-40a4-41eb-a742-eb605bf97aa9</testCaseGuid>
+</TestCaseEntity>

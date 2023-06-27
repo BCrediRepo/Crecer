@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC14-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimiento por Fecha.Movimiento ingresado de Credito en Moneda Pesos fecha IGUAL a Fecha de Proceso</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>069cc149-4298-41b7-ae22-dca10795ff9b</testCaseGuid>
+</TestCaseEntity>

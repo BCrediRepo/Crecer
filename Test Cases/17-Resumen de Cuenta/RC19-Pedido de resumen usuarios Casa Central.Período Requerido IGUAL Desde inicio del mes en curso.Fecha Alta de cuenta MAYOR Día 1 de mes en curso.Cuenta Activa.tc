@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC19-Pedido de resumen usuarios Casa Central.Período Requerido IGUAL Desde inicio del mes en curso.Fecha Alta de cuenta MAYOR Día 1 de mes en curso.Cuenta Activa</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c06997b2-3dbd-4448-a89b-ec1c18c0ef93</testCaseGuid>
+</TestCaseEntity>

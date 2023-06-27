@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC11-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Con resumen periódico emitido.Período Requerido IGUAL Desde último resumen periódico emitido</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>decda049-41a5-4068-b1d4-30287b555229</testCaseGuid>
+</TestCaseEntity>
