@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IEV03-Egresodecaja.Concepto de EGRESO de CAJA que NO necesita IDENTIFICACIÓN.CONCEPTO de Moneda igual a CampoMONEDA.CON IDENTIFICACIÓNdeunSOCIO.MonedaDólares</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1cc3d865-74fc-4acb-b612-5b9bc3438b75</testCaseGuid>
+</TestCaseEntity>

@@ -16,52 +16,56 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 
+//Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
-//Se maximisa la ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/lnkPosteo'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 3)
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Posteo/lnkEgresosVariosDeCaja'))
 
-//Se busca el TestBox de "Buscador"
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TOTS.OPER.MONEX')
+WebUI.switchToWindowIndex(1)
 
-//Click en el boton "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnDropDownMoneda'))
 
-//Cambia a la ventana nueva
-WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblDolar'))
 
-//Maximiza nueva Ventana 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'))
 
-//Escribe la fecha en el Imput
-WebUI.setText(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/inpFecha de Boleto'), '20220729')
+WebUI.setText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'), '10')
 
-//Clickea en "Ejecutar"
-WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+WebUI.setText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtNombrePosteo'), 'CRECER')
 
-//Guarda la informacion en la variable "VentaUSD"
-VentaUSD = WebUI.verifyElementVisible(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/lblTotalOperacionesVentaUSD'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnDropDownConcepto'))
 
-//Realiza un assert para verificar que la informacion sea correcta
-assert VentaUSD == true //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblEgresoVariosCaja'))
 
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnAceptarRegistro'))
+
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lnkAceptarAlertas'))
+
+WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblTxnCompleta'))
+
+label = WebUI.getText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblTxnCompleta'))
+
+assert label.contains('Txn Completa:') == true
+
+//Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 
