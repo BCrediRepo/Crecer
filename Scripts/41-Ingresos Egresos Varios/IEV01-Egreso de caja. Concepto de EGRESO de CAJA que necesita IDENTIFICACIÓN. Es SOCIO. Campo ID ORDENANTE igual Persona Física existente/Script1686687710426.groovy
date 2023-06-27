@@ -26,42 +26,47 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
-//Se maximisa la ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/lnkOperatoriaDeCajaReemplazo'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 3)
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Operatoria de caja - reemplazo/lnkVariosDeCaja'))
 
-//Se busca el TestBox de "Buscador"
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.NOFILE.TOT.OPER.MONEX')
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Operatoria de caja - reemplazo/Varios de caja/lnkEgresosVariosDeCaja'))
 
-//Click en el boton "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('TELLER')
 
-//Cambia a la ventana nueva
-WebUI.switchToWindowTitle('Total de Oper de Compra-Venta MONEX')
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/btnDropDownMoneda'))
 
-//Maximiza la nueva ventana 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblUSD'))
 
-WebUI.setText(findTestObject('15-MONEX/Total de Oper de Compra-Venta MONEX/txtFecha'), '20220725')
+WebUI.setText(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/txtImporteUSD'), '10')
 
-//Espera a que el elemento "Ejecutar" sea Clickeable
-WebUI.waitForElementClickable(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/btnDropDownConcepto'))
 
-//Clickea el elemento "Ejecutar"
-WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblChCancelatorioPagoDevEnEfvo'))
 
-//Espera a que sea visible el elemento "Cant. Oper"
-WebUI.waitForElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OPER.MONEX/lblCantOper'), 3)
+WebUI.selectOptionByIndex(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/cbxSocio'), 2)
 
-//Verifica que el mismo sea visible
-Operadores = WebUI.verifyElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OPER.MONEX/lblCantOper'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/txtIDOrdenante'))
 
-//Realizar un Assert del mismo elemento
-assert Operadores == true //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+WebUI.setText(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/txtIDOrdenante'), '1000873562')
+
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/btnAceptarRegistro'))
+
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lnkAceptarAlerta'))
+
+WebUI.switchToWindowIndex(2)
+
+WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/TicketReporte/formTicket'))
+
+WebUI.switchToWindowTitle('TELLER')
+
+WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblTXNCompleta'))
+
+label = WebUI.getText(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblTXNCompleta'))
+
+assert label.contains('Txn Completa:') == true //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

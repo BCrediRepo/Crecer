@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTxnCompleta</name>
+   <tag></tag>
+   <elementGuidId>d9cf3c8b-df18-45a3-85ea-16f5a33f2724</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.message</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>157a0dd9-71a6-4f07-b0d2-a78cbeabf253</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>938fa6b6-26ad-4a65-8186-641e810517e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Txn Completa: FT22209968706272 16:56:52 15 JUN 2023 FUNDS.TRANSFER,POSTEO.EGRESOS I </value>
+      <webElementGuid>ebb87ef1-775f-4c26-b41c-92d0489b63eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_FUNDSTRANSFER display_box_FUNDSTRANSFER_POSTEOEGRESOS&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
+      <webElementGuid>5f205e6c-e951-4607-a3be-7a681bb6fca7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      <webElementGuid>4e027b41-8fcc-4f8d-bf98-f599cb805699</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.074 Caseros Centro)'])[1]/following::td[7]</value>
+      <webElementGuid>a38ad854-9e13-43d7-9b01-1d16da4d48de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Egresos Varios de Caja'])[1]/following::td[15]</value>
+      <webElementGuid>542b53e2-2aa1-4675-9eae-4bf0bd22a12b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ALERTAS PENDIENTES DE AUTORIZACION'])[1]/preceding::td[1]</value>
+      <webElementGuid>2eb62374-df89-4bb1-905b-1cbdd8234dcd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[3]</value>
+      <webElementGuid>03a1fc4d-c238-4107-b0fc-ee8a9992be5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Txn Completa: FT22209968706272 16:56:52 15 JUN 2023 FUNDS.TRANSFER,POSTEO.EGRESOS I']/parent::*</value>
+      <webElementGuid>f15fc60b-fb98-450a-97bf-6f9f6ce27cd7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr/td</value>
+      <webElementGuid>8b972dea-2e22-4155-bd8f-229aaf25ac4e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Txn Completa: FT22209968706272 16:56:52 15 JUN 2023 FUNDS.TRANSFER,POSTEO.EGRESOS I ' or . = 'Txn Completa: FT22209968706272 16:56:52 15 JUN 2023 FUNDS.TRANSFER,POSTEO.EGRESOS I ')]</value>
+      <webElementGuid>b85a1a86-1f71-453d-b7d4-eb1f268c2b07</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

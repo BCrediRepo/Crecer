@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblEmbargoDevoluciondeFondos</name>
+   <tag></tag>
+   <elementGuidId>35d2e335-a2a0-4095-b0bd-2f29f9b79925</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow4 > td.coloumntddata.coloumntddata_BCCLEEBCONCEPTOS</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow4']/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>7c5b5895-5e24-4025-a8b4-9abddcd94d4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLEEBCONCEPTOS</value>
+      <webElementGuid>be70ecf7-bf45-4d61-8eb3-7c58673a98ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>18926IEE</value>
+      <webElementGuid>b45b8480-00da-481d-bc4e-31db2678aa0b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow4&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEEBCONCEPTOS&quot;]</value>
+      <webElementGuid>a2f44fb7-19ae-45a6-a319-6796def56a17</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow4']/td</value>
+      <webElementGuid>580c0dfd-7b38-4077-acea-c091ec730c8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FALTANTE DE CAJA POR ROBO'])[1]/following::td[1]</value>
+      <webElementGuid>f6cf3e06-0e1e-48d0-a503-dc16bedb03ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ch. Cancelatorio-Pago/anul en efvo'])[1]/following::td[3]</value>
+      <webElementGuid>2ada0bfc-a9fe-4d86-abb2-5a8dfc8af3a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EMBARGO - DEVOLUCION FONDOS DEP EF'])[1]/preceding::td[1]</value>
+      <webElementGuid>d1665bb4-95f1-4360-9bf4-1775ae8e1ef9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Egreso por Redondeo de Caja'])[1]/preceding::td[3]</value>
+      <webElementGuid>23b9bcf9-d9e6-4f28-a902-a5cdf317a322</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[5]/td</value>
+      <webElementGuid>59b4995a-e87a-4774-b91f-8d3ad4e7f094</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '18926IEE' or . = '18926IEE')]</value>
+      <webElementGuid>f3a50166-c1f0-4091-8c20-a031e868db40</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

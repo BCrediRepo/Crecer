@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsumidorFinal</name>
+   <tag></tag>
+   <elementGuidId>5b2430a5-4da5-4e8b-8cd2-b016912cbc7b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow4']/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>883bdbff-04bb-474e-aed9-a95c5b20542a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLEPERCONDIMPOSIIVA</value>
+      <webElementGuid>4b7770cb-1bf8-406f-95e6-d79bb22d7aa2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cons.Final</value>
+      <webElementGuid>bc4fb7af-7082-418c-8cf0-4d11b98c582c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow4&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEPERCONDIMPOSIIVA&quot;]</value>
+      <webElementGuid>49b616db-21e6-4b7f-aaa4-c9fb7e756af8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow4']/td[2]</value>
+      <webElementGuid>ee5ad699-f4a7-49a3-ace4-6224d2cd6745</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='F'])[1]/following::td[1]</value>
+      <webElementGuid>d7fe0204-85b3-4024-a830-ef3c28c97284</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SI'])[4]/following::td[2]</value>
+      <webElementGuid>d1a002cc-0240-4a05-a9f8-b8687cfd695b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='IV.00.F'])[1]/preceding::td[1]</value>
+      <webElementGuid>02bbf8fb-2b14-4b2a-aa7d-8cc8ec8327b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SI'])[5]/preceding::td[2]</value>
+      <webElementGuid>f328ba1c-6112-472c-aa50-7275c0566cdc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Cons.Final']/parent::*</value>
+      <webElementGuid>d1213447-bb17-4193-b114-7e6c17f5ca6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[5]/td[2]</value>
+      <webElementGuid>401dd8e3-29b6-4ccb-aa0f-d99c49d56e6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Cons.Final' or . = 'Cons.Final')]</value>
+      <webElementGuid>f18b1625-9e26-4bc9-a103-82bb90175b13</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

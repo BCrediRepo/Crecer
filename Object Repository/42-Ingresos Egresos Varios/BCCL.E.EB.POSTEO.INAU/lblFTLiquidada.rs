@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFTLiquidada</name>
+   <tag></tag>
+   <elementGuidId>4af83063-8342-4eb8-93b6-22b81f3f9f83</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#r1 > td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>3905ff0f-b5d6-47f7-ae38-34cd1414c2ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>FT22209467789290</value>
+      <webElementGuid>941301df-2766-4dea-859f-f8fd665c5c20</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[1]</value>
+      <webElementGuid>0f5b609a-883e-4dfc-b01f-d58d6632584f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td</value>
+      <webElementGuid>eeab5bac-3169-4440-b1aa-83861327ca4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresado por'])[1]/following::td[1]</value>
+      <webElementGuid>e929b557-8e7b-4f4a-83cf-90d001d1a037</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Hora'])[1]/following::td[1]</value>
+      <webElementGuid>8f719e27-b791-42e4-994b-011b072653a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CRECER'])[1]/preceding::td[1]</value>
+      <webElementGuid>8eb43bf1-b910-4f56-9fac-535eef2b80c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Codigo par del 18810'])[1]/preceding::td[3]</value>
+      <webElementGuid>b2cb114d-7cc4-4074-9c71-8227e22cb755</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='FT22209467789290']/parent::*</value>
+      <webElementGuid>fd77c714-9663-47ef-a1a8-1231ec9c646d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/table/tbody/tr/td</value>
+      <webElementGuid>7366e821-5c59-4db7-b881-4e49aaf6dd65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'FT22209467789290' or . = 'FT22209467789290')]</value>
+      <webElementGuid>1b06727e-dbb9-45fe-bd99-d22a64891eb8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

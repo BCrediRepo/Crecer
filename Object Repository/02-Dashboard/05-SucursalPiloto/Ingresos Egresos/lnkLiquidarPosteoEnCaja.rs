@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkLiquidarPosteoEnCaja</name>
+   <tag></tag>
+   <elementGuidId>9a66a92b-f72e-437f-88b3-48684830bf14</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.POSTEO.INAU RUN');processMenuHeaderText('LIQUIDAR POSTEO EN CAJA')&quot;])[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>b692f38c-cb17-422f-9571-18a4ec7dc703</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.POSTEO.INAU RUN');processMenuHeaderText('LIQUIDAR POSTEO EN CAJA')</value>
+      <webElementGuid>c510326e-faa0-4166-befd-d98a61d1e7ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.EB.POSTEO.INAU RUN');</value>
+      <webElementGuid>9cfef198-d12a-4a93-b049-7dd6085f3456</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>LIQUIDAR POSTEO EN CAJA </value>
+      <webElementGuid>14924b54-81b3-436c-896d-08c7527e10c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[5]/a[1]</value>
+      <webElementGuid>69a24867-f9ee-44ac-bd7a-8bcf4add4f1f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.POSTEO.INAU RUN');processMenuHeaderText('LIQUIDAR POSTEO EN CAJA')&quot;])[4]</value>
+      <webElementGuid>4994f810-c760-46dd-af56-0d9a9b7c2f26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[6]/ul/li[5]/a</value>
+      <webElementGuid>fa1d0686-e567-454c-8f9b-888773691a19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'LIQUIDAR POSTEO EN CAJA')])[4]</value>
+      <webElementGuid>97fa1ba1-b3ec-4b9e-88a9-42940cdd63c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EGRESOS DE PLANTA'])[2]/following::a[1]</value>
+      <webElementGuid>6e7dd52d-29e5-4960-819c-18551eae8c86</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INGRESOS DE PLANTA'])[2]/following::a[2]</value>
+      <webElementGuid>c44bebcc-b782-4a2e-baae-bab6204319fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='REVERSAR OPERACIONES'])[4]/preceding::a[2]</value>
+      <webElementGuid>9b0d6aef-e3fd-4619-8c8f-3a7e46bc3997</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.EB.POSTEO.INAU RUN');&quot;)])[4]</value>
+      <webElementGuid>116eb1de-05ca-48df-aa07-3e571ae31d6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[7]/li/ul/li[6]/ul/li[5]/a</value>
+      <webElementGuid>c6a1098a-b69f-40c3-8a6f-af0e359b43fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.EB.POSTEO.INAU RUN&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'LIQUIDAR POSTEO EN CAJA ' or . = 'LIQUIDAR POSTEO EN CAJA ')]</value>
+      <webElementGuid>03759759-28f3-42cc-b194-41d9948efca6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

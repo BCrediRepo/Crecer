@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IEV07-Ingreso de caja. Concepto de INGRESO de CAJA que necesita IDENTIFICACIÓN. Es SOCIO. ID ORDENANTE igual Persona Física existente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0bf872c-ee2e-47bb-be6c-8087b6a9edd8</testCaseGuid>
+</TestCaseEntity>

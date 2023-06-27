@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblPeso</name>
+   <tag></tag>
+   <elementGuidId>9cf8b25f-facc-4246-a1fb-87ec063730f8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.coloumntddata.coloumntddata_BCCLEAUTOCURRENCY</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow1']/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>bc4c70ac-5ca7-44c5-a67a-b7400efff50c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLEAUTOCURRENCY</value>
+      <webElementGuid>227288f7-ab2e-4bb6-89a6-c948c79b269a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ARS</value>
+      <webElementGuid>fffda7d3-a37d-4d3b-9b32-be45b9a55a39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEAUTOCURRENCY&quot;]</value>
+      <webElementGuid>b377cd1b-a775-43aa-9870-e522b0e3fa2b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow1']/td</value>
+      <webElementGuid>b0efc6ee-67e9-4f79-8e86-248e506d8041</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::td[1]</value>
+      <webElementGuid>7d34cd53-e6ed-4bc6-b0eb-4100e9325d79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[2]/following::td[1]</value>
+      <webElementGuid>8553b9f1-effd-40c2-b73f-a61544c0b55d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[2]/preceding::td[1]</value>
+      <webElementGuid>8714d697-f41f-4be9-a48d-953931deedd9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div[3]/table/tbody/tr[2]/td</value>
+      <webElementGuid>5fcefa55-4f54-43ba-9896-b42adae0abf5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'ARS' or . = 'ARS')]</value>
+      <webElementGuid>7d6ae559-4c31-4cbb-9384-06569ef591ec</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

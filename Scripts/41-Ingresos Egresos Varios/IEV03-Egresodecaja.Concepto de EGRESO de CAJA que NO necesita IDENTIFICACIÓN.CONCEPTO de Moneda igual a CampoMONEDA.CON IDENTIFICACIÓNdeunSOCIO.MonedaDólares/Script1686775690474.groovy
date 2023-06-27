@@ -16,43 +16,54 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 
+//Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
-//Se maximisa la ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/lnkOperatoriaDeCajaReemplazo'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 3)
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Operatoria de caja - reemplazo/lnkVariosDeCaja'))
 
-//Se busca el TestBox de "Buscador"
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TOTS.OPER.MONEX')
+WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Operatoria de caja - reemplazo/Varios de caja/lnkEgresosVariosDeCaja'))
 
-//Click en el boton "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('TELLER')
 
-//Cambia a la ventana nueva
-WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/btnDropDownMoneda'))
 
-//Maximiza nueva Ventana 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblUSD'))
 
-//Escribe la fecha en el Imput
-WebUI.setText(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/inpFecha de Boleto'), '20220729')
+WebUI.setText(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/txtImporteUSD'), '10')
 
-//Clickea en "Ejecutar"
-WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/btnDropDownConcepto'))
 
-//Guarda la informacion en la variable "VentaUSD"
-VentaUSD = WebUI.verifyElementVisible(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/lblTotalOperacionesVentaUSD'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblEmbargoDevoluciondeFondos'))
 
-//Realiza un assert para verificar que la informacion sea correcta
-assert VentaUSD == true //---------------------------------------------------------------------------------------------------------------------
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/btnAceptarRegistro'))
+
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/btnAceptarRegistro'))
+
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lnkAceptarAlerta'))
+
+WebUI.switchToWindowIndex(2)
+
+WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/TicketReporte/formTicket'))
+
+WebUI.switchToWindowTitle('TELLER')
+
+WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblTXNCompleta'))
+
+label = WebUI.getText(findTestObject('42-Ingresos Egresos Varios/TELLER-Egresos/lblTXNCompleta'))
+
+assert label.contains('Txn Completa:') == true 
+
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

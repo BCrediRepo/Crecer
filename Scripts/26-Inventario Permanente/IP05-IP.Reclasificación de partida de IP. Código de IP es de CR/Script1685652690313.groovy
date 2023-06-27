@@ -50,7 +50,7 @@ WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha')
 
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), 3)
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), '20220725')
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), '20220729')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtMonto'), '2000')
 
@@ -76,6 +76,7 @@ WebUI.switchToWindowTitle('BCCL.E.IP.RECLA.PARTIDAS')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 WebUI.switchToWindowIndex(0)
 
 WebUI.maximizeWindow()
@@ -102,7 +103,7 @@ WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/
     '0795')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtFechaReclasificacion'), 
-    '20220725')
+    '20220729')
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/btnAceptarRegistro'))
 
