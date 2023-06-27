@@ -71,7 +71,7 @@ if (monto == '10,00') {
 	desaparecio = true
 }
 
-WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), '20220726')
+WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), '20220729')
 
 WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnAceptarRegistro'))
 
