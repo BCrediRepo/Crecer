@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM26-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta y Sucursal NO Informadas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cde17b94-2390-4e80-99b5-f819b72a2638</testCaseGuid>
+</TestCaseEntity>

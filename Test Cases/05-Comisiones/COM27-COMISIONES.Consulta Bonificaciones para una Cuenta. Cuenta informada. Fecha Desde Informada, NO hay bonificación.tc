@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM27-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Fecha Desde Informada, NO hay bonificación</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3cf6c02-7c04-4aa9-bfc9-79605fe37285</testCaseGuid>
+</TestCaseEntity>

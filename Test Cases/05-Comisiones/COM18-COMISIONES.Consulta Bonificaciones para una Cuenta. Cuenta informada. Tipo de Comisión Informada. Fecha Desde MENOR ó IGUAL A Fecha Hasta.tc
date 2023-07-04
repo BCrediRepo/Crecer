@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM18-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5f216bf-569e-4785-9dd1-113fc74f596c</testCaseGuid>
+</TestCaseEntity>

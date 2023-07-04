@@ -21,41 +21,24 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
-WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
+        2, 1))
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue311_NroSucursal'), '074')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
 WebUI.maximizeWindow()
 
-sucursal = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroSucurusal'))
-comprobacion = WebUI.verifyTextPresent(sucursal, true)
-assert comprobacion != null
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//---------------------------------------------------------------------------------------------------------------------
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CTA.CONS.BONIF')
 
-//Control de fin de script
-@com.kms.katalon.core.annotation.TearDownIfFailed
-void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
-}
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-@com.kms.katalon.core.annotation.TearDownIfPassed
-void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-}
+WebUI.switchToWindowTitle('Bonificacion - Consulta')
+
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtNroCuenta'), '00010015665')
+
+WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtTipoComision'), 'DEPDISP')
+
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

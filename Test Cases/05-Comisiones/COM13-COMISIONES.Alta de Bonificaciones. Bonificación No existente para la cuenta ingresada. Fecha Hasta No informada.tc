@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM13-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Hasta No informada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7da9568-8721-419e-8b12-eb7484af19a0</testCaseGuid>
+</TestCaseEntity>

@@ -21,7 +21,8 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(
+        2, 4))
 
 WebUI.maximizeWindow()
 
@@ -63,12 +64,15 @@ monto = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISION
 WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkModificarComision'))
 
 WebUI.switchToWindowTitle('FT.COMMISSION.TYPE')
+
 def desaparecio = false
+
 if (monto == '10,00') {
     WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtMontoFijo'), '20,00')
 } else {
     WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtMontoFijo'), '10,00')
-	desaparecio = true
+
+    desaparecio = true
 }
 
 WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), '20220729')
@@ -78,14 +82,16 @@ WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnAceptarRegistro'
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Solucion poco convencional para salvar el problema de bandera de que no exista el link aceptar alertas
-if (!desaparecio) {
-	linkAlertas = WebUI.verifyElementClickable(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
-	if (linkAlertas) {
-		WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
-		WebUI.delay(3)
-	} else {
-		WebUI.delay(1)
-	}
+if (!(desaparecio)) {
+    linkAlertas = WebUI.verifyElementClickable(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
+
+    if (linkAlertas) {
+        WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
+
+        WebUI.delay(3)
+    } else {
+        WebUI.delay(1)
+    }
 }
 
 WebUI.closeBrowser()
@@ -146,10 +152,7 @@ WebUI.maximizeWindow()
 
 nuevoMonto = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lblMonto'))
 
-assert monto != nuevoMonto 
-
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+assert monto != nuevoMonto //---------------------------------------------------------------------------------------------------------------------
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

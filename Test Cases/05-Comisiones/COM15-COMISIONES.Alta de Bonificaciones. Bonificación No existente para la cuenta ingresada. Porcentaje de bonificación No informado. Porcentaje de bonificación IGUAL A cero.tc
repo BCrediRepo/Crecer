@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM15-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Porcentaje de bonificación No informado. Porcentaje de bonificación IGUAL A cero</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ffcad85-4e16-4ef8-b238-caa1b1788dbb</testCaseGuid>
+</TestCaseEntity>

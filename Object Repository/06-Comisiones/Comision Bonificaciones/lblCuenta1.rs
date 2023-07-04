@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblCuenta1</name>
+   <tag></tag>
+   <elementGuidId>6e515a3b-3dc3-4c97-8189-279594c3fe19</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#r1 > td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>0213ac87-a2bf-46af-84f0-ab6f23c0d967</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>right</value>
+      <webElementGuid>9a18e3a3-3039-4f82-b163-e5610b5eb3bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>00010015665</value>
+      <webElementGuid>4cc432cb-8257-4e03-bbb1-796dfcdcfc9b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[1]</value>
+      <webElementGuid>ab140962-07d1-43d3-b39c-d8a6a120a4d7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td</value>
+      <webElementGuid>5dc6afed-3c29-446d-a031-59dedbec77ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Ingreso'])[1]/following::td[1]</value>
+      <webElementGuid>660712a5-dabf-41c9-94e8-876920078ebd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizado Por'])[1]/following::td[1]</value>
+      <webElementGuid>c09c064b-ffe0-4626-9bee-f7843c9a8152</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DEPDISP'])[1]/preceding::td[1]</value>
+      <webElementGuid>5aac20ae-dd55-4db5-880f-0979e9255d0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Depositos ATM/TAS'])[1]/preceding::td[2]</value>
+      <webElementGuid>d1c823ea-1534-4a5e-9562-5835454ebcb7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/table/tbody/tr/td</value>
+      <webElementGuid>5eada105-b230-4ac9-b6ef-a95b0cf7d183</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '00010015665' or . = '00010015665')]</value>
+      <webElementGuid>c87bebe5-54cc-49bb-9cde-041d508c5096</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

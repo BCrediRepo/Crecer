@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM12-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Cuenta a Bonificar No informada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7c7332c-dca5-45eb-90bb-ae1263b30857</testCaseGuid>
+</TestCaseEntity>
