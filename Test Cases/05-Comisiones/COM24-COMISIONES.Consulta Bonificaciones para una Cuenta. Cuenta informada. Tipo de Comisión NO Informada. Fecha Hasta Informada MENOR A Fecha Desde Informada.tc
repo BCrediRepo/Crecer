@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM24-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Hasta Informada MENOR A Fecha Desde Informada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4980d57b-4273-41cb-89dc-61d3cfdab0d1</testCaseGuid>
+</TestCaseEntity>

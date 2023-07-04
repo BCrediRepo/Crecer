@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM20-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde y Fecha Hasta NO Informadas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b7b677d5-1457-474f-9dd3-8eb436a45397</testCaseGuid>
+</TestCaseEntity>

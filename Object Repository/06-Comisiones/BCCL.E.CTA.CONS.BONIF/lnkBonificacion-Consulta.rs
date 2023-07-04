@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkBonificacion-Consulta</name>
+   <tag></tag>
+   <elementGuidId>4979eafe-98ba-43ec-9a3f-eadc7ea88e93</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>17f92469-919f-45f8-a800-8e7d94a51a80</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+      <webElementGuid>e360eb09-7637-4347-b652-4572bb2661c8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Bonificacion - Consulta</value>
+      <webElementGuid>6777061a-b099-4cf5-8090-fb8df4411e10</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryResponseCrumbs&quot;)/tbody[1]/tr[1]/td[@class=&quot;crumb crumb_BCCLEBCOMBONIFICACION crumb_BCCLEBCOMBONIFICACION_INPUT&quot;]/a[1]/span[1]</value>
+      <webElementGuid>40e8bd6a-4cf5-472b-bf3f-270e09a5d4b8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>093ead56-19b6-4248-bb5e-937334457946</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lr a:'])[1]/following::span[1]</value>
+      <webElementGuid>bf92f629-221f-4d75-a26e-e0df33224dd3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Identificacion de la Bonificacion'])[1]/preceding::span[1]</value>
+      <webElementGuid>f6000f09-fedf-48a1-9bb9-647e511c1ad0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CTA-00010015665-DEPDISP'])[1]/preceding::span[1]</value>
+      <webElementGuid>b601f203-b768-49c2-896d-655d0a23d7df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Bonificacion - Consulta']/parent::*</value>
+      <webElementGuid>1ef433ec-68c8-4c4e-867e-e109303b6db9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span</value>
+      <webElementGuid>af9b2480-ada7-4ab8-a932-79da60c2fe59</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Bonificacion - Consulta' or . = 'Bonificacion - Consulta')]</value>
+      <webElementGuid>24c69645-186f-430d-8173-98831bb71ce8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

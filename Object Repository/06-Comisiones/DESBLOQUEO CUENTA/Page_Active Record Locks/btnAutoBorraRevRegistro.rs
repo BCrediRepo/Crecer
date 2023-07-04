@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnAutoBorraRevRegistro</name>
+   <tag></tag>
+   <elementGuidId>2df478f4-4ff0-45eb-a086-8b3d01bd96cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Aut/Borra/Rev registro segun estado&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>3f096e8a-3879-41d9-b92c-e9ce2711e1be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/txnaction.gif
+															</value>
+      <webElementGuid>9ce5f7e7-961f-47de-867a-7a1dd19ac90e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Aut/Borra/Rev registro segun estado</value>
+      <webElementGuid>08898850-a9ed-4ce6-ba0d-bae9ea5d850d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Aut/Borra/Rev registro segun estado</value>
+      <webElementGuid>4e081e85-ca2f-4590-b1e1-891e5d0a1fc7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[3]/a[1]/img[1]</value>
+      <webElementGuid>d4963255-0973-4aee-8391-41b0937f563d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
+      <webElementGuid>c3fbb2a5-ad9f-4945-860e-249dc49e12c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Aut/Borra/Rev registro segun estado']</value>
+      <webElementGuid>b3202c96-5929-4572-970a-782b2f1ff6fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/a/img</value>
+      <webElementGuid>65226d25-0bcb-4c23-9bf5-155962e3d6ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnaction.gif
+															' and @alt = 'Aut/Borra/Rev registro segun estado' and @title = 'Aut/Borra/Rev registro segun estado']</value>
+      <webElementGuid>3f083530-88c8-4ce1-be50-e2725fb740c9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

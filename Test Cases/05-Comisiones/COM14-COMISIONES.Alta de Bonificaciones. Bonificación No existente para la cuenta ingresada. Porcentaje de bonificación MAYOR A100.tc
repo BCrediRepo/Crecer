@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM14-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Porcentaje de bonificación MAYOR A100</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d5a5c821-5f16-495b-9e4a-08ac47086534</testCaseGuid>
+</TestCaseEntity>

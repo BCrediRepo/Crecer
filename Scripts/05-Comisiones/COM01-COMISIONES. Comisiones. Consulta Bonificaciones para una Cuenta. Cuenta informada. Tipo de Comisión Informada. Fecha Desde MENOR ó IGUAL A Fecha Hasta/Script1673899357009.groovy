@@ -38,32 +38,34 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
 //Bloque limpieza filtros (REVISAR)
-//WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkNueva Seleccion'))
-//WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
+//WebUI.click(findTestObject('null'))
+//WebUI.click(findTestObject('null'))
 //WebUI.closeBrowser()
 //WebUI.switchToWindowTitle('T24 - Fil.074 Caseros Centro')
 //WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue211_NroCuenta'), '00740025976')
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue411_FechaDesde'), '20210725')
-WebUI.setText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/txtvalue511_FechaHasta'), '20220725')
+WebUI.setText(findTestObject('null'), '00740025976')
+WebUI.setText(findTestObject('null'), '20210725')
+WebUI.setText(findTestObject('null'), '20220725')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lnkEjecutar'))
+WebUI.click(findTestObject('null'))
 WebUI.maximizeWindow()
 
-TextoHeader = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroCuenta_h'))
+TextoHeader = WebUI.getText(findTestObject('null'))
 
-TextoDato = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroCuenta_d'))
+TextoDato = WebUI.getText(findTestObject('null'))
 
-Bonificacion = WebUI.getText(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblBonificacion'))
+Bonificacion = WebUI.getText(findTestObject('null'))
 
 WebUI.verifyTextPresent(Bonificacion, true)
 
 assert TextoDato == TextoHeader
 
+
+
 /*WebUI.verifyMatch('TextoHeader', '00740025976', true)
 //WebUI.verifyMatch('TextoDato', '00740025976', true)
-WebUI.verifyElementAttributeValue(findTestObject('06-Comisiones/Comision por cuenta o sucursal/lblNroCuenta_d'), '', '', 0)*/
+WebUI.verifyElementAttributeValue(findTestObject('null'), '', '', 0)*/
 
 //---------------------------------------------------------------------------------------------------------------------
 	

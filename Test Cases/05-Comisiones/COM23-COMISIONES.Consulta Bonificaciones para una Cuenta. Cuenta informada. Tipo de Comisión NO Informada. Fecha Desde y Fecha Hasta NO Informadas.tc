@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM23-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde y Fecha Hasta NO Informadas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7e079cb-8001-427c-9955-0dd5dccd54c0</testCaseGuid>
+</TestCaseEntity>

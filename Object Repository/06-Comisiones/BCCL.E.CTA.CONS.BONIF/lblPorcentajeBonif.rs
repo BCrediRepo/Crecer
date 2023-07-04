@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblPorcentajeBonif</name>
+   <tag></tag>
+   <elementGuidId>e5e18539-cbba-457f-97a5-55b4f17c13c3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='errors']/tbody/tr/td[2]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.errors > a > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>fc990804-af28-486c-9ac7-534506dbb2f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Porcentaje a Bonificar</value>
+      <webElementGuid>154fc2f8-397c-4aa2-9845-cebd7065c46c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;errors&quot;)/tbody[1]/tr[1]/td[@class=&quot;errors&quot;]/a[1]/span[1]</value>
+      <webElementGuid>54cf905a-ec6d-4fdb-81a8-82cf57ae8ec8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='errors']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>5a7970bf-0306-40a6-9354-6028df9ef330</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::span[1]</value>
+      <webElementGuid>1ca37042-842d-41d6-949e-7dbe36622938</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CTA-00010015665-DEPDISP'])[1]/following::span[1]</value>
+      <webElementGuid>3849c67e-5b2e-4607-b727-ea063d4bae2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FALTA INGRESAR INFORMACION'])[1]/preceding::span[1]</value>
+      <webElementGuid>597906fd-58bf-4a0f-bb2a-a517b94505ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Bonificacion'])[1]/preceding::span[2]</value>
+      <webElementGuid>f9201220-c841-4ccd-bf35-d70f44c1c6c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Porcentaje a Bonificar']/parent::*</value>
+      <webElementGuid>e2bc56de-4952-4d80-855a-3c72d01cbd60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/table/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>f159a01f-6826-4758-87e1-88bda9d2138b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Porcentaje a Bonificar' or . = 'Porcentaje a Bonificar')]</value>
+      <webElementGuid>68bced79-ff93-47dd-8729-c8b47601cb3b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
