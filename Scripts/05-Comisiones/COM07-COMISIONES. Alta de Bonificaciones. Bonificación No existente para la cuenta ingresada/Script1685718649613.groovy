@@ -20,8 +20,8 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 19), findTestData('MainData/Users').getValue(
-        2, 19))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
+        2, 1))
 
 WebUI.maximizeWindow()
 
@@ -51,10 +51,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('Bonificacion - Consulta')
 
 //Ingresa el Nro de Cuenta
-WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtNroCuenta'), '00010015665')
+WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtNroCuenta'), '00010370797')
 
 //Ingresa la Comision
-WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtTipoComision'), 'DEPDISP')
+WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtTipoComision'), 'MANCTA')
 
 //Click en Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
@@ -82,7 +82,11 @@ def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/BCCL
 
 assert element.contains('FALTA INGRESAR INFORMACION')
 
-WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/lnkBonificacion-Consulta'))
+WebUI.closeWindowIndex(1)
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('02-Dashboard/btnLogout'))
 
 //Control de fin de script
 
