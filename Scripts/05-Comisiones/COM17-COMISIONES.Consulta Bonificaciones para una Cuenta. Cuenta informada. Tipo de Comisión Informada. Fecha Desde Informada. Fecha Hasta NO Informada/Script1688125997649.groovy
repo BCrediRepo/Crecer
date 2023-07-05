@@ -102,6 +102,8 @@ def element3 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Com
 assert element3.contains('27 JUL 2022') == true
 
 
+
+
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

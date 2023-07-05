@@ -72,6 +72,7 @@ WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/btnAceptarRegist
 //Assert
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.CTA.CONS.BONIF/lblFaltaIngresarInformacion'), 
     6)
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.CTA.CONS.BONIF/lblFaltaIngresarInformacion'))
 
 def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/BCCL.E.CTA.CONS.BONIF/lblFaltaIngresarInformacion'))
@@ -80,9 +81,9 @@ assert element.contains('FALTA INGRESAR INFORMACION')
 
 WebUI.closeWindowIndex(1)
 
-WebUI.closeWindowIndex(0)
+WebUI.switchToWindowIndex(0)
 
-//FIN DEL SCRIPT
+WebUI.click(findTestObject('02-Dashboard/btnLogout'))
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

@@ -67,7 +67,7 @@ WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/lnkAltaModificac
 WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtPorcentajeBonif'), '100')
 
 //Ingresa fecha hasta.
-WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtFechaVigenciaHasta'), '20220729')
+WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtFechaVigenciaHasta'), '20220727')
 
 //Acepta el registro
 WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/btnAceptarRegistro'))
@@ -82,10 +82,11 @@ def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/BCCL
 
 assert element.contains('FEC HAS DEBE SER MAYOR O IGUAL A FEC DES')
 
-WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/lnkBonificacion-Consulta'))
+WebUI.closeWindowIndex(1)
 
+WebUI.switchToWindowIndex(0)
 
-//Control de fin de script
+WebUI.click(findTestObject('02-Dashboard/btnLogout')) //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
