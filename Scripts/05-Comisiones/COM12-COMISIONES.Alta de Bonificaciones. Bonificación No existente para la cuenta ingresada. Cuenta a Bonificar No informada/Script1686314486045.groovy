@@ -79,12 +79,6 @@ def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/BCCL
 
 assert element.contains('FALTA INGRESAR INFORMACION') 
 
-WebUI.closeWindowIndex(1)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnLogout'))
-
 
 //Control de fin de script
 

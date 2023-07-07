@@ -74,17 +74,17 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comi
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision'))
 
-def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision'))
+def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision'))
 
-assert element.contains('RGO CON') == true
+assert element0.contains('RGO CON') == true
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
 
-def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
+def element1 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
 
-assert element2.contains('00010024069') == true
+assert element1.contains('00010024069') == true
 
 //Control de fin de script
 

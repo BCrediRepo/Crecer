@@ -72,9 +72,9 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comi
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
 
-def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
+def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
 
-assert element2.contains('00010021329') == true
+assert element.contains('00010021329') == true
 
 //Control de fin de script
 

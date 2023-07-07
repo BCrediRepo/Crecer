@@ -17,38 +17,38 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 12), findTestData('MainData/Users').getValue(
-        2, 12))
-
-WebUI.maximizeWindow()
-
-//Toma Screen
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Ingresa el ENQ en el Buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'RECORD.LOCK')
-
-//Clickea en el btn "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambia a ventana nueva
-WebUI.switchToWindowTitle('Active Record Locks')
-
-//Click en Lista de Registro
-WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnListadeRegistros'))
-
-//Click Cuenta Bloqueada
-WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/lnkCuentaBloqueada'))
-
-//Auto/Bor/Rev Registro
-WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnAutoBorraRevRegistro'))
-
-//Desbloquear
-WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnDesbloquear') //Control de fin de script
-    )
+//CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+//
+////Login
+//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 12), findTestData('MainData/Users').getValue(
+//        2, 12))
+//
+//WebUI.maximizeWindow()
+//
+////Toma Screen
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//
+////Ingresa el ENQ en el Buscador
+//WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'RECORD.LOCK')
+//
+////Clickea en el btn "Ejecutar"
+//WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//
+////Cambia a ventana nueva
+//WebUI.switchToWindowTitle('Active Record Locks')
+//
+////Click en Lista de Registro
+//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnListadeRegistros'))
+//
+////Click Cuenta Bloqueada
+//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/lnkCuentaBloqueada'))
+//
+////Auto/Bor/Rev Registro
+//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnAutoBorraRevRegistro'))
+//
+////Desbloquear
+//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnDesbloquear') //Control de fin de script
+//    )
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -112,11 +112,6 @@ def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/BCCL
 
 assert element.contains('FALTA INGRESAR INFORMACION')
 
-WebUI.closeWindowIndex(1)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnLogout'))
 
 //Control de fin de script
 

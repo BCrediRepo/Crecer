@@ -163,6 +163,9 @@ public class kywGeneric {
 		def folderMainName = getFolderMainName()
 		WebUI.takeScreenshot('Screenshot/Fails/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+testCaseName+'-'+date+'.png')
 		WebUI.delay(3)
+		WebUI.switchToWindowIndex(0)
+		WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
+		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}
 
@@ -173,6 +176,9 @@ public class kywGeneric {
 		def folderCaseName = getFolderCaseName()
 		def folderMainName = getFolderMainName()
 		WebUI.takeScreenshot('Screenshot/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+'finalStep'+testCaseName+'-'+date+'.png')
+		WebUI.delay(3)
+		WebUI.switchToWindowIndex(0)
+		WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
 		WebUI.delay(3)
 		WebUI.closeBrowser()
 	}

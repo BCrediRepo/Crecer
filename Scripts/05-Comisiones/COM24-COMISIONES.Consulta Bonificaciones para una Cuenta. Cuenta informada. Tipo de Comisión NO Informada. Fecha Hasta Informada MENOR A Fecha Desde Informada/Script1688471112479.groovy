@@ -78,27 +78,27 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comi
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
 
-def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
+def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
 
-assert element2.contains('00010021329') == true
+assert element0.contains('00010021329') == true
 
 //Assert Fecha Desde
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaDes'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaDes'))
 
-def element3 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaDes'))
+def element1 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaDes'))
 
-assert element3.contains('27 ABR 2021') == true
+assert element1.contains('27 ABR 2021') == true
 
 //Asserts Fecha Hasta
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
 
-def element4 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
+def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
 
-assert element4.contains('25 OCT 2021') == true 
+assert element2.contains('25 OCT 2021') == true 
 
 //Control de fin de script
 
