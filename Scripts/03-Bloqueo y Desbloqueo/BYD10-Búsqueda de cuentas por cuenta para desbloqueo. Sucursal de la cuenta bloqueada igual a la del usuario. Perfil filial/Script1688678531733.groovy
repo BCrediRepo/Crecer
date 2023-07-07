@@ -19,14 +19,14 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Test Case Name: Búsqueda de cuentas por cuenta para desbloqueo. Cuenta bloqueada. Perfil casa central.
+//Test Case Name: Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario. Perfil filial.
 //Se utiliza un usuario de casa central y una cuenta de esa misma filial
 
 //Configuracion del ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,20), findTestData('MainData/Users').getValue(2,20))
 WebUI.maximizeWindow()
 
 //Accedo al menu de Bloqueo y Desbloqueo

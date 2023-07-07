@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD09-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada distinta a la del usuario. Perfil filial. Validación</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d7d5f9fc-f424-4611-a56a-d69f0c7a2948</testCaseGuid>
+</TestCaseEntity>
