@@ -19,8 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
         2, 1))
@@ -81,11 +79,6 @@ def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/BCCL
 
 assert element.contains('FALTA INGRESAR INFORMACION') 
 
-WebUI.closeWindowIndex(1)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnLogout'))
 
 //Control de fin de script
 

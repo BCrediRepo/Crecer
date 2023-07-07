@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblAutorizado</name>
+   <tag></tag>
+   <elementGuidId>aa571817-05d1-4487-a663-4e3081707e82</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[5]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>dd54d699-00fa-4486-9b44-117f4eb3e7f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLMEPFTTRANSFER</value>
+      <webElementGuid>6e9dc7dd-a798-469f-9e52-bf184423dc6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Autorizado Map</value>
+      <webElementGuid>f205abff-09d8-4fbb-93c4-28b8c858ceff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[5]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLMEPFTTRANSFER&quot;]</value>
+      <webElementGuid>d8cc1ee2-754e-4cd3-9b93-6aa5331b0120</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[5]/td[3]/span</value>
+      <webElementGuid>4513b5c7-3579-4e1c-9db2-9a0c3ba7539d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado'])[1]/following::span[1]</value>
+      <webElementGuid>5eaa5ca2-0d69-44fc-b72d-5379b37666c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Otros Conceptos'])[1]/following::span[2]</value>
+      <webElementGuid>f863629f-637f-4db3-8b59-c8b5c827d203</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Cobro'])[1]/preceding::span[2]</value>
+      <webElementGuid>99bbfdc3-e3f6-4ab7-9233-f26e3671c089</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Operativa'])[1]/preceding::span[2]</value>
+      <webElementGuid>026eb63a-f39b-40bc-ad37-e4c51d1a6ee7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Autorizado Map']/parent::*</value>
+      <webElementGuid>0adeeaf9-e7f3-4f93-a238-139f3ae1d81a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[5]/td[3]/span</value>
+      <webElementGuid>1a68f3cb-a45c-49e4-aaaf-32ce58aa0d41</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Autorizado Map' or . = 'Autorizado Map')]</value>
+      <webElementGuid>8e3c8cdb-957e-4b7d-a8dd-5059dabd6697</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
