@@ -53,6 +53,41 @@ WebUI.switchToWindowTitle('Overdraft reverses')
 
 WebUI.maximizeWindow()
 
+//Ingresamos los datos para la consulta
+
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Overdraft reverses/txtCuenta'), '1000873562')
+
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/Overdraft reverses/a_Ejecutar'))
+
+
+//Swicht a la ventana BCCL.E.ACDOS.SGIRO.REV
+
+WebUI.switchToWindowTitle('BCCL.E.ACDOS.SGIRO.REV')
+
+WebUI.maximizeWindow()
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.SGIRO.REV/lblMensaje de Error'), 6)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.SGIRO.REV/lblMensaje de Error'))
+
+def element = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.SGIRO.REV/lblMensaje de Error'))
+
+assert element.contains('Mensaje de Error')
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
 
 
 

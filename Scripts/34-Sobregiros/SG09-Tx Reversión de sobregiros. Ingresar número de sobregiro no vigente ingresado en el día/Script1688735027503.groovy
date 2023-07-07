@@ -25,3 +25,63 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+
+//Ingreso en la linea de comando el Menu "?1"
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+WebUI.switchToWindowTitle('Temenos T24')
+
+WebUI.maximizeWindow()
+
+//Se ingresa al menu "sucursal Piloto"
+WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/spanD3-CC4'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/spanMantenimiento de Sobregiros'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/spanMantenimiento'))
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/lnkReversion de Sobregiro'))
+
+//Swicht a la ventana "Overdraft reverses"
+
+WebUI.switchToWindowTitle('Overdraft reverses')
+
+WebUI.maximizeWindow()
+
+//Ingresamos los datos para la consulta
+
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Overdraft reverses/txtCuenta'), '00010000010')
+
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/Overdraft reverses/a_Ejecutar'))
+
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.SGIRO.REV/lblNoHayDatosDisponibles'), 6)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.SGIRO.REV/lblNoHayDatosDisponibles'))
+
+def element = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.SGIRO.REV/lblNoHayDatosDisponibles'))
+
+assert element.contains('No hay datos disponibles')
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
+
+
+

@@ -46,4 +46,32 @@
       <testCaseId>Test Cases/34-Sobregiros/SG05-Sobregiros. Consulta Cuentas Corrientes con Excesos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>77c30e7b-ac6e-467e-9f2f-49251ff1acf0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG06-Tx Reversión de sobregiros. Completitud de la pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e299d529-0dfb-48d4-aed4-9b44c4b6bb94</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG07-Tx Reversión de sobregiros. Filtros vacíos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>86b7675e-4929-4d97-b169-21436ab8ceaa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG08-Tx Reversión de sobregiros. Ingresar cuenta inexistente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>259d5400-a0c3-43f2-ad49-c046bcc6a4ab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG09-Tx Reversión de sobregiros. Ingresar número de sobregiro no vigente ingresado en el día</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
