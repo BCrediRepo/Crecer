@@ -50,6 +50,12 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Selecciona INGRESOS Y EGRESOS
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkINGRESOSYEGRESOS'))
 
+//Maximiza la pantalla
+WebUI.maximizeWindow()
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 //Ir a EGRESOS De caja
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkEGRESOSDECAJA'))
 WebUI.switchToWindowTitle('TELLER')
@@ -81,12 +87,15 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/07-Automatizacion de
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtIdOrdenante'),6)
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtIdOrdenante'),'1003589918')
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Click en Validar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnValidar'))
 WebUI.delay(3)
+
+//Maximiza la pantalla
+WebUI.maximizeWindow()
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Aceptar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnAceptarRegistro'))

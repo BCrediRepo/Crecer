@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>ASUC18-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero</name>
+   <name>ASUC18-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero.ARS</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>485a1a5a-91c3-49e8-b4ee-c7ac95582eee</testCaseGuid>

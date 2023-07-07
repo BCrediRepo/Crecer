@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC31-Ingresos y Egresos Varios. INGRESO CAJA necesita ID. NO SOCIO. Suc dif 01,02,19. CUIToCUIL valido de PF. IVA valido Persona Fisica</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7824b8ee-311b-4458-9ab7-8e376b55dfde</testCaseGuid>
+</TestCaseEntity>

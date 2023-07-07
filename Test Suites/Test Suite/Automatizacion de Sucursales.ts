@@ -127,7 +127,7 @@
       <guid>95f0fa50-bd65-49f7-802d-7224427b8eda</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC18-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC18-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero.ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -198,6 +198,76 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC28-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJAnecesita ID. SOCIO. ID ORDENANTE igual vacio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>38d803e3-1f7a-442f-a77c-52858cf5ff1f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC29-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA necesita ID. NO SOCIO. CUIToCUIL valido de PF. IVA valido Persona Fisica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cb6ca3f0-b642-4844-b5f5-63ef3c7d097d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC30-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA necesita ID. NO SOCIO. CUIToCUIL NO valido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0e816a3b-a19b-4dfa-8808-e25537bba78d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC31-Ingresos y Egresos Varios. INGRESO CAJA necesita ID. NO SOCIO. Suc dif 01,02,19. CUIToCUIL valido de PF. IVA valido Persona Fisica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0039b476-c51f-40eb-b513-8be4b2f40a08</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC32-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA que NO necesita ID. CONCEPTO Moneda igual a Campo MONEDA. USD</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>af6f3ef5-d669-4624-9d10-b6cb1726359a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC33-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA NO necesita ID. CONCEPTO Moneda igual a Campo MONEDA. ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9fe39e67-f7ef-4759-a06a-cd286d10380d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC34-Ingresos y Egresos Varios. Ingreso de planta. INGRESO de PLANTA que necesita ID. Es SOCIO. ID ORDENANTE Persona Fisica existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c6075846-603f-41da-a66d-be11751c0354</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC35-Ingresos y Egresos Varios. Ingreso de planta. INGRESO de PLANTA que necesita ID. Es SOCIO. ID ORDENANTE vacio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>32ffa06c-8bb9-46ef-bfa8-b90a51f2fec1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC36-Ingresos y Egresos Varios. INGRESO PLANTA necesita ID. NO SOCIO. CUIToCUIL valido de PF. IVA valido Persona Fisica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8f6418c2-d483-4a6f-a421-deb298f45e0b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC37-Ingresos y Egresos Varios. Ingreso de planta. INGRESO PLANTA necesita ID. NO SOCIO. CUIToCUIL NO valido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3949ad2c-2244-4b27-8d82-d5c6b9270697</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Ingresos y Egresos Varios. Ingreso de planta. INGRESO de PLANTA que NO necesita ID. Moneda igual a Campo MONEDA. ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
