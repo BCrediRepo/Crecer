@@ -23,8 +23,8 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
-		2, 3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(
+		2, 14))
 
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -53,29 +53,50 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Toma un Screenshot
+//Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ir a EGRESOS De caja
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkEGRESOSDECAJA'))
+//Ir a INGRESOS De caja
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkINGRESOSDECAJA'))
 WebUI.switchToWindowTitle('TELLER')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Verifica titulo de Egresos Varios de Caja
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTituloEgresosVariosdeCaja'))
+//Verifica titulo de Ingresos Varios de Caja
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/lblTituloIngresosVariosdeCaja'))
+
+//Ingresa Moneda USD
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/rdMonedaDropdown'),6)
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/rdMonedaDropdown'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/rdDolarEstadounidense'))
 
 //Ingresa importe 10
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtImporteARS'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtImporteARS'),'10')
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtImporteUSD-EUR'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtImporteUSD-EUR'),'10')
 
-//Ingresa concepto 18805IEE (pago honorarios sin iva)
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtConcepto'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtConcepto'),'18805IEE')
+//Ingresa concepto 18155IEI (Cheque Cancelatorio - Emision)
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtConcepto'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtConcepto'),'18155IEI')
 
 //Click en Validar
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnValidar'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnValidarRegistro'))
+WebUI.delay(3)
+
+//Selecciona que NO es socio
+WebUI.waitForElementPresent(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/cbNOSI'), 6)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/cbNOSI'), 1)
+
+//Ingresa cuit/cuil valido 27242552003
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtCUIT-CUIL'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtCUIT-CUIL'),'27242552003')
+
+//Ingresa condición ante IVA "C"
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtCondicionanteIVA'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtCondicionanteIVA'),'C')
+
+//Click en Validar
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnValidarRegistro'))
 WebUI.delay(3)
 
 //Maximiza la pantalla
@@ -85,17 +106,13 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Aceptar
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnAceptarRegistro'))
 WebUI.delay(3)
 
-//Click en Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnAceptarAlertas'))
-WebUI.delay(10)
-
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTxn Completa'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTxn Completa'))
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTxn Completa'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'))
 assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -110,3 +127,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

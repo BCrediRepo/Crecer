@@ -50,9 +50,18 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Selecciona INGRESOS Y EGRESOS
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkINGRESOSYEGRESOS'))
 
+//Maximiza la pantalla
+WebUI.maximizeWindow()
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 //Ir a INGRESOS De caja
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkINGRESOSDECAJA'))
 WebUI.switchToWindowTitle('TELLER')
+
+//Maximiza la pantalla
+WebUI.maximizeWindow()
 
 //Verifica titulo de Ingresos Varios de Caja
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/lblTituloIngresosVariosdeCaja'))

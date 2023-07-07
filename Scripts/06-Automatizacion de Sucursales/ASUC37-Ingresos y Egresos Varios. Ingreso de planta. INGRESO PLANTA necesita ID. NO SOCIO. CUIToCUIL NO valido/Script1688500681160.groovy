@@ -23,8 +23,8 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
-		2, 3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 16), findTestData('MainData/Users').getValue(
+		2, 16))
 
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -41,6 +41,9 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Abre la pestaña del menú ?01
 WebUI.switchToWindowTitle('Temenos T24')
 
+//Maximiza la pantalla
+WebUI.maximizeWindow()
+
 //Ir a Sucursal piloto
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
 
@@ -50,53 +53,56 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Selecciona INGRESOS Y EGRESOS
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkINGRESOSYEGRESOS'))
 
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-//Toma un Screenshot
+//Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ir a EGRESOS De caja
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkEGRESOSDECAJA'))
-WebUI.switchToWindowTitle('TELLER')
+//Ir a INGRESOS De PLANTA
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkINGRESOSDEPLANTA'))
+WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Verifica titulo de Egresos Varios de Caja
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTituloEgresosVariosdeCaja'))
+//Verifica titulo
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/lnlTituloIngresosVariosdeCaja'))
+
+//Selecciona moneda ARS
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtMoneda'),6)
+//WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtMoneda'),'ARS')
 
 //Ingresa importe 10
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtImporteARS'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtImporteARS'),'10')
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtImporte'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtImporte'),'10')
 
-//Ingresa concepto 18805IEE (pago honorarios sin iva)
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtConcepto'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/txtConcepto'),'18805IEE')
+//Ingresa nombre posteo
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtNombrePosteo'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtNombrePosteo'),'Prueba auto')
+
+//Ingresa concepto 18110IEI (Comision por TELEGRAMAS, CABLES Y C)
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtConcepto'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtConcepto'),'18110IEI')
 
 //Click en Validar
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnValidar'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/btnValidarRegistro'))
 WebUI.delay(3)
 
-//Maximiza la pantalla
-WebUI.maximizeWindow()
+//Selecciona que NO es socio
+WebUI.waitForElementPresent(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/cbSocioNOSI'), 6)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/cbSocioNOSI'), 1)
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Ingresa CUIT/CUIL
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtCUITCUIL'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/txtCUITCUIL'),'0303456')
 
-//Click en Aceptar
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnAceptarRegistro'))
+//Click en Validar
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/btnValidarRegistro'))
 WebUI.delay(3)
-
-//Click en Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/btnAceptarAlertas'))
-WebUI.delay(10)
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTxn Completa'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTxn Completa'))
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/EgresosDeCaja/lblTxn Completa'))
-assert element.contains('Txn Completa:')
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/lblCUIInvalido'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/lblCUIInvalido'))
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresodePlanta/lblCUIInvalido'))
+assert element.contains('CUI Invalido')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
