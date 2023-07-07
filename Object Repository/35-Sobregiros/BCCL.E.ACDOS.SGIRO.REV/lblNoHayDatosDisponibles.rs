@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNoHayDatosDisponibles</name>
+   <tag></tag>
+   <elementGuidId>cb8b7f01-034c-4d8f-930e-2df8c9c5ee22</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='enqheader-msg']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ac293865-6a43-43da-b2cd-7bcd465828a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>No hay datos disponibles</value>
+      <webElementGuid>9131e301-2df5-4add-bd03-15ab6db14bb1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader-msg&quot;)/span[1]</value>
+      <webElementGuid>2b01975a-5fc2-4651-b8a2-bd56e2530cc4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='enqheader-msg']/span</value>
+      <webElementGuid>a11a4a74-37f8-4dd0-81a8-de305f78f330</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprimir Localmente'])[1]/preceding::span[1]</value>
+      <webElementGuid>d8c6e40f-7bcd-4f57-b41a-3a9af79088c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como CSV'])[1]/preceding::span[1]</value>
+      <webElementGuid>f9921b2d-4945-4fb5-a47e-d909d07c6a65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='No hay datos disponibles']/parent::*</value>
+      <webElementGuid>fac5b3db-a6b1-46be-aa98-ee850a7044e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span</value>
+      <webElementGuid>ff5e629a-1a90-4be0-a3b0-1270e748d968</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'No hay datos disponibles' or . = 'No hay datos disponibles')]</value>
+      <webElementGuid>54fd2154-dd27-45cf-818c-679316dd0326</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
