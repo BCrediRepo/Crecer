@@ -1,4 +1,3 @@
-/*
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -38,7 +37,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDa
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CARD.EMPRESA.PER')
 
 //Click en ejecutar
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Cambiamos de ventana
 WebUI.switchToWindowTitle('Busqueda de Persona')
@@ -52,7 +51,7 @@ WebUI.switchToWindowIndex(0)
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CARD.EMPRESA.PER')
 
 //Click en Ejecutar
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Cambiamos de ventana
 WebUI.switchToWindowTitle('Busqueda de Persona')
@@ -72,6 +71,14 @@ WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/l
 //Clickeamos en btnMasRotulos
 WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/btnMasRotulos'))
 
+//Rellenar ROTULO 2
+WebUI.waitForElementPresent(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtROTULO2'), 6)
+WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtROTULO2'), 'RSANCH')
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtCuentaReceptora2'), 6)
+WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtCuentaReceptora2'), '00340034758')
+
+
 //Rellenar nombre de fantasia
 WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtNOMBREFANTASIA2'), 'ROBERTO SANCHEZ')
 
@@ -81,13 +88,22 @@ WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER
 //Rellenar CANAL VENTA 2
 WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtCANALVENTA2'), '01')
 
-//Rellenar ROTULO 2
-WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtROTULO2'), '')
+WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtFECHAVENTA2'), '20220729')
 
 //Ingresar USUARIOVENTA2
-WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtUSUARIOVENTA2'), '')
+WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtUSUARIOVENTA2'), 'SAN')
 
 //Click en Aceptar el registro.
 WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/btnAceptarElRegistro2'))
 
-*/
+//*FIN DE SCRIPT*-------------------------------------------
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}

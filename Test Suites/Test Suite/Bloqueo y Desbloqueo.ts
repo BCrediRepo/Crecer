@@ -60,4 +60,25 @@
       <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD07-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Selección de desbloqueo parcial. Perfil filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d4cc8f4f-33ea-4074-ad3c-bc4d07fd2aea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD08-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta no bloqueada. Validación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1b605500-6e10-4104-a279-925ef742003c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD09-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada distinta a la del usuario. Perfil filial. Validación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8ca921bb-e367-4221-9bd3-3f1c9b110eb0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD10-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario. Perfil filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
