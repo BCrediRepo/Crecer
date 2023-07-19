@@ -54,7 +54,7 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTATOTALESADMINISTRATIVOS'))
 
 //Ir a Detalle de operaciones sin efectivo (Para Filial)
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/lnkDetalleOperacionesSinEfectivoFILIAL'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/lnkDetalleOperacionesSinEfectivoFILIAL'))
 
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -62,15 +62,15 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.switchToWindowTitle('Totales Sucursal x Cod Oper.')
 
 //Verifica titulo de Detalle de operaciones sin efectivo
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/lblTituloTotales Sucursal x Cod Oper'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblTituloTotales Sucursal x Cod Oper'))
 
 //Ingresa un monto en ARS
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/txtMonedaValue1'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/txtMonedaValue1'),'ARS')
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/txtMonedaValue1'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/txtMonedaValue1'),'ARS')
 
 //Ingresa Sucursal
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/txtSucursalValue2'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/txtSucursalValue2'),'001')
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/txtSucursalValue2'),6)
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/txtSucursalValue2'),'001')
 
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -83,35 +83,35 @@ WebUI.delay(10)
 WebUI.maximizeWindow()
 
 //Espera y verifica que se muestren los registros de la tabla
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/lblCodOperativo'),10)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/lblCodOperativo'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/lblCantOperaciones'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/lblDescripcion'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/lblMonto'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblCodOperativo'),10)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblCodOperativo'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblCantOperaciones'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblDescripcion'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblMonto'))
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ver Detalle
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/Totales Sucursal x Cod Oper/btnVerDetalle'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Totales Sucursal x Cod Oper/btnVerDetalle'))
 
 //Se mueve a la ventana Detalle Transacciones No Efectivo
 WebUI.switchToWindowTitle('Detalle Transacciones No Efectivo')
 
 //Espera y verifica si se visualiza la primera columna del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/lblId'),6)
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/lblId'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/lblId'),6)
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/lblId'))
 assert element.contains('Id')
 
 //Ver detalle de la primera transacción
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/btnVerDetalle'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/btnVerDetalle'))
 
 //Se mueve a la ventana Compra-Venta
 WebUI.switchToWindowTitle('Compra-Venta')
 
 ////Espera y verifica si se visualiza el titulo del detalle
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Compra-Venta/lblTituloParametrosGeneralesdelaOperacion'),6)
-def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Adminitrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Compra-Venta/lblTituloParametrosGeneralesdelaOperacion'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Compra-Venta/lblTituloParametrosGeneralesdelaOperacion'),6)
+def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Compra-Venta/lblTituloParametrosGeneralesdelaOperacion'))
 assert element2.contains('Parametros Generales de la Operacion')
 
 //---------------------------------------------------------------------------------------------------------------------

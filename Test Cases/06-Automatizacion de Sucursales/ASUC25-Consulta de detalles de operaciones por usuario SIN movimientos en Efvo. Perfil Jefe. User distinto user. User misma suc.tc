@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC25-Consulta de detalles de operaciones por usuario SIN movimientos en Efvo. Perfil Jefe. User distinto user. User misma suc</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>21c75b8b-b2ec-4097-91e4-2bf45e6d47f9</testCaseGuid>
+</TestCaseEntity>

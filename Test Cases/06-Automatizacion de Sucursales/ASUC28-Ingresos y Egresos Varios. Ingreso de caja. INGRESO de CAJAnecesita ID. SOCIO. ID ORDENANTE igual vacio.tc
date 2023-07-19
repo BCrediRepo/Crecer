@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC28-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJAnecesita ID. SOCIO. ID ORDENANTE igual vacio</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bedfec2a-c847-4cd4-9543-7008e4297d9b</testCaseGuid>
-</TestCaseEntity>

@@ -23,7 +23,7 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
-//Se maximisa la ventana
+//Se maximiza la ventana
 WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TOTS.OPER.MONEX')
@@ -42,7 +42,7 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowIndex(1)
 
 //Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20220727')
+WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20220729')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
@@ -53,7 +53,7 @@ WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta de Totales - Operat
 
 fecha = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
 
-assert fecha == '27/07/2022'
+assert fecha == '29/07/2022'
 
 //Control fin de script
 WebUI.maximizeWindow()

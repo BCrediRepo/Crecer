@@ -48,11 +48,13 @@ WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Tem
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
+WebUI.delay(90)
+
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/txtSucursal-value111'), '001')
 
 WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/lnkEjecutar'))
 
-WebUI.delay(60)
+WebUI.delay(90)
 
 WebUI.verifyTextPresent('Sucursal', true)
 

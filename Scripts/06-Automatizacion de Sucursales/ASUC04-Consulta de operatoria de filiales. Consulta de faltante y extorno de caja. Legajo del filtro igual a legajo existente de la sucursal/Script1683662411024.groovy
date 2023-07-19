@@ -72,7 +72,6 @@ if (Label == 'Cod. Transaccion') {
 }
 
 //Borra el campo de sucursal
-
 if (Label == 'Sucursal') {
 	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtSucursalvalue5'), '')
 } else {
@@ -81,14 +80,19 @@ if (Label == 'Sucursal') {
 
 //Ingresa Número de Legajo
 Label = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblNroLegajoPosicion2'))
-
 if (Label == 'No. Legajo') {
 	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtNroLegajovalue2'), '113465')
-} else if (Label != 'No. Legajo') {
-	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaHastavalue4'), '113465')
 } else {
 	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaDesdevalue3'), '113465')
 }
+
+//if (Label == 'No. Legajo') {
+//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtNroLegajovalue2'), '113465')
+////} else if (Label != 'No. Legajo') {
+////	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaHastavalue3'), '113465')
+//} else {
+//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaDesdevalue4'), '113465')
+//}
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

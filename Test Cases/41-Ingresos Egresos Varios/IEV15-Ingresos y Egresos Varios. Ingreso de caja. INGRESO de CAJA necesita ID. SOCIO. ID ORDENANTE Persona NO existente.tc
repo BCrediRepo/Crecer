@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IEV15-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA necesita ID. SOCIO. ID ORDENANTE Persona NO existente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>08cccc4a-f399-4b91-add2-c314c74f7dcf</testCaseGuid>
+</TestCaseEntity>

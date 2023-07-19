@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC23-Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. ARS. Usuario de Sucursal</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9fcb61ca-e1a5-4943-a757-cf8c1553e6ab</testCaseGuid>
+</TestCaseEntity>

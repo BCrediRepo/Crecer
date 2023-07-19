@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IEV22-Ingresos y Egresos Varios. Ingreso de planta. INGRESO de PLANTA que necesita ID. Es SOCIO. ID ORDENANTE Persona Fisica existente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e278dad9-c921-475e-a7f2-69ae4b693272</testCaseGuid>
+</TestCaseEntity>

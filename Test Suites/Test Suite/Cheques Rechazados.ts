@@ -46,32 +46,4 @@
       <testCaseId>Test Cases/07-Cheques Rechazados/CHR05-Modificación estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>9c15e314-c065-4dd9-81fa-0cd88caecc88</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC06-Búsqueda de cuentas para cierre con saldo. Búsqueda por Nro de CUI inexistente. Validación</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>487c7084-ab15-4399-ab71-f98967db1fbb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC07-Búsqueda de cuentas para cierre con saldo. Búsqueda por Nro de documento inexistente. Validación</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7564999d-050f-4ef1-b67b-c72c30bd9545</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC08-Consulta de cuentas para cierre con saldo. Búsqueda por Nro de cuenta. Cuenta cerrada. Validación</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>08383fdb-e4b7-422b-96d4-20cd20d75920</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC09-Cuentas activa con cant de cheques rechazados</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>

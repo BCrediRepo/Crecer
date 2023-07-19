@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PST02-Posteos. Pago en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada. USD</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c640d27a-1f40-4251-b33a-fd12b229c7ad</testCaseGuid>
+</TestCaseEntity>

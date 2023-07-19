@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC38-Ingresos y Egresos Varios. Ingreso de planta. INGRESO de PLANTA que NO necesita ID. Moneda igual a Campo MONEDA. ARS</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ea6548a9-5511-4371-8055-9916822e9b77</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC33-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA NO necesita ID. CONCEPTO Moneda igual a Campo MONEDA. ARS</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>23272f3a-73ed-4cda-9ce7-1932df86db98</testCaseGuid>
-</TestCaseEntity>

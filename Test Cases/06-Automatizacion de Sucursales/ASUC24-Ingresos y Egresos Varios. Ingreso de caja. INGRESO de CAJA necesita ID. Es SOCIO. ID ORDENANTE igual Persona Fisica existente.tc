@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC24-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA necesita ID. Es SOCIO. ID ORDENANTE igual Persona Fisica existente</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a0fa1b56-b6db-475d-adab-68cd799f4610</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IEV24-Ingresos y Egresos Varios. INGRESO PLANTA necesita ID. NO SOCIO. CUIToCUIL valido de PF. IVA valido Persona Fisica</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9ccbc18-edea-4f39-85fb-2c44696c25d6</testCaseGuid>
+</TestCaseEntity>

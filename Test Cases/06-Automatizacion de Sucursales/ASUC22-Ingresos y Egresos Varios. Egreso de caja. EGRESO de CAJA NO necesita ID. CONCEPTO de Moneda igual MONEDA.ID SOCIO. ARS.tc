@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC22-Ingresos y Egresos Varios. Egreso de caja. EGRESO de CAJA NO necesita ID. CONCEPTO de Moneda igual MONEDA.ID SOCIO. ARS</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bd2c2677-0b65-4d09-ab9d-a4d9bb7fd747</testCaseGuid>
-</TestCaseEntity>

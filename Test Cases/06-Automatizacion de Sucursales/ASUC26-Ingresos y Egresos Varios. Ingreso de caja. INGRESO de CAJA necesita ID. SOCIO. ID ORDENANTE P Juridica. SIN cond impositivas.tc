@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC26-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA necesita ID. SOCIO. ID ORDENANTE P Juridica. SIN cond impositivas</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a7549138-e3bf-4b2f-9f1b-aaa2f733cc30</testCaseGuid>
-</TestCaseEntity>

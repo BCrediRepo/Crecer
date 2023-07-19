@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC29-Ingresos y Egresos Varios. Ingreso de caja. INGRESO de CAJA necesita ID. NO SOCIO. CUIToCUIL valido de PF. IVA valido Persona Fisica</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>dad5b9f8-a583-4352-9a74-48d3ed97f0bc</testCaseGuid>
-</TestCaseEntity>
