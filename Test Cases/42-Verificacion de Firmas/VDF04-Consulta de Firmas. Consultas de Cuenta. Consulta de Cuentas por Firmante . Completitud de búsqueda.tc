@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VDF04-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Completitud de búsqueda</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a7505c08-387c-4a13-aeb3-4252f95bd397</testCaseGuid>
+</TestCaseEntity>

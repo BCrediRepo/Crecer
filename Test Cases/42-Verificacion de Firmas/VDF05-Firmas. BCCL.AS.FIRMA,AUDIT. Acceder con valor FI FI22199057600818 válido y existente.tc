@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VDF05-Firmas. BCCL.AS.FIRMA,AUDIT. Acceder con valor FI FI22199057600818 válido y existente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>597bf88b-cd55-414d-a9b0-8b0c00ca36e7</testCaseGuid>
+</TestCaseEntity>
