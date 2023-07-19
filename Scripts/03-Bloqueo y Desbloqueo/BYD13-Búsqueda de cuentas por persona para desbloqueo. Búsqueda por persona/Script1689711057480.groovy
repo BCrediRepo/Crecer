@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
+//Test Case Name: Búsqueda de cuentas por persona para desbloqueo. Búsqueda por persona
+
 //Configuracion del ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -35,31 +37,40 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cu
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkBloqueoyDesbloqueo'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkDesbloqueo'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkDesbloqueo'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoCuenta'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoCuenta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'))
 
-//Switch a la ventana de Bloqueos por Cuenta
-WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.CTA')
+//Switch a la ventana de Bloqueos por Persona
+WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
 WebUI.maximizeWindow()
 
-//Busco la Cuenta a Desbloquear
-WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/txtCuenta'), '00760481318')
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'))
+WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
+WebUI.maximizeWindow()
+
+//Busco la Persona a Desbloquear por ID PERSONA
+WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtIdFirmante'), 6)
+WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtIdFirmante'), '1002133504')
 WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'))
 
 boolean isVisible = false
 try {
-	isVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblCuentaADesbloq'))
+	isVisible = WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lblCuentaADesbloquear'))
 	//Verifico que sea la cuenta que se muestra y procedemos al bloqueo General
-	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblCuentaADesbloq'), 6)
-	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblCuentaADesbloq'))
-	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lnkDesbloqueoGeneral'), 6)
-	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lnkDesbloqueoGeneral'))
+	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lblCuentaADesbloquear'), 6)
+	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lblCuentaADesbloquear'))
+	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lnkDesbloqueoGeneral'), 6)
+	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lnkDesbloqueoGeneral'))
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 } catch (Exception e) {
-	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblNOSEENCONTRARONREGISTROS'), 6)
-	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblNOSEENCONTRARONREGISTROS'))
+	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lblNOSEENCONTRARONREGISTROS'), 6)
+	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lblNOSEENCONTRARONREGISTROS'))
+	WebUI.closeWindowIndex(1)
 	WebUI.switchToWindowIndex(0)
 	WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkBloqueo'), 6)
 	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkBloqueo'))
@@ -72,7 +83,7 @@ try {
 	
 	//Busco la Cuenta a Bloquear
 	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/txtCuenta'), 6)
-	WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/txtCuenta'), '00760481318')
+	WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/txtCuenta'), '00760480575')
 	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'), 6)
 	WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'))
 	
@@ -102,28 +113,33 @@ try {
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	//-----------------------------------------------------------------
 	WebUI.switchToWindowIndex(0)
-	WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoCuenta'), 6)
-	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoCuenta'))
-	
-	//Switch a la ventana de Bloqueos por Cuenta
-	WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.CTA')
+	WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'), 6)
+	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'))
+	WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
 	WebUI.maximizeWindow()
 	
-	//Busco la Cuenta a Desbloquear
-	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/txtCuenta'), 6)
-	WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/txtCuenta'), '00760481318')
+	//Filtro para limpiar selección
+	CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+	WebUI.switchToWindowIndex(0)
+	WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'), 6)
+	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'))
+	WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
+	WebUI.maximizeWindow()
+	
+	//Busco la Persona a Desbloquear por ID PERSONA
+	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtIdFirmante'), 6)
+	WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtIdFirmante'), '1002133504')
 	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'), 6)
 	WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'))
 	
 	//Verifico que sea la cuenta que se muestra y verificamos
-	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblCuentaADesbloq'), 6)
-	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblCuentaADesbloq'))
-	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lnkDesbloqueoGeneral'), 6)
-	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lnkDesbloqueoGeneral'))
+	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lblCuentaADesbloquear'), 6)
+	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lblCuentaADesbloquear'))
+	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lnkDesbloqueoGeneral'), 6)
+	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/lnkDesbloqueoGeneral'))
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	isVisible = false
 }
-
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -136,4 +152,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

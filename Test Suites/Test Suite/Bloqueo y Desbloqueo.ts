@@ -81,4 +81,25 @@
       <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD10-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario. Perfil filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>bce1a507-dc5f-4434-b640-032e23842bab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD11-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por Nro de CUI</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9de6239a-e04b-49e6-969a-ea90e5ae63a1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD12-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por Nro de documento</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ae399e3b-e920-4b82-ba8a-ea8c9869769b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD13-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

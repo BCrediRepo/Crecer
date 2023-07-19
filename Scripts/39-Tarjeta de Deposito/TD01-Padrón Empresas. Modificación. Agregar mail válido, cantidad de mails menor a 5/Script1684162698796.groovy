@@ -19,6 +19,12 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 
+//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA
+//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA
+//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA
+//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA
+//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -95,6 +101,8 @@ WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER
 
 //Click en Aceptar el registro.
 WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/btnAceptarElRegistro2'))
+
+//BLOQUEADO POR ISSUE EN PADRONES --> NO ADMITE USUARIO DE VENTA
 
 //*FIN DE SCRIPT*-------------------------------------------
 
