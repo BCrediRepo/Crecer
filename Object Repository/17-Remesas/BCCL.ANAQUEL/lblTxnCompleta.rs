@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTxnCompleta</name>
+   <tag></tag>
+   <elementGuidId>e49da750-fe0e-4629-bb41-148371100fd4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.message</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>e3b89772-5622-4716-84c9-460a7f93528f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>36948be7-5516-43d1-a4f0-f363d914905f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Txn Completa: 099.ANAQUEL 12:29:04 11 JUL 2023 BCCL.ANAQUEL,CARGA.ANAQUEL.TESO I </value>
+      <webElementGuid>6486e018-99e6-4b5f-bd4d-2ae0e386b3b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_BCCLANAQUEL display_box_BCCLANAQUEL_CARGAANAQUELTESO&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
+      <webElementGuid>1d560c7a-9bcb-4e71-9ead-44009ffb2891</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      <webElementGuid>f15411a9-3d45-402e-8ae1-d871342ffbb6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cargar Anaquel desde el Tesoro'])[1]/following::td[14]</value>
+      <webElementGuid>7f7f363a-ca8d-4d1d-bb72-b2b6c4ba6eba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[2]</value>
+      <webElementGuid>b86683ff-2c80-4390-aba5-92324f8e2d03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::td[2]</value>
+      <webElementGuid>22495af1-c023-4e56-bbd0-5e25447b0470</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Txn Completa: 099.ANAQUEL 12:29:04 11 JUL 2023 BCCL.ANAQUEL,CARGA.ANAQUEL.TESO I']/parent::*</value>
+      <webElementGuid>440f7728-d4b6-4beb-94bc-b6377ebb518c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr/td</value>
+      <webElementGuid>090a2139-5040-43a0-87e4-b4ab32d1c5c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Txn Completa: 099.ANAQUEL 12:29:04 11 JUL 2023 BCCL.ANAQUEL,CARGA.ANAQUEL.TESO I ' or . = 'Txn Completa: 099.ANAQUEL 12:29:04 11 JUL 2023 BCCL.ANAQUEL,CARGA.ANAQUEL.TESO I ')]</value>
+      <webElementGuid>87175bd5-ec9e-4e27-9fc2-7880316e6da9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

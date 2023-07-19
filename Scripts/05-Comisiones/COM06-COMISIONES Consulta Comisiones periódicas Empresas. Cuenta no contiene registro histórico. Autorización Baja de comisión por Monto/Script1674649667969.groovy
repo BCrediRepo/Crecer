@@ -21,89 +21,75 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
+        2, 9))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
+
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('COM.PER.ESP')
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDesplegar'))
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBolsinAElegir'))
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnVerRegistro'))
+
 NroCuenta = WebUI.getText(findTestObject('06-Comisiones/COM.PER.ESP/lblCuenta'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.closeWindowTitle('COM.PER.ESP')
 
 WebUI.switchToWindowTitle('T24 - Fil.074 Caseros Centro')
+
 WebUI.click(findTestObject('02-Dashboard/lnkComisionesyBonificaciones'))
+
 WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
+
 WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkBolsin'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('A/B/M Bolsin')
+
 WebUI.clearText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'))
+
 WebUI.setText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'), NroCuenta)
+
 WebUI.click(findTestObject('06-Comisiones/ABM Bolsin/lnkEjecutar'))
+
 WebUI.click(findTestObject('06-Comisiones/ABM Bolsin/lnkBaja'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('COM.PER.ESP')
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnConfirmarBajaBolsin'))
+
 WebUI.delay(10)
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-trx = WebUI.verifyElementVisible(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompleta'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompleta'), FailureHandling.STOP_ON_FAILURE)
 
-if (trx == true) {
-    WebUI.takeScreenshot('Screenshot/Comisiones/COM06-COMISIONES. Comisiones. Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. Autorización Baja de comisión por Monto.png')
-} else {
-    WebUI.takeScreenshot('Screenshot/Fails/Comisiones/COM06-COMISIONES.Comisiones. Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. Autorización Baja de comisión por Monto.png')
-}
+trx = WebUI.getText(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompleta'))
 
-////Desbloqueo de usuario CRECEREM
-//CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-//
-////Login
-//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 12), findTestData('MainData/Users').getValue(
-//		2, 12))
-//
-//WebUI.maximizeWindow()
-//
-////Toma Screen
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-//
-////Ingresa el ENQ en el Buscador
-//WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'RECORD.LOCK')
-//
-////Clickea en el btn "Ejecutar"
-//WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-//
-////Cambia a ventana nueva
-//WebUI.switchToWindowTitle('Active Record Locks')
-//
-////Click en Lista de Registro
-//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnListadeRegistros'))
-//
-////Click Cuenta Bloqueada
-//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/lnkCuentaBloqueada'))
-//
-////Auto/Bor/Rev Registro
-//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnAutoBorraRevRegistro'))
-//
-////Desbloquear
-//WebUI.click(findTestObject('06-Comisiones/DESBLOQUEO CUENTA/Page_Active Record Locks/btnDesbloquear')) //Control de fin de script
+assert trx.contains('Txn Completa:') == true
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//Control fin e script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

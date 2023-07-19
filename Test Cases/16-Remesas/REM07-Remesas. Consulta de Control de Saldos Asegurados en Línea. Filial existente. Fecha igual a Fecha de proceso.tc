@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM07-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial existente. Fecha igual a Fecha de proceso</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2e3de58-a394-4d98-bcd9-a0d181b496ae</testCaseGuid>
+</TestCaseEntity>

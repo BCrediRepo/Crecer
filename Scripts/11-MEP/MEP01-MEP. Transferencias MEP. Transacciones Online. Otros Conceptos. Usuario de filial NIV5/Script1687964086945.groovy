@@ -28,66 +28,48 @@ WebUI.maximizeWindow()
 
 //Abriendo App Transferencias MEP Otros Conceptos
 WebUI.click(findTestObject('02-Dashboard/lnkTransferenciasMEP'))
-
 WebUI.click(findTestObject('02-Dashboard/10-MEP/lnkTransferenciasMEPOtrosConceptos'))
-
 WebUI.switchToWindowTitle('BCCL.MEP.FT.TRANSFER')
-
 WebUI.maximizeWindow()
 
 //Seteo de datos
 WebUI.selectOptionByIndex(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/cbxTipoDeCuenta'), 1)
-
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtImporte'))
-
 WebUI.waitForElementVisible(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtIDOrdenante'), 3)
-
 WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtIDOrdenante'), '1000873562')
-
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/btnDrillDown'))
-
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/lblCuentaARS'))
-
 WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtImporte'), '100')
-
 WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtEntidadAcreedora'), 'CRECER')
-
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/rbtnNO'))
-
 WebUI.selectOptionByIndex(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/cbxConoceAsociado'), 2)
-
 WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtCUILCUITBeneficiario'), '23592335034')
-
 WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtNombreBeneficiario'), 'RAGNAR COVELL')
-
 WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtObservaciones'), 'CRECER')
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Validacion y aceptacion de registro
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/btnValidarRegistro'))
-
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/btnAceptarRegistro'))
-
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/lnkAceptarAlertas'))
 
 //Primer control assert
 label = WebUI.getText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'))
-
 assert label.contains('Txn Completa:') == true
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//captura de pantalla PDF
+WebUI.switchToWindowTitle("Microsoft Word - 18505MP.doc - e-forms")
+WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verificacion de Firmas
 WebUI.switchToWindowIndex(2)
-
 WebUI.selectOptionByIndex(findTestObject('13-MEP/Verificacion de Firmas - Fil.074 Caseros Centro/cbxAccion'), 2)
-
 WebUI.click(findTestObject('13-MEP/Verificacion de Firmas - Fil.074 Caseros Centro/btnAceptarRegistro'))
 
 //Segundo control assert
 labelFinalizada = WebUI.getText(findTestObject('13-MEP/Verificacion de Firmas - Fil.074 Caseros Centro/lblFinalizada'))
-
 assert labelFinalizada.contains('FINALIZADA') == true //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
