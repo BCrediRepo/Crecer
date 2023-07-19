@@ -21,21 +21,31 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(
+        2, 4))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
+
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 WebUI.switchToWindowIndex(0)
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
+
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
+
+WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtTipoComision'), 'GUVE')
 
 //Bloque limpieza filtros (REVISAR)
 //WebUI.click(findTestObject('null'))
@@ -44,38 +54,38 @@ WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 //WebUI.switchToWindowTitle('T24 - Fil.074 Caseros Centro')
 //WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-WebUI.setText(findTestObject('null'), '00740025976')
-WebUI.setText(findTestObject('null'), '20210725')
-WebUI.setText(findTestObject('null'), '20220725')
+WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtCuenta'), '00740025976')
+
+WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaDesde'), '20210725')
+
+WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaHasta'), '20220729')
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+
 WebUI.maximizeWindow()
 
-TextoHeader = WebUI.getText(findTestObject('null'))
+TextoHeader = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/lblCuentaHeader'))
 
-TextoDato = WebUI.getText(findTestObject('null'))
+TextoDato = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/lblCuentaTabla'))
 
-Bonificacion = WebUI.getText(findTestObject('null'))
+Bonificacion = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/lblBonificacion'))
 
 WebUI.verifyTextPresent(Bonificacion, true)
 
-assert TextoDato == TextoHeader
-
-
-
-/*WebUI.verifyMatch('TextoHeader', '00740025976', true)
+assert TextoDato == TextoHeader /*WebUI.verifyMatch('TextoHeader', '00740025976', true)
 //WebUI.verifyMatch('TextoDato', '00740025976', true)
-WebUI.verifyElementAttributeValue(findTestObject('null'), '', '', 0)*/
-
-//---------------------------------------------------------------------------------------------------------------------
-	
+WebUI.verifyElementAttributeValue(findTestObject('null'), '', '', 0)*/ //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-	
+
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

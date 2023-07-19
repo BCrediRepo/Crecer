@@ -28,6 +28,9 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.NoSuchElementException
 import java.nio.file.FileSystem
 import java.nio.file.FileSystems
+import org.openqa.selenium.OutputType
+import org.openqa.selenium.TakesScreenshot
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 
 public class kywGeneric {
@@ -200,6 +203,8 @@ public class kywGeneric {
 		}
 
 	}
+
+
 
 	//-----------------------------------------------------------------------------------------------
 

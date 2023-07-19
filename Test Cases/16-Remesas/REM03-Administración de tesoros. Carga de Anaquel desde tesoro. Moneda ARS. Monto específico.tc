@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM03-Administración de tesoros. Carga de Anaquel desde tesoro. Moneda ARS. Monto específico</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99a86310-0142-4a3c-9f41-cff5d270f408</testCaseGuid>
+</TestCaseEntity>

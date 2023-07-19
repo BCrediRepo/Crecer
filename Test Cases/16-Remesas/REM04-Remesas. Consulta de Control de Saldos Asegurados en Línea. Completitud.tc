@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM04-Remesas. Consulta de Control de Saldos Asegurados en Línea. Completitud</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efbeeb2a-af5d-4b0d-82e4-8e04054def4e</testCaseGuid>
+</TestCaseEntity>

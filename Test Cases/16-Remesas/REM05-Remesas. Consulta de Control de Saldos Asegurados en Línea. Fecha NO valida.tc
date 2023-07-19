@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM05-Remesas. Consulta de Control de Saldos Asegurados en Línea. Fecha NO valida</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ef7713b-250e-49e0-bd83-17c23d2f52bc</testCaseGuid>
+</TestCaseEntity>

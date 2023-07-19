@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM08-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial existente. Fecha menor a Fecha de proceso</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad834754-8901-4ded-ae31-61690b88c3e7</testCaseGuid>
+</TestCaseEntity>
