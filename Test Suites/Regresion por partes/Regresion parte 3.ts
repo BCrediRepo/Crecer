@@ -494,4 +494,88 @@
       <testCaseId>Test Cases/26-Inventario Permanente/IP06-IP.Reclasificación de partida de IP. Por casa central online para cuenta contable con COD.RECLA.SUC igual a código operativo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>0af8167b-4520-454f-9e2f-272a6d03f90e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM03-Administración de tesoros. Carga de Anaquel desde tesoro. Moneda ARS. Monto específico</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b0fb04f7-39ea-40ec-83f8-e164c3b800d8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM04-Remesas. Consulta de Control de Saldos Asegurados en Línea. Completitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d73d2f70-0faa-42df-b2ff-38da8fd5b8ca</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM05-Remesas. Consulta de Control de Saldos Asegurados en Línea. Fecha NO valida</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3349d65a-dfbe-419e-aec5-c104ad200e25</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM06-Remesas. Consulta de Control de Saldos Asegurados en Línea. Fecha vacio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15163294-5f56-4a0d-97a8-a55290e5c654</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM07-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial existente. Fecha igual a Fecha de proceso</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a022a3e9-f472-43dd-a61b-9ae4cc6f4199</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM08-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial existente. Fecha menor a Fecha de proceso</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dfe048d4-cf7d-446d-8853-df11901b526d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM09-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial NO existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>90ceac9b-fef8-4b3a-8634-b7d599147df3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM01 - Ajustes monetarios. Alta de Nota de Débito Ajuste. Fecha valor permitida. Saldo suficiente entre fecha valor y fecha de proceso. Cuenta sin bloqueos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>18089ed7-65ba-458c-a908-cba18d2891ef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM02 - Ajustes monetarios. Reversa de Nota de Débito Ajuste. Operación del día. Usuario Inputter</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>77ab7add-87c0-40c9-aa60-3c91e19327b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM03 - Ajustes monetarios. Proceso de Reversa de Notas Transitorias. Operación del día. Saldo de la cuenta suficiente. Sin bloqueos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>72ab42f8-923e-4819-8862-b15396134865</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM04 - Ajustes monetarios. Alta de nota de Credito Transitoria. Cuenta con bloqueo de debitos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a23017e8-898a-4125-a17d-506eb194ec1f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM10-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial vacio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

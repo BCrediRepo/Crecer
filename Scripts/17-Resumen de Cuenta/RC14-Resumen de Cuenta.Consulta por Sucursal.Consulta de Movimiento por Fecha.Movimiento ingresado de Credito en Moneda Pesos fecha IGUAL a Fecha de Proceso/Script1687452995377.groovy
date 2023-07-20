@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Res
 WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnk MOVIMIENTOS POR FECHA DE CUENTAS'))
 
 //Swicht a la ventana Movimientos por fecha de cuentas
-WebUI.switchToWindowTitle('Movimientos por fecha de cuentas')
+WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 WebUI.maximizeWindow()
 
 //Aplico KYW de limpieza de busqueda
@@ -56,7 +56,7 @@ WebUI.switchToWindowTitle('Temenos T24')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnk MOVIMIENTOS POR FECHA DE CUENTAS'))
 
 //Swicht a la ventana Movimientos por fecha de cuentas
-WebUI.switchToWindowTitle('Movimientos por fecha de cuentas')
+WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 WebUI.maximizeWindow()
 
 //Completamos los datos para la consulta

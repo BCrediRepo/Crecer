@@ -66,8 +66,10 @@ WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/TELLER-Ing
 
 label = WebUI.getText(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lblTxnCompleta'))
 
-assert label.contains('Txn Completa:') == true //Control de fin de script
+assert label.contains('Txn Completa:') == true 
 
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

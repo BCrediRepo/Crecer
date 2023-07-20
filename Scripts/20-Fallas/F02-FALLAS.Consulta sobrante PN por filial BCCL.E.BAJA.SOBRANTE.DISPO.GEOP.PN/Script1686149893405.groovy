@@ -22,7 +22,7 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
-        2, 3))
+        2, 8))
 
 WebUI.maximizeWindow()
 
@@ -59,7 +59,7 @@ WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 WebUI.maximizeWindow()
 
 //WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkNuevaSeleccion'))
-WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20220726')
+WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20220729')
 
 WebUI.setText(findTestObject('21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal1'), '073')
 //

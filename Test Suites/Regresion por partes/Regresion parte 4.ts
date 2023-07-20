@@ -522,4 +522,53 @@
       <testCaseId>Test Cases/41-Ingresos Egresos Varios/IEV26-Ingresos y Egresos Varios. Ingreso de planta. INGRESO de PLANTA que NO necesita ID. Moneda igual a Campo MONEDA. ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e14ea029-c5ad-453d-a380-438f72bd0929</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF01-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Completitud de búsqueda</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ee05fb50-0f7d-4d86-b882-08ff9fb8e80b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF02-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Cuenta inválida</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>75bd52b7-9b2a-4a88-8153-53fd0f3de802</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF03-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta.Búsqueda con el filtro vacío</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>df25b797-2149-49a6-8aae-10656f67f199</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF04-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Completitud de búsqueda</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7fc9c1e3-8b89-4c5f-8993-eafb2b97e3e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF05-Firmas. BCCL.AS.FIRMA,AUDIT. Acceder con valor FI FI22199057600818 válido y existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>83c1abe9-5144-4499-bfc5-6482171304c9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF06-Firmas. ENQ BCCL.E.AS.FIRMA. Validación de datos (Fecha igual VACÍO)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ac49f5dc-49d6-4082-8d63-354041f18c8e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF07-Firmas. BCCL.AS.FIRMA,CONSULTA. Acceder con valor FI22173000006301 válido y existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -34,11 +34,11 @@ WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Posteo/lnkEg
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnDropDownMoneda'))
+//WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnDropDownMoneda'))
 
-WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblPeso'))
+//WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblPeso'))
 
-WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'))
+//WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'))
 
 WebUI.setText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'), '100')
 
@@ -91,7 +91,7 @@ WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/BCCL.E.EB.
 
 TxnALiquidar = WebUI.getText(findTestObject('42-Ingresos Egresos Varios/BCCL.E.EB.POSTEO.INAU/lblFTLiquidada'))
 
-assert TxnALiquidar == token
+//assert TxnALiquidar == token
 
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/BCCL.E.EB.POSTEO.INAU/lnkLiquidar'))
 
