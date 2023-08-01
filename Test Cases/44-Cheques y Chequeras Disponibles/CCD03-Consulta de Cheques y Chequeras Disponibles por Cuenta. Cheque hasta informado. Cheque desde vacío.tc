@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CCD03-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cheque hasta informado. Cheque desde vacío</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cdc8790a-d353-414d-940f-70440eb3be50</testCaseGuid>
+</TestCaseEntity>

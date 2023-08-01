@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsultaPagoHaberesProveedores708</name>
+   <tag></tag>
+   <elementGuidId>e0b67601-b89f-43cd-8248-39a74ad1ad68</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr[2]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>7372d96c-29c1-47db-ba28-f948fb226b85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Consulta Pago Haberes/Proveedores</value>
+      <webElementGuid>6de3ece7-0187-419f-86de-9a1e57ff8bad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryHeaderContainer&quot;)/tbody[1]/tr[1]/td[1]/table[@class=&quot;enqheader enqheader_BCCLPAYMENTSUMMARYENQ&quot;]/tbody[1]/tr[2]/td[1]</value>
+      <webElementGuid>8904f2d3-2b65-4623-8eee-d8bcfd2224f9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr[2]/td</value>
+      <webElementGuid>ec5d481b-c8c6-4a3c-b85c-002c0e96912d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[1]/following::td[4]</value>
+      <webElementGuid>61daeee9-a2ad-4ab5-9c75-5e07c694c244</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[1]/following::td[4]</value>
+      <webElementGuid>bf4d3bde-8ddc-4452-81d0-968f764c50ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Debito'])[1]/preceding::td[2]</value>
+      <webElementGuid>6064dcdc-3bb7-4af0-8151-687771e1e0b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/preceding::td[5]</value>
+      <webElementGuid>c74e7e89-39ac-467e-bbe0-d269a11641d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td</value>
+      <webElementGuid>5e05580b-e26b-41c3-8417-18265628ae12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = ' Consulta Pago Haberes/Proveedores' or . = ' Consulta Pago Haberes/Proveedores')]</value>
+      <webElementGuid>2c481cbd-c7e5-4c8c-9dc5-655c24ac4d90</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

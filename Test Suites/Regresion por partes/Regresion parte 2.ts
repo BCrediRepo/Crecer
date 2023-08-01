@@ -578,4 +578,11 @@
       <testCaseId>Test Cases/31-Pago de intereses/PDI01-PAGO DE INTERESES. Consulta Devengamiento FCI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>30982d10-8f51-4e50-a52a-1cb35188345a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC26-Recupero en filiales NOcom</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

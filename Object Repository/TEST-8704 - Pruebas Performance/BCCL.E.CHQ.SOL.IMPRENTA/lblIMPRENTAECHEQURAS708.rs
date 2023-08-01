@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblIMPRENTAECHEQURAS708</name>
+   <tag></tag>
+   <elementGuidId>f2097802-bdd3-4ab7-9c66-ab078f9f17ce</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr[2]/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLECHQSOLIMPRENTA</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>9d840e08-25b9-45d3-8fed-cd54e25bdd72</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLECHQSOLIMPRENTA</value>
+      <webElementGuid>2b12e1ff-8830-441a-927b-19967ba4f4cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>IMPRENTA ECHEQURAS</value>
+      <webElementGuid>3b4d371b-41d4-49b4-9020-37504c4565bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryHeaderContainer&quot;)/tbody[1]/tr[1]/td[1]/table[@class=&quot;enqheader enqheader_BCCLECHQSOLIMPRENTA&quot;]/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLECHQSOLIMPRENTA&quot;]</value>
+      <webElementGuid>214bc1aa-335b-4aca-9736-faefdcc51661</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr[2]/td[2]</value>
+      <webElementGuid>8914ce61-0638-4983-a026-b353d7523313</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprenta:'])[1]/following::td[1]</value>
+      <webElementGuid>bc25b03b-e0e4-4a74-ba94-3a0934ea1fc5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[1]/following::td[5]</value>
+      <webElementGuid>9198f424-c500-4629-9411-cce75e9f18ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo de Chequera'])[1]/preceding::td[2]</value>
+      <webElementGuid>7818a1d5-02b6-4436-b38c-c0751ff225f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Chequeras'])[1]/preceding::td[5]</value>
+      <webElementGuid>0773d17b-fc0b-429f-a06a-4414cea8b0e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='IMPRENTA ECHEQURAS']/parent::*</value>
+      <webElementGuid>123020f0-4f2c-486d-a1e8-92c310cf4a47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[2]</value>
+      <webElementGuid>601e8b6c-4c64-428d-8088-d9960ead56f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'IMPRENTA ECHEQURAS' or . = 'IMPRENTA ECHEQURAS')]</value>
+      <webElementGuid>833bb527-b37d-46b1-8995-eb4a4723efe0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CCD02-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cheque desde y Cheque hasta inválidos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>997d5505-4c15-49e6-9785-85810f6ea30c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTituloBCCL.PAYMENT.SUMMARY.ENQ</name>
+   <tag></tag>
+   <elementGuidId>73aa1507-78c2-4e2d-9cba-5600cdcf0b3c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLPAYMENTSUMMARYENQ</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>0d046306-d034-4872-a7ab-d7d232b5433e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLPAYMENTSUMMARYENQ</value>
+      <webElementGuid>7cf8d88f-9f4f-47d7-a7f4-a81d46ed4dc8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>BCCL.PAYMENT.SUMMARY.ENQ</value>
+      <webElementGuid>b5e5c15f-5dbb-408e-8d1c-3a037e4e7eb0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLPAYMENTSUMMARYENQ&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLPAYMENTSUMMARYENQ enqsel-selections enqsel-selections_BCCLPAYMENTSUMMARYENQ&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLPAYMENTSUMMARYENQ&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLPAYMENTSUMMARYENQ&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLPAYMENTSUMMARYENQ&quot;]</value>
+      <webElementGuid>92754d8b-114a-4c62-8f4c-7dcb3cd17237</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>de5e456a-6ab3-49e2-9e9e-dbd6773a8f8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::td[5]</value>
+      <webElementGuid>7a23564a-7b67-498a-b93e-ee1fd06dde23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/preceding::td[2]</value>
+      <webElementGuid>34397dea-bfdc-4535-a0e4-5b426c93cef9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>3bce9317-f3ce-4676-9776-b1b60db3006e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>c268b414-baad-4833-b092-0f5a06393c3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'BCCL.PAYMENT.SUMMARY.ENQ' or . = 'BCCL.PAYMENT.SUMMARY.ENQ')]</value>
+      <webElementGuid>6921645a-31c7-4a02-ab6b-3d0b8bedc297</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

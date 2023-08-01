@@ -578,4 +578,25 @@
       <testCaseId>Test Cases/10-Fallas Dispositivos/FD01-Falla puntos Neutrales. Alta de faltante CD Neutrales. Dispositivo de la Sucursal. Retiro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>16d2bed2-ebd0-4029-a8a3-e6e6717cc156</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD11-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por Nro de CUI</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>89c55715-b65a-4eea-ad51-135f0bf5b59a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD12-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por Nro de documento</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2da5cb00-b031-4c0f-8805-74b4d003b931</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD13-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
