@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblAlquiler</name>
+   <tag></tag>
+   <elementGuidId>9f190bf7-75d1-4218-87f2-7bc394f7b84f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow1']/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>85053aa2-44cb-4dd9-8369-ff4f0fd98294</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLEMOTIVOTINT</value>
+      <webElementGuid>812f7644-52e7-48a6-a271-f3b68d5553f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Alquiler</value>
+      <webElementGuid>189a6a52-fb94-4c7b-8df6-314c2b611513</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEMOTIVOTINT&quot;]</value>
+      <webElementGuid>5ceee5a8-e6a3-48b1-a8e4-07e60017b136</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow1']/td[2]</value>
+      <webElementGuid>5d672f0b-3dd4-4d6c-9d00-6d4d1299ce36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ALQ'])[1]/following::td[1]</value>
+      <webElementGuid>cc9acc9b-ccd1-4b65-8019-a9958d6bacd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::td[2]</value>
+      <webElementGuid>219bdc3a-fcd0-4429-a39c-b67f6b94161a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='APC'])[1]/preceding::td[1]</value>
+      <webElementGuid>78a54208-b0e6-40e4-aaf6-73c92a88a94f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aporte de capital'])[1]/preceding::td[2]</value>
+      <webElementGuid>5c33552d-c5bb-43ef-bb14-46bb7a359b64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Alquiler']/parent::*</value>
+      <webElementGuid>1a179baf-823c-4481-91af-ba41efa22140</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[2]/td[2]</value>
+      <webElementGuid>0a9e8d69-90ec-4f6f-b699-d875593995f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Alquiler' or . = 'Alquiler')]</value>
+      <webElementGuid>fedac5c0-6248-4093-921d-322aa314c635</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

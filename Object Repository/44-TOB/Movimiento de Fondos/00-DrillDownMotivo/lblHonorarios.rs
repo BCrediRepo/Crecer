@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblHonorarios</name>
+   <tag></tag>
+   <elementGuidId>bdb309da-5eac-4df3-aa70-73bffcd55b30</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow11']/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>67c5a8f0-ca33-4dc8-a29c-e9dce3948ada</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLEMOTIVOTINT</value>
+      <webElementGuid>dca1a33c-4506-41e3-9641-381bca7b2cd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Honorarios</value>
+      <webElementGuid>53a83169-d4e1-4e83-8f9b-da5b159b2cba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow11&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEMOTIVOTINT&quot;]</value>
+      <webElementGuid>b31bc2f6-6269-4d13-8c5c-3a621646e756</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow11']/td[2]</value>
+      <webElementGuid>b518d169-f03d-4fcb-9e24-9f7eb80c4e6c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='HON'])[1]/following::td[1]</value>
+      <webElementGuid>f2ebcaea-63e7-4b60-9f4d-899de3b5ee7e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Haberes'])[1]/following::td[2]</value>
+      <webElementGuid>9a5d0612-c45c-4db2-a774-9b33b9efc93c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='JUD'])[1]/preceding::td[1]</value>
+      <webElementGuid>d9b4f082-a6f4-439e-8531-aca92ecfb90c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Judiciales'])[1]/preceding::td[2]</value>
+      <webElementGuid>613b7f59-e773-4028-ba12-4ae3750d5b38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Honorarios']/parent::*</value>
+      <webElementGuid>5f86780a-11ce-4e4d-a0f0-eab697215442</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[12]/td[2]</value>
+      <webElementGuid>1e01c0a0-3e97-464d-b2b2-8a29df54fa37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Honorarios' or . = 'Honorarios')]</value>
+      <webElementGuid>0f9ecd5d-8c35-48d9-9735-2ac91d1ce23d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

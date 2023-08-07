@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TOB06-Transferencia OnLine a otros bancos. Completitud de pantalla.Verificacion. Concepto Cliente o Terceros. No Motivos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af86516c-f2d6-4586-9e10-24c94da6e3f0</testCaseGuid>
+</TestCaseEntity>
