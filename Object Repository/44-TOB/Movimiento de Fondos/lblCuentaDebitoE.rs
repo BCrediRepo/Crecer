@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblCuentaDebitoE</name>
+   <tag></tag>
+   <elementGuidId>2038629c-1370-4cd6-8848-f08ce67a8919</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='errors']/tbody/tr/td[2]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>91518ff9-019d-45d6-af92-101b68ddcd7a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nro. de Cuenta Debito</value>
+      <webElementGuid>a90e7936-3430-47bb-8c17-74043b592e24</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;errors&quot;)/tbody[1]/tr[1]/td[@class=&quot;errors&quot;]/a[1]/span[1]</value>
+      <webElementGuid>22c39167-2a5c-4a36-812b-1dbabf0f0441</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='errors']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>b4035c4f-2058-4ece-b0d3-6dc485fe46b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.119 Monserrat)'])[1]/following::span[1]</value>
+      <webElementGuid>0bc3cc54-f4e6-485b-a5ff-21b5f4b9c9c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FT/22210/897909168'])[1]/following::span[1]</value>
+      <webElementGuid>84958ba6-282f-49af-af00-dd191c06802c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No se encuentra archivo ACCOUNT'])[1]/preceding::span[1]</value>
+      <webElementGuid>02009a55-4ce6-4242-a617-ebd95c84d5fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Ordenante'])[1]/preceding::span[2]</value>
+      <webElementGuid>d72c5178-c387-48f9-af9a-e96cf068bed5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nro. de Cuenta Debito']/parent::*</value>
+      <webElementGuid>2aa28991-fb44-4eb3-b997-5b9152eb5641</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/span</value>
+      <webElementGuid>131433cc-0e2b-4543-b02a-e9ef0631aae5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Nro. de Cuenta Debito' or . = 'Nro. de Cuenta Debito')]</value>
+      <webElementGuid>3217377e-d016-40f8-a9c9-e49d0adba18f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

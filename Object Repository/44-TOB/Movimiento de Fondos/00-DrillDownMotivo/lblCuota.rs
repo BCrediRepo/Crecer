@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblCuota</name>
+   <tag></tag>
+   <elementGuidId>79b261b8-a3b9-4d89-9d3b-41683a9c01d5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow5']/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>2bc982f9-9c1c-495a-8d54-bce41c4fc7fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLEMOTIVOTINT</value>
+      <webElementGuid>46d5fedf-93fe-4368-80a4-49e3ea91ad34</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cuota</value>
+      <webElementGuid>de420ddc-2a33-4f6b-8950-4b8e58024d9c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow5&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEMOTIVOTINT&quot;]</value>
+      <webElementGuid>5caf9b2b-97e6-447d-a7b1-3b1d4975f4b1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow5']/td[2]</value>
+      <webElementGuid>227069a0-ee52-4ba5-84e8-663534aa4fea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CUO'])[1]/following::td[1]</value>
+      <webElementGuid>56780fa9-f529-4e45-91d2-33cf77e5a9da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bienes registrables NO habitualista'])[1]/following::td[2]</value>
+      <webElementGuid>83d99b4e-6081-46b8-b283-34d7c3f619bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ESE'])[1]/preceding::td[1]</value>
+      <webElementGuid>be37efd3-ff56-4918-a0f6-ea68e1ba9031</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado Expropiaciones u otros'])[1]/preceding::td[2]</value>
+      <webElementGuid>cd84e3c4-33cb-4a49-877e-1a7214ad7c2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Cuota']/parent::*</value>
+      <webElementGuid>04e75ded-7a1c-46a1-a9e7-28b3b4c7cc63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[6]/td[2]</value>
+      <webElementGuid>afaeefd1-6e54-4c72-bcfd-50ff3615d8c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Cuota' or . = 'Cuota')]</value>
+      <webElementGuid>23fd1730-e0dc-420a-8f84-ec3631ccabbf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

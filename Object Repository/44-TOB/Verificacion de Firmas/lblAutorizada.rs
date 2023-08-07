@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblAutorizada</name>
+   <tag></tag>
+   <elementGuidId>31350956-a2bf-4907-af36-cbf80e06e130</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#r4 > td.bccl-verde.bccl-verde_BCCLEESTADOPANTALLAS</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r4']/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>52852ec8-fd86-4f23-992b-fad129daaecd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bccl-verde bccl-verde_BCCLEESTADOPANTALLAS</value>
+      <webElementGuid>4b982f8d-5297-4b4c-8380-57cb224558fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>right</value>
+      <webElementGuid>4932f906-68f3-47c2-aae3-92957b87cdf0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>AUTORIZADA</value>
+      <webElementGuid>3ea0d1a9-4c56-4799-a028-d1a3179921de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r4&quot;)/td[@class=&quot;bccl-verde bccl-verde_BCCLEESTADOPANTALLAS&quot;]</value>
+      <webElementGuid>983cac1f-188f-4097-a574-a60428698029</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/44-TOB/Verificacion de Firmas/frmFirmas</value>
+      <webElementGuid>38f51838-b817-44a4-b1b2-7e6275d488c5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r4']/td[2]</value>
+      <webElementGuid>903e0c2a-b9d6-424f-a9fc-92638f9fb836</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FT22210119250769'])[2]/following::td[1]</value>
+      <webElementGuid>417240ab-31b4-475a-8070-15519ac460d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion Original:'])[1]/following::td[3]</value>
+      <webElementGuid>f28cf2fe-361d-49d8-a7a5-5ebf940dff08</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='AUTORIZADA']/parent::*</value>
+      <webElementGuid>ac1ae9d7-b776-48d9-8d93-19a1182082e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[2]</value>
+      <webElementGuid>669369dd-7781-4153-a81c-54bf09405177</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'AUTORIZADA' or . = 'AUTORIZADA')]</value>
+      <webElementGuid>59319db1-d9e3-4a69-a3e8-7dd729528a45</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
