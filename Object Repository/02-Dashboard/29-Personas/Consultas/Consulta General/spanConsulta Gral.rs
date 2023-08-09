@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanConsultaUltimasModificaciones</name>
+   <name>spanConsulta Gral</name>
    <tag></tag>
-   <elementGuidId>6b9baa40-8d86-4887-8a88-0c31b51a8756</elementGuidId>
+   <elementGuidId>7f0d20a0-b400-4c22-a0f2-06d8d753ec12</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[8]</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[9]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>582b11b5-9f0b-431b-a75b-1c5868f1c313</webElementGuid>
+      <webElementGuid>94aa3824-1a35-4fcb-8ee2-2efa25641f75</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>0121dbc2-d866-4648-be2c-464a025efdbc</webElementGuid>
+      <webElementGuid>753908bc-1df4-4d98-9ae3-fb1955cbf0b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,15 +38,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>5dce0b0b-2b6b-4f80-9ca0-015db77c33c8</webElementGuid>
+      <webElementGuid>2fcb8d3b-93b0-46e3-bd5f-33e120ed4b9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consulta ultimas modificaciones</value>
-      <webElementGuid>45cc529a-846e-4ecf-820f-58dce29840a1</webElementGuid>
+      <value>Consulta general</value>
+      <webElementGuid>9f9a5812-4c89-4b56-b4ba-acc55495c062</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,78 +54,86 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>e2fca3d0-058b-4ad8-9848-33c21c775c5c</webElementGuid>
+      <webElementGuid>664f937e-b83f-49d4-89b6-4aed3fd59ec6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>abbd0829-8eb2-43ef-98b8-24bc736d484c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[8]</value>
-      <webElementGuid>1dda985b-13b6-4d61-a1f9-502be1b4c27d</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[9]</value>
+      <webElementGuid>d4fe8cd8-376b-436a-8e10-8b52ee6bbbc1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/ul/li[3]/ul/li[3]/span</value>
-      <webElementGuid>f1c3d872-451f-4b01-8496-eab86f8453dd</webElementGuid>
+      <value>//div[@id='pane_']/ul[3]/li/ul/li[3]/ul/li[2]/span</value>
+      <webElementGuid>753ac489-8063-4ea5-89fd-bc9ad95b7042</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Evolucion Tamaòo de la Empresa'])[1]/following::span[1]</value>
-      <webElementGuid>0de6d470-896b-4f6f-9391-86caa5cba68c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Referidos y Prospectos Ingresados PJ'])[1]/following::span[1]</value>
+      <webElementGuid>a6d0465f-217f-49e4-823a-f6799065ea5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Juridica'])[1]/following::span[1]</value>
-      <webElementGuid>e0377f9a-b7ad-4e4c-a8e2-8767aad3898e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Referidos y Prospectos Ingresados PF'])[1]/following::span[1]</value>
+      <webElementGuid>cb04092b-a5d6-4606-85a5-aeb0ee081c16</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Fisica'])[1]/preceding::span[1]</value>
-      <webElementGuid>9f4546bf-4362-443d-bc25-df882a03bc88</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Fisica'])[1]/preceding::span[1]</value>
+      <webElementGuid>6a11f88a-5152-4582-90ca-ede0e994b1e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Juridica'])[1]/preceding::span[1]</value>
-      <webElementGuid>d1b49e18-dfef-41e3-8e83-fdf7b14586ce</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Juridica'])[1]/preceding::span[1]</value>
+      <webElementGuid>76d342f3-68e0-4128-ac3e-0e6facce4c0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consulta ultimas modificaciones']/parent::*</value>
-      <webElementGuid>23414a98-36b5-4c54-86ba-ea9284ac0a64</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Consulta general']/parent::*</value>
+      <webElementGuid>8d5325a6-0022-4dff-a01b-a994c876ce8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[3]/ul/li[3]/span</value>
-      <webElementGuid>fff56300-3d66-406c-b4db-84c8c3ceec2b</webElementGuid>
+      <value>//li[3]/ul/li[2]/span</value>
+      <webElementGuid>21983198-6c7a-4e15-96de-15c5f7ccb681</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consulta ultimas modificaciones' or . = 'Consulta ultimas modificaciones')]</value>
-      <webElementGuid>3247c59a-7309-4127-a52f-4bf7d045e724</webElementGuid>
+      <value>//span[(text() = 'Consulta general' or . = 'Consulta general')]</value>
+      <webElementGuid>e71c5012-90d5-4426-9373-c5d4a23a2ac8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

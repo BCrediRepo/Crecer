@@ -22,53 +22,46 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en el menu Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
-
-//Click en Consulta de Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
+//Ingresamos la ENQ en el command line
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AS.FIRMA')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en Consulta de cuentas por cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Swicht a la ventana
-WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
+//Switch a la ventana BCCL.AS.FIRMA,AUDIT
+WebUI.switchToWindowTitle('Verificacion de firmas y facultades')
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Click en nueva seleccion
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lnkNueva Seleccion'))
+//Click nueva seleccion
+WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkNueva Seleccion'))
 
-//Seteamos el numero de cuenta a consultar
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/txtNroCuenta'), '00430014075')
+//Ingresamos los datos
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '10430033951')
+
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtFecha'), '20220628')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnEjecutar'))
-
-//Maximizamos
-WebUI.maximizeWindow()
-
+WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
 
-assert element.contains('Nro Cuenta')
-
+assert element.contains('NO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951')
 
 //---------------------------------------------------------------------------------------------------------------------
 

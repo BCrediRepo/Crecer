@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Consultas2</name>
+   <name>cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma</name>
    <tag></tag>
-   <elementGuidId>a81501eb-c1f9-4d39-ba73-81d6fbcfd21c</elementGuidId>
+   <elementGuidId>5b24f93a-3411-4957-9c38-0204bbdbb3f3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[12]</value>
+         <value>//select[@id='drillbox:1_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,111 +21,103 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>c4c7f0f3-a168-4e05-ae9d-935da6c730e5</webElementGuid>
+      <value>select</value>
+      <webElementGuid>c08e032d-9492-4fba-b8a4-b04f422ef81b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>drillbox:1_1</value>
+      <webElementGuid>fdf2fec8-1420-4506-9477-192f12ba853c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>4c7f07f8-43ec-47d6-92ab-6c741c836f64</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
-      <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>664ee6f2-22dd-4e0f-872f-9e9ead2ecd59</webElementGuid>
+      <value>drillbox drillbox_BCCLEPERGENPF</value>
+      <webElementGuid>c0b08121-665d-4974-8031-bfe83059ae6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consultas</value>
-      <webElementGuid>0cc329d1-6c16-4dfc-b45b-fb4e9c3e5372</webElementGuid>
+      <value>Datos de persona FisicaRelacionesAntecedentes InternosEvaluacion CrediticiaConsulta de domicilio por productoConsulta de Firma</value>
+      <webElementGuid>b63f24d5-3b4e-44d5-8940-b1827f1985c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>ef1353eb-9085-459e-976c-c830c7cd5c20</webElementGuid>
+      <value>id(&quot;drillbox:1_1&quot;)</value>
+      <webElementGuid>b058f5fc-786a-44e5-88e7-57c25478aadf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[12]</value>
-      <webElementGuid>f7ca07cc-cf0c-4d47-a4c9-8adc0c4e04cf</webElementGuid>
+      <value>//select[@id='drillbox:1_1']</value>
+      <webElementGuid>4283ff1e-7837-4f83-9ce5-3d58c8d2be30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul/li/ul/li[8]/span</value>
-      <webElementGuid>56731d83-77d5-458a-bfbb-e094c5c9d40a</webElementGuid>
+      <value>//tr[@id='r1']/td[12]/table/tbody/tr/td/select</value>
+      <webElementGuid>a8c72ad3-d77e-4810-b47c-fcacd8d428c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cambio clave BUP'])[1]/following::span[1]</value>
-      <webElementGuid>ac04bef7-b3bb-4995-a854-7dcfe8032e4e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prod.Vinculado'])[1]/following::select[1]</value>
+      <webElementGuid>71579275-7692-4694-b8eb-f277b2e6b812</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Grupos de Unific. Pers.Juridicas'])[1]/following::span[1]</value>
-      <webElementGuid>ad0403bd-9fda-4091-96c4-ba14fc9b1fab</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CAPITAL FEDERAL'])[1]/following::select[1]</value>
+      <webElementGuid>92221e2b-ec4b-4d8b-b9b3-467690a91889</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta General'])[1]/preceding::span[1]</value>
-      <webElementGuid>5f98ab73-c930-4d42-8f46-f41826352bcc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::select[1]</value>
+      <webElementGuid>5a89d0fd-099a-4110-9252-790acf16d528</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>7efafe58-f67f-47e6-904f-a855817ae6f5</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consultas']/parent::*</value>
-      <webElementGuid>b38ed9c8-6149-42e9-b52d-8f1a68e9022e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta General de personas Fisica'])[2]/preceding::select[1]</value>
+      <webElementGuid>54f45910-8982-4fb9-a24e-ebc774515f54</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[8]/span</value>
-      <webElementGuid>e6b4ecca-934c-4c10-b781-ec97e8dc3dee</webElementGuid>
+      <value>//select</value>
+      <webElementGuid>c919cdce-f609-455e-a130-fa81b0958350</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consultas' or . = 'Consultas')]</value>
-      <webElementGuid>580952db-121b-47f5-b38e-667e09b202f9</webElementGuid>
+      <value>//select[@id = 'drillbox:1_1' and (text() = 'Datos de persona FisicaRelacionesAntecedentes InternosEvaluacion CrediticiaConsulta de domicilio por productoConsulta de Firma' or . = 'Datos de persona FisicaRelacionesAntecedentes InternosEvaluacion CrediticiaConsulta de domicilio por productoConsulta de Firma')]</value>
+      <webElementGuid>15d15eed-e3ae-4f2e-b8cb-bfb80414536a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
