@@ -200,4 +200,53 @@
       <testCaseId>Test Cases/05-Comisiones/COM27-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Fecha Desde Informada, NO hay bonificación</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>957a5f09-2ce0-4dab-87a0-8f6e86e08b09</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM28-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Fecha Desde Informada, NO hay bonificación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a12a380-e516-40dc-9ca9-9c0a29a97a82</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM29-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde Informada. Fecha Hasta NO Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b29a59df-09a0-47d6-9947-c4545de9dfd2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM30-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c5d29e72-a66f-4caf-8345-c06560bef39d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM31-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde NO Informada. Fecha Hasta Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a121af8d-d7f3-47bd-b094-86a8b0e0d0f2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM32-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>88b1dcf1-3f47-40c8-8130-a79f3f3c172d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM33-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión NO Informada. Fecha Desde Informada. Fecha Hasta NO Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6e0b8868-6ff4-4191-96a1-71994635be24</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM34-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión NO Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
