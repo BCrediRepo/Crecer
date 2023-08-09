@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnAniadirFirmante</name>
+   <tag></tag>
+   <elementGuidId>2453b452-4508-45ad-88f0-2bbe3c3f6fbe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='mainTab']/tbody/tr[112]/td[2]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>c254b07e-f4e5-4dbe-9786-63babe87df85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM</value>
+      <webElementGuid>cc182427-cb0b-44d8-9820-a69e9f01d61a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/mvexpansion.gif</value>
+      <webElementGuid>3f616aa3-746a-4cf7-b5d5-abf957e401b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Expandir Multivalor</value>
+      <webElementGuid>c6395ad1-14f3-4cf5-9a74-5389b53cbe62</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Expandir Multivalor</value>
+      <webElementGuid>c7a3da16-f757-4fcb-8543-0bf7f849eb82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainTab&quot;)/tbody[1]/tr[112]/td[@class=&quot;action_container action_container_BCCLCQCHRECHREPBCRA action_container_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]/a[1]/img[@class=&quot;ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]</value>
+      <webElementGuid>a2e3566c-63c5-46b8-8d10-84d37e3e223a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='mainTab']/tbody/tr[112]/td[2]/a/img</value>
+      <webElementGuid>fe352684-7793-4768-a706-d8eb4b96bb28</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Expandir Multivalor'])[2]</value>
+      <webElementGuid>fdbc1996-6d29-4d6a-8029-da5f0d981f88</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[112]/td[2]/a/img</value>
+      <webElementGuid>f86d7696-7ba1-4f55-9808-2827932ef2e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvexpansion.gif' and @alt = 'Expandir Multivalor' and @title = 'Expandir Multivalor']</value>
+      <webElementGuid>37107b35-799b-496a-920f-6e7e116d0f51</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

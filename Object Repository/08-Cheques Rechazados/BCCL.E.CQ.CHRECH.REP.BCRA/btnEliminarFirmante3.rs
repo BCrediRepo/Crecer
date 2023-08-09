@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnEliminarFirmante3</name>
+   <tag></tag>
+   <elementGuidId>715d01be-d3a8-423f-8f11-0e197dbcfc9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='mainTab']/tbody/tr[122]/td[2]/a[2]/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>9a394bfd-ace7-4a28-a8fd-44b9198d1820</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM</value>
+      <webElementGuid>e3648415-c847-424b-99e5-162b4b308f46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/mvdelete.gif</value>
+      <webElementGuid>2b1eb8b8-b19a-4a5d-8e52-5d8aea3d525e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>251af51f-334d-4888-b73a-d75cfc6879c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>f7f8aa51-7446-4f78-b36a-621f94f407d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainTab&quot;)/tbody[1]/tr[122]/td[@class=&quot;action_container action_container_BCCLCQCHRECHREPBCRA action_container_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]/a[2]/img[@class=&quot;ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]</value>
+      <webElementGuid>0cea64fb-5c48-41ca-8060-a287fb1c2425</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='mainTab']/tbody/tr[122]/td[2]/a[2]/img</value>
+      <webElementGuid>f512754d-57f1-4535-8cd4-14e9ab6bd1a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Delete Value'])[3]</value>
+      <webElementGuid>70519f55-9523-427f-87cc-a6fe578aa2e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[122]/td[2]/a[2]/img</value>
+      <webElementGuid>7005611d-29de-4a2a-9e19-1b2943ea87e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvdelete.gif' and @alt = 'Delete Value' and @title = 'Delete Value']</value>
+      <webElementGuid>6bb0fc50-ce97-4494-944d-2cda57512b6d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

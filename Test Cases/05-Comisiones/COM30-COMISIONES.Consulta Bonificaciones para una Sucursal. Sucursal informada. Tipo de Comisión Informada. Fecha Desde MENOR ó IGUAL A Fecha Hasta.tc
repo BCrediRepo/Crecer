@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM30-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>700c54e6-834a-4dfa-88bc-2fe6c5426d47</testCaseGuid>
+</TestCaseEntity>
