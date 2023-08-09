@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM32-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde y Fecha Hasta NO Informadas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>46204641-1b36-48f8-a6bf-7d7523921337</testCaseGuid>
+</TestCaseEntity>
