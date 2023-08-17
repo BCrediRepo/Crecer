@@ -67,11 +67,19 @@ WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibl
 
 //Ingresa FECHA DESDE
 WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), '21')
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), '20220729')
 
 //Ingresa FECHA HASTA 
 WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), '21')
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), '20220729')
+
+//Ingresa CHEQUE DESDE
+WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeDesde4'), 6)
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeDesde4'), '#@$&!')
+
+//Ingresa CHEQUE HASTA
+WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeHasta5'), 6)
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeHasta5'), '#@$&!')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

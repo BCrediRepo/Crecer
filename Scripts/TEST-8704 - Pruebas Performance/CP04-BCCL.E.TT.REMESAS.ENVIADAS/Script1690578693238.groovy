@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2,24))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,28), findTestData('MainData/Users').getValue(2,28))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.TT.REMESAS.ENVIADAS
@@ -74,16 +74,9 @@ long startTime = System.currentTimeMillis()
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS/btnEjecutar'))
 
-//Selecciona boton EJECUTAR 708
-//WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS-708/btnEjecutar708'))
-
 //Espera y Verifica que se muestren las columnas del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS/lblFECHA'),10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS/lblFECHA'))
-
-//Espera y Verifica que se muestren las columnas del registro 708
-//WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS-708/lblFECHA708'),10)
-//WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS-708/lblFECHA708'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -105,10 +98,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS/lblEstado'))
 def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS/lblFECHA'))
 assert element.contains('FECHA')
-
-//ASSERT 708
-//def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.ENVIADAS-708/lblFECHA708'))
-//assert element.contains('FECHA')
 
 //---------------------------------------------------------------------------------------------------------------------
 

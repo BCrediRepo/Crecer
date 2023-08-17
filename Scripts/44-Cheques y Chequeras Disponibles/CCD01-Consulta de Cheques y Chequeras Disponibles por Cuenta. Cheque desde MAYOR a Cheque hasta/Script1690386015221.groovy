@@ -65,13 +65,22 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/45-Cheques y Cheque
 WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtCuentaDB1'), 6)
 WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtCuentaDB1'), '00010623433')
 
-//Ingresa FECHA DESDE 
+//Ingresa FECHA DESDE
 WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), '20220728')
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), '20220729')
 
-//Ingresa FECHA HASTA 
+//Ingresa FECHA HASTA
 WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), '20220727')
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), '20220729')
+
+//Ingresa CHEQUE DESDE
+WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeDesde4'), 6)
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeDesde4'), '124')
+
+//Ingresa CHEQUE HASTA
+WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeHasta5'), 6)
+WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeHasta5'), '122')
+
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
@@ -87,7 +96,7 @@ WebUI.delay(15)
 WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblFechaHastaDebeSerMayorOIgualAFecha desde'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblFechaHastaDebeSerMayorOIgualAFecha desde'))
 def element = WebUI.getText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblFechaHastaDebeSerMayorOIgualAFecha desde'))
-assert element.contains('Fecha hasta debe ser mayor o igual a fecha desde')
+assert element.contains('NO SE ENCONTRARON REGISTROS')
 
 //---------------------------------------------------------------------------------------------------------------------
 
