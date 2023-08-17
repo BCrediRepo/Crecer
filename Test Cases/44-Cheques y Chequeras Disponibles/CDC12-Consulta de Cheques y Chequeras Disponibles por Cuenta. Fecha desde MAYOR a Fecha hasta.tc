@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC12-Consulta de Cheques y Chequeras Disponibles por Cuenta. Fecha desde MAYOR a Fecha hasta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d31cb624-0194-4bf5-a0af-cc8436e80e13</testCaseGuid>
+</TestCaseEntity>

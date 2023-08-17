@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,29), findTestData('MainData/Users').getValue(2,29))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.IP.PARTIDAS.ACUM.FIL
@@ -64,17 +64,10 @@ long startTime = System.currentTimeMillis()
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/btnEjecutar'))
 
-//Selecciona boton ejectuar 708
-//WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/btnEjecutar708'))
-
 //Espera y Verifica que se muestren las columnas del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigo IP'),30)
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblMoneda'))
 
-//Espera y Verifica que se muestren las columnas del registro 708
-//WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigoIP708'),10)
-//WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigoIP708'))
-	
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
 
@@ -89,10 +82,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblTipo'))
 def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigo IP'))
 assert element.contains('Codigo IP')
-
-////Espera y Verifica que devuelva un registro 708
-//def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigoIP708'))
-//assert element.contains('Codigo IP')
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,23), findTestData('MainData/Users').getValue(2,23))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,29), findTestData('MainData/Users').getValue(2,29))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando BCCL.E.CHQ.SOL.IMPRENTA
@@ -68,16 +68,9 @@ long startTime = System.currentTimeMillis()
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/btnEjecutar'))
 
-//Selecciona boton ejectuar 708
-//WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/btnEjecutar708'))
-
 //Espera y Verifica que devuelva un registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/lblTituloIMPRENTAECHEQURAS'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/lblTituloIMPRENTAECHEQURAS'))
-
-////Espera y Verifica que devuelva un registro 708
-//WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/lblIMPRENTAECHEQURAS708'),6)
-//WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/lblIMPRENTAECHEQURAS708'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -90,9 +83,6 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/lblTituloIMPRENTAECHEQURAS'))
 assert element.contains('IMPRENTA ECHEQURAS')
 
-////ASSERT 708
-//def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.CHQ.SOL.IMPRENTA/lblIMPRENTAECHEQURAS708'))
-//assert element.contains('IMPRENTA ECHEQURAS')
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script

@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,26), findTestData('MainData/Users').getValue(2,26))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.TT.CASH.DENOM
@@ -64,16 +64,9 @@ long startTime = System.currentTimeMillis()
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM/btnEjecutar'))
 
-//Selecciona boton EJECUTAR 708
-//WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM-708/btnEjecutar708'))
-
 //Espera y Verifica que se muestren las columnas del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM/lblFILAL'),20)
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM/lblFILAL'))
-
-//Espera y Verifica que se muestren las columnas del registro 708
-//WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM-708/lblFILAL708'),20)
-//WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM-708/lblFILAL708'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -92,10 +85,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM/lblIMPORTEPORMONEDA'))
 def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM/lblCATEGORIA'))
 assert element.contains('CATEGORIA')
-
-//assert 708
-//def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.CASH.DENOM-708/lblFILAL708'))
-//assert element.contains('FILIAL')
 
 //---------------------------------------------------------------------------------------------------------------------
 

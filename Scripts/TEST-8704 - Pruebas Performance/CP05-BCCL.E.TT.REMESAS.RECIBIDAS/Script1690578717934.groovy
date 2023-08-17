@@ -74,16 +74,9 @@ long startTime = System.currentTimeMillis()
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS/btnEjecutar'))
 
-//Selecciona boton EJECUTAR 708
-//WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS-708/btnEjecutar708'))
-
 //Espera y Verifica que se muestren las columnas del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS/lblFECHA'),10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS/lblHORA'))
-
-//Espera y Verifica que se muestren las columnas del registro 708
-//WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS-708/lblFECHA708'),10)
-//WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS-708/lblFECHA708'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -105,10 +98,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS/lblFECHA'))
 def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS/lblFECHA'))
 assert element.contains('FECHA')
-
-//ASSERT 708
-//def element = WebUI.getText(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.TT.REMESAS.RECIBIDAS-708/lblFECHA708'))
-//assert element.contains('FECHA')
 
 //---------------------------------------------------------------------------------------------------------------------
 

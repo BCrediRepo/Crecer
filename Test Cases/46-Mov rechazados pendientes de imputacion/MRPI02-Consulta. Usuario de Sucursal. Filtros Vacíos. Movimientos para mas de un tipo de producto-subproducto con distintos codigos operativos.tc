@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MRPI02-Consulta. Usuario de Sucursal. Filtros Vacíos. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aaa10d53-f22a-4660-bb58-d7cb464787cc</testCaseGuid>
+</TestCaseEntity>
