@@ -36,8 +36,8 @@ WebUI.switchToWindowTitle('Temenos T24')
 // Maximizamos
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanCuentasPersonasJuridicas'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/lnkModificacion de Denominacion de Cuenta'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
 
 // Cambia a la ventana BCCL.E.CTA.MOD.DENOM
 WebUI.switchToWindowTitle('BCCL.E.CTA.MOD.DENOM')

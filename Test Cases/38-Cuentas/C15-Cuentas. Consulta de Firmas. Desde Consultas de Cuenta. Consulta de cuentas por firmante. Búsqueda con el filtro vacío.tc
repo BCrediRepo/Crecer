@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>C15-Cuentas. Consulta de Firmas. Desde Consultas de Cuenta. Consulta de cuentas por firmante. Búsqueda con el filtro vacío</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e41cd33b-1071-4269-a31a-6789fa054c5e</testCaseGuid>
+</TestCaseEntity>

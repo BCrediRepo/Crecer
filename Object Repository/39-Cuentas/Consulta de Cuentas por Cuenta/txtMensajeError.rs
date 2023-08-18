@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanCuentasPersonasJuridicas</name>
+   <name>txtMensajeError</name>
    <tag></tag>
-   <elementGuidId>960b58de-18ba-46a3-8bdd-9c1adea8fbeb</elementGuidId>
+   <elementGuidId>ef38252a-d28a-441d-999d-94dd296dc120</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>tr > #message</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[11]</value>
+         <value>//td[@id='message']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,111 +21,119 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>32581fef-5927-4426-bf59-620c193151c1</webElementGuid>
+      <value>td</value>
+      <webElementGuid>7c4ca470-4cd5-46b4-a543-147cd40d93d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>cdca3af0-70fb-4467-ac4c-df668f72b46c</webElementGuid>
+      <value>message</value>
+      <webElementGuid>d06c0db0-027d-40b0-8a7d-ba71b0a61556</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>a5178244-e05c-44f0-bd39-d90b58d11c4f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>12620775-d2fe-40da-813b-36e3994812bd</webElementGuid>
+      <value>0</value>
+      <webElementGuid>01ca6d8a-c260-4d8b-817c-5dca937fcd85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Cuentas Personas Juridicas</value>
-      <webElementGuid>30dff043-8513-49c4-b7e4-286e79710278</webElementGuid>
+      <value>ID.CUENTA es de Ingreso Obligatorio</value>
+      <webElementGuid>4c96571a-dfae-4b2a-a07c-92288f38e70e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>3201a789-a396-425c-9c80-769faff433ea</webElementGuid>
+      <value>id(&quot;divMsg&quot;)/table[@id=&quot;message&quot;]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[@id=&quot;message&quot;]</value>
+      <webElementGuid>ab1cb97a-dab9-43bc-8ede-107963e05336</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[11]</value>
-      <webElementGuid>9cbeb9e5-ba18-4f9f-8ef3-1b561b9c8a1c</webElementGuid>
+      <value>//td[@id='message']</value>
+      <webElementGuid>1fb13f41-96ed-4c85-be21-4397fa3044ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/span</value>
-      <webElementGuid>f2fe460c-616e-4008-8172-284cbc95ea87</webElementGuid>
+      <value>//table[@id='message']/tbody/tr[2]/td/table/tbody/tr/td</value>
+      <webElementGuid>ef532c94-d8e1-4fa0-94c7-876fa1a3988f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Firmas - Administracion'])[2]/following::span[1]</value>
-      <webElementGuid>601e2d10-addb-406a-b1fa-7c24406f8c46</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensaje de Error'])[1]/following::td[2]</value>
+      <webElementGuid>e6f8df21-6edb-474f-905b-69a9a2b76eaa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Firmas - Administracion'])[1]/following::span[1]</value>
-      <webElementGuid>608aa58b-12b1-474e-9519-07ecb291314f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
+      <webElementGuid>d61ef68e-3b90-454e-a0bd-54b69e09863b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Juridica'])[1]/preceding::span[1]</value>
-      <webElementGuid>8bca2f51-5298-416e-b9c1-0d50f39d6b72</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::td[2]</value>
+      <webElementGuid>60a8f8f7-a944-4738-bd46-13bc0e283044</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Continuacion Proceso Alta'])[1]/preceding::span[1]</value>
-      <webElementGuid>9285b32b-bbe7-4d19-adfa-1d2bdd5adf62</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[6]</value>
+      <webElementGuid>43d6ac9d-59c7-4c73-8182-351128009089</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Cuentas Personas Juridicas']/parent::*</value>
-      <webElementGuid>b821b9be-b9cc-4f8e-9b0d-f9227779bb33</webElementGuid>
+      <value>//*/text()[normalize-space(.)='ID.CUENTA es de Ingreso Obligatorio']/parent::*</value>
+      <webElementGuid>aa3f848a-0a8f-4f64-a5ea-e2cb092e25c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[2]/li/span</value>
-      <webElementGuid>1cbb521a-ead6-446c-befe-de4194bcd06f</webElementGuid>
+      <value>//td/table/tbody/tr/td</value>
+      <webElementGuid>68b930d7-5162-4f18-9fbc-c172cc78280c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Cuentas Personas Juridicas' or . = 'Cuentas Personas Juridicas')]</value>
-      <webElementGuid>85c8051b-d11a-4bb3-b5d7-9b2d4d30c1c2</webElementGuid>
+      <value>//td[@id = 'message' and (text() = 'ID.CUENTA es de Ingreso Obligatorio' or . = 'ID.CUENTA es de Ingreso Obligatorio')]</value>
+      <webElementGuid>bfaa9937-3eb4-4c5c-8371-b3d7f6a1ad80</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

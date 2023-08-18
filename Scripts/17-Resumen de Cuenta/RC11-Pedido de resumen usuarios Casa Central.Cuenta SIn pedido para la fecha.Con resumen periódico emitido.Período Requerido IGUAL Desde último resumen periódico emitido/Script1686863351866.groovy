@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/spanPedido
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/02-Pedido de Resumen de Cuenta/lnkPedido de resumen de cuenta'))
+WebUI.click(findTestObject('null'))
 
 //cambiamos a la ventana BCCL.RES.CTA.PEDIDO
 WebUI.switchToWindowTitle('BCCL.RES.CTA.PEDIDO')

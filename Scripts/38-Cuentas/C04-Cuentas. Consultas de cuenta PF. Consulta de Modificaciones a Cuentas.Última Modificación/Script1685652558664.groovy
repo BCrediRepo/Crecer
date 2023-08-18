@@ -37,7 +37,7 @@ WebUI.switchToWindowTitle('Temenos T24')
 WebUI.maximizeWindow()
 
 //Click en Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanCuentas'))
+WebUI.click(findTestObject('null'))
 
 //Click en Consulta de Cuenta
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04 - Ultima Modificacion - Temenos T24/spanConsultas de Cuenta'))

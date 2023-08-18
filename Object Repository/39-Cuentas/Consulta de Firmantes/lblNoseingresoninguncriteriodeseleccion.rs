@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanCuentas</name>
+   <name>lblNoseingresoninguncriteriodeseleccion</name>
    <tag></tag>
-   <elementGuidId>63727fb9-2fcc-4b36-ad19-ebadfad1f67e</elementGuidId>
+   <elementGuidId>86743ace-e965-455d-b8ff-c9f8bee71b32</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[10]</value>
+         <key>CSS</key>
+         <value>tr > #message</value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//td[@id='message']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,111 +21,119 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>974cf5ff-0742-431c-b36f-308090e596da</webElementGuid>
+      <value>td</value>
+      <webElementGuid>94e15c98-239e-4737-99fe-ca9b583bd884</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>52b9c8f7-9a43-4c6a-8461-79189021d441</webElementGuid>
+      <value>message</value>
+      <webElementGuid>934578d8-72db-4b21-b1c3-c8f9d04c812d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>75a7a01c-f917-4c59-8f57-80683dc6b66c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>ee6bfc27-632b-4ea3-9b3c-c39dacaac5dd</webElementGuid>
+      <value>0</value>
+      <webElementGuid>c72fe643-0713-4cf0-94c8-1e5ac1ce3dbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Cuentas</value>
-      <webElementGuid>47bbdb1d-4d87-42f9-bcad-8b47f62ef1a5</webElementGuid>
+      <value>No se ingreso ningun criterio de seleccion</value>
+      <webElementGuid>eb288f87-5e66-4763-bd70-4e087612ff5a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>7717200e-db73-4bdb-b13f-3bf643e4d36f</webElementGuid>
+      <value>id(&quot;divMsg&quot;)/table[@id=&quot;message&quot;]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[@id=&quot;message&quot;]</value>
+      <webElementGuid>a33db61f-abf3-45ef-948d-ba7cadd0d22a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[10]</value>
-      <webElementGuid>0866dfdf-2564-4522-9211-8178a2d36c39</webElementGuid>
+      <value>//td[@id='message']</value>
+      <webElementGuid>3720585c-73bb-4fa5-95f1-5ee06209c466</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[3]/li/span</value>
-      <webElementGuid>3aef87ce-504f-4453-ae86-feeb7bfedac2</webElementGuid>
+      <value>//table[@id='message']/tbody/tr[2]/td/table/tbody/tr/td</value>
+      <webElementGuid>9f53d5f2-d86c-436e-961a-8a8e00c0f4ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Usuario Accion Digital'])[1]/following::span[1]</value>
-      <webElementGuid>a9ca175a-f0e7-4851-96bc-eca7f8a0c2e2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensaje de Error'])[1]/following::td[2]</value>
+      <webElementGuid>b7707970-6dc2-47c3-a775-283c18d1f06f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Documentos Cuestionados'])[1]/following::span[1]</value>
-      <webElementGuid>bd629d44-1c7c-481c-8458-1e8a10b55e8b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
+      <webElementGuid>1e77aedb-d727-4c64-aa9b-91eba97209e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta'])[1]/preceding::span[1]</value>
-      <webElementGuid>a6e0f8a2-9375-40b1-b5b9-c551c88bfc12</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[1]</value>
+      <webElementGuid>50f92d21-b2a7-4756-9225-94a78defb11d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>b0bd3389-16a3-4f0f-a5c5-02d13ca3f7b1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::td[1]</value>
+      <webElementGuid>0e36227b-87eb-4ef4-9a27-949db63f22f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Cuentas']/parent::*</value>
-      <webElementGuid>86bbfd9f-bec5-4790-a083-9a91061bde94</webElementGuid>
+      <value>//*/text()[normalize-space(.)='No se ingreso ningun criterio de seleccion']/parent::*</value>
+      <webElementGuid>fc93c79b-1163-4a45-b226-016e867844d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[3]/li/span</value>
-      <webElementGuid>59a72ae9-5519-4f62-84b4-2952f9f395e5</webElementGuid>
+      <value>//td/table/tbody/tr/td</value>
+      <webElementGuid>15df76db-052a-4cc9-b1b6-078d49b361db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Cuentas' or . = 'Cuentas')]</value>
-      <webElementGuid>138ce613-fff3-4382-b197-d844cfa4614a</webElementGuid>
+      <value>//td[@id = 'message' and (text() = 'No se ingreso ningun criterio de seleccion' or . = 'No se ingreso ningun criterio de seleccion')]</value>
+      <webElementGuid>0d1218ec-fc87-48bc-a1c6-723c4a591d97</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

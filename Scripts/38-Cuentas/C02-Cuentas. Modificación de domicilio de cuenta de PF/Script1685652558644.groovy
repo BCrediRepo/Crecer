@@ -36,11 +36,11 @@ WebUI.switchToWindowTitle('Temenos T24')
 // Maximizamos
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanCuentas'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanModificacion de Cuenta'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/lnkModificacion de Subproducto'))
+WebUI.click(findTestObject('null'))
 
 // Cambia a la ventana Modificacion de Subproducto
 WebUI.switchToWindowTitle('Modificacion de Subproducto')
