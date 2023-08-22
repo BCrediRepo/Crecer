@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblINAUF3</name>
+   <tag></tag>
+   <elementGuidId>b3bd6049-8ff0-47e6-8a82-e08e9a5299d1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[6]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.disabled_BOLD-RED.disabled_BOLD-RED_ACCOUNT.disabled_BOLD-RED_ACCOUNT_FIN</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>33fb138a-8ce7-480c-9a7c-a42381a6226e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_BOLD-RED disabled_BOLD-RED_ACCOUNT disabled_BOLD-RED_ACCOUNT_FIN</value>
+      <webElementGuid>1d6e5fc7-aa2c-4130-b800-f95ad666eb9c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>INAU</value>
+      <webElementGuid>4acff8c0-7174-476b-9bef-cd1bc318cfba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[6]/td[3]/span[@class=&quot;disabled_BOLD-RED disabled_BOLD-RED_ACCOUNT disabled_BOLD-RED_ACCOUNT_FIN&quot;]</value>
+      <webElementGuid>e1a53c98-fe31-4d60-a898-371db23c0f5d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>7e53600f-c027-4cbf-91b0-2463cb9a4d6a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[6]/td[3]/span</value>
+      <webElementGuid>61d7522b-51ed-4081-827a-c82d3b40c13e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado del Registro'])[1]/following::span[1]</value>
+      <webElementGuid>f299d926-6953-411f-b643-894a94791dcb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACTIVA'])[1]/following::span[2]</value>
+      <webElementGuid>02cf8baf-5947-4851-98fb-d5831b248dff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='_______________________________________'])[1]/preceding::span[1]</value>
+      <webElementGuid>de9334f6-1fc0-46ea-8488-06ae1ead6d24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Numero de firmante.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>d0ed5f6c-b339-403f-91c6-82ad66396a8d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='INAU']/parent::*</value>
+      <webElementGuid>790fffbf-ccff-41c0-be58-a3b3259f7f92</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[3]/span</value>
+      <webElementGuid>129b22fd-598c-495a-8485-c57b370cda44</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'INAU' or . = 'INAU')]</value>
+      <webElementGuid>d5af8542-b5b5-408a-9cd1-52992d079205</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

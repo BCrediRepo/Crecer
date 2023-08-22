@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTRANSACCIONFINALIZADAF3</name>
+   <tag></tag>
+   <elementGuidId>a1696085-8e81-4c2c-9b55-6903264248be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.comment.comment_ACCOUNT.comment_ACCOUNT_FIN</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr/td/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ab300145-e342-4f11-9319-a17c0d0832b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>comment comment_ACCOUNT comment_ACCOUNT_FIN</value>
+      <webElementGuid>fbce7c90-56f1-48ed-91f5-fe2a623adc77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>TRANSACCION FINALIZADA</value>
+      <webElementGuid>397736e0-8c07-41e5-a30a-e0180ba3456e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[@class=&quot;field field_ACCOUNT field_ACCOUNT_FIN&quot;]/span[@class=&quot;comment comment_ACCOUNT comment_ACCOUNT_FIN&quot;]</value>
+      <webElementGuid>e796d8d6-028b-456c-9e1d-9c640e2560ac</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr/td/span</value>
+      <webElementGuid>cd2e2400-d138-49d6-a6a2-a1b38eb787f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::span[1]</value>
+      <webElementGuid>e1b120c2-66b4-4b84-8560-b5c7ebce0240</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CUENTA'])[1]/following::span[2]</value>
+      <webElementGuid>6e6fed6f-9940-4c12-8c5d-834c5c077bd9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/preceding::span[1]</value>
+      <webElementGuid>ec407d49-8ce0-489a-b42b-5b26ef2e4b7e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='APELLIDO NOMBRE'])[2]/preceding::span[1]</value>
+      <webElementGuid>03e4d83b-e6b9-4ed5-8177-bb816337b326</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='TRANSACCION FINALIZADA']/parent::*</value>
+      <webElementGuid>0c7d62de-1fcb-4082-887c-ffb0b60f9962</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td/table/tbody/tr/td/span</value>
+      <webElementGuid>9e53afea-5781-45b5-bf0a-42f57b8e57d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'TRANSACCION FINALIZADA' or . = 'TRANSACCION FINALIZADA')]</value>
+      <webElementGuid>96634043-ed6d-44be-bf3e-bb8b6f999a01</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

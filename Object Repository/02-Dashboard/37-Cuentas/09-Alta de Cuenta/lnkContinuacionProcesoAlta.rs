@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkContinuacionProcesoAlta</name>
+   <tag></tag>
+   <elementGuidId>dabf9290-a578-408e-a978-ad749c37d7aa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONT.PROCESS');javascript:processMenuHeaderText('Continuacion Proceso Alta')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>06b7eda3-ad9b-473a-98ec-6173004adc54</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.CONT.PROCESS')</value>
+      <webElementGuid>d27f3d49-68e3-4db6-b667-4cf6da1cf514</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONT.PROCESS');javascript:processMenuHeaderText('Continuacion Proceso Alta')</value>
+      <webElementGuid>c2185ffa-2f2a-476c-b52a-9ff49b59480c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>keyboardlinks-scanned</value>
+      <webElementGuid>5e8ca670-3b49-47aa-bd9f-5f1e3f61e5bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Continuacion Proceso Alta </value>
+      <webElementGuid>744ebed0-08a8-4b41-87e7-47dfcad9f8b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[@class=&quot;keyboardlinks-scanned&quot;]</value>
+      <webElementGuid>fce09d6f-623e-417d-b571-292d8fe6357d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>a56bcac5-f8c2-4e40-8793-bb8b14d2d0cf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONT.PROCESS');javascript:processMenuHeaderText('Continuacion Proceso Alta')&quot;]</value>
+      <webElementGuid>9742386c-afd8-422c-bfd3-d0284e0f8bdb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[4]/li/ul/li/ul/li[2]/a</value>
+      <webElementGuid>c5ad1db7-4d82-41be-b17f-d34f3bc1c698</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Continuacion Proceso Alta')]</value>
+      <webElementGuid>229ddd6d-610c-4ef8-99a0-02a945bd1266</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/following::a[1]</value>
+      <webElementGuid>8a47e3df-30f1-4ebd-bf42-f36323296489</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta'])[1]/following::a[2]</value>
+      <webElementGuid>cf8b8550-823e-4c3f-bb74-f10d87eff120</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas de Cuentas'])[1]/preceding::a[1]</value>
+      <webElementGuid>c47e0a18-18fc-46de-aa52-ef60fb9e26fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::a[1]</value>
+      <webElementGuid>d9809c3f-829c-4dc7-ae82-56c53b614516</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Continuacion Proceso Alta']/parent::*</value>
+      <webElementGuid>a387ddbb-fda4-405f-b5cb-71064552302b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.CONT.PROCESS')&quot;)]</value>
+      <webElementGuid>c26a211b-a448-4e6e-8d87-8006cf73e062</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[4]/li/ul/li/ul/li[2]/a</value>
+      <webElementGuid>628e3c27-0d66-4baa-9917-73fb264af5c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.CONT.PROCESS&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Continuacion Proceso Alta ' or . = 'Continuacion Proceso Alta ')]</value>
+      <webElementGuid>67396da7-872c-4740-a4f0-576e6d1e184f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

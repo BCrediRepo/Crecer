@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblPREnumAltaF3</name>
+   <tag></tag>
+   <elementGuidId>edeff780-4d76-4eb2-9c35-fa6415ede7df</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.iddisplay.iddisplay_BCCLACPREALTA.iddisplay_BCCLACPREALTA_BCCLPREALTAINI</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='toolBar']/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6328c78d-b733-43ca-af95-0d6921c6f515</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>iddisplay iddisplay_BCCLACPREALTA iddisplay_BCCLACPREALTA_BCCLPREALTAINI</value>
+      <webElementGuid>ecbd0814-41a8-494f-bed3-0b099d5633ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PRE2302400036</value>
+      <webElementGuid>c93848d2-f94e-467a-8ec3-c63487bd92dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;toolBar&quot;)/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/span[@class=&quot;iddisplay iddisplay_BCCLACPREALTA iddisplay_BCCLACPREALTA_BCCLPREALTAINI&quot;]</value>
+      <webElementGuid>c3dc0f02-69e5-491d-8f9f-876c82d75e47</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>0e6117a2-b17c-41d0-bcb1-6a12d7d845db</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='toolBar']/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/span</value>
+      <webElementGuid>3e3f6b16-bf75-48b9-9227-4f50521fd502</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pre Alta Cuentas'])[1]/following::span[1]</value>
+      <webElementGuid>afb7de12-503e-49a9-9b85-6076352a579a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/preceding::span[1]</value>
+      <webElementGuid>9486fc56-24fa-485e-955c-03e30e0fec6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Persona'])[1]/preceding::span[1]</value>
+      <webElementGuid>5d75b894-b137-4d01-aa19-50fd7c9d872d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='PRE2302400036']/parent::*</value>
+      <webElementGuid>b69bb477-105f-46e8-93b1-fac5f4f8036e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/span</value>
+      <webElementGuid>ccaa43d5-daf6-4a47-9a24-a8b81b160484</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'PRE2302400036' or . = 'PRE2302400036')]</value>
+      <webElementGuid>15f82fe5-bc09-4771-911e-29feea73f928</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

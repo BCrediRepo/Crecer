@@ -18,37 +18,35 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-//Configuracion de ambiente
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+def myTest1 = new TestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta')
+def myTest2 = new TestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta')
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
-WebUI.maximizeWindow()
+def data = TestDataFactory.findTestData('datos.csv')
+//el archivo podria estar en la carpeta Test Data 
+def totalRows = data.getRowNumbers()
 
-//Se accede al menu Plazo Fijo
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), "ENQ BCCL.MM.RENOVOMETRO.TOT.MON")
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,16))
+for (def row = 1; row <= totalRows; row++) {
+	def Parametro1 = data.getValue('DNI', row)
+	def Parametro2 = data.getValue('Fecha', row)
+	
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+	// Define tus variables de caso de prueba aquí (si es necesario)
+	myTest1.setVariable('DNI', Parametro1)
+	myTest1.setVariable('Fecha', Parametro2)
+	
+	// Ejecuta el caso de prueba
+//	CustomKeywords.'com.example.TestKeywords.AC01-Alta de Cuenta'(Parametro1, Parametro2)
+//	CustomKeywords.'com.example.TestKeywords.AC02-Autorizacion Alta Cuenta'()
+	myTest1.run()
+	myTest2.run()
+}
 
-//Se accede al menu Plazo Fijo
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), "ENQ BCCL.MM.RENOVOMETRO.TOT.MON")
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,16))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblConsultadePosicionEnLinea'))
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/txtMoneda'),"PESOS")
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblPESOS'))//assert lbl con moneda
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
