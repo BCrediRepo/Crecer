@@ -39,12 +39,16 @@ WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtConcepto'), '3')
 WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtIDOrdenante'), '1000873562')
 
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnDrillDownCuentaDebito'))
-
+WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtIDOrdenante'), '1111111111')
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lblCuentaARS'))
 
 WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblMonedaUSD'))
 
 WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtImporte'), '150')
+
+WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnDrillDownMotivo'))
+
+WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/00-DrillDownMotivo/lblVarios'))
 
 WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtCBUaAcreditar'), '0720120820000000332936')
 
@@ -58,15 +62,11 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/txtNombreBenef'))
 
 WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtNombreBenef'), 'EVASIO MARMETTO S A')
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
+WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblInvalidCUI'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lnkAceptarAlertaRecarga'))
+label = WebUI.getText(findTestObject('44-TOB/Movimiento de Fondos/lblInvalidCUI'))
 
-WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblErrorConcepto4'))
-
-motivont = WebUI.getText(findTestObject('44-TOB/Movimiento de Fondos/lblErrorConcepto4'))
-
-assert motivont.contains('CAMPO MOTIVO ES OBLIGATORIO') //Control Fin de script
+assert label == 'DATO INGRESADO INEXISTENTE'
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TOB09-Transferencia OnLine a otros bancos.ID Ordenante Inexistente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d653fa2b-6507-4f0b-94e8-a7756239925d</testCaseGuid>
+</TestCaseEntity>

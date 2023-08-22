@@ -60,4 +60,25 @@
       <testCaseId>Test Cases/43-TOB/TOB07-Transferencia OnLine a otros bancos. Cuenta Cerrada</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>7b5e9433-e8fb-4d9b-a70d-e3de9fbdf427</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/43-TOB/TOB08-Transferencia OnLine a otros bancos.CUIT Formato No Válido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>35bd9e4e-48bd-4fe9-8cc7-94d88e9ba9d3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/43-TOB/TOB09-Transferencia OnLine a otros bancos.ID Ordenante Inexistente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0ecf417e-3204-42fe-bff8-378c097e75e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/43-TOB/TOB10-Consulta de Transferencias a otros bancos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

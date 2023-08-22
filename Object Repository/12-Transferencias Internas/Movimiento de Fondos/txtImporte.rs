@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtNombreBenefRecarga</name>
+   <name>txtImporte</name>
    <tag></tag>
-   <elementGuidId>d9487c55-29b2-476a-87ba-64a9bdafcf2c</elementGuidId>
+   <elementGuidId>043291c0-56ef-4467-a6fd-955e6994478e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='fieldName:L.DENOM.BEN:1']</value>
+         <value>//input[@id='fieldName:DEBIT.AMOUNT']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>622c5184-b9a1-401c-81f6-e52c7244b9cd</webElementGuid>
+      <webElementGuid>f33be97f-ce01-4163-9cf7-5a96cfa7263e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,31 +30,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>5bf18875-0b0f-4049-91d0-ded19b6f82fe</webElementGuid>
+      <webElementGuid>051222ca-1bb5-4f27-b443-2d4d5c473838</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>40</value>
-      <webElementGuid>a8d39ba4-9993-46a3-921c-8072609c7a29</webElementGuid>
+      <value>18</value>
+      <webElementGuid>f1b45215-fc15-4d5b-97a2-8cd585baec6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:L.DENOM.BEN:1</value>
-      <webElementGuid>6e06e0a5-0373-4dbf-93d8-a34a261d9fab</webElementGuid>
+      <value>fieldName:DEBIT.AMOUNT</value>
+      <webElementGuid>0948b7f8-58b2-4a59-b516-178f7b03d722</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:L.DENOM.BEN:1</value>
-      <webElementGuid>71024f6d-e3e1-4299-8add-ffd62794e67d</webElementGuid>
+      <value>fieldName:DEBIT.AMOUNT</value>
+      <webElementGuid>ec8785fb-4279-4b9f-a1df-dae02a2d070a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,23 +62,23 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>561613d2-4d4a-48e9-be5c-b2abbfd7cf1e</webElementGuid>
+      <webElementGuid>5e36d50d-2336-457f-ba81-f07e2fde7041</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_BCCLTRANSOBANCOS</value>
-      <webElementGuid>445cef6c-6d04-41f7-9e46-1a50347f172b</webElementGuid>
+      <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_TRANSFERENCIAINTERNA</value>
+      <webElementGuid>3344cb9f-26b5-4ce3-86bf-dc779060ad68</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>40</value>
-      <webElementGuid>bf216d98-e57c-4686-a636-746175c6f5fe</webElementGuid>
+      <value>18</value>
+      <webElementGuid>8d003da5-651c-46bb-9fd2-c13a160d9ee4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,23 +86,23 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>1ce7e863-4bf8-47da-8b0e-15ced67628e0</webElementGuid>
+      <webElementGuid>52b2e090-0ba1-4c6a-8727-b5c0ecd80e91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>enrifieldname</name>
       <type>Main</type>
-      <value>enri_L.DENOM.BEN:1</value>
-      <webElementGuid>3fc9b49a-fbb0-4399-ad61-b8901815d227</webElementGuid>
+      <value>enri_DEBIT.AMOUNT</value>
+      <webElementGuid>f1d38347-6b2d-4d33-a205-249fb20773f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'L.DENOM.BEN','issueToken');</value>
-      <webElementGuid>72560668-f4bb-4811-aaf2-9a0ca7f030de</webElementGuid>
+      <value>invokeHelp(event,'DEBIT.AMOUNT','issueToken');</value>
+      <webElementGuid>5077c7d0-0486-4353-a6e1-6f0f9aecbeb8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,54 +110,54 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>56a2ce54-cae2-4938-95db-5c1806c6a9c4</webElementGuid>
+      <webElementGuid>056ca61c-fbd2-4da3-b2ea-00b66eac1915</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('L.DENOM.BEN','','','issueToken')</value>
-      <webElementGuid>829427bc-b99e-4b4c-8d0a-67420130c06f</webElementGuid>
+      <value>javascript:help('DEBIT.AMOUNT','','','issueToken')</value>
+      <webElementGuid>eccdfb67-0c0c-4693-be69-ba8378df2def</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:L.DENOM.BEN:1&quot;)</value>
-      <webElementGuid>9938fdac-e807-4524-bc46-973b6a021eb1</webElementGuid>
+      <value>id(&quot;fieldName:DEBIT.AMOUNT&quot;)</value>
+      <webElementGuid>5bb2c6f3-54dc-4391-aa64-fca32be42893</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:L.DENOM.BEN:1']</value>
-      <webElementGuid>205eed8d-5753-4d3d-9453-fd974aa8bd62</webElementGuid>
+      <value>//input[@id='fieldName:DEBIT.AMOUNT']</value>
+      <webElementGuid>e18d6032-f3d4-4b7e-9724-dbfeb06124ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[16]/td[3]/input</value>
-      <webElementGuid>b99f16a6-6daa-4a95-ae74-498540cb0036</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[14]/td[3]/input</value>
+      <webElementGuid>6709627d-b951-4e1b-825f-47545cec14cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[16]/td[3]/input</value>
-      <webElementGuid>184545d9-5054-4218-9d45-5ea873c89a02</webElementGuid>
+      <value>//tr[14]/td[3]/input</value>
+      <webElementGuid>70a1f97e-c0cb-4a44-a358-bb2c2a001cf7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:L.DENOM.BEN:1' and @name = 'fieldName:L.DENOM.BEN:1' and @type = 'text']</value>
-      <webElementGuid>1b34fc4b-f740-458b-add1-0ea3a336896c</webElementGuid>
+      <value>//input[@id = 'fieldName:DEBIT.AMOUNT' and @name = 'fieldName:DEBIT.AMOUNT' and @type = 'text']</value>
+      <webElementGuid>866538a5-52ad-413e-b236-3a7f14725b10</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

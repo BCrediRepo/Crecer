@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TOB10-Consulta de Transferencias a otros bancos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c38fbf4d-7302-4e8c-ac26-452a992230b1</testCaseGuid>
+</TestCaseEntity>
