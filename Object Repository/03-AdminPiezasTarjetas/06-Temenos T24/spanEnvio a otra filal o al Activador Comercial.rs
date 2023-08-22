@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanConsultaUltimasModificaciones</name>
+   <name>spanEnvio a otra filal o al Activador Comercial</name>
    <tag></tag>
-   <elementGuidId>6b9baa40-8d86-4887-8a88-0c31b51a8756</elementGuidId>
+   <elementGuidId>97ddb0b0-20ed-4795-b772-00f2f60e607e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[8]</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[26]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>582b11b5-9f0b-431b-a75b-1c5868f1c313</webElementGuid>
+      <webElementGuid>8ac36a18-5cea-4452-907f-16b450628053</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>0121dbc2-d866-4648-be2c-464a025efdbc</webElementGuid>
+      <webElementGuid>19fe5f37-0a3a-4294-a01b-1d195040564d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,94 +38,94 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>5dce0b0b-2b6b-4f80-9ca0-015db77c33c8</webElementGuid>
+      <webElementGuid>a1880c12-05ed-4545-a332-cc5e8920980d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consulta ultimas modificaciones</value>
-      <webElementGuid>45cc529a-846e-4ecf-820f-58dce29840a1</webElementGuid>
+      <value>Envio a otra filal o al Activador Comercial</value>
+      <webElementGuid>6f09dcbf-fc63-4503-ba44-779afa8aec57</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>e2fca3d0-058b-4ad8-9848-33c21c775c5c</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>8741dbac-b3fc-4358-b01c-21e70e49eaf4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[8]</value>
-      <webElementGuid>1dda985b-13b6-4d61-a1f9-502be1b4c27d</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[26]</value>
+      <webElementGuid>0b11371e-8061-4a4f-a1af-44c08c7bc45e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/ul/li[3]/ul/li[3]/span</value>
-      <webElementGuid>f1c3d872-451f-4b01-8496-eab86f8453dd</webElementGuid>
+      <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/span</value>
+      <webElementGuid>a8de86df-5b80-49d8-beea-69abb6b0e3c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Evolucion Tamaòo de la Empresa'])[1]/following::span[1]</value>
-      <webElementGuid>0de6d470-896b-4f6f-9391-86caa5cba68c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Carga Manual de Card-Carrier no encontrado'])[1]/following::span[1]</value>
+      <webElementGuid>c6983567-3b61-402a-bffa-8bfaf3774730</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Juridica'])[1]/following::span[1]</value>
-      <webElementGuid>e0377f9a-b7ad-4e4c-a8e2-8767aad3898e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda por Nombre o Documento'])[1]/following::span[1]</value>
+      <webElementGuid>980381c2-3f38-4b12-af0d-37fa923793bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Fisica'])[1]/preceding::span[1]</value>
-      <webElementGuid>9f4546bf-4362-443d-bc25-df882a03bc88</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Envio o Entrega a AC de Card-Carrier'])[1]/preceding::span[1]</value>
+      <webElementGuid>7769d8a1-3a3c-4563-8be4-222c03fadde5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Juridica'])[1]/preceding::span[1]</value>
-      <webElementGuid>d1b49e18-dfef-41e3-8e83-fdf7b14586ce</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entrega de TARJETAS al SOCIO'])[1]/preceding::span[1]</value>
+      <webElementGuid>6aa204dc-2a1f-4171-b719-4cfe0686ddb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consulta ultimas modificaciones']/parent::*</value>
-      <webElementGuid>23414a98-36b5-4c54-86ba-ea9284ac0a64</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Envio a otra filal o al Activador Comercial']/parent::*</value>
+      <webElementGuid>de593edb-ce67-436a-b90b-7fe3690f33da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[3]/ul/li[3]/span</value>
-      <webElementGuid>fff56300-3d66-406c-b4db-84c8c3ceec2b</webElementGuid>
+      <value>//ul[4]/li/ul/li[2]/span</value>
+      <webElementGuid>59e16782-ba78-4711-bac9-3f654fc1b1be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consulta ultimas modificaciones' or . = 'Consulta ultimas modificaciones')]</value>
-      <webElementGuid>3247c59a-7309-4127-a52f-4bf7d045e724</webElementGuid>
+      <value>//span[(text() = 'Envio a otra filal o al Activador Comercial' or . = 'Envio a otra filal o al Activador Comercial')]</value>
+      <webElementGuid>7f8625f7-b558-42cd-8de3-91cd5fb41d4f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

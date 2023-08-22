@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanConsultaUltimasModificaciones</name>
+   <name>lblNingun firmante coincide con el criterio ingresado</name>
    <tag></tag>
-   <elementGuidId>6b9baa40-8d86-4887-8a88-0c31b51a8756</elementGuidId>
+   <elementGuidId>77ca707f-b037-44f8-aad6-f065be8d7888</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value>tr > #message</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[8]</value>
+         <value>//td[@id='message']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,111 +21,119 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>582b11b5-9f0b-431b-a75b-1c5868f1c313</webElementGuid>
+      <value>td</value>
+      <webElementGuid>1c93df50-774f-4078-a61a-b89860883a61</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>0121dbc2-d866-4648-be2c-464a025efdbc</webElementGuid>
+      <value>message</value>
+      <webElementGuid>5824f8fc-fc1c-44bf-9cea-f756ca81ffab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>1ef67754-f686-44a9-8168-066502b2d7c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>5dce0b0b-2b6b-4f80-9ca0-015db77c33c8</webElementGuid>
+      <value>0</value>
+      <webElementGuid>d0ae9388-ed01-4caf-8b79-1e1feb14fc18</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consulta ultimas modificaciones</value>
-      <webElementGuid>45cc529a-846e-4ecf-820f-58dce29840a1</webElementGuid>
+      <value>Ningun firmante coincide con el criterio ingresado</value>
+      <webElementGuid>c80ed11c-dfbe-47bf-aaee-b988a0fc6d7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>e2fca3d0-058b-4ad8-9848-33c21c775c5c</webElementGuid>
+      <value>id(&quot;divMsg&quot;)/table[@id=&quot;message&quot;]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[@id=&quot;message&quot;]</value>
+      <webElementGuid>a0c1a6f1-a366-48ea-9a39-b2ece330f723</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[8]</value>
-      <webElementGuid>1dda985b-13b6-4d61-a1f9-502be1b4c27d</webElementGuid>
+      <value>//td[@id='message']</value>
+      <webElementGuid>3b2392c4-05be-4cfd-81af-35e8b3f69e78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[2]/li/ul/li[3]/ul/li[3]/span</value>
-      <webElementGuid>f1c3d872-451f-4b01-8496-eab86f8453dd</webElementGuid>
+      <value>//table[@id='message']/tbody/tr[2]/td/table/tbody/tr/td</value>
+      <webElementGuid>38e69e61-e592-4d79-8fdb-f4d39f71b6fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Evolucion Tamaòo de la Empresa'])[1]/following::span[1]</value>
-      <webElementGuid>0de6d470-896b-4f6f-9391-86caa5cba68c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensaje de Error'])[1]/following::td[2]</value>
+      <webElementGuid>8f78fbce-148a-4a29-a486-9df9d08ab9e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Juridica'])[1]/following::span[1]</value>
-      <webElementGuid>e0377f9a-b7ad-4e4c-a8e2-8767aad3898e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
+      <webElementGuid>9c1b8a5b-ad0d-4629-b728-d59b2bb8be72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Fisica'])[1]/preceding::span[1]</value>
-      <webElementGuid>9f4546bf-4362-443d-bc25-df882a03bc88</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[1]</value>
+      <webElementGuid>4044bccb-951e-4fac-a48f-0e00244f12d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Juridica'])[1]/preceding::span[1]</value>
-      <webElementGuid>d1b49e18-dfef-41e3-8e83-fdf7b14586ce</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/preceding::td[4]</value>
+      <webElementGuid>1d813b54-4f0d-4bac-a552-df8fedcf1a1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consulta ultimas modificaciones']/parent::*</value>
-      <webElementGuid>23414a98-36b5-4c54-86ba-ea9284ac0a64</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Ningun firmante coincide con el criterio ingresado']/parent::*</value>
+      <webElementGuid>0f165edd-f526-47cf-9f48-26c7cfdc3b86</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[3]/ul/li[3]/span</value>
-      <webElementGuid>fff56300-3d66-406c-b4db-84c8c3ceec2b</webElementGuid>
+      <value>//td/table/tbody/tr/td</value>
+      <webElementGuid>087ff9d6-bafa-4133-a6be-1ec2d3e4cad5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consulta ultimas modificaciones' or . = 'Consulta ultimas modificaciones')]</value>
-      <webElementGuid>3247c59a-7309-4127-a52f-4bf7d045e724</webElementGuid>
+      <value>//td[@id = 'message' and (text() = 'Ningun firmante coincide con el criterio ingresado' or . = 'Ningun firmante coincide con el criterio ingresado')]</value>
+      <webElementGuid>1be3ad77-6dc7-406b-8a67-4a740554fd4b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

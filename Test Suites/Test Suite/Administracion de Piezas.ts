@@ -46,4 +46,18 @@
       <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT05-Administrador de Piezas. Reversa de Estado de Card-Carrier</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>bf390008-cd3c-444b-8ac2-4d1293c83a40</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT06-Administracion de Piezas con Tarjetas. Envio a otra filal o al Activador Comercial. Envio o Entrega a AC de Card Carrier</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4afe6209-7b1d-4356-ae6c-576b1e9b3bd9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT07-Administracion de Piezas con Tarjetas. Consultas al Maestro de Card Carrier. Seleccion por Nombre. Documento. Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -35,40 +35,49 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsult
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en Consulta de cuentas por cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
+//Click en Consulta de Cuentas por firmantes
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsulta de Cuentas por Firmante'))
 
-//Swicht a la ventana
-WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
+//Switch a la ventana Consulta de Cuentas por Firmante
+WebUI.switchToWindowTitle('Consulta de Cuentas por Firmante')
 
-//Maximizamos
+//maximizamos
 WebUI.maximizeWindow()
 
-//Click en nueva seleccion
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lnkNueva Seleccion'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-//Seteamos el numero de cuenta a consultar
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/txtNroCuenta'), '00430014075')
+//Volvemos a la ventana anterior
+WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
+
+//Click en Consulta de Cuentas por firmantes
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsulta de Cuentas por Firmante'))
+
+//Volvemos a la ventana Consulta de Cuentas por Firmante
+WebUI.switchToWindowTitle('Consulta de Cuentas por Firmante')
+
+//maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos los datos para la consulta
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/03-Consulta de Cuentas por Firmante/IDPersona'), '6434357658')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnEjecutar'))
-
-//Maximizamos
-WebUI.maximizeWindow()
-
+WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/03-Consulta de Cuentas por Firmante/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/08-BCCL.E.AC.FIRM/lblNingun firmante coincide con el criterio ingresado'), 6)
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/08-BCCL.E.AC.FIRM/lblNingun firmante coincide con el criterio ingresado'))
 
-assert element.contains('Nro Cuenta')
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/08-BCCL.E.AC.FIRM/lblNingun firmante coincide con el criterio ingresado'))
 
+assert element.contains('Ningun firmante coincide con el criterio ingresado')
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblVISA</name>
+   <tag></tag>
+   <elementGuidId>d024c11f-2692-431f-8670-422e4dddd5ce</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r7']/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>27864e0e-bd99-4eaf-8c30-451f8abc6693</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>BOLD-RED BOLD-RED_BCCLEAPENQNOMBREDOC</value>
+      <webElementGuid>480e76ba-3713-415a-a870-9aef5d2fbcbb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>VISA</value>
+      <webElementGuid>e93051ae-43df-4d8c-b146-61e2eda4978d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r7&quot;)/td[@class=&quot;BOLD-RED BOLD-RED_BCCLEAPENQNOMBREDOC&quot;]</value>
+      <webElementGuid>73907d59-fe58-4488-b3b7-99690f6074d4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r7']/td[2]</value>
+      <webElementGuid>bcadfe18-6f33-49bf-8aff-f1b5b13f5c91</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='E'])[2]/following::td[7]</value>
+      <webElementGuid>5a90051c-99c9-4b6d-8bc5-b77306847aed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='A'])[3]/following::td[12]</value>
+      <webElementGuid>1543d07f-58ae-4256-bc0a-df8e9aca7e18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CREDITO INDIVIDUOS'])[1]/preceding::td[1]</value>
+      <webElementGuid>90825f1f-97c3-450d-80d2-ed0386e7e00f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RODRIGUEZ ROCIO'])[5]/preceding::td[2]</value>
+      <webElementGuid>3fa2a397-7b8b-4a2b-adda-8b396ad3c9da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[7]/td[2]</value>
+      <webElementGuid>8b1ca175-4f49-4449-ba79-2f99eff73b72</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'VISA' or . = 'VISA')]</value>
+      <webElementGuid>88cf4544-2b7f-44f9-a9c2-21e9f76c456c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

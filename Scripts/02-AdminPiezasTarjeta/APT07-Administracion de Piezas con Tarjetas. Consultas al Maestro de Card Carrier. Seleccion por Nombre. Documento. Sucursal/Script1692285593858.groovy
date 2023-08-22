@@ -26,53 +26,76 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en el menu Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
-
-//Click en Consulta de Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
+//Se accede al menu ?302
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en Consulta de cuentas por cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Swicht a la ventana
-WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
+//Switch a la ventana Temenos T24
+WebUI.switchToWindowTitle('Temenos T24')
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Click en nueva seleccion
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lnkNueva Seleccion'))
+//Click en admin de piezas con tarjetas
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/spanAdministracion de Piezas con Tarjetas'))
 
-//Seteamos el numero de cuenta a consultar
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/txtNroCuenta'), '00430014075')
+//Click en Consultas al maestro Card-Carrier
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/spanConsultas al Maestro de Card-Carrier'))
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Click en Seleccion por nombre/doc/suc
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/lnkSeleccion por Nombre Documento Sucursal'))
+
+//Switch a la ventana BCCL.E.AP.ENQ.NOMBRE.DOC
+WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Switch a la ventana Temenos T24
+WebUI.switchToWindowTitle('Temenos T24')
+
+//Click en Seleccion por nombre/doc/suc
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/lnkSeleccion por Nombre Documento Sucursal'))
+
+//Switch a la ventana BCCL.E.AP.ENQ.NOMBRE.DOC
+WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos los datos para la consulta
+WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtApellido'), 'RODRIGUEZ ROCIO')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnEjecutar'))
-
-//Maximizamos
-WebUI.maximizeWindow()
-
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblVISA'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblVISA'))
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblVISA'))
 
-assert element.contains('Nro Cuenta')
-
+assert element.contains('VISA')
 
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
