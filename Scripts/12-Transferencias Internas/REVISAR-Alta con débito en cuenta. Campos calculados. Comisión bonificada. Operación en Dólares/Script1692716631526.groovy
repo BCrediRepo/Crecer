@@ -18,7 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
-
+//NO ENCUENTRA EL OBJETO DEL TIPO DE MONEDA Y ROMPE EL SCRIPT
+// (Recarga la aplicacion y no reconoce ningun objeto)
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,45 +27,44 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 22), findTestData('MainData/Users').getValue(
         2, 22))
 
-//Apertura app
-WebUI.click(findTestObject('02-Dashboard/43-TOB/lnkTransferenciasACuentasdeOtrosBancosSNP'))
+WebUI.click(findTestObject('02-Dashboard/lnkTransferenciasInternas'))
 
-WebUI.click(findTestObject('02-Dashboard/43-TOB/Transferencias a Cuentas de Otros Bancos SNP/lnkTransferenciasOtrosBancosDiferida'))
+WebUI.click(findTestObject('02-Dashboard/11-Transferencias Internas/lnkAltaTransfInternaOrigenCuenta'))
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-//Seteo de datos
-WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtConcepto'), '3')
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnValidarRegistro'))
 
-WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtIDOrdenante'), '1000873562')
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtSucursalDestino'), '089')
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnDrillDownCuentaDebito'))
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDOrdenante'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lblCuentaARS'))
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDOrdenante'), '1000873562')
 
-WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblMonedaUSD'))
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnValidarRegistro'))
 
-WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtImporte'), '150')
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnDrillDownMotivo'))
+//WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnDrillDownMoneda'))
+//
+//WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblUSD'))
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnDrillDownCtaDebito'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/00-DrillDownMotivo/lblVarios'))
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblCtaDebito'))
 
-WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtCBUaAcreditar'), '0720120820000000332936')
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnDrillDownMotivo'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnDrillDownCUI'))
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblVarios'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lblCUIT'))
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDBeneficiario'), '1004568475')
 
-WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtNroCUIBenef'), '30537620893')
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/txtNombreBenef'))
-
-WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtNombreBenef'), 'EVASIO MARMETTO S A')
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '15')
 
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lnkAceptarAlertaRecarga'))
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
 
 //Captura de Pantalla PDF
 WebUI.switchToWindowTitle('e-forms')
@@ -97,11 +97,12 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Verificacion de txn finalizada
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
 
-Completada = WebUI.getText(findTestObject('44-TOB/Movimiento de Fondos/lblTxnCompleta'))
+Completada = WebUI.getText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
 
-assert Completada.contains('Txn Completa:') //Control Fin de script
+assert Completada.contains('Txn Completa:' //Control Fin de script
+    )
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

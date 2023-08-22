@@ -60,9 +60,9 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/txtNombreBenef'))
 
 WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtNombreBenef'), 'EVASIO MARMETTO S A')
 
-WebUI.click(findTestObject('44-TOB/Page_Movimiento de Fondos/btnAceptarRegistroRecarga'))
+WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
 
-//WebUI.click(findTestObject('44-TOB/Page_Movimiento de Fondos/lnkAceptarAlertaRecarga'))
+//WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lnkAceptarAlertaRecarga'))
 
 WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblCuentaDebitoE'))
 
