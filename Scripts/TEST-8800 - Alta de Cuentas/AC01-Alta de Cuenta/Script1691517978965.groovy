@@ -26,7 +26,7 @@ import com.kms.katalon.core.testdata.TestDataFactory
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,26), findTestData('MainData/Users').getValue(2,26))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,30), findTestData('MainData/Users').getValue(2,30))
 WebUI.maximizeWindow()
 
 //Ingresamos por el menu al Alta de Cuentas
