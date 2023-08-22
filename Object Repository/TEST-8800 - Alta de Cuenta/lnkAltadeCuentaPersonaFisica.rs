@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkAltadeCuentaPersonaFisica</name>
+   <tag></tag>
+   <elementGuidId>98be97e3-30cc-4ea6-b830-33b3f07005e0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.keyboardlinks-scanned</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PREALTA.FISI');javascript:processMenuHeaderText('Alta de Cuenta Persona Fisica')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>d29bd221-d452-455a-b1b6-47bf4caed03d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.PREALTA.FISI')</value>
+      <webElementGuid>b616c420-6969-4888-abec-e458f295190f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.PREALTA.FISI');javascript:processMenuHeaderText('Alta de Cuenta Persona Fisica')</value>
+      <webElementGuid>8189bbda-9ef2-4164-adb7-a3f16e7bf69b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>keyboardlinks-scanned</value>
+      <webElementGuid>14b76fff-22ea-4471-9c4d-d4130604f254</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Alta de Cuenta Persona Fisica </value>
+      <webElementGuid>0fd95962-03c5-4113-9a5e-1b3b63cc3f29</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[1]/li[1]/a[@class=&quot;keyboardlinks-scanned&quot;]</value>
+      <webElementGuid>9060ddc5-c0c2-4e53-ac78-a07ca0111364</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica</value>
+      <webElementGuid>8173484d-0ca1-4fdf-9e16-ebff785ba8a8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PREALTA.FISI');javascript:processMenuHeaderText('Alta de Cuenta Persona Fisica')&quot;]</value>
+      <webElementGuid>02ecce25-c7c8-4f69-b6ad-6fa3f9b51c42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul/li/a</value>
+      <webElementGuid>4c457746-c648-472c-a755-da28c7c8753c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Alta de Cuenta Persona Fisica')]</value>
+      <webElementGuid>20b3b879-4077-4ff7-be94-960dfb510018</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('id(', '&quot;', 'pane_', '&quot;', ')/ul[1]/li[1]/a[@class=', '&quot;', 'keyboardlinks-scanned', '&quot;', ']')])[1]/preceding::a[1]</value>
+      <webElementGuid>bcd16bfd-d414-432d-b347-a331d623ab5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Alta de Cuenta Persona Fisica']/parent::*</value>
+      <webElementGuid>711af562-d398-479b-ac72-fcb2a322b52c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.PREALTA.FISI')&quot;)]</value>
+      <webElementGuid>312fdf8e-e8ac-4543-a3ff-6fd26826247b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>75ea5f01-a65b-4e2c-a114-5b20fd7f7cd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.PREALTA.FISI&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Alta de Cuenta Persona Fisica ' or . = 'Alta de Cuenta Persona Fisica ')]</value>
+      <webElementGuid>445776e3-9916-484f-bdc3-864fe52bd801</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

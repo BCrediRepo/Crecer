@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkAceptarAlertasF3</name>
+   <tag></tag>
+   <elementGuidId>8898b0c3-5b74-4755-bcd8-f5423b9ec7ae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.textbtn > a.keyboardlinks-scanned</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='error_box']/table/tbody/tr[3]/td/table/tbody/tr/td/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>fdb3c686-dd0e-46b3-b563-ef71caff1c70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:commitOverrides()</value>
+      <webElementGuid>6249575f-95fc-41ff-9809-1f253964e902</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>keyboardlinks-scanned</value>
+      <webElementGuid>94ef3288-f8a4-4f1d-b296-d0364cb9a4e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Aceptar Alertas</value>
+      <webElementGuid>28635315-2461-4395-8fd1-3b1c2bb55cf5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;error_box&quot;)/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;textbtn&quot;]/a[@class=&quot;keyboardlinks-scanned&quot;]</value>
+      <webElementGuid>18b2c994-8288-4d0f-9ee6-0baf1e4ffb1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>76acbc5c-d640-4da9-b0cf-e7f95a2c945f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='error_box']/table/tbody/tr[3]/td/table/tbody/tr/td/a</value>
+      <webElementGuid>f1ee2901-fa86-4ef5-9138-771936a1dc6d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Aceptar Alertas')]</value>
+      <webElementGuid>03eeb9b6-70d8-4164-a02d-ec2c3e630c93</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::a[1]</value>
+      <webElementGuid>46aca54c-5852-40aa-8760-885d8c9c7ffe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='APERTURA DE CUENTAS'])[1]/following::a[1]</value>
+      <webElementGuid>bf9eb844-3c91-45fb-85ba-314e1d954434</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Persona no existe en Padron Antecedentes Externos - 1002783169'])[1]/preceding::a[1]</value>
+      <webElementGuid>589fe2c5-d25a-43e6-8dab-9674055715c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Datos Generales'])[1]/preceding::a[1]</value>
+      <webElementGuid>574b0662-fddd-49a3-a0bb-7432b9798257</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Aceptar Alertas']/parent::*</value>
+      <webElementGuid>278fe13f-ebb0-478f-9d40-8d023d82657b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'javascript:commitOverrides()')]</value>
+      <webElementGuid>7f237086-7309-4641-b283-ecfda7a798ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td/table/tbody/tr/td/a</value>
+      <webElementGuid>3873eb93-483b-45e5-94a8-136b84c614c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'javascript:commitOverrides()' and (text() = 'Aceptar Alertas' or . = 'Aceptar Alertas')]</value>
+      <webElementGuid>2886d23e-9483-4927-8025-d8859cf866c9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

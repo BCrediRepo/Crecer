@@ -1,110 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblPESOS</name>
+   <name>tabFirmantesF3S3</name>
    <tag></tag>
-   <elementGuidId>ed95c226-ec2c-4a92-bbe5-d333bb618ffc</elementGuidId>
+   <elementGuidId>30f50d3d-9385-4274-a9db-637276829d2a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[4]/td[2]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'PESOS' or . = 'PESOS')]</value>
+         <value>//table[@id='headtab']/tbody/tr/td[5]/a/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>07bd25f9-77e6-45c5-8fc7-73872ba71450</webElementGuid>
+      <value>span</value>
+      <webElementGuid>41decd82-1092-4cc2-a5d4-2f01f1966434</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PESOS</value>
-      <webElementGuid>b14c0fa2-34a9-48d7-8cd7-dc4eca321b0b</webElementGuid>
+      <value>Firmantes</value>
+      <webElementGuid>9d0f4df8-51fb-4765-9b2e-012ea21028dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[4]/td[2]</value>
-      <webElementGuid>d7eb7052-da07-499b-9b81-89597b1fb83d</webElementGuid>
+      <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[5]/a[@class=&quot;nonactive-tab keyboardlinks-scanned&quot;]/span[1]</value>
+      <webElementGuid>8deee0f1-d749-48c4-9ddd-f8ff7bfe3f55</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>4bb4d3d7-1f8b-41ff-b6d4-4237794dc809</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr[4]/td[2]</value>
-      <webElementGuid>49ab673e-df62-41d0-8d25-fd2a6c975299</webElementGuid>
+      <value>//table[@id='headtab']/tbody/tr/td[5]/a/span</value>
+      <webElementGuid>769ce6a8-f904-4e82-b9ac-8fc93173b081</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='MONEDA:'])[1]/following::td[1]</value>
-      <webElementGuid>7583eb64-8366-456c-bfca-9e9d2b801a62</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pago de Haberes'])[1]/following::span[1]</value>
+      <webElementGuid>fe0b061a-bfc7-4889-b5ad-8c379cf4de8e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EN LINEA'])[1]/following::td[2]</value>
-      <webElementGuid>95778387-4d85-4e99-a2ad-4d6a17be7fbf</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Datos Comerciales'])[1]/following::span[2]</value>
+      <webElementGuid>a67ea379-9aa2-488c-8a9f-64d8801c8ead</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='SUCURSAL:'])[1]/preceding::td[1]</value>
-      <webElementGuid>fc6484e9-fccb-4741-bd13-9b6009ece048</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auditoria'])[1]/preceding::span[1]</value>
+      <webElementGuid>bbf3d6c2-b98b-4151-bdcf-da42b48b550d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='FECHA:'])[1]/preceding::td[3]</value>
-      <webElementGuid>176df8e1-8f01-4bda-a4e4-d525dd639634</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto/Subproducto'])[1]/preceding::span[2]</value>
+      <webElementGuid>b3d80177-7b69-41b0-b3b8-ed318ca5328a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PESOS']/parent::*</value>
-      <webElementGuid>787a02ba-42f9-44d9-b97e-0285220bfe10</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Firmantes']/parent::*</value>
+      <webElementGuid>2b01fba4-92b4-4497-8a9c-45657b59c770</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[4]/td[2]</value>
-      <webElementGuid>14eb93e7-f1ff-4a06-9a4f-e39fa443c440</webElementGuid>
+      <value>//td[5]/a/span</value>
+      <webElementGuid>a6218a73-2ec0-4d6e-94de-1257e5de85db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'PESOS' or . = 'PESOS')]</value>
-      <webElementGuid>a1c364d3-fe49-4619-b10f-0e91a0703b70</webElementGuid>
+      <value>//span[(text() = 'Firmantes' or . = 'Firmantes')]</value>
+      <webElementGuid>12a8f189-b909-4e29-8710-ab849359f73d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkAutorizaciondeContratos</name>
+   <tag></tag>
+   <elementGuidId>7d5ebb0c-8216-49df-8a4a-554a1ea16f9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','QUERY BCCL.E.PRE.ALTA');javascript:processMenuHeaderText('Autorizacion de Contratos')&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.keyboardlinks-scanned</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>6f136aac-9d9b-45a5-b15d-bbc2bfa135af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('QUERY BCCL.E.PRE.ALTA')</value>
+      <webElementGuid>52e64f50-3731-49fb-9615-2a464cebb479</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','QUERY BCCL.E.PRE.ALTA');javascript:processMenuHeaderText('Autorizacion de Contratos')</value>
+      <webElementGuid>adbe18dd-a7ee-4149-9eaf-b41e62ff0fe6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>keyboardlinks-scanned</value>
+      <webElementGuid>d61ca6ad-c11e-4ed7-929c-3eb3b28ad22b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Autorizacion de Contratos </value>
+      <webElementGuid>8be4947d-671a-45b0-9dc9-99ea6cb4903a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[1]/li[1]/a[@class=&quot;keyboardlinks-scanned&quot;]</value>
+      <webElementGuid>91bc5ea0-d449-469d-aa30-0b3c1dc077b2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica</value>
+      <webElementGuid>d4357fc6-8dd1-4ea9-abc2-16859da4d8e9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','QUERY BCCL.E.PRE.ALTA');javascript:processMenuHeaderText('Autorizacion de Contratos')&quot;]</value>
+      <webElementGuid>07892e5c-70b0-4752-9667-94b783d3acea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul/li/a</value>
+      <webElementGuid>4af03de1-9ce6-4a60-9e1e-c3c34af2545d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Autorizacion de Contratos')]</value>
+      <webElementGuid>80ace2c8-0fd7-46ca-b097-f9edaee9f2c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('id(', '&quot;', 'pane_', '&quot;', ')/ul[1]/li[1]/a[@class=', '&quot;', 'keyboardlinks-scanned', '&quot;', ']')])[1]/preceding::a[1]</value>
+      <webElementGuid>2841bea1-7b80-48c7-9b46-a28b25d1231f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Autorizacion de Contratos']/parent::*</value>
+      <webElementGuid>4f6d675a-525e-4fdf-ad23-f53519dd6a66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('QUERY BCCL.E.PRE.ALTA')&quot;)]</value>
+      <webElementGuid>12b8c855-5f73-41a1-8d3b-286c0b0f2546</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>16354991-3a0b-41f0-9a2b-fb8c62dc654c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;QUERY BCCL.E.PRE.ALTA&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Autorizacion de Contratos ' or . = 'Autorizacion de Contratos ')]</value>
+      <webElementGuid>6b2fe21b-264a-4725-beb6-d19030a606aa</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
