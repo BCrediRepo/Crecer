@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -66,11 +68,22 @@ WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametro
 //Clickea en el boton "Nueva Seleccion" para borrar los datos de la busqueda anterior.
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkNuevaSeleccion'))
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Clickea en el boton "Ejecutar"
-WebUI.click(findTestObject('15-MONEX/01-BCCL.E.NOFILE.DET.OPER.MONEX/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Espera a que aparezca el link "Consultar"
 WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkConsultar'), 3)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //Clickea en "Consultar"
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkConsultar'))

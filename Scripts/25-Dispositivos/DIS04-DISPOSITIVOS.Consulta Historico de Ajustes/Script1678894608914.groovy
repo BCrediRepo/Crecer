@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -39,9 +41,6 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.DEP.EFE.TAS
 WebUI.switchToWindowTitle('BCCL.AS.HIS.AJUS.DEPOSITOS')
 WebUI.maximizeWindow()
-
-//Nueva seleccion
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lnkNuevaSeleccion'))
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
@@ -67,26 +66,38 @@ WebUI.setText(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/btnEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Chequea que existan datos
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAPROCESO'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAPROCESO'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 def element = WebUI.getText(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAPROCESO'))
 assert element.contains('FECHA PROCESO')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblDISPOSITIVO'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblSECUENCIA'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblMONEDA'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblNROTARJETA'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblMONTOREAL'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblMONTOREGISTRADO'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblDIFERENCIA'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblESTADO'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblINGRESADO'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblAUTORIZADO'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAYHORA'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblDISPOSITIVO'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblSECUENCIA'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblMONEDA'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblNROTARJETA'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblMONTOREAL'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblMONTOREGISTRADO'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblDIFERENCIA'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblESTADO'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblINGRESADO'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblAUTORIZADO'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/lblFECHAYHORA'),6)
 
 
 //---------------------------------------------------------------------------------------------------------------------

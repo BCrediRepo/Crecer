@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -39,9 +41,9 @@ WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 
 //Se aplica la limpieza de busqueda en vez de utilizar la keyword de limpieza
 
-WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkNuevaSeleccion'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.switchToWindowTitle('BCCL.E.CHQ.CANCELA')
 
@@ -53,9 +55,21 @@ WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Int
 
 WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtMonedaValue211'), 'ARS')
 
-WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementClickable(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
@@ -64,7 +78,6 @@ WebUI.delay(30)
 WebUI.switchToWindowTitle('Account Statement')
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/Account Statement/btnLargavistas'))
-
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 

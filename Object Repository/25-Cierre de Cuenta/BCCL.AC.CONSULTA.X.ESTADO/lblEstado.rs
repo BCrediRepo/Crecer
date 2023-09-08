@@ -6,12 +6,16 @@
    <elementGuidId>78f400bb-117b-4773-8293-6f210ea8f489</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td[6]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'ACT' or . = 'ACT')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>b740f72c-4fc1-40f0-822d-c93cd71bc7bf</webElementGuid>
+      <webElementGuid>d17aacbc-cd27-4315-b51a-4e17340420d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>ACT</value>
-      <webElementGuid>d323a5f5-e4d8-40a7-a77c-fa037d699695</webElementGuid>
+      <webElementGuid>2b46e892-2326-4a09-99ab-e008d8bd73a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[6]</value>
-      <webElementGuid>b8d6dcd5-1fdb-43da-bdd1-460f6e9e18ca</webElementGuid>
+      <webElementGuid>a424ac80-10f4-49f0-a09e-8571cb186547</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[6]</value>
-      <webElementGuid>81478a47-367e-42c1-969c-31c548222c1d</webElementGuid>
+      <webElementGuid>0e9b0514-70f5-4cf5-8f47-5a1eca140284</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='INPLACA SA'])[1]/following::td[1]</value>
-      <webElementGuid>fa633121-3bca-418c-90aa-7f1faa8e27ef</webElementGuid>
+      <webElementGuid>0551c851-2367-4a4f-b6fd-528f8c9b8489</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Corriente Comercial'])[1]/following::td[3]</value>
-      <webElementGuid>f6004dc0-cea4-430e-9e38-afc611e5f5bb</webElementGuid>
+      <webElementGuid>42913872-b5bc-467a-9e47-72ced77aff63</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[2]</value>
-      <webElementGuid>4cbe10cd-bac1-4916-9391-9bb8e04168d0</webElementGuid>
+      <webElementGuid>1aad247a-5f71-4e1f-bd93-06e05b5097f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.AC.CONSULTA.X.ESTADO'])[2]/preceding::td[5]</value>
-      <webElementGuid>0b7bfd83-ffce-4c41-87c9-f82068a1a7e4</webElementGuid>
+      <webElementGuid>f79c89b7-45d9-4c2b-8bdf-8ae37766e9a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='ACT']/parent::*</value>
-      <webElementGuid>3f480628-b58d-4a1f-8fff-766306f2f136</webElementGuid>
+      <webElementGuid>e4489d96-3448-44f1-891b-82a9384b7336</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[6]</value>
-      <webElementGuid>4a80027d-0634-4717-983c-378e4e8d2d21</webElementGuid>
+      <webElementGuid>953ea338-911e-4490-8e5b-76d635146da8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'ACT' or . = 'ACT')]</value>
-      <webElementGuid>ae43643a-8918-43ff-befb-efc10daf94f9</webElementGuid>
+      <webElementGuid>0e33312b-7910-479e-938c-a52ee517ec34</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

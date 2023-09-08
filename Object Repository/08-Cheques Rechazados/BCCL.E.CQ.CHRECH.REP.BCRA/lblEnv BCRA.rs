@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>55411373-fca5-4289-bd31-15dc5b598117</webElementGuid>
+      <webElementGuid>8d2ce4c4-9326-48f4-b9a4-3e4018b0bdf0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>b101ed80-6c87-496c-b3cd-329cd7a1b815</webElementGuid>
+      <webElementGuid>e8f14c13-5307-481e-ab0a-dd353c272981</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>41dce39c-6787-4db6-8dc3-8e290c7145a5</webElementGuid>
+      <webElementGuid>f1a1b329-2bfe-4289-b232-d19c4688ab21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText2</value>
-      <webElementGuid>da167c85-205c-42a2-ba3c-4abae77565b5</webElementGuid>
+      <webElementGuid>41ff2bda-07a5-4116-9a6d-b00a6890124a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Env BCRA</value>
-      <webElementGuid>a284172a-e227-4326-bc56-095afc06567f</webElementGuid>
+      <webElementGuid>085cf544-b78e-40b6-b353-41a1b03ed088</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText2&quot;)</value>
-      <webElementGuid>b6fa377f-8d25-41c0-b14b-7a3d6a029c87</webElementGuid>
+      <webElementGuid>41c7fc88-6141-4af6-9d78-240d53358dbf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText2']</value>
-      <webElementGuid>0b3a27a0-51fa-439c-8179-2c492779620b</webElementGuid>
+      <webElementGuid>8af13ef1-2a7c-46d9-9f51-948a7862e5ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader2']/table/tbody/tr/th</value>
-      <webElementGuid>f94fcbc5-90cd-40b1-abe1-495d163ec2f6</webElementGuid>
+      <webElementGuid>2adbf23c-3d25-4c11-81f1-58434f715c96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fech Rep'])[1]/following::th[3]</value>
-      <webElementGuid>61adcff3-7eb4-4a41-b01f-af02843b3a70</webElementGuid>
+      <webElementGuid>6f48b9fb-0e42-4d30-b940-9fc553e555d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[6]</value>
-      <webElementGuid>e38da465-b527-4fef-8a9c-7834682b1454</webElementGuid>
+      <webElementGuid>453d10c6-6538-4696-bb2c-06af492bddf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Suc'])[1]/preceding::th[2]</value>
-      <webElementGuid>e9f6426b-14d1-4251-9a5e-37b6df15bce4</webElementGuid>
+      <webElementGuid>c3c430d8-7858-43fc-9190-28cad19a7de5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta'])[1]/preceding::th[5]</value>
-      <webElementGuid>34367b55-eebe-4142-8631-ddb1cba76f37</webElementGuid>
+      <webElementGuid>f4aac5dd-8e60-45a3-a736-38c06c85b811</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Env BCRA']/parent::*</value>
-      <webElementGuid>c5572e74-bb56-4479-a570-2236d4c08dc4</webElementGuid>
+      <webElementGuid>0cb12ce0-8f30-4512-b465-abde2dc8504f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[2]/table/tbody/tr/th</value>
-      <webElementGuid>405034c2-d7ba-45f3-a740-58d0891d6d02</webElementGuid>
+      <webElementGuid>2ef05a1e-3168-4eae-8af8-81550ceee05a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText2' and (text() = 'Env BCRA' or . = 'Env BCRA')]</value>
-      <webElementGuid>7822df74-c17b-495e-9a75-82c225611af6</webElementGuid>
+      <webElementGuid>4249f42d-3926-4b68-b55b-ebb77a1e26c0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

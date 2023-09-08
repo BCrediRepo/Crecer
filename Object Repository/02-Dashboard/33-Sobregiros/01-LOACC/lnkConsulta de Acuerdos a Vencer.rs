@@ -7,14 +7,17 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de Acuerdos a Vencer ' or . = 'Consulta de Acuerdos a Vencer ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.ACU.PROX.A.VEC');processMenuHeaderText('Consulta de Acuerdos a Vencer')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>def9f53b-d2e0-4c17-86ee-95b1d7658923</webElementGuid>
+      <webElementGuid>87754b82-50bf-4ea7-81fd-c38b5a26f1ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.ACU.PROX.A.VEC');processMenuHeaderText('Consulta de Acuerdos a Vencer')</value>
-      <webElementGuid>aaf335fa-e093-48d8-a830-dc7dc81b8143</webElementGuid>
+      <webElementGuid>09673dda-56a2-4bb0-8007-e62f7a3277a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.ACU.PROX.A.VEC');</value>
-      <webElementGuid>67f7e871-b9ea-430d-bd89-0244a2933505</webElementGuid>
+      <webElementGuid>3733985d-8cb6-4ca1-9f0c-30524fd8b0e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Acuerdos a Vencer </value>
-      <webElementGuid>a300ffce-5d48-409c-8f7a-4cb4ae789bd8</webElementGuid>
+      <webElementGuid>b6d15d3d-8c64-479a-ba16-28eda42660e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[6]/a[1]</value>
-      <webElementGuid>90924c14-e962-46b7-bc96-36a779252614</webElementGuid>
+      <webElementGuid>3ba9eb42-91ed-4d6e-8ff1-2e30f36eee02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>500cb0a1-d430-4673-869d-40b3d7f69f4e</webElementGuid>
+      <webElementGuid>c960fa9c-f7eb-41ce-867c-05acc32c608e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.ACU.PROX.A.VEC');processMenuHeaderText('Consulta de Acuerdos a Vencer')&quot;]</value>
-      <webElementGuid>9acfab37-dbf4-45e3-812d-8d0677c3b3a5</webElementGuid>
+      <webElementGuid>b1ced70c-4189-478c-840c-9eb19e5f0abf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[5]/li/ul/li[2]/ul/li[6]/a</value>
-      <webElementGuid>69a27fef-2f3f-4723-ab2d-6d086398d1c3</webElementGuid>
+      <webElementGuid>6957c0db-2ca5-4ac7-b12a-ded20dca4f6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Acuerdos a Vencer')]</value>
-      <webElementGuid>b7bdc170-34c0-4d22-9611-5d56620d3246</webElementGuid>
+      <webElementGuid>d30af909-9317-441b-9f61-3a0b0b3336a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Acuerdos por Fecha'])[1]/following::a[1]</value>
-      <webElementGuid>71f8f87d-b207-407e-bca4-9ba4722de353</webElementGuid>
+      <webElementGuid>3f7f07fd-2a8a-4bef-be50-b92db216f17d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Acuerdos Vencidos'])[1]/following::a[2]</value>
-      <webElementGuid>c55633ef-fdc8-43d3-9558-b92f4cb54953</webElementGuid>
+      <webElementGuid>cadae3e9-59ba-4478-b8fb-ce6c8395cbc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Parametria de Sobregiros'])[1]/preceding::a[1]</value>
-      <webElementGuid>a71e305a-b609-40f0-a906-dbf4688d290d</webElementGuid>
+      <webElementGuid>497cd3be-aaa0-4a63-bbf1-b0bd1b13003b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Cuentas con Exceso'])[1]/preceding::a[2]</value>
-      <webElementGuid>38987c6b-66db-416a-a7f6-ffa9a2c4d587</webElementGuid>
+      <webElementGuid>44d0bfe0-c902-40b0-adfe-182c8d260e4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Acuerdos a Vencer']/parent::*</value>
-      <webElementGuid>505e4d05-9634-4b83-80c2-57428b6bf777</webElementGuid>
+      <webElementGuid>a6a49459-8be8-4630-b836-91fb22197b74</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.ACU.PROX.A.VEC');&quot;)]</value>
-      <webElementGuid>e3aa2d2a-b052-4c09-b189-3413a9ca3c7f</webElementGuid>
+      <webElementGuid>35f3dcdb-ad3b-4ed8-949a-234dc5398024</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +145,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[5]/li/ul/li[2]/ul/li[6]/a</value>
-      <webElementGuid>0453542c-bcea-4f9a-8ebd-3fc7a8b4d19f</webElementGuid>
+      <webElementGuid>1df30871-9c20-4990-91e6-37e4ae06a80c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +153,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.ACU.PROX.A.VEC&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Acuerdos a Vencer ' or . = 'Consulta de Acuerdos a Vencer ')]</value>
-      <webElementGuid>25882598-50db-4581-b0a7-0020c19a39de</webElementGuid>
+      <webElementGuid>7f40e201-1cc6-4eca-a5f8-020afd681696</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

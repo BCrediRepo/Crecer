@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -45,9 +47,21 @@ WebUI.click(findTestObject('15-MONEX/10 - Consulta Operaciones de Cambio. Filtro
 WebUI.click(findTestObject('15-MONEX/10 - Consulta Operaciones de Cambio. Filtro sucursal boleto/lnk26'), 
     FailureHandling.STOP_ON_FAILURE)
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
 WebUI.waitForElementVisible(findTestObject('00-Utils/02-Filtros/lnkEjecutar'), 3)
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblMasVerde'))
 

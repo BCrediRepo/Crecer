@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -68,8 +69,19 @@ WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Modificacio
 
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/txtNroCuenta'), '01000395279')
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
 
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 //Seleccionamos del cbx la opcion Ultima Modificacion
 WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas/Cons de mod a ctas - version actual/cbxVersion Actual'), 2)
 

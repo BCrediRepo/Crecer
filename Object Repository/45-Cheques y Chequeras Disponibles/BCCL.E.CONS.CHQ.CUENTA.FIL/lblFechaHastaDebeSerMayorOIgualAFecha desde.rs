@@ -14,7 +14,7 @@
          <value>//td[@id='message']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>c862fcf1-4d2d-4bfb-aae3-438d61807bb8</webElementGuid>
+      <webElementGuid>fc5c74d1-b98a-4609-b025-a9e5b2b6279d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>message</value>
-      <webElementGuid>87addc0d-e1f5-4070-9eb2-062328562085</webElementGuid>
+      <webElementGuid>0c9b52b6-bfd8-4065-a29e-aec47cb57d6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>message</value>
-      <webElementGuid>a9571288-34af-4f77-a872-162c00a216a3</webElementGuid>
+      <webElementGuid>e24089e2-e7d3-48e5-a56b-1b2bc642c607</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>03135244-ee9f-49a4-bf08-fbfeed43ebbf</webElementGuid>
+      <webElementGuid>ee3a0f8a-3d04-4c7d-93da-a4b7de4098ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha hasta debe ser mayor o igual a fecha desde</value>
-      <webElementGuid>217314d9-a9df-4dc1-86cc-d6e36cbb62f6</webElementGuid>
+      <webElementGuid>b5454bd8-ecf6-4eca-949e-5b5f8f987984</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;divMsg&quot;)/table[@id=&quot;message&quot;]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[@id=&quot;message&quot;]</value>
-      <webElementGuid>aebf13e1-a765-4256-b09f-741212007873</webElementGuid>
+      <webElementGuid>d3ffb25b-fdd1-48b3-b83a-a6c5eeaacb9e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//td[@id='message']</value>
-      <webElementGuid>abc4f447-6438-4c6f-b1e1-c2484f81c9ac</webElementGuid>
+      <webElementGuid>de9ddbc0-cf15-4788-b524-54e5020bf843</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='message']/tbody/tr[2]/td/table/tbody/tr/td</value>
-      <webElementGuid>4e92b56c-b893-4106-b10d-cbd69083347b</webElementGuid>
+      <webElementGuid>ec90ff37-a9a4-4c44-8813-d2d225cb2c80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensaje de Error'])[1]/following::td[2]</value>
-      <webElementGuid>ca61eb9c-a065-4064-9015-dbf59e8419f3</webElementGuid>
+      <webElementGuid>266bbd6d-80db-45b1-a33b-dacd02c1c553</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>a4c86e6b-8027-4c9b-b250-6a44b437a874</webElementGuid>
+      <webElementGuid>0461a754-9e97-45b0-92e0-eb08f9942c2e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.E.CONS.CHQ.CUENTA.FIL'])[2]/preceding::td[2]</value>
-      <webElementGuid>7949df95-a0e0-4594-b8ba-3acf4a9484c1</webElementGuid>
+      <webElementGuid>b6123ae8-88c3-4eac-a65f-810dd54f14eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[6]</value>
-      <webElementGuid>9bde5f11-a640-4cc7-885e-08a728d25a2d</webElementGuid>
+      <webElementGuid>27acac29-5a5e-4c41-9b75-784f27527c0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Fecha hasta debe ser mayor o igual a fecha desde']/parent::*</value>
-      <webElementGuid>2528b253-b9c6-433a-b347-020f8091be58</webElementGuid>
+      <webElementGuid>9ee78d88-f11d-4773-9335-fa9f2cc94b7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/table/tbody/tr/td</value>
-      <webElementGuid>a4291014-3945-4b08-a39f-000d2a0dc34a</webElementGuid>
+      <webElementGuid>9bc9b399-d39e-40ac-9052-d8554b5184eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[@id = 'message' and (text() = 'Fecha hasta debe ser mayor o igual a fecha desde' or . = 'Fecha hasta debe ser mayor o igual a fecha desde')]</value>
-      <webElementGuid>bdd94370-8837-4bcf-a499-a0ade6062735</webElementGuid>
+      <webElementGuid>06e5e7c3-7ecc-4508-9854-6862f50e2fc9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

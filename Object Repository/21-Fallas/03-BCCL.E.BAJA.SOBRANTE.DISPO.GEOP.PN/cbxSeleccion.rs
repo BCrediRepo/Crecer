@@ -6,12 +6,16 @@
    <elementGuidId>5fff7068-25f1-44ab-ae24-df5975411fd2</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//select[@id='drillbox:1_1']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante' or . = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,15 +26,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>6e65c0cb-2dcf-4c6a-bd1a-2f9af8b3b59b</webElementGuid>
+      <webElementGuid>7bdcdcc2-6e9b-4858-82c1-ae2a3ae4af34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>drillbox:1_1</value>
-      <webElementGuid>a3045e92-1e4a-4653-8423-9418c3767b78</webElementGuid>
+      <webElementGuid>68c26f5a-50b1-47e4-8518-e7f222a4d843</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>drillbox drillbox_BCCLEBAJASOBRANTEDISPOGEOPPN</value>
-      <webElementGuid>a5d59bf9-5a86-45fc-9d30-0937ef85d050</webElementGuid>
+      <webElementGuid>265cc16f-535f-426d-9718-98a5ab24ff1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante</value>
-      <webElementGuid>a8a0fa99-45bd-43b2-973b-16bc1016a6db</webElementGuid>
+      <webElementGuid>17313ae0-67fb-4e74-aa04-357da35f9968</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;drillbox:1_1&quot;)</value>
-      <webElementGuid>c0326fc8-44be-4538-992a-0c50e533c85c</webElementGuid>
+      <webElementGuid>a51b9f40-f48b-4344-b484-7bed804cf027</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='drillbox:1_1']</value>
-      <webElementGuid>19a684b6-9879-46cc-82c2-d231993ce9bc</webElementGuid>
+      <webElementGuid>7ac28f5d-ccd7-4a2e-8ee7-b3590f0a329d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[14]/table/tbody/tr/td/select</value>
-      <webElementGuid>ea8e0bf7-24a1-4c5e-865a-7181a37fb297</webElementGuid>
+      <webElementGuid>bc5d0d12-f7be-4400-8c5f-9f3aef9fd08f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='PGR'])[1]/following::select[1]</value>
-      <webElementGuid>342984d0-4d3b-4a3a-ad2b-041bc541a3a5</webElementGuid>
+      <webElementGuid>27127acd-9ad6-43c7-9058-5ed56a9c0dc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RETIRO'])[1]/following::select[1]</value>
-      <webElementGuid>1eea9b49-d30a-4766-8d26-c5f5987a21f9</webElementGuid>
+      <webElementGuid>f39b59ae-a1a6-452d-8953-b1fe5fab7aae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::select[1]</value>
-      <webElementGuid>770eacdc-4457-4142-9264-9630e39fb690</webElementGuid>
+      <webElementGuid>bcfc8c4e-0707-46ac-ba8d-545fb6f28646</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN'])[2]/preceding::select[1]</value>
-      <webElementGuid>b635b5e6-e615-4672-b836-f56942b76a92</webElementGuid>
+      <webElementGuid>5c110a85-1cb0-4e61-be36-ffc1674a7cbd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//select</value>
-      <webElementGuid>4eb9355c-1d87-4904-8b7b-775863abc307</webElementGuid>
+      <webElementGuid>b7d0b1e9-ac8d-4c3b-9588-7fff7ca81b43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//select[@id = 'drillbox:1_1' and (text() = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante' or . = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante')]</value>
-      <webElementGuid>e915a75e-d039-4112-a9fd-08b6f53a018a</webElementGuid>
+      <webElementGuid>b1016558-1a92-4f0f-badc-61914d5eae36</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

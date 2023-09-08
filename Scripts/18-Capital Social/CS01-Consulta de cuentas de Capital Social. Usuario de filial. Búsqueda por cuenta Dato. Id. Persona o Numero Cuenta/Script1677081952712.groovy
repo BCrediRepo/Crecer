@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -26,38 +28,55 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CS.VER.CTA')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('02-Dashboard/lnkCapitalSocial'))
-
-WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkConsultaDeCuentasDeCapitalSocial'))
-
-WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkConsultasDeCapitalSocial'))
-
-WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSocialPorPersonaOCuenta'))
+//WebUI.switchToWindowTitle('Temenos T24')
+//
+//WebUI.click(findTestObject('02-Dashboard/lnkCapitalSocial'))
+//
+//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkConsultaDeCuentasDeCapitalSocial'))
+//
+//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkConsultasDeCapitalSocial'))
+//
+//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSocialPorPersonaOCuenta'))
 
 WebUI.switchToWindowTitle('Consulta Cuenta Capital Social')
 
-//Filtro para limpiar selección
+//Aplico KYW de limpieza de busqueda
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
-WebUI.switchToWindowTitle('Temenos T24')
+//Se accede al menu
+WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CS.VER.CTA')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSocialPorPersonaOCuenta'))
+//WebUI.switchToWindowTitle('Temenos T24')
+//
+//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSocialPorPersonaOCuenta'))
 
 WebUI.switchToWindowTitle('Consulta Cuenta Capital Social')
 
 WebUI.setText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/txtNroCuenta_value411'), '90890008453')
 
-WebUI.click(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
 WebUI.verifyElementVisible(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblCuenta'), FailureHandling.STOP_ON_FAILURE)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 cuenta = WebUI.getText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblCuenta'))
 

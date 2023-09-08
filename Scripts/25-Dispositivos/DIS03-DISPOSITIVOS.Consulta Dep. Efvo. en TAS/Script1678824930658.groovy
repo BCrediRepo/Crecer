@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('BCCL.E.DEP.EFE.TAS')
 
 //Nueva seleccion
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lnkNuevaSeleccion'))
+//WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lnkNuevaSeleccion'))
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
@@ -62,7 +62,7 @@ WebUI.setText(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.T
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/btnEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Chequea que existan datos
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_DEPOSITOSDEEFECTIVOENTAS'),6)

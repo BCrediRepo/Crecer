@@ -127,7 +127,7 @@
       <guid>bf5b0c49-aebd-4552-b179-d2d0a8a7d110</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC15-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimiento por Fecha.Movimientos Debitos existentes entre Fecha Desde y Hasta.Agrupacion DC Alic Reducidas Creditos</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC15-Resumen de Cuenta.Cons Sucursal.Consulta de Mov por Fecha. Mov Debitos existentes Fecha Desde y Hasta.Agrupacion DC Alic Reducidas Creditos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

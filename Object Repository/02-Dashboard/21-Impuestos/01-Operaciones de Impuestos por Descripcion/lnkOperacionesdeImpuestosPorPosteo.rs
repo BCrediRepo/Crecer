@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMPTOS.COBDEV.PLANTA RUN');processMenuHeaderText('Operaciones de Impuestos por Posteo')&quot;]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Operaciones de Impuestos por Posteo ' or . = 'Operaciones de Impuestos por Posteo ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>6f1caff1-4faf-40dd-b105-11da82cb8dd3</webElementGuid>
+      <webElementGuid>8f8f49db-4636-4ccf-beb6-a2b6b7848448</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMPTOS.COBDEV.PLANTA RUN');processMenuHeaderText('Operaciones de Impuestos por Posteo')</value>
-      <webElementGuid>147238f2-0734-462a-b003-f3d6c60c59b2</webElementGuid>
+      <webElementGuid>194afc83-2362-4332-b133-df2b07a5ad80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.IMPTOS.COBDEV.PLANTA RUN');</value>
-      <webElementGuid>2cccdb74-004a-4177-a74c-630683ca6c9e</webElementGuid>
+      <webElementGuid>9abdccc4-9083-4199-88d6-c8195ae2a515</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Operaciones de Impuestos por Posteo </value>
-      <webElementGuid>237e1191-16a5-43d0-b92c-6636389771cb</webElementGuid>
+      <webElementGuid>35928ac7-3b93-42a1-b05a-fda8c6ea1188</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>c9976353-b25e-47a6-9fbd-f562f1ed9066</webElementGuid>
+      <webElementGuid>65416ccb-2ee0-403a-bad5-fba89a21dfa9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>fb8b4c1a-a758-4f6d-8e12-c722634a8a6f</webElementGuid>
+      <webElementGuid>f98d980a-fc45-4162-903e-9aa34dcf70d4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMPTOS.COBDEV.PLANTA RUN');processMenuHeaderText('Operaciones de Impuestos por Posteo')&quot;]</value>
-      <webElementGuid>5e055b55-ec9b-411b-b391-d2842fbce09d</webElementGuid>
+      <webElementGuid>888de7aa-1fae-4b75-a8d6-dc51be62c894</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[28]/li/ul/li[4]/ul/li/a</value>
-      <webElementGuid>f91e19fc-9a27-4604-9a91-00a0f4b0f710</webElementGuid>
+      <webElementGuid>66c759a2-aafb-40d7-a277-3389f9d7d381</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Operaciones de Impuestos por Posteo')]</value>
-      <webElementGuid>c972d67b-8949-4f31-b747-517560622dc1</webElementGuid>
+      <webElementGuid>98bbad96-eb82-47a0-80af-2f8b0dd1bd65</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Operaciones de Impuestos por Descripcion'])[1]/following::a[1]</value>
-      <webElementGuid>97d6308a-5623-4e37-ad3d-00920a384b76</webElementGuid>
+      <webElementGuid>27ca9511-d2a3-4fa3-a147-2d6884aa7a15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devol. Sellado en Efec (Suc.Santa Fe/Cordoba)'])[1]/following::a[1]</value>
-      <webElementGuid>1bf16f3d-2428-4a59-945c-213f681f131c</webElementGuid>
+      <webElementGuid>c941ab55-6310-4679-9ea4-ce662c16aee9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro de Impuestos en Cuenta Contable'])[1]/preceding::a[1]</value>
-      <webElementGuid>d0638d2b-8093-4eae-a9ad-bb78542ea7b9</webElementGuid>
+      <webElementGuid>8cf073d6-dc5b-48f4-b734-e407243c5fd8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devolucion de Impuestos en Cuenta Contable'])[1]/preceding::a[2]</value>
-      <webElementGuid>fb9752d7-77f9-460e-924e-6663887e08a8</webElementGuid>
+      <webElementGuid>cc9553c0-6c5e-4a69-a750-37edb21fd885</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Operaciones de Impuestos por Posteo']/parent::*</value>
-      <webElementGuid>c053cb79-8299-428c-aa84-5d18153af40a</webElementGuid>
+      <webElementGuid>cad16635-46c6-49ee-9acf-13bc8d23edeb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.IMPTOS.COBDEV.PLANTA RUN');&quot;)]</value>
-      <webElementGuid>9b600ee8-baa8-4707-98f1-c62a2bc0cc96</webElementGuid>
+      <webElementGuid>b1988fd2-f8e6-4f0d-94dd-c5ee13672081</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[28]/li/ul/li[4]/ul/li/a</value>
-      <webElementGuid>d493fe28-ae48-43e9-851f-79e6a0d3b8e1</webElementGuid>
+      <webElementGuid>763f698b-5c27-4d0d-b3e6-05054e2184a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.IMPTOS.COBDEV.PLANTA RUN&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Operaciones de Impuestos por Posteo ' or . = 'Operaciones de Impuestos por Posteo ')]</value>
-      <webElementGuid>8aee9bfd-a706-4a2a-bc32-8ece6232c18d</webElementGuid>
+      <webElementGuid>6d4b52de-565f-4e24-b72b-b898f718c289</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

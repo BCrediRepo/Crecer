@@ -13,6 +13,10 @@
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[32]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta' or . = 'Consulta')]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>439f4e44-96eb-402b-8021-c826e3795222</webElementGuid>
+      <webElementGuid>c5bcbbc4-1ba5-48db-a072-0a6d21d9373c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>0963d58d-0de6-4f92-bd96-cffd01862992</webElementGuid>
+      <webElementGuid>934d1be5-b7f8-493e-930f-6529732bcf86</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>a1352879-4ed9-4310-a314-9d2dbe28f780</webElementGuid>
+      <webElementGuid>46a6e6cc-e6d0-49f1-9ae0-c1b155aea09e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta</value>
-      <webElementGuid>3a50d5f2-ed72-4770-85c1-4cfb383c5ac6</webElementGuid>
+      <webElementGuid>2199920e-32bf-44c3-af66-17016b360ccb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>9334692c-2514-4218-80af-66adfd33fc08</webElementGuid>
+      <webElementGuid>1ac4d1bf-601f-4b48-84e9-fffe3a79fd26</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[32]</value>
-      <webElementGuid>4357d33d-9161-4d65-b693-a1adc32d385d</webElementGuid>
+      <webElementGuid>fd8921b4-9673-4ee6-a95b-cc41049e2b8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[16]/li/ul/li[2]/span</value>
-      <webElementGuid>bd9a5d90-7506-48bf-885d-2e1c91d78581</webElementGuid>
+      <webElementGuid>e1082d50-2e66-4280-a87c-c0b9b69fc1be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cambio de Estado Chequera en Cuentas Cerradas'])[1]/following::span[1]</value>
-      <webElementGuid>9a2dabfc-03b1-41b8-a399-bf889bdb502b</webElementGuid>
+      <webElementGuid>305b518a-aeaa-4658-b3cd-d9e2b97300c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Impresion Acta de Destruccion'])[1]/following::span[1]</value>
-      <webElementGuid>0be5336c-789e-4a97-ab57-f85dec1ecdde</webElementGuid>
+      <webElementGuid>b55a2737-a913-4ed2-8222-4e81e2f955de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta por Cheque'])[1]/preceding::span[1]</value>
-      <webElementGuid>7306c489-cc74-4481-9325-12d3053c0e95</webElementGuid>
+      <webElementGuid>b88afcda-fe0c-49a1-ac2c-7b75f14c618a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequera hasta Emitida (40)'])[1]/preceding::span[1]</value>
-      <webElementGuid>3e4d251b-e197-4cc3-9e20-97a8d91d4409</webElementGuid>
+      <webElementGuid>4c145fcb-f481-4ccf-a2c9-8d66c39dc974</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta']/parent::*</value>
-      <webElementGuid>12e0c269-baa6-4537-8fc9-f94c4c19ca87</webElementGuid>
+      <webElementGuid>48dfdea7-81e9-45ea-b39d-0d435ac92226</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[16]/li/ul/li[2]/span</value>
-      <webElementGuid>e52431c1-de39-445a-89c6-c5acb9f1eeb2</webElementGuid>
+      <webElementGuid>04cc17c1-e1a3-483c-877e-4db6717124c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +130,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Consulta' or . = 'Consulta')]</value>
-      <webElementGuid>99598b89-87ab-41fa-bd73-db224834d73b</webElementGuid>
+      <webElementGuid>edfcf72b-4b63-4ec5-aa8d-3cd47142b30b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

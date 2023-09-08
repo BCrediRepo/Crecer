@@ -6,15 +6,18 @@
    <elementGuidId>bd421cd8-e5f1-4b07-bf36-1b8159da40c8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.CQ.ARCH.ERRORES');processMenuHeaderText('Consulta / Conf de Chequeras con Errores (21)')&quot;]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta / Conf de Chequeras con Errores (21) ' or . = 'Consulta / Conf de Chequeras con Errores (21) ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>f0a9f58e-c1ba-4ecf-a0b4-b5aa04bfa75c</webElementGuid>
+      <webElementGuid>c4b55c68-f75a-458d-858a-c8d8cf4aa9d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.CQ.ARCH.ERRORES');processMenuHeaderText('Consulta / Conf de Chequeras con Errores (21)')</value>
-      <webElementGuid>58363cf2-d365-41a4-946e-a035a0290711</webElementGuid>
+      <webElementGuid>24150a29-7073-4b3c-8908-4fc02e5badb2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.CQ.ARCH.ERRORES');</value>
-      <webElementGuid>9f12a66d-c250-4ec8-85bc-d86c44f32bc6</webElementGuid>
+      <webElementGuid>97990e4f-5400-4e92-9e15-e0e0399d0beb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta / Conf de Chequeras con Errores (21) </value>
-      <webElementGuid>5d1eb480-d3b2-48e7-b329-161f2317fa7a</webElementGuid>
+      <webElementGuid>4a1f5fca-78d7-4e09-ada4-56bb6ce1e1f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[3]/a[1]</value>
-      <webElementGuid>826b638b-f997-4771-b76d-d2e990cc77d6</webElementGuid>
+      <webElementGuid>fddea324-d0aa-4332-bedb-efba9eebc555</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>917544da-6d4a-447c-a22a-b134ee1b90d3</webElementGuid>
+      <webElementGuid>f41237f1-7b6b-47d6-b8e5-dca3cf3c2e62</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.CQ.ARCH.ERRORES');processMenuHeaderText('Consulta / Conf de Chequeras con Errores (21)')&quot;]</value>
-      <webElementGuid>acc87d0c-83f2-4934-9ff4-a0c5dbac3783</webElementGuid>
+      <webElementGuid>b90737aa-27d0-47d7-91f6-8e9f90165241</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[12]/li/ul/li[3]/ul/li[3]/a</value>
-      <webElementGuid>4d565f6f-e530-4203-812f-884d1dbe04dd</webElementGuid>
+      <webElementGuid>50e8c6f5-83d8-4a94-9513-7181714560e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta / Conf de Chequeras con Errores (21)')]</value>
-      <webElementGuid>1b199748-10f1-489e-bf70-ec35d460689b</webElementGuid>
+      <webElementGuid>7339d9c7-3da2-4d09-8eaf-86d725aae7fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequera hasta Emitida (40)'])[1]/following::a[1]</value>
-      <webElementGuid>dbca6638-2daa-4c63-a773-88b882295515</webElementGuid>
+      <webElementGuid>77783504-7dd7-43c9-994d-7c8ff4ef78df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta por Cheque'])[1]/following::a[2]</value>
-      <webElementGuid>8738a982-66d4-4fb7-92f2-06aec790327f</webElementGuid>
+      <webElementGuid>27dbca1d-0553-4187-a278-c39137226923</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequera desde Emitida (40 - 90)'])[1]/preceding::a[1]</value>
-      <webElementGuid>51617ade-a12f-4328-b007-02fd3fe4e035</webElementGuid>
+      <webElementGuid>4aae6151-939e-4004-8a87-6d9a36d03945</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequeras y Cheques por Cuenta'])[1]/preceding::a[2]</value>
-      <webElementGuid>9bb11fdf-ad3e-4e4f-ac41-4976d268e8c8</webElementGuid>
+      <webElementGuid>f1f2448b-216f-45c7-839c-1af1eb864126</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta / Conf de Chequeras con Errores (21)']/parent::*</value>
-      <webElementGuid>0b74618a-34f1-4d78-afa1-6db203ac3e21</webElementGuid>
+      <webElementGuid>ebbcd231-9a0d-4e89-99d0-32dbc4c5f0d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.CQ.ARCH.ERRORES');&quot;)]</value>
-      <webElementGuid>0d7155d6-156e-4acd-bd76-e50f926f1582</webElementGuid>
+      <webElementGuid>cecf56d9-fe2d-4d96-8ace-04a2c1fbb73e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +145,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[12]/li/ul/li[3]/ul/li[3]/a</value>
-      <webElementGuid>abf236e6-766c-4a6a-98ad-9f3413159b3b</webElementGuid>
+      <webElementGuid>1eb40391-bb9c-413d-8eaa-72dd9b1828d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +153,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.CQ.ARCH.ERRORES&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta / Conf de Chequeras con Errores (21) ' or . = 'Consulta / Conf de Chequeras con Errores (21) ')]</value>
-      <webElementGuid>dda2aea7-2cf9-4250-bdf6-5158709835d7</webElementGuid>
+      <webElementGuid>8d6c53e6-d51e-4dba-af23-7cd184a615e3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

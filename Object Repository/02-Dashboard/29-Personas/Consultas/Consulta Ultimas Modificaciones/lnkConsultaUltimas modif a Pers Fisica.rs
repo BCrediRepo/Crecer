@@ -6,15 +6,18 @@
    <elementGuidId>ce4710df-317d-4884-9970-dc5fb8811485</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.GEN.PF.HIS');processMenuHeaderText('Consulta ultimas modif a Pers Fisica')&quot;]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta ultimas modif a Pers Fisica ' or . = 'Consulta ultimas modif a Pers Fisica ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.GEN.PF.HIS');processMenuHeaderText('Consulta ultimas modif a Pers Fisica')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>625c0cfc-9cda-4177-b9a8-95b2fe182bd7</webElementGuid>
+      <webElementGuid>83a28694-b58c-4caf-97bf-06f12d8e93a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.GEN.PF.HIS');processMenuHeaderText('Consulta ultimas modif a Pers Fisica')</value>
-      <webElementGuid>793de2da-d341-4154-8c1d-c77fa3901ab0</webElementGuid>
+      <webElementGuid>3100ee80-e104-4abf-9fcd-88618852b004</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.PER.GEN.PF.HIS');</value>
-      <webElementGuid>88c26322-fdf2-4224-b41e-ffd3ee330da3</webElementGuid>
+      <webElementGuid>84c6dad4-2a19-4e0d-97a3-e1dc427ce03e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta ultimas modif a Pers Fisica </value>
-      <webElementGuid>29e006af-98a5-44f6-a085-39bb7057ed16</webElementGuid>
+      <webElementGuid>02bf8729-6a49-4140-b4de-7466800ec9c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>8c1bb14e-4119-497f-9cdd-8e630e7c0ea9</webElementGuid>
+      <webElementGuid>c164e062-b4f7-4c6d-b827-01a242a924b9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.GEN.PF.HIS');processMenuHeaderText('Consulta ultimas modif a Pers Fisica')&quot;]</value>
-      <webElementGuid>f393c486-a0b6-4a54-bfb6-9f8efe55025c</webElementGuid>
+      <webElementGuid>cdbe0543-7ab2-44ea-8173-5647bd3bcdcc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[2]/li/ul/li[3]/ul/li[3]/ul/li/a</value>
-      <webElementGuid>fa269552-1939-4e67-8658-0ebfddd6394a</webElementGuid>
+      <webElementGuid>cdbede49-d6f0-429d-b374-ca5eb16702f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta ultimas modif a Pers Fisica')]</value>
-      <webElementGuid>b4b9766b-e989-42b2-994c-fdb36af29166</webElementGuid>
+      <webElementGuid>c7191bca-a93b-4a3d-9b17-2137c474b827</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modificaciones'])[1]/following::a[1]</value>
-      <webElementGuid>0dce1b3c-d42e-4ddc-9395-87f469cc27a5</webElementGuid>
+      <webElementGuid>4c2dbab3-42ec-4456-b308-791877f94ffd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Evolucion Tamaòo de la Empresa'])[1]/following::a[1]</value>
-      <webElementGuid>caf3dd4a-fecb-46f1-8857-f5513e883a73</webElementGuid>
+      <webElementGuid>44c2fc9a-adad-4b87-83d4-df5dbb6e4771</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Juridica'])[1]/preceding::a[1]</value>
-      <webElementGuid>fa1647b9-f5ee-49dc-a170-34d6906291e7</webElementGuid>
+      <webElementGuid>5aa54a68-2742-408e-8b6d-61d5aa1c1f23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta bases externas'])[1]/preceding::a[2]</value>
-      <webElementGuid>6f65782e-be83-4790-bff2-af022cd44355</webElementGuid>
+      <webElementGuid>848b0741-af64-46ec-b804-6202265be48a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta ultimas modif a Pers Fisica']/parent::*</value>
-      <webElementGuid>0302e8b7-929d-46c2-8e28-d6ecaec51c78</webElementGuid>
+      <webElementGuid>16ec1bdd-2c29-4fa1-8422-a08f53ac9985</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.PER.GEN.PF.HIS');&quot;)]</value>
-      <webElementGuid>fa239e5d-0695-471d-9d71-34ce070c0915</webElementGuid>
+      <webElementGuid>99c5685e-53c6-490c-b145-aa83772f02cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/ul/li/a</value>
-      <webElementGuid>9fb29f26-abbd-405f-8db9-8b2217dad521</webElementGuid>
+      <webElementGuid>0b708ac3-38ca-46d4-ac9a-5a79d575d98b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +145,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.PER.GEN.PF.HIS&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta ultimas modif a Pers Fisica ' or . = 'Consulta ultimas modif a Pers Fisica ')]</value>
-      <webElementGuid>651834ca-235f-4d49-846b-555a7b38ab65</webElementGuid>
+      <webElementGuid>9788f324-b7f4-45d3-96db-6cf0787fe77a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

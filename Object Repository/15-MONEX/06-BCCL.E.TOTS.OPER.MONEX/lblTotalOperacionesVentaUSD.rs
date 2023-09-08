@@ -6,15 +6,19 @@
    <elementGuidId>768e598e-ab02-448f-9009-ea6759da7110</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r4']/td</value>
+         <key>BASIC</key>
+         <value>//*[(text() = '. Total Operaciones Venta USD' or . = '. Total Operaciones Venta USD')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#r4 > td</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r4']/td</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>81aca71c-6ec0-4b9a-89de-477a1e1d7134</webElementGuid>
+      <webElementGuid>c86f8480-789a-4241-bc88-65b8905fbc74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>. Total Operaciones Venta USD</value>
-      <webElementGuid>381bfc77-918a-4c7f-bac2-a52e5b8cb749</webElementGuid>
+      <webElementGuid>9f51602b-9e6c-4d2d-a436-3c1f2f15dfb1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r4&quot;)/td[1]</value>
-      <webElementGuid>878d940e-29a3-405f-98e0-fb798ec99dbe</webElementGuid>
+      <webElementGuid>deb585f3-9a96-4ab4-91fc-81f992349e1f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r4']/td</value>
-      <webElementGuid>8c4fb9fb-593b-4f80-a07d-f485f85487e4</webElementGuid>
+      <webElementGuid>567dcb7f-eb2d-4616-aad7-c4d27bd4e811</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='.'])[4]/following::td[4]</value>
-      <webElementGuid>5d1b458b-2d1d-4873-9dbe-417f8a687828</webElementGuid>
+      <webElementGuid>92da3501-df24-4918-8d9d-15fde574c1b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='. TOTALES CANAL SUCURSAL'])[1]/following::td[8]</value>
-      <webElementGuid>a099596b-a08b-4835-ad2f-b253ec774de9</webElementGuid>
+      <webElementGuid>c8141133-5bed-4c21-b3e1-4c4f4de4042b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='.'])[5]/preceding::td[3]</value>
-      <webElementGuid>4311dc7a-cba0-48dd-bcd6-40689c42869e</webElementGuid>
+      <webElementGuid>437a339e-3491-48d2-9fe8-8d1d8dba53e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='. Total Operaciones Compra USD'])[1]/preceding::td[4]</value>
-      <webElementGuid>97690176-cfa2-4082-a5e5-bc20a0838099</webElementGuid>
+      <webElementGuid>119afa6d-22d0-40dc-b7e9-c4e09a6927f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='. Total Operaciones Venta USD']/parent::*</value>
-      <webElementGuid>92a9fc05-04ec-49c0-ace1-b36f95ab1149</webElementGuid>
+      <webElementGuid>e2354387-b677-41d7-9b4b-40de1de001e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/table/tbody/tr[4]/td</value>
-      <webElementGuid>649cad1b-5ee7-427e-bd74-a334db58da25</webElementGuid>
+      <webElementGuid>7707f728-2455-4cb8-84e1-4c61a68293db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '. Total Operaciones Venta USD' or . = '. Total Operaciones Venta USD')]</value>
-      <webElementGuid>e6b5a1b9-0d3a-4286-8949-af660a08a435</webElementGuid>
+      <webElementGuid>816aec18-2d75-4ea2-9f43-0de9a39c39a3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,6 +6,10 @@
    <elementGuidId>b6f1a7ee-73d6-4c5c-b8a3-142847e5a290</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '001' or . = '001')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//tr[@id='r1']/td</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>#r1 > td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>5948c68d-573b-4b25-98ba-c1638115024a</webElementGuid>
+      <webElementGuid>8e2806b0-3c82-4a9b-9f93-1125033db590</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>001</value>
-      <webElementGuid>8af1ee34-9a31-4230-a724-354795e0e84c</webElementGuid>
+      <webElementGuid>31d49cf3-4751-4a63-9364-7d35033b2883</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>1c8bd7c4-ae2a-4aab-a701-c17abcba412a</webElementGuid>
+      <webElementGuid>3fccbed0-8371-4c48-813b-d06b5e51af74</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td</value>
-      <webElementGuid>6133b770-9032-42d2-82bc-bde29b3e0b1e</webElementGuid>
+      <webElementGuid>fbf9ddd3-656d-43b7-9bdb-2d04ea6b8196</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Destinatario'])[1]/following::td[1]</value>
-      <webElementGuid>c09957ef-4c31-4f94-b25a-2550624271fc</webElementGuid>
+      <webElementGuid>0ad1aeb7-8b4b-46a6-9a26-6a349040337d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha de Envio de la Carta'])[1]/following::td[1]</value>
-      <webElementGuid>ce0778ae-ff96-4466-8a66-f787286339b4</webElementGuid>
+      <webElementGuid>1240ccaf-3a01-4231-a3e6-eeaab31ca2e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rechazado'])[1]/preceding::td[3]</value>
-      <webElementGuid>d7d08473-5f47-4361-9de5-cde447340bb1</webElementGuid>
+      <webElementGuid>3dabd41f-9a87-47ec-884a-d797a6ff80bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[5]</value>
-      <webElementGuid>38c927fb-290c-4e89-83f2-ccb058918f78</webElementGuid>
+      <webElementGuid>03521775-693c-4648-99c8-6b13c189c9f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='001']/parent::*</value>
-      <webElementGuid>c0a8c3c3-e06b-42e7-a84b-9f98ea398ee6</webElementGuid>
+      <webElementGuid>e6da3026-e742-4f53-936d-e88788cdeec1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>6c06975b-e6cc-4d94-a308-a3ee67c52129</webElementGuid>
+      <webElementGuid>20f29b5d-6692-40ec-8336-19954388d762</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '001' or . = '001')]</value>
-      <webElementGuid>58f2bb98-3b74-4505-9930-d4a4af4d1ec2</webElementGuid>
+      <webElementGuid>e0a93383-71c2-4b29-a062-5ca5c6c413af</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

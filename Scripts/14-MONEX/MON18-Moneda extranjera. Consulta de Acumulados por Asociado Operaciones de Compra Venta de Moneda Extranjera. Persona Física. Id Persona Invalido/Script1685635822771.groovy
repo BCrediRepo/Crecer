@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -44,10 +46,22 @@ WebUI.switchToWindowIndex(1)
 //Seteo del caso con datos invalidos
 WebUI.setText(findTestObject('15-MONEX/Consulta General de personas Fisica/txtIDPersona'), 'ABC9999999')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Comprobación de mensaje de error
 WebUI.verifyElementVisible(findTestObject('15-MONEX/BCCL.E.PER.GEN.PF.FIN/lblError'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 label = WebUI.getText(findTestObject('15-MONEX/BCCL.E.PER.GEN.PF.FIN/lblNoSeEncontraronRegistros'))
 

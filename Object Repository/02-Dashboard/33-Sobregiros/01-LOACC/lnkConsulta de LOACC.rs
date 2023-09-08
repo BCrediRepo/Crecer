@@ -6,15 +6,18 @@
    <elementGuidId>1b8138e9-1d94-4063-b9b6-03e70577b511</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de LOACC ' or . = 'Consulta de LOACC ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.ACDOS.SGIRO');processMenuHeaderText('Consulta de LOACC')&quot;]</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>a64354c0-4e48-4c93-b99b-88ae54322418</webElementGuid>
+      <webElementGuid>0d99ab2b-908a-4d10-aaf7-eff7262e5f5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.ACDOS.SGIRO');processMenuHeaderText('Consulta de LOACC')</value>
-      <webElementGuid>677a7c8e-5cf4-4e37-b66b-8074dc37bcd6</webElementGuid>
+      <webElementGuid>218a43d3-8bb7-494b-8fd5-f9bfaa9dbba9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.ACDOS.SGIRO');</value>
-      <webElementGuid>fac8b1e7-6f03-4d62-abd8-7e33bf2ff2aa</webElementGuid>
+      <webElementGuid>d61e7832-3444-4d0f-8bdb-13e65c36f629</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de LOACC </value>
-      <webElementGuid>2b7a2ce8-3dcb-4e96-a6e9-22b0218e2629</webElementGuid>
+      <webElementGuid>3ce10e42-8d8b-4613-ba59-31d97fd7bab1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>6558b851-cca9-4a0d-8809-a435a6c6c4bf</webElementGuid>
+      <webElementGuid>efd04f74-1937-42d1-9ebb-2dd6c604d815</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>239095c3-774b-47c1-bb89-7c84bb5d2d4e</webElementGuid>
+      <webElementGuid>f6a662a0-d536-44e2-b02d-9d2314fb6dee</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.ACDOS.SGIRO');processMenuHeaderText('Consulta de LOACC')&quot;]</value>
-      <webElementGuid>2636f8d1-79d9-4606-9d10-8a1bb51136c3</webElementGuid>
+      <webElementGuid>fdde6bbd-eb25-4a0d-9d1f-9074cadf6b3c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[5]/li/ul/li[2]/ul/li/a</value>
-      <webElementGuid>0709ebf5-b871-48f5-88d6-13444e5d8a32</webElementGuid>
+      <webElementGuid>223a23d3-cac3-4e57-9c19-bc567cb87737</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de LOACC')]</value>
-      <webElementGuid>726034a6-e41e-495a-9672-f75f038425cc</webElementGuid>
+      <webElementGuid>d388fa1c-fc71-4ce6-9152-7b75d3fbbefc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta'])[2]/following::a[1]</value>
-      <webElementGuid>fcea0ee9-0200-41b8-b392-4ec2d9894f0f</webElementGuid>
+      <webElementGuid>7bc06a25-da85-450a-bf04-012e0e735d1b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Marca Renovacion Manual'])[1]/following::a[1]</value>
-      <webElementGuid>d410e47a-fc94-4843-bebd-196044b0b2aa</webElementGuid>
+      <webElementGuid>f282bfc8-9b96-408e-b12b-a2e25badb50d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Utilizado Diario por Acuerdo'])[1]/preceding::a[1]</value>
-      <webElementGuid>59fddc48-6272-448f-a7a6-18c6b9e3ce6f</webElementGuid>
+      <webElementGuid>2025642a-0acc-442a-892d-033caeec0fc1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumuladores por Acuerdo'])[1]/preceding::a[2]</value>
-      <webElementGuid>c6bfead5-a644-49ab-af4d-6a8583b96c11</webElementGuid>
+      <webElementGuid>665fed4e-c581-4353-a7ad-387cbc80605a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de LOACC']/parent::*</value>
-      <webElementGuid>5b5e47b6-af5a-4f2c-8bf7-6e6aec251ee1</webElementGuid>
+      <webElementGuid>257b4b66-f6b2-4c00-b2fe-31eee7e23c99</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.ACDOS.SGIRO');&quot;)])[2]</value>
-      <webElementGuid>639e0f89-4a4d-44ea-b05b-963f8a7b1318</webElementGuid>
+      <webElementGuid>1b27503c-6836-4490-8d56-45e33627c8c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +145,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[5]/li/ul/li[2]/ul/li/a</value>
-      <webElementGuid>932bef48-6b1f-42a6-9394-842327e05a57</webElementGuid>
+      <webElementGuid>eb2c02b4-abaa-4c8d-84be-ba1bc36ef9f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +153,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.ACDOS.SGIRO&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de LOACC ' or . = 'Consulta de LOACC ')]</value>
-      <webElementGuid>223622a5-b959-4f00-8ad4-02a374cf2879</webElementGuid>
+      <webElementGuid>6848f553-5908-421b-95c7-798d83deba15</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

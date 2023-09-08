@@ -6,19 +6,18 @@
    <elementGuidId>66323da3-9286-49d1-b572-5f63fa60b7cf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Compensacion de Saldos' or . = 'Compensacion de Saldos') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>/html/body/div[3]/ul[29]/li/span</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@ref_element = 'Object Repository/02-Dashboard/frmDashboardMainMenu']</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>e13b74d9-8cd5-419f-9992-10057016065a</webElementGuid>
+      <webElementGuid>1c3b9a03-df22-42f5-b1a4-041193fa4d65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>5591d9e9-8dc3-45db-923b-2d1070986f9f</webElementGuid>
+      <webElementGuid>d3e502fd-997f-4c4d-94c9-1d127c154894</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,15 +41,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>9ecf9810-cd06-4226-9205-a9e956e19914</webElementGuid>
+      <webElementGuid>ac451954-cb17-4a92-8d3a-de8bb76efbbe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Compensacion de Saldos</value>
-      <webElementGuid>6f98a063-8b1e-4d64-8543-e03fd0e35768</webElementGuid>
+      <webElementGuid>8abaa929-d235-46ae-a002-ea868af23b1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>13102853-de1b-483e-aa01-236affe50f76</webElementGuid>
+      <webElementGuid>0c6061ca-9094-48a5-8c0a-7f3ea020304a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -66,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>ef21d7b5-3246-49b2-beac-b1de0fbcad37</webElementGuid>
+      <webElementGuid>90009a94-59ec-49da-9cee-5f025055142f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -74,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[100]</value>
-      <webElementGuid>4c39d84a-65ef-4b96-8c44-d8f7ce96249c</webElementGuid>
+      <webElementGuid>295f02cd-5e9b-49d7-b245-069f42aa9562</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[29]/li/span</value>
-      <webElementGuid>eca07ec2-ab91-4631-ac62-5176449242af</webElementGuid>
+      <webElementGuid>bef69f26-14a2-499d-a5ed-8cf87e250892</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devolucion de Impuestos en Cuenta Contable'])[1]/following::span[1]</value>
-      <webElementGuid>7081e146-4061-490b-8d14-6d0b119dea1d</webElementGuid>
+      <webElementGuid>f7f29ae6-d535-43e0-b553-00d2202c9d55</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro de Impuestos en Cuenta Contable'])[1]/following::span[1]</value>
-      <webElementGuid>2ce79b31-012b-434d-a090-1064ddf8b37c</webElementGuid>
+      <webElementGuid>f9a8478a-1fb0-4ba3-8276-f9ddf732d6a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Relaciones de Cuenta Espejo'])[1]/preceding::span[1]</value>
-      <webElementGuid>1fd731bc-3583-4e0f-8b9f-50449c811ff8</webElementGuid>
+      <webElementGuid>efebfeea-3e51-47d1-abd3-9162bc16826f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Relaciones'])[1]/preceding::span[2]</value>
-      <webElementGuid>9993fdc9-6b96-4c0a-b8f7-4743510c19c9</webElementGuid>
+      <webElementGuid>028e4c72-0587-4691-a0ec-21b6461d6ce3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Compensacion de Saldos']/parent::*</value>
-      <webElementGuid>4d66adb4-bda9-4510-8e9c-1ce543360111</webElementGuid>
+      <webElementGuid>fa8ac779-605f-43fb-9238-da9ec01d613b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[29]/li/span</value>
-      <webElementGuid>b3f91c99-c6f4-4916-b8b5-604ce99fa81c</webElementGuid>
+      <webElementGuid>7f0c12a4-511c-42d0-9bc2-89a90e29ed5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Compensacion de Saldos' or . = 'Compensacion de Saldos')]</value>
-      <webElementGuid>22fa2caf-a49d-4436-98b9-9c83d659c0d1</webElementGuid>
+      <webElementGuid>3a04c9b4-06c2-4e93-9620-8db018749403</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

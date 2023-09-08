@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -53,10 +55,23 @@ WebUI.setText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Report
 
 WebUI.setText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtNUMERO DE CHEQUE'), '22182765')
 
-WebUI.click(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//Boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 def element = WebUI.getText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
 assert element.contains('DIA DE INGRESO')
 

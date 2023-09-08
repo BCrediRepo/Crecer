@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//tr[@id='r1']/td[6]/a/img</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'BCCL.E.STMT.ENT.BOOK']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,23 +26,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>a9d604b8-3e74-430e-9136-75de9ab00611</webElementGuid>
+      <webElementGuid>b45d70c2-d1a2-403e-a754-4147dba4b242</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/enquiry/drilldown/view.gif</value>
-      <webElementGuid>539159ea-bc42-4564-b6e5-0c62d3bb4409</webElementGuid>
+      <webElementGuid>5f4fe9b0-462b-4897-9d97-71b84df9d326</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
       <value>BCCL.E.STMT.ENT.BOOK</value>
-      <webElementGuid>e16fc2fe-95cd-4857-b4ec-9ec5dfd6954c</webElementGuid>
+      <webElementGuid>1a7575c4-e61f-428e-b7c0-5052403feb31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>title</name>
       <type>Main</type>
       <value>BCCL.E.STMT.ENT.BOOK</value>
-      <webElementGuid>8ac91e3a-cbab-42f5-abaa-09b2b5feb226</webElementGuid>
+      <webElementGuid>0007c72c-b8d8-4fa6-b424-ec294818416c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLECHQCANCELA&quot;]/a[1]/img[1]</value>
-      <webElementGuid>7a25bc31-f3c9-4536-aea4-c5ef49670cde</webElementGuid>
+      <webElementGuid>89bbf070-07d4-40e9-9766-e3fb82b8687a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[6]/a/img</value>
-      <webElementGuid>bf7e0e82-a560-4975-bba6-30c65c03f688</webElementGuid>
+      <webElementGuid>90007588-4341-4af5-aaea-9a06e819c12f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='BCCL.E.STMT.ENT.BOOK']</value>
-      <webElementGuid>fb5ab84c-d93f-438a-83f8-47ddc9d29902</webElementGuid>
+      <webElementGuid>e589bf00-ce8d-4d4c-944f-60297e1147a5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[6]/a/img</value>
-      <webElementGuid>c8a128fc-837d-47f9-8a73-a742ddc288c1</webElementGuid>
+      <webElementGuid>6e74af57-b1fe-4bd7-b9cb-fda8ab2f1dd9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +90,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/enquiry/drilldown/view.gif' and @alt = 'BCCL.E.STMT.ENT.BOOK' and @title = 'BCCL.E.STMT.ENT.BOOK']</value>
-      <webElementGuid>299f5dce-9b08-4acc-afd2-642a1482c7a9</webElementGuid>
+      <webElementGuid>80f7cb46-3b83-4e2a-aded-faf366541eb5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

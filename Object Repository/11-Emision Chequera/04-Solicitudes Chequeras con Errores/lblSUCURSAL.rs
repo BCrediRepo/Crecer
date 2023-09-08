@@ -6,15 +6,19 @@
    <elementGuidId>d5ebcc42-9256-43b9-be71-31f41ff6fa73</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#columnHeaderText1</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText1</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'SUCURSAL' or . = 'SUCURSAL')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>5e86bc46-0fe8-44ca-89e1-443361fb7661</webElementGuid>
+      <webElementGuid>4034aa27-7dec-4412-a9d8-277b1cc491b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>d6085736-7cf7-4ac1-a563-a6c3616cd853</webElementGuid>
+      <webElementGuid>5b53ed01-3c08-4522-a679-572108feeee5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>b069c8a0-1f45-4233-9d26-f2488ffe492b</webElementGuid>
+      <webElementGuid>ec04eb0e-0acc-4488-9236-262d3d0451d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>72da0ee4-b36c-4e1f-afe1-4c8e4d2676bb</webElementGuid>
+      <webElementGuid>fa2ef3df-6def-4298-a68a-cfc40236a4ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>SUCURSAL</value>
-      <webElementGuid>1be3704a-b37e-42aa-8954-5b719808df1b</webElementGuid>
+      <webElementGuid>7568abeb-e465-48b7-9bd0-6d7b70d4df72</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>a8c6bf14-9de2-4568-9cf1-d088d0e58cfd</webElementGuid>
+      <webElementGuid>9c9de10d-6806-433a-af50-366c52dd5246</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>2b3338da-7200-43a8-bc8d-263b9849c38d</webElementGuid>
+      <webElementGuid>de8d78a9-a3c0-4941-9cee-6d919da8a093</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>10560109-a95f-457a-aedf-a310892f502b</webElementGuid>
+      <webElementGuid>ea75e8cf-ec23-4719-a59a-ebfe46586496</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>d4f11f72-b5e6-45ca-821d-5d3583eb2904</webElementGuid>
+      <webElementGuid>d1c25119-b9a5-4f90-87dd-17eee3acaa28</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ID DE CUENTA'])[1]/preceding::th[2]</value>
-      <webElementGuid>81079081-652b-4482-b0ac-211de09257ac</webElementGuid>
+      <webElementGuid>4818f274-1a99-4011-9938-f93d22d5a824</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='NRO DOC TITULARES'])[1]/preceding::th[5]</value>
-      <webElementGuid>b20b85be-0b3a-4d10-93d5-df583ca0dd42</webElementGuid>
+      <webElementGuid>dc5a073f-5807-4e70-a0f0-363182499961</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='SUCURSAL']/parent::*</value>
-      <webElementGuid>bb17ab78-ac74-44c4-b427-9f6cd7a35c26</webElementGuid>
+      <webElementGuid>6a8a1970-9127-49e8-8dce-8ce35791155a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>c62c0bda-a142-42f1-88c3-2d423d418ab9</webElementGuid>
+      <webElementGuid>b3109d17-2424-429e-85d6-8afe1df610b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +130,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'SUCURSAL' or . = 'SUCURSAL')]</value>
-      <webElementGuid>7c8474a1-aa87-42bd-8d8a-94cc2888ab68</webElementGuid>
+      <webElementGuid>e1f23363-e5ef-4b4d-b2d4-09a7248cab3f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

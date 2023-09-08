@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -26,29 +28,51 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
-WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
+//Se accede al menu
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.AC.CONSULTA.X.ESTADO')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultasdeCuentas'))
-
-WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
+//WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
+//
+//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultasdeCuentas'))
+//
+//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
 
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
 
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
+//Se accede al menu
 WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.AC.CONSULTA.X.ESTADO')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
+//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
 
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
 
 WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtClienteID'), '1002131534')
 
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
 WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtEstado'), 'ACT')
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/lblClienteID'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 ID = WebUI.getText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/lblClienteID'))
 
@@ -58,6 +82,8 @@ assert ID == "1002131534"
 assert Estado == "ACT"
 
 WebUI.maximizeWindow()
+
+//---------------------------------------------------------------------------------------------------------------------
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

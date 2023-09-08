@@ -6,6 +6,10 @@
    <elementGuidId>5a1f6f9a-993c-472a-8fc0-13d9d551b3e6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'CUENTA.DB es de Ingreso Obligatorio' or . = 'CUENTA.DB es de Ingreso Obligatorio')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>tr > #message</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//td[@id='message']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>a90f7b59-a1e5-48b9-ba54-de7102ed4dd7</webElementGuid>
+      <webElementGuid>9bccf93f-ebcf-44e5-a8cd-f1bc13cb05b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>class</name>
       <type>Main</type>
       <value>message</value>
-      <webElementGuid>24e9e927-9cfd-4823-9bba-2cbbe7b1bab1</webElementGuid>
+      <webElementGuid>51895585-a58b-4259-be4f-360ba50b25c1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>message</value>
-      <webElementGuid>d672c29a-877d-4541-ba81-d0be36b126f2</webElementGuid>
+      <webElementGuid>d442967f-97e1-4f49-95ed-4cb4080ff0ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>31c8273c-8207-4d61-9b24-fff3abcfd90a</webElementGuid>
+      <webElementGuid>f6e62285-d2ad-45a4-908f-edbaf11e9869</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CUENTA.DB es de Ingreso Obligatorio</value>
-      <webElementGuid>e7589d83-1737-40c1-b55f-09192d748408</webElementGuid>
+      <webElementGuid>e1278166-13bf-41d4-82cc-4847355099f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;divMsg&quot;)/table[@id=&quot;message&quot;]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[@id=&quot;message&quot;]</value>
-      <webElementGuid>d9102385-6a06-4487-8c76-1a0d5b0350e2</webElementGuid>
+      <webElementGuid>dbcfe053-3056-4c3e-9e4a-686af9bbfef0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//td[@id='message']</value>
-      <webElementGuid>49412622-fc77-4904-8c81-4fee4e6f2fa7</webElementGuid>
+      <webElementGuid>c183b245-2623-4cb7-80cb-3b42ae03e535</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='message']/tbody/tr[2]/td/table/tbody/tr/td</value>
-      <webElementGuid>1f6ec58e-dc4b-4612-84c5-09dbaff2bb85</webElementGuid>
+      <webElementGuid>53de7765-8b43-47f7-bb8b-ee18eefaa7de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensaje de Error'])[1]/following::td[2]</value>
-      <webElementGuid>acecddc0-82bc-4d35-b339-14f7f563bbe3</webElementGuid>
+      <webElementGuid>10946f9b-7d85-480c-8008-4424480b4932</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>7a47accf-e25d-4398-a19f-7c85581dfea4</webElementGuid>
+      <webElementGuid>66678dab-95da-42cd-a6e8-dac86715d5ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.E.CONS.CHQ.CUENTA.FIL'])[2]/preceding::td[2]</value>
-      <webElementGuid>6d954c32-cc29-489e-991f-bf6edd977a1d</webElementGuid>
+      <webElementGuid>03d82b85-4293-4560-8e4d-119dbb67ac58</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[6]</value>
-      <webElementGuid>4967094c-4988-4816-ba2f-e374e6b3adaa</webElementGuid>
+      <webElementGuid>76ce9eb2-aa56-422d-888f-c32e9a87abe7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='CUENTA.DB es de Ingreso Obligatorio']/parent::*</value>
-      <webElementGuid>ef0d680d-8b3a-4e3a-a634-889915ae799c</webElementGuid>
+      <webElementGuid>b635a149-3b1c-4bc9-87a1-5ece598e9479</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/table/tbody/tr/td</value>
-      <webElementGuid>8e90182f-0a4c-4ded-a418-7e0e07e4bd99</webElementGuid>
+      <webElementGuid>472ed5f2-e944-47a2-bcb7-165c49c4368c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[@id = 'message' and (text() = 'CUENTA.DB es de Ingreso Obligatorio' or . = 'CUENTA.DB es de Ingreso Obligatorio')]</value>
-      <webElementGuid>c85c84a1-d1c0-4d80-af99-1a5310721e76</webElementGuid>
+      <webElementGuid>8caddaf3-6876-491a-b4e9-f2ea7a3aa688</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

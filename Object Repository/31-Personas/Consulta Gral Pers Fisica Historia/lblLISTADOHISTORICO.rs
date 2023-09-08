@@ -6,6 +6,10 @@
    <elementGuidId>7ec492ba-a42e-4c22-8d0b-c1206c56d6b8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'LISTADO HISTORICO' or . = 'LISTADO HISTORICO')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#enqheader > tbody > tr > td</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//table[@id='enqheader']/tbody/tr/td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>b1d24c6a-5552-4482-970c-3fbb865cb888</webElementGuid>
+      <webElementGuid>20d89766-8ccd-497e-be48-a5e2b6e75f75</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>LISTADO HISTORICO</value>
-      <webElementGuid>6deb79bc-0c9e-459c-92b3-fe6514cd7cc1</webElementGuid>
+      <webElementGuid>58e91bf4-e2ef-4d02-9e17-406154b4d09e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[1]/td[1]</value>
-      <webElementGuid>791bd655-3b0a-4637-b7b6-220d48cfb1fe</webElementGuid>
+      <webElementGuid>345b5555-bc4b-4ada-9496-0edc83656144</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr/td</value>
-      <webElementGuid>4b1e45e7-d7e6-485d-8dda-6b5cc33f2b93</webElementGuid>
+      <webElementGuid>e16bbdbc-e656-4e06-8e20-363c2b781361</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>91c9e96f-127a-4ab6-a937-530b5cd9db3d</webElementGuid>
+      <webElementGuid>9bcb7cee-dc70-488e-b925-7e68d4f65f66</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>9a3653dd-4505-43cd-a3e0-d3a9fe801564</webElementGuid>
+      <webElementGuid>a878161a-a7b9-4dd1-a44b-b9c54e21c274</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ID PERSONA  :'])[1]/preceding::td[1]</value>
-      <webElementGuid>ab41ad16-d10a-4d6c-bad6-1c078e7d391d</webElementGuid>
+      <webElementGuid>15adb7b4-b162-44aa-9c19-1fc29388982e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='APELLIDO    :'])[1]/preceding::td[3]</value>
-      <webElementGuid>2ae76ab0-bf12-4e43-bbe7-64b3ad439d8c</webElementGuid>
+      <webElementGuid>cf175f55-4892-47ef-8b10-33b19cb5452b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='LISTADO HISTORICO']/parent::*</value>
-      <webElementGuid>58d9f444-0ab4-4d3e-9977-910207063999</webElementGuid>
+      <webElementGuid>ece6a58b-6ac6-439e-b92c-aecfab544811</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th/table/tbody/tr/td</value>
-      <webElementGuid>8e14c19c-bfca-4795-bb90-8b010b0d1e94</webElementGuid>
+      <webElementGuid>6b565d45-2fe3-4c1a-bbed-dd74c70afb83</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'LISTADO HISTORICO' or . = 'LISTADO HISTORICO')]</value>
-      <webElementGuid>22195329-709f-4b8e-8dce-de31af1e3298</webElementGuid>
+      <webElementGuid>8ca6c5a9-c29e-4eea-b581-5bbfe972ebec</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

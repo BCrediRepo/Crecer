@@ -6,14 +6,19 @@
    <elementGuidId>80b168cf-6ff9-4a15-a404-4c0a5429d05c</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.CQ.FCERT.STOCK');processMenuHeaderText('22.4.2 Reporte Inv Form de Certificacion')&quot;]</value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
+         <value>//*[(text() = '22.4.2 Reporte Inv Form de Certificacion ' or . = '22.4.2 Reporte Inv Form de Certificacion ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>cd1f4130-606f-45ad-9b36-75a4027bb3ff</webElementGuid>
+      <webElementGuid>f86d6e08-cfd2-4b40-8aff-854c6593dac8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.CQ.FCERT.STOCK');processMenuHeaderText('22.4.2 Reporte Inv Form de Certificacion')</value>
-      <webElementGuid>891fb735-aaea-4b6f-9360-0bfdcb6b7339</webElementGuid>
+      <webElementGuid>f7a5d8ac-1148-4186-a514-b9a65f52dfa3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.CQ.FCERT.STOCK');</value>
-      <webElementGuid>483a5569-0dc5-4f13-9e19-b633c05d5f43</webElementGuid>
+      <webElementGuid>98e64273-27e1-4613-8ae8-70726cfdaaee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>22.4.2 Reporte Inv Form de Certificacion </value>
-      <webElementGuid>32ceaed5-6ea8-4b37-a9f9-dd4abbd6793c</webElementGuid>
+      <webElementGuid>b886f4b1-d863-40ea-ba40-e9ea8d7dd863</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
-      <webElementGuid>89be0ce4-9021-4edb-b98c-917376cdff68</webElementGuid>
+      <webElementGuid>d1dbc4a1-8b51-407d-9142-dc2580fb3c8b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.CQ.FCERT.STOCK');processMenuHeaderText('22.4.2 Reporte Inv Form de Certificacion')&quot;]</value>
-      <webElementGuid>a91ab748-7f65-4c14-96a4-5a1561ec6c5c</webElementGuid>
+      <webElementGuid>4c448f22-0e72-4ca4-b41d-bb301e7fe003</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[23]/li/ul/li[4]/ul/li[2]/a</value>
-      <webElementGuid>37ce9b13-27b6-459d-bab9-d8292f54ee31</webElementGuid>
+      <webElementGuid>ed6a0a51-d911-4afa-9e3d-65b3f1a85f0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'22.4.2 Reporte Inv Form de Certificacion')]</value>
-      <webElementGuid>de6a9167-0aa1-4345-b3aa-53e7b33d6554</webElementGuid>
+      <webElementGuid>50660dd7-f4dd-47c6-aa9b-d8f950769a07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Formulas de Certificacion'])[1]/following::a[2]</value>
-      <webElementGuid>d14fef21-b77e-422f-9446-06df324522c8</webElementGuid>
+      <webElementGuid>da0a1a29-2c6c-45f2-81be-725b81833500</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Inventario Certificaciones de Cheques'])[1]/following::a[2]</value>
-      <webElementGuid>7cb3fb2e-2219-4440-9a53-63a0f54cf2cb</webElementGuid>
+      <webElementGuid>ca8acd04-b3e1-4c79-9a13-b713c735992e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas de Inventario Permanente'])[1]/preceding::a[2]</value>
-      <webElementGuid>01ced4e4-bf09-4a32-993e-627bfaefd4c1</webElementGuid>
+      <webElementGuid>1c7c3a54-64e7-4197-89d4-052636eddb36</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Partidas Dadas de Alta'])[1]/preceding::a[2]</value>
-      <webElementGuid>ad513395-ab99-49bc-9b4f-df764ee5065a</webElementGuid>
+      <webElementGuid>849656d5-c543-43ac-8801-d0cf4a3f6624</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='22.4.2 Reporte Inv Form de Certificacion']/parent::*</value>
-      <webElementGuid>f19c83ef-80b7-43be-a026-a3c76d639736</webElementGuid>
+      <webElementGuid>3ff777bf-1ab7-4b53-8c51-ce4903bed3c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.CQ.FCERT.STOCK');&quot;)]</value>
-      <webElementGuid>d275a6a2-b8eb-4eb3-b081-360948c9b80d</webElementGuid>
+      <webElementGuid>d9f02e6a-e752-4fb6-a841-3d39a31ef2fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[23]/li/ul/li[4]/ul/li[2]/a</value>
-      <webElementGuid>e686f935-7de6-4d14-84c6-059ef7b9dfa5</webElementGuid>
+      <webElementGuid>a624a7d5-46a8-4d60-b85f-7ebe7b59c46c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.CQ.FCERT.STOCK&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = '22.4.2 Reporte Inv Form de Certificacion ' or . = '22.4.2 Reporte Inv Form de Certificacion ')]</value>
-      <webElementGuid>451cf37c-94d5-420d-b8a8-3d4fb84c040c</webElementGuid>
+      <webElementGuid>1024647c-c233-49c5-8a06-3798de906ef6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

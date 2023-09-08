@@ -14,7 +14,7 @@
          <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>a0bd48a3-32be-4466-9b30-77feef450b25</webElementGuid>
+      <webElementGuid>b758b950-fa42-41a8-83a0-079bcd34fbf1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTACER</value>
-      <webElementGuid>f7c79dfa-d2c8-4328-abae-d123f6554d2c</webElementGuid>
+      <webElementGuid>944c545c-2b1e-4126-9fa3-957b67b6b1d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>15170000212 ENRICO EDIE AGUSTIN</value>
-      <webElementGuid>b057a809-8f5e-426b-9515-686fe47076a6</webElementGuid>
+      <webElementGuid>42ffeaf1-5c46-4447-8998-09585f2a33e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTACER&quot;]</value>
-      <webElementGuid>c380cdfc-13a2-4da9-8a2d-d200b60d99ff</webElementGuid>
+      <webElementGuid>2c752012-12f1-4069-8b34-4a4baee85827</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>d7ccddb3-bda3-4945-a42c-4f7caaf99d42</webElementGuid>
+      <webElementGuid>4aae6e9e-d96b-4c11-8c72-bfad971dbfbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nro. de Cuenta'])[1]/following::td[1]</value>
-      <webElementGuid>8b08a326-f2fd-43e1-b9db-b52ee9fa8b2a</webElementGuid>
+      <webElementGuid>dfa0a061-ecb7-4350-84a4-a5f0d794ac26</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto SubProducto'])[1]/preceding::td[1]</value>
-      <webElementGuid>5582b2df-7cb7-4952-962a-11a28bb89c23</webElementGuid>
+      <webElementGuid>5fcdb10b-7ed9-476a-a91d-c88f3b2aed1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[3]</value>
-      <webElementGuid>7f7ba650-4345-455f-a337-96130be53c72</webElementGuid>
+      <webElementGuid>764538ef-2980-47f3-a412-b31a7043f601</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='15170000212 ENRICO EDIE AGUSTIN']/parent::*</value>
-      <webElementGuid>60385c7a-ed68-46be-aa2c-69e183ae4ce0</webElementGuid>
+      <webElementGuid>b3c084d3-a458-41a5-b4a4-19e86820ebeb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]</value>
-      <webElementGuid>472401a3-e5ec-4414-b818-975e4aa78ab3</webElementGuid>
+      <webElementGuid>4ebff369-840d-4f01-94dd-a092d60cbb9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '15170000212 ENRICO EDIE AGUSTIN' or . = '15170000212 ENRICO EDIE AGUSTIN')]</value>
-      <webElementGuid>9223457e-51bf-4a58-8a03-ccf03a9907d9</webElementGuid>
+      <webElementGuid>0890203b-5211-43c3-844c-849f16010b51</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Suc.' or . = 'Suc.')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>80370ea3-33cc-4aec-8b10-cbc9b30dbed5</webElementGuid>
+      <webElementGuid>de80efcd-b465-4d44-b9c6-30c6ea768f49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>1f6b6740-6782-4147-9c2b-7d7861db4952</webElementGuid>
+      <webElementGuid>92ba231a-472e-43b6-b04e-05174e803cf6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>045fe2a3-1b0c-4212-95d1-365e97679cee</webElementGuid>
+      <webElementGuid>fc402ab6-5171-449e-9ee1-0b9c50fadf23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>7ba6e1c7-4f74-4bed-9456-fe522135e76a</webElementGuid>
+      <webElementGuid>f7118b4e-a060-4bb1-934f-a03c18c92fb8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Suc.</value>
-      <webElementGuid>151f5d5a-dedc-41c3-942b-a91c3a58bca2</webElementGuid>
+      <webElementGuid>67707a78-09f7-49d9-9250-e3b1e92c715e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>ba539163-9a5d-4426-9fe4-4a2349eb620a</webElementGuid>
+      <webElementGuid>ecde9bf8-fecc-48e7-a37e-f0bf96225210</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>1f15c30b-60ba-4deb-bb11-42e4bc7bdef3</webElementGuid>
+      <webElementGuid>94a3b692-9229-48d3-954f-0099db72221b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>b98df35c-2a04-458d-b617-19fbd540f2d3</webElementGuid>
+      <webElementGuid>d0f12213-4132-41f1-b807-5e754e2c48aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>28a964fb-0717-4818-994f-57817d5ea181</webElementGuid>
+      <webElementGuid>31816edc-bc7a-499d-b5fc-b72ca79bcc57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>816449ef-bdd9-4870-bf42-48c3cf425a5a</webElementGuid>
+      <webElementGuid>d4861068-8e27-4a37-ba9b-fa9683a0b9aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ID Rech.'])[1]/preceding::th[2]</value>
-      <webElementGuid>8f4a920e-6eb1-4157-a71c-aa9462f94b3f</webElementGuid>
+      <webElementGuid>d3d3f6ce-4658-41fc-91dd-4b39f0fefe60</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Origen'])[1]/preceding::th[5]</value>
-      <webElementGuid>5d089794-bd3f-46e2-b3af-89cd9908fa07</webElementGuid>
+      <webElementGuid>cbd46cf0-3aa9-4617-b311-5623e5fcf767</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Suc.']/parent::*</value>
-      <webElementGuid>0a4f6521-d498-47e2-acdc-2b9f792796bc</webElementGuid>
+      <webElementGuid>f8fd56d3-4bda-451f-adce-3e162f3729da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>e96fc60a-5848-42d7-86db-8f07116233b4</webElementGuid>
+      <webElementGuid>8449ede1-b562-4be0-a8aa-28ffebde5393</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Suc.' or . = 'Suc.')]</value>
-      <webElementGuid>8b1f6099-6f69-4180-a212-03dc2bd5266e</webElementGuid>
+      <webElementGuid>7875013d-e5cb-426f-8f8b-65988d618445</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

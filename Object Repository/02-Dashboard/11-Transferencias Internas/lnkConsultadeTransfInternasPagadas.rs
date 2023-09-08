@@ -7,10 +7,15 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONS.TINT.PAGADAS RUN');processMenuHeaderText('Consulta de Transf. Internas Pagadas')&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de Transf. Internas Pagadas ' or . = 'Consulta de Transf. Internas Pagadas ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c83b42f7-279a-4f49-aabd-5648b29d3575</webElementGuid>
+      <webElementGuid>022c2c55-49dd-43c6-a522-e5db6a97f327</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONS.TINT.PAGADAS RUN');processMenuHeaderText('Consulta de Transf. Internas Pagadas')</value>
-      <webElementGuid>22f551f0-b8a8-4c69-9ed0-8430ecb59c08</webElementGuid>
+      <webElementGuid>08a89d98-ae20-4e5c-80b6-bfe5783268e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.CONS.TINT.PAGADAS RUN');</value>
-      <webElementGuid>0a1b89a3-338d-44c6-a45f-8b2d7df5e01c</webElementGuid>
+      <webElementGuid>f1aa79bf-c527-4b39-8b37-f3b705267e9e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Transf. Internas Pagadas </value>
-      <webElementGuid>4702317c-42e3-4ce2-ac1f-efc933f77589</webElementGuid>
+      <webElementGuid>c5fbe275-3c00-487c-bacb-172743096b7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[5]/a[1]</value>
-      <webElementGuid>a17ad906-3366-4912-a70f-7600a64d1ba4</webElementGuid>
+      <webElementGuid>9f06fd08-32f3-41e5-871c-407a0519c261</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +66,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>ebec09a5-7bb9-45d4-876a-1ecd81aadf05</webElementGuid>
+      <webElementGuid>f789de8a-1012-4cbe-9468-708b33e95775</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONS.TINT.PAGADAS RUN');processMenuHeaderText('Consulta de Transf. Internas Pagadas')&quot;]</value>
-      <webElementGuid>5fffcf9e-e83c-43d5-ba43-63e2fb9def06</webElementGuid>
+      <webElementGuid>68c7a842-22d1-44e2-a767-be849c7885af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[19]/li/ul/li[5]/a</value>
-      <webElementGuid>f59fb5b1-63f5-47c1-bbbe-59d10183acad</webElementGuid>
+      <webElementGuid>ea10883d-412d-4055-a4e1-3aaeb526b576</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +90,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Transf. Internas Pagadas')]</value>
-      <webElementGuid>75366455-5959-4478-aa1c-9f97e7f467c9</webElementGuid>
+      <webElementGuid>629d7e84-1f07-4d20-b1e9-34ed7f74d58f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Altas Transf. Internas'])[1]/following::a[1]</value>
-      <webElementGuid>1de21fca-923a-43ef-8aa5-46a8d42ed06e</webElementGuid>
+      <webElementGuid>d6bb81e5-c96c-4983-b55c-96d058712e9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pago Transf. Interna - Posteo'])[1]/following::a[2]</value>
-      <webElementGuid>6c71506c-3d47-46c6-9a3b-47f4aedfe7c5</webElementGuid>
+      <webElementGuid>8148b6dd-9ac1-478a-9f79-284aff91fc23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ajustes Monetarios'])[1]/preceding::a[1]</value>
-      <webElementGuid>ccb80b86-adfa-4d5f-b117-9113104c8187</webElementGuid>
+      <webElementGuid>b939ed3b-4abd-4d13-8d8a-a6ed1fb7c0f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito por Ajustes'])[1]/preceding::a[1]</value>
-      <webElementGuid>8ba92626-9a71-4f7c-941c-5bb1b12542d4</webElementGuid>
+      <webElementGuid>05a6c59a-c27f-42bd-a462-1ce6a57d5343</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Transf. Internas Pagadas']/parent::*</value>
-      <webElementGuid>f0f19e74-50c9-45ff-bc57-1b0f0c4bf565</webElementGuid>
+      <webElementGuid>edc866f6-6c92-48e7-8225-6e3c9323715b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +138,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.CONS.TINT.PAGADAS RUN');&quot;)]</value>
-      <webElementGuid>9d1f9339-91d0-4b18-8440-e59f5ac6b04c</webElementGuid>
+      <webElementGuid>e54ea6e2-fd21-439f-9412-5cc299dec64b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[19]/li/ul/li[5]/a</value>
-      <webElementGuid>f0f1e5a0-8654-4d22-9539-8f2dc29c833a</webElementGuid>
+      <webElementGuid>979bb4f5-bef0-4aa5-aa41-27cdc7d6f509</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.CONS.TINT.PAGADAS RUN&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Transf. Internas Pagadas ' or . = 'Consulta de Transf. Internas Pagadas ')]</value>
-      <webElementGuid>9c10995e-cab0-40d8-9174-0a33ec4e0ac9</webElementGuid>
+      <webElementGuid>996f844a-edde-4604-b7f0-adbe643f733d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
