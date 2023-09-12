@@ -13,8 +13,12 @@
          <key>CSS</key>
          <value></value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = ' Movimientos rechazan informe' or . = ' Movimientos rechazan informe')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>f1c374e3-d4ed-413e-9c31-c925c39274ea</webElementGuid>
+      <webElementGuid>5d101189-65fb-4f99-8b7a-890bdf382b74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Movimientos rechazan informe</value>
-      <webElementGuid>0b88f40c-6247-4d4b-a673-7ef8e25b5eb0</webElementGuid>
+      <webElementGuid>20d9f455-6580-4812-9289-ec81fbcb2b74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[1]</value>
-      <webElementGuid>023d02dc-6d24-4fcc-8c2f-5be7e0096740</webElementGuid>
+      <webElementGuid>edf17c07-8ec9-4c7a-bda2-c6c96905e3fc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
-      <webElementGuid>68a68238-84a9-449f-94be-8cc8d6686c54</webElementGuid>
+      <webElementGuid>d4f5c29e-950a-428c-b80f-ad09a9d8b95f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>5f30a12f-814e-42a3-94b2-82c51acbba48</webElementGuid>
+      <webElementGuid>d6f9769e-e5a6-46c8-a883-3c13805984d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>d7ec1a80-5f89-42d6-9f76-5d79059a9578</webElementGuid>
+      <webElementGuid>7ce74766-b801-4f3e-9edf-28b10403591e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ID'])[1]/preceding::td[2]</value>
-      <webElementGuid>aedcc156-7d98-4f71-99ab-b67aa117e1f0</webElementGuid>
+      <webElementGuid>0b9d4a07-ed83-41f9-8b93-bf2511407929</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Secuencia'])[1]/preceding::td[2]</value>
-      <webElementGuid>cbe579fc-8c22-46fa-a048-35ad6b8055e6</webElementGuid>
+      <webElementGuid>682539a1-1713-48f6-afc5-4fc228f32327</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td</value>
-      <webElementGuid>6d4705ca-fbfc-4e60-8ae7-137be283621e</webElementGuid>
+      <webElementGuid>53db78cc-65a2-475d-8966-c173c30535e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +98,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = ' Movimientos rechazan informe' or . = ' Movimientos rechazan informe')]</value>
-      <webElementGuid>f3304b7c-6183-4c4c-92de-9abce6c3da79</webElementGuid>
+      <webElementGuid>fa4872c0-fea1-4115-9e80-b1a0cf97d774</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

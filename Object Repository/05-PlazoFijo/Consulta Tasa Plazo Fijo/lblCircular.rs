@@ -13,8 +13,12 @@
          <key>CSS</key>
          <value></value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Circular : 3' or . = 'Circular : 3')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>3ce9db85-96c9-4dd9-a68c-cd584c98d45a</webElementGuid>
+      <webElementGuid>f94e167b-8d3a-493a-9c02-fa1f1b6b777c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Circular : 3</value>
-      <webElementGuid>a9fc27f8-40de-4170-b553-a6b962fb8b0c</webElementGuid>
+      <webElementGuid>a438538b-df01-4948-b145-315c10fdd4d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[5]/td[1]</value>
-      <webElementGuid>cb9cf0dd-f407-4a6c-8b39-654eeafe250c</webElementGuid>
+      <webElementGuid>c77fb032-20b9-4274-bbe1-d1f6f6488bf4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[5]/td</value>
-      <webElementGuid>38cc542d-ab96-468f-a885-3afa5597567c</webElementGuid>
+      <webElementGuid>50e93da7-1d44-4f0d-ae5f-a993a9b84fcf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sector Persona: PRI'])[1]/following::td[1]</value>
-      <webElementGuid>7d472e58-0f6d-420f-babd-d45a637b7979</webElementGuid>
+      <webElementGuid>f7659ae9-8cd8-4d7a-a075-cf6cef4cd3e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda : ARS'])[1]/following::td[2]</value>
-      <webElementGuid>02fde00f-8818-4bc7-9dde-0f38a382d0bb</webElementGuid>
+      <webElementGuid>c920422b-0076-44a4-9345-c1ea5009ffaf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Intransf Pesos Trad Asalariados BI'])[1]/preceding::td[1]</value>
-      <webElementGuid>fbc64e24-4338-4f1e-9d9b-e10afab12ee4</webElementGuid>
+      <webElementGuid>3703c53c-0a2b-449f-b679-06e267cb6154</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto minimo : 1000'])[1]/preceding::td[2]</value>
-      <webElementGuid>0c2071b0-46ce-4701-ae8c-882e47072adb</webElementGuid>
+      <webElementGuid>e791f5a8-47a3-433b-8d53-2b070dbd4d63</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Circular : 3']/parent::*</value>
-      <webElementGuid>b7614f58-67ad-4fc1-90c6-0a4eeb378630</webElementGuid>
+      <webElementGuid>ea100446-cf22-454d-b6bb-05bcfd3bb437</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[5]/td</value>
-      <webElementGuid>2610f752-1fde-443c-b69c-2b76bc40e51a</webElementGuid>
+      <webElementGuid>eb88245d-c09a-4009-9404-1efdf526ac97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Circular : 3' or . = 'Circular : 3')]</value>
-      <webElementGuid>3e362959-5b90-4e88-9438-cbf138c1f094</webElementGuid>
+      <webElementGuid>d71de360-e2e2-45c7-89af-ca94b1fa5739</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

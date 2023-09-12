@@ -44,11 +44,21 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('PF Vencidos Inmovilizados Impagos')
 
-//WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.selectOptionByIndex(findTestObject('05-PlazoFijo/PF Vencidos Inmovilizados Impagos/cbxOpciones'), 1)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 
 WebUI.click(findTestObject('05-PlazoFijo/PF Vencidos Inmovilizados Impagos/btnSeleccion'))
 

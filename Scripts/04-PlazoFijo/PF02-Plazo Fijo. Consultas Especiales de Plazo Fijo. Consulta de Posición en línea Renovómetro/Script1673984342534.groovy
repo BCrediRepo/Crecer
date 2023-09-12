@@ -44,8 +44,22 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,16))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblConsultadePosicionEnLinea'))
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/txtMoneda'),"PESOS")
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblPESOS'))//assert lbl con moneda
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 
 //---------------------------------------------------------------------------------------------------------------------
 

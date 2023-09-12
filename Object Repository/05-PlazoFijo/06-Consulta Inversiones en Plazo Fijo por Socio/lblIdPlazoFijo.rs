@@ -14,7 +14,7 @@
          <value>#columnHeaderText1</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>b3cc7a68-79c0-42b0-ae79-422542bb0684</webElementGuid>
+      <webElementGuid>1f040846-42b5-49c5-8fa2-a725010e06f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>ea892073-16a4-4631-ae15-bcbde8bce98f</webElementGuid>
+      <webElementGuid>abfce470-725b-48d9-9925-b29b3439c238</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>86ddc8cd-6b56-4dd6-8261-9bd1aa57816d</webElementGuid>
+      <webElementGuid>726ff599-4a83-4d6d-8d3b-443e5b31b9d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>5c98fffd-7ef1-4ede-9b21-0623f9f954a5</webElementGuid>
+      <webElementGuid>3c005063-ccc1-4e2e-8324-b8355aaad003</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Id Plazo Fijo</value>
-      <webElementGuid>e18d9f42-b74f-47f5-beb7-db78bb9edfe3</webElementGuid>
+      <webElementGuid>5cafb1a8-1d8d-4185-9224-807f53e0f2ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>fd5c7c72-6cc2-46e3-af0f-6458a6dbbe96</webElementGuid>
+      <webElementGuid>6b21ae18-aa81-438f-adfa-05feff336169</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>bd66e61e-e6d6-4c97-a384-e7842236b880</webElementGuid>
+      <webElementGuid>bed864b6-9f1e-4ff3-9a0d-324ffe6eda0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>6a5fc6a4-1a0c-4650-9a0f-8f137dfdacda</webElementGuid>
+      <webElementGuid>b91fa4e2-5b7f-45ad-ac2e-9ca3d241afeb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>00ce92a7-b2f4-4ed6-95f7-c42a91848221</webElementGuid>
+      <webElementGuid>0ada1a6c-bebc-48ad-a6e8-90e9ebbc4261</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>94637017-1acc-4ad8-9d5b-dd4bc05617cf</webElementGuid>
+      <webElementGuid>8080bbb7-d81b-4771-960a-b2c5370c8582</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Alta'])[1]/preceding::th[2]</value>
-      <webElementGuid>69e0b498-6dcb-4383-a9f8-ab53411b64a1</webElementGuid>
+      <webElementGuid>40310421-28fd-43f7-b55a-d7e6e61f0bee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Vto'])[1]/preceding::th[5]</value>
-      <webElementGuid>39584e35-805e-40ef-8c65-de268c03716d</webElementGuid>
+      <webElementGuid>1fdcbeb8-ddad-4eb2-9fcc-55f308cf1a64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Id Plazo Fijo']/parent::*</value>
-      <webElementGuid>79b41748-2ec1-4d6b-ad36-a802f7694e2c</webElementGuid>
+      <webElementGuid>cffb83f2-ba04-4a12-8c41-372551410d32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>a6819af4-06f9-4c14-8b34-7b1a8ad6c4cb</webElementGuid>
+      <webElementGuid>7a300d04-c273-43fe-b491-d0af90f32f4c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Id Plazo Fijo' or . = 'Id Plazo Fijo')]</value>
-      <webElementGuid>ccec25bd-5361-430c-8b51-46384b1a4cc1</webElementGuid>
+      <webElementGuid>76dc5634-4646-4b4d-99b8-897e291a6d0f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

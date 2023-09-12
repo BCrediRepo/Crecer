@@ -6,6 +6,10 @@
    <elementGuidId>5226fd06-1884-406c-ba03-d432cce39c81</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'CONTROL SALDOS ASEGURADOS  EN LINEA ' or . = 'CONTROL SALDOS ASEGURADOS  EN LINEA ')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.TESORERIA.GENERAL');processMenuHeaderText('CONTROL SALDOS ASEGURADOS  EN LINEA')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>e0ff8bb7-2326-4669-9c46-7b2f5ac99d5f</webElementGuid>
+      <webElementGuid>3c92a3f6-49da-4b52-a448-d2749dc832e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.TESORERIA.GENERAL');processMenuHeaderText('CONTROL SALDOS ASEGURADOS  EN LINEA')</value>
-      <webElementGuid>b9163ffb-f472-4fc5-b422-6858cfa34f6a</webElementGuid>
+      <webElementGuid>7f257960-c838-43a4-9475-556350c3824e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.TT.TESORERIA.GENERAL');</value>
-      <webElementGuid>9844b1ae-7357-4073-b966-541a8ea765da</webElementGuid>
+      <webElementGuid>789bfdab-f4a7-4dd8-ac64-e3844bc3514e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CONTROL SALDOS ASEGURADOS  EN LINEA </value>
-      <webElementGuid>5222ebd6-1235-4103-8d40-70da8b708f91</webElementGuid>
+      <webElementGuid>ebbb9363-cacd-4a9e-8aa7-abf35fe7c494</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[3]/a[1]</value>
-      <webElementGuid>fb6af6a4-19e4-4472-9a99-e3a725c80d4e</webElementGuid>
+      <webElementGuid>b2a3f42c-d0a9-4562-8af0-f12c685efe4c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.TESORERIA.GENERAL');processMenuHeaderText('CONTROL SALDOS ASEGURADOS  EN LINEA')&quot;]</value>
-      <webElementGuid>38da9800-a988-440b-8a6a-6989dc1da338</webElementGuid>
+      <webElementGuid>5a2778d3-ad8e-428f-ba58-d584da43e19e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[4]/ul/li[2]/ul/li[4]/ul/li[3]/a</value>
-      <webElementGuid>85a369ec-57f0-48ea-a238-da73d7ee07ee</webElementGuid>
+      <webElementGuid>f4a84fcb-a7f2-4cac-8e3c-99d69a490a64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'CONTROL SALDOS ASEGURADOS  EN LINEA')]</value>
-      <webElementGuid>aac351de-81ab-4ac1-8bd8-109fc5de62b4</webElementGuid>
+      <webElementGuid>5c927624-142d-4644-a838-6c22d4f7ea75</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ESTADO DE REMESAS POR RECIBIR'])[1]/following::a[1]</value>
-      <webElementGuid>90bbbb8e-29ef-48ca-8d2d-d92b4735a70c</webElementGuid>
+      <webElementGuid>d4d08912-d689-4d67-b4c9-b056c0e0e90f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ESTADO DE REMESAS RECIBIDAS'])[1]/following::a[2]</value>
-      <webElementGuid>541897f6-73f0-4cd0-9e18-d5cd8e29d677</webElementGuid>
+      <webElementGuid>5e40cea9-21d3-4df3-ba90-1a4a5e61b8e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='SOLICITUDES'])[3]/preceding::a[1]</value>
-      <webElementGuid>135b4e18-faf8-4a8e-95c1-0f7caadfa749</webElementGuid>
+      <webElementGuid>7193e9b5-d6af-421c-9f4a-9e8df812df60</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='SOLICITUD DE MONEDAS'])[2]/preceding::a[1]</value>
-      <webElementGuid>9ce198e7-f6f7-4549-88b7-308485389636</webElementGuid>
+      <webElementGuid>902b45ef-9004-4250-9730-ddd802e477cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.TT.TESORERIA.GENERAL');&quot;)]</value>
-      <webElementGuid>4b6b4cd9-b6a0-4e59-a975-46de2dc09f71</webElementGuid>
+      <webElementGuid>1bcd69ee-0be6-4335-82c5-527386a727bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/ul/li[2]/ul/li[4]/ul/li[3]/a</value>
-      <webElementGuid>7704cbc3-a3c6-4c37-9fc1-2a89dfd7ae94</webElementGuid>
+      <webElementGuid>782c8d15-694a-4bd1-9aac-23a46f659614</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.TT.TESORERIA.GENERAL&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'CONTROL SALDOS ASEGURADOS  EN LINEA ' or . = 'CONTROL SALDOS ASEGURADOS  EN LINEA ')]</value>
-      <webElementGuid>7a1f208f-afde-48d1-87b6-8d4d6cfc37e1</webElementGuid>
+      <webElementGuid>8571a7a0-3045-4cac-9048-25c2e9c40644</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -16,44 +16,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-def myTest1 = new TestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta')
-def myTest2 = new TestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta')
+//def myTest1 = findTestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta')
 
-def data = TestDataFactory.findTestData('datos.csv')
+//def myTest2 = findTestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta')
+
+//def data = TestDataFactory.findTestData('Data Files/MainData/DatosNCD')
 //el archivo podria estar en la carpeta Test Data 
-def totalRows = data.getRowNumbers()
+//def totalRows = data.getRowNumbers()
+for (def row = 1; row <= 61; row++) {
+    GlobalVariable.vDNI = findTestData('MainData/DatosNCD').getValue(1, row)
+    GlobalVariable.vFECHA = findTestData('MainData/DatosNCD').getValue(2, row)
+	GlobalVariable.vCODPROD = findTestData('MainData/DatosNCD').getValue(3, row)
+	GlobalVariable.vTARIFARIO = findTestData('MainData/DatosNCD').getValue(4, row)
+	WebUI.callTestCase(findTestCase('TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta'), [:])
+	WebUI.callTestCase(findTestCase('TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta'), [:])
 
-for (def row = 1; row <= totalRows; row++) {
-	def Parametro1 = data.getValue('DNI', row)
-	def Parametro2 = data.getValue('Fecha', row)
-	
-
-	// Define tus variables de caso de prueba aquí (si es necesario)
-	myTest1.setVariable('DNI', Parametro1)
-	myTest1.setVariable('Fecha', Parametro2)
-	
-	// Ejecuta el caso de prueba
-//	CustomKeywords.'com.example.TestKeywords.AC01-Alta de Cuenta'(Parametro1, Parametro2)
-//	CustomKeywords.'com.example.TestKeywords.AC02-Autorizacion Alta Cuenta'()
-	myTest1.run()
-	myTest2.run()
-}
-
-
-//---------------------------------------------------------------------------------------------------------------------
+} //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

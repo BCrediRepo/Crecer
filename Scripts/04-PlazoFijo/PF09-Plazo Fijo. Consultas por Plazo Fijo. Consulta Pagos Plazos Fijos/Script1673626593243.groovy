@@ -53,11 +53,22 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Con
 
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/txtNumeroOperacion'), '11918739')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lblNumeroOperacionValidacion'),6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lblNumeroOperacionValidacion'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 
 //---------------------------------------------------------------------------------------------------------------------

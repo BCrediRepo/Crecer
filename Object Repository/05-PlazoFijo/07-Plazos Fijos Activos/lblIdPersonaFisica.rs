@@ -6,15 +6,15 @@
    <elementGuidId>3e2ff004-f551-4ae3-94a0-ef8403e1e879</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='toolBar']/table[2]/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.iddisplay.iddisplay_BCCLPERSONA.iddisplay_BCCLPERSONA_BCCLMCUENCAPFENQ</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='toolBar']/table[2]/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/span</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>af388533-4b0b-4e97-b5f8-6681ec8acfe5</webElementGuid>
+      <webElementGuid>299f09a4-2443-45f1-84c1-14dd6c749c44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>1e64ed8b-d3fc-4345-820e-a056833f115c</webElementGuid>
+      <webElementGuid>19f91073-b6d7-4e66-8926-eb761d23f7a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>iddisplay iddisplay_BCCLPERSONA iddisplay_BCCLPERSONA_BCCLMCUENCAPFENQ</value>
-      <webElementGuid>b488075f-9d10-46a1-bf29-73817f48abeb</webElementGuid>
+      <webElementGuid>1f58125a-d970-43a0-8710-cd8bfd664b82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>1002709912</value>
-      <webElementGuid>3d91fadb-1114-45d6-a83a-077f48d29344</webElementGuid>
+      <webElementGuid>6e7800d6-4efa-47d4-9c2f-b008cb0234e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;toolBar&quot;)/table[2]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/span[@class=&quot;iddisplay iddisplay_BCCLPERSONA iddisplay_BCCLPERSONA_BCCLMCUENCAPFENQ&quot;]</value>
-      <webElementGuid>67350cc1-3799-4f55-95fb-7404ea5fc2e8</webElementGuid>
+      <webElementGuid>915bac4e-713e-47c0-920a-3e616939dd46</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='toolBar']/table[2]/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/span</value>
-      <webElementGuid>d184fce4-8aa0-43f4-9e4b-9d1717c86587</webElementGuid>
+      <webElementGuid>06fdcfd4-da58-4a19-919a-06df1c07dd92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Identificacion de la Persona Fisica'])[1]/following::span[1]</value>
-      <webElementGuid>507cb5a3-a1a3-4033-9abc-e06bfc25ed35</webElementGuid>
+      <webElementGuid>8073db75-2030-4e0b-9e29-22714e147f8d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazo Fijos Activos'])[1]/following::span[1]</value>
-      <webElementGuid>32bedd6c-ffad-4de2-8970-1330ca36cbcd</webElementGuid>
+      <webElementGuid>8ecaee4e-a44b-4b87-a33d-e3ce53d4610e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ctr)'])[1]/preceding::span[1]</value>
-      <webElementGuid>6e6a3483-4eaf-46cf-bb0e-8f4736cc5a1b</webElementGuid>
+      <webElementGuid>1a935af5-b51b-4d87-9394-404a3fb93567</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo de Captura'])[1]/preceding::span[1]</value>
-      <webElementGuid>6f600a7e-95f6-4ee7-83bf-4beb97df5b24</webElementGuid>
+      <webElementGuid>6b7ee4e2-6c7a-421b-ba8b-b797c30fe2e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='1002709912']/parent::*</value>
-      <webElementGuid>a0d45b79-9816-473c-be6a-d15cc75bbd89</webElementGuid>
+      <webElementGuid>78448199-8a2c-4820-b136-9c48852a3ecd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/span</value>
-      <webElementGuid>4df9e65e-bfdf-43b9-9bec-756eacbae387</webElementGuid>
+      <webElementGuid>19efd0f1-25fe-4ce2-b50a-1fcd596b462d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +118,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '1002709912' or . = '1002709912')]</value>
-      <webElementGuid>9ebd85f4-2528-465d-af47-0682ec7cbc03</webElementGuid>
+      <webElementGuid>5ea4fb0f-bcd1-4151-916f-7050e3d51d08</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

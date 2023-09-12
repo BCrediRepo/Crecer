@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>8abbea34-60c3-4b2e-a69f-38af6f606081</webElementGuid>
+      <webElementGuid>8437da8f-9f44-464a-959e-63e1164a4d51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/tools/txnauthorise.gif</value>
-      <webElementGuid>58cad195-440c-4114-b62d-0d2b13c5151f</webElementGuid>
+      <webElementGuid>3bb39552-1724-4a52-9739-c37e479ec88e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Autoriza el registro</value>
-      <webElementGuid>975a91dd-4f68-4f1a-9093-339b03d38711</webElementGuid>
+      <webElementGuid>f076253a-ef75-4071-af7f-554d23feeae0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Autoriza el registro</value>
-      <webElementGuid>1385bd78-5dd8-4580-a0a8-f51a68a52ac8</webElementGuid>
+      <webElementGuid>7f905fd1-3886-43f2-bcf7-33d7b196f759</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[4]/a[@class=&quot;keyboardlinks-scanned&quot;]/img[1]</value>
-      <webElementGuid>e9176e6d-942a-47c8-8542-5c0cbb3fa3d2</webElementGuid>
+      <webElementGuid>970b66ef-906c-4aaf-bc8b-9dd4486905cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>75e44093-0a5b-486d-8c60-754cb070e1d8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[4]/a/img</value>
-      <webElementGuid>05133f1c-ff89-4283-b50f-ed77140a0c58</webElementGuid>
+      <webElementGuid>bed8d18a-e59e-41ee-b68c-19019cdd2e90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +78,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Autoriza el registro']</value>
-      <webElementGuid>d83f93de-6577-4eee-9b67-96a93b188ea7</webElementGuid>
+      <webElementGuid>a730f7b4-d2ca-4fe8-976a-797a0cd3d7c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>a3f42180-ac0c-498b-97e3-00250686f7bd</webElementGuid>
+      <webElementGuid>aa737907-b181-4235-80e6-ef8281561022</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/txnauthorise.gif' and @alt = 'Autoriza el registro' and @title = 'Autoriza el registro']</value>
-      <webElementGuid>a3036e99-4615-466e-b699-5e67d9c48c4b</webElementGuid>
+      <webElementGuid>ad323f9d-90ad-4a8a-99fd-2069ce1087b7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -13,8 +13,12 @@
          <key>CSS</key>
          <value>span.iddisplay.iddisplay_BCCLMOVAUTINPDATABKP.iddisplay_BCCLMOVAUTINPDATABKP_TRANSARR</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '10430040953.3598910575.57' or . = '10430040953.3598910575.57')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>91dba71e-4cda-4acf-8b81-52ba27e712fd</webElementGuid>
+      <webElementGuid>7890c331-edbd-4b4a-bae3-858c6f5a92e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>2f7bb9e9-24e9-4ca8-84ed-73f043c1c5e5</webElementGuid>
+      <webElementGuid>64ee7af1-97d0-4c30-9b89-0a1ddc30b1b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>iddisplay iddisplay_BCCLMOVAUTINPDATABKP iddisplay_BCCLMOVAUTINPDATABKP_TRANSARR</value>
-      <webElementGuid>bc44aae7-df18-44a1-a4ec-e6fb1cfb61e8</webElementGuid>
+      <webElementGuid>f4da4a1b-dcab-4361-ba7a-fcb5008a30af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>10430040953.3598910575.57</value>
-      <webElementGuid>b9be620a-0cf1-4d6d-bce2-93b86407cd81</webElementGuid>
+      <webElementGuid>2a9d0561-e6bc-4f8b-a0e2-a975aaa73890</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;toolBar&quot;)/table[2]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/span[@class=&quot;iddisplay iddisplay_BCCLMOVAUTINPDATABKP iddisplay_BCCLMOVAUTINPDATABKP_TRANSARR&quot;]</value>
-      <webElementGuid>a29913d8-4370-4318-b91f-611c76997148</webElementGuid>
+      <webElementGuid>7eef4d80-8d65-496b-afe3-645a9f603c84</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='toolBar']/table[2]/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/span</value>
-      <webElementGuid>18ba83d2-794a-4a85-b7c2-1176da318067</webElementGuid>
+      <webElementGuid>12414a1f-6822-4496-9c94-119a77d1ccac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.MOV.AUT.INP.DATA.BKP,TRANS.ARR'])[1]/following::span[1]</value>
-      <webElementGuid>f55a9f12-358f-4064-b0f8-a34cea868372</webElementGuid>
+      <webElementGuid>7f01bf4c-d497-4b87-b699-71791a091521</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.E.MOV.AUT.TRANS.HIST'])[1]/following::span[1]</value>
-      <webElementGuid>7a78a469-9fd1-4f03-ad46-e7e21b3e9c0e</webElementGuid>
+      <webElementGuid>437fca86-9b66-4cd5-8a14-d1c6a116e56a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.043 Villa Mitre)'])[1]/preceding::span[1]</value>
-      <webElementGuid>2ce1f1b3-8c88-48e8-aad9-342545aafea2</webElementGuid>
+      <webElementGuid>5b3bb224-e41a-428d-b414-1e5ad52b5ef1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Informacion del debito automatico'])[1]/preceding::span[1]</value>
-      <webElementGuid>25bbf63b-47f4-4fc4-9ed8-477b14a0bed5</webElementGuid>
+      <webElementGuid>a9f2b665-b61e-4ebc-bb93-7c2e0b5be1e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='10430040953.3598910575.57']/parent::*</value>
-      <webElementGuid>f36db9ec-8d30-4231-81ce-fe4effa3eca8</webElementGuid>
+      <webElementGuid>01cdde8f-198a-4e6d-8af6-462717ba24fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/span</value>
-      <webElementGuid>31fa5b29-a34d-48ae-8fea-16053280486d</webElementGuid>
+      <webElementGuid>8b58f851-f3fc-4f20-ae88-cccb8867609a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '10430040953.3598910575.57' or . = '10430040953.3598910575.57')]</value>
-      <webElementGuid>06ff7918-e73c-4434-9e96-e041b588a2cb</webElementGuid>
+      <webElementGuid>e36d0565-5af1-488e-be9d-7ab833b84e54</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

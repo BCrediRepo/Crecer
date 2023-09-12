@@ -31,10 +31,22 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.REVM')
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkNuevaSeleccion'))
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkEjecutar'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 label = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lblMovimientosrechazaninforme'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 if (label == true) {
 	WebUI.maximizeWindow()

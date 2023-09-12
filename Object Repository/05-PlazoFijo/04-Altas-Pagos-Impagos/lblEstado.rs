@@ -6,15 +6,15 @@
    <elementGuidId>06f0eb17-21fd-4d21-8321-e13870cb0ec6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#columnHeaderText1</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>584c086d-0e7f-415b-a5e9-76070ced61e2</webElementGuid>
+      <webElementGuid>1e76a5ff-6f62-45a7-a487-a94ab0c8e335</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>ff4905d1-97d8-4f1d-bbe0-a45753d8ae19</webElementGuid>
+      <webElementGuid>d5af7072-e054-4494-a1a4-0874a1932fcb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>329c1379-a015-4059-b4e1-239f1ff4a736</webElementGuid>
+      <webElementGuid>b14ff318-f627-4829-84ca-ee1e480bdd55</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>7b8bef38-6148-4609-b938-8a7391d67839</webElementGuid>
+      <webElementGuid>0be283c2-4e3d-4784-be63-f8a1bacf6dc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Estado</value>
-      <webElementGuid>67601f81-6419-414c-88ce-5e58ac71bc10</webElementGuid>
+      <webElementGuid>41d14691-398c-42ad-89f0-450ca9b5672c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>8b22ab73-bdbe-4d39-bb5a-d514b43b12dc</webElementGuid>
+      <webElementGuid>a426455f-7570-4f38-96f8-06a77b643917</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>32eb2078-643e-4fd0-b60a-eb4adc61bd5b</webElementGuid>
+      <webElementGuid>f570fbdb-29b1-4b00-834e-94815ee29c2e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>049a52b2-fded-48a1-ab24-dc3eca7ea50b</webElementGuid>
+      <webElementGuid>e891ea50-ab55-496f-93f3-6c1a72b4247f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>bd99a00f-7025-4d8d-bcf5-2c558b07b0bc</webElementGuid>
+      <webElementGuid>c80f5111-f63b-4e6c-91de-d75ad6ca4545</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>9dc0c926-4183-45cf-b104-846ba8aac918</webElementGuid>
+      <webElementGuid>2dc3ddbd-dda2-4ee6-8ca9-14b75b8cb0bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CUI'])[1]/preceding::th[2]</value>
-      <webElementGuid>eff0db0c-b6f2-44fb-88bb-a85637157772</webElementGuid>
+      <webElementGuid>5b376382-ee2a-4297-b82b-550132fa4223</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/preceding::th[5]</value>
-      <webElementGuid>6d207b02-d1a2-4ab7-97fc-2d2c0e521afc</webElementGuid>
+      <webElementGuid>4c41fd0e-33c3-4977-af6a-7f99df2d16cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Estado']/parent::*</value>
-      <webElementGuid>26d4b7a2-9eaa-428c-a4a6-ce75bfb618c1</webElementGuid>
+      <webElementGuid>f8b4daea-0c17-46de-801d-24b4c5163c50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>9bcfa3d2-87e3-4854-b806-1d1ac29f98e3</webElementGuid>
+      <webElementGuid>015f1e72-5137-44dd-91db-fc08e72c7743</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Estado' or . = 'Estado')]</value>
-      <webElementGuid>f9954a37-a43f-4107-b737-4d60a2afed5d</webElementGuid>
+      <webElementGuid>df0367a2-2098-4e93-bcfe-4257069be218</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

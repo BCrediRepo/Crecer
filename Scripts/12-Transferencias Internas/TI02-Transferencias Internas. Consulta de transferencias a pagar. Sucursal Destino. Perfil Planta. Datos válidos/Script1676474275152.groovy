@@ -37,9 +37,22 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se clickea en Ejecutar y se valida la existencia de campos principales
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
 WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
 WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'))
 

@@ -14,7 +14,7 @@
          <value>a.enqDrillLink</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>03fdb882-7df8-4648-93fb-d8c3784478aa</webElementGuid>
+      <webElementGuid>19426518-afb7-4984-a33a-549f234a2be4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqDrillLink</value>
-      <webElementGuid>f695f799-9788-4c50-b1f1-e36fc1de73fe</webElementGuid>
+      <webElementGuid>b1e06feb-fe7c-455e-b1c3-e4f502a28706</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>2f3edc7f-f2c9-4f3f-8c18-fe6400a11f32</webElementGuid>
+      <webElementGuid>51223cd7-b143-4df9-9eef-0e9b703e7f06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:drilldown('1','1_1')</value>
-      <webElementGuid>887e00dd-06c7-4e9f-a6f3-e0dc48351992</webElementGuid>
+      <webElementGuid>dffa755e-7853-4f46-aa95-5de82426e59c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ver Plazo Fijo</value>
-      <webElementGuid>ff1e9849-b39b-4b6b-8759-3a467a10aa04</webElementGuid>
+      <webElementGuid>9f8e3391-f006-4d8c-b915-a954726d32e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLNOFILEACREDITADOSFIRSEG&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
-      <webElementGuid>9ddf9be4-316a-429f-9713-82a2e69740a2</webElementGuid>
+      <webElementGuid>427dc0ba-4c1e-48da-b4e9-d53331898aa4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[25]/a</value>
-      <webElementGuid>978c1e28-eabf-4a2b-9588-f72b7b6eff23</webElementGuid>
+      <webElementGuid>1e9518a3-be31-4230-a829-e0994f8de4e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Ver Plazo Fijo')]</value>
-      <webElementGuid>f3d733d0-218e-4a29-9454-3f4b8cf228e1</webElementGuid>
+      <webElementGuid>5615b8c4-9076-4467-82c2-02286e9827ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::a[1]</value>
-      <webElementGuid>a9f007f6-000e-4556-8904-37d16a89bf0f</webElementGuid>
+      <webElementGuid>8e8a5434-8d10-4ed7-a556-865413e7aba4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MM2212235000'])[1]/following::a[1]</value>
-      <webElementGuid>a7c85135-d61d-4cb1-adeb-3f00bfc784f3</webElementGuid>
+      <webElementGuid>752757fd-f4e2-4858-afd2-403197f1f061</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ver titular'])[1]/preceding::a[1]</value>
-      <webElementGuid>41d2662f-dc90-46f7-8f82-dd8f9b7ad564</webElementGuid>
+      <webElementGuid>78bf5baf-9bd1-47a7-b46b-d0551455562e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RUBINI'])[2]/preceding::a[2]</value>
-      <webElementGuid>04d0ba66-ad84-454f-8e7c-e08c35a7eeec</webElementGuid>
+      <webElementGuid>ca0215a8-de2f-48be-b0dc-b455db43dd47</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ver Plazo Fijo']/parent::*</value>
-      <webElementGuid>cab9a64d-103c-4046-9070-80926d37e31d</webElementGuid>
+      <webElementGuid>f69bc423-668b-4bd3-a398-a91153544c95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
-      <webElementGuid>3d029088-3e45-4c1d-b737-797ae62b606c</webElementGuid>
+      <webElementGuid>7cb75f47-ba4b-40e3-8cd8-568c938b5ae8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[25]/a</value>
-      <webElementGuid>41a3f1e2-f034-4885-8cec-4e0713205499</webElementGuid>
+      <webElementGuid>3d9d6891-c971-425d-bd1f-7906cfde0841</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Ver Plazo Fijo' or . = 'Ver Plazo Fijo')]</value>
-      <webElementGuid>9d8fc4fc-8c42-4300-9f29-f6fee2244be5</webElementGuid>
+      <webElementGuid>9205be7f-8c60-4110-949a-4f727b0c5bb9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

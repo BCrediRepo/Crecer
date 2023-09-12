@@ -48,11 +48,21 @@ if (Label == 'Fecha Vencimiento') {
     WebUI.setText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/txtFecha_value111'), '20220725')
 }
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Agenda de Vencimientos/formConsulta'))
 
-WebUI.maximizeWindow()
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

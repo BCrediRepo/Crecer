@@ -47,15 +47,26 @@ WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txt
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
-WebUI.delay(15)
+//WebUI.delay(15)
 
 WebUI.waitForElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha'), 6)
 
 WebUI.verifyElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkVerDetalle'), 6)
 

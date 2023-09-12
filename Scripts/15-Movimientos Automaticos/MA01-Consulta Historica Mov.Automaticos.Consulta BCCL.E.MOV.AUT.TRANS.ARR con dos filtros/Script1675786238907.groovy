@@ -49,6 +49,9 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSelecc
 
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/txtNumeroCuenta'),'10430040953')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnVista'))
@@ -57,19 +60,18 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('Mov-Automaticos Data')
 
-trx = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/Mov-Automaticos Data/lblOperacion'))
+def trx = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/Mov-Automaticos Data/lblOperacion'))
 
-if (trx == true) {
-    WebUI.maximizeWindow()
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
 
-    CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-} //---------------------------------------------------------------------------------------------------------------------
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
-else {
-    WebUI.maximizeWindow()
-
-    CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-}
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

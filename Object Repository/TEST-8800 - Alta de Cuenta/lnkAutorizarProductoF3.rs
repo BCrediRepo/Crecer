@@ -7,7 +7,6 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>3654049d-bccd-4e6e-adea-70f21c7246a6</webElementGuid>
+      <webElementGuid>f140df35-8724-49fc-81a4-9baff2d91bc6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqDrillLink keyboardlinks-scanned</value>
-      <webElementGuid>bfcf871b-39eb-43b9-8959-9691189eb3ae</webElementGuid>
+      <webElementGuid>66596a7d-b0a9-40ad-9e8d-ca1091329b93</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:drilldown('2','1_1')</value>
-      <webElementGuid>ff56e3ea-b22d-43aa-ad6a-d8f063c0740f</webElementGuid>
+      <webElementGuid>c3b005da-be52-4818-9bec-be38b4a834fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Autorizar Producto</value>
-      <webElementGuid>cb30a76a-01c2-44db-8a7b-424ce2a8d72b</webElementGuid>
+      <webElementGuid>1d1ca5f1-2ffc-4ae8-b091-7dac000480f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEPREGSF&quot;]/a[@class=&quot;enqDrillLink keyboardlinks-scanned&quot;]</value>
-      <webElementGuid>9a2690ae-2262-40ed-995a-341530260377</webElementGuid>
+      <webElementGuid>b1ab878e-4202-4c3b-8d4f-537dcfbd9062</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>e12ca68c-d3a6-42db-a06d-c15e03aab302</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[4]/a</value>
-      <webElementGuid>8f8e6ed1-b5ec-432b-aa79-e0dfc90a64e6</webElementGuid>
+      <webElementGuid>e6eecf69-20ba-45a2-b207-530cea1c9ddc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +77,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Autorizar Producto')]</value>
-      <webElementGuid>264f4539-baf0-4573-8fa1-434921adef96</webElementGuid>
+      <webElementGuid>9ce47ce1-670b-419c-9559-53577161f95c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ver Producto'])[1]/following::a[1]</value>
-      <webElementGuid>3f39b3dc-3faf-4957-bea4-fa20ea1c8031</webElementGuid>
+      <webElementGuid>a45699b0-ac94-4d08-935d-b38ee1b4cec0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ACCOUNT'])[1]/following::a[2]</value>
-      <webElementGuid>bb14af8e-2e51-4ba7-a488-012a10612b4d</webElementGuid>
+      <webElementGuid>3a683288-9228-4b13-85b1-e03da00a1370</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::a[1]</value>
-      <webElementGuid>77e1a1c4-26a6-4b67-aa97-2c5f300aa2b5</webElementGuid>
+      <webElementGuid>5e1e39a5-af00-4dc9-94b2-38825cb05797</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.E.PRE.GSF'])[2]/preceding::a[1]</value>
-      <webElementGuid>4f7749b7-9200-4220-8007-1b1d127784c1</webElementGuid>
+      <webElementGuid>925dda04-f8b7-4b6f-aebe-3f66453d4662</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Autorizar Producto']/parent::*</value>
-      <webElementGuid>c9ad2612-5cd7-42fd-ac25-8b8f29d1ab19</webElementGuid>
+      <webElementGuid>b4b5ff3a-082b-4471-b67a-509a6be72308</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +125,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:drilldown('2','1_1')&quot;)]</value>
-      <webElementGuid>487a52ac-a84f-434f-9779-7a79ff291b0c</webElementGuid>
+      <webElementGuid>bc4586a1-27df-4c11-9df1-b87177a0b089</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[4]/a</value>
-      <webElementGuid>337dcefe-c13e-4c8e-8701-6495290c76c4</webElementGuid>
+      <webElementGuid>914d71e6-231f-4881-9340-d55a8d7654fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +141,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Autorizar Producto' or . = 'Autorizar Producto')]</value>
-      <webElementGuid>933770fb-5052-4e92-af81-846cb5c4628e</webElementGuid>
+      <webElementGuid>2afb36f5-179c-485d-9ad2-642e049fbf7d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

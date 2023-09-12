@@ -46,8 +46,22 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,9))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblSucursal'), 6)
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/txtSucursal'),"089")
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lnkEjecutar'))
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblCUI'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblCUI'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/btnVerPago'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,10))
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/05-Plazos Fijos Vencidos Inmovilizados pagados/lblTitular'), 6)

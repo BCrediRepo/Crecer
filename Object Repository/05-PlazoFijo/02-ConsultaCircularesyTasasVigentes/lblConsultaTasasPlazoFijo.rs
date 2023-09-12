@@ -10,11 +10,15 @@
          <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta Tasas Plazo Fijo' or . = 'Consulta Tasas Plazo Fijo')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>3bc6af0c-7447-4390-844c-c3c84dfa21c6</webElementGuid>
+      <webElementGuid>63592c16-7460-4f8c-89ff-0d3c110a0ba4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta Tasas Plazo Fijo</value>
-      <webElementGuid>6a4f0a86-74ed-4c2a-8962-12f254c17626</webElementGuid>
+      <webElementGuid>0aadcebe-9c07-4cdd-b770-f44ee404dc79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[1]</value>
-      <webElementGuid>d1dd7e0b-dfdf-46bf-8f43-c3c13f969e12</webElementGuid>
+      <webElementGuid>2996046f-5b3c-4ca6-92fe-361494a8b5b5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
-      <webElementGuid>b5c7c21a-766e-454a-9d1d-7992e3067a57</webElementGuid>
+      <webElementGuid>d479fad7-4f53-4c2e-97ec-eda991d8929b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>88e10e72-5ef1-4712-9e32-a775ad67d97b</webElementGuid>
+      <webElementGuid>edcfdd7a-ef30-4e6f-9ecf-63491cc69463</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>d64024e8-0c16-4c48-b0cc-6d78fedc780c</webElementGuid>
+      <webElementGuid>f5714a7c-26d1-45fb-a82b-ac588b4f31dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha : 25 JUL 2022'])[1]/preceding::td[1]</value>
-      <webElementGuid>f1c84c35-44f8-4607-aca8-c9a8742d2b37</webElementGuid>
+      <webElementGuid>abf8c051-8ff9-4160-bfd5-e0e29c4a536c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Persona: F'])[1]/preceding::td[2]</value>
-      <webElementGuid>be02f086-ddd7-4efe-904d-595431b0ff95</webElementGuid>
+      <webElementGuid>98b22796-c37e-4b58-a2e5-b4f36fd05b34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta Tasas Plazo Fijo']/parent::*</value>
-      <webElementGuid>f907c4c1-7a45-4fd3-b362-1e430ce5c796</webElementGuid>
+      <webElementGuid>7b111ebb-77a5-468d-b7c6-da06a34c6136</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th/table/tbody/tr[2]/td</value>
-      <webElementGuid>5befcced-7f5d-465c-946c-79851d162f11</webElementGuid>
+      <webElementGuid>eba3876d-fc02-4b94-a632-eb396ffc9021</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Consulta Tasas Plazo Fijo' or . = 'Consulta Tasas Plazo Fijo')]</value>
-      <webElementGuid>223e3306-57eb-4afb-8181-5aae401d0ec6</webElementGuid>
+      <webElementGuid>c56d7f26-b8d6-42f4-b2f0-b539f19d18af</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -46,13 +46,23 @@ WebUI.setText(findTestObject('05-PlazoFijo/Consolidado Analitico Saldos x Suc/tx
 
 WebUI.setText(findTestObject('05-PlazoFijo/Consolidado Analitico Saldos x Suc/txtSucursalvalue311'), '074')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 circular = WebUI.getText(findTestObject('05-PlazoFijo/Consolidado Analitico Saldos x Suc/lblCircular'))
 
 assert circular == '026'
 
-WebUI.maximizeWindow()
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

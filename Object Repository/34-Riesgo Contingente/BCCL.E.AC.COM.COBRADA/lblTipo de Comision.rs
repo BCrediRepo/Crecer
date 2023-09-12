@@ -6,15 +6,15 @@
    <elementGuidId>858691ca-fb5b-4082-a262-2841f5e33630</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeaderText1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#columnHeaderText1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText1']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>55d21311-c0f8-4b5e-ae5f-0a2919a0213d</webElementGuid>
+      <webElementGuid>eb3feb45-3a37-417c-bda9-4806758eee95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>acef7c6c-5c40-4a7e-a359-24177c1d156a</webElementGuid>
+      <webElementGuid>60551919-c1e2-4d35-a7de-5685b56f439d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>fd57fd02-00dd-492a-8934-f5399039dfb5</webElementGuid>
+      <webElementGuid>140f1281-51ff-4961-bfdd-f38dc2793a24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>576dbac3-f7ae-4255-9779-c82f5e57c061</webElementGuid>
+      <webElementGuid>1c04c02e-36ee-46f2-acb4-ba30459fa5a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Tipo de Comision</value>
-      <webElementGuid>316a6c24-73dc-4314-8ef8-422f1dee45cb</webElementGuid>
+      <webElementGuid>537980d9-78d3-46e0-bfd7-1bff6f8b08bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>70b70709-4f8f-41a5-9bfc-852cf3cb56bd</webElementGuid>
+      <webElementGuid>7fa00997-f24f-45e8-960b-7303bb4bda04</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>d8066652-fd56-4f96-a49f-9b4b41c23ede</webElementGuid>
+      <webElementGuid>eb5a2036-21fd-4f72-a190-ee23ab7efe00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>80390e05-dcf3-4ac8-910d-269a1cb3d42a</webElementGuid>
+      <webElementGuid>6038ac1e-9a7a-4623-887d-24f4474a40f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MILLA MAR DEL PLATA SA'])[1]/following::th[2]</value>
-      <webElementGuid>bb043cbd-1abd-4001-b97e-b15e8d80761f</webElementGuid>
+      <webElementGuid>5ba956cb-d02b-41d6-9131-8f1250484b41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cliente :'])[1]/following::th[2]</value>
-      <webElementGuid>e7fb568e-4154-471a-b8b9-223c98bc9435</webElementGuid>
+      <webElementGuid>321ecd34-54ab-4417-b6f1-a40f62d56c2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto'])[1]/preceding::th[2]</value>
-      <webElementGuid>ea2eb010-ff44-4a3d-a609-5480bb8c404a</webElementGuid>
+      <webElementGuid>c0f84287-021f-4b26-8b03-4a39d75b8b07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto sin Bonificacion'])[1]/preceding::th[5]</value>
-      <webElementGuid>fddcb034-db10-4070-96ea-38a1bcb6f3c4</webElementGuid>
+      <webElementGuid>d7068f49-4adf-40c8-a373-1139d843a950</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Tipo de Comision']/parent::*</value>
-      <webElementGuid>99af3358-c2c1-4e31-a6a1-d46e410c2d0a</webElementGuid>
+      <webElementGuid>cdd5ccbf-7fb6-437f-ab9e-416bf5aa83c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>73c1dd37-3738-4be2-93de-f315b24a6fca</webElementGuid>
+      <webElementGuid>a92ce6d8-86d7-4738-8e7c-1fc888292cb3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Tipo de Comision' or . = 'Tipo de Comision')]</value>
-      <webElementGuid>3c8ddc3c-444e-4a0a-8fc6-ce514f3c9be4</webElementGuid>
+      <webElementGuid>fc5ffb44-7bb1-4788-96c7-b1bfc5ed8315</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,15 +6,15 @@
    <elementGuidId>9e6cce29-17de-4225-b6a8-0b654429aa66</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeaderText12']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#columnHeaderText12</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText12']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>c261d1be-5ac5-42b5-a7c7-e96a63b21b79</webElementGuid>
+      <webElementGuid>ff1ea24d-e9c8-405c-8810-0ef1c0f62083</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>c398f609-42db-4437-a50c-5d2a7f0723da</webElementGuid>
+      <webElementGuid>862192af-ddaf-4c66-9422-c189b94f5e42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>0ef37e96-4d66-4ef7-b12e-c53f52b2cb26</webElementGuid>
+      <webElementGuid>2bf99994-34ab-47b8-9df2-89bc8c8d0cd8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText12</value>
-      <webElementGuid>3fa26e9e-a93e-44a2-98d9-61e2dfb48852</webElementGuid>
+      <webElementGuid>04be9cd4-2915-482f-9de6-823a833950dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha Baja / Revesa</value>
-      <webElementGuid>bc38ced8-f8ce-4726-a412-3af271551dc7</webElementGuid>
+      <webElementGuid>ac76f0b3-f6d6-4029-9dab-d2987609f531</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText12&quot;)</value>
-      <webElementGuid>777bb6bc-3fb8-4991-8389-5f10f4d615c5</webElementGuid>
+      <webElementGuid>592b0e87-f516-4b96-9350-fadaf1e4cd35</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText12']</value>
-      <webElementGuid>714b5e2f-652d-4608-b758-c403c5310507</webElementGuid>
+      <webElementGuid>5c2080c8-aee3-449f-a4ad-cc6608ce65f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader12']/table/tbody/tr/th</value>
-      <webElementGuid>14121af6-d8ed-44b7-ad37-24801a008636</webElementGuid>
+      <webElementGuid>dc40c0fc-c21f-4c2c-83b7-9cbb732e477d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Imposicion'])[1]/following::th[3]</value>
-      <webElementGuid>19f0c8a9-7233-47ff-9479-0bcc16f010b2</webElementGuid>
+      <webElementGuid>6d0ef488-4c31-4f5a-bab0-fb08e2ad718b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capital'])[1]/following::th[6]</value>
-      <webElementGuid>cc1e0160-3da6-4399-9b61-0d71f7961600</webElementGuid>
+      <webElementGuid>5c7b9508-62d7-4ae9-9b0b-2310a338278d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='NOVAL'])[1]/preceding::th[2]</value>
-      <webElementGuid>c363049d-9a7b-4454-b885-55a14c6a84e6</webElementGuid>
+      <webElementGuid>a9b396f0-e4a5-41c9-9c62-e2c03901de3b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MM2220360415'])[1]/preceding::th[2]</value>
-      <webElementGuid>b6dc8b30-4de4-4a3a-ad03-d5ba012903d4</webElementGuid>
+      <webElementGuid>9ce035d2-4f70-4623-8865-f9e8b48e3659</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Fecha Baja / Revesa']/parent::*</value>
-      <webElementGuid>3bc58c32-1004-40d5-ad2d-19ab13507c8a</webElementGuid>
+      <webElementGuid>d424626a-e8c5-42da-8bf3-9fa89cba20dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[12]/table/tbody/tr/th</value>
-      <webElementGuid>b9d1fb50-e55c-4f5d-b321-1116506cd7f9</webElementGuid>
+      <webElementGuid>71d353bb-c3d6-4cf8-844f-f5ff265672ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText12' and (text() = 'Fecha Baja / Revesa' or . = 'Fecha Baja / Revesa')]</value>
-      <webElementGuid>2efd69af-a7a6-4e16-bcf8-044084120fa5</webElementGuid>
+      <webElementGuid>ca400ae5-e03e-4791-acd4-4a5f3da6e364</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -54,9 +54,21 @@ WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo po
 
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtIDpersona'), "1002709912")
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/btnEjecutar'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/lblTotal Inversiones'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -39,11 +39,23 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,8))
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'))
-WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'), 6)
 WebUI.delay(10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 
 //---------------------------------------------------------------------------------------------------------------------
 

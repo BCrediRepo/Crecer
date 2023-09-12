@@ -14,7 +14,7 @@
          <value>td.ENQ-H-TITLE.ENQ-H-TITLE_BCCLERESCTAMOVFECHAVALOR</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>2535a4ba-a283-4732-9e83-41cb7c4f024d</webElementGuid>
+      <webElementGuid>5b60514f-2ead-4bc4-9016-887ce1d87164</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHAVALOR</value>
-      <webElementGuid>b994bd4b-32c2-4216-8d2f-3c88f5a35572</webElementGuid>
+      <webElementGuid>56025f95-8392-4f7d-83a4-643ef1c243fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Nro. de Cuenta</value>
-      <webElementGuid>aa8cfd28-71d6-4c94-8170-436b0b2c4692</webElementGuid>
+      <webElementGuid>97317ea5-7923-413d-8a7b-371645a8d8f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHAVALOR&quot;]</value>
-      <webElementGuid>af5e8ffe-4d63-41b3-8bed-a57546bf517d</webElementGuid>
+      <webElementGuid>b188c364-21d7-4ec1-ac19-1520eed91b1a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
-      <webElementGuid>81ac8e21-d2eb-41f2-8796-c330832ce88a</webElementGuid>
+      <webElementGuid>e2b148f2-5ae2-4e5b-a8e0-a3a7a414a440</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>b6bf87d7-4015-407f-9923-eb8e2606680f</webElementGuid>
+      <webElementGuid>74d745e8-0502-4336-8f53-398af2b849e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>2703bbbf-e19b-4237-92b0-e087723058c5</webElementGuid>
+      <webElementGuid>6823b2ba-1654-45d8-a7d3-52b471301437</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto'])[1]/preceding::td[2]</value>
-      <webElementGuid>b9e9376f-4e00-43a4-8d4d-a31d166899af</webElementGuid>
+      <webElementGuid>7bd2ea62-c4e0-4931-8b21-958a4be148c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[4]</value>
-      <webElementGuid>03b3214a-83ca-45da-a9a0-5348143d7d47</webElementGuid>
+      <webElementGuid>2782466e-081e-4d38-bc30-d042c7fe57d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Nro. de Cuenta']/parent::*</value>
-      <webElementGuid>eca5af17-420d-47d2-bbaa-651ebf1939f7</webElementGuid>
+      <webElementGuid>147ed36d-c195-4336-95ee-9c98d95d0c93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td</value>
-      <webElementGuid>e2db9b32-e83a-48d9-91c6-fc3b4d2799e4</webElementGuid>
+      <webElementGuid>ffc57181-b76d-444e-9e94-a0bc942700d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Nro. de Cuenta' or . = 'Nro. de Cuenta')]</value>
-      <webElementGuid>c683257c-345b-495e-b252-8a4d1c4eaa2c</webElementGuid>
+      <webElementGuid>01e78ec3-a255-45a9-8fc3-7d52b7e7a7a8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

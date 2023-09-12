@@ -6,15 +6,19 @@
    <elementGuidId>3515b48c-87fe-470e-a2b2-7478700c2560</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr[4]/td/span/label</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='selectiondisplay']/tbody/tr[4]/td/span/label</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Fecha Valor' or . = 'Fecha Valor')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>f8c0cc84-98b0-4602-acf2-f8e500ee1261</webElementGuid>
+      <webElementGuid>f300f05b-ca74-4fb7-9f79-ad82dac355f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>for</name>
       <type>Main</type>
       <value>value:4:1:1</value>
-      <webElementGuid>342167b0-4a91-4177-998f-f068dc2f6c26</webElementGuid>
+      <webElementGuid>84d37651-6071-4d67-ab8d-0c7b7029c3a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha Valor</value>
-      <webElementGuid>a11411a9-23c6-4def-a0f4-55f384da67a9</webElementGuid>
+      <webElementGuid>2cd73fd0-f2e8-41b5-ba44-9e45be1d0ded</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[4]/td[1]/span[1]/label[1]</value>
-      <webElementGuid>7a09d4a8-ea27-47e8-a900-0753b4ccc01a</webElementGuid>
+      <webElementGuid>fa4c8f89-3bd5-410f-97f8-fc182374935d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='selectiondisplay']/tbody/tr[4]/td/span/label</value>
-      <webElementGuid>e6c5a90b-da9c-491b-ae3d-8a3e3ae2f494</webElementGuid>
+      <webElementGuid>622f2f97-a027-476c-860f-479e4b78de2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[3]/following::label[1]</value>
-      <webElementGuid>d6ccdbaa-f4a4-46db-8855-b146c318cfee</webElementGuid>
+      <webElementGuid>e273f9df-b89f-4f3c-a9d3-7d2d308ef2f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Circular'])[4]/following::label[1]</value>
-      <webElementGuid>52bb8185-ecc7-4879-9599-21fe66e0c618</webElementGuid>
+      <webElementGuid>d048bc9c-ca45-4364-9081-283771ff8da8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[4]/preceding::label[1]</value>
-      <webElementGuid>ec5c8a9e-7f17-4c84-8c95-3cd066268fda</webElementGuid>
+      <webElementGuid>988a9f4d-649a-43ae-adff-57294be86085</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='AR0011074 : BCCL.MM.ACTIVOS.FVENC.MM'])[1]/preceding::label[1]</value>
-      <webElementGuid>ed61b107-f7ca-44eb-91ce-09c7ddeb1b3e</webElementGuid>
+      <webElementGuid>07ced76a-dc09-413c-b446-d5263d4de55a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[4]/td/span/label</value>
-      <webElementGuid>c6f1c23e-cc93-41eb-a1eb-2da4173f15d8</webElementGuid>
+      <webElementGuid>e9797ea5-6fba-4f4d-85db-a39bacb86b3b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Fecha Valor' or . = 'Fecha Valor')]</value>
-      <webElementGuid>0f7f91ad-e330-4b11-aa10-2d22719037e1</webElementGuid>
+      <webElementGuid>a8a23bd5-3e9c-49c5-8c39-b5a87f80db73</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

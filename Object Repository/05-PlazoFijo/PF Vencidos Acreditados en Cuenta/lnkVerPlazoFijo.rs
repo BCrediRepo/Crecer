@@ -6,15 +6,15 @@
    <elementGuidId>fba6acae-8de6-40d5-942a-784828091a35</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td[25]/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a.enqDrillLink</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[25]/a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>3bcf3135-5f3c-4d5f-96f8-dc816a00e780</webElementGuid>
+      <webElementGuid>51dc3cf8-34e5-4d45-b397-d5816b077a4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqDrillLink</value>
-      <webElementGuid>9f6f7e4a-0245-472f-8b85-7884ea7ab296</webElementGuid>
+      <webElementGuid>1a24ba8d-1059-4186-9c88-ba0cb7df6b56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>ad76449a-d8d5-41eb-a2ae-393c12b2076d</webElementGuid>
+      <webElementGuid>b166063e-6a83-41a9-a0c4-bb8ccb076348</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:drilldown('1','1_1')</value>
-      <webElementGuid>ff93e50e-36a2-41f8-8e18-01f7396b364d</webElementGuid>
+      <webElementGuid>6af888d4-1494-4187-a0f9-55307f1651a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ver Plazo Fijo</value>
-      <webElementGuid>100e6527-15fc-4ade-956e-442c95332acd</webElementGuid>
+      <webElementGuid>4421e62d-4a39-47eb-b5fb-c1f55a243d40</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLMMVENCIDOSACREDITADOS&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
-      <webElementGuid>0239a007-38d1-445d-83f0-082e6ff2abc6</webElementGuid>
+      <webElementGuid>8d9f6af4-899c-4230-8c47-63e9c70dc4bc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[25]/a</value>
-      <webElementGuid>3b1df668-1f5b-46e2-b986-92b176b0c1ac</webElementGuid>
+      <webElementGuid>ab394f43-4161-45ee-a717-cf2141f0222c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Ver Plazo Fijo')]</value>
-      <webElementGuid>e939bf57-c011-4ea7-a57c-c920a864f395</webElementGuid>
+      <webElementGuid>f6715e35-c129-481f-8abb-a9369df2ec93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::a[1]</value>
-      <webElementGuid>271d41a2-82af-4b9c-bbc3-e4bb6152b0e0</webElementGuid>
+      <webElementGuid>81982c50-1acf-4117-a688-661fc5d70528</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ABBOUD'])[1]/following::a[1]</value>
-      <webElementGuid>6df84eed-7d31-4348-a3a7-a28d6612cb63</webElementGuid>
+      <webElementGuid>bb9bc9bc-7a68-4a26-8574-b625dc70b184</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ver Titular'])[1]/preceding::a[1]</value>
-      <webElementGuid>8c304fc0-c6b6-4313-a06b-6e2456726d5d</webElementGuid>
+      <webElementGuid>5fb6596b-bb15-47d0-92d8-c602059f9163</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='COARCO SA'])[1]/preceding::a[2]</value>
-      <webElementGuid>58e4f4bb-a169-4362-aaa7-a8de681ca2dd</webElementGuid>
+      <webElementGuid>16f08f0b-07b1-4b10-8815-396f4c13f917</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ver Plazo Fijo']/parent::*</value>
-      <webElementGuid>9c61581e-6d21-4734-8f74-7f5e2e47f9a2</webElementGuid>
+      <webElementGuid>3bbec838-5941-4148-82c1-9f09dbf4bab5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
-      <webElementGuid>535bf8fd-40b5-4d2e-a595-9c8a89e36bd3</webElementGuid>
+      <webElementGuid>31974d2b-ad9c-43f2-8350-746d20f3e267</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[25]/a</value>
-      <webElementGuid>8a97c05b-88a1-463d-829c-a7244381c61f</webElementGuid>
+      <webElementGuid>748b5c42-72a8-45fe-a453-494b3134b163</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Ver Plazo Fijo' or . = 'Ver Plazo Fijo')]</value>
-      <webElementGuid>09df6453-907e-43f4-a76c-df49c9979310</webElementGuid>
+      <webElementGuid>3c26219a-3ec1-4fed-84ac-c21311b40f5f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

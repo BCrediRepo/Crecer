@@ -6,15 +6,19 @@
    <elementGuidId>de9b9fe8-394f-463a-9075-3dce6320ed61</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#r1 > td</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'ARS' or . = 'ARS')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>269e3f21-f9f6-4022-8e07-4433b1f97acb</webElementGuid>
+      <webElementGuid>52138cbe-e588-4176-ad89-d3343c2df643</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>ARS</value>
-      <webElementGuid>df9f5559-f3cd-4cb7-bf86-eda6a0014f35</webElementGuid>
+      <webElementGuid>670212e3-7f14-4fcf-bf86-50621716557e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>da0ae64c-886e-443a-91cd-d9c325e2fc2f</webElementGuid>
+      <webElementGuid>69165a57-47f4-4d63-9f58-77861babad6e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td</value>
-      <webElementGuid>a1065e11-c3f2-45c9-bd98-28ffcb91834c</webElementGuid>
+      <webElementGuid>f6a027d0-9096-4cdc-960b-79abb92a6a81</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capital Depositado'])[1]/following::td[1]</value>
-      <webElementGuid>29c3742c-859b-4883-b212-700d8cbadb0c</webElementGuid>
+      <webElementGuid>ae4bc548-545a-4cbd-9e2f-250f792be6f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capital'])[1]/following::td[1]</value>
-      <webElementGuid>667d1178-9d94-4951-bf6c-8d73efec2aed</webElementGuid>
+      <webElementGuid>9aafda2f-865c-4b62-a2e7-0fd3c024c746</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[2]/preceding::td[10]</value>
-      <webElementGuid>47c248d6-f337-48af-bb22-23167254a5fd</webElementGuid>
+      <webElementGuid>2e1d26ae-dad7-4ffa-be26-78f117d1e056</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[3]/preceding::td[20]</value>
-      <webElementGuid>9a574b7f-ccef-404e-b802-0a32e2e419cc</webElementGuid>
+      <webElementGuid>07d16276-bddf-4ece-9160-67cc9a9a7ee6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='ARS']/parent::*</value>
-      <webElementGuid>1cd5f5ad-6048-4b74-9ebb-47923c3d9980</webElementGuid>
+      <webElementGuid>5eccd820-ce2b-424d-bcd6-c4a0d6dab4dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>27b896d7-87a4-44a1-aaa5-6d4172a153ff</webElementGuid>
+      <webElementGuid>5c0d64ce-044e-402e-b65c-5394f1a52870</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'ARS' or . = 'ARS')]</value>
-      <webElementGuid>cdc3d296-aeb6-47e7-a422-7b37ff0ac2cd</webElementGuid>
+      <webElementGuid>a6e6e344-048b-4411-8498-eb3946fcd205</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

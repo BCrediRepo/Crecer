@@ -18,6 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import java.util.concurrent.Delayed
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -46,10 +47,23 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Con
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtFormaDeCalculo'), "TOTAL")
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtMoneda'), "ARS")
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtIdPersona'), "1002709912")
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lnkEjecutar'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblIdPlazoFijo'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblIdPlazoFijo'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 
 //---------------------------------------------------------------------------------------------------------------------
 

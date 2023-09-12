@@ -14,7 +14,7 @@
          <value>#columnHeaderText1</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>ca0a5977-34ad-4459-ba64-26f8c93c08b5</webElementGuid>
+      <webElementGuid>66e0b065-733c-413f-9f09-40f5c7553dd6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>b7e33aea-7cac-45b3-ab7a-f341beba3b9e</webElementGuid>
+      <webElementGuid>350a961a-53c1-4894-af29-6e3d1f621e48</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>f030e4e1-ea80-4748-94f8-5cc9afe5d7b2</webElementGuid>
+      <webElementGuid>f92b11c8-5685-4afd-88f6-72075032e6ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>1b1b8f4b-c5b6-4e9f-95e1-0127dac22e4d</webElementGuid>
+      <webElementGuid>9cdd7c88-57df-4e70-b8b7-e4bc7652660f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha</value>
-      <webElementGuid>03c25036-5f95-4860-ae66-bb4216811d1e</webElementGuid>
+      <webElementGuid>e9b3a655-d13d-4a88-9b26-cfb67da4b698</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>a78798c0-bb78-4968-bef2-11f53d8ccdd2</webElementGuid>
+      <webElementGuid>d3bd4058-16de-402f-bd64-c7f119b1025b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>b0cfd404-44df-4229-ad40-988f56f1544b</webElementGuid>
+      <webElementGuid>a29ee637-2c4e-41fb-bbf0-f8b7307b0e88</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>0c42d946-8569-4514-b4ed-01a31e7b97e0</webElementGuid>
+      <webElementGuid>8c41f71d-f470-46bb-8370-4c32cd4513b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CER.201010'])[1]/following::th[2]</value>
-      <webElementGuid>73f4a6d5-b5ee-4d1d-81c6-cc4c738e8579</webElementGuid>
+      <webElementGuid>fe565df1-f9b8-4b99-bae3-58631a06d62a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Valor'])[1]/preceding::th[2]</value>
-      <webElementGuid>2be94723-183f-438d-a05b-b9b2fc016b50</webElementGuid>
+      <webElementGuid>92040adb-1fda-4ccc-b71b-4044c1ddb7f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Indices'])[2]/preceding::th[5]</value>
-      <webElementGuid>93defad2-b851-4ca5-8073-9006106d0c9e</webElementGuid>
+      <webElementGuid>1bda9b38-c301-4ff1-bdf4-d5331d11906e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Fecha']/parent::*</value>
-      <webElementGuid>ec0a68a6-1ecd-4aca-9800-86e028712a62</webElementGuid>
+      <webElementGuid>db71db82-b989-4a4f-9896-c89d3c837bfd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>858a496e-d978-4da5-b8c7-2e90c10f1aac</webElementGuid>
+      <webElementGuid>884c87b2-33ee-4adf-8fc2-b97dc54d9050</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Fecha' or . = 'Fecha')]</value>
-      <webElementGuid>62132c1f-57bf-4fc8-af3d-e36243a64388</webElementGuid>
+      <webElementGuid>e7a3a763-8bf0-486a-b0fb-fba9196e05bd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

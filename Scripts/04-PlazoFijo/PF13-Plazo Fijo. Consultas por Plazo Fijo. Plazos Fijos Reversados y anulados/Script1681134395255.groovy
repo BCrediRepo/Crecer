@@ -38,9 +38,20 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 WebUI.setText(findTestObject('05-PlazoFijo/Consulta de Operaciones Reversadas/txtFechaBajaReversa'), '20220722')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Consulta de Operaciones Reversadas/formConsulta'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Consulta de Operaciones Reversadas/lblFecha'))
 

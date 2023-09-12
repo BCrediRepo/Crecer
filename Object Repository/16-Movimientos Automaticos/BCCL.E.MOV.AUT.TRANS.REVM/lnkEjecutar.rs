@@ -15,7 +15,7 @@
          <value>a.textbtn</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>b10b1a67-d37e-415b-94ef-349696ae7043</webElementGuid>
+      <webElementGuid>9825ed0c-11a2-4fdd-b293-75444bc78898</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Ejecutar</value>
-      <webElementGuid>edb9d8d4-d377-4487-a1a3-4c649537efcd</webElementGuid>
+      <webElementGuid>fe55b90d-0ca3-4cb9-a5ba-4b584a2fd419</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Ejecutar</value>
-      <webElementGuid>93ebf7c9-f9eb-4e35-8821-c369f62d51a0</webElementGuid>
+      <webElementGuid>86ca1029-cbb1-432d-89a9-8f1380f38226</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>class</name>
       <type>Main</type>
       <value>textbtn</value>
-      <webElementGuid>99bcb6c5-632b-4902-9ca2-87639c18610d</webElementGuid>
+      <webElementGuid>3301778a-8a43-4bed-ae3c-ee46b6ce4334</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>795fdea0-eaa5-4a66-873a-2edffbf3d348</webElementGuid>
+      <webElementGuid>39403082-15e3-4b19-b127-68f3d9477924</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>96f1f541-03d7-4e80-88d0-7dd21fc70506</webElementGuid>
+      <webElementGuid>22e94aa7-dc50-4944-9601-417ff6710d1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -72,7 +72,7 @@
       <type>Main</type>
       <value>doHighlight(this);javascript:
 						   toggleStateButton();doEnquiry()</value>
-      <webElementGuid>c2a48248-e5bc-4b38-b80b-b280024e3bb2</webElementGuid>
+      <webElementGuid>909cc61f-8d78-4674-b864-9f52fbff613b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -80,7 +80,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:void(0)</value>
-      <webElementGuid>4b61fa9b-00ad-4803-9c89-235c8afa0dfa</webElementGuid>
+      <webElementGuid>0d681d6a-55bb-43ab-ac72-fe6ffef4cd47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -88,7 +88,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ejecutar</value>
-      <webElementGuid>fff58cdb-08ba-4832-9674-1298c6472606</webElementGuid>
+      <webElementGuid>57f55b3f-f6d0-4c51-971c-fcd9ccf57837</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -96,7 +96,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLEMOVAUTTRANSREVM&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLEMOVAUTTRANSREVM enqsel-selections enqsel-selections_BCCLEMOVAUTTRANSREVM&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLEMOVAUTTRANSREVM&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLEMOVAUTTRANSREVM&quot;]/td[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[@class=&quot;textbtn&quot;]</value>
-      <webElementGuid>c6fc8513-cb4b-4b02-bb40-5d745447dd1d</webElementGuid>
+      <webElementGuid>a962d528-2d51-4543-ad1e-67678d05cf70</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -105,7 +105,7 @@
       <type>Main</type>
       <value>//a[@onclick='doHighlight(this);javascript:
 						   toggleStateButton();doEnquiry()']</value>
-      <webElementGuid>e06318e3-807e-49b1-9eff-ac4030f56642</webElementGuid>
+      <webElementGuid>73e40986-0ef6-44da-a0c2-3fa4e4539981</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,7 +113,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[3]/div/table/tbody/tr/td/a</value>
-      <webElementGuid>26185a8d-d284-4da4-95ec-f722d2894a84</webElementGuid>
+      <webElementGuid>3d545187-41fb-4efc-83c6-1341657f5340</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -121,7 +121,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Ejecutar')]</value>
-      <webElementGuid>3c8d1693-202b-4e44-b432-8461183faf7e</webElementGuid>
+      <webElementGuid>6b41ee02-5de7-4e22-be60-8559d8b29c89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -129,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/following::a[1]</value>
-      <webElementGuid>2ac3086c-6c2a-4e34-88d2-57523db858a1</webElementGuid>
+      <webElementGuid>0b5cb197-5034-4c34-af55-c259e293ac27</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,7 +137,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/following::a[2]</value>
-      <webElementGuid>1b15603e-802b-43cb-a2ab-cca4bebe1f22</webElementGuid>
+      <webElementGuid>55e678ad-0da1-4b0d-a624-8255a4680e74</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -145,7 +145,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ordenar Por:'])[1]/preceding::a[1]</value>
-      <webElementGuid>bbcb7a6b-7434-4198-8afa-7fa6d66530fe</webElementGuid>
+      <webElementGuid>73577b79-2e39-4993-8807-1b53057ef643</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -153,7 +153,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ejecutar']/parent::*</value>
-      <webElementGuid>71244c13-8218-4960-9e0b-381af409019b</webElementGuid>
+      <webElementGuid>e551c042-32c1-48db-9073-8200ca1e0c06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -161,7 +161,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'javascript:void(0)')]</value>
-      <webElementGuid>7d6ac207-c692-4437-9c6f-2bd89169649a</webElementGuid>
+      <webElementGuid>cc1b7a15-5742-46c7-aff5-d16b53be8cc3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -169,7 +169,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/table/tbody/tr/td/a</value>
-      <webElementGuid>bd3423a4-f365-4836-bdb5-27bc5f64ada8</webElementGuid>
+      <webElementGuid>b827915e-4ee2-43f3-b6fe-0e5dec569f95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -177,6 +177,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@alt = 'Ejecutar' and @title = 'Ejecutar' and @href = 'javascript:void(0)' and (text() = 'Ejecutar' or . = 'Ejecutar')]</value>
-      <webElementGuid>88cff715-0a32-4724-adfe-36abc7a7541d</webElementGuid>
+      <webElementGuid>5b90708c-aad5-4236-9b27-1f16ee51d601</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

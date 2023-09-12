@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>ab300145-e342-4f11-9319-a17c0d0832b7</webElementGuid>
+      <webElementGuid>59609958-643e-42b9-957c-faf2b20d2e0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>comment comment_ACCOUNT comment_ACCOUNT_FIN</value>
-      <webElementGuid>fbce7c90-56f1-48ed-91f5-fe2a623adc77</webElementGuid>
+      <webElementGuid>a30f37b9-3c57-4fae-9927-3ea046509927</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>TRANSACCION FINALIZADA</value>
-      <webElementGuid>397736e0-8c07-41e5-a30a-e0180ba3456e</webElementGuid>
+      <webElementGuid>4f740369-eaff-43dc-b845-6a5a1d041dd1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[@class=&quot;field field_ACCOUNT field_ACCOUNT_FIN&quot;]/span[@class=&quot;comment comment_ACCOUNT comment_ACCOUNT_FIN&quot;]</value>
-      <webElementGuid>e796d8d6-028b-456c-9e1d-9c640e2560ac</webElementGuid>
+      <webElementGuid>d2093fbb-a8a3-438e-a9e5-51eb0abe6dc9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica3</value>
+      <webElementGuid>02893108-830d-4e98-93cc-dab96ffbe573</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td/span</value>
-      <webElementGuid>cd2e2400-d138-49d6-a6a2-a1b38eb787f4</webElementGuid>
+      <webElementGuid>063b61c5-c386-4e84-bf21-469c80a9f654</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::span[1]</value>
-      <webElementGuid>e1b120c2-66b4-4b84-8560-b5c7ebce0240</webElementGuid>
+      <webElementGuid>fae74a6b-9af6-48bd-9b77-65b06b9d0233</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CUENTA'])[1]/following::span[2]</value>
-      <webElementGuid>6e6fed6f-9940-4c12-8c5d-834c5c077bd9</webElementGuid>
+      <webElementGuid>d8af6a21-552c-40cd-92f9-699a084206f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>ec407d49-8ce0-489a-b42b-5b26ef2e4b7e</webElementGuid>
+      <webElementGuid>8cdb87a3-65f7-4d0b-8280-b2e925bdbf88</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='APELLIDO NOMBRE'])[2]/preceding::span[1]</value>
-      <webElementGuid>03e4d83b-e6b9-4ed5-8177-bb816337b326</webElementGuid>
+      <webElementGuid>d50cec78-31d5-49e4-9cbe-446ab46b16cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='TRANSACCION FINALIZADA']/parent::*</value>
-      <webElementGuid>0c7d62de-1fcb-4082-887c-ffb0b60f9962</webElementGuid>
+      <webElementGuid>1617da86-52cf-4ff1-a742-66323624d2a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +110,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td/table/tbody/tr/td/span</value>
-      <webElementGuid>9e53afea-5781-45b5-bf0a-42f57b8e57d4</webElementGuid>
+      <webElementGuid>003df200-3fce-4ab0-a423-ca1a4e79ad11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +118,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'TRANSACCION FINALIZADA' or . = 'TRANSACCION FINALIZADA')]</value>
-      <webElementGuid>96634043-ed6d-44be-bf3e-bb8b6f999a01</webElementGuid>
+      <webElementGuid>a4b5283b-9bd6-4d88-9499-7db0c9710598</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

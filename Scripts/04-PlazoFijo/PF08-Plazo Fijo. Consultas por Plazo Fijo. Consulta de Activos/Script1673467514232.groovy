@@ -44,9 +44,23 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,12))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lblPlazoFijosActivos'))
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtSucursal'), "089")
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lnkVerPlazoFijo'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lnkVerPlazoFijo'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lnkVerPlazoFijo'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lblIdPersona'),6)

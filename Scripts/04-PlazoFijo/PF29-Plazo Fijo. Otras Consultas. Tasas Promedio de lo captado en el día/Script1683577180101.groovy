@@ -42,16 +42,26 @@ WebUI.switchToWindowTitle('Tasas Promedio')
 
 WebUI.setText(findTestObject('05-PlazoFijo/Tasas Promedio/txtFechaValor'), '20220725')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Listado Principales Inversores/tablaConsulta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/Listado Principales Inversores/lbl1raParte'))
 
 label = WebUI.getText(findTestObject('05-PlazoFijo/Tasas Promedio/lblFecha'))
 
 assert label == '25 JUL 2022'
 
-WebUI.maximizeWindow()
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
 
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+//------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

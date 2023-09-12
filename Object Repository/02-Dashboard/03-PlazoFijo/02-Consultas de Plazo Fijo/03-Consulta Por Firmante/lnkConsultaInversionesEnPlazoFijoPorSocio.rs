@@ -6,15 +6,19 @@
    <elementGuidId>185dcce6-406b-47d9-91c8-d66e1f9329e1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.MONTO.POR.FIR');processMenuHeaderText('Consulta Inversiones en Plazo Fijo por Socio')&quot;]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.MONTO.POR.FIR');processMenuHeaderText('Consulta Inversiones en Plazo Fijo por Socio')&quot;]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta Inversiones en Plazo Fijo por Socio ' or . = 'Consulta Inversiones en Plazo Fijo por Socio ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>f6af814f-954c-404e-a992-dd455ee8a2f3</webElementGuid>
+      <webElementGuid>0784f116-92f6-4609-b9df-996a99e3e754</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.MONTO.POR.FIR');processMenuHeaderText('Consulta Inversiones en Plazo Fijo por Socio')</value>
-      <webElementGuid>2c519bec-e40c-4b8e-a7b4-6d65aa644023</webElementGuid>
+      <webElementGuid>2c8a4e00-e26e-402c-a6b9-b3c7b75579e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.NOFILE.MONTO.POR.FIR');</value>
-      <webElementGuid>501bb051-453c-4eb8-8a48-e384e58cb3ee</webElementGuid>
+      <webElementGuid>f9d9ea7a-b40c-455e-963b-d7ff7cc81313</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta Inversiones en Plazo Fijo por Socio </value>
-      <webElementGuid>750f036e-6d0f-4aea-96ea-cb90124dd5da</webElementGuid>
+      <webElementGuid>90be9c9a-28a0-4e0c-b0a9-09ad59ee1f85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[6]/a[1]</value>
-      <webElementGuid>dd914bf5-ea35-4334-9e4d-a9d4d4da94b8</webElementGuid>
+      <webElementGuid>588980a3-78a0-4f9d-9699-f234fe3d0845</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>e2be98b2-73e0-4167-9176-63230752715c</webElementGuid>
+      <webElementGuid>6538cb29-9893-4167-8cd0-2ddd8bdf7599</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.MONTO.POR.FIR');processMenuHeaderText('Consulta Inversiones en Plazo Fijo por Socio')&quot;]</value>
-      <webElementGuid>44ed3d6a-d350-4d1a-b021-2f4679c994c2</webElementGuid>
+      <webElementGuid>6dcd615b-e331-4fd7-9db9-5da0a57ea1f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[13]/li/ul/li[5]/ul/li[2]/ul/li[6]/a</value>
-      <webElementGuid>6718428e-07c4-4591-a2b9-8ec697e08b82</webElementGuid>
+      <webElementGuid>1a304cae-4dea-4b45-8a46-f0778322d260</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta Inversiones en Plazo Fijo por Socio')]</value>
-      <webElementGuid>24bf00f0-9726-444a-8d3f-02a2af22dab3</webElementGuid>
+      <webElementGuid>b2884837-7c91-4b72-8c7a-54d57151b87d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Plazos Fijos'])[1]/following::a[1]</value>
-      <webElementGuid>f8547665-cf66-44cc-8104-b8bdec46865a</webElementGuid>
+      <webElementGuid>56477899-8ee3-426a-960c-10d9603edbe4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Vencidos Acreditados en cuenta'])[2]/following::a[2]</value>
-      <webElementGuid>b528e8fa-ae86-43b7-8780-ec2188068027</webElementGuid>
+      <webElementGuid>875ec2aa-ebbd-498e-a563-0410ecd74090</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Tasas e Indices'])[1]/preceding::a[1]</value>
-      <webElementGuid>2d4cf122-5631-4357-9867-f75e3ecaabfa</webElementGuid>
+      <webElementGuid>317b56db-4d03-4807-b0e4-95d448f1bda4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Circulares y Tasas Vigentes'])[1]/preceding::a[1]</value>
-      <webElementGuid>5d20a2e2-5cb7-42ef-83d6-670b275efc0b</webElementGuid>
+      <webElementGuid>82a9ba55-0d81-4474-9c04-10ca6bb0e45f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta Inversiones en Plazo Fijo por Socio']/parent::*</value>
-      <webElementGuid>e0e4bc96-f655-4f35-9827-9b6cd4ae8869</webElementGuid>
+      <webElementGuid>aa39449b-a5bd-47e6-a2a9-71e63a81e225</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.NOFILE.MONTO.POR.FIR');&quot;)]</value>
-      <webElementGuid>7515d3e2-57bd-4de9-82f9-1ffcbbde311b</webElementGuid>
+      <webElementGuid>30cd1f52-f112-4775-b639-cd2638f6ba9f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[5]/ul/li[2]/ul/li[6]/a</value>
-      <webElementGuid>adb0b1c4-c3ac-450f-8044-76bcf96e0a32</webElementGuid>
+      <webElementGuid>68f09aff-a3c0-45c5-806a-79acde26a048</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.NOFILE.MONTO.POR.FIR&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta Inversiones en Plazo Fijo por Socio ' or . = 'Consulta Inversiones en Plazo Fijo por Socio ')]</value>
-      <webElementGuid>1a8c12cb-20af-496a-98a7-9129d01ecd40</webElementGuid>
+      <webElementGuid>50e937cb-1d2a-4572-8278-0adce12afc5b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

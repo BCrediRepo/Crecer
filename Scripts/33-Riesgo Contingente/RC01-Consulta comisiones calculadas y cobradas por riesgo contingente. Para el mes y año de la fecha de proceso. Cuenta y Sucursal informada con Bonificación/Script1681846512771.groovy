@@ -50,11 +50,22 @@ WebUI.maximizeWindow()
 //Ingresa el numero de la cuenta
 WebUI.setText(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/txtCuenta'), '00890010860')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Presiona botón ejecutar
 WebUI.click(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lnkEjecutar'))
 
 //Verifica que se muestre el titulo Tipo de comision
-WebUI.waitForElementPresent(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lblTipo de Comision'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lblTipo de Comision'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //---------------------------------------------------------------------------------------------------------------------
 

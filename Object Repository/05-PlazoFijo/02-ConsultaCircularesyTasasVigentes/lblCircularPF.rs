@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblCircular</name>
+   <name>lblCircularPF</name>
    <tag></tag>
    <elementGuidId>81704877-528d-4cec-a239-4b20da17ca66</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeaderText1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#columnHeaderText1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText1']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>e0f8d1f1-1005-4d9e-bde4-ef04971523d1</webElementGuid>
+      <webElementGuid>44f560e5-7b4c-47c6-8d8a-d7173edafbf0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>87e2df69-9cf1-4825-a827-832db113d20c</webElementGuid>
+      <webElementGuid>b7fe27ca-bfe2-4bb3-9288-03f64b6b5ec4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>47ebb704-c0c9-4db3-8779-e6baa70021f5</webElementGuid>
+      <webElementGuid>a9d7c1a7-9ab2-47da-91d1-7df18b3fabe6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>3f859f07-7cb4-475c-ad8e-36aad86ea68c</webElementGuid>
+      <webElementGuid>ecb490c3-85f6-402b-b570-b13d43c265e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Circular</value>
-      <webElementGuid>e8fdea6c-3c27-4f37-a956-c73661afc622</webElementGuid>
+      <webElementGuid>911ab3fa-abae-49ae-ae38-716ec41b0e95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>3e17aee9-9b01-45ef-88b0-61af854f05ae</webElementGuid>
+      <webElementGuid>e5d2da86-1b32-48cc-b8f8-a258456c0758</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>dbae2c5f-b7bd-4375-8933-6bf9f43d1b33</webElementGuid>
+      <webElementGuid>fba5458f-aff0-45a4-96a4-936260c9166d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>3ad84355-5f68-46d8-bbbd-ad2cc2c10ac6</webElementGuid>
+      <webElementGuid>ef78a1ea-9000-4a39-835b-636408bfcc44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>8ec91374-8bee-4146-8082-390268dc0bb2</webElementGuid>
+      <webElementGuid>21c250ee-609d-4945-b4a6-99afb243a2f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>2f293809-470b-4938-972c-707a88934784</webElementGuid>
+      <webElementGuid>403b4a73-924d-47d3-8a02-11b480f81547</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Circular</value>
-      <webElementGuid>cea54524-50f1-4f17-8134-7128a4851d00</webElementGuid>
+      <webElementGuid>dc584964-e655-4215-9d5e-c41b2be420dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>08337834-efc7-47d0-9f7c-1557bd3e1a77</webElementGuid>
+      <webElementGuid>396b2ea5-3000-4cc9-b651-ffff4d7d2512</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>be9e8e5a-bdd4-4850-b813-3fd1ef6780df</webElementGuid>
+      <webElementGuid>33ac2072-2279-4e6a-8d9e-98893806717f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>501e5597-ec79-48c0-986a-7869d4a0a99c</webElementGuid>
+      <webElementGuid>019a62c2-2d5c-46f2-933d-ec1ead7b6892</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>7803376e-b734-436d-acba-c8f9dc680dd9</webElementGuid>
+      <webElementGuid>cc2ed623-f426-4379-ac8d-d3fa57c16998</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>777059e4-57ae-4aaf-b692-ca13077857ee</webElementGuid>
+      <webElementGuid>5a6d7a2c-e890-4525-a561-c62e253dc2a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nombre Comercial'])[1]/preceding::th[2]</value>
-      <webElementGuid>8cec51da-2162-4ffb-9709-5ee9dad364bc</webElementGuid>
+      <webElementGuid>b34cd942-8c00-4d91-8ae6-cacf56851670</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tasa Variable'])[1]/preceding::th[5]</value>
-      <webElementGuid>cc58c91e-9cfe-4c2c-8149-4a2ec0705beb</webElementGuid>
+      <webElementGuid>6487fffe-4f9e-4e50-8aba-676893384b6b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Circular']/parent::*</value>
-      <webElementGuid>442c34d0-2130-4a5e-a30d-c5ee7f89cc32</webElementGuid>
+      <webElementGuid>57037bd3-5c2e-44a0-bfb2-b9ad8541f763</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,7 +174,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th/table/tbody/tr/th</value>
-      <webElementGuid>6cf460a1-bfd2-49dc-916a-51633a3256ce</webElementGuid>
+      <webElementGuid>4a3fe55e-5c12-4e70-9808-4607f4990b82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,6 +182,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Circular' or . = 'Circular')]</value>
-      <webElementGuid>0975473c-5e61-42f1-a446-a8f5b8feca9f</webElementGuid>
+      <webElementGuid>b2f2b57b-2f1c-47ef-999e-e39cc3884d4a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

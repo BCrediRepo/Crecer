@@ -42,6 +42,9 @@ if (texto == 'Fecha Alta') {
     WebUI.setText(findTestObject('05-PlazoFijo/Posicion de Cambio/txtPos2'), '20220714')
 }
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Posicion de Cambio/lblMonedaConsulta'))
@@ -50,8 +53,16 @@ Moneda = WebUI.getText(findTestObject('05-PlazoFijo/Posicion de Cambio/lblMoneda
 
 assert Moneda == "ARS"
 
-WebUI.maximizeWindow()
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
 
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+
+//-----------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

@@ -29,11 +29,25 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
 
 //Se espera la carga de BCCL.E.CONS.TINT.ALTAS
 WebUI.switchToWindowIndex(1)
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS'), 5)
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 

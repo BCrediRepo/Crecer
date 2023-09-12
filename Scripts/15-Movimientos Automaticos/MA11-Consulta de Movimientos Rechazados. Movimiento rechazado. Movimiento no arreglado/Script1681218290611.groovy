@@ -63,6 +63,9 @@ WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.STATUS'), 'NOT.POSTED')
 WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.COD.SUC'), '063')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/btnEjecutar'))
 WebUI.maximizeWindow()
@@ -71,7 +74,16 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verifica las columnas del registro Y EL titulo
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblTituloBCCL.MOV.AUT.INP.DATA-ListaDefault'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblTituloBCCL.MOV.AUT.INP.DATA-ListaDefault'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblld'),6)
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblSblcodemp'),6)
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblSblcodsuc'),6)

@@ -53,10 +53,22 @@ WebUI.setText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Report
 
 WebUI.setText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtNUMERO DE CHEQUE'), '22182765')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 def element = WebUI.getText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/lblDIADEINGRESO'))
 assert element.contains('DIA DE INGRESO')
 

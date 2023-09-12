@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblListadoInversores</name>
+   <name>lbl1raParte</name>
    <tag></tag>
-   <elementGuidId>509d501b-b9d8-4a49-86f0-a637cc0a6fac</elementGuidId>
+   <elementGuidId>66c23055-819b-4944-bd66-edb5af0bbd4c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr/td</value>
+         <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr[2]/td</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#enqheader > tbody > tr > td</value>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'Listado Principales Inversores' or . = 'Listado Principales Inversores')]</value>
+         <value>//*[(text() = ' 1ra Parte' or . = ' 1ra Parte')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,86 +26,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>721c51d0-857d-4a51-b97a-2644c587a0ef</webElementGuid>
+      <webElementGuid>964b8e64-a43b-4f10-ac3c-3f5420e32ac9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Listado Principales Inversores</value>
-      <webElementGuid>bd467f46-e3a7-402d-9ffb-88f5b6e81c15</webElementGuid>
+      <value> 1ra Parte</value>
+      <webElementGuid>890da1e2-5a38-4ad1-960b-2213a04f7a94</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[1]/td[1]</value>
-      <webElementGuid>807421c6-1fa2-4b8e-8a6b-bee7497732cf</webElementGuid>
+      <value>id(&quot;enquiryHeaderContainer&quot;)/tbody[1]/tr[1]/td[1]/table[@class=&quot;enqheader enqheader_BCCLEMMTASASPROMEDIO&quot;]/tbody[1]/tr[2]/td[1]</value>
+      <webElementGuid>2f407417-d2b2-432f-bea3-e0211d19c315</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr/td</value>
-      <webElementGuid>a050794f-2947-47bf-a21f-3a89eafdc55b</webElementGuid>
+      <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr[2]/td</value>
+      <webElementGuid>e5915a06-cc9b-4f47-9601-47aec48e02c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>3b2292a5-16c4-4d57-ace1-61a4290d4b2c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[1]/following::td[4]</value>
+      <webElementGuid>0f27bcf9-9eab-4fbf-b3eb-a68fb221bcb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>5abc4358-5372-4014-acc8-cdf3fdd28bee</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[1]/following::td[4]</value>
+      <webElementGuid>e89e1678-cf31-448e-b82d-10abd998a035</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda:'])[1]/preceding::td[1]</value>
-      <webElementGuid>436c5b8e-28d3-411c-a794-8afb34ad3f1f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Circular'])[1]/preceding::td[2]</value>
+      <webElementGuid>fc319ad3-981b-41eb-82c6-816b154e6c39</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[2]</value>
-      <webElementGuid>cef5201d-bd55-4f7c-8a24-3608e2c21254</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Listado Principales Inversores']/parent::*</value>
-      <webElementGuid>f1fa9dbe-6d42-4984-9801-9d1b9f96d142</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Alta'])[1]/preceding::td[5]</value>
+      <webElementGuid>9b153043-a0fd-4a70-b67a-ad827d9a728d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th/table/tbody/tr/td</value>
-      <webElementGuid>f4303ed1-5cd5-4ffb-bff4-1c6ebddf635c</webElementGuid>
+      <value>//tr[2]/td</value>
+      <webElementGuid>135572a4-c3d0-465c-a26f-9536dca4b638</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'Listado Principales Inversores' or . = 'Listado Principales Inversores')]</value>
-      <webElementGuid>e2c1ab9d-0ba1-40cb-98f6-1d352610c483</webElementGuid>
+      <value>//td[(text() = ' 1ra Parte' or . = ' 1ra Parte')]</value>
+      <webElementGuid>7336d6f5-4d84-4aa1-8760-f154b639121b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

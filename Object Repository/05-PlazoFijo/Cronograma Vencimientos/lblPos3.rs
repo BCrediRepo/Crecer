@@ -6,15 +6,19 @@
    <elementGuidId>2fa30d23-f089-4333-9b11-ee926fb92217</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr[3]/td/span/label</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='selectiondisplay']/tbody/tr[3]/td/span/label</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Circular' or . = 'Circular')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>05cbd821-8246-4365-bc8e-6a3bcd89291f</webElementGuid>
+      <webElementGuid>f9a97d4a-8c66-4198-ade0-facdf3293cdc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>for</name>
       <type>Main</type>
       <value>value:3:1:1</value>
-      <webElementGuid>91331e4b-6e22-4a1b-b94e-990a20738673</webElementGuid>
+      <webElementGuid>c7423032-ab1b-4498-8ae7-c7dd2d2536ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Circular</value>
-      <webElementGuid>66f64d22-27dd-446f-a9ce-bad67b65abe8</webElementGuid>
+      <webElementGuid>5b8a5021-e82d-4705-b7dc-4063a2ca1a4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[3]/td[1]/span[1]/label[1]</value>
-      <webElementGuid>55d9e292-691b-4955-be46-9e2d3e1c6288</webElementGuid>
+      <webElementGuid>80dac7e4-9427-4d2e-ab53-0419a3183eab</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='selectiondisplay']/tbody/tr[3]/td/span/label</value>
-      <webElementGuid>c00ce506-89cb-41df-aaab-0ce3f9c3909c</webElementGuid>
+      <webElementGuid>8e8b79d7-a34c-42a0-8499-5f9157c12a3c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[2]/following::label[1]</value>
-      <webElementGuid>79d2d269-dc35-4f99-a59c-3e55b1961535</webElementGuid>
+      <webElementGuid>65de7450-d12b-403b-8320-38c018e40f4f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal'])[4]/following::label[1]</value>
-      <webElementGuid>72582f96-8b5d-4c74-83c7-8157c8d60d07</webElementGuid>
+      <webElementGuid>a8b5d3d8-2a7b-46ab-99b7-53c51e3f05a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[3]/preceding::label[1]</value>
-      <webElementGuid>3cfdf713-f3af-44a3-92bc-a5def2917d47</webElementGuid>
+      <webElementGuid>b58af8e1-1d05-4ff8-bef2-67cb5450c39f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='AR0011089 : BCCL.E.MM.VENCIMIENTOS'])[1]/preceding::label[1]</value>
-      <webElementGuid>f313a8b0-4079-4c8a-9052-c9e3fd157928</webElementGuid>
+      <webElementGuid>c045df20-e154-4ef5-95a6-eff886559e14</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td/span/label</value>
-      <webElementGuid>98b63857-65f0-43cc-9ae2-3379984ea946</webElementGuid>
+      <webElementGuid>b16119eb-c3d2-4be2-b100-0b20b7abf061</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Circular' or . = 'Circular')]</value>
-      <webElementGuid>92eb0546-e9ae-4e44-b6b5-adff322b3504</webElementGuid>
+      <webElementGuid>88e2e76d-ddad-45cb-9251-0a0f53121fa6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

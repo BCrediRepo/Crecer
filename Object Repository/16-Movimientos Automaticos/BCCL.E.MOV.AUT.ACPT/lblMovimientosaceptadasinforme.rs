@@ -6,6 +6,10 @@
    <elementGuidId>f1bdc686-798b-4e8a-bffb-17a30c208411</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[1]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
@@ -22,23 +26,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>986ed4ab-4dc8-41ef-9e64-4da18c94b3e6</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value> Movimientos aceptadas informe</value>
-      <webElementGuid>4e88a009-612f-40a0-90d1-145fc4614347</webElementGuid>
+      <webElementGuid>9b07de84-2d52-4d39-8f48-3edd0b28f749</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Movimientos aceptadas informe</value>
+      <webElementGuid>a4a27745-8705-4fcb-a53f-d704bc1bfd66</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[1]</value>
-      <webElementGuid>825083c1-c29a-4df3-beda-655d55ae83c0</webElementGuid>
+      <webElementGuid>663fc660-d329-47cf-8b80-ec4c37c00849</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
-      <webElementGuid>1db88031-0fcf-4935-ab20-22b09ec1e17c</webElementGuid>
+      <webElementGuid>daf0939d-afe7-4a80-b435-6554517a6453</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>7bed4fb7-4eb0-4fb8-a43a-7d43dfebb7ca</webElementGuid>
+      <webElementGuid>7f25eb12-fd60-476c-9cd8-5e8677458582</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>88cd3da4-5ed1-4cd0-b215-d2168494beb1</webElementGuid>
+      <webElementGuid>a18fd89d-b368-423d-938f-f9e02df8efd2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='@ID'])[1]/preceding::td[2]</value>
-      <webElementGuid>0a27cf0c-726d-46b1-bbbe-e899b59b4524</webElementGuid>
+      <webElementGuid>b8661f5c-0b59-4034-9a39-99e5965b1462</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Secuencia'])[1]/preceding::td[2]</value>
-      <webElementGuid>b370c2a8-0380-4740-be08-2a058c0b27ae</webElementGuid>
+      <webElementGuid>ff54f294-c5a4-4291-8a12-3b321bc05e51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td</value>
-      <webElementGuid>062c9bb0-3266-413a-b86b-ee4cc58481e0</webElementGuid>
+      <webElementGuid>17a53302-0ca4-43d4-af03-df88f2f8d2d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +98,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = ' Movimientos aceptadas informe' or . = ' Movimientos aceptadas informe')]</value>
-      <webElementGuid>8374ddfd-05c7-4b75-b556-196baf86b857</webElementGuid>
+      <webElementGuid>1def76db-791a-45f4-a253-f2fed554dec0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

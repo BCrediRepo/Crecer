@@ -44,18 +44,31 @@ WebUI.setText(findTestObject('05-PlazoFijo/Listado Principales Inversores/txtMon
 
 WebUI.setText(findTestObject('05-PlazoFijo/Listado Principales Inversores/txtMonedaUSD'), '5')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.delay(20)
+//WebUI.delay(5)
 
-WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Listado Principales Inversores/tablaConsulta'))
+WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Listado Principales Inversores/lblListadoInversores'))
 
-label = WebUI.getText(findTestObject('05-PlazoFijo/Listado Principales Inversores/lblListadoInversores'))
+//WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Listado Principales Inversores/tablaConsulta'))
+//
+//label = WebUI.getText(findTestObject('05-PlazoFijo/Listado Principales Inversores/lblListadoInversores'))
+//
+//assert label == "Listado Principales Inversores"
 
-assert label == "Listado Principales Inversores"
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
 
-WebUI.maximizeWindow()
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
 
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+
+//------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

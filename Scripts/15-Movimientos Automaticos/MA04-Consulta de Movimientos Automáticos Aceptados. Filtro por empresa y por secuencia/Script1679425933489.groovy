@@ -23,7 +23,7 @@ import java.time.format.DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,14), findTestData('MainData/Users').getValue(2,14))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -79,6 +79,9 @@ WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Presiona botón ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/btnEjecutar'))
 
@@ -86,7 +89,15 @@ WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verifica que se visualice el registro filtrado
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblMovimientosaceptadasinforme'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblMovimientosaceptadasinforme'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //Verifica si están los elementos secuencia y codigo de empresa
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblCodEmpresa'),6)
