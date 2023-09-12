@@ -6,16 +6,16 @@
    <elementGuidId>5430f7bd-a322-432e-82ca-13fb5a760581</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='pane_']/center/table[4]/tbody/tr/td[2]/div/table/tbody/tr/td/a/img</value>
+         <key>CSS</key>
+         <value>img[alt=&quot;Cerrar Sesion&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>id(&quot;pane_&quot;)/center[1]/table[4]/tbody[1]/tr[1]/td[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1][count(. | //*[@ref_element = 'Object Repository/02-Dashboard/frmDashboardMainMenu']) = count(//*[@ref_element = 'Object Repository/02-Dashboard/frmDashboardMainMenu'])]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Cerrar Sesion&quot;]</value>
+         <key>XPATH</key>
+         <value>//div[@id='pane_']/center/table[4]/tbody/tr/td[2]/div/table/tbody/tr/td/a/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>93875f67-42d3-4dd3-a8ca-a5f756e50892</webElementGuid>
+      <webElementGuid>d236d299-70e2-46f7-ad47-6dd925e94135</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -35,7 +35,7 @@
       <type>Main</type>
       <value>../plaf/images/bccl/tools/signoff.gif
 															</value>
-      <webElementGuid>8f9d4fe3-4f51-44f3-aa55-70100f1f4b2c</webElementGuid>
+      <webElementGuid>43214efd-9317-4077-b956-46ceb2f59755</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,7 +43,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Cerrar Sesion</value>
-      <webElementGuid>6d16723f-6acd-47ac-ab31-0dfa5bb6243a</webElementGuid>
+      <webElementGuid>253e9e38-853d-4e64-8a63-986b2e66c652</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -51,7 +51,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Cerrar Sesion</value>
-      <webElementGuid>c6fcd08c-c951-4d54-8163-0d14964091b7</webElementGuid>
+      <webElementGuid>e88d9784-d937-4ca7-81fe-a42fa532cb09</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -59,7 +59,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/center[1]/table[4]/tbody[1]/tr[1]/td[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
-      <webElementGuid>ebbde7c6-5377-4f95-af4d-a7c13118debd</webElementGuid>
+      <webElementGuid>415e71e9-e905-4428-8053-b61f2b0db556</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -67,7 +67,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMainMenu</value>
-      <webElementGuid>6b79b706-cf82-4604-b235-54cca9185273</webElementGuid>
+      <webElementGuid>22884cf4-2af5-4a71-9460-12771bcb9df0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -75,7 +75,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/center/table[4]/tbody/tr/td[2]/div/table/tbody/tr/td/a/img</value>
-      <webElementGuid>b81e765d-eb2f-434c-98dd-a4f994c67cf8</webElementGuid>
+      <webElementGuid>dbf7ac12-28ee-46c5-a8ae-06c2850b0052</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -83,7 +83,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Cerrar Sesion']</value>
-      <webElementGuid>51852bf6-dbac-4731-9753-f7f4b1938be3</webElementGuid>
+      <webElementGuid>00f46d36-6f07-4f44-82d4-c6289e837c90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -91,7 +91,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/a/img</value>
-      <webElementGuid>3359d55f-37be-48e9-8883-cececad90be8</webElementGuid>
+      <webElementGuid>5fc23559-f4ff-4ca3-9c96-87ad7cc65a00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,6 +100,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/signoff.gif
 															' and @alt = 'Cerrar Sesion' and @title = 'Cerrar Sesion']</value>
-      <webElementGuid>ff34a8c8-41fb-4913-bcb2-c120d6771024</webElementGuid>
+      <webElementGuid>f6670f6c-2b63-4b66-8cc4-75155738193a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -40,5 +40,44 @@ WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtNroCuenta')
 
 WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtTipoComision'), 'DEPDISP')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+
+WebUI.maximizeWindow()
+
+WebUI.verifyElementVisible(findTestObject('06-Comisiones/Bonificacion - Consulta/lblNroCuenta'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
+
+
+cuenta = WebUI.getText(findTestObject('06-Comisiones/Bonificacion - Consulta/lblNroCuenta'))
+
+assert cuenta == '00010015665'
+
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
 

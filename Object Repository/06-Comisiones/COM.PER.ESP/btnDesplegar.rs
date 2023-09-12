@@ -13,8 +13,12 @@
          <key>CSS</key>
          <value>img[alt=&quot;Lista de Registros&quot;]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@src = '../plaf/images/bccl/deal/dropdown.gif' and @alt = 'Lista de Registros' and @title = 'Lista de Registros']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>a16cc70f-f19d-432c-8aaf-040b9f6d6c0b</webElementGuid>
+      <webElementGuid>c9cc7d23-c31b-4726-8fa2-817f4b5019a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>valign</name>
       <type>Main</type>
       <value>bottom</value>
-      <webElementGuid>8e43c034-450f-409a-9833-7d2c98704bf5</webElementGuid>
+      <webElementGuid>1e9ebedf-092e-4a64-ab30-95e57fa9aa70</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/deal/dropdown.gif</value>
-      <webElementGuid>0d3770dd-f315-45a3-a123-3844ce884772</webElementGuid>
+      <webElementGuid>cde18c1f-4868-423e-9fc5-7c70061f36d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Lista de Registros</value>
-      <webElementGuid>ef836bc5-0eac-417d-b0e0-cc0dbbd342ae</webElementGuid>
+      <webElementGuid>f8d4fd02-b49c-466b-885c-dac089b51038</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Lista de Registros</value>
-      <webElementGuid>37a293fd-ada2-4943-aaaf-69e74c4e047f</webElementGuid>
+      <webElementGuid>8809507d-cebf-4f41-af6f-4564c6dfba33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>border</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>db0cabdc-8625-4cd6-a49b-cd91e1a49333</webElementGuid>
+      <webElementGuid>30058db6-ecf3-427a-8dc9-6120ed70dfbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;toolBar&quot;)/table[1]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[4]/a[1]/img[1]</value>
-      <webElementGuid>556c2f61-8405-4449-9142-d01e1b2a9e12</webElementGuid>
+      <webElementGuid>654f1015-96d9-4072-b78d-6cf14ddc5a0f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='toolBar']/table/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[4]/a/img</value>
-      <webElementGuid>a7278c17-d01a-477a-b428-1c0b1ed66e78</webElementGuid>
+      <webElementGuid>96be5aa8-ac9d-4f25-a6a8-f861be3b5b22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Lista de Registros']</value>
-      <webElementGuid>3c7918eb-ed41-4f19-9aa2-01e6d3804b7c</webElementGuid>
+      <webElementGuid>c73ba1c8-54f9-40f8-bab2-e4b444625c24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/table/tbody/tr/td[4]/a/img</value>
-      <webElementGuid>eea10dbc-1666-484a-a927-0bfa7a3bbf66</webElementGuid>
+      <webElementGuid>5b0be0ad-9a8f-4a8b-b4b6-212f1e002879</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/deal/dropdown.gif' and @alt = 'Lista de Registros' and @title = 'Lista de Registros']</value>
-      <webElementGuid>52ce11c6-bc4a-4775-81be-1311f1e436ab</webElementGuid>
+      <webElementGuid>eff501cb-2e78-4587-8be9-4c64972f7507</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

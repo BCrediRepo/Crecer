@@ -66,6 +66,9 @@ WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'
 //Se toma un screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Se ejecuta
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
@@ -79,6 +82,23 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblSucursal001'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblSucursal001'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
 
 def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblSucursal001'))
 
@@ -100,7 +120,9 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
 
-assert element2.contains('29 JUL 2022') == true
+//assert element2.contains('29 JUL 2022') == true //habilitar TES10
+
+assert element2.contains('31 DIC 2017') == true //Habilitar 708
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

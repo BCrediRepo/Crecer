@@ -6,15 +6,19 @@
    <elementGuidId>aed898d4-ef67-4969-9adf-bb1edf192aa8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLEACCOMBONIFICACION</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '001' or . = '001')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>8f1c4540-9a92-4f3e-b08d-d15cbd9e3b93</webElementGuid>
+      <webElementGuid>db4bb0b7-c52e-44c2-8bb4-8a57dd05b680</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMBONIFICACION</value>
-      <webElementGuid>dce78b0a-010f-4eb2-b83b-afe41816a493</webElementGuid>
+      <webElementGuid>ddeb57f6-436a-48ae-972d-b555e051788e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>001</value>
-      <webElementGuid>d9212188-5ed4-4997-a171-beeb28d28a3d</webElementGuid>
+      <webElementGuid>63e29b01-b4a9-474f-a381-781e0b2cff66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMBONIFICACION&quot;]</value>
-      <webElementGuid>49768fb4-d395-47e9-98d5-21de213c411c</webElementGuid>
+      <webElementGuid>35bf888a-cfa7-4f19-a046-a215e998ca0a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>a2a77bb4-7b4a-48f1-8cc4-c51007573c1d</webElementGuid>
+      <webElementGuid>2e65b971-4254-459b-8e34-abb04976df34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal:'])[1]/following::td[1]</value>
-      <webElementGuid>816a357a-6e35-4bee-9d73-d846e4235d65</webElementGuid>
+      <webElementGuid>f875a3a0-4d4f-47c0-bf83-709259e05474</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>1e3e361a-8883-4462-93c5-5b394aa19889</webElementGuid>
+      <webElementGuid>8250de7f-7a19-4b15-9006-065894a1986a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='NOMBRE:'])[1]/preceding::td[1]</value>
-      <webElementGuid>70b4d17a-e98f-45bf-98b4-88a7ebc9ff13</webElementGuid>
+      <webElementGuid>9bf4f097-7ef4-4cff-b3e6-c360b77ae405</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Centro'])[1]/preceding::td[2]</value>
-      <webElementGuid>1196c393-4e10-4eb1-8985-e2d36f2d9e0a</webElementGuid>
+      <webElementGuid>b449e777-9660-4758-a7d0-e3767ff95d12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='001']/parent::*</value>
-      <webElementGuid>91444dd2-2cc6-4ced-a329-1a622b575177</webElementGuid>
+      <webElementGuid>f9af356c-4094-4861-9be9-f79166d651ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[2]</value>
-      <webElementGuid>f81ffe04-eecc-4362-9d2b-a40a1217f257</webElementGuid>
+      <webElementGuid>d4cf0df4-8591-4582-97a0-1fc5f6e2c03d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '001' or . = '001')]</value>
-      <webElementGuid>a06a02a7-ea1e-41fe-aef8-8c5cf513ca99</webElementGuid>
+      <webElementGuid>70eaeb05-5644-40b3-b9b1-8a8571ab977b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

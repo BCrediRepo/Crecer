@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblResultados</name>
+   <tag></tag>
+   <elementGuidId>b8527ff7-6acc-4d0d-bbbe-bdb512097470</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='enqheader-msg']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#enqheader-msg > span:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(contains(text(), 'Resultados1') or contains(., 'Resultados1'))]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>eba102ef-1651-4974-9e09-e0e68c5c61b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Resultados1</value>
+      <webElementGuid>d3f07312-4daa-479e-a859-a0805f96b1e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader-msg&quot;)/span[1]</value>
+      <webElementGuid>cbf4f89b-6157-47fd-bed9-0bf3f98b0be5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='enqheader-msg']/span</value>
+      <webElementGuid>68c8ef59-d9cf-4b46-a4e7-7908fad69dd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imprimir Localmente'])[1]/preceding::span[1]</value>
+      <webElementGuid>a4c7908b-6f73-40b7-a193-0a496e7a08d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como CSV'])[1]/preceding::span[1]</value>
+      <webElementGuid>6e2d4b71-2cc0-42fa-bd6c-8cf9a284a782</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Resultados1 - 19 of 2248']/parent::*</value>
+      <webElementGuid>7e213d4f-c9b9-4565-901c-058a5c486147</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span</value>
+      <webElementGuid>14f2e153-5bcf-429d-8970-9020c822dd68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Resultados1 - 19 of 2248' or . = 'Resultados1 - 19 of 2248')]</value>
+      <webElementGuid>1987dcf9-9ef7-4356-8c3f-411ac107331b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

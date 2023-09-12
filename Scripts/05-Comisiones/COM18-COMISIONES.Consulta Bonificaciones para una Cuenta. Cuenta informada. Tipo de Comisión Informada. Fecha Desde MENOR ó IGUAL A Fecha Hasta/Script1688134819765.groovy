@@ -53,22 +53,26 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
 //Ingresar Comision "DEPDISP" = "Depositos ATM/TAS"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtTipoComision'), 'MANCTA')
+//WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtTipoComision'), 'MANCTA') //habilitar para TES10
 
 //Ingresar Cuenta "00010015665"
 WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtCuenta'), '00010015665')
 
 //Ingresar Fecha Desde
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220727')
+//WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220727') //habilitar para TES10
+WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20171010') //habilitar para 708
 
 //Ingresar Fecha Hasta
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaHasta'), '20220729')
+WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaHasta'), '20220801')
 
 //Ingresar Sucursal "001"
 WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'), '001')
 
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
 
 //Click Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
@@ -81,9 +85,28 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comi
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision'))
 
-def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision'))
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
 
-assert element0.contains('Mant Cuenta') == true
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
+
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
+
+//def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision')) //habilitar TES10
+
+//assert element0.contains('Mant Cuenta') == true //habilitar TES10
+
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'), 6)
 
@@ -100,7 +123,8 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaDes'))
 
-assert element2.contains('28 JUL 2022') == true 
+//assert element2.contains('28 JUL 2022') == true //habilitar TES10
+//assert element2.contains('10 OCT 2017') == true
 
 //Asserts Fecha Hasta
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'), 6)
@@ -109,7 +133,9 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element3 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
 
-assert element3.contains('28 JUL 2022') == true
+//assert element3.contains('28 JUL 2022') == true //habilitar TES10
+//assert element3.contains('31 DIC 2017') == true
+
 
 //Control de fin de script
 

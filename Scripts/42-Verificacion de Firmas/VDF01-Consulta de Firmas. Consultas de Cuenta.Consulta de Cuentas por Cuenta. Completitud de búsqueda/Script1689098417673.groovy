@@ -17,13 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
+        2, 3))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en el menu Cuentas
@@ -48,39 +50,56 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lnkNueva Seleccion'))
 
 //Seteamos el numero de cuenta a consultar
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/txtNroCuenta'), '00430014075')
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/txtNroCuenta'), 
+    '00430014075')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnEjecutar'))
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 
+    6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
 
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
+
+//---------------------------
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println(TotalRegistros)
+
+//-----------------------------
 def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
 
-assert element.contains('Nro Cuenta')
-
-
-//---------------------------------------------------------------------------------------------------------------------
-
+assert element.contains('Nro Cuenta') //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
 

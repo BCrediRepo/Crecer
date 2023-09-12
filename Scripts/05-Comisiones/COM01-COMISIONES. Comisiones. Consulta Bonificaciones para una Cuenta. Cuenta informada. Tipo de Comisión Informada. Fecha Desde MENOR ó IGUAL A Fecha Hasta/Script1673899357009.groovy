@@ -62,11 +62,31 @@ WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFec
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
 TextoHeader = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/lblCuentaHeader'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime 
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
 
 TextoDato = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/lblCuentaTabla'))
 
