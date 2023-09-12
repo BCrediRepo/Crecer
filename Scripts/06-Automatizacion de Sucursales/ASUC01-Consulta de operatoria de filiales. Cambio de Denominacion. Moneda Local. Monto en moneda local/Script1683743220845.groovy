@@ -23,8 +23,7 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
-        2, 1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 
 WebUI.maximizeWindow()
 
@@ -55,7 +54,7 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkDETALLEDEOPERACIONES'))
 
 //Ir a AJUSTES DE DENOMINACIONES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkAJSUTESDEDENOMINACION'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkAJUSTESDEDENOMINACION'))
 
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

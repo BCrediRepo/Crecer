@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTransactionType</name>
+   <name>lblRequest Type</name>
    <tag></tag>
-   <elementGuidId>7beeef97-d511-4b4f-b260-675db7a96c83</elementGuidId>
+   <elementGuidId>2ada1383-3f14-4561-a18b-e4b907cf6dfd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Transaction Type' or . = 'Transaction Type')]</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='fieldCaption:TRANSACTION.TYPE']</value>
+         <value>//a[@id='fieldCaption:REQUEST.TYPE']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>60c926df-93fd-48ea-938c-2ce14b22bd95</webElementGuid>
+      <webElementGuid>cddb6624-8023-428c-a9e2-073bde7a9fbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>399506c8-5c27-4c48-a8fd-67e60dd18003</webElementGuid>
+      <webElementGuid>7768b889-f5bf-4afa-ba05-635b9866f710</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,31 +38,31 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>75582c4f-085b-4f26-a8a1-f37088aa7370</webElementGuid>
+      <webElementGuid>31b2516b-37cf-496b-8f03-04600f7383ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>field field_FUNDSTRANSFER field_FUNDSTRANSFER_BCCLCONSULTA</value>
-      <webElementGuid>1442b83a-8f8c-4590-ba6d-19460a14f39e</webElementGuid>
+      <value>field field_ACCHARGEREQUEST field_ACCHARGEREQUEST_BCCLCONSULTA</value>
+      <webElementGuid>dacee581-004a-4040-81c8-225c7b5be217</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldCaption:TRANSACTION.TYPE</value>
-      <webElementGuid>2d073242-bf95-4b9a-b604-a26fe4bf2c8a</webElementGuid>
+      <value>fieldCaption:REQUEST.TYPE</value>
+      <webElementGuid>11314939-8b82-4ff1-bca4-7e3554b5a479</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldCaption:TRANSACTION.TYPE</value>
-      <webElementGuid>98d52ab6-8437-4ba9-8871-b88b72663949</webElementGuid>
+      <value>fieldCaption:REQUEST.TYPE</value>
+      <webElementGuid>5a5bc82c-98b1-4dd6-a329-0a1daa42dfad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -73,47 +70,47 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>bb4f3381-c57c-4f60-905c-dc24f8fd96d0</webElementGuid>
+      <webElementGuid>2ab7835a-3e20-4efe-a816-60daa4278c02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:help('TRANSACTION.TYPE','','','issueToken')</value>
-      <webElementGuid>df8ae24f-6c6e-4c35-92c4-f28cef86d98d</webElementGuid>
+      <value>javascript:help('REQUEST.TYPE','','','issueToken')</value>
+      <webElementGuid>fe260b74-a010-405d-911a-b833acb09076</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Transaction Type</value>
-      <webElementGuid>b4ac9180-b672-47c9-b9d7-03bd71f3361d</webElementGuid>
+      <value>Request Type</value>
+      <webElementGuid>b6b7b6e9-c8be-4e88-8aa8-642eebb1129d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Transaction Type</value>
-      <webElementGuid>046d5a76-0d8a-44f4-ab30-492f2dd2f1bb</webElementGuid>
+      <value>Request Type</value>
+      <webElementGuid>04a36060-b3ec-493b-96eb-217d2ffd429b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldCaption:TRANSACTION.TYPE&quot;)</value>
-      <webElementGuid>f1ee83c1-0b78-4b43-ab86-4461bc3295af</webElementGuid>
+      <value>id(&quot;fieldCaption:REQUEST.TYPE&quot;)</value>
+      <webElementGuid>46911bd0-079a-4644-ad69-ffed8b97e128</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@id='fieldCaption:TRANSACTION.TYPE']</value>
-      <webElementGuid>e2bf2098-400c-4612-9d70-58197ece9321</webElementGuid>
+      <value>//a[@id='fieldCaption:REQUEST.TYPE']</value>
+      <webElementGuid>a5a6d02b-9159-4034-8675-ac812e726e18</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -121,63 +118,63 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td/label/a</value>
-      <webElementGuid>3288d6a3-9cf6-46a1-b8cf-ab2a58ccaceb</webElementGuid>
+      <webElementGuid>08622524-d1ca-48e4-8068-5c86babae39e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Transaction Type')]</value>
-      <webElementGuid>881e0970-b976-47da-b6e6-64b4f523e66b</webElementGuid>
+      <value>//a[contains(text(),'Request Type')]</value>
+      <webElementGuid>20547962-9def-4ed3-8775-8e32efe159d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::a[1]</value>
-      <webElementGuid>f98eedac-846b-4561-9de8-026aeb7cc406</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.043 Villa Mitre)'])[1]/following::a[1]</value>
+      <webElementGuid>10a2e758-5ca0-4414-af5a-0efb15d569ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='FT/22208/612305835'])[1]/following::a[1]</value>
-      <webElementGuid>14894727-c538-4f31-8a5e-323417059205</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHG/22207/2C4LR'])[1]/following::a[1]</value>
+      <webElementGuid>a3a3bd34-2316-46a4-8912-c651aa50ba2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACDJ'])[1]/preceding::a[1]</value>
-      <webElementGuid>98c6c095-798c-45f0-883f-c2e6586981a7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BOOK'])[1]/preceding::a[1]</value>
+      <webElementGuid>8d94f5ce-1d41-495e-8654-33f5866f8d69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='NOTA DE DEBITO POR AJUSTES'])[1]/preceding::a[1]</value>
-      <webElementGuid>6b345aeb-c01c-489b-ac4b-616092a211eb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Account'])[1]/preceding::a[1]</value>
+      <webElementGuid>208b4646-a2e0-4394-99ed-9e1b3d36d7a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Transaction Type']/parent::*</value>
-      <webElementGuid>57f5d1bc-31de-4037-8361-68c7238cebde</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Request Type']/parent::*</value>
+      <webElementGuid>becf9e83-e3e2-4269-97e5-0ac2a91e19c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:help('TRANSACTION.TYPE','','','issueToken')&quot;)]</value>
-      <webElementGuid>8d7b3166-d2fc-45df-b46b-c8f6e56b36c6</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:help('REQUEST.TYPE','','','issueToken')&quot;)]</value>
+      <webElementGuid>5ed4a5e7-9309-4ce8-8b88-6b8b1e4734ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -185,14 +182,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label/a</value>
-      <webElementGuid>111a4087-e320-411d-89ae-8f3c49898dd9</webElementGuid>
+      <webElementGuid>2114b896-943c-4dc9-87c1-3531dc1d88f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@name = 'fieldCaption:TRANSACTION.TYPE' and @id = 'fieldCaption:TRANSACTION.TYPE' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;TRANSACTION.TYPE&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Transaction Type' and (text() = 'Transaction Type' or . = 'Transaction Type')]</value>
-      <webElementGuid>01c562ed-c5e2-42c5-87eb-2642f26dc5d7</webElementGuid>
+      <value>//a[@name = 'fieldCaption:REQUEST.TYPE' and @id = 'fieldCaption:REQUEST.TYPE' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;REQUEST.TYPE&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Request Type' and (text() = 'Request Type' or . = 'Request Type')]</value>
+      <webElementGuid>30e20766-c484-4d86-98b1-616ae7e18d17</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

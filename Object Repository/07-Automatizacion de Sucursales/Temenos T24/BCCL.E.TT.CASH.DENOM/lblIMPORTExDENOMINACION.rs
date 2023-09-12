@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText7']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'IMPORTEPOR DENOMINACION' or . = 'IMPORTEPOR DENOMINACION')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>537a1682-c3bb-449b-838f-46c9e42aac86</webElementGuid>
+      <webElementGuid>11cb46a8-5731-48c0-8e83-2a327ce2a9b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>e4b6ad35-d7fd-443d-920d-3b276f42ae40</webElementGuid>
+      <webElementGuid>66996bbb-5ace-4aec-9cfa-048e17470432</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>21369663-0552-47c2-85c5-e57cf2924fe6</webElementGuid>
+      <webElementGuid>a5fc2a82-d1c5-459e-bd78-870e4fc4f667</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText7</value>
-      <webElementGuid>3a3fc957-95a5-40d2-a169-e0404a282c45</webElementGuid>
+      <webElementGuid>5954c110-27c9-4afe-a644-6befb126731d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>IMPORTEPOR DENOMINACION</value>
-      <webElementGuid>89c09553-0f07-4b65-a4bd-1cef37276ae6</webElementGuid>
+      <webElementGuid>5d3bbee9-f4f3-4e6e-a7f0-b07e6f1e47fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText7&quot;)</value>
-      <webElementGuid>f103f5e8-b0f1-4083-8048-d4b82797a2d8</webElementGuid>
+      <webElementGuid>7d51ddec-6d85-40aa-bf8c-e5418645677b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText7']</value>
-      <webElementGuid>d1bb15c0-ff81-4dbe-9047-c8dd94aa965d</webElementGuid>
+      <webElementGuid>6fcb54c6-ea55-49c7-959e-5cbccbb11018</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader7']/table/tbody/tr/th</value>
-      <webElementGuid>2efb85fb-3c95-4e3e-b44c-d463d0c6e678</webElementGuid>
+      <webElementGuid>451e126b-01a1-43e3-bd8f-11cb131969a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CANTIDAD'])[1]/following::th[3]</value>
-      <webElementGuid>8a291ee3-5e29-48d7-82c8-2a23ee1f832e</webElementGuid>
+      <webElementGuid>cccc44ce-a6a6-45ca-8398-af5efe7183f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DENOMINACION'])[1]/following::th[6]</value>
-      <webElementGuid>c3bff1c0-edb0-4d01-bcaa-3dd8857896c0</webElementGuid>
+      <webElementGuid>e893bb88-91db-4759-87ca-3e4a84ebc7cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='IMPORTEPOR MONEDA'])[1]/preceding::th[2]</value>
-      <webElementGuid>447ae2a7-d6de-4193-8acd-e10c9569c1f2</webElementGuid>
+      <webElementGuid>bf7a628b-00cb-466c-8afb-259a18406299</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cash Automatic Teller Machines Efectivo ATM'])[1]/preceding::th[5]</value>
-      <webElementGuid>1a89673c-2daf-467d-b3b1-32879394034f</webElementGuid>
+      <webElementGuid>6666b742-efac-40ee-ba8c-c624eff15a31</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='IMPORTEPOR DENOMINACION']/parent::*</value>
-      <webElementGuid>4b63e117-2cf2-41fb-8996-db3c9850fdce</webElementGuid>
+      <webElementGuid>7f6db2ff-4fcf-4df6-8b21-98e2d4647956</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[7]/table/tbody/tr/th</value>
-      <webElementGuid>cbe0ba4b-d698-4548-a0ed-6c61185fedb7</webElementGuid>
+      <webElementGuid>c97fb570-0a72-4324-bf9d-feade1d72c8b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText7' and (text() = 'IMPORTEPOR DENOMINACION' or . = 'IMPORTEPOR DENOMINACION')]</value>
-      <webElementGuid>23f39394-3c65-4105-bd52-97eba10eb935</webElementGuid>
+      <webElementGuid>d2ae547e-17e1-4bcf-b1b2-9f23e8515c1b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

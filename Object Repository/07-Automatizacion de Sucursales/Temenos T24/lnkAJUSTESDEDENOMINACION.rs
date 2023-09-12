@@ -7,14 +7,17 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,CAMBIO.DENOMINACION I F3');processMenuHeaderText('AJSUTES DE DENOMINACION')&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'AJSUTES DE DENOMINACION ' or . = 'AJSUTES DE DENOMINACION ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>dcdfb86c-fe23-4988-9db9-ebb73d00bb46</webElementGuid>
+      <webElementGuid>44ace9b0-f334-4022-be50-34cfd8c0e461</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('NEW','TELLER,CAMBIO.DENOMINACION I F3');processMenuHeaderText('AJSUTES DE DENOMINACION')</value>
-      <webElementGuid>30fd2fd2-e3b9-469a-b229-23d0ede6e919</webElementGuid>
+      <webElementGuid>2932d940-2759-4322-98bf-461a19322b6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('TELLER,CAMBIO.DENOMINACION I F3');</value>
-      <webElementGuid>f3145ba9-7ea4-447a-9bdd-56fb7aebc36e</webElementGuid>
+      <webElementGuid>883efe3a-c896-4d9f-9bae-efa989f246ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>AJSUTES DE DENOMINACION </value>
-      <webElementGuid>a4f9eb2b-465a-49ee-8cd0-d98d9cc5b92b</webElementGuid>
+      <webElementGuid>435c866a-6d51-4010-8714-d1a0d54471f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
-      <webElementGuid>9a522d74-857a-4aa2-8414-5873c96f5d9b</webElementGuid>
+      <webElementGuid>c2e07d72-738e-4a8a-863d-18e8cb1e9a73</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,CAMBIO.DENOMINACION I F3');processMenuHeaderText('AJSUTES DE DENOMINACION')&quot;]</value>
-      <webElementGuid>b384fecd-ef42-45d1-b0e1-b6c56c3dd43f</webElementGuid>
+      <webElementGuid>3fe2b3c8-6260-42e3-8159-c98adca9d2b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[7]/ul/li[2]/ul/li[2]/a</value>
-      <webElementGuid>42e8a75f-e522-4948-aceb-158021a273eb</webElementGuid>
+      <webElementGuid>55b66f8f-8988-48d5-b0f7-591c4e98e090</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'AJSUTES DE DENOMINACION')]</value>
-      <webElementGuid>b3afcf46-b429-43ea-9518-5affa1f4af16</webElementGuid>
+      <webElementGuid>34238827-50da-44d5-9105-0317302ea6d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='EXISTENCIA POR DENOMINACION'])[1]/following::a[1]</value>
-      <webElementGuid>2ad8f6ea-58e6-4bec-900e-8852fd7fc4d9</webElementGuid>
+      <webElementGuid>b08f922d-6d5a-4ebe-afda-e51341fead9f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES'])[1]/following::a[2]</value>
-      <webElementGuid>ad5681d2-09a3-4f3b-9511-8de17cef2a53</webElementGuid>
+      <webElementGuid>bec2ef00-ae7b-40fa-ada6-c9808bc464fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTA EN CAJA DE FALTANTES/EXTORNOS CAJA'])[1]/preceding::a[1]</value>
-      <webElementGuid>597b3a4f-783d-400d-95f7-9fb108ae0b1c</webElementGuid>
+      <webElementGuid>1ed43b1e-7901-4797-b7d7-4cf36a992322</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTA EN CAJA DE SOBRANTES CAJA'])[1]/preceding::a[2]</value>
-      <webElementGuid>55c1274d-f59c-4737-851b-7ba7ebb80a8c</webElementGuid>
+      <webElementGuid>8450d5af-32d5-4142-806c-a2e9e2364fee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='AJSUTES DE DENOMINACION']/parent::*</value>
-      <webElementGuid>4e3e26e5-298f-4d42-bc7d-3dc4b3f434d7</webElementGuid>
+      <webElementGuid>e7ef1777-9799-4c25-8e1c-ffd3e7dad061</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('TELLER,CAMBIO.DENOMINACION I F3');&quot;)]</value>
-      <webElementGuid>07a00ad8-a355-4d9c-a1a4-c4644b3c4512</webElementGuid>
+      <webElementGuid>ef32b0ee-248b-4210-99c7-32bb46d347f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/ul/li[7]/ul/li[2]/ul/li[2]/a</value>
-      <webElementGuid>602cce42-995b-40e3-8fb8-e8c4eb0e3eb7</webElementGuid>
+      <webElementGuid>87be1a58-24e8-4ac1-b47a-a6b605acd7e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +145,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;TELLER,CAMBIO.DENOMINACION I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'AJSUTES DE DENOMINACION ' or . = 'AJSUTES DE DENOMINACION ')]</value>
-      <webElementGuid>f573f3f1-59a8-4364-8007-151454fcc52c</webElementGuid>
+      <webElementGuid>ac8e1121-33c5-454d-8565-a3d5f106b75a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

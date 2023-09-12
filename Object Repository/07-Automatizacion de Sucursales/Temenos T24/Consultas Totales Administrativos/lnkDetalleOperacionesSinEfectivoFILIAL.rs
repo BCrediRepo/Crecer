@@ -10,11 +10,15 @@
          <value></value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA ' or . = 'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA ')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALFILIAL.SME');processMenuHeaderText('DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>32be752e-6b88-499f-97d9-623be4a0a72b</webElementGuid>
+      <webElementGuid>3455b645-8f44-4080-90dd-62c3783b564d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALFILIAL.SME');processMenuHeaderText('DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')</value>
-      <webElementGuid>cb1f02a6-9f79-422c-b1d5-7a3782a335eb</webElementGuid>
+      <webElementGuid>efdccc77-78f0-4504-9379-bc5e49e5b98a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.EB.TOTALFILIAL.SME');</value>
-      <webElementGuid>5a762c90-a3af-41e7-9716-c68928173eca</webElementGuid>
+      <webElementGuid>ec83ff0c-a206-4c55-9d2c-185b140b5408</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>DETALLE DE OPERACIONES SIN Efectivo  (PARA LA </value>
-      <webElementGuid>2297a872-8836-4f1a-9cbe-ba0cf076eee3</webElementGuid>
+      <webElementGuid>8c8164d9-57ff-4b66-90d3-336bed03cadb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
-      <webElementGuid>f8e49ded-6554-4386-a2e1-779699c0809a</webElementGuid>
+      <webElementGuid>1a9cf5a9-2711-48b8-92c8-16fc64edc864</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.TOTALFILIAL.SME');processMenuHeaderText('DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')&quot;]</value>
-      <webElementGuid>e345737b-8bfe-48fb-aa8e-10a4bee456be</webElementGuid>
+      <webElementGuid>95cd4af7-f3e5-4a5b-a2b3-977a7769249b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[7]/ul/li/ul/li[4]/a</value>
-      <webElementGuid>54410c16-dcf6-4c78-b4cb-a7dbd22dcea0</webElementGuid>
+      <webElementGuid>1fdf6c52-94c7-4d25-a406-b4b48dbd4d03</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA')]</value>
-      <webElementGuid>1901413c-20e7-4521-a944-2f011a3782f1</webElementGuid>
+      <webElementGuid>f0272eb9-1dad-4d0f-a5b7-07bfad7728c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES SIN Efectivo (PARA EL'])[1]/following::a[2]</value>
-      <webElementGuid>4d6acd95-1b99-4326-b2e4-27de750cd8fc</webElementGuid>
+      <webElementGuid>df2358ae-9316-45ce-9425-f7cf91a7ded2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES'])[1]/preceding::a[1]</value>
-      <webElementGuid>e8b4db29-ed19-46ba-840b-228ae53ef31e</webElementGuid>
+      <webElementGuid>aceeaab0-4708-4133-b4d2-7824237b4f9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='EXISTENCIA POR DENOMINACION'])[1]/preceding::a[1]</value>
-      <webElementGuid>80b77b3b-39da-441e-899a-a5fc5fa4855a</webElementGuid>
+      <webElementGuid>7003b70c-9fb6-4982-b20c-f4ee79aa09b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.EB.TOTALFILIAL.SME');&quot;)]</value>
-      <webElementGuid>ebfd4281-63d1-4780-8bdf-0a3317094b84</webElementGuid>
+      <webElementGuid>6beed454-e4d1-4ff3-889f-9749fc10480b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/ul/li[7]/ul/li/ul/li[4]/a</value>
-      <webElementGuid>944f3b3e-3bee-40f2-b32a-b3b056777078</webElementGuid>
+      <webElementGuid>8c67d859-0c84-4d0a-88ec-18b9043eb0ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +130,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.EB.TOTALFILIAL.SME&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA ' or . = 'DETALLE DE OPERACIONES SIN Efectivo  (PARA LA ')]</value>
-      <webElementGuid>03c11e8e-3df7-4781-a0e8-33c0bccd1f95</webElementGuid>
+      <webElementGuid>1a125962-5019-4f1b-95f5-632d91d4a201</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText8']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'IMPORTEPOR MONEDA' or . = 'IMPORTEPOR MONEDA')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>e3927eeb-1e2c-4248-a5db-c0fb4e9ea1a5</webElementGuid>
+      <webElementGuid>ccb67cf8-a64f-4393-ac53-18c69e0d3d9d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>a9f30dda-e85e-4a8e-9430-66b06adf8372</webElementGuid>
+      <webElementGuid>1fa78e3c-d641-4d5f-8285-eb5bc0be8868</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>18e2d9e7-0ca3-45bf-9c6b-d679846d56b2</webElementGuid>
+      <webElementGuid>0c65f4fc-237e-4704-8f06-f2f6609dd3b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText8</value>
-      <webElementGuid>dfee6c61-183a-450d-b395-f16a04389494</webElementGuid>
+      <webElementGuid>60ecc5dc-8e39-4f69-955b-eda9c3ee9205</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>IMPORTEPOR MONEDA</value>
-      <webElementGuid>bc84bacd-b753-45f0-9b10-216869f7b283</webElementGuid>
+      <webElementGuid>edacc1a3-c950-42cc-8fff-c7db7c60d5c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText8&quot;)</value>
-      <webElementGuid>3c74e9ac-94e9-478f-85d4-e94a0a8d7ad9</webElementGuid>
+      <webElementGuid>0cc8a2d9-8991-4f7a-a816-29740b733632</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText8']</value>
-      <webElementGuid>df78d27a-ef40-474e-9fa8-8184f5d33eee</webElementGuid>
+      <webElementGuid>3e076e8f-46d7-4aea-b800-82a1a22bc82b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader8']/table/tbody/tr/th</value>
-      <webElementGuid>5a4675c6-049d-43df-b36f-826ae940073e</webElementGuid>
+      <webElementGuid>ccdb235f-4679-47a3-8a68-4c4400d7c81f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='IMPORTEPOR DENOMINACION'])[1]/following::th[3]</value>
-      <webElementGuid>dd836c1d-25de-4b8d-b290-efd076ac009b</webElementGuid>
+      <webElementGuid>62dcb20e-4e9e-4c2a-b489-41a9171914e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CANTIDAD'])[1]/following::th[6]</value>
-      <webElementGuid>a5f5391d-042a-4219-941e-d4145947ceba</webElementGuid>
+      <webElementGuid>8ba95f18-0c91-453c-9a95-fbf6f4b6e5aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cash Automatic Teller Machines Efectivo ATM'])[1]/preceding::th[2]</value>
-      <webElementGuid>7aa8fb75-68d8-422a-acb3-a4d4436e59ee</webElementGuid>
+      <webElementGuid>bcb4ea6f-d192-405e-8d6b-b476ba31fedc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS.1000'])[1]/preceding::th[2]</value>
-      <webElementGuid>0cad9b0b-8aa8-4854-8e61-062cb2e3ec47</webElementGuid>
+      <webElementGuid>7156d58a-d215-4ee2-9c65-433d7d629967</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='IMPORTEPOR MONEDA']/parent::*</value>
-      <webElementGuid>18044156-729d-4cd9-a59e-5d63f71afcaf</webElementGuid>
+      <webElementGuid>e653908b-da5c-4fd1-88ba-f2b89eacabb2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[8]/table/tbody/tr/th</value>
-      <webElementGuid>2b325369-3951-4a82-aa1c-81f32ab19333</webElementGuid>
+      <webElementGuid>4f900d60-541c-4236-86b5-9fcfd48e54fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText8' and (text() = 'IMPORTEPOR MONEDA' or . = 'IMPORTEPOR MONEDA')]</value>
-      <webElementGuid>e8f606e1-a8e1-4076-8fa9-21abe13441e5</webElementGuid>
+      <webElementGuid>0717172c-e96c-43ca-83be-2eefca0f9caf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
