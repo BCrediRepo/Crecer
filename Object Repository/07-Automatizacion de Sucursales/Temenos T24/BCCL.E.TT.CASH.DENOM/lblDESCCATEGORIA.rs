@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText3']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'DESC CATEGORIA' or . = 'DESC CATEGORIA')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>87be20e9-cd6a-4298-ac34-cb4f07254d19</webElementGuid>
+      <webElementGuid>c38ccf13-46c2-4035-b6bc-1662ad1dcd1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>d89f9a71-932c-41b8-a3a8-761edbfbe85b</webElementGuid>
+      <webElementGuid>221b8971-0d21-47fb-86f7-be51dc677109</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>5f33d3fa-1928-4db1-b13b-fe3eac199052</webElementGuid>
+      <webElementGuid>93920b7d-d7a5-48de-b638-7fc929982284</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText3</value>
-      <webElementGuid>c9a7c58f-4036-47b4-b613-00aef7800187</webElementGuid>
+      <webElementGuid>31675297-f1b1-463f-b532-fe960b747430</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>DESC CATEGORIA</value>
-      <webElementGuid>b3569b4c-10c1-49d0-903f-6044d915af46</webElementGuid>
+      <webElementGuid>5bd9f535-c212-428a-8955-853c0d30ad8e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText3&quot;)</value>
-      <webElementGuid>715c88d7-e38f-48b4-9bd5-9dcc1a6411a2</webElementGuid>
+      <webElementGuid>fc86d09d-d116-4f4a-9697-b99486d3c81e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText3']</value>
-      <webElementGuid>062f3eab-bad8-4364-96e6-b902cbf9643b</webElementGuid>
+      <webElementGuid>2503ec3f-5b7f-4971-813c-15e2a94a2845</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader3']/table/tbody/tr/th</value>
-      <webElementGuid>55c74544-049c-49f6-ae6a-0d49f7085964</webElementGuid>
+      <webElementGuid>9737508a-ebef-40f7-963e-e143cc692019</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CATEGORIA'])[1]/following::th[3]</value>
-      <webElementGuid>2da8078c-e652-458d-8292-a1b1c01a8d53</webElementGuid>
+      <webElementGuid>57db84ff-26c6-4698-acba-7eab649c6504</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='FILAL'])[1]/following::th[6]</value>
-      <webElementGuid>ce63554c-9158-4a0e-9cf5-9463736bf4a9</webElementGuid>
+      <webElementGuid>bf8cb483-72b4-40be-803f-fe7e01513852</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ID CAJERO'])[1]/preceding::th[2]</value>
-      <webElementGuid>00ca3ccf-4634-42d1-9f4e-289a006db32f</webElementGuid>
+      <webElementGuid>bbcd4db7-ed81-4da1-9bfe-56e04ff60d0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DENOMINACION'])[1]/preceding::th[5]</value>
-      <webElementGuid>b7035d91-5cb9-4ae2-aa94-e5fc6d777327</webElementGuid>
+      <webElementGuid>5e901400-f57a-4e98-bdba-4bffa16131f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='DESC CATEGORIA']/parent::*</value>
-      <webElementGuid>74459dc3-32f8-489e-aa2e-6bbfca38d72f</webElementGuid>
+      <webElementGuid>f9e50fb9-3665-4b3a-a6b9-2f29784e94c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[3]/table/tbody/tr/th</value>
-      <webElementGuid>bf44f84f-c090-4cf8-a990-bd3b4ca04d5e</webElementGuid>
+      <webElementGuid>ae036ae7-38c2-4b81-aae6-02a6551cc9cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText3' and (text() = 'DESC CATEGORIA' or . = 'DESC CATEGORIA')]</value>
-      <webElementGuid>a5c01af8-0b4c-4fe2-9ed4-9fae4ad3a20f</webElementGuid>
+      <webElementGuid>5dbab643-7437-460d-ae3a-048899e646fe</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

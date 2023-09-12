@@ -10,11 +10,15 @@
          <value></value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de Caja Faltantes/Extonos Caja ' or . = 'Consulta de Caja Faltantes/Extonos Caja ')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA');processMenuHeaderText('Consulta de Caja Faltantes/Extonos Caja')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>a3c5a26b-4478-48da-8933-8b061a279a49</webElementGuid>
+      <webElementGuid>cf0a76da-6ea8-4526-9c8d-f6329162513b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA');processMenuHeaderText('Consulta de Caja Faltantes/Extonos Caja')</value>
-      <webElementGuid>9936783d-a94c-4e76-bd96-f1051b56f699</webElementGuid>
+      <webElementGuid>eca349cc-326e-45aa-bd3a-064ad4f96819</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA');</value>
-      <webElementGuid>2f202e26-3157-471c-8169-1f0c1c7c6f34</webElementGuid>
+      <webElementGuid>4044e832-33ba-427f-821d-b71c96b0ca61</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Caja Faltantes/Extonos Caja </value>
-      <webElementGuid>952b5f69-48e3-4fcb-801d-256283c743ca</webElementGuid>
+      <webElementGuid>e66e32bd-bee8-4640-a1ab-522692c93fae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[9]/a[1]</value>
-      <webElementGuid>95796f51-e8bd-4274-b3e4-5132638a9a43</webElementGuid>
+      <webElementGuid>8a39726d-6f7c-4426-836b-db4f939455d3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA');processMenuHeaderText('Consulta de Caja Faltantes/Extonos Caja')&quot;]</value>
-      <webElementGuid>c6cc76fd-3b0a-412f-bc70-b2381aa35b2d</webElementGuid>
+      <webElementGuid>214c8514-5b0a-4373-becc-26d6a3e4dd22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[5]/li/ul/li[9]/a</value>
-      <webElementGuid>1539dc0e-fdaa-41e7-b69f-0614456ca7c0</webElementGuid>
+      <webElementGuid>0bbc11f0-65ac-4445-8211-a90fff14cf93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Caja Faltantes/Extonos Caja')]</value>
-      <webElementGuid>e51874ab-88f5-4e47-9c28-b0e31fc76777</webElementGuid>
+      <webElementGuid>21b68d0a-b41b-44f6-a3ed-9e71b5cecf55</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Existencia por Denominacion'])[1]/following::a[1]</value>
-      <webElementGuid>50b5a71f-7bb5-43d2-8496-8b7c94bf7a9e</webElementGuid>
+      <webElementGuid>c0aa00a1-605a-4682-b846-84453ae563cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Totales Sucursal por Codigo Operativo'])[1]/following::a[2]</value>
-      <webElementGuid>0d226fd7-c531-468c-95dc-99e28685ac3d</webElementGuid>
+      <webElementGuid>38c8ae82-2e22-4f1e-879e-b9a3749c8b49</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta en Caja de Sobrantes Caja'])[1]/preceding::a[1]</value>
-      <webElementGuid>aacc1c0d-b3ee-4506-a7a2-c624bdd48c4b</webElementGuid>
+      <webElementGuid>de7dde45-4d06-40de-8c0c-57c8a4c14f5d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Estado de Cajas'])[2]/preceding::a[2]</value>
-      <webElementGuid>4e59afb9-c89c-4eef-be76-484049694232</webElementGuid>
+      <webElementGuid>35551ff3-c119-48e7-9d88-800cd5d57d41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Caja Faltantes/Extonos Caja']/parent::*</value>
-      <webElementGuid>cfd17154-c197-4d2a-a662-6b8bf63b592d</webElementGuid>
+      <webElementGuid>be1cc7ad-bd5c-4548-9ea4-b5c47de21efb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA');&quot;)]</value>
-      <webElementGuid>98a565a2-c105-4af3-8885-ad6b45c08c89</webElementGuid>
+      <webElementGuid>759f1229-7cc7-4f84-825c-720dc255662d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[9]/a</value>
-      <webElementGuid>9cf54132-3b52-4c90-9155-86af635af62c</webElementGuid>
+      <webElementGuid>0b472d62-1a89-44c9-9463-de197d206e06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Caja Faltantes/Extonos Caja ' or . = 'Consulta de Caja Faltantes/Extonos Caja ')]</value>
-      <webElementGuid>92065088-3ef8-494f-b933-f99a2de899b8</webElementGuid>
+      <webElementGuid>af3bd7dd-1fe9-4c20-8fab-9c491c48945c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -10,11 +10,15 @@
          <value>#columnHeaderText2</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Descripcion' or . = 'Descripcion')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText2']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>70e8aba2-5a92-43e8-8f66-8af4f2d410ee</webElementGuid>
+      <webElementGuid>d1d3b3d9-1964-4523-8dda-d23cba4faf6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>2c786194-4cf1-4d6f-9551-dd7217820679</webElementGuid>
+      <webElementGuid>fd2233ce-ed88-454e-86ca-6703df918fed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>b0266b14-1b26-466d-8964-ee16ccb515cb</webElementGuid>
+      <webElementGuid>e846047c-d327-4d89-bc17-3c86491e3a9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText2</value>
-      <webElementGuid>defec5be-d8c8-4483-a0ba-a10c59094d18</webElementGuid>
+      <webElementGuid>78a57018-c6a4-444b-8724-28e61b980e82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Descripcion</value>
-      <webElementGuid>3e3ff7fe-90cd-481b-946d-9b690c637012</webElementGuid>
+      <webElementGuid>d20d6f17-9e90-4b3d-a881-9abe7cf9e0c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText2&quot;)</value>
-      <webElementGuid>3c9175c0-21a8-491a-92a3-034fa5b998cc</webElementGuid>
+      <webElementGuid>10857d19-c9b7-4ea0-b031-edddbd2adf2f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText2']</value>
-      <webElementGuid>2972e2c0-aed5-4a4c-9b56-b3d7050507c8</webElementGuid>
+      <webElementGuid>923ee622-6d0d-4053-abb4-e46a803bafb5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader2']/table/tbody/tr/th</value>
-      <webElementGuid>a38b80b3-77bd-4cee-b048-0383d7ec9e02</webElementGuid>
+      <webElementGuid>e6bd87ef-726f-4cc1-93c9-006bcad243e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cod. Operativo'])[1]/following::th[3]</value>
-      <webElementGuid>b24adc49-a79e-48d4-818c-2baf5fbb27b3</webElementGuid>
+      <webElementGuid>fe9cbca8-622a-46c4-994a-97b14499def6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/following::th[5]</value>
-      <webElementGuid>20085dca-02ee-42d4-a28d-3b10b829539b</webElementGuid>
+      <webElementGuid>fa0a0dbf-64b1-4cd7-b75d-f8cbc1a17163</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cant Operaciones'])[1]/preceding::th[2]</value>
-      <webElementGuid>d8d528a5-060a-4504-be7b-d69bcb1fc8d8</webElementGuid>
+      <webElementGuid>61f43baf-397a-4f0e-8abd-381bb46fc91b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto'])[1]/preceding::th[5]</value>
-      <webElementGuid>7531f0c5-4458-43e5-8fcc-62fdfe33a37a</webElementGuid>
+      <webElementGuid>06d6d184-6c1a-4b79-9847-b1aa4fc3fe56</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Descripcion']/parent::*</value>
-      <webElementGuid>6341cd2d-356d-4fe2-95d5-1c08bbc33af1</webElementGuid>
+      <webElementGuid>6f555bdc-a7a0-4b40-aac0-61ae5b32bcb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[2]/table/tbody/tr/th</value>
-      <webElementGuid>20a8bc6f-9894-4742-ac16-00e145e26be3</webElementGuid>
+      <webElementGuid>ce228d51-149c-4bcf-b39a-5e222bacda3f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText2' and (text() = 'Descripcion' or . = 'Descripcion')]</value>
-      <webElementGuid>74c7b9d3-cc2d-4e60-85db-187adb6861df</webElementGuid>
+      <webElementGuid>63d6f674-7ea6-456e-8200-c2efcf939504</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

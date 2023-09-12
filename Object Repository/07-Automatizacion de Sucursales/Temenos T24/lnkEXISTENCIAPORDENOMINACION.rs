@@ -7,14 +7,17 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.CASH.DENOM');processMenuHeaderText('EXISTENCIA POR DENOMINACION')&quot;]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'EXISTENCIA POR DENOMINACION ' or . = 'EXISTENCIA POR DENOMINACION ')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>856afac3-472b-4ad2-bf38-33b750b22979</webElementGuid>
+      <webElementGuid>dc8be343-37b9-4468-9da7-7d01a258d354</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.CASH.DENOM');processMenuHeaderText('EXISTENCIA POR DENOMINACION')</value>
-      <webElementGuid>6d05a7d7-6dc7-4199-8ebe-f4050b2581b8</webElementGuid>
+      <webElementGuid>05a43e98-06a1-4c0b-9188-a9e9f25e7b1f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.TT.CASH.DENOM');</value>
-      <webElementGuid>adee8e4f-1d9a-48d9-9451-e7f9a1995c58</webElementGuid>
+      <webElementGuid>169d3c51-8f95-47a9-959a-2f166e6ba4d9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>EXISTENCIA POR DENOMINACION </value>
-      <webElementGuid>995a1e1e-0c6c-405c-a2ac-8345703d004d</webElementGuid>
+      <webElementGuid>907468f9-8fc5-4129-8c73-5f8daf24c58a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>6ed3ad74-ffb5-414a-b608-cbf272347ce8</webElementGuid>
+      <webElementGuid>a9fa4c0a-1e50-4eb4-8b8d-a39dfa35dd19</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.TT.CASH.DENOM');processMenuHeaderText('EXISTENCIA POR DENOMINACION')&quot;]</value>
-      <webElementGuid>81b48887-4ce5-4d68-96d3-cd92baaa4188</webElementGuid>
+      <webElementGuid>50f9faab-9afe-457e-9330-77339c2d664c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[7]/ul/li[2]/ul/li/a</value>
-      <webElementGuid>d44a43f0-35c5-408d-991c-d4efe76744e7</webElementGuid>
+      <webElementGuid>c682f9e8-ea14-4464-a33d-ac75f16e30aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'EXISTENCIA POR DENOMINACION')]</value>
-      <webElementGuid>d1151ab6-1987-4273-aba1-eb40c2cc6b32</webElementGuid>
+      <webElementGuid>9a77187e-77ad-4a1a-b5f9-ce1853913ac6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DETALLE DE OPERACIONES'])[1]/following::a[1]</value>
-      <webElementGuid>fa29133f-445a-4f08-8ee7-b07352825063</webElementGuid>
+      <webElementGuid>17109ff1-2242-4b45-b5dd-7c50e14a2bbe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='AJSUTES DE DENOMINACION'])[1]/preceding::a[1]</value>
-      <webElementGuid>dd77861a-fd44-4298-b6d5-ef867dd8a506</webElementGuid>
+      <webElementGuid>5e8127e6-869a-4ce9-986a-0f820b59f02e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTA EN CAJA DE FALTANTES/EXTORNOS CAJA'])[1]/preceding::a[2]</value>
-      <webElementGuid>509f424e-d48a-4cbc-84db-a11ad2ae4536</webElementGuid>
+      <webElementGuid>c97c0518-fd48-4f5a-8e4a-8ccc0702d09d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='EXISTENCIA POR DENOMINACION']/parent::*</value>
-      <webElementGuid>d699de94-33bb-40eb-af0f-a6b711d84741</webElementGuid>
+      <webElementGuid>2498a79d-b917-412b-aa67-bce2345b29dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.TT.CASH.DENOM');&quot;)]</value>
-      <webElementGuid>025482f8-1e80-4cac-bdd4-dc9da0dfdf3b</webElementGuid>
+      <webElementGuid>e9fc0002-67b9-47d5-a059-42c91d3abf4c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/ul/li[7]/ul/li[2]/ul/li/a</value>
-      <webElementGuid>dd92b5ff-4cf5-4d91-8537-0ae706fcff76</webElementGuid>
+      <webElementGuid>ecd118cf-4c45-40fc-9c0f-42f4a48bd3d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.TT.CASH.DENOM&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'EXISTENCIA POR DENOMINACION ' or . = 'EXISTENCIA POR DENOMINACION ')]</value>
-      <webElementGuid>a4c2bc80-d10c-4c98-a415-02e19cc0651b</webElementGuid>
+      <webElementGuid>f47565af-9f3c-4993-9057-f2947de6fc50</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

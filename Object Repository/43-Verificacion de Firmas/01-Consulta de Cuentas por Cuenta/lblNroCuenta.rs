@@ -6,15 +6,19 @@
    <elementGuidId>b335376a-4f90-4538-b605-8957bc4d283d</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText1']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#columnHeaderText1</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeaderText1']</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Nro Cuenta' or . = 'Nro Cuenta')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>600dee59-608e-45d6-8019-db1d3db1a062</webElementGuid>
+      <webElementGuid>206ba463-6b4c-46d5-b124-a596fd40c3af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>ec86b7fc-8a1d-4a79-b675-59eb6d484029</webElementGuid>
+      <webElementGuid>f39c6f47-2ebb-44a1-85f8-42bea4000875</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>996511a5-e337-4c37-a1e4-cc199f1998a0</webElementGuid>
+      <webElementGuid>4e70155a-d5c2-49c4-9c61-e1ee190fe9a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>159bcf78-49ef-499c-845e-da78fd07c583</webElementGuid>
+      <webElementGuid>33874731-4d2b-4e43-9a8e-4ad3d68427dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Nro Cuenta</value>
-      <webElementGuid>28a92120-4ca3-4d14-98ea-c155d3f45dad</webElementGuid>
+      <webElementGuid>873a360c-82b0-40b8-a0c9-f864987fb905</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>589b2985-62e9-4647-a98d-883412cadeb6</webElementGuid>
+      <webElementGuid>c553226a-7cbb-43df-860c-d73662affdbd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>cf0e377b-4920-43f9-803b-18e7621af7e3</webElementGuid>
+      <webElementGuid>80dd7bdb-2191-4cd3-95f9-0957193fcdf4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>88f4b9e5-2dfb-467f-852d-74d92f978c56</webElementGuid>
+      <webElementGuid>9e842c8d-951c-4a9e-9b5d-d71f25e0687e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>b059c607-7365-4239-b13c-ce5af2c42e75</webElementGuid>
+      <webElementGuid>6ddf5fe6-bd2d-4582-82cc-6c0923bb92fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>aa3b3755-53e1-4dbb-8015-ff4b78d266e3</webElementGuid>
+      <webElementGuid>332967ed-e5a9-40fc-82cb-6be513dd22fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/preceding::th[2]</value>
-      <webElementGuid>70114648-f439-4c19-a218-86c1496b0833</webElementGuid>
+      <webElementGuid>ffa6c64f-0e1e-4356-a829-358d81b96b90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto'])[1]/preceding::th[5]</value>
-      <webElementGuid>d84b3f42-2a00-4e21-b190-5ad01c3541d8</webElementGuid>
+      <webElementGuid>4cee7cf4-0f3f-42f8-8222-d724c00e9d03</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Nro Cuenta']/parent::*</value>
-      <webElementGuid>7730edc3-bccb-4bbc-b9b6-b1040c4a68b0</webElementGuid>
+      <webElementGuid>d971155c-bd19-4b0c-883c-50622183d380</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>8719c921-4b2b-4bea-81c1-23615cefcc34</webElementGuid>
+      <webElementGuid>3b9ea589-0510-4383-8335-110221c0a268</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Nro Cuenta' or . = 'Nro Cuenta')]</value>
-      <webElementGuid>e136efc1-0864-40c6-a44e-ece042ab7933</webElementGuid>
+      <webElementGuid>4ed4cd15-e51b-47a6-958d-5dbe4052758c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText6']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'CANTIDAD' or . = 'CANTIDAD')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>e15bb398-7296-499e-96b4-d3d77a74f3db</webElementGuid>
+      <webElementGuid>d6f1e747-3121-4b27-8d2b-103222fbb930</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>1ef52f53-7058-4828-a7f4-af922615a076</webElementGuid>
+      <webElementGuid>687ec89f-c62a-4aa6-994b-adb73f9bf469</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>20fb8a54-5f96-4e6f-a714-9599a4392c8b</webElementGuid>
+      <webElementGuid>2781d334-4b3c-484a-a42a-039f9cfba911</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText6</value>
-      <webElementGuid>754947c3-e095-4046-b218-f4e72592abdd</webElementGuid>
+      <webElementGuid>7d2e783d-cb96-47de-b08e-a28fd8052a4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CANTIDAD</value>
-      <webElementGuid>9de08782-192a-42f5-9da8-430773dc469d</webElementGuid>
+      <webElementGuid>51646e3c-a48b-4106-a609-71a17422bd26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText6&quot;)</value>
-      <webElementGuid>b8cbac22-aca5-4e6f-b176-c4a659b6f1f5</webElementGuid>
+      <webElementGuid>1a9d6ac7-3318-46c1-9213-154d835df13f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText6']</value>
-      <webElementGuid>1d8bc11c-7a6e-4389-820f-74fe0b1ea15f</webElementGuid>
+      <webElementGuid>fd5b86c9-e7d8-4575-a2c2-cc26514df70f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader6']/table/tbody/tr/th</value>
-      <webElementGuid>0af87dc7-3d6a-407d-9c4c-00fa51f62601</webElementGuid>
+      <webElementGuid>4c833b81-b85d-4fa1-828e-caf46878dad7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DENOMINACION'])[1]/following::th[3]</value>
-      <webElementGuid>7ad8f995-fa03-457e-8f03-be98fc5d325a</webElementGuid>
+      <webElementGuid>518a5b9f-6ae8-46f4-8ed3-378eca68fe6b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ID CAJERO'])[1]/following::th[6]</value>
-      <webElementGuid>2cff5f40-af2c-45db-a7e9-71e5be861322</webElementGuid>
+      <webElementGuid>e1beb6e7-de39-4765-985b-0872dbdd765d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='IMPORTEPOR DENOMINACION'])[1]/preceding::th[2]</value>
-      <webElementGuid>d6cc4041-b5cf-4374-8262-a8afa0542078</webElementGuid>
+      <webElementGuid>f1728782-c6cf-433e-bc81-70be29029692</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='IMPORTEPOR MONEDA'])[1]/preceding::th[5]</value>
-      <webElementGuid>932590bf-650b-4caf-b21b-59c25e21aeb5</webElementGuid>
+      <webElementGuid>c22ca673-c7b9-48b6-98e1-97bc62b91cfe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='CANTIDAD']/parent::*</value>
-      <webElementGuid>14540a65-e2f3-4e38-8c7b-eb1bb0da8349</webElementGuid>
+      <webElementGuid>f568084e-919c-4158-8b68-1a7679305426</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[6]/table/tbody/tr/th</value>
-      <webElementGuid>647754e7-72ae-4fc8-9874-327f3f9ac63b</webElementGuid>
+      <webElementGuid>7c91680a-4aa3-4e59-b71c-073854a84221</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText6' and (text() = 'CANTIDAD' or . = 'CANTIDAD')]</value>
-      <webElementGuid>387d2a10-196a-4600-8a1c-a34dc7db0783</webElementGuid>
+      <webElementGuid>c6dbb70d-6d03-47a8-9b11-1023b7799dfd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
