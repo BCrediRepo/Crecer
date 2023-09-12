@@ -6,15 +6,19 @@
    <elementGuidId>56fbc020-0e7d-4145-8311-1aecf4247bd0</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#r1 > td:nth-child(3)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Depositos ATM/TAS' or . = 'Depositos ATM/TAS')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//tr[@id='r1']/td[3]</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>2ef39141-ac27-491d-aaa1-f1149149f8fc</webElementGuid>
+      <webElementGuid>a1c27e91-f975-4e0b-ac1d-a82b00bdb811</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Depositos ATM/TAS</value>
-      <webElementGuid>a6403baf-992e-4244-b661-6763c6615ab2</webElementGuid>
+      <webElementGuid>9ef059a4-1f4d-41fb-be27-6c270f8bc872</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[3]</value>
-      <webElementGuid>0b57f524-ef88-489e-bc92-c0761fd17fa5</webElementGuid>
+      <webElementGuid>97f71b47-bac1-4f4e-a789-362bf96e9f41</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[3]</value>
-      <webElementGuid>3df791be-53c0-4ff2-a0c4-a9bf262afb55</webElementGuid>
+      <webElementGuid>49d4e8ed-0844-4e15-9ffe-5d9c4a8832ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DEPDISP'])[1]/following::td[1]</value>
-      <webElementGuid>1811dab9-f342-4875-a7ba-2cc6026e65de</webElementGuid>
+      <webElementGuid>acc0ac05-8e42-48c5-beab-885710efba69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Ingreso'])[1]/following::td[3]</value>
-      <webElementGuid>ea5d763d-c603-41c3-8498-1bdc87fc3d6b</webElementGuid>
+      <webElementGuid>bc56e3c8-1dfb-4f2a-9754-292180049bf2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[7]</value>
-      <webElementGuid>65594d56-ef32-419b-9bb2-8123d4744aa3</webElementGuid>
+      <webElementGuid>de1e60b9-df64-491e-976b-c0206765473c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='%Bon Com por Cuenta o Sucursal'])[2]/preceding::td[10]</value>
-      <webElementGuid>d2f016b4-c4c7-472f-9a2e-c3bffd94500b</webElementGuid>
+      <webElementGuid>3f5fd6df-c77c-490f-804a-3609ec8bc886</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Depositos ATM/TAS']/parent::*</value>
-      <webElementGuid>fbfe5947-3c39-4afe-9e7d-d5fdc2070c86</webElementGuid>
+      <webElementGuid>1228c0d9-a183-4e47-aad4-2ae2abee4be3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/table/tbody/tr/td[3]</value>
-      <webElementGuid>8466187e-dcdb-441b-b912-89de03eb312c</webElementGuid>
+      <webElementGuid>eacc596f-fa61-4784-b582-b18972c9745c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Depositos ATM/TAS' or . = 'Depositos ATM/TAS')]</value>
-      <webElementGuid>4afc7c47-4c18-4452-9058-a0b634242bcd</webElementGuid>
+      <webElementGuid>69258aa8-9da3-447f-bace-bfc050bf832c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

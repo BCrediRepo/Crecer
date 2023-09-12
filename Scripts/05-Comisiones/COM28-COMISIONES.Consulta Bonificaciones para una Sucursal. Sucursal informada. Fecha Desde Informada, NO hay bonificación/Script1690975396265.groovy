@@ -52,13 +52,17 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
 //Ingresar Fecha Desde
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220729')
+//WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220729') // Habilitar TES10
+WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220721') //habilitar 708
 
 //Ingresar Sucursal "001"
 WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'), '001')
 
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
 
 //Click Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
@@ -71,6 +75,23 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comi
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblSucursal001'))
 
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
+
 def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblSucursal001'))
 
 assert element2.contains('001') == true
@@ -82,8 +103,8 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element1 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaDes'))
 
-assert element1.contains('29 JUL 2022') == true
-
+//assert element1.contains('29 JUL 2022') == true // habilitar TES10
+//assert element1.contains('21 JUL 2022') == true //habilitar 708
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

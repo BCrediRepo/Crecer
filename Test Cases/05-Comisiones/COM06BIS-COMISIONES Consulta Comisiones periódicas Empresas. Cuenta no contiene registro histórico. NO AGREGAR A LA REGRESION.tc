@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM06BIS-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. NO AGREGAR A LA REGRESION</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4c683de5-39dd-4c2e-9b4c-e51a08b72c90</testCaseGuid>
+</TestCaseEntity>

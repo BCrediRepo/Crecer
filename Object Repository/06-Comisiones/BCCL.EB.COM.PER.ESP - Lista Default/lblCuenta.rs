@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblBonificacion</name>
+   <name>lblCuenta</name>
    <tag></tag>
-   <elementGuidId>92b393b1-1c41-4692-a3d0-a0566d4857d8</elementGuidId>
+   <elementGuidId>3b02208f-161c-42d3-84f5-e984a8a621c0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[3]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td[4]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = '15.00' or . = '15.00')]</value>
+         <value>//*[(text() = '00010197932' or . = '00010197932')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,94 +26,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>f44af186-77b1-4129-b998-ac5fe453b7b8</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>align</name>
-      <type>Main</type>
-      <value>right</value>
-      <webElementGuid>cb295a43-b8ba-436b-b913-e3936a6e3de9</webElementGuid>
+      <webElementGuid>09f0c2c1-41bd-4511-a51f-66fb84c480ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>15.00</value>
-      <webElementGuid>63c49eba-6aae-47e0-9c7e-acd154c4afd3</webElementGuid>
+      <value>00010197932</value>
+      <webElementGuid>126cd403-f73e-4818-a3ea-ccd1743712a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[4]</value>
-      <webElementGuid>4854fd5b-2a70-465c-a016-d5670e171b28</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[3]</value>
+      <webElementGuid>41abbef3-bd55-42de-a182-cd77886e4606</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[4]</value>
-      <webElementGuid>42516de9-1dad-4abb-9a61-d5eceb879346</webElementGuid>
+      <value>//tr[@id='r1']/td[3]</value>
+      <webElementGuid>0e7f9638-fa41-4442-adab-169a3ce061ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Com. GUVE Camara'])[1]/following::td[1]</value>
-      <webElementGuid>eff18fa0-bd88-47c1-b0eb-7293f3297c12</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN.00010197932'])[1]/following::td[1]</value>
+      <webElementGuid>abbc6ff1-f12b-42e4-881c-db268eb5c43b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='GUVE'])[1]/following::td[2]</value>
-      <webElementGuid>2054b819-460e-48bc-9e3d-832666d939db</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id ft com'])[1]/following::td[3]</value>
+      <webElementGuid>76742969-eb2a-4ef1-8171-9bc6d12c90fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[6]</value>
-      <webElementGuid>79273cc1-a2c5-464b-bebe-90ae0c2fc47b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN'])[1]/preceding::td[1]</value>
+      <webElementGuid>e018d418-ecb6-4eb0-8cda-845d48c9048e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='%Bon Com por Cuenta o Sucursal'])[2]/preceding::td[9]</value>
-      <webElementGuid>7fbdca08-8db8-4265-9414-dff0e224c2fe</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN.00030112867'])[1]/preceding::td[6]</value>
+      <webElementGuid>d3a1adfc-d15c-4c9e-a4ca-21271598fd45</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='15.00']/parent::*</value>
-      <webElementGuid>51a51c2a-15de-4033-aa80-ea4e2de7047a</webElementGuid>
+      <value>//*/text()[normalize-space(.)='00010197932']/parent::*</value>
+      <webElementGuid>f6a8b950-96be-4447-a8a8-e78e8db920eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td[4]</value>
-      <webElementGuid>74d9325d-395b-46bc-ace4-f9be8be1c77e</webElementGuid>
+      <value>//div[2]/div/table/tbody/tr/td[3]</value>
+      <webElementGuid>8202222f-de15-451a-89e2-c7ef57fadecb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '15.00' or . = '15.00')]</value>
-      <webElementGuid>b0f86605-72e1-4bb7-9d12-ad629d4c0859</webElementGuid>
+      <value>//td[(text() = '00010197932' or . = '00010197932')]</value>
+      <webElementGuid>d6feadc0-a5ad-4eb6-ae29-9abdeec239bf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

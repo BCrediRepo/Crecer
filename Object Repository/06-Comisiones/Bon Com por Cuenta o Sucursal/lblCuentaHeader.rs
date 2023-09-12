@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '00740025976' or . = '00740025976')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>6d66ce79-a3a3-4cce-bb4f-0b2847ceac24</webElementGuid>
+      <webElementGuid>50fdeb53-25b5-4101-bd05-0817e026bcef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMBONIFICACION</value>
-      <webElementGuid>efb16c9a-b345-4cf2-9e2e-f0639057b3e8</webElementGuid>
+      <webElementGuid>f44aa6fb-6a16-4a14-9e30-d2647a51b838</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>00740025976</value>
-      <webElementGuid>860ec6fc-24d6-4020-a7bc-97f3080ed2c4</webElementGuid>
+      <webElementGuid>e32d1312-79a4-4b3f-bcaf-af2e7297a37c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMBONIFICACION&quot;]</value>
-      <webElementGuid>ec5d6dcf-e8c9-4bff-a6c4-5de8cf56e633</webElementGuid>
+      <webElementGuid>a6b00c6a-793e-4892-b485-d0ffccde3d1e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>7b8e2413-996c-481b-be35-e19d5fdff7be</webElementGuid>
+      <webElementGuid>f58d1c7f-7a7e-4c77-b564-d736707b7104</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CUENTA:'])[1]/following::td[1]</value>
-      <webElementGuid>282f70ac-89d5-4504-b7cd-a77cb79d0d9a</webElementGuid>
+      <webElementGuid>5aa46c41-43dd-41a9-a6be-6897c184217e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>59dc9ee5-ef57-4f09-b492-8ccf5963c786</webElementGuid>
+      <webElementGuid>9ce8b346-8eed-4075-a5c5-e04d8a3334e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='NOMBRE:'])[1]/preceding::td[1]</value>
-      <webElementGuid>ae3e4aa8-3acc-4fa9-b0de-035bb6340d0d</webElementGuid>
+      <webElementGuid>ca51c4b4-6067-4059-a9f3-bed3a959980b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='PACKING WORLD SRL'])[1]/preceding::td[2]</value>
-      <webElementGuid>1018287e-70d4-45a1-97f0-e63667af9e84</webElementGuid>
+      <webElementGuid>2cba36eb-0739-4318-be36-ee8c0eaea348</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='00740025976']/parent::*</value>
-      <webElementGuid>20767bb0-5360-4819-b075-58f08da77df1</webElementGuid>
+      <webElementGuid>57614009-43fc-4a9b-ad27-b23e65ba79c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[2]</value>
-      <webElementGuid>fe201df3-ac54-40e6-bd0c-4c9a39c75dfc</webElementGuid>
+      <webElementGuid>68bc7689-6b44-4060-a4eb-6564a862caad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '00740025976' or . = '00740025976')]</value>
-      <webElementGuid>b9596749-4e93-43f1-a302-b6c7be17e955</webElementGuid>
+      <webElementGuid>140304cb-f469-4ecc-87e5-8f4f3ef09423</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

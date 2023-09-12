@@ -13,8 +13,12 @@
          <key>CSS</key>
          <value>#columnHeaderText1</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'columnHeaderText1' and (text() = 'Cuenta' or . = 'Cuenta')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>bec8fca1-350f-46e5-86ab-df8ddc449b72</webElementGuid>
+      <webElementGuid>15cb89f2-b473-423b-bb7c-b2c76e8d243a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>7673c954-2191-4b33-8a23-551af4d95db3</webElementGuid>
+      <webElementGuid>00284c3c-d4cc-4823-b4cb-2e117b60867b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>b450d4a5-5b97-4310-be3c-2dfa27e7738c</webElementGuid>
+      <webElementGuid>b0c579ef-2731-4800-a0aa-f3778d13832d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>6949856d-11ee-4800-b8b6-1cbdcca63025</webElementGuid>
+      <webElementGuid>56909af8-5e06-47ec-b544-96bd68639de2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cuenta</value>
-      <webElementGuid>2f0f0fb6-b9e6-41a0-8246-10a7385f6dfe</webElementGuid>
+      <webElementGuid>cf50af4b-e94d-42b1-8e95-82f84ab9f0f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>744a0706-dae2-425a-8830-1bd4190b62f7</webElementGuid>
+      <webElementGuid>1f39f843-9a5e-4e57-a9a5-ec1443fe3e78</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>ef4e4051-dd6a-43a4-9073-21b6e30a68cc</webElementGuid>
+      <webElementGuid>ecf0bc59-c4cf-437a-89c8-e5319a3c7a05</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>1056ff66-48bd-4b18-8d63-d0a08ad4907e</webElementGuid>
+      <webElementGuid>9853a439-a716-46e4-bba4-1657979eccee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>2b57bc5c-18a3-4994-ad78-8cfb73726b33</webElementGuid>
+      <webElementGuid>768b8be2-13f7-4abf-97c8-9b6d01634bf6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>ec250c62-7a87-4964-b11f-87eeb066f2c0</webElementGuid>
+      <webElementGuid>5911e096-c26d-4205-8864-154fdebed4d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/preceding::th[2]</value>
-      <webElementGuid>2fb7a720-d666-4ffc-a81f-adc1533c994a</webElementGuid>
+      <webElementGuid>ac0cdcec-f55d-4bd4-ad45-a329f371a7cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Numero Acuerdo'])[1]/preceding::th[5]</value>
-      <webElementGuid>d8f72585-dd27-4cff-9c3b-be3fae149779</webElementGuid>
+      <webElementGuid>90fa7a09-abf0-4ec4-8aac-aedf2783aa8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cuenta']/parent::*</value>
-      <webElementGuid>f1e0c10e-8c9d-4d29-993b-1d8d54d67f7f</webElementGuid>
+      <webElementGuid>0e02d858-927d-41be-be60-bd5c687543c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>519b2639-d399-49e9-8023-89ed86ffe164</webElementGuid>
+      <webElementGuid>4255f1e9-839f-45e6-9d71-dcf7cd6271a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Cuenta' or . = 'Cuenta')]</value>
-      <webElementGuid>26a14d90-5ca3-4d6e-807a-71766cdad8b2</webElementGuid>
+      <webElementGuid>000078d7-dd39-4318-9c7c-c69c14b14e5e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

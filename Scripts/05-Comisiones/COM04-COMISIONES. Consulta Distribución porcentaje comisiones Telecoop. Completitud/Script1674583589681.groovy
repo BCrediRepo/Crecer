@@ -21,33 +21,70 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(
+        2, 4))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 WebUI.switchToWindowIndex(0)
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), 
+    6)
+
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
 WebUI.setText(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), '20220722')
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lnkEjecutar'))
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.delay(60)
+
 //WebUI.waitForElementVisible(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'), 70)
 SucOrigenH = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'))
 
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
+
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
 SucOrigenT = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenT'))
 
 SucDestinoH = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucDestinoH'))
@@ -62,18 +99,16 @@ assert SucDestinoH != null
 
 assert SucDestinoT != null
 
-WebUI.maximizeWindow()
-
-//---------------------------------------------------------------------------------------------------------------------
-
+WebUI.maximizeWindow() //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

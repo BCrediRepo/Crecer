@@ -62,10 +62,24 @@ WebUI.clearText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'))
 
 WebUI.setText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'), NroCuenta)
 
-WebUI.click(findTestObject('06-Comisiones/ABM Bolsin/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+
+
 
 WebUI.click(findTestObject('06-Comisiones/ABM Bolsin/lnkBaja'))
 
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
+
+//---------------------------
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('COM.PER.ESP')
@@ -80,9 +94,8 @@ WebUI.verifyElementVisible(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompl
 
 trx = WebUI.getText(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompleta'))
 
-assert trx.contains('Txn Completa:') == true
+assert trx.contains('Txn Completa:') == true //Control fin e script
 
-//Control fin e script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

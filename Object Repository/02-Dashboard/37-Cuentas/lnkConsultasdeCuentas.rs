@@ -11,10 +11,13 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consultas de Cuentas' or . = 'Consultas de Cuentas') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>7692f6ea-74fb-42c9-ae56-03f5ecbcfd49</webElementGuid>
+      <webElementGuid>af5a4528-300e-4f46-b316-cecd050e836c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>3d6d6201-0443-4913-91e0-468fdfd3b0cc</webElementGuid>
+      <webElementGuid>4b859031-f4f0-4fce-952f-668b913842e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +41,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>c696e5f8-b17f-478c-9969-7f7304b669f1</webElementGuid>
+      <webElementGuid>10b7d851-1c7f-499a-b5f1-5e41554cab7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consultas de Cuentas</value>
-      <webElementGuid>0bf3b7ac-bf44-4012-9cf7-8773c2eeb827</webElementGuid>
+      <webElementGuid>688d8680-eefb-47fc-b72e-5c8eaa9ddfde</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>f951eadf-8a57-4e95-b0b3-7f46c13d04b6</webElementGuid>
+      <webElementGuid>f97177cf-70c3-4b16-9a34-67605fae8954</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>c7480f55-a995-429c-bbde-17d1c94be534</webElementGuid>
+      <webElementGuid>49d5a0c1-e5e9-4225-89d3-41a1be14da6c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
-      <webElementGuid>b19f21ab-6332-48bb-8eee-3495cf8a3b1f</webElementGuid>
+      <webElementGuid>086dcfec-b379-4e83-bd6c-9278ec45a068</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>b9946062-3ee0-4cf5-90ee-d33bbe67318f</webElementGuid>
+      <webElementGuid>9eb5b7af-1158-4277-875f-4397842451cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Continuacion Proceso Alta'])[1]/following::span[1]</value>
-      <webElementGuid>49e5cc56-45c9-4d3f-b667-05aaf96976ad</webElementGuid>
+      <webElementGuid>8ff57d56-6989-4ba6-850c-393587d66e89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/following::span[1]</value>
-      <webElementGuid>bd1bf188-54eb-409c-973f-6abea2ae52a3</webElementGuid>
+      <webElementGuid>75da9648-6885-41df-90c0-1f28e2753c7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::span[1]</value>
-      <webElementGuid>3b5bb81e-8377-4197-a5ff-b620970647d9</webElementGuid>
+      <webElementGuid>16a381b5-8fe4-49dd-b413-3c2a952c37fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/preceding::span[1]</value>
-      <webElementGuid>82017856-dbc6-4b2f-9dd9-2827fc66006d</webElementGuid>
+      <webElementGuid>fc4177ec-127a-4823-a82b-78c6d5330b8d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consultas de Cuentas']/parent::*</value>
-      <webElementGuid>b1ed245a-2cd3-4593-a28b-a3723af26d67</webElementGuid>
+      <webElementGuid>7d90cae5-b322-4e24-b552-b2a3e2586dcb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>bd2ea245-aff4-4169-9d08-cb157788ea6f</webElementGuid>
+      <webElementGuid>68a5a832-e41a-443f-8337-dc2e29fbdf41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Consultas de Cuentas' or . = 'Consultas de Cuentas')]</value>
-      <webElementGuid>8c0a6de0-e620-4108-847e-197d39e16620</webElementGuid>
+      <webElementGuid>061d8bd2-68f8-45a0-b6cd-b85f79a95bef</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
