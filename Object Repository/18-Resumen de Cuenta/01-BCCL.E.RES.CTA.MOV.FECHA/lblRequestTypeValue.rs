@@ -6,6 +6,10 @@
    <elementGuidId>aa855464-9457-42ed-88d5-792cfffd2cf7</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
       </entry>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>6d3805ff-5f05-4a51-8cb7-ac9ac5c8166b</webElementGuid>
+      <webElementGuid>b913a573-5087-419b-9f24-d3291f880153</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>class</name>
       <type>Main</type>
       <value>disabled_dealbox disabled_dealbox_ACCHARGEREQUEST</value>
-      <webElementGuid>0522f4c9-46d9-429e-bbe7-7de93bd9f3ac</webElementGuid>
+      <webElementGuid>4b98bb0e-d2a1-41f2-8333-636d055111a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>BOOK</value>
-      <webElementGuid>deb7f7a7-537a-42ee-817b-2702bbb1e4dd</webElementGuid>
+      <webElementGuid>c6c224ce-7519-42f1-ac3f-77041fd53241</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_ACCHARGEREQUEST&quot;]</value>
-      <webElementGuid>080dfc01-86d1-404f-8e22-b1c0f9fd51f9</webElementGuid>
+      <webElementGuid>a24e066b-4876-4073-849e-bd633a6d1ed2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
-      <webElementGuid>ab8d95d6-f1c1-4ab7-b42b-082cbd33d922</webElementGuid>
+      <webElementGuid>3ae13664-9589-4b5c-b71a-e270621a28a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Request Type'])[1]/following::span[1]</value>
-      <webElementGuid>020ef54d-2cc7-40f0-a5f0-f9b65fb29935</webElementGuid>
+      <webElementGuid>e80759a8-8a99-42f0-8675-f0a640978277</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::span[1]</value>
-      <webElementGuid>4f1cd753-4e73-4e48-b368-cb159a42ce8f</webElementGuid>
+      <webElementGuid>39eced4d-b3a6-4446-9b59-480103590316</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Account'])[1]/preceding::span[2]</value>
-      <webElementGuid>009bd8a1-c39e-4257-aff7-55188430290d</webElementGuid>
+      <webElementGuid>2e7c0e72-9aa7-4955-a34c-135a41118c56</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='EL HADO SRL'])[1]/preceding::span[3]</value>
-      <webElementGuid>464b9f6c-457c-4bc1-ad91-6ddd107af6f0</webElementGuid>
+      <webElementGuid>9d3b15b4-5640-431a-b696-ed884c270e39</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='BOOK']/parent::*</value>
-      <webElementGuid>00cbe916-dafd-4acc-913f-d4ae2fa88202</webElementGuid>
+      <webElementGuid>4c7f0883-66df-4e74-b43b-baa647d10e48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/span</value>
-      <webElementGuid>01a993c6-23e0-4018-b842-0805b71c06e6</webElementGuid>
+      <webElementGuid>cb1563dd-5dc0-46e3-8b0d-55612ede0f60</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'BOOK' or . = 'BOOK')]</value>
-      <webElementGuid>43df2fa2-ea2b-4e79-98de-d70bf8f5c81a</webElementGuid>
+      <webElementGuid>91003ffc-ca4c-4140-9c1d-b4d4b49ff2c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

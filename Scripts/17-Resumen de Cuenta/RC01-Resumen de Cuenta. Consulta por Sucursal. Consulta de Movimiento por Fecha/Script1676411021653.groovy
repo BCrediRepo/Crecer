@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -41,17 +43,31 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDa
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Completo la busqueda
+////Completo la busqueda
 WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), '05330013359')
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtFechaDesde'), '20220701')
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnEjecutar'))
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//Boton Ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'), 10)
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'))
 WebUI.delay(4)
-WebUI.switchToWindowTitle('Account Charge Request')
+WebUI.switchToWindowTitle('STMT.ENTRY')
+//WebUI.switchToWindowTitle('Account Charge Request')
 WebUI.maximizeWindow()
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'))

@@ -10,11 +10,15 @@
          <value>#columnHeaderText1</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Numero de Acuerdo' or . = 'Numero de Acuerdo')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>3945d072-0a5e-4045-ac0e-13d63b277635</webElementGuid>
+      <webElementGuid>33ecaf3f-5b28-4bd6-9b0a-fad4600d18c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>7dc8200a-1717-4fa5-97de-8627533ffeda</webElementGuid>
+      <webElementGuid>159a391d-005d-4821-9712-a41c87002c26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>0293b458-4088-4d2d-9ad1-6090530c6086</webElementGuid>
+      <webElementGuid>a9851923-2ffb-48d1-876b-fd7c97c690db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>2dd005bc-b74f-4674-91bc-5a6f56d9515d</webElementGuid>
+      <webElementGuid>a0e2316c-94d9-4064-aec6-541be4ef1603</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Numero de Acuerdo</value>
-      <webElementGuid>fb8bc20f-2bdf-46bc-a193-cac7f3c35318</webElementGuid>
+      <webElementGuid>84589730-8f27-49a0-a4b2-7a700ed603a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>2cbcfd2a-6bde-4b38-ad22-2d642e872f1a</webElementGuid>
+      <webElementGuid>bbb33949-3220-4d9e-971e-2aaf4b5e0499</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>2b6164f8-68fb-497c-b3f3-57ea30cb5e35</webElementGuid>
+      <webElementGuid>5446216d-864c-4391-bbbe-c43e5b721870</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>8ae0f7c9-6a66-45e1-9941-b87e64994a73</webElementGuid>
+      <webElementGuid>39b370de-b816-4dde-a646-eef5ef0dea02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>cc6fd723-f25e-4c1d-a55f-e440c308397f</webElementGuid>
+      <webElementGuid>6e208815-9167-4f3d-8337-aaf49304d403</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>7ba2bb3b-4826-471d-bcc2-d31e39270d59</webElementGuid>
+      <webElementGuid>56d0e75d-3f38-4051-989e-ac3b5b32abde</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta'])[1]/preceding::th[2]</value>
-      <webElementGuid>4928715e-3dcd-43bd-9493-8ad935654eb5</webElementGuid>
+      <webElementGuid>463110a1-b862-41b5-9b89-7ccfa67de071</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/preceding::th[5]</value>
-      <webElementGuid>08090ec4-c007-404c-aede-79c8314eb05f</webElementGuid>
+      <webElementGuid>bd5ee8fd-66e4-454c-a87a-5b90d3e884f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Numero de Acuerdo']/parent::*</value>
-      <webElementGuid>116ae6f9-c0c4-4b17-9cbc-adb3d873d428</webElementGuid>
+      <webElementGuid>be31a323-0ec8-49dd-b51b-998bd028de68</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>b98db4c1-a654-4468-808c-a17120b63d66</webElementGuid>
+      <webElementGuid>8055fd18-120e-4db1-b811-d54909b93b96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Numero de Acuerdo' or . = 'Numero de Acuerdo')]</value>
-      <webElementGuid>a89907a1-b1f7-441e-9e29-3a243b1c1297</webElementGuid>
+      <webElementGuid>f63215c1-c882-4e95-8439-621081c2b00f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

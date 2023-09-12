@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CDC05-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cuenta con Chequeras Emitidas. Cheques en estado no valido</name>
+   <name>CCD05-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cuenta con Chequeras Emitidas. Cheques en estado no valido</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>435d97d2-701c-4afc-a006-23f545851499</testCaseGuid>

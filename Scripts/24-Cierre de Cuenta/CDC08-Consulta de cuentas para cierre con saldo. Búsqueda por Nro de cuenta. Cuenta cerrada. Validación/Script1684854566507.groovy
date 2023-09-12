@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -26,33 +28,60 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
-WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
+//Se accede al menu
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.CER')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkCierreDeCuenta'))
+//Switch a la ventana de busqueda de consulta
+WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
 
-WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultaSaldoCuentaCerrada'))
+//WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
+//
+//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkCierreDeCuenta'))
+//
+//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultaSaldoCuentaCerrada'))
+//
+//WebUI.switchToWindowIndex(1)
 
-WebUI.switchToWindowIndex(1)
-
+//Aplico KYW de limpieza de busqueda
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
+//Se accede al menu
 WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.CER')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultaSaldoCuentaCerrada'))
+//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultaSaldoCuentaCerrada'))
 
-WebUI.switchToWindowIndex(1)
+//Switch a la ventana de busqueda de consulta
+WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
 
 WebUI.setText(findTestObject('25-Cierre de Cuenta/Saldos de Cuentas Cerrada/txrNroCuenta'), '15170000212')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('25-Cierre de Cuenta/Saldos de Cuentas Cerrada/lblNroCuenta'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 label = WebUI.getText(findTestObject('25-Cierre de Cuenta/Saldos de Cuentas Cerrada/lblNroCuenta'))
 
 assert label.contains("15170000212")
 
 WebUI.maximizeWindow()
+
+//---------------------------------------------------------------------------------------------------------------------
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

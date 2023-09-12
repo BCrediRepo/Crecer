@@ -14,7 +14,7 @@
          <value>//div[@id='pane_']/div/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/a/img</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>6987beb9-23da-4ba3-b345-f4bd9c8a5d03</webElementGuid>
+      <webElementGuid>256a35d3-e138-4275-8e50-a9f4dcdddc9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <type>Main</type>
       <value>../plaf/images/bccl/tools/select.gif
 															</value>
-      <webElementGuid>85eee5d8-1333-4a2e-bd58-879d21fa5eef</webElementGuid>
+      <webElementGuid>6b8cd85c-b1c1-4206-8737-da12bc1c10bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Pantalla de Seleccion</value>
-      <webElementGuid>e5960b43-a6b5-4ce8-8f6a-0cc8f4640b66</webElementGuid>
+      <webElementGuid>a4b936b2-eb58-47cc-b190-7831d1112572</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Pantalla de Seleccion</value>
-      <webElementGuid>4738e51d-db14-44e7-b046-ac319379a113</webElementGuid>
+      <webElementGuid>4946dcce-89e0-4b1b-ba0b-377eedfd9f89</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/div[@class=&quot;denqresponse denqresponse_BCCLECHQCANCELA&quot;]/div[@class=&quot;display_box display_box_BCCLECHQCANCELA&quot;]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/img[1]</value>
-      <webElementGuid>7451b138-0ca7-400a-bd9d-3865fad0c934</webElementGuid>
+      <webElementGuid>9c765030-6f13-4adc-9ce9-cb88bc814005</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/div/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/a/img</value>
-      <webElementGuid>cd6129a2-6465-4d66-8ac7-5c02dfd44c01</webElementGuid>
+      <webElementGuid>2d25e2d9-8c0c-4f59-9aca-34fe5fc13e37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Pantalla de Seleccion']</value>
-      <webElementGuid>d47fa2f2-f73f-4c3e-b5d2-ed4236d0eeb8</webElementGuid>
+      <webElementGuid>da9abcd9-2751-4c69-a4ce-f2d419b17d7d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/a/img</value>
-      <webElementGuid>e578f963-60df-44af-9ea5-46c2d1804c17</webElementGuid>
+      <webElementGuid>3de3f580-4f03-4e26-9973-4c6f3a96c72b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +88,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/select.gif
 															' and @alt = 'Pantalla de Seleccion' and @title = 'Pantalla de Seleccion']</value>
-      <webElementGuid>1e34a1c5-84cc-4e21-95d1-bcf1d513b0dc</webElementGuid>
+      <webElementGuid>feddd6eb-2813-4c47-b958-588b8bf86cd0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

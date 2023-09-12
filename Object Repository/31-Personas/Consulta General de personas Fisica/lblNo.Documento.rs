@@ -6,15 +6,15 @@
    <elementGuidId>9366a087-77e5-408d-97b5-3218ca12a21c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText7</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText7']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#columnHeaderText7</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>8e8aa098-edb3-471a-8f1b-e6ab300a1c04</webElementGuid>
+      <webElementGuid>ecd0613c-2d73-43ad-8f82-3bcdc877396d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>d9a4dd76-f386-4d65-8b0b-9db0302b3174</webElementGuid>
+      <webElementGuid>5c3e42ab-f078-4e37-8d70-9b42095d7781</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>52ceafbc-156f-4975-b5ca-d6c58f3531fa</webElementGuid>
+      <webElementGuid>69f2811a-cd2c-4779-bef0-f859857fdd99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText7</value>
-      <webElementGuid>4e8effb1-d865-4852-bfc1-efcaea2bb91a</webElementGuid>
+      <webElementGuid>092152eb-64ba-4211-8532-39d3b3f633c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>No.Documento</value>
-      <webElementGuid>18e5e90d-a6d1-4d05-9c73-b979f202109a</webElementGuid>
+      <webElementGuid>2ffa4924-24bb-4292-a9f5-99a7295844b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText7&quot;)</value>
-      <webElementGuid>a85238f1-32ac-4018-b9dc-aa3c428e6ace</webElementGuid>
+      <webElementGuid>d27b1ac9-d479-49ed-b65b-e198555b700f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText7']</value>
-      <webElementGuid>0211182f-8160-4133-b6d8-b99e2bb33209</webElementGuid>
+      <webElementGuid>0d60bffb-a5f1-4522-bd08-620b5a07e6da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader7']/table/tbody/tr/th</value>
-      <webElementGuid>8b841b4e-04e5-49b3-b151-ba165726322f</webElementGuid>
+      <webElementGuid>3b1b0c59-bb42-400c-8629-a7c24f372a0a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Doc'])[1]/following::th[3]</value>
-      <webElementGuid>df3e4fe6-fc22-4553-a274-699745538349</webElementGuid>
+      <webElementGuid>34204299-2264-4fcb-984f-e73a7b4a6467</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Apellido Casada'])[1]/following::th[6]</value>
-      <webElementGuid>e22bf4d1-45f8-4e3b-ad55-be087d4a0a62</webElementGuid>
+      <webElementGuid>c4cc67e6-e324-477a-aba8-406c5e0a42ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CUIT/CUIL/CDI'])[1]/preceding::th[2]</value>
-      <webElementGuid>db5d29a6-9728-4f7b-a236-bbd598a6741b</webElementGuid>
+      <webElementGuid>7a68964c-9296-4d55-a85c-3944ae8dd861</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Localidad'])[1]/preceding::th[5]</value>
-      <webElementGuid>4131fadb-564f-4eeb-a864-8ec871c698b1</webElementGuid>
+      <webElementGuid>8e76d74c-1d2c-4024-a44f-e88be886549e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='No.Documento']/parent::*</value>
-      <webElementGuid>45796196-d446-4d99-bbba-f3f4364a7e5b</webElementGuid>
+      <webElementGuid>3e041a7a-03d2-4498-b2c1-81ce0a5f38fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[7]/table/tbody/tr/th</value>
-      <webElementGuid>ebc1559a-04ed-4f87-b63a-986cf5761d04</webElementGuid>
+      <webElementGuid>12639880-6c55-4c22-b74e-53e4aabeb876</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText7' and (text() = 'No.Documento' or . = 'No.Documento')]</value>
-      <webElementGuid>0745bf38-85d9-4a9b-8e07-a24c973f6b8c</webElementGuid>
+      <webElementGuid>508fb2f6-126d-4790-9c82-637eef64ad0d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

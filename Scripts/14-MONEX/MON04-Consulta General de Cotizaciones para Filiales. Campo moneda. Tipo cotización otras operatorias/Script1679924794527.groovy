@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -35,8 +37,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDa
 
 //Se busca el TestBox de "Buscador"
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.COT.GRAL.FIL')
-
-//Click en el boton "Ejecutar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 //Cambia de ventana
@@ -49,6 +49,9 @@ WebUI.setText(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/txtUSD'),
 WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lblAR0011001'), 
     3)
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //CLick en "Ejecutar"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
@@ -58,8 +61,17 @@ WebUI.maximizeWindow()
 //Guarda en la variable "Referencia" los datos tomados anteriormente.
 Referencia = WebUI.verifyElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lblPizarradeRegionAMBA'))
 
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 //Realiza un Assert 
-assert Referencia == true //---------------------------------------------------------------------------------------------------------------------
+assert Referencia == true 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

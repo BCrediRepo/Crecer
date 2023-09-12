@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>RC15-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimiento por Fecha.Movimientos Debitos existentes entre Fecha Desde y Hasta.Agrupacion DC Alic Reducidas Creditos</name>
+   <name>RC15-Resumen de Cuenta.Cons Sucursal.Consulta de Mov por Fecha. Mov Debitos existentes Fecha Desde y Hasta.Agrupacion DC Alic Reducidas Creditos</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0d9dab88-8a70-43a0-b66d-352fc683f9e3</testCaseGuid>

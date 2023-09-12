@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -28,21 +29,22 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Ingreso al menu ?302
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
+//WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.PER.EVOL.TAMEMP')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanPersonas3'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/spanConsulta'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/span_Consulta general'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnk Consulta Evolucion Tamao Empresa'))
+//WebUI.switchToWindowTitle('Temenos T24')
+//
+//WebUI.maximizeWindow()
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/spanPersonas3'))
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/spanConsulta'))
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/span_Consulta general'))
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnk Consulta Evolucion Tamao Empresa'))
 
 WebUI.switchToWindowTitle('BCCL.PER.EVOL.TAMEMP')
 
@@ -52,19 +54,35 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.switchToWindowTitle('Temenos T24')
+//Se accede al menu
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.PER.EVOL.TAMEMP')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnk Consulta Evolucion Tamao Empresa'))
+//WebUI.switchToWindowTitle('Temenos T24')
+//
+//WebUI.maximizeWindow()
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnk Consulta Evolucion Tamao Empresa'))
 
 WebUI.switchToWindowTitle('BCCL.PER.EVOL.TAMEMP')
 
 WebUI.setText(findTestObject('Object Repository/31-Personas/BCCL.PER.EVOL.TAMEMP/txtIDPersona'), '1000000011')
 
-WebUI.click(findTestObject('Object Repository/31-Personas/BCCL.PER.EVOL.TAMEMP/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/BCCL.PER.EVOL.TAMEMP/lblNroPersona'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

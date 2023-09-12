@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -49,9 +50,21 @@ WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VE
 
 WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VEC/txtFecha Hasta'), '20220802')
 
-WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VEC/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACU.PROX.A.VEC/lblNumero de Acuerdo'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //---------------------------------------------------------------------------------------------------------------------
 

@@ -6,6 +6,10 @@
    <elementGuidId>a811e92f-6ebb-4a45-a062-97ea7fc3cc5f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Fecha Estado' or . = 'Fecha Estado')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//table[@id='enqheader']/tbody/tr[6]/td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>f0bc5709-7aaf-4942-93cb-d42370a3968e</webElementGuid>
+      <webElementGuid>108c51f6-0ac5-4e68-8be2-c1d680415cdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHA</value>
-      <webElementGuid>58d7a2fa-b0a5-4058-ab8d-4ca91503fcee</webElementGuid>
+      <webElementGuid>737a198d-a8a5-4dc5-a0f4-9c295ab9fd7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha Estado</value>
-      <webElementGuid>871c62fb-42ea-4565-ae69-912873a98c91</webElementGuid>
+      <webElementGuid>df1c4f12-f6bd-4c05-9934-feddfae7201c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[6]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHA&quot;]</value>
-      <webElementGuid>c95470f5-7c05-4401-9b65-fbd3cfee793d</webElementGuid>
+      <webElementGuid>fc47b06d-7334-4e47-bb86-8908823df4a4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[6]/td</value>
-      <webElementGuid>9244c703-6de1-4c14-be12-eaffdf1788ae</webElementGuid>
+      <webElementGuid>42fcb708-73af-46d6-b48d-752dd975b870</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ACTIVA'])[1]/following::td[1]</value>
-      <webElementGuid>472e52cb-504c-4d45-9762-735f38d0873c</webElementGuid>
+      <webElementGuid>f118fe9d-0c51-446d-a6fb-8c5d65ba7b64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado'])[1]/following::td[2]</value>
-      <webElementGuid>69d7710f-9a95-474d-88a8-aa7ad4ae12de</webElementGuid>
+      <webElementGuid>f132640f-e031-4649-9306-b1ea5410c2dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo en U.V.A.'])[1]/preceding::td[2]</value>
-      <webElementGuid>e69c84a7-4cd9-4a65-adbd-8a5225f5ef23</webElementGuid>
+      <webElementGuid>90999fa6-5d21-4f61-9c5f-af6b4c293805</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo al'])[1]/preceding::td[3]</value>
-      <webElementGuid>daa8230f-b0a6-4cc2-83c9-83ff33cac18f</webElementGuid>
+      <webElementGuid>4cdaf0ce-8fd2-42f6-8fbc-41ab2e542d59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Fecha Estado']/parent::*</value>
-      <webElementGuid>10bd9aa5-e05e-44aa-a443-2c60875636cb</webElementGuid>
+      <webElementGuid>880cf03a-3c6f-45f9-8a9f-de735d4d5aa7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[6]/td</value>
-      <webElementGuid>6c4f6ba6-9977-4d3f-8500-7c353232039b</webElementGuid>
+      <webElementGuid>c8652820-5dcd-46b8-8349-dd6d016d66ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Fecha Estado' or . = 'Fecha Estado')]</value>
-      <webElementGuid>adfa674b-2966-47bf-a7d9-66314085df1a</webElementGuid>
+      <webElementGuid>f2ddc224-4037-49cb-b49e-d29101a204ae</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

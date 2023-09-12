@@ -6,6 +6,10 @@
    <elementGuidId>3978e99b-5b43-45c7-9224-e5b936013a51</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'GRUPO' or . = 'GRUPO')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#columnHeaderText1</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>41ba8d12-9d3c-4870-b1f8-a901889e308a</webElementGuid>
+      <webElementGuid>8c6d31d4-bcae-4d0b-8169-6836bde094ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>8ad8be34-9f24-46fd-9b0c-7149ec89c6b5</webElementGuid>
+      <webElementGuid>5cdb51ad-8325-4154-a7c2-4b85835519c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>3b6b6d3a-fc07-4092-bec4-a6690ea5c2fd</webElementGuid>
+      <webElementGuid>00af0c50-eae0-4fff-b6f7-7abe68f7ff92</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>f2c65bd1-0feb-49f2-98ca-b9b4d897c6c1</webElementGuid>
+      <webElementGuid>4f0095c3-25e2-4f2c-a79f-f6355966594a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>GRUPO</value>
-      <webElementGuid>654d6198-1e58-4450-b4ec-a962945a8557</webElementGuid>
+      <webElementGuid>6e9ff6b4-a7cd-4146-996b-22fc827d1b53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>9d310f3f-d3da-4499-9838-9654af847d80</webElementGuid>
+      <webElementGuid>e094b190-6b82-4e68-8a59-72da473281f7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>f03b127b-a1ce-4d88-96c3-cf75c770c719</webElementGuid>
+      <webElementGuid>719b8fbc-4dbd-41ce-b856-740937cbb811</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>e6c77c9a-7a43-458c-bfe2-2b1bde78e101</webElementGuid>
+      <webElementGuid>6f619700-971a-4282-b518-6634cade4709</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>69298586-ed4d-4a69-bf92-fecf4449ed80</webElementGuid>
+      <webElementGuid>63ab6d73-f946-4894-a264-0a7e8e243dbb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>4425dcee-61f5-4684-9e25-eb1aa8badfa0</webElementGuid>
+      <webElementGuid>f5bbda8d-4f9e-4f35-9291-fd53a36d7bd0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='TIPO'])[1]/preceding::th[2]</value>
-      <webElementGuid>f6453f5f-e8a9-452d-bae1-da5516e213ef</webElementGuid>
+      <webElementGuid>2e3393ef-a937-4ee7-9f18-010915cad516</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ESTADO'])[1]/preceding::th[5]</value>
-      <webElementGuid>a2022470-029a-4b16-9275-3ba6230328be</webElementGuid>
+      <webElementGuid>b64f842d-ca84-4a69-85b7-0476b0eeb9ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='GRUPO']/parent::*</value>
-      <webElementGuid>5af51ad1-1813-4103-a19c-7317f4376dea</webElementGuid>
+      <webElementGuid>228c6995-49d5-46d0-903f-b30f65ee9f15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>339e5519-5f76-4eca-af41-b25f87a4846b</webElementGuid>
+      <webElementGuid>b68353f3-a317-46a5-ac59-2641ef23c302</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'GRUPO' or . = 'GRUPO')]</value>
-      <webElementGuid>1b881363-5457-4a31-8bfc-7d555059a08f</webElementGuid>
+      <webElementGuid>df6909e6-9e1c-4bed-b380-c867676f3a2e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

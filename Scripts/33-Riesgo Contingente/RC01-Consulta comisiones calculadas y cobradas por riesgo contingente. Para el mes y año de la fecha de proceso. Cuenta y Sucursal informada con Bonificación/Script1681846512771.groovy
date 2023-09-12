@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -54,10 +55,18 @@ WebUI.setText(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.
 long startTime = System.currentTimeMillis()
 
 //Presiona botón ejecutar
-WebUI.click(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verifica que se muestre el titulo Tipo de comision
 WebUI.verifyElementVisible(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lblTipo de Comision'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

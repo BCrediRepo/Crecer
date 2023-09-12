@@ -6,15 +6,19 @@
    <elementGuidId>16275902-1253-4e9e-b312-5d4174ab6989</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText1</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Prod.Subprod' or . = 'Prod.Subprod')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#columnHeaderText1</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>89fea2ca-4df6-4db2-9a71-99795cdec5a5</webElementGuid>
+      <webElementGuid>80e6b9a4-6ee7-4119-8996-4f3f078c06b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>d0194d1b-2b28-4893-9287-e4195d56044a</webElementGuid>
+      <webElementGuid>52b3af4a-9234-4f35-819f-4ebd71fed202</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>1bbff9cf-3ff5-4a27-9f10-c2e9d62ef026</webElementGuid>
+      <webElementGuid>daa8ae7e-ff59-4751-aa26-4c85013b5c84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>2def1f9a-e4e0-48b3-aec9-5e5ad364a48f</webElementGuid>
+      <webElementGuid>2b967666-6a4f-47a7-91c5-f9b617868604</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Prod.Subprod</value>
-      <webElementGuid>e076ecb3-69c7-403a-8029-bbaf9ad17b72</webElementGuid>
+      <webElementGuid>ae732b7f-95d0-4ba6-94a5-89640c477704</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>4f69a15b-b06b-48b3-97c1-3875bc8e932b</webElementGuid>
+      <webElementGuid>bc177159-0c33-42c3-b695-4691d6060bb0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>11ceaa46-744e-4623-9916-25f9cb9c2dc2</webElementGuid>
+      <webElementGuid>8d3fe0d5-1e84-4084-a211-1a2c5f52746e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>046effe4-9395-4cf2-859b-bb535a5c7ba6</webElementGuid>
+      <webElementGuid>c504e9b6-9306-469c-be5b-d9bb8eab829e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>69c60a92-5300-470a-b4bb-0220375d8cf3</webElementGuid>
+      <webElementGuid>5703379f-fa16-4fee-b125-99b43febe586</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>396b8da9-834e-43ff-a727-91e216783e15</webElementGuid>
+      <webElementGuid>c9ff4959-c204-4f0d-9684-fb02f2462cca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/preceding::th[2]</value>
-      <webElementGuid>dfeae9ac-9f10-43c6-a2d3-28ad8f1f1c85</webElementGuid>
+      <webElementGuid>18474076-daae-4c4c-aa49-8ece32610b49</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Habilitado'])[1]/preceding::th[5]</value>
-      <webElementGuid>bfa65c81-47be-482f-8bbb-9facd1d6fc01</webElementGuid>
+      <webElementGuid>67abce21-b0ff-4b38-b1d5-591483be3cfa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Prod.Subprod']/parent::*</value>
-      <webElementGuid>12478995-cf2c-46bb-80bf-c673ac71bc0f</webElementGuid>
+      <webElementGuid>60f2ba2e-c79b-44e2-ac5b-4b4b5f21fe87</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>199298b7-5e24-4194-ab28-31874223e8ad</webElementGuid>
+      <webElementGuid>66b36766-153d-4206-bcd0-2b9ff0fc34cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Prod.Subprod' or . = 'Prod.Subprod')]</value>
-      <webElementGuid>6715b1c4-934f-43f3-9e8d-ca1ae556310f</webElementGuid>
+      <webElementGuid>32c6aba2-1fa0-4713-b044-8d959d4464e3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

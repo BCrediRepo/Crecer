@@ -6,15 +6,15 @@
    <elementGuidId>58434dda-dcf8-4e67-8537-846c824002fa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeaderText1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#columnHeaderText1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText1']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>2cef7e1f-5f8c-4128-af9e-3960d2d6d562</webElementGuid>
+      <webElementGuid>6c7388c3-ae85-4a51-9a59-50d071e463d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>78023d2f-8822-431e-9568-5b4e64d6bb70</webElementGuid>
+      <webElementGuid>7624e390-8a00-40c9-8291-89994e7db0e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>0246043e-44ae-497d-952d-16646d6cf7b5</webElementGuid>
+      <webElementGuid>25fdddd6-2923-459e-98e1-8360749f3860</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>f35f9b27-f8fa-4a83-a807-73eaf34a0e53</webElementGuid>
+      <webElementGuid>b795b5a8-d52c-480c-98b6-dd314b10705d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>FECHA PROCESO</value>
-      <webElementGuid>8d66da7b-6d2c-4acd-841d-2cf721012270</webElementGuid>
+      <webElementGuid>e7b8d906-a785-4323-96a4-12e82a415ae1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>a9578d3d-7952-4c0e-8f6a-1408bdbcd121</webElementGuid>
+      <webElementGuid>68940236-48d1-4236-a1f2-20a3d7f7a09e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>a9a4059b-12b0-4f5b-afaa-cc7b02af71c6</webElementGuid>
+      <webElementGuid>75f8d8a5-537a-4680-8ee7-89a602903026</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>aa2ec73a-2954-4124-bec4-f5592dcdf399</webElementGuid>
+      <webElementGuid>374bf28d-b73f-4462-bb91-e7589b21d2ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>f83013ba-ae12-4894-913a-10e03e830324</webElementGuid>
+      <webElementGuid>10d4f271-a6db-4d96-9b47-7b85f2b8a4ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>50d9eb71-4a48-4af5-9b08-a2ca33daeb91</webElementGuid>
+      <webElementGuid>5b6cf4c8-b454-412e-bb34-709615a7a5d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DISPOSITIVO'])[1]/preceding::th[2]</value>
-      <webElementGuid>7c2bdf5c-1a99-402a-b7f7-a080a8395a0a</webElementGuid>
+      <webElementGuid>1ec7d3ec-0024-4bd9-a4d4-931dfda5ad52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='SECUENCIA'])[1]/preceding::th[5]</value>
-      <webElementGuid>4fd38b7a-03a3-405c-8d81-dbc9fc879d0a</webElementGuid>
+      <webElementGuid>0ef0fade-d97d-4c87-b48a-409a33f8504e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='FECHA PROCESO']/parent::*</value>
-      <webElementGuid>cf5874d3-2b1d-45de-92f3-0c181b366fd8</webElementGuid>
+      <webElementGuid>dbbd444f-0eb3-4622-8aa2-38df4f4e8083</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>573b5d35-b23f-4065-a336-8afe44fc940c</webElementGuid>
+      <webElementGuid>788bfdbd-c77d-46a1-b6f2-a26ad89481ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'FECHA PROCESO' or . = 'FECHA PROCESO')]</value>
-      <webElementGuid>5bee6908-6828-471a-b28d-48e88f53c5c8</webElementGuid>
+      <webElementGuid>957bd169-860c-4978-8d55-e8e5b3ffb57d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

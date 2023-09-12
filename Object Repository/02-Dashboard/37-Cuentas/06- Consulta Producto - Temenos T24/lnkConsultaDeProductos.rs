@@ -6,15 +6,18 @@
    <elementGuidId>a5a4cc77-7993-4a2b-81e8-823382e0b90b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de Productos ' or . = 'Consulta de Productos ')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.PROD.CONFG.CONSULTA');processMenuHeaderText('Consulta de Productos')&quot;]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>09426adf-d0ce-4ab9-83f7-dcf6150592ad</webElementGuid>
+      <webElementGuid>aab271c8-63f8-4db1-ae32-c40bcd2bdea3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.PROD.CONFG.CONSULTA');processMenuHeaderText('Consulta de Productos')</value>
-      <webElementGuid>6df90afe-4ddd-4fea-a2d9-746c2ad00c9f</webElementGuid>
+      <webElementGuid>03676f7c-5e72-476d-9c9a-20a8c7eabd4c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.PROD.CONFG.CONSULTA');</value>
-      <webElementGuid>f7707a30-9dfa-4122-824a-ba341f47da1b</webElementGuid>
+      <webElementGuid>0b213964-261d-422a-bd52-60fbd3fda216</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Productos </value>
-      <webElementGuid>4dccbdb6-00f3-4853-befd-cc62492cf39c</webElementGuid>
+      <webElementGuid>a12bd6ca-ce3f-458d-8fe1-8750ebd6b162</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[5]/a[1]</value>
-      <webElementGuid>f3d15073-891f-4fd0-b9a6-e8cc70a0bbb4</webElementGuid>
+      <webElementGuid>38b2902f-7e9a-4485-a88e-9eaf1247ab1d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.PROD.CONFG.CONSULTA');processMenuHeaderText('Consulta de Productos')&quot;]</value>
-      <webElementGuid>a3de3b5e-692e-437f-96f2-f5fb7b5d77f9</webElementGuid>
+      <webElementGuid>aa802b28-7036-4cad-b9d7-031067acc15a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[2]/li/ul/li[3]/ul/li[5]/a</value>
-      <webElementGuid>a42ebeb5-0396-4cc2-abc3-bc983f914c0e</webElementGuid>
+      <webElementGuid>e8651e3d-ef38-4d6e-8265-15056a66aa8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Productos')]</value>
-      <webElementGuid>fabd61ed-9912-4ea6-b003-fa918592b4e4</webElementGuid>
+      <webElementGuid>7016de57-df0c-49d2-bfbc-bac21ca2590c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Firmantes de Cuentas'])[1]/following::a[1]</value>
-      <webElementGuid>f0ebb762-c2c7-4753-98be-031c3f8a4c86</webElementGuid>
+      <webElementGuid>7f865bae-9ab6-4ba1-b241-9e22b449bac0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Modificaciones a Cuentas'])[1]/following::a[2]</value>
-      <webElementGuid>7d10f88c-2c20-41ff-a61b-045c5e4e7408</webElementGuid>
+      <webElementGuid>8401ffb4-f694-41cf-a387-c6e964e76c69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuentas Habilitadas p/ Recibir Transf en USD'])[1]/preceding::a[1]</value>
-      <webElementGuid>63b31964-74d3-4864-96ae-3521edee9a08</webElementGuid>
+      <webElementGuid>a2c7ddc8-28d1-4ef9-8da3-821bc0560eaa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Saldos y Movimientos'])[1]/preceding::a[2]</value>
-      <webElementGuid>0e7b0e30-2a19-4e44-a725-c850088e2c78</webElementGuid>
+      <webElementGuid>61a6a9df-8c13-4a7c-bf91-36986dd85a3c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Productos']/parent::*</value>
-      <webElementGuid>cd8f2d98-cb0c-4eb0-8d06-80fed1cdb388</webElementGuid>
+      <webElementGuid>28e09d87-023d-4233-b8a8-57a39b2076b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.PROD.CONFG.CONSULTA');&quot;)]</value>
-      <webElementGuid>d15980ec-684f-4448-8585-eeb3010f5f3e</webElementGuid>
+      <webElementGuid>5cc6d277-4b1d-44c0-8a14-ebe2eba41d72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[2]/li/ul/li[3]/ul/li[5]/a</value>
-      <webElementGuid>38668888-8f38-4d9c-ad94-9dd8f12c6412</webElementGuid>
+      <webElementGuid>c8113983-c333-45ba-ad1e-76081b54ac53</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +145,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.PROD.CONFG.CONSULTA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Productos ' or . = 'Consulta de Productos ')]</value>
-      <webElementGuid>0fb6012f-232f-4116-85cd-a185a3ada7ad</webElementGuid>
+      <webElementGuid>7b689f15-34d6-4197-bc90-311895f1d406</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

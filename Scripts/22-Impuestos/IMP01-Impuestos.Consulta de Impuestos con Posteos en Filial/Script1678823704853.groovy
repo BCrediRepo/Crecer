@@ -18,7 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -36,9 +37,23 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOpera
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'))
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Switch a la ventana de impuestos por Posteo
 WebUI.switchToWindowTitle('BCCL.E.IMPTOS.COBDEV.PLANTA')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lnkVer'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+
 WebUI.click(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lnkVer'))
 
 //Switch a la ventana de Movimiento de Fondos

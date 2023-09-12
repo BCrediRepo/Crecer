@@ -6,15 +6,19 @@
    <elementGuidId>113fa8ec-f09f-4d85-8d3c-99033f5aeac4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td[7]/a</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consultar' or . = 'Consultar')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>a.enqDrillLink</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[7]/a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>ac227b85-6dfc-4377-877c-ada4ba58b9f5</webElementGuid>
+      <webElementGuid>129be739-2e10-4d7c-af0f-562fd3209ae7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqDrillLink</value>
-      <webElementGuid>abd08c64-bf7c-4388-8f0e-46c9de26dc3f</webElementGuid>
+      <webElementGuid>969e7b1c-868b-467c-87d6-daa435e5cbcc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>f73cef8d-45da-4988-ae86-fc588986bca9</webElementGuid>
+      <webElementGuid>64f8b85b-3d2c-4d9c-a428-1d31f99e1eee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:drilldown('1','1_1')</value>
-      <webElementGuid>18665360-2ae0-4349-867f-32267d8e7058</webElementGuid>
+      <webElementGuid>38e3a8fa-5c1d-4526-a6a3-e1eda67b49c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consultar</value>
-      <webElementGuid>8146384f-68c2-4863-be03-e87b69a82fea</webElementGuid>
+      <webElementGuid>01ef14ee-d35c-4796-af77-69a3bebee7b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEGENSUCURSALFINANZAS&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
-      <webElementGuid>008813b0-4382-4419-b3ed-14f7ade9f3b8</webElementGuid>
+      <webElementGuid>18d1e989-372f-4bbf-a0c5-567488b75f5d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[7]/a</value>
-      <webElementGuid>8d4f6662-10b1-406c-a5b0-c7005fec1723</webElementGuid>
+      <webElementGuid>e7a469df-a6fa-42d3-9892-f52e9b7519c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consultar')]</value>
-      <webElementGuid>aecb4f5c-23e6-4cf2-95c4-e951f2601c90</webElementGuid>
+      <webElementGuid>0ac4ab9b-26e1-43c4-af32-27a1a7e0e389</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='USDPR001'])[1]/following::a[1]</value>
-      <webElementGuid>8398b5bb-f35e-4c30-a996-bb8596751cae</webElementGuid>
+      <webElementGuid>db7bfb66-3404-44c7-95d7-6ed9f32e69cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='USD'])[1]/following::a[1]</value>
-      <webElementGuid>4bbb9aca-c82e-48c6-ab37-5a40f21e19c8</webElementGuid>
+      <webElementGuid>a5c7fe3a-075f-47e1-8b9a-7f8a99c5e2a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificar'])[1]/preceding::a[1]</value>
-      <webElementGuid>ecf16de1-d7c4-4f90-bdf0-bd8cde8fa4c3</webElementGuid>
+      <webElementGuid>d21f888c-760e-4801-bcf9-aec0a8d70ec0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Parametros de Filiales'])[2]/preceding::a[2]</value>
-      <webElementGuid>36dc05f4-0ddc-4524-b395-bc25483ca559</webElementGuid>
+      <webElementGuid>634f2d18-40cf-4b10-8585-fb051653df2d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consultar']/parent::*</value>
-      <webElementGuid>b289f03f-acc2-4b0a-b4b7-340bbb79744c</webElementGuid>
+      <webElementGuid>c9a3c6d3-7f48-42b8-9090-be08a9f632f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
-      <webElementGuid>ed611676-caa9-449a-bd63-4b06442d03ad</webElementGuid>
+      <webElementGuid>ba93e2e0-159d-417e-b569-07be3f0d87e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[7]/a</value>
-      <webElementGuid>6741545e-d1a4-42cc-92ef-89f0b984b7aa</webElementGuid>
+      <webElementGuid>393ca319-9857-4fba-a6a3-dbd8ab3e921d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Consultar' or . = 'Consultar')]</value>
-      <webElementGuid>714f3184-f6c5-425c-8a1e-f9469c426510</webElementGuid>
+      <webElementGuid>b63b202f-8970-4687-9eff-d9179548b189</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

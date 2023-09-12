@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -41,16 +43,21 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
 
-//
-//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkNuevaSeleccion'))
-//
-//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkEjecutar'))
-//
-//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnBusqueda'))
-
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFechaRepvalue511'), '20220725')
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//Boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.maximizeWindow()
 

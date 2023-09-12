@@ -6,15 +6,18 @@
    <elementGuidId>9da40c4b-7144-432f-85ea-09108dc02ff4</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Busqueda y consulta general de Grupos de Depu ' or . = 'Busqueda y consulta general de Grupos de Depu ')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.DEPBUP.COMPLETO');processMenuHeaderText('Busqueda y consulta general de Grupos de Depu')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c37663ba-a4f7-442b-9b3d-5a711fa1fbdc</webElementGuid>
+      <webElementGuid>2c3665ec-2cbb-49cf-900b-33c3509090e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.DEPBUP.COMPLETO');processMenuHeaderText('Busqueda y consulta general de Grupos de Depu')</value>
-      <webElementGuid>21b8b2b1-00b5-4004-b256-63c63f5b26a9</webElementGuid>
+      <webElementGuid>1687c801-f4c5-49e7-86a9-bcebd949ca60</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.PER.DEPBUP.COMPLETO');</value>
-      <webElementGuid>498c59e8-d73d-44bf-ad14-8cc4b6f115b5</webElementGuid>
+      <webElementGuid>b7b7d633-6b3d-4580-86eb-38ce963c5ca2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Busqueda y consulta general de Grupos de Depu </value>
-      <webElementGuid>27d9071e-7d0f-4d5f-9068-7919c4e67b21</webElementGuid>
+      <webElementGuid>5f50e3e0-9136-4b92-a71c-d8e2b1f73e3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>e2932349-a249-4e59-8e67-243524435429</webElementGuid>
+      <webElementGuid>1f3d1f74-6214-4c01-81ba-9069e584f8e1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.DEPBUP.COMPLETO');processMenuHeaderText('Busqueda y consulta general de Grupos de Depu')&quot;]</value>
-      <webElementGuid>c210b01b-885b-4df8-a0ed-e09a073e22e9</webElementGuid>
+      <webElementGuid>c68d486d-de8c-44ed-bce6-d3d931bf05b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul/li/ul/li[8]/ul/li[2]/ul/li/a</value>
-      <webElementGuid>cfddb612-13dd-448b-9f7a-25c70c70ad1c</webElementGuid>
+      <webElementGuid>a3723a86-a519-4862-acdd-64d6e838421d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Busqueda y consulta general de Grupos de Depu')]</value>
-      <webElementGuid>f873b720-1a42-4cb1-b0d3-2ea9115a418f</webElementGuid>
+      <webElementGuid>ac77f509-ae42-45d2-a189-43bc3bf865f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta General de Grupos de Depuracion'])[1]/following::a[1]</value>
-      <webElementGuid>c1ede15f-8831-4c5f-b1f7-014629898967</webElementGuid>
+      <webElementGuid>15d41015-1509-4dad-92b9-c7da48edd9f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Evolucion Tamaòo de la Empresa'])[1]/following::a[1]</value>
-      <webElementGuid>d47c54b9-af8c-4e11-b40e-ffe69cc2fa0e</webElementGuid>
+      <webElementGuid>901f3c0b-892a-4869-af89-efb992fedf5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modificaciones'])[1]/preceding::a[1]</value>
-      <webElementGuid>eb5d5be9-bf8e-4250-b2bd-66a9c4d48fce</webElementGuid>
+      <webElementGuid>7618b397-8f9a-45bb-a647-c7e0f33fd642</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Fisica'])[1]/preceding::a[1]</value>
-      <webElementGuid>3cae8b97-6617-4618-bcb2-06d61c1ff5c0</webElementGuid>
+      <webElementGuid>d084f0b1-6545-4df9-9160-2b592bde1c00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Busqueda y consulta general de Grupos de Depu']/parent::*</value>
-      <webElementGuid>4b481e98-3bde-4b93-b8eb-4b590b70cee5</webElementGuid>
+      <webElementGuid>984c5325-587d-40cc-9d54-ce8257f32a7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.PER.DEPBUP.COMPLETO');&quot;)]</value>
-      <webElementGuid>38522f9c-3038-4b66-98bd-e64b9f61ca47</webElementGuid>
+      <webElementGuid>221ea4b0-0754-4395-8919-f727773e4955</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[8]/ul/li[2]/ul/li/a</value>
-      <webElementGuid>1bb7fb10-2ce3-48aa-af00-35ba068f6000</webElementGuid>
+      <webElementGuid>154ff83a-ee31-484a-ae16-6cf51c041bcf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +145,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.PER.DEPBUP.COMPLETO&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Busqueda y consulta general de Grupos de Depu ' or . = 'Busqueda y consulta general de Grupos de Depu ')]</value>
-      <webElementGuid>6e762de4-dcd7-4c07-881a-870bfb3576fa</webElementGuid>
+      <webElementGuid>31ff5105-82f8-4958-8715-93938bf721f6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

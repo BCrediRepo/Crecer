@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -32,8 +34,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDa
 
 //Se busca el TestBox de "Buscador"
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?311')
-
-//Click en el boton "Ejecutar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 //Cambiamos a la ventana "Temenos T24"
@@ -67,11 +67,22 @@ WebUI.switchToWindowTitle('BCCL.E.CARD.DEPOSIT')
 //Seteamos el dato "6042018000002609"
 WebUI.setText(findTestObject('40-Tarjeta de Deposito/BCCL.E.CARD.DEPOSIT/txtIdTarjeta'), '6042018000002609')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Ejecutamos
-WebUI.click(findTestObject('40-Tarjeta de Deposito/BCCL.E.CARD.DEPOSIT/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Esperamos que el dato sea equivalente al id de la busqueda.
 Id = WebUI.waitForElementVisible(findTestObject('40-Tarjeta de Deposito/BCCL.E.CARD.DEPOSIT/lblIDTarjeta'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //Realizamos el assert.
 assert Id == true //Control de fin de script

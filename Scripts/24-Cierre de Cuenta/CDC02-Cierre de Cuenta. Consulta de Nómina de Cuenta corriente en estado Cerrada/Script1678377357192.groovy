@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,37 +26,58 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanCuentas'))
+//Se accede al menu
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.AC.CONSULTA.NOMINA')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/lnkCierreDeCuenta'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/lnkNomina'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/spanCuentas'))
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/lnkCierreDeCuenta'))
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/lnkNomina'))
+//
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
 
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.NOMINA')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
+WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.AC.CONSULTA.NOMINA')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/01-Nomina/lnkConsultaNomina'))
 
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.NOMINA')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkNuevaSeleccion'))
+//WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkNuevaSeleccion'))
 
 WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/txtNumeroDeCuenta'), '00010070802')
 
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/01-BCCL.AC.CONSULTA.NOMINA/lnkConsultaNominaCuenta'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/02-BCCL.NOMINA.CH/lblAltaModif Nomina'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //---------------------------------------------------------------------------------------------------------------------
 

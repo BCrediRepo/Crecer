@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -26,30 +28,35 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu ?21
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?21')
+//WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?21')
+
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/spanConsulta Dispositivos Puntos Neutrales'))
-
-WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkConsultaDeSobrantesEnPuntosNeutrales'))
+//WebUI.switchToWindowTitle('Temenos T24')
+//
+//WebUI.maximizeWindow()
+//
+//WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/spanConsulta Dispositivos Puntos Neutrales'))
+//
+//WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkConsultaDeSobrantesEnPuntosNeutrales'))
 
 WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
+//Se accede al menu
 WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
+//WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkConsultaDeSobrantesEnPuntosNeutrales'))
+//WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkConsultaDeSobrantesEnPuntosNeutrales'))
 
 WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 
@@ -64,10 +71,21 @@ WebUI.setText(findTestObject('21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/tx
 //
 //WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtCartuchoGaveta'), 'RETIRO')
 
-WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 
     6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 
     6)
@@ -75,7 +93,9 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.
 WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/img'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 
-    6) //---------------------------------------------------------------------------------------------------------------------
+    6) 
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

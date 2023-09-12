@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -48,11 +50,23 @@ WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.FIL.BAJAS')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.BAJAS/txtIDPersona_value611'), '1003227493')
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.BAJAS/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
 estado = WebUI.getText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.BAJAS/lblEstadoCuenta'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 if (estado == 'INACTIVA') {
     CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

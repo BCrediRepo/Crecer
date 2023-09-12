@@ -6,6 +6,10 @@
    <elementGuidId>ecffb2c1-d493-40bd-a7d4-ee82ed03d1d6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'INACTIVA' or . = 'INACTIVA')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//tr[@id='r1']/td[10]</value>
       </entry>
@@ -14,7 +18,7 @@
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>44a015fc-1635-4234-ae35-cc9f017e7a72</webElementGuid>
+      <webElementGuid>896cf6c6-f085-42d0-adb7-644baf51199f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>INACTIVA</value>
-      <webElementGuid>9193ce4f-828f-4bd2-a4bf-9dc1678456da</webElementGuid>
+      <webElementGuid>a398bbcc-24cb-4c25-af45-75001d9ae3d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[10]</value>
-      <webElementGuid>fdc42cfb-7315-4791-811f-a2439b9247a3</webElementGuid>
+      <webElementGuid>4b03e0b4-63f3-458f-9aa9-56518682a0dc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[10]</value>
-      <webElementGuid>9ad6e670-416a-420b-befe-1f8e760a2e93</webElementGuid>
+      <webElementGuid>b1e4c7e5-9dfd-4dd8-ae31-2c3d01e72c75</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::td[2]</value>
-      <webElementGuid>386b9aa8-9a62-4f38-81a7-ccb23939568f</webElementGuid>
+      <webElementGuid>f3f81dc8-c1b1-4f09-b350-231c14965be2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='IP20059864313800'])[1]/following::td[6]</value>
-      <webElementGuid>d9c8497d-47c7-4967-9b67-05f1be3dadb6</webElementGuid>
+      <webElementGuid>5086402c-7c29-4692-895d-d4acbf8a9235</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ver detalle de Partida'])[1]/preceding::td[2]</value>
-      <webElementGuid>1c156d59-710d-4576-ba7c-363c5ca076df</webElementGuid>
+      <webElementGuid>96660d4b-09a5-4dd5-9008-1b5014093afb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[4]</value>
-      <webElementGuid>2a58dc21-41f7-4b12-9efe-1c76eb037fae</webElementGuid>
+      <webElementGuid>fc212587-106c-479e-8c33-fd751a416432</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='INACTIVA']/parent::*</value>
-      <webElementGuid>af3c98df-9dee-4d62-b6f7-277f9e9c90b0</webElementGuid>
+      <webElementGuid>6b6c46ef-1362-4349-8da6-149ed882d300</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[10]</value>
-      <webElementGuid>5fc3dd07-b5e0-4b36-93a9-4f0b86702a14</webElementGuid>
+      <webElementGuid>f9103963-2c3f-400a-9181-7e91aeb17153</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'INACTIVA' or . = 'INACTIVA')]</value>
-      <webElementGuid>af2aa3da-25c7-499c-ab66-3fdd084c8c35</webElementGuid>
+      <webElementGuid>c596566a-fee2-4027-ab7d-42875493537b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,22 @@
    <elementGuidId>b0aaf83d-7a91-4433-9ffc-6db27a8f6c1a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeader13']</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'columnHeader13' and (text() = '
+
+
+Nro. Boleto' or . = '
+
+
+Nro. Boleto')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#columnHeader13</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeader13']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +32,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>bbc178f5-eeb8-40aa-89f8-124ca422f30a</webElementGuid>
+      <webElementGuid>42b2976f-af67-4ad1-a591-430d81dd26c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +40,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>c1259c9f-3e3b-47f1-8fab-fba4e1ce0319</webElementGuid>
+      <webElementGuid>97ce6ccf-c3c9-4412-a14b-d28637bb9dd4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +48,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>9c3a920f-e9fe-4498-88ce-69a8e975fe39</webElementGuid>
+      <webElementGuid>e0860caa-5ab2-4470-b484-e079870b8188</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +56,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeader13</value>
-      <webElementGuid>a9a57890-7d0d-4277-a9bc-780e578a45f6</webElementGuid>
+      <webElementGuid>10d100e4-900a-484d-a1f9-1fad1f7d9967</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +67,7 @@
 
 
 Nro. Boleto</value>
-      <webElementGuid>3e159af9-de3c-4592-abc2-7ecd5a570fa0</webElementGuid>
+      <webElementGuid>ea0ce6de-5a89-4487-a2a3-8d141a9e6fcd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +75,7 @@ Nro. Boleto</value>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeader13&quot;)</value>
-      <webElementGuid>22e3240e-79e3-4f3a-a582-df2270b46a8e</webElementGuid>
+      <webElementGuid>d3a2e169-e22a-49bf-95c6-a81097c78db2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,7 +83,7 @@ Nro. Boleto</value>
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeader13']</value>
-      <webElementGuid>710d8d01-e1d5-47ad-a3cf-2bd1fd9e5f79</webElementGuid>
+      <webElementGuid>9740eef0-fe6a-4804-ac09-f774539198f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +91,7 @@ Nro. Boleto</value>
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='headingdisplay']/thead/tr/th[13]</value>
-      <webElementGuid>c5e31ee1-4029-4997-b727-5e7c893ffbd9</webElementGuid>
+      <webElementGuid>7fa1f572-1a6e-4b3f-bae5-f01c7009dd38</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +99,7 @@ Nro. Boleto</value>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta CR'])[1]/following::th[2]</value>
-      <webElementGuid>796e5146-1e2a-46a7-b8c0-99fdb1416410</webElementGuid>
+      <webElementGuid>1f77dad7-4a68-45ef-b900-81f888c633c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +107,7 @@ Nro. Boleto</value>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta DB'])[1]/following::th[5]</value>
-      <webElementGuid>ccc5ef0d-8233-4ac2-a64d-2ed9bc963ab6</webElementGuid>
+      <webElementGuid>1d65d879-adc9-47b0-931e-c40540d47b09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +115,7 @@ Nro. Boleto</value>
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='VENTA'])[1]/preceding::th[4]</value>
-      <webElementGuid>905005d0-812d-4af9-b0d5-446281137d1f</webElementGuid>
+      <webElementGuid>2194da63-e82e-4648-8add-d105b9b17825</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,7 +123,7 @@ Nro. Boleto</value>
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[13]</value>
-      <webElementGuid>f9db62eb-ed74-45d4-8cda-7f484ab6b0fb</webElementGuid>
+      <webElementGuid>09059456-1260-423a-a5dc-02a13211c95f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,6 +137,6 @@ Nro. Boleto' or . = '
 
 
 Nro. Boleto')]</value>
-      <webElementGuid>85603b29-cec3-4950-ad21-ade0b25facfe</webElementGuid>
+      <webElementGuid>a4d70472-cfce-4878-832e-604b9875bb0c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

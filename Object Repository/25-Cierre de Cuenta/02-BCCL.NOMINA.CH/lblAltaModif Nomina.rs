@@ -6,15 +6,15 @@
    <elementGuidId>9a363b62-ace8-41aa-95b2-9d25b5897c9a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[@id='dealtitle']/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a[title=&quot;BCCL.NOMINA.CH,ALTA.NOM&quot;]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='dealtitle']/a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>316115c2-8909-4be6-8a7f-9269a9a4e70c</webElementGuid>
+      <webElementGuid>8a3dbdf8-8e6f-4877-81ac-31d251968284</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>bf844cf3-7561-4b95-9ac4-6e12d340e1c5</webElementGuid>
+      <webElementGuid>a664baa1-6e45-451c-bc72-1eb42260c227</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>53c609d6-67d9-428f-8383-af89155f7484</webElementGuid>
+      <webElementGuid>318762fb-5847-4136-ba02-459d536965b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>title</name>
       <type>Main</type>
       <value>BCCL.NOMINA.CH,ALTA.NOM</value>
-      <webElementGuid>12b52ae4-1d8d-4d04-a995-d837f30aab38</webElementGuid>
+      <webElementGuid>870c7da4-293c-4fbd-a477-c4333083ef93</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:help(&quot;BCCL.NOMINA.CH&quot;,&quot;&quot;,&quot;&quot;,&quot;issueToken&quot;);</value>
-      <webElementGuid>3ff6d7bd-df41-4727-b69a-1e772801e359</webElementGuid>
+      <webElementGuid>14cdd4f4-b91d-4855-afc5-d151691aa8c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Alta/Modif Nomina</value>
-      <webElementGuid>9368c83c-e579-474e-b1f2-a4eac028d9e7</webElementGuid>
+      <webElementGuid>50177398-9a8c-42a7-b073-115b1b19ad1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;dealtitle&quot;)/a[1]</value>
-      <webElementGuid>b688a6ec-3a60-4738-9adf-50081deff873</webElementGuid>
+      <webElementGuid>c80684fe-8e99-41e2-961e-0e5e4c2ef129</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//td[@id='dealtitle']/a</value>
-      <webElementGuid>7b8d03e1-a1fc-4018-9924-331c10b04d31</webElementGuid>
+      <webElementGuid>2e48e517-20fe-401d-aa8f-3937153873e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Alta/Modif Nomina')]</value>
-      <webElementGuid>daa5f462-f9b1-47af-9988-0073d193f488</webElementGuid>
+      <webElementGuid>286c1722-68e5-46e3-b62d-ade277ddeca6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.AC.CONSULTA.NOMINA'])[1]/following::a[3]</value>
-      <webElementGuid>1a6ede50-1f29-4c44-a548-9fb9c7961f17</webElementGuid>
+      <webElementGuid>c42f74fe-b798-429b-8a9c-f9768bbc8970</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ctr)'])[1]/preceding::a[1]</value>
-      <webElementGuid>39578433-3557-4d8d-a6d0-68626304ab15</webElementGuid>
+      <webElementGuid>d0a405ee-25b2-4f16-b1ec-eb43a8567b3f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion cuenta'])[1]/preceding::a[1]</value>
-      <webElementGuid>57a0d931-d95d-4da2-974b-35ce2b4e0994</webElementGuid>
+      <webElementGuid>fd7f642d-bf34-4a96-b53d-67715aff0bb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Alta/Modif Nomina']/parent::*</value>
-      <webElementGuid>8552ab34-d3ab-4c54-a3c0-e026e7724171</webElementGuid>
+      <webElementGuid>6348bbd0-ebec-4b92-9f9c-8ef932bf914e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'javascript:help(&quot;BCCL.NOMINA.CH&quot;,&quot;&quot;,&quot;&quot;,&quot;issueToken&quot;);')]</value>
-      <webElementGuid>c418303d-e98c-4117-9812-01992a1317e7</webElementGuid>
+      <webElementGuid>dc17c61c-d545-405c-acbb-7c5602abce1c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td/table/tbody/tr/td/a</value>
-      <webElementGuid>ae842042-590d-428d-be00-1a5eeb74e89d</webElementGuid>
+      <webElementGuid>d87f599e-e25f-4570-8fe2-59b057d27cf7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@title = 'BCCL.NOMINA.CH,ALTA.NOM' and @href = 'javascript:help(&quot;BCCL.NOMINA.CH&quot;,&quot;&quot;,&quot;&quot;,&quot;issueToken&quot;);' and (text() = 'Alta/Modif Nomina' or . = 'Alta/Modif Nomina')]</value>
-      <webElementGuid>ebc20d36-b2d5-467e-bc2e-2f23dd45e346</webElementGuid>
+      <webElementGuid>fcf4ba6b-e898-4b8c-9c84-efb8472ec215</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

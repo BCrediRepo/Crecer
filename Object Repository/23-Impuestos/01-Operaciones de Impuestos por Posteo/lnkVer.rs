@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//tr[@id='r1']/td[9]/a</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Ver' or . = 'Ver')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>7875e419-2bcb-4c39-a87e-d24eb6e58897</webElementGuid>
+      <webElementGuid>441a1d80-4d9c-4341-bdab-54ee61d0df14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqDrillLink</value>
-      <webElementGuid>a2f2577d-c3a0-44e4-9b2d-7d97c2c247b1</webElementGuid>
+      <webElementGuid>be4c3816-0b33-4e9a-b6b6-8507571e8083</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>4d5bbdd6-4a1f-4a2e-9c4c-b5f31fc6a7ce</webElementGuid>
+      <webElementGuid>38869619-5a20-4c42-b155-291a15daa34c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:drilldown('2','1_1')</value>
-      <webElementGuid>f21f8c4d-034a-400e-a313-44b19effa205</webElementGuid>
+      <webElementGuid>4de57a93-8e04-47f2-9242-0406390babf8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ver</value>
-      <webElementGuid>bc8f5802-20da-420b-b121-65031bdb8128</webElementGuid>
+      <webElementGuid>7e6ddc4a-23d9-4c56-b991-0defab05ea07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEIMPTOSCOBDEVPLANTA&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
-      <webElementGuid>90c5a323-6283-4dbb-9250-e12cd5fcb939</webElementGuid>
+      <webElementGuid>b93e05c5-1a71-4c4c-b391-26ff4ae743cb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[9]/a</value>
-      <webElementGuid>6d2e1116-7354-4758-a809-cba35bd9b73d</webElementGuid>
+      <webElementGuid>cd94a0e1-1f27-4b67-bad3-c2eca563dd18</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Ver')]</value>
-      <webElementGuid>53e4c0ea-4786-4cb5-a5f1-2350aae14056</webElementGuid>
+      <webElementGuid>38b8d1be-8807-4459-86a1-9f96fc7a6b79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Postear'])[1]/following::a[1]</value>
-      <webElementGuid>d438e766-d053-4aff-8b88-176faa02a849</webElementGuid>
+      <webElementGuid>e0568cc6-6916-4ff0-b86c-c5a07f2cb298</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='$100,00'])[1]/following::a[2]</value>
-      <webElementGuid>31cf21fd-8e35-407b-b069-48288cf67014</webElementGuid>
+      <webElementGuid>f323e39f-ac53-4f30-b7a9-52bc475bbfc8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::a[1]</value>
-      <webElementGuid>1a1eaecd-45fa-49bc-a915-d20190a9070c</webElementGuid>
+      <webElementGuid>6ce6258c-5891-4355-ac99-22e6e2c3aa92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::a[1]</value>
-      <webElementGuid>dae6befe-2da6-4c0a-971b-8119dd594adf</webElementGuid>
+      <webElementGuid>48329d2d-0593-4dac-9667-abb6aff5b131</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ver']/parent::*</value>
-      <webElementGuid>f6ca2d9e-b1b2-4bfe-bc6d-a0067b06c8e3</webElementGuid>
+      <webElementGuid>a77e881a-6fec-43f6-baa4-f8e5b79a339a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:drilldown('2','1_1')&quot;)]</value>
-      <webElementGuid>94e7c9bc-230d-4e13-8a5c-10d2854b37ec</webElementGuid>
+      <webElementGuid>a4a803e2-d71a-41a4-8fb4-f0601abe6192</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[9]/a</value>
-      <webElementGuid>9f194997-cbfd-4b8a-ba9d-22edddf8293a</webElementGuid>
+      <webElementGuid>fc356e7f-267b-46d8-88f6-48637752bc24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Ver' or . = 'Ver')]</value>
-      <webElementGuid>a9048e09-a83e-4b86-9234-dbd4e13b9d3b</webElementGuid>
+      <webElementGuid>beb9938a-7c89-490a-ba1c-c54abc3eb296</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

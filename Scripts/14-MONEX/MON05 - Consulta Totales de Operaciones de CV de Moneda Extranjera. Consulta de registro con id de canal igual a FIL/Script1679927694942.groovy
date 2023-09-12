@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -50,11 +52,22 @@ WebUI.setText(findTestObject('15-MONEX/Total de Oper de Compra-Venta MONEX/txtFe
 //Espera a que el elemento "Ejecutar" sea Clickeable
 WebUI.waitForElementClickable(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Clickea el elemento "Ejecutar"
-WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Espera a que sea visible el elemento "Cant. Oper"
 WebUI.waitForElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OPER.MONEX/lblCantOper'), 3)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //Verifica que el mismo sea visible
 Operadores = WebUI.verifyElementVisible(findTestObject('15-MONEX/05-ENQ BCCL.E.NOFILE.TOT.OPER.MONEX/lblCantOper'))

@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -35,40 +37,66 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDa
 
 //Se busca el TestBox de "Buscador"
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?58')
+
 //Click en el boton "Ejecutar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 //Cambia a la ventana "Temenos T24"
 WebUI.switchToWindowTitle('Temenos T24')
+
 //Espera a que aparezca el elemento "Administracion Parametros...."
 WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracion Parametros'), 
     3)
 //Click en "Administracion Parametros..."
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracion Parametros'))
+
 //Espera a que aparezca el elemento "Administracino Parametros de Sucursales"
 WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'), 
     3)
 //Click en "Administracion Parametros  de Sucursales"
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'))
+
 //Cambia a la ventana "Consulta de Parametros de Filiales"
 WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
+
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 //Cambiar a ventanta T24
 WebUI.switchToWindowTitle('Temenos T24')
+
 //Click en "Administracion Parametros  de Sucursales"
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'))
+
 //Cambia a la ventana "Consulta de Parametros de Filiales"
 WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
+
 //Setea el texto "074" en el textbox "txtFilial" 
 WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtFilial'), '074')
-//CLickea en el boton "Eejecutar"
-WebUI.click(findTestObject('15-MONEX/01-BCCL.E.NOFILE.DET.OPER.MONEX/lnkEjecutar'))
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//CLickea en el boton "Ejecutar"
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
 //Espera a que aparezca el link "Consultar"
 WebUI.waitForElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkConsultar'), 3)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
 //Clickea en "Consultar"
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkConsultar'))
+
 //Guardamos el valor de "lblDireccion" en la variable "Direccion"
 Direccion = WebUI.verifyElementVisible(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lblDireccion'))
+
 //Realiza un assert de la direccion
 assert Direccion == true
 

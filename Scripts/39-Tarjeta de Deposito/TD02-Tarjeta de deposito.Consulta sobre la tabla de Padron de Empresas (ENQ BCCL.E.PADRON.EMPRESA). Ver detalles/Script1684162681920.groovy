@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -54,11 +56,22 @@ WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ.BCCL.E.PADRON.EMPRESA/lnk
 //Cambia a la ventana con el nombre "BBCL.E.PADRON.EMPRESA"
 WebUI.switchToWindowTitle('BCCL.E.PADRON.EMPRESA')
 
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
 //Clickea en Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Realiza un assert con el dato.
 DATOID = WebUI.waitForElementVisible(findTestObject('40-Tarjeta de Deposito/ENQ.BCCL.E.PADRON.EMPRESA/txt1000097988'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 assert DATOID == true
 

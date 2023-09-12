@@ -6,15 +6,19 @@
    <elementGuidId>8b0b4eb6-6dd6-41ff-938b-96aa8dcba7f9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.PER.EVOL.TAMEMP');processMenuHeaderText('Consulta Evolucion Tamaòo de la Empresa')&quot;]</value>
+         <key>BASIC</key>
+         <value>//*[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.PER.EVOL.TAMEMP&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta Evolucion Tamaòo de la Empresa ' or . = 'Consulta Evolucion Tamaòo de la Empresa ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value></value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.PER.EVOL.TAMEMP');processMenuHeaderText('Consulta Evolucion Tamaòo de la Empresa')&quot;]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>ca430ef5-4dd0-487a-9167-00d28458fc18</webElementGuid>
+      <webElementGuid>add34d78-9979-495b-9029-dfd33459703c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.PER.EVOL.TAMEMP');processMenuHeaderText('Consulta Evolucion Tamaòo de la Empresa')</value>
-      <webElementGuid>9ced9943-22ee-4684-8791-4e830baad79b</webElementGuid>
+      <webElementGuid>b690ee5e-f219-47cb-ae7b-5d6b087d7875</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.PER.EVOL.TAMEMP');</value>
-      <webElementGuid>19b6ba18-9be2-42a4-bcf1-c66d2b29f3e4</webElementGuid>
+      <webElementGuid>676b4344-d1d8-4de5-8d22-992ee5bc049b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta Evolucion Tamaòo de la Empresa </value>
-      <webElementGuid>10d4b997-9917-446b-88b4-a39e934a94d4</webElementGuid>
+      <webElementGuid>e2d3b1a1-ef86-412d-a551-8b33a9d11c62</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[3]/a[1]</value>
-      <webElementGuid>d9047040-d6ab-4c49-a4be-9bf0dae98ecd</webElementGuid>
+      <webElementGuid>cf1334aa-1470-48c4-81cb-2b56cc76e84d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.PER.EVOL.TAMEMP');processMenuHeaderText('Consulta Evolucion Tamaòo de la Empresa')&quot;]</value>
-      <webElementGuid>4152e586-be9e-4403-ac2f-5d3917b90400</webElementGuid>
+      <webElementGuid>f4610ca9-f743-416d-bcf8-89a983c852ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[2]/li/ul/li[3]/ul/li[2]/ul/li[3]/a</value>
-      <webElementGuid>45e5cf4a-e38f-44b6-b142-82b8557a1764</webElementGuid>
+      <webElementGuid>e7581ed7-b5ec-4f53-887f-7a3fcf29f240</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta Evolucion Tamaòo de la Empresa')]</value>
-      <webElementGuid>3d43da6b-711d-4f6d-b369-07ebb895c617</webElementGuid>
+      <webElementGuid>7fe91919-1829-4f62-a75e-1aded367a23c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Juridica'])[1]/following::a[1]</value>
-      <webElementGuid>13234a79-e37c-4c49-aa0f-28d527078415</webElementGuid>
+      <webElementGuid>1b097672-39a1-4022-99ff-3bdaeaf0a044</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Busqueda y consulta general Persona Fisica'])[1]/following::a[2]</value>
-      <webElementGuid>1474ee9b-6d53-407b-95d7-30685b96dddf</webElementGuid>
+      <webElementGuid>8931d433-a5ef-42c6-9609-485b313f3d4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modificaciones'])[1]/preceding::a[1]</value>
-      <webElementGuid>b625439f-2f54-4836-b3f9-c55d71f0181b</webElementGuid>
+      <webElementGuid>873eaaf0-47cc-4299-a7e5-ef4e1e0a6165</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta ultimas modif a Pers Fisica'])[1]/preceding::a[1]</value>
-      <webElementGuid>78fa3a95-886c-4dfa-b85f-e9180e7fda23</webElementGuid>
+      <webElementGuid>12e22641-cb7e-4fbc-a691-a63926171751</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta Evolucion Tamaòo de la Empresa']/parent::*</value>
-      <webElementGuid>c7e34866-2668-4478-9100-a495b3c42403</webElementGuid>
+      <webElementGuid>061d82a6-7fca-41f9-b4fd-94aa3ed411a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.PER.EVOL.TAMEMP');&quot;)]</value>
-      <webElementGuid>825f2bd3-8dd4-43ae-8295-16b2403e3da3</webElementGuid>
+      <webElementGuid>a4e4dc75-1602-46dd-80ec-0103c9c11f43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/ul/li[3]/a</value>
-      <webElementGuid>a67c835f-5424-41a6-875e-69ae79f2e02d</webElementGuid>
+      <webElementGuid>9543b378-a8c2-4e8f-a183-6d5539017950</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.PER.EVOL.TAMEMP&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta Evolucion Tamaòo de la Empresa ' or . = 'Consulta Evolucion Tamaòo de la Empresa ')]</value>
-      <webElementGuid>521c9044-20b8-4ee5-b5aa-8f0247476e6c</webElementGuid>
+      <webElementGuid>93d3bb99-570f-4e14-8796-1cacea7c0dee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

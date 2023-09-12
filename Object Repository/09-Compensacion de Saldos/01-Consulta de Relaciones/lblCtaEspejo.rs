@@ -6,6 +6,10 @@
    <elementGuidId>024a1cd6-2472-4e5a-85ad-209964fdb6d5</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Cta Espejo' or . = 'Cta Espejo')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>#columnHeaderText1</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>f3d7fc1f-7bd8-4ac7-8715-4bb8e11cca5b</webElementGuid>
+      <webElementGuid>1ce4874f-51d0-40e4-9525-20e5dec8f589</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>c7fd7cb4-0364-4f14-9db9-9241e4b1b138</webElementGuid>
+      <webElementGuid>12f2f7e8-a870-4783-9d73-2597c088d7f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>ad507c12-b223-44d1-8097-87f6ef8ed5b3</webElementGuid>
+      <webElementGuid>9ed7fdab-08d3-4091-82fb-f288d9692df8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>6b4c00e9-d74d-475a-a1a7-8d38f777ff80</webElementGuid>
+      <webElementGuid>379f09ab-7469-4ff8-ab2a-bb26a068140d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cta Espejo</value>
-      <webElementGuid>da5abc74-b17c-4e57-a411-a9dfac6918a8</webElementGuid>
+      <webElementGuid>16b4085b-9c66-4294-9278-350c0b1df57a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>5ca79d2c-0d4c-43f9-baed-c133c7070c46</webElementGuid>
+      <webElementGuid>a2f86a4e-3eb6-48da-9210-44023f283a90</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>ec48d4ab-4820-4831-9db5-566463a53717</webElementGuid>
+      <webElementGuid>921f47cd-9c18-489a-b0e8-62a918afd6db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>b00ba856-3564-43c9-b720-b596850a84d4</webElementGuid>
+      <webElementGuid>e82bc0ec-3b66-40ae-b164-d3f3a13403d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>6d283bf7-9a8c-46e9-87ce-818b76df84fe</webElementGuid>
+      <webElementGuid>44a9829c-e931-42a0-aa99-b0f41166ec9e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>f17b64d0-87c3-421d-9bad-5c68dcc002bd</webElementGuid>
+      <webElementGuid>94201ca0-9def-4fba-9dea-eeb0f1ed2f89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cta Haberes'])[1]/preceding::th[2]</value>
-      <webElementGuid>b824deb4-a57b-451f-8e53-0ddb8327a56b</webElementGuid>
+      <webElementGuid>3504141e-23fa-4fd4-8682-dd584637c1bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Regla'])[1]/preceding::th[5]</value>
-      <webElementGuid>b62b4cc5-67d9-410e-aa13-38f16af182ec</webElementGuid>
+      <webElementGuid>fff4e4a2-c263-4a6e-b7e6-ab5d02e106d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cta Espejo']/parent::*</value>
-      <webElementGuid>43820599-44d3-4a82-ada0-8ac9974192c2</webElementGuid>
+      <webElementGuid>182b18a6-22b1-48ac-a0ad-fa6a11558978</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>5a014207-a440-4a33-97ab-374dde8defad</webElementGuid>
+      <webElementGuid>b9b07c96-420d-429e-8c4b-4646cd6b3e88</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Cta Espejo' or . = 'Cta Espejo')]</value>
-      <webElementGuid>2ce2b72d-e410-41b8-993a-e59fdabce097</webElementGuid>
+      <webElementGuid>95d3c993-7723-44a9-8d2b-0ebaeb847dd7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

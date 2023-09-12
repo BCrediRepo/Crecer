@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -64,7 +65,7 @@ WebUI.switchToWindowTitle('Consulta de Productos de Cuenta')
 WebUI.maximizeWindow()
 
 //Ingresamos los datos para la consulta
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/lnkNueva Seleccion'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/btndropdownTarifario'))
 
@@ -76,12 +77,22 @@ WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos d
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/lnkEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Validamos que aparezca el txt ProdSubprod
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/lblProdSubprod'), 6)
 
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //---------------------------------------------------------------------------------------------------------------------
 

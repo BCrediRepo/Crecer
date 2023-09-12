@@ -14,7 +14,7 @@
          <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLEBRESGUV</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>4bacc8b3-37b8-4102-b41c-b22d00524f6d</webElementGuid>
+      <webElementGuid>f3cf5977-13a0-4beb-ac53-b723506067f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ENQ-H-DATA ENQ-H-DATA_BCCLEBRESGUV</value>
-      <webElementGuid>03924a7d-120c-4ca7-b44e-dd2b91039246</webElementGuid>
+      <webElementGuid>4a085141-bf92-4c0c-975f-d83428aadc14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>05330013359</value>
-      <webElementGuid>1dea33cf-8d69-43c1-be03-e238176ec8ae</webElementGuid>
+      <webElementGuid>eb5cf566-c3f9-48c4-971d-c748c0f347c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEBRESGUV&quot;]</value>
-      <webElementGuid>1cf42fd6-510f-4395-9720-055dd2e10076</webElementGuid>
+      <webElementGuid>a674b023-2dd4-489e-a354-0d0cdece1aac</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>9016c1ea-b604-4ed2-a7ee-7802acad3d0a</webElementGuid>
+      <webElementGuid>e35a21b5-b264-4ddb-95ff-c9dc97766e0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta:'])[1]/following::td[1]</value>
-      <webElementGuid>b75266ca-3374-4c9e-84f5-8aa1d49ec117</webElementGuid>
+      <webElementGuid>aa884d8d-decf-4b73-86fe-9885a49d1ed3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>322088b4-2d7a-40f3-92e2-22b6c9606de6</webElementGuid>
+      <webElementGuid>732a00d0-1eac-4e05-b0b9-3a692b38285e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='- EL HADO SRL'])[1]/preceding::td[1]</value>
-      <webElementGuid>89096997-5d2a-437d-9a70-856faa90aeb5</webElementGuid>
+      <webElementGuid>3c459cd6-dc38-482b-9d2b-366068bbed81</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha valor:'])[1]/preceding::td[2]</value>
-      <webElementGuid>d850d429-7952-4bf5-894f-f39272d4bdb5</webElementGuid>
+      <webElementGuid>a329eee5-6db6-4833-b483-b04579e19341</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='05330013359']/parent::*</value>
-      <webElementGuid>c5202277-b518-41a9-95fc-023d12193b6f</webElementGuid>
+      <webElementGuid>aa603779-07d6-4c6e-9716-16df70e6d562</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[2]</value>
-      <webElementGuid>6a633969-3bd7-4810-8f4d-9b7a255c9618</webElementGuid>
+      <webElementGuid>9bc54d79-432f-47fb-900c-b8ba2a5c5c48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '05330013359' or . = '05330013359')]</value>
-      <webElementGuid>a8d678b2-d8d9-480a-a196-950bffb232e7</webElementGuid>
+      <webElementGuid>0a70df07-0294-4d85-a048-fba56f41bde5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

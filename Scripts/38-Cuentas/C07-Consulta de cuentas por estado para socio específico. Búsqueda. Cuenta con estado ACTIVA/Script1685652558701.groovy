@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -71,11 +72,21 @@ WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTA
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/btnEjecutar'))
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //validamos que aparezca el txt Nro de cuenta
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/lblNroCuenta'), 6)
 
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script

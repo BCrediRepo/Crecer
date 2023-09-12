@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CDC07-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cuenta no pertenece a filial del usuario</name>
+   <name>CCD07-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cuenta no pertenece a filial del usuario</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b83f85eb-637c-4ac8-bdc1-a890276501df</testCaseGuid>

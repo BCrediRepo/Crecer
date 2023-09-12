@@ -18,7 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -54,9 +55,22 @@ WebUI.switchToWindowTitle('BCCL.CQ.CHEQUERAS')
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/txtFechaDesde'), 6)
 WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/txtFechaDesde'), '20220704')
 WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/txtFechaHasta'), '20220718')
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/lnkEjecutar'))
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/lblIDCuenta'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/lblIDCuenta'), 6)
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

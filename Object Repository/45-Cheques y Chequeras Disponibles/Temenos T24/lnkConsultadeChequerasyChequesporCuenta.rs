@@ -6,6 +6,10 @@
    <elementGuidId>552adbe4-8673-4e02-93c6-034c9c6dc220</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de Chequeras y Cheques por Cuenta ' or . = 'Consulta de Chequeras y Cheques por Cuenta ')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONS.CHQ.CUENTA.FIL');processMenuHeaderText('Consulta de Chequeras y Cheques por Cuenta')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>294fdce8-f29f-4075-b0e5-bf3db494b667</webElementGuid>
+      <webElementGuid>44b2528f-38e3-478b-acb4-7ae0c51144ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONS.CHQ.CUENTA.FIL');processMenuHeaderText('Consulta de Chequeras y Cheques por Cuenta')</value>
-      <webElementGuid>3acb3574-7b60-4b48-8e9e-14a2607513d6</webElementGuid>
+      <webElementGuid>24f4d484-37a1-4639-adf9-f752ae5c44b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.CONS.CHQ.CUENTA.FIL');</value>
-      <webElementGuid>61ea24a9-f684-45c4-92cd-32ca002d38d7</webElementGuid>
+      <webElementGuid>2adec230-0cb6-430d-89be-4204e1b07e53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Chequeras y Cheques por Cuenta </value>
-      <webElementGuid>5a27e20a-82dd-49c7-8223-b845951f53d9</webElementGuid>
+      <webElementGuid>6524d6a6-1e4e-444f-93e8-13165619cfda</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[5]/a[1]</value>
-      <webElementGuid>9e121067-38f7-4c39-a0bc-61a4e777601e</webElementGuid>
+      <webElementGuid>a4c8891b-5a42-4f12-9968-6ad8ab273c94</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.CONS.CHQ.CUENTA.FIL');processMenuHeaderText('Consulta de Chequeras y Cheques por Cuenta')&quot;]</value>
-      <webElementGuid>9e7ce4ca-4d4c-4a2b-ba66-f68594205138</webElementGuid>
+      <webElementGuid>05728fbc-e19e-4bbf-b804-91fe16b9ce00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[16]/li/ul/li[2]/ul/li[5]/a</value>
-      <webElementGuid>5eae8c3c-cdab-42d8-b7de-7adb2b807645</webElementGuid>
+      <webElementGuid>c27a2dd3-794e-4fae-8587-f6219779deb2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Chequeras y Cheques por Cuenta')]</value>
-      <webElementGuid>eba45054-cb48-4020-9cee-b44762b21525</webElementGuid>
+      <webElementGuid>a34b9f51-35f1-4075-b503-b40db8f04b32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequera desde Emitida (40 - 90)'])[1]/following::a[1]</value>
-      <webElementGuid>cc203069-8fb3-48c7-ba98-0ee762dc1a65</webElementGuid>
+      <webElementGuid>1503a2cd-99c8-4f27-95b9-28051d7b99e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta / Conf de Chequeras con Errores (21)'])[1]/following::a[2]</value>
-      <webElementGuid>75fb4764-6a4a-4069-b26c-90ce3f2adbe8</webElementGuid>
+      <webElementGuid>5078d5ee-fe1d-473c-9c78-2e5018b48e38</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Chequeras Total'])[1]/preceding::a[1]</value>
-      <webElementGuid>ea51d5d4-89f1-4744-9726-c385bab52b39</webElementGuid>
+      <webElementGuid>43ea0559-069a-4443-b11c-a5750cb2ab3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cheques Certificados'])[1]/preceding::a[2]</value>
-      <webElementGuid>b336b1e1-cb48-43c2-b357-9ca19d9041d4</webElementGuid>
+      <webElementGuid>86a907a3-9f6a-4c92-b772-00f47f212ef2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Chequeras y Cheques por Cuenta']/parent::*</value>
-      <webElementGuid>421fb127-f6b2-4b40-8139-4ff2a5880ac1</webElementGuid>
+      <webElementGuid>1b6209d9-a5b3-4e1c-b64d-5b83de49e410</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.CONS.CHQ.CUENTA.FIL');&quot;)]</value>
-      <webElementGuid>9f9ed532-4b51-4245-9502-0801a89f938a</webElementGuid>
+      <webElementGuid>38ad6074-df18-4448-bd72-0b208c5534cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/ul/li[5]/a</value>
-      <webElementGuid>a924c05a-9309-49de-bcad-22b58bc2d8f3</webElementGuid>
+      <webElementGuid>d9b46b2d-9ae7-4a21-848b-54f89be4e845</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.CONS.CHQ.CUENTA.FIL&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Chequeras y Cheques por Cuenta ' or . = 'Consulta de Chequeras y Cheques por Cuenta ')]</value>
-      <webElementGuid>996ea949-70ae-4e9d-8f46-b577af281d10</webElementGuid>
+      <webElementGuid>cb7fdd3b-0d4b-4c1e-8466-a0c43cc57e81</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
