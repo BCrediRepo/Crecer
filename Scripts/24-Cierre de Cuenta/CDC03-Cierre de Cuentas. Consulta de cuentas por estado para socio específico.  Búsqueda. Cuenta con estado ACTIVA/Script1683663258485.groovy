@@ -54,9 +54,9 @@ WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
 
 WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtClienteID'), '1002131534')
 
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
+//WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
 WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtEstado'), 'ACT')
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
+//WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
