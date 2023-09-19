@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD17-Búsqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil casa central</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ccf1cef4-b423-4017-bb9b-7a5d3d2defa1</testCaseGuid>
+</TestCaseEntity>
