@@ -6,15 +6,19 @@
    <elementGuidId>41cbaa56-eea8-44e6-a871-3db2e3071832</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>a</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.INHAB.PROPIOS');processMenuHeaderText('Consulta y Modificacion de Inhabilitados prop')&quot;]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>a</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta y Modificacion de Inhabilitados prop ' or . = 'Consulta y Modificacion de Inhabilitados prop ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>1ca664b4-e078-4f2e-9a79-349fdea77b2a</webElementGuid>
+      <webElementGuid>1a9145f0-1164-4455-ae24-80912ec9e86f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +34,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.INHAB.PROPIOS');processMenuHeaderText('Consulta y Modificacion de Inhabilitados prop')</value>
-      <webElementGuid>d6da2dde-3b73-4fc4-9133-c73397abdfaa</webElementGuid>
+      <webElementGuid>8681f076-969a-4ac2-bed7-f47ffc39b6bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.INHAB.PROPIOS');</value>
-      <webElementGuid>0c0d2388-40ff-4fda-9c4a-5f6e1bd93208</webElementGuid>
+      <webElementGuid>f83faf16-a977-480c-b2b6-ca210873212a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta y Modificacion de Inhabilitados prop </value>
-      <webElementGuid>214c7e3d-0af4-46c6-8cc1-6db899d0c377</webElementGuid>
+      <webElementGuid>d7a83590-fd85-4a5d-9b02-d83cc307bebd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>2f3e1950-f9b0-4d41-a5d1-2fdee5577c3f</webElementGuid>
+      <webElementGuid>1e86cf8c-b5d8-4e7f-b51e-aff8bd65ddb6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.INHAB.PROPIOS');processMenuHeaderText('Consulta y Modificacion de Inhabilitados prop')&quot;]</value>
-      <webElementGuid>02bcb5e0-75f1-4368-ab2b-74aec2a0c575</webElementGuid>
+      <webElementGuid>68fc6c4c-1106-4e7d-91fd-538f740fc4d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul/li/ul/li/a</value>
-      <webElementGuid>4bed5058-220f-44d2-8393-99292f130a04</webElementGuid>
+      <webElementGuid>9f77adf5-ab4b-4bd1-8f69-35663a03c6b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta y Modificacion de Inhabilitados prop')]</value>
-      <webElementGuid>b5c5996c-a092-480e-825a-d548c58f1ff9</webElementGuid>
+      <webElementGuid>599f54df-78a1-4762-98c4-743568be7567</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Inhabilitados'])[1]/following::a[1]</value>
-      <webElementGuid>2598e91b-fa36-4683-8d46-882b381b0862</webElementGuid>
+      <webElementGuid>e8fd28b3-c560-4e4e-8605-1afa24623e97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion Cambio de Estado'])[1]/preceding::a[1]</value>
-      <webElementGuid>daea360d-a85f-42a3-8cee-861e69a24033</webElementGuid>
+      <webElementGuid>7df142ce-8375-481e-8d58-b6f2031a480d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Cuentas Candidatas a ser Cerradas'])[1]/preceding::a[2]</value>
-      <webElementGuid>782f604c-904f-4d67-8ac7-5c6cccaab19c</webElementGuid>
+      <webElementGuid>701aba2a-b89a-4f23-8731-73d82e43b7cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta y Modificacion de Inhabilitados prop']/parent::*</value>
-      <webElementGuid>611fbc47-22a4-49dd-abef-353068efdbe4</webElementGuid>
+      <webElementGuid>3f00eae9-a3cc-40d6-900e-1370f8088bcd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.INHAB.PROPIOS');&quot;)]</value>
-      <webElementGuid>035298aa-b41e-47c3-a72a-e1339c2aa4ad</webElementGuid>
+      <webElementGuid>5fddc1d8-75d1-4601-8193-80a5d0da18bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a</value>
-      <webElementGuid>f64b7737-1fca-423c-967c-f9801dffc0a0</webElementGuid>
+      <webElementGuid>c58d9198-a113-456d-aae8-00ee9de7e780</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.INHAB.PROPIOS&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta y Modificacion de Inhabilitados prop ' or . = 'Consulta y Modificacion de Inhabilitados prop ')]</value>
-      <webElementGuid>c660bade-f688-497e-b80d-af5e47e9288d</webElementGuid>
+      <webElementGuid>d2c99eb4-f1d3-4b83-910b-bb406c45289b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

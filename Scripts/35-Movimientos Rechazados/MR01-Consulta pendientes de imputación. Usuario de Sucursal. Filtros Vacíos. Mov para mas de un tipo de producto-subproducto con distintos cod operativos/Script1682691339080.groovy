@@ -24,8 +24,8 @@ import java.util.Date
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,18), findTestData('MainData/Users').getValue(2,18))
+//Login antes con el 18
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2,24))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -68,11 +68,11 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.maximizeWindow()
 
 //Toma un ScreenShot
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/tituloBCCL.MOV.RECHAZADOS'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/tituloBCCL.MOV.RECHAZADOS'),6)
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verifica los datos del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtID'),6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtID'),6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtID'),6)
 
 // Captura el tiempo de finalización

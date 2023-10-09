@@ -20,9 +20,8 @@ import org.openqa.selenium.Keys as Keys
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
-        2, 1))
+//Login antes con el 1
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
 
 WebUI.maximizeWindow()
 

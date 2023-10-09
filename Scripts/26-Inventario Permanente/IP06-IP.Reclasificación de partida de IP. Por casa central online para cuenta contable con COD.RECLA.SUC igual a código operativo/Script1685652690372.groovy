@@ -100,7 +100,7 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.IP.RECLA.PARTIDAS')
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/txtCodigoIP'), ' 0099')
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/txtCodigoIP'), '0099')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/txtIDPersona'), '1002388512')
 

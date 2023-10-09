@@ -54,4 +54,19 @@
       <initValue>''</initValue>
       <name>vMOTHAB</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Num de Cuenta</description>
+      <initValue>''</initValue>
+      <name>vCSCuenta</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Monto para la carga de saldo</description>
+      <initValue>''</initValue>
+      <name>vCSImporte</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Concepto de la Txn</description>
+      <initValue>''</initValue>
+      <name>vCSConcepto</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
