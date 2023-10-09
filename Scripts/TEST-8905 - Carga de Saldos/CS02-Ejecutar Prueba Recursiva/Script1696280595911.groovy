@@ -20,21 +20,16 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-//def myTest1 = findTestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta')
 
-//def myTest2 = findTestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta')
+for (def row = 1; row <= 10; row++) {
+    GlobalVariable.vCSCuenta = findTestData('MainData/Carga Saldos').getValue(1, row)
 
-//def data = TestDataFactory.findTestData('Data Files/MainData/DatosNCD')
-//el archivo podria estar en la carpeta Test Data 
-//def totalRows = data.getRowNumbers()
-for (def row = 1; row <= 15; row++) {
-    GlobalVariable.vDNI = findTestData('MainData/DatosNCD').getValue(1, row)
-    GlobalVariable.vFECHA = findTestData('MainData/DatosNCD').getValue(2, row)
-	GlobalVariable.vCODPROD = findTestData('MainData/DatosNCD').getValue(3, row)
-	GlobalVariable.vTARIFARIO = findTestData('MainData/DatosNCD').getValue(4, row)
-	WebUI.callTestCase(findTestCase('TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta'), [:])
-	WebUI.callTestCase(findTestCase('TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta'), [:])
+    GlobalVariable.vFECHA = findTestData('MainData/Carga Saldos').getValue(2, row)
 
+    GlobalVariable.vCODPROD = findTestData('MainData/Carga Saldos').getValue(3, row)
+
+    WebUI.callTestCase(findTestCase('TEST-8905 - Carga de Saldos/CS01-Alta de Nota de Crédito Ajuste'), [:])
+	
 } 
 
 //---------------------------------------------------------------------------------------------------------------------

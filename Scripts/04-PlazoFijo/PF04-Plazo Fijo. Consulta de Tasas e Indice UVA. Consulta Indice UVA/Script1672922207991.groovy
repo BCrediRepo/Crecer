@@ -22,22 +22,27 @@ import java.time.format.DateTimeFormatter
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+//Login antes con el user 3
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,25), findTestData('MainData/Users').getValue(2,25))
 WebUI.maximizeWindow()
 
-//Se accede al menu Plazo Fijo
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.INDICES.CER.UVA')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle('Consulta Indices')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'), 3)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultadeTasaseIndices'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/01-Consulta de Tasas e Indices/lnkConsultaIndices'))
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,7))
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/lblConsultaIndices'))
+//Se accede al menu Plazo Fijo SE COMENTA PARA PRUEBA DE PERFORMANCE
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
+//
+//WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'), 3)
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/lnkConsultasdePlazoFijo'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/lnkConsultadeTasaseIndices'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/01-Consulta de Tasas e Indices/lnkConsultaIndices'))
+//WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,7))
+//WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/lblConsultaIndices'))
 
 //Inserta un indice UVA a buscar
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/txtIDindice'), "CER.201010")
+WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/txtIDindice'), "UVA.202207")
+//WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/03-ConsultaIndices/txtIDindice'), "CER.201010")
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

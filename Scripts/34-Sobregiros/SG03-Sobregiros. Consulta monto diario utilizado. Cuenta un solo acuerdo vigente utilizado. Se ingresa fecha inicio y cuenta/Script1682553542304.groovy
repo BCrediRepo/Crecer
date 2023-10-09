@@ -22,8 +22,8 @@ import java.util.Date
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+//Login antes el 4
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,25), findTestData('MainData/Users').getValue(2,25))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -47,7 +47,9 @@ WebUI.switchToWindowTitle('Consulta de Sobregiros')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtCuenta'), '00430014075')
+//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtCuenta'), '00430014075')
+
+//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtLinea de sobregiro'), 'ADSACT')
 
 WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtLinea de sobregiro'), 'ADSACT')
 

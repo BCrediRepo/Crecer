@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblEstado</name>
+   <name>lblSucursal</name>
    <tag></tag>
-   <elementGuidId>78f400bb-117b-4773-8293-6f210ea8f489</elementGuidId>
+   <elementGuidId>47ddb48d-0394-49f8-ac5e-febb07e44eed</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>td.ENQ-H-TITLE.ENQ-H-TITLE_BCCLEACCOMBONIFICACION</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[6]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'ACT' or . = 'ACT')]</value>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,86 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>6f8d76bf-bc7b-4c14-9aac-8e46e78eb846</webElementGuid>
+      <webElementGuid>dd98a603-f9fb-4645-bf67-37f0da797bf2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLEACCOMBONIFICACION</value>
+      <webElementGuid>59b7e3b4-caa9-4793-b23a-b9a91cdb1948</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>ACT</value>
-      <webElementGuid>b1760403-d6f7-4e6a-bfff-18a765df5e4d</webElementGuid>
+      <value>Sucursal:</value>
+      <webElementGuid>640585b5-99e4-4e4c-a7e4-7c7c61ccb4d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[6]</value>
-      <webElementGuid>26597b06-75f7-435b-8904-8817c27695fd</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLEACCOMBONIFICACION&quot;]</value>
+      <webElementGuid>a94d340b-a387-4e42-9c03-1e302963bb49</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[6]</value>
-      <webElementGuid>32153335-b640-4eb5-92ac-d9b9a9aa7e03</webElementGuid>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      <webElementGuid>f57978a2-953b-4099-9b0c-10078bb06e94</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='INPLACA SA'])[1]/following::td[1]</value>
-      <webElementGuid>3a29f48e-8fae-4143-8f67-5d2d35a5f79d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
+      <webElementGuid>c949da73-10bb-4097-9727-a589cb23e934</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Corriente Comercial'])[1]/following::td[3]</value>
-      <webElementGuid>bc80cc45-244e-423a-b5ab-2fe27bd60aba</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
+      <webElementGuid>c14936e2-9087-4398-8c10-89168e99142f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[2]</value>
-      <webElementGuid>5f6a02ba-f716-4b00-9dd3-c234687718fa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NOMBRE:'])[1]/preceding::td[2]</value>
+      <webElementGuid>8f2092b5-255e-4610-9e9c-29dd4ee4a709</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.AC.CONSULTA.X.ESTADO'])[2]/preceding::td[5]</value>
-      <webElementGuid>c960b295-a748-485d-a6c2-c1d910857343</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Centro'])[1]/preceding::td[3]</value>
+      <webElementGuid>970b7a7a-483b-4344-9ef3-8baff5682702</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='ACT']/parent::*</value>
-      <webElementGuid>fd1416f5-e26c-4e3f-9557-3177b7d9ab9c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Sucursal:']/parent::*</value>
+      <webElementGuid>caa214de-cc68-440d-ba25-bdbb457779f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[6]</value>
-      <webElementGuid>508174f6-567c-4ae8-a22d-369f8b384b99</webElementGuid>
+      <value>//tr[2]/td</value>
+      <webElementGuid>eb2db9e8-e4ba-48be-8bdc-7c38c086e110</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'ACT' or . = 'ACT')]</value>
-      <webElementGuid>a459b6b4-b4e6-473b-ac79-0254a2f9177c</webElementGuid>
+      <value>//td[(text() = 'Sucursal:' or . = 'Sucursal:')]</value>
+      <webElementGuid>6a283f0f-3ede-43ec-8d32-6caf7131f570</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

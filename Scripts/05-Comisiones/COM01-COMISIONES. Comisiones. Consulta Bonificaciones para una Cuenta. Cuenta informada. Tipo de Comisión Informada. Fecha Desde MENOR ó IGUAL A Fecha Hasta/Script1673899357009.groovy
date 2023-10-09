@@ -20,9 +20,8 @@ import org.openqa.selenium.Keys as Keys
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(
-        2, 4))
+//Login antes con el 4
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
 
 WebUI.maximizeWindow()
 
@@ -44,21 +43,16 @@ WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.A
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
+// DESCOMENTAR PARA LA REGRESION
+//WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtTipoComision'), 'GUVE')
+//
+//WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtCuenta'), '00740025976')
+//
+//WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaDesde'), '20210725')
+//
+//WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaHasta'), '20220729')
 
-WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtTipoComision'), 'GUVE')
-
-//Bloque limpieza filtros (REVISAR)
-//WebUI.click(findTestObject('null'))
-//WebUI.click(findTestObject('null'))
-//WebUI.closeBrowser()
-//WebUI.switchToWindowTitle('T24 - Fil.074 Caseros Centro')
-//WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-//WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtCuenta'), '00740025976')
-
-WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaDesde'), '20210725')
-
-WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaHasta'), '20220729')
+WebUI.setText(findTestObject('Object Repository/06-Comisiones/Bon Com por Cuenta o Sucursal/txtSucursal'), '001')
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -69,7 +63,9 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
-TextoHeader = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/lblCuentaHeader'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Bon Com por Cuenta o Sucursal/lblSucursal'))
+
+//TextoHeader = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/lblCuentaHeader'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

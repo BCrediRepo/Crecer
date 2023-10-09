@@ -42,10 +42,10 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,8))
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'), 6)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'), 6)
-WebUI.delay(10)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'), 6)
+//WebUI.delay(10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'))
 
 // Captura el tiempo de finalización

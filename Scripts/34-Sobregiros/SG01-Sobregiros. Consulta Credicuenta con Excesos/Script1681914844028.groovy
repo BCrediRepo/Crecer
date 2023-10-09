@@ -21,8 +21,8 @@ import org.openqa.selenium.Keys as Keys
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+//Login antes con el 3
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -39,7 +39,9 @@ WebUI.maximizeWindow()
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
-WebUI.switchToWindowTitle('T24 - Fil.089 M.del Plata Ctr')
+//WebUI.delay(40)
+
+WebUI.switchToWindowIndex(0)
 
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.ACDOS')
 
@@ -47,12 +49,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.ACDOS')
 
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaDesde'), '20220718')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaHasta'), '20220725')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtEstado'), 'AC')
-
+//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaDesde'), '20220718')
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaDesde'), '20150725')
+//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaHasta'), '20220725')
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaHasta'), '20220729')
+//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtEstado'), 'AC')
+WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtEstado'), 'VC')
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 

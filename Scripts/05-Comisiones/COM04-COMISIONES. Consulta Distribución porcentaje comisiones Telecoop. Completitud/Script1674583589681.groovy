@@ -63,7 +63,7 @@ long startTime = System.currentTimeMillis()
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.delay(60)
+WebUI.delay(40)
 
 //WebUI.waitForElementVisible(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'), 70)
 SucOrigenH = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'))
