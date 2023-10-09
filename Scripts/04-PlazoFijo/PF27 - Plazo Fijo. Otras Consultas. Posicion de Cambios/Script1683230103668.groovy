@@ -49,10 +49,6 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Posicion de Cambio/lblMonedaConsulta'))
 
-Moneda = WebUI.getText(findTestObject('05-PlazoFijo/Posicion de Cambio/lblMonedaConsulta'))
-
-assert Moneda == "ARS"
-
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
 
@@ -61,8 +57,22 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
+//---------------------------
 
-//-----------------------------------------------------------------
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
+
+
+Moneda = WebUI.getText(findTestObject('05-PlazoFijo/Posicion de Cambio/lblMonedaConsulta'))
+
+assert Moneda == "ARS"
+
+//Control fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

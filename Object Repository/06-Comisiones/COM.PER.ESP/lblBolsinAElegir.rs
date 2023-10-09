@@ -6,12 +6,12 @@
    <elementGuidId>f791e312-c6f8-43df-9ef5-de983dd1a510</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='dropDownRow6']/td/b</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#dropDownRow2 > td.coloumntddata.coloumntddata_EBCCLEBCOMPERESP > b</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow8']/td/b</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>b</value>
-      <webElementGuid>468de658-2381-478e-8e43-ea2bf6556b2a</webElementGuid>
+      <webElementGuid>fd69b4d6-d2cd-4868-b96f-3fceac6d1450</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>BOLSIN.00030112867</value>
-      <webElementGuid>3517bc85-296b-4142-b15e-a9d79b76888b</webElementGuid>
+      <webElementGuid>9776a17e-0696-4aa2-a0a1-19d282101bb3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;dropDownRow2&quot;)/td[@class=&quot;coloumntddata coloumntddata_EBCCLEBCOMPERESP&quot;]/b[1]</value>
-      <webElementGuid>ef307b97-5bc2-4daa-81e2-de875845de8a</webElementGuid>
+      <webElementGuid>a257948d-7faa-47f5-9a0a-8a55aef53162</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='dropDownRow2']/td/b</value>
-      <webElementGuid>c9dc87c2-4f49-4c6c-b301-f0ea36e7d6fe</webElementGuid>
+      <webElementGuid>e3525011-1d20-40bc-aa4a-8f215fcf3e77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN'])[1]/following::b[1]</value>
-      <webElementGuid>cdaa8604-1000-419c-a7fb-d5b335154d3b</webElementGuid>
+      <webElementGuid>f220e8fb-0230-444d-84c0-420aa9291c04</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN.00010197932'])[1]/following::b[1]</value>
-      <webElementGuid>d86b6fd3-64bd-4d10-8c8a-02e18b909f71</webElementGuid>
+      <webElementGuid>5dafd193-3868-46aa-bd8c-a88a887f22c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN'])[2]/preceding::b[1]</value>
-      <webElementGuid>e86b922b-5adc-4304-989e-2fd1fcfb790d</webElementGuid>
+      <webElementGuid>b3426e43-a0e4-455c-aedc-3d1d4c946b20</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BOLSIN.00030205466'])[1]/preceding::b[1]</value>
-      <webElementGuid>2786425e-64d5-453d-aa07-12df25954646</webElementGuid>
+      <webElementGuid>a3bcdf43-7f4b-4fcd-aa4c-52d070fbbe6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='BOLSIN.00030112867']/parent::*</value>
-      <webElementGuid>95ecc82b-5a11-4e67-b687-2a2952178ef5</webElementGuid>
+      <webElementGuid>4b576642-f5a3-4dd4-9127-59dedc1e208b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td/b</value>
-      <webElementGuid>a4b95f2a-7c79-497f-b18b-87b238500332</webElementGuid>
+      <webElementGuid>d2cf5e2f-6ac4-4f47-8595-3227fb6607e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//b[(text() = 'BOLSIN.00030112867' or . = 'BOLSIN.00030112867')]</value>
-      <webElementGuid>323a4044-4c28-4841-95c2-adbb616cda55</webElementGuid>
+      <webElementGuid>4bb43561-7f7d-42ba-9f28-d26494cdc510</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

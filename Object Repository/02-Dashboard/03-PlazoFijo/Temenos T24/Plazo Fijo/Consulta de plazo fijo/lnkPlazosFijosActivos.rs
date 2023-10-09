@@ -6,19 +6,19 @@
    <elementGuidId>ac85ea6c-f41a-4f78-bbd5-b3cc06a3f29c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG');processMenuHeaderText('Plazos Fijos Activos ')&quot;]</value>
+         <key>CSS</key>
+         <value>ul.menuMargin:nth-child(4) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG');processMenuHeaderText('Plazos Fijos Activos ')&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG&quot; , &quot;'&quot; , &quot;);&quot;) and (contains(text(), 'Plazos Fijos Activos  ') or contains(., 'Plazos Fijos Activos  '))]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>07ab3744-4c72-45f1-b363-aaaf0c20cf66</webElementGuid>
+      <webElementGuid>3cc04ff6-9047-4cfa-94b9-4ddba7ba420e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG');processMenuHeaderText('Plazos Fijos Activos ')</value>
-      <webElementGuid>9ebd78e9-34c6-4186-93b7-6a491217e819</webElementGuid>
+      <webElementGuid>b6536211-a835-484b-8dee-dc38163db53f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG');</value>
-      <webElementGuid>58d313bf-79f6-4215-9a38-043dd538dfcc</webElementGuid>
+      <webElementGuid>8c688aec-631d-420a-a01b-1de5eb3dda24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Plazos Fijos Activos  </value>
-      <webElementGuid>f26e02da-d9b6-4d33-9a4b-ba9b1b3013af</webElementGuid>
+      <webElementGuid>80a1de2a-f319-4d99-bb35-f1bc813493a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>cbee159c-2df5-40df-8d02-a4970d2ead38</webElementGuid>
+      <webElementGuid>e52ae660-78e3-47c4-ad5a-a22b89670ffc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG');processMenuHeaderText('Plazos Fijos Activos ')&quot;]</value>
-      <webElementGuid>b3d2506b-99b6-4c91-b35b-106646de2f38</webElementGuid>
+      <webElementGuid>5ce1368b-fa44-40c4-bd93-766aa7d269e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/ul/li/ul/li[2]/ul/li/a</value>
-      <webElementGuid>c5ac9c52-e305-4a62-87aa-ae2cffc2f551</webElementGuid>
+      <webElementGuid>56215b41-65ef-4544-a2d8-fd3df42ba14c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>(//a[contains(text(),'Plazos Fijos Activos')])[2]</value>
-      <webElementGuid>a22bb107-488c-40e7-9160-a2b2477bd89f</webElementGuid>
+      <webElementGuid>b8620eb6-2240-4fe3-bdee-8320b3550283</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas Segmentadas por Firmante'])[1]/following::a[1]</value>
-      <webElementGuid>6c3226fb-26b3-41e2-9266-acb5fd38f7f1</webElementGuid>
+      <webElementGuid>1fb839e4-ea31-472c-a27d-d04cd54686a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Vencidos Acreditados en cuenta'])[1]/following::a[1]</value>
-      <webElementGuid>72a204fb-8b43-4248-814f-492c653c5760</webElementGuid>
+      <webElementGuid>58170131-af25-47a9-8ba0-2a74bc901a32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Vencidos Inmovilizados impagos'])[2]/preceding::a[1]</value>
-      <webElementGuid>7f0ba601-0d5a-4596-a752-ede282c11cfa</webElementGuid>
+      <webElementGuid>dbefbe8e-dbd7-4abf-9c60-e3d3e076fc94</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Vencidos Acreditados en cuenta'])[2]/preceding::a[2]</value>
-      <webElementGuid>d0a1f665-befd-45b8-8d12-ce0b66e86541</webElementGuid>
+      <webElementGuid>11058398-c01d-490d-ad76-017acecf95af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +122,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG');&quot;)]</value>
-      <webElementGuid>eccc2898-61f2-4958-b241-7eca35de4eb8</webElementGuid>
+      <webElementGuid>9d2d62aa-6942-4c14-9a14-20294c599077</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[4]/li/ul/li/ul/li[2]/ul/li/a</value>
-      <webElementGuid>09f55add-f9ba-48d7-8628-99a36062411e</webElementGuid>
+      <webElementGuid>82668ccb-d8f6-4afa-9133-ee453a3731ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.NOFILE.ACTIVOS.FIR.SEG&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Plazos Fijos Activos  ' or . = 'Plazos Fijos Activos  ')]</value>
-      <webElementGuid>338a8c09-26db-4361-872e-994060319436</webElementGuid>
+      <webElementGuid>b8b50ed6-7bd6-4b8e-a744-eb59b6d0a9d9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>frmFirmas</name>
+   <tag></tag>
+   <elementGuidId>4c139ddb-1166-48a8-bb75-aed78fa5c4ac</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/frameset/frameset/frame
+</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>IFRAME</value>
+      <webElementGuid>ad9d3f5a-ee80-4e03-b2bc-0cc34cd9c1e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/frameset/frameset/frame
+</value>
+      <webElementGuid>0fbd3d5f-13d0-4451-8a5d-342c606f59c0</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

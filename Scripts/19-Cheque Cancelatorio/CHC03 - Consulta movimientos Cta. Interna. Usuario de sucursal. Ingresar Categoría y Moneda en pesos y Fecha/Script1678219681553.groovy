@@ -25,7 +25,9 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
+//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
+
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
 
 WebUI.maximizeWindow()
 
@@ -51,7 +53,8 @@ WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.E.CHQ.CANCELA/btnLupa'))
 
 WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 
-WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
+//WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
+WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '15901')
 
 WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtMonedaValue211'), 'ARS')
 
@@ -70,6 +73,16 @@ long endTime = System.currentTimeMillis()
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
