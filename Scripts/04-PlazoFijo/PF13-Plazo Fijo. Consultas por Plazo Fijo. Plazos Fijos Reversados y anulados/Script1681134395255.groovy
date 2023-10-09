@@ -53,6 +53,16 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
+
 WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Consulta de Operaciones Reversadas/lblFecha'))
 
 Fecha = WebUI.getText(findTestObject('05-PlazoFijo/Consulta de Operaciones Reversadas/lblNumeroFecha'))

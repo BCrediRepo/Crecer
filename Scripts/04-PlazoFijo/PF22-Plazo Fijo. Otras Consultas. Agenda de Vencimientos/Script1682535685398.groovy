@@ -63,6 +63,15 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

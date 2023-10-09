@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,29), findTestData('MainData/Users').getValue(2,29))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.IP.PARTIDAS.ACUM.FIL
@@ -65,7 +65,7 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/btnEjecutar'))
 
 //Espera y Verifica que se muestren las columnas del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigo IP'),30)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigo IP'),30)
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblMoneda'))
 
 // Captura el tiempo de finalización
@@ -75,6 +75,15 @@ long endTime = System.currentTimeMillis()
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println(TotalRegistros)
+
+//-----------------------------
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblCodigo IP'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-8704 - Pruebas Performance/BCCL.E.IP.PARTIDAS.ACUM.FIL/lblMoneda'))
