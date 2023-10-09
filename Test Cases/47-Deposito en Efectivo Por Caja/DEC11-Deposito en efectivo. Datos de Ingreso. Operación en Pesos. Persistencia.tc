@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC11-Deposito en efectivo. Datos de Ingreso. Operación en Pesos. Persistencia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3cf797bd-fae7-4b3f-8793-32c138dae531</testCaseGuid>
+</TestCaseEntity>

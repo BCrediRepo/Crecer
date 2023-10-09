@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsultaSucursales</name>
+   <tag></tag>
+   <elementGuidId>90a6ea22-33f3-4feb-83e7-f758ef1f57cf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='myTable']/tbody/tr[4]/td/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>71bd20e7-ea87-4c8e-89ee-a4d8f773faeb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doThisContextEnquiry('TELLER-ACCOUNT.2_BCCL.E.GEN.SUCURSAL_ACCOUNT.2_','TELLER-ACCOUNT.2','ACCOUNT.2','','fieldName:ACCOUNT.2','appreq')</value>
+      <webElementGuid>c2b99c3f-3d6f-4173-9f95-d0d7fe49adae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta Sucursales</value>
+      <webElementGuid>b7498135-9001-47e1-a693-4d2e41ab5b82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;myTable&quot;)/tbody[1]/tr[4]/td[1]/a[1]</value>
+      <webElementGuid>3c808d57-bf69-441b-8bff-4e49ff10d881</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='myTable']/tbody/tr[4]/td/a</value>
+      <webElementGuid>3f6b9943-5a9a-4717-b02b-ea4d7919d6f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Consulta Sucursales')]</value>
+      <webElementGuid>3f1315b0-544c-4643-b112-c258cbb107f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Saldos de la Cuenta'])[1]/following::a[1]</value>
+      <webElementGuid>61eac759-72d0-4161-851e-b8ab15db9464</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/following::a[2]</value>
+      <webElementGuid>e44a8b8a-57ff-4411-bc4b-c80826b9aac1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::a[1]</value>
+      <webElementGuid>ae868a64-87f3-42fa-a0b8-3fcd6309c674</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::a[1]</value>
+      <webElementGuid>cf82163a-203d-4879-9235-f85a94e77e61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta Sucursales']/parent::*</value>
+      <webElementGuid>a1d99326-4cf8-489e-b029-deb9ae27aa7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doThisContextEnquiry('TELLER-ACCOUNT.2_BCCL.E.GEN.SUCURSAL_ACCOUNT.2_','TELLER-ACCOUNT.2','ACCOUNT.2','','fieldName:ACCOUNT.2','appreq')&quot;)]</value>
+      <webElementGuid>b439ecd4-5b0b-4d0c-a98f-2722a24048dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td/a</value>
+      <webElementGuid>ac63a8b1-1f77-4941-a269-4dc50892c2b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doThisContextEnquiry(&quot; , &quot;'&quot; , &quot;TELLER-ACCOUNT.2_BCCL.E.GEN.SUCURSAL_ACCOUNT.2_&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;TELLER-ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;fieldName:ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;appreq&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Consulta Sucursales' or . = 'Consulta Sucursales')]</value>
+      <webElementGuid>9d19a30b-f7e8-4ffd-b7dc-4c651600c964</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

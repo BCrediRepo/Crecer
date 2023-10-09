@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnContextEnquiry</name>
+   <tag></tag>
+   <elementGuidId>4bececad-dab7-4659-a83d-5ad4cda5130f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a[title=&quot;Context Enquiry&quot;] > img.ascell.ascell_TELLER.ascell_TELLER_DEPOSITOEFECTIVOVENTANILLA</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[2]/td[2]/a/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>d4da2454-d4b3-47e4-9edc-f76a3857308f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Context Enquiry</value>
+      <webElementGuid>259daa0d-948d-4891-9c2b-f9b57f2b8885</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_TELLER ascell_TELLER_DEPOSITOEFECTIVOVENTANILLA</value>
+      <webElementGuid>4f75c798-819f-4452-8bec-0a196c82018e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/context.gif</value>
+      <webElementGuid>d0c35586-36e7-4f0b-93bb-f99e41b16162</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[2]/td[@class=&quot;action_container action_container_TELLER action_container_TELLER_DEPOSITOEFECTIVOVENTANILLA&quot;]/a[1]/img[@class=&quot;ascell ascell_TELLER ascell_TELLER_DEPOSITOEFECTIVOVENTANILLA&quot;]</value>
+      <webElementGuid>a0193408-440a-4709-aa4f-3faf3aab7fc4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[2]/td[2]/a/img</value>
+      <webElementGuid>bde2ec29-c708-45c3-98b5-1efd33b94590</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@title='Context Enquiry']</value>
+      <webElementGuid>6d708a93-dfe2-4606-a314-1441ef93dce3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[2]/a/img</value>
+      <webElementGuid>cbbf47e3-2c4d-4665-85cd-7b716ae47e0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@title = 'Context Enquiry' and @src = '../plaf/images/bccl/deal/context.gif']</value>
+      <webElementGuid>107081aa-d172-4557-b9e9-c7059b84aff4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

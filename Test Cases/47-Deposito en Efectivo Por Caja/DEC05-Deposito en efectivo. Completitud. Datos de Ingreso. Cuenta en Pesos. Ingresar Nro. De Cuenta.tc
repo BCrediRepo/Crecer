@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC05-Deposito en efectivo. Completitud. Datos de Ingreso. Cuenta en Pesos. Ingresar Nro. De Cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4c7be5b-948f-4c52-9cc6-fe183d1c84fb</testCaseGuid>
+</TestCaseEntity>

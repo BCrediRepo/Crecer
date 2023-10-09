@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsultadeCuentasporFirmante</name>
+   <tag></tag>
+   <elementGuidId>35c5249f-6aaa-4305-a683-65c8ff90ff66</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='myTable']/tbody/tr/td/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>b53b6666-847f-4037-9144-0759ce0ead14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doThisContextEnquiry('TELLER-ACCOUNT.2_BCCL.E.AC.FIRM_ACCOUNT.2_','TELLER-ACCOUNT.2','ACCOUNT.2','','fieldName:ACCOUNT.2','appreq')</value>
+      <webElementGuid>e3048fac-07ee-4942-b8d3-6861b0e235f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta de Cuentas por Firmante</value>
+      <webElementGuid>3c84d90f-2886-4f32-8bfa-de3cad5b3b3a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;myTable&quot;)/tbody[1]/tr[1]/td[1]/a[1]</value>
+      <webElementGuid>e2231154-e7ff-404d-b184-0b6c75ebea1f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='myTable']/tbody/tr/td/a</value>
+      <webElementGuid>458f7282-8f22-4d35-9b1c-c630912a4f83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Consulta de Cuentas por Firmante')]</value>
+      <webElementGuid>bacd4c90-7049-45cb-8a52-8327a8e7108f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::a[1]</value>
+      <webElementGuid>57761cfc-6bc9-4f33-ad81-d8cd368c3aab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Saldos de la Cuenta'])[1]/preceding::a[2]</value>
+      <webElementGuid>29cbe87d-f9a5-4609-9fb3-7be074298591</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta de Cuentas por Firmante']/parent::*</value>
+      <webElementGuid>92394e70-7808-4d17-b7d4-7c534fdca0ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doThisContextEnquiry('TELLER-ACCOUNT.2_BCCL.E.AC.FIRM_ACCOUNT.2_','TELLER-ACCOUNT.2','ACCOUNT.2','','fieldName:ACCOUNT.2','appreq')&quot;)]</value>
+      <webElementGuid>1069149b-13ec-442e-b88d-e8c1b2707e0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>219a93d5-447a-4841-b7e9-2355724a12cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doThisContextEnquiry(&quot; , &quot;'&quot; , &quot;TELLER-ACCOUNT.2_BCCL.E.AC.FIRM_ACCOUNT.2_&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;TELLER-ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;fieldName:ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;appreq&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Consulta de Cuentas por Firmante' or . = 'Consulta de Cuentas por Firmante')]</value>
+      <webElementGuid>52e15a7c-cdb2-4b70-a3f0-1534e11242c3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

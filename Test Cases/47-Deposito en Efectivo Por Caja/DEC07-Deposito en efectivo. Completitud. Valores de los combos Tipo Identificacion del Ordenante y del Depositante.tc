@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC07-Deposito en efectivo. Completitud. Valores de los combos Tipo Identificacion del Ordenante y del Depositante</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da67ff7b-4233-41de-becc-e3dc0e205120</testCaseGuid>
+</TestCaseEntity>

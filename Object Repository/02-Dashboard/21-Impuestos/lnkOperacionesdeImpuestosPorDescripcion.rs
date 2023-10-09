@@ -6,15 +6,18 @@
    <elementGuidId>9c00c584-6236-453a-9598-ff42379ff4b1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[99]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Operaciones de Impuestos por Descripcion' or . = 'Operaciones de Impuestos por Descripcion') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>838c0396-9adc-4c78-91b3-1ecd4760ea34</webElementGuid>
+      <webElementGuid>6485d988-7678-4907-8245-e10c74602744</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>73a30fb6-86b7-4d52-9889-1a23fd123a81</webElementGuid>
+      <webElementGuid>ac61748f-8d6b-41ca-bd81-f67a190f722b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +41,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>e9edb904-ed59-4d51-90a0-c44e476a9edf</webElementGuid>
+      <webElementGuid>28240308-d2c5-4d95-8987-b071a8e49a91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Operaciones de Impuestos por Descripcion</value>
-      <webElementGuid>88b811f9-1ceb-4a6a-b9b8-ba516ba4a7b7</webElementGuid>
+      <webElementGuid>4c59da6e-e93a-44d4-ae1c-0b09f6543afe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>e88f0ed2-5d17-4baa-985b-337f0b4f2492</webElementGuid>
+      <webElementGuid>a73a3189-9269-4173-af55-309564b50b12</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>cb80714a-26bb-4d3b-a800-f0182a00fafb</webElementGuid>
+      <webElementGuid>7aa8491f-624f-4627-8809-446139d36fa6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[99]</value>
-      <webElementGuid>3c76729b-6dc8-4b88-92d7-3a6786d7672c</webElementGuid>
+      <webElementGuid>02b121ea-d27b-42b7-b46c-582b133e6010</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[28]/li/ul/li[4]/span</value>
-      <webElementGuid>fe04a82c-d886-4316-8a43-eb29f23a15ed</webElementGuid>
+      <webElementGuid>4195d6e5-dbc2-46be-a02f-2b49db639b48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devol. Sellado en Efec (Suc.Santa Fe/Cordoba)'])[1]/following::span[1]</value>
-      <webElementGuid>4c92398c-a657-49a6-b69f-94b4dfacb940</webElementGuid>
+      <webElementGuid>b1c59042-5484-423d-b27a-6c28a2c603b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro Sellado en Efec (Suc. Santa Fe/Cordoba)'])[1]/following::span[1]</value>
-      <webElementGuid>9c9d1446-0f85-4aa6-96de-bbd468b6713f</webElementGuid>
+      <webElementGuid>5a414211-3dc9-4171-8f62-867d7bf98d94</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Operaciones de Impuestos por Posteo'])[1]/preceding::span[1]</value>
-      <webElementGuid>8af982de-cb76-4fc4-83fc-dc44d72eed71</webElementGuid>
+      <webElementGuid>39416583-e57f-465e-892e-7e7dc489fd0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro de Impuestos en Cuenta Contable'])[1]/preceding::span[1]</value>
-      <webElementGuid>93a25429-28f7-4c38-aa25-68ed5f90ddce</webElementGuid>
+      <webElementGuid>8aeeccf9-2d67-4d6b-b465-ab1a194c4d25</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Operaciones de Impuestos por Descripcion']/parent::*</value>
-      <webElementGuid>9a89fc00-62c9-466d-a660-30f2db6eb39d</webElementGuid>
+      <webElementGuid>673d31da-54fe-4681-be2c-58576800584b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[28]/li/ul/li[4]/span</value>
-      <webElementGuid>6d8180a3-5999-4de1-b97f-3b5ef524035d</webElementGuid>
+      <webElementGuid>4e3fd646-f114-49c6-add6-13337e4e048d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Operaciones de Impuestos por Descripcion' or . = 'Operaciones de Impuestos por Descripcion')]</value>
-      <webElementGuid>fe5d916f-6059-40ed-a243-83622251f570</webElementGuid>
+      <webElementGuid>e77cacc0-25eb-4309-af6b-63111305cc62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

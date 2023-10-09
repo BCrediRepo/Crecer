@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC17-Deposito en efectivo. Cuenta con Bloqueo Total. Movimiento aplica sobre cuentas bloqueadas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5778651c-f6cc-408d-b5f8-8d6b87ac3bb4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC14-Deposito en efectivo. Cuenta Cerrada y no reabierta para posteo de operaciones. Saldo 0 o acreedor. Cuenta habilitada para uso de chequeras. Misma Filial</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>96168091-85d0-47a3-a564-a966afc45239</testCaseGuid>
+</TestCaseEntity>

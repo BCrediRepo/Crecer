@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC04-Deposito en efectivo. Completitud. Datos de Ingreso. Cuenta en Dolares. Ingresar Nro. De Cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd8febf8-a76f-472f-b987-c729dad91590</testCaseGuid>
+</TestCaseEntity>

@@ -42,8 +42,7 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia de ventana
 WebUI.switchToWindowTitle('Consulta Cotizaciones de Moneda Extranjera')
 
-WebUI.setText(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/txtUSD'), 
-    'USD')
+WebUI.setText(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/txtUSD'), 'USD')
 
 //Espera a que sea visible el texto "BCCL.E.COT.GRAL.FIL
 WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lblAR0011001'), 

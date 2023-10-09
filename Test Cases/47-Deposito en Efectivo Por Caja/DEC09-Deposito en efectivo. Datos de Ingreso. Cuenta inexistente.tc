@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC09-Deposito en efectivo. Datos de Ingreso. Cuenta inexistente</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6bd919c-48f5-4299-9085-3c193f2e7fec</testCaseGuid>
+</TestCaseEntity>

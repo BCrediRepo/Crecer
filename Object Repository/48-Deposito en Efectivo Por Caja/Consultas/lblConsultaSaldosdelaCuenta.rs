@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConsultaSaldosdelaCuenta</name>
+   <tag></tag>
+   <elementGuidId>3476fd39-1cac-4310-b57e-b93c92a97e67</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='myTable']/tbody/tr[3]/td/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>4df6f93f-73ef-4150-8f0c-1fad4a8757ee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doThisContextEnquiry('TELLER-ACCOUNT.2_BCCL.E.RES.CTA.SALDO.CTA_ACCOUNT.2_','TELLER-ACCOUNT.2','ACCOUNT.2','','fieldName:ACCOUNT.2','appreq')</value>
+      <webElementGuid>36aef790-e05d-41f7-afae-00d9b80103b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta Saldos de la Cuenta</value>
+      <webElementGuid>ef64239e-6a76-43f4-87d0-b8aea51fe1e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;myTable&quot;)/tbody[1]/tr[3]/td[1]/a[1]</value>
+      <webElementGuid>6a158272-b28b-4f71-861d-584e25065846</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='myTable']/tbody/tr[3]/td/a</value>
+      <webElementGuid>52689473-b897-4f31-86c1-7f1cef86871a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Consulta Saldos de la Cuenta')]</value>
+      <webElementGuid>1454d6de-d0b9-45b1-bc85-18059ca1004d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/following::a[1]</value>
+      <webElementGuid>370954aa-4705-4297-939b-3fc3cda54076</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/following::a[2]</value>
+      <webElementGuid>733a5359-cf1c-4a06-acf5-51f98ff86ec8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Sucursales'])[1]/preceding::a[1]</value>
+      <webElementGuid>e7627dff-3a89-42b2-a75f-7bbbfed0245e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::a[2]</value>
+      <webElementGuid>8851e83a-2ab8-4440-8e53-ec351e625a69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta Saldos de la Cuenta']/parent::*</value>
+      <webElementGuid>767a21a9-a7e2-43fe-ad6d-f93e3655ea16</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doThisContextEnquiry('TELLER-ACCOUNT.2_BCCL.E.RES.CTA.SALDO.CTA_ACCOUNT.2_','TELLER-ACCOUNT.2','ACCOUNT.2','','fieldName:ACCOUNT.2','appreq')&quot;)]</value>
+      <webElementGuid>23f078e3-aad2-4762-9ed6-47c67971413c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td/a</value>
+      <webElementGuid>4a46f858-d4d3-4d60-b178-1d590bbd506e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doThisContextEnquiry(&quot; , &quot;'&quot; , &quot;TELLER-ACCOUNT.2_BCCL.E.RES.CTA.SALDO.CTA_ACCOUNT.2_&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;TELLER-ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;fieldName:ACCOUNT.2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;appreq&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Consulta Saldos de la Cuenta' or . = 'Consulta Saldos de la Cuenta')]</value>
+      <webElementGuid>54dd47c1-446e-4b4b-a754-3f95935f7ad7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

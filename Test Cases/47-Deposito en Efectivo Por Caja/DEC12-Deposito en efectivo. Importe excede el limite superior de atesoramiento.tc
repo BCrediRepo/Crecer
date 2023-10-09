@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DEC12-Deposito en efectivo. Importe excede el limite superior de atesoramiento</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>18acd805-bd82-4934-9688-b6803f934b57</testCaseGuid>
+</TestCaseEntity>
