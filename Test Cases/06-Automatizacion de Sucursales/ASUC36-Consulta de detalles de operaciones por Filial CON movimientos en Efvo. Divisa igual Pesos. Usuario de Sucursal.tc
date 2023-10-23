@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC36-Consulta de detalles de operaciones por Filial CON movimientos en Efvo. Divisa igual Pesos. Usuario de Sucursal</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f9b64cda-8211-4aa8-8639-d1492627aed7</testCaseGuid>
+</TestCaseEntity>

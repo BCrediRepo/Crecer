@@ -32,8 +32,8 @@ WebUI.maximizeWindow()
 //Ingresamos por el menu Autorizaciones
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/46-Autorizaciones/lnkAutorizaciondeAltadeContratos'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/46-Autorizaciones/lnkAutorizaciondeAltadeContratos'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/TEST-8800-Autorizaciones/lnkAutorizaciondeAltadeContratos'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/TEST-8800-Autorizaciones/lnkAutorizaciondeAltadeContratos'))
 
 //Switch a la ventana de Autorizaciones
 WebUI.switchToWindowTitle('Autorizacion - Fil.001 Centro')

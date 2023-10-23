@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 32), findTestData('MainData/Users').getValue(2, 32))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -39,7 +39,7 @@ WebUI.switchToWindowTitle('Consulta Detalle Movs Agrupados')
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.switchToWindowTitle('T24 - Fil.089 M.del Plata Ctr')
+WebUI.switchToWindowTitle('T24 - Fil.020 San Martin')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
@@ -50,9 +50,9 @@ WebUI.maximizeWindow()
 
 //Completamos los datos para la consulta
 
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtNumeroDeCuenta'), '21190118359')
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtNumeroDeCuenta'), '00200063748')
 
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtFechaValor'), '20200902')
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtFechaValor'), '20220725')
 
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtCodigoAgrupamiento'), 'IDCC3')
 

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnExpandirSubvalor</name>
+   <tag></tag>
+   <elementGuidId>746e987d-2d48-4dfd-a228-a131d30572e6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>0eef75e3-773d-44db-87ec-eace1c465400</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA</value>
+      <webElementGuid>90a9152a-2b39-425a-a787-99e11c12d8ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/svexpansion.gif</value>
+      <webElementGuid>dcfaf7df-f9e1-478a-b243-25a0bb169832</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Expandir Subvalor</value>
+      <webElementGuid>8085f4b8-0d63-479a-891f-e503134d0e08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Expandir Subvalor</value>
+      <webElementGuid>9efff303-f570-4893-93b6-c0fb428872b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[11]/td[@class=&quot;action_container action_container_ACCOUNT action_container_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]/a[1]/img[@class=&quot;ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]</value>
+      <webElementGuid>cbeecb62-e0aa-43b1-b333-914186bbd3b3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
+      <webElementGuid>2f3285da-cc5f-4932-8609-1e7abd22a1ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Expandir Subvalor'])[2]</value>
+      <webElementGuid>df0c6ee4-e652-4e6d-9e94-4308dff3294e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[11]/td[2]/a/img</value>
+      <webElementGuid>c9609f27-dfb7-4f61-926d-d4fabf3aea5b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/svexpansion.gif' and @alt = 'Expandir Subvalor' and @title = 'Expandir Subvalor']</value>
+      <webElementGuid>93a87fa8-064b-4448-92b0-c500b00714c6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
