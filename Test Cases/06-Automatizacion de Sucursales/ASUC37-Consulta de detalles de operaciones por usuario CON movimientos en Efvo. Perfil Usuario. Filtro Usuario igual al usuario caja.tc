@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC37-Consulta de detalles de operaciones por usuario CON movimientos en Efvo. Perfil Usuario. Filtro Usuario igual al usuario caja</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2dfe21d-6791-4e7f-80c8-49cdd9fcf494</testCaseGuid>
+</TestCaseEntity>

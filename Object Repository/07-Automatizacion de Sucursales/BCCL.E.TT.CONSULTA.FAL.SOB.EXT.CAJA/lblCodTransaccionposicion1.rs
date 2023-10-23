@@ -6,15 +6,19 @@
    <elementGuidId>25423235-e24d-43ab-a411-7e47147785a2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='selectiondisplay']/tbody/tr/td/span/label</value>
+         <key>BASIC</key>
+         <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[1]/td[1]/span[1]/label[1][count(. | //*[(text() = 'Cod. Transaccion' or . = 'Cod. Transaccion')]) = count(//*[(text() = 'Cod. Transaccion' or . = 'Cod. Transaccion')])]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>label</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr/td/span/label</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>a89801d5-f83a-4866-8788-22228716f61c</webElementGuid>
+      <webElementGuid>91d59928-f4f1-49d0-994a-cc054cf65838</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>for</name>
       <type>Main</type>
       <value>value:1:1:1</value>
-      <webElementGuid>f70474f2-aa2b-417c-9f73-42af416538fc</webElementGuid>
+      <webElementGuid>76a82b94-a492-4b3a-afb5-81ef42b2a1f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,15 +42,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Cod. Transaccion</value>
-      <webElementGuid>913ea7fe-5457-4629-80b2-a8ba05797d8a</webElementGuid>
+      <webElementGuid>3b83ca16-e598-4c7e-afd3-c1ff59d32d65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[1]/td[1]/span[1]/label[1]</value>
-      <webElementGuid>3ec98ead-39b7-46d3-9327-8d8964f6f3f5</webElementGuid>
+      <webElementGuid>8fc349e8-054b-4390-a4f3-869d624b9ac2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='selectiondisplay']/tbody/tr/td/span/label</value>
-      <webElementGuid>3f829722-39f2-4020-a14a-0665f9ccd95e</webElementGuid>
+      <webElementGuid>e4e09fd2-c17f-4f53-bbcd-8763ddb8432b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='segundos'])[1]/following::label[1]</value>
-      <webElementGuid>a696ef86-3a79-46c0-af1e-c045033e85bf</webElementGuid>
+      <webElementGuid>e050c08f-1e91-4d91-8d54-8528762d24de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rejecutar cada'])[1]/following::label[1]</value>
-      <webElementGuid>81f5f42a-126e-479d-a993-989d3e50092a</webElementGuid>
+      <webElementGuid>26a2ee8d-170b-49ab-adfc-65b3977d2e93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[1]/preceding::label[1]</value>
-      <webElementGuid>03153058-6c65-45bc-bdf6-c905d9feff20</webElementGuid>
+      <webElementGuid>8cc31604-cee7-44bb-b524-185b45905158</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No. Legajo'])[4]/preceding::label[1]</value>
-      <webElementGuid>7b710bd6-fedb-44ea-94db-0d46105f24ef</webElementGuid>
+      <webElementGuid>e6162a75-31c0-4d5f-a38c-a4d34943d9be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label</value>
-      <webElementGuid>42a2461a-3795-4354-ab99-06d568db918e</webElementGuid>
+      <webElementGuid>f8888011-fe5e-40d5-b9fb-d157c80727a5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Cod. Transaccion' or . = 'Cod. Transaccion')]</value>
-      <webElementGuid>b7634952-113d-4adf-848f-3fb134a1cba4</webElementGuid>
+      <webElementGuid>a01a70ea-b8b0-4d6f-b312-c82bb4d7e17b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

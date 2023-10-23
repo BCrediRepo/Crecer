@@ -79,13 +79,8 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Ult Modif'))
-
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/spanConsulta Gral Pers Fisica Historia'))
-
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Historico'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lblLISTADOHISTORICO'), 6)
+//Validamos
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lblNo.Documento'), 6)
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -94,6 +89,15 @@ long endTime = System.currentTimeMillis()
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Ult Modif'))
+
+WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/spanConsulta Gral Pers Fisica Historia'))
+
+WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Historico'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lblLISTADOHISTORICO'), 6)
+
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

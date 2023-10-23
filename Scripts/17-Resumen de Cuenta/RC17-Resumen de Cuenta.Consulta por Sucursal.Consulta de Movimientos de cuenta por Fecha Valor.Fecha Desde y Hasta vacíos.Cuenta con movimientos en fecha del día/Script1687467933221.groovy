@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -42,7 +42,10 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
 //Switch a la ventana T24 - Fil.102 Gerencia Operat
-WebUI.switchToWindowTitle('T24 - Fil.102 Gerencia Operat')
+//WebUI.switchToWindowTitle('T24 - Fil.102 Gerencia Operat')
+
+//Swicht a la ventana
+WebUI.switchToWindowTitle('T24 - CRECER XXI')
 WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR')
@@ -52,9 +55,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
 WebUI.maximizeWindow()
 
+
 //Ingresamos los datos para la consulta
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lnkNueva Seleccion'))
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/txtNroDeCuenta'), '10430033951')
+//WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lnkNueva Seleccion'))
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/txtNroDeCuenta'), '11360019594')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

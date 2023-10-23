@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblRESPONSABLE AREA TESORERIA</name>
+   <tag></tag>
+   <elementGuidId>9cfab57f-a793-4620-bd93-798d94fa8707</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='enquiryDataSizer']/table[2]/tbody/tr[3]/td[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>24991eb9-9b51-4430-99ad-6a058336fbb4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>RESPONSABLE AREA TESORERIA</value>
+      <webElementGuid>4f980cb6-b42a-4ba9-9a75-b24ba185bbc1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryDataSizer&quot;)/table[@class=&quot;enqfooter&quot;]/tbody[1]/tr[3]/td[3]</value>
+      <webElementGuid>665e69f9-f79c-486f-b04b-76df79b5c588</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='enquiryDataSizer']/table[2]/tbody/tr[3]/td[3]</value>
+      <webElementGuid>5a618b80-22e9-4f8b-a711-8397692e1282</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CONTADOR / JEFE DE GESTION'])[1]/following::td[2]</value>
+      <webElementGuid>910eda74-a294-4968-bd18-2a3de07239a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FIRMA Y SELLO'])[2]/following::td[3]</value>
+      <webElementGuid>3f74338f-613a-4739-aa31-bb5459c738e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[2]</value>
+      <webElementGuid>eb043fea-fcd2-422f-bfd1-3e6bdd0ab31b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::td[2]</value>
+      <webElementGuid>4a9b3244-bece-4827-9147-afe3d71965b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='RESPONSABLE AREA TESORERIA']/parent::*</value>
+      <webElementGuid>a8aaba10-12a3-4a25-8418-2f80ba6d13ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr[3]/td[3]</value>
+      <webElementGuid>78bf2c89-d22d-4b0a-abc1-6048046c3252</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'RESPONSABLE AREA TESORERIA' or . = 'RESPONSABLE AREA TESORERIA')]</value>
+      <webElementGuid>353de4a5-6012-4c93-8736-b789b67e4f81</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

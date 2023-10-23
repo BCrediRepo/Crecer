@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNo se encuentra archivo BCCL.CIRCULARES</name>
+   <tag></tag>
+   <elementGuidId>df201830-f98d-4a74-9646-f0e48d35f22c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='errors']/tbody/tr/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.captionError</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>67a11bd9-70c5-4191-8a6a-9a2a3d1787fa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>captionError</value>
+      <webElementGuid>f0402779-35ee-415d-b93f-558d71ed01af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>a64504d0-aa05-4d72-aa00-c101cadf7087</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>No se encuentra archivo BCCL.CIRCULARES</value>
+      <webElementGuid>6edebf44-11f9-461a-a12f-dacfd6fc9380</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;errors&quot;)/tbody[1]/tr[1]/td[@class=&quot;errorText&quot;]/span[@class=&quot;captionError&quot;]</value>
+      <webElementGuid>3b7bd035-6631-4e9e-a98c-0e2688eb8817</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='errors']/tbody/tr/td[3]/span</value>
+      <webElementGuid>a53447a7-0264-4143-9401-b5d946e46b60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CIRCULARES.1'])[1]/following::span[1]</value>
+      <webElementGuid>182ea4e4-5fcf-4ed7-91fc-026abb4f616a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::span[2]</value>
+      <webElementGuid>1b678629-4963-4d3d-8392-65a59f9ae425</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Circulares.1'])[1]/preceding::span[1]</value>
+      <webElementGuid>cc579c2a-17b5-438e-9bb3-863437836a97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No se encuentra archivo BCCL.CIRCULARES-1'])[1]/preceding::span[1]</value>
+      <webElementGuid>d10d514c-edcd-4c45-a039-aa1a8d57b61b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='No se encuentra archivo BCCL.CIRCULARES']/parent::*</value>
+      <webElementGuid>0488d44c-060d-4411-beff-e9e3f8c8fdc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/span</value>
+      <webElementGuid>559539ff-d503-411c-b9ec-78985682e23d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'No se encuentra archivo BCCL.CIRCULARES' or . = 'No se encuentra archivo BCCL.CIRCULARES')]</value>
+      <webElementGuid>1b0675ff-48e5-4bdd-a19d-bad112b31bb7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

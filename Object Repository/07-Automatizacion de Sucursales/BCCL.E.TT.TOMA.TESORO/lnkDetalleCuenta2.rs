@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkDetalleCuenta2</name>
+   <tag></tag>
+   <elementGuidId>6120f6a3-3ae5-4db1-b699-ec6c68767092</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#r4 > td.enqdrilldowncell.enqdrilldowncell_BCCLETTTOMATESORO > a.enqDrillLink</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r4']/td[5]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>811c48da-0731-4b43-86b9-da796f6f7046</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqDrillLink</value>
+      <webElementGuid>62fdff37-6838-4d85-8f2c-831607672cb7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>a42acb2b-6a9d-4dfd-a508-dbbaf9e9229e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:drilldown('1','1_2')</value>
+      <webElementGuid>dd806775-e0da-4586-9f56-9d5fe221e715</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Detalle Cuenta</value>
+      <webElementGuid>c587b1b0-1e3e-475f-ac06-e0c9f3603e1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r4&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLETTTOMATESORO&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
+      <webElementGuid>80920641-5cad-4b2f-8739-f34198dfaee1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r4']/td[5]/a</value>
+      <webElementGuid>c945955f-e95b-4f61-bcb5-91143010e914</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'Detalle Cuenta')])[2]</value>
+      <webElementGuid>05601b76-0ceb-4381-b572-5729d4f5095b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[2]/following::a[1]</value>
+      <webElementGuid>b802d21e-81fc-4e0a-8db2-83c8b661d680</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EFECTIVO SUC 089 CAJA 1544'])[1]/following::a[1]</value>
+      <webElementGuid>8e99058f-1bd7-4724-a655-a18ece3dbdcc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS1000115471089'])[1]/preceding::a[1]</value>
+      <webElementGuid>58be81cc-cda5-4519-8771-7834ae1eb58d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EFECTIVO SUC 089 CAJA 1547'])[1]/preceding::a[1]</value>
+      <webElementGuid>2defdaaa-717c-4a94-b026-760771135c2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:drilldown('1','1_2')&quot;)]</value>
+      <webElementGuid>134922fc-5cf1-4038-abfd-9792bb58edaa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[5]/a</value>
+      <webElementGuid>b3515e45-f9db-41d1-96ad-10794123f990</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_2&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Detalle Cuenta' or . = 'Detalle Cuenta')]</value>
+      <webElementGuid>ff0e9b7a-6b51-4334-a450-109484a81ac6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

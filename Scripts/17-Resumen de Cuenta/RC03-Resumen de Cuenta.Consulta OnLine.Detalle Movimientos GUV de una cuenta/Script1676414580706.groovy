@@ -25,7 +25,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2,24))
 WebUI.maximizeWindow()
 
 //Se accede al menu
@@ -37,7 +37,7 @@ WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
 
 //Aplico KYW de limpieza de busqueda
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
+WebUI.switchToWindowTitle('T24 - Fil.099 Casa Central')
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -45,8 +45,8 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Completo la busqueda
 WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20220701')
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '00010026843')
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20210802')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

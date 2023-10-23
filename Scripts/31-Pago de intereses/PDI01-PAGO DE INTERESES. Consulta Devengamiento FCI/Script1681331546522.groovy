@@ -54,6 +54,11 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
+//Validamos
+WebUI.waitForElementVisible(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/lblCuenta - Periodo'), 6)
+
+//WebUI.verifyElementVisible('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/lblCuenta - Periodo')
+
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
 

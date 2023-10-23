@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>cbxUltima Modificacion</name>
+   <name>lblMoneda</name>
    <tag></tag>
-   <elementGuidId>1e3ffeda-5d08-4b63-b4d8-9e816a2878e0</elementGuidId>
+   <elementGuidId>26dd1f9a-7a4a-44c2-aa57-19149b2eb352</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#columnHeaderText4</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='drillbox:1_1']</value>
+         <value>//th[@id='columnHeaderText4']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,103 +21,119 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
-      <webElementGuid>89c278c3-f75c-4e3d-aa9c-ce40ec0068e2</webElementGuid>
+      <value>th</value>
+      <webElementGuid>bbf1bb87-be77-4141-b8eb-ac284a33ef30</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>scope</name>
       <type>Main</type>
-      <value>drillbox:1_1</value>
-      <webElementGuid>a1a99b17-2be3-4880-92a0-e5f495b9f5d6</webElementGuid>
+      <value>col</value>
+      <webElementGuid>31bddfc5-2aea-443a-a1c3-f3347f6cec58</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>drillbox drillbox_BCCLEACFIRMHISTCAMBIOS</value>
-      <webElementGuid>5a71af41-06b8-4d2d-a7b8-38d5a81c277b</webElementGuid>
+      <value>columnHeader</value>
+      <webElementGuid>6f885d5f-0b25-4a5b-a6ca-9f5d5987797d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>columnHeaderText4</value>
+      <webElementGuid>ab2e9040-fa3c-4a4d-b7c5-6b4f5fa7b0ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Ultima ModificacionVer HistoricoVersion Actual</value>
-      <webElementGuid>d612e999-d2c6-4638-bafa-8b45b640a79b</webElementGuid>
+      <value>Moneda</value>
+      <webElementGuid>dd0bfc60-d9eb-4078-979a-1822e0e25fcd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;drillbox:1_1&quot;)</value>
-      <webElementGuid>de3d4dac-e9ff-454c-806c-af4f4dbc252e</webElementGuid>
+      <value>id(&quot;columnHeaderText4&quot;)</value>
+      <webElementGuid>bcbc5cc2-8ff6-41d1-b3e8-d72f2151f747</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='drillbox:1_1']</value>
-      <webElementGuid>0dabdfae-0871-4cd6-bb37-65f41712deba</webElementGuid>
+      <value>//th[@id='columnHeaderText4']</value>
+      <webElementGuid>3d7fda3b-706a-46a7-b0a0-16d33fb3cb21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[6]/table/tbody/tr/td/select</value>
-      <webElementGuid>9e40e1ce-d3d2-4f2a-bb17-3a6528e85ea9</webElementGuid>
+      <value>//th[@id='columnHeader4']/table/tbody/tr/th</value>
+      <webElementGuid>524307e4-7c6f-4047-be3c-169e7dbd270f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::select[1]</value>
-      <webElementGuid>06da7dec-7861-4848-9729-4772cc648b55</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Faltante'])[1]/following::th[3]</value>
+      <webElementGuid>4e55570c-2a80-472a-8c82-5ba3e4cd9203</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuentas Remuneradas Institucionales'])[1]/following::select[1]</value>
-      <webElementGuid>507033d4-62ba-4a24-80f1-9b4db74e0a7d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Faltante'])[1]/following::th[6]</value>
+      <webElementGuid>7693f667-89cc-4565-89af-ea76f64a5bcb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::select[1]</value>
-      <webElementGuid>058ae886-fe30-4fdf-bf42-ccef63f984a0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto'])[1]/preceding::th[2]</value>
+      <webElementGuid>6b855cb6-3e15-419a-a48c-af0f9b810e14</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Modificaciones a Ctas'])[2]/preceding::select[1]</value>
-      <webElementGuid>9f997daa-b862-468d-84d8-62fcd1d325df</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo'])[1]/preceding::th[5]</value>
+      <webElementGuid>f920f338-bf21-4e17-9ab5-7bc8a1b40741</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Moneda']/parent::*</value>
+      <webElementGuid>32b51c6e-5dd2-4b66-972c-181b79d99734</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//select</value>
-      <webElementGuid>9752d338-2f1a-4f56-b3f4-1803de963d87</webElementGuid>
+      <value>//th[4]/table/tbody/tr/th</value>
+      <webElementGuid>6f40871f-777b-448a-8800-5339f9a61a0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//select[@id = 'drillbox:1_1' and (text() = 'Ultima ModificacionVer HistoricoVersion Actual' or . = 'Ultima ModificacionVer HistoricoVersion Actual')]</value>
-      <webElementGuid>8954682a-1239-4f48-9c12-57d5854ab50c</webElementGuid>
+      <value>//th[@id = 'columnHeaderText4' and (text() = 'Moneda' or . = 'Moneda')]</value>
+      <webElementGuid>f20c9605-2a9f-4b33-bc8c-9d9bd6f7c9f4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
