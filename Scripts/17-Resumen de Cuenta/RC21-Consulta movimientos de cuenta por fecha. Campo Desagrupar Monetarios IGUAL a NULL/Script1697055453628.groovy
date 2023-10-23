@@ -16,34 +16,57 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,18), findTestData('MainData/Users').getValue(2,18))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menú BCCL.E.TINTERNAS.APAGAR
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('ENQ ' + findTestData('Modulos/Modulos').getValue(4,18)))
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-WebUI.waitForPageLoad(3)
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,18))
-WebUI.maximizeWindow()
+// Ingreso en el commandline BCCL.E.RES.CTA.MOV.FECHA
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Se clickea en Ejecutar y se valida la existencia de campos principales
+//Cambiamos a la ventana "Movimientos de Ctas por Fecha Valor"
+WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Aplico KYW de limpieza de busqueda
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
+//Se accede al menu ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR
+WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Completamos los datos para la consulta
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/txtNroDeCuenta'), '00540468975')
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
-WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'))
+//boton ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblCuenta'), 6)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblCuenta'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -53,10 +76,12 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
-WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'))
+def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblCuenta'))
+
+assert element.contains('00540468975')
 
 //---------------------------------------------------------------------------------------------------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

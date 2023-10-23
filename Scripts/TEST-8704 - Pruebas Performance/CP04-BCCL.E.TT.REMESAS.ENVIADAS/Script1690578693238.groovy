@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,28), findTestData('MainData/Users').getValue(2,28))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2,24))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.TT.REMESAS.ENVIADAS
