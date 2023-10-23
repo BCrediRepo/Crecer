@@ -16,44 +16,49 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
+        2, 3))
 
-//Se maximiza la ventana
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TOTS.OPER.MONEX')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.MONEX.OPER.IN')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowTitle('Ingreso de parametros generales de la operacion de Moneda Extranjera')
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo datos
+WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/txtMonedaExtranjera'), 
+    'USD')
 
-WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/txtTipoOperacion'), 
+    'Socio Compra')
 
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/txtTipoCotizacion'), 
+    'E')
 
-WebUI.switchToWindowIndex(1)
+WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/txtIngresoFondos'), 
+    'CUENTA')
 
-//Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20220729')
+WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/txtEgresoFondos'), 
+    'CUENTA')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Boton ejecutar
+//----------------------------
+//Inicio Busqueda de consulta
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificación de que la fecha consultada sea la correcta
-WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
+//Resultados
+WebUI.verifyElementVisible(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/lblEspecial'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -61,32 +66,28 @@ long endTime = System.currentTimeMillis()
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
+//---------------------------
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
-println TotalRegistros
+println(TotalRegistros)
+
 //-----------------------------
+Cotizacion = WebUI.getText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/lblEspecial'))
 
-WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
-
-fecha = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
-
-assert fecha == '29/07/2022'
-
-//Control fin de script
-WebUI.maximizeWindow()
+//Verificacion
+assert Cotizacion == 'E - Especial'
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

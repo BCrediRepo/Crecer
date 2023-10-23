@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON28-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Acumulado por Asociado Anual</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>25e5aaf8-a41e-45e2-b671-660a5bbc8790</testCaseGuid>
+</TestCaseEntity>

@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFecha</name>
+   <name>lblCuenta</name>
    <tag></tag>
-   <elementGuidId>9c0295be-f2ee-4b88-b1d2-c4fa1b35eafd</elementGuidId>
+   <elementGuidId>a9bbf770-68bd-4bc5-b6e2-2b859d9c22bb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLETOTSOPERMONEX</value>
+         <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLERESCTASALDOCTA</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '27/07/2022' or . = '27/07/2022')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,31 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>7e49b0eb-3c95-42d2-80bc-16db654686a5</webElementGuid>
+      <webElementGuid>7744071c-8c67-47fb-bc3e-cbc354e34118</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ENQ-H-DATA ENQ-H-DATA_BCCLETOTSOPERMONEX</value>
-      <webElementGuid>354b97b3-6db0-4804-853f-fb0375f1f45d</webElementGuid>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTASALDOCTA</value>
+      <webElementGuid>54e4e97b-d6ec-4b98-aebc-0924ce812505</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>27/07/2022</value>
-      <webElementGuid>71f85906-0e5a-48e1-96dd-a64a29990399</webElementGuid>
+      <value>00010067819 AGROEXP SA</value>
+      <webElementGuid>abb47f24-53d6-4857-abfb-f31cd9f03cfb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLETOTSOPERMONEX&quot;]</value>
-      <webElementGuid>e7073f38-7dd7-425f-bd4f-e0506fce940f</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTASALDOCTA&quot;]</value>
+      <webElementGuid>f28e1590-4458-445d-9fbc-e6d3d66e6a7f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -58,38 +54,54 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>97761f73-c52d-40db-91db-66a3fe9747e5</webElementGuid>
+      <webElementGuid>117e8232-407a-45c7-a387-ba4d6f959aca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>b587bd05-6239-449a-b301-bb546bdaee8e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nro. de Cuenta'])[1]/following::td[1]</value>
+      <webElementGuid>306b34db-0362-4609-8d6f-c5a3f7cfd0f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='27/07/2022']/parent::*</value>
-      <webElementGuid>4dc5ea97-ffca-4958-8eac-8bf14b688ca1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto SubProducto'])[1]/preceding::td[1]</value>
+      <webElementGuid>58be7aeb-a3e3-4f8b-b5a4-4db3a6ca6c3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[3]</value>
+      <webElementGuid>5edb2f52-8736-4c3f-b33e-a5b90258621d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='00010067819 AGROEXP SA']/parent::*</value>
+      <webElementGuid>e006be7e-f34d-462f-8bf2-518e2d6383a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td[2]</value>
-      <webElementGuid>3c1c4169-1827-4848-ac55-a6fc16ffa9e3</webElementGuid>
+      <value>//td[2]</value>
+      <webElementGuid>7ad75a7b-ea7a-4084-919f-d0f89c471ed4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '27/07/2022' or . = '27/07/2022')]</value>
-      <webElementGuid>bf76f792-80e9-4f4c-ba64-19857d91147b</webElementGuid>
+      <value>//td[(text() = '00010067819 AGROEXP SA' or . = '00010067819 AGROEXP SA')]</value>
+      <webElementGuid>370acd05-9cb6-4fc9-81a5-f18a9ce57d4e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

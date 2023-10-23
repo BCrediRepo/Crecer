@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC23-Consulta por Sucursal. Consulta Saldo de Cuenta. Encabezado. Cuenta operativa en Pesos con Estado Activa. Datos informados correctos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c784f03a-d31a-4076-8878-62a09e02c122</testCaseGuid>
+</TestCaseEntity>

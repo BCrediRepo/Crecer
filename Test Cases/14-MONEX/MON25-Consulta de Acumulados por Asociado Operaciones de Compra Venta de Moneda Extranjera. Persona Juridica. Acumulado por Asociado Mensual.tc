@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON25-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Acumulado por Asociado Mensual</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d6ffef2-0544-4fe7-82cd-6bd41ea4596d</testCaseGuid>
+</TestCaseEntity>

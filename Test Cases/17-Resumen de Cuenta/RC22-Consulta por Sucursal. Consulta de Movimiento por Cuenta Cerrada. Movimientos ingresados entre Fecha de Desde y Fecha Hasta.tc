@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC22-Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Movimientos ingresados entre Fecha de Desde y Fecha Hasta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eee927c6-b483-4b25-80d1-92f3c2cdcc37</testCaseGuid>
+</TestCaseEntity>

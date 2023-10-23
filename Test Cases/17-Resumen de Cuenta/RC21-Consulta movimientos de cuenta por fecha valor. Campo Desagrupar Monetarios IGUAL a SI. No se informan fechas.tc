@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC21-Consulta movimientos de cuenta por fecha valor. Campo Desagrupar Monetarios IGUAL a SI. No se informan fechas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2756faae-9bd1-4ab9-89e0-ccb8d65c793b</testCaseGuid>
+</TestCaseEntity>

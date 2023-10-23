@@ -16,23 +16,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
+        2, 3))
 
-//Se maximiza la ventana
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TOTS.OPER.MONEX')
+//busqueda de ENQ
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 
 //Limpieza de filtros
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
@@ -41,19 +42,17 @@ WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowIndex(1)
-
-//Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20220729')
+WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
+//Seteo de datos de consulta
+WebUI.setText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/txtCuenta'), 
+    '00540468975')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
-
-//Boton ejecutar
+//----------------------------
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificación de que la fecha consultada sea la correcta
-WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
+WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblCuenta'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -62,6 +61,7 @@ long endTime = System.currentTimeMillis()
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+//---------------------------
 
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
@@ -71,22 +71,18 @@ TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados
 println TotalRegistros
 //-----------------------------
 
-WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
+Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblCuenta'))
 
-fecha = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
+assert Cuenta == "00540468975 METALURGICASIAM SA"
 
-assert fecha == '29/07/2022'
 
-//Control fin de script
-WebUI.maximizeWindow()
-
+//Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

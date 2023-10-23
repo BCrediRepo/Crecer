@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFecha</name>
+   <name>lblAsociadoAcumulado</name>
    <tag></tag>
-   <elementGuidId>9c0295be-f2ee-4b88-b1d2-c4fa1b35eafd</elementGuidId>
+   <elementGuidId>13911294-6f90-49c1-9c8e-fd6c592126f0</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLETOTSOPERMONEX</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
       </entry>
       <entry>
+         <key>CSS</key>
+         <value>td.ENQ-H-DATA.ENQ-H-DATA_BCCLEACUMOPERMONEX</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[(text() = '27/07/2022' or . = '27/07/2022')]</value>
+         <value>//*[(text() = '1002151621' or . = '1002151621')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,31 +26,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>7e49b0eb-3c95-42d2-80bc-16db654686a5</webElementGuid>
+      <webElementGuid>8c0c318d-9003-4cd8-a345-c02409613a2d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ENQ-H-DATA ENQ-H-DATA_BCCLETOTSOPERMONEX</value>
-      <webElementGuid>354b97b3-6db0-4804-853f-fb0375f1f45d</webElementGuid>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLEACUMOPERMONEX</value>
+      <webElementGuid>81fcd598-15db-4278-ac8b-74220ef93ac8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>27/07/2022</value>
-      <webElementGuid>71f85906-0e5a-48e1-96dd-a64a29990399</webElementGuid>
+      <value>1002151621</value>
+      <webElementGuid>f6548b6c-e5cf-4790-93d8-65ab6bf51f76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLETOTSOPERMONEX&quot;]</value>
-      <webElementGuid>e7073f38-7dd7-425f-bd4f-e0506fce940f</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEACUMOPERMONEX&quot;]</value>
+      <webElementGuid>e5517ee6-401e-4648-87fd-07413271c8d3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>97761f73-c52d-40db-91db-66a3fe9747e5</webElementGuid>
+      <webElementGuid>53841857-ded8-4837-8754-4b89d9ac940d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -66,15 +66,23 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>b587bd05-6239-449a-b301-bb546bdaee8e</webElementGuid>
+      <webElementGuid>5517f132-ee8b-4f00-bdc5-7bef9f306406</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='27/07/2022']/parent::*</value>
-      <webElementGuid>4dc5ea97-ffca-4958-8eac-8bf14b688ca1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AFLA SA'])[1]/preceding::td[2]</value>
+      <webElementGuid>ebeaa179-e145-438f-af43-2a5c7db560ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='1002151621']/parent::*</value>
+      <webElementGuid>04cab6cf-fda1-4861-9879-8036880b1379</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,14 +90,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[2]</value>
-      <webElementGuid>3c1c4169-1827-4848-ac55-a6fc16ffa9e3</webElementGuid>
+      <webElementGuid>45e042ca-f329-4fab-ab7d-7383bc538081</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '27/07/2022' or . = '27/07/2022')]</value>
-      <webElementGuid>bf76f792-80e9-4f4c-ba64-19857d91147b</webElementGuid>
+      <value>//td[(text() = '1002151621' or . = '1002151621')]</value>
+      <webElementGuid>667a2c2c-9a98-4e08-affd-79d857f697e5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
