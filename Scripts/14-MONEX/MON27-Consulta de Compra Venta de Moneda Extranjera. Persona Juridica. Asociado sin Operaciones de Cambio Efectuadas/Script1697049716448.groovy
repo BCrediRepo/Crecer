@@ -16,44 +16,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 33), findTestData('MainData/Users').getValue(
+        2, 33))
 
-//Se maximiza la ventana
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TOTS.OPER.MONEX')
+//Busqueda ENQ
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.PER.GEN.PJ.FIN')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowTitle('Consulta General personas Juridicas')
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-//Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20220729')
+//Seteo de datos
+WebUI.setText(findTestObject('15-MONEX/Consulta General personas Juridicas/txtIDPersona'), '1002151621')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Boton ejecutar
+//Busqueda de consulta
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificación de que la fecha consultada sea la correcta
-WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
+WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta General personas Juridicas/lblAsociado'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -61,24 +52,55 @@ long endTime = System.currentTimeMillis()
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
+//---------------------------
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
-println TotalRegistros
-//-----------------------------
+println(TotalRegistros)
 
-WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
+persona = WebUI.getText(findTestObject('15-MONEX/Consulta General personas Juridicas/lblAsociado'))
 
-fecha = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
+//Verificacion de que es la persona que filtramos
+assert persona == '1002151621'
 
-assert fecha == '29/07/2022'
+//Detalle de consulta por transacciones acumuladas MONEX (click en boton largavistas)
+WebUI.click(findTestObject('15-MONEX/Consulta General personas Juridicas/btnAcumuladoPorAsociado'))
+
+WebUI.switchToWindowTitle('BCCL.E.ACUM.OPER.MONEX')
+
+// Obtén el elemento de la tabla
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay")) 
+
+// Obtén todas las filas dentro de la tabla
+List<WebElement> rows = table.findElements(By.tagName("tr")) 
+
+// Variable para rastrear si se encontró un valor diferente de "0,00"
+boolean foundNonZeroValue = false 
+
+// Itera a través de las filas (desde 1 hasta 10)
+for (int i = 0; i < Math.min(9, rows.size()); i++) {
+	WebElement row = rows[i]
+
+	// Obtiene el tercer valor de la fila (índice 2, ya que las listas son base cero)
+	WebElement cell = row.findElements(By.tagName("td"))[3]
+
+	// Obtiene el texto de la celda
+	String cellText = cell.getText()
+	
+	// Compara el valor de la celda con "0,00"
+	if (!cellText.equals("0")) {
+		foundNonZeroValue = true
+		break
+	}
+}
+
+assert foundNonZeroValue == false
 
 //Control fin de script
-WebUI.maximizeWindow()
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

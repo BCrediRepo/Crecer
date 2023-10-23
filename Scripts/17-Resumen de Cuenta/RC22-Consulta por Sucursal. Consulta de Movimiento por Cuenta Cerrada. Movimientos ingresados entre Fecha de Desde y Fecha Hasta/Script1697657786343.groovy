@@ -16,44 +16,48 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(
+        2, 2))
 
-//Se maximiza la ventana
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TOTS.OPER.MONEX')
+//busqueda de ENQ
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.CER')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
 
-//Limpieza de filtros
+//Limpieza de filtro
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
 WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
 
-//Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20220729')
+//Seteo de datos
+WebUI.setText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtNroCuenta'), '01000021927')
+
+WebUI.setText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtFechaDesde'), '20010901')
+
+WebUI.setText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtFechaHasta'), '20200902')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Boton ejecutar
+//----------------------------
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificación de que la fecha consultada sea la correcta
-WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
+WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -61,24 +65,26 @@ long endTime = System.currentTimeMillis()
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
+//---------------------------
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
-println TotalRegistros
+println(TotalRegistros)
+
 //-----------------------------
+Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
 
-WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
+WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
 
-fecha = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
+Estado = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
 
-assert fecha == '29/07/2022'
+assert Cuenta.contains('01000021927')
 
-//Control fin de script
-WebUI.maximizeWindow()
+assert Estado == 'CERRADA' //Control Fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

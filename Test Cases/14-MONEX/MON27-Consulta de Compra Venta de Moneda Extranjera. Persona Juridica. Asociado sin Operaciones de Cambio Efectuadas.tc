@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON27-Consulta de Compra Venta de Moneda Extranjera. Persona Juridica. Asociado sin Operaciones de Cambio Efectuadas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e35bdb41-f404-4331-be90-70d991cbe275</testCaseGuid>
+</TestCaseEntity>
