@@ -25,17 +25,22 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
 
 WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('02-Dashboard/lnkChequesCancelatorios'))
+//WebUI.click(findTestObject('02-Dashboard/lnkChequesCancelatorios'))
+//
+//WebUI.click(findTestObject('02-Dashboard/18-Cheques Cancelatorios/spanConsultas'))
+//
+//WebUI.click(findTestObject('02-Dashboard/18-Cheques Cancelatorios/01-Consultas/lnkConsultaMovimientoCtaInterna'))
 
-WebUI.click(findTestObject('02-Dashboard/18-Cheques Cancelatorios/spanConsultas'))
-
-WebUI.click(findTestObject('02-Dashboard/18-Cheques Cancelatorios/01-Consultas/lnkConsultaMovimientoCtaInterna'))
+//Se accede al menu de Consulta
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CHQ.CANCELA')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 
@@ -51,7 +56,8 @@ WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.E.CHQ.CANCELA/btnLupa'))
 
 WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 
-WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
+//WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
+WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '15901')
 
 WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtMonedaValue211'), 'ARS')
 
@@ -73,7 +79,7 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
-WebUI.delay(30)
+//WebUI.delay(30)
 
 WebUI.switchToWindowTitle('Account Statement')
 

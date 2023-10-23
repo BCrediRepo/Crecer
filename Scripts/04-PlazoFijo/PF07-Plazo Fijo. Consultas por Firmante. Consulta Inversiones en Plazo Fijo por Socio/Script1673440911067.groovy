@@ -45,8 +45,8 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,11))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblMontoActivoporTitular'))
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtFormaDeCalculo'), "TOTAL")
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtMoneda'), "ARS")
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtIdPersona'), "1002709912")
+WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtMoneda'), "1002709912")
+WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtIdPersona'), "ARS")
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
