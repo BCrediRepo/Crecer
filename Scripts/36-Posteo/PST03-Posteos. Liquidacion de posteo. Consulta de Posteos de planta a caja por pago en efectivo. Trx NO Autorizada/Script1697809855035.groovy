@@ -1,0 +1,116 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat
+import java.util.Date
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
+WebUI.maximizeWindow()
+
+//Ejecuta en la linea de comando ENQ BCCL.E.EB.POSTEO.INAU
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.POSTEO.INAU')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Abre la pestaña BCCL.E.EB.POSTEO.INAU
+WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Ejecuta en la linea de comando ENQ BCCL.E.EB.POSTEO.INAU
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.POSTEO.INAU')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Abre la pestaña BCCL.E.EB.POSTEO.INAU
+WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+
+//Verifica titulo BCCL.E.FIRMAS.FISICA
+WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblTituloBCCL.E.EB.POSTEO.INAU'))
+
+//Maximiza la pantalla
+WebUI.maximizeWindow()
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//Selecciona boton EJECUTAR
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//Espera y Verifica que devuelva un registro
+WebUI.waitForElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+def element = WebUI.getText(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'))
+assert element.contains('Id Transaccion')
+
+//---------------------------
+
+//Conteo registros
+WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println TotalRegistros
+//-----------------------------
+
+//Selecciona boton Liquidar de la primera tx
+WebUI.click(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/btnLiquidar'))
+
+//Abre la pestaña BCCL.AC.CIERRE.CUENTA
+WebUI.switchToWindowTitle('BCCL.AC.CIERRE.CUENTA')
+
+//Valida el mensaje de las tx no autorizadas
+WebUI.waitForElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.AC.CIERRE.CUENTA/lblExistentransaccionespendientesdeautorizar'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.AC.CIERRE.CUENTA/lblExistentransaccionespendientesdeautorizar'))
+def element2 = WebUI.getText(findTestObject('Object Repository/37-Posteo/BCCL.AC.CIERRE.CUENTA/lblExistentransaccionespendientesdeautorizar'))
+assert element2.contains('Existen transacciones pendientes de autorizar.')
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
+

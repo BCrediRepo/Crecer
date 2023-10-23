@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblSucursalDestino4</name>
+   <tag></tag>
+   <elementGuidId>239f5ce8-e853-47dc-9da9-4a7cbada957b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr[4]/td/span/label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>12188fa6-44ea-42e4-a6b3-1d89b2dfc860</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>value:4:1:1</value>
+      <webElementGuid>e0356ddc-92ed-485b-b24b-387cad4cd13e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sucursal Destino</value>
+      <webElementGuid>a6b9f17c-f6ec-4ffa-886f-c3a622af443f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[4]/td[1]/span[1]/label[1]</value>
+      <webElementGuid>e5fad701-2bb0-45cf-abf3-a3fd94cb77f0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr[4]/td/span/label</value>
+      <webElementGuid>6ffd470f-a0d3-4055-a6eb-23205f371d8d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[3]/following::label[1]</value>
+      <webElementGuid>a11748e8-17c9-4701-85fd-a6ce0c62034d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucural Origen'])[4]/following::label[1]</value>
+      <webElementGuid>e5a6cb9c-507c-4251-8ba9-94df5be1a930</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[4]/preceding::label[1]</value>
+      <webElementGuid>81eb1ce7-b397-4a7a-a939-3eda4b85ebcc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NO.SORT.OPTION'])[4]/preceding::label[1]</value>
+      <webElementGuid>99617880-1e98-40c1-b043-9de1a29a53a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td/span/label</value>
+      <webElementGuid>6350f38c-1d8a-41b8-8194-b424bcb474e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Sucursal Destino' or . = 'Sucursal Destino')]</value>
+      <webElementGuid>1205bb54-22e1-4053-a77e-e223c84e9b2f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

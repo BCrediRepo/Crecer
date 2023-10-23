@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EC11-Emision de chequeras. Consulta por Numero de Cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de97e269-ecff-4a1d-b4f4-f9ee8cc650de</testCaseGuid>
+</TestCaseEntity>

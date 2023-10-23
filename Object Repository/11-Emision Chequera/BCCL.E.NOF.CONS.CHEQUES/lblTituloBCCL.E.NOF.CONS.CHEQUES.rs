@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTituloBCCL.E.NOF.CONS.CHEQUES</name>
+   <tag></tag>
+   <elementGuidId>9873c581-7353-4892-a272-0ecd5f1feb1f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLENOFCONSCHEQUES</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>a0ff48dc-dd41-4519-9d11-a288f4859d03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLENOFCONSCHEQUES</value>
+      <webElementGuid>ebcb029e-48bb-4002-87ea-e27b8bf4c61b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>BCCL.E.NOF.CONS.CHEQUES</value>
+      <webElementGuid>10718232-644c-4250-820a-de60e3fed281</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLENOFCONSCHEQUES&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLENOFCONSCHEQUES enqsel-selections enqsel-selections_BCCLENOFCONSCHEQUES&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLENOFCONSCHEQUES&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLENOFCONSCHEQUES&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLENOFCONSCHEQUES&quot;]</value>
+      <webElementGuid>92f03ac2-138e-4821-9b75-f8755ab82c54</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>cd3b9ba9-ee74-440b-b2de-9979797a925c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::td[5]</value>
+      <webElementGuid>2bf8dd5d-e2cd-4288-8555-1106aa042e50</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/preceding::td[2]</value>
+      <webElementGuid>06cf4c62-2337-4e74-b4bc-d4a22915dbb6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>b8585734-47ab-4a53-b86f-14cc26176850</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>0f3ed2b2-2cb8-40f8-b3bb-85b59b7a9f7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'BCCL.E.NOF.CONS.CHEQUES' or . = 'BCCL.E.NOF.CONS.CHEQUES')]</value>
+      <webElementGuid>232c937c-236c-4520-80b2-186a09596fab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

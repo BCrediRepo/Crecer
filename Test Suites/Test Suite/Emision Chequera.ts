@@ -29,7 +29,7 @@
       <guid>85a6400a-c078-4a6b-9acf-4348e6fe57f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC03-Emisión de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace más de 3 días</testCaseId>
+      <testCaseId>Test Cases/09-Emision Chequera/EC03-Emision de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace mas de 3 dias</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

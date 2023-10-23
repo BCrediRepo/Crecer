@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblMovimientosporFechadeCuentas</name>
+   <tag></tag>
+   <elementGuidId>43dd001d-765e-4b1c-ba22-8a1f3f8e3eca</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Movimientos por Fecha de Cuentas' or . = 'Movimientos por Fecha de Cuentas')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLECONSSALDOSDIARIOS</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>195ee413-5f11-4ae4-ab86-8fd28fb01a44</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLECONSSALDOSDIARIOS</value>
+      <webElementGuid>b474fc63-cc1a-42ee-ae18-bd309f7e9c3b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Movimientos por Fecha de Cuentas</value>
+      <webElementGuid>f280546b-dfd1-439c-81bc-4b8c7af0d1f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLECONSSALDOSDIARIOS&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLECONSSALDOSDIARIOS enqsel-selections enqsel-selections_BCCLECONSSALDOSDIARIOS&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLECONSSALDOSDIARIOS&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLECONSSALDOSDIARIOS&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLECONSSALDOSDIARIOS&quot;]</value>
+      <webElementGuid>998780f8-19fa-4c0c-8a44-d288fffa9d55</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>c7366f79-5268-4c41-b4c0-e1d8221a6623</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::td[5]</value>
+      <webElementGuid>754c069b-49c4-4578-8536-256fb551b90b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/preceding::td[2]</value>
+      <webElementGuid>fcb2dae3-2c4c-49dd-a678-8a4c41e98945</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>395d121f-9db3-4f9d-9b11-f3b8899d3850</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>1cd4183c-f5a2-45b9-87fc-98b94d6e98f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Movimientos por Fecha de Cuentas' or . = 'Movimientos por Fecha de Cuentas')]</value>
+      <webElementGuid>49635247-a18c-48ff-9d23-cd5801b979b3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

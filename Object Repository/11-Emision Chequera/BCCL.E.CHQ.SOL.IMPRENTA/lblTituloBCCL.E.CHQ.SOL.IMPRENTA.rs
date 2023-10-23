@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTituloBCCL.E.CHQ.SOL.IMPRENTA</name>
+   <tag></tag>
+   <elementGuidId>27cc4b24-3011-45cf-9210-6a757517b6d7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.caption.caption_BCCLECHQSOLIMPRENTA</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>42957304-8d68-483a-951e-ed323782db25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caption caption_BCCLECHQSOLIMPRENTA</value>
+      <webElementGuid>c58623c7-25b4-47b6-b2f1-a09f58ccb109</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>BCCL.E.CHQ.SOL.IMPRENTA</value>
+      <webElementGuid>61131237-5f75-4dcd-a51a-fc43d1a8d290</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqsel&quot;)/table[@class=&quot;enqsel-main enqsel-main_BCCLECHQSOLIMPRENTA&quot;]/tbody[1]/tr[1]/td[2]/table[@class=&quot;display_box display_box_BCCLECHQSOLIMPRENTA enqsel-selections enqsel-selections_BCCLECHQSOLIMPRENTA&quot;]/tbody[1]/tr[1]/td[1]/table[@class=&quot;header-table header-table_BCCLECHQSOLIMPRENTA&quot;]/tbody[1]/tr[@class=&quot;caption caption_BCCLECHQSOLIMPRENTA&quot;]/td[1]/table[1]/tbody[1]/tr[1]/td[@class=&quot;caption caption_BCCLECHQSOLIMPRENTA&quot;]</value>
+      <webElementGuid>62c0d136-91bc-4d4d-8484-6d4cf55940e1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>015c2189-4568-4503-8474-d014b7d0f749</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/following::td[5]</value>
+      <webElementGuid>5debcd61-38b5-4af1-b72e-372864c31995</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mas Opciones'])[1]/preceding::td[2]</value>
+      <webElementGuid>761ca248-a71f-4fab-a5eb-e7560a3018a5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[3]</value>
+      <webElementGuid>98ba30d8-60bc-4b15-97dc-1f4d2351b053</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>8794e224-b247-453f-8716-70e29a2b056a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'BCCL.E.CHQ.SOL.IMPRENTA' or . = 'BCCL.E.CHQ.SOL.IMPRENTA')]</value>
+      <webElementGuid>4e3d1e1f-769b-4299-8b28-2abf33e2736a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

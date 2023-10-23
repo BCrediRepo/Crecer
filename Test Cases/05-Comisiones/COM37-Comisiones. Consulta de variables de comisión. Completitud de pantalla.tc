@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM37-Comisiones. Consulta de variables de comisión. Completitud de pantalla</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb7b3b5a-789e-4b0c-9584-f9c9c510a1c4</testCaseGuid>
+</TestCaseEntity>

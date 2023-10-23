@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblMantenimientodeComisiones</name>
+   <tag></tag>
+   <elementGuidId>b751d3f5-c011-4266-98ba-c56f8a054604</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.ENQ-H-TITLE.ENQ-H-TITLE_BCCLETIPCOMISION</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Mantenimiento de Comisiones' or . = 'Mantenimiento de Comisiones')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>838b605d-f084-4cba-8853-77185bf24129</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLETIPCOMISION</value>
+      <webElementGuid>c39927bc-957e-4081-a1c6-ffb52f1a72b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Mantenimiento de Comisiones</value>
+      <webElementGuid>43d4ead7-2d80-410b-8cc6-8245ab9898ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLETIPCOMISION&quot;]</value>
+      <webElementGuid>7f05f4c0-77c5-4c33-aee3-6cb51ecc43b5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      <webElementGuid>ab9e195d-88e4-493c-96a8-eea2575cb3f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Comision'])[1]/preceding::td[2]</value>
+      <webElementGuid>4279e0a2-19a9-4fb6-bff5-452a9387e928</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/preceding::td[2]</value>
+      <webElementGuid>c56dace6-d4ed-4dfb-a0c6-ef8252daa51f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Mantenimiento de Comisiones']/parent::*</value>
+      <webElementGuid>e46896aa-9e85-4709-b45e-ab213dd97c7c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td</value>
+      <webElementGuid>688bda8a-6873-4833-9aed-115aa296c83c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Mantenimiento de Comisiones' or . = 'Mantenimiento de Comisiones')]</value>
+      <webElementGuid>95b3a2a1-5e59-4f8a-b914-5286c099ea58</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
