@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EC09-Consulta de solicitudes y Chequeras. Usuario de Sucursal. Tipo de chequera IGUAL A Boleteras de Deposito Personalizada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a738387d-8747-42a8-b83b-2f508d2a5b85</testCaseGuid>
+</TestCaseEntity>

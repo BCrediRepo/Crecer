@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM36-Comisiones. Consulta de comisiones por tipo. Completitud de pantalla</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a16027a7-4684-4ba8-9412-2d61f29e8ad4</testCaseGuid>
+</TestCaseEntity>

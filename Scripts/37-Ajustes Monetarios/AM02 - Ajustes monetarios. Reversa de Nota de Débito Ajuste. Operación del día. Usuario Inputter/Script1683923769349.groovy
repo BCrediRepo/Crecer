@@ -27,7 +27,7 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(
         2, 14))
 
-//Se maximisa la ventana
+//Se maximiza la ventana
 WebUI.maximizeWindow()
 
 //Toma screenshot
@@ -113,7 +113,7 @@ assert element.contains('Txn Completa:')
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se inserta el numero de transaccion en el imput "Nota de Debito por Ajuste"
+//Se inserta el numero de transaccion en el input "Nota de Debito por Ajuste"
 WebUI.setText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/inputNotadeDebitoporAjuste'), 'FT22207670803238')
 
 //Se clickea en btn "Ver Un Registro"

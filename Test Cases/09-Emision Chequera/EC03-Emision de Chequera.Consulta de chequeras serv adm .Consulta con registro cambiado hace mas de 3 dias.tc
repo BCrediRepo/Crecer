@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>EC03-Emisión de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace más de 3 días</name>
+   <name>EC03-Emision de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace mas de 3 dias</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>464a1fd5-791f-4d02-9bde-8d20f86c0933</testCaseGuid>

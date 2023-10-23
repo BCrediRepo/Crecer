@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblMANTENIMIENTO</name>
+   <tag></tag>
+   <elementGuidId>d7f43fe0-b26d-4b85-b53b-da02807a8f56</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.active-tab > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='headtab']/tbody/tr/td/a/span</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'MANTENIMIENTO' or . = 'MANTENIMIENTO')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c1aa1e03-536c-400a-8ba5-9df149a326bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>MANTENIMIENTO</value>
+      <webElementGuid>bf7840d9-a369-4ef6-af36-74c91ae4dde7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[1]/a[@class=&quot;active-tab&quot;]/span[1]</value>
+      <webElementGuid>711c07d7-92df-4d27-808b-f19dbbe12734</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='headtab']/tbody/tr/td/a/span</value>
+      <webElementGuid>8eaea43c-5ef2-479c-8a5f-630c1c9ddffb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::span[1]</value>
+      <webElementGuid>c2438658-9673-46be-9da8-2f678d03fd3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BUZATH'])[1]/following::span[1]</value>
+      <webElementGuid>6c815587-8fa9-4180-986a-19dab12e59db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auditoria'])[1]/preceding::span[1]</value>
+      <webElementGuid>7f2a1269-88dc-44b6-96d7-0129938aff7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GB Tipo Comision'])[1]/preceding::span[2]</value>
+      <webElementGuid>596e446c-74fc-43f9-899c-27752ab55d39</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='MANTENIMIENTO']/parent::*</value>
+      <webElementGuid>063fb3a2-cbd7-4c1f-a67a-6d9e141d30ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/table/tbody/tr/td/a/span</value>
+      <webElementGuid>4557edba-45e1-427f-bb33-2b575006a769</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'MANTENIMIENTO' or . = 'MANTENIMIENTO')]</value>
+      <webElementGuid>1134e6b0-f6f3-44d2-ac22-5bdc52dc289b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

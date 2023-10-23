@@ -526,7 +526,7 @@
       <guid>e7db849c-3ce3-4c41-a0e1-f97a9c5b7c42</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC03-Emisión de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace más de 3 días</testCaseId>
+      <testCaseId>Test Cases/09-Emision Chequera/EC03-Emision de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace mas de 3 dias</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
