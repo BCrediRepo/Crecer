@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtBCCL.AS.DDIF.PASES</name>
+   <tag></tag>
+   <elementGuidId>769c9893-c99a-44cf-bf97-801b50f6c790</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>table.enqheader.enqheader_EBCCLASDDIFPASES > tbody > tr > td</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>978ce1e8-342a-4632-9b20-3bb71f7eabbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> BCCL.AS.DDIF.PASES - Lista Default</value>
+      <webElementGuid>e778d198-adac-4a26-aa3b-12d48b5776af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryHeaderContainer&quot;)/tbody[1]/tr[1]/td[1]/table[@class=&quot;enqheader enqheader_EBCCLASDDIFPASES&quot;]/tbody[1]/tr[1]/td[1]</value>
+      <webElementGuid>f77f25f2-5522-466d-bfc3-86f4d9f0197b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enquiryHeaderContainer']/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>23341eda-2e6e-43a3-b3b9-319ae8341f15</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[1]/following::td[4]</value>
+      <webElementGuid>652ddc18-6614-4b66-87bd-bb48cdb13bdc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[1]/following::td[4]</value>
+      <webElementGuid>6387ab42-5625-45ee-b63f-23b54ac3398d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id'])[1]/preceding::td[5]</value>
+      <webElementGuid>d8d07192-1912-47d7-bbb3-458eddd5d20f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ft id'])[1]/preceding::td[8]</value>
+      <webElementGuid>9e6784d9-82e2-420e-bb24-2406f59c3d18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>a6cad114-c423-448f-8bec-998ac1cbb085</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = ' BCCL.AS.DDIF.PASES - Lista Default' or . = ' BCCL.AS.DDIF.PASES - Lista Default')]</value>
+      <webElementGuid>ffc89526-d979-46f7-a26e-44ce2d099035</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
