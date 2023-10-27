@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AM08-Consulta de operaciones para eliminación. Ingresar usuario que realiza la consulta</name>
+   <name>AM06-Consulta de operaciones para eliminación. Ingresar usuario que realiza la consulta</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>9bbe0794-56de-405f-aa1c-8c3573ecc213</testCaseGuid>

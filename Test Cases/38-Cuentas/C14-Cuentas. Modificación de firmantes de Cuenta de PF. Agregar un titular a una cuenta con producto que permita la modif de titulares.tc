@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>C17-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</name>
+   <name>C14-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8024a224-4503-492c-8d6f-df22fbbb90fe</testCaseGuid>

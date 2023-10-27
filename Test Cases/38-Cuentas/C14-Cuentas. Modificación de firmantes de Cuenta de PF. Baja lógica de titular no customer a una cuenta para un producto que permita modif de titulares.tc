@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>C14-Cuentas. Modificación de firmantes de Cuenta de PF. Baja lógica de titular no customer a una cuenta para un producto que permita modif de titulares</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>efe9a3d3-c16f-4c60-81d7-546fc6da1fd8</testCaseGuid>
-</TestCaseEntity>

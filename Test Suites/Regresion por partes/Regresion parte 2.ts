@@ -12,181 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>8d7d6cdc-7446-4f55-b733-fcfe11f3479d</testSuiteGuid>
    <testCaseLink>
-      <guid>9bb8dd81-996e-409f-83fc-7304b1e816f5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC01-Consulta de operatoria de filiales. Cambio de Denominacion. Moneda Local. Monto en moneda local</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e498ecbb-a748-41b5-bb24-89b02ada12ff</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC02-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Fecha desde del filtro igual a la fecha del dia</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>23985359-2759-4fba-b0fa-305683f6a06a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC03-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Fecha desde del filtro menor a la fecha del dia</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>858ac5d0-28e3-4441-acd4-90763da6ed2e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC04-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Legajo del filtro igual a legajo existente de la sucursal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>532bf8b5-7372-4104-8134-47c9e9a5c830</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC05-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Sucursal filtro existente</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6973337c-5ede-49ed-8c26-870936dd2be1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC06-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Codigo de Trx del filtro igual codigo de asignacion de faltante a Cajero</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>62a23565-75d6-42c9-bd04-7647ada48bca</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC07-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Codigo de Trx del filtro igual codigo de faltante de Cajero</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b0d342ee-b18b-4c5c-8163-1c00d448039a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC08-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN movimientos en Efvo. Detalle de un Codigo Operativo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f89726e3-aec6-43d5-a19a-734140a2d920</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC09-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN mov en Efvo. Detalle de una Trx FUNDS.TRANSFER</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>717caff1-7094-42f6-a9e0-4d3e96d7bd45</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC10-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN movimientos en Efvo. Detalle de una Trx AC.CHARGE.REQUEST</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>701473aa-2839-4c8e-bb89-3f5f96a7bc96</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC11-Consulta de operatoria de filiales. Consulta de Totales por usuario SIN movimientos en Efvo. Detalle de un Cod Operativo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4c1af44d-9f81-479b-a3cd-adbde83bfaff</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC12-Consulta de operatoria de filiales. Consulta de Totales por usuario SIN movimientos en Efvo. Detalle Trx AC.CHARGE.REQUEST</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9e286e07-556c-4c8b-9e5a-14ff3b40b99a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC13-Consulta de operatoria de filiales. Consulta de Totales por user SIN mov en Efvo. Detalle Trx FUNDS.TRANSFER</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1d1ba37a-110d-41e0-abbe-63391ba25eaa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC14-Consulta de op filiales. Consulta de Totales x user SIN mov en Efvo.Casa Central. Filtro User distinto del user</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9254f7eb-bba7-449d-8703-f68847f05f83</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC15-Consulta de op filiales. Consulta de Totales x user SIN movimientos en Efvo. Perfil Jefe. Filtro User distinto del user. User de misma suc</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>bef6447d-67bd-485c-8aed-63a740105750</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC16-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. Usuario Casa Central. ARS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>67447d20-77e4-49be-ab68-2c63e38cd1b8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC17-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero. USD</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>381d8f02-0b5b-4f33-baaf-5bfaa01b55a6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC18-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero.ARS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>923555b5-6f8f-4d19-af66-e6338e11cbc4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC19-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Tesorero.USD</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6823e9c6-ddb9-4a68-97b1-a464a94d89c7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC20-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Tesorero.ARS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ab01dd9b-6be7-482b-8cbb-5dee2a829dbd</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC21-Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. Detalle de una Trx FUNDS.TRANSFER</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ea4bc3ee-32ce-40a4-833d-fc0321e560de</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC22-Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. Divisa igual Pesos. Casa Central. Sucursal Existente</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b01109df-92f6-43d3-bdbb-707555ee8c74</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC23-Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. ARS. Usuario de Sucursal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9a5ac860-c541-4e23-a473-fe359c4bd88b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC24-Consulta de detalles de operaciones por usuario SIN movimientos en Efvo. Detalle de una Trx FUNDS.TRANSFER</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4e7eed6e-f9bc-427a-9ef0-8a31f5d7fbb6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC25-Consulta de detalles de operaciones por usuario SIN movimientos en Efvo. Perfil Jefe. User distinto user. User misma suc</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>459e18f2-d5c5-4fc3-8b3c-7626628dd299</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -222,20 +47,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7c0c563a-a9c2-473e-96a0-0907094aee0f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS01-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona válida</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e0f1c67a-bd73-42f0-bee7-6171da5970cf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS02-Compensación de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transacción en Último Día Hábil</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1d2f282c-fd56-4fa2-b1c5-4abde9d1710a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -247,20 +58,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/12-Transferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar. Sucursal Destino. Perfil Planta. Datos válidos</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a3e2a9a0-b6c9-4dfe-bc0d-2eef6fa5f157</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/13-Recaudaciones/RE01-Recaudaciones.Cobro de Tarjeta de Crédito Cabal para Personas Jurídicas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1b06bad8-b6cb-41fe-a7b0-1c406c23564a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/13-Recaudaciones/RE02-Recaudaciones.Reversa de pago de tarjeta CABAL</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -411,139 +208,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f9f1c59b-a869-4f88-8fb6-fcfae37c2ecb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA01-Consulta Historica Mov.Automaticos.Consulta BCCL.E.MOV.AUT.TRANS.ARR con dos filtros</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>bb4e6f9d-4a66-46a8-97a4-0964b4dbe3c1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA02-Movimientos Automaticos. Consulta de movimientos a Reversar. Filtro Vacios</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>33c0593e-edc4-45b1-a21a-c1766b268e03</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9d44d949-8376-4349-b3d9-39838653c7fc</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA04-Consulta de Movimientos Automáticos Aceptados. Filtro por empresa y por secuencia</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0eb410ba-2362-4d72-b778-56d63a43357e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA05-Consulta Movimiento aceptado. Movimiento aplicado en Dolares por el importe minimo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>49c541cc-78c2-4347-b8a3-1b5b1e0d9fba</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA06-Consulta Movimiento aceptado. Movimiento aplicado en Dolares por el importe Total</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>dfeb8b26-8d52-4849-9aa4-c9b6781b8d89</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA07-Consulta Movimiento aceptado. Movimiento aplicado en Pesos por el importe mínimo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e5ee0eca-15d9-4156-bf50-71f7ab835a0c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA08-Consulta Movimiento aceptado. Movimiento aplicado en Pesos por el importe Total</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>307a7e73-f334-42e3-92fd-29da6c5df23a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA09-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta inexistente</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>110496b5-cce2-424a-92dd-41b1cf00dc22</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA10-Consulta de Movimientos Rechazados. Filtro por Secuencia</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>92316e02-321e-4a08-b8fc-be3e94ff71f6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA11-Consulta de Movimientos Rechazados. Movimiento rechazado. Movimiento no arreglado</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c4d6d46d-a067-405f-a668-204bbe25f10a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA12-Transacción de arreglos.Ingreso por código de resultado</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5733a8e2-ec00-4a68-a2f0-9c42632dbc0f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA13-Transacción de arreglos.Movimiento de débito de tarjeta de credito rechazado por fondos insuficientes.Completitud</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e66b03b7-e43f-40eb-a771-003a17fdb506</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA14-Transacción de arreglos.Movimiento para arreglar.No es pago de tarjeta de credito</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b1910bee-d8a7-46cc-a7bf-1201891a9675</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA15-Transacción de arreglos.Movimiento que no es de débito de tarjeta de crédito.Retorno cuenta sin fondos</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>be405b19-7636-4b4d-9de7-9e58da0660ae</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA16-Consulta de Movimientos Automáticos Aceptados. Movimiento aceptado. Movimiento no arreglado</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7f64ee52-07a7-48a8-a5c0-592f68b65e36</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA17-Consulta de Movimientos Automáticos Aceptados. Movimiento aceptado. Movimiento arreglado</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>74233b10-f15f-4f79-9d3e-555c898b00e1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA18-Movimientos Automaticos. Consulta de movimientos Aceptados. Movimientos a Reversar</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c33113cc-f068-42ad-a949-e45ce737a5c0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA19-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta CGU excede el límite</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>0e3aab2e-f2bf-41ef-8532-93b8c3a3e5cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -572,17 +236,437 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>68ff666b-d260-4b35-99b8-b4afca341b95</guid>
+      <guid>7fb9e531-faf2-4034-98fd-8cc1da2b8920</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/31-Pago de intereses/PDI01-PAGO DE INTERESES. Consulta Devengamiento FCI</testCaseId>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con débito en cuenta. Acumuladores. Total Débitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>30982d10-8f51-4e50-a52a-1cb35188345a</guid>
+      <guid>fe385284-ca50-4dd8-ac83-780029f0cea4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP01-MEP. Transferencias MEP. Transacciones Online. Otros Conceptos. Usuario de filial NIV5</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3798559b-cc7b-493b-b71b-dea67916da99</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP02-MEP. Transferencuas enviadas. Eliminacion Map</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0a0dfa98-9c39-4481-b9a7-ec970ef2539b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP03-Autorizacion de transferencias MEP propias con usuario N5</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3d5019e3-a826-4806-97ee-4303df113f66</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC01-Consulta de operatoria de filiales. Cambio de Denominacion. Moneda Local. Monto en moneda local</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dd3ff099-249c-45dc-99b9-eb962cc0fcd8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC02-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Fecha desde del filtro igual a la fecha del dia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>528fc001-4bc2-4f84-9b98-32fb73d1afe3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC03-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Fecha desde del filtro menor a la fecha del dia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>322941d5-b34e-4eef-9723-4165b9ec7008</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC04-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Legajo del filtro igual a legajo existente de la sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>da9395b1-69a6-4b35-812d-0bd7652732e9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC05-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Sucursal filtro existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>db338526-404c-4068-b785-df52f5ce5e64</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC06-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Codigo de Trx del filtro igual codigo de asignacion de faltante a Cajero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5d49668e-c341-449a-b284-16f0ad3e1de8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC07-Consulta de operatoria de filiales. Consulta de faltante y extorno de caja. Codigo de Trx del filtro igual codigo de faltante de Cajero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d5d6452f-a2e4-4b8b-b90b-1a2308176482</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC08-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN movimientos en Efvo. Detalle de un Codigo Operativo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>10223588-0937-48e2-87ac-1b93e7e50e25</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC09-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN mov en Efvo. Detalle de una Trx FUNDS.TRANSFER</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e1418ee0-14ed-451a-b6ae-c1eb0d52324f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC10-Consulta de operatoria de filiales. Consulta de Totales por Filial SIN movimientos en Efvo. Detalle de una Trx AC.CHARGE.REQUEST</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f36caeb5-71bc-494d-8fe7-cd6b77ddb7e1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC11-Consulta de operatoria de filiales. Consulta de Totales por usuario SIN movimientos en Efvo. Detalle de un Cod Operativo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4bced932-3548-4320-a487-037d72f78391</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC12-Consulta de operatoria de filiales. Consulta de Totales por usuario SIN movimientos en Efvo. Detalle Trx AC.CHARGE.REQUEST</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c176fd00-3398-4d9b-b8ce-cc82eeba09e1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC13-Consulta de operatoria de filiales. Consulta de Totales por user SIN mov en Efvo. Detalle Trx FUNDS.TRANSFER</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3605f8c4-ee23-4c58-b06b-48991a120d1e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC14-Consulta de op filiales. Consulta de Totales x user SIN mov en Efvo.Casa Central. Filtro User distinto del user</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b9440914-9060-4e44-85cd-efc76c2e046e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC15-Consulta de op filiales. Consulta de Totales x user SIN movimientos en Efvo. Perfil Jefe. Filtro User distinto del user. User de misma suc</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9f043880-52fd-490a-8384-dbbb0a0eed8e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC16-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. Usuario Casa Central. ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>10684e3d-a29b-4807-a87e-22593f95a531</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC17-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero. USD</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91976000-5810-4d6a-8e0f-879ee68a6a6b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC18-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Cajero.ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>09ee41bd-e1ed-446d-8ff5-f96d22bbeb92</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC19-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Tesorero.USD</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>12198d0d-e3a1-48e2-9152-c55c76bc0461</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC20-Consulta de operatoria de filiales. Consulta existencia final de efectivo por denominacion. User Filial. Perfil Tesorero.ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>806a0c17-e5a6-457d-aa7e-5086ad46d9a6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC21-Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. Detalle de una Trx FUNDS.TRANSFER</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6e94d889-b21b-4dc8-a9b6-e4e26602d074</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC22-Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. Divisa igual Pesos. Casa Central. Sucursal Existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8d9f86f5-0682-4344-b794-5c8648901b8e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC23-Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. ARS. Usuario de Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ca63a487-922d-464e-af76-fd7db9d6a7ca</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC24-Consulta de detalles de operaciones por usuario SIN movimientos en Efvo. Detalle de una Trx FUNDS.TRANSFER</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e96173b5-8cac-46e3-8da9-edb319e858b7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC25-Consulta de detalles de operaciones por usuario SIN movimientos en Efvo. Perfil Jefe. User distinto user. User misma suc</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>83c347bf-fc96-45b0-b9ea-837a0019c6cf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC26-Recupero en filiales NOcom</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c6a88961-0d1c-4868-aa42-1dab911f47a6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC27-Automatización de Sucursales.Consulta de Totales de Cajas.ENQ BCCL.E.TT.POSITION.USR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b9beba3b-d872-481a-bc98-a086f6f7a91a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC28-Automatización de Sucursales.Automatización.Txn Consulta Toma del Tesoro.ENQ BCCL.E.TT.TOMA.TESORO</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd6e011c-c6be-4369-8a1a-e8446ea7ba4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC29-Automatización de sucursales.Consulta Libro del Tesoro.Enquiry BCCL.E.TT.LIBRO.TESORO</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6ae4aa00-6349-4526-b3d1-b3cce5e43f3b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC30-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominación.Perfil Cajero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c1cf58e1-e1c8-4ccd-ae6c-2756e9780675</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC31-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominación.Perfil Usuario Casa Central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>33510037-268b-4c8c-b60f-19dc18b10ec4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC32-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominación.Perfil Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c972c3fb-e594-41c4-bdf9-9e92092a8142</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC33-Caja. Consulta General Posicion de efectivo en Sucursal. Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>eb112dad-343b-4b00-bcbd-4432650a3deb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC34-Automatización de Sucursales.Pases Entre Cajas.Consulta Posición de efectivo en Sucursal. Perfil Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>36ac732a-9641-440f-87cd-bf23cfc4d64b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC35-Automatización de Sucursales.Pases Entre Cajas.Consulta de Estado de cajas.Perfil Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>456918ba-2a3a-483e-94a1-653504002dc5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC36-Consulta de detalles de operaciones por Filial CON movimientos en Efvo. Divisa igual Pesos. Usuario de Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>36b71780-d860-4fb5-b04a-ab083360632e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC37-Consulta de detalles de operaciones por usuario CON movimientos en Efvo. Perfil Usuario. Filtro Usuario igual al usuario caja</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0cb9982e-1c41-47d2-a975-dd2eb04352b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Operaciones Reversadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c28a3ff8-4c6c-4f67-9632-bcc2720381a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC39-Consulta existencia final de efectivo por denominación. Casa Central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>858b8cdc-d75a-478b-9731-a6989b391e98</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC40-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Cajero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3081b875-c04f-4065-8b7c-193e9a777dc1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC41-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0a4a988c-7811-4d7e-880f-56499ff1d36c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON22-Moneda extranjera. Compra Venta. Consulta Totales de Operatoria. Detalle. Compra BANCA TAS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b6e07c0c-b0a7-45f3-80b2-ca218a7c9a72</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON23-Moneda extranjera. Compra Venta. Consulta Totales de Operatoria. Detalle. Venta BANCA TAS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d5f8ff33-918f-4c38-97e9-c7313e2190b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON25-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Acumulado por Asociado Mensual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b96e19ec-0afa-47a6-8b34-90b4c184abfa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON24-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Acumulado por Asociado Anual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ee3f0e74-c5f7-4d3e-b685-fa62888c6054</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON26-Consulta de Acumulados por Asociado Operaciones de Compra-Venta de Moneda Extranjera. Persona Física. Id Persona Valido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5cdb553c-b3d6-4a71-9a97-72f71ea7b211</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON27-Consulta de Compra Venta de Moneda Extranjera. Persona Juridica. Asociado sin Operaciones de Cambio Efectuadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9424b87b-edfc-4f89-82c3-0b1f1b9c1ed9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON28-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Acumulado por Asociado Anual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99c28ced-52a3-4481-bfea-2e144a0d953d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON29-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Acumulado por Asociado Mensual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4b72ff44-bed1-4f05-aae1-d01371eada5e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON30-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera.Asociado sin Operaciones de Cambio Efectuadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dda1c17d-bbd5-483f-8440-63301696b8f2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON31-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario válido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>40e19ff9-d27e-40e1-8423-07818916b33c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM01 - Ajustes monetarios. Alta de Nota de Débito Ajuste. Fecha valor permitida. Saldo suficiente entre fecha valor y fecha de proceso. Cuenta sin bloqueos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>780073cf-b16f-49c7-9dfc-7c6715fe8f18</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM02 - Ajustes monetarios. Reversa de Nota de Débito Ajuste. Operación del día. Usuario Inputter</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>84aef1b3-38b6-4730-b228-5909ffa0a14e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM03 - Ajustes monetarios. Proceso de Reversa de Notas Transitorias. Operación del día. Saldo de la cuenta suficiente. Sin bloqueos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d3ff8054-93bd-4710-94cb-8e0ed206b46f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM04 - Ajustes monetarios. Alta de nota de Credito Transitoria. Cuenta con bloqueo de debitos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>350d2076-7a2c-4d08-bfa7-47667054bd23</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM05-Ajustes Monetarios. Contrasiento. Consulta de Transacciones a Contrasentar. Transacción buscada es CHG</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b1009879-f7c7-4a28-a13a-cf112c2be299</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM06-Consulta de operaciones para eliminación. Ingresar usuario que realiza la consulta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dc981d87-884a-4a5b-a63b-db24cd7e800e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM07-Ajustes Monetarios. Contrasiento.Consulta Movimientos de la Transacción. Transacción es CHG. Detalle</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

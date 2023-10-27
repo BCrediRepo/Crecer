@@ -320,258 +320,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>53d78020-3b8a-4889-8b13-2e4bdce711df</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM01-COMISIONES. Comisiones. Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a9a7c5b7-cdbe-4ee8-b0e0-beeb0ca90700</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM02-COMISIONES. Comisiones. Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6db0a454-93f4-49d1-a394-29bb1c71efdd</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>667558ed-5a01-4522-9a9e-37c259b71007</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM04-COMISIONES. Consulta Distribución porcentaje comisiones Telecoop. Completitud</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e35b3f2e-9358-4485-9a29-f0c7eda49131</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM05-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta contiene comisión por monto. Modificación fecha IGUAL a NULL</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7db40130-7815-480e-869e-63287471494e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM06-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. Autorización Baja de comisión por Monto</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>390d1678-bfc3-4abe-8859-4504a10795c6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM07-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b642e496-44d2-492c-a8d8-ab8830d44f9c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM08-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada Porcentaje de bonificación No informado</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6af5a438-d9fe-4428-b3d2-efb6502b6f8f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM09-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Desde No informada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8b2e1b4e-3fd4-4ee2-9860-2dbe1153d5da</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM10-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Hasta Menor a Fecha Desde</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>85ed5d36-a8c3-4244-ab6e-d874c6010eea</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM11-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. . Fecha Desde Menor a la Fecha del Proceso</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>65246ed0-5ae1-4607-942c-b2b19a7d4809</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM12-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Cuenta a Bonificar No informada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a48907b7-c93b-4fb1-9fd4-3d297b6cc690</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM13-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Hasta No informada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>aacde038-b56c-4287-ad1b-c65c4a7c5cb1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM14-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Porcentaje de bonificación MAYOR A100</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0b1021b1-0d50-44ed-910e-a9b500c5a4cf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM15-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Porcentaje de bonificación No informado. Porcentaje de bonificación IGUAL A cero</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f58b07ff-a337-415c-a767-17a17bbf1188</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM16-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Tipo de Comisión NO informado</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f32282e7-2e2f-48c3-9fb2-c76994b4ea66</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM17-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde Informada. Fecha Hasta NO Informada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9d845e50-da37-4fcd-a1c5-0933c1a688a6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM18-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>18bd97b6-65ec-4c32-bdc7-a4c55e1a3a02</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM19-COMISIONES-Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde NO Informada. Fecha Hasta Informada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b10a08a5-c0fb-4669-9c9c-bebb70c3e3a6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM20-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>92780154-2be8-4684-bdbd-6eb798c79b5e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM21-COMISIONESConsulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>06e7e8d3-801a-4ff9-a4c6-a77158c1801c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM22-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde NO Informada. Fecha Hasta Informada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d11ac4a1-e397-4da7-9fc4-7fa1bfe7b950</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM23-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1eba63a0-a32d-4256-a635-202c5b370ee8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM24-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Hasta Informada MENOR A Fecha Desde Informada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a8cb7073-1ce2-4835-8ca8-d7a9b0ddc2ae</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM25-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta y Sucursal Informadas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e9fefa96-a163-4f78-a8b1-be09ec445f8a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM26-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta y Sucursal NO Informadas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ba3c07c9-f3e9-43ee-a8bc-df95b571f7fb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM27-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Fecha Desde Informada, NO hay bonificación</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>db81758f-a94c-4d90-942f-dcb9ae21b84f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC01-Emision chequera.Cons. Chequeras Solic. Control de Facturacion</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a7956714-4387-4e46-8c50-c58de4d3a3f9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC02-Emision Chequera.Invocación del ENQ BCCL.CQ.CONS.ANUL con datos válidos para generar autorizaciones</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e7db849c-3ce3-4c41-a0e1-f97a9c5b7c42</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC03-Emision de Chequera.Consulta de chequeras serv adm .Consulta con registro cambiado hace mas de 3 dias</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3d124de3-e51d-4b25-a1ee-d29cd967dd97</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC04-Emision de Chequera.Consulta pedidos con error. Filtro por Estado. Solicitud en estado 21</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a8c14f94-19cd-4eaa-9b15-285ca983413d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC05-Emision de Chequera. Impresión del Acta de Destrucción de Chequeras. Usuario de Filial. Imprimir Acta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>98a71359-9f87-458b-a4c6-df676796dbb0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC06-Emision de Chequera. Solicitud de Chequera en Sucursal. Tipo de Chequera Pago Comun</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cf886e04-fdba-4823-ad0c-1a62918d8b61</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/11-MEP/MEP01-MEP. Transferencias MEP. Transacciones Online. Otros Conceptos. Usuario de filial NIV5</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4e5bf9fc-5f14-4e2b-b0ad-b7a476ad9c70</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/11-MEP/MEP02-MEP. Transferencuas enviadas. Eliminacion Map</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e4dd9d01-3e4a-4a71-a56b-406488dbbdd4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/11-MEP/MEP03-Autorizacion de transferencias MEP propias con usuario N5</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>23f47d33-4fda-476f-92df-dd3cfe05a8b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -597,6 +345,328 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD13-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7e65d052-534f-4ac9-bc1e-9d3bdbe12213</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT06-Administracion de Piezas con Tarjetas. Envio a otra filal o al Activador Comercial. Envio o Entrega a AC de Card Carrier</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b93749bb-cdcd-4b5a-b82c-5032e7f5da79</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT07-Administracion de Piezas con Tarjetas. Consultas al Maestro de Card Carrier. Seleccion por Nombre. Documento. Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>36e458cb-0f13-4a56-a9f9-2c45aff5c93d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD14-Búsqueda de cuentas por persona para desbloqueo. Completitud. Perfil filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd1d0cfc-c8c5-4b3a-9a8a-4b466ae762b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD15-Búsqueda de cuentas por persona para desbloqueo. Cuenta no bloqueada. Validación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>89c0f6cb-4c5f-4539-bba6-b1077cc0511d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD16-Búsqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ed0506eb-ff7c-49b0-81ba-ad6f9ea86691</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD17-Búsqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil casa central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3a04b6d9-1bdb-4bdb-b120-fec4a507acb8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM01-COMISIONES. Comisiones. Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dbba85ba-bad2-4ae2-8224-c06c3132680a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM02-COMISIONES. Comisiones. Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>456da6ca-6aa6-47aa-82a0-4b1ae4d30427</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM03-COMISIONES. Modificacion de Comisiones de Interbanking (ENQ BCCL.E.CONS.PARAM.COM.CREDEB). Modificar monto de tarifa plana</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b506d385-bc6e-4a01-ada9-17001489f1e0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM04-COMISIONES. Consulta Distribución porcentaje comisiones Telecoop. Completitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>210d4356-3f9d-4b22-b908-c8dc05283a00</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM05-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta contiene comisión por monto. Modificación fecha IGUAL a NULL</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5127d1b5-ff76-4001-a14d-45866897cd46</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM06-COMISIONES Consulta Comisiones periódicas Empresas. Cuenta no contiene registro histórico. Autorización Baja de comisión por Monto</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>90eec86f-18d4-4e71-b904-01b4e3cead4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM07-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a2b72833-af4a-4487-bb98-54a61f8b6d94</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM08-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada Porcentaje de bonificación No informado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5929c961-cdc6-49f4-89c2-8a8104ee19b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM09-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Desde No informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>527d33e2-b87f-4112-84ab-de83ee2b2702</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM10-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Hasta Menor a Fecha Desde</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d117e6c6-c68b-4ba1-9246-8f78b1a60e86</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM11-COMISIONES. Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. . Fecha Desde Menor a la Fecha del Proceso</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9aedc263-5d7e-433d-bb1f-7adbc1e67575</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM12-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Cuenta a Bonificar No informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6b268ff6-b921-4de0-9aea-e0edf4b73afd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM13-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Fecha Hasta No informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3fa7d131-532f-4d67-833e-7df409ada212</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM14-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Porcentaje de bonificación MAYOR A100</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7426c65a-e518-4960-bddd-b1d76a051f72</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM15-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Porcentaje de bonificación No informado. Porcentaje de bonificación IGUAL A cero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>db715665-f6a0-4425-9f31-269003082fa9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM16-COMISIONES.Alta de Bonificaciones. Bonificación No existente para la cuenta ingresada. Tipo de Comisión NO informado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3e9aa175-ac9b-48aa-9f4d-984967a4dddd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM17-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde Informada. Fecha Hasta NO Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>86fd09e9-7d95-484d-96e7-b1436908d9b8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM18-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fb76577d-ccc7-48c8-9851-08a4d5b71ca7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM19-COMISIONES-Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde NO Informada. Fecha Hasta Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>834db146-a52e-4166-98df-41335e971207</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM20-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a0aa1e9c-c83f-4468-ae27-2fe6f40f946b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM21-COMISIONESConsulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>20002992-69c6-4919-a18c-4f112a723b7c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM22-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde NO Informada. Fecha Hasta Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>86630436-bf3c-44ed-ac10-f12aa9e11362</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM23-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>00c9fccb-ba31-4fbe-9642-5fc062201988</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM24-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Hasta Informada MENOR A Fecha Desde Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>23f64a75-c2d2-4a92-9380-09feb68c4cfa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM25-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta y Sucursal Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a4abbfd2-f6a3-4a19-803a-e0b47a1a5a32</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM26-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta y Sucursal NO Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4323ce1c-25ac-497c-8805-8814d7034344</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM27-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Fecha Desde Informada, NO hay bonificación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aa75bb7c-ac19-4723-b03b-b84692206f23</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM28-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Fecha Desde Informada, NO hay bonificación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>48e38406-d6ec-4ae6-ba19-3c6bea8c5a3e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM29-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde Informada. Fecha Hasta NO Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c4a598fd-3f2f-4a75-a90d-9e89dfeda186</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM30-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c96e14d3-a6af-4e62-88d6-f2d8a9b170ab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM31-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde NO Informada. Fecha Hasta Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>98cabd10-262a-4e61-ac84-247542b6a01f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM32-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4af80181-a73b-4421-b8a1-e522c47efe6d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM33-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión NO Informada. Fecha Desde Informada. Fecha Hasta NO Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>626e08b4-1583-4e4d-9c27-33e9783f5517</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM34-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión NO Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7310d676-06da-4955-af2c-e82d5da79675</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM35-Comisiones. Consulta Comisiones cobradas de una cuenta. Tipo de Comisión Informada. Fecha Desde Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4aa61b78-c9e9-43a9-818f-3f6e71407585</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM36-Comisiones. Consulta de comisiones por tipo. Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>36da2572-7e33-4e73-a8fe-e1edccc360b3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM37-Comisiones. Consulta de variables de comisión. Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7833ab4c-f2fb-4ed7-b432-8bd5353677d7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM38-Comisiones. Consulta Tipos de Comision. Consulta Detalle Comision. Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2680db0c-4c32-4867-9db0-e93798427f19</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM39-Consulta-Comisiones Cobrada de Interbanking</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>583916cf-7bec-4b24-ad3b-d54e2c8a4b27</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM40-PH Consulta Distribución porcentaje comisiones Telecoop. Completitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

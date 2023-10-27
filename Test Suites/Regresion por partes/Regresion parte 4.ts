@@ -571,4 +571,109 @@
       <testCaseId>Test Cases/42-Verificacion de Firmas/VDF07-Firmas. BCCL.AS.FIRMA,CONSULTA. Acceder con valor FI22173000006301 válido y existente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>f3c0cfce-fccd-49a3-863d-bf74877504c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST03-Posteos. Liquidacion de posteo. Consulta de Posteos de planta a caja por pago en efectivo. Trx NO Autorizada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d18045db-0bce-4a22-9250-145b45287066</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C12-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id cuenta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7336a637-e066-4c5a-8b8e-f89e1f4e2676</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C13-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>efa29c38-dfb2-401b-bd1c-60b833c3fd5b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C14-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0f53830c-cc65-41d8-b65c-2e5d55e8ba53</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>52797be9-b7c9-4784-a0e7-9b221ef92067</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas. Modificación de subproducto de cuenta de PF</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>43b707bb-f665-4357-8ce7-905e14390c5d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF08-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Datos válidos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4033f9e5-5bd4-47c5-b8f5-6e6b2f29ef0f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF09-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Búsqueda con el filtro vacío</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0a34d4d7-24c6-4d98-ab33-59ea0f4c7e88</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF10-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Persona inválida</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>60d7a59a-2526-4eff-9d06-a9f9c328aba7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF11- Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante .Completitud de menú</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3b59c507-7816-44b2-b73e-9e38da135d97</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF12-Consulta de Firmas. Desde Consulta Gral. Persona Física. Consulta de Firmas Física. Datos válidos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d1564199-ab17-433f-b1bd-10174215a6b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF13-Consulta de Firmas. Desde Consulta Gral. Persona Física. Consulta de Firmas Física. Búsqueda con el filtro vacío</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a0e65412-ed5b-446d-8185-9fee383715f0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF14-Firmas. ENQ BCCL.E.AS.FIRMA. Validación de datos (Número de cuenta)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a93b8f29-19bf-4274-a100-94e7ec0947ba</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF15-Firmas. ENQ BCCL.E.AS.FIRMA. Número de cuenta y Fecha válidos y existentes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aea26dc0-ede4-4bdb-8483-e9ffd1bcac19</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF16-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante .Persona inexistente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -544,38 +544,143 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>90ceac9b-fef8-4b3a-8634-b7d599147df3</guid>
+      <guid>a355b619-cd56-4ee8-ae43-b287b631b392</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM01 - Ajustes monetarios. Alta de Nota de Débito Ajuste. Fecha valor permitida. Saldo suficiente entre fecha valor y fecha de proceso. Cuenta sin bloqueos</testCaseId>
+      <testCaseId>Test Cases/31-Pago de intereses/PDI01-PAGO DE INTERESES. Consulta Devengamiento FCI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>18089ed7-65ba-458c-a908-cba18d2891ef</guid>
+      <guid>a971c093-9d58-4304-8d4a-0c9c8088fd85</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM02 - Ajustes monetarios. Reversa de Nota de Débito Ajuste. Operación del día. Usuario Inputter</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CS01-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona válida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>77ab7add-87c0-40c9-aa60-3c91e19327b9</guid>
+      <guid>863ecea8-47c2-41bb-aae9-a34bd93b4d64</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM03 - Ajustes monetarios. Proceso de Reversa de Notas Transitorias. Operación del día. Saldo de la cuenta suficiente. Sin bloqueos</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CS02-Compensación de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transacción en Último Día Hábil</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>72ab42f8-923e-4819-8862-b15396134865</guid>
+      <guid>fa23e5ee-667f-47cb-ae68-04f7d90e5590</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM04 - Ajustes monetarios. Alta de nota de Credito Transitoria. Cuenta con bloqueo de debitos</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CS03-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacíos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a23017e8-898a-4125-a17d-506eb194ec1f</guid>
+      <guid>954799a6-25f6-422a-bfbd-d4d6bc59a6ec</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CS04-Compensación de saldos. Consulta de Relaciones Compensación Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>831fea8a-aea2-45bc-97dc-7a32eae8951a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CS05-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>314a1eed-6b75-484c-9523-80d09e2ed741</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CS06-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e67548ea-080f-4704-b035-f5938ddc46a4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CS07-Compensación de saldos. Productos y Circulares. Código de producto no informado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1d3b53fb-10f7-405c-ba07-ab722c50f821</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/13-Recaudaciones/RE01-Recaudaciones.Cobro de Tarjeta de Crédito Cabal para Personas Jurídicas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1ede9d20-b7ce-4fb5-8bd9-fc8f7cc4fe55</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/13-Recaudaciones/RE02-Recaudaciones.Reversa de pago de tarjeta CABAL</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2f78a3f0-32fc-4c4f-a1d6-90b07d1834df</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/16-Remesas/REM10-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial vacio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99bd57d0-bff5-4707-902e-79cc60da883e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC21-Consulta movimientos de cuenta por fecha. Campo Desagrupar Monetarios IGUAL a NULL</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a5ce11fc-a298-4a17-9a1f-4d54dda657bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC22-Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Movimientos ingresados entre Fecha de Desde y Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e9b6e5e5-1c38-417b-999c-3216108cdcc7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC23-Consulta por Sucursal. Consulta Saldo de Cuenta. Encabezado. Cuenta operativa en Pesos con Estado Activa. Datos informados correctos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9f21e904-1007-49a6-9af7-7e63d8914eb3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC24-Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas. Cuenta Operativa en estado Cerrada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>647eba45-c04e-44f7-8b61-9eb6355be753</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC25-Consulta movimientos de cuenta por fecha valor. Campo Desagrupar Monetarios IGUAL a SI. No se informan fechas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e2085df-c50c-4f1a-85db-2300d78843f0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F03-Alta de Faltantes de ATM CD TAS. Filial. Completitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7148a044-44c7-4e86-abf6-3d8725752691</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F04-BAJA Faltante en Disp PN - Deposito Intel - Tarj Precargada - Cta Contable</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bedffcf4-f011-46c0-b9d9-fb4924ff090d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F05-Baja Faltantes en Puntos Neutrales Delegados - Cta Cont</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b952d6ae-fbe6-438b-bb84-5cc7dc4c8066</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F06-Falla de dispositivo ALTA Faltante en Disp PN - Retiro. MAP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
