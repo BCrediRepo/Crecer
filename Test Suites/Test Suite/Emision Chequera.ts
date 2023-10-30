@@ -53,4 +53,39 @@
       <testCaseId>Test Cases/09-Emision Chequera/EC06-Emision de Chequera. Solicitud de Chequera en Sucursal. Tipo de Chequera Pago Comun</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>37aaf006-7a63-4c20-9593-b22daafe985c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC07-Consulta de chequeras. Solicitud de chequeras. Control de Facturacion de chequeras. Imprenta 02</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>25196807-358d-4191-a408-ed5bcdb79032</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC08-Consulta de Solicitudes y Chequeras. Usuario de Casa Central. Filtro Estado IGUAL a Vacio. Filtro Numero de Cuenta con datos Validos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9a9b9b71-4ea5-40d9-b0db-d850e2b87ff0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC09-Consulta de solicitudes y Chequeras. Usuario de Sucursal. Tipo de chequera IGUAL A Boleteras de Deposito Personalizada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f0ba0dea-85c9-4da5-9608-b338526f29c9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC10-Emisión de chequeras. Consulta por Cheque</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d405703d-59c4-4ba8-ac16-9fd5a7d8ef76</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC11-Emision de chequeras. Consulta por Numero de Cuenta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

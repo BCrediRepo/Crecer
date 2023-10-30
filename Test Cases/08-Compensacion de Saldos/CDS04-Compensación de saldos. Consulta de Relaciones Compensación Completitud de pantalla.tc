@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CS04-Compensación de saldos. Consulta de Relaciones Compensación Completitud de pantalla</name>
+   <name>CDS04-Compensación de saldos. Consulta de Relaciones Compensación Completitud de pantalla</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b5e73cf8-cff5-4703-a46e-44707e5832e8</testCaseGuid>

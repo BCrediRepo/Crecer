@@ -25,4 +25,11 @@
       <testCaseId>Test Cases/36-Posteo/PST02-Posteos. Pago en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada. USD</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>55566166-4879-4e31-930c-409f72dcbb6b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST03-Posteos. Liquidacion de posteo. Consulta de Posteos de planta a caja por pago en efectivo. Trx NO Autorizada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

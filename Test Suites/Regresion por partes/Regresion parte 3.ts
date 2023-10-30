@@ -554,49 +554,49 @@
       <guid>a971c093-9d58-4304-8d4a-0c9c8088fd85</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS01-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona válida</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS01-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona válida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>863ecea8-47c2-41bb-aae9-a34bd93b4d64</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS02-Compensación de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transacción en Último Día Hábil</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS02-Compensación de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transacción en Último Día Hábil</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>fa23e5ee-667f-47cb-ae68-04f7d90e5590</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS03-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacíos</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS03-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacíos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>954799a6-25f6-422a-bfbd-d4d6bc59a6ec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS04-Compensación de saldos. Consulta de Relaciones Compensación Completitud de pantalla</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS04-Compensación de saldos. Consulta de Relaciones Compensación Completitud de pantalla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>831fea8a-aea2-45bc-97dc-7a32eae8951a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS05-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS05-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>314a1eed-6b75-484c-9523-80d09e2ed741</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS06-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS06-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e67548ea-080f-4704-b035-f5938ddc46a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CS07-Compensación de saldos. Productos y Circulares. Código de producto no informado</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS07-Compensación de saldos. Productos y Circulares. Código de producto no informado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
