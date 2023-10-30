@@ -22,10 +22,77 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,41), findTestData('MainData/Users').getValue(2,41))
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.NOF.CQ.CHRECH.REP.BCRA
+//Ejecuta en la linea de comando ENQ BCCL.E.CQ.CHRECH.REP.BCRA
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.NOF.CQ.CHRECH.REP.BCRA')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.REP.BCRA')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Switch a la ventana BCCL.E.CQ.CHRECH.REP.BCRA
+WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Swicht a la ventana principal
+WebUI.switchToWindowIndex(0)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Switch a la ventana BCCL.E.CQ.CHRECH.REP.BCRA
+WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos los datos para la consulta
+//WebUI.setText(findTestObject('Object Repository/TEST-9834 Pruebas Performance/BCCL.E.CQ.CHRECH.REP.BCRA/txtFecGenInfo'), '20220715')
+
+//Ingresamos la sucursal
+WebUI.setText(findTestObject('Object Repository/TEST-9834 Pruebas Performance/BCCL.E.CQ.CHRECH.REP.BCRA/txtSucursal'), '142')
+
+//Ingresamos el numero de cuenta
+WebUI.setText(findTestObject('Object Repository/TEST-9834 Pruebas Performance/BCCL.E.CQ.CHRECH.REP.BCRA/txtNumeroCuenta'), '01420142707')
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
+
+//Click en ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/TEST-9834 Pruebas Performance/BCCL.E.CQ.CHRECH.REP.BCRA/lblCuenta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/TEST-9834 Pruebas Performance/BCCL.E.CQ.CHRECH.REP.BCRA/lblCuenta'))
+
+// Captura el tiempo de finalización
+long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+long elapsedTime = endTime - startTime
+
+println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+def element = WebUI.getText(findTestObject('Object Repository/TEST-9834 Pruebas Performance/BCCL.E.CQ.CHRECH.REP.BCRA/lblCuenta'))
+
+assert element.contains('Cuenta')
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
+
+
+
