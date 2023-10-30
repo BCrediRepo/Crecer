@@ -22,40 +22,44 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,31), findTestData('MainData/Users').getValue(2, 31))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando el menu ?323
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Click en consultas de operatoria en linea de cajas
+WebUI.click(findTestObject('Object Repository/02-Dashboard/spanConsultas de Operatoria en Linea de Cajas'))
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?323')
-
-//Screenshot
+//Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Click en consulta de excesos en linea
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsulta de Excesos en Linea'))
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
+//Switch a la ventana BCCL.E.TT.CONSULTA.ATESORAMIENTO
+WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Click en consulta de operatoria
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultadeoperatoria'))
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Swicht a la ventana principal
+WebUI.switchToWindowIndex(0)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsulta de Excesos en Linea'))
 
-//Click en consulta de existencia por denominacion
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consulta de operatoria/lnkConsulta de Existencia por Denominacion'))
-
-//Switch a la ventana BCCL.E.TT.CASH.DENOM
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
+//Switch a la ventana BCCL.E.TT.CONSULTA.ATESORAMIENTO
+WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
 
 //Maximizamos
 WebUI.maximizeWindow()
+
+//Completamos los datos para la consulta
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/No.Caja'), '1546')
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -64,8 +68,8 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblCajero'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblCajero'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -75,9 +79,9 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblCajero'))
 
-assert element.contains('DENOMINACION')
+assert element.contains('Cajero')
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -91,7 +95,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
 
