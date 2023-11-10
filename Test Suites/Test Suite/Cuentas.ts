@@ -88,4 +88,39 @@
       <testCaseId>Test Cases/38-Cuentas/C11-Cuentas. Consulta de cuentas por estado. Visualizar el detalle de cuenta con bloqueo parcial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ee44e418-555a-4ffe-9447-b2608e0f04d7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C12-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id cuenta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fcf10995-4801-4d2a-875e-796f6fe871ca</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C13-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>edeac69b-3f69-4b97-a208-c71d420d32cc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C14-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a23fb1e0-a603-4ff7-b464-bbafe9fe4f3f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f6dadf28-c1ee-4eb1-9841-c7418f8dd9e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas. Modificación de subproducto de cuenta de PF</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

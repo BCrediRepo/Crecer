@@ -249,4 +249,46 @@
       <testCaseId>Test Cases/05-Comisiones/COM34-COMISIONES.Consulta Bonificaciones para una Sucursal. Sucursal informada. Tipo de Comisión NO Informada. Fecha Desde y Fecha Hasta NO Informadas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>83c4776f-6606-44cf-9929-0ba5cdbe439e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM35-Comisiones. Consulta Comisiones cobradas de una cuenta. Tipo de Comisión Informada. Fecha Desde Informada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e945700-258d-4584-8046-3e59cb3c8fe6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM36-Comisiones. Consulta de comisiones por tipo. Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>befb2ca9-31de-4b8d-bb45-d423f8c5e3dd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM37-Comisiones. Consulta de variables de comisión. Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>552ba6ea-e90d-4767-b8d8-282438dafaf8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM38-Comisiones. Consulta Tipos de Comision. Consulta Detalle Comision. Completitud de pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4489f652-1b4e-4eeb-97aa-90110cb8e3d2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM39-Consulta-Comisiones Cobrada de Interbanking</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>55019144-379b-4a20-a82e-c9f63f993002</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM40-PH Consulta Distribución porcentaje comisiones Telecoop. Completitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

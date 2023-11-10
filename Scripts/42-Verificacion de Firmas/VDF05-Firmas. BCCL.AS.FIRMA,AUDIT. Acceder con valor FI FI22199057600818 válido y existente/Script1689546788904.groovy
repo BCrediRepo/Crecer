@@ -41,7 +41,7 @@ WebUI.switchToWindowTitle('BCCL.AS.FIRMA')
 WebUI.maximizeWindow()
 
 //Ingresamos datos para la consulta
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/txtAuditoria'), 'FI22199057600818')
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/txtAuditoria'), 'FI23207003015308')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

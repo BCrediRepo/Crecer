@@ -6,15 +6,18 @@
    <elementGuidId>f4524f63-d42f-412f-a9ce-2e0ad190840b</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Alta de Partidas' or . = 'Alta de Partidas') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Alta de Partidas' or . = 'Alta de Partidas') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[162]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>f3fc424c-5f37-4ec5-9ba1-a6b6e64db2a6</webElementGuid>
+      <webElementGuid>02c04362-f992-4e45-a43d-67490190d6da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>c17ed229-710c-4daa-bc71-87e326a06610</webElementGuid>
+      <webElementGuid>e37a96b0-f259-434e-ad5d-903482294031</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +41,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>2351f7dd-21d8-4275-a33a-7061ae50cf4f</webElementGuid>
+      <webElementGuid>6dde8341-bde4-46fd-b8e0-f6330e5cc4e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,15 +49,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Alta de Partidas</value>
-      <webElementGuid>97c12ea7-e6a2-4f9e-a938-3e0c5376ebe4</webElementGuid>
+      <webElementGuid>ad9ad3d6-8d16-4ca3-a29c-a79571b7d0f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>5a5d1b98-2175-4e34-9e68-6ab0b2684d94</webElementGuid>
+      <webElementGuid>fe058125-2664-4337-ae7e-086d4da91541</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>6d5b4ec3-3fde-4035-bb65-449be7d6fe53</webElementGuid>
+      <webElementGuid>9adf4bd7-2a36-4aa2-82d0-adef6b471636</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[162]</value>
-      <webElementGuid>9cdaef80-52b6-4e1f-97b7-41b0087b4582</webElementGuid>
+      <webElementGuid>5d22b1a0-acc6-4141-90ab-dbe9fcb9a220</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[37]/li/ul/li/span</value>
-      <webElementGuid>773aa712-b9fc-415f-bb69-96fc8559e352</webElementGuid>
+      <webElementGuid>cf746689-414c-4eff-8798-3d4d0d945114</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Inventario Permanente'])[1]/following::span[1]</value>
-      <webElementGuid>2480b3e3-d5ae-4abe-b6a9-97b6cce2f263</webElementGuid>
+      <webElementGuid>407fca9f-723e-4f8f-a5b2-2921c970d683</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar validacion BCRA'])[2]/following::span[2]</value>
-      <webElementGuid>f314ed88-c78c-4d78-be50-4340c9f7f468</webElementGuid>
+      <webElementGuid>76fc10db-8804-438f-a5b0-6f52d95556fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Contra Cuenta Contable'])[1]/preceding::span[1]</value>
-      <webElementGuid>edde20b3-b674-402e-8ecc-9db0301a4133</webElementGuid>
+      <webElementGuid>5964b8f5-3a61-46f8-8a14-22c1625027cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Contra Cuenta del Socio'])[1]/preceding::span[1]</value>
-      <webElementGuid>4e50efe4-1ec6-4d5f-b37b-203274329dbc</webElementGuid>
+      <webElementGuid>b6cfe648-522c-4781-9bd3-8afd78f3569b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Alta de Partidas']/parent::*</value>
-      <webElementGuid>2e3fb7d8-d158-4640-8e41-9e572cc37c81</webElementGuid>
+      <webElementGuid>e1a8230b-3e78-4df0-8df4-7c459c3c8195</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[37]/li/ul/li/span</value>
-      <webElementGuid>af853892-48e3-4ac3-bc52-ce7ec30a7539</webElementGuid>
+      <webElementGuid>af665fa4-c917-45f1-b9c1-77742b3848cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Alta de Partidas' or . = 'Alta de Partidas')]</value>
-      <webElementGuid>1c7281cd-be8f-4356-b13d-cf50f5581175</webElementGuid>
+      <webElementGuid>53de8aae-bb43-4bd3-96de-4b43bb7fdd1f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

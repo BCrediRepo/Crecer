@@ -34,7 +34,8 @@ WebUI.click(findTestObject('02-Dashboard/47-Extracciones/lnkRetiroEnVentanilla')
 WebUI.switchToWindowTitle('TELLER')
 
 //Seteo de datos
-WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '10740022960')
+WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '11190118359')
+//WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '10740022960')
 
 WebUI.click(findTestObject('49-Extracciones/TELLER/btnValidarRegistro'))
 

@@ -7,14 +7,17 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[77]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Transferencia a Cuentas de Otros Bancos SNP' or . = 'Transferencia a Cuentas de Otros Bancos SNP') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Transferencia a Cuentas de Otros Bancos SNP' or . = 'Transferencia a Cuentas de Otros Bancos SNP') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>f670ee42-3253-4b53-a99e-0c1f4c3dbbaf</webElementGuid>
+      <webElementGuid>4905836d-e91f-43c7-b030-f63f453d4884</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>763a9df4-03bc-40b8-922a-8a42cfce2072</webElementGuid>
+      <webElementGuid>96d520c4-5508-4265-a15b-e6acdbfb3394</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +41,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>0b2e6c3a-f55b-4d3e-954c-cfab174b156c</webElementGuid>
+      <webElementGuid>31b157c0-6eb8-49d1-846f-ae6a69aa0569</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,15 +49,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Transferencia a Cuentas de Otros Bancos SNP</value>
-      <webElementGuid>951d1e14-71d1-4b95-9a74-6adeb6c5b969</webElementGuid>
+      <webElementGuid>4dd58468-9f21-41eb-84c6-447a9c896d6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>476ee8b6-b465-4384-b54a-8e78b85f7f0d</webElementGuid>
+      <webElementGuid>e0721beb-8176-45b3-8cfa-44a221814900</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>ed110c6c-8e78-4ffe-aa70-aa9ea300b996</webElementGuid>
+      <webElementGuid>fa89756e-dd75-4583-bc6d-9a691c728991</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[77]</value>
-      <webElementGuid>2f342d32-0547-457f-b339-870b2da62276</webElementGuid>
+      <webElementGuid>9cf6e5a8-8aea-41ef-9b09-52785ae2ed9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[17]/li/span</value>
-      <webElementGuid>6461d220-a3f1-4a66-96a4-3eb0441f4d94</webElementGuid>
+      <webElementGuid>4fc9739e-f581-4583-97b6-4219c58a1950</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Pago de Haberes/ Proveedores'])[1]/following::span[1]</value>
-      <webElementGuid>1cd39040-218f-4992-b02f-2baea97d86e3</webElementGuid>
+      <webElementGuid>2d40e04d-5d44-44b4-83d3-9d0e7f4485da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pago de Haberes / Proveedores'])[1]/following::span[1]</value>
-      <webElementGuid>dfc745a5-efd2-4988-8a40-1d389adc65d6</webElementGuid>
+      <webElementGuid>47b8c3c9-c9cc-4af2-a67e-812338885ab2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transf. a Ctas Otros Bancos Diferida'])[1]/preceding::span[1]</value>
-      <webElementGuid>388c8d42-a9cd-44f8-80e1-a19920f3dd56</webElementGuid>
+      <webElementGuid>6a8ed1ce-10d7-42b7-8094-35cea84dce46</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Transf a Otros Bancos'])[1]/preceding::span[1]</value>
-      <webElementGuid>300726bc-a1b0-4bdd-b419-c0b3dcfe97c0</webElementGuid>
+      <webElementGuid>cd9ef3eb-307a-4bd0-bfb6-69ff7e4ae9df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Transferencia a Cuentas de Otros Bancos SNP']/parent::*</value>
-      <webElementGuid>56d50ba0-a047-4500-b9e2-be43db8381b6</webElementGuid>
+      <webElementGuid>50f3c186-afa3-44d9-9587-897f1983aa2a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[17]/li/span</value>
-      <webElementGuid>a337dde9-89cf-48a5-8852-c9edd59e3beb</webElementGuid>
+      <webElementGuid>8e66c465-bcb4-4ba9-bbdc-ac8370982d79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Transferencia a Cuentas de Otros Bancos SNP' or . = 'Transferencia a Cuentas de Otros Bancos SNP')]</value>
-      <webElementGuid>75f476a5-e87c-43a8-b8ce-12217fb55c00</webElementGuid>
+      <webElementGuid>05bfb3fa-ed9c-4721-a5f6-04d5841021e6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,14 +6,18 @@
    <elementGuidId>f2a96146-1307-4238-8e65-ad5c7962f368</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[161]</value>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //*[(text() = 'Inventario Permanente' or . = 'Inventario Permanente') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']) = count(//*[(text() = 'Inventario Permanente' or . = 'Inventario Permanente') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu'])]</value>
       </entry>
       <entry>
          <key>CSS</key>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[161]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>9bc50f81-e951-4c77-bd5a-c48dc88778f5</webElementGuid>
+      <webElementGuid>ef44b82e-5f6e-4d63-a7e3-9320c9953ff5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>4980cedb-875d-4819-84f1-048328e71e97</webElementGuid>
+      <webElementGuid>e7e25ed8-86f0-4062-a499-71ae304dba58</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>fc745ff0-0617-472a-98df-27b91fc7dc6a</webElementGuid>
+      <webElementGuid>4f1ed0bf-49de-43bf-9cbb-99083ee7fc3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,15 +49,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Inventario Permanente</value>
-      <webElementGuid>21741517-29c8-46c9-9a71-5592fe1d9ef5</webElementGuid>
+      <webElementGuid>9d02351b-c95b-408f-828b-f3a96b65f0cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>679eb2e4-e3d6-458c-8dbb-e7a895140e10</webElementGuid>
+      <webElementGuid>452f06d0-a26e-4389-995e-89c7a68941bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>880e77e8-e50c-45ef-be2e-525b909544fa</webElementGuid>
+      <webElementGuid>cd6a109c-e505-4a02-9876-b4d29cd0acc6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[161]</value>
-      <webElementGuid>bb018bc6-f1cb-41a0-a8b0-b4445b4b1e46</webElementGuid>
+      <webElementGuid>a6975ee1-dc4c-4956-b151-3109a4a551d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[37]/li/span</value>
-      <webElementGuid>a5ed5eba-b163-49e6-9b5a-26fcdb64bfbf</webElementGuid>
+      <webElementGuid>d3717813-6cbd-4488-8bca-5426e3ab757b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar validacion BCRA'])[2]/following::span[1]</value>
-      <webElementGuid>7866a9cd-34d8-40b6-9c0e-c209ded6f557</webElementGuid>
+      <webElementGuid>b217e8c6-7743-4408-8d4b-69f8f3e9b68b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Persona Juridica'])[2]/following::span[1]</value>
-      <webElementGuid>9ab982e8-4774-4662-8220-74399dd6a663</webElementGuid>
+      <webElementGuid>ed66804b-2030-4725-8a72-034ae6efe21f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Partidas'])[1]/preceding::span[1]</value>
-      <webElementGuid>37092990-4eaf-4ddc-a763-5472f99cc0b6</webElementGuid>
+      <webElementGuid>a5778ac2-0e8c-400a-8bfc-65101b2ee9cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Contra Cuenta Contable'])[1]/preceding::span[2]</value>
-      <webElementGuid>37e01d3b-40c2-4f4b-9422-85e838d6b07f</webElementGuid>
+      <webElementGuid>d9172706-094d-4f44-8f83-9d06d74d167b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Inventario Permanente']/parent::*</value>
-      <webElementGuid>41c3685d-43d1-4188-a277-24f7d93398be</webElementGuid>
+      <webElementGuid>527aacfa-9629-42d2-913e-e745ba3b643f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[37]/li/span</value>
-      <webElementGuid>c7f1c2a3-a042-421a-ac60-4842249db7c1</webElementGuid>
+      <webElementGuid>5f69dc3e-7d78-4e70-a0ea-2bfd3bad56c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Inventario Permanente' or . = 'Inventario Permanente')]</value>
-      <webElementGuid>da8c84ef-6e0b-4cde-ad5b-a0a35acd61de</webElementGuid>
+      <webElementGuid>9be1a318-2f18-4a66-858c-d5f793874174</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

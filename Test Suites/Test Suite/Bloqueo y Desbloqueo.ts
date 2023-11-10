@@ -102,4 +102,32 @@
       <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD13-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por persona</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>7d29cb8c-c531-4152-b814-7d42180c3af4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD14-Búsqueda de cuentas por persona para desbloqueo. Completitud. Perfil filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>791e20cc-01dd-49a3-9bce-e90f416c9da4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD15-Búsqueda de cuentas por persona para desbloqueo. Cuenta no bloqueada. Validación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9f65002e-3de2-48ed-b970-e61391a5fcc3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD16-Búsqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>12bc1c22-da29-4c18-bd68-add0305bb6be</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD17-Búsqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil casa central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

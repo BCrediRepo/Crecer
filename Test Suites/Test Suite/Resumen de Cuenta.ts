@@ -151,4 +151,39 @@
       <testCaseId>Test Cases/17-Resumen de Cuenta/RC20-Pedido de resumen usuarios Casa Central.Reversa. Cuenta con UNA solicitud. Fecha de solicitud IGUAL Today</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3adadfaf-5301-45e4-9093-6e566c453c33</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC21-Consulta movimientos de cuenta por fecha. Campo Desagrupar Monetarios IGUAL a NULL</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e49af908-53b7-4923-b206-7ed8291df365</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC22-Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Movimientos ingresados entre Fecha de Desde y Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5fcaac5f-9c3a-4015-a198-ad217163104c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC23-Consulta por Sucursal. Consulta Saldo de Cuenta. Encabezado. Cuenta operativa en Pesos con Estado Activa. Datos informados correctos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2f3c2468-924c-43d9-a2af-fb3864fbe7f2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC24-Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas. Cuenta Operativa en estado Cerrada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>61c06b0b-cb95-4c60-9fb9-7201cb1fea8a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC25-Consulta movimientos de cuenta por fecha valor. Campo Desagrupar Monetarios IGUAL a SI. No se informan fechas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

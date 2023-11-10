@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CS06-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</name>
+   <name>CDS06-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fcaaea45-4083-4502-b9a5-5521ffd9fe16</testCaseGuid>

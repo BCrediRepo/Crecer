@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CS05-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</name>
+   <name>CDS05-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>2a8a1b3c-49fb-488c-a703-167d57e3e6aa</testCaseGuid>

@@ -25,4 +25,11 @@
       <testCaseId>Test Cases/12-Transferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar. Sucursal Destino. Perfil Planta. Datos válidos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1bdaa22f-f343-417a-89ec-d8dcd4c73773</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con débito en cuenta. Acumuladores. Total Débitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
