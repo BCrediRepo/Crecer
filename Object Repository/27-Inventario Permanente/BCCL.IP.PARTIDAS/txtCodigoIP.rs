@@ -6,12 +6,16 @@
    <elementGuidId>1f73daa4-2280-40f9-b091-4c491d6058f8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;fieldName:CODIGO.IP&quot;)[count(. | //*[@id = 'fieldName:CODIGO.IP' and @name = 'fieldName:CODIGO.IP' and @type = 'text']) = count(//*[@id = 'fieldName:CODIGO.IP' and @name = 'fieldName:CODIGO.IP' and @type = 'text'])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@id='fieldName:CODIGO.IP']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#fieldName\:CODIGO\.IP</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c38e6f70-df65-4f09-b080-eda5859202df</webElementGuid>
+      <webElementGuid>47216646-af4e-43a1-9126-b97fb330f14c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>1e8eb1c1-23be-4fae-894c-a4341d535279</webElementGuid>
+      <webElementGuid>3c201117-683a-4c23-808c-7e0defcf9f9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>size</name>
       <type>Main</type>
       <value>4</value>
-      <webElementGuid>9ddab75a-c5da-4d00-a1ff-c3e72315bca5</webElementGuid>
+      <webElementGuid>3dc8d80a-2807-43c8-9179-3a32c56a9f89</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:CODIGO.IP</value>
-      <webElementGuid>69e059b7-8a46-4de9-abde-07d8f3955298</webElementGuid>
+      <webElementGuid>21723f7c-6da9-481e-bbd0-8f4dcbc03c3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:CODIGO.IP</value>
-      <webElementGuid>4abed9b5-a114-4074-899d-706ee100ddd6</webElementGuid>
+      <webElementGuid>37371978-3433-4028-8451-a8d9e1f6b141</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>afe0e060-57f8-4c0d-bc12-26a7edc8892a</webElementGuid>
+      <webElementGuid>7965e71e-4528-4885-998e-4ff029519b50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_BCCLIPPARTIDAS dealbox_BCCLIPPARTIDAS_ALTACS</value>
-      <webElementGuid>36a3c3b5-5303-487b-a46d-9369045a8321</webElementGuid>
+      <webElementGuid>855b695a-41fa-41ff-b38a-68c42a5ac5b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>4</value>
-      <webElementGuid>1c5cecd4-aa90-45f7-85d4-8215ea3bd281</webElementGuid>
+      <webElementGuid>5892ed24-f3e2-4333-ac6f-b989c1e27743</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +90,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>249e88da-1fcc-490c-9ec1-f1cca0d06e01</webElementGuid>
+      <webElementGuid>8c012bb6-afdf-421e-8c29-106ca3012d02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>aaebd880-2a6c-4f0b-afff-c52899f2ebb0</webElementGuid>
+      <webElementGuid>3a41bcc6-05f2-45ce-a2ff-0ea359d45b0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>hot</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>6d829dc6-a17e-474b-aa3a-2ca3add2473e</webElementGuid>
+      <webElementGuid>9a688c45-febb-4d50-8e6b-cba953e865f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>1484b86a-65d5-4fdc-b808-a8d9d7fe7b41</webElementGuid>
+      <webElementGuid>71000b8b-6273-49f9-a118-e28c100a6af1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>89b77369-3050-441c-9b16-84f60d2709ae</webElementGuid>
+      <webElementGuid>d836a54b-3bd3-4a42-bf45-303abd8a7201</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'CODIGO.IP','issueToken');</value>
-      <webElementGuid>1746dae4-1191-443d-85b9-d44f9179b98c</webElementGuid>
+      <webElementGuid>643ea03b-a49a-4f2e-8bc6-182ae0641f6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>onkeydown</name>
       <type>Main</type>
       <value>enterKeyListener(event);</value>
-      <webElementGuid>150ac0e2-cf25-4597-aa6e-4a690a5b47c3</webElementGuid>
+      <webElementGuid>b652e5ae-0b46-4aaa-adde-c31753540608</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>bfdf2de8-88c3-4a1b-8339-38aa7d0a5391</webElementGuid>
+      <webElementGuid>92ccd016-bf3a-4af3-bbfd-6c3a7d1fc908</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -150,15 +154,15 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('CODIGO.IP','','','issueToken')</value>
-      <webElementGuid>f1cbfd3f-fca5-42e2-aa16-aeb0b311f658</webElementGuid>
+      <webElementGuid>86310f2c-7743-44c0-8ede-dab25d53871f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:CODIGO.IP&quot;)</value>
-      <webElementGuid>dca1cadc-55a5-44ba-b182-d8d75a06ce54</webElementGuid>
+      <webElementGuid>e42a197e-e88d-4f10-bc90-e3fd803465e1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -166,7 +170,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:CODIGO.IP']</value>
-      <webElementGuid>5d58e489-3ae5-4fee-9b28-77ab7a772656</webElementGuid>
+      <webElementGuid>0e34abec-ac8d-4cb7-990a-837571a84029</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,7 +178,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[2]/td[3]/input</value>
-      <webElementGuid>107e5ffa-cfbb-4787-82cb-f1b1781b7d79</webElementGuid>
+      <webElementGuid>0eaad894-7ba3-4626-8004-ef26e18c9d17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,7 +186,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[3]/input</value>
-      <webElementGuid>40a86d78-4f1e-45e4-91d4-a94d269bfed5</webElementGuid>
+      <webElementGuid>d96ab49c-de84-468a-815c-5bdffa400280</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -190,6 +194,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:CODIGO.IP' and @name = 'fieldName:CODIGO.IP' and @type = 'text']</value>
-      <webElementGuid>f2b76e1a-5312-426a-8978-b67ce9256bad</webElementGuid>
+      <webElementGuid>2ce904d3-485a-4d99-96cd-507011fa2565</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

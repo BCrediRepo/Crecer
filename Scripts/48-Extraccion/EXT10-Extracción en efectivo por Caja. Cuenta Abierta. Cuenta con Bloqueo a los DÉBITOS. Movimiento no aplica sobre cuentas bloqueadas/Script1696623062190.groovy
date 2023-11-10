@@ -38,7 +38,7 @@ WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '1074010027
 
 WebUI.click(findTestObject('49-Extracciones/TELLER/btnValidarRegistro'))
 
-WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '10')
+WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '5')
 
 WebUI.click(findTestObject('49-Extracciones/TELLER/btnAceptarRegistro'))
 
