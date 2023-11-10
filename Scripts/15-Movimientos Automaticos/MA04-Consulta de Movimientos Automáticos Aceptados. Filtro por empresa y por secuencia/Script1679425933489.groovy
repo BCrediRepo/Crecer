@@ -74,7 +74,7 @@ WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.
 
 //Ingresa la secuencia
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/inputSecuencia'),6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/inputSecuencia'),'0389937')
+WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/inputSecuencia'),'0361224')
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

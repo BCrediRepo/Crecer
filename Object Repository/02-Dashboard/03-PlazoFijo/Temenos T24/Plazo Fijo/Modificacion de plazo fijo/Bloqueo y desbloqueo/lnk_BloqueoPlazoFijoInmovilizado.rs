@@ -7,13 +7,14 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value>ul.menuMargin:nth-child(7) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > a:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>/html/body/div[3]/ul[7]/li/ul/li[3]/ul/li[1]/ul/li[3]/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>2fb1e770-79c2-4ec5-b1f6-3995c2e02486</webElementGuid>
+      <webElementGuid>e52904c0-5a36-4378-b5aa-3952d9aecd85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMM.UNBLOCK');processMenuHeaderText('Desbloqueo Plazo Fijo Inmovilizado')</value>
-      <webElementGuid>f6eff670-8f4b-4ddd-9424-499753ff6ccd</webElementGuid>
+      <webElementGuid>b8240f35-f474-43e5-a2fe-fd536755ae8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.IMM.UNBLOCK');</value>
-      <webElementGuid>cce9d8b4-40a6-4419-bbe1-8340c7dec4c8</webElementGuid>
+      <webElementGuid>b81ff8c7-82a0-4da9-abb1-e650b4381fab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Desbloqueo Plazo Fijo Inmovilizado </value>
-      <webElementGuid>8bfdbe8f-cab2-45b8-a4d4-2b852c28361e</webElementGuid>
+      <webElementGuid>3ba458ea-0b6a-4b43-88a0-b6bef684a16f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
-      <webElementGuid>3b4101cf-e458-4149-b252-679d1d2357b5</webElementGuid>
+      <webElementGuid>ee1b455e-6c39-4d30-81d0-f7062e74406c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.IMM.UNBLOCK');processMenuHeaderText('Desbloqueo Plazo Fijo Inmovilizado')&quot;]</value>
-      <webElementGuid>0273dfd3-8636-4e14-a3e2-eb9abc5ad1d3</webElementGuid>
+      <webElementGuid>839acf73-d265-43b1-ad8d-445fd7844f86</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/ul/li[3]/ul/li/ul/li[4]/a</value>
-      <webElementGuid>ec4c99fe-16c5-487f-b686-41a4d62e983c</webElementGuid>
+      <webElementGuid>d498da7f-f7c1-47da-9716-de635dfe1b46</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Desbloqueo Plazo Fijo Inmovilizado')]</value>
-      <webElementGuid>5e7491f7-d16a-4377-9d8f-944abaca301f</webElementGuid>
+      <webElementGuid>5bf97b1f-3186-4626-a8cd-4a68c1946d9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo Plazo Fijo Inmovilizado'])[1]/following::a[1]</value>
-      <webElementGuid>d1758dbc-9fc3-4a10-b83f-92b0fa451388</webElementGuid>
+      <webElementGuid>a45dc952-b749-4d00-a52d-6853dbff89b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Desbloqueo Plazo Fijo'])[1]/following::a[2]</value>
-      <webElementGuid>7ae0dd3e-ada8-4649-a11e-b5b651696989</webElementGuid>
+      <webElementGuid>75303d89-f30a-4129-b8b6-92fdf31e8277</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Asignacion de numero de Garantia'])[1]/preceding::a[1]</value>
-      <webElementGuid>4d4b193a-3873-404b-8c3d-5ee1c43631f0</webElementGuid>
+      <webElementGuid>c7ce046e-8896-420b-9eb9-c24597619fc4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Renovacion Automatica'])[1]/preceding::a[2]</value>
-      <webElementGuid>209dcdf5-e5ff-4292-ae2a-cefd583ead37</webElementGuid>
+      <webElementGuid>653d3805-29a2-433e-ad40-6a781efcfa71</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Desbloqueo Plazo Fijo Inmovilizado']/parent::*</value>
-      <webElementGuid>47a15e2a-55a6-46ff-96f8-ddbdebb253f5</webElementGuid>
+      <webElementGuid>233dd52c-bee0-4775-a640-f85c4757e3f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.IMM.UNBLOCK');&quot;)]</value>
-      <webElementGuid>2aafe372-75e4-4795-9787-72c2ffb1274e</webElementGuid>
+      <webElementGuid>4285a181-f2a5-4673-b77e-52b1779c40a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[7]/li/ul/li[3]/ul/li/ul/li[4]/a</value>
-      <webElementGuid>acce1dfe-0492-44e9-8c62-bf1ee94f4edf</webElementGuid>
+      <webElementGuid>ef4b6243-6915-4093-9306-52005fd6c105</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.IMM.UNBLOCK&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Desbloqueo Plazo Fijo Inmovilizado ' or . = 'Desbloqueo Plazo Fijo Inmovilizado ')]</value>
-      <webElementGuid>5db4574f-912c-461e-97d4-a0b1a34b0775</webElementGuid>
+      <webElementGuid>8be207c4-63be-4774-a542-59e3e0354ea9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

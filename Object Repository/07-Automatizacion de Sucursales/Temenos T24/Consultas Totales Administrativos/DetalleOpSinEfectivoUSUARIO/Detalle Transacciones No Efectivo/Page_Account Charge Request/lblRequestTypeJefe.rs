@@ -11,9 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#fieldCaption\:TRANSACTION\.TYPE</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>b73de39b-8c60-4a1c-967a-b2bc340e7d15</webElementGuid>
+      <webElementGuid>f7f263bb-4e52-485c-bf09-ebf5e4de2877</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>d7ce20e4-2148-4153-bbb0-86071f09f0d7</webElementGuid>
+      <webElementGuid>7b1b322b-47b4-4f3e-9c2b-1ad0eb460872</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>bd4ae06e-12ae-4487-8c0c-2011ab1c7f3a</webElementGuid>
+      <webElementGuid>ae7da1b6-bc65-4855-adcd-4586f230228f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>field field_ACCHARGEREQUEST field_ACCHARGEREQUEST_BCCLCONSULTA</value>
-      <webElementGuid>476dec84-a2a0-468f-bb97-da5a0da62de9</webElementGuid>
+      <webElementGuid>68b98df4-e00d-4ca8-9baa-e92c2384c79f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldCaption:REQUEST.TYPE</value>
-      <webElementGuid>f358a924-fc58-4480-91e4-73061c0a9275</webElementGuid>
+      <webElementGuid>91bf2f12-21e0-4a8e-9a2a-8cf88655fd56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldCaption:REQUEST.TYPE</value>
-      <webElementGuid>4f970460-665f-4ade-9a60-f207cb0992b2</webElementGuid>
+      <webElementGuid>c5a9140f-e3dc-4dca-8dc7-5da9bb63632b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +70,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>d46bf02f-ebb2-4c50-ac86-63ff8c6490d7</webElementGuid>
+      <webElementGuid>14acf434-e52a-4077-b31c-00b860eac90c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +78,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:help('REQUEST.TYPE','','','issueToken')</value>
-      <webElementGuid>10335634-48cc-4589-a7e2-af4d93eb2dc2</webElementGuid>
+      <webElementGuid>2ab88f52-f5ea-4829-87b2-9571b6c4cc38</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -85,7 +86,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Request Type</value>
-      <webElementGuid>70343473-65ec-4f86-82c1-e6b3770657f1</webElementGuid>
+      <webElementGuid>b9fd82a2-eb39-4f67-a7bf-58143da589a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -93,7 +94,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Request Type</value>
-      <webElementGuid>c8e20b15-71a4-42ff-902b-936155fab2d9</webElementGuid>
+      <webElementGuid>17037323-c708-49ee-be14-adf54e40de02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldCaption:REQUEST.TYPE&quot;)</value>
-      <webElementGuid>4eca3093-5d30-47bb-88dc-8c3056626fe1</webElementGuid>
+      <webElementGuid>fb09f0ca-e758-45dd-bf75-ad5f753b8db4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -109,7 +110,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='fieldCaption:REQUEST.TYPE']</value>
-      <webElementGuid>462026aa-961e-4a2e-8ebd-2600b7907f57</webElementGuid>
+      <webElementGuid>92cd21e1-2f7a-42e2-bd5e-38f22d22b2f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td/label/a</value>
-      <webElementGuid>f845edc9-2f12-48c4-86f3-11456f0a4a32</webElementGuid>
+      <webElementGuid>0f469b50-46a3-418b-bd35-69756946a1be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Request Type')]</value>
-      <webElementGuid>0cc3a672-60a9-420f-89fa-d334051d5c36</webElementGuid>
+      <webElementGuid>44ee723d-58a0-4637-853c-09e6c763b02b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.102 Gerencia Operat)'])[1]/following::a[1]</value>
-      <webElementGuid>b800c665-9f9e-4d85-a08c-c170c62c2d0c</webElementGuid>
+      <webElementGuid>34ba5f21-ccf9-464e-be79-afc8e49c0db0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CHG/22206/PYSS9'])[1]/following::a[1]</value>
-      <webElementGuid>aa98076a-3fc9-451c-8406-be430251665d</webElementGuid>
+      <webElementGuid>e3000c07-ac0f-4228-be1a-82889ee1541b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,7 +150,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BOOK'])[1]/preceding::a[1]</value>
-      <webElementGuid>44232539-a6ea-4d3a-b017-58acf3c8c31b</webElementGuid>
+      <webElementGuid>7f41adb8-6d19-4922-a5eb-d13241aa750d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,7 +158,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Account'])[1]/preceding::a[1]</value>
-      <webElementGuid>ae67d31c-fdfa-4a9b-9b23-800ce6785cf1</webElementGuid>
+      <webElementGuid>5b50b267-aa7f-4ea0-8176-a73c08c69387</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -165,7 +166,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Request Type']/parent::*</value>
-      <webElementGuid>7678902b-8984-4ab6-b658-1d41179432e7</webElementGuid>
+      <webElementGuid>6d6a1608-2810-499b-91ac-c6004d0dd317</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -173,7 +174,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:help('REQUEST.TYPE','','','issueToken')&quot;)]</value>
-      <webElementGuid>17bcc897-e29b-4aba-85c8-3c29fd015177</webElementGuid>
+      <webElementGuid>15e92fcc-7ce5-42f2-9a9f-17ebbc6602fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -181,7 +182,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label/a</value>
-      <webElementGuid>13934853-2efc-4a34-ae2b-63c4493ddab7</webElementGuid>
+      <webElementGuid>fed30223-407f-471b-bca7-445d562bc858</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -189,6 +190,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@name = 'fieldCaption:REQUEST.TYPE' and @id = 'fieldCaption:REQUEST.TYPE' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;REQUEST.TYPE&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Request Type' and (text() = 'Request Type' or . = 'Request Type')]</value>
-      <webElementGuid>52926383-efdb-4798-add7-fc7d756b467b</webElementGuid>
+      <webElementGuid>6277c0f0-e9b8-47a2-9c5a-0a948e121f9d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

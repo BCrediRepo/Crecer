@@ -21,6 +21,9 @@ import java.text.SimpleDateFormat
 import com.kms.katalon.core.configuration.RunConfiguration
 import pkgModules.kywGeneric
 import org.openqa.selenium.Keys as Keys
+import java.awt.Rectangle
+import com.kms.katalon.core.webui.driver.DriverFactory
+
 
 public class kywScreenshot {
 
@@ -42,4 +45,28 @@ public class kywScreenshot {
 		WebUI.delay(3)
 		WebUI.takeScreenshot('Screenshot/'+folderMainName+'/'+folderCaseName+'/'+testCaseName+'/'+testCaseName+'-'+date+'.png')
 	}
+
+	// Obtén el tamaño del frame
+	def frameSize = DriverFactory.getWebDriver().manage().window().getSize()
+
+	// Crea un objeto Rectangle con las coordenadas y dimensiones del área completa del frame
+	Rectangle areaToCapture = new Rectangle(0, 0, frameSize.width, frameSize.height)
+
+	@Keyword
+	def takeScreenshotInScriptFull(){
+		def testCaseName = kywG.getTestCaseName()
+		def date = kywG.getTimeNow()
+		def folderCaseName = kywG.getFolderCaseName()
+		def folderMainName = kywG.getFolderMainName()
+		WebUI.delay(3)
+//		aca estaria faltando la magia para la captura completa
+	}
 }
+
+
+
+
+
+
+
+

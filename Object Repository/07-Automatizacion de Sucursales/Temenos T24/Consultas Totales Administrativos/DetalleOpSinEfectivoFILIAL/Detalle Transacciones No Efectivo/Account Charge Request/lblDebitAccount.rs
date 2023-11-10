@@ -7,14 +7,18 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#fieldCaption\:DEBIT\.ACCT\.NO</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@id='fieldCaption:DEBIT.ACCOUNT']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'fieldCaption:DEBIT.ACCOUNT' and @id = 'fieldCaption:DEBIT.ACCOUNT' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;DEBIT.ACCOUNT&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Debit Account' and (text() = 'Debit Account' or . = 'Debit Account')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>e1f03406-ef7e-4e1b-84ab-70673df6229f</webElementGuid>
+      <webElementGuid>544885c4-efa0-4791-a625-4baf3de6313e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>76e7c295-b807-4ed5-8e8a-c586fb96f1a7</webElementGuid>
+      <webElementGuid>cf151f02-86cb-42ed-a5b6-543754434f99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>c67e1311-d9c1-4e51-b1d7-6ee33c8cafa3</webElementGuid>
+      <webElementGuid>6be976e2-4ec9-41f4-b263-8ddda763d59d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>class</name>
       <type>Main</type>
       <value>field field_ACCHARGEREQUEST field_ACCHARGEREQUEST_BCCLCONSULTA</value>
-      <webElementGuid>be3a0c15-cab8-443b-ab0a-00093c60f24f</webElementGuid>
+      <webElementGuid>c7dbe9bf-04cb-40e7-8cff-aa5458334eb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldCaption:DEBIT.ACCOUNT</value>
-      <webElementGuid>540350fd-cf2e-4dbd-b32e-c74b6c1fb730</webElementGuid>
+      <webElementGuid>0b4e2d0a-4364-4c3e-bafe-b703fbabaea1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldCaption:DEBIT.ACCOUNT</value>
-      <webElementGuid>528265e2-2c6b-497e-a9b1-093b5c6548a1</webElementGuid>
+      <webElementGuid>4085fd2d-5a7a-4f0f-8196-51c3b227deef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>637028f2-9195-4719-879e-f25529e3f140</webElementGuid>
+      <webElementGuid>ab1d9cd4-9bc3-4595-9e37-8c8e9a3b40af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +82,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:help('DEBIT.ACCOUNT','','','issueToken')</value>
-      <webElementGuid>1b691d53-cfe4-420a-9832-b841fb432f1f</webElementGuid>
+      <webElementGuid>f94f2a64-d19b-4414-9700-11ab9229c8e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +90,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Debit Account</value>
-      <webElementGuid>5f2de06e-3c35-4598-bc30-2e8e30b98983</webElementGuid>
+      <webElementGuid>a3ce5d7e-25b9-40f8-b1b0-7f9cc390882f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Debit Account</value>
-      <webElementGuid>546bce20-18ee-45f6-b56f-cd067563e169</webElementGuid>
+      <webElementGuid>335ab79d-53de-4c1e-ae1f-7bf12ff21eaa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldCaption:DEBIT.ACCOUNT&quot;)</value>
-      <webElementGuid>c65d4a22-acad-4034-8c60-16b00d534160</webElementGuid>
+      <webElementGuid>6e05dacc-db2a-48e5-9183-c21ad218fb55</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='fieldCaption:DEBIT.ACCOUNT']</value>
-      <webElementGuid>a8520e67-4a26-439b-b482-fbbc220e7d80</webElementGuid>
+      <webElementGuid>0532f568-cc04-4a12-b507-0a3162cab8f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[2]/td/label/a</value>
-      <webElementGuid>70282551-675f-4cdf-8bd5-080e70d5e23d</webElementGuid>
+      <webElementGuid>a0467666-fa05-438f-bbfd-ca439cc0dd7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Debit Account')]</value>
-      <webElementGuid>d6c5999b-263d-40ac-8aad-c468ddb09830</webElementGuid>
+      <webElementGuid>c9660b02-c985-4190-97f8-05f401ad2add</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BOOK'])[1]/following::a[1]</value>
-      <webElementGuid>2592aa55-a36e-4025-9be5-2ab4ddfe95a5</webElementGuid>
+      <webElementGuid>5ce7bd26-78d9-4206-a45b-c2b447f46eea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Request Type'])[1]/following::a[1]</value>
-      <webElementGuid>06dc1fe5-6d23-4ec5-99ec-e4e4cf6f1292</webElementGuid>
+      <webElementGuid>2640fac9-d4f1-4829-b369-298fcaec2085</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Customer No'])[1]/preceding::a[2]</value>
-      <webElementGuid>5b7a7e11-a4c9-4942-ad35-7550af3d32b9</webElementGuid>
+      <webElementGuid>16053d89-90a3-4431-8af6-e7ee8ce33e3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +162,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Debit Account']/parent::*</value>
-      <webElementGuid>73f6a9a3-d0ac-41ce-890b-02d454daeb0b</webElementGuid>
+      <webElementGuid>3d623115-04c6-4317-8aaa-275f8342d796</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +170,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:help('DEBIT.ACCOUNT','','','issueToken')&quot;)]</value>
-      <webElementGuid>6477e423-b810-462f-bece-9f5adb6433da</webElementGuid>
+      <webElementGuid>14fd62da-2e12-4079-9401-0afd38e092b4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,7 +178,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td/label/a</value>
-      <webElementGuid>6d7af7c4-0482-45a0-8aa6-116e2b9e3006</webElementGuid>
+      <webElementGuid>5b44d49f-1c14-4f3e-b8ca-3ce8fba703c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,6 +186,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@name = 'fieldCaption:DEBIT.ACCOUNT' and @id = 'fieldCaption:DEBIT.ACCOUNT' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;DEBIT.ACCOUNT&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Debit Account' and (text() = 'Debit Account' or . = 'Debit Account')]</value>
-      <webElementGuid>b2c85cca-9e5e-4579-8cba-772526f0c4fd</webElementGuid>
+      <webElementGuid>d9dcb373-e30e-43b0-a1da-148945dd9046</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,11 @@
    <elementGuidId>7107f538-5db7-40dc-b597-6b85e5fcbe6b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[54]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/ul[7]/li/ul/li[3]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>d0efcfe7-6600-4edc-b600-7b4d665e4733</webElementGuid>
+      <webElementGuid>41ebb39a-cb6d-4369-b1a3-74895b37cf56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>72ea5420-1d41-4366-9f28-2b175aacb985</webElementGuid>
+      <webElementGuid>ff4250fd-0356-4a75-9a1f-806e4beec843</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>09edccaf-c052-4053-abfe-d4c9c5cc6a83</webElementGuid>
+      <webElementGuid>9e5f7c9b-d6df-4cb9-b9a8-1a9efcca82b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Modificacion de Plazo Fijo</value>
-      <webElementGuid>15d2e2f6-3c69-444e-9fba-4b4b9348fa0b</webElementGuid>
+      <webElementGuid>6a178de4-af3b-466f-9fbe-f45b81b4638e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>3a888998-c522-42ca-9e1c-b2a5ebbcbd91</webElementGuid>
+      <webElementGuid>bbffb6da-684a-4dba-8a41-13dbc9711ad5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[54]</value>
-      <webElementGuid>70089f26-1015-4708-b9fd-f1c26f81b861</webElementGuid>
+      <webElementGuid>587ea1af-6092-4cdb-a565-ed69681bcf8d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/ul/li[3]/span</value>
-      <webElementGuid>a9679553-0d4f-45b3-b2c9-fa27de0377a8</webElementGuid>
+      <webElementGuid>801c8213-6402-45fa-a59d-77703d8c0325</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Liquidacion de Plazo Fijo Ajustable'])[1]/following::span[1]</value>
-      <webElementGuid>d9fc158f-cd2c-4fce-ae6d-dbde4435d740</webElementGuid>
+      <webElementGuid>bb98cc3f-adac-4380-aff7-c21c003c1493</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Liquidacion Renovacion Automatica'])[1]/following::span[1]</value>
-      <webElementGuid>9471c51b-8a95-4278-a211-2e2f4dcf156f</webElementGuid>
+      <webElementGuid>6ef113c7-2066-48cb-a7c4-430c015912d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo y Desbloqueo'])[1]/preceding::span[1]</value>
-      <webElementGuid>d0d72c93-816f-420c-acff-ce3e8a0bcb21</webElementGuid>
+      <webElementGuid>1e943dd9-d7f9-4256-9206-f09d23f9d7ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo Plazo Fijo'])[1]/preceding::span[2]</value>
-      <webElementGuid>adfaa3a6-ec6a-4573-9dce-a8c6c5601493</webElementGuid>
+      <webElementGuid>756a1efa-a4e5-4d4e-9308-47c10cc4b14c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Modificacion de Plazo Fijo']/parent::*</value>
-      <webElementGuid>3b9d2701-ce10-46a7-b840-79f17f69f405</webElementGuid>
+      <webElementGuid>20a93691-8809-40c3-855b-a4c87d7d70df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[7]/li/ul/li[3]/span</value>
-      <webElementGuid>2fb9b3e7-ab89-431c-b73c-3bc517dd1964</webElementGuid>
+      <webElementGuid>d3e599f2-6e63-44f6-8f53-4edb2c451965</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Modificacion de Plazo Fijo' or . = 'Modificacion de Plazo Fijo')]</value>
-      <webElementGuid>c35a7129-f065-4190-a80c-2f7efd435cf8</webElementGuid>
+      <webElementGuid>25c474f1-ec80-47b3-90b2-20b7761e34c7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

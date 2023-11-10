@@ -50,9 +50,9 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/05-PlazoFijo/010-Mo
 
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtFormadeCalculo'), "TOTAL")
 
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtMoneda'), "ARS")
-
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtIDpersona'), "1002709912")
+WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtMoneda'), "1002709912")
+//Se cambia el orden de los campos de busqueda por que la aplicacion no limpia los registros con deberia!!!!!!!!!!!
+WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtIDpersona'), "ARS")
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

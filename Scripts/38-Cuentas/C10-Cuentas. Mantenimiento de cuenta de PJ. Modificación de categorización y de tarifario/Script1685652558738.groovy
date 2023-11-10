@@ -45,7 +45,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/07- Mantenimiento PF - Temenos T24/lnkMantenimiento Cuenta Persona Fisica'))
 
-WebUI.switchToWindowTitle('Mantenimiento - Fil.102 Gerencia Operat')
+WebUI.switchToWindowTitle('Mantenimiento - Fil.102 Gcia Operativa')
 
 // Maximizamos
 WebUI.maximizeWindow()
@@ -122,7 +122,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-

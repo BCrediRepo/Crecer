@@ -46,6 +46,7 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,11))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblMontoActivoporTitular'))
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtFormaDeCalculo'), "TOTAL")
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtMoneda'), "1002709912")
+//Se cambia el orden de los campos de busqueda por que la aplicacion no limpia los registros con deberia!!!!!!!!!!!!!!!!
 WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/txtIdPersona'), "ARS")
 
 // Captura el tiempo de inicio

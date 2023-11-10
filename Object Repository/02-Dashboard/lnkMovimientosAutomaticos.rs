@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>ul.menuMargin:nth-child(22) > li:nth-child(1) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>21fc44f6-c867-4df9-9c1f-9a17ad6cc00d</webElementGuid>
+      <webElementGuid>a884de06-f6fb-4455-887a-0b9c0825eb8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>0285c4e7-30af-41a1-83b5-94730f638517</webElementGuid>
+      <webElementGuid>dcf3f88f-7b43-4ec8-9e9e-74da349cb7f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>ba0e0343-0d00-4d15-83bc-40d4054089f7</webElementGuid>
+      <webElementGuid>abfccb14-d675-44bf-aa72-5b00484e7bd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Movimientos Automaticos</value>
-      <webElementGuid>f4d73908-439a-4ac2-955f-8407ea0025ea</webElementGuid>
+      <webElementGuid>ab4731c4-cdcf-4d11-82f7-a519dc7a2aee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>25c45b9d-2e94-4839-b5c0-375688f26e0e</webElementGuid>
+      <webElementGuid>8603fb87-6d91-415a-a259-37c59b0dd8df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>90bbf0cf-4099-4233-a656-a973537fa61c</webElementGuid>
+      <webElementGuid>c161e2f8-1f9b-46a4-8e69-f3b6a42cf538</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[84]</value>
-      <webElementGuid>5d8454ce-e775-44b2-a372-7023343d8bb0</webElementGuid>
+      <webElementGuid>b94d7ca6-7631-475a-8ce6-383e19d63330</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[22]/li/span</value>
-      <webElementGuid>60bbcbb6-57f2-440d-8101-c288c20f272c</webElementGuid>
+      <webElementGuid>d0b540dc-d7f2-4401-bfef-ba52ce5d925a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Bonificaciones'])[1]/following::span[1]</value>
-      <webElementGuid>edceb052-ab0d-4dea-9f26-9d2744330965</webElementGuid>
+      <webElementGuid>f010f7f1-a043-4d97-b546-2144a91fb0db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta/Modificacion de Bonificaciones'])[1]/following::span[1]</value>
-      <webElementGuid>dac1f4cf-7bd2-4c79-9dfc-3d5bafb38996</webElementGuid>
+      <webElementGuid>8638f9e7-60ac-49e9-9a0e-b759c8bf00ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar Aceptados'])[1]/preceding::span[1]</value>
-      <webElementGuid>df86ea71-9ad4-41c7-b4fa-0d7b2d3aee4c</webElementGuid>
+      <webElementGuid>7899786a-19e8-4134-9918-0e503815b302</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar Rechazados'])[1]/preceding::span[1]</value>
-      <webElementGuid>bced7b06-bf01-447d-a69a-c508d7f0518a</webElementGuid>
+      <webElementGuid>bce9f38c-ffbe-4bbb-89c0-664c57a71f02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Movimientos Automaticos']/parent::*</value>
-      <webElementGuid>b128c23a-edf6-41ed-a995-f0733f8aa9b8</webElementGuid>
+      <webElementGuid>c1f3c908-d48e-49a6-becf-225fab80aaa8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[22]/li/span</value>
-      <webElementGuid>8b6bb37c-5e43-4f62-b94a-66d599999328</webElementGuid>
+      <webElementGuid>a82aad62-4998-44b7-9f70-88ce7395e57c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Movimientos Automaticos' or . = 'Movimientos Automaticos')]</value>
-      <webElementGuid>24065da0-f813-4d48-ab87-8f6d9c579eb7</webElementGuid>
+      <webElementGuid>8c5788f6-f018-4837-9165-6111e7c91f48</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

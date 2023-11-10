@@ -27,7 +27,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
+//WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
+WebUI.switchToWindowIndex(1)
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
@@ -40,7 +41,8 @@ WebUI.switchToWindowIndex(0)
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
+//WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
+WebUI.switchToWindowIndex(1)
 
 WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/txtNroCuenta_value411'), '10430047640')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

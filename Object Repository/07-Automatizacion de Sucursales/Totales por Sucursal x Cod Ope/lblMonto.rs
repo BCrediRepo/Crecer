@@ -6,15 +6,15 @@
    <elementGuidId>bbda51f3-b12d-4f4e-8219-8c8df9ef3672</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText4</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//td[@id='columnHeaderText4']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#columnHeaderText4</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>c7c43e8c-8fbd-4d18-bb47-d719d4526db2</webElementGuid>
+      <webElementGuid>8222beee-2c37-4aed-a0c8-4f7216235b59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText4</value>
-      <webElementGuid>20182c66-d46e-45cb-9440-c127c4f5c729</webElementGuid>
+      <webElementGuid>32c3efac-a3b5-4fc5-a4f5-aac462ddea8f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader columnHeader_BCCLEEBTOTALFILIALME</value>
-      <webElementGuid>fe1fad6e-a559-4d48-916e-727fb6b842ee</webElementGuid>
+      <webElementGuid>332fcd28-dc33-43b3-a76c-a21dc6072948</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Monto</value>
-      <webElementGuid>cca7466d-4773-463a-bb62-13a4cce72ded</webElementGuid>
+      <webElementGuid>310b314a-6fd1-4983-afa5-3126a49c7da3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText4&quot;)</value>
-      <webElementGuid>d777d50d-cd47-4009-8d38-fb51c6bbfdbe</webElementGuid>
+      <webElementGuid>201f9f43-9cf3-49bc-850e-f81f97fec681</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//td[@id='columnHeaderText4']</value>
-      <webElementGuid>c9ce9121-855c-4bbf-a721-78471c229e27</webElementGuid>
+      <webElementGuid>99570e6a-3dec-4222-ad6f-5f7da432db0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//td[@id='columnHeader4']/table/tbody/tr/td</value>
-      <webElementGuid>c5899e6a-fd2d-450b-9dc1-34c4009ace88</webElementGuid>
+      <webElementGuid>5f386d46-869b-4b4a-b188-9cf53266065d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cant Operaciones'])[1]/following::td[3]</value>
-      <webElementGuid>bd3d926c-69aa-41ad-b422-32f1008ddd56</webElementGuid>
+      <webElementGuid>78f951f7-0166-47a5-bbd6-3330ca61e4cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::td[6]</value>
-      <webElementGuid>8230b990-81fc-4a59-9866-49538b387048</webElementGuid>
+      <webElementGuid>ab80bbc2-517c-434e-ae68-d0fbfcd9caaa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Imp. a los Sellos Cordoba - So'])[1]/preceding::td[15]</value>
-      <webElementGuid>04003eaa-45f8-43b1-a187-4a79383057f4</webElementGuid>
+      <webElementGuid>1e6288cf-fdc1-4e10-a9fb-eebebb0c1db2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[20]</value>
-      <webElementGuid>c6689a32-c337-4012-9eb2-0923ec592b19</webElementGuid>
+      <webElementGuid>55f28f55-2883-468f-9f02-80d16edb4078</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Monto']/parent::*</value>
-      <webElementGuid>e1862fc6-3a2a-44a8-91ff-9e1b799af64a</webElementGuid>
+      <webElementGuid>a42eec74-d889-4103-a8e2-8e4a3e2edc78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[4]/table/tbody/tr/td</value>
-      <webElementGuid>e4b2624b-4cf5-491c-b968-2ddc1994c34d</webElementGuid>
+      <webElementGuid>69b6b7f2-9cae-4328-9c36-988b782954b5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[@id = 'columnHeaderText4' and (text() = 'Monto' or . = 'Monto')]</value>
-      <webElementGuid>2d59cf76-489b-4dba-9c6c-f18f1299777d</webElementGuid>
+      <webElementGuid>25638fe8-7d7f-4eeb-8677-28b5b915f9fd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

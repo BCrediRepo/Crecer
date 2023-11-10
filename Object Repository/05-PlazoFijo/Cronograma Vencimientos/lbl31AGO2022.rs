@@ -11,13 +11,14 @@
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[(text() = '31 AGO 2022' or . = '31 AGO 2022')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>ee717bbf-f40f-4e9e-bba1-81f01e3146e2</webElementGuid>
+      <webElementGuid>5a0c0c40-9704-4646-9a72-8f91d03d5c0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>31 AGO 2022</value>
-      <webElementGuid>8bf559c9-fa5c-450c-bbc3-2318c3d9be4c</webElementGuid>
+      <webElementGuid>67c4db0c-8084-487d-8aba-f6c38ad19f47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[2]</value>
-      <webElementGuid>6aee3204-a0cd-49b5-960d-c87e2aae4fd7</webElementGuid>
+      <webElementGuid>0021c795-cc54-4078-baee-9183e3901f20</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -49,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>13c3e683-3ae1-484a-9901-f0893cf35550</webElementGuid>
+      <webElementGuid>6a1b7f6d-d17b-413d-9978-b184732433e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -57,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Vencimiento :'])[1]/following::td[1]</value>
-      <webElementGuid>653bb5df-8149-49f0-beca-4eec1bcc926b</webElementGuid>
+      <webElementGuid>7b467b73-6a4f-46e1-9dd8-432e97e6c74c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -65,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cronograma Vencimientos'])[1]/following::td[2]</value>
-      <webElementGuid>daa6bb89-eb25-4dc4-8727-88ce127aae15</webElementGuid>
+      <webElementGuid>e513c664-5941-47b1-8350-edf081296ffd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda:'])[1]/preceding::td[1]</value>
-      <webElementGuid>1cc7ce80-881f-4d6e-9b36-82184a33e043</webElementGuid>
+      <webElementGuid>91b93ab5-0ca9-4ca0-a72d-140f05e88572</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[2]</value>
-      <webElementGuid>d7f55e7e-fa8f-491f-a842-2a9bc4b4b16a</webElementGuid>
+      <webElementGuid>65c62eec-b28d-442c-b6ec-2544d7de59fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='31 AGO 2022']/parent::*</value>
-      <webElementGuid>4fdeca15-7bc4-491e-a58d-c20544ddcf98</webElementGuid>
+      <webElementGuid>131da860-cd35-4863-8f73-f6d55f0f5e09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[2]</value>
-      <webElementGuid>e1959225-689b-43f3-8dfc-d8deb9ca49bb</webElementGuid>
+      <webElementGuid>cb05e9f4-b90e-47c7-b548-9ba2242532d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '31 AGO 2022' or . = '31 AGO 2022')]</value>
-      <webElementGuid>290dc003-b0b3-4cbd-9fe8-d3235c56c253</webElementGuid>
+      <webElementGuid>7dd0fe09-f40e-4569-a91b-fc7c80f634fa</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

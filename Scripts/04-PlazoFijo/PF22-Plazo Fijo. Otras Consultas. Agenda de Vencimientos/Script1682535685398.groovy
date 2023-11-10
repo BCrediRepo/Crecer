@@ -43,9 +43,9 @@ WebUI.switchToWindowIndex(1)
 Label = WebUI.getText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/lblPosicion4'))
 
 if (Label == 'Fecha Vencimiento') {
-    WebUI.setText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/txtFecha_value411'), '20220725')
+    WebUI.setText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/txtFecha_value411'), '20230828')
 } else {
-    WebUI.setText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/txtFecha_value111'), '20220725')
+    WebUI.setText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/txtFecha_value111'), '20230828')
 }
 
 // Captura el tiempo de inicio

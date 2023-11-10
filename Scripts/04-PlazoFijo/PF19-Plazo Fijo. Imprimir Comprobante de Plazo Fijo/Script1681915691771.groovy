@@ -44,7 +44,7 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.setText(findTestObject('05-PlazoFijo/Comprobante de Plazo Fijo/txtSucursal_value111'), '074')
 
-WebUI.setText(findTestObject('05-PlazoFijo/Comprobante de Plazo Fijo/txtNOperacion074_value211'), '12077833')
+//WebUI.setText(findTestObject('05-PlazoFijo/Comprobante de Plazo Fijo/txtNOperacion074_value211'), '12077833')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
