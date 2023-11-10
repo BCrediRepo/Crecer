@@ -44,8 +44,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Vuelvo a la ventana de busqueda
 WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'))
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/txtSucursal'), findTestData('MainData/Users').getValue(3,1))
+WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtSucursal'), findTestData('MainData/Users').getValue(3,1))
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/btnEjecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'), 10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'))

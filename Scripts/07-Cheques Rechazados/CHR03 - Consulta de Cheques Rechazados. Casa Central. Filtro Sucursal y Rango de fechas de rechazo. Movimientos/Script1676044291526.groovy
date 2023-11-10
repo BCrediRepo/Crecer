@@ -29,17 +29,9 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?302')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CHRECH.RECHAZADOS')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('02-Dashboard/lnkRechazoDeCheques'))
-
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/lnkConsultas'))
-
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkChequesRechazados'))
 
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 
@@ -47,9 +39,9 @@ WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.switchToWindowTitle('Temenos T24')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CHRECH.RECHAZADOS')
 
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkChequesRechazados'))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 

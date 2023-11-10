@@ -67,8 +67,7 @@ WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
 WebUI.maximizeWindow()
 
 //Completamos los datos para la consulta
-//WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lnkNueva Seleccion'))
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtNroCuenta'), '11360019563')
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtNroCuenta'), '01195030041')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

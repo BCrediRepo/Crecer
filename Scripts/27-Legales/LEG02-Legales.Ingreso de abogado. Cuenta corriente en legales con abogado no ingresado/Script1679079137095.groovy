@@ -35,6 +35,19 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana de Legales BCCL.E.AC.CTAS.LEG y se completan los datos de sucursal 073
 WebUI.switchToWindowTitle('BCCL.E.AC.CTAS.LEG')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Accedo al menu de Legales BCCL.COBRANZAS.LEGALES,INPUT F3
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.CTAS.LEG')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Switch a la ventana de Legales BCCL.E.AC.CTAS.LEG y se completan los datos de sucursal 073
+WebUI.switchToWindowTitle('BCCL.E.AC.CTAS.LEG')
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/28-Legales/02-BCCL.E.AC.CTAS.LEG/txtSucursal'), 6)
 WebUI.setText(findTestObject('Object Repository/28-Legales/02-BCCL.E.AC.CTAS.LEG/txtSucursal'), findTestData('MainData/Users').getValue(3,5))
 WebUI.click(findTestObject('Object Repository/28-Legales/02-BCCL.E.AC.CTAS.LEG/lnkEjecutar'))

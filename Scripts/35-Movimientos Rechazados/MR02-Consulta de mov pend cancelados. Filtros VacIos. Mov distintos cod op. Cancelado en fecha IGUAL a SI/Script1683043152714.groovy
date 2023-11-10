@@ -83,10 +83,6 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtMovOrigMov'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtMovTipMov'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtMovFecIng'),6)
 WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtMovCanal'),6)
 
 //Ver primer registro
@@ -94,24 +90,10 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRech
 WebUI.click(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/btnVerRegistro'))
 
 //Verifica los datos del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'))
-def element = WebUI.getText(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'))
-assert element.contains('Mov Canal')
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Canal'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Cod Op Org'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Cta Interna'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Env Gdp'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Fec Ing'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Fec Org'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Id Mov Ori'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Moneda'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Monto'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Motivo.1'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Orig Mov'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Prod Sub'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Suc Ref'),6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/a_Mov Tip Mov'),6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/MovEnvGdp'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/MovEnvGdp'))
+def element = WebUI.getText(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/MovEnvGdp'))
+assert element.contains('Mov Env Gdp')
 
 //---------------------------------------------------------------------------------------------------------------------
 

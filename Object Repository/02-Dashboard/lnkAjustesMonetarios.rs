@@ -11,9 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
+         <value>ul.menuMargin:nth-child(20) > li:nth-child(1) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0420d405-55bc-4253-8573-89a3af2599b9</webElementGuid>
+      <webElementGuid>b45ec129-427e-4ac4-a1bb-abb2ff566567</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>1a06c32a-d782-48d4-bfe3-a38b9ac2eb48</webElementGuid>
+      <webElementGuid>90af532d-b081-4a20-9c23-4fca25024213</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>946033cc-682c-44cb-b32c-f136d71367d7</webElementGuid>
+      <webElementGuid>1a7307b0-7faf-4cd5-939d-96587bf463de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ajustes Monetarios</value>
-      <webElementGuid>64464587-fc27-4577-a71f-023fe80572b2</webElementGuid>
+      <webElementGuid>ac1ff613-bc9c-4e81-af2a-11f3bd6add34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>3295a72a-708c-4deb-889c-c131e6a320b4</webElementGuid>
+      <webElementGuid>3b0733fd-6c9f-4ba3-a48c-c5db09041b45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>8bee5ec8-17be-46d4-a335-4967202f75fe</webElementGuid>
+      <webElementGuid>4866cd1b-a5fa-4f01-ab13-89aa38583050</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[80]</value>
-      <webElementGuid>072851b7-70f7-4613-8313-a1d1cfd68cb5</webElementGuid>
+      <webElementGuid>a25ed107-289e-4711-b25a-19df9e028924</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[20]/li/span</value>
-      <webElementGuid>16d37bd1-c7b3-4938-9df5-c6b26e9f96d6</webElementGuid>
+      <webElementGuid>dafdc2c1-97b1-4aec-9ff6-5b64300b03a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Transf. Internas Pagadas'])[1]/following::span[1]</value>
-      <webElementGuid>f502b690-d0db-4faf-8ec2-8dc26217b1d7</webElementGuid>
+      <webElementGuid>8769e83e-0102-409b-b2b6-5716d718d409</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Altas Transf. Internas'])[1]/following::span[1]</value>
-      <webElementGuid>07b4666f-2b0b-4683-981e-69293f932f72</webElementGuid>
+      <webElementGuid>9a32b069-d7f2-4cc2-a58d-73a957fd8951</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito por Ajustes'])[1]/preceding::span[1]</value>
-      <webElementGuid>15fa8880-3f9f-4f2a-9df8-f07a461ccabc</webElementGuid>
+      <webElementGuid>d5200c23-46f5-4661-b02d-28c2df528883</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito por Ajustes'])[1]/preceding::span[1]</value>
-      <webElementGuid>20b0ad12-77f2-4a58-8567-ee9ddce1bcb2</webElementGuid>
+      <webElementGuid>e9dca6e5-7a13-466c-8e35-7e1b10040977</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ajustes Monetarios']/parent::*</value>
-      <webElementGuid>f9bf2355-2505-422e-90b5-3f1fe26b0e74</webElementGuid>
+      <webElementGuid>3f24a171-3c19-4f85-b413-1053d8703be1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[20]/li/span</value>
-      <webElementGuid>b304e596-1580-48f5-872d-fc591fc08b7e</webElementGuid>
+      <webElementGuid>944f6454-2b71-4cfa-b1b8-d80979c2f0df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Ajustes Monetarios' or . = 'Ajustes Monetarios')]</value>
-      <webElementGuid>9f3b3647-c851-45c7-a1c4-502725cae6c7</webElementGuid>
+      <webElementGuid>c0c94ec4-1a5f-4df0-8db7-85cd8ad44180</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

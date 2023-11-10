@@ -76,12 +76,12 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Seleccionamos del cbx la opcion Ultima Modificacion
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/cbxUltima Modificacion'), 0)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/cbxVerHistorico'), 0)
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/btnEjecutar'))
 
 //Verificamos el texto datos generales
-WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS - Ult Mod/lblDatos Generales'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS - Ult Mod/lblDatos Generales'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

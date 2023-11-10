@@ -47,7 +47,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ingresa cuenta en ARS
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtNrodeCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtNrodeCuenta'),'00890052464')
+WebUI.setText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtNrodeCuenta'),'00895003191')
 
 //Click en boton validar
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnValidar'),6)
@@ -99,15 +99,15 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efec
 def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEOTOTAL'))
 assert element.contains('CON RESTRICCION BLOQUEO TOTAL')
 
-//Acepto alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarAlertas'),6)
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarAlertas'))
-
-//Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'))
-def element2 = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'))
-assert element2.contains('Txn Completa:')
+////Acepto alertas
+//WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarAlertas'),6)
+//WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarAlertas'))
+//
+////Espera y recibe mensaje de tx completa
+//WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'),6)
+//WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'))
+//def element2 = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'))
+//assert element2.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
 

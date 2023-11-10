@@ -27,11 +27,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisionesyBonificaciones'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkConsultadeComisionesCobradas'))
+//Ejecuta en la linea de comando ENQ BCCL.E.AC.COM.COBRADA
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.COBRADA')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Abre la pestaña BCCL.E.AC.COM.COBRADA
 WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
@@ -40,7 +39,10 @@ WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkConsultadeComisionesCobradas'))
+//Ejecuta en la linea de comando ENQ BCCL.E.AC.COM.COBRADA
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.COBRADA')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Abre la pestaña BCCL.E.AC.COM.COBRADA
 WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
@@ -59,14 +61,6 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verifica que se muestre el titulo Tipo de comision
 WebUI.verifyElementVisible(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lblTipo de Comision'))
-
-// Captura el tiempo de finalización
-long endTime = System.currentTimeMillis()
-
-//Calcula la diferencia para obtener el tiempo transcurrido
-long elapsedTime = endTime - startTime
-
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

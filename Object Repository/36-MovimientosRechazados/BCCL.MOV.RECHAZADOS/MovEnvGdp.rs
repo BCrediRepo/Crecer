@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Mov Env Gdp</name>
+   <name>MovEnvGdp</name>
    <tag></tag>
-   <elementGuidId>c51f5922-efdc-4fa2-adc7-e413ca565186</elementGuidId>
+   <elementGuidId>bc056892-9524-4a59-805f-1bbf91c5dd1b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@id='fieldCaption:MOV.COD.OP.ORG']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='fieldCaption:MOV.ENV.GDP']</value>
+         <key>CSS</key>
+         <value>#fieldCaption\:MOV\.ENV\.GDP</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>ec08c238-7382-41b7-9006-5dfba07c13e1</webElementGuid>
+      <webElementGuid>b307e41c-84e4-48b2-a5cb-58e9cc8dc700</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>5533cd71-8f3e-4d4d-bedb-7387925ec1d3</webElementGuid>
+      <webElementGuid>1e90118a-ee8c-402a-b2f6-2db0c576b97b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>a773993b-2530-4631-9ff4-058eb96c3b0f</webElementGuid>
+      <webElementGuid>b8cdbaa1-9373-4f14-a7ec-8c7acd065ec4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,23 +46,23 @@
       <name>class</name>
       <type>Main</type>
       <value>field field_BCCLMOVRECHAZADOS</value>
-      <webElementGuid>58e6329d-babd-4e39-924a-b4b6e9c5ae53</webElementGuid>
+      <webElementGuid>d02efb0e-cc95-4148-8efb-29955fbf1ec2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldCaption:MOV.ENV.GDP</value>
-      <webElementGuid>753c3e3f-6877-4e3a-ba8d-70b9d12f58dd</webElementGuid>
+      <value>fieldCaption:MOV.COD.OP.ORG</value>
+      <webElementGuid>d4103dd8-3d53-4543-acc1-be7fdd23102f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldCaption:MOV.ENV.GDP</value>
-      <webElementGuid>b6fe2aeb-eff8-4d2c-af6e-dbb27e2795da</webElementGuid>
+      <value>fieldCaption:MOV.COD.OP.ORG</value>
+      <webElementGuid>1447b389-e021-4b81-bc28-a05ee8b586f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,126 +70,126 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>2afb8bc5-d1fe-4114-a009-94ca0d6aea74</webElementGuid>
+      <webElementGuid>99d21796-d85a-4d80-bc7d-a2a250668802</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:help('MOV.ENV.GDP','','','issueToken')</value>
-      <webElementGuid>631354d5-0b01-4288-97d3-e69cb69ed2b2</webElementGuid>
+      <value>javascript:help('MOV.COD.OP.ORG','','','issueToken')</value>
+      <webElementGuid>6a347b57-2622-4f76-ac4a-9b44de926e9e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Mov Env Gdp</value>
-      <webElementGuid>6899d7bb-4348-4095-b57f-60e0dc57c22a</webElementGuid>
+      <value>Mov Cod Op Org</value>
+      <webElementGuid>251b9417-9c68-4b3b-8aa5-8299a8978b76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Mov Env Gdp</value>
-      <webElementGuid>6e672b9c-80d4-45be-9ddb-f3ed33bf6533</webElementGuid>
+      <value>Mov Cod Op Org</value>
+      <webElementGuid>9d3c736a-4945-455a-9c3e-f10ff30a63cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldCaption:MOV.ENV.GDP&quot;)</value>
-      <webElementGuid>b0761fcd-4800-4745-bf71-8847ff9639ae</webElementGuid>
+      <value>id(&quot;fieldCaption:MOV.COD.OP.ORG&quot;)</value>
+      <webElementGuid>c7a283cb-b0a6-410e-841c-303f367008c1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@id='fieldCaption:MOV.ENV.GDP']</value>
-      <webElementGuid>77a130bd-06d3-443c-81f1-cbff26a1bfb0</webElementGuid>
+      <value>//a[@id='fieldCaption:MOV.COD.OP.ORG']</value>
+      <webElementGuid>e313fd7b-bcad-4afb-b5ae-beb1c79c6690</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[17]/td/label/a</value>
-      <webElementGuid>f3e1bb05-1900-46a0-aa76-3d3a230e48a9</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[13]/td/label/a</value>
+      <webElementGuid>c139fbb3-dfe4-4547-946b-7b48ea64baf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Mov Env Gdp')]</value>
-      <webElementGuid>c38df53b-3ff7-43d3-bf59-e9322fd62fc9</webElementGuid>
+      <value>//a[contains(text(),'Mov Cod Op Org')]</value>
+      <webElementGuid>845da5f7-7501-4931-a987-b9fe606fbbb4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov Nro Comp'])[1]/following::a[1]</value>
-      <webElementGuid>f082f63f-766c-4caa-ac17-e704ffc06121</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov Monto'])[1]/following::a[1]</value>
+      <webElementGuid>0bc14102-2c88-46ac-9bd8-78da348ab2ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS1532800011002'])[1]/following::a[2]</value>
-      <webElementGuid>afb2d0c4-45e7-47a8-8c11-54671f867511</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/following::a[2]</value>
+      <webElementGuid>0ca96c34-cbfb-4f19-923a-59e773ca3769</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Curr No'])[1]/preceding::a[1]</value>
-      <webElementGuid>db93db7e-b644-413e-bf5b-597a69248172</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov Db Cr'])[1]/preceding::a[1]</value>
+      <webElementGuid>937a9e08-f5ef-4ad6-990e-9f119e15abf2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inputter.1'])[1]/preceding::a[2]</value>
-      <webElementGuid>fd52888c-05e2-4efd-bad0-d1146b0f16d0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CR'])[1]/preceding::a[2]</value>
+      <webElementGuid>b9ba601c-f332-40ab-a49e-b44e65a3853e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Mov Env Gdp']/parent::*</value>
-      <webElementGuid>2b862fa1-bfaa-4b0a-b6e9-7ff6be081f33</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Mov Cod Op Org']/parent::*</value>
+      <webElementGuid>9405d806-4cf4-4db1-9eba-060e6f422612</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:help('MOV.ENV.GDP','','','issueToken')&quot;)]</value>
-      <webElementGuid>4e6491dc-4213-4c61-b89f-878febdb5513</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:help('MOV.COD.OP.ORG','','','issueToken')&quot;)]</value>
+      <webElementGuid>5057793e-2d6d-4237-9792-394ace62e321</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[17]/td/label/a</value>
-      <webElementGuid>d7b81187-8c7d-469f-9c50-1109a1a880bb</webElementGuid>
+      <value>//tr[13]/td/label/a</value>
+      <webElementGuid>9ee5d921-1dc4-46a6-90e0-f4185a5c6ed7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@name = 'fieldCaption:MOV.ENV.GDP' and @id = 'fieldCaption:MOV.ENV.GDP' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;MOV.ENV.GDP&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Mov Env Gdp' and (text() = 'Mov Env Gdp' or . = 'Mov Env Gdp')]</value>
-      <webElementGuid>d67c3f2b-07df-4b1c-9f6e-5e3788a5b008</webElementGuid>
+      <value>//a[@name = 'fieldCaption:MOV.COD.OP.ORG' and @id = 'fieldCaption:MOV.COD.OP.ORG' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;MOV.COD.OP.ORG&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Mov Cod Op Org' and (text() = 'Mov Cod Op Org' or . = 'Mov Cod Op Org')]</value>
+      <webElementGuid>6c9986da-f7f8-4234-ae08-56d9ecd5f27b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

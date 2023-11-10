@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Mov Suc Ref</name>
+   <name>MovCanal</name>
    <tag></tag>
-   <elementGuidId>bda04ab6-dd4d-4ff1-9a7c-d3c4bfa9348a</elementGuidId>
+   <elementGuidId>b55a8f3a-03d9-40e7-a5ec-756906c47296</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@id='fieldCaption:MOV.CANAL']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='fieldCaption:MOV.SUC.REF']</value>
+         <key>CSS</key>
+         <value>#fieldCaption\:MOV\.ENV\.GDP</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>d48dce5b-de2c-43d1-bf53-dd688b206a70</webElementGuid>
+      <webElementGuid>ea252504-465c-4386-9cea-fb1065f91b0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>e4364bbe-eda3-4287-a5ed-f32c5d2fd42c</webElementGuid>
+      <webElementGuid>0cf2acfe-19c8-42e6-9f78-f0b043aa835d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>50a24d78-7ddf-4626-8c8a-b116a2b25283</webElementGuid>
+      <webElementGuid>7aab4ec1-6503-4a97-bb9d-acb958088ed2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,23 +46,23 @@
       <name>class</name>
       <type>Main</type>
       <value>field field_BCCLMOVRECHAZADOS</value>
-      <webElementGuid>b3780a01-302f-402d-a02f-35845951f368</webElementGuid>
+      <webElementGuid>35aa06ee-72a2-4430-82df-b0258c64d11a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldCaption:MOV.SUC.REF</value>
-      <webElementGuid>086b5c3d-e4b1-424d-9d8b-b66ec7a31cab</webElementGuid>
+      <value>fieldCaption:MOV.CANAL</value>
+      <webElementGuid>31a5002e-f932-435c-a991-fbfddcf25b87</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldCaption:MOV.SUC.REF</value>
-      <webElementGuid>180c2646-faa6-49ac-a260-eac1b2897e21</webElementGuid>
+      <value>fieldCaption:MOV.CANAL</value>
+      <webElementGuid>f9e8f67e-f4c6-4108-9bd2-4daa8cac00f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,126 +70,126 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>2d2182a5-336b-4d9a-a2c8-fff849e759c7</webElementGuid>
+      <webElementGuid>c9dba7cf-4995-453d-9fd2-0a0e48c46ae8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:help('MOV.SUC.REF','','','issueToken')</value>
-      <webElementGuid>f69e32bd-746c-453e-ad14-667a87aaa4c5</webElementGuid>
+      <value>javascript:help('MOV.CANAL','','','issueToken')</value>
+      <webElementGuid>b363d788-457a-49da-a8ba-8dcdfc9b4783</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Mov Suc Ref</value>
-      <webElementGuid>baba9a44-0acb-46c9-926f-93f54720a0de</webElementGuid>
+      <value>Mov Canal</value>
+      <webElementGuid>30dd5812-8cb6-4258-be4a-2a28a72b205b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Mov Suc Ref</value>
-      <webElementGuid>066d60f1-79cf-4daf-82e0-6da0ee852f0b</webElementGuid>
+      <value>Mov Canal</value>
+      <webElementGuid>156e3bf8-b94f-46f0-b1e9-ccd22a1de537</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldCaption:MOV.SUC.REF&quot;)</value>
-      <webElementGuid>3fe533d6-0535-4167-ab74-a3e306d96109</webElementGuid>
+      <value>id(&quot;fieldCaption:MOV.CANAL&quot;)</value>
+      <webElementGuid>ed66e909-c93d-4146-99cd-6c28363c4546</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@id='fieldCaption:MOV.SUC.REF']</value>
-      <webElementGuid>16d7846a-3ecd-4c28-bb5f-5f9ca1412fb6</webElementGuid>
+      <value>//a[@id='fieldCaption:MOV.CANAL']</value>
+      <webElementGuid>b4502f94-b3eb-4fc7-9e4d-0ad791fe31e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[6]/td/label/a</value>
-      <webElementGuid>ff32ffd0-2634-4bcb-8374-c4486b5e55d1</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[3]/td/label/a</value>
+      <webElementGuid>7191f13e-b8b2-45d1-9101-37e40c35a3b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Mov Suc Ref')]</value>
-      <webElementGuid>abc5f123-9e95-4528-83da-f2e7603d8f5d</webElementGuid>
+      <value>//a[contains(text(),'Mov Canal')]</value>
+      <webElementGuid>670a1482-f18b-442e-97ca-17871ba4bcdd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov Fec Org'])[1]/following::a[1]</value>
-      <webElementGuid>217810ea-a5f6-47cc-8af1-8729f8b47a10</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo I'])[1]/following::a[1]</value>
+      <webElementGuid>b284f0fd-c8a9-4e33-b928-bc96d2d30249</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov Fec Ing'])[1]/following::a[2]</value>
-      <webElementGuid>5ca563cb-c90c-428e-86cb-52b89ed5c8f2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov Tip Mov'])[1]/following::a[1]</value>
+      <webElementGuid>005aeffb-585d-45af-9bf3-650396c93866</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Olivos'])[1]/preceding::a[1]</value>
-      <webElementGuid>308db0b2-0472-4148-87ad-dd00aa98eaff</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BAT'])[1]/preceding::a[1]</value>
+      <webElementGuid>82b43948-4f4d-44c0-bbbb-77c9ad1492ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov Apl Cta'])[1]/preceding::a[1]</value>
-      <webElementGuid>3254f497-d308-4bcf-b255-28b0de76224d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BATCH'])[1]/preceding::a[1]</value>
+      <webElementGuid>b3829594-d0f8-4916-8ce4-b21708bb1f9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Mov Suc Ref']/parent::*</value>
-      <webElementGuid>70b22fc0-d365-4f24-98da-776d75f6ce45</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Mov Canal']/parent::*</value>
+      <webElementGuid>d77dfdc6-a237-4ca2-91e2-566fcb301a53</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:help('MOV.SUC.REF','','','issueToken')&quot;)]</value>
-      <webElementGuid>c0ea6f7e-78f1-4d40-a6ce-5a37b571050e</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:help('MOV.CANAL','','','issueToken')&quot;)]</value>
+      <webElementGuid>d3b9efd3-d6a3-4967-9272-03124ea29f9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[6]/td/label/a</value>
-      <webElementGuid>e54dbdd6-c197-4fa4-937e-1526e7d9242e</webElementGuid>
+      <value>//tr[3]/td/label/a</value>
+      <webElementGuid>63689a18-3d50-4de6-a2ad-c5c0fd44a057</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@name = 'fieldCaption:MOV.SUC.REF' and @id = 'fieldCaption:MOV.SUC.REF' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;MOV.SUC.REF&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Mov Suc Ref' and (text() = 'Mov Suc Ref' or . = 'Mov Suc Ref')]</value>
-      <webElementGuid>988b449f-6a72-4096-b7f0-d2dc06166923</webElementGuid>
+      <value>//a[@name = 'fieldCaption:MOV.CANAL' and @id = 'fieldCaption:MOV.CANAL' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;MOV.CANAL&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Mov Canal' and (text() = 'Mov Canal' or . = 'Mov Canal')]</value>
+      <webElementGuid>5c56b863-8f70-4c94-ad47-6f6508d7436d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

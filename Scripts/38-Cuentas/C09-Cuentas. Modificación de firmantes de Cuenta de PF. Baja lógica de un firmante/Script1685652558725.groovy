@@ -79,7 +79,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.switchToWindowTitle('CUENTAS')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtFecha Baja.2'), '20220726')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtFecha Baja.2'), '20230828')
 
 //WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtForma de Operar.1'), '01')
 

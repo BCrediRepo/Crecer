@@ -65,10 +65,10 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01
 WebUI.click(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/spanDenominacionesCR'))
 
 //Setea la denominación
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom2'), 
+WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom1000'), 
     6)
 
-WebUI.setText(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom2'), '1')
+WebUI.setText(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom1000'), '1')
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

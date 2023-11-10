@@ -48,7 +48,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ingresar monto a retirar
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/inputMonto'), 6)
-WebUI.setText(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/inputMonto'), "500")
+WebUI.setText(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/inputMonto'), "100")
 
 //Seleccionar Dispositivo
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/btnDispositivodropdown'),6)
@@ -66,8 +66,8 @@ WebUI.click(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashN
 //Ingresar Denominaciones de dinero a retirar según datos
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/spanDenominacionesCR'), 6)
 WebUI.click(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/spanDenominacionesCR'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/inputDenominacion4'),6)
-WebUI.setText(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/inputDenominacion4'),"1")
+WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/inputDenominacion100'),6)
+WebUI.setText(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/inputDenominacion100'),"1")
 
 //Validar un registro
 WebUI.click(findTestObject('Object Repository/26-Dispositivos/02-DispensadoCashNeutrales/btnValidarRegistro'))

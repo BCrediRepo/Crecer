@@ -21,9 +21,10 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
-WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 10), findTestData('MainData/Users').getValue(
+        2, 10))
 
+WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO')
 
@@ -33,6 +34,7 @@ WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 WebUI.switchToWindowIndex(0)
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO')
@@ -57,43 +59,56 @@ WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.
 
 WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnValidarRegistro'))
 
+WebUI.waitForElementVisible(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'), 90)
+
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), 
+    90)
+
 //Agrego un nuevo firmante para luego eliminarlo validando el aceptar alertas
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))){
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))) {
+    WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
 }
 
 WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
+
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
+
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/lnkEjecutar'))
+
 WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante3'))
+
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))){
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))) {
+    WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
 }
 
 //Valido que la transaccion se complete correctamente
-WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'), 
+    6)
+
 def element = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
 
-
-//---------------------------------------------------------------------------------------------------------------------
-
+assert element.contains('Txn Completa:') //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

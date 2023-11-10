@@ -37,8 +37,19 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Abre la pestaña del menú BCCL.E.MR.PARTIDAS.PENDIENTES
 WebUI.switchToWindowTitle('BCCL.E.MR.PARTIDAS.PENDIENTES')
 
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
+
+//Ejecuta en la linea de comando menu ENQ BCCL.E.MR.PARTIDAS.PENDIENTES
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MR.PARTIDAS.PENDIENTES')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Abre la pestaña del menú BCCL.E.MR.PARTIDAS.PENDIENTES
+WebUI.switchToWindowTitle('BCCL.E.MR.PARTIDAS.PENDIENTES')
+
 //Verifica titulo BCCL.E.MR.PARTIDAS.PENDIENTES
-WebUI.waitForElementVisible(findTestObject('Object Repository/47-Mov rechazados pendientes de imputacion/BCCL.E.MR.PARTIDAS.PENDIENTES/lblTituloBCCL.E.MR.PARTIDAS.PENDIENTES'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/47-Mov rechazados pendientes de imputacion/BCCL.E.MR.PARTIDAS.PENDIENTES/lblTituloBCCL.E.MR.PARTIDAS.PENDIENTES'))
 
 //Ingresa Sucursal

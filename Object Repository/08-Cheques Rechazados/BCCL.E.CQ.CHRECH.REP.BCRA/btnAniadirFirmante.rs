@@ -6,23 +6,27 @@
    <elementGuidId>2453b452-4508-45ad-88f0-2bbe3c3f6fbe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='mainTab']/tbody/tr[112]/td[2]/a/img</value>
+         <key>BASIC</key>
+         <value>id(&quot;mainTab&quot;)/tbody[1]/tr[112]/td[@class=&quot;action_container action_container_BCCLCQCHRECHREPBCRA action_container_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]/a[1]/img[@class=&quot;ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>.ascell</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/div[2]/form[1]/div[4]/table/tbody/tr[1]/td/table/tbody/tr[81]/td[2]/a/img</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>c254b07e-f4e5-4dbe-9786-63babe87df85</webElementGuid>
+      <webElementGuid>32b67140-e054-479a-bab5-773756847b88</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,39 +34,39 @@
       <name>class</name>
       <type>Main</type>
       <value>ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM</value>
-      <webElementGuid>cc182427-cb0b-44d8-9820-a69e9f01d61a</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>src</name>
-      <type>Main</type>
-      <value>../plaf/images/bccl/deal/mvexpansion.gif</value>
-      <webElementGuid>3f616aa3-746a-4cf7-b5d5-abf957e401b1</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>alt</name>
-      <type>Main</type>
-      <value>Expandir Multivalor</value>
-      <webElementGuid>c6395ad1-14f3-4cf5-9a74-5389b53cbe62</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>title</name>
-      <type>Main</type>
-      <value>Expandir Multivalor</value>
-      <webElementGuid>c7a3da16-f757-4fcb-8543-0bf7f849eb82</webElementGuid>
+      <webElementGuid>94a6ed07-2528-40f5-b756-16efa333b06c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/mvexpansion.gif</value>
+      <webElementGuid>235cb9cc-3aef-4cd2-b4e8-6c1d97207fab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Expandir Multivalor</value>
+      <webElementGuid>03420f69-05d2-469f-a1fa-2d4b0133850c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Expandir Multivalor</value>
+      <webElementGuid>576b3806-ee5f-4a77-a220-77a08646665c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainTab&quot;)/tbody[1]/tr[112]/td[@class=&quot;action_container action_container_BCCLCQCHRECHREPBCRA action_container_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]/a[1]/img[@class=&quot;ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]</value>
-      <webElementGuid>a2e3566c-63c5-46b8-8d10-84d37e3e223a</webElementGuid>
+      <webElementGuid>7cb96bbb-72d9-4087-aac8-e5816522570b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='mainTab']/tbody/tr[112]/td[2]/a/img</value>
-      <webElementGuid>fe352684-7793-4768-a706-d8eb4b96bb28</webElementGuid>
+      <webElementGuid>815b8963-ee54-4ccd-9b68-a831a7b37903</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>(//img[@alt='Expandir Multivalor'])[2]</value>
-      <webElementGuid>fdbc1996-6d29-4d6a-8029-da5f0d981f88</webElementGuid>
+      <webElementGuid>9e2473c6-ac13-47b6-99b7-920274e62f49</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[112]/td[2]/a/img</value>
-      <webElementGuid>f86d7696-7ba1-4f55-9808-2827932ef2e5</webElementGuid>
+      <webElementGuid>0b59d0f9-3ba0-4119-8ab9-efa01193acd0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +98,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/deal/mvexpansion.gif' and @alt = 'Expandir Multivalor' and @title = 'Expandir Multivalor']</value>
-      <webElementGuid>37107b35-799b-496a-920f-6e7e116d0f51</webElementGuid>
+      <webElementGuid>7a81ecae-779a-45cf-a0d4-4c16d899f9ef</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

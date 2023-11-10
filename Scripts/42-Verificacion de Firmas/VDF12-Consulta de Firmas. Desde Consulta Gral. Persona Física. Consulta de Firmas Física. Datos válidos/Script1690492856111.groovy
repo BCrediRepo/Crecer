@@ -49,11 +49,7 @@ WebUI.switchToWindowTitle('Consulta General de personas Fisica')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
 WebUI.switchToWindowIndex(0)
-
-//Switch a la ventana
-WebUI.switchToWindowTitle('T24 - Fil.089 M.del Plata Ctr')
 
 //Click en Busqueda y Consulta General de personas Fisica
 WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnkBusqueda y consulta general Persona Fisica'))

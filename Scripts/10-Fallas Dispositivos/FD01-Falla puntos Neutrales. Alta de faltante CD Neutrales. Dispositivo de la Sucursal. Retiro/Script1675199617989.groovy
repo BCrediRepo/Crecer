@@ -46,7 +46,7 @@ WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-Alt
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtMonto'), 6)
 
-WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtMonto'), '100')
+WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtMonto'), '1000')
 WebUI.click(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtIdDispositivo'))
 WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtIdDispositivo'), '08911')
 
@@ -54,8 +54,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/11-Fallas de Dispo
 WebUI.click(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/lblDenominacionesCR'))
 WebUI.click(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/lblDenominacionesCR'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtCantidadDNM100'), 6)
-WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtCantidadDNM100'), '1')
+WebUI.waitForElementVisible(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtCantidadDNM1000'), 6)
+WebUI.setText(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/txtCantidadDNM1000'), '1')
 
 WebUI.click(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/lblFaltantesEnDipositivo'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Fallas de Dispositivos/01-AltadeFaltantesDeATMCDTAS/btnAceptarRegistro'), 6)

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblVISA</name>
+   <name>lblNro.deCuenta</name>
    <tag></tag>
-   <elementGuidId>d024c11f-2692-431f-8670-422e4dddd5ce</elementGuidId>
+   <elementGuidId>c3f5f911-0bf7-4f63-a43b-f0ce200dcda8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>td.ENQ-H-TITLE.ENQ-H-TITLE_BCCLERESCTAMOVFECHA</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r7']/td[2]</value>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,86 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>27864e0e-bd99-4eaf-8c30-451f8abc6693</webElementGuid>
+      <webElementGuid>0059fa40-40ae-444e-b19e-d76e898181e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>BOLD-RED BOLD-RED_BCCLEAPENQNOMBREDOC</value>
-      <webElementGuid>480e76ba-3713-415a-a870-9aef5d2fbcbb</webElementGuid>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHA</value>
+      <webElementGuid>f3e51300-49c1-447e-a0bd-254636deff95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>VISA</value>
-      <webElementGuid>e93051ae-43df-4d8c-b146-61e2eda4978d</webElementGuid>
+      <value>Nro. de Cuenta</value>
+      <webElementGuid>00981c05-4493-408e-9c8f-f7da8e8e09f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r7&quot;)/td[@class=&quot;BOLD-RED BOLD-RED_BCCLEAPENQNOMBREDOC&quot;]</value>
-      <webElementGuid>73907d59-fe58-4488-b3b7-99690f6074d4</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHA&quot;]</value>
+      <webElementGuid>c6d9ce27-1d9c-4c58-a5fa-a42250399ca1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r7']/td[2]</value>
-      <webElementGuid>bcadfe18-6f33-49bf-8aff-f1b5b13f5c91</webElementGuid>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      <webElementGuid>971bd3a6-b989-4406-9741-dfb35de41232</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='E'])[2]/following::td[7]</value>
-      <webElementGuid>5a90051c-99c9-4b6d-8bc5-b77306847aed</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
+      <webElementGuid>ca954d97-aaca-49a4-a0db-84df2196b0f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A'])[3]/following::td[12]</value>
-      <webElementGuid>1543d07f-58ae-4256-bc0a-df8e9aca7e18</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
+      <webElementGuid>a7b34ac0-5d01-4c14-a22e-6ff9e24c0f73</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CREDITO INDIVIDUOS'])[1]/preceding::td[1]</value>
-      <webElementGuid>90825f1f-97c3-450d-80d2-ed0386e7e00f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto'])[1]/preceding::td[2]</value>
+      <webElementGuid>fd633784-96ac-4a7f-9f39-5e540fd6335d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='RODRIGUEZ ROCIO'])[5]/preceding::td[2]</value>
-      <webElementGuid>3fa2a397-7b8b-4a2b-adda-8b396ad3c9da</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[4]</value>
+      <webElementGuid>1faa2623-00f9-4aaf-98b0-3d5c0a11f6ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nro. de Cuenta']/parent::*</value>
+      <webElementGuid>d25d2a8f-30f3-41a7-a59c-7141998382a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[7]/td[2]</value>
-      <webElementGuid>8b1ca175-4f49-4449-ba79-2f99eff73b72</webElementGuid>
+      <value>//tr[2]/td</value>
+      <webElementGuid>7d09b220-cf60-4248-a723-0846d3c11b48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'VISA' or . = 'VISA')]</value>
-      <webElementGuid>88cf4544-2b7f-44f9-a9c2-21e9f76c456c</webElementGuid>
+      <value>//td[(text() = 'Nro. de Cuenta' or . = 'Nro. de Cuenta')]</value>
+      <webElementGuid>85719dd8-b1f8-4036-8f7c-de18eb28c211</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

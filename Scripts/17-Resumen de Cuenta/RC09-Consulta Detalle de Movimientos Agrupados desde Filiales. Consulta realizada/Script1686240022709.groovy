@@ -39,7 +39,7 @@ WebUI.switchToWindowTitle('Consulta Detalle Movs Agrupados')
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-WebUI.switchToWindowTitle('T24 - Fil.089 M.del Plata Ctr')
+WebUI.switchToWindowIndex(0)
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 

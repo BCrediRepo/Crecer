@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login antes el 4
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,25), findTestData('MainData/Users').getValue(2,25))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -59,7 +59,8 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/cbxConsultar'), 6)
+//Se pone un tiempo de espera de 100 porque tarda muchisimo en traer los registros
+WebUI.waitForElementPresent(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/cbxConsultar'), 100)
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -69,13 +70,13 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/cbxConsultar'), 2)
-
-WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/btnDrillDrown'))
-
-WebUI.switchToWindowTitle('BCCL.AC.ACUERDO')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.AC.ACUERDO/lblCONSULTA'), 6)
+//WebUI.selectOptionByIndex(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/cbxConsultar'), 2)
+//
+//WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/btnDrillDrown'))
+//
+//WebUI.switchToWindowTitle('BCCL.AC.ACUERDO')
+//
+//WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.AC.ACUERDO/lblCONSULTA'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c3365f5a-2ac4-4260-ba4c-30b1b2ebe30a</webElementGuid>
+      <webElementGuid>82b9f2c9-f7cf-4fcf-8b52-82a2adebfb28</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.MOD.FISI');processMenuHeaderText('Busqueda Persona Fisica')</value>
-      <webElementGuid>e8c9cbf7-dffe-46ea-acba-d16de4a55d52</webElementGuid>
+      <webElementGuid>9aa3045d-4cf6-4d9c-9ff6-8cee9f2e1322</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.MOD.FISI');</value>
-      <webElementGuid>636e50ad-a210-4c02-8fc2-2bc7e43614c3</webElementGuid>
+      <webElementGuid>6d0803bf-6243-478a-910f-5b11bd1731d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Busqueda Persona Fisica </value>
-      <webElementGuid>167d60fd-f518-4459-8394-6b90f3a0db32</webElementGuid>
+      <webElementGuid>03a6df72-28f3-472e-9a8d-7725c8ec2645</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>f7ba888f-46ab-46b8-8056-5d32bdcb3b33</webElementGuid>
+      <webElementGuid>cf74f7c1-4d68-4cd1-8164-3519762facb6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica</value>
-      <webElementGuid>71cadaf2-2a69-4758-a46a-83bec24b6c95</webElementGuid>
+      <webElementGuid>c273217a-9ec7-482d-8571-8a945a0aad60</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.MOD.FISI');processMenuHeaderText('Busqueda Persona Fisica')&quot;]</value>
-      <webElementGuid>a3bdb8b7-addd-4472-9eeb-730b2731c682</webElementGuid>
+      <webElementGuid>96163f52-d8ff-4278-9251-abcb6ed804cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul/li/a</value>
-      <webElementGuid>2644540c-2a4b-43f8-8d45-704150ddec48</webElementGuid>
+      <webElementGuid>48fc77b3-f872-42ed-9f98-98bb8463e17a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Busqueda Persona Fisica')]</value>
-      <webElementGuid>a927fe29-edee-4af8-a323-984bca0cbe74</webElementGuid>
+      <webElementGuid>b6184633-cb6e-4d1b-aa4f-c35c4041e1cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('id(', '&quot;', 'pane_', '&quot;', ')/ul[1]/li[1]/a[1]')])[1]/preceding::a[1]</value>
-      <webElementGuid>b0ffa40c-6f6c-4462-b031-e88f241f74de</webElementGuid>
+      <webElementGuid>92ce93af-19f4-46c8-8471-80c3ebcb9129</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Busqueda Persona Fisica']/parent::*</value>
-      <webElementGuid>a1c36788-7bee-4514-92a0-936e30354bda</webElementGuid>
+      <webElementGuid>164eb936-a49b-4a12-88e0-4032fa41818f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.MOD.FISI');&quot;)]</value>
-      <webElementGuid>9431ec00-1382-4a74-8dc8-4efc89eddb9a</webElementGuid>
+      <webElementGuid>f1e06d23-1cd0-4fc2-965d-e5875029cee1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a</value>
-      <webElementGuid>7a15363e-b9b6-4a75-b7db-3f282429f6b9</webElementGuid>
+      <webElementGuid>ac0f610e-fb38-41cd-a319-ecb2819f7947</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.MOD.FISI&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Busqueda Persona Fisica ' or . = 'Busqueda Persona Fisica ')]</value>
-      <webElementGuid>e349fde3-68ef-474e-ab88-d67fc7262d93</webElementGuid>
+      <webElementGuid>edb3da03-562f-4925-8dc3-7c945672ba33</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

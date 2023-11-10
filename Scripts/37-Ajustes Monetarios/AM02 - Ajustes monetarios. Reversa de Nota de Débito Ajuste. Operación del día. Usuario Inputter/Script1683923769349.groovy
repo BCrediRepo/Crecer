@@ -122,7 +122,7 @@ WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/btnVer
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se clickea en btm "Audit"
+//Se clickea en btn "Audit"
 WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/btnAudit'))
 
 //Toma screenshot

@@ -27,31 +27,24 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?302')
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('02-Dashboard/lnkRechazoDeCheques'))
-
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/lnkConsultas'))
-
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
+//Ejecuta en la linea de comando ENQ BCCL.E.DEP.EFE.TAS
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
 //WebUI.delay(90)
-
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/txtSucursal-value111'), '001')
 
 // Captura el tiempo de inicio
@@ -60,9 +53,11 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//WebUI.delay(40)
+//Tarda mucho en traer resultados pero los trae. El caso pide filtrar solo por sucursal.
+WebUI.delay(60)
 
 //WebUI.verifyTextPresent('Sucursal', true)
+
 
 NumSuc = WebUI.getText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/lblNumSucursal'))
 

@@ -43,7 +43,7 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
 //Switch a la ventana T24 - Fil.102 Gerencia Operat
-WebUI.switchToWindowTitle('T24 - Fil.102 Gerencia Operat')
+WebUI.switchToWindowIndex(0)
 WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
