@@ -23,69 +23,93 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //ingreso a comision de persona especial y extraccion de numero de cuenta del bolsin
 //a utilizar en el caso
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.COM.PER.ESP')
+
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 WebUI.switchToWindowTitle('COM.PER.ESP')
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnDesplegar'))
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/lblBolsinAElegir'))
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnVerRegistro'))
+
 NroCuenta = WebUI.getText(findTestObject('06-Comisiones/COM.PER.ESP/lblCuenta'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.closeWindowTitle('COM.PER.ESP')
+
 WebUI.switchToWindowIndex(0)
 
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.COM.PER.ESP.BOLSIN')
+
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 //apertura app de alta, baja, modificacion de bolsin
-WebUI.click(findTestObject('02-Dashboard/lnkComisionesyBonificaciones'))
-WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
-WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkBolsin'))
+//WebUI.click(findTestObject('02-Dashboard/lnkComisionesyBonificaciones'))
+//WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
+//WebUI.click(findTestObject('02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkBolsin'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //seteo de datos
 WebUI.switchToWindowTitle('A/B/M Bolsin')
+
 WebUI.clearText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'))
+
 WebUI.setText(findTestObject('06-Comisiones/ABM Bolsin/txtNumeroCuenta'), NroCuenta)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
-WebUI.verifyElementVisible(findTestObject('06-Comisiones/ABM Bolsin/lnkBaja'))
 
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+
+WebUI.verifyElementVisible(findTestObject('06-Comisiones/ABM Bolsin/lnkBaja'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
 
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
+
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 //---------------------------
-
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
-TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
-println TotalRegistros
-//-----------------------------
 
+TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
+
+println(TotalRegistros)
+
+//-----------------------------
 //Baja de bolsin
 WebUI.click(findTestObject('06-Comisiones/ABM Bolsin/lnkBaja'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.switchToWindowTitle('COM.PER.ESP')
+
 WebUI.click(findTestObject('06-Comisiones/COM.PER.ESP/btnConfirmarBajaBolsin'))
+
 WebUI.delay(10)
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verificacion final
 WebUI.verifyElementVisible(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompleta'), FailureHandling.STOP_ON_FAILURE)
+
 trx = WebUI.getText(findTestObject('06-Comisiones/COM.PER.ESP/lblTrxCompleta'))
-assert trx.contains('Txn Completa:') == true 
 
-
-//Control fin e script
+assert trx.contains('Txn Completa:') == true //Control fin e script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

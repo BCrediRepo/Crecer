@@ -111,7 +111,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision'))
 
-assert element0.contains('Depositos ATM/TAS') == true
+assert element0.contains('Com Echq C. Int') == true
 
 //Assert Fecha
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'), 6)
@@ -120,9 +120,9 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
 
-//assert element2.contains('29 JUL 2022') == true //habilitar TES10
 
-assert element2.contains('31 DIC 2017') == true //Habilitar 708
+
+assert element2.contains('30 JUN 2020') == true 
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

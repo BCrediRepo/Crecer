@@ -75,7 +75,7 @@ WebUI.switchToWindowTitle('BCCL.E.ACUM.OPER.MONEX')
 // Obtén el elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay")) 
 
-WebElement fila = table.findElements(By.tagName("tr"))[5]
+WebElement fila = table.findElements(By.tagName("tr"))[2]
 WebElement celda1 = fila.findElements(By.tagName("td"))[1]
 WebElement celda2 = fila.findElements(By.tagName("td"))[2]
 WebElement celda3 = fila.findElements(By.tagName("td"))[3]
@@ -86,8 +86,8 @@ String celda3Text = celda3.getText()
 String Cadena = "Frecuencia:" + ' ' + celda1Text + ", Importe en USD:" + ' ' + celda2Text + ", Cantidad de Txns:" +' ' + celda3Text
 println Cadena
 
-assert Cadena == "Frecuencia: Anual, Importe en USD: 10,00, Cantidad de Txns: 2" //TES10
-//assert Cadena == "Frecuencia: Anual, Importe en USD: 0,00, Cantidad de Txns: 0" //708
+//assert Cadena == "Frecuencia: Anual, Importe en USD: 10,00, Cantidad de Txns: 2" //TES10
+assert Cadena == "Frecuencia: Anual, Importe en USD: 792,00, Cantidad de Txns: 4" //708
 
 //Control fin de script
 

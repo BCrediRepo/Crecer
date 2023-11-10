@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtMonto</name>
+   <name>txtConcepto</name>
    <tag></tag>
-   <elementGuidId>51678309-37e0-416d-9b1f-cd5ce716a2b8</elementGuidId>
+   <elementGuidId>cfab3ecf-52ff-479f-a755-3bd4209d86b5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='fieldName:AMOUNT.LOCAL.1:1']</value>
+         <value>#fieldName\:L\.EB\.CONCEPTO</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#fieldName\:AMOUNT\.LOCAL\.1\:1</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'fieldName:AMOUNT.LOCAL.1:1' and @name = 'fieldName:AMOUNT.LOCAL.1:1' and @type = 'text']</value>
+         <value>#fieldName\:L\.EB\.CONCEPTO</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>32c12f24-465d-4c37-b667-de9717eef4ec</webElementGuid>
+      <webElementGuid>f149ff80-3337-4f1e-b318-dfede8251d9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,31 +30,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>b24aff77-46e4-45d1-affa-aa2141f90cb9</webElementGuid>
+      <webElementGuid>24f0e63e-e97d-4a48-8087-e38aee44fc6a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>18</value>
-      <webElementGuid>012e41cd-bbc5-4135-b72c-e7b974a4852c</webElementGuid>
+      <value>13</value>
+      <webElementGuid>f09a548b-a184-4d84-89f2-93c0098e6679</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:AMOUNT.LOCAL.1:1</value>
-      <webElementGuid>c04a49ba-fad7-40d7-8b49-2efe7d5722c3</webElementGuid>
+      <value>fieldName:L.EB.CONCEPTO</value>
+      <webElementGuid>b9798be9-9c6c-4299-8444-c58cb50226e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:AMOUNT.LOCAL.1:1</value>
-      <webElementGuid>14986018-8ccc-4081-9d2b-9280e7da16bb</webElementGuid>
+      <value>fieldName:L.EB.CONCEPTO</value>
+      <webElementGuid>3d642408-5b1b-4c17-a018-a28a0a8443ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,23 +62,23 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>9d45aba6-8d3b-438b-8931-7dcf93666fff</webElementGuid>
+      <webElementGuid>9a680f07-b836-4fd7-bb42-424f8e74e171</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_TELLER dealbox_TELLER_FALTANTEDISPOSITIVOPN</value>
-      <webElementGuid>3bf6c5d1-9e50-4476-bdb5-0ed1453d5968</webElementGuid>
+      <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_POSTEOEGRESOS</value>
+      <webElementGuid>90cfde05-9da6-44f8-a2f6-bea2f7376d0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>18</value>
-      <webElementGuid>0fb997d6-dda5-42c9-bd86-07ec44a6f3f8</webElementGuid>
+      <value>8</value>
+      <webElementGuid>79e64403-9983-4136-9d3d-38d8c23eb8ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -90,7 +86,15 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>95a17bed-2c1c-4db6-8611-0fba7b56a76e</webElementGuid>
+      <webElementGuid>2b41cfbb-8f21-47a0-adc8-8cfc936954b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>dropdown</name>
+      <type>Main</type>
+      <value>Y</value>
+      <webElementGuid>3721f5db-5377-4e12-915f-6e640971701d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -98,7 +102,7 @@
       <name>hot</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>affc85a8-7896-45dc-879e-167867b1eeee</webElementGuid>
+      <webElementGuid>bc739103-dab1-48b1-909f-ab60be2e5067</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -106,7 +110,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>b5de51ec-002e-41a5-b43a-f9064faf6349</webElementGuid>
+      <webElementGuid>ae6140ba-fb71-4bf7-a2dc-960acb8cc44d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -114,15 +118,15 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>f88533d1-a60a-4560-afc0-45baf6d2d1ab</webElementGuid>
+      <webElementGuid>e7a35df5-0a8e-4bd2-9018-e8810770ca53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'AMOUNT.LOCAL.1','issueToken');</value>
-      <webElementGuid>e4b0c4ea-f429-4345-9157-647642345c88</webElementGuid>
+      <value>invokeHelp(event,'L.EB.CONCEPTO','issueToken');</value>
+      <webElementGuid>041e32ae-6a8b-43d1-b51f-50912b048244</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -130,7 +134,7 @@
       <name>onkeydown</name>
       <type>Main</type>
       <value>enterKeyListener(event);</value>
-      <webElementGuid>5186c225-9150-42b7-8869-329c822be0fe</webElementGuid>
+      <webElementGuid>1f97e6b0-56da-4c68-bb43-a6ecfc9f5dee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -138,54 +142,54 @@
       <name>onblur</name>
       <type>Main</type>
       <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>845b8a7c-9a01-4d5f-98d1-b153ee97907a</webElementGuid>
+      <webElementGuid>bb150872-9717-4d8c-98db-5829e91cd29c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('AMOUNT.LOCAL.1','','','issueToken')</value>
-      <webElementGuid>cb3cb1f5-cc19-49c0-b3d1-b97dbc998eee</webElementGuid>
+      <value>javascript:help('L.EB.CONCEPTO','','','issueToken')</value>
+      <webElementGuid>f5e8ded8-009f-4549-b096-093ea9aa5816</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:AMOUNT.LOCAL.1:1&quot;)</value>
-      <webElementGuid>604a8f0a-2b0d-4996-a0b4-a9cd14bc1891</webElementGuid>
+      <value>id(&quot;fieldName:L.EB.CONCEPTO&quot;)</value>
+      <webElementGuid>c2f1fa82-2a8f-4e56-bab9-34c2ea46dea1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:AMOUNT.LOCAL.1:1']</value>
-      <webElementGuid>6dc53cf9-e5c7-482f-8248-e74b4fbe29fb</webElementGuid>
+      <value>//input[@id='fieldName:L.EB.CONCEPTO']</value>
+      <webElementGuid>43064bc0-cdc6-4bd7-a30c-d7014354c8c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[3]/td[4]/input</value>
-      <webElementGuid>b1bbc020-bc26-43b5-9c68-8398ae0a3e73</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[6]/td[3]/input</value>
+      <webElementGuid>e035fd58-b77a-4fef-a5da-3b6951836fe4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[3]/td[4]/input</value>
-      <webElementGuid>a5045458-abf4-4707-b500-2158eb163585</webElementGuid>
+      <value>//tr[6]/td[3]/input</value>
+      <webElementGuid>d91ed443-beb8-4a44-9b1c-a63d73fb070b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:AMOUNT.LOCAL.1:1' and @name = 'fieldName:AMOUNT.LOCAL.1:1' and @type = 'text']</value>
-      <webElementGuid>bc38a098-8cda-4fae-8b18-0b75a7dff545</webElementGuid>
+      <value>//input[@id = 'fieldName:L.EB.CONCEPTO' and @name = 'fieldName:L.EB.CONCEPTO' and @type = 'text']</value>
+      <webElementGuid>a8942196-136c-4bf4-aade-5f6be1405066</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

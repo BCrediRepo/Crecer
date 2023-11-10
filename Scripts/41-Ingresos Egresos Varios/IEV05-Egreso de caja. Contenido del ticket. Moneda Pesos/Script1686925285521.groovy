@@ -49,7 +49,7 @@ WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnD
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblEgresoVariosCaja'))
 
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnAceptarRegistro'))
-
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnAceptarRegistro'))
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lnkAceptarAlertas'))
 
 WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblTxnCompleta'))

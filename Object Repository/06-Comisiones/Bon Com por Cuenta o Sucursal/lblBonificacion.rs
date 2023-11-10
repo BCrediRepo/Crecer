@@ -7,14 +7,15 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;r1&quot;)/td[4]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//tr[@id='r1']/td[4]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '15.00' or . = '15.00')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>f44af186-77b1-4129-b998-ac5fe453b7b8</webElementGuid>
+      <webElementGuid>48149c6e-9fc2-45a6-8774-e3e1c8300824</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,23 +34,23 @@
       <name>align</name>
       <type>Main</type>
       <value>right</value>
-      <webElementGuid>cb295a43-b8ba-436b-b913-e3936a6e3de9</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>15.00</value>
-      <webElementGuid>63c49eba-6aae-47e0-9c7e-acd154c4afd3</webElementGuid>
+      <webElementGuid>1eca2120-c0e8-4d3f-87ff-e27cfd48f68f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>15.00</value>
+      <webElementGuid>49b87ff7-23d4-4cd5-aafa-7f4bd962f160</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[4]</value>
-      <webElementGuid>4854fd5b-2a70-465c-a016-d5670e171b28</webElementGuid>
+      <webElementGuid>33c26793-2aa5-4050-b0b6-a8dd04d62727</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[4]</value>
-      <webElementGuid>42516de9-1dad-4abb-9a61-d5eceb879346</webElementGuid>
+      <webElementGuid>2928b609-8f20-446d-86db-b5f0b28e5d0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -65,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Com. GUVE Camara'])[1]/following::td[1]</value>
-      <webElementGuid>eff18fa0-bd88-47c1-b0eb-7293f3297c12</webElementGuid>
+      <webElementGuid>c801fd4f-8d84-497c-bdfc-9a0389c7316b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='GUVE'])[1]/following::td[2]</value>
-      <webElementGuid>2054b819-460e-48bc-9e3d-832666d939db</webElementGuid>
+      <webElementGuid>cbff1fd3-3816-4912-bc25-3da5832df81b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[6]</value>
-      <webElementGuid>79273cc1-a2c5-464b-bebe-90ae0c2fc47b</webElementGuid>
+      <webElementGuid>82f97a08-8639-436b-9ff7-cd7eff1241bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='%Bon Com por Cuenta o Sucursal'])[2]/preceding::td[9]</value>
-      <webElementGuid>7fbdca08-8db8-4265-9414-dff0e224c2fe</webElementGuid>
+      <webElementGuid>22a3289c-ddbd-4258-bc2b-0d3d5aa94e9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='15.00']/parent::*</value>
-      <webElementGuid>51a51c2a-15de-4033-aa80-ea4e2de7047a</webElementGuid>
+      <webElementGuid>b3e4c15a-f9ce-40b7-b2d7-56c23c8c6f6e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/table/tbody/tr/td[4]</value>
-      <webElementGuid>74d9325d-395b-46bc-ace4-f9be8be1c77e</webElementGuid>
+      <webElementGuid>e34438ef-54ec-42ad-8bdd-953baab3185a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '15.00' or . = '15.00')]</value>
-      <webElementGuid>b0f86605-72e1-4bb7-9d12-ad629d4c0859</webElementGuid>
+      <webElementGuid>41c8bea4-98ce-4c90-bb72-c9fee3d8de29</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

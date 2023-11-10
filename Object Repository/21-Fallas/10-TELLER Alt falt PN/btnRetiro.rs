@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(4) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3) > input:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(//input[@id='radio:tab1:L.GAVETA'])[3]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>417487a4-7fc1-4949-8937-f421d7f97194</webElementGuid>
+      <webElementGuid>b95fe628-e770-4ab5-8af2-6cec5a17386c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>radioCheckStyle radioCheckStyle_TELLER radioCheckStyle_TELLER_FALTANTEDISPOSITIVOPN</value>
-      <webElementGuid>c1415a95-6b60-4116-af25-75ce00bb625d</webElementGuid>
+      <webElementGuid>88ed8049-82bd-4dec-866c-0c907bd13147</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>bf21c019-4a51-42b6-bf6e-e60944ebc62f</webElementGuid>
+      <webElementGuid>c4be96c6-1a8d-42bc-a638-1c768e5f481a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>251b42da-f255-4b3b-a49a-e4b4eb73c263</webElementGuid>
+      <webElementGuid>a9b11232-1af2-4602-86bc-8ceb9e463386</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -56,7 +56,7 @@
       <value>
           javascript:doFieldChangeEvent(event)
         </value>
-      <webElementGuid>1a5cfdf2-514f-4065-9a73-bdd530a4f04a</webElementGuid>
+      <webElementGuid>fbe2abcc-8c50-4527-abaa-cc9a2ea8a2d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,7 +64,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>javascript:enableFocus(this)</value>
-      <webElementGuid>b5ad2610-7f8f-4229-8379-c7dcfd7d303c</webElementGuid>
+      <webElementGuid>73f55715-ae93-4dde-8913-c628500f4f32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -72,7 +72,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>javascript:disableFocus(this)</value>
-      <webElementGuid>d3fe1034-b06f-4e52-a58b-13d9c3a12e04</webElementGuid>
+      <webElementGuid>3ab81e40-a94a-49f9-8609-6f7e3794167b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -80,7 +80,7 @@
       <name>selected</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>02fddcc3-02d9-412f-9836-1d5906e9a163</webElementGuid>
+      <webElementGuid>534c060f-2dac-4330-8087-763f432892bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -88,7 +88,7 @@
       <name>type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>5cc2b3f2-a994-4916-b0d2-00d181acedf5</webElementGuid>
+      <webElementGuid>214d482a-80b8-4b35-8431-32167f64f3e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -96,7 +96,7 @@
       <name>id</name>
       <type>Main</type>
       <value>radio:tab1:L.GAVETA</value>
-      <webElementGuid>bb5d2667-aadc-48d2-82b7-62423f81aef9</webElementGuid>
+      <webElementGuid>0786fcb0-1e00-4cf5-8a61-891ed79ca1b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -104,7 +104,7 @@
       <name>name</name>
       <type>Main</type>
       <value>radio:tab1:L.GAVETA</value>
-      <webElementGuid>eefbab2e-4e7c-418a-bd55-e9ece151844d</webElementGuid>
+      <webElementGuid>a6b1cea3-c3cd-4ad5-a21a-eb17a55c98f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -112,7 +112,7 @@
       <name>value</name>
       <type>Main</type>
       <value>RETIRO</value>
-      <webElementGuid>cd77dc9d-a90c-443b-9b25-f32935afda04</webElementGuid>
+      <webElementGuid>0e4e441c-aaed-4e02-88bb-0537560df864</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -120,7 +120,7 @@
       <name>hot</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>96226ec5-dee4-487e-8d43-fba214f0cdcf</webElementGuid>
+      <webElementGuid>4873eaf1-7334-4f96-9645-2b324d1cf6b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -128,7 +128,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>14538ff0-f53e-41ed-874c-f831bbd54ab1</webElementGuid>
+      <webElementGuid>6d9ac3d1-48c9-4e55-8c3b-a93da87dbd22</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -136,7 +136,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'','issueToken');</value>
-      <webElementGuid>eda76d8d-d371-4a07-a542-7cb5fe477ec2</webElementGuid>
+      <webElementGuid>c82cc8bb-1487-42ee-80a7-0b6c09c80918</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -144,7 +144,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('','','','issueToken')</value>
-      <webElementGuid>ca2ba93f-17d5-4084-8ba8-74bd201d0bc3</webElementGuid>
+      <webElementGuid>c105fb23-9465-4c59-be14-2fc427c42d46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -152,7 +152,7 @@
       <name>checked</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>0acd8ee0-20df-4e4d-9a1a-1a04b1843052</webElementGuid>
+      <webElementGuid>6c11c3f5-d356-401c-af28-294a41923b19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -160,7 +160,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[6]/td[4]/table[1]/tbody[1]/tr[1]/td[3]/input[@id=&quot;radio:tab1:L.GAVETA&quot;]</value>
-      <webElementGuid>3209a6e8-5f11-4773-92d9-631ae0ae4fb0</webElementGuid>
+      <webElementGuid>7239a636-7393-4330-8889-a2d0d71a3c9e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -168,7 +168,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@id='radio:tab1:L.GAVETA'])[3]</value>
-      <webElementGuid>5f3d5436-2e1c-4be9-9ab2-92e68c30ee14</webElementGuid>
+      <webElementGuid>aadccc27-20c2-4060-a0bb-14d251eb29b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -176,7 +176,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[6]/td[4]/table/tbody/tr/td[3]/input</value>
-      <webElementGuid>63b31d94-5cc4-4b2e-a296-ceb938fdcff2</webElementGuid>
+      <webElementGuid>7eab83b9-4d82-4697-88fe-993130e4da81</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -184,7 +184,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/input</value>
-      <webElementGuid>17c330b3-937e-4a33-be2c-5b2322a61b16</webElementGuid>
+      <webElementGuid>abea128c-3dec-4e56-aecc-7751b576dc51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -192,6 +192,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@selected = 'true' and @type = 'radio' and @id = 'radio:tab1:L.GAVETA' and @name = 'radio:tab1:L.GAVETA' and @checked = 'true']</value>
-      <webElementGuid>56fc80bb-3d67-4334-b0a1-45813ca2b826</webElementGuid>
+      <webElementGuid>d36f4dde-e949-405e-994b-32b3d90424df</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

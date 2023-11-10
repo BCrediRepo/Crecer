@@ -25,9 +25,9 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
 
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
+//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
 
 WebUI.maximizeWindow()
 
@@ -53,8 +53,8 @@ WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.E.CHQ.CANCELA/btnLupa'))
 
 WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
 
-//WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
-WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '15901')
+WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '17403')
+//WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtCategoriaValue111'), '15901')
 
 WebUI.setText(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/txtMonedaValue211'), 'ARS')
 
@@ -86,7 +86,7 @@ println TotalRegistros
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
-WebUI.delay(30)
+//WebUI.delay(30)
 
 WebUI.switchToWindowTitle('Account Statement')
 
@@ -94,7 +94,7 @@ WebUI.click(findTestObject('20-Cheque Cancelatorio/Account Statement/btnLargavis
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-WebUI.waitForElementVisible(findTestObject('20-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'), 12)
+//WebUI.waitForElementVisible(findTestObject('20-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'), 12)
 
 formulario = WebUI.verifyElementVisible(findTestObject('20-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'))
 

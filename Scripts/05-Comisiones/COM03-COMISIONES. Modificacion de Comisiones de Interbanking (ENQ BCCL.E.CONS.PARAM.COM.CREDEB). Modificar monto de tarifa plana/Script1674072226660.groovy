@@ -51,7 +51,13 @@ WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
 
 WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txt_value111_TipoComision'), 'CREIB')
 
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtAbonado'), 'A00243A')
+label = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lblPos4'))
+
+if (label == 'Abonado') {
+    WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtpos4'), 'A00243A')
+} else {
+    WebUI.setText(findTestObject('Object Repository/06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtAbonado'), 'A00243A')
+}
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -65,27 +71,29 @@ WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkModi
 
 WebUI.switchToWindowTitle('FT.COMMISSION.TYPE')
 
-def desaparecio = false
+def desaparecio = 0
 
 if (monto == '10,00') {
     WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtMontoFijo'), '20,00')
 } else {
     WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtMontoFijo'), '10,00')
 
-    desaparecio = true
+    desaparecio = 1
 }
 
-WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), '20220729')
+WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), '20230828')
 
 WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnAceptarRegistro'))
+
+//WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Solucion poco convencional para salvar el problema de bandera de que no exista el link aceptar alertas
-if (!(desaparecio)) {
+if (desaparecio == 0) {
     linkAlertas = WebUI.verifyElementClickable(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
 
-    if (linkAlertas) {
+    if (linkAlertas == true) {
         WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
 
         WebUI.delay(3)
@@ -93,7 +101,6 @@ if (!(desaparecio)) {
         WebUI.delay(1)
     }
 }
-
 WebUI.closeBrowser()
 
 //Login gerente operativo

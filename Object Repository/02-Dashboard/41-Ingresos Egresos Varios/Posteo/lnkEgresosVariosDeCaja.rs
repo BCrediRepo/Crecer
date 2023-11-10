@@ -6,15 +6,15 @@
    <elementGuidId>b2ad22ec-11cf-4b74-870a-4b2ca396eb60</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.EGRESOS I F3');processMenuHeaderText('Egresos varios de caja')&quot;]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>ul.menuMargin:nth-child(23) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>19a6ad2a-0b04-432d-a3e6-6f2af1b8b457</webElementGuid>
+      <webElementGuid>f1a4b348-cc65-4b1d-8c69-30847ce2e042</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.EGRESOS I F3');processMenuHeaderText('Egresos varios de caja')</value>
-      <webElementGuid>764632fb-533a-473b-b37a-04347417a8e0</webElementGuid>
+      <webElementGuid>d5b05fc5-6e17-4f14-abc6-fcf53fde23f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('FUNDS.TRANSFER,POSTEO.EGRESOS I F3');</value>
-      <webElementGuid>d14fa52c-a210-4d94-93e6-9a864864d6f3</webElementGuid>
+      <webElementGuid>cd92f61a-e37c-40a3-8b2a-9c20722453a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Egresos varios de caja </value>
-      <webElementGuid>ca171403-abad-46ea-8653-e12d2eb446e8</webElementGuid>
+      <webElementGuid>fa44d816-a017-4b2f-b1e5-d61111ba6cc2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
-      <webElementGuid>ae408350-6869-42d9-88ab-452d164a7167</webElementGuid>
+      <webElementGuid>03ffb0fa-e525-4d22-900f-55625a0fb508</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>38fecb1b-1df0-4691-91a0-42770691d7f0</webElementGuid>
+      <webElementGuid>61bb9528-0306-4441-842f-614fb1f76b0c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.EGRESOS I F3');processMenuHeaderText('Egresos varios de caja')&quot;]</value>
-      <webElementGuid>82341b0c-f8be-4450-adbf-b67d3a12fa2c</webElementGuid>
+      <webElementGuid>49a45e92-2375-4088-8b9f-d96bcec7aaf5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[23]/li/ul/li[2]/a</value>
-      <webElementGuid>4637925e-7bd0-41d5-a601-22638db0fef1</webElementGuid>
+      <webElementGuid>5b260d61-1f4c-4eee-bd71-89e2b779ffb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Egresos varios de caja')]</value>
-      <webElementGuid>d19a85eb-55b7-4f64-992a-c69b746599d7</webElementGuid>
+      <webElementGuid>bcf9a4f3-42ac-422b-a365-3b6d296ea20d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresos varios de caja'])[1]/following::a[1]</value>
-      <webElementGuid>16fe6bd3-f7f9-47ac-b759-02a6fe72544f</webElementGuid>
+      <webElementGuid>ad2e9569-67aa-4659-9b96-3eb4374dd768</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Posteo'])[1]/following::a[2]</value>
-      <webElementGuid>4b3ffd0f-b5e5-45bc-8f83-d17851279e14</webElementGuid>
+      <webElementGuid>d409fa37-01fc-4d4a-9675-68571f8800b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Facturas a pagar que incluyan IVA'])[1]/preceding::a[1]</value>
-      <webElementGuid>6414888e-9169-4ba9-998b-2baf07c7fc97</webElementGuid>
+      <webElementGuid>d439e7dc-8a8d-4268-935b-9f7e9f69a29a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobranza de Legales'])[1]/preceding::a[2]</value>
-      <webElementGuid>98e29e7b-0aa4-46c1-80b6-12d5217be7f0</webElementGuid>
+      <webElementGuid>120dd317-7905-45b8-8d5e-8af341eda1c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Egresos varios de caja']/parent::*</value>
-      <webElementGuid>e4835c67-c849-4959-8240-3cf8e886a92a</webElementGuid>
+      <webElementGuid>cc4d6d83-4b1a-47a3-8114-336fdfbb680e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,POSTEO.EGRESOS I F3');&quot;)]</value>
-      <webElementGuid>69833af2-4f02-4be1-bc8b-af0cb05abb64</webElementGuid>
+      <webElementGuid>f25b2aab-607a-4da2-a830-6e9f897023de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[23]/li/ul/li[2]/a</value>
-      <webElementGuid>98f5486f-146e-4b84-8513-d10b9b14b288</webElementGuid>
+      <webElementGuid>5ebd0b9b-1143-4982-bcbc-515bad79599f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,POSTEO.EGRESOS I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Egresos varios de caja ' or . = 'Egresos varios de caja ')]</value>
-      <webElementGuid>1ee00d1a-5482-4873-bbdd-64fe84a63ddf</webElementGuid>
+      <webElementGuid>b99f79ee-370e-47c1-a0c6-99b7cd62cb93</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

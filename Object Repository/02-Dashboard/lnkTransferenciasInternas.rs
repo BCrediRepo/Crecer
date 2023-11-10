@@ -6,16 +6,16 @@
    <elementGuidId>d9b8b6ac-c126-4bc5-94a3-023637ddf528</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //span[@onclick = 'ProcessMouseClick(event)' and @onkeypress = 'ProcessKeyPress(event)' and (text() = 'Transferencias Internas' or . = 'Transferencias Internas')]) = count(//span[@onclick = 'ProcessMouseClick(event)' and @onkeypress = 'ProcessKeyPress(event)' and (text() = 'Transferencias Internas' or . = 'Transferencias Internas')])]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[79]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>ul.menuMargin:nth-child(19) > li:nth-child(1) > span:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1][count(. | //span[@onclick = 'ProcessMouseClick(event)' and @onkeypress = 'ProcessKeyPress(event)' and (text() = 'Transferencias Internas' or . = 'Transferencias Internas')]) = count(//span[@onclick = 'ProcessMouseClick(event)' and @onkeypress = 'ProcessKeyPress(event)' and (text() = 'Transferencias Internas' or . = 'Transferencias Internas')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>fe22b970-8578-4031-b4e9-73ca464c320f</webElementGuid>
+      <webElementGuid>9273b046-2815-4abf-b9d4-2d1745382e15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>e3348186-361e-4228-97ed-731e04d630b8</webElementGuid>
+      <webElementGuid>a5da59de-b520-48d2-8f76-253cd61512ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>8f49bc13-084a-467d-a3c2-37d265cec80f</webElementGuid>
+      <webElementGuid>69e68ffb-31e1-4a8f-9643-52f519b69074</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Transferencias Internas</value>
-      <webElementGuid>4b8982a2-d7e8-4d30-a147-a5d8925a4d02</webElementGuid>
+      <webElementGuid>e9b2aa06-3de8-40d4-928d-dd0c621190c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>67b29202-f049-496d-9f05-27f6adb181d9</webElementGuid>
+      <webElementGuid>84a8c854-fae2-494e-a7f2-c45cb83da232</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>c4287b69-299e-4375-b790-0516c226bc94</webElementGuid>
+      <webElementGuid>6c0b9960-4305-461d-a93e-720f10efca65</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[79]</value>
-      <webElementGuid>c484041d-bf94-4792-96b2-33df0ca99c02</webElementGuid>
+      <webElementGuid>a5a34d49-ec21-46b5-8263-29cdd1a284f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[19]/li/span</value>
-      <webElementGuid>28ea0d27-adef-40e4-bef6-7359fa4ab85c</webElementGuid>
+      <webElementGuid>0d261333-01e2-4a22-8277-a010679fe64d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas Transferencias Mep Enviadas'])[1]/following::span[1]</value>
-      <webElementGuid>66fe7fca-eaae-4fc8-b93a-291aba7b568c</webElementGuid>
+      <webElementGuid>e23465f1-15ec-41e0-95eb-95449a5d7114</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencias Mep otros Conceptos'])[1]/following::span[1]</value>
-      <webElementGuid>f199b774-2d6b-4df7-be90-1394af71aac0</webElementGuid>
+      <webElementGuid>e9bedb8c-d553-42d8-bf25-6a7c0555c22d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Transf. Interna Origen Efectivo'])[1]/preceding::span[1]</value>
-      <webElementGuid>473c2b36-7cfd-4426-b0fc-53ddb4a5922b</webElementGuid>
+      <webElementGuid>c0612834-99b6-4b5b-aed3-b897e34b8eb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Transf. Interna Origen Cuenta'])[1]/preceding::span[1]</value>
-      <webElementGuid>11b94dcc-8199-47b5-98de-da509443c96b</webElementGuid>
+      <webElementGuid>ab967704-ca46-415f-b4aa-4944e11fca73</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Transferencias Internas']/parent::*</value>
-      <webElementGuid>23cd688c-36e5-4249-840d-f4701dad4745</webElementGuid>
+      <webElementGuid>75dd59ef-bff3-4d75-9549-953077f85c55</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[19]/li/span</value>
-      <webElementGuid>33411aaf-7890-4f11-a9fd-cd066782c2d2</webElementGuid>
+      <webElementGuid>38790726-3d58-4a3e-98ce-e86d26be0781</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Transferencias Internas' or . = 'Transferencias Internas')]</value>
-      <webElementGuid>af0c4ae1-1ab7-439b-8327-e84a83e33931</webElementGuid>
+      <webElementGuid>db6bb1d0-716a-4b3f-ae94-f6b262a655b1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

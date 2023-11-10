@@ -16,8 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -45,7 +45,7 @@ WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
 WebUI.maximizeWindow()
 
 //Escribe la fecha en el Imput
-WebUI.setText(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/inpFecha de Boleto'), '20220729')
+WebUI.setText(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/inpFecha de Boleto'), '20230828')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -62,7 +62,7 @@ long endTime = System.currentTimeMillis()
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 //Realiza un assert para verificar que la informacion sea correcta
 assert VentaUSD == true //---------------------------------------------------------------------------------------------------------------------

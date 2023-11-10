@@ -48,6 +48,8 @@ WebUI.switchToWindowTitle('BCCL.CQ.CF.INVENTARIO')
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lnkNuevaSeleccion'))
 
+//WebUI.delay(20)
+
 WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lnkEjecutar'))
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/btnLupita'))
