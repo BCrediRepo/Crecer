@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTituloBCCL.E.AC.COM.COBRADA</name>
+   <name>lblTitulo</name>
    <tag></tag>
    <elementGuidId>897f4b88-0610-46a4-a5c2-9945069876e1</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>td.caption.caption_BCCLEACCOMCOBRADA</value>
@@ -16,6 +12,10 @@
       <entry>
          <key>BASIC</key>
          <value>//*[(text() = 'BCCL.E.AC.COM.COBRADA' or . = 'BCCL.E.AC.COM.COBRADA')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='enqsel']/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

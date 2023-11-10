@@ -54,8 +54,9 @@ WebUI.setText(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/txtIDOr
 
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/btnAceptarRegistro'))
 
-//WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lnkAceptarAlertas'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lnkAceptarAlertas'))
 
+//WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lnkAceptarAlertas'))
 WebUI.switchToWindowIndex(2)
 
 WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/TicketReporte/formTicket'))
@@ -66,10 +67,8 @@ WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/TELLER-Ing
 
 label = WebUI.getText(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lblTxnCompleta'))
 
-assert label.contains('Txn Completa:') == true 
+assert label.contains('Txn Completa:') == true //Control de fin de script
 
-
-//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

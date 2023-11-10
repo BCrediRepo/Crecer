@@ -54,16 +54,16 @@ WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
 //Ingresar Comision "DEPDISP" = "Depositos ATM/TAS"
 //WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtTipoComision'), 'MANCTA') //habilitar para TES10
-
 //Ingresar Cuenta "00010015665"
 WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtCuenta'), '00010015665')
 
 //Ingresar Fecha Desde
 //WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220727') //habilitar para TES10
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20171010') //habilitar para 708
+WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20171010' //habilitar para 708
+    )
 
 //Ingresar Fecha Hasta
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaHasta'), '20220801')
+WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaHasta'), '20230828')
 
 //Ingresar Sucursal "001"
 WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'), '001')
@@ -94,20 +94,16 @@ long elapsedTime = endTime - startTime
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 //---------------------------
-
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
-println TotalRegistros
+println(TotalRegistros)
+
 //-----------------------------
-
 //def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision')) //habilitar TES10
-
 //assert element0.contains('Mant Cuenta') == true //habilitar TES10
-
-
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
@@ -125,18 +121,13 @@ def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Com
 
 //assert element2.contains('28 JUL 2022') == true //habilitar TES10
 //assert element2.contains('10 OCT 2017') == true
-
 //Asserts Fecha Hasta
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
 
-def element3 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
-
-//assert element3.contains('28 JUL 2022') == true //habilitar TES10
-//assert element3.contains('31 DIC 2017') == true
-
-
+def element3 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta')) //assert element3.contains('28 JUL 2022') == true //habilitar TES10
+assert element3.contains('31 DIC 2017') == true
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

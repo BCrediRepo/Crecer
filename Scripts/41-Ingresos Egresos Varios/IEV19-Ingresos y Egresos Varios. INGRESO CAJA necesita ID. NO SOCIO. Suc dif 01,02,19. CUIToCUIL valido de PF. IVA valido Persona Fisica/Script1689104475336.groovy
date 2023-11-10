@@ -76,7 +76,7 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 
 //Click en Validar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnValidarRegistro'))
-WebUI.delay(3)
+//WebUI.delay(3)
 
 //Selecciona que NO es socio
 WebUI.waitForElementPresent(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/cbNOSI'), 6)
@@ -92,7 +92,7 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 
 //Click en Validar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnValidarRegistro'))
-WebUI.delay(3)
+//WebUI.delay(3)
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
@@ -102,14 +102,14 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Aceptar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnAceptarRegistro'))
-WebUI.delay(3)
+//WebUI.delay(3)
 
 //Click en Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnAceptarAlertas'))
-WebUI.delay(3)
+//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnAceptarAlertas'))
+//WebUI.delay(3)
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'))
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'))
 assert element.contains('Txn Completa:')

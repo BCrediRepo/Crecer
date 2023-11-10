@@ -16,8 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -55,12 +55,11 @@ long endTime = System.currentTimeMillis()
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/btnLupita'))
 
-WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtNroBoleto (1)'), 
-    'OC222030092316400017')
+WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtNroBoleto (1)'), 'OC222030092316400017')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'), 3)
 
@@ -70,7 +69,7 @@ WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblMas
 
 WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblBuscadorBoleto'))
 
-WebUI.switchToWindowTitle('Compra-Venta')
+WebUI.switchToWindowTitle('Compra-Venta Historico')
 
 ImporteME = WebUI.verifyElementVisible(findTestObject('15-MONEX/09 - Consulta Operaciones de cambio.Filtro Nro de boleto/lblImporteME'))
 

@@ -64,12 +64,12 @@ WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP')
 
 //Maximizamos
 WebUI.maximizeWindow()
-
+WebUI.setText(findTestObject('21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/txtFechaDesde'), '20230823')
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lblDispositivo'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lblDispositivo'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lblDispositivo'))
 

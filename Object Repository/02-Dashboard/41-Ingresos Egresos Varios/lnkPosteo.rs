@@ -6,15 +6,15 @@
    <elementGuidId>d178628d-6e46-46c4-b353-58bb31f63d3d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[85]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>ul.menuMargin:nth-child(23) > li:nth-child(1) > span:nth-child(1)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>ed513a69-240d-4b51-8b63-4e461c34637d</webElementGuid>
+      <webElementGuid>f25681c3-4e76-4f18-b5b6-e915d5698432</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>78af7b2a-f03f-4035-b56c-27aac9884179</webElementGuid>
+      <webElementGuid>dfa13f17-b821-452b-97cf-f63cb7a2012b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>61b51e24-733c-4b18-a8c7-02ce2dcb3e6d</webElementGuid>
+      <webElementGuid>37d7e4cd-3d57-4bd1-8fe8-c28e1536e9a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Posteo</value>
-      <webElementGuid>b311a595-4b54-4f83-9532-be4c83957bbe</webElementGuid>
+      <webElementGuid>754e1df9-99f8-40c5-9451-a516278c8297</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>8cf31acd-0fd3-4e90-a50a-e22b472843f9</webElementGuid>
+      <webElementGuid>39f84f71-c758-49b6-baa2-887e5c147418</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>bd8e1e6b-e69d-422e-b61e-0f56fab8f9cf</webElementGuid>
+      <webElementGuid>7ab2c5de-7f5a-4773-a59c-ba8fc0aea05d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[85]</value>
-      <webElementGuid>c3d1c744-6f92-498d-a9bd-31cae841e045</webElementGuid>
+      <webElementGuid>e103bde1-0049-4433-9abc-47100dfdcdc8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[23]/li/span</value>
-      <webElementGuid>de4dee97-1894-4756-a703-e9746d0b7d5b</webElementGuid>
+      <webElementGuid>56788344-6d72-47a4-9ad5-791d4b57a5dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Contrasentar Movs NO Rendidos a Empresa'])[1]/following::span[1]</value>
-      <webElementGuid>bdf24798-267e-4ea7-9274-fe4c6bd98f3d</webElementGuid>
+      <webElementGuid>b920e2a6-d9f9-40f0-a5e1-4210dede389b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reversar aplicado en el dia (excep. creditos)'])[1]/following::span[1]</value>
-      <webElementGuid>56e58265-037b-4636-a55a-b8866f2357ee</webElementGuid>
+      <webElementGuid>1e98f013-3df9-49cb-95fa-e0cf220ea948</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresos varios de caja'])[1]/preceding::span[1]</value>
-      <webElementGuid>ed85f7f8-5def-45a8-8342-238b4562364f</webElementGuid>
+      <webElementGuid>cef9fa8b-39ad-436b-8ea6-84e6f39f6ad2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Egresos varios de caja'])[1]/preceding::span[1]</value>
-      <webElementGuid>b5f29674-3e3e-4fa3-b08a-a6ff474f0f41</webElementGuid>
+      <webElementGuid>4fc2801f-8acc-487e-8cb8-81868ef739ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Posteo']/parent::*</value>
-      <webElementGuid>874c215c-cfbe-4b81-a805-82f2160378a7</webElementGuid>
+      <webElementGuid>bd436c07-f79d-457a-80c0-223b55ee2f01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[23]/li/span</value>
-      <webElementGuid>baa08c49-0f06-49bb-9a4e-073dd1d8287e</webElementGuid>
+      <webElementGuid>e42142a3-3bb5-4637-ae9f-12043a2e7641</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Posteo' or . = 'Posteo')]</value>
-      <webElementGuid>c68bc329-ded0-44a1-9691-718245e59d8a</webElementGuid>
+      <webElementGuid>9e599883-d008-41a1-a586-5c3b330631dc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

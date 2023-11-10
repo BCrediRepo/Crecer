@@ -46,8 +46,7 @@ WebUI.click(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'))
 
 WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/btnLupita'))
 
-WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtNroBoleto (1)'), 
-    'OC222030092316400017')
+WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtNroBoleto (1)'), 'OC222030092316400017')
 
 WebUI.waitForElementVisible(findTestObject('15-MONEX/04-BCCL.E.COT.GRAL.FIL/lnkEjecutar'), 3)
 
@@ -57,7 +56,7 @@ WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblMas
 
 WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblBuscadorBoleto'))
 
-WebUI.switchToWindowTitle('Compra-Venta')
+WebUI.switchToWindowTitle('Compra-Venta Historico')
 
 ImporteME = WebUI.verifyElementVisible(findTestObject('15-MONEX/09 - Consulta Operaciones de cambio.Filtro Nro de boleto/lblImporteME'))
 

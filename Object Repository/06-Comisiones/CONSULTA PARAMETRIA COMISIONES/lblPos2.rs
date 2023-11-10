@@ -1,111 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblCuentaTabla</name>
+   <name>lblPos2</name>
    <tag></tag>
-   <elementGuidId>7412749e-793e-4764-9492-f4a285a9a123</elementGuidId>
+   <elementGuidId>34687403-6654-405b-82fd-65cd5cc828e9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;r1&quot;)/td[1]</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td</value>
+         <value>//table[@id='selectiondisplay']/tbody/tr[2]/td/span/label</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>292b7fb2-30c5-4552-b4df-4928a66633f1</webElementGuid>
+      <value>label</value>
+      <webElementGuid>9d661955-cba9-43da-94e7-6cb7dff34cc3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>align</name>
+      <name>for</name>
       <type>Main</type>
-      <value>right</value>
-      <webElementGuid>aa8936bf-d5ca-4f9e-8615-4411b99364dd</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>00740025976</value>
-      <webElementGuid>ed57bad3-26ab-41c0-82e9-82c1f2e0ce47</webElementGuid>
+      <value>value:2:1:1</value>
+      <webElementGuid>28e3b190-5ee0-4ec6-a343-0cfd42b0a195</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Abonado</value>
+      <webElementGuid>42335914-b58c-40a3-ac99-7cc05814dd57</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>00bed554-5f10-40a3-80d6-cd9a06eaeec1</webElementGuid>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[2]/td[1]/span[1]/label[1]</value>
+      <webElementGuid>ec805d58-fb61-499f-abd4-19d1b2d1d2b9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td</value>
-      <webElementGuid>ec5ee7ca-3116-4c68-9da0-71e6ddf15e23</webElementGuid>
+      <value>//table[@id='selectiondisplay']/tbody/tr[2]/td/span/label</value>
+      <webElementGuid>4e8a1dc9-8f84-411f-b6eb-dad0cd538150</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Ingreso'])[1]/following::td[1]</value>
-      <webElementGuid>805809bf-5bd6-4ee4-97d9-a2c70ee3ee57</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[1]/following::label[1]</value>
+      <webElementGuid>540ac243-3e3f-4726-b440-372bc551996a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizado Por'])[1]/following::td[1]</value>
-      <webElementGuid>2e644a43-91fc-4cbd-a350-80e5366a0fae</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo comision'])[4]/following::label[1]</value>
+      <webElementGuid>e6c26a5c-0ef9-4aa1-ab54-dc3fdfdf76ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='GUVE'])[1]/preceding::td[1]</value>
-      <webElementGuid>cff9e816-272f-4f3a-9631-b300f1e66dbb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[2]/preceding::label[1]</value>
+      <webElementGuid>af65f6bc-180d-463b-9570-d9a8404ae90d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Com. GUVE Camara'])[1]/preceding::td[2]</value>
-      <webElementGuid>876cf955-0cb9-43ef-a3bc-727989182681</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Banco'])[4]/preceding::label[1]</value>
+      <webElementGuid>aa93724c-5b57-4f67-a618-50e4f0792e43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>819610fa-ae5c-49ca-b44d-f77dcffe1688</webElementGuid>
+      <value>//tr[2]/td/span/label</value>
+      <webElementGuid>2781f8fb-3ee4-4970-b401-e1368262ebc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '00740025976' or . = '00740025976')]</value>
-      <webElementGuid>2cc75bb9-be07-47e5-a383-00e81f511170</webElementGuid>
+      <value>//label[(text() = 'Abonado' or . = 'Abonado')]</value>
+      <webElementGuid>4cf6514f-4e75-4c9a-ad9e-c4b5420bbe0e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

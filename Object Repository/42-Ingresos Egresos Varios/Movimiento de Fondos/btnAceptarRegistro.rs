@@ -6,15 +6,15 @@
    <elementGuidId>8c899679-0b30-4d7a-916a-265aa478df9c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Aceptar el registro&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#goButton > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > a:nth-child(2) > img:nth-child(1)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>6c31fc2d-2913-41c3-b2c2-ac52881ee7c2</webElementGuid>
+      <webElementGuid>ae4438cb-0f89-4be1-8df9-1dd5b8bd685e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <type>Main</type>
       <value>../plaf/images/bccl/tools/txncommit.gif
 															</value>
-      <webElementGuid>e6d25a26-e636-4d4c-9cf5-66da8f33e146</webElementGuid>
+      <webElementGuid>b7bd2676-9a75-4c32-8b20-42e507b75e91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Aceptar el registro</value>
-      <webElementGuid>4a4236a0-af2e-4a72-bfd7-32c949361206</webElementGuid>
+      <webElementGuid>09f873aa-9fff-4aec-be39-4e29ba356281</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Aceptar el registro</value>
-      <webElementGuid>48c080ba-63bc-4976-9ae6-5b8e227565ca</webElementGuid>
+      <webElementGuid>986d90d6-d6e2-4da4-af20-2975473e7ba7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
-      <webElementGuid>1dd09e3c-4d69-435c-a78d-45558cc59191</webElementGuid>
+      <webElementGuid>887a9d49-df60-46fb-a1c3-30717d07eaa3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
-      <webElementGuid>c00bffa5-52f8-455b-8e53-766f4c5b1e1d</webElementGuid>
+      <webElementGuid>ba2370bd-a394-4450-943e-5675e267eb33</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Aceptar el registro']</value>
-      <webElementGuid>571d72aa-af01-4d8e-bc75-e290cb963430</webElementGuid>
+      <webElementGuid>9a2d83cf-2336-428e-928f-008484506c5d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>24bb3a3a-7e3f-495c-8e21-af4dabb34a56</webElementGuid>
+      <webElementGuid>3684e210-af32-48d7-a7d3-9a6c1bbc1eea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +88,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/txncommit.gif
 															' and @alt = 'Aceptar el registro' and @title = 'Aceptar el registro']</value>
-      <webElementGuid>10478b55-89fe-4d73-bd30-7e406566b046</webElementGuid>
+      <webElementGuid>94ce6994-36ec-4c92-95b1-31757791fe62</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

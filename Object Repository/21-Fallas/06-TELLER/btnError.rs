@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblEstado</name>
+   <name>btnError</name>
    <tag></tag>
-   <elementGuidId>78f400bb-117b-4773-8293-6f210ea8f489</elementGuidId>
+   <elementGuidId>37227417-e99f-4125-b28b-1c5fc68733f3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[6]</value>
+         <value>//table[@id='errors']/tbody/tr/td[2]/a/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(6)</value>
+         <value>.errors > a:nth-child(1) > span:nth-child(1)</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'ACT' or . = 'ACT')]</value>
+         <value>//*[(text() = 'Cantidad.28' or . = 'Cantidad.28')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -25,87 +25,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>0942274d-9806-43d9-9e48-f17304b3bbdf</webElementGuid>
+      <value>span</value>
+      <webElementGuid>0e34a4d6-1659-40c9-a156-c059b1d75695</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>ACT</value>
-      <webElementGuid>3f928311-14ef-4a1f-a559-7337532f1eb6</webElementGuid>
+      <value>Cantidad.28</value>
+      <webElementGuid>1f68e11e-55c8-4340-899c-7876f806d494</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[6]</value>
-      <webElementGuid>b434872e-63e2-4b53-98b1-25ba87c8256c</webElementGuid>
+      <value>id(&quot;errors&quot;)/tbody[1]/tr[1]/td[@class=&quot;errors&quot;]/a[1]/span[1]</value>
+      <webElementGuid>8bb96824-d487-4458-a1f5-d91403f0cf03</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[6]</value>
-      <webElementGuid>78de96b4-8f3b-4cc0-9c7a-66cc3fdf979e</webElementGuid>
+      <value>//table[@id='errors']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>2f53530d-5892-4e4d-9984-21ffec3ecf26</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='INPLACA SA'])[1]/following::td[1]</value>
-      <webElementGuid>304e29ed-a429-467f-acdf-7fda4d71567b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::span[1]</value>
+      <webElementGuid>8dd647e0-7cf6-40b5-a69b-ab1b35e7a200</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Corriente Comercial'])[1]/following::td[3]</value>
-      <webElementGuid>2932495e-0f0d-45ce-b1d9-67d3f6d13525</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TT23240574097201'])[1]/following::span[1]</value>
+      <webElementGuid>0a96f8f1-ca5a-44dd-a20f-6ed8ba2a531b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[2]</value>
-      <webElementGuid>11db80f9-36a4-45c9-b736-9ca5eff8d195</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No se han ingresado denominaciones'])[1]/preceding::span[1]</value>
+      <webElementGuid>d200c9ae-1f8f-4597-842c-3558961a6477</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.AC.CONSULTA.X.ESTADO'])[2]/preceding::td[5]</value>
-      <webElementGuid>dd85949f-132b-4a09-9bc1-7e951e8741d0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Faltantes en Dispositivos PN'])[1]/preceding::span[2]</value>
+      <webElementGuid>3d4f2858-b050-4214-81f9-d9aa0f814e91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='ACT']/parent::*</value>
-      <webElementGuid>4d9b8bb1-29d5-4262-8b22-9b4d839f487d</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cantidad.28']/parent::*</value>
+      <webElementGuid>58536f4c-e66b-4e8c-acd1-9e536ea3db04</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[6]</value>
-      <webElementGuid>50c7f98f-8b7d-4549-8d7d-e89ea8f9a9d2</webElementGuid>
+      <value>//a/span</value>
+      <webElementGuid>92ef8b26-a4f5-4ba3-b44d-31846a6e5218</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'ACT' or . = 'ACT')]</value>
-      <webElementGuid>9e72deb1-142e-41ba-acfc-2c822395759b</webElementGuid>
+      <value>//span[(text() = 'Cantidad.28' or . = 'Cantidad.28')]</value>
+      <webElementGuid>a00145c1-d38d-4d4a-bbb9-f93af32d2122</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

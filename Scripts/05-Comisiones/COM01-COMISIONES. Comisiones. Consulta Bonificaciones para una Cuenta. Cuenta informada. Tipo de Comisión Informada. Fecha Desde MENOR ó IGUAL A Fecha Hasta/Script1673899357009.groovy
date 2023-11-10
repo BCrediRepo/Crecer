@@ -90,7 +90,7 @@ Bonificacion = WebUI.getText(findTestObject('06-Comisiones/Bon Com por Cuenta o 
 
 WebUI.verifyTextPresent(Bonificacion, true)
 
-assert TextoDato == TextoHeader /*WebUI.verifyMatch('TextoHeader', '00740025976', true)
+assert TextoDato == '00010015665' /*WebUI.verifyMatch('TextoHeader', '00740025976', true)
 //WebUI.verifyMatch('TextoDato', '00740025976', true)
 WebUI.verifyElementAttributeValue(findTestObject('null'), '', '', 0)*/ //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

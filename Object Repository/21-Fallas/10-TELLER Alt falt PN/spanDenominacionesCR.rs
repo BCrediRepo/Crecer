@@ -6,12 +6,12 @@
    <elementGuidId>7f126a78-dbd1-4fc8-aaed-c4236718d885</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.nonactive-tab > span</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//table[@id='headtab']/tbody/tr/td[2]/a/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.nonactive-tab > span</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>dda14233-961d-4557-b925-19c99e51b5ba</webElementGuid>
+      <webElementGuid>06627210-80c9-4e41-84fb-67247aca7bb9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Denominaciones CR</value>
-      <webElementGuid>4026cff4-e871-47cd-81e3-41a05c7eba98</webElementGuid>
+      <webElementGuid>cc4e2a3d-4420-4a86-936b-423a7ed7a704</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[2]/a[@class=&quot;nonactive-tab&quot;]/span[1]</value>
-      <webElementGuid>60d17c72-c76d-4746-8a33-dfee9615a779</webElementGuid>
+      <webElementGuid>bb59d995-659b-4269-961a-08c40bb4d58e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='headtab']/tbody/tr/td[2]/a/span</value>
-      <webElementGuid>2c156d3f-d7cb-48b8-8a9e-d71feb03a037</webElementGuid>
+      <webElementGuid>17b3919c-8010-48c8-abd2-5ff5fdfbfd85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Faltantes en Dispositivos PN'])[1]/following::span[1]</value>
-      <webElementGuid>7a6aa386-b338-406f-a642-d80040de519f</webElementGuid>
+      <webElementGuid>4d38ffd8-e4a5-42c1-8cb1-b072c1cfb73a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::span[2]</value>
-      <webElementGuid>c4660127-a50f-4489-a174-35ce5d72aee4</webElementGuid>
+      <webElementGuid>42314fda-0fe6-453f-b48c-c9bfec47f312</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/preceding::span[1]</value>
-      <webElementGuid>c4906372-7a23-48e4-99eb-d84202228697</webElementGuid>
+      <webElementGuid>eb578ce7-2595-4e07-840b-e3ec87c54ca4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha'])[1]/preceding::span[2]</value>
-      <webElementGuid>35a613f6-e027-4e0f-ad80-5267df8ec74e</webElementGuid>
+      <webElementGuid>2cadb216-3fec-489a-959d-162b5067fc70</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Denominaciones CR']/parent::*</value>
-      <webElementGuid>a4419ee4-818c-4384-9efd-2ec7bad84ec1</webElementGuid>
+      <webElementGuid>4fab7631-498d-40b9-85dc-09d25a966939</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/a/span</value>
-      <webElementGuid>041a97ec-4d06-498b-a81e-b7a78749ce3a</webElementGuid>
+      <webElementGuid>89f90992-e2f6-4ac0-9464-88552fbcac0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Denominaciones CR' or . = 'Denominaciones CR')]</value>
-      <webElementGuid>bb7bd08b-c46d-440c-97e4-3f9d8318ca0f</webElementGuid>
+      <webElementGuid>0b86cafd-6b29-4d75-aa73-a83d78529cd0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

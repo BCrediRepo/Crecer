@@ -4,26 +4,24 @@
    <name>lblMonto</name>
    <tag></tag>
    <elementGuidId>5eb2941e-0ab8-48d6-beba-01850b36238f</elementGuidId>
-   <imagePath></imagePath>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '2,00' or . = '2,00')]</value>
-      </entry>
-      <entry>
          <key>IMAGE</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#r1 > td:nth-child(6)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;r3&quot;)/td[6]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//tr[@id='r1']/td[6]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>00d3059d-d4e1-41e7-a475-6022b1cd8ab4</webElementGuid>
+      <webElementGuid>e3fba052-875f-42c0-a90b-1616694be474</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,23 +37,23 @@
       <name>align</name>
       <type>Main</type>
       <value>right</value>
-      <webElementGuid>0ff51c2e-5847-4872-a39e-64be091b8e28</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>2,00</value>
-      <webElementGuid>5152b6b9-24ba-4ef9-9613-988227119e9f</webElementGuid>
+      <webElementGuid>709f6206-ef5f-48a6-b2cd-294ffbe0a48f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>2,00</value>
+      <webElementGuid>6568307a-e29a-4b62-a433-10ab2af83b00</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r3&quot;)/td[6]</value>
-      <webElementGuid>0450c10c-af1c-4cfc-88a5-7d0221d7f87a</webElementGuid>
+      <webElementGuid>fd3b07f5-02ba-4f42-a822-34811c7fd6d4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r3']/td[6]</value>
-      <webElementGuid>4714c85b-98ac-4daa-92d1-0e5c32a1cd22</webElementGuid>
+      <webElementGuid>4f918b1d-4fe8-420a-b62d-f1500d16dda2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='FLAT'])[4]/following::td[1]</value>
-      <webElementGuid>72681bdf-9768-46af-81ef-b085c97b5f53</webElementGuid>
+      <webElementGuid>31491f85-3a08-49c5-a117-7c04ad566f6d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CREIB*011'])[1]/following::td[2]</value>
-      <webElementGuid>91c40a4f-c85f-4c6e-b261-11984d2ce187</webElementGuid>
+      <webElementGuid>f2a72525-c968-4f2a-bc2e-fc747671e1de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificar comision'])[3]/preceding::td[11]</value>
-      <webElementGuid>31cd72ed-46db-4278-b9cb-2a269a87664c</webElementGuid>
+      <webElementGuid>b00a198f-1897-4741-9359-9f37d2db413d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MB'])[4]/preceding::td[12]</value>
-      <webElementGuid>50b5ae9d-d374-49f7-83b2-6f4cb94c9986</webElementGuid>
+      <webElementGuid>f7c109a8-9ced-4707-ac47-c817024a6994</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='2,00']/parent::*</value>
-      <webElementGuid>884e492f-cc60-427e-b3ad-ad8ee4c298b0</webElementGuid>
+      <webElementGuid>7cd0fcbc-0263-4eb4-b083-55aec398152f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td[6]</value>
-      <webElementGuid>32a0bdab-3be0-4b2d-948d-d9166e5ff9b4</webElementGuid>
+      <webElementGuid>1231fdc0-7a6e-4692-96db-568747be0bd4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '2,00' or . = '2,00')]</value>
-      <webElementGuid>49cc1a4c-f637-4d88-b4d6-2a82e97a8635</webElementGuid>
+      <webElementGuid>5d3009ec-8d35-41bb-a006-de1ea1ae271e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

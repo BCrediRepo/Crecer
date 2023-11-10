@@ -17,13 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
+        2, 8))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu ?327
@@ -51,6 +53,7 @@ WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP.PN')
 
 //Filtro para limpiar selección
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 WebUI.switchToWindowIndex(0)
 
 //Switch a la ventana Temenos T24
@@ -68,30 +71,27 @@ WebUI.maximizeWindow()
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+WebUI.setText(findTestObject('21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/txtFechaDesde'), '20230823')
+
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'), 6)
-
+//WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'))
 
 def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'))
 
-assert element.contains('Moneda')
-
-
-//---------------------------------------------------------------------------------------------------------------------
-
+assert element.contains('Moneda') //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
 

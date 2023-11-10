@@ -40,32 +40,32 @@ WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblD
 
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'))
 
+//WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'))
 WebUI.setText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtImporte'), '10')
 
 WebUI.setText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtNombrePosteo'), 'CRECER')
 
-WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnDropDownConcepto'))
+WebUI.setText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/txtConcepto'), '18810IEE')
 
-WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblEgresoVariosCaja'))
-
+//WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnDropDownConcepto'))
+//WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblEgresoVariosCaja'))
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnAceptarRegistro'))
-
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/btnAceptarRegistro'))
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lnkAceptarAlertas'))
 
 WebUI.verifyElementVisible(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblTxnCompleta'))
 
 label = WebUI.getText(findTestObject('42-Ingresos Egresos Varios/Movimiento de Fondos/lblTxnCompleta'))
 
-assert label.contains('Txn Completa:') == true
+assert label.contains('Txn Completa:') == true //Control Fin de script
 
-//Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
 

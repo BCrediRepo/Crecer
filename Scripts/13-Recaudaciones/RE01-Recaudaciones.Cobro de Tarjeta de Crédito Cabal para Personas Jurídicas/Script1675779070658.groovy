@@ -27,7 +27,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Se accede al menu 
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.VISION.PAGO.TJ')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
@@ -38,25 +38,25 @@ CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
 //Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.VISION.PAGO.TJ')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.VISION.PAGO.TJ')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), 6)
 WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), '1004140888')
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkEjecutar'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkEjecutar'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblTarjetaPlastico'), 6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkPagar'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblTarjetaPlastico'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkPagar'), 6)
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkPagar'))
 
 //Switch a la ventana de busqueda de seleccion de pago
 WebUI.switchToWindowTitle('Pago de Tarjetas S/ Cod Barra. - Fil.073 Jujuy')
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), 6)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), '3')
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), 6)
 WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), '1')
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/imgAceptarRegistro'))
 
@@ -65,7 +65,7 @@ WebUI.delay(3)
 WebUI.switchToWindowTitle('BCCL.E.EST.PAGO.TARJ')
 
 //Validacion del Pago
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'))
 def noRec = WebUI.getText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'))
 assert noRec.contains('PAGO DE TARJETA:')
