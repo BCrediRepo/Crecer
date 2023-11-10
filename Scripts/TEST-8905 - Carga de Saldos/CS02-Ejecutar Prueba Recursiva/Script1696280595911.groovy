@@ -20,16 +20,14 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-
-for (def row = 1; row <= 10; row++) {
+for (def row = 1; row <= 1; row++) {
     GlobalVariable.vCSCuenta = findTestData('MainData/Carga Saldos').getValue(1, row)
 
-    GlobalVariable.vFECHA = findTestData('MainData/Carga Saldos').getValue(2, row)
+    GlobalVariable.vCSImporte = findTestData('MainData/Carga Saldos').getValue(2, row)
 
-    GlobalVariable.vCODPROD = findTestData('MainData/Carga Saldos').getValue(3, row)
+    GlobalVariable.vCSConcepto = findTestData('MainData/Carga Saldos').getValue(3, row)
 
     WebUI.callTestCase(findTestCase('TEST-8905 - Carga de Saldos/CS01-Alta de Nota de Crédito Ajuste'), [:])
-	
 } 
 
 //---------------------------------------------------------------------------------------------------------------------

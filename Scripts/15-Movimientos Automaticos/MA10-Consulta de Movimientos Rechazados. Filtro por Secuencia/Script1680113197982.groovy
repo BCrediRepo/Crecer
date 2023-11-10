@@ -65,7 +65,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.maximizeWindow()
 
 //Ingresa una secuencia 
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/inputSecuencia'),'0368890')
+WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/inputSecuencia'),'0092845')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

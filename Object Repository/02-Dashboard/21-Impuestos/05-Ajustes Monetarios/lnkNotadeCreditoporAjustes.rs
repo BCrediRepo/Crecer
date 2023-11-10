@@ -11,9 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
+         <value>ul.menuMargin:nth-child(20) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>cc69521f-781c-447c-a55f-c9218baff9ef</webElementGuid>
+      <webElementGuid>3d7fcc28-1c52-48ef-992b-6059ebfc2adc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACCJ I F3');processMenuHeaderText('Nota de Credito por Ajustes')</value>
-      <webElementGuid>a7c3771a-3e3a-4950-8b7d-1389cab342fa</webElementGuid>
+      <webElementGuid>00d2ba8d-5b9c-47d8-af1c-5383e1169dd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('FUNDS.TRANSFER,BCCL.ACCJ I F3');</value>
-      <webElementGuid>012573f8-eea0-4597-8a3c-55abd41ac1ea</webElementGuid>
+      <webElementGuid>05b38a8b-37c7-4024-85cc-fe248a3a3ec1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Nota de Credito por Ajustes </value>
-      <webElementGuid>fc6a78f3-374b-4188-a0df-f64532f10ff0</webElementGuid>
+      <webElementGuid>3d6283f9-202f-42b1-b5e4-440556277b33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
-      <webElementGuid>8222b4a1-8de7-4e9f-be93-ba990bd9f393</webElementGuid>
+      <webElementGuid>ef320bb7-c76b-4743-87fa-38bd31761078</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>2f6a1402-4814-4712-b47f-6bf58634feb0</webElementGuid>
+      <webElementGuid>53d7d637-dce5-4d64-80d2-6e2fb44ae156</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.ACCJ I F3');processMenuHeaderText('Nota de Credito por Ajustes')&quot;]</value>
-      <webElementGuid>3ed7301f-8400-4f1e-974b-149e9fc1a11c</webElementGuid>
+      <webElementGuid>f84bb16b-5c0a-47fd-8eba-a9f35b7d82d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[20]/li/ul/li[2]/a</value>
-      <webElementGuid>78d8c508-5092-4242-b92f-da97c554574a</webElementGuid>
+      <webElementGuid>7c34784b-4d8a-4551-b0cb-10fd7d4c6ca3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Nota de Credito por Ajustes')]</value>
-      <webElementGuid>d26bf226-36b9-4516-96d0-940fa2048ff7</webElementGuid>
+      <webElementGuid>4153ff13-0a35-4f99-8b17-1c8e4bb9f053</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito por Ajustes'])[1]/following::a[1]</value>
-      <webElementGuid>bb89ce6f-4197-4a56-84bd-777f1672a934</webElementGuid>
+      <webElementGuid>8ca148ef-0553-4654-b798-3ff6066233d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ajustes Monetarios'])[1]/following::a[2]</value>
-      <webElementGuid>491a9b66-b572-4381-9241-48782d14547f</webElementGuid>
+      <webElementGuid>6288a09f-8078-4646-8320-1cb8425b1b80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito Transitoria'])[1]/preceding::a[1]</value>
-      <webElementGuid>5337e61e-9a52-4c1b-acc8-fc2cc89c9501</webElementGuid>
+      <webElementGuid>1a35f0d6-f001-4d45-86c9-4e7417144797</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito Transitoria'])[1]/preceding::a[2]</value>
-      <webElementGuid>728f7f6e-dbdb-4291-9a22-10372de1eafe</webElementGuid>
+      <webElementGuid>29ac871f-09d9-49da-b02d-e033f3c2e275</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Nota de Credito por Ajustes']/parent::*</value>
-      <webElementGuid>5cd79620-67c0-4cd8-ab53-1e4a3791dec1</webElementGuid>
+      <webElementGuid>9f2f0022-bef0-4fd1-93ee-53ed59f4f9bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,BCCL.ACCJ I F3');&quot;)]</value>
-      <webElementGuid>85187879-eb72-4d19-bd97-f6f5dc7532a6</webElementGuid>
+      <webElementGuid>bd7c704a-f1d3-4211-83a8-2ef4d00058c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[20]/li/ul/li[2]/a</value>
-      <webElementGuid>79be4fad-3fb3-4202-a34a-33a24224c0a9</webElementGuid>
+      <webElementGuid>d16fc79c-26f8-42fc-bfe4-956401f26597</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,BCCL.ACCJ I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Nota de Credito por Ajustes ' or . = 'Nota de Credito por Ajustes ')]</value>
-      <webElementGuid>285a7121-afdb-403f-958b-7d8c13d8f0f4</webElementGuid>
+      <webElementGuid>17c7f4fc-f898-453b-8803-f157a7bd22ee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

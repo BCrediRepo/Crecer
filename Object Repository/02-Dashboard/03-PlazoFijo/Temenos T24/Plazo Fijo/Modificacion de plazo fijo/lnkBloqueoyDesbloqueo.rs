@@ -6,12 +6,11 @@
    <elementGuidId>e59396fb-051c-4734-abdf-87bd93ec6087</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[55]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/ul[7]/li/ul/li[3]/ul/li[1]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>f945f894-9df4-4042-abc5-384c549a9276</webElementGuid>
+      <webElementGuid>ad783543-49c3-4a43-ae5a-a61ebbbf8372</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>22c1d936-8835-489f-81c5-34bb14fdb5db</webElementGuid>
+      <webElementGuid>f81abfb2-a8ea-4736-8557-9d3b73e5cb22</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>403852ec-208e-4e01-970e-036cf7c06ac1</webElementGuid>
+      <webElementGuid>8dcb7a88-7e1d-4f2a-93d2-9328c7b6c3c1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Bloqueo y Desbloqueo</value>
-      <webElementGuid>7db4e43e-955c-434b-97f6-f3524d04263e</webElementGuid>
+      <webElementGuid>6853d8de-f911-43e8-abbd-11447b21c3c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>49504f4a-fbba-44fd-9e11-c18816c11ab5</webElementGuid>
+      <webElementGuid>a6c44aa0-4ed1-46a3-9fff-7af4a858cdf6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[55]</value>
-      <webElementGuid>704d0bcc-fce3-4634-bbe3-871bb868ab75</webElementGuid>
+      <webElementGuid>894b9c35-965a-42b1-9d39-c9cf7ea734ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[7]/li/ul/li[3]/ul/li/span</value>
-      <webElementGuid>0b7b614b-edbf-4729-be91-f92a48e95afe</webElementGuid>
+      <webElementGuid>4c0b81b8-b001-4d5a-820a-a702c868e0fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion de Plazo Fijo'])[1]/following::span[1]</value>
-      <webElementGuid>3b15cd99-e296-4634-919b-92dd3fc7c0c4</webElementGuid>
+      <webElementGuid>9ccd6ebe-e303-45ed-8487-c3584e2843c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Liquidacion de Plazo Fijo Ajustable'])[1]/following::span[2]</value>
-      <webElementGuid>a1c4f6a3-8e3a-4a4e-a474-57b85b5e2d55</webElementGuid>
+      <webElementGuid>764899a0-c713-405e-8970-681e99787637</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>3888e66c-11ef-47a0-9cf1-71861f54fc5a</webElementGuid>
+      <webElementGuid>e569d8f1-9106-439d-8ab9-9db98f833853</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Desbloqueo Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>8d6f568a-3f37-4213-b9fd-5ba3e171acd4</webElementGuid>
+      <webElementGuid>8cdfe8b4-5c33-4004-9d8b-f78105138afa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Bloqueo y Desbloqueo']/parent::*</value>
-      <webElementGuid>0e8eda11-5e3e-4ae2-afc3-ce3aed8efad2</webElementGuid>
+      <webElementGuid>6ec9a31c-11c4-4915-9584-9179c9a5403f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[7]/li/ul/li[3]/ul/li/span</value>
-      <webElementGuid>cd475459-d473-4654-8ec9-7d0ab1033557</webElementGuid>
+      <webElementGuid>83c31f19-849b-4a6d-b773-91a97c46b724</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Bloqueo y Desbloqueo' or . = 'Bloqueo y Desbloqueo')]</value>
-      <webElementGuid>bc595cc3-e0ec-4157-a5a3-a9d302f0988b</webElementGuid>
+      <webElementGuid>e821ff07-ca70-4e26-8c46-c57b5d1668ff</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

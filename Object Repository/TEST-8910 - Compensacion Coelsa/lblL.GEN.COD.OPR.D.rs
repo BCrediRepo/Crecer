@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblL.GEN.COD.OPR.D</name>
+   <tag></tag>
+   <elementGuidId>d3b3a5bb-d73f-4fc1-ad21-6faf454568b4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[23]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ce75d9c9-80cd-484c-9723-828a70d599d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER</value>
+      <webElementGuid>36fcd99e-2610-4ff1-8256-732a99762c9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>01372</value>
+      <webElementGuid>56ebafb6-82de-401a-9207-18870298342c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[23]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER&quot;]</value>
+      <webElementGuid>15c9dce9-220f-4de5-a652-abdc931387ca</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[23]/td[3]/span</value>
+      <webElementGuid>d7d49927-c296-43a1-ab22-caeba836cd44</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L Gen Cod Opr D'])[1]/following::span[1]</value>
+      <webElementGuid>31234804-eae6-451f-863e-baaa291dee54</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debito Inmediato (DEBIN) - dist titular'])[1]/following::span[1]</value>
+      <webElementGuid>31568e56-a3ba-40bc-8333-cabb1e560e71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debito Inmediato (DEBIN)'])[1]/preceding::span[1]</value>
+      <webElementGuid>b7ce58a8-c428-44c5-a667-547cb2d30c26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L Inputter'])[1]/preceding::span[2]</value>
+      <webElementGuid>4e1e5d69-bd17-475b-a886-82c61479e098</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='01372']/parent::*</value>
+      <webElementGuid>0aff238a-c759-41bc-b976-cab5b492877d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[23]/td[3]/span</value>
+      <webElementGuid>5b10e66c-0be3-4330-91e9-953d65cf1104</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '01372' or . = '01372')]</value>
+      <webElementGuid>72293486-ce21-4f15-94d0-d712c1f5531b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

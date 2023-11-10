@@ -19,23 +19,37 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.webui.driver.DriverFactory
+// Importar las clases necesarias de Apache POI para manipular archivos
+import org.apache.poi.ss.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import org.apache.poi.xssf.usermodel.XSSFSheet
+import com.kms.katalon.core.webui.driver.DriverFactory
 
-//def myTest1 = findTestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta')
+//Abrir archivo Excel existente
+FileInputStream fileIn = new FileInputStream("Test Data/Compensacion Coelsa.xlsx")
+XSSFWorkbook workbook = new XSSFWorkbook(fileIn)
+XSSFSheet sheet = workbook.getSheet("IDS")
 
-//def myTest2 = findTestCase('Test Cases/TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta')
+//Encuentro la primera fila vacía en la hoja para conseguir el numero de fila vacia en donde corta la iteracion
+int filaNum = 0
+while (sheet.getRow(filaNum) != null) {
+	filaNum++
+}
 
-//def data = TestDataFactory.findTestData('Data Files/MainData/DatosNCD')
-//el archivo podria estar en la carpeta Test Data 
-//def totalRows = data.getRowNumbers()
-for (def row = 1; row <= 15; row++) {
-    GlobalVariable.vDNI = findTestData('MainData/DatosNCD').getValue(1, row)
-    GlobalVariable.vFECHA = findTestData('MainData/DatosNCD').getValue(2, row)
-	GlobalVariable.vCODPROD = findTestData('MainData/DatosNCD').getValue(3, row)
-	GlobalVariable.vTARIFARIO = findTestData('MainData/DatosNCD').getValue(4, row)
-	WebUI.callTestCase(findTestCase('TEST-8800 - Alta de Cuentas/AC01-Alta de Cuenta'), [:])
-	WebUI.callTestCase(findTestCase('TEST-8800 - Alta de Cuentas/AC02-Autorizacion Alta Cuenta'), [:])
+//Guardar el libro de Excel
+fileIn.close()
+FileOutputStream fileOut = new FileOutputStream("Test Data/Compensacion Coelsa.xlsx")
+workbook.write(fileOut)
+fileOut.close()
 
-} 
+//Cerrar el libro de Excel
+workbook.close()
+
+for (def row = 1; row < filaNum; row++) {
+    GlobalVariable.vIDCoelsa = findTestData('Compensacion Coelsa/IDS').getValue(1, row)
+    WebUI.callTestCase(findTestCase('TEST-8910 - Compensacion Coelsa/CC01-Validacion FT'), [:])
+}
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

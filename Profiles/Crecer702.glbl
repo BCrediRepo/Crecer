@@ -69,4 +69,64 @@
       <initValue>''</initValue>
       <name>vCSConcepto</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Id Coelsa</description>
+      <initValue>''</initValue>
+      <name>vIDCoelsa</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>FT correspondiente al ID Coelsa</description>
+      <initValue>''</initValue>
+      <name>vFTdelIDCoelsa</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>codigo oper debito</description>
+      <initValue>''</initValue>
+      <name>vCodOprD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>codigo operativo credito</description>
+      <initValue>''</initValue>
+      <name>vCodOprC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>descripcion esp debito</description>
+      <initValue>''</initValue>
+      <name>vDescEspD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>descripcion esp credito</description>
+      <initValue>''</initValue>
+      <name>vDescEspC</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>cuit cuil</description>
+      <initValue>''</initValue>
+      <name>vCuitCuil</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>cui beneficiario</description>
+      <initValue>''</initValue>
+      <name>vCUIBen</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>debit amount</description>
+      <initValue>''</initValue>
+      <name>vDebitAmount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>debit acount</description>
+      <initValue>''</initValue>
+      <name>vDebitAcc</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>credit acount</description>
+      <initValue>''</initValue>
+      <name>vCreditAcc</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>denominacion beneficiario</description>
+      <initValue>''</initValue>
+      <name>vDenomBen</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

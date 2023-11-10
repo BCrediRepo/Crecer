@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
+         <value>/html/body/div[3]/ul[4]/li/ul/li[5]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3da87cce-c13f-4583-9661-39d6706836c6</webElementGuid>
+      <webElementGuid>fcb5434c-2b43-4e40-87e6-6027b83b82fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>613e6945-2849-45b7-818e-44a4feea931e</webElementGuid>
+      <webElementGuid>c0142476-8bbf-4b2c-8169-7a3f25b7e855</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>3d9fbe50-f2c8-40d1-955f-9eee23703fb0</webElementGuid>
+      <webElementGuid>035be03d-bfa1-4b2e-af89-809f80f46454</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consultas de Plazo Fijo</value>
-      <webElementGuid>7f42ca4f-ca9a-480d-aeb4-3507c2bc93b8</webElementGuid>
+      <webElementGuid>e97cc578-87c3-4072-a626-7ce9225e6021</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>4253b1e2-f2b7-4b35-838f-64c2c5de89dc</webElementGuid>
+      <webElementGuid>13ba8ad8-87f1-4b0d-89b7-ef4e3f35ee69</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
-      <webElementGuid>842f45dd-10fb-4889-a91a-0b46b8b99e70</webElementGuid>
+      <webElementGuid>569820be-f240-4065-a82c-191f5f2673f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/ul/li/span</value>
-      <webElementGuid>4685a33c-1e4b-4473-9d24-83ed1f2f268a</webElementGuid>
+      <webElementGuid>df3dce8c-33a4-4e92-a274-2effd1b41c4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazo Fijo'])[1]/following::span[1]</value>
-      <webElementGuid>6f042e47-8200-4c57-8386-06e0ae70b521</webElementGuid>
+      <webElementGuid>d1f57d72-16a0-4154-84bf-dcd31d8d6bbd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cons.de mov. por fecha - Cuenta Cerrada'])[1]/following::span[2]</value>
-      <webElementGuid>ffeda184-19c8-41bc-bfff-f4ef85344b57</webElementGuid>
+      <webElementGuid>06fd1f69-3558-4ccf-96d0-040dbdc2e574</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas Segmentadas por Plazo Fijo'])[1]/preceding::span[1]</value>
-      <webElementGuid>51993e14-f920-41c3-87b7-abdfa3868116</webElementGuid>
+      <webElementGuid>27a83e6c-1c23-4680-9939-ad35c262e65b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Plazos Fijos Activos'])[1]/preceding::span[2]</value>
-      <webElementGuid>4f113849-095d-44a7-a9c4-c792ad54b35c</webElementGuid>
+      <webElementGuid>07d24e3a-4304-476c-90b5-bfecb051f0a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consultas de Plazo Fijo']/parent::*</value>
-      <webElementGuid>d010cfac-0131-4475-ae2c-d873d87ab0d1</webElementGuid>
+      <webElementGuid>faa1cc9a-aa9a-4f43-ac13-431da6df533f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[4]/li/ul/li/span</value>
-      <webElementGuid>731af0e2-677f-4c03-ba50-bc1ae4cb6e4a</webElementGuid>
+      <webElementGuid>ea50769f-5ff2-41e3-b1ca-c169dd8cb792</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Consultas de Plazo Fijo' or . = 'Consultas de Plazo Fijo')]</value>
-      <webElementGuid>99939a2c-4179-406a-931a-f2fda92e5235</webElementGuid>
+      <webElementGuid>518321b1-757c-43be-8cea-110bb8e75bac</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

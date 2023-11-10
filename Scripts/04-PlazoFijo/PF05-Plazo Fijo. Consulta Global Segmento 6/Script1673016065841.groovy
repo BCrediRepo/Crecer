@@ -45,7 +45,7 @@ long startTime = System.currentTimeMillis()
 //WebUI.waitForElementPresent(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'))
 //WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'), 6)
-//WebUI.delay(10)
+WebUI.delay(30)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'))
 
 // Captura el tiempo de finalización

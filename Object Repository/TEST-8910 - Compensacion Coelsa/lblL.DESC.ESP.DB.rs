@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblL.DESC.ESP.DB</name>
+   <tag></tag>
+   <elementGuidId>a68e8898-2443-4caa-88c2-b98b92de517f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[41]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1b3331f5-176f-430e-adb8-67a96febf062</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER</value>
+      <webElementGuid>23da25e3-4628-42bc-bdde-745a08d4d917</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>20138236502-VAR-GOMIZ GOMIZ JOSE ANTONI</value>
+      <webElementGuid>c7b22c9f-9a39-4cbd-8afb-16bc4dababe9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[41]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER&quot;]</value>
+      <webElementGuid>b7a3d132-932d-4757-87db-b443ec70129f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[41]/td[3]/span</value>
+      <webElementGuid>7c268f11-2de4-47ca-b900-c2ff83d7d330</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L Desc Esp Db'])[1]/following::span[1]</value>
+      <webElementGuid>2f67044d-2ba8-43e0-997d-d5348ad2f8e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GOMIZ GOMIZ JOSE ANTONIO'])[1]/following::span[2]</value>
+      <webElementGuid>123d84be-cac4-47cb-9205-e34b270bc6ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L Desc Esp Cr'])[1]/preceding::span[2]</value>
+      <webElementGuid>85cf81f5-e7bf-4864-925f-a6dfc82f93a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Amount Debited'])[1]/preceding::span[4]</value>
+      <webElementGuid>180b7fa2-4150-4ec3-a888-1841e13f176c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='20138236502-VAR-GOMIZ GOMIZ JOSE ANTONI']/parent::*</value>
+      <webElementGuid>38c67e01-0ebf-41b2-b3c6-80925fcd21e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[41]/td[3]/span</value>
+      <webElementGuid>5464afd9-df79-459b-8dc9-1d0385e752f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '20138236502-VAR-GOMIZ GOMIZ JOSE ANTONI' or . = '20138236502-VAR-GOMIZ GOMIZ JOSE ANTONI')]</value>
+      <webElementGuid>0140acd6-5836-40fd-a07a-0db4fc900fbf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

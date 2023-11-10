@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblL.CUI.BEN.1</name>
+   <tag></tag>
+   <elementGuidId>1585371f-f2a3-45e6-b4ce-d25194233eb6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[39]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>10948132-bc96-46b5-b80b-f2c58a1745c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER</value>
+      <webElementGuid>967a408c-923e-47f1-bbcf-122c39012c18</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>20138236502</value>
+      <webElementGuid>ebc5bb61-bcfa-498c-bf5d-5f9ffdccea6c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[39]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER&quot;]</value>
+      <webElementGuid>e2e512a2-5236-40ec-9a06-761871e6f73d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[39]/td[3]/span</value>
+      <webElementGuid>ecd59972-9f66-4dff-b739-7e2d3996821e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L Cui Ben.1'])[1]/following::span[1]</value>
+      <webElementGuid>8cda582a-943f-4bfb-9cbd-36adc4b281fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L G Com Imp Tdb'])[1]/following::span[3]</value>
+      <webElementGuid>ea853787-1957-4fec-b283-3819777e8f64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L Denom Ben.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>d9b54e06-559b-4625-9d01-34c7aecb2bfb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GOMIZ GOMIZ JOSE ANTONIO'])[1]/preceding::span[2]</value>
+      <webElementGuid>18dea2e2-48a2-4a5e-838e-7b3157599c61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='20138236502']/parent::*</value>
+      <webElementGuid>83c6436c-4b38-430c-91c4-9205cb7f9eed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[39]/td[3]/span</value>
+      <webElementGuid>d22177d5-c693-46d1-a493-109a1f942cd4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '20138236502' or . = '20138236502')]</value>
+      <webElementGuid>dda0413b-4d82-4154-816f-03233ba1c9b6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

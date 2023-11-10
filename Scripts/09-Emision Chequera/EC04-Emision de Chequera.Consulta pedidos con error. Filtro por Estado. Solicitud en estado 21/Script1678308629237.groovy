@@ -98,7 +98,9 @@ println(TotalRegistros)
 //-----------------------------
 def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/lblSUCURSAL'))
 
-assert element.contains('SUCURSAL') //---------------------------------------------------------------------------------------------------------------------
+assert element.contains('SUCURSAL') 
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

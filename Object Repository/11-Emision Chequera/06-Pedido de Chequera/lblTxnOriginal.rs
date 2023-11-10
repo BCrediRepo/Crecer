@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>td.messageWrap > span</value>
+         <value>#r4 > td:nth-child(2)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>66055fc0-f630-45d5-94fe-bddb4d8297d0</webElementGuid>
+      <webElementGuid>b00b2ac5-4348-4d38-ae77-d8743e65cfc0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>ce501c68-9297-4fdb-a06f-ac3a6b5d0202</webElementGuid>
+      <webElementGuid>9c3661b4-8850-4498-9305-283bffe946e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA</value>
-      <webElementGuid>a907435d-2bc1-4cee-98c2-50fd18de074c</webElementGuid>
+      <webElementGuid>bbb2d74d-a32b-430d-8af5-7ee592682412</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;error_box&quot;)/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[1]/td[@class=&quot;messageWrap&quot;]/span[1]</value>
-      <webElementGuid>a63508ea-5fcf-49a8-9a59-e4a4102e1957</webElementGuid>
+      <webElementGuid>5839dd3c-f956-4dcf-9088-9f8381dd2e43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/08-Emision Chequera/frmEmisionChequeraFirmas</value>
-      <webElementGuid>ace05dd6-bb0c-4b39-bb6b-e6174615df1c</webElementGuid>
+      <webElementGuid>973e99d9-5eb7-4454-982a-8fc9e40ac57e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='messages']/tbody/tr/td[2]/span</value>
-      <webElementGuid>1425dd0d-8823-420c-be4d-d0ac5f1acb2d</webElementGuid>
+      <webElementGuid>deab9502-5676-46f4-9b05-0436b6f4df74</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::span[1]</value>
-      <webElementGuid>51aea13d-ad32-4ee2-a2da-6deb1ccda1de</webElementGuid>
+      <webElementGuid>ca62ff58-7d35-4f2f-9aa4-d37cbe5aa00c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Verificacion de Firmas'])[1]/following::span[2]</value>
-      <webElementGuid>23778022-b93f-48a9-93ad-d2db970e5d82</webElementGuid>
+      <webElementGuid>d7e4a82b-9010-430b-beae-1ebf3acd3c1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Accion'])[1]/preceding::span[1]</value>
-      <webElementGuid>d708e027-9ce9-4f27-bece-81ce46d990e5</webElementGuid>
+      <webElementGuid>8b44ce8b-7cad-4689-86d0-52053cd2e0d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alerta.1'])[1]/preceding::span[2]</value>
-      <webElementGuid>06bcaef2-c503-41a7-8b5f-f51987f6719a</webElementGuid>
+      <webElementGuid>96c9aaa4-11e6-4a85-8ba9-ca4191c05493</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA']/parent::*</value>
-      <webElementGuid>693649e0-3eb7-43b0-81cd-3029b7570207</webElementGuid>
+      <webElementGuid>e656a7c2-97ec-4db4-a832-fa7c7302715c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/table/tbody/tr/td/table/tbody/tr/td[2]/span</value>
-      <webElementGuid>76a87b8a-9387-4f6a-aacb-9e039824145d</webElementGuid>
+      <webElementGuid>828e9278-2f31-4efb-8ab1-7d3b74850041</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +118,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA' or . = 'Txn Original BCCL.CQ.SOLICITUD,INGRESO.SUC 922206036434 AUTORIZADA')]</value>
-      <webElementGuid>a9f84109-b556-4bb6-98f1-0349c8fd6bae</webElementGuid>
+      <webElementGuid>da7a52b6-8beb-40c9-8e7f-732dc9a41fc8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

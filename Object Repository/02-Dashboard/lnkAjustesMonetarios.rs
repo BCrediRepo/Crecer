@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[80]</value>
+         <value>/html/body/div[3]/ul[20]/li/span</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b45ec129-427e-4ac4-a1bb-abb2ff566567</webElementGuid>
+      <webElementGuid>c249997f-2226-4dab-9770-950b6b8e7e82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>90af532d-b081-4a20-9c23-4fca25024213</webElementGuid>
+      <webElementGuid>cf4711ee-2f9e-450c-b712-61974aa6342d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>1a7307b0-7faf-4cd5-939d-96587bf463de</webElementGuid>
+      <webElementGuid>1729cdbc-1457-4983-8372-5152a103e303</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Ajustes Monetarios</value>
-      <webElementGuid>ac1ff613-bc9c-4e81-af2a-11f3bd6add34</webElementGuid>
+      <webElementGuid>ea6bb1ec-3308-4e5e-b2c1-74d25395a1fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>3b0733fd-6c9f-4ba3-a48c-c5db09041b45</webElementGuid>
+      <webElementGuid>b180991c-445a-4ff8-8c78-f3f487b0625b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>4866cd1b-a5fa-4f01-ab13-89aa38583050</webElementGuid>
+      <webElementGuid>2c9e59f7-fde7-4925-b84f-58ece0f246bf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[80]</value>
-      <webElementGuid>a25ed107-289e-4711-b25a-19df9e028924</webElementGuid>
+      <webElementGuid>5e0eec74-68ba-45a8-a3d0-0e5c1cd506ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[20]/li/span</value>
-      <webElementGuid>dafdc2c1-97b1-4aec-9ff6-5b64300b03a4</webElementGuid>
+      <webElementGuid>6c5ed59c-98d3-43ed-97be-3216eca6b73e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Transf. Internas Pagadas'])[1]/following::span[1]</value>
-      <webElementGuid>8769e83e-0102-409b-b2b6-5716d718d409</webElementGuid>
+      <webElementGuid>1d001614-69bd-4cf8-83c8-5e3b941f077a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Altas Transf. Internas'])[1]/following::span[1]</value>
-      <webElementGuid>9a32b069-d7f2-4cc2-a58d-73a957fd8951</webElementGuid>
+      <webElementGuid>a86738f6-f45d-4663-86ce-e5550fd6cf8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Debito por Ajustes'])[1]/preceding::span[1]</value>
-      <webElementGuid>d5200c23-46f5-4661-b02d-28c2df528883</webElementGuid>
+      <webElementGuid>ef32eb73-4330-4b3f-b352-5dc91a88328e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota de Credito por Ajustes'])[1]/preceding::span[1]</value>
-      <webElementGuid>e9dca6e5-7a13-466c-8e35-7e1b10040977</webElementGuid>
+      <webElementGuid>518bcb04-add3-4b85-aee0-8adf68d14e34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Ajustes Monetarios']/parent::*</value>
-      <webElementGuid>3f24a171-3c19-4f85-b413-1053d8703be1</webElementGuid>
+      <webElementGuid>ed595ac9-8222-46c5-b250-06d9ef7c661e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[20]/li/span</value>
-      <webElementGuid>944f6454-2b71-4cfa-b1b8-d80979c2f0df</webElementGuid>
+      <webElementGuid>7c1bc895-ee6d-4db6-92c2-bfec8cd5b0cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Ajustes Monetarios' or . = 'Ajustes Monetarios')]</value>
-      <webElementGuid>c0c94ec4-1a5f-4df0-8db7-85cd8ad44180</webElementGuid>
+      <webElementGuid>219891b4-6471-474e-b2bb-972cde52d8eb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

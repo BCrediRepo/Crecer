@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>ul.menuMargin:nth-child(16) > li:nth-child(1) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b8e57f17-469a-4284-aecb-4254f0eb901e</webElementGuid>
+      <webElementGuid>890ebd12-14ac-409b-80fc-000353330fe5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>b46c6232-5a26-4c4b-8cd1-eb639143f0a3</webElementGuid>
+      <webElementGuid>fb8713db-793e-4915-9dbe-f306a7b6e626</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>6bc2caab-9d18-48ed-befc-248a0d22d4b2</webElementGuid>
+      <webElementGuid>89f8ef57-5c9f-44bf-9784-e619428e6f98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Pases y Transferencias entre Socios</value>
-      <webElementGuid>d7fda955-4fbe-49e8-be4e-c69e42034791</webElementGuid>
+      <webElementGuid>09a4d7ef-b5ba-4a97-b7ec-1ec5c7bb67a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>aeed4b9b-ec6e-406f-9f82-46305e43c77f</webElementGuid>
+      <webElementGuid>b4ae491a-a2f4-4691-84b0-4f015a90fa56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>be03dd4a-7b47-46bc-ab05-4e7e78600f97</webElementGuid>
+      <webElementGuid>0c63bdd7-e715-480c-8f8b-55e19f0bf6f5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[76]</value>
-      <webElementGuid>becd9695-9660-4933-bd74-131fcfc05f4c</webElementGuid>
+      <webElementGuid>cef7b277-6304-4b67-b162-2550de83f1c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[16]/li/span</value>
-      <webElementGuid>625ddc82-b280-4c5d-ad19-61d6016aba12</webElementGuid>
+      <webElementGuid>61fc3c7e-47e6-4b50-ae06-4f16ed7303a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Limites TD por Clase'])[1]/following::span[1]</value>
-      <webElementGuid>76e1a6cc-994f-41a7-98cd-651d094ea436</webElementGuid>
+      <webElementGuid>c4b6d682-570b-4792-b2c9-c560fbc1dffc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Aviso Viaje CABAL Debito/Credito'])[1]/following::span[1]</value>
-      <webElementGuid>416b7895-907f-4370-a97d-9823562e49a5</webElementGuid>
+      <webElementGuid>98bc32fb-a186-4392-994c-7a69fdee58f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pase entre Cuentas Misma Titularidad'])[1]/preceding::span[1]</value>
-      <webElementGuid>61e1f653-b360-4e3d-ae86-718edb25a54f</webElementGuid>
+      <webElementGuid>d11782ca-b081-4d48-916d-925e8f2a66c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transferencia a Cuentas del Banco'])[1]/preceding::span[1]</value>
-      <webElementGuid>23dd962e-758d-411a-9591-d488d1dfdd16</webElementGuid>
+      <webElementGuid>ca036319-f0d2-4ec0-a803-1d7e00c971bd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Pases y Transferencias entre Socios']/parent::*</value>
-      <webElementGuid>fbe7b15e-ced7-4331-bfcc-7a1d02086b77</webElementGuid>
+      <webElementGuid>882008e3-647b-426c-a8d9-da6ccad38d4e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[16]/li/span</value>
-      <webElementGuid>0627a121-92d3-4eb0-b7d8-96315e9e13ee</webElementGuid>
+      <webElementGuid>c9e743b6-51dd-44a1-a079-3fef40b2257d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Pases y Transferencias entre Socios' or . = 'Pases y Transferencias entre Socios')]</value>
-      <webElementGuid>2eabb053-f7a4-4f9b-a1a0-e5214902fdaa</webElementGuid>
+      <webElementGuid>261a1097-6694-4492-a8f2-eb885dfc8e87</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

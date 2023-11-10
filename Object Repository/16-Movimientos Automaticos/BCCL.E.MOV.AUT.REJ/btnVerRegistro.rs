@@ -14,7 +14,7 @@
          <value>img[alt=&quot;Vista&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>f2d0d1df-2290-4eee-9e10-e71a0f833b6a</webElementGuid>
+      <webElementGuid>9ee0898c-84ee-4bbe-a272-dc96fe8fc97e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/enquiry/drilldown/view.gif</value>
-      <webElementGuid>f245701d-ef4e-4cba-a7f3-43af9854dcbd</webElementGuid>
+      <webElementGuid>49161ab2-6322-43ac-81d2-86b4355d1261</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Vista</value>
-      <webElementGuid>aba21404-4ef0-43ee-afd3-33bddc491054</webElementGuid>
+      <webElementGuid>a2b6a53a-1711-4530-b275-bcd430439777</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Vista</value>
-      <webElementGuid>47021339-cb41-45ef-b62c-9ef6f0ebbcda</webElementGuid>
+      <webElementGuid>63bfce28-5ca4-43d6-97e7-08e18320c39d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEMOVAUTREJ&quot;]/a[1]/img[1]</value>
-      <webElementGuid>992aaebe-d97d-480d-b308-9afd46b19942</webElementGuid>
+      <webElementGuid>725e8fbf-1cab-4081-a748-0b7e36ff0a29</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[18]/a/img</value>
-      <webElementGuid>5873432e-40a6-4d90-900f-49a248ef60de</webElementGuid>
+      <webElementGuid>e772d19d-d889-4887-9fa2-16ee5a4c5ce5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Vista']</value>
-      <webElementGuid>4c1696b2-b48e-496d-b740-897d1e4ed240</webElementGuid>
+      <webElementGuid>e57e9ad7-0783-457f-bda7-925054ac5de6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[18]/a/img</value>
-      <webElementGuid>9dab69ba-e65b-4f2f-92aa-22f2a2c6f689</webElementGuid>
+      <webElementGuid>1336df82-9de4-43a3-b5ba-ebd610773bcf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/enquiry/drilldown/view.gif' and @alt = 'Vista' and @title = 'Vista']</value>
-      <webElementGuid>0cce573b-2d67-4ecc-b26c-6c7e5445e228</webElementGuid>
+      <webElementGuid>5393940a-849a-4900-bf06-d6729b107431</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
