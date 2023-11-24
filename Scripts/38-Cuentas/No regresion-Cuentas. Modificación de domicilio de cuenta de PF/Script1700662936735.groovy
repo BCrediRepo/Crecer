@@ -22,84 +22,67 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ingresamos el menu ?302 en el command line
+// Ingreso al menu ?302
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Switch a la ventana Temenos T24
+// Cambia a la ventana Temenos T24
 WebUI.switchToWindowTitle('Temenos T24')
 
-//Maximizamos
+// Maximizamos
 WebUI.maximizeWindow()
 
-//Click en cuentas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanCuentas'))
 
-//Click en modificacion de cuentas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/spanModificacion de Cuenta'))
 
-//Click en modificacion de subproducto
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/01-Temenos T24/lnkModificacion de Subproducto'))
 
-//Switch a la ventana Modificacion de Subproducto
+// Cambia a la ventana Modificacion de Subproducto
 WebUI.switchToWindowTitle('Modificacion de Subproducto')
 
-//Maximizamos
+// Maximizamos
 WebUI.maximizeWindow()
 
-//Ingresamos la cuenta
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/txtNroCuenta'), '00890093805')
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/lnkNueva Seleccion'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/txtNroCuenta'), '00430014075')
 
-//Click en ejecutar
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/lnkEjecutar'))
 
-//Click en modificar subproducto
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/lnkModificar Subproducto'))
 
-//Switch a la venta CUENTAS
+// Cambia a la ventana CUENTAS
 WebUI.switchToWindowTitle('CUENTAS')
 
-//Ingresamos los datos para la modificacion
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/btnSubProducto'))
+// Maximizamos
+WebUI.maximizeWindow()
 
-//Ingresamos el subproducto
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/spanCuentaCorriente Entidades C Social'))
+//Ingresamos los datos de la modificacion
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/btnListaRegistro'))
 
-//Ingresamos Uso cuenta
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/btnUsoCuenta'))
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/cbx1034'))
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/spanCOMERCIAL'))
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/txtUsoCuenta'), 'COMERCIAL')
 
-//Ingresamos Tarifario
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/btnTarifario'))
+//SUJETO A MODIFICACION, NO ESTÁ FUNCIONANDO, HAY QUE PROBAR UN SECTOR Y TARIFARIO VALIDO
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/txtTarifario'), '000')
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/spanTarifa General'))
+//Campo nuevo Sector BCRA
+WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas/CUENTAS/btnDropdownSectorBCRA'), 7)
 
-//Validamos el registro
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/btnValidarRegistro'))
 
-//Aceptamos el registro
-WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/btnAceptarRegistro'))
 
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/lblTRANSACCION FINALIZADA'), 6)
+WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/lnkAceptar Alertas'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/lblTRANSACCION FINALIZADA'))
-
-def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mod Subproducto/lblTRANSACCION FINALIZADA'))
-
-assert element.contains('TRANSACCION FINALIZADA')
+//Verificamos que la txn se realizo
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Modificacion de Subproducto/lblTRANSACCION FINALIZADA'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 

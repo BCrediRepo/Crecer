@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>spanTarifa General</name>
+   <name>btnBCCL.E.EB.POSTEO.INAU</name>
    <tag></tag>
-   <elementGuidId>fee73fe8-8da1-4f53-8ef2-509bdaef0839</elementGuidId>
+   <elementGuidId>14960742-c670-4bdc-a9cb-365cc1530f44</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='dropDownRow8']/td[2]</value>
+         <key>CSS</key>
+         <value>span</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,95 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>e4b3d437-19bc-4f53-84ca-9df67ccc2cc7</webElementGuid>
+      <value>span</value>
+      <webElementGuid>8311d485-c482-403a-a99c-25484cb9f432</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>coloumntddata coloumntddata_BCCLECUENTATARIFA</value>
-      <webElementGuid>38bd500e-a569-487f-8202-f03536fd6585</webElementGuid>
+      <value>-1</value>
+      <webElementGuid>b5203ea3-f4a3-40c6-bf04-eec127a08849</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Tarifa General</value>
-      <webElementGuid>8a3d8a50-7c1d-4d04-81d6-d7a2339f8334</webElementGuid>
+      <value>BCCL.E.EB.POSTEO.INAU</value>
+      <webElementGuid>cd2b3113-d22a-4bdf-a8c7-f0a8f5a0d68e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;dropDownRow8&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLECUENTATARIFA&quot;]</value>
-      <webElementGuid>35f11109-e694-49d6-b411-3115e8e4f059</webElementGuid>
+      <value>id(&quot;enquiryResponseCrumbs&quot;)/tbody[1]/tr[1]/td[@class=&quot;crumb crumb_FUNDSTRANSFER crumb_FUNDSTRANSFER_POSTEOINGRESOS&quot;]/a[1]/span[1]</value>
+      <webElementGuid>b20bfca7-4eef-46c2-b6b1-8e06020ff483</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='dropDownRow8']/td[2]</value>
-      <webElementGuid>58f710f3-fe6e-4b37-af66-3b7973ada077</webElementGuid>
+      <value>//table[@id='enquiryResponseCrumbs']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>9dd3be9f-7282-4888-a54d-5a3d19093f6f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarifario 109'])[1]/following::td[2]</value>
-      <webElementGuid>3f1a7710-ebbd-41eb-94c4-41b0d36c7a5c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='lr a:'])[1]/following::span[1]</value>
+      <webElementGuid>e80517e5-aedf-4bdd-a924-0ce7728ed55c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarifa Bonif 100% todo'])[1]/following::td[4]</value>
-      <webElementGuid>a4da07d4-0bf5-49d9-a28c-c60c6b0c7347</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresos Varios de Caja'])[1]/preceding::span[1]</value>
+      <webElementGuid>8fd0eb68-9d19-490e-b672-8fef0ac055cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarif Bonif: Mant 055'])[1]/preceding::td[2]</value>
-      <webElementGuid>cc28c5ca-e43a-449a-a032-f3170355deb4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FT/23240/326570140'])[1]/preceding::span[1]</value>
+      <webElementGuid>63905443-2800-44e1-8df8-c3e334aa464c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tarifa Bonif: Tarifario 100'])[1]/preceding::td[4]</value>
-      <webElementGuid>289320b9-cec8-40e1-b01e-faef08a0c0d0</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Tarifa General']/parent::*</value>
-      <webElementGuid>ffcf8ccc-64f9-4d22-89b5-50f57041f001</webElementGuid>
+      <value>//*/text()[normalize-space(.)='BCCL.E.EB.POSTEO.INAU']/parent::*</value>
+      <webElementGuid>c42ee689-f05b-4049-9d94-b8da9b592eb7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/table/tbody/tr[9]/td[2]</value>
-      <webElementGuid>95f77c8e-0f43-40f7-bde4-7e97a2acad9e</webElementGuid>
+      <value>//span</value>
+      <webElementGuid>6366a228-7afb-4b6c-9fc5-6f49b19ae85d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'Tarifa General' or . = 'Tarifa General')]</value>
-      <webElementGuid>55c7b6d1-8fad-4e8a-8592-e0705a113dcb</webElementGuid>
+      <value>//span[(text() = 'BCCL.E.EB.POSTEO.INAU' or . = 'BCCL.E.EB.POSTEO.INAU')]</value>
+      <webElementGuid>ef87e15b-a09d-4fe9-bae4-378694b43469</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

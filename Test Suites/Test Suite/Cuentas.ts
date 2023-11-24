@@ -19,10 +19,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7c8d219b-3962-4f53-87a8-1039f5c08a6f</guid>
+      <guid>a23fb1e0-a603-4ff7-b464-bbafe9fe4f3f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C02-Cuentas. Modificación de domicilio de cuenta de PF</testCaseId>
+      <testCaseId>Test Cases/38-Cuentas/C02-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -107,20 +107,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/38-Cuentas/C14-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a23fb1e0-a603-4ff7-b464-bbafe9fe4f3f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f6dadf28-c1ee-4eb1-9841-c7418f8dd9e5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas. Modificación de subproducto de cuenta de PF</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

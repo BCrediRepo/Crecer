@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>C15-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</name>
+   <name>C02-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>99846429-e126-4401-ad0a-dce8c9e99848</testCaseGuid>
