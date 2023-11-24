@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>frmFiltro</name>
+   <tag></tag>
+   <elementGuidId>e47bf4fb-2713-4e02-8d72-ad1095bb35ad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>html/frameset/frameset/frame</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>IFRAME</value>
+      <webElementGuid>5c7ac179-1271-4453-9e67-d5bb4f718664</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>xpath1700162592831</value>
+      <webElementGuid>9d9cd90d-2aff-46b8-92d8-bc9505990533</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

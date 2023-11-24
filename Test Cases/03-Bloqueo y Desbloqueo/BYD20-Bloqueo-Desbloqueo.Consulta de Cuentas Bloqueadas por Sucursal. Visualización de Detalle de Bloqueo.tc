@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD20-Bloqueo-Desbloqueo.Consulta de Cuentas Bloqueadas por Sucursal. Visualización de Detalle de Bloqueo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d0117222-b0f7-4d67-b597-19b2d0fd66fc</testCaseGuid>
+</TestCaseEntity>

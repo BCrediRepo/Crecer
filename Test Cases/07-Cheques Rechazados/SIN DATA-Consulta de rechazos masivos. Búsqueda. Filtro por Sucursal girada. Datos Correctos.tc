@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SIN DATA-Consulta de rechazos masivos. Búsqueda. Filtro por Sucursal girada. Datos Correctos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b2fdb7ec-8bb8-4c1e-91d1-ae1d0a759a18</testCaseGuid>
+</TestCaseEntity>
