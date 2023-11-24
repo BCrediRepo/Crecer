@@ -51,6 +51,11 @@ for (def row = 1; row < filaNum; row++) {
     WebUI.callTestCase(findTestCase('TEST-8910 - Compensacion Coelsa/CC01-Validacion FT'), [:])
 }
 
+for (def row = 1; row < filaNum; row++) {
+	GlobalVariable.vIDCoelsa = findTestData('Compensacion Coelsa/numOPER').getValue(1, row)
+	WebUI.callTestCase(findTestCase('TEST-8910 - Compensacion Coelsa/CC01bis-Validacion FT BIS'), [:])
+}
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
