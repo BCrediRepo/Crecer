@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TIME OUT-Cheques Rechazados.Consulta Historial del Cheque.Por Sucursal y Número de cheque.Usuario de Casa Central</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>63d53ced-c74e-4c56-9eb0-a504221d24de</testCaseGuid>
+</TestCaseEntity>
