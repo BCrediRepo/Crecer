@@ -81,7 +81,7 @@ assert label.contains('Txn Completa:') == true
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //captura de pantalla PDF
-WebUI.switchToWindowTitle('Microsoft Word - 18505MP.doc - e-forms')
+//WebUI.switchToWindowTitle('Microsoft Word - 18505MP.doc - e-forms')
 
 WebUI.maximizeWindow()
 
@@ -97,7 +97,10 @@ WebUI.click(findTestObject('13-MEP/Verificacion de Firmas - Fil.074 Caseros Cent
 //Segundo control assert
 labelFinalizada = WebUI.getText(findTestObject('13-MEP/Verificacion de Firmas - Fil.074 Caseros Centro/lblFinalizada'))
 
-assert labelFinalizada.contains('FINALIZADA') == true //Control de fin de script
+assert labelFinalizada.contains('FINALIZADA') == true 
+
+
+//Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

@@ -50,7 +50,7 @@ WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
 
 //Ingresa Fecha Proceso
 //WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.POR.DIS.SUC/txtFechaProceso1'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.POR.DIS.SUC/txtFechaProceso1'), '20220801')
+WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.POR.DIS.SUC/txtFechaProceso1'), '20230828')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -101,5 +101,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
