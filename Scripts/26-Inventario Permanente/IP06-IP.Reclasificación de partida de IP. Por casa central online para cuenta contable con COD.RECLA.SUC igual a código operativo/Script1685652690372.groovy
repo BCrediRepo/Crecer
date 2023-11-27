@@ -40,7 +40,7 @@ WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCodig
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'))
 
-WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), 3)
+//WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), 3)
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), '1002388512')
 
@@ -48,9 +48,9 @@ WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/btnDrillDo
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/lblCuenta'))
 
-//WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'))
+WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'))
 //WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'), 3)
-//WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'), '00890170146')
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'), '00890170146')
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCtaContableAltaID'))
 
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCtaContableAltaID'), 3)
