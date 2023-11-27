@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(8) > td:nth-child(3) > a:nth-child(2) > img:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>5598ce52-9425-4c4e-bb1e-d0f61733e066</webElementGuid>
+      <webElementGuid>51d49dad-6666-4d3b-9bc9-a17691284f1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>d9408659-79e9-46e3-9644-69d462742c36</webElementGuid>
+      <webElementGuid>fcde8df0-b55d-4d89-8918-0ba1a476bea2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>c83fef81-fd6a-4c5b-9935-ad609e7787ae</webElementGuid>
+      <webElementGuid>909d36ce-2cf4-4233-b278-effb3dc670af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dropdown_button dropdown_button_BCCLIPPARTIDAS dropdown_button_BCCLIPPARTIDAS_ALTACC</value>
-      <webElementGuid>924d1a69-a35d-470f-8dbc-8a65d65bbec6</webElementGuid>
+      <webElementGuid>14d0d4c1-d296-400f-a6f8-0834edffeb21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>enquiryDropdown(event)</value>
-      <webElementGuid>65e8e2e0-2e14-4082-a38e-8a8ac4afbfaa</webElementGuid>
+      <webElementGuid>4eac9570-04fc-41b5-a8d5-ac5b06c95ca9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Lista de Registros</value>
-      <webElementGuid>708ccc99-8ed1-41f6-b959-e9ec44acb26b</webElementGuid>
+      <webElementGuid>a22ea567-408c-42a0-86a7-edbd088c7558</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/deal/dropdown.gif</value>
-      <webElementGuid>5ca912ec-24b4-4135-a487-317ad544de2e</webElementGuid>
+      <webElementGuid>e7f6d230-483b-4b61-a20b-0da2b810b716</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>cacf25a1-f9ac-435d-b55b-ab54aa01dde8</webElementGuid>
+      <webElementGuid>cd92598a-b3c5-40b2-97af-4eda096b5b74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>enquiryfield</name>
       <type>Main</type>
       <value>BCCL.E.CUENTA</value>
-      <webElementGuid>643e511f-8256-4754-a9c9-4a56fa2f3e30</webElementGuid>
+      <webElementGuid>b2671767-74e5-4dca-8049-60f4c61671a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>dropfield</name>
       <type>Main</type>
       <value>fieldName:CTA.SOCIO</value>
-      <webElementGuid>481e4984-bec8-4a18-af74-264013419512</webElementGuid>
+      <webElementGuid>08e357ec-ca37-490b-b168-8ef48e82632c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>criteriafield</name>
       <type>Main</type>
       <value>L.ID.PER.ORD</value>
-      <webElementGuid>93f0718d-1853-44b5-901e-4e75b9a84975</webElementGuid>
+      <webElementGuid>9e93c738-08dc-4c13-b05b-f7bd6e265c42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>criteriaopfield</name>
       <type>Main</type>
       <value>EQ</value>
-      <webElementGuid>2e25ebd6-1262-46c0-aa48-84a780600d71</webElementGuid>
+      <webElementGuid>a08995e9-ed4a-4c0d-aaee-a338aa9ad37c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>criteriadatafield</name>
       <type>Main</type>
       <value>fieldName:ID.PERSONA</value>
-      <webElementGuid>8275256a-aed3-4347-96da-e726b75d1f7c</webElementGuid>
+      <webElementGuid>90dbe2c7-7719-4bcc-b4f0-4f305c771a37</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>enqfieldname</name>
       <type>Main</type>
       <value>fieldName:CTA.SOCIO</value>
-      <webElementGuid>f04c5230-3b05-4499-98ad-2206f92e44cc</webElementGuid>
+      <webElementGuid>c8fcee95-516a-4fa0-8b7a-ce4081e0230f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>516cb9f4-b294-4efe-9592-ffe80a7dc413</webElementGuid>
+      <webElementGuid>64f92dc9-7242-4041-99c0-392e80352c6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[6]/td[3]/a[1]/img[@class=&quot;dropdown_button dropdown_button_BCCLIPPARTIDAS dropdown_button_BCCLIPPARTIDAS_ALTACC&quot;]</value>
-      <webElementGuid>a27ba917-0dee-498e-afbb-3064ea416230</webElementGuid>
+      <webElementGuid>0035ca5c-13af-4f03-b4bd-0a025fbee311</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[6]/td[3]/a/img</value>
-      <webElementGuid>8a525e67-855e-49ae-86d4-6eaea13a84b4</webElementGuid>
+      <webElementGuid>b0c58c33-9501-4037-8881-fc3a4a3e207f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>(//img[@title='Lista de Registros'])[3]</value>
-      <webElementGuid>795a74dc-5f58-4d4b-97ca-b8d605ae434b</webElementGuid>
+      <webElementGuid>64ce1c71-f190-48e2-94d5-a30242f4dd0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[6]/td[3]/a/img</value>
-      <webElementGuid>7179b03d-1869-468e-a68c-b9eb591b846a</webElementGuid>
+      <webElementGuid>5a69c6ce-8b42-4e44-8081-c56b157fef92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,6 +174,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@title = 'Lista de Registros' and @src = '../plaf/images/bccl/deal/dropdown.gif']</value>
-      <webElementGuid>1e27946a-6f62-4a9f-8e7a-5a8dbb254be6</webElementGuid>
+      <webElementGuid>55cbc410-3f90-4b13-8f77-2e309a50c023</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

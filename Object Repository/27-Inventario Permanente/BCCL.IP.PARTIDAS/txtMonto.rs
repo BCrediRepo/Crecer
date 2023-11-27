@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#fieldName\:IMPORTE\.IP</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>da08caea-12cc-42a5-a06e-b64aca5ca39e</webElementGuid>
+      <webElementGuid>9be70faf-4178-4fad-a0c3-3859716e6a3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>62af4aaa-7841-4de6-b8e3-6b7fe046d1b4</webElementGuid>
+      <webElementGuid>c35c71e3-3ee6-469f-a240-a73260f60ff2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>size</name>
       <type>Main</type>
       <value>19</value>
-      <webElementGuid>8bae8abd-c082-487f-aa55-e5c09bdbe629</webElementGuid>
+      <webElementGuid>8ab497bc-7f99-4dab-bc02-5b2002aaff83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:IMPORTE.IP</value>
-      <webElementGuid>db707434-55a6-46e1-825a-e6d1a960fe35</webElementGuid>
+      <webElementGuid>ee8b0536-f888-460f-baa4-3e37f8e506ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:IMPORTE.IP</value>
-      <webElementGuid>59489bdb-d19e-44bf-886c-92c1204ba87b</webElementGuid>
+      <webElementGuid>43e02a69-0e47-4cb3-9538-f17719b2e6e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>c2cc1ecc-51a9-46fb-a30f-058560a09fd6</webElementGuid>
+      <webElementGuid>3d301d32-7bcf-4db6-8345-c15109d36847</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_BCCLIPPARTIDAS dealbox_BCCLIPPARTIDAS_ALTACS</value>
-      <webElementGuid>32e5d5a7-b86d-4130-80b8-275da9b5f721</webElementGuid>
+      <webElementGuid>f82e9eed-551e-471a-9de1-e6e11204ce26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>19</value>
-      <webElementGuid>20d0299a-a44e-4a1e-a6b4-42001dd831d9</webElementGuid>
+      <webElementGuid>29fb81a7-e5a6-4764-ad02-e1c56c0e5303</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>42a80404-9857-430b-843d-68615b7c1f8c</webElementGuid>
+      <webElementGuid>217bdafc-7599-432d-85d6-4e64c691cca8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_IMPORTE.IP</value>
-      <webElementGuid>5be7350e-82ba-45f8-9c7f-20fe0844c736</webElementGuid>
+      <webElementGuid>dca3a3ab-a55b-43e3-b96b-1c41c7d154a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'IMPORTE.IP','issueToken');</value>
-      <webElementGuid>6c4c76cf-2229-4334-a5da-41773ecbee6b</webElementGuid>
+      <webElementGuid>1a7bc0c6-0fbc-48a7-8e11-1c7f4d0a1624</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>182c567f-5598-4915-85b2-0a45dbc6780f</webElementGuid>
+      <webElementGuid>811378c6-219a-4454-a714-0587a8f0e641</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('IMPORTE.IP','','','issueToken')</value>
-      <webElementGuid>ad959e58-fe99-41b0-8584-3f30592541f5</webElementGuid>
+      <webElementGuid>8e99fb59-d942-482d-8750-f56eb17f6c8c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:IMPORTE.IP&quot;)</value>
-      <webElementGuid>36ab661d-85fd-4473-99fd-5c9c1aa9091b</webElementGuid>
+      <webElementGuid>d9dec637-071e-4192-8dae-4951e4ffa2a1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:IMPORTE.IP']</value>
-      <webElementGuid>cfa28938-cc2a-4834-9df9-2418b4040874</webElementGuid>
+      <webElementGuid>fbd84ada-b71f-4af8-be26-af92ce5527a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[11]/td[3]/input</value>
-      <webElementGuid>07f0e275-0299-4c8b-903e-c82d163cfa35</webElementGuid>
+      <webElementGuid>2d07f7c8-1190-4836-b606-d0e35187aa9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[11]/td[3]/input</value>
-      <webElementGuid>bd2768d5-de36-4145-9f1b-1e7046d6d51a</webElementGuid>
+      <webElementGuid>6a75285c-f5ac-497d-88c4-e35def551648</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +158,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:IMPORTE.IP' and @name = 'fieldName:IMPORTE.IP' and @type = 'text']</value>
-      <webElementGuid>81eeeac4-977f-422d-9dab-606509191851</webElementGuid>
+      <webElementGuid>d2bf54ec-0695-42ec-8db9-9ea1ea081369</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

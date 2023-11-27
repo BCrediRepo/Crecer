@@ -30,11 +30,11 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Accedo al menu de Impuestos
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperacionesdeImpuestosPorDescripcion'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperacionesdeImpuestosPorDescripcion'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperacionesdeImpuestosPorDescripcion'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'))
 
 // Captura el tiempo de inicio
@@ -43,7 +43,7 @@ long startTime = System.currentTimeMillis()
 //Switch a la ventana de impuestos por Posteo
 WebUI.switchToWindowTitle('BCCL.E.IMPTOS.COBDEV.PLANTA')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lnkVer'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lnkVer'), 6)
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -59,7 +59,7 @@ WebUI.click(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Imp
 //Switch a la ventana de Movimiento de Fondos
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 WebUI.maximizeWindow()
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lblTipoOperacion'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lblTipoOperacion'), 6)
 def element = WebUI.getText(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lblTipoOperacion'))
 assert element.contains('Tipo Operacion')
 

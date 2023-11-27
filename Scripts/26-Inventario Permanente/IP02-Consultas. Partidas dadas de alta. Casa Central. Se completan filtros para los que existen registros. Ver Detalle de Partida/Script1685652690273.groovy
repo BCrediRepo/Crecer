@@ -62,6 +62,7 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
+WebUI.delay(120)
 
 WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/lblSucursal'))
 

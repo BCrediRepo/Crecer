@@ -27,9 +27,9 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Accedo al menu de Pases y Transferencias
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkPasesyTransferenciasEntreSocios'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkPasesyTransferenciasEntreSocios'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPasesyTransferenciasEntreSocios'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/39-Pases y Transferencias Entre Socios/lnkPaseEntreCuentasMismaTitularidad'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/39-Pases y Transferencias Entre Socios/lnkPaseEntreCuentasMismaTitularidad'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/39-Pases y Transferencias Entre Socios/lnkPaseEntreCuentasMismaTitularidad'))
 
 //Switch a la ventana de Movimiento de Fondos
@@ -37,27 +37,27 @@ WebUI.switchToWindowTitle('Movimiento de Fondos')
 WebUI.maximizeWindow()
 
 //Completo los campos necesarios para el pase entre socios
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtIdOrdenante'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtIdOrdenante'), 6)
 WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtIdOrdenante'), '2000514092')
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaDebito'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaDebito'), 6)
 WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaDebito'), '03195011374')
 WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaCredito'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaCredito'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaCredito'), 6)
 WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaCredito'), '13190056217')
 WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtImporte'), '10')
 WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtObservaciones'), 'CRECER TEST')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Acepto el Registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnAceptarRegistro'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnAceptarRegistro'))
 
 //Acepto las alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lnkAceptarAlertas'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lnkAceptarAlertas'), 6)
 WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lnkAceptarAlertas'))
 
 //Valido que se haya completado la transaccion
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'))
 def element = WebUI.getText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
@@ -68,11 +68,11 @@ WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.073 Jujuy')
 WebUI.maximizeWindow()
 
 //Fuerzo las firmas y valido que se haya completado la firma
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/select_CANCELARFORZARVERIFICAR'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/select_CANCELARFORZARVERIFICAR'), 6)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/select_CANCELARFORZARVERIFICAR'), 2)
 WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnAceptarRegistroFirmas'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblFINALIZADA'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblFINALIZADA'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblFINALIZADA'))
 def element2 = WebUI.getText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblFINALIZADA'))
 assert element2.contains('FINALIZADA')
