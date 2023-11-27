@@ -62,7 +62,7 @@ WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblMas
 
 WebUI.click(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblBuscadorBoleto'))
 
-WebUI.switchToWindowTitle('Compra-Venta')
+WebUI.switchToWindowTitle('Compra-Venta Historico')
 
 FechaBoleto = WebUI.verifyElementVisible(findTestObject('15-MONEX/08- ENQ BCCL.E.NOFILE.DET.OPER.MONEX/lblFechaBoleto'))
 
