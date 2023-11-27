@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ECQ01-Consulta Monto en echeq pendientes de pago x persona</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>08aab3ad-0a59-4faf-a154-2a5634eb3aa4</testCaseGuid>
+</TestCaseEntity>

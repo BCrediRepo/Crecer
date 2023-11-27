@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,9), findTestData('MainData/Users').getValue(2,9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,42), findTestData('MainData/Users').getValue(2,42))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.EB.POSTEO.INAU
@@ -92,14 +92,25 @@ println TotalRegistros
 WebUI.click(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/btnLiquidar'))
 
 //Abre la pestaña BCCL.AC.CIERRE.CUENTA
-WebUI.switchToWindowTitle('BCCL.AC.CIERRE.CUENTA')
+//WebUI.switchToWindowTitle('BCCL.AC.CIERRE.CUENTA')
+
+//Abre la pestaña Movimiento de Fondos
+WebUI.switchToWindowTitle('Movimiento de Fondos')
+
+//Ver información de la transacción y valida que se muestre un elemento de la tabla
+WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblFecha'))
+
+//Selecciona pestaña Auditoria
+WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnAudit'))
 
 //Valida el mensaje de las tx no autorizadas
-WebUI.waitForElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.AC.CIERRE.CUENTA/lblExistentransaccionespendientesdeautorizar'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.AC.CIERRE.CUENTA/lblExistentransaccionespendientesdeautorizar'))
-def element2 = WebUI.getText(findTestObject('Object Repository/37-Posteo/BCCL.AC.CIERRE.CUENTA/lblExistentransaccionespendientesdeautorizar'))
-assert element2.contains('Existen transacciones pendientes de autorizar.')
+WebUI.waitForElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblOperacionparaliquidarenCajaCAJA'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblOperacionparaliquidarenCajaCAJA'))
+def element2 = WebUI.getText(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblOperacionparaliquidarenCajaCAJA'))
+assert element2.contains('Operacion para liquidar en Caja')
 
+//Volver a la tabla para que no se bloquee el registro
+WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnBCCL.E.EB.POSTEO.INAU'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

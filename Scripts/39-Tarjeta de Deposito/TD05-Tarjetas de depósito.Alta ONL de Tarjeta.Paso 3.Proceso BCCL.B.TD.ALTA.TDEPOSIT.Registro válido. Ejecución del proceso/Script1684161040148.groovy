@@ -54,7 +54,7 @@ assert DatoTarjeta == true
 //Esperamos a que el dropdown este disponible
 WebUI.waitForElementVisible(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/selectSTARTSTOP'), 0)
 //Seleccionamos la opcion 3
-WebUI.selectOptionByIndex(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/selectSTARTSTOP'), 1)
+WebUI.selectOptionByIndex(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/selectSTARTSTOP'), 3)
 
 WebUI.click(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/txtfieldNameVALUE1'))
 //Clickeamos en Aceptar el Registro
@@ -66,7 +66,7 @@ WebUI.click(findTestObject('02-Dashboard/38-Tarjeta de Deposito/btnModificarRegi
 
 WebUI.waitForElementVisible(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/selectSTARTSTOP'), 0)
 //Seleccionamos la opcion 1
-WebUI.selectOptionByIndex(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/selectSTARTSTOP'), 4)
+WebUI.selectOptionByIndex(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/selectSTARTSTOP'), 2)
 
 WebUI.click(findTestObject('40-Tarjeta de Deposito/TSA.SERVICE/btnAceptarelRegistro'))
 

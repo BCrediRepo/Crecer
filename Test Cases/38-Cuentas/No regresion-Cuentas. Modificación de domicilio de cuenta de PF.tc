@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>No regresion-Cuentas. Modificación de domicilio de cuenta de PF</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>32c0cf5e-440b-4c94-ac2f-06bd7380d9b4</testCaseGuid>
+</TestCaseEntity>

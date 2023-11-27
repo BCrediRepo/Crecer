@@ -27,9 +27,9 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Accedo al menu de Transferencias Internas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkAltaTransfInternaOrigenEfectivo'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkAltaTransfInternaOrigenEfectivo'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkAltaTransfInternaOrigenEfectivo'))
 
 //Switch a la ventana de Movimiento de Fondos
@@ -37,32 +37,32 @@ WebUI.switchToWindowTitle('Movimiento de Fondos')
 WebUI.maximizeWindow()
 
 //Completo los campos necesarios para el pase entre socios
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtSucursalDestino'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtSucursalDestino'), 6)
 WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtSucursalDestino'), '074')
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'), 6)
 WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'), '2000514092')
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtObservaciones'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnMotivo'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnMotivo'), 6)
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnMotivo'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblFAC'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblFAC'), 6)
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblFAC'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtImporte'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtImporte'), 6)
 WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtImporte'), '100')
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdBeneficiario'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdBeneficiario'), 6)
 WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdBeneficiario'), '1000873562')
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtObservaciones'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnAceptarRegistro'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnAceptarRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnAceptarRegistro'))
 
 //Acepto las alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lnkAceptarAlertas'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lnkAceptarAlertas'), 6)
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lnkAceptarAlertas'))
 
 //Valido que se haya completado la transaccion
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblTxnCompleta'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblTxnCompleta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblTxnCompleta'))
 def element = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblTxnCompleta'))
 assert element.contains('Txn Completa:')

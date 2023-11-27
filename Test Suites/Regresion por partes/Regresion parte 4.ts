@@ -232,7 +232,7 @@
       <guid>8b96c65d-11c9-4f1e-a0d0-cc20c5e711c6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C02-Cuentas. Modificación de domicilio de cuenta de PF</testCaseId>
+      <testCaseId>Test Cases/38-Cuentas/No regresion-Cuentas. Modificación de domicilio de cuenta de PF</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -603,14 +603,7 @@
       <guid>0f53830c-cc65-41d8-b65c-2e5d55e8ba53</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>52797be9-b7c9-4784-a0e7-9b221ef92067</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas. Modificación de subproducto de cuenta de PF</testCaseId>
+      <testCaseId>Test Cases/38-Cuentas/C02-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

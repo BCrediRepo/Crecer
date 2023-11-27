@@ -55,22 +55,20 @@ WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados
 
 WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
 
-//WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'), '1000275776')
-
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'), '1000739858')
+WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'), '1000275776')
 
 WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnValidarRegistro'))
 
-WebUI.waitForElementVisible(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'), 90)
+WebUI.waitForElementVisible(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'), 6)
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
-//WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), 90)
+WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), 6)
 
 //Agrego un nuevo firmante para luego eliminarlo validando el aceptar alertas
-//if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))) {
-   // WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
-//}
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), FailureHandling.CONTINUE_ON_FAILURE)) {
+    WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
+}
 
 WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
 
@@ -90,7 +88,7 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CH
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))) {
+if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), FailureHandling.CONTINUE_ON_FAILURE)) {
     WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
 }
 
@@ -100,7 +98,10 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechaza
 
 def element = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'))
 
-assert element.contains('Txn Completa:') //---------------------------------------------------------------------------------------------------------------------
+assert element.contains('Txn Completa:') 
+
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CICC01-Cheques.Pago de Cheques por Cámara.Consulta de Cheques Cámara Recibida.Filtro por Fecha, Número de Cheque y Número de cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>764385d0-04ed-4e8a-9beb-84e92153ab6a</testCaseGuid>
+</TestCaseEntity>

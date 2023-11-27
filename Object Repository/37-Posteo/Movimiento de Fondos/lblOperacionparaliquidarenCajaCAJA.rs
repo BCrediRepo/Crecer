@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblOperacionparaliquidarenCajaCAJA</name>
+   <tag></tag>
+   <elementGuidId>2fa3add0-2bce-467e-9233-c0a9f75f1652</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab3']/tbody/tr/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1494a6dc-963c-4b9d-9715-d2af550b756b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER disabled_dealbox_FUNDSTRANSFER_POSTEOINGRESOS</value>
+      <webElementGuid>b4448563-1ae0-4850-b9e3-32ffd14930f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Operacion para liquidar en Caja*CAJA</value>
+      <webElementGuid>b4504bd6-65db-4eba-bf22-cdb400969fe8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab3&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER disabled_dealbox_FUNDSTRANSFER_POSTEOINGRESOS&quot;]</value>
+      <webElementGuid>9d2d4c23-586b-4194-88b3-7f7f05696716</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab3']/tbody/tr/td[3]/span</value>
+      <webElementGuid>48f32fde-b817-4760-828b-de32ad6e5a87</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alertas.1'])[1]/following::span[1]</value>
+      <webElementGuid>77333a62-a68f-43c0-8f87-6ea5b3d72201</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Codigo Com/Imp.1'])[1]/following::span[2]</value>
+      <webElementGuid>9bab982d-213c-48ca-8535-5b27139bcc9e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado del Registro'])[1]/preceding::span[1]</value>
+      <webElementGuid>8b933118-caf2-472a-a360-28c6db048826</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INAO'])[1]/preceding::span[1]</value>
+      <webElementGuid>5a2332d0-b947-4ade-8140-d742fcce50c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Operacion para liquidar en Caja*CAJA']/parent::*</value>
+      <webElementGuid>b80dfd8f-aa03-436c-92ce-276f5c6f3dce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[3]/tbody/tr/td[3]/span</value>
+      <webElementGuid>6a59892e-bcd0-4631-8fa0-07175b9a0b4e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Operacion para liquidar en Caja*CAJA' or . = 'Operacion para liquidar en Caja*CAJA')]</value>
+      <webElementGuid>e3c517bb-3c97-41c0-adc3-7a90b5f8cde0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
