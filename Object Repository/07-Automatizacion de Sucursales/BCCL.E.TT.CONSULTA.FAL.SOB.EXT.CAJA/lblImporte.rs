@@ -6,6 +6,10 @@
    <elementGuidId>e56fec4f-7a11-4fb1-9c88-11252f2b3b90</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;columnHeaderText10&quot;)[count(. | //*[@id = 'columnHeaderText10' and (text() = 'Importe' or . = 'Importe')]) = count(//*[@id = 'columnHeaderText10' and (text() = 'Importe' or . = 'Importe')])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText10']</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>#columnHeaderText10</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>56c193d0-fe17-4200-82ef-8cc03626a65d</webElementGuid>
+      <webElementGuid>dab979b4-424d-457c-8858-943859e0bdea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>6663c299-7112-4718-9c92-e4353f9316c4</webElementGuid>
+      <webElementGuid>96ace49b-8cf4-4ca2-ab05-cb42d9373aba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>1c55f83d-e43c-44a6-9cfc-5082a3e28ecc</webElementGuid>
+      <webElementGuid>efefd276-fb10-4951-816a-9e6baefeca1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText10</value>
-      <webElementGuid>c32450ed-0975-47f5-9523-e397084a349a</webElementGuid>
+      <webElementGuid>e4768f89-fd19-4f18-82f9-533a0d9e0579</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,15 +58,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Importe</value>
-      <webElementGuid>8042f13f-54a5-45c9-9c41-6d11d51f5b8a</webElementGuid>
+      <webElementGuid>420341f4-b377-466c-8c63-f246a2aee05c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText10&quot;)</value>
-      <webElementGuid>367a406f-0141-4be5-89ad-17bca8f0ce9c</webElementGuid>
+      <webElementGuid>8322d15e-ac7b-441b-a66b-25b59a747d13</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText10']</value>
-      <webElementGuid>ecee8a4b-d835-4ea2-b693-c72dc4c0e391</webElementGuid>
+      <webElementGuid>dd08e8d0-8a74-492a-a3a8-2c2e258d197e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader10']/table/tbody/tr/th</value>
-      <webElementGuid>e1bcf0fe-ec3d-4643-8485-4985478dcf15</webElementGuid>
+      <webElementGuid>7ada679e-c14b-4992-a9fa-66f4f728072b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/following::th[3]</value>
-      <webElementGuid>efcbedba-e680-4879-b142-0bc24a2d8c98</webElementGuid>
+      <webElementGuid>d6765625-61f0-4d0e-b753-87ba8a34a4ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha'])[1]/following::th[6]</value>
-      <webElementGuid>b4297174-a9d3-4010-ac37-9053b373c7a6</webElementGuid>
+      <webElementGuid>5c2cb4d3-5881-437e-9816-c5d1c879eb85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Extorno'])[1]/preceding::th[2]</value>
-      <webElementGuid>639f37d1-0210-4499-8dc2-94759c99ae35</webElementGuid>
+      <webElementGuid>ddd5c57d-b317-47e4-be66-c8faf26560d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Txn Id'])[1]/preceding::th[5]</value>
-      <webElementGuid>b951078c-22cc-4689-9598-7aae61244098</webElementGuid>
+      <webElementGuid>1d1d8482-418d-4dcd-bd14-651d15fb1e95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Importe']/parent::*</value>
-      <webElementGuid>a0dec10a-507a-4f2d-9828-e413efde3f3c</webElementGuid>
+      <webElementGuid>c8abec6d-cb7c-4c83-9739-aa15299a43b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[10]/table/tbody/tr/th</value>
-      <webElementGuid>b5e1206b-7d76-4909-9335-b82ca8a40c3f</webElementGuid>
+      <webElementGuid>8862d625-d6e2-482d-9ab1-ed7a40d4862b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText10' and (text() = 'Importe' or . = 'Importe')]</value>
-      <webElementGuid>723a3afd-0bb5-4967-b6f8-7e9d623eb443</webElementGuid>
+      <webElementGuid>542eeaff-7c99-4bd7-99f3-3ade136d2f94</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
