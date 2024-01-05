@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>COM42-Consulta de Comisiones Recicladas.Estado igual a RECICLADO.NO.COBRADO.Modificar Estado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d7f0a13d-7549-4790-8979-3ba2e09b7e63</testCaseGuid>
+</TestCaseEntity>

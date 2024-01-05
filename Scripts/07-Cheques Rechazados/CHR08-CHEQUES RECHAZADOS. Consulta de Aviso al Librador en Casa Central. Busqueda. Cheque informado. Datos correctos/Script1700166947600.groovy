@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados
 //Seleccionar "Consulta de aviso al librado"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
 
-//Cambiar ventada "BCCL.E.CQ.CHRECH.AVI.LIBRADOR"
+//Cambiar ventana "BCCL.E.CQ.CHRECH.AVI.LIBRADOR"
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
 //Filtro limpieza

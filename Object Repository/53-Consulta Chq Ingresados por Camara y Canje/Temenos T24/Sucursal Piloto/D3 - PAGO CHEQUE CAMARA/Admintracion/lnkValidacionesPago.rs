@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkValidacionesPago</name>
+   <tag></tag>
+   <elementGuidId>3f41461c-c9e5-4a10-ad50-595ad813fc8d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.CQ.VALIDACIONES.PAGO,INPUT');processMenuHeaderText('VALIDACIONES PAGO')&quot;])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>e665ad40-a57f-412f-ae9f-64bba705dd1d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('CONTRACT','BCCL.CQ.VALIDACIONES.PAGO,INPUT');processMenuHeaderText('VALIDACIONES PAGO')</value>
+      <webElementGuid>53e798ec-bf73-4f78-8900-9724325d3634</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('BCCL.CQ.VALIDACIONES.PAGO,INPUT');</value>
+      <webElementGuid>3e423600-93c2-4967-ab88-b7be2775eaef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>VALIDACIONES PAGO </value>
+      <webElementGuid>06dfaec8-1d94-43e3-8fc0-6463b1071972</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
+      <webElementGuid>53bfb193-1c09-4cad-9b18-d5bd225a5af5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.CQ.VALIDACIONES.PAGO,INPUT');processMenuHeaderText('VALIDACIONES PAGO')&quot;])[2]</value>
+      <webElementGuid>a25eb742-1dde-4a8b-832e-c7cc28736942</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[20]/ul/li[2]/ul/li[4]/a</value>
+      <webElementGuid>727725ab-12c9-4610-8279-d196d22dc6c8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'VALIDACIONES PAGO')])[2]</value>
+      <webElementGuid>99f357c9-9c3d-49dd-b0bc-11a5ff6e1832</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='VARIABLES DE VALIDACION'])[2]/following::a[1]</value>
+      <webElementGuid>f57e97a4-47bb-4f2e-92ea-816c2d4e478b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACCIONES DE VALIDACION'])[2]/following::a[2]</value>
+      <webElementGuid>7dcc215f-590b-4292-8ddc-36d780d3f7b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='D4 - Log de Auditoria'])[1]/preceding::a[1]</value>
+      <webElementGuid>21b28f73-5b25-4f6a-9579-6630fa918132</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actividad registrada por usuario'])[1]/preceding::a[1]</value>
+      <webElementGuid>55f5c6e5-4564-4cda-8505-270fc4364e0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, &quot;javascript:docommand('BCCL.CQ.VALIDACIONES.PAGO,INPUT');&quot;)])[2]</value>
+      <webElementGuid>6fcc6d95-3b2f-4186-9311-4e9bba40d7da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[20]/ul/li[2]/ul/li[4]/a</value>
+      <webElementGuid>9915e703-583c-4eaa-bcfb-169596a89cda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;BCCL.CQ.VALIDACIONES.PAGO,INPUT&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'VALIDACIONES PAGO ' or . = 'VALIDACIONES PAGO ')]</value>
+      <webElementGuid>2b0c7d3d-6e60-4ad3-ba0c-d529eaf4de36</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

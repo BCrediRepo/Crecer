@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblPRODUCTO_______________________________</name>
+   <name>lblEstado</name>
    <tag></tag>
-   <elementGuidId>86a6b3ae-161d-4f3e-9b40-0b6c49d039f1</elementGuidId>
+   <elementGuidId>733b1bf7-a645-4cb7-831a-d1f0de9b8c5b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr[4]/td/span</value>
+         <key>CSS</key>
+         <value>span.disabled_dealbox.disabled_dealbox_BCCLAPPIEZAS.disabled_dealbox_BCCLAPPIEZAS_BCCLVAPCONSULTAPIEZA</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,94 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>5b7a406b-77fd-4739-8570-6b38409400de</webElementGuid>
+      <webElementGuid>1d1d1c61-2d5b-40b6-9cd7-2dedf122db4c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>comment comment_BCCLAPPIEZAS comment_BCCLAPPIEZAS_BCCLVAPSTSENVIAFILIAL</value>
-      <webElementGuid>abdaebdb-6fac-4019-a14b-b72ae4093aee</webElementGuid>
+      <value>disabled_dealbox disabled_dealbox_BCCLAPPIEZAS disabled_dealbox_BCCLAPPIEZAS_BCCLVAPCONSULTAPIEZA</value>
+      <webElementGuid>92dce941-1d02-49bd-8d9b-93d7d5811fd5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PRODUCTO_______________________________</value>
-      <webElementGuid>ec0a10c2-05d5-4ed1-b97d-c71991b72808</webElementGuid>
+      <value>090</value>
+      <webElementGuid>ff13d1d5-d154-4b40-8694-bd8ec9d32432</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab1&quot;)/tbody[1]/tr[4]/td[@class=&quot;field field_BCCLAPPIEZAS field_BCCLAPPIEZAS_BCCLVAPSTSENVIAFILIAL&quot;]/span[@class=&quot;comment comment_BCCLAPPIEZAS comment_BCCLAPPIEZAS_BCCLVAPSTSENVIAFILIAL&quot;]</value>
-      <webElementGuid>76ee971b-49fd-44ed-abcc-b3ec4a8a3cdc</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLAPPIEZAS disabled_dealbox_BCCLAPPIEZAS_BCCLVAPCONSULTAPIEZA&quot;]</value>
+      <webElementGuid>1e8b2d33-7211-462b-af5a-f545d42762ec</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[4]/td/span</value>
-      <webElementGuid>0be9ec71-050d-410a-b1ab-95698a95eac0</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
+      <webElementGuid>e8e5ea2d-4e35-4190-8100-45fd5a387f76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal'])[1]/following::span[2]</value>
-      <webElementGuid>200a0289-fd96-43b3-87a3-f5d854aa9b53</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ESTADO'])[1]/following::span[1]</value>
+      <webElementGuid>90680260-0df4-4e4c-b933-5ec0b6384dc8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIN PLASTICOS P'])[1]/following::span[2]</value>
-      <webElementGuid>4e11ff76-b8a4-4980-880a-e6b0a01c5d68</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auditoria'])[1]/following::span[1]</value>
+      <webElementGuid>1f9f867a-f577-4dd2-a392-cf97c5e7f599</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto'])[1]/preceding::span[1]</value>
-      <webElementGuid>f99943b2-4851-432d-b547-de92df135a80</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entregada al Socio'])[1]/preceding::span[1]</value>
+      <webElementGuid>8866cc65-3b66-4876-a156-6fc281c8610b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='VISA'])[1]/preceding::span[1]</value>
-      <webElementGuid>38cbb763-e649-448f-b9b0-7c4e9785adc2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado Actual'])[1]/preceding::span[2]</value>
+      <webElementGuid>cd156241-0a7a-429d-829d-85bdba661f8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PRODUCTO_______________________________']/parent::*</value>
-      <webElementGuid>ae092e44-b682-44b6-a89d-4a741d8b9930</webElementGuid>
+      <value>//*/text()[normalize-space(.)='090']/parent::*</value>
+      <webElementGuid>66ce47fd-2097-4db7-86ae-19106183c5a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[4]/td/span</value>
-      <webElementGuid>3c0b839f-dded-40ee-9b3b-9b4025ba71ba</webElementGuid>
+      <value>//td[3]/span</value>
+      <webElementGuid>6894e9e6-ebc9-4225-81a5-88e17bccf397</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'PRODUCTO_______________________________' or . = 'PRODUCTO_______________________________')]</value>
-      <webElementGuid>dd3c0e61-6e81-483b-96e4-05f97ee63841</webElementGuid>
+      <value>//span[(text() = '090' or . = '090')]</value>
+      <webElementGuid>2374b766-8644-49b2-9a13-13a79c9b75de</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

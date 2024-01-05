@@ -291,4 +291,18 @@
       <testCaseId>Test Cases/05-Comisiones/COM40-PH Consulta Distribución porcentaje comisiones Telecoop. Completitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e44bb7f8-a8e8-4c65-a301-b8dac23ad93f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM41-Comisiones.Comisiones Sobre Operaciones No Monetarias.Alta Echeq Diferido ECHD.Comision de Emision</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c67eef45-6ed0-4c79-96bc-ec6ec3864806</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/05-Comisiones/COM42-Consulta de Comisiones Recicladas.Estado igual a RECICLADO.NO.COBRADO.Modificar Estado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

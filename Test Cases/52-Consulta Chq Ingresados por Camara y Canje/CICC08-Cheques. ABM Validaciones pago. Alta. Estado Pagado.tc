@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CICC08-Cheques. ABM Validaciones pago. Alta. Estado Pagado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8dc68cb1-fdec-47ea-88cb-ae4ecb6be026</testCaseGuid>
+</TestCaseEntity>

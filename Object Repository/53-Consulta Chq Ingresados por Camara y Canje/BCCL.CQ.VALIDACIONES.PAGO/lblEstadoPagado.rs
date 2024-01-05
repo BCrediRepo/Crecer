@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblEstadoPagado</name>
+   <tag></tag>
+   <elementGuidId>3a7913ec-c477-410a-bfaf-7df2fea3162f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[2]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d5f64cc5-8876-4cd6-89b2-34c8966a67fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLCQVALIDACIONESPAGO disabled_dealbox_BCCLCQVALIDACIONESPAGO_INPUT</value>
+      <webElementGuid>605198c9-47c1-45bf-b048-f6ed3b7dd7e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pagado</value>
+      <webElementGuid>6e9296f4-f1ac-444e-811a-f85104a64d71</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[2]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLCQVALIDACIONESPAGO disabled_dealbox_BCCLCQVALIDACIONESPAGO_INPUT&quot;]</value>
+      <webElementGuid>a3425d87-cf0a-4c27-9c53-aa64b9958826</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[2]/td[3]/span</value>
+      <webElementGuid>da48d2ab-68fc-4dcd-a7ec-89971b78471c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado'])[1]/following::span[1]</value>
+      <webElementGuid>c167ba51-4686-4040-a746-b62e3bc83b5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accion'])[1]/following::span[2]</value>
+      <webElementGuid>e9622f67-1fa9-4185-adcd-c69eaa7bc14f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Codigo OP Certificado'])[1]/preceding::span[1]</value>
+      <webElementGuid>8471c2b4-d185-4867-8952-ca0fc92c5a07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cod OP = 191'])[1]/preceding::span[2]</value>
+      <webElementGuid>cbd561ed-fb29-4e58-8eb8-cd7774a8a389</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Pagado']/parent::*</value>
+      <webElementGuid>4d21d3d6-e26f-4369-ad69-8a0d21fd734b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[3]/span</value>
+      <webElementGuid>13b9cef6-2833-45a0-91d5-821f7af5de9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Pagado' or . = 'Pagado')]</value>
+      <webElementGuid>1d3f75ba-bfdd-4f1f-a2c8-b51221492495</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

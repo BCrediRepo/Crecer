@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APT10-Administracion de Piezas con Tarjetas. Consultas al Maestro de Card-Carrier. Piezas en Transito</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eaff8b66-72c5-468c-a1e2-43747d8d3372</testCaseGuid>
+</TestCaseEntity>

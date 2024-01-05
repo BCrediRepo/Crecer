@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC10-Cierre de Cuenta.Consulta de cuentas candidatas a cierre.Cuenta activa con más de X cheques rechazados</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11f60fea-22e2-4ba2-ab21-034809854a4f</testCaseGuid>
+</TestCaseEntity>

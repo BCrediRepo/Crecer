@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APT11-Administracion de Piezas con Tarjetas. Entrega de TARJETAS al SOCIO. Entrega al Socio por Nro. de PIEZA</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6fee1cb1-4426-412c-81b9-df179c9a430c</testCaseGuid>
+</TestCaseEntity>

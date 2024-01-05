@@ -46,4 +46,53 @@
       <testCaseId>Test Cases/07-Cheques Rechazados/CHR05-Modificación estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>34da110f-9a70-40ec-80c5-4400a6769d50</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR06-Cheques Rechazados.Consulta de Aviso al Librador en Casa Central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>faad233c-feb3-4801-a024-7178e2abe3f1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR07-Consulta de Cheques Rechazados. Usuario de Casa Central. Ingresar filtro Sucursal y Rango de fechas de rechazo con datos válidos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c1d4a875-daba-43a6-9ea4-272cb03fdea1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR08-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Cheque informado. Datos correctos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1fc0b85f-523f-4ef4-8370-4b7d5528080a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR09-Cheques Rechazados.Cuentas Corrientes.Consulta y Actualización Baja Programada de Firmantes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e83ad004-bbc1-4add-85b0-6910e435d9e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR10-Cheques Rechazados.Consulta de Cheques Informados al BCRA.Por Fecha de Generación.Usuario de Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7e8bb5ce-e14f-42f7-bd51-3f4ce6247f69</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR11-Cheques rechazados.Consulta por Conciliación de Multas. Usuario de Sucursal. Ingresar filtro conciliado y rango de fechas de cobro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aeae79b5-3cda-48d0-acd6-c5d09b075f75</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR12-Cheques rechazados.Asignación manual de firmantes. Agregar y Eliminar Firmante</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

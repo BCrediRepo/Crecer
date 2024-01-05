@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkBusquedaporNombreoDocumento</name>
+   <tag></tag>
+   <elementGuidId>5c53e935-17cb-485e-9efa-227dfa26a65e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.AP.ENQ.NOMBRE.DOC');javascript:processMenuHeaderText('Busqueda por Nombre o Documento')&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Busqueda por Nombre o Documento ' or . = 'Busqueda por Nombre o Documento ')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>c78ae699-afcc-4310-8811-5484bba240e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:doenq('ENQ BCCL.E.AP.ENQ.NOMBRE.DOC')</value>
+      <webElementGuid>12834f49-ae3b-4c0b-af58-af33541c61ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.AP.ENQ.NOMBRE.DOC');javascript:processMenuHeaderText('Busqueda por Nombre o Documento')</value>
+      <webElementGuid>ed38f1a1-ac88-40a9-a843-b8e52412eadb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>keyboardlinks-scanned</value>
+      <webElementGuid>ffdc4c28-7d0a-4087-93eb-2f526a7391dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Busqueda por Nombre o Documento </value>
+      <webElementGuid>3c5a18d3-6e24-4ba8-810e-fdac3cf33387</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[@class=&quot;keyboardlinks-scanned&quot;]</value>
+      <webElementGuid>7901c45d-03c4-4974-a1a5-f02aa10c1bcb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.AP.ENQ.NOMBRE.DOC');javascript:processMenuHeaderText('Busqueda por Nombre o Documento')&quot;]</value>
+      <webElementGuid>052eea16-2a6e-405a-9e90-d596af4ab271</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[4]/li/ul/li/ul/li[4]/a</value>
+      <webElementGuid>f555b492-5263-4461-8f74-a6cb92954e69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Busqueda por Nombre o Documento')]</value>
+      <webElementGuid>564cbf53-b0e7-4676-ae62-4dac57b3f344</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recepcion individual de Card-Carrier'])[1]/following::a[1]</value>
+      <webElementGuid>818e0b9f-d64e-48b8-bb5c-51191fecac6c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recepcion Masiva Piezas Urbano'])[1]/following::a[2]</value>
+      <webElementGuid>af50ed3f-2b84-4cb6-810b-421eeafa9db4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Carga Manual de Card-Carrier no encontrado'])[1]/preceding::a[1]</value>
+      <webElementGuid>282655ab-763c-4bc9-9ae5-c1b3cb7ad169</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recepcion masiva por codigo de barra'])[1]/preceding::a[2]</value>
+      <webElementGuid>df7bbf19-58a0-4c80-9530-7d71d9094139</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Busqueda por Nombre o Documento']/parent::*</value>
+      <webElementGuid>f521f1a4-d000-4903-8e0f-4fcacbc33e5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.AP.ENQ.NOMBRE.DOC')&quot;)]</value>
+      <webElementGuid>25914017-5bea-4168-9759-20aba3d6c153</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[4]/li/ul/li/ul/li[4]/a</value>
+      <webElementGuid>216aa232-6dcb-4da9-b317-811a05294e12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.AP.ENQ.NOMBRE.DOC&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Busqueda por Nombre o Documento ' or . = 'Busqueda por Nombre o Documento ')]</value>
+      <webElementGuid>248225d8-6de3-4224-9d67-303f371d6a7d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

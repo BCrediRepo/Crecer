@@ -74,4 +74,25 @@
       <testCaseId>Test Cases/24-Cierre de Cuenta/CDC09-Cuentas activa con cant de cheques rechazados</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>37454829-e318-421d-bc59-29e779308f40</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC10-Cierre de Cuenta.Consulta de cuentas candidatas a cierre.Cuenta activa con más de X cheques rechazados</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>32343178-bd43-4189-b133-0c5ebceba97b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC11-Proceso de cierre de cuentas. Ejecución del proceso con cuentas a cerrarse por inactivación y por cierre automático</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>53c4fab8-e016-4488-b830-ed3a48281109</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC12-Cierre de cuenta.Administracion de nomina.Modificación de nómina de cuenta corriente en estado Cerrada. Adición de cheques a una nómina existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

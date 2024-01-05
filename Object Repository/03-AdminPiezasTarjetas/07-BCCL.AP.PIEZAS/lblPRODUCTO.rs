@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblPRODUCTO</name>
+   <tag></tag>
+   <elementGuidId>86a6b3ae-161d-4f3e-9b40-0b6c49d039f1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[4]/td/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>5b7a406b-77fd-4739-8570-6b38409400de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>comment comment_BCCLAPPIEZAS comment_BCCLAPPIEZAS_BCCLVAPSTSENVIAFILIAL</value>
+      <webElementGuid>abdaebdb-6fac-4019-a14b-b72ae4093aee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PRODUCTO_______________________________</value>
+      <webElementGuid>ec0a10c2-05d5-4ed1-b97d-c71991b72808</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[4]/td[@class=&quot;field field_BCCLAPPIEZAS field_BCCLAPPIEZAS_BCCLVAPSTSENVIAFILIAL&quot;]/span[@class=&quot;comment comment_BCCLAPPIEZAS comment_BCCLAPPIEZAS_BCCLVAPSTSENVIAFILIAL&quot;]</value>
+      <webElementGuid>76ee971b-49fd-44ed-abcc-b3ec4a8a3cdc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[4]/td/span</value>
+      <webElementGuid>0be9ec71-050d-410a-b1ab-95698a95eac0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal'])[1]/following::span[2]</value>
+      <webElementGuid>200a0289-fd96-43b3-87a3-f5d854aa9b53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIN PLASTICOS P'])[1]/following::span[2]</value>
+      <webElementGuid>4e11ff76-b8a4-4980-880a-e6b0a01c5d68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto'])[1]/preceding::span[1]</value>
+      <webElementGuid>f99943b2-4851-432d-b547-de92df135a80</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='VISA'])[1]/preceding::span[1]</value>
+      <webElementGuid>38cbb763-e649-448f-b9b0-7c4e9785adc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='PRODUCTO_______________________________']/parent::*</value>
+      <webElementGuid>ae092e44-b682-44b6-a89d-4a741d8b9930</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td/span</value>
+      <webElementGuid>3c0b839f-dded-40ee-9b3b-9b4025ba71ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'PRODUCTO_______________________________' or . = 'PRODUCTO_______________________________')]</value>
+      <webElementGuid>dd3c0e61-6e81-483b-96e4-05f97ee63841</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

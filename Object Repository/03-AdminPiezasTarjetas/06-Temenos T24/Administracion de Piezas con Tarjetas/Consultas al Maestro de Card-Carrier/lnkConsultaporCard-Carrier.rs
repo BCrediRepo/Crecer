@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkConsultaporCard-Carrier</name>
+   <tag></tag>
+   <elementGuidId>ea06ef36-a73f-46d4-8d36-6d263c378d55</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.AP.PIEZAS,BCCL.V.AP.CONSULTA.PIEZA');processMenuHeaderText('Consulta por Card-Carrier')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>34a641c1-632f-4397-a501-432a2752617b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('CONTRACT','BCCL.AP.PIEZAS,BCCL.V.AP.CONSULTA.PIEZA');processMenuHeaderText('Consulta por Card-Carrier')</value>
+      <webElementGuid>6f6cfb29-091f-4457-89d2-2bf54a7079f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('BCCL.AP.PIEZAS,BCCL.V.AP.CONSULTA.PIEZA');</value>
+      <webElementGuid>85ea9b6c-c857-49ea-b673-6b75050eb92b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consulta por Card-Carrier </value>
+      <webElementGuid>fad40351-c4b8-4b6f-ae5e-388318b89b46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
+      <webElementGuid>a4b2f83e-7f6e-4319-bc8f-bc7fb83dcc5c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('CONTRACT','BCCL.AP.PIEZAS,BCCL.V.AP.CONSULTA.PIEZA');processMenuHeaderText('Consulta por Card-Carrier')&quot;]</value>
+      <webElementGuid>a274dc44-05f5-4a53-9336-2378aeaa3c22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[4]/li/ul/li[4]/ul/li[2]/a</value>
+      <webElementGuid>efa2ddd7-1eaa-48f6-9a3b-67efb38590d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Consulta por Card-Carrier')]</value>
+      <webElementGuid>e0d052d8-830a-4dfc-80ba-ba1f30dc4c8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccion por Nombre / Documento / Sucursal'])[1]/following::a[1]</value>
+      <webElementGuid>ec5a71e8-b561-4738-930f-396fc489685b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas al Maestro de Card-Carrier'])[1]/following::a[2]</value>
+      <webElementGuid>5068c1de-e290-4b56-adf3-a9866b64b294</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Arqueo en linea'])[1]/preceding::a[1]</value>
+      <webElementGuid>79fb87c4-0d42-429e-ba70-b0a3f8631e09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Piezas entregadas en el dia'])[1]/preceding::a[2]</value>
+      <webElementGuid>608b23ca-2a30-4562-bc7c-6039016d317d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Consulta por Card-Carrier']/parent::*</value>
+      <webElementGuid>983abde6-37ed-46be-ac90-0a95af82bab5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:docommand('BCCL.AP.PIEZAS,BCCL.V.AP.CONSULTA.PIEZA');&quot;)]</value>
+      <webElementGuid>38608a01-a4e0-4cdf-9259-94c3139cb209</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[4]/li/ul/li[4]/ul/li[2]/a</value>
+      <webElementGuid>b33091db-1059-4feb-b322-bbb03e4ee85c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;BCCL.AP.PIEZAS,BCCL.V.AP.CONSULTA.PIEZA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta por Card-Carrier ' or . = 'Consulta por Card-Carrier ')]</value>
+      <webElementGuid>ec15c6e6-c708-4a7f-8f7a-d9eead14f43a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CICC06-Cheques.Pago de Cheques por CámaraTrx ABM Validaciones Pago.Alta.Estado Pagado. Campos Obligatorios Completos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dd730bf2-ee54-4b9b-a091-aff68f8156f2</testCaseGuid>
+</TestCaseEntity>
