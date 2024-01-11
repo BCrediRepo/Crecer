@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DE07-Depositos-Extracciones.Verificacion de Firmas.Verificacion de firmas sobre cuenta Persona Fisica</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aecb4df1-975f-4bf2-8fea-c98ddb6e49cb</testCaseGuid>
+</TestCaseEntity>

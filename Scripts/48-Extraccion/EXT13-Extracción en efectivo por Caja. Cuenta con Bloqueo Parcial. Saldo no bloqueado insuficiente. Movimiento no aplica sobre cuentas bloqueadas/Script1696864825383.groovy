@@ -46,8 +46,9 @@ WebUI.click(findTestObject('49-Extracciones/TELLER/btnAceptarRegistro'))
 
 mensaje = WebUI.getText(findTestObject('49-Extracciones/TELLER/lblCuentaCerrada'))
 
-assert mensaje.contains('FONDOS INSUFICIENTES') == true //------------------------------
-//Control de fin de script
+assert mensaje.contains('FONDOS INSUFICIENTES') == true 
+
+//------------------------------//Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

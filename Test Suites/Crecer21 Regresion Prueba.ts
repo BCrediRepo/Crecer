@@ -235,7 +235,7 @@
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Test Suite/Legales</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Test Suite/Cobranza de Legales</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>

@@ -15,14 +15,14 @@
       <guid>7a1d83c1-706b-4a6c-80a8-7bba81d3aba7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/27-Legales/LEG01-Legales.Cobranza de legales.Txn de cobranza de legales BCCL.COBRANZAS.LEGALES INPUT F3</testCaseId>
+      <testCaseId>Test Cases/27-Cobranza de Legales/LEG03-Version de input de cobranza de legales-Ingreso de registro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6392acea-8f74-4be3-9392-5644e704b2d3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/27-Legales/LEG02-Legales.Ingreso de abogado. Cuenta corriente en legales con abogado no ingresado</testCaseId>
+      <testCaseId>Test Cases/27-Cobranza de Legales/LEG02-Legales.Ingreso de abogado. Cuenta corriente en legales con abogado no ingresado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -226,13 +226,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/38-Cuentas/C01-Cuentas. Modificación de denominación de cuenta de PJ</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8b96c65d-11c9-4f1e-a0d0-cc20c5e711c6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/No regresion-Cuentas. Modificación de domicilio de cuenta de PF</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

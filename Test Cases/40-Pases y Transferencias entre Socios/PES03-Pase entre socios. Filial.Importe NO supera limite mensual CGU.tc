@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PES03-Pase entre socios. Filial.Importe NO supera limite mensual CGU</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e979e431-552d-4a64-94a6-5d02afce827e</testCaseGuid>
+</TestCaseEntity>

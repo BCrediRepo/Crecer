@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DE03-Depositos-Extracciones.Cheque Mostrador.Trx Pago de Cheque Mostrador por Ventanilla.Destinatario es titular de Cta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1730cadf-0242-45c1-9646-04f308c0b410</testCaseGuid>
+</TestCaseEntity>
