@@ -1,0 +1,171 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
+		2, 1))
+
+WebUI.maximizeWindow()
+
+//Ir a pases y transferencias de socios
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPasesyTransferenciasEntreSocios'))
+
+//Ir a Pase entre Cuentas Misma Titularidad 
+WebUI.click(findTestObject('Object Repository/02-Dashboard/39-Pases y Transferencias Entre Socios/lnkPaseEntreCuentasMismaTitularidad'))
+
+//Switch a la ventana de Movimiento de Fondos
+WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.maximizeWindow()
+
+//Ingresa Id ordenante
+WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtIdOrdenante'), '2000514092')
+
+//Ingresa Nro. de Cuenta Debito
+WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaDebito'), '03195011374')
+
+//Ingresa Nro. de Cuenta Credito
+WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaCredito'))
+WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtNro.deCuentaCredito'), '13190056217')
+
+//Ingresa Importe
+WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtImporte'), '10')
+
+//Validar Registro
+WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnValidarRegistro'))
+
+//Aceptar Registro
+WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnAceptarRegistro'))
+
+//Aceptar Alertas
+WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lnkAceptarAlertas'))
+
+//Espera y recibe mensaje de tx completa
+WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'))
+assert element.contains('Txn Completa:')
+
+//Forzamos la firma de la tx realizada
+WebUI.switchToWindowIndex(2)
+WebUI.maximizeWindow()
+WebUI.selectOptionByIndex(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/cbxAccion'),2)
+
+//Acepta el registro de la firma
+WebUI.click(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/btnAceptar'))
+
+//Espera y recibe Estado FINALIZADA
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
+def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
+assert element2.contains('FINALIZADA')
+
+
+//Espera y recibe Estado AUTORIZADA
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
+def element3 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
+assert element3.contains('AUTORIZADA')
+
+// Imprimir el numero de operacion en consola
+println("El ID de la txt es: " + element)
+ 
+//Dividir la oración en palabras individuales utilizando el espacio como separador
+String[] palabras = element.split(" ");
+ 
+// Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
+String terceraPalabra = palabras[2];
+ 
+// Imprimir la tercera palabra seleccionada
+println("La tercera palabra es: " + terceraPalabra);
+
+//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.REVE
+WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+///Abre la pestaña BCCL.E.EB.CONS.REVE
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
+
+//Filtro para limpiar selección
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
+//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.REVE
+WebUI.switchToWindowIndex(0)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Abre la pestaña BCCL.E.EB.CONS.REVE
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
+WebUI.maximizeWindow()
+
+//Ingresa Usuario
+WebUI.setText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/txtUsuario'),'B.2055')
+
+//Ingresa el numero de operacion obtenido
+WebUI.setText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/txtNroContrato'),terceraPalabra)
+
+//Selecciona botón Ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//Espera y verifica que se muestre al menos 1 dato de la tx buscada
+WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/lblIdOperacion'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/lblIdOperacion'))
+def element4 = WebUI.getText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/lblIdOperacion'))
+assert element4.contains('Id Operacion')
+
+//Toma un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Selecciona boton Reversar
+WebUI.click(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/btnReversar'))
+
+//Reversa el registro
+WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnReversarRegistro'))
+
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'))
+
+//Espera y recibe mensaje de tx completa reversada
+WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'))
+def element5 = WebUI.getText(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'))
+assert element5.contains('Txn Completa:')
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}

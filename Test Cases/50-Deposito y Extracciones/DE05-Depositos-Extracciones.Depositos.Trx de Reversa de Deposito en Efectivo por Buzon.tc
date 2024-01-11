@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DE05-Depositos-Extracciones.Depositos.Trx de Reversa de Deposito en Efectivo por Buzon</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bcc74d7d-4b63-4744-a6f2-7ac61f9f3af6</testCaseGuid>
+</TestCaseEntity>

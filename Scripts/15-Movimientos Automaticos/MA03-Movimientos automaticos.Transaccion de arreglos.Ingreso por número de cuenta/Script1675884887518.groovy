@@ -34,10 +34,6 @@ WebUI.switchToWindowIndex(1)
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
-//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkNuevaSeleccion'))
-//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lnkEjecutar'))
-//WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/btnLupita'))
-
 WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 

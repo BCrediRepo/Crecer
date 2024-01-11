@@ -80,6 +80,7 @@ WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/01 - Nota de De
 def element = WebUI.getText(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTxnCompleta'))
 
 assert element.contains('Txn Completa:') 
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

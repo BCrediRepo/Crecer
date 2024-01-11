@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkEGRESOSDEPLANTA</name>
+   <tag></tag>
+   <elementGuidId>6c20da03-3ec7-497d-95a5-473ca7460d00</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.EGRESOS I F3');processMenuHeaderText('EGRESOS DE PLANTA')&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>897009d8-88a3-49bc-b630-061865d2e779</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.EGRESOS I F3');processMenuHeaderText('EGRESOS DE PLANTA')</value>
+      <webElementGuid>dfcd1a93-4505-4545-a057-806a78ae5697</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('FUNDS.TRANSFER,POSTEO.EGRESOS I F3');</value>
+      <webElementGuid>c74b42bb-b938-473f-a8f9-c13fbf9922cb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>EGRESOS DE PLANTA </value>
+      <webElementGuid>a1c8c385-3bb6-4dc3-b518-8d4a12e9887d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[4]/a[1]</value>
+      <webElementGuid>2fc6453b-4fdd-4d9b-bb52-bae2855dda88</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.EGRESOS I F3');processMenuHeaderText('EGRESOS DE PLANTA')&quot;]</value>
+      <webElementGuid>49e27136-e727-4445-86ee-68e3cd259162</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li[6]/ul/li[4]/a</value>
+      <webElementGuid>3b398491-7869-40a9-8ce3-9f20b2664df9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'EGRESOS DE PLANTA')]</value>
+      <webElementGuid>6aa050a9-af70-4829-8f68-d3ebbc708e98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INGRESOS DE PLANTA'])[1]/following::a[1]</value>
+      <webElementGuid>35c7c58d-421e-4929-af37-56c3f528eda0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EGRESOS DE CAJA'])[1]/following::a[2]</value>
+      <webElementGuid>b3e13cc6-76ab-40aa-b704-a3726213b4fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LIQUIDAR POSTEO EN CAJA'])[2]/preceding::a[1]</value>
+      <webElementGuid>85bc5fea-bb02-40ed-9ee1-069c18629f16</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='EGRESOS DE PLANTA']/parent::*</value>
+      <webElementGuid>12415383-3004-4e66-9f6a-55a3cce10946</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,POSTEO.EGRESOS I F3');&quot;)]</value>
+      <webElementGuid>6dcaf70e-fb27-4e42-a73f-3c30a7ce8dc1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/ul/li[6]/ul/li[4]/a</value>
+      <webElementGuid>16de65e6-d807-4d6d-ac88-042cd6c70802</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,POSTEO.EGRESOS I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'EGRESOS DE PLANTA ' or . = 'EGRESOS DE PLANTA ')]</value>
+      <webElementGuid>731a4cf9-fb60-43fa-8da0-196e9b284673</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

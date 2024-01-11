@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IEV30-Ingresos y Egresos Varios.Liquidacion de posteo. Liquidacion de posteo de INGRESO de planta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e8a1e730-7706-4871-bf83-87cbbd19671b</testCaseGuid>
+</TestCaseEntity>
