@@ -14,7 +14,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.entity.global.GlobalVariableEntity
+import com.kms.katalon.entity.global.GlobalVariableEntity as GlobalVariableEntity
 import javax.swing.JFrame as JFrame
 import javax.swing.JOptionPane as JOptionPane
 import internal.GlobalVariable as GlobalVariable
@@ -24,42 +24,57 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
+        2, 1))
+
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AP.ENQ.NOMBRE.DOC')
+
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana de Consulta Maestro Card-Carrier
-WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
+WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
 //Aplico KYW de limpieza de busqueda
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle ('T24 - Fil.001 Centro')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+
+WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
+
+//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AP.ENQ.NOMBRE.DOC')
+
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Vuelvo a la ventana de busqueda
-WebUI.switchToWindowTitle ('BCCL.E.AP.ENQ.NOMBRE.DOC')
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtSucursal'), findTestData('MainData/Users').getValue(3,1))
+WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
+
+WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtSucursal'), findTestData(
+        'MainData/Users').getValue(3, 1))
+
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/btnEjecutar'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'), 10)
+
+//WebUI.delay(30)
+
+//WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'), 
+//    10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'))
 
-WebUI.delay(3)
+consulta = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'))
+assert consulta == " Consulta de Piezas"
 
-//---------------------------------------------------------------------------------------------------------------------
+WebUI.delay(3 //---------------------------------------------------------------------------------------------------------------------
+    ) //Control de fin de script
 
-//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

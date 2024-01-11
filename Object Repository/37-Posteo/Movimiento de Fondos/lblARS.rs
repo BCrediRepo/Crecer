@@ -1,119 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblSucDestinoH</name>
+   <name>lblARS</name>
    <tag></tag>
-   <elementGuidId>b4bbc0c3-9be6-4045-b913-5e9195e66cc9</elementGuidId>
+   <elementGuidId>65e42fb3-0d88-4bfd-a680-c4b93c13975f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[3]/td[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(2)</value>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//td[@class = 'ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMPORDISSUC']</value>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow1']/td[2]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>58dbfc5f-fb27-4c7f-bc1c-a2fdf8e83514</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMPORDISSUC</value>
-      <webElementGuid>f4a52790-c5f1-4f44-b292-afdbdbf3797c</webElementGuid>
+      <webElementGuid>6b1c0b65-731c-4827-ad7c-6ba4f99eb5c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_CURRENCYLIST</value>
+      <webElementGuid>2f36309a-5f9c-47bb-ab2c-e961380f8215</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>057 - Villa Urquiza</value>
-      <webElementGuid>f297a002-f9ae-43d3-8c8c-0a72730e02a6</webElementGuid>
+      <value>Pesos Argentinos</value>
+      <webElementGuid>318b45cb-33f6-4330-8c55-e711feceb4f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[3]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEACCOMPORDISSUC&quot;]</value>
-      <webElementGuid>cc4d1268-4131-404a-94c1-24ab0d2ddbbe</webElementGuid>
+      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_CURRENCYLIST&quot;]</value>
+      <webElementGuid>24fecfca-be17-47d8-b965-ffa99bed75ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr[3]/td[2]</value>
-      <webElementGuid>2731f557-9380-4022-a636-af3942382c7d</webElementGuid>
+      <value>//tr[@id='dropDownRow1']/td[2]</value>
+      <webElementGuid>4a05e684-8e36-4a0d-8960-573aec93ed48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='SUC DESTINO:'])[1]/following::td[1]</value>
-      <webElementGuid>af91e131-043f-440c-b116-1f9ab286b939</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::td[1]</value>
+      <webElementGuid>c4cdce82-a60a-4b27-80d1-7690cc997f9e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='SUC ORIGEN:'])[1]/following::td[3]</value>
-      <webElementGuid>5b888117-9924-4d1e-b52a-366c50f2bf7b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Currency Name'])[1]/following::td[2]</value>
+      <webElementGuid>6a7ce8b9-3500-49b2-81f0-ee060364c999</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal Origen'])[1]/preceding::td[2]</value>
-      <webElementGuid>9e0acbfc-97b4-4bcb-bcab-e69ed1d6a611</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AUD'])[1]/preceding::td[1]</value>
+      <webElementGuid>cf3dffe8-0e32-4f7d-8f86-663170b4c7da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal Destino'])[1]/preceding::td[2]</value>
-      <webElementGuid>f56d2321-9fb2-4fb1-9c35-7166965d1746</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Australian Dollars'])[1]/preceding::td[2]</value>
+      <webElementGuid>1321ebf8-bf04-48ac-8058-9096ceb9c4f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='057 - Villa Urquiza']/parent::*</value>
-      <webElementGuid>2352b75b-3bb0-43f2-a0e9-b0ed53be239b</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Pesos Argentinos']/parent::*</value>
+      <webElementGuid>8990f79e-cb1b-459e-8b64-ebc5fd6074fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[3]/td[2]</value>
-      <webElementGuid>e71c13e3-b1e5-4908-8201-b8dc9d446ab2</webElementGuid>
+      <value>//div[3]/table/tbody/tr[2]/td[2]</value>
+      <webElementGuid>74b09f38-492b-4bdb-b6bc-47b15ea7430f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '057 - Villa Urquiza' or . = '057 - Villa Urquiza')]</value>
-      <webElementGuid>8754db4e-6a7d-4de6-8dd6-e6340c90be04</webElementGuid>
+      <value>//td[(text() = 'Pesos Argentinos' or . = 'Pesos Argentinos')]</value>
+      <webElementGuid>5d4d33d8-e295-44e2-89a2-a5b7909c470c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

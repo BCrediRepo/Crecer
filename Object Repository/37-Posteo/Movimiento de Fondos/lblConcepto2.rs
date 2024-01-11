@@ -1,119 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblSucDestinoT</name>
+   <name>lblConcepto2</name>
    <tag></tag>
-   <elementGuidId>4186e4c4-c331-4fec-98fd-d02478fbc7e8</elementGuidId>
+   <elementGuidId>f3cbc7d8-501e-4335-844b-14d7db6d56d5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[2]</value>
+         <value>//tr[@id='dropDownRow2']/td/b</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(2)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '057' or . = '057')]</value>
+         <value>#dropDownRow2 > td.coloumntddata.coloumntddata_BCCLEEBCONCEPTOS > b</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>af9a86ce-1738-4fa6-9fa1-07d4a90e9702</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>align</name>
-      <type>Main</type>
-      <value>right</value>
-      <webElementGuid>8a11527a-e747-4ede-af12-2aaf0194fd8d</webElementGuid>
+      <value>b</value>
+      <webElementGuid>67a0211c-d4ab-46cd-9ab8-635d23fb36a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>057</value>
-      <webElementGuid>b6f41bfa-846a-41de-8c0c-4fd3b505824e</webElementGuid>
+      <value>18450PMI</value>
+      <webElementGuid>33390cac-ace5-42c0-a148-b798a6f32067</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[2]</value>
-      <webElementGuid>a6bc069e-c541-4daa-b938-67169dcbc59c</webElementGuid>
+      <value>id(&quot;dropDownRow2&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEEBCONCEPTOS&quot;]/b[1]</value>
+      <webElementGuid>f8bdf10a-09ba-4f14-b245-be28d5e68c0e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[2]</value>
-      <webElementGuid>8cb63859-72ee-42b6-a9fc-8014a92d5393</webElementGuid>
+      <value>//tr[@id='dropDownRow2']/td/b</value>
+      <webElementGuid>3a0f1029-fe25-47ca-8c0f-4d8ef4d5148d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mto Suc Des'])[1]/following::td[2]</value>
-      <webElementGuid>38fd7e10-9990-44c9-a975-f7d4ddd70eca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LEGALES - COBZA EN EFVO'])[1]/following::b[1]</value>
+      <webElementGuid>50b5288f-718e-4cb3-abd3-f3c8218aa2f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mto Suc Org'])[1]/following::td[2]</value>
-      <webElementGuid>6ccb3cea-fc32-45a4-98b1-425429aee09b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::b[2]</value>
+      <webElementGuid>b31240d8-9aa0-4dbf-9aea-9c7ea025e18b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHQFIS'])[1]/preceding::td[1]</value>
-      <webElementGuid>6460e323-f7c3-4ebc-a7e0-0467be9cb187</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Posteo Manual Generico s/ident pers'])[2]/preceding::b[1]</value>
+      <webElementGuid>0453397f-31ec-4ab1-8b0c-0768fffa5949</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHQFIS*001'])[1]/preceding::td[2]</value>
-      <webElementGuid>fcfe73b0-05e0-43cc-a9ad-2ac441a39bbc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Posteo Manual Generico c/ident pers'])[1]/preceding::b[2]</value>
+      <webElementGuid>86ad8859-5907-4acd-8654-299c547443db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='057']/parent::*</value>
-      <webElementGuid>8ed727e0-c522-4742-b6e8-9c62f3b6dfe9</webElementGuid>
+      <value>//*/text()[normalize-space(.)='18450PMI']/parent::*</value>
+      <webElementGuid>aa84f196-99aa-4232-95af-0cd79b414f35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td[2]</value>
-      <webElementGuid>9c5fb373-1924-46d3-b8bd-4c9519de5c11</webElementGuid>
+      <value>//tr[3]/td/b</value>
+      <webElementGuid>ab92a36f-2d25-4939-b0d2-435acd6c9c7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '057' or . = '057')]</value>
-      <webElementGuid>f7577175-a3c9-46b2-8c42-3778e5176553</webElementGuid>
+      <value>//b[(text() = '18450PMI' or . = '18450PMI')]</value>
+      <webElementGuid>2079e68e-3375-4f7b-9ca2-b01799249474</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,119 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblSucDestinoT</name>
+   <name>lblConcepto1</name>
    <tag></tag>
-   <elementGuidId>4186e4c4-c331-4fec-98fd-d02478fbc7e8</elementGuidId>
+   <elementGuidId>91f73da3-defa-4db2-98d6-9150fb764509</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[2]</value>
+         <value>//tr[@id='dropDownRow1']/td/b</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(2)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '057' or . = '057')]</value>
+         <value>b</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>af9a86ce-1738-4fa6-9fa1-07d4a90e9702</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>align</name>
-      <type>Main</type>
-      <value>right</value>
-      <webElementGuid>8a11527a-e747-4ede-af12-2aaf0194fd8d</webElementGuid>
+      <value>b</value>
+      <webElementGuid>e0a63b4b-5fd7-4459-82d8-4817ac909404</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>057</value>
-      <webElementGuid>b6f41bfa-846a-41de-8c0c-4fd3b505824e</webElementGuid>
+      <value>18950PME</value>
+      <webElementGuid>3fd7d99c-d830-4da1-8fcb-138214fb318b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[2]</value>
-      <webElementGuid>a6bc069e-c541-4daa-b938-67169dcbc59c</webElementGuid>
+      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEEBCONCEPTOS&quot;]/b[1]</value>
+      <webElementGuid>8843fada-8230-40cb-b5a0-3f0ff61cfc85</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[2]</value>
-      <webElementGuid>8cb63859-72ee-42b6-a9fc-8014a92d5393</webElementGuid>
+      <value>//tr[@id='dropDownRow1']/td/b</value>
+      <webElementGuid>4b491b60-30d5-4bd9-b24d-b35b0fe842a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mto Suc Des'])[1]/following::td[2]</value>
-      <webElementGuid>38fd7e10-9990-44c9-a975-f7d4ddd70eca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::b[1]</value>
+      <webElementGuid>fb33715e-835c-4ca6-833c-6f93af1954f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mto Suc Org'])[1]/following::td[2]</value>
-      <webElementGuid>6ccb3cea-fc32-45a4-98b1-425429aee09b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Concepto'])[1]/following::b[1]</value>
+      <webElementGuid>dec39ec5-d42c-43fe-b7f5-d161df63ef8b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHQFIS'])[1]/preceding::td[1]</value>
-      <webElementGuid>6460e323-f7c3-4ebc-a7e0-0467be9cb187</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Posteo Manual Generico s/ident pers'])[1]/preceding::b[1]</value>
+      <webElementGuid>462be707-e14c-4a97-87b6-4277501cbb9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHQFIS*001'])[1]/preceding::td[2]</value>
-      <webElementGuid>fcfe73b0-05e0-43cc-a9ad-2ac441a39bbc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Posteo Manual Generico c/ident pers'])[1]/preceding::b[2]</value>
+      <webElementGuid>93597826-9518-4399-b2df-ec28a282caa7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='057']/parent::*</value>
-      <webElementGuid>8ed727e0-c522-4742-b6e8-9c62f3b6dfe9</webElementGuid>
+      <value>//*/text()[normalize-space(.)='18950PME']/parent::*</value>
+      <webElementGuid>e6097191-f3ff-4581-bf56-6292e2bf692b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td[2]</value>
-      <webElementGuid>9c5fb373-1924-46d3-b8bd-4c9519de5c11</webElementGuid>
+      <value>//b</value>
+      <webElementGuid>7d72a824-1fd5-48a2-be86-d7d0c65ae5fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '057' or . = '057')]</value>
-      <webElementGuid>f7577175-a3c9-46b2-8c42-3778e5176553</webElementGuid>
+      <value>//b[(text() = '18950PME' or . = '18950PME')]</value>
+      <webElementGuid>34f07894-500d-4112-a2dd-41c4ee118b2d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

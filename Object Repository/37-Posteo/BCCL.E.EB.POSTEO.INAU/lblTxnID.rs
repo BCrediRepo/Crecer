@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblSucDestinoT</name>
+   <name>lblTxnID</name>
    <tag></tag>
-   <elementGuidId>4186e4c4-c331-4fec-98fd-d02478fbc7e8</elementGuidId>
+   <elementGuidId>0d157172-c8a5-467a-85f5-3376eb4c94ee</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[2]</value>
+         <value>//tr[@id='r1']/td</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(2)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '057' or . = '057')]</value>
+         <value>#r1 > td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,94 +22,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>af9a86ce-1738-4fa6-9fa1-07d4a90e9702</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>align</name>
-      <type>Main</type>
-      <value>right</value>
-      <webElementGuid>8a11527a-e747-4ede-af12-2aaf0194fd8d</webElementGuid>
+      <webElementGuid>301151e1-e2c9-47cf-bdbe-ad9ffadbbff0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>057</value>
-      <webElementGuid>b6f41bfa-846a-41de-8c0c-4fd3b505824e</webElementGuid>
+      <value>FT23240385549700</value>
+      <webElementGuid>0c468a46-4169-4526-b001-8d15fa891609</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[2]</value>
-      <webElementGuid>a6bc069e-c541-4daa-b938-67169dcbc59c</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[1]</value>
+      <webElementGuid>96b943f1-c77b-475e-918d-9593d664a659</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[2]</value>
-      <webElementGuid>8cb63859-72ee-42b6-a9fc-8014a92d5393</webElementGuid>
+      <value>//tr[@id='r1']/td</value>
+      <webElementGuid>1cb92110-7114-4f58-a9b5-e8ce4840d3c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mto Suc Des'])[1]/following::td[2]</value>
-      <webElementGuid>38fd7e10-9990-44c9-a975-f7d4ddd70eca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresado por'])[1]/following::td[1]</value>
+      <webElementGuid>b7b721a7-e46b-4db3-a823-412e05731cfc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mto Suc Org'])[1]/following::td[2]</value>
-      <webElementGuid>6ccb3cea-fc32-45a4-98b1-425429aee09b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Hora'])[1]/following::td[1]</value>
+      <webElementGuid>0ae8c07f-97af-440d-82d0-6d71f96a7723</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHQFIS'])[1]/preceding::td[1]</value>
-      <webElementGuid>6460e323-f7c3-4ebc-a7e0-0467be9cb187</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PRUEBAS CRECER'])[1]/preceding::td[1]</value>
+      <webElementGuid>1ba6791b-de47-401d-991e-8791e12ed775</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CHQFIS*001'])[1]/preceding::td[2]</value>
-      <webElementGuid>fcfe73b0-05e0-43cc-a9ad-2ac441a39bbc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Posteo Manual Generico-s/ Ident Persona'])[1]/preceding::td[3]</value>
+      <webElementGuid>320b6fe9-6757-4ec5-8b8e-ea65c9a66537</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='057']/parent::*</value>
-      <webElementGuid>8ed727e0-c522-4742-b6e8-9c62f3b6dfe9</webElementGuid>
+      <value>//*/text()[normalize-space(.)='FT23240385549700']/parent::*</value>
+      <webElementGuid>d88a3adc-3e84-4496-b3d5-320d24616054</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td[2]</value>
-      <webElementGuid>9c5fb373-1924-46d3-b8bd-4c9519de5c11</webElementGuid>
+      <value>//div[2]/div/table/tbody/tr/td</value>
+      <webElementGuid>9739e9ed-2e03-4596-a928-9bcd9189170f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '057' or . = '057')]</value>
-      <webElementGuid>f7577175-a3c9-46b2-8c42-3778e5176553</webElementGuid>
+      <value>//td[(text() = 'FT23240385549700' or . = 'FT23240385549700')]</value>
+      <webElementGuid>fb179104-3d41-45aa-af0c-a0a22d4f2423</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
