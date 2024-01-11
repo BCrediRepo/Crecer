@@ -3,18 +3,18 @@
    <description></description>
    <name>lnkPosteo</name>
    <tag></tag>
-   <elementGuidId>ce160092-7a73-4e6b-8d22-c79599346e9b</elementGuidId>
+   <elementGuidId>0138be51-d1fb-4813-b486-401826461d59</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[7]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>ul.menuMargin:nth-child(7) > li:nth-child(1) > span:nth-child(1)</value>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[164]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>f7e8bc0a-f5a6-4726-9de1-ff8f7c95cf2f</webElementGuid>
+      <webElementGuid>b3e5ede4-3e77-48e8-a1c6-ef48f32e5fa2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>7bf2bb8c-4d29-42f4-a726-11514babb29d</webElementGuid>
+      <webElementGuid>37805c5a-1926-4141-b406-18080bec4547</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,102 +38,86 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>c700a069-155a-47da-be7d-3807b0e52fef</webElementGuid>
+      <webElementGuid>9ee0ddf5-f7ee-4002-ba4a-037fc0da0e4f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Posteo</value>
-      <webElementGuid>6ca072c7-739e-4669-b9cd-148e9234f80c</webElementGuid>
+      <value>POSTEO</value>
+      <webElementGuid>e87efdb3-4c08-4ece-9b88-59c173d6a86b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>fdc7579f-3924-4edf-a6dc-0f3355a3be0e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>4b48e383-009d-44cb-aeb3-b7acf51d396b</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>9875f250-22bf-41ac-9cf5-5c73ae880a0c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[7]</value>
-      <webElementGuid>c5976bcb-0d31-475e-9b2d-2f4cce4ada9b</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[164]</value>
+      <webElementGuid>d7909003-2b08-49f5-bc7a-7ad72975ffc1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[7]/li/span</value>
-      <webElementGuid>a07ba2cf-81eb-4e19-baea-ed94736263ba</webElementGuid>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[5]/ul/li/span</value>
+      <webElementGuid>69c4d1ce-6776-4777-bdeb-d3f87b95c173</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pase Caja al Tesoro'])[1]/following::span[1]</value>
-      <webElementGuid>a93e95fa-10bc-412e-84bb-b735117884b7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='D2 - Posteo'])[1]/following::span[1]</value>
+      <webElementGuid>d37ae0d4-d072-4c13-bc16-eb930f5f660e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pase de Buzon a Caja'])[1]/following::span[1]</value>
-      <webElementGuid>07547ea4-b6b5-45f2-83ab-68fe2a0b1f1e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CONSULTA DE OPERACIONES REVERSADAS'])[1]/following::span[2]</value>
+      <webElementGuid>1dfb6675-c62d-441e-82b6-1b6f34124cf3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transacciones Pendientes de Liquidacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>3a74dcb1-d14a-4b46-8d19-8af385d3e1d8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='COBRO EN EFECTIVO'])[2]/preceding::span[1]</value>
+      <webElementGuid>f2c39708-89d8-4b9c-859d-8f75f2bc62c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Varios de Caja'])[1]/preceding::span[1]</value>
-      <webElementGuid>692bb07a-4ef5-42b4-8796-0a9840790730</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Posteo']/parent::*</value>
-      <webElementGuid>2808e82a-93ae-4f07-99e7-e017531d1744</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PAGO EN EFECTIVO'])[2]/preceding::span[1]</value>
+      <webElementGuid>6dae6075-b325-4daf-b40e-e58b0cfa90e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[7]/li/span</value>
-      <webElementGuid>b886d61e-0111-4d6d-b524-0a3182378030</webElementGuid>
+      <value>//ul[7]/li/ul/li[5]/ul/li/span</value>
+      <webElementGuid>a6eb16cb-137b-4fd5-af7f-5a6c713230e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Posteo' or . = 'Posteo')]</value>
-      <webElementGuid>8a30b8a9-e7d0-4d61-92a1-c2aa871a7f51</webElementGuid>
+      <value>//span[(text() = 'POSTEO' or . = 'POSTEO')]</value>
+      <webElementGuid>c466a76d-e101-49b5-9176-99ba7eff9e81</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnLiquidar</name>
+   <name>lnkReversar</name>
    <tag></tag>
-   <elementGuidId>7d4b7c9d-d658-4520-b425-563bea776536</elementGuidId>
+   <elementGuidId>8c578555-c4d1-43f1-b84e-a4c0e43833c8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.enqDrillLink</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[9]/a</value>
+         <value>//tr[@id='r1']/td[18]/a</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Liquidar' or . = 'Liquidar')]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -26,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>4d353758-10bc-4f99-8534-64a742dd7d01</webElementGuid>
+      <webElementGuid>5b970a05-7ace-449d-85b8-45b10f5e3506</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqDrillLink</value>
-      <webElementGuid>15c0fc24-9141-42cb-8305-f5839d4e65e1</webElementGuid>
+      <webElementGuid>bf0e9997-a465-4727-aabb-cf8680585aad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,110 +38,110 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>66ef7f34-3a62-4d35-b357-969ddde22fa5</webElementGuid>
+      <webElementGuid>7352a9ee-fe38-4ddd-95ca-efbabb552bbb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:drilldown('1','1_1')</value>
-      <webElementGuid>08d18326-70fc-4b87-8aec-e4e090e9657e</webElementGuid>
+      <value>javascript:drilldown('2','1_1')</value>
+      <webElementGuid>6ad05a78-9432-42ea-a41b-efc62d41b218</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Liquidar</value>
-      <webElementGuid>f7334dd5-ec3f-4769-a849-fd8ed8650022</webElementGuid>
+      <value>Reversar</value>
+      <webElementGuid>bb8b6dfc-35db-40fe-b25b-7a66bf85a577</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEEBPOSTEOINAU&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
-      <webElementGuid>e5fbc70f-7770-48e6-80c5-e493146c77d1</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEEBCONSREVE&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
+      <webElementGuid>2d7a5259-6ef1-4389-81ed-7668fdcc671e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[9]/a</value>
-      <webElementGuid>4e5a2ba9-a1ed-4172-b234-a841e98d39e3</webElementGuid>
+      <value>//tr[@id='r1']/td[18]/a</value>
+      <webElementGuid>67d5e243-46c4-408d-8c45-eab1bf6bf370</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Liquidar')]</value>
-      <webElementGuid>5aec8f9a-2df9-4c30-bec6-fe9cb677dc6c</webElementGuid>
+      <value>//a[contains(text(),'Reversar')]</value>
+      <webElementGuid>2c605ece-5730-4201-a998-618ac5f234e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0274'])[1]/following::a[1]</value>
-      <webElementGuid>62ea2ef4-a46d-4e26-bd14-8444a0ba42c2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar'])[1]/following::a[1]</value>
+      <webElementGuid>4c7222d0-fa33-46e3-8186-0461a89d60f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre Cta -Canc Ef-SdoDr'])[1]/following::a[1]</value>
-      <webElementGuid>95fb2131-0c66-4855-b0ab-654a724fbeb9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0419'])[1]/following::a[2]</value>
+      <webElementGuid>92eb3596-a1f0-4985-bf01-e99e60ac90b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='C C LEMOS'])[1]/preceding::a[1]</value>
-      <webElementGuid>d3524eaf-4a47-4ae8-bade-ae82a4efba16</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FT23240724302809'])[1]/preceding::a[1]</value>
+      <webElementGuid>1e26f2dc-1784-4c28-9bb8-2189e86e4374</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre Cta -Canc Ef-SdoDr'])[2]/preceding::a[1]</value>
-      <webElementGuid>5a7af1a6-8b0d-4571-a09d-6d80b09c910c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PRUEBAS CRECER'])[2]/preceding::a[1]</value>
+      <webElementGuid>3a4eb383-9162-4430-8b12-ed3e2389e5cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Liquidar']/parent::*</value>
-      <webElementGuid>5d5e62ba-c2ef-444c-9c49-047718ea3bab</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Reversar']/parent::*</value>
+      <webElementGuid>e942ea42-212f-4194-af4a-c759d0708d06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
-      <webElementGuid>b1510823-8130-426d-8d83-49b57082b5cc</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:drilldown('2','1_1')&quot;)]</value>
+      <webElementGuid>b620340e-8d38-4db8-92e4-04445dcaacd0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[9]/a</value>
-      <webElementGuid>876dbc41-7bf6-4a88-89ce-6eb5f652180c</webElementGuid>
+      <value>//td[18]/a</value>
+      <webElementGuid>5b2f3a1d-e155-4c91-b602-188f8579b341</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Liquidar' or . = 'Liquidar')]</value>
-      <webElementGuid>a3881d74-3370-4a97-a75f-54522c572a74</webElementGuid>
+      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;2&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Reversar' or . = 'Reversar')]</value>
+      <webElementGuid>9579dcdd-9315-4e5c-bc03-8c65f1283b8f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

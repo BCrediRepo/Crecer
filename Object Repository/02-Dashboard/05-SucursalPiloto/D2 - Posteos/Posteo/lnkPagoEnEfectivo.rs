@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkPagoEnEfectivo</name>
+   <tag></tag>
+   <elementGuidId>51b3ddc5-9fe7-4c69-92ad-a6be080d5a70</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.RETIRO I F3');processMenuHeaderText('PAGO EN EFECTIVO')&quot;])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>a541b025-1221-49bc-aed0-d154d7b6c250</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.RETIRO I F3');processMenuHeaderText('PAGO EN EFECTIVO')</value>
+      <webElementGuid>2bb53392-1a18-4831-850c-a12b1509a23c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:docommand('FUNDS.TRANSFER,POSTEO.RETIRO I F3');</value>
+      <webElementGuid>f02eebd0-903f-4453-b9c4-b7217a11b721</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PAGO EN EFECTIVO </value>
+      <webElementGuid>45a17a3e-4c20-4729-b737-294af4f38c3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
+      <webElementGuid>49d96130-b215-4c6c-97e1-de6c90cc7249</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.RETIRO I F3');processMenuHeaderText('PAGO EN EFECTIVO')&quot;])[2]</value>
+      <webElementGuid>e6c5dd05-490a-4f9e-9fe3-559797177ac8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[5]/ul/li/ul/li[2]/a</value>
+      <webElementGuid>b8b2c529-cdf3-4862-8c1b-63e5cd261df9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'PAGO EN EFECTIVO')])[2]</value>
+      <webElementGuid>acbec863-6e60-4538-8cfb-18a00059479c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='COBRO EN EFECTIVO'])[2]/following::a[1]</value>
+      <webElementGuid>2af31eb0-d22d-41a5-ac98-ab4433e8ba58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='POSTEO'])[2]/following::a[2]</value>
+      <webElementGuid>bdd0a91a-bc82-401a-9e18-148b6b789368</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LIQUIDAR POSTEO EN CAJA'])[3]/preceding::a[1]</value>
+      <webElementGuid>a80433d5-6988-40c9-bb5a-0a7c4108b63e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,POSTEO.RETIRO I F3');&quot;)])[2]</value>
+      <webElementGuid>a5d77572-d69c-4e23-a1b1-7f9c0e8bfc99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[7]/li/ul/li[5]/ul/li/ul/li[2]/a</value>
+      <webElementGuid>6cd728a3-285d-4794-b1d2-a4f7f2d24114</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,POSTEO.RETIRO I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'PAGO EN EFECTIVO ' or . = 'PAGO EN EFECTIVO ')]</value>
+      <webElementGuid>60e4cd85-30ea-4077-a56d-50ede8dbe4a3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

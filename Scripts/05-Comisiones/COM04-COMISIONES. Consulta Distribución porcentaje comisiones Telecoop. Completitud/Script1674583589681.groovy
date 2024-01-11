@@ -54,7 +54,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Cons
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), '20220722')
+WebUI.setText(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), '20230828')
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -63,7 +63,7 @@ long startTime = System.currentTimeMillis()
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.delay(40)
+//WebUI.delay(40)
 
 //WebUI.waitForElementVisible(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'), 70)
 SucOrigenH = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenH'))
@@ -77,13 +77,13 @@ long elapsedTime = endTime - startTime
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 //---------------------------
-
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
-println TotalRegistros
+println(TotalRegistros)
+
 //-----------------------------
 SucOrigenT = WebUI.getText(findTestObject('06-Comisiones/Consulta de Comisiones Cobradas/lblSucOrigenT'))
 
@@ -99,8 +99,8 @@ assert SucDestinoH != null
 
 assert SucDestinoT != null
 
-WebUI.maximizeWindow() //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+WebUI.maximizeWindow( //---------------------------------------------------------------------------------------------------------------------
+    ) //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
