@@ -110,9 +110,9 @@ WebUI.delay(3)
 //WebUI.delay(10)
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/txtTxnCompleta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------

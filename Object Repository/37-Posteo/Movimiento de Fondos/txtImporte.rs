@@ -6,6 +6,10 @@
    <elementGuidId>341d7241-4429-4141-983c-c89add941fb1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@name = 'fieldName:CREDIT.AMOUNT']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@id='fieldName:CREDIT.AMOUNT']</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>#fieldName\:DEBIT\.AMOUNT</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c5850930-ab04-46aa-abd0-f5fb32013c51</webElementGuid>
+      <webElementGuid>0a292611-4ecc-4a62-b7c1-996af1afe340</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>2aebaf80-f91e-4317-8975-fe1ffab40e77</webElementGuid>
+      <webElementGuid>b0621e63-1981-4a59-89d6-91cb99391268</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +42,15 @@
       <name>size</name>
       <type>Main</type>
       <value>18</value>
-      <webElementGuid>ba3859b0-0b4d-43d0-b445-f9ea9fe943f5</webElementGuid>
+      <webElementGuid>f902b7c5-58ae-4da3-a039-09c80dd87f7e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>fieldName:CREDIT.AMOUNT</value>
-      <webElementGuid>766e31ec-c116-41fd-a141-d77d3ec1809b</webElementGuid>
+      <webElementGuid>2d92909e-d237-49a6-b536-5cb947381387</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:CREDIT.AMOUNT</value>
-      <webElementGuid>9ee2f2ff-ffbc-4423-b4ee-088dc865510a</webElementGuid>
+      <webElementGuid>677dc323-e802-4922-bc52-ab726824400e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>0407c437-6fa1-4a26-8999-96f46fb08983</webElementGuid>
+      <webElementGuid>c64f5be8-decc-47b3-90bb-03857146a195</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_POSTEORETIRO</value>
-      <webElementGuid>2ff804a6-a9ca-42f4-a96a-d5568031b5a1</webElementGuid>
+      <webElementGuid>4f17edfb-2adb-4a39-8f7f-79272a09d247</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,15 +82,15 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>18</value>
-      <webElementGuid>5b5ac1a4-96c7-48f0-adcf-4432cc78b158</webElementGuid>
+      <webElementGuid>162e3712-aea5-4245-9724-aec14d674112</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>746dbaf7-d817-4721-a3f9-00790753cb66</webElementGuid>
+      <webElementGuid>15bb1f48-69aa-4991-856d-42114e4e8905</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_CREDIT.AMOUNT</value>
-      <webElementGuid>9f0668b3-6dc5-48b2-826e-7d8d79681a17</webElementGuid>
+      <webElementGuid>6dcb1d9d-4b28-453e-9ca4-eee07f648249</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'CREDIT.AMOUNT','issueToken');</value>
-      <webElementGuid>4a18c2fb-3e3a-46da-aaea-d122e3e47d91</webElementGuid>
+      <webElementGuid>751e0ac9-feff-4b95-9a67-3cd5014e1ae3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>a6407f2c-4127-4fac-85f3-2b6db41198c0</webElementGuid>
+      <webElementGuid>c8fb364f-0d0b-433d-86c1-557ef7e629b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('CREDIT.AMOUNT','','','issueToken')</value>
-      <webElementGuid>3e90f2d6-768f-49b2-9ebb-0667d39a4fbc</webElementGuid>
+      <webElementGuid>d3bd4a67-8020-45f7-b5bb-26d09a5efd14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:CREDIT.AMOUNT&quot;)</value>
-      <webElementGuid>194cb165-4dc8-4e93-9425-20153afd6e56</webElementGuid>
+      <webElementGuid>6b143777-c5c9-4da0-9d5f-0441337eb53e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:CREDIT.AMOUNT']</value>
-      <webElementGuid>b450c3aa-62f7-469c-b0b1-955bc952590b</webElementGuid>
+      <webElementGuid>76eaceae-988b-4b07-9d99-d034e8f18ac7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[5]/td[4]/input</value>
-      <webElementGuid>704a6fed-71b7-4f86-b5e5-55d2d34c16ec</webElementGuid>
+      <webElementGuid>09ae130e-a5e8-4a23-a375-48214e283eae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[5]/td[4]/input</value>
-      <webElementGuid>c73bda84-015a-485b-b52e-322560cbd672</webElementGuid>
+      <webElementGuid>c3143a14-a9b8-4ebd-bae2-f1be28a335d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +162,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:CREDIT.AMOUNT' and @name = 'fieldName:CREDIT.AMOUNT' and @type = 'text']</value>
-      <webElementGuid>f86c675c-049d-4e0c-8f85-c3e779efcdae</webElementGuid>
+      <webElementGuid>09a576b7-ee6f-4941-b8bd-936a920e260a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

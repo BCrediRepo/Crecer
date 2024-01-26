@@ -53,4 +53,67 @@
       <testCaseId>Test Cases/20-Fallas/F06-Falla de dispositivo ALTA Faltante en Disp PN - Retiro. MAP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5fc929e7-637e-445a-aeb1-1a4de5cb2850</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F07-TC-FALLA-SOB-ATM</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>59d4e137-07c1-4720-a674-28a64ae8d874</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F08-TC-FALLA-DEP-ATM</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>43a9b5b4-b1c3-49c9-a9c2-d12706a9d46b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F09-Falla de Dispositivos Alta de faltante ATM TAS Deposito</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ed8b927d-adff-45e7-b378-a54785e277cc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F10-Fallas de Dispositivos. Alta Faltante de caja. Moneda Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a6603d58-6196-49c5-ab25-97d533d82cce</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F11-Fallas de Dispositivos. Alta Faltante otro usuario (TELLER,FALTANTES.CAJA.USU)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>645460b0-127d-41e9-aede-a9591d3c9c6a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F12-Fallas de Dispositivos. Alta Sobrante de caja. Moneda Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>66e21f94-1ccd-4143-8aba-27e5f9a24267</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F13-Fallas de Dispositivos. Alta Sobrante otro usuario (TELLER,SOBRANTE.CAJA.USU)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2685bf57-159b-4ec1-9fae-bfcec72895d4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F14-Falla de Dispositivos. Alta de faltante ATM MAP. Sucursal valida. Dispositivo de la sucursal. Deposito</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8db2623e-c69d-44a3-bf7a-25c14a2bc235</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas/F15-Falla de Dispositivos. Alta de sobrante ATM MAP. Sucursal valida. Dispositivo de la sucursal. Retiro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

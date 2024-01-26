@@ -130,6 +130,8 @@ String terceraPalabra = palabras[2];
 // Imprimir la tercera palabra seleccionada
 println("La tercera palabra es: " + terceraPalabra);
 
+
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
