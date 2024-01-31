@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM23-REMESAS. Consulta de control de puntos neutrales. ENQ BCCL.E.TXN.PNEUTRAL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7ec8160-9cff-40b0-8430-17c674fa3585</testCaseGuid>
+</TestCaseEntity>

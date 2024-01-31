@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTG</name>
+   <tag></tag>
+   <elementGuidId>3d541b06-411a-42ac-9407-f3dcb2b50d80</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow3']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow3 > td.coloumntddata.coloumntddata_BCCLEANAQUELDETSTG</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>ef93524b-8987-4745-81d3-b8d25c54e0e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLEANAQUELDETSTG</value>
+      <webElementGuid>aaf6a8b9-8796-43f6-8241-d7c2aeddf37c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>TG</value>
+      <webElementGuid>9d948205-8708-4f43-8a9b-66617be0b74d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow3&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEANAQUELDETSTG&quot;]</value>
+      <webElementGuid>92348b3e-066b-4f05-8207-36c0f6d5334b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow3']/td</value>
+      <webElementGuid>f5da1b9a-b0be-42ba-a14d-67dff3101aaf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ANAQUEL'])[1]/following::td[1]</value>
+      <webElementGuid>1cda477d-57c1-41d5-b2f4-4376189c71d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TA'])[1]/following::td[2]</value>
+      <webElementGuid>670c1495-73d0-475c-a875-7d0567058adf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TESORERIA GENERAL'])[1]/preceding::td[1]</value>
+      <webElementGuid>664c8ff5-6f79-4484-b268-3659b05ae92f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[4]/td</value>
+      <webElementGuid>2e398026-8c85-44a6-b6ee-a3a027a1c87f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'TG' or . = 'TG')]</value>
+      <webElementGuid>20979e31-cb5b-442c-9fec-87989346d85e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

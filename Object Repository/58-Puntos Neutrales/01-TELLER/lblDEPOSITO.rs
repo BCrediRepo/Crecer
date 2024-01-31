@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDEPOSITO</name>
+   <tag></tag>
+   <elementGuidId>bce4e96e-0534-46b5-9a44-f2db03caa5c3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[6]/td[4]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>834f9e74-2864-48df-bbc7-f4797882452e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_FALTANTEDISPOSITIVOPN</value>
+      <webElementGuid>5b541ad6-d6c2-491a-bbed-dcbf4f960abf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DEPOSITO</value>
+      <webElementGuid>227db9d4-33a8-45c4-b061-c5db14fdc643</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[6]/td[4]/span[@class=&quot;disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_FALTANTEDISPOSITIVOPN&quot;]</value>
+      <webElementGuid>da0d67ec-e4e9-4636-a3e4-bb187b489375</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[6]/td[4]/span</value>
+      <webElementGuid>9132dc6e-735d-40da-8e89-71c9ddf649b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cartucho/Gaveta'])[1]/following::span[1]</value>
+      <webElementGuid>ca28bacd-2ea0-4e69-b110-e002a46de583</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PRUEBAS CRECER'])[1]/following::span[1]</value>
+      <webElementGuid>d9f2493f-1ec2-4775-8dc2-1427a4efea8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Dispositivo'])[1]/preceding::span[1]</value>
+      <webElementGuid>ba4a387d-da8d-4ea4-bee0-eaf60964da8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>9152b3b1-d59b-41d9-80b1-3f165098309a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='DEPOSITO']/parent::*</value>
+      <webElementGuid>cc26809a-1287-4a26-9d09-29547ffe172b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[4]/span</value>
+      <webElementGuid>72d78e32-b01c-4160-9046-6d5b6048f43a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'DEPOSITO' or . = 'DEPOSITO')]</value>
+      <webElementGuid>a9f36ce3-cfe5-405d-b12b-e5d6886c1844</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

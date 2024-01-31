@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDenominaciones</name>
+   <tag></tag>
+   <elementGuidId>a828d604-462b-45f2-8fdb-a73362401f6e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.nonactive-tab > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='headtab']/tbody/tr/td[2]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>2fa25ff4-9df8-48f6-b9f9-5adc6175f5e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Denominaciones DB</value>
+      <webElementGuid>d9ee7780-bbef-42f8-8b83-a96e710d2caf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[2]/a[@class=&quot;nonactive-tab&quot;]/span[1]</value>
+      <webElementGuid>0e69d288-f249-4b5b-a965-267089354e38</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='headtab']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>e856c1f6-2e4d-4be7-a3f7-fe0f3b245468</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Traslado de Remesas a Tesoro General'])[2]/following::span[1]</value>
+      <webElementGuid>243ffb70-ea8f-4f45-a7d6-3d302678a91e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.099 Casa Central)'])[1]/following::span[2]</value>
+      <webElementGuid>ec6e91f7-2526-471e-9b83-91620f6d3e45</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/preceding::span[1]</value>
+      <webElementGuid>5bfb5200-46aa-48a2-98b9-6f3414837af1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha'])[1]/preceding::span[2]</value>
+      <webElementGuid>74264e68-d0c2-4802-abb2-13269074823d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Denominaciones DB']/parent::*</value>
+      <webElementGuid>f476c2b5-3696-40bf-8de6-4b7d565c1be9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/a/span</value>
+      <webElementGuid>1237e46a-8ce8-4d34-93df-f5b19f92202b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Denominaciones DB' or . = 'Denominaciones DB')]</value>
+      <webElementGuid>7f626cb8-2273-489b-b7a1-2b8797232f3f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

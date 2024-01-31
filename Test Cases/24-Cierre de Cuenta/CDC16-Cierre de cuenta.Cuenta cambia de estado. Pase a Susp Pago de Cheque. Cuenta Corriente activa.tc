@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC16-Cierre de cuenta.Cuenta cambia de estado. Pase a Susp Pago de Cheque. Cuenta Corriente activa</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>44362f8c-fb0c-4c96-8c81-789e3d01d5de</testCaseGuid>
+</TestCaseEntity>

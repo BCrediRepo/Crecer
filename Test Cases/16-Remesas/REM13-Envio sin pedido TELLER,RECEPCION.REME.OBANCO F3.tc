@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM13-Envio sin pedido TELLER,RECEPCION.REME.OBANCO F3</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f563185e-c31d-42fb-a030-ae1a0afb67b6</testCaseGuid>
+</TestCaseEntity>

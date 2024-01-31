@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM14-Remesas. Envio sin pedido. BCRA .Datos minimos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77be4c81-c61a-4b16-b9a4-8be60940c524</testCaseGuid>
+</TestCaseEntity>

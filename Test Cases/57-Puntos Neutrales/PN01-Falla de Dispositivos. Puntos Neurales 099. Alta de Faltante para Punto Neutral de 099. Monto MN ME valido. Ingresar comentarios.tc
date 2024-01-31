@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PN01-Falla de Dispositivos. Puntos Neurales 099. Alta de Faltante para Punto Neutral de 099. Monto MN ME valido. Ingresar comentarios</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7a151a01-207f-4202-acc9-d011138b6c20</testCaseGuid>
+</TestCaseEntity>

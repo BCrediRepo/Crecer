@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFCCL</name>
+   <tag></tag>
+   <elementGuidId>d8326349-74ca-4a97-b4a5-401078446ead</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow2']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow2 > td.coloumntddata.coloumntddata_BCCLECQSOLTYPELIST</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>dbde3f7e-01a7-49d1-bbb0-92c254bf6542</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>coloumntddata coloumntddata_BCCLECQSOLTYPELIST</value>
+      <webElementGuid>c3c04f99-80f5-47a5-a014-a59a42fe727d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>FCCL</value>
+      <webElementGuid>3fad1a8d-47f8-4076-af09-584842add095</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow2&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLECQSOLTYPELIST&quot;]</value>
+      <webElementGuid>ff25574e-f14a-4907-aa7e-373367a3f248</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow2']/td</value>
+      <webElementGuid>775af347-55f8-47a7-ae4e-215de083f4af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Libretas Cheques Pagos Diferidos'])[1]/following::td[1]</value>
+      <webElementGuid>a0ae988f-cc34-400a-b873-44dc9debd601</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CPDA'])[1]/following::td[2]</value>
+      <webElementGuid>81b8dc4d-da9e-4150-a571-f0fad8f69703</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Form Continuo Comun Laser'])[1]/preceding::td[1]</value>
+      <webElementGuid>f8578666-675c-487c-b608-229d11f5f57c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/table/tbody/tr[3]/td</value>
+      <webElementGuid>ae8a85de-9f3f-4ce3-88b2-869dfadf09d3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'FCCL' or . = 'FCCL')]</value>
+      <webElementGuid>025fd7a3-6350-4d4e-ab31-ec3c786463af</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

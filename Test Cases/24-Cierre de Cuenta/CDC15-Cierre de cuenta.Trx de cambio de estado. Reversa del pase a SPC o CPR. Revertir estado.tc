@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC15-Cierre de cuenta.Trx de cambio de estado. Reversa del pase a SPC o CPR. Revertir estado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd107f81-f6f4-434e-ab16-f78ba01103b1</testCaseGuid>
+</TestCaseEntity>
