@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>frmInferior</name>
+   <tag></tag>
+   <elementGuidId>bdafca5d-e5c2-4f4f-b2d7-22958216fc56</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>html/frameset/frameset[2]/frame</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>IFRAME</value>
+      <webElementGuid>8772bd5e-1069-477e-ab35-e4f7cb85f6e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>xpath1704829146413</value>
+      <webElementGuid>38ef9f5d-458e-482e-b498-1a8c6f804dcd</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

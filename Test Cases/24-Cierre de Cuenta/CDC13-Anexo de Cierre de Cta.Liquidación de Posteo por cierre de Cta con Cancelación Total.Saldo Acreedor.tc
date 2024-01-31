@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC13-Anexo de Cierre de Cta.Liquidación de Posteo por cierre de Cta con Cancelación Total.Saldo Acreedor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>54eea990-1af5-4df0-a93d-dec07c3c2ec0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM21-Remesas. Envio sin pedido. RECEPCION.REME.OBANCO. Datos minimos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9751f3a-62d5-4e17-a616-a14853338330</testCaseGuid>
+</TestCaseEntity>

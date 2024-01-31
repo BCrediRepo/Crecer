@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM15-Remesas. Reversa de Envio de Remesas. Envio por Solicitud. Moneda Pesos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>967d9d93-04cd-429a-b970-a3138ae25642</testCaseGuid>
+</TestCaseEntity>

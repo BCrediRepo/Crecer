@@ -199,6 +199,96 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnEliminarFirmante_img.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/txtCantidadCien",
+      "brokenLocator": "//input[@id\u003d\u0027fieldName:DR.UNIT:10\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//table[@id\u003d\u0027tab2\u0027]/tbody/tr[20]/td[4]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/17-Remesas/03-TELLER/txtCantidadCien_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/btnDropdownOrigen-Destino",
+      "brokenLocator": "//table[@id\u003d\u0027tab1\u0027]/tbody/tr[9]/td[3]/a/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(//img[@title\u003d\u0027Lista de Registros\u0027])[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/17-Remesas/03-TELLER/btnDropdownOrigen-Destino_img.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/btnDropdownOrigen-Destino",
+      "brokenLocator": "//table[@id\u003d\u0027tab1\u0027]/tbody/tr[9]/td[3]/a/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//tr[9]/td[3]/a/img",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/lblTF",
+      "brokenLocator": "//tr[@id\u003d\u0027dropDownRow2\u0027]/td/b",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027TESORO FILIAL\u0027])[1]/preceding::b[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/17-Remesas/03-TELLER/lblTF_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/lblARS",
+      "brokenLocator": "//span[@id\u003d\u0027disabled_CURRENCY.1\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Moneda\u0027])[1]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/txtCantidadMil",
+      "brokenLocator": "//input[@id\u003d\u0027fieldName:UNIT:4\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//table[@id\u003d\u0027tab2\u0027]/tbody/tr[8]/td[4]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/17-Remesas/03-TELLER/txtCantidadMil_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas",
+      "brokenLocator": "//a[@id\u003d\u0027errorImg\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027(Fil.001 Centro)\u0027])[1]/following::a[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/lblTxnCompleta",
+      "brokenLocator": "//table[@id\u003d\u0027messages\u0027]/tbody/tr[2]/td[2]/table[2]/tbody/tr/td",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//table[2]/tbody/tr/td",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/17-Remesas/03-TELLER/btnDropdownDestino-Origen",
+      "brokenLocator": "#tab1 \u003e tbody:nth-child(1) \u003e tr:nth-child(6) \u003e td:nth-child(3) \u003e a:nth-child(2) \u003e img:nth-child(1)",
+      "brokenLocatorMethod": "CSS",
+      "proposedLocator": "//table[@id\u003d\u0027tab1\u0027]/tbody/tr[9]/td[3]/a/img",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/17-Remesas/03-TELLER/btnDropdownDestino-Origen_XPATH.png"
     }
   ]
 }

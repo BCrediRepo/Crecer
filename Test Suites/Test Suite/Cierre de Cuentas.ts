@@ -95,4 +95,18 @@
       <testCaseId>Test Cases/24-Cierre de Cuenta/CDC12-Cierre de cuenta.Administracion de nomina.Modificación de nómina de cuenta corriente en estado Cerrada. Adición de cheques a una nómina existente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>eea816ac-324a-47ed-87dc-b81370212741</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC13-Anexo de Cierre de Cta.Liquidación de Posteo por cierre de Cta con Cancelación Total.Saldo Acreedor</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6ecbc0d7-e601-4d3b-9dba-a36b40e6dedb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC16-Cierre de cuenta.Cuenta cambia de estado. Pase a Susp Pago de Cheque. Cuenta Corriente activa</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

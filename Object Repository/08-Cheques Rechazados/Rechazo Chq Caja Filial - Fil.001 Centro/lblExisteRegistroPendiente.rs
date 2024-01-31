@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblExisteRegistroPendiente</name>
+   <tag></tag>
+   <elementGuidId>e2f6e10c-5db0-452f-b8b1-c9d2388d9ab8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.message</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>html/frameset/frameset[2]/frame</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>de74519c-c2fa-443e-bd20-fbfa51c1deb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>5b6c1562-a2e3-4bb7-b2d4-69a72390f03b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>EXISTE REGISTRO PENDIENTE AUTORIZACION</value>
+      <webElementGuid>5d0b8753-ff71-4bf8-b766-3c2d84547336</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_BCCLCQCHEQUESRECHAZADOS display_box_BCCLCQCHEQUESRECHAZADOS_RCHFIL&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
+      <webElementGuid>dd46c3a6-d583-4464-a25e-746ac0f274b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/00-Utils/04-Frames/frmInferior</value>
+      <webElementGuid>6d462851-efaf-4a96-9b90-da2a2eccd6f9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      <webElementGuid>17ca9c96-da68-4d69-ba66-8abdfbf1ff5a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::td[7]</value>
+      <webElementGuid>07a1aed8-48df-4dec-828f-820aa15128a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rechazo de cheques de caja en filial'])[1]/following::td[14]</value>
+      <webElementGuid>fbd4171f-cdeb-440e-8163-adf9b589a789</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='EXISTE REGISTRO PENDIENTE AUTORIZACION']/parent::*</value>
+      <webElementGuid>77846a9d-da59-47ad-8da8-fa6d04772337</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr/td</value>
+      <webElementGuid>2b5110f7-d081-498c-b4e4-d669bbf76e22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'EXISTE REGISTRO PENDIENTE AUTORIZACION' or . = 'EXISTE REGISTRO PENDIENTE AUTORIZACION')]</value>
+      <webElementGuid>50e3ccd5-104b-47f2-b759-cd65e2a3c546</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM24-REMESAS.Consulta de Tesoro General. Consulta del Tesoro Anaquel. Usuario de Casa Central. Moneda ARS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a5b692bd-7d25-4621-87f7-d82e2d63848d</testCaseGuid>
+</TestCaseEntity>

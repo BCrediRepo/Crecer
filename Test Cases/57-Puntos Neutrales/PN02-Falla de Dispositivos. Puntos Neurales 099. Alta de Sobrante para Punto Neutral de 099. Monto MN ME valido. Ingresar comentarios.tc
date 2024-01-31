@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PN02-Falla de Dispositivos. Puntos Neurales 099. Alta de Sobrante para Punto Neutral de 099. Monto MN ME valido. Ingresar comentarios</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1339e1c4-5566-4896-98a7-420eaae4fd7a</testCaseGuid>
+</TestCaseEntity>
