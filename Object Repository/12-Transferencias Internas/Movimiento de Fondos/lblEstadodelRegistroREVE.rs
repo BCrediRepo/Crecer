@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblEstadodelRegistroREVE</name>
+   <tag></tag>
+   <elementGuidId>c7ba2826-4c37-42c5-8af8-1514517d004b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#tab2 > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(3) > span:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab2']/tbody/tr[3]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9625aac4-8eb7-46d3-9865-2ad052020b63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER disabled_dealbox_FUNDSTRANSFER_BCCLACDJ</value>
+      <webElementGuid>d293611d-4275-49d7-86b8-e5db22e8a451</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>REVE</value>
+      <webElementGuid>d26a80cf-2e6e-4016-a510-b612d78e2c95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab2&quot;)/tbody[1]/tr[3]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER disabled_dealbox_FUNDSTRANSFER_BCCLACDJ&quot;]</value>
+      <webElementGuid>daa5a061-f0c3-4fcc-b745-47e341b1fb63</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab2']/tbody/tr[3]/td[3]/span</value>
+      <webElementGuid>bba45d03-e031-452b-a9ce-6b1657e58164</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado del Registro'])[1]/following::span[1]</value>
+      <webElementGuid>0ba14992-042a-45ea-a887-d98cbdd10a45</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV1*NIV1*I'])[2]/following::span[1]</value>
+      <webElementGuid>df73ae9a-c17f-415d-9b76-8bf187dc1f58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizacion Nro'])[1]/preceding::span[1]</value>
+      <webElementGuid>7e060276-eacf-41fa-9658-adf49da49255</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresado Por.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>262df7e6-6c51-4ec7-a71e-9268cf5f8ce3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='REVE']/parent::*</value>
+      <webElementGuid>3bf6f189-b172-408b-be95-9fe121fb524e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr[3]/td[3]/span</value>
+      <webElementGuid>b044f4a1-e9d1-4e62-a1a3-33b4c7371bd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'REVE' or . = 'REVE')]</value>
+      <webElementGuid>7fd69a0c-41cf-4544-baa4-3dadf16b5e90</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

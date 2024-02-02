@@ -23,8 +23,8 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 22), findTestData('MainData/Users').getValue(
-        2, 22))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 39), findTestData('MainData/Users').getValue(
+        2, 39))
 
 WebUI.click(findTestObject('02-Dashboard/lnkTransferenciasInternas'))
 
@@ -32,9 +32,17 @@ WebUI.click(findTestObject('02-Dashboard/11-Transferencias Internas/lnkAltaTrans
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtSucursalDestino'), '089')
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtSucursalDestino'), '001')
 
-WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDOrdenante'), '1000873562')
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDOrdenante'), '1000506210')
+
+WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
+
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/txtMoneda'))
+
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/btnDrillDownMoneda'))
+
+WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/txtMoneda'), 'USD')
 
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
 
@@ -46,11 +54,11 @@ WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnD
 
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblVarios'))
 
-WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDBeneficiario'), '1004568475')
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDBeneficiario'), '1003194990')
 
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
 
-WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '15')
+WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '1')
 
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
 
@@ -64,7 +72,7 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Forzado y verificacion de firma
-WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.119 Monserrat')
+WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.089 M.del Plata Ct')
 
 WebUI.selectOptionByIndex(findTestObject('44-TOB/Verificacion de Firmas/cbxAccion'), 2)
 
@@ -82,6 +90,9 @@ assert Finalizada == 'FINALIZADA'
 
 assert Autorizada == 'AUTORIZADA'
 
+//GUARDAR EL NUM DE TXN
+Ft = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblFT'))
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verificacion de txn finalizada
@@ -93,7 +104,27 @@ Completada = WebUI.getText(findTestObject('12-Transferencias Internas/Movimiento
 
 assert Completada.contains('Txn Completa:') 
 
+WebUI.switchToWindowIndex(0)
 
+//Ingreso el FT a comparar
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'FT S ' + Ft)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Me muevo a la ventana de la FT //SI ROMPE TENER EN CUENTA QUE HAY DOS VENTANAS CON EL MISMO NOMBRE
+WebUI.switchToWindowIndex(4)
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//VALIDO LA CURRENCY
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblCurrency'))
+
+currencyVal = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblCurrency'))
+
+assert currencyVal.contains('USD')
+
+
+//---------------------------------------------------
 //Control Fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFAC</name>
+   <name>lblUSD</name>
    <tag></tag>
-   <elementGuidId>624965bc-940f-425d-b361-9e6a6686a4eb</elementGuidId>
+   <elementGuidId>c87d65a9-a561-4d91-bd92-16ad1445f39b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#dropDownRow11 > td.coloumntddata.coloumntddata_BCCLEMOTIVOTINT > b</value>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow14']/td/b</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='dropDownRow11']/td/b</value>
+         <key>CSS</key>
+         <value>#dropDownRow14 > td.coloumntddata.coloumntddata_CURRENCYLIST > b</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'USD' or . = 'USD')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,86 +26,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>b</value>
-      <webElementGuid>dd390114-aa3d-43e9-a857-b95956b72065</webElementGuid>
+      <webElementGuid>b442222e-e191-48dc-bf47-f70f86cfc22c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>FAC</value>
-      <webElementGuid>7a20fadd-8b31-477b-bfbd-463e425d8e4b</webElementGuid>
+      <value>USD</value>
+      <webElementGuid>546e86a0-d9bb-435b-84d7-dcf873f40124</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;dropDownRow11&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEMOTIVOTINT&quot;]/b[1]</value>
-      <webElementGuid>c88c6365-11d9-4b8b-acec-a477e6fe9326</webElementGuid>
+      <value>id(&quot;dropDownRow14&quot;)/td[@class=&quot;coloumntddata coloumntddata_CURRENCYLIST&quot;]/b[1]</value>
+      <webElementGuid>5403e738-10af-42ca-859f-619a8ae9bdbb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='dropDownRow11']/td/b</value>
-      <webElementGuid>d6920b0b-ec47-4fa5-a055-4415caaff7de</webElementGuid>
+      <value>//tr[@id='dropDownRow14']/td/b</value>
+      <webElementGuid>61afda10-487f-41d8-8700-d698826dd278</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Expensas'])[1]/following::b[1]</value>
-      <webElementGuid>91e640a9-2cf1-472d-8ed6-913c0daa18ab</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Convenio'])[1]/following::b[1]</value>
+      <webElementGuid>817f4c94-c796-4e19-804e-d0abe804d19b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EXP'])[1]/following::b[1]</value>
-      <webElementGuid>f2594fe4-2eb5-4982-bca0-11d93626a90f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='USC'])[1]/following::b[1]</value>
+      <webElementGuid>f5572506-d2d1-4948-8b9e-26bace9f761f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Factura'])[1]/preceding::b[1]</value>
-      <webElementGuid>5198d32a-a146-4ed1-bfe2-bbbef220c853</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Estadounidense'])[1]/preceding::b[1]</value>
+      <webElementGuid>5a8a0320-acf2-4cc3-baad-9aca41fffdbd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='FCE'])[1]/preceding::b[1]</value>
-      <webElementGuid>bcfa14fe-565b-4255-8cf8-f983a7dfbb5d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='UYU'])[1]/preceding::b[1]</value>
+      <webElementGuid>f1884c8b-07bb-48e7-b35e-8ed6b7675e73</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='FAC']/parent::*</value>
-      <webElementGuid>3e2c518e-7503-4069-a130-16594b669d41</webElementGuid>
+      <value>//*/text()[normalize-space(.)='USD']/parent::*</value>
+      <webElementGuid>09145241-7e74-4d5c-8f73-44fc4a06c654</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[12]/td/b</value>
-      <webElementGuid>7f7ca98a-b45b-44ce-88ba-93054c8a856b</webElementGuid>
+      <value>//tr[15]/td/b</value>
+      <webElementGuid>6c0b6013-a137-4b0a-8121-8138fc2542b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//b[(text() = 'FAC' or . = 'FAC')]</value>
-      <webElementGuid>ee2c86e0-bf0e-4f56-afb5-8f250d9470ab</webElementGuid>
+      <value>//b[(text() = 'USD' or . = 'USD')]</value>
+      <webElementGuid>c70025ac-9cc5-4988-bde9-562fb9f59703</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

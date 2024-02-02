@@ -6,38 +6,43 @@
    <elementGuidId>d1689370-decb-4d67-af84-d164efffa16a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='drillbox:1_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//select[@class = 'drillbox drillbox_BCCLEBAJASOBRANTEDISPOGEOPPN' and (text() = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante' or . = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>4cdd916c-d140-4a57-a18c-ace8f0988024</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>drillbox:1_1</value>
-      <webElementGuid>be96876e-3b27-4a32-834a-4523fdc2340d</webElementGuid>
+      <webElementGuid>406271d4-6c7c-41cf-be73-6a5a689faf3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>drillbox:1_1</value>
+      <webElementGuid>1f256668-c99e-42a0-90db-4a01441cebb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>drillbox drillbox_BCCLEBAJASOBRANTEDISPOGEOPPN</value>
-      <webElementGuid>c5f8a72f-7010-43db-9d90-42d311c3204c</webElementGuid>
+      <webElementGuid>c91452c2-c03d-4dec-bdcd-05a225076bb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante</value>
-      <webElementGuid>6ee52235-8ace-487e-a3ee-ae5ee3cb5cd3</webElementGuid>
+      <webElementGuid>33aa08d4-0af5-4325-80d8-1e788d233ecc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;drillbox:1_1&quot;)</value>
-      <webElementGuid>519f3443-c795-43ed-b3bc-f72a19343309</webElementGuid>
+      <webElementGuid>c61cdfe7-250c-4474-8b63-65930f568c1f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='drillbox:1_1']</value>
-      <webElementGuid>f6f82869-ecd5-4139-87c4-fbd750a74fb9</webElementGuid>
+      <webElementGuid>e656af36-ec22-4cb0-a769-8673dc77d46f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[14]/table/tbody/tr/td/select</value>
-      <webElementGuid>aa5ca46f-4722-4ff6-8772-5e7760095d75</webElementGuid>
+      <webElementGuid>9091e836-db3d-4e15-9823-312bc7e98056</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='FILIAL'])[1]/following::select[1]</value>
-      <webElementGuid>ca781069-9cbd-4110-ae90-ef5f8fa25f26</webElementGuid>
+      <webElementGuid>19154aa7-3053-4b54-a880-2be78608a5e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DEPOSITO'])[1]/following::select[1]</value>
-      <webElementGuid>1baa7099-151e-4658-b29a-356ae5512167</webElementGuid>
+      <webElementGuid>2854c4f0-0535-43b9-9e25-466957b33da7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[2]/preceding::select[1]</value>
-      <webElementGuid>efd198d1-9c37-4d3b-a2b8-8344c51b00c4</webElementGuid>
+      <webElementGuid>20f5e1a6-e4bb-4ba5-b9b5-7dd07aa77953</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DEPOSITO'])[2]/preceding::select[1]</value>
-      <webElementGuid>7854177e-e92a-4b8b-ba6a-b6432d24565a</webElementGuid>
+      <webElementGuid>b749f27a-c010-4fcc-9fae-a4141d5810b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//select</value>
-      <webElementGuid>38a754a1-9ab2-410d-b70b-9d42ad3cb0a9</webElementGuid>
+      <webElementGuid>a7ea635c-b5af-4ae3-a4d2-8106035ed7dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//select[@id = 'drillbox:1_1' and (text() = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante' or . = 'Baja Sobrante Dispositivo - SocioBaja Sobrante Dispositivo - O BancoBaja Sobrante Disp - Cta ContableReclasificar DifBaja de Sobrante - Prosegur NO MigBaja de Sobrante - Prosegur MigVer DetallesVer Baja de Sobrante')]</value>
-      <webElementGuid>81d14e20-2bab-470e-91b5-f884bbb8b1ff</webElementGuid>
+      <webElementGuid>5a8078a2-7d25-4c58-9e5c-1da739358619</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

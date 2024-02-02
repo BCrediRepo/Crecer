@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TI06-Alta con origen efectivo. Campos Calculados. Comision bonificada. Operacion en Dolares</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4cba2d0-64f7-4212-b923-932913785340</testCaseGuid>
+</TestCaseEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFAC</name>
+   <name>lblCurrency</name>
    <tag></tag>
-   <elementGuidId>624965bc-940f-425d-b361-9e6a6686a4eb</elementGuidId>
+   <elementGuidId>41aaec9f-67ef-461f-a4c7-fd71a698ee3d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#dropDownRow11 > td.coloumntddata.coloumntddata_BCCLEMOTIVOTINT > b</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='dropDownRow11']/td/b</value>
+         <value>//table[@id='tab1']/tbody/tr[4]/td[3]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>b</value>
-      <webElementGuid>dd390114-aa3d-43e9-a857-b95956b72065</webElementGuid>
+      <value>span</value>
+      <webElementGuid>15739b35-97ea-42c4-b78a-7c3f62739863</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER</value>
+      <webElementGuid>111479cf-f18c-46ef-a3ff-2ba3bdd04727</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>FAC</value>
-      <webElementGuid>7a20fadd-8b31-477b-bfbd-463e425d8e4b</webElementGuid>
+      <value>ARS</value>
+      <webElementGuid>7214d899-ee20-4e27-a847-16149d2bc08e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;dropDownRow11&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEMOTIVOTINT&quot;]/b[1]</value>
-      <webElementGuid>c88c6365-11d9-4b8b-acec-a477e6fe9326</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[4]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER&quot;]</value>
+      <webElementGuid>0cfe8e84-70a1-4d1b-a62a-a62d0a8083b2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='dropDownRow11']/td/b</value>
-      <webElementGuid>d6920b0b-ec47-4fa5-a055-4415caaff7de</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[4]/td[3]/span</value>
+      <webElementGuid>70ae4f82-d0f5-4bca-9056-a0b0432fcbb4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Expensas'])[1]/following::b[1]</value>
-      <webElementGuid>91e640a9-2cf1-472d-8ed6-913c0daa18ab</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Currency'])[1]/following::span[1]</value>
+      <webElementGuid>3a391d95-d5cb-4943-9aa0-59355780d85c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EXP'])[1]/following::b[1]</value>
-      <webElementGuid>f2594fe4-2eb5-4982-bca0-11d93626a90f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL-Referencia'])[1]/following::span[1]</value>
+      <webElementGuid>361572b3-98fc-40b8-bb8b-86ccae14ec7b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Factura'])[1]/preceding::b[1]</value>
-      <webElementGuid>5198d32a-a146-4ed1-bfe2-bbbef220c853</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/preceding::span[1]</value>
+      <webElementGuid>43c7e2e4-f6a8-40de-a1bb-0311507c3751</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='FCE'])[1]/preceding::b[1]</value>
-      <webElementGuid>bcfa14fe-565b-4255-8cf8-f983a7dfbb5d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Amount'])[1]/preceding::span[2]</value>
+      <webElementGuid>06a28cd7-49b7-4957-8d15-89868a440fdc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='FAC']/parent::*</value>
-      <webElementGuid>3e2c518e-7503-4069-a130-16594b669d41</webElementGuid>
+      <value>//*/text()[normalize-space(.)='ARS']/parent::*</value>
+      <webElementGuid>ca71c369-6ad0-4833-bc34-1756cc916d21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[12]/td/b</value>
-      <webElementGuid>7f7ca98a-b45b-44ce-88ba-93054c8a856b</webElementGuid>
+      <value>//tr[4]/td[3]/span</value>
+      <webElementGuid>10901ce8-b2f2-43d0-8ce7-61891ac056bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//b[(text() = 'FAC' or . = 'FAC')]</value>
-      <webElementGuid>ee2c86e0-bf0e-4f56-afb5-8f250d9470ab</webElementGuid>
+      <value>//span[(text() = 'ARS' or . = 'ARS')]</value>
+      <webElementGuid>e1302e47-5982-4c82-95a2-72ab63db7635</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

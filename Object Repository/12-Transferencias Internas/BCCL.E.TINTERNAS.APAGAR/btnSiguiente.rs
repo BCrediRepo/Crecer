@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnSiguiente</name>
+   <tag></tag>
+   <elementGuidId>e0ec8683-132d-48ef-808d-76c411f366b4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Pagina siguiente&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='enquiryDataSizer']/div/div/table/tbody/tr/td[4]/a/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>91af7c2c-6820-4c5e-b5c7-fc136f7b151c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/right.gif
+															</value>
+      <webElementGuid>d61ce1ad-0532-40b2-a38b-df0ed0684c9c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Pagina siguiente</value>
+      <webElementGuid>081f693e-c7b2-4948-99e0-1f4b7f9f163b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Pagina siguiente</value>
+      <webElementGuid>27b45f87-4522-402a-bce7-3bc0296945a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enquiryDataSizer&quot;)/div[@class=&quot;paging-toolbar paging-toolbar_BCCLETINTERNASAPAGAR&quot;]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]/img[1]</value>
+      <webElementGuid>73370acb-20d1-4a08-9ea9-9a4578611e19</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='enquiryDataSizer']/div/div/table/tbody/tr/td[4]/a/img</value>
+      <webElementGuid>c249720b-6da5-48b1-b3db-2e6a7a39d399</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Pagina siguiente']</value>
+      <webElementGuid>99561a84-01fd-4175-9bc5-33b36e321b7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[4]/a/img</value>
+      <webElementGuid>24a67d96-ed82-4964-af04-a2dfd9efa1f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/right.gif
+															' and @alt = 'Pagina siguiente' and @title = 'Pagina siguiente']</value>
+      <webElementGuid>887d0729-47c4-498d-aa1c-2a9d63417301</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

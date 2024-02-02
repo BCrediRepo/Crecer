@@ -3,18 +3,15 @@
    <description></description>
    <name>txtMoneda</name>
    <tag></tag>
-   <elementGuidId>bc5caeba-ff46-4e1e-9328-8e911e7b45a4</elementGuidId>
+   <elementGuidId>fbdc22e2-19d5-4248-b154-e0ea678155f1</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr[10]/td[3]/input</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>#fieldName\:DEBIT\.CURRENCY</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>XPATH</key>
+         <value>//input[@id='fieldName:DEBIT.CURRENCY']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -25,15 +22,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>18f8335e-d8c3-46f3-ab69-bb26420c1554</webElementGuid>
+      <webElementGuid>61f8089b-d06f-4e1f-9df5-b2a189b67e45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>632bff69-7eb2-4153-8e2b-64fa3ade04bb</webElementGuid>
+      <value>-1</value>
+      <webElementGuid>732049cb-08f5-49ca-b308-a08c705a7e4a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +38,7 @@
       <name>size</name>
       <type>Main</type>
       <value>3</value>
-      <webElementGuid>3debf36d-178d-4162-bfcf-cf80ddfe7f30</webElementGuid>
+      <webElementGuid>adb100da-c3cf-4a95-990d-88d1b48128bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:DEBIT.CURRENCY</value>
-      <webElementGuid>a3170207-396e-4f1b-b7c5-e8480d0e60c2</webElementGuid>
+      <webElementGuid>789bf93d-70ae-4985-9920-fc8c144022cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:DEBIT.CURRENCY</value>
-      <webElementGuid>0135aca5-69a4-42d3-9ef2-29cbaef603a2</webElementGuid>
+      <webElementGuid>84cd560c-54b2-40d5-a9f0-c97bb5d89f68</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,15 +62,55 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>14132e7f-7b5b-45a0-b646-da66ce20660e</webElementGuid>
+      <webElementGuid>7c5cf11e-33cb-4e14-89d8-2231ae0e65a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>ARS</value>
+      <webElementGuid>002097a7-d96d-4bea-80ce-d3e65a3437ec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>oldvalue</name>
+      <type>Main</type>
+      <value>ARS</value>
+      <webElementGuid>e1986521-784d-4fe1-9e17-05acb8f7482a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-oldvalue</name>
+      <type>Main</type>
+      <value>ARS</value>
+      <webElementGuid>bb51e99c-2940-4588-8d0d-30871cf137af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_TRANSFERENCIAINTERNA</value>
-      <webElementGuid>f53b4ba5-6aff-4691-a16d-144649a2cdc3</webElementGuid>
+      <value>noinput_dropdown noinput_dropdown_FUNDSTRANSFER noinput_dropdown_FUNDSTRANSFER_POSTEOTINTERNAALTA</value>
+      <webElementGuid>0b758508-a34e-4912-b48c-b8b690a67c9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeydown</name>
+      <type>Main</type>
+      <value>javascript:doNothingOnbackspace(event)</value>
+      <webElementGuid>8afcdf0a-4e24-4b50-b382-021651da3cd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeypress</name>
+      <type>Main</type>
+      <value>javascript:doNothingOnbackspace(event)</value>
+      <webElementGuid>eff29883-75ad-41b5-9e89-6dba26700e34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,7 +118,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>3</value>
-      <webElementGuid>35d773b3-5ca0-4334-8638-dfa1ada42ecd</webElementGuid>
+      <webElementGuid>a2d8bfb3-3418-4808-9b1f-69b73976f51b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -89,7 +126,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>0c5f0e45-2062-425b-9513-3384e952b8a0</webElementGuid>
+      <webElementGuid>cc3b4141-72f1-4be8-8bb7-3d9251044705</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -97,31 +134,15 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>86cb131c-1585-4740-8ac6-4e2ad2bfe9ae</webElementGuid>
+      <webElementGuid>20a291bf-73f8-48f8-9e9f-37c1a6a0aca8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>hot</name>
+      <name>enrifieldname</name>
       <type>Main</type>
-      <value>Y</value>
-      <webElementGuid>0028c079-0205-43a4-880d-717216d0d167</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
-      <type>Main</type>
-      <value>off</value>
-      <webElementGuid>8a97914c-28ae-49b1-a7aa-b6dbe07c5f80</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
-      <type>Main</type>
-      <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>d6958b94-1764-451a-832c-b2506f7515e0</webElementGuid>
+      <value>enri_DEBIT.CURRENCY</value>
+      <webElementGuid>5733418d-a5fd-4cdd-9156-b6e9ea21e12d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -129,23 +150,15 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'DEBIT.CURRENCY','issueToken');</value>
-      <webElementGuid>b3f45f02-dd46-4089-a1a4-a95e078fc3dd</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeydown</name>
-      <type>Main</type>
-      <value>enterKeyListener(event);</value>
-      <webElementGuid>884247a9-6b47-4df6-aa9c-f682ee5e1019</webElementGuid>
+      <webElementGuid>42d5eeb9-9b20-4b8e-b532-76980a2b3866</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>26dffbf1-18a4-4627-8924-73402ef315f2</webElementGuid>
+      <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
+      <webElementGuid>398a640e-034d-4eec-8ef9-e5d72bc7b6b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -153,7 +166,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('DEBIT.CURRENCY','','','issueToken')</value>
-      <webElementGuid>142bbddb-fee4-4a1b-9d37-e1afa77a0bf3</webElementGuid>
+      <webElementGuid>b9cc5ba0-a842-408c-9fdd-a70c57845e3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -161,7 +174,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:DEBIT.CURRENCY&quot;)</value>
-      <webElementGuid>8f16b2c4-dc4d-418e-ae4c-874f4d1bd8c7</webElementGuid>
+      <webElementGuid>0b0bc8ed-02dc-4b51-99ae-992515dc006f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -169,23 +182,23 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:DEBIT.CURRENCY']</value>
-      <webElementGuid>0f76e9c9-6c32-4343-857d-1b2a97b32433</webElementGuid>
+      <webElementGuid>a9b89a9b-03c9-4fec-bc5b-7ce733c44fc3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[10]/td[3]/input</value>
-      <webElementGuid>30e9861c-33fa-43b4-b785-f6749574a06a</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[12]/td[3]/input</value>
+      <webElementGuid>c3bbabbb-1537-4481-8677-73c0ac64fea6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[10]/td[3]/input</value>
-      <webElementGuid>4e4f0e77-e4a5-4379-95a2-badc6f6f53e9</webElementGuid>
+      <value>//tr[12]/td[3]/input</value>
+      <webElementGuid>206395b9-b672-4a2e-b325-41947458b59c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -193,6 +206,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:DEBIT.CURRENCY' and @name = 'fieldName:DEBIT.CURRENCY' and @type = 'text']</value>
-      <webElementGuid>b2b60528-76f2-4f05-9397-a9303366ded6</webElementGuid>
+      <webElementGuid>e7af6bb8-b250-4279-bc99-6e1a393fce7b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

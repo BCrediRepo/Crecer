@@ -84,235 +84,82 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Seleccionar "btn Id Sobrante"
-WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
+//WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
 
-//-----------------------------------------------------------------------------------------------Comienza el codigo
-//Obtén el elemento de la tabla
-WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
 
-//Obtén todas las filas dentro de la tabla
-List<WebElement> rows = table.findElements(By.tagName('tr'))
-//List<WebElement> rows = table.findElements(By.cssSelector('#r'))
+//QUE targetValue se vuelva el valor de la TT generada anteriormente
+// Valor específico que estás buscando
+String targetValue = "TT23240212187613"
 
-//Valor específico que estás buscando
-//String targetValue = GlobalVariable.vTxn
+//Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
+def buscarElementoEnTabla(String targetValue) {
+	//Itero en la tabla buscado la FT originada y cliqueando en PAGAR
+	// Obtén el elemento de la tabla
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	// Obtén todas las filas dentro de la tabla
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	// Itera a través de las filas
+	//Despliego la columna donde se muestra la info de las transacciones
+	WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
+	for (WebElement row : rows) {
+		// Obtiene el tercer valor de la fila (índice 1, ya que las listas son base cero)
+		WebElement cell = row.findElements(By.tagName("td"))[1]
 
-//Valor específico que estás buscando
-String targetValue = "TT23240869300925"
-
-//Imprimir valor en la consola
-println(targetValue)
-
-//Indicar maximo de filas
-int maxFilas = 19
-
-//Definir "valorDeseado" del comboBox
-String valorDeseado = "Baja Sobrante Dispositivo - O Banco"
-
-//Variable para rastrear si se encontró el valor específico
-boolean foundTargetValue = false
- 
-int i = 0
-while (i < rows.size() && !foundTargetValue) {
-	WebElement row = rows[i]
- 
-	//Obtén el valor de la fila
-	WebElement cell = row.findElements(By.tagName('td'))[1]
-	String cellText = cell.getText()
- 
-	//Compara el valor de la celda con el valor específico
-	if (cellText.equals(targetValue)) {
-		foundTargetValue = true
- 
-		//Obtén el elemento select dentro del td en la posición 13
-		WebElement comboBox = row.findElements(By.tagName('select'))[13]
-
-		//Seleccionar comboBox
-		comboBox.click()
- 
-//	//Crear objeto Select utilizando el WebElement del ComboBox
-//       Select selection = new Select(comboBox)
-//	   
-//	//Seleccionar valor deseado en el ComboBox
-//	selection.selectByVisibleText(valorDeseado)
- 
-		// Haz clic en el elemento 'img' dentro del td
-//		WebElement aceptar = tdElement.findElement(By.tagName("img"))
-//		aceptar.click()
+		// Obtiene el texto de la celda
+		String cellText = cell.getText()
+		println(cellText)
+		println(targetValue)
+		// Compara el valor de la celda con el valor específico
+		if (cellText.equals(targetValue)) {
+			// Realiza las acciones necesarias si se encuentra el valor
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[13]
+			WebElement comboBox = tdElement.findElement(By.tagName("select"))
+			// Utiliza Select para interactuar con el comboBox
+			def select = new Select(comboBox)
+			select.selectByVisibleText("Baja Sobrante Dispositivo - O Banco")
+			// Encuentra el elemento 'img' dentro del enlace 'a'
+			WebElement imgElement = tdElement.findElement(By.cssSelector("a[title='Select Drilldown'] img"))
+			// Haz clic en el elemento 'img'
+			imgElement.click()
+			return true
+		}
 	}
- 
-	i++
-	
-	// Si hemos llegado a la última fila, reinicia el índice
-	if (i == maxFilas) {
-		i = 0
-		//Seleccionar "boton Siguiente"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		
-		//Esperar 3 segundos
-		WebUI.delay(3)
-		
-		//Obtén todas las filas dentro de la tabla
-		//List<WebElement> rows = table.findElements(By.tagName('tr'))
-		
-		//Seleccionar "boton + verde"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
-		
-	}
-
-	//Compara el valor de la celda con el valor específico
-	if (cellText.equals(targetValue)) {
-		foundTargetValue = true
- 
-		//Obtén el elemento select dentro del td en la posición 13
-		WebElement comboBox = row.findElements(By.tagName('option'))[13]
-		
-		//Seleccionar comboBox
-		comboBox.click()
- 
-	}
-
-	i++
-	
-	// Si hemos llegado a la última fila, reinicia el índice
-	if (i == maxFilas) {
-		i = 0
-		//Seleccionar "boton Siguiente"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		
-		//Esperar 3 segundos
-		WebUI.delay(3)
-		
-		//Seleccionar "boton + verde"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
-	}
-
-	//Compara el valor de la celda con el valor específico
-	if (cellText.equals(targetValue)) {
-		foundTargetValue = true
- 
-		//Obtén el elemento select dentro del td en la posición 13
-		WebElement comboBox = row.findElements(By.tagName('select'))[13]
-		
-		//Seleccionar comboBox
-		comboBox.click()
- 
-	}
-	
+	return false
 }
 
-//// Itera a través de las filas (desde 1 hasta 19)
-//for (int i = 1; i < 20; i++) {
-//	WebElement row = rows[i]
-//	println(i)
-//
-//	//Obtener valor de la fila (las listas son base cero)
-//	WebElement cell = row.findElements(By.tagName('td'))[1]
-//
-//	//Obtiene el texto de la celda
-//	String cellText = cell.getText()
-//	
-//	if(i==19) {
-//		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-//		i=1
-//		WebUI.delay(5)
-//		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
-//	}
-//	
-//	//Comparar el valor de la celda con el valor específico
-//	if (cellText.equals(targetValue)) {
-//		foundTargetValue = true
-//
-//		//Obtener lista de elementos td
-//		List<WebElement> tdList = row.findElements(By.tagName('td'))
-//
-//		//Accede al elemento td en la posición 13
-//		WebElement tdElement = tdList[13]
-//		
-//		//Intenta encontrar el elemento 'select' dentro del elemento td
-//		WebElement comboBox = tdElement.findElement(By.tagName('select'))
-//
-//		// Crear un objeto Select utilizando el WebElement del ComboBox
-//		Select selection = new Select(comboBox)
-//		
-//		//Definir valor Deseado
-//		String valorDeseado = "Baja Sobrante Dispositivo - O Banco"
-//		
-//		//Seleccionar tipo de baja dentro del comboBox
-//		selection.selectByValue(valorDeseado)
-//		
-//		//Intenta encontrar el elemento 'img' dentro del elemento td
-//		WebElement aceptar = tdElement.findElement(By.tagName("img"))
-//		
-//		//Haz clic en el enlace
-//		aceptar.click()
-//		
-//		break
-//	}
-	
-//	// Compara el valor de la celda con "0,00"
-//	if (!cellText.equals("0")) {
-//		foundNonZeroValue = true
-//		break
-//	}
-//}
+// Lógica para buscar el elemento en la tabla
+def encontrado = false
 
-////Itera a través de las filas
-//for (WebElement row : rows) {
-//
-//	println(row.getText())
-//	println(row.)
-//	if (row.findElements(By.id('r19')) ) {
-//		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-//		WebUI.delay(5)
-//		row = 0
-//	}
-//	
-//    //Obtener valor de la fila (las listas son base cero)
-//    WebElement cell = row.findElements(By.tagName('td'))[1]
-//
-//    //Obtiene el texto de la celda
-//    String cellText = cell.getText()
-//
-//    //Comparar el valor de la celda con el valor específico
-//    if (cellText.equals(targetValue)) {
-//        foundTargetValue = true
-//
-//        //Obtener lista de elementos td
-//        List<WebElement> tdList = row.findElements(By.tagName('td'))
-//
-//        //Accede al elemento td en la posición 13
-//        WebElement tdElement = tdList[13]
-//		
-//		//Intenta encontrar el elemento 'select' dentro del elemento td
-//		WebElement comboBox = tdElement.findElement(By.tagName('select'))
-//
-//		// Crear un objeto Select utilizando el WebElement del ComboBox
-//		Select selection = new Select(comboBox)
-//		
-//		//Definir valor Deseado
-//		String valorDeseado = "Baja Sobrante Dispositivo - O Banco"
-//		
-//		//Seleccionar tipo de baja dentro del comboBox
-//		selection.selectByValue(valorDeseado)
-//		
-//		//Intenta encontrar el elemento 'img' dentro del elemento td
-//		WebElement aceptar = tdElement.findElement(By.tagName("img"))
-//		
-//		//Haz clic en el enlace
-//		aceptar.click()
-//        
-//		break
-//    }
-//} 
+// Bucle para buscar en múltiples páginas
+while (!encontrado) {
+	// Lógica para buscar el elemento en la tabla
+	encontrado = buscarElementoEnTabla(targetValue)
+		
+	// Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
+	if (!encontrado) {
+		// Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
+		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
+		// Espera a que la nueva página se cargue completamente
+		WebUI.delay(2)
+	}
+}
 
-////Control de fin de script
-//@com.kms.katalon.core.annotation.TearDownIfFailed
-//void fTakeFailScreenshot() {
-//    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
-//}
-//
-//@com.kms.katalon.core.annotation.TearDownIfPassed
-//void fPassScript() {
-//    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-//}
+//Switchear a la ventana de baja sobrante
+
+//completar el registro con los datos mandatorios
+
+//completar la baja
+
+
+//-----------------------------------------------------------------
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}

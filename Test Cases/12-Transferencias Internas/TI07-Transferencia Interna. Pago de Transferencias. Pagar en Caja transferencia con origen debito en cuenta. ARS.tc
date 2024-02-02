@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TI07-Transferencia Interna. Pago de Transferencias. Pagar en Caja transferencia con origen debito en cuenta. ARS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ead8047d-225e-46b8-bf17-ce00b64f8784</testCaseGuid>
+</TestCaseEntity>
