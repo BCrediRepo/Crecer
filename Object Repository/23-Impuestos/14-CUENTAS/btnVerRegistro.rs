@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnVerRegistro</name>
+   <tag></tag>
+   <elementGuidId>8694fc84-0816-44b3-92f7-a7b7b533fbcc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[2]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Ver un Registro&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>5f54296e-3207-47d5-a031-2c2f8daaa607</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/txnview.gif
+															</value>
+      <webElementGuid>70c85850-625b-4af1-a87e-28f7aff3a6c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Ver un Registro</value>
+      <webElementGuid>5dba36f6-2483-4bd1-9f0c-ab510c4ed400</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Ver un Registro</value>
+      <webElementGuid>d2771505-3c89-4109-80d5-2f467ec5582f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/img[1]</value>
+      <webElementGuid>ad459039-a42b-43ad-8385-ad84f96b42e5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[2]/a/img</value>
+      <webElementGuid>97d68e3c-986d-4491-a62e-d66b91d2e65c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Ver un Registro']</value>
+      <webElementGuid>51d0b5f8-bedf-4216-ab32-1fa0feda5ab8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/a/img</value>
+      <webElementGuid>225ac220-02e4-480c-ae6b-9ff81a2e8011</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnview.gif
+															' and @alt = 'Ver un Registro' and @title = 'Ver un Registro']</value>
+      <webElementGuid>96efac00-3f43-43a0-b3ce-4bfbb92982eb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

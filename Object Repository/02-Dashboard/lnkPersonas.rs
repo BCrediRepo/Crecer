@@ -10,12 +10,12 @@
          <value>li.clsHasKids > span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@onclick='ProcessMouseClick(event)']</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Personas' or . = 'Personas')]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Personas' or . = 'Personas') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+         <key>XPATH</key>
+         <value>//span[@onclick='ProcessMouseClick(event)']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3682f84f-c62d-419e-acdd-508734683162</webElementGuid>
+      <webElementGuid>ddf30db4-fc10-4ae7-ac16-f3dd0ad3b432</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>46349138-dd57-4362-abd0-bcb32e908162</webElementGuid>
+      <webElementGuid>a4c742c1-48b8-4872-aa4a-91c69d5a625d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Personas</value>
-      <webElementGuid>3b3f7b0d-7118-446f-9437-789695523f43</webElementGuid>
+      <webElementGuid>3a2c58bf-97b9-465b-92d0-3e7117a6a483</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>abb6acd3-fc90-4807-b3c8-ef026540629f</webElementGuid>
+      <webElementGuid>7f114740-0adc-47c6-9e2a-ae93b0af478a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>dd5e4da9-3968-494e-b1fe-f9b1d7823926</webElementGuid>
+      <webElementGuid>a6075c67-7c76-4168-b431-20ee4386755d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//span[@onclick='ProcessMouseClick(event)']</value>
-      <webElementGuid>e2087dfd-67d5-4bda-83ea-4499403a50f0</webElementGuid>
+      <webElementGuid>4302b5ee-b322-46e6-b1db-c49a9b311b50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul/li/span</value>
-      <webElementGuid>c55fe379-9009-4911-bd85-2261d433a184</webElementGuid>
+      <webElementGuid>eeba2c48-c921-49a8-ad23-a90cb9e1b7af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta'])[1]/preceding::span[1]</value>
-      <webElementGuid>5ff2aae4-07e9-48f7-b689-a0343f00b440</webElementGuid>
+      <webElementGuid>035dc47e-73e5-4632-812e-1682a261e966</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta Persona Fisica'])[1]/preceding::span[2]</value>
-      <webElementGuid>f6492fb5-c115-400d-8bee-36f57388b1fa</webElementGuid>
+      <webElementGuid>11e1f3a7-631c-4305-9978-f4717def5742</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Personas']/parent::*</value>
-      <webElementGuid>f9efd6c4-2392-40f6-908f-5782e834c334</webElementGuid>
+      <webElementGuid>43d3e27b-c1d4-4d17-b78c-a9e0d52c29de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li/span</value>
-      <webElementGuid>778f8522-fcea-42fa-9420-fb5d41481ec7</webElementGuid>
+      <webElementGuid>6614f8f4-2482-4846-bdeb-f4d6919a8a43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Personas' or . = 'Personas')]</value>
-      <webElementGuid>be2c5fbd-1fa3-4434-a741-251fc8766af0</webElementGuid>
+      <webElementGuid>71f18264-4b71-44a2-b5e1-0877b63e478a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

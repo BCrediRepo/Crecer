@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTxn Completa</name>
+   <tag></tag>
+   <elementGuidId>81baa56f-bb2a-49eb-be9d-008d01c43609</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.message</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>f8f83317-650a-47d1-8d3b-61dcdd88366b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>644de0bd-e276-4d97-837f-2330699db251</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Txn Completa: 1004474770 10:49:40 13 DEC 2023 BCCL.PERSONA,BCCL.M.CU.ENCAPJ.ENQA I </value>
+      <webElementGuid>2a3fb100-79a5-48ca-9356-a22fbc334559</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_BCCLPERSONA display_box_BCCLPERSONA_BCCLMCUENCAPJENQA&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
+      <webElementGuid>7f2e03a4-7c69-43d3-a0c7-180c34d639d1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      <webElementGuid>c2d7d99c-3e6e-4928-b5a0-48b246dbca18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ct)'])[1]/following::td[7]</value>
+      <webElementGuid>60e3f7eb-4fe1-4ee0-8b63-1c2c3bf517ad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Datos de identificacion'])[1]/following::td[15]</value>
+      <webElementGuid>658abdaa-cb8c-4cd5-be16-5575a47b62a1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ADVERTENCIA: Si informa cantidad de Empleados, debe ingresar la ART'])[1]/preceding::td[1]</value>
+      <webElementGuid>b91ef09e-8dd5-46f1-8ccc-108ac9a866c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ADVERTENCIA: Debe ingresar la Fecha de Ultima DDJJ de GA, si condicion es I'])[1]/preceding::td[2]</value>
+      <webElementGuid>6419c986-7fb6-4193-8629-7a794f95b49e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Txn Completa: 1004474770 10:49:40 13 DEC 2023 BCCL.PERSONA,BCCL.M.CU.ENCAPJ.ENQA I']/parent::*</value>
+      <webElementGuid>b17202b2-0bee-4d3c-bda7-5f0dc19fc15e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr/td</value>
+      <webElementGuid>ed6b38c3-bd47-4510-b3ab-2c01aa0defe8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Txn Completa: 1004474770 10:49:40 13 DEC 2023 BCCL.PERSONA,BCCL.M.CU.ENCAPJ.ENQA I ' or . = 'Txn Completa: 1004474770 10:49:40 13 DEC 2023 BCCL.PERSONA,BCCL.M.CU.ENCAPJ.ENQA I ')]</value>
+      <webElementGuid>c8bdf4e8-2302-47b4-8d74-df40150b732a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

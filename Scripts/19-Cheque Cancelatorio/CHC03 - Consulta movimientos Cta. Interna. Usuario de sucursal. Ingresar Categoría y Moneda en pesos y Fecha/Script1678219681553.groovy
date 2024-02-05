@@ -92,7 +92,9 @@ WebUI.switchToWindowTitle('Account Statement')
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/Account Statement/btnLargavistas'))
 
-WebUI.switchToWindowTitle('Movimiento de Fondos')
+//WebUI.switchToWindowTitle('Consulta Mov de Cuentas Internas')
+
+//WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 //WebUI.waitForElementVisible(findTestObject('20-Cheque Cancelatorio/Movimiento de Fondos/formTransaccion'), 12)
 

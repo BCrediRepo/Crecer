@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblACTIVA</name>
+   <tag></tag>
+   <elementGuidId>ce8778b9-fc29-4442-a46e-8b322d517ed1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[5]/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>8f457339-897e-4c30-8bd2-02c9d77d3027</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVFECHA</value>
+      <webElementGuid>f6bc1bed-243b-4e2b-99db-bf72303c168a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ACTIVA</value>
+      <webElementGuid>1aaddc9d-b764-4744-b5e4-96e73cf4eada</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[5]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVFECHA&quot;]</value>
+      <webElementGuid>607a51e0-fbc8-4416-bd76-cc5917cc5683</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[5]/td[2]</value>
+      <webElementGuid>5c8797d2-3ef7-4eae-bc3c-e89f4bb80766</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado'])[1]/following::td[1]</value>
+      <webElementGuid>c9632ac7-9e4b-4af6-b0cb-0d82bed598ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS PESOS ARGENTINOS'])[1]/following::td[2]</value>
+      <webElementGuid>2c22d67a-4625-40e4-912a-5ec4db7b45f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado'])[1]/preceding::td[1]</value>
+      <webElementGuid>0bff5db9-21ae-4b61-89a9-eba56b9b1d16</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo en U.V.A.'])[1]/preceding::td[3]</value>
+      <webElementGuid>8dae5667-3a61-4bbd-b420-6aa591dbbe7e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='ACTIVA']/parent::*</value>
+      <webElementGuid>d2cf0362-ce71-4a36-a6de-6bc0952e0424</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[5]/td[2]</value>
+      <webElementGuid>f5e3843a-8549-41b6-b7f9-b7cd86383497</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'ACTIVA' or . = 'ACTIVA')]</value>
+      <webElementGuid>21ddd1cd-9c9f-47dc-b645-eb185ac15591</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnValidarRegistro</name>
+   <tag></tag>
+   <elementGuidId>bbd1fd5f-b677-4853-bb3c-9867feb2587c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[2]/a/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Validar un registro&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>2d77ec15-40a0-4c3e-9ea4-1fac00435530</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/txnvalidate.gif
+															</value>
+      <webElementGuid>80e7ce73-fb03-48ce-bb97-c9e15fbec5c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Validar un registro</value>
+      <webElementGuid>0a8181ad-04f0-4e6f-9dee-5de0c9074a37</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Validar un registro</value>
+      <webElementGuid>2fb274e6-9a85-410c-86e9-2bee0aaae7aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/img[1]</value>
+      <webElementGuid>a71416c2-70c9-49fc-9474-56a7de999437</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[2]/a/img</value>
+      <webElementGuid>f020c65c-1a53-45d4-a414-3b8ae3972560</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Validar un registro']</value>
+      <webElementGuid>504a9c32-eafa-41f5-9d69-f1dcb3660c5b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/a/img</value>
+      <webElementGuid>48a367ac-f7dc-495b-9d58-2fdaf8f2d37c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnvalidate.gif
+															' and @alt = 'Validar un registro' and @title = 'Validar un registro']</value>
+      <webElementGuid>5f543ae5-2261-4583-ba12-06f7b8bb94b5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

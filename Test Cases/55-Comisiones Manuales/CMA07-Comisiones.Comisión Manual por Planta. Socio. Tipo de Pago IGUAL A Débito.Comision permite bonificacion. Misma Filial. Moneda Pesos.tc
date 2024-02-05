@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CMA07-Comisiones.Comisión Manual por Planta. Socio. Tipo de Pago IGUAL A Débito.Comision permite bonificacion. Misma Filial. Moneda Pesos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc815d5d-1fb0-401f-8da2-a65a06fa8344</testCaseGuid>
+</TestCaseEntity>

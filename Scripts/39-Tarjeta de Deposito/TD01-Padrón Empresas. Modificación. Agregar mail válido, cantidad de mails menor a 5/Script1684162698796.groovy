@@ -77,16 +77,21 @@ WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/l
 //Clickeamos en btnMasRotulos
 WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/btnMasRotulos'))
 
+//Switch a la ventana BCCL.CARD.PADRON.EMPRESA
+WebUI.switchToWindowTitle('BCCL.CARD.PADRON.EMPRESA')
+
 //Rellenar ROTULO 2
-WebUI.waitForElementPresent(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtROTULO2'), 6)
-WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtROTULO2'), 'RSANCH')
+//WebUI.waitForElementPresent(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtROTULO2'), 6)
+//WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtROTULO2'), 'RSANCH')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtCuentaReceptora2'), 6)
-WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtCuentaReceptora2'), '00340034758')
+WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtCuentaReceptora2'), '00010070802') //00340034758
 
 
 //Rellenar nombre de fantasia
-WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtNOMBREFANTASIA2'), 'ROBERTO SANCHEZ')
+WebUI.waitForElementPresent(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtNombreFantasia.2'), 6)
+
+WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtNombreFantasia.2'), 'ROBERTO SANCHEZ')
 
 //Rellenar mail2
 WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtMAIL2'), 'prueba@gmail.com')

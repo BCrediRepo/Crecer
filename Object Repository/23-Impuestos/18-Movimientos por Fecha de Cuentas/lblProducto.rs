@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblProducto</name>
+   <tag></tag>
+   <elementGuidId>6f27055d-9971-41db-b9ef-72b81be7c724</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[3]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>ae80c4de-f251-4618-9e4a-460817072ab2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHA</value>
+      <webElementGuid>18acbc0c-de9a-4b87-959e-9d2a6f8c4a7a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Producto</value>
+      <webElementGuid>6d41bde1-dc90-499c-8a1d-e5bdd33ffe21</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[3]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVFECHA&quot;]</value>
+      <webElementGuid>4ece8bcf-fc11-419d-9c98-49121d9cfe87</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[3]/td</value>
+      <webElementGuid>dad35651-923a-4bcb-b62e-3076bca5ae1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nro. de Cuenta'])[1]/following::td[2]</value>
+      <webElementGuid>80631f0b-ad57-4507-9545-6dcf10913f33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[5]</value>
+      <webElementGuid>915e8b94-5bd8-4704-b9ae-cfd0d679259a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[2]</value>
+      <webElementGuid>4b429cba-0e45-49c3-96e8-92863ee68d0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS PESOS ARGENTINOS'])[1]/preceding::td[3]</value>
+      <webElementGuid>afe4395d-0ddd-4166-a89d-2c10af1a042f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Producto']/parent::*</value>
+      <webElementGuid>2da55f74-700d-42a0-b92e-83eab04aae2c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td</value>
+      <webElementGuid>608d00fb-89a8-4092-aaa5-6481ff98ec38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Producto' or . = 'Producto')]</value>
+      <webElementGuid>630cc058-b87c-4f22-8357-e05a4b51b797</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

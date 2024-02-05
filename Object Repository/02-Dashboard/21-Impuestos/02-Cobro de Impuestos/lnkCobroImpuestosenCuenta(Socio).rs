@@ -6,12 +6,11 @@
    <elementGuidId>99f77028-1ff5-4260-a4a1-0523b43e3b08</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.IMPTOS.COB.CTA I F3');processMenuHeaderText('Cobro  Impuestos en Cuenta (Socio)')&quot;]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.IMPTOS.COB.CTA I F3');processMenuHeaderText('Cobro  Impuestos en Cuenta (Socio)')&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c4e22b03-ea22-41c3-bc28-7f123a3c0ac2</webElementGuid>
+      <webElementGuid>f16f5f81-9af5-4539-a6ac-d847c5323ed6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.IMPTOS.COB.CTA I F3');processMenuHeaderText('Cobro  Impuestos en Cuenta (Socio)')</value>
-      <webElementGuid>34eca893-2ba1-4661-876a-4653d1a5abb0</webElementGuid>
+      <webElementGuid>1b754cf5-08e5-468f-8e04-8d03a0d9a7e8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('FUNDS.TRANSFER,BCCL.IMPTOS.COB.CTA I F3');</value>
-      <webElementGuid>3182e00b-526b-4ef2-928e-4c479750110a</webElementGuid>
+      <webElementGuid>b8c43c4f-d32e-4bf4-9aa8-a47d31316b07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cobro  Impuestos en Cuenta (Socio) </value>
-      <webElementGuid>6724b78a-8837-4042-8c78-7f3eba83594d</webElementGuid>
+      <webElementGuid>1915ee78-327d-4f02-842b-bac697c8ca72</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
-      <webElementGuid>c050afea-4d08-4844-9e17-96a08aadb8b8</webElementGuid>
+      <webElementGuid>02b1d0b0-6be5-4b54-a359-8771bb87d1a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +61,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>cc85dacf-5a79-4d80-afc1-90d14a8f61c7</webElementGuid>
+      <webElementGuid>20d61f50-01c5-4bc4-b13d-3232e8f32ce8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,BCCL.IMPTOS.COB.CTA I F3');processMenuHeaderText('Cobro  Impuestos en Cuenta (Socio)')&quot;]</value>
-      <webElementGuid>df7256af-4670-4a7c-8adb-47a5dcce99cd</webElementGuid>
+      <webElementGuid>bc845ddc-f5e2-467b-84bb-826d6bc012c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[28]/li/ul/li/ul/li[2]/a</value>
-      <webElementGuid>125ce70f-bfd6-475b-bf7b-1d9459f8212c</webElementGuid>
+      <webElementGuid>78e259dc-444d-4885-ba8c-75c609087650</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Cobro  Impuestos en Cuenta (Socio)')]</value>
-      <webElementGuid>8f968b66-e257-4a20-a94b-9151e53104a7</webElementGuid>
+      <webElementGuid>ba0eef50-e991-4f81-8c24-1ad110fa5707</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro Impuestos en Efectivo (Socio/No Socio)'])[1]/following::a[1]</value>
-      <webElementGuid>02fa278b-5248-4e9b-9817-a4c79b97d42b</webElementGuid>
+      <webElementGuid>4eef3a3b-75a3-489b-a0f4-5dbb47d84cfd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro de Impuestos'])[1]/following::a[2]</value>
-      <webElementGuid>a1748b60-ebd9-4103-8e2a-e2fe31557cc6</webElementGuid>
+      <webElementGuid>e8f180b7-1cf8-4b2b-bb1d-c8dd94e47b2b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devolucion de Impuestos'])[1]/preceding::a[1]</value>
-      <webElementGuid>e8f3d734-d31e-4dbb-9b40-c369c0055773</webElementGuid>
+      <webElementGuid>bd43ced1-f5b5-4421-9583-e130f2f252c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Devolucion Impuestos en Efectivo (Socio / No'])[1]/preceding::a[1]</value>
-      <webElementGuid>5acd9f99-c536-43f3-b6db-35a8d9f9b5a6</webElementGuid>
+      <webElementGuid>bdb31aa5-e89c-4858-8424-8d5e1b9c386a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +125,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,BCCL.IMPTOS.COB.CTA I F3');&quot;)]</value>
-      <webElementGuid>95d75a0c-d902-46af-8c1e-f03f2d90c0f1</webElementGuid>
+      <webElementGuid>1bee652e-1308-4dd2-9c07-985e620385be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[28]/li/ul/li/ul/li[2]/a</value>
-      <webElementGuid>31d1ad21-51a2-4167-ae42-e88a0646135c</webElementGuid>
+      <webElementGuid>a7285486-c628-4cdd-8c14-e95fc7db3b0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +141,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,BCCL.IMPTOS.COB.CTA I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Cobro  Impuestos en Cuenta (Socio) ' or . = 'Cobro  Impuestos en Cuenta (Socio) ')]</value>
-      <webElementGuid>f3d59303-d671-4037-bc7c-e4fa69a19db1</webElementGuid>
+      <webElementGuid>b70c7355-3273-49fe-97bd-a8464ca700a5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

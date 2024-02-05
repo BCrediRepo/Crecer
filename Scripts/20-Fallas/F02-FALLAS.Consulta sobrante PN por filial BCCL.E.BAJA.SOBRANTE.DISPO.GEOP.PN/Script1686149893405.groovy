@@ -65,7 +65,7 @@ WebUI.maximizeWindow()
 //WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkNuevaSeleccion'))
 WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20220729')
 
-WebUI.setText(findTestObject('21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal1'), '073')
+//WebUI.setText(findTestObject('21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal1'), '073')
 //
 //WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtIdDispositivo'), '04312100000035')
 //

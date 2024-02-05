@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span0,70</name>
+   <tag></tag>
+   <elementGuidId>f0c5fcb5-560b-46dc-b095-1861b64ed593</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[13]/td[9]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>2875463e-d2e5-44d9-9587-3866485dd600</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_ACCHARGEREQUEST disabled_dealbox_ACCHARGEREQUEST_BCCLCOMPLANTA</value>
+      <webElementGuid>9f71e590-43a9-4eea-9dd3-d0b17c743a24</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>0,70</value>
+      <webElementGuid>14bab71b-ab5b-416a-95c1-97f759981d41</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[13]/td[9]/span[@class=&quot;disabled_dealbox disabled_dealbox_ACCHARGEREQUEST disabled_dealbox_ACCHARGEREQUEST_BCCLCOMPLANTA&quot;]</value>
+      <webElementGuid>731d9e85-e2cc-4278-96b5-ee715121d048</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[13]/td[9]/span</value>
+      <webElementGuid>e6b8b68d-c895-40fc-ab88-6b4934a760fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Costo Unitario'])[1]/following::span[1]</value>
+      <webElementGuid>af550a4c-fdc8-4bcb-b81a-8dddc291db36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Codigo Concepto'])[1]/following::span[3]</value>
+      <webElementGuid>96a76367-cac6-4b25-be3d-d56e4e363103</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cantidad'])[1]/preceding::span[1]</value>
+      <webElementGuid>f81a6307-7d1e-44a2-b0d0-cc5469b43d46</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>2dfe9f87-7b2b-41f4-8fce-a16ffbb8314d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='0,70']/parent::*</value>
+      <webElementGuid>4f3c8724-4f40-4565-b111-2ae1f74a850c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[13]/td[9]/span</value>
+      <webElementGuid>c4f31d67-69db-46dd-ab4d-92dbd4b970f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '0,70' or . = '0,70')]</value>
+      <webElementGuid>e33333d6-1c7f-45b2-b853-ab7f658ec7d0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

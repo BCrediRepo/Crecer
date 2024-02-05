@@ -13,8 +13,12 @@
          <key>CSS</key>
          <value></value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'fieldName:ROTULO:2' and @name = 'fieldName:ROTULO:2' and @type = 'text']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>b0e817e1-0c9e-41cb-ad61-06f08f6f81df</webElementGuid>
+      <webElementGuid>323bde78-7dfa-483c-bd58-57796ccafcae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>90256c82-0f4c-45ae-a47a-46a1caa99695</webElementGuid>
+      <webElementGuid>06fc32d4-5fbf-4679-a198-f3f33a8d72a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>size</name>
       <type>Main</type>
       <value>8</value>
-      <webElementGuid>1c3bd64a-f7a4-4770-9563-ee1e3f037c5b</webElementGuid>
+      <webElementGuid>f731268f-e191-4da8-96d8-c57c1e7a30e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:ROTULO:2</value>
-      <webElementGuid>dd6144e0-56bb-41ee-ae1a-29e2d9d8b77a</webElementGuid>
+      <webElementGuid>ccdb61c7-0933-48c4-9196-9dcfce840d5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:ROTULO:2</value>
-      <webElementGuid>27e901dd-65e3-4055-9c9d-31d17349a101</webElementGuid>
+      <webElementGuid>1246aee0-58a8-4474-b784-039fa16c0545</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>da93cb58-ff45-4cfc-9957-99c04c5560e7</webElementGuid>
+      <webElementGuid>cbed2f35-cac8-4e8a-a4e2-814ae07ece86</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>value</name>
       <type>Main</type>
       <value>CPIZZU02</value>
-      <webElementGuid>68dda7d8-82c9-425c-be54-a77cd7da4c1c</webElementGuid>
+      <webElementGuid>447fbea7-104a-4ead-bd80-b8e5567d53d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_BCCLCARDPADRONEMPRESA dealbox_BCCLCARDPADRONEMPRESA_ALTA</value>
-      <webElementGuid>8d4bb141-9022-48a3-b246-99c8d7a84c03</webElementGuid>
+      <webElementGuid>864fbd10-d518-4218-8b90-67bc4c558592</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>8</value>
-      <webElementGuid>db527e3e-6b7a-472f-a803-02a768e9f574</webElementGuid>
+      <webElementGuid>64994ed2-bb12-47e5-9401-8f44ca4931e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>abf056b5-819e-485e-962e-22e59b01a1fe</webElementGuid>
+      <webElementGuid>d0f1cd94-5aa8-45b6-a2a2-4103951f79d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>caseconv</name>
       <type>Main</type>
       <value>UPPERCASE</value>
-      <webElementGuid>9de0f870-324a-4e65-9f8e-99f78e90df5a</webElementGuid>
+      <webElementGuid>2a03845f-946d-4843-a534-431b8a0bc4a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>0a4019bb-4216-4573-8656-7437cb06b87c</webElementGuid>
+      <webElementGuid>5bc7c19d-223c-4b17-9909-4d63b3061b50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'ROTULO','issueToken');</value>
-      <webElementGuid>960a5b08-d490-4636-b27e-770bb47c4303</webElementGuid>
+      <webElementGuid>901f4c00-71e2-4412-8ea0-56d801de5dbc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>onkeydown</name>
       <type>Main</type>
       <value>enterKeyListener(event);</value>
-      <webElementGuid>ac109b6f-ebb2-4084-9d21-8d7571576710</webElementGuid>
+      <webElementGuid>2102b359-35af-41f6-8228-0963d39a25d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>8b6ee503-81f1-441d-81c6-95a8a886743d</webElementGuid>
+      <webElementGuid>33f8619a-7e17-4a93-aa3f-1df61d3a0cce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('ROTULO','','','issueToken')</value>
-      <webElementGuid>9b1cc046-4cc7-42b9-9f29-4e3e26d778af</webElementGuid>
+      <webElementGuid>8fa65633-b361-459f-b204-fc4cb5bf100e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:ROTULO:2&quot;)</value>
-      <webElementGuid>87ff6f50-f406-4864-b634-eba5679a0711</webElementGuid>
+      <webElementGuid>9284d963-c695-496c-b195-b1f7ef6c383b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -158,7 +162,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:ROTULO:2']</value>
-      <webElementGuid>41f61643-42a3-4b8d-a643-20ea8b8d456a</webElementGuid>
+      <webElementGuid>f936aff3-8e84-4f54-9d1b-a36653cd4568</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +170,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[15]/td[3]/input</value>
-      <webElementGuid>c0631583-ac1b-49e6-8019-7b8cbc57919c</webElementGuid>
+      <webElementGuid>a90e4b82-bd7d-4a50-a9f1-a30dc0bc1de8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,7 +178,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[15]/td[3]/input</value>
-      <webElementGuid>8d41728b-fa87-428f-9435-669b995cd49b</webElementGuid>
+      <webElementGuid>643d9b8c-a576-4a9a-9759-6a3e25713bdd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,6 +186,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:ROTULO:2' and @name = 'fieldName:ROTULO:2' and @type = 'text']</value>
-      <webElementGuid>cc2f80bc-92f5-4659-ac1f-3982002eacd8</webElementGuid>
+      <webElementGuid>149d863b-545d-42bf-ae27-99b694236d84</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
