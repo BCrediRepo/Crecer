@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -66,7 +66,7 @@ WebUI.switchToWindowTitle('Modificacion Persona Juridica')
 WebUI.maximizeWindow()
 
 //Completamos los datos
-WebUI.setText(findTestObject('Object Repository/31-Personas/Modificacion Domicilio Pers. Fisica/txtID Persona'), '1000327110')
+WebUI.setText(findTestObject('Object Repository/31-Personas/Modificacion Domicilio Pers. Fisica/txtID Persona'), '1002193717')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
