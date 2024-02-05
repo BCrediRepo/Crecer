@@ -264,13 +264,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2782abdd-6a5e-4e6a-a338-6603ff67aeda</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Operaciones Reversadas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>28af1d1e-5109-49e3-ae04-b130b94880a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -288,7 +281,7 @@
       <guid>53de0bbc-49e8-4de1-a9e3-93a67124fd55</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC41-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
