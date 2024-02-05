@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC26-Resumen de Cuenta.Consulta de Movimiento de cuentas internas por fecha. Fecha desde y Fecha hasta vacios</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dab21486-98bd-4a0a-a633-e23ea9855b9f</testCaseGuid>
+</TestCaseEntity>

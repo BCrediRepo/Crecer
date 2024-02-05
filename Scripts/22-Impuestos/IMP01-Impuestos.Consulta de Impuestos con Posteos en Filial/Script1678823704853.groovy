@@ -25,23 +25,32 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2,24))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Accedo a la ventana BCCL.E.IMPTOS.COBDEV.PLANTA
+
+//Busqueda de aplicacion por ENQ
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IMPTOS.COBDEV.PLANTA')
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
 //Accedo al menu de Impuestos
 //WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'))
 //WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperacionesdeImpuestosPorDescripcion'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperacionesdeImpuestosPorDescripcion'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkOperacionesdeImpuestosPorDescripcion'))
 //WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'))
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/01-Operaciones de Impuestos por Descripcion/lnkOperacionesdeImpuestosPorPosteo'))
+
+//Switch a la ventana de impuestos por Posteo
+WebUI.switchToWindowTitle('BCCL.E.IMPTOS.COBDEV.PLANTA')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Switch a la ventana de impuestos por Posteo
-WebUI.switchToWindowTitle('BCCL.E.IMPTOS.COBDEV.PLANTA')
+//Seleccionar boton Ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/01-Operaciones de Impuestos por Posteo/lnkVer'), 6)
 

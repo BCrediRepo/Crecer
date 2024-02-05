@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtNOMBREFANTASIA2</name>
+   <name>txtNro. de Cuenta Credito</name>
    <tag></tag>
-   <elementGuidId>ccc994e6-04d9-40aa-9ff9-013c25564a0a</elementGuidId>
+   <elementGuidId>482500fd-6178-4170-833b-c6f118e51516</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='fieldName:NOMBRE.FANTASIA:2']</value>
+         <value>//input[@id='fieldName:CREDIT.ACCT.NO']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>5f007b5f-8a84-4c30-b9a2-aa85a199ee80</webElementGuid>
+      <webElementGuid>e6529f0b-9240-48b1-84aa-a6cfad61d5de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,31 +30,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>24f89e5f-6a30-4ecd-a436-d352ee8cb968</webElementGuid>
+      <webElementGuid>c61a36f4-c1ea-44f7-81bf-5674f5b95367</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>20</value>
-      <webElementGuid>a039c503-00ee-4a07-b68d-8a6535d0456e</webElementGuid>
+      <value>36</value>
+      <webElementGuid>a44aff58-2706-4549-b558-578e1b1de5d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:NOMBRE.FANTASIA:2</value>
-      <webElementGuid>405b1022-e4f0-43ee-876b-d641817ed171</webElementGuid>
+      <value>fieldName:CREDIT.ACCT.NO</value>
+      <webElementGuid>97d00563-5569-4480-8a35-0cf7ca0b8527</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:NOMBRE.FANTASIA:2</value>
-      <webElementGuid>6df2739a-d68b-435f-933b-0d976ec4a190</webElementGuid>
+      <value>fieldName:CREDIT.ACCT.NO</value>
+      <webElementGuid>e0994da5-b97b-4fdc-932d-3a41743ce2ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,23 +62,23 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>711eddc2-944e-478d-9bec-f8d158e42ed7</webElementGuid>
+      <webElementGuid>25875ce0-5b1c-49a0-a57c-732bfee25a17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_BCCLCARDPADRONEMPRESA dealbox_BCCLCARDPADRONEMPRESA_ALTA</value>
-      <webElementGuid>0d26d098-d1ac-4afa-849a-aef20ab6bfab</webElementGuid>
+      <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_BCCLTRANSFONDMAP</value>
+      <webElementGuid>d381a0b2-2805-4afa-837b-3f00b4057711</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>20</value>
-      <webElementGuid>635e9481-6e87-4e08-b275-25604e26def9</webElementGuid>
+      <value>36</value>
+      <webElementGuid>58fe0180-46b9-43af-acc5-b8cc264d09b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,102 +86,94 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>b193393f-28d9-4d93-b0c4-d8c82524a0e9</webElementGuid>
+      <webElementGuid>473e6d7d-5cf3-4344-a2db-d722cc735753</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>fielderror</name>
+      <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>08582a53-64d8-4631-b62f-f5a3cd84a5ce</webElementGuid>
+      <webElementGuid>73a6b6be-8b6a-4286-9242-ac8e33b814d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>caseconv</name>
+      <name>ebr</name>
       <type>Main</type>
-      <value>UPPERCASE</value>
-      <webElementGuid>0749a536-b39f-4117-b871-13c8a2bedda7</webElementGuid>
+      <value>Y</value>
+      <webElementGuid>227db735-a04c-46a8-a537-26b14314d579</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
+      <name>enrifieldname</name>
       <type>Main</type>
-      <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>582683c5-d3fb-47c8-bf20-36b1cad25078</webElementGuid>
+      <value>enri_CREDIT.ACCT.NO</value>
+      <webElementGuid>36af639f-e67a-4d5c-95d6-bd286ece5391</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'NOMBRE.FANTASIA','issueToken');</value>
-      <webElementGuid>4c398be8-e18d-4ad2-bd73-4df4fe51a2ff</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeydown</name>
-      <type>Main</type>
-      <value>enterKeyListener(event);</value>
-      <webElementGuid>7f433077-e4a7-4c90-8f58-b90bec527c38</webElementGuid>
+      <value>invokeHelp(event,'CREDIT.ACCT.NO','issueToken');</value>
+      <webElementGuid>67d2000f-421c-4039-bdd9-ba74384262a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>24283265-380c-4970-84c8-835cc3eae76c</webElementGuid>
+      <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
+      <webElementGuid>4afdcff1-5e11-4615-acc3-3efb81a62323</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('NOMBRE.FANTASIA','','','issueToken')</value>
-      <webElementGuid>6004b1df-2109-4b23-a4a7-8d8a536e98e5</webElementGuid>
+      <value>javascript:help('CREDIT.ACCT.NO','','','issueToken')</value>
+      <webElementGuid>ef710570-2545-459e-b9c1-99f0bbaaef42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:NOMBRE.FANTASIA:2&quot;)</value>
-      <webElementGuid>c0e0502b-d769-4f74-bf66-29493ccd10df</webElementGuid>
+      <value>id(&quot;fieldName:CREDIT.ACCT.NO&quot;)</value>
+      <webElementGuid>a31fb138-8326-4946-aa1c-d2fc6c719ccc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:NOMBRE.FANTASIA:2']</value>
-      <webElementGuid>5ee257d7-cfb3-4338-9727-62695a9361a8</webElementGuid>
+      <value>//input[@id='fieldName:CREDIT.ACCT.NO']</value>
+      <webElementGuid>81fca4cb-9aa4-4ff0-bfc6-6d382b48ee11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[19]/td[3]/input</value>
-      <webElementGuid>c52eea37-08f6-4833-872e-c1ac32a89c4f</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[4]/td[3]/input</value>
+      <webElementGuid>2a69cc41-be38-472a-886a-7ae80ccd9c01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[19]/td[3]/input</value>
-      <webElementGuid>68ca4e70-71e9-4893-a325-a43df10de294</webElementGuid>
+      <value>//tr[4]/td[3]/input</value>
+      <webElementGuid>c779d5dc-47f9-4940-b7da-a051e908311a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:NOMBRE.FANTASIA:2' and @name = 'fieldName:NOMBRE.FANTASIA:2' and @type = 'text']</value>
-      <webElementGuid>fa7623e7-7fc8-49a4-8118-ad109a4375a1</webElementGuid>
+      <value>//input[@id = 'fieldName:CREDIT.ACCT.NO' and @name = 'fieldName:CREDIT.ACCT.NO' and @type = 'text']</value>
+      <webElementGuid>07ab2dea-e7cf-422a-9a2d-97ec5b54d13b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

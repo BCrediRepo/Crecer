@@ -23,7 +23,7 @@ import java.time.format.DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2,24))
 WebUI.maximizeWindow()
 
 //Se accede al menu 
@@ -45,7 +45,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('BCCL.E.VISION.PAGO.TJ')
 
 //WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), 6)
-WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), '1004140888')
+WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtPersona'), '1000000011') //1004140888
 //WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkEjecutar'))
 //WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblTarjetaPlastico'), 6)
@@ -53,9 +53,9 @@ WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkPagar'))
 
 //Switch a la ventana de busqueda de seleccion de pago
-WebUI.switchToWindowTitle('Pago de Tarjetas S/ Cod Barra. - Fil.073 Jujuy')
-//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), 6)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), '3')
+WebUI.switchToWindowTitle('Pago de Tarjetas S/ Cod Barra. - Fil.099 Casa Central')
+WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), 6)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), '1')
 //WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), 6)
 WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), '1')
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/imgAceptarRegistro'))

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span180,00</name>
+   <tag></tag>
+   <elementGuidId>1eea19c5-47ae-4256-b77a-7c6318804437</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[14]/td[8]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cea8a8e0-6f33-40f8-9edd-bc7e881989eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_ACCHARGEREQUEST disabled_dealbox_ACCHARGEREQUEST_BCCLCOMPLANTA</value>
+      <webElementGuid>6f76d650-a3a7-43b9-bb97-534bf83e3673</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>180,00</value>
+      <webElementGuid>a4a8f4f5-2ea6-4246-bd1b-dc293c98d563</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[14]/td[8]/span[@class=&quot;disabled_dealbox disabled_dealbox_ACCHARGEREQUEST disabled_dealbox_ACCHARGEREQUEST_BCCLCOMPLANTA&quot;]</value>
+      <webElementGuid>fc4bdf84-5e55-4218-96eb-90235f487d4a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[14]/td[8]/span</value>
+      <webElementGuid>19736650-f6a1-456b-8332-27c8dab48437</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total.1'])[1]/following::span[1]</value>
+      <webElementGuid>f9511ed2-ec48-4b83-ad23-ed97442b25d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cantidad'])[1]/following::span[2]</value>
+      <webElementGuid>1b773ba5-71cc-480f-a3d0-b58ab615f1c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bonificacion%'])[1]/preceding::span[1]</value>
+      <webElementGuid>b11e3ca4-bfdb-442e-a7b8-88baede593de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total + Imp.'])[1]/preceding::span[2]</value>
+      <webElementGuid>c617dd57-f04e-4c59-a1ae-3231a27a2fc6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[8]/span</value>
+      <webElementGuid>2db20bb5-d35e-4870-9064-874791093472</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '180,00' or . = '180,00')]</value>
+      <webElementGuid>6ee30832-6223-4fe5-a834-43a6bc588820</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

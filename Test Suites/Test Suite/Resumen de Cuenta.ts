@@ -186,4 +186,32 @@
       <testCaseId>Test Cases/17-Resumen de Cuenta/RC25-Consulta movimientos de cuenta por fecha valor. Campo Desagrupar Monetarios IGUAL a SI. No se informan fechas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>f408f05f-91ce-4c9c-ac09-11fc8ed5e2b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC26-Resumen de Cuenta.Consulta de Movimiento de cuentas internas por fecha. Fecha desde y Fecha hasta vacios</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2b3dc4e7-2233-48bf-b8ee-f2b151269fc3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC27-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuenta. Cuenta operativa en Pesos con Estado Activa</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f7e4a477-23b5-4185-942a-b695cf642f95</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC28-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Detalle. Cuenta Operativa con Estado a Cerrada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1c302007-0a2e-4edd-bf53-0ed90fda29b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC29-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

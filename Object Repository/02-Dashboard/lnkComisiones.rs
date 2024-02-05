@@ -10,10 +10,14 @@
          <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Comisiones' or . = 'Comisiones') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b7060df1-654d-4716-a9a7-ed1c6a84c6fa</webElementGuid>
+      <webElementGuid>e09c6b10-5535-4de2-82e2-f02ef6e41f6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +33,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>9967a9c5-0466-45cf-a07a-0d0fedf9d69b</webElementGuid>
+      <webElementGuid>ee102be7-0e05-4284-a733-db4a5c5fd1ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>2c3f5baa-8f1a-4389-b56b-1a878461ebd0</webElementGuid>
+      <webElementGuid>fbc4c31e-295e-43b0-89cc-317135eaec7c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Comisiones</value>
-      <webElementGuid>4f1cc65c-c8e7-44db-903d-0352b1ba9660</webElementGuid>
+      <webElementGuid>002ec8dd-b3e0-4bc1-8c81-7f15f2b57d89</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>0a91cf95-a327-4601-848a-98e9b88b48c1</webElementGuid>
+      <webElementGuid>03ebf0ce-9062-4613-b403-08e87ccc31a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>a853ea57-c86b-42d1-90ba-99384259fb87</webElementGuid>
+      <webElementGuid>5b889ba4-e7dc-4f86-ba6f-08797f267766</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[49]</value>
-      <webElementGuid>9cd3093e-a48a-4844-b1b3-8281bdf132ca</webElementGuid>
+      <webElementGuid>4be549de-fde1-4a3e-a1d3-720d635860b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[27]/li/span</value>
-      <webElementGuid>83dbf256-070b-42bc-8d64-7c05519a899b</webElementGuid>
+      <webElementGuid>4acd9839-26d2-4493-b7ea-abe0eb15db72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acred. Recibidas USD por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>9934745d-19e7-4ee0-91d6-fcedee5f7330</webElementGuid>
+      <webElementGuid>ffad8c70-f956-415b-9d3d-e659fde4bb28</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Acumulado Acreditaciones IFE por Cuenta'])[1]/following::span[1]</value>
-      <webElementGuid>d4d75530-88d2-4d0e-96b3-c301b9930d24</webElementGuid>
+      <webElementGuid>74ccddae-6ecf-42bb-a9a0-c1e7d6dbd28b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Parametrizacion'])[1]/preceding::span[1]</value>
-      <webElementGuid>f4631975-84d7-4315-ac28-6c8fde425d52</webElementGuid>
+      <webElementGuid>9f3b0311-ab3c-48bb-bc12-e94675e16865</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizar valor de Comisiones'])[1]/preceding::span[2]</value>
-      <webElementGuid>f115f4d2-b7fe-4710-b17e-dfbdbc665d9e</webElementGuid>
+      <webElementGuid>258fad4f-0700-4a68-95b7-6eee1f7a3bed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Comisiones']/parent::*</value>
-      <webElementGuid>9c1698a1-0462-45cb-99bc-151cc0d0caa1</webElementGuid>
+      <webElementGuid>6ecf1a7d-9576-4b07-9afb-e2c211dad483</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +129,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[27]/li/span</value>
-      <webElementGuid>d9b6b377-f26c-4f9d-accd-ad3d3ed5d93b</webElementGuid>
+      <webElementGuid>88b29e9e-cd05-462f-bf04-db6eddec5733</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +137,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Comisiones' or . = 'Comisiones')]</value>
-      <webElementGuid>913fcdab-ba9b-48ec-b6b9-fef7b14f56a8</webElementGuid>
+      <webElementGuid>76a5b10b-d38a-4536-990b-60ab4c511d3a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

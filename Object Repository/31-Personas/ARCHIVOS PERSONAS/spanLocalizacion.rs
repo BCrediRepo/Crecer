@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>spanLocalizacion</name>
+   <tag></tag>
+   <elementGuidId>ee3a2f0b-a7b4-4382-9463-91211284bdef</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.nonactive-tab > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='headtab']/tbody/tr/td[2]/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>518d0e4e-64c5-4c57-9d3b-8d9b40c9c7ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Localizacion</value>
+      <webElementGuid>97eb678d-8d43-413c-834e-a2b552f2a6b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[2]/a[@class=&quot;nonactive-tab&quot;]/span[1]</value>
+      <webElementGuid>4c8071f1-eb30-4794-a358-6e5b907f35a6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='headtab']/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>fd049343-dd3f-431c-ae19-f4852ea103b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Personales'])[1]/following::span[1]</value>
+      <webElementGuid>319be9da-74f0-4e02-8abc-a9a7a0968a00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultar Padrones?'])[1]/following::span[2]</value>
+      <webElementGuid>8b1b53ae-bbea-43f2-ac85-33d46d46ec37</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Impositivos'])[1]/preceding::span[1]</value>
+      <webElementGuid>cccc0027-c2ff-41a5-b6e2-67ab4cea0f16</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Socio-Culturales'])[1]/preceding::span[2]</value>
+      <webElementGuid>5f949b51-47be-4538-a5d0-5a5b9d4cb880</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Localizacion']/parent::*</value>
+      <webElementGuid>07e4a98a-e28e-4ef5-9570-f3958e5dade9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/table/tbody/tr/td[2]/a/span</value>
+      <webElementGuid>f27f8239-89da-4f1b-a560-f5d0e2152bb0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Localizacion' or . = 'Localizacion')]</value>
+      <webElementGuid>82ebe025-9b93-4a11-9c81-3d060632121a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

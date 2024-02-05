@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CMA04-Comisión Manual por Planta. Socio. Tipo de Pago IGUAL A Débito. Fecha Futura</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>218c1e15-de20-4ffb-b1a0-339680a2ef1e</testCaseGuid>
+</TestCaseEntity>

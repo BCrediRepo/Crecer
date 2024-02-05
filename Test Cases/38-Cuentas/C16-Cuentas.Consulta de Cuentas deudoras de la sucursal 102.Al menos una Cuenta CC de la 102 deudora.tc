@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>C16-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a80b2021-4c50-47ce-a64a-9a4e472eb53b</testCaseGuid>
+</TestCaseEntity>

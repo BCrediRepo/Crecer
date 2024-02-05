@@ -55,7 +55,7 @@ WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados
 
 WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
 
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'), '1000275776')
+WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'), '1001530154') //1000275776
 
 WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnValidarRegistro'))
 
@@ -88,9 +88,9 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CH
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
 
-if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), FailureHandling.CONTINUE_ON_FAILURE)) {
+//if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), FailureHandling.CONTINUE_ON_FAILURE)) {
     WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
-}
+//}
 
 //Valido que la transaccion se complete correctamente
 WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'), 
