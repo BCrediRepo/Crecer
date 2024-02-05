@@ -662,4 +662,25 @@
       <testCaseId>Test Cases/42-Verificacion de Firmas/VDF16-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante .Persona inexistente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>13bbc1aa-06dc-494a-a882-1191ae63c0a2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/27-Cobranza de Legales/LEG03-Version de input de cobranza de legales-Ingreso de registro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ad12cb7b-766a-4f95-9398-48c71ff6f89d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f3c8837d-6682-41da-9e56-8a1c5bebbac0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consulta Enquiry BCCL.E.FIRMAS.FISICA. Encabezado. Visualización</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

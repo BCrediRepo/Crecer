@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>FD01-Falla puntos Neutrales. Alta de faltante CD Neutrales. Dispositivo de la Sucursal. Retiro</name>
+   <name>PN05-Falla puntos Neutrales. Alta de faltante CD Neutrales. Dispositivo de la Sucursal. Retiro</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3eee04bf-c912-4805-90f4-7d41d19ff297</testCaseGuid>

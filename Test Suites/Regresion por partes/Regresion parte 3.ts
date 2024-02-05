@@ -183,14 +183,14 @@
       <guid>99776279-6401-4aa8-a7ba-eeeb508f1996</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas/F01 - FALLAS.Consulta de sobrante ENQ BCCL.E.TT.BAJA.SOBRANTE.CAJA</testCaseId>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F01 - FALLAS.Consulta de sobrante ENQ BCCL.E.TT.BAJA.SOBRANTE.CAJA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>95591f95-1023-4c5a-9595-98145a087a11</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas/F02-FALLAS.Consulta sobrante PN por filial BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN</testCaseId>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F02-FALLAS.Consulta sobrante PN por filial BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -652,28 +652,28 @@
       <guid>8e2085df-c50c-4f1a-85db-2300d78843f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas/F03-Alta de Faltantes de ATM CD TAS. Filial. Completitud</testCaseId>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F03-Alta de Faltantes de ATM CD TAS. Filial. Completitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7148a044-44c7-4e86-abf6-3d8725752691</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas/F04-BAJA Faltante en Disp PN - Deposito Intel - Tarj Precargada - Cta Contable</testCaseId>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F04-BAJA Faltante en Disp PN - Deposito Intel - Tarj Precargada - Cta Contable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>bedffcf4-f011-46c0-b9d9-fb4924ff090d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas/F05-Baja Faltantes en Puntos Neutrales Delegados - Cta Cont</testCaseId>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F05-Baja Faltantes en Puntos Neutrales Delegados - Cta Cont</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b952d6ae-fbe6-438b-bb84-5cc7dc4c8066</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas/F06-Falla de dispositivo ALTA Faltante en Disp PN - Retiro. MAP</testCaseId>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F06-Falla de dispositivo ALTA Faltante en Disp PN - Retiro. MAP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
