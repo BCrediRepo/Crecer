@@ -3,15 +3,19 @@
    <description></description>
    <name>txtNombrePosteo</name>
    <tag></tag>
-   <elementGuidId>86439fdf-f7b0-46a9-991d-6c97e668c550</elementGuidId>
+   <elementGuidId>bf67d18e-2e68-4b5c-8118-8a9e081c79c0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@name = 'fieldName:CREDIT.AMOUNT']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='fieldName:L.NOMBRE.POSTEO']</value>
+         <value>//*[@id=&quot;fieldName:L.NOMBRE.POSTEO&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#fieldName\:DEBIT\.AMOUNT</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>04b722ab-6262-441e-9f71-423be762b14d</webElementGuid>
+      <webElementGuid>f7bb8728-4709-46af-a07e-165e87e2d7d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,31 +34,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>39bcf133-6af9-4946-af47-4c59320df1f8</webElementGuid>
+      <webElementGuid>7410c3ac-e186-4652-847f-d865281904cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>60</value>
-      <webElementGuid>3d013c72-cb10-4ec7-8e0c-4f81cf581ecc</webElementGuid>
+      <value>18</value>
+      <webElementGuid>0d7633cc-6b4f-46e1-8033-0cfe32168f42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:L.NOMBRE.POSTEO</value>
-      <webElementGuid>b8f6240b-6dbc-4e3a-8004-9b56b385aeb4</webElementGuid>
+      <value>fieldName:CREDIT.AMOUNT</value>
+      <webElementGuid>2658c73d-0ae0-46b6-b685-59c5ba5dccc6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:L.NOMBRE.POSTEO</value>
-      <webElementGuid>28c3add7-3b44-4a74-9269-aa886da49387</webElementGuid>
+      <value>fieldName:CREDIT.AMOUNT</value>
+      <webElementGuid>2c2ae2ff-08c0-4c03-84e5-9456c4bf23a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>8d9cfd9c-983f-4ea4-99f1-5c3305342547</webElementGuid>
+      <webElementGuid>70d5a9b9-68e7-4deb-bac7-81798968713e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,110 +74,94 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_POSTEORETIRO</value>
-      <webElementGuid>47ca2ee3-c891-4c14-a5c4-bf20be55afb1</webElementGuid>
+      <webElementGuid>d4ad7d74-b081-4449-baf6-3522900c4eea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>50</value>
-      <webElementGuid>7fe03842-c5df-4bcb-ad7a-a678b9f9dcac</webElementGuid>
+      <value>18</value>
+      <webElementGuid>042b6af8-bf7e-417f-9573-2df964cf2233</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>a89af663-ef49-46e4-a0f0-4c9afbf45592</webElementGuid>
+      <webElementGuid>77adf2f8-732a-4fa4-afb6-1bfac78829d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>caseconv</name>
+      <name>enrifieldname</name>
       <type>Main</type>
-      <value>UPPERCASE</value>
-      <webElementGuid>7ddebd0f-3131-4caf-b244-93882ae266c7</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
-      <type>Main</type>
-      <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>e57ba9bb-2ade-4e74-a197-7185fc0b0941</webElementGuid>
+      <value>enri_CREDIT.AMOUNT</value>
+      <webElementGuid>5d6aa7c5-a610-4f5a-8661-c125bc44b931</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'L.NOMBRE.POSTEO','issueToken');</value>
-      <webElementGuid>b0936203-601f-415e-905f-3d8d68eb7288</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeydown</name>
-      <type>Main</type>
-      <value>enterKeyListener(event);</value>
-      <webElementGuid>10f12254-d259-457e-be2e-240c8b4291fd</webElementGuid>
+      <value>invokeHelp(event,'CREDIT.AMOUNT','issueToken');</value>
+      <webElementGuid>86391b34-f127-4581-b308-887c98ab9b3b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>c86e1625-4512-4119-b3db-f29fbe671bb3</webElementGuid>
+      <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
+      <webElementGuid>f60cf70b-37e1-461a-ab0b-4b1540e903a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('L.NOMBRE.POSTEO','','','issueToken')</value>
-      <webElementGuid>1f44d152-6cff-4e56-922e-cc3a26abed0b</webElementGuid>
+      <value>javascript:help('CREDIT.AMOUNT','','','issueToken')</value>
+      <webElementGuid>183a629f-4297-4bd2-84d0-9e9d6c325810</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:L.NOMBRE.POSTEO&quot;)</value>
-      <webElementGuid>ba66eaae-b646-453f-8c1c-78e6ba494973</webElementGuid>
+      <value>id(&quot;fieldName:CREDIT.AMOUNT&quot;)</value>
+      <webElementGuid>c2500f28-5c16-4776-a0aa-347e332bf013</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:L.NOMBRE.POSTEO']</value>
-      <webElementGuid>778d4d2f-76f0-466d-a524-16560e21b882</webElementGuid>
+      <value>//input[@id='fieldName:CREDIT.AMOUNT']</value>
+      <webElementGuid>ea62f22e-2598-4667-9b0c-88ace7567136</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[3]/td[4]/input</value>
-      <webElementGuid>41998f14-0480-4b8b-9252-2df8139b0169</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[5]/td[4]/input</value>
+      <webElementGuid>1996adf9-36fe-4f83-9d97-e2d84597069b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[3]/td[4]/input</value>
-      <webElementGuid>62c7c5fd-784c-4f17-8381-18f3ae3c98e3</webElementGuid>
+      <value>//tr[5]/td[4]/input</value>
+      <webElementGuid>fb209a30-b639-466e-8cf4-c8f4e871227c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:L.NOMBRE.POSTEO' and @name = 'fieldName:L.NOMBRE.POSTEO' and @type = 'text']</value>
-      <webElementGuid>47f3ea08-57f5-47ea-936c-c22f1c9cbe87</webElementGuid>
+      <value>//input[@id = 'fieldName:CREDIT.AMOUNT' and @name = 'fieldName:CREDIT.AMOUNT' and @type = 'text']</value>
+      <webElementGuid>0ff436e8-01a4-422e-8093-5e3edf45f52f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

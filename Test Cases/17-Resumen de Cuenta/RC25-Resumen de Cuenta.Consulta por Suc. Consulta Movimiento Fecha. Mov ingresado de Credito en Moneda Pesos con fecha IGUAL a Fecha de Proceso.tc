@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>RC25-Resumen de Cuenta.Consulta por Suc. Consulta Movimiento Fecha. Mov ingresado de Credito en Moneda Pesos con fecha IGUAL a Fecha de Proceso</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4c5ed463-7c0c-47d1-8863-4be5a1f89a62</testCaseGuid>
-</TestCaseEntity>

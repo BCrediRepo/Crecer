@@ -109,4 +109,18 @@
       <testCaseId>Test Cases/38-Cuentas/C14-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4508a1d1-066b-4e36-9c4e-2d3cc6fc38c5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consulta Enquiry BCCL.E.FIRMAS.FISICA. Encabezado. Visualización</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>92393703-b23e-415c-a2c5-ee36a0157e7f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

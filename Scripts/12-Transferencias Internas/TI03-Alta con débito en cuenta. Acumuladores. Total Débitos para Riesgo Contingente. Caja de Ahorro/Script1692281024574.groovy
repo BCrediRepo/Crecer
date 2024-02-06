@@ -91,7 +91,10 @@ WebUI.verifyElementVisible(findTestObject('12-Transferencias Internas/Movimiento
 
 Completada = WebUI.getText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
 
-assert Completada.contains('Txn Completa:') //Control Fin de script
+assert Completada.contains('Txn Completa:') 
+
+
+//Control Fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

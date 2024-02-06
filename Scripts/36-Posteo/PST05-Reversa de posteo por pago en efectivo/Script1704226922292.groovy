@@ -20,7 +20,7 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 
 //Generacion de posteo a traves de caso PST04
-WebUI.callTestCase(findTestCase('36-Posteo/PST04-Generar Posteos para liquidar'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('36-Posteo/PST04-Generar Posteos para liquidar - Pago en efectivo'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)

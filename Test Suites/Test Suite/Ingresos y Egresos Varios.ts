@@ -193,4 +193,32 @@
       <testCaseId>Test Cases/41-Ingresos Egresos Varios/IEV26-Ingresos y Egresos Varios. Ingreso de planta. INGRESO de PLANTA que NO necesita ID. Moneda igual a Campo MONEDA. ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6cdfc107-acac-45e9-8370-75bc66fbb6ba</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/41-Ingresos Egresos Varios/IEV27-Egreso de caja. Concepto de EGRESO de CAJA que necesita IDENTIFICACION. Es SOCIO</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b26e3418-247f-4781-ba75-a9b832631f0e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/41-Ingresos Egresos Varios/IEV28-Egreso de planta. Concepto de EGRESO de PLANTA que necesita IDENTIFICACION. NO SOCIO</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ecc1cb1f-7db8-4053-86e7-81d5b786ffa6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/41-Ingresos Egresos Varios/IEV29-Ingresos y Egresos Varios.Ingreso de caja. Concepto de INGRESO de CAJA que NO necesita ID</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4e79bc18-5211-4425-b8ce-9560db100c66</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/41-Ingresos Egresos Varios/IEV30-Ingresos y Egresos Varios.Liquidacion de posteo. Liquidacion de posteo de INGRESO de planta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

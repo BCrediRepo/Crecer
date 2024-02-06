@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>F13-Fallas de Dispositivos. Alta Sobrante otro usuario (TELLER,SOBRANTE.CAJA.USU)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fefd91d0-3780-4ed0-8f15-454d76e125f5</testCaseGuid>
+</TestCaseEntity>

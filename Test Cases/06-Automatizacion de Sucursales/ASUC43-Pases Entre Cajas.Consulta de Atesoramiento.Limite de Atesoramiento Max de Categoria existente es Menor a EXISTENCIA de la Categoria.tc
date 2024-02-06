@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC43-Pases Entre Cajas.Consulta de Atesoramiento.Limite de Atesoramiento Max de Categoria existente es Menor a EXISTENCIA de la Categoria</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>502e17f8-68b6-4450-ae33-bf597b4af697</testCaseGuid>
-</TestCaseEntity>

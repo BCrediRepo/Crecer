@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CMA02-Comisión manual por Caja. Tipo de Pago IGUAL A Efectivo. Bonificación Maxima</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a766902c-b730-4f2e-89c7-402a3b0a66c3</testCaseGuid>
+</TestCaseEntity>

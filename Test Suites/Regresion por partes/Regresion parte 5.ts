@@ -648,4 +648,67 @@
       <testCaseId>Test Cases/51-Variacion Deudora/VD01-Variación Deudora.Consulta de Saldos Diarios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>59aec6a7-73bc-4229-b309-b9908777a49a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC14-Autorización de Solicitud de Chequera Continua. Autorizar Solicitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f980b141-a446-4a5e-b516-e716c58243c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC13-EMISION DE CHEQUERAS. Solicitud de Cheque Financiero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2a7f95e7-4f8e-47c4-8ae9-81c67fa11f05</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC12-Solicitud de Chequera Continua. Cuenta Activa. Cuenta admite Chequeras. Tipo de Chequera Valido. Se informa numeración</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5fce0f0a-6575-4d5e-9a2a-7405cd338fee</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA20-Movimientos Automaticos.Transaccion de arreglos.Movimiento sin fecha valor.Nueva cuenta valida</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e0aad536-3bb3-4aa7-ad08-68b4fa1506e7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC19-Deposito Caja Efectivo USD</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9c9193f1-1595-4fe8-86a3-c8f883efb8b7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC18-Deposito Caja Efectivo ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ee1fb1ef-27f9-4f5c-a77c-6ed7cc9fcc4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/49-Echeq/ECQ01-Consulta Monto en echeq pendientes de pago x persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4cd4c20a-d6f1-4d3a-949e-7665fbef0463</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/49-Echeq/ECQ02-Posicion del socio en ECHEQ. Realizar consulta con una cuenta habilitada para emitir Echeq</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c649c886-fd4a-4c25-aa24-4bf8cfab50f8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/51-Variacion Deudora/VD02-Variacion Deudora.Fecha valor.Recomposicion de Saldos.Alta de Nota de Debito Ajuste. F Valor y F Proceso corresponden al mismo mes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -144,4 +144,11 @@
       <testCaseId>Test Cases/15-Movimientos Automaticos/MA19-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta CGU excede el límite</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>00084fd8-7fef-4e32-9c25-377364e6c6e1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA20-Movimientos Automaticos.Transaccion de arreglos.Movimiento sin fecha valor.Nueva cuenta valida</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

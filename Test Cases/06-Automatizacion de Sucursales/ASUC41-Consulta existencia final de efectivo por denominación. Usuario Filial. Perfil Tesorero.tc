@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>ASUC41-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e2d209b8-0207-411b-8707-150cdb47ce33</testCaseGuid>
-</TestCaseEntity>

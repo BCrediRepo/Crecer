@@ -7,7 +7,6 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>e45c85da-4d52-44ec-a04b-5bb5398eb5d3</webElementGuid>
+      <webElementGuid>60b81d7f-bdc4-4c81-a2e1-db5ada94deb8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>7f1da5ae-3c83-4e81-ac71-5b59c88ecdc3</webElementGuid>
+      <webElementGuid>e1a7204b-2390-49fd-95f1-04f64e3b6ef1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>fd8e5795-8644-4507-b1a2-aab313f1d622</webElementGuid>
+      <webElementGuid>0eb2bbbe-8a7b-45b6-a6d2-522ded1d5255</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cobro de Impuestos</value>
-      <webElementGuid>fba6e347-21da-4999-90f9-27a62fe13e25</webElementGuid>
+      <webElementGuid>aaa0930f-f49a-4a11-b75b-28fc5dee587b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>91bdca74-9c66-409e-b026-af825269b753</webElementGuid>
+      <webElementGuid>7e84147f-4ae1-4efd-98d3-d82ef35baa2e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +61,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>3ef8208b-bf86-4109-806d-af8e530601ac</webElementGuid>
+      <webElementGuid>e1c32d87-92a4-468d-a5a8-cc7519ac92eb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[95]</value>
-      <webElementGuid>a3fcf709-acc8-499e-ae45-054ac7d6140e</webElementGuid>
+      <webElementGuid>d25b46df-c7c1-45af-8547-db4d51c02903</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[28]/li/ul/li/span</value>
-      <webElementGuid>2e46f957-1e99-415c-9b45-cc7e44de4f94</webElementGuid>
+      <webElementGuid>392e53c4-ee35-4269-bf69-782f0edea729</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Impuestos'])[1]/following::span[1]</value>
-      <webElementGuid>a650c2f8-197c-48cc-9bab-364d355f4ae3</webElementGuid>
+      <webElementGuid>4e69cf3f-250c-4f75-a845-85099fe7f99f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado de Cuenta'])[1]/following::span[2]</value>
-      <webElementGuid>43d50d2e-4616-475b-b674-ec33e9b87a1e</webElementGuid>
+      <webElementGuid>d7ed2e58-e624-482b-917b-ecd6a9732201</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro Impuestos en Efectivo (Socio/No Socio)'])[1]/preceding::span[1]</value>
-      <webElementGuid>d9770221-ee78-49f6-b361-35ad2bb7e78c</webElementGuid>
+      <webElementGuid>86d4c8c5-cb2a-41af-b4fc-e29cead325d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cobro de Impuestos']/parent::*</value>
-      <webElementGuid>ff5b5ec6-bc91-45f9-a175-86120e4e2e9e</webElementGuid>
+      <webElementGuid>935d51b6-6593-4a69-b338-9bb784545b6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[28]/li/ul/li/span</value>
-      <webElementGuid>f323c76f-ec43-4cf9-87e7-0f3758902dc6</webElementGuid>
+      <webElementGuid>eed65ed0-3ab5-4c1c-8467-057f2d5b0b06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +125,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Cobro de Impuestos' or . = 'Cobro de Impuestos')]</value>
-      <webElementGuid>5f2a4c92-6e40-4e95-839e-2e8799b99e01</webElementGuid>
+      <webElementGuid>667ea535-147b-47ff-9a23-a4d6f51f7e2b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

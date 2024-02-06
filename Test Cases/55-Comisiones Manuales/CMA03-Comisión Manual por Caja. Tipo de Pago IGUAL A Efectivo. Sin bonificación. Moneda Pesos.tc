@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CMA03-Comisión Manual por Caja. Tipo de Pago IGUAL A Efectivo. Sin bonificación. Moneda Pesos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87dfafee-3bbe-4d9c-8b03-7a7e82658b12</testCaseGuid>
+</TestCaseEntity>

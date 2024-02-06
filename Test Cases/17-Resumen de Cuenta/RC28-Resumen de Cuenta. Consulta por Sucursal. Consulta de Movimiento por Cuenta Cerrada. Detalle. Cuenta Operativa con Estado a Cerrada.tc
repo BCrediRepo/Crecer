@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC28-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Detalle. Cuenta Operativa con Estado a Cerrada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3d87239f-dda1-4965-b30e-8d16de398a79</testCaseGuid>
+</TestCaseEntity>

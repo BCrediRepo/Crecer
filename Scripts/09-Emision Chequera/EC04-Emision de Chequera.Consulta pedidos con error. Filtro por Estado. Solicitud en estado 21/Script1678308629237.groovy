@@ -66,7 +66,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequer
 
 
 //Descomentar esta linea para el caso de regresion 
-//WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/txtSucursal'), findTestData('MainData/Users').getValue(3,9))
+WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/txtSucursal'), findTestData('MainData/Users').getValue(3,9))
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

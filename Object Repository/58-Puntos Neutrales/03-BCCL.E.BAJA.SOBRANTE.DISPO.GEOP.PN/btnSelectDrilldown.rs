@@ -4,6 +4,7 @@
    <name>btnSelectDrilldown</name>
    <tag></tag>
    <elementGuidId>789eaefd-4ef8-4bd1-827a-3d1952c5b8de</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -13,32 +14,40 @@
          <key>CSS</key>
          <value>img[alt=&quot;Select Drilldown&quot;]</value>
       </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>36b2b3dc-eeec-48d4-819a-6c608f2b8799</webElementGuid>
+      <webElementGuid>762ee362-278a-465d-aa3a-689891946db8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
       <value>Select Drilldown</value>
-      <webElementGuid>ab04bd84-d111-4336-afcb-e5a743c1bd3e</webElementGuid>
+      <webElementGuid>07046980-4be2-412f-9df5-f2266ddf4df2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/menu/go.gif</value>
-      <webElementGuid>622fc3c6-3eea-433f-8ae4-851dc087c329</webElementGuid>
+      <webElementGuid>8f21d4b7-c609-4c6c-8a9b-12f9f5c44737</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEBAJASOBRANTEDISPOGEOPPN&quot;]/table[1]/tbody[1]/tr[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEBAJASOBRANTEDISPOGEOPPN&quot;]/td[2]/a[@class=&quot;iconLink&quot;]/img[1]</value>
-      <webElementGuid>a447560a-eccf-4412-9ae6-f7e6fb1c8bc4</webElementGuid>
+      <webElementGuid>95e58fe3-530c-4321-a14f-42c5ccf28f7e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[14]/table/tbody/tr/td[2]/a/img</value>
-      <webElementGuid>68bb8a25-ed25-490d-b357-b744bc7999fc</webElementGuid>
+      <webElementGuid>10cd5cce-728f-4069-82b3-fbad8212a335</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +71,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Select Drilldown']</value>
-      <webElementGuid>9d3508ea-f0d8-45b9-9314-7ae715d8e724</webElementGuid>
+      <webElementGuid>4cd525ef-a160-41b0-8462-fbf309f9cdda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[14]/table/tbody/tr/td[2]/a/img</value>
-      <webElementGuid>82b937c9-d38d-4065-8a1a-96905d63d5d3</webElementGuid>
+      <webElementGuid>fedb2d24-0f5f-42df-a919-e32ddd3da96a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +87,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@alt = 'Select Drilldown' and @src = '../plaf/images/bccl/menu/go.gif']</value>
-      <webElementGuid>6cd7e0b4-bd28-461d-b394-8a9ca5aa6bdb</webElementGuid>
+      <webElementGuid>43f4e3d6-2f41-4a84-b790-b94e9f93300a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

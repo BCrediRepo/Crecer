@@ -130,4 +130,18 @@
       <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC17-Deposito en efectivo. Cuenta con Bloqueo Total. Movimiento aplica sobre cuentas bloqueadas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5a5bf470-e101-4f1f-b50e-437315a3e9be</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC18-Deposito Caja Efectivo ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3063dea3-1a6b-47a9-98ce-616e4d2ad073</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC19-Deposito Caja Efectivo USD</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

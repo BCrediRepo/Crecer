@@ -39,4 +39,11 @@
       <testCaseId>Test Cases/57-Puntos Neutrales/PN04-Fallas de Dispositivos Alta Faltante de Puntos Neutrales. Deposito</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>fea8bec6-78e7-459a-97ba-add7e6212812</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/57-Puntos Neutrales/PN05-Falla puntos Neutrales. Alta de faltante CD Neutrales. Dispositivo de la Sucursal. Retiro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -288,7 +288,7 @@
       <guid>55019144-379b-4a20-a82e-c9f63f993002</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/05-Comisiones/COM40-PH Consulta Distribución porcentaje comisiones Telecoop. Completitud</testCaseId>
+      <testCaseId>Test Cases/05-Comisiones/COM40-Consulta Distribución porcentaje comisiones Telecoop. Completitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
