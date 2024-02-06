@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PYT02-Pago de Haberes.Alta de transferencia multiple.Consulta de datos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd8fcb93-55fa-43f3-bce6-14d82e935124</testCaseGuid>
+</TestCaseEntity>

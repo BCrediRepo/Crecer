@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblIdTransaccion</name>
+   <tag></tag>
+   <elementGuidId>825ed8bc-8f2c-4d1d-87c4-c092db236b87</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[14]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e0cf0f26-e32e-408c-a902-fe588b3e03e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLASTRANSFMULTIPLE disabled_dealbox_BCCLASTRANSFMULTIPLE_SUCURSAL</value>
+      <webElementGuid>c125da9e-61bd-49a0-abd6-e9aa6d11d3a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>FT23240145201454</value>
+      <webElementGuid>1ba83368-3729-4fb7-894f-83869f438cd8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[14]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLASTRANSFMULTIPLE disabled_dealbox_BCCLASTRANSFMULTIPLE_SUCURSAL&quot;]</value>
+      <webElementGuid>104aa400-ec78-458b-8957-b549ad8e168f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[14]/td[3]/span</value>
+      <webElementGuid>98ee5204-1e7d-4997-a676-351ab8651bb9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Transaccion.1'])[1]/following::span[1]</value>
+      <webElementGuid>a26ed6d6-b2e7-4427-9d08-0e66a6cefe9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cod.Ope.Credito.1'])[1]/following::span[2]</value>
+      <webElementGuid>5380238e-7d59-4ecf-8dd7-e012158e9fa5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Messages'])[1]/preceding::span[1]</value>
+      <webElementGuid>7ee92411-735b-4bbc-9dde-0ef4ba07565f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[1]/preceding::span[1]</value>
+      <webElementGuid>54ff74e1-07fe-4043-b729-09d59d6cd404</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='FT23240145201454']/parent::*</value>
+      <webElementGuid>506fcc72-134a-454b-a7ea-2aba3f36357b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[14]/td[3]/span</value>
+      <webElementGuid>acd94919-47b0-4abf-a7d9-100de39ef2d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'FT23240145201454' or . = 'FT23240145201454')]</value>
+      <webElementGuid>2bbe6229-99d8-4214-9cb7-892e7673df20</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
