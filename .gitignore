@@ -7,7 +7,7 @@ output
 !output/.gitkeep
 build
 Crecer.git.prj
-
+Data Files/Database/conexion.dat
 # project folders
 bin
 Libs
