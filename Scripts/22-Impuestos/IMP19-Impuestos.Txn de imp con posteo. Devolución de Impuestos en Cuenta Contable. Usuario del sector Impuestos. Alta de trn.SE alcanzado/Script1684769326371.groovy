@@ -67,7 +67,7 @@ WebUI.setText(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Im
 
 //WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/txtTipodeImpuesto'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/txtTipodeImpuesto'), 
-    'AS')
+    'DC')
 
 //WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/txtDescripciondelImpuesto'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/12-Devolucion de Impuestos en Cuenta Contable/txtDescripciondelImpuesto'), 
