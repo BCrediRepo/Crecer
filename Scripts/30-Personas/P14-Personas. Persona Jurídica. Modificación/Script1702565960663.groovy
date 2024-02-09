@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -66,13 +66,51 @@ WebUI.switchToWindowTitle('Modificacion Persona Juridica')
 WebUI.maximizeWindow()
 
 //Completamos los datos
-WebUI.setText(findTestObject('Object Repository/31-Personas/Modificacion Domicilio Pers. Fisica/txtID Persona'), '1000327110')
+WebUI.setText(findTestObject('Object Repository/31-Personas/Modificacion Domicilio Pers. Fisica/txtID Persona'), '1003332066')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
+//Click en modificar
+WebUI.click(findTestObject('Object Repository/31-Personas/Modificacion Persona Juridica/lnkModificar'))
+
+//Click en localizacion
+WebUI.click(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/spanLocalizacion'))
+
+def COMENTARIO = WebUI.getText(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/txtComentarios'))
+
+// Verificar el valor de COMENTARIO y establecer el nuevo valor
+if (COMENTARIO == "COMENTARIO1") {
+	WebUI.setText(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/txtComentarios'), 'COMENTARIO2')
+} else {
+	WebUI.setText(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/txtComentarios'), 'COMENTARIO1')
+}
+
+//Click en validar registro
+WebUI.click(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/btnValidarRegistro'))
+
+//Click en aceptar registro
+WebUI.click(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/btnAceptarRegistro'))
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/lblTxn Completa'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/lblTxn Completa'))
+
+def element = WebUI.getText(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/lblTxn Completa'))
+
+assert element.contains('Txn Completa')
 
 
+//---------------------------------------------------------------------------------------------------------------------
 
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
 
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
 

@@ -544,13 +544,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a355b619-cd56-4ee8-ae43-b287b631b392</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/31-Pago de intereses/PDI01-PAGO DE INTERESES. Consulta Devengamiento FCI</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>a971c093-9d58-4304-8d4a-0c9c8088fd85</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -681,6 +674,41 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/20-Fallas Dispositivos/F06-Falla de dispositivo ALTA Faltante en Disp PN - Retiro. MAP</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f0901db4-c94b-405b-9dd6-c7330f0e4296</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC26-Resumen de Cuenta.Consulta de Movimiento de cuentas internas por fecha. Fecha desde y Fecha hasta vacios</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5744a913-8a72-4357-8d49-0b2137fd6f84</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC27-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuenta. Cuenta operativa en Pesos con Estado Activa</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>48a03763-f1cf-4065-9d52-6e8b48cc65d2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC28-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Detalle. Cuenta Operativa con Estado a Cerrada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>36cbe4b4-577c-48e3-9168-0bb11090f6ea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC29-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a60aebaa-b850-4207-a69b-237b7405ecc7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC30-Resumen de Cuenta.Consulta por Suc. Consulta Movimiento Fecha. Mov ingresado de Credito en Moneda Pesos con fecha IGUAL a Fecha de Proceso</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
