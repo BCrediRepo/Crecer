@@ -26,10 +26,7 @@ import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 
-
-//REVISAR LINEA 170 
-
-//Ejecutar caso PN03
+//Ejecutar caso PN06
 //WebUI.callTestCase(findTestCase('57-Puntos Neutrales/REVISAR-Alta de Sobrante para Punto Neutral de 099. Monto MN ME valido. Ingresar comentarios. Dispositivo de la Sucursal. Sucursal tiene PN'), 
    // [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -83,12 +80,6 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Seleccionar "btn Id Sobrante"
-//WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
-
-
-//QUE targetValue se vuelva el valor de la TT generada anteriormente
-// Valor específico que estás buscando
 String targetValue = "TT23240212187613"
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
@@ -107,19 +98,22 @@ def buscarElementoEnTabla(String targetValue) {
 
 		// Obtiene el texto de la celda
 		String cellText = cell.getText()
-		println(cellText)
-		println(targetValue)
+		
 		// Compara el valor de la celda con el valor específico
 		if (cellText.equals(targetValue)) {
+			
 			// Realiza las acciones necesarias si se encuentra el valor
 			List<WebElement> tdList = row.findElements(By.tagName("td"))
 			WebElement tdElement = tdList[13]
 			WebElement comboBox = tdElement.findElement(By.tagName("select"))
+			
 			// Utiliza Select para interactuar con el comboBox
 			def select = new Select(comboBox)
 			select.selectByVisibleText("Baja Sobrante Dispositivo - O Banco")
+			
 			// Encuentra el elemento 'img' dentro del enlace 'a'
 			WebElement imgElement = tdElement.findElement(By.cssSelector("a[title='Select Drilldown'] img"))
+			
 			// Haz clic en el elemento 'img'
 			imgElement.click()
 			return true
@@ -128,31 +122,30 @@ def buscarElementoEnTabla(String targetValue) {
 	return false
 }
 
-// Lógica para buscar el elemento en la tabla
+//Lógica para buscar el elemento en la tabla
 def encontrado = false
 
-// Bucle para buscar en múltiples páginas
+//Bucle para buscar en múltiples páginas
 while (!encontrado) {
-	// Lógica para buscar el elemento en la tabla
+	
+	//Lógica para buscar el elemento en la tabla
 	encontrado = buscarElementoEnTabla(targetValue)
 		
-	// Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
+	//Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
 	if (!encontrado) {
-		// Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
+		
+		//Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
 		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		// Espera a que la nueva página se cargue completamente
+		//Espera a que la nueva página se cargue completamente
 		WebUI.delay(2)
 	}
 }
 
+//-----------------------------------------------------------------
 //Switchear a la ventana de baja sobrante
-
 //completar el registro con los datos mandatorios
-
 //completar la baja
 
-
-//-----------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

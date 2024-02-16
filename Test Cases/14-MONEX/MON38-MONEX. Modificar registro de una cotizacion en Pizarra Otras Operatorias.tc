@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON38-MONEX. Modificar registro de una cotizacion en Pizarra Otras Operatorias</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbb87ff7-7776-4a02-a9ab-33b5ecf82def</testCaseGuid>
+</TestCaseEntity>

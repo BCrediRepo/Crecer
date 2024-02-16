@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON35-Operacion de Compra y Venta de Moneda Extranjera.Version BCCL.OP.CAMBIO,FILIALES.CTA.CTA</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>671b522f-5cd6-47f2-966c-b0570c56b1ed</testCaseGuid>
+</TestCaseEntity>

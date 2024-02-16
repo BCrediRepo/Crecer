@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblMonedaExtranjera</name>
+   <tag></tag>
+   <elementGuidId>b21aae06-615b-4dd9-976a-94e56b899807</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[6]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b6ea075f-c9d2-4471-b250-0427c7f9b0ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLOPCAMBIO disabled_dealbox_BCCLOPCAMBIO_CCOFICIOS</value>
+      <webElementGuid>8222bbc9-6a05-4658-a9ea-4eeba7edfd81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>USD</value>
+      <webElementGuid>5e927f98-5d14-43d8-a340-93574a2806c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[6]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLOPCAMBIO disabled_dealbox_BCCLOPCAMBIO_CCOFICIOS&quot;]</value>
+      <webElementGuid>1eae45dd-095e-4327-9fd3-57c3a80d8b92</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[6]/td[3]/span</value>
+      <webElementGuid>5904a4c1-9c4d-436e-8f17-b366800d34ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda Extranjera'])[1]/following::span[1]</value>
+      <webElementGuid>b816f55e-9b84-4da4-9fce-da0c509fcf7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal Operacion'])[1]/following::span[2]</value>
+      <webElementGuid>a3d71647-e9f2-4917-a0d4-19fbab267972</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Estadounidense'])[1]/preceding::span[1]</value>
+      <webElementGuid>103a6ef1-3dae-4d19-984a-f6fe0b44e570</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Cotizacion'])[1]/preceding::span[2]</value>
+      <webElementGuid>cf7063d9-506d-448d-becf-b47f2ed61fb0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='USD']/parent::*</value>
+      <webElementGuid>f8739881-002a-44a2-9178-9288a9579b21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[3]/span</value>
+      <webElementGuid>9d117f2f-3d90-44e5-94cb-0c1c9928d7b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'USD' or . = 'USD')]</value>
+      <webElementGuid>65ec19ce-7e80-4834-8c23-e84f2929b1b8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

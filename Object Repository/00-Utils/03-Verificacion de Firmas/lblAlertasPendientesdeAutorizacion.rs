@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblAlertasPendientesdeAutorizacion</name>
+   <tag></tag>
+   <elementGuidId>87e0da4d-3d5e-499c-8d7c-f543feb853b5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r4']/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>794d379c-6f27-4c37-a38f-5e384d99ff3b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>right</value>
+      <webElementGuid>8ed9859c-fc47-4fae-89c1-52a904062301</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ALERTAS PENDIENTE DE AUTORIZACION</value>
+      <webElementGuid>6502d44f-7ed7-47bc-9f8d-7d1a0cf017a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r4&quot;)/td[2]</value>
+      <webElementGuid>b62470bb-be50-487b-b817-89629a616162</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/00-Utils/03-Verificacion de Firmas/frmFirmas</value>
+      <webElementGuid>d7f3be42-d28b-4f6f-b7ad-2b46df12435e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r4']/td[2]</value>
+      <webElementGuid>ea0c1044-5a95-4a84-bba7-c9907f42a6fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OC232400000830039452'])[2]/following::td[1]</value>
+      <webElementGuid>90d1a646-f545-4674-86dc-05e600e2f92a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion Original:'])[1]/following::td[3]</value>
+      <webElementGuid>26537628-6b45-4fcc-baa5-c30f2d1b4c11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('id(', '&quot;', 'r4', '&quot;', ')/td[2]')])[1]/preceding::td[2]</value>
+      <webElementGuid>dace528f-beb0-4c15-a9ee-3d0a458e5133</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='ALERTAS PENDIENTE DE AUTORIZACION']/parent::*</value>
+      <webElementGuid>29494771-6984-405a-adb7-c5d5390eae1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[2]</value>
+      <webElementGuid>5627c561-d7f2-4c11-b2aa-463503ee5f5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'ALERTAS PENDIENTE DE AUTORIZACION' or . = 'ALERTAS PENDIENTE DE AUTORIZACION')]</value>
+      <webElementGuid>b71a9083-a34f-44ef-a06a-2ea324194cc4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

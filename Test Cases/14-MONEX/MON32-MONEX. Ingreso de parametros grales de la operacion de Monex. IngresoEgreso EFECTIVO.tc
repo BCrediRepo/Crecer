@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON32-MONEX. Ingreso de parametros grales de la operacion de Monex. IngresoEgreso EFECTIVO</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2dc011ef-cd5d-40fb-a371-b6dd980ed913</testCaseGuid>
+</TestCaseEntity>

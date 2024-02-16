@@ -105,15 +105,19 @@ WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.
 
 WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblTxnCompletaFT222'))
 
-def element = WebUI.getText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblTxnCompletaFT222'))
+//Definir Objeto
+Transaccion = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblTxnCompletaFT222'))
 
-assert element.contains('Txn Completa:')
+//Dividir la cadena por espacios en blanco y tomar elemento
+def partes = Transaccion.split('\\s+')
+def trx1 = partes[2]
+assert Transaccion.contains('Txn Completa:')
 
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se inserta el numero de transaccion en el input "Nota de Debito por Ajuste"
-WebUI.setText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/inputNotadeDebitoporAjuste'), 'FT22207670803238')
+WebUI.setText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/inputNotadeDebitoporAjuste'), trx1)
 
 //Se clickea en btn "Ver Un Registro"
 WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/btnVerunRegistro'))

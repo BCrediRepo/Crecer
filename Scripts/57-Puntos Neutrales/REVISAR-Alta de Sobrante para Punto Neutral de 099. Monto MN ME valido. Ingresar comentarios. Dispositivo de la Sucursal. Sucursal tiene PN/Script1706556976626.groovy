@@ -169,56 +169,67 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
 
 //--------------------------------------------------------------------------------------------------Empieza el código
-//Obtén el elemento de la tabla
-WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
- 
-//Obtén todas las filas dentro de la tabla
-List<WebElement> rows = table.findElements(By.tagName("tr"))
- 
-//Valor específico que estás buscando
-String targetValue = trx1
- 
-//Indicar maximo de filas
-int maxFilas = 19
-
-//Variable para rastrear si se encontró el valor específico
-boolean foundTargetValue = false
- 
-int i = 0
-while (i < rows.size() && !foundTargetValue) {
-	WebElement row = rows[i]
- 
-	//Obtén el valor de la fila
-	WebElement cell = row.findElements(By.tagName('td'))[1]
-	String cellText = cell.getText()
- 
-	//Compara el valor de la celda con el valor específico
-	if (cellText.equals(targetValue)) {
-		foundTargetValue = true
- 
-		//Obtén el elemento select dentro del td en la posición 13
-		WebElement tdElement = row.findElements(By.tagName('td'))[13]
-
-		// Haz clic en el elemento 'img' dentro del td
-		WebElement aceptar = tdElement.findElement(By.tagName("img"))
-		aceptar.click()
-	}
- 
-	i++
+//Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
+def buscarElementoEnTabla(String trx1) {
+	//Obtén el elemento de la tabla
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
 	
-	// Si hemos llegado a la última fila, reinicia el índice
-	if (i == maxFilas) {
-		i = 0
-		//Seleccionar "boton Siguiente"
+	//Obtén todas las filas dentro de la tabla
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	
+	// Itera a través de las filas
+	//Despliego la columna donde se muestra la info de las transacciones
+	WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
+	for (WebElement row : rows) {
+		// Obtiene el tercer valor de la fila (índice 1, ya que las listas son base cero)
+		WebElement cell = row.findElements(By.tagName("td"))[1]
+
+		//Obtiene el texto de la celda
+		String cellText = cell.getText()
+		
+		//Compara el valor de la celda con el valor específico
+		if (cellText.equals(trx1)) {
+			
+			//Realiza las acciones necesarias si se encuentra el valor
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[13]
+			WebElement comboBox = tdElement.findElement(By.tagName("select"))
+			
+			//Utiliza Select para interactuar con el comboBox
+			def select = new Select(comboBox)
+			select.selectByVisibleText("Baja Sobrante Dispositivo - O Banco")
+			
+			//Encuentra el elemento 'img' dentro del enlace 'a'
+			WebElement imgElement = tdElement.findElement(By.cssSelector("a[title='Select Drilldown'] img"))
+			
+			// Haz clic en el elemento 'img'
+			imgElement.click()
+			return true
+		}
+	}
+	return false
+}
+
+//Lógica para buscar el elemento en la tabla
+def encontrado = false
+
+//Bucle para buscar en múltiples páginas
+while (!encontrado) {
+	
+	//Lógica para buscar el elemento en la tabla
+	encontrado = buscarElementoEnTabla(trx1)
+		
+	//Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
+	if (!encontrado) {
+		
+		//Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
 		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
 		
-		//Esperar 3 segundos
-		WebUI.delay(3)
-		
-		//Seleccionar "boton + verde"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
+		//Espera a que la nueva página se cargue completamente
+		WebUI.delay(2)
 	}
 }
+
 				
 ////Cambiar opcion a "Ver Detalle" En el combo box
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbVerDetallesyBajaOBanco'), 6)

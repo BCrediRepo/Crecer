@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON36-Transaccion de Compra Venta Moneda Extranjera.BCCL.OP.CAMBIO,CC.OFICIOS.Casa central. Tipo Operacion Venta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5be57a31-eaf1-4ee8-ab53-ec186d8601dc</testCaseGuid>
+</TestCaseEntity>

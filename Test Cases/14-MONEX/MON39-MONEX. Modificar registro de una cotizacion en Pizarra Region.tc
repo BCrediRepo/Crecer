@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON39-MONEX. Modificar registro de una cotizacion en Pizarra Region</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>85c9dbcc-9fbc-4de9-8ed1-b218a4996b7b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDescripcion</name>
+   <tag></tag>
+   <elementGuidId>bda79b55-4b8c-4af3-99d7-ca1233a86955</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[7]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>f04792ed-7072-4b94-8b7b-fad180f24441</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLGRUPOCOTIZACION disabled_dealbox_BCCLGRUPOCOTIZACION_ABMPIZARRAPR</value>
+      <webElementGuid>0f7bfbcf-5f9f-4369-ad3c-40a3ab1562bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PRUEBAS CRECER ONLINE</value>
+      <webElementGuid>9c6c9d84-f388-4845-bac7-82a184c53eb8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[7]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLGRUPOCOTIZACION disabled_dealbox_BCCLGRUPOCOTIZACION_ABMPIZARRAPR&quot;]</value>
+      <webElementGuid>2f29a95c-df35-4bda-9b10-d5e330aa7fce</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[7]/td[3]/span</value>
+      <webElementGuid>4d7ba9f8-7336-46c1-87ca-90cb7a341e74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::span[1]</value>
+      <webElementGuid>4011a4a9-79be-4f3b-aea8-f54a41a8e245</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Codigo Grupo'])[1]/following::span[2]</value>
+      <webElementGuid>2422f270-d180-4477-869f-b9552b01e266</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion Corta'])[1]/preceding::span[1]</value>
+      <webElementGuid>bf0877d2-5bd5-4ac1-af6e-17d8a87cf35f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cot. Cpra-Vta BRL'])[1]/preceding::span[1]</value>
+      <webElementGuid>f3663826-9218-4e1d-ae55-1ecdfc448b1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='PRUEBAS CRECER ONLINE']/parent::*</value>
+      <webElementGuid>91fe4b00-e906-4a6a-a159-396e12c18eca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[7]/td[3]/span</value>
+      <webElementGuid>f8ba9a56-5a5b-408b-82d7-547766d48cf7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'PRUEBAS CRECER ONLINE' or . = 'PRUEBAS CRECER ONLINE')]</value>
+      <webElementGuid>31dadd60-ced1-468e-8a00-212faaf876d5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

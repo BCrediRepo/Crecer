@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblIngresoFondos</name>
+   <tag></tag>
+   <elementGuidId>08287e09-7d73-494e-93fe-5d147873260f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[9]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>1cf1f9ce-4704-4595-9268-7489c8266552</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLOPCAMBIO disabled_dealbox_BCCLOPCAMBIO_FILIALEFEEFE</value>
+      <webElementGuid>23bf4bf9-4774-4c7e-bad9-fb66791f7deb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>EFECTIVO</value>
+      <webElementGuid>e921f773-8637-44f7-b6d2-35750c0a0cf7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[9]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLOPCAMBIO disabled_dealbox_BCCLOPCAMBIO_FILIALEFEEFE&quot;]</value>
+      <webElementGuid>97ffe041-7f02-4a49-ac73-fa42f83e5cc8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[9]/td[3]/span</value>
+      <webElementGuid>81e8a884-9ad9-458c-8668-0f9bcc4ad349</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingreso Fondos'])[1]/following::span[1]</value>
+      <webElementGuid>91bfdb87-1c5f-4264-bcb6-ea7a4b1a5170</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='V - Vigente'])[1]/following::span[2]</value>
+      <webElementGuid>3366528a-bdea-4619-a61f-d446cfa8606e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Egreso Fondos'])[1]/preceding::span[1]</value>
+      <webElementGuid>6c0a5798-7dd9-4382-9ff2-e8960ff03405</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EFECTIVO'])[2]/preceding::span[1]</value>
+      <webElementGuid>455edf2e-65af-4522-89a4-dc16c1562036</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='EFECTIVO']/parent::*</value>
+      <webElementGuid>04311bc7-c1fb-41df-a265-f674ed564f0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[9]/td[3]/span</value>
+      <webElementGuid>90dce7ad-3294-4272-acf1-44b42a9ad372</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'EFECTIVO' or . = 'EFECTIVO')]</value>
+      <webElementGuid>9983036b-db12-4f55-aab0-8d00c6da5ef7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

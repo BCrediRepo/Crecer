@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON37-Operacion de Compra y Venta de Moneda Extranjera. Version BCCL.OP.CAMBIO,FILIAL.INMUEBLES.CTA</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1ab1885a-3f81-4747-8ced-18ad55993ad0</testCaseGuid>
+</TestCaseEntity>
