@@ -3,6 +3,7 @@
    <description>Datos de usuario de prueba</description>
    <name>Users</name>
    <tag></tag>
+   <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>09e08844-61e3-4e0e-a375-90535b6f5f66</dataFileGUID>

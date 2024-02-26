@@ -58,7 +58,7 @@ WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lblConsum
 
 WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/btnAceptarRegistro'))
 
-//WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lnkAceptarAlertas'))
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lnkAceptarAlertas'))
 
 WebUI.switchToWindowIndex(2)
 

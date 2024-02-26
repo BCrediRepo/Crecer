@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAceptarRegistro</name>
+   <name>btnReversarRegistro</name>
    <tag></tag>
-   <elementGuidId>32876ebe-db60-404a-85de-5848362c6bf5</elementGuidId>
+   <elementGuidId>c276639b-c97f-428a-90ad-2e5174bc47a5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Aceptar el registro&quot;]</value>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[5]/a/img</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+         <key>CSS</key>
+         <value>img[alt=&quot;Reversar un registro&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,56 +22,56 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>25924d7d-599d-4591-95e2-03398836e4db</webElementGuid>
+      <webElementGuid>fc91d721-932d-4a41-9db2-d5c906592a3d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>../plaf/images/bccl/tools/txncommit.gif
+      <value>../plaf/images/bccl/tools/txnreverse.gif
 															</value>
-      <webElementGuid>9969cbd6-0bfe-45e6-997c-3faef4321fbb</webElementGuid>
+      <webElementGuid>fd058e2e-7239-4d59-853e-567a0803b9e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
-      <value>Aceptar el registro</value>
-      <webElementGuid>0c93588c-561b-41e5-842d-4de0ee2d032c</webElementGuid>
+      <value>Reversar un registro</value>
+      <webElementGuid>88e9582b-a06b-493f-a85c-a0c9f2c2b199</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Aceptar el registro</value>
-      <webElementGuid>205996ce-9d0b-47e3-9aac-5de5fb7106b1</webElementGuid>
+      <value>Reversar un registro</value>
+      <webElementGuid>71acae96-79c4-45e8-adf3-7b3145cbd4ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
-      <webElementGuid>3c0cb313-7c9d-4b61-a61b-06f5dc673f8c</webElementGuid>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[5]/a[1]/img[1]</value>
+      <webElementGuid>27826041-2d3f-4153-bddf-f0f9b16f9ae1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
-      <webElementGuid>40e1cfbc-330f-42c4-9fbc-04cf1cfea491</webElementGuid>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[5]/a/img</value>
+      <webElementGuid>b6888f5f-2f2f-46ec-88c1-541043d7362e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>//img[@alt='Aceptar el registro']</value>
-      <webElementGuid>ca6b3b5e-34a4-490d-a861-fe1ad651087f</webElementGuid>
+      <value>//img[@alt='Reversar un registro']</value>
+      <webElementGuid>cfc73396-cd4e-4b3b-b2b1-8a0b31372757</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,15 +79,15 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>ed0fe51a-af9a-4a86-8ec6-541787b40527</webElementGuid>
+      <webElementGuid>ffc84c30-82fe-442f-ae68-f27164edbb5d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = '../plaf/images/bccl/tools/txncommit.gif
-															' and @alt = 'Aceptar el registro' and @title = 'Aceptar el registro']</value>
-      <webElementGuid>e892aa6e-3b5b-4261-8629-ba3b09d0443f</webElementGuid>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnreverse.gif
+															' and @alt = 'Reversar un registro' and @title = 'Reversar un registro']</value>
+      <webElementGuid>82dd08e1-a655-457a-af4c-f3259a1ebe2b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

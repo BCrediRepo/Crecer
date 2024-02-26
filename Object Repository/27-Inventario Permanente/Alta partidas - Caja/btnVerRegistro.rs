@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>f00574fa-db3d-42bc-900d-d94baf09900a</webElementGuid>
+      <webElementGuid>a0dec8e8-18e8-4d6d-a3c6-62dda16b90aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <type>Main</type>
       <value>../plaf/images/bccl/tools/txnvalidate.gif
 															</value>
-      <webElementGuid>c13a62f5-de21-4d12-a7a5-bffd51da4072</webElementGuid>
+      <webElementGuid>1a7b2201-c555-451f-a081-d43672170c65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Validar un registro</value>
-      <webElementGuid>e510e905-a5dc-42dd-871a-2ff7bae33339</webElementGuid>
+      <webElementGuid>456ecb8d-9b5d-457a-8936-8af209235318</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Validar un registro</value>
-      <webElementGuid>c0d58762-5dcb-4916-856f-650e59c6d980</webElementGuid>
+      <webElementGuid>750200d8-b3d8-4fc7-bf1d-17e2973d87b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/img[1]</value>
-      <webElementGuid>54b453a2-7e1a-4e99-8c8d-31116391f770</webElementGuid>
+      <webElementGuid>3a21d702-2054-4044-a8a6-179c5455fc1d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[2]/a/img</value>
-      <webElementGuid>29c59aac-47ed-4659-bc5c-2dd2a32ca8f8</webElementGuid>
+      <webElementGuid>d7462092-bfe2-4d86-bbe8-19aa2659fd20</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Validar un registro']</value>
-      <webElementGuid>f557d1a5-eb49-4c84-8815-d00eaffcd3b2</webElementGuid>
+      <webElementGuid>58bbcd3c-8242-42fa-9f96-639167e6be61</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/a/img</value>
-      <webElementGuid>4e084597-b538-4721-8c62-660295b8bc8f</webElementGuid>
+      <webElementGuid>0d447117-0ecd-4e9b-8acd-343f370a2546</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +88,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/txnvalidate.gif
 															' and @alt = 'Validar un registro' and @title = 'Validar un registro']</value>
-      <webElementGuid>ee355a12-4f87-44b4-bf48-ce0b929d2ce5</webElementGuid>
+      <webElementGuid>8e1c9458-8730-4ac6-b629-76e03a206353</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

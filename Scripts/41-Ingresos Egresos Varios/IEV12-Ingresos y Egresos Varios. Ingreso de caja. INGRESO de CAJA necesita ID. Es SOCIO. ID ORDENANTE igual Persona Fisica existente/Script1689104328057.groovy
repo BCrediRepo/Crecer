@@ -101,8 +101,7 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 WebUI.delay(3)
 
 //Click en Aceptar Alertas
-//WebUI.click()
-//WebUI.delay(10)
+WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/lblTxnCompleta'), 6)

@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>efd2308e-1594-45a5-b917-2694c78a8873</webElementGuid>
+      <webElementGuid>3e281fd1-a762-45bd-9c24-b6bf43fce64e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>213e87f8-bfb4-4446-bb14-d6f7fbf0e712</webElementGuid>
+      <webElementGuid>1f864cde-95c5-440e-8d23-a95762384b9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>size</name>
       <type>Main</type>
       <value>11</value>
-      <webElementGuid>70b4fa95-4686-421e-813e-6adb2f9f4fbc</webElementGuid>
+      <webElementGuid>667d2974-2a9e-4bcc-bf2f-0c4b8abb4559</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:ID.PERSONA</value>
-      <webElementGuid>a378e5ed-cf2d-43cb-bca5-86d479990a55</webElementGuid>
+      <webElementGuid>3f1e6d93-29f7-40e2-a3a7-2ff72f9a26d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:ID.PERSONA</value>
-      <webElementGuid>68b480de-f410-4d7f-a343-3bdeacfdb010</webElementGuid>
+      <webElementGuid>982050e7-b594-4915-876f-e8b896b7db3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>85d8ba8b-1328-4227-90d5-f72cb343ef72</webElementGuid>
+      <webElementGuid>38be689b-f2a3-4bc1-a406-cf3d2e7f38dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_BCCLIPPARTIDAS dealbox_BCCLIPPARTIDAS_ALTACA</value>
-      <webElementGuid>f3122de0-e9ca-4ed6-9103-f47f3d55a1f9</webElementGuid>
+      <webElementGuid>4b7068c1-0cd3-4168-b624-074573a8d613</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>11</value>
-      <webElementGuid>52046931-d329-4c2a-b0eb-dcc9f1581e20</webElementGuid>
+      <webElementGuid>5771c053-3237-4d35-b7d1-7cbdce3a6269</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>9ac07ca9-bb6f-4ff1-b48c-794e580a9b30</webElementGuid>
+      <webElementGuid>ae9f558b-61ab-4150-a38e-0cb3e17e02af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>957ec069-07f3-4e14-8907-12fd9d809cbe</webElementGuid>
+      <webElementGuid>ce2963a5-ff1e-4554-931b-34ff5b31dd49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>ebr</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>591f2889-5bc1-47f1-b2af-a3c3d19f1584</webElementGuid>
+      <webElementGuid>0a299373-1ee1-4480-ac0a-526eb59ec971</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_ID.PERSONA</value>
-      <webElementGuid>2368b4b9-cda2-4e42-ac0e-9521ef48d5a4</webElementGuid>
+      <webElementGuid>df42d53f-bdd2-415b-8dcf-d7669ebe4ec3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'ID.PERSONA','issueToken');</value>
-      <webElementGuid>39991e80-418e-4604-af34-18dcb3195f84</webElementGuid>
+      <webElementGuid>716b02cb-f22b-4f72-813d-9cd5260a90d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>d426bf4f-d394-41b6-be1b-f5ff335b1040</webElementGuid>
+      <webElementGuid>5386460c-a84d-458d-8cbd-568e81a7e080</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('ID.PERSONA','','','issueToken')</value>
-      <webElementGuid>fe239ef5-d5b8-4254-bcb9-e634334f4ef4</webElementGuid>
+      <webElementGuid>6c45fc72-8322-45a4-9fbf-ed7979fb3cd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:ID.PERSONA&quot;)</value>
-      <webElementGuid>6d4b30fb-b867-4f4a-8830-0fd7ffae31e1</webElementGuid>
+      <webElementGuid>91255ca5-d1c4-47f8-b2e2-8ebcf0f73ae8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:ID.PERSONA']</value>
-      <webElementGuid>fec3668d-ad7f-4eed-b8d7-dfbeca44946b</webElementGuid>
+      <webElementGuid>f46cd9ed-4e74-410c-a86a-2afeab083b1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[5]/td[3]/input</value>
-      <webElementGuid>7ac7d92a-f4d2-492c-8234-17822cfdbf34</webElementGuid>
+      <webElementGuid>8c7f7899-34ae-4068-abaa-99c961f41a0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[5]/td[3]/input</value>
-      <webElementGuid>f10a6c07-859f-4d23-8dbb-367c9e67295c</webElementGuid>
+      <webElementGuid>2b544eb8-1197-49b9-beb7-cff1132e34bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,6 +174,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:ID.PERSONA' and @name = 'fieldName:ID.PERSONA' and @type = 'text']</value>
-      <webElementGuid>01d7daac-c7cf-4641-b7e2-119199559634</webElementGuid>
+      <webElementGuid>6df213a9-c277-43bd-8168-d3a23d9d974e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
