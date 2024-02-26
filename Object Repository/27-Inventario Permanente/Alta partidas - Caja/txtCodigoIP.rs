@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtCuenta</name>
+   <name>txtCodigoIP</name>
    <tag></tag>
-   <elementGuidId>bde0b5af-cc6a-4875-bb32-7def3d3de2e5</elementGuidId>
+   <elementGuidId>a40f5ea8-0faf-4d93-9ab0-aa818b41ced5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='fieldName:CTA.SOCIO']</value>
+         <value>//input[@id='fieldName:CODIGO.IP']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>d46da807-cc7b-4d0c-96f0-629aa723133c</webElementGuid>
+      <webElementGuid>4c2ccd22-fd23-4889-a6ee-92300d2d87fb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,31 +30,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>da55b84c-baa7-434f-869f-8a227b65af55</webElementGuid>
+      <webElementGuid>8da513bc-5355-4e48-9311-7c5fcafff736</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>11</value>
-      <webElementGuid>9df000c3-1c4a-4080-830b-83f1b3d4236b</webElementGuid>
+      <value>4</value>
+      <webElementGuid>a5895d8b-d3cf-41f7-b18b-1cd5312fd375</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:CTA.SOCIO</value>
-      <webElementGuid>e0eb4ecc-5289-4c73-bfc8-8126ea74f77d</webElementGuid>
+      <value>fieldName:CODIGO.IP</value>
+      <webElementGuid>7fed79f1-3ad0-40ee-b9c7-23d258416663</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:CTA.SOCIO</value>
-      <webElementGuid>899af88e-a5cf-4c4d-badb-80e66115573b</webElementGuid>
+      <value>fieldName:CODIGO.IP</value>
+      <webElementGuid>3f0dcefe-8a1f-4a63-812d-e99ca6bd09c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>572b86a5-e384-499f-84eb-bdb57f675808</webElementGuid>
+      <webElementGuid>c8c8671b-0865-4095-aeec-414c768df2e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,15 +70,15 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_BCCLIPPARTIDAS dealbox_BCCLIPPARTIDAS_ALTACA</value>
-      <webElementGuid>986e4922-02ad-4c73-82f3-7ddf7b8a6a47</webElementGuid>
+      <webElementGuid>3020f7fc-ebd0-4f3e-9896-f3ac48a8ceff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>11</value>
-      <webElementGuid>74de19c4-f1ab-4618-87a1-ee07db55f5d0</webElementGuid>
+      <value>4</value>
+      <webElementGuid>7d726754-a0e3-4894-9916-808dfaf13550</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>b93ba428-8698-44d4-b939-89c8d4c647a2</webElementGuid>
+      <webElementGuid>aa265ba0-d97f-4d2f-bfb8-e81bbe32bec9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>d912565b-9308-4605-9e1a-ebd76da06613</webElementGuid>
+      <webElementGuid>2390ae99-8d5f-4a21-adc8-2490bf69e4c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>hot</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>ce0f8ece-4bce-425a-977e-7f77309fc919</webElementGuid>
+      <webElementGuid>6567991d-6d63-4756-9783-e9d42b42dcec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
-      <webElementGuid>4a5215ae-926e-4748-bd53-6f893c35b57e</webElementGuid>
+      <webElementGuid>dd9b1e08-0aec-4bf2-a1aa-3d02e6e42f1f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,15 +118,15 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>e9db8bcc-3643-465b-9ba3-4a737520f491</webElementGuid>
+      <webElementGuid>30872330-ffdb-428d-be13-37fb72a30208</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'CTA.SOCIO','issueToken');</value>
-      <webElementGuid>e49f99c0-74b3-4b1d-a43b-bd7d0d84e357</webElementGuid>
+      <value>invokeHelp(event,'CODIGO.IP','issueToken');</value>
+      <webElementGuid>b3245af9-9500-4c84-ac3a-7b80a7325bfa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>onkeydown</name>
       <type>Main</type>
       <value>enterKeyListener(event);</value>
-      <webElementGuid>27edabbe-4a63-42d7-8c04-c35d2debace9</webElementGuid>
+      <webElementGuid>69d79ee8-c1d0-41bd-896f-dc9ab8bbf40f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -142,54 +142,54 @@
       <name>onblur</name>
       <type>Main</type>
       <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>2c478fbc-11e4-4789-8744-2aa5afc5ddc4</webElementGuid>
+      <webElementGuid>1a9652e0-792b-415a-872e-285052015a80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('CTA.SOCIO','','','issueToken')</value>
-      <webElementGuid>ac61b0ec-a3db-43c2-9de1-0550e02afedd</webElementGuid>
+      <value>javascript:help('CODIGO.IP','','','issueToken')</value>
+      <webElementGuid>189b3589-5105-417f-8b00-cfda7a731721</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:CTA.SOCIO&quot;)</value>
-      <webElementGuid>1f9d5d5c-c325-44fb-b728-8c65da73d468</webElementGuid>
+      <value>id(&quot;fieldName:CODIGO.IP&quot;)</value>
+      <webElementGuid>9b371af0-690c-4d74-9f5b-f3c0673e59b1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:CTA.SOCIO']</value>
-      <webElementGuid>e333c10a-67ff-4358-bfc7-3d6ca69033e5</webElementGuid>
+      <value>//input[@id='fieldName:CODIGO.IP']</value>
+      <webElementGuid>91f0597c-e0fe-4a89-96f9-8cfefeb31c40</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[6]/td[3]/input</value>
-      <webElementGuid>363e3920-5962-4426-8995-c4eeb9ab7338</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[2]/td[3]/input</value>
+      <webElementGuid>91d27171-20ab-43d5-bc6f-60d1991aa942</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[6]/td[3]/input</value>
-      <webElementGuid>9fe0f801-3492-49e6-837f-a98f4090cddf</webElementGuid>
+      <value>//tr[2]/td[3]/input</value>
+      <webElementGuid>7c0a54a2-6249-4c8f-8912-eb1910fcf95a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:CTA.SOCIO' and @name = 'fieldName:CTA.SOCIO' and @type = 'text']</value>
-      <webElementGuid>bf6f54c2-f5b7-45f9-a08d-796e562f3e88</webElementGuid>
+      <value>//input[@id = 'fieldName:CODIGO.IP' and @name = 'fieldName:CODIGO.IP' and @type = 'text']</value>
+      <webElementGuid>ffd499a5-ebfc-4a7c-9f00-f52f9609ea25</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

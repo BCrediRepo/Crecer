@@ -144,4 +144,95 @@
       <testCaseId>Test Cases/57-Puntos Neutrales/PN05-Falla puntos Neutrales. Alta de faltante CD Neutrales. Dispositivo de la Sucursal. Retiro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>22780c95-a010-4fe9-bb3a-717916c5ce98</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE01-Depositos-Extracciones.Verificacion de Firmas.Consulta de firmas desde Consulta Gral Persona Fisica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5e0e9c7b-3681-4b87-b6a7-043188619608</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE02-Depositos-Extracciones.Verificacion de Firmas.Consulta de firmas desde menu</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a0fe619d-78f3-4a88-a6fa-f7debce88edb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE03-Depositos-Extracciones.Cheque Mostrador.Trx Pago de Cheque Mostrador por Ventanilla.Destinatario es titular de Cta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b67dd68a-8f6e-4e58-ad5a-d98901b28354</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE04-Depósitos.Trx de Deposito en Efectivo por Caja.Cuenta Habilitada para uso de Chequeras. Saldo acreedor</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>706e6fac-bb1c-4915-8fbd-70037923513b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE05-Depositos-Extracciones.Depositos.Trx de Reversa de Deposito en Efectivo por Buzon</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>22baeaf6-7df4-46e3-a40e-fe03dcf9184a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE06-Depositos-Extracciones.Extracciones.Trx de Extraccion en efectivo por Caja.Saldo insuficiente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>78ed4920-5dec-4457-8084-c72b57e81cf9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE07-Depositos-Extracciones.Verificacion de Firmas.Verificacion de firmas sobre cuenta Persona Fisica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d60436e4-f52a-40cf-a3a8-719ae758f2c5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE08-Depositos-Extracciones.Verificacion de Firmas.Visualizacion de datos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>88636dc4-006d-4ebe-aa58-ea92ee929574</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE09-Reversa de deposito en efectivo sobre cuenta Fondo de Cese Laboral</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1ad67f2d-db6c-41d5-b44b-cd63868e0e17</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE10-Reversa de deposito en efectivo. Saldo Suficiente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>66f573c2-5054-47d5-bcad-264847b79244</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE11-Depositos-Extracciones. Deposito en Fondo de Cese laboral</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>da6b06d0-073d-4541-b971-5548dc8f89ed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE12-Depositos y Extracciones. Depositos en Buzon a Toda Hora</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>22c0a6f2-40b1-4e4f-9060-06059b094042</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE13-Extraccion Caja Efectivo ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
