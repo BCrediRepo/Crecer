@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkConsultas</name>
+   <name>lnkAdministracion</name>
    <tag></tag>
-   <elementGuidId>a758d330-a7ef-4763-bf59-6c514f475a66</elementGuidId>
+   <elementGuidId>834ef08d-1259-4be3-93e0-d82240d11cf7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[83]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[135]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>47352998-6766-41b3-825d-804843c8c2e0</webElementGuid>
+      <webElementGuid>2edab18b-672f-443e-9bb8-3eab26aa78c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>d017cee8-3dab-4fcf-8157-1ec910d48f19</webElementGuid>
+      <webElementGuid>ffc98082-26d3-4a39-943f-968d1f155fa4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,94 +38,94 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>08865021-769d-4961-877d-a50ea5b37172</webElementGuid>
+      <webElementGuid>5ce239da-da11-48b4-abe6-8eaee16e38ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consultas</value>
-      <webElementGuid>d875735a-e4ff-4a37-b5b6-60dffad56a4f</webElementGuid>
+      <value>Administracion</value>
+      <webElementGuid>b47285e3-e974-4a28-a24a-9323fae034c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>14f77fc9-175e-4f53-a8a8-5ddd42ec57f4</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>5b076788-e303-44c7-87a5-ab7dfdc6fba5</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>c0ee96c9-952d-4207-9c5e-78a53694afd5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[83]</value>
-      <webElementGuid>e8dacd69-ad08-4227-adb1-7d5c0691ee83</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[135]</value>
+      <webElementGuid>f459f2da-6a9d-464e-9917-d416fa5b807d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[20]/li/ul/li[7]/span</value>
-      <webElementGuid>6d12d77a-4a0c-41b8-9918-d979303fce8f</webElementGuid>
+      <value>//div[@id='pane_']/ul[7]/li/ul/li[4]/ul/li/span</value>
+      <webElementGuid>e90c0a78-e45d-47c9-8397-41dd09271d76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reversar Rechazo Cheques de Caja'])[1]/following::span[1]</value>
-      <webElementGuid>93170cf4-d6e8-46cd-83df-f709fe5da9eb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='D2 - Automatizacion de Sucursales'])[1]/following::span[1]</value>
+      <webElementGuid>5f618153-60f4-4096-9b7c-0beaea11fe39</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Multas Cobradas en Filial'])[1]/following::span[1]</value>
-      <webElementGuid>dbe9cc3f-ee8e-4948-97b2-1e286789fe76</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Journal Canales LWD'])[1]/following::span[2]</value>
+      <webElementGuid>316e2062-95af-4be9-b8c3-e9b6b6482dbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Multas'])[1]/preceding::span[1]</value>
-      <webElementGuid>92821ae0-fdb3-4bff-a44a-52c5b5b0a907</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Creacion centralizada de cajas'])[1]/preceding::span[1]</value>
+      <webElementGuid>7fbf3823-1873-4832-b544-a8a2f19ad088</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Multas pendientes'])[1]/preceding::span[1]</value>
-      <webElementGuid>9d985e74-44c7-4725-8f99-b7bba7ce43b1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta o Modificacion de conceptos'])[1]/preceding::span[1]</value>
+      <webElementGuid>aa287d0d-d161-45e6-8826-1bce03e42a3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Administracion']/parent::*</value>
+      <webElementGuid>f3b283fe-6678-43d2-b01a-43e29cf73ae6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[20]/li/ul/li[7]/span</value>
-      <webElementGuid>581ae028-cb98-48c3-b42f-6bf547fd13fb</webElementGuid>
+      <value>//ul[7]/li/ul/li[4]/ul/li/span</value>
+      <webElementGuid>c37bb1a8-d755-41d8-a3fb-fc8b014de981</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consultas' or . = 'Consultas')]</value>
-      <webElementGuid>e89de0e0-d8b1-414f-85a6-7a442296b14d</webElementGuid>
+      <value>//span[(text() = 'Administracion' or . = 'Administracion')]</value>
+      <webElementGuid>1595e866-9b1e-459e-a740-aff63cd66fce</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

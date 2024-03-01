@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkRechazoDeCheques'))
 
 //Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultasCHR'))
 
 //Seleccionar "Consulta de aviso al librado"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))

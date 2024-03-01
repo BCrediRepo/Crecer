@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnBorrarCodigoOperacion</name>
+   <tag></tag>
+   <elementGuidId>d02598ad-9ed9-42c6-81c1-9c048ef3fcbf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[4]/td[3]/a[2]/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>76d2e5b9-1dfb-465c-bbc7-3f124f70b640</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_BCCLEBGRUPOCODOPE ascell_BCCLEBGRUPOCODOPE_ALTA</value>
+      <webElementGuid>1e944e88-3754-468d-bd58-42be654f20ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/mvdelete.gif</value>
+      <webElementGuid>2f18f6d2-5183-41ba-a1b0-3ca7781d6f9c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>1d3749f0-77e8-486b-9fb4-172cbef373c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>a8e70ce5-1e70-4e58-afc9-323b3f705c1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[4]/td[@class=&quot;action_container action_container_BCCLEBGRUPOCODOPE action_container_BCCLEBGRUPOCODOPE_ALTA&quot;]/a[2]/img[@class=&quot;ascell ascell_BCCLEBGRUPOCODOPE ascell_BCCLEBGRUPOCODOPE_ALTA&quot;]</value>
+      <webElementGuid>a5d7d38d-5f6e-4d73-bc4a-a1350ca9897a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[4]/td[3]/a[2]/img</value>
+      <webElementGuid>3a9045fa-8348-4059-a150-33b904627310</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Delete Value'])[2]</value>
+      <webElementGuid>bb8250c3-ec2f-4e15-8cb0-94572cb7a284</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[3]/a[2]/img</value>
+      <webElementGuid>66f5bf72-4c62-4c54-8c1b-ea767896c439</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvdelete.gif' and @alt = 'Delete Value' and @title = 'Delete Value']</value>
+      <webElementGuid>8688eb08-1117-44db-b05f-ef78716510fb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
