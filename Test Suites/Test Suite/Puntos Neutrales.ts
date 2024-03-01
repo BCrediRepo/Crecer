@@ -46,4 +46,18 @@
       <testCaseId>Test Cases/57-Puntos Neutrales/PN05-Falla puntos Neutrales. Alta de faltante CD Neutrales. Dispositivo de la Sucursal. Retiro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>acdcdcc1-08d3-40a5-83ca-e17db1b27209</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/57-Puntos Neutrales/PN06-Alta de Sobrante para Punto Neutral de 099. Monto MN ME valido. Ingresar comentarios. Dispositivo de la Sucursal. Sucursal tiene PN</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>80c987b2-a62b-4115-aaf8-1d83c6e2d9fd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/57-Puntos Neutrales/PN07-Ingreso de baja de sobrante para Punto Neutral de 099. Monto menor o igual a monto de sobrante. Cuenta Contable</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
