@@ -74,6 +74,8 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
+WebUI.delay(120)
+
 //Resultados de la Sucursal
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/lblSUCURSAL'), 
     6)

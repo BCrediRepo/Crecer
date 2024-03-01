@@ -61,6 +61,7 @@ long startTime = System.currentTimeMillis()
 
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/lblIDCuenta'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/lblIDCuenta'), 6)
 

@@ -6,18 +6,19 @@
    <elementGuidId>2a2fb0a4-f9d3-43bd-b31d-86eef0a38828</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de Cuentas por Cuenta ' or . = 'Consulta de Cuentas por Cuenta ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.VER.CUENTA.AMBI');processMenuHeaderText('Consulta de Cuentas por Cuenta')&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Consulta de Cuentas por Cuenta ' or . = 'Consulta de Cuentas por Cuenta ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+         <value>ul.menuMargin:nth-child(22) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>9a1127a3-f92f-489e-9bfa-e545f0146cf1</webElementGuid>
+      <webElementGuid>c9c0eb24-0b1b-4484-9440-1b51b0691c24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.VER.CUENTA.AMBI');processMenuHeaderText('Consulta de Cuentas por Cuenta')</value>
-      <webElementGuid>8fafdfad-4c9a-431a-9608-c70bb9d30e66</webElementGuid>
+      <webElementGuid>db63058a-9ec4-4594-8bb8-3df3e71520cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,7 +42,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.VER.CUENTA.AMBI');</value>
-      <webElementGuid>1f4306fa-528b-4f11-87d6-c7e43bc64d09</webElementGuid>
+      <webElementGuid>b263b057-7a56-48d6-9a5c-994f94b9284f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Cuentas por Cuenta </value>
-      <webElementGuid>586d9027-94df-4060-87cc-108f79cee5d9</webElementGuid>
+      <webElementGuid>70aef2d8-cc63-489a-9d86-f126b0e2d2ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>cccac768-f355-4f55-b87c-5792ac47a92a</webElementGuid>
+      <webElementGuid>295fc342-669d-43c7-989d-b0721430aa27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -65,7 +66,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>e98c9ac6-dd9b-4127-b76f-da97daaece39</webElementGuid>
+      <webElementGuid>862b81b3-95ec-48a5-a1c4-8923ad86b527</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.VER.CUENTA.AMBI');processMenuHeaderText('Consulta de Cuentas por Cuenta')&quot;]</value>
-      <webElementGuid>bbdf543c-17a3-4054-8a2d-ae01810a750a</webElementGuid>
+      <webElementGuid>ac08f7fc-f935-4c83-b962-de9a5ce6a2f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/ul/li/a</value>
-      <webElementGuid>c33332be-6573-474e-a8c4-aa22c85bf052</webElementGuid>
+      <webElementGuid>2944ce91-c0db-43bc-9cca-98eab5795cbe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,7 +90,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Cuentas por Cuenta')]</value>
-      <webElementGuid>13db69ec-b83d-4d1d-a1e1-5a10bf368707</webElementGuid>
+      <webElementGuid>48ac567f-b3ca-4f86-8a41-7a0a3af52a8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -97,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas de Cuentas'])[1]/following::a[1]</value>
-      <webElementGuid>5b41384a-0a1c-46c4-b408-e53133e2e7a8</webElementGuid>
+      <webElementGuid>ad7429d7-c00c-4092-b1ad-91b6b7553a1e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -105,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Continuacion Proceso Alta'])[1]/following::a[1]</value>
-      <webElementGuid>5871f122-cdc3-49c6-90d6-a4348b7b2945</webElementGuid>
+      <webElementGuid>240721eb-5c3a-4677-9c0e-4a66642f41a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -113,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/preceding::a[1]</value>
-      <webElementGuid>604ba187-b1b8-4fe8-99ba-2e1b24efc445</webElementGuid>
+      <webElementGuid>34cfd62a-8d4e-49cd-abe4-ac1f98034dea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -121,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Modificaciones a Cuentas'])[1]/preceding::a[2]</value>
-      <webElementGuid>8a800c43-31bb-4fb2-96eb-f97a8b8e7856</webElementGuid>
+      <webElementGuid>e33ddbd0-b128-4309-8341-3a41f02877e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -129,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Cuentas por Cuenta']/parent::*</value>
-      <webElementGuid>643785d0-565c-4617-a6ea-df69f8c7e3a3</webElementGuid>
+      <webElementGuid>bcc8f9b1-578c-4516-8f86-658fec5e4b20</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,7 +138,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.VER.CUENTA.AMBI');&quot;)]</value>
-      <webElementGuid>c000a329-7e14-48e8-9879-e03af439f33b</webElementGuid>
+      <webElementGuid>9be15739-791e-48da-9ee3-61588222f971</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -145,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[4]/li/ul/li[2]/ul/li/a</value>
-      <webElementGuid>f2b03c75-89eb-403b-85f2-892c75314121</webElementGuid>
+      <webElementGuid>5bda2470-35d9-4096-be9f-3acc1be4e64b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -153,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.VER.CUENTA.AMBI&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Cuentas por Cuenta ' or . = 'Consulta de Cuentas por Cuenta ')]</value>
-      <webElementGuid>2c04bfe1-ec30-4d06-adbb-7a1927f5e067</webElementGuid>
+      <webElementGuid>f3df7855-864e-4a0f-a485-a35beca6ae10</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
