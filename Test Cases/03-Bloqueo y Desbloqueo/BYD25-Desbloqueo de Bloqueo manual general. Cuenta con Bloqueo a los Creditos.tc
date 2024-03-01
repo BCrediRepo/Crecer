@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD25-Desbloqueo de Bloqueo manual general. Cuenta con Bloqueo a los Creditos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2c9d20a-622f-4ae8-b3d4-95c71aad405b</testCaseGuid>
+</TestCaseEntity>

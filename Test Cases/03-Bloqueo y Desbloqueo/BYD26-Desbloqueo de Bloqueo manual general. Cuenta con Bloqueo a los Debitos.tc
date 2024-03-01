@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD26-Desbloqueo de Bloqueo manual general. Cuenta con Bloqueo a los Debitos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>533186c0-9526-4967-a990-bae0e2cddd66</testCaseGuid>
+</TestCaseEntity>

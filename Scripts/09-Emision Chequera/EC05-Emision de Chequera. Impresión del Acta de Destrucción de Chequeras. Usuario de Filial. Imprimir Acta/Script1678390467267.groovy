@@ -56,6 +56,7 @@ WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión 
 
 //Seleccionamos Imprimir acta de un registro
 WebUI.maximizeWindow()
+WebUI.delay(120)
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkImprimirActa'), 6)
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkImprimirActa'))
 
