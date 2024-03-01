@@ -66,13 +66,6 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarg
 
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lnkAceptarAlertaRecarga'))
 
-//Captura de Pantalla PDF
-WebUI.switchToWindowTitle('e-forms')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.119 Monserrat')
 
@@ -101,8 +94,10 @@ WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblTxnCom
 
 Completada = WebUI.getText(findTestObject('44-TOB/Movimiento de Fondos/lblTxnCompleta'))
 
-assert Completada.contains('Txn Completa:') //Control Fin de script
+assert Completada.contains('Txn Completa:')
 
+
+//Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

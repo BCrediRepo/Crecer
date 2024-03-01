@@ -34,7 +34,7 @@ WebUI.click(findTestObject('02-Dashboard/43-TOB/Transferencias a Cuentas de Otro
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 //Seteo de datos
-WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtConcepto'), '3')
+WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtConcepto'), '7')
 
 WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtIDOrdenante'), '1000873562')
 
@@ -48,7 +48,7 @@ WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtImporte'), '150')
 
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnDrillDownMotivo'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/00-DrillDownMotivo/lblVarios'))
+WebUI.click(findTestObject('Object Repository/44-TOB/Movimiento de Fondos/00-DrillDownMotivo/lblJudiciales'))
 
 WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtCBUaAcreditar'), '0720120820000000332936')
 
@@ -65,13 +65,6 @@ WebUI.setText(findTestObject('44-TOB/Movimiento de Fondos/txtNombreBenef'), 'EVA
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
 
 WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/lnkAceptarAlertaRecarga'))
-
-//Captura de Pantalla PDF
-WebUI.switchToWindowTitle('e-forms')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.119 Monserrat')
@@ -101,8 +94,10 @@ WebUI.verifyElementVisible(findTestObject('44-TOB/Movimiento de Fondos/lblTxnCom
 
 Completada = WebUI.getText(findTestObject('44-TOB/Movimiento de Fondos/lblTxnCompleta'))
 
-assert Completada.contains('Txn Completa:') //Control Fin de script
+assert Completada.contains('Txn Completa:')
 
+
+//Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

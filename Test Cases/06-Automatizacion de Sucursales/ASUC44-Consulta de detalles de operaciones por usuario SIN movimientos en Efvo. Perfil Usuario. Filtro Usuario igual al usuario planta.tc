@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC44-Consulta de detalles de operaciones por usuario SIN movimientos en Efvo. Perfil Usuario. Filtro Usuario igual al usuario planta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2974c725-4a7d-4a82-bd21-36f66c81c8e4</testCaseGuid>
+</TestCaseEntity>
