@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblAUH</name>
+   <tag></tag>
+   <elementGuidId>a45b4b72-aa94-4c5c-8011-a457807d9686</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[27]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ae39e76f-8f10-4dc7-859a-0b110cb13409</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLANSESBEN</value>
+      <webElementGuid>aae9a3b7-6dd7-472d-8c0d-9a966bd99e24</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>SI</value>
+      <webElementGuid>3bf407b0-2814-4277-b3fb-c966b711b366</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[27]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLANSESBEN&quot;]</value>
+      <webElementGuid>51c9c181-9bcb-46d1-925e-53526f2d6409</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[27]/td[3]/span</value>
+      <webElementGuid>2190704d-c5b0-4ad6-b820-9db13dcf82ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Uvhi Regul Docum'])[1]/following::span[1]</value>
+      <webElementGuid>7ed7e1ce-c351-4b3d-852a-f4ec2bf177ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mendoza Centro'])[1]/following::span[1]</value>
+      <webElementGuid>f8f98b6d-54e7-4014-b312-f1cceb6f4617</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reserved1'])[1]/preceding::span[2]</value>
+      <webElementGuid>a5adb784-8874-439e-a7b0-ba742a1644f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[27]/td[3]/span</value>
+      <webElementGuid>597753c4-8e0f-430a-959d-05e2f908d301</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'SI' or . = 'SI')]</value>
+      <webElementGuid>cf3c8706-0a52-48a7-8f27-4796302c3b0a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTxnCompleta</name>
+   <tag></tag>
+   <elementGuidId>6fa6ef41-5193-4097-8c10-db9895bb744c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.message</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>42256d4c-cf4d-4c0d-ab0a-82da4c6f18c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>message</value>
+      <webElementGuid>925d9378-887b-426b-9fa9-8ce89b3ff916</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Txn Completa: ACLK2324021062 13:19:02 19 FEB 2024 AC.LOCKED.EVENTS,BCCL.AC.BLOQ.PAR I </value>
+      <webElementGuid>cd769639-42f2-4c18-8a79-324d229ecf43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_ACLOCKEDEVENTS display_box_ACLOCKEDEVENTS_BCCLACBLOQPAR&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
+      <webElementGuid>10185df2-d0aa-42dd-8505-da70b8a3defd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+      <webElementGuid>91251428-ade4-4f06-9e7b-1a434d6f55e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.020 San Martin)'])[1]/following::td[7]</value>
+      <webElementGuid>bdbd0919-aef6-4fd9-9664-8fddcc53554c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo Parcial Cta'])[1]/following::td[15]</value>
+      <webElementGuid>5afd524f-222c-40af-9a8c-b9fc02cc5872</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[2]</value>
+      <webElementGuid>55ab1c5f-15ab-40ca-b67c-0bbf20d3ca6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::td[2]</value>
+      <webElementGuid>be7ea6f3-dbdc-4459-92ba-a294dc5e1d2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Txn Completa: ACLK2324021062 13:19:02 19 FEB 2024 AC.LOCKED.EVENTS,BCCL.AC.BLOQ.PAR I']/parent::*</value>
+      <webElementGuid>c1138ee4-a6c4-419a-9867-cc9efb463eaf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//table[2]/tbody/tr/td</value>
+      <webElementGuid>6fa0d525-6d30-4dc4-a02a-cf364f1059e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Txn Completa: ACLK2324021062 13:19:02 19 FEB 2024 AC.LOCKED.EVENTS,BCCL.AC.BLOQ.PAR I ' or . = 'Txn Completa: ACLK2324021062 13:19:02 19 FEB 2024 AC.LOCKED.EVENTS,BCCL.AC.BLOQ.PAR I ')]</value>
+      <webElementGuid>f70ce431-d207-4642-9326-e6d1da7e4f37</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
