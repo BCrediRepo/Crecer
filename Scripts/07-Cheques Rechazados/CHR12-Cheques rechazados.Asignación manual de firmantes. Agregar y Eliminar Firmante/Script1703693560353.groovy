@@ -74,6 +74,9 @@ TestObject numeroDocumento = findTestObject('Object Repository/08-Cheques Rechaz
 String valorNumeroDocumento = WebUI.getText(numeroDocumento)
 
 if (valorNumeroDocumento.equals('20105693614')) {
+	//Seleccionar "Boton Añadir Firmante"
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
+	
 	//Setear "Txt Firmante 2"
 	WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtIdFirmante2'), '1000413328')
 	
@@ -83,53 +86,20 @@ if (valorNumeroDocumento.equals('20105693614')) {
 	//Seleccionar "Aceptar el registro"
 	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
 	
-	//Screenshot
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	
 	//Verificar "Txn Completa"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
 	
 	//Validar "Txn Completa"
 	def element = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
 	assert element.contains('Txn Completa')
-	
-	//Seleccionar "Ir a Cambio de Firmantes
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkIraCambiodeFirmantes'))
-	
-	//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-	WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-	
-	//Seleccionar "Cambio De Firmantes Informados"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
-	
-	//Cambiar ventana "BCCL.CQ.CHRECH.REP.BCRA"
-	WebUI.switchToWindowTitle('BCCL.CQ.CHRECH.REP.BCRA')
-	
-	//Seleccionar "Boton Eliminar Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante3'))
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
-	
-	//Seleccionar "Ir a Cambio de Firmantes
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkIraCambiodeFirmantes'))
-	
-	//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-	WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-	
-	//Seleccionar "Cambio De Firmantes Informados"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
-	
-	//Cambiar ventana "BCCL.CQ.CHRECH.REP.BCRA"
-	WebUI.switchToWindowTitle('BCCL.CQ.CHRECH.REP.BCRA')
-	
-	//Seleccionar "Boton Añadir Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
+
+	//Screenshot
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 		
 } else {
+//	//Seleccionar "Boton Añadir Firmante"
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
+	
 	//Setear "Txt Firmante 2"
 	WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtIdFirmante2'), '1000275776')
 	
@@ -139,45 +109,17 @@ if (valorNumeroDocumento.equals('20105693614')) {
 	//Seleccionar "Aceptar el registro"
 	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
 	
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element2 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	assert element2.contains('Txn Completa')
+
 	//Screenshot
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	
-	//Seleccionar "Ir a Cambio de Firmantes
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkIraCambiodeFirmantes'))
-	
-	//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-	WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-	
-	//Seleccionar "Cambio De Firmantes Informados"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
-	
-	//Cambiar ventana "BCCL.CQ.CHRECH.REP.BCRA"
-	WebUI.switchToWindowTitle('BCCL.CQ.CHRECH.REP.BCRA')
-	
-	//Seleccionar "Boton Eliminar Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante3'))
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
-	
-	//Seleccionar "Ir a Cambio de Firmantes
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkIraCambiodeFirmantes'))
-	
-	//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-	WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-	
-	//Seleccionar "Cambio De Firmantes Informados"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
-	
-	//Cambiar ventana "BCCL.CQ.CHRECH.REP.BCRA"
-	WebUI.switchToWindowTitle('BCCL.CQ.CHRECH.REP.BCRA')
-	
-	//Seleccionar "Boton Añadir Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
-}
+	}
 
 //Cerrar Sesion
 CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
@@ -209,7 +151,7 @@ WebUI.switchToWindowIndex(0)
 
 //Seleccionar "boton de buscar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
+	
 //Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
 WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
 
@@ -244,70 +186,30 @@ if (valorNumeroDocumento.equals('20105693614')) {
 	//Seleccionar "Aceptar el registro"
 	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
 	
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element3 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	assert element3.contains('Txn Completa')
+	
+} else {
+	//Seleccionar "Boton Eliminar Firmante"
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante3'))
+	
 	//Screenshot
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	
-	//Seleccionar "Aceptar Alertas"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkAceptarAlertas'))
+	//Seleccionar "Aceptar el registro"
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
 	
 	//Verificar "Txn Completa"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
 	
 	//Validar "Txn Completa"
-	def element2 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-	assert element2.contains('Txn Completa')
+	def element4 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	assert element4.contains('Txn Completa')
 	
-	//Screenshot
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	
-	//Seleccionar "Ir a Cambio de Firmantes
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkIraCambiodeFirmantes'))
-	
-	//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-	WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-	
-	//Seleccionar "Cambio De Firmantes Informados"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
-	
-	//Cambiar ventana "BCCL.CQ.CHRECH.REP.BCRA"
-	WebUI.switchToWindowTitle('BCCL.CQ.CHRECH.REP.BCRA')
-	
-	//Setear "Txt Firmante 1"
-	WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtIdFirmante1'), '1000275776')
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
-	
-	//Seleccionar "Ir a Cambio de Firmantes
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lnkIraCambiodeFirmantes'))
-	
-	//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-	WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-	
-	//Seleccionar "Cambio De Firmantes Informados"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkModificarFirmantes'))
-	
-	//Cambiar ventana "BCCL.CQ.CHRECH.REP.BCRA"
-	WebUI.switchToWindowTitle('BCCL.CQ.CHRECH.REP.BCRA')
-	
-	//Seleccionar "Boton Añadir Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
-	
-} else {
-	//Seleccionar "Boton Añadir Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAniadirFirmante'))
-	
-	//Setear "Txt Firmante 2"
-	WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtIdFirmante2'), '1000275776')
-	
-	//Screenshot
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
 }
 
 //Control de fin de script

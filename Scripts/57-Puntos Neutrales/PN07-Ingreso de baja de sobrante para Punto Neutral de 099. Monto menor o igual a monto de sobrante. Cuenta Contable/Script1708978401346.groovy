@@ -27,8 +27,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 
 //Ejecutar caso PN06
-//WebUI.callTestCase(findTestCase('57-Puntos Neutrales/REVISAR-Alta de Sobrante para Punto Neutral de 099. Monto MN ME valido. Ingresar comentarios. Dispositivo de la Sucursal. Sucursal tiene PN'), 
-   // [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('57-Puntos Neutrales/PN06-Alta de Sobrante para Punto Neutral de 099. Monto MN ME valido. Ingresar comentarios. Dispositivo de la Sucursal. Sucursal tiene PN'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -80,41 +80,44 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-String targetValue = "TT23240212187613"
+//Definir la variable trx1 como "variable"
+def variable = GlobalVariable.vTxn
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
-def buscarElementoEnTabla(String targetValue) {
-	//Itero en la tabla buscado la FT originada y cliqueando en PAGAR
-	// Obtén el elemento de la tabla
+def buscarElementoEnTabla(String variable) {
+	
+	//Obtener elemento de la tabla
 	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	// Obtén todas las filas dentro de la tabla
+	
+	//Obtener todas las filas de la tabla
 	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	// Itera a través de las filas
-	//Despliego la columna donde se muestra la info de las transacciones
+	
+	//Desplegar la columna donde se muestra la info de las transacciones
 	WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
 	for (WebElement row : rows) {
-		// Obtiene el tercer valor de la fila (índice 1, ya que las listas son base cero)
+		
+		//Obtener tercer valor de la fila (índice 1, ya que las listas son base cero)
 		WebElement cell = row.findElements(By.tagName("td"))[1]
 
-		// Obtiene el texto de la celda
+		//Obtener texto
 		String cellText = cell.getText()
 		
-		// Compara el valor de la celda con el valor específico
-		if (cellText.equals(targetValue)) {
+		//Comparar valor de la celda con el valor especifico
+		if (cellText.equals(variable)) {
 			
-			// Realiza las acciones necesarias si se encuentra el valor
+			//Realizar acciones necesarias si se encuentra el valor
 			List<WebElement> tdList = row.findElements(By.tagName("td"))
 			WebElement tdElement = tdList[13]
 			WebElement comboBox = tdElement.findElement(By.tagName("select"))
 			
-			// Utiliza Select para interactuar con el comboBox
+			//Utilizar "Select" para interactuar con el comboBox
 			def select = new Select(comboBox)
 			select.selectByVisibleText("Baja Sobrante Dispositivo - O Banco")
 			
-			// Encuentra el elemento 'img' dentro del enlace 'a'
+			//Encontrar elemento 'img' dentro del enlace 'a'
 			WebElement imgElement = tdElement.findElement(By.cssSelector("a[title='Select Drilldown'] img"))
 			
-			// Haz clic en el elemento 'img'
+			//Seleccionar elemento 'img'
 			imgElement.click()
 			return true
 		}
@@ -122,29 +125,50 @@ def buscarElementoEnTabla(String targetValue) {
 	return false
 }
 
-//Lógica para buscar el elemento en la tabla
+//Logica para buscar el elemento en la tabla
 def encontrado = false
 
-//Bucle para buscar en múltiples páginas
+//Bucle para buscar en multiples páginas
 while (!encontrado) {
 	
-	//Lógica para buscar el elemento en la tabla
-	encontrado = buscarElementoEnTabla(targetValue)
+	//Logica para buscar el elemento en la tabla
+	encontrado = buscarElementoEnTabla(variable)
 		
-	//Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
+	//Si no se encontro el valor, Seleccionar boton "Siguiente" y buscar nuevamente
 	if (!encontrado) {
 		
-		//Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
+		//Realizar busqueda nuevamente despues de Seleccionar "Siguiente"
 		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		//Espera a que la nueva página se cargue completamente
+		
+		//Esperar 2 seg a que se cargue la pagina
 		WebUI.delay(2)
 	}
 }
 
-//-----------------------------------------------------------------
-//Switchear a la ventana de baja sobrante
-//completar el registro con los datos mandatorios
-//completar la baja
+//Cambiar ventana "Movimiento de Fondos"
+WebUI.switchToWindowTitle('Movimiento de Fondos')
+
+//Setear importe
+WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '100')
+
+//Seleccionar campo de Observaciones
+WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtObservaciones'))
+
+//Setear Observaciones
+WebUI.setText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtObservaciones'), 'PRUEBAS CRECER')
+
+//Seleccionar "boton Validar Registro"
+WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnValidarRegistro'))
+
+//Seleccionar "boton Aceptar Registro"
+WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnAceptarRegistro'))
+
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+
+//Validar "Txn Completa"
+def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+assert element.contains('Txn Completa')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

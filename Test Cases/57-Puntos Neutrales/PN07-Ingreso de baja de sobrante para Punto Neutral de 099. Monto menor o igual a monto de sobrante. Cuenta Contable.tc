@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>REVISAR-Ingreso de baja de sobrante para Punto Neutral de 099. Monto menor o igual a monto de sobrante. Cuenta Contable</name>
+   <name>PN07-Ingreso de baja de sobrante para Punto Neutral de 099. Monto menor o igual a monto de sobrante. Cuenta Contable</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>924cc60c-e4fd-4d97-941e-4c8aad1bb509</testCaseGuid>

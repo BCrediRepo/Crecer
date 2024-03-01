@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnVolverPantallaAplicacion</name>
+   <tag></tag>
+   <elementGuidId>a1ccefe0-fe7a-4a6d-9f70-0a89cf285498</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Volver a la pantalla de aplicacion&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[8]/a/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>cfe4fb68-9622-4703-82eb-75bace372a72</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/up.gif
+															</value>
+      <webElementGuid>d1a17355-8e89-4110-ac89-a4697b6927c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Volver a la pantalla de aplicacion</value>
+      <webElementGuid>df6bb0f7-4c5f-42e7-9f11-7ddf9bab5c0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Volver a la pantalla de aplicacion</value>
+      <webElementGuid>267d3fca-b311-4251-adb6-b6bda7ecd6a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[8]/a[1]/img[1]</value>
+      <webElementGuid>f9723041-9e46-4275-af91-9fc2fb1091bc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[8]/a/img</value>
+      <webElementGuid>520bf7df-e693-421b-974a-75aa0674f2d7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Volver a la pantalla de aplicacion']</value>
+      <webElementGuid>38c4db3b-63c9-4202-970a-4ecd86d3b918</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[8]/a/img</value>
+      <webElementGuid>86d2036e-c4c5-444b-a6e7-8967721b6af3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/up.gif
+															' and @alt = 'Volver a la pantalla de aplicacion' and @title = 'Volver a la pantalla de aplicacion']</value>
+      <webElementGuid>3cac2460-3374-4010-98f4-96bfe456c6fe</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -27,8 +27,8 @@ WebUI.maximizeWindow()
 //Seleccionar "Rechazo de Cheques"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkRechazodecheques'))
 
-//Seleccionar "consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultas'))
+//Seleccionar "Consultas"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultasCHR'))
 
 //Seleccionar "Cheques Rechazados"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkChequesRechazados'))
