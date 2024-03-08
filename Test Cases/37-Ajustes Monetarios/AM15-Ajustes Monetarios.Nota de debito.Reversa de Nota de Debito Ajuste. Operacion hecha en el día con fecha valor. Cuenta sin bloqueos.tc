@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AM15-Ajustes Monetarios.Nota de debito.Reversa de Nota de Debito Ajuste. Operacion hecha en el día con fecha valor. Cuenta sin bloqueos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>489a3529-b668-4247-a118-4d4a686977c4</testCaseGuid>
+</TestCaseEntity>
