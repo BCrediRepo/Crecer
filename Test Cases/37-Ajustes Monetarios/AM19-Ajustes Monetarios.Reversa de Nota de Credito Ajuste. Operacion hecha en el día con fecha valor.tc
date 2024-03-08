@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>IMP19-Ajustes Monetarios.Reversa de Nota de Credito Ajuste. Operacion hecha en el día con fecha valor</name>
+   <name>AM19-Ajustes Monetarios.Reversa de Nota de Credito Ajuste. Operacion hecha en el día con fecha valor</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ac10a918-fd62-4f0f-87e7-3b50bb6b4997</testCaseGuid>
