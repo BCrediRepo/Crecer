@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentario
 WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBAS CRECER')
 
 //Seleccionar "boton Dropdown Origen"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownDestino-Origen'))
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownDestino-OrigenP9'))
 
 //Seleccionar "TF"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTF'))

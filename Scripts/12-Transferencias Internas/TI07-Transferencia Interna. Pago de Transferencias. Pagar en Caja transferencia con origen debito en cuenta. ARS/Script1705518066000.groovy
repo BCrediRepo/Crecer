@@ -69,11 +69,11 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarg
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
 
 //Captura de Pantalla PDF
-WebUI.switchToWindowTitle('e-forms')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//WebUI.switchToWindowTitle('e-forms')
+//
+//WebUI.maximizeWindow()
+//
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.089 M.del Plata Ct')
@@ -115,7 +115,7 @@ assert Transaccion1.contains('Txn Completa:')
 //Cierro las ventanas que ya no se usan y van a interceder con las proximas por tener el mismo nombre
 WebUI.closeWindowTitle('Movimiento de Fondos')
 WebUI.closeWindowTitle('Verificacion de Firmas - Fil.089 M.del Plata Ct')
-WebUI.closeWindowTitle('e-forms')
+//WebUI.closeWindowTitle('e-forms')
 
 //Vuelvo al dashboard para ingresar al link de pago de TI
 WebUI.switchToWindowIndex(0)
@@ -179,11 +179,11 @@ WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/Movimie
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
 
 //Captura de Pantalla PDF
-WebUI.switchToWindowTitle('e-forms')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//WebUI.switchToWindowTitle('e-forms')
+//
+//WebUI.maximizeWindow()
+//
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 

@@ -66,6 +66,8 @@ label = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompl
 
 assert label.contains('Txn Completa:') == true
 
+
+//---------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

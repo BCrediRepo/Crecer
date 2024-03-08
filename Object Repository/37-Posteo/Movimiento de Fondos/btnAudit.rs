@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>.nonactive-tab > span:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//table[@id='headtab']/tbody/tr/td[3]/a/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>5064c39c-39a4-43c2-92c3-fe7d6c47b5e6</webElementGuid>
+      <webElementGuid>3a33e776-552a-4095-a338-ccd2eca6ebca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Audit</value>
-      <webElementGuid>dd8d467e-79fe-4cda-b08c-936a2ba4d332</webElementGuid>
+      <webElementGuid>3ede48ba-5278-4fce-bd18-1385477014f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[3]/a[@class=&quot;nonactive-tab&quot;]/span[1]</value>
-      <webElementGuid>3ae3be15-9195-48cd-9645-7d74cf1f9445</webElementGuid>
+      <webElementGuid>7dc00dca-0f39-4606-a45b-b412114f6eb9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='headtab']/tbody/tr/td[3]/a/span</value>
-      <webElementGuid>6964d589-74ce-498b-bad7-3b6b2da3c602</webElementGuid>
+      <webElementGuid>361b8682-787a-468b-a44c-65d878997abe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Impuestos y Comisiones'])[1]/following::span[1]</value>
-      <webElementGuid>51729e43-cb66-4b52-a80c-6540cb833a67</webElementGuid>
+      <webElementGuid>e3629ec1-9850-43d4-b207-9d92bb019959</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresos Varios de Caja'])[2]/following::span[2]</value>
-      <webElementGuid>d334b009-6ad7-4cac-a125-b61a3942e111</webElementGuid>
+      <webElementGuid>90607e30-3cbe-4031-b4aa-47e66d12637d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha'])[1]/preceding::span[1]</value>
-      <webElementGuid>04812740-82c3-4c65-96a0-b906f2379a39</webElementGuid>
+      <webElementGuid>8be608fb-478e-4dd0-b471-b0ba0d7648de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::span[3]</value>
-      <webElementGuid>59c2a7f9-bdae-45c1-9d81-7462f6e0d54e</webElementGuid>
+      <webElementGuid>631dd898-20d3-4f1d-a146-51dd9889a87e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Audit']/parent::*</value>
-      <webElementGuid>6bb18db3-e987-4a8c-8690-b357fc4f1c44</webElementGuid>
+      <webElementGuid>de2dc192-bcc8-43f7-8224-042f66b715c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/a/span</value>
-      <webElementGuid>b85bc3d7-c36c-4c75-bbfc-3436f0e0bac7</webElementGuid>
+      <webElementGuid>03a9ebbc-42e5-42f7-970b-a88cc31a54b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Audit' or . = 'Audit')]</value>
-      <webElementGuid>88759e07-f1a6-46ab-86dc-f5aafc25144d</webElementGuid>
+      <webElementGuid>cfa0d4a6-d6f2-4b40-9609-43b30f1f0d5d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

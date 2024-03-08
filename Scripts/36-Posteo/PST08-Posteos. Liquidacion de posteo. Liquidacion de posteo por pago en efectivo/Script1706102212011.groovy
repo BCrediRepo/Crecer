@@ -48,7 +48,7 @@ WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'
 WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblConcepto3'))
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/txtNombrePosteo'))
 WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtNombrePosteo'), 'PRUEBAS CRECER')
-WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtImporte'), '50')
+WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtImporteCredit'), '50')
 WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtReferPosteo'), 'PRUEBAS CRECER')
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAceptarRegistro'))
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lnkAceptarAlertas'))
@@ -62,7 +62,7 @@ def trx1 = partes[2]
 
 assert Transaccion1.contains('Txn Completa:')
 
-WebUI.switchToWindowTitle('e-forms')
+//WebUI.switchToWindowTitle('e-forms')
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -82,8 +82,6 @@ WebUI.click(findTestObject('02-Dashboard/lnkPosteo'))
 WebUI.click(findTestObject('02-Dashboard/35-Posteos/lnkTransaccionesPendientesdeLiquidacion'))
 
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
-
-//TrxLiq = WebUI.getText(findTestObject('37-Posteo/BCCL.E.EB.POSTEO.INAU/lblTxnID'))
 
 // Obtén el elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
