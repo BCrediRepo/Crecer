@@ -57,11 +57,11 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarg
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
 
 //Captura de Pantalla PDF
-WebUI.switchToWindowTitle('e-forms')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//WebUI.switchToWindowTitle('e-forms')
+//
+//WebUI.maximizeWindow()
+//
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.119 Monserrat')

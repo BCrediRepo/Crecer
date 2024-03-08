@@ -72,7 +72,7 @@ def trx1 = partes[2]
 
 assert Transaccion1.contains('Txn Completa:')
 
-WebUI.switchToWindowTitle('e-forms')
+//WebUI.switchToWindowTitle('e-forms')
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -92,8 +92,6 @@ WebUI.click(findTestObject('02-Dashboard/lnkPosteo'))
 WebUI.click(findTestObject('02-Dashboard/35-Posteos/lnkTransaccionesPendientesdeLiquidacion'))
 
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
-
-//TrxLiq = WebUI.getText(findTestObject('37-Posteo/BCCL.E.EB.POSTEO.INAU/lblTxnID'))
 
 // Obtén el elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
@@ -153,6 +151,8 @@ Transaccion2 = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblT
 
 assert Transaccion2.contains('Txn Completa:') == true
 
+
+//FIN DE SCRIPT -----------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

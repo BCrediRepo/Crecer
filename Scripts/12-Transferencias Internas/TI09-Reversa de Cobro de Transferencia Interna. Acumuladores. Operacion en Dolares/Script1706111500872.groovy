@@ -77,11 +77,11 @@ WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lnkAceptarAlertas'))
 
 //Captura de Pantalla PDF
-WebUI.switchToWindowTitle('e-forms')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//WebUI.switchToWindowTitle('e-forms')
+//
+//WebUI.maximizeWindow()
+//
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 ////Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Movimiento de Fondos')

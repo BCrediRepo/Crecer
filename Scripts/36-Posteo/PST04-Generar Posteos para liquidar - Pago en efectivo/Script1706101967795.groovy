@@ -51,8 +51,10 @@ WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lnkAceptarAlertas'))
 Completa = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
 assert Completa.contains('Txn Completa:') == true
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.switchToWindowTitle('e-forms')
+//WebUI.switchToWindowTitle('e-forms')
 
+
+//----------------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

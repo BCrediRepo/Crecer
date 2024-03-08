@@ -119,7 +119,6 @@ def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuen
 assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
