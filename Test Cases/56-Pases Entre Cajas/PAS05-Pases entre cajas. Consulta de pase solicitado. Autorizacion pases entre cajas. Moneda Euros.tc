@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS05-Pases entre cajas. Consulta de pase solicitado. Autorizacion pases entre cajas. Moneda Euros</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d9bee1d5-61e2-477a-b727-96a1237f25f9</testCaseGuid>
+</TestCaseEntity>

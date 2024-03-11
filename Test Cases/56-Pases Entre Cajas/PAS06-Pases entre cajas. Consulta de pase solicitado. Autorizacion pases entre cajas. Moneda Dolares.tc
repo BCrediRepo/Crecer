@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS06-Pases entre cajas. Consulta de pase solicitado. Autorizacion pases entre cajas. Moneda Dolares</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f89ffcc1-09ee-49e1-a0bf-385dd25e7e21</testCaseGuid>
+</TestCaseEntity>

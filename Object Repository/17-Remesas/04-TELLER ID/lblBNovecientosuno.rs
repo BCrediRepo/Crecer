@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblBNovecientosuno</name>
+   <tag></tag>
+   <elementGuidId>d0a5150c-c3bf-4ad4-9830-ad76d48a0f12</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow8 > td.coloumntddata.coloumntddata_BCCLETIDUSUARIOS > b</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow8']/td/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>974a5653-2025-4b97-a991-4b5850ebc114</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>B.0901</value>
+      <webElementGuid>cfa16850-a3f3-4f73-aa65-5f83b640c562</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow8&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLETIDUSUARIOS&quot;]/b[1]</value>
+      <webElementGuid>a072cc29-5f88-4064-8080-3811ca9f010e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow8']/td/b</value>
+      <webElementGuid>a434ab6d-e2b0-45c6-a5fa-8f135fbdfe63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FILIAL 001 ON CENTRO 0805'])[1]/following::b[1]</value>
+      <webElementGuid>02df71ec-aa14-41f7-9187-d9092441a8d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0805'])[1]/following::b[1]</value>
+      <webElementGuid>5defd4fd-ebfe-48f3-8563-275500534b4e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FILIAL 001 AI CENTRO 0901'])[1]/preceding::b[1]</value>
+      <webElementGuid>9074697b-f2e3-4551-8266-79fad2a4bc1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.1122'])[1]/preceding::b[1]</value>
+      <webElementGuid>ce229bed-3352-494f-8d28-e6f97076f2c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='B.0901']/parent::*</value>
+      <webElementGuid>c788316a-eff6-4afc-a28f-502adcc321b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[9]/td/b</value>
+      <webElementGuid>3788d560-c44e-43ea-8739-e826c1f6f3ea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'B.0901' or . = 'B.0901')]</value>
+      <webElementGuid>a058879e-dd12-4b8c-907d-471b59265138</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

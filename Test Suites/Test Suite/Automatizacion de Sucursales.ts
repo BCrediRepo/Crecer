@@ -264,6 +264,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>53de0bbc-49e8-4de1-a9e3-93a67124fd55</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>28af1d1e-5109-49e3-ae04-b130b94880a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -278,10 +285,87 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>53de0bbc-49e8-4de1-a9e3-93a67124fd55</guid>
+      <guid>bc45c99c-3eec-4bf6-8531-1efea773372d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC41-Pases Entre Cajas.Consulta de Atesoramiento.Limite de Atesoramiento Max de Categoria existente es Menor a EXISTENCIA de la Categoria</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a8afb691-2e53-471c-bf4e-f4c08ae655d8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC42-Consulta operatoria de Filiales.Cambio de Denominación. Moneda Local</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7aaa6b3a-045b-4ca1-88e4-aea4cbfbc858</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC44-Consulta de detalles de operaciones por usuario SIN movimientos en Efvo. Perfil Usuario. Filtro Usuario igual al usuario planta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fd7a066e-0766-4997-8779-0375ba1992bb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC43-Aplanado Saldo Filiales. Ejecucion del proceso</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d717411-dfe9-422f-9c73-4ae9781efe04</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC45-Automatizacion de sucursales.Consulta de detalles de operaciones por Filial SIN movimientos en Efvo. Divisa igual Pesos. Usuario de Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f20f9ba9-65ed-4b61-b913-f3c1d118e328</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC46-Caja. Consulta de Existencia por Denominacion.Casa Central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1a3987c1-2a7d-4bb4-8bce-da70bccb104f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC47-Automatizacion de Sucursales.Consulta Operatoria de Filiales.Consulta de trx por Codigo Operativo.Usuario Filial.Moneda Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0776fff1-9e07-4ae7-9f3a-7e9ae7a42a1a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC48-Automatizacion de sucursales.Pases entre Cajas. Consulta de Cajas Abiertas del Banco</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>41b2b7f1-ad20-427b-b266-eb8c047a63f3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC49-Automatizacion de sucursales.Pases entre Cajas.Alta Grupos de Codigos de Operacion. Alta. Grupo con Mas de un Codigo Operativo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9e9b4a13-949c-4e0c-86a0-254e2c68ba9e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC50-TELLER.ID. Reasignacion de Caja. Acceso a la TELLER.ID,REASIGNA.USUARIO. Usuario y caja validos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b3f0b357-b724-4f6f-ac19-6e4dadede870</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC51-Automatizacion de sucursales. Imputacion Contable de la Suscripcion.Rescate de Nocom a cuentas de titulo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ad151cd6-4afe-4f95-80a5-76ed8cdf52a0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC52-Caja. Consulta de Existencia por Denominacion.Cajero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

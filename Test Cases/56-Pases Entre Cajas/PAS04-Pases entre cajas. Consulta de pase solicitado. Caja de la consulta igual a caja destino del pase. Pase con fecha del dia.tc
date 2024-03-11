@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS04-Pases entre cajas. Consulta de pase solicitado. Caja de la consulta igual a caja destino del pase. Pase con fecha del dia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0b56501d-a181-4a86-b6bb-add9cf8a2305</testCaseGuid>
+</TestCaseEntity>

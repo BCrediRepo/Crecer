@@ -18,4 +18,53 @@
       <testCaseId>Test Cases/56-Pases Entre Cajas/PAS01-TC PASES CONS ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>989a19f5-dfd9-41c5-a5bf-16447c3b434d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS02-Pases entre cajas. Solicitud pase entre cajas. Menu Cajero. Cajas de la misma Filial. Saldo Caja emisora mayor a Total de la solicitud. EUROS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cb5f9881-1245-49f0-9073-ace00222eb66</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS03-Pases entre Caja, Buzon y Tesoro. Transacciones Especiales. Pases entre Cajas-Jefe</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c8a9a5b9-14e7-4834-863a-1404b48b1dde</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS04-Pases entre cajas. Consulta de pase solicitado. Caja de la consulta igual a caja destino del pase. Pase con fecha del dia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7ad8afd8-8069-4399-a2f2-1ab55d75161d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS05-Pases entre cajas. Consulta de pase solicitado. Autorizacion pases entre cajas. Moneda Euros</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ecaeb349-a619-4cd8-8667-859f9137ccb4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS06-Pases entre cajas. Consulta de pase solicitado. Autorizacion pases entre cajas. Moneda Dolares</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b6047c52-655d-4bae-a66c-57276c826a5a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS07-Pases entre cajas. Consulta de pase solicitado. Autorizacion pases entre cajas. Moneda Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>09b3f04d-5c7d-4c21-bcfe-8b81d73cbe11</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS08-Pases Entre Cajas. Envio Desde Caja a Dispositivos. Importe Mayor al Saldo de la Caja</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
