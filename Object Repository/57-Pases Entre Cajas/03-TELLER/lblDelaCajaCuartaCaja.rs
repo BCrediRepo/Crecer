@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDelaCajaCuartaCaja</name>
+   <tag></tag>
+   <elementGuidId>6d460025-427f-4570-8f53-a4a01f060be5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow4']/td/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow4 > td.coloumntddata.coloumntddata_BCCLETTRANGOCAJAS > b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>6102a9a8-de77-42b5-9670-64c9cb0578f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1547</value>
+      <webElementGuid>499c793a-5129-48f8-acb0-fc95f164a8be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow4&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLETTRANGOCAJAS&quot;]/b[1]</value>
+      <webElementGuid>2723ea60-6269-4926-a1cf-c428a96b75f2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow4']/td/b</value>
+      <webElementGuid>1aca0835-37c8-4fad-96a6-3b2eaf633edc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Caja'])[1]/following::b[4]</value>
+      <webElementGuid>cdef2ae6-0a19-4332-a744-1af9f7b07a81</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::b[4]</value>
+      <webElementGuid>4443b812-6e52-4604-9a72-28ab3ea1323f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='1547']/parent::*</value>
+      <webElementGuid>c1188bfc-5c94-4611-8f7c-080e8ab4793a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[5]/td/b</value>
+      <webElementGuid>8efb708a-f8a4-4f16-8ed6-8c1e9804920e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = '1547' or . = '1547')]</value>
+      <webElementGuid>0da09893-9637-4f91-a88f-c3c19a908d26</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

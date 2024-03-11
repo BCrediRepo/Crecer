@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTELLER,PASE.ENTRE.CAJAS.JEFE</name>
+   <tag></tag>
+   <elementGuidId>515bc9eb-6d29-4fc6-bb24-9cdb6e194038</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[26]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>76b34482-4035-447d-aafb-79e1cf9b55f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_TELLER</value>
+      <webElementGuid>f3323929-3b0f-4f4e-ae38-d305e782daa4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>TELLER,PASE.ENTRE.CAJAS.JEFE</value>
+      <webElementGuid>3c858692-e27a-441d-af8d-678a4cc939a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[26]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_TELLER&quot;]</value>
+      <webElementGuid>57e7afa6-811c-4583-8b3c-ecec1f8b08b3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[26]/td[3]/span</value>
+      <webElementGuid>0eccbb7c-7c01-4376-ac9c-7c1a971e7543</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L Lv Version In'])[1]/following::span[1]</value>
+      <webElementGuid>103bb630-1290-4b71-a2d4-5ade4d97db01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0489'])[2]/following::span[2]</value>
+      <webElementGuid>006b0a57-d22f-4622-b615-394f901b9269</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L G Com Imp Tcr'])[1]/preceding::span[2]</value>
+      <webElementGuid>1366f803-f6f9-4c69-8a06-d71e8440761c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L G Com Imp Tdb'])[1]/preceding::span[4]</value>
+      <webElementGuid>19f769e3-f50d-41bb-9c7d-f8d414e1c99e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='TELLER,PASE.ENTRE.CAJAS.JEFE']/parent::*</value>
+      <webElementGuid>35975297-acaa-4bea-a9ea-521d64ee36d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[26]/td[3]/span</value>
+      <webElementGuid>3ab370ee-3c28-4edf-a456-ab463db205bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'TELLER,PASE.ENTRE.CAJAS.JEFE' or . = 'TELLER,PASE.ENTRE.CAJAS.JEFE')]</value>
+      <webElementGuid>fc4898b0-0b3c-4e81-a3b7-919f36e964ad</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

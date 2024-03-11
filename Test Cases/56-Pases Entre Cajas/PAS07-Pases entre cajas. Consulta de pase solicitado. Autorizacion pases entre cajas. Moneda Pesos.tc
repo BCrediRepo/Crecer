@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS07-Pases entre cajas. Consulta de pase solicitado. Autorizacion pases entre cajas. Moneda Pesos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df064747-8c7a-43b4-bbf4-497c91ad2390</testCaseGuid>
+</TestCaseEntity>
