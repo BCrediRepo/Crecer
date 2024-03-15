@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS14-Pases entre Caja, Buzon y Tesoro. Pase de Caja al Tesoro.User Tesorero</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d02b1706-f7f0-4fee-aac0-8e173f8f0b37</testCaseGuid>
+</TestCaseEntity>

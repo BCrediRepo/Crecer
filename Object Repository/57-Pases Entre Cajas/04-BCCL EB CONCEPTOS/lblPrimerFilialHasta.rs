@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblARS</name>
+   <name>lblPrimerFilialHasta</name>
    <tag></tag>
-   <elementGuidId>e74e0f98-be98-473e-88c3-79c6c532f100</elementGuidId>
+   <elementGuidId>4f35631c-9488-48ef-9e7a-d073fc83b314</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -22,23 +22,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>b</value>
-      <webElementGuid>4d394f55-3b6e-4fe7-9cfb-a4752c3a9a9c</webElementGuid>
+      <webElementGuid>ef511ef8-c6f0-4844-875f-733f1049550f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>ARS</value>
-      <webElementGuid>47b04d14-2867-4cf5-865b-7febd57a81c3</webElementGuid>
+      <value>149</value>
+      <webElementGuid>74ba460f-5663-4fd8-8fef-be4072800e41</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEAUTOCURRENCY&quot;]/b[1]</value>
-      <webElementGuid>45fb8ea7-40f3-4ff1-b4a3-c83e2b678dc8</webElementGuid>
+      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLGENSUCURSALLIST&quot;]/b[1]</value>
+      <webElementGuid>2af66f66-8b4b-42ba-8596-a6768e635b3c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,47 +46,39 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='dropDownRow1']/td/b</value>
-      <webElementGuid>6ba08c53-6275-43d0-a7bc-fb8b1b643c58</webElementGuid>
+      <webElementGuid>30603efd-e02f-4ed7-8347-eeb0119413e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::b[1]</value>
-      <webElementGuid>b8381271-3439-4ee1-9be4-5173f7a29d51</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[2]/following::b[1]</value>
+      <webElementGuid>df44a50d-d476-496d-a490-eb98102d6327</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[2]/following::b[1]</value>
-      <webElementGuid>e492de29-3ffb-477a-be7f-461c769f3426</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NRO'])[1]/following::b[1]</value>
+      <webElementGuid>28ae1512-d236-4c5c-92c7-62f6bc5053ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/preceding::b[1]</value>
-      <webElementGuid>2a8f2ed4-1f15-4687-9527-ec587c46f4a9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Olivos'])[2]/preceding::b[1]</value>
+      <webElementGuid>2a95bfb6-4070-41d4-a05f-4551388a484d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BRL'])[1]/preceding::b[1]</value>
-      <webElementGuid>d8410aa1-cf9f-43b3-8b83-fe33511866c2</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='ARS']/parent::*</value>
-      <webElementGuid>ef8bcb82-0518-483d-9a8f-9b55570b6c5d</webElementGuid>
+      <value>//*/text()[normalize-space(.)='149']/parent::*</value>
+      <webElementGuid>1e41adc3-6cb1-4f4b-80e8-1281de6842e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,22 +86,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//b</value>
-      <webElementGuid>6dcad402-7a82-4a04-9ed6-f3f79567d399</webElementGuid>
+      <webElementGuid>f3f583fd-c992-4ce4-9c17-65fa90cfce46</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//b[(text() = 'ARS' or . = 'ARS')]</value>
-      <webElementGuid>564c1f19-0224-424a-aafd-208397365823</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EUR'])[1]/preceding::b[1]</value>
-      <webElementGuid>71099b17-94c9-4f94-a384-700408348475</webElementGuid>
+      <value>//b[(text() = '149' or . = '149')]</value>
+      <webElementGuid>7242e823-fe38-4b35-9c49-a92cb0614594</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

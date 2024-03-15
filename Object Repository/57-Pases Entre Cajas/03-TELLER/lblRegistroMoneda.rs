@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblARS</name>
+   <name>lblRegistroMoneda</name>
    <tag></tag>
-   <elementGuidId>e74e0f98-be98-473e-88c3-79c6c532f100</elementGuidId>
+   <elementGuidId>3ec8fd1c-ad6b-4b47-93af-7f7fb6c07293</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>b</value>
+         <value>span.disabled_dealbox.disabled_dealbox_TELLER.disabled_dealbox_TELLER_ENVIOCAJA</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='dropDownRow1']/td/b</value>
+         <value>//table[@id='tab1']/tbody/tr/td[4]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,8 +21,16 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>b</value>
-      <webElementGuid>4d394f55-3b6e-4fe7-9cfb-a4752c3a9a9c</webElementGuid>
+      <value>span</value>
+      <webElementGuid>02a9771c-0d46-498c-9cad-afc88162e6d6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_ENVIOCAJA</value>
+      <webElementGuid>5764aced-bc24-4e79-b42d-765ac52d6042</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,55 +38,55 @@
       <name>text</name>
       <type>Main</type>
       <value>ARS</value>
-      <webElementGuid>47b04d14-2867-4cf5-865b-7febd57a81c3</webElementGuid>
+      <webElementGuid>9174da9e-e97d-4c69-b908-3dc24a773aca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEAUTOCURRENCY&quot;]/b[1]</value>
-      <webElementGuid>45fb8ea7-40f3-4ff1-b4a3-c83e2b678dc8</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[4]/span[@class=&quot;disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_ENVIOCAJA&quot;]</value>
+      <webElementGuid>c7513dc5-160b-4906-86fa-8bbbea07528d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='dropDownRow1']/td/b</value>
-      <webElementGuid>6ba08c53-6275-43d0-a7bc-fb8b1b643c58</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr/td[4]/span</value>
+      <webElementGuid>1e4c4b74-8d72-44d8-9b4b-7950ec330f1e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::b[1]</value>
-      <webElementGuid>b8381271-3439-4ee1-9be4-5173f7a29d51</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/following::span[1]</value>
+      <webElementGuid>6c1d1d4f-6e13-47ee-b2bb-b0ba0c0bb331</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[2]/following::b[1]</value>
-      <webElementGuid>e492de29-3ffb-477a-be7f-461c769f3426</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/following::span[1]</value>
+      <webElementGuid>eca15f55-d89b-4631-9ec3-961f217b394f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/preceding::b[1]</value>
-      <webElementGuid>2a8f2ed4-1f15-4687-9527-ec587c46f4a9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha'])[1]/preceding::span[1]</value>
+      <webElementGuid>42f3178a-141c-4997-9f55-5e5fbea0972d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='BRL'])[1]/preceding::b[1]</value>
-      <webElementGuid>d8410aa1-cf9f-43b3-8b83-fe33511866c2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monto MN'])[1]/preceding::span[3]</value>
+      <webElementGuid>08b26411-45e0-4fb6-8c43-526a05ac02e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,30 +94,22 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='ARS']/parent::*</value>
-      <webElementGuid>ef8bcb82-0518-483d-9a8f-9b55570b6c5d</webElementGuid>
+      <webElementGuid>471627ac-3b2d-49d8-9880-e74d19fc3733</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//b</value>
-      <webElementGuid>6dcad402-7a82-4a04-9ed6-f3f79567d399</webElementGuid>
+      <value>//td[4]/span</value>
+      <webElementGuid>e387f791-f3e7-49b6-b447-5fb5831fc407</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//b[(text() = 'ARS' or . = 'ARS')]</value>
-      <webElementGuid>564c1f19-0224-424a-aafd-208397365823</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EUR'])[1]/preceding::b[1]</value>
-      <webElementGuid>71099b17-94c9-4f94-a384-700408348475</webElementGuid>
+      <value>//span[(text() = 'ARS' or . = 'ARS')]</value>
+      <webElementGuid>4940b756-74bd-403c-8977-c60e910dbad3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

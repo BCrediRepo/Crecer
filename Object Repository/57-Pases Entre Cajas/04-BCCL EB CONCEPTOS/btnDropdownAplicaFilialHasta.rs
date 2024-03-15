@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnDropdownMoneda</name>
+   <name>btnDropdownAplicaFilialHasta</name>
    <tag></tag>
-   <elementGuidId>cae42ea6-bd6b-45be-835b-5be5df5a6f08</elementGuidId>
+   <elementGuidId>bb332f09-14f3-4147-b47d-baecbfc47734</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>img.dropdown_button.dropdown_button_TELLER.dropdown_button_TELLER_ENVIOCAJA</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr/td[4]/a/img</value>
+         <value>//table[@id='tab1']/tbody/tr[11]/td[3]/a/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>151e9381-1ca3-44fb-93c0-644c67cfb6a7</webElementGuid>
+      <webElementGuid>e99d9493-184d-4784-9618-f8b91bb0af63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>fe3ee87f-30b8-4cea-b76c-0404bd712460</webElementGuid>
+      <webElementGuid>c8b5325f-24a4-4763-b0c0-d70b7f19dcfb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,39 +38,23 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>543095dd-660d-4f7a-8280-e1a1ab08fed4</webElementGuid>
+      <webElementGuid>c046dd0c-519b-499d-9a45-bcf9591f5d0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dropdown_button dropdown_button_TELLER dropdown_button_TELLER_ENVIOCAJA</value>
-      <webElementGuid>a2145d9d-71b8-4929-a083-20f080568c18</webElementGuid>
+      <value>dropdown_button dropdown_button_BCCLEBCONCEPTOS dropdown_button_BCCLEBCONCEPTOS_ALTA</value>
+      <webElementGuid>694669d9-324b-431a-b26c-c87833c0c93a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeypress</name>
       <type>Main</type>
-      <value>enquiryBuildDropdown(event)</value>
-      <webElementGuid>a0a43d6e-cb4f-4332-a939-a1129912e6ae</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>title</name>
-      <type>Main</type>
-      <value>Lista de Registros</value>
-      <webElementGuid>50f264f9-8ae8-4901-8539-4529bb38a267</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>src</name>
-      <type>Main</type>
-      <value>../plaf/images/bccl/deal/dropdown.gif</value>
-      <webElementGuid>6aabd381-7f82-4ee1-885a-1214d595c4db</webElementGuid>
+      <value>mvDropDown(event)</value>
+      <webElementGuid>ec0e8444-dc42-4065-8ed2-a878c8b72c8e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,79 +62,95 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>02a4b10a-a8a3-417b-9b03-b12260cc19bd</webElementGuid>
+      <webElementGuid>aad58859-ca8c-4d52-b916-baa645e4041f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Lista de Registros</value>
+      <webElementGuid>d27e9ba7-93ee-42f1-8964-697b51352d3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/dropdown.gif</value>
+      <webElementGuid>94983cad-a589-4eb6-878c-eb0acb81f0b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>mvapplication</name>
+      <type>Main</type>
+      <value>BCCL.GEN.SUCURSAL</value>
+      <webElementGuid>7376db80-d48f-4881-bda3-428fdaa0ddab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>mvtextfield</name>
+      <type>Main</type>
+      <value>fieldName:FILIALES.HASTA:1</value>
+      <webElementGuid>34ff28da-fa94-48be-9575-b86f4873bfb8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>mvfieldname</name>
+      <type>Main</type>
+      <value>fieldName:FILIALES.HASTA</value>
+      <webElementGuid>cb30ff17-1a70-49b0-9c88-8b1368c6bfdb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>enquiryfield</name>
       <type>Main</type>
-      <value>BCCL.E.AUTO.CURRENCY</value>
-      <webElementGuid>00a6eca1-3e18-433e-951a-133242ac35be</webElementGuid>
+      <value>BCCL.GEN.SUCURSAL</value>
+      <webElementGuid>fbe821dc-5d32-4ee4-a675-ece09720ff51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>dropfield</name>
       <type>Main</type>
-      <value>fieldName:CURRENCY.1</value>
-      <webElementGuid>a591a2c6-44d7-4087-9d4f-dca749a3a308</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>criteriadatafield</name>
-      <type>Main</type>
-      <value>fieldName:</value>
-      <webElementGuid>728f8c36-a207-4307-b593-9c67b77f3164</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>enqfieldname</name>
-      <type>Main</type>
-      <value>fieldName:CURRENCY.1</value>
-      <webElementGuid>42eed774-4e71-4b36-9103-953a45d5e266</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabname</name>
-      <type>Main</type>
-      <value>tab1</value>
-      <webElementGuid>c7673562-fcb4-46de-b0de-3c209a8887f0</webElementGuid>
+      <value>fieldName:FILIALES.HASTA:1</value>
+      <webElementGuid>98c20aa7-4557-438e-84f4-003bc65affb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[4]/a[1]/img[@class=&quot;dropdown_button dropdown_button_TELLER dropdown_button_TELLER_ENVIOCAJA&quot;]</value>
-      <webElementGuid>a9c0bd91-d29b-4ff2-a38f-953f41d86d08</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[11]/td[3]/a[1]/img[@class=&quot;dropdown_button dropdown_button_BCCLEBCONCEPTOS dropdown_button_BCCLEBCONCEPTOS_ALTA&quot;]</value>
+      <webElementGuid>652199f5-ff3c-4232-b0d5-8527e30252e0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr/td[4]/a/img</value>
-      <webElementGuid>49b2f3cc-f28f-45a4-aa85-e6409c91f854</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[11]/td[3]/a/img</value>
+      <webElementGuid>e3975155-a4c5-44a8-a8d1-9a3524c8e444</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>//img[@title='Lista de Registros']</value>
-      <webElementGuid>aef153c5-99ed-4f29-bffb-9185638dbc3f</webElementGuid>
+      <value>(//img[@title='Lista de Registros'])[3]</value>
+      <webElementGuid>beef931b-f833-4b30-a5d9-1bc4321806c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[4]/a/img</value>
-      <webElementGuid>ddccadf0-3ee4-495f-b448-cc7e013e0f17</webElementGuid>
+      <value>//tr[11]/td[3]/a/img</value>
+      <webElementGuid>1a00ac5f-6f17-4117-adc4-fbc2bde6e4e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,30 +158,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@title = 'Lista de Registros' and @src = '../plaf/images/bccl/deal/dropdown.gif']</value>
-      <webElementGuid>0213198a-0379-4acc-bebe-d99c5fe32acb</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[4]/td[3]/a/img</value>
-      <webElementGuid>4b9a1d52-9163-4044-9b5a-ff8d69914b4f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:img</name>
-      <type>Main</type>
-      <value>(//img[@title='Lista de Registros'])[2]</value>
-      <webElementGuid>51986746-5fbf-4f94-97ab-51e62a879981</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//tr[4]/td[3]/a/img</value>
-      <webElementGuid>0716c4db-9815-4783-97b3-e2027e26675a</webElementGuid>
+      <webElementGuid>451f92ed-0144-4a20-9985-329055bbbb68</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
