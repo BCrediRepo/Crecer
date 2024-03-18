@@ -51,19 +51,20 @@ WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/txt
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechadeBloqueo'))
+WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechaBloqueo'))
 
-fecha = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechadeBloqueo'))
+fecha = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechaBloqueo'))
 
-assert fecha == 'Fecha de Bloqueo' //Control fin de script
+assert fecha == '20230828'
+
+//Control fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
