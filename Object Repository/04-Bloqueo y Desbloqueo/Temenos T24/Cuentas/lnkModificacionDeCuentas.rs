@@ -1,143 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTipoBloqueo</name>
+   <name>lnkModificacionDeCuentas</name>
    <tag></tag>
-   <elementGuidId>0db19604-b652-4870-bd51-a2bd262282da</elementGuidId>
+   <elementGuidId>0b8c12a7-9dc9-49bc-988c-f6c4adb47075</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//th[@id='columnHeaderText4']</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[13]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(4)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>d4e62821-9e31-4c1f-9dd3-5e4c376ac7bc</webElementGuid>
+      <value>span</value>
+      <webElementGuid>25aa54dd-a764-427e-8d45-9d1f29425f4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>scope</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>col</value>
-      <webElementGuid>0db3f7f8-c9ef-4acb-820e-733fe86a407a</webElementGuid>
+      <value>ProcessMouseClick(event)</value>
+      <webElementGuid>b67decbb-69c9-4e7b-b218-19102df753e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>onkeypress</name>
       <type>Main</type>
-      <value>columnHeader</value>
-      <webElementGuid>0c40dc4b-629c-41fd-b6c5-3b99bf380d3f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>columnHeaderText4</value>
-      <webElementGuid>1066a9f1-e638-45f0-9260-96da4c32c01f</webElementGuid>
+      <value>ProcessKeyPress(event)</value>
+      <webElementGuid>26f4d268-e3a5-4e3a-8b67-64c047f87fef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Tipo Bloqueo</value>
-      <webElementGuid>979db229-da6f-4245-9f03-f9333c48ae99</webElementGuid>
+      <value>Modificacion de Cuenta</value>
+      <webElementGuid>6ff57f93-d75c-44f3-a742-6741f30ee930</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;columnHeaderText4&quot;)</value>
-      <webElementGuid>de5f37f7-5d91-43a3-acfe-c97de666c11a</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>ba58c2f0-ef3f-4458-9579-3257632a87b6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[@id='columnHeaderText4']</value>
-      <webElementGuid>08201841-b3d3-4e16-830a-5975f80010a7</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[13]</value>
+      <webElementGuid>1f6bf2e6-58e9-425e-80bb-cc8659d9e9ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='columnHeader4']/table/tbody/tr/th</value>
-      <webElementGuid>6ce0044e-62fb-4c05-845a-bd6a73558588</webElementGuid>
+      <value>//div[@id='pane_']/ul[3]/li/ul/li[3]/span</value>
+      <webElementGuid>d6342c9e-dd49-49a2-a740-784a878188cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cod subproducto'])[1]/following::th[3]</value>
-      <webElementGuid>f7d289cf-0d45-4e0d-9ac9-76d84eb920e7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuentas Habilitadas p/ Recibir Transf en USD'])[1]/following::span[1]</value>
+      <webElementGuid>321dfcac-e26e-47b0-b67a-33ec43de4d68</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/following::th[6]</value>
-      <webElementGuid>9ad6c016-7c9f-4dc0-ba1d-cf054579fa0e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Productos Cuentas'])[1]/following::span[1]</value>
+      <webElementGuid>8982fcf1-f3fe-4bf6-a7dc-1adab98a06ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Bloqueo'])[1]/preceding::th[2]</value>
-      <webElementGuid>f009654d-bda1-43f4-895b-9f8f5af5dc9a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion y Baja de Firmantes'])[1]/preceding::span[1]</value>
+      <webElementGuid>8545b6ef-4652-4d48-9926-98dd2a682207</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Desde'])[1]/preceding::th[5]</value>
-      <webElementGuid>a74c4a2f-db50-4e0b-88f2-addc653112aa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mantenimiento Cuenta Persona Fisica'])[1]/preceding::span[1]</value>
+      <webElementGuid>ff25b328-e369-4349-9325-9304422381ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Tipo Bloqueo']/parent::*</value>
-      <webElementGuid>18f07a55-2089-4e9b-a601-ce4bb24e3dc8</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Modificacion de Cuenta']/parent::*</value>
+      <webElementGuid>d07b4f82-9667-4d1c-bdab-97b50a8c6676</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[4]/table/tbody/tr/th</value>
-      <webElementGuid>c7680e37-a765-49e5-9482-12f29e0a14e5</webElementGuid>
+      <value>//ul[3]/li/ul/li[3]/span</value>
+      <webElementGuid>276e8ac0-7122-4587-88cc-09b1a5d8f2bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[@id = 'columnHeaderText4' and (text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
-      <webElementGuid>cb8bdd05-76de-4ae1-82b9-e79d945ccc03</webElementGuid>
+      <value>//span[(text() = 'Modificacion de Cuenta' or . = 'Modificacion de Cuenta')]</value>
+      <webElementGuid>d4ad2029-2b19-4c03-9db4-69bd4b0354e7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

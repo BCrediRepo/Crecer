@@ -3,141 +3,137 @@
    <description></description>
    <name>lblTipoBloqueo</name>
    <tag></tag>
-   <elementGuidId>0db19604-b652-4870-bd51-a2bd262282da</elementGuidId>
+   <elementGuidId>f32bcef6-1b69-427f-a52f-c4058a6d7d95</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//th[@id='columnHeaderText4']</value>
+         <value>//span[@id='enri_POS.RES']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(4)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>d4e62821-9e31-4c1f-9dd3-5e4c376ac7bc</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>scope</name>
-      <type>Main</type>
-      <value>col</value>
-      <webElementGuid>0db3f7f8-c9ef-4acb-820e-733fe86a407a</webElementGuid>
+      <value>span</value>
+      <webElementGuid>3f2c659f-d77e-427d-b927-d46fd5025c3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>columnHeader</value>
-      <webElementGuid>0c40dc4b-629c-41fd-b6c5-3b99bf380d3f</webElementGuid>
+      <value>enrichment enrichment_BCCLACBLOQUEOS enrichment_BCCLACBLOQUEOS_CONSULTA</value>
+      <webElementGuid>167085f6-f4e8-46ca-817a-64d0faed1153</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>columnHeaderText4</value>
-      <webElementGuid>1066a9f1-e638-45f0-9260-96da4c32c01f</webElementGuid>
+      <value>enri_POS.RES</value>
+      <webElementGuid>274baffe-3333-4985-ab47-d1c7fb1854da</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>enri_POS.RES</value>
+      <webElementGuid>e44a2ca0-14eb-41d4-a031-ccaf34c46389</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Tipo Bloqueo</value>
-      <webElementGuid>979db229-da6f-4245-9f03-f9333c48ae99</webElementGuid>
+      <value>BLOQUEO PARCIAL</value>
+      <webElementGuid>2139f431-9544-4068-90a2-17b7003a092c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;columnHeaderText4&quot;)</value>
-      <webElementGuid>de5f37f7-5d91-43a3-acfe-c97de666c11a</webElementGuid>
+      <value>id(&quot;enri_POS.RES&quot;)</value>
+      <webElementGuid>63da487f-5496-4916-8ee9-f0d24d3df016</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[@id='columnHeaderText4']</value>
-      <webElementGuid>08201841-b3d3-4e16-830a-5975f80010a7</webElementGuid>
+      <value>//span[@id='enri_POS.RES']</value>
+      <webElementGuid>75118be9-c7c6-466a-9405-0939391ec3d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='columnHeader4']/table/tbody/tr/th</value>
-      <webElementGuid>6ce0044e-62fb-4c05-845a-bd6a73558588</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr/td[4]/span</value>
+      <webElementGuid>9fb30641-49bb-4a65-8044-6180614c8a7d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cod subproducto'])[1]/following::th[3]</value>
-      <webElementGuid>f7d289cf-0d45-4e0d-9ac9-76d84eb920e7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo de Bloqueo'])[1]/following::span[2]</value>
+      <webElementGuid>3f809910-b4dc-4c9f-9915-a1159609e533</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/following::th[6]</value>
-      <webElementGuid>9ad6c016-7c9f-4dc0-ba1d-cf054579fa0e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ct)'])[1]/following::span[2]</value>
+      <webElementGuid>31408cdc-455e-477b-baaf-e7f5bf37f8df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Bloqueo'])[1]/preceding::th[2]</value>
-      <webElementGuid>f009654d-bda1-43f4-895b-9f8f5af5dc9a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha desde'])[1]/preceding::span[1]</value>
+      <webElementGuid>126d6c6a-0005-4f5c-9606-3ee0705bf375</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Desde'])[1]/preceding::th[5]</value>
-      <webElementGuid>a74c4a2f-db50-4e0b-88f2-addc653112aa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha hasta'])[1]/preceding::span[2]</value>
+      <webElementGuid>9ca2aa78-93e1-461d-af5e-9a6d679fdb48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Tipo Bloqueo']/parent::*</value>
-      <webElementGuid>18f07a55-2089-4e9b-a601-ce4bb24e3dc8</webElementGuid>
+      <value>//*/text()[normalize-space(.)='BLOQUEO PARCIAL']/parent::*</value>
+      <webElementGuid>61119fc5-80dc-4edf-b931-2eff5481ed6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[4]/table/tbody/tr/th</value>
-      <webElementGuid>c7680e37-a765-49e5-9482-12f29e0a14e5</webElementGuid>
+      <value>//td[4]/span</value>
+      <webElementGuid>efc6b27e-3ee3-485d-9d17-abd6dc07be01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[@id = 'columnHeaderText4' and (text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
-      <webElementGuid>cb8bdd05-76de-4ae1-82b9-e79d945ccc03</webElementGuid>
+      <value>//span[@id = 'enri_POS.RES' and @name = 'enri_POS.RES' and (text() = 'BLOQUEO PARCIAL' or . = 'BLOQUEO PARCIAL')]</value>
+      <webElementGuid>45184a8d-b8e8-4417-bd00-3ae8d22a9277</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

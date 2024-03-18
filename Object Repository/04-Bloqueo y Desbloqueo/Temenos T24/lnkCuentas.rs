@@ -1,143 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTipoBloqueo</name>
+   <name>lnkCuentas</name>
    <tag></tag>
-   <elementGuidId>0db19604-b652-4870-bd51-a2bd262282da</elementGuidId>
+   <elementGuidId>dde98b73-8f96-4e81-9d1f-6e69d80f3904</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//th[@id='columnHeaderText4']</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[10]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(4)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>d4e62821-9e31-4c1f-9dd3-5e4c376ac7bc</webElementGuid>
+      <value>span</value>
+      <webElementGuid>b065047c-5942-458a-bd92-138c73eb7e75</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>scope</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>col</value>
-      <webElementGuid>0db3f7f8-c9ef-4acb-820e-733fe86a407a</webElementGuid>
+      <value>ProcessMouseClick(event)</value>
+      <webElementGuid>e05742dc-2c75-4b70-b88e-e3413597f7f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>onkeypress</name>
       <type>Main</type>
-      <value>columnHeader</value>
-      <webElementGuid>0c40dc4b-629c-41fd-b6c5-3b99bf380d3f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>columnHeaderText4</value>
-      <webElementGuid>1066a9f1-e638-45f0-9260-96da4c32c01f</webElementGuid>
+      <value>ProcessKeyPress(event)</value>
+      <webElementGuid>ea38864b-d566-47c9-9c1c-0dc6e0b8752b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Tipo Bloqueo</value>
-      <webElementGuid>979db229-da6f-4245-9f03-f9333c48ae99</webElementGuid>
+      <value>Cuentas</value>
+      <webElementGuid>3cab6197-8d33-4ce1-b215-3f6e1f98ec52</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;columnHeaderText4&quot;)</value>
-      <webElementGuid>de5f37f7-5d91-43a3-acfe-c97de666c11a</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>0aa4b1fa-a145-47d4-9ac8-c49e346c6e6f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[@id='columnHeaderText4']</value>
-      <webElementGuid>08201841-b3d3-4e16-830a-5975f80010a7</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[10]</value>
+      <webElementGuid>7a66ac54-17d2-430d-a913-c10c397e4091</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='columnHeader4']/table/tbody/tr/th</value>
-      <webElementGuid>6ce0044e-62fb-4c05-845a-bd6a73558588</webElementGuid>
+      <value>//div[@id='pane_']/ul[3]/li/span</value>
+      <webElementGuid>59b5d715-b718-4e84-92e6-aa674d7c2189</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cod subproducto'])[1]/following::th[3]</value>
-      <webElementGuid>f7d289cf-0d45-4e0d-9ac9-76d84eb920e7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Usuario Accion Digital'])[1]/following::span[1]</value>
+      <webElementGuid>80225a0a-61e0-4d22-9380-c0881d0d8366</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/following::th[6]</value>
-      <webElementGuid>9ad6c016-7c9f-4dc0-ba1d-cf054579fa0e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Documentos Cuestionados'])[1]/following::span[1]</value>
+      <webElementGuid>80df72e5-9b4e-4b5a-916c-96717286a979</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Bloqueo'])[1]/preceding::th[2]</value>
-      <webElementGuid>f009654d-bda1-43f4-895b-9f8f5af5dc9a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta'])[1]/preceding::span[1]</value>
+      <webElementGuid>f2e85b04-70ef-47c5-b795-ea8416a87354</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Desde'])[1]/preceding::th[5]</value>
-      <webElementGuid>a74c4a2f-db50-4e0b-88f2-addc653112aa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/preceding::span[2]</value>
+      <webElementGuid>744d9c0a-68c2-4273-b1b9-4b7d71bc4e9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Tipo Bloqueo']/parent::*</value>
-      <webElementGuid>18f07a55-2089-4e9b-a601-ce4bb24e3dc8</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cuentas']/parent::*</value>
+      <webElementGuid>2962c2eb-da1e-4172-bff6-9ada9d707953</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[4]/table/tbody/tr/th</value>
-      <webElementGuid>c7680e37-a765-49e5-9482-12f29e0a14e5</webElementGuid>
+      <value>//ul[3]/li/span</value>
+      <webElementGuid>21690d3d-aa69-483a-bf81-b7380c544d06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[@id = 'columnHeaderText4' and (text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
-      <webElementGuid>cb8bdd05-76de-4ae1-82b9-e79d945ccc03</webElementGuid>
+      <value>//span[(text() = 'Cuentas' or . = 'Cuentas')]</value>
+      <webElementGuid>3a02328a-a30e-42b9-bef5-9444c4a5861f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

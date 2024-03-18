@@ -6,15 +6,15 @@
    <elementGuidId>aaddc07a-3dcf-46bf-ba45-13c2f2762238</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#drillbox\:1_1</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//select[@id='drillbox:1_1']</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>6298084d-41e1-4563-84d0-e16683de8d7d</webElementGuid>
+      <webElementGuid>7f54e26f-bd84-48c9-8a51-8908e78be399</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>drillbox:1_1</value>
-      <webElementGuid>81e4f260-78d5-4273-a306-78e27d4fc5a4</webElementGuid>
+      <webElementGuid>e1d4dcb2-289f-476b-95e0-1b0e11655fbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>drillbox drillbox_BCCLACCTABLOQSUC</value>
-      <webElementGuid>e3aaa3b0-d970-41ad-b26d-2f6c4231f989</webElementGuid>
+      <webElementGuid>60224614-ce68-4d49-9efa-f66ec7bcb410</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta CompletaVer detalle CtaVer detalle Bloqueo</value>
-      <webElementGuid>3684fd64-1973-4144-8ef4-dd0406d7ef6e</webElementGuid>
+      <webElementGuid>b9b419ff-6242-4917-9b92-f0cc9aa92aad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;drillbox:1_1&quot;)</value>
-      <webElementGuid>1fe5b982-9b47-4bf4-8e13-11fa9135d913</webElementGuid>
+      <webElementGuid>ff6c1218-a1ec-468c-bdb3-5b83a19cccc0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='drillbox:1_1']</value>
-      <webElementGuid>2714b90c-1f58-4d93-bb4f-076ae27b0fe9</webElementGuid>
+      <webElementGuid>21686981-7453-4d96-a6be-ed45fba59ede</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[9]/table/tbody/tr/td/select</value>
-      <webElementGuid>bf289de2-9fa6-4c1a-8b0e-0c18f4af41ef</webElementGuid>
+      <webElementGuid>c58fcd10-8729-4035-8eb5-074a6506a4d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Oficio AFIP'])[1]/following::select[1]</value>
-      <webElementGuid>6f49a1b6-5303-4970-9a2f-8a88bf78d987</webElementGuid>
+      <webElementGuid>0198333c-7148-4bcb-8f03-e13d6728e7b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BLOQUEO PARCIAL BLOQUEO PARCIAL'])[1]/following::select[1]</value>
-      <webElementGuid>0f766f08-619f-4a14-98b7-50011c3331cd</webElementGuid>
+      <webElementGuid>14fab150-3caf-4b82-892f-0549eef3c1e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MUNDO ESFERAS SH'])[2]/preceding::select[1]</value>
-      <webElementGuid>815a59b7-e8c2-4e74-86c7-9110fb676794</webElementGuid>
+      <webElementGuid>42cfe8bd-71b3-4d6f-8600-11e8c31a86cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BLOQUEO PARCIAL BLOQUEO PARCIAL'])[2]/preceding::select[1]</value>
-      <webElementGuid>15766d49-2621-405f-8fe9-4e04d625122a</webElementGuid>
+      <webElementGuid>c0e3d80d-8dff-4179-8f62-9f0f9dc858c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//select</value>
-      <webElementGuid>0ef21ab0-5aad-4ad3-8631-91cc9abd3c63</webElementGuid>
+      <webElementGuid>cf22fd70-3959-431c-9f26-21d11a58520b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +118,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//select[@id = 'drillbox:1_1' and (text() = 'Consulta CompletaVer detalle CtaVer detalle Bloqueo' or . = 'Consulta CompletaVer detalle CtaVer detalle Bloqueo')]</value>
-      <webElementGuid>e9e5c71d-8250-4779-9a3e-d563002eac01</webElementGuid>
+      <webElementGuid>0ad39262-5b87-4916-85fe-11ff73ad44ed</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

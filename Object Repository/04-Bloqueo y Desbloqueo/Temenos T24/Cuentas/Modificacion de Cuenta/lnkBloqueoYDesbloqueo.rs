@@ -1,143 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTipoBloqueo</name>
+   <name>lnkBloqueoYDesbloqueo</name>
    <tag></tag>
-   <elementGuidId>0db19604-b652-4870-bd51-a2bd262282da</elementGuidId>
+   <elementGuidId>b21d1090-a9d1-4ec0-b868-a929a26682c8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//th[@id='columnHeaderText4']</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[15]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(4)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>th</value>
-      <webElementGuid>d4e62821-9e31-4c1f-9dd3-5e4c376ac7bc</webElementGuid>
+      <value>span</value>
+      <webElementGuid>5fe16581-13cc-43b2-8e85-bb8274fdbafb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>scope</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>col</value>
-      <webElementGuid>0db3f7f8-c9ef-4acb-820e-733fe86a407a</webElementGuid>
+      <value>ProcessMouseClick(event)</value>
+      <webElementGuid>2feb7495-b792-4a77-95fe-afeafd78e578</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>onkeypress</name>
       <type>Main</type>
-      <value>columnHeader</value>
-      <webElementGuid>0c40dc4b-629c-41fd-b6c5-3b99bf380d3f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>columnHeaderText4</value>
-      <webElementGuid>1066a9f1-e638-45f0-9260-96da4c32c01f</webElementGuid>
+      <value>ProcessKeyPress(event)</value>
+      <webElementGuid>f9f1fa97-9bc2-41cb-b685-2197de1c810b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Tipo Bloqueo</value>
-      <webElementGuid>979db229-da6f-4245-9f03-f9333c48ae99</webElementGuid>
+      <value>Bloqueo Y Desbloqueo</value>
+      <webElementGuid>df175cac-bc1d-4c54-aa73-757459312933</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;columnHeaderText4&quot;)</value>
-      <webElementGuid>de5f37f7-5d91-43a3-acfe-c97de666c11a</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>694c094f-3eef-4b61-8b71-e142f5270c05</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[@id='columnHeaderText4']</value>
-      <webElementGuid>08201841-b3d3-4e16-830a-5975f80010a7</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[15]</value>
+      <webElementGuid>54a9bb80-5853-46ab-9e5b-155e7961bff1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='columnHeader4']/table/tbody/tr/th</value>
-      <webElementGuid>6ce0044e-62fb-4c05-845a-bd6a73558588</webElementGuid>
+      <value>//div[@id='pane_']/ul[3]/li/ul/li[3]/ul/li[8]/span</value>
+      <webElementGuid>d94d326b-efa2-4695-847d-fe791949050a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cod subproducto'])[1]/following::th[3]</value>
-      <webElementGuid>f7d289cf-0d45-4e0d-9ac9-76d84eb920e7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='A Susp. Pago de Cheques'])[1]/following::span[1]</value>
+      <webElementGuid>cbe5d30d-ba65-4e84-a304-0105c9086419</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominacion'])[1]/following::th[6]</value>
-      <webElementGuid>9ad6c016-7c9f-4dc0-ba1d-cf054579fa0e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Anul. / Mant. Cierre en Proceso Susp.Pago Ch'])[1]/following::span[1]</value>
+      <webElementGuid>1d341f31-1e6f-4be2-a828-f95299535d01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Bloqueo'])[1]/preceding::th[2]</value>
-      <webElementGuid>f009654d-bda1-43f4-895b-9f8f5af5dc9a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bloqueo'])[1]/preceding::span[1]</value>
+      <webElementGuid>4f8e6691-a3a6-4288-93d8-de2c34dc7361</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Desde'])[1]/preceding::th[5]</value>
-      <webElementGuid>a74c4a2f-db50-4e0b-88f2-addc653112aa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccionando Persona'])[1]/preceding::span[2]</value>
+      <webElementGuid>790a245c-e4ae-4c0c-a844-385f691c9f39</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Tipo Bloqueo']/parent::*</value>
-      <webElementGuid>18f07a55-2089-4e9b-a601-ce4bb24e3dc8</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Bloqueo Y Desbloqueo']/parent::*</value>
+      <webElementGuid>fa5b2b46-86aa-48fa-8fb3-5f204fd4f964</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[4]/table/tbody/tr/th</value>
-      <webElementGuid>c7680e37-a765-49e5-9482-12f29e0a14e5</webElementGuid>
+      <value>//li[8]/span</value>
+      <webElementGuid>a7e92f13-ea71-4e49-ae7f-fa9a7696f631</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[@id = 'columnHeaderText4' and (text() = 'Tipo Bloqueo' or . = 'Tipo Bloqueo')]</value>
-      <webElementGuid>cb8bdd05-76de-4ae1-82b9-e79d945ccc03</webElementGuid>
+      <value>//span[(text() = 'Bloqueo Y Desbloqueo' or . = 'Bloqueo Y Desbloqueo')]</value>
+      <webElementGuid>3a6d8ef9-065c-41ba-8f64-94144ead491e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
