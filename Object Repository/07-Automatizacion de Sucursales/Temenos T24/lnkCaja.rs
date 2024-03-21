@@ -6,6 +6,10 @@
    <elementGuidId>9d4fc720-7e29-4747-a9b1-7c6ec40feaa9</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Caja' or . = 'Caja')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>span</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>//span[@onclick='ProcessMouseClick(event)']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>809fd08d-6e04-42d2-8019-6df9b4b39d18</webElementGuid>
+      <webElementGuid>dbb79c19-c0b6-43ae-8e6c-9f5b1c83c0f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>d35a37f4-4df4-4b20-835e-80b89a2bfe2d</webElementGuid>
+      <webElementGuid>4d106b61-f62a-4430-8064-2abefe7d2dcd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>0e72eeaa-8d5a-42b6-aaac-df0b9ebe8a25</webElementGuid>
+      <webElementGuid>49e592e7-47ca-44ff-9c60-49701b71d909</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Caja</value>
-      <webElementGuid>c135eaa8-60cb-4d63-967b-42698acf238d</webElementGuid>
+      <webElementGuid>8556e282-d4c6-4407-9adb-04f830700503</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>7751b105-799f-4f91-b0d9-7fb71a008d5d</webElementGuid>
+      <webElementGuid>26871ea2-aff8-4889-a07a-b42aa340edfa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//span[@onclick='ProcessMouseClick(event)']</value>
-      <webElementGuid>00754555-9546-410a-af5c-dcc19ed7e6e9</webElementGuid>
+      <webElementGuid>f590cdf1-c863-4c34-84c3-5d0c942be9b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul/li/span</value>
-      <webElementGuid>bee35f10-cc8f-4b15-800f-540bfca66510</webElementGuid>
+      <webElementGuid>6edc8dfe-0d63-47b7-84fe-520fea6231f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Apertura de Caja'])[1]/preceding::span[1]</value>
-      <webElementGuid>fdeb92ea-b181-4365-90c7-4a4dc27f9301</webElementGuid>
+      <webElementGuid>0bfd9ed9-c569-4330-a105-2843319334ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre de Caja'])[1]/preceding::span[1]</value>
-      <webElementGuid>40d2218e-030f-4b55-94c6-9afe620e3e2b</webElementGuid>
+      <webElementGuid>c6c85c53-344a-49b9-ab55-74684eea5b80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Caja']/parent::*</value>
-      <webElementGuid>acd4ee0a-0281-4870-a411-73d0df7bb1ad</webElementGuid>
+      <webElementGuid>fb788d6f-ab88-4d05-9ec4-8d5ffe379d6b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span</value>
-      <webElementGuid>bb24de27-4aa3-4365-aba5-f1285a44749e</webElementGuid>
+      <webElementGuid>5ff7e49c-eec9-48f2-b76f-89eacbc608fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Caja' or . = 'Caja')]</value>
-      <webElementGuid>905d3b58-0360-4a11-bb9b-3b78c7ac07cc</webElementGuid>
+      <webElementGuid>7e6d094d-bd33-49c0-a965-2b6828ad817d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

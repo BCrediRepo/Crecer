@@ -24,13 +24,9 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en caja
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en consulta de posicion de efect en sucursal
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCons. Posicion de efectivo en Sucursal'))
@@ -38,20 +34,27 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCons. Posicion de 
 //Switch a la ventana BCCL.E.TT.TOMA.TESORO
 WebUI.switchToWindowTitle('BCCL.E.TT.TOMA.TESORO')
 
-//Maximizamos
-WebUI.maximizeWindow()
+//Filtro limpieza
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Seleccionar Link de Consulta
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCons. Posicion de efectivo en Sucursal'))
+
+//Cambiar ventana "BCCL.E.TT.CASH.DENOM"
+WebUI.switchToWindowTitle('BCCL.E.TT.TOMA.TESORO')
+
+//Completo los campos mandatorios moneda y sucursal
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/txtMoneda'), 'ARS')
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/txtSucursal'), '089')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Click en ejecutar
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/lnkEjecutar'))
 
 //Click en detalle cuenta
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/lnkDetalleCuenta2'), 6)
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/lnkDetalleCuenta2'))
 
 //ASSERT
