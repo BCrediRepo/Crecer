@@ -547,7 +547,7 @@
       <guid>ba62f39f-2232-408b-892d-4bddd821d325</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/36-Posteo/PST09-Posteos. Pago en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada. ARS</testCaseId>
+      <testCaseId>Test Cases/36-Posteo/PST07-Posteos. Pago en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada. ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -555,13 +555,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/36-Posteo/PST08-Posteos. Liquidacion de posteo. Liquidacion de posteo por pago en efectivo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1e28ddd9-c70f-46ec-bff7-1a8f5a09ff41</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/36-Posteo/PST07-Posteos. Cobro en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada.USD</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

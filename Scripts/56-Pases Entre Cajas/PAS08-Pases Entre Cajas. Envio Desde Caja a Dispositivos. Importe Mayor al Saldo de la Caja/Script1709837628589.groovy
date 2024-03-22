@@ -67,7 +67,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblDenominaciones'))
 
 //Setear "Cantidad Mil"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtCantidadMilEnvio'), '1000')
+WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtCantidadMilPesos'), '1000')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

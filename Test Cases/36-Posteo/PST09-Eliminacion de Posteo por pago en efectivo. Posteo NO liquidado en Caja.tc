@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PST09-Eliminacion de Posteo por pago en efectivo. Posteo NO liquidado en Caja</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f6b8009-603f-4cc6-832d-b648cec75208</testCaseGuid>
+</TestCaseEntity>

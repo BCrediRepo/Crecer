@@ -49,15 +49,12 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 
 //Selecciona D2 AUTOMATIZACION DE SUCURSALES
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-WebUI.delay(3)
 
 //Selecciona POSTEO PLANTA CAJA
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/lnkPOSTEOPLANTACAJA'))
-WebUI.delay(3)
 
 //Selecciona POSTEO
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/lnkPOSTEO'))
-WebUI.delay(3)
 
 //Ir a Pago en Efectivo
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/lnkPAGOENEFECTIVO'))
@@ -96,11 +93,9 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click Aceptar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/btnAceptarRegistro'))
-WebUI.delay(10)
 
 //Click Aceptar Alertas
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/btnAceptarAlertas'))
-WebUI.delay(10)
 
 //Espera y recibe mensaje de tx completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/lblTxnCompleta'),6)
@@ -108,11 +103,17 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/lblTxnCompleta'))
 assert element.contains('Txn Completa:') 
 
+//Definir Objeto
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+
+//Dividir la cadena por espacios en blanco y tomar elemento
+def partes = Transaccion1.split('\\s+')
+def trx1 = partes[2]
+GlobalVariable.vTxn = trx1
+assert Transaccion1.contains('Txn Completa:')
+
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Se mueve a la ventana del comprobante
-//WebUI.switchToWindowTitle('e-forms')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

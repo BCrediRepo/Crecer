@@ -24,48 +24,63 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Ingresar "TELLER,DEPOSITO.CUSTODIA I" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TELLER,DEPOSITO.CUSTODIA I')
+//Seleccionar "Pases"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPases'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Seleccionar "Solicitud de Pase Entre Cajas"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkSolicituddePaseEntreCajas'))
 
 //Cambiar ventana "TELLER"
 WebUI.switchToWindowTitle('TELLER')
 
-//Seleccionar "Nuevo Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnNuevoRegistro'))
+//Esperar "boton De la Caja"
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
 
-//Seleccionar "boton Drop down Moneda"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownMonedaDepositoCustodia'))
+//Seleccionar "boton De la Caja"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
-//Seleccionar "EUR"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblEUR'))
+//Seleccionar "1542"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaPrimeraCaja'))
 
-//Setear "Monto ME"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), '100')
+//Esperar "boton Moneda"
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)
 
-//Seleccionar "Titular de la Custodia"
+//Seleccionar "boton Moneda"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'))
+
+//Seleccionar "ARS"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblARS'))
+
+//Esperar "Monto MN"
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), 3)
+
+//Setear "Monto MN"
+WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '10000')
+
+//Seleccionar "txtComentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
 
-//Setear "Titular de la Custodia"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBAS CRECER')
+//Setear "Comentarios"
+WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBA DE SOLICITUD')
 
-//Seleccionar "Aceptar Registro"
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "Boton Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
 
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Verificar "Txn Comleta"
-WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+//Verificar "ATESORAMIENTO EXCEDE EL MAXIMO"
+WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblATESORAMIENTOEXCEDEELMAXIMO'))
 
-//Validar "Txn Comleta"
-def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-assert element.contains('Txn Completa')
+//Validar "ATESORAMIENTO EXCEDE EL MAXIMO"
+def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblATESORAMIENTOEXCEDEELMAXIMO'))
+assert element.contains('ATESORAMIENTO EXCEDE EL MAXIMO')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

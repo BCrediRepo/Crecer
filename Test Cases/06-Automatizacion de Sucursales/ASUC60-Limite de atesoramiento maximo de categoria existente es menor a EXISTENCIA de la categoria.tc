@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC60-Limite de atesoramiento maximo de categoria existente es menor a EXISTENCIA de la categoria</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3c06d0b-b889-4fb9-b87b-0a105bf1bcce</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS17-Pases entre cajas. Solicitud pase entre cajas. Menu Cajero. Cajas de la misma Filial. Saldo Caja emisora mayor a Total de la solicitud. DLRS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>295298b1-da03-44f2-afb1-ffd5c7f58c32</testCaseGuid>
+</TestCaseEntity>

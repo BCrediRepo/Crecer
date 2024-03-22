@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnDropdownMoneda</name>
+   <name>btnDropdownDelaCaja</name>
    <tag></tag>
-   <elementGuidId>6d7f1310-4fd4-4510-b6e7-385288557faa</elementGuidId>
+   <elementGuidId>46a30b20-64ae-48fc-8f09-091a5612e9b2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@title = 'Lista de Registros']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>img.dropdown_button.dropdown_button_TELLER.dropdown_button_TELLER_ENVIOREMESASBCRA</value>
+         <value>img.dropdown_button.dropdown_button_TELLER.dropdown_button_TELLER_PASEENTRECAJAS</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr[2]/td[3]/a/img</value>
+         <value>//table[@id='tab1']/tbody/tr/td[3]/a/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -26,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>b0b998e4-7a21-4c23-accb-e9859bcd34c1</webElementGuid>
+      <webElementGuid>0a13dc83-138f-49ab-910f-9ec03ead7e4a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>c5dc72c2-9952-4c42-9ebe-563e1b29d840</webElementGuid>
+      <webElementGuid>60ec22a5-018a-42d0-b9b0-8064575edf3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,15 +38,15 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>b304954c-8e8f-4e7c-835b-8401cf7972c2</webElementGuid>
+      <webElementGuid>2179fbca-8075-4a7e-adce-e4a4c20e29f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dropdown_button dropdown_button_TELLER dropdown_button_TELLER_ENVIOREMESASBCRA</value>
-      <webElementGuid>7e2b4310-b87b-41df-be26-487ab3104946</webElementGuid>
+      <value>dropdown_button dropdown_button_TELLER dropdown_button_TELLER_PASEENTRECAJAS</value>
+      <webElementGuid>0e84923d-4616-469d-b03b-e142726bf602</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +54,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>enquiryBuildDropdown(event)</value>
-      <webElementGuid>e7324212-5dea-47ee-8cab-4209018fb22c</webElementGuid>
+      <webElementGuid>d2ec9604-b827-49e3-8bc4-1bb4ee134d66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -66,15 +62,15 @@
       <name>title</name>
       <type>Main</type>
       <value>Lista de Registros</value>
-      <webElementGuid>b6e53d08-57a7-4169-a90e-760aab31a5b3</webElementGuid>
+      <webElementGuid>971a1cdd-41e9-42bd-b746-91ec07ef284f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/deal/dropdown.gif</value>
-      <webElementGuid>f5a8bcca-461b-41fa-9ee8-758365b325ed</webElementGuid>
+      <webElementGuid>2ca8eac1-2725-4c63-8981-86fbcbbb9bc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -82,23 +78,23 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>d297df79-b6c6-4fef-885b-9ddab3f0e530</webElementGuid>
+      <webElementGuid>4d7fefe8-46c3-4e7e-ae78-4907c4d46f43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>enquiryfield</name>
       <type>Main</type>
-      <value>BCCL.E.AUTO.CURRENCY</value>
-      <webElementGuid>7d25a993-3a5f-4628-bd70-a03cf9896d1d</webElementGuid>
+      <value>BCCL.E.TT.RANGO.CAJAS</value>
+      <webElementGuid>ae66d0cf-1eab-4100-955f-6407464a167a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>dropfield</name>
       <type>Main</type>
-      <value>fieldName:CURRENCY.1</value>
-      <webElementGuid>367c9ecb-0b66-48d4-a0b7-c2358400bb69</webElementGuid>
+      <value>fieldName:TELLER.ID.2</value>
+      <webElementGuid>571bf45a-69f2-4184-96d9-29536eb72b24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -106,15 +102,15 @@
       <name>criteriadatafield</name>
       <type>Main</type>
       <value>fieldName:</value>
-      <webElementGuid>38adf5d0-367e-451b-b2c0-ad128acbaa6f</webElementGuid>
+      <webElementGuid>097be4b5-2aec-4c1d-89c2-6d1faabde2d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>enqfieldname</name>
       <type>Main</type>
-      <value>fieldName:CURRENCY.1</value>
-      <webElementGuid>6dc92eed-46e4-405a-82bf-e10a1e522ca4</webElementGuid>
+      <value>fieldName:TELLER.ID.2</value>
+      <webElementGuid>148a7b80-3070-4125-83c2-cbff4887d493</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -122,31 +118,23 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>bda7eaf5-68e1-4347-9bf7-cfa02fedb95e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>noinputdropfield</name>
-      <type>Main</type>
-      <value>Y</value>
-      <webElementGuid>522368a4-b381-429b-aa56-54e032bef7d2</webElementGuid>
+      <webElementGuid>a0a97d65-3a6c-4a7b-a5bf-1a42477d5640</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab1&quot;)/tbody[1]/tr[2]/td[3]/a[1]/img[@class=&quot;dropdown_button dropdown_button_TELLER dropdown_button_TELLER_ENVIOREMESASBCRA&quot;]</value>
-      <webElementGuid>04c4197b-f59f-424a-8177-3bfeec4a8dcc</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[3]/a[1]/img[@class=&quot;dropdown_button dropdown_button_TELLER dropdown_button_TELLER_PASEENTRECAJAS&quot;]</value>
+      <webElementGuid>1fe823c2-2c1a-41ac-aec5-ac207ad4c495</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[2]/td[3]/a/img</value>
-      <webElementGuid>330dfa2e-dceb-4510-a1a7-1ddae8b4c96e</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr/td[3]/a/img</value>
+      <webElementGuid>870d4b38-f995-463e-ba44-86013905a97e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -154,7 +142,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@title='Lista de Registros']</value>
-      <webElementGuid>6f5dcab1-aac2-48af-8af9-ff4aafaba542</webElementGuid>
+      <webElementGuid>5a64abae-9100-4615-9def-9211cd3cdb9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -162,7 +150,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/a/img</value>
-      <webElementGuid>6ee934a9-8ab1-4fa8-93fb-764b428bdc99</webElementGuid>
+      <webElementGuid>20a0d413-7dfb-437e-9923-a1966eb59ffc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -170,6 +158,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@title = 'Lista de Registros' and @src = '../plaf/images/bccl/deal/dropdown.gif']</value>
-      <webElementGuid>2a7cf901-84a8-47f0-868e-a87c58a08b4c</webElementGuid>
+      <webElementGuid>0328c61b-c5d6-4c5a-bd3b-0dea193d830a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

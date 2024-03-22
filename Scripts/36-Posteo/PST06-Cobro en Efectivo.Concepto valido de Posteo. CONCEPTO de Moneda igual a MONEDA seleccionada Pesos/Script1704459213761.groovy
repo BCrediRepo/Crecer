@@ -51,6 +51,7 @@ WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/D2 - Posteos/Posteo/l
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
+WebUI.waitForElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'), 3)
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'))
 
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lblConcepto2'))
