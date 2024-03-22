@@ -24,46 +24,64 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Ingresar "TELLER,DEPOSITO.CUSTODIA I" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TELLER,DEPOSITO.CUSTODIA I')
+//Seleccionar "Pases"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPases'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Seleccionar "Solicitud de Pase Entre Cajas"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkSolicituddePaseEntreCajas'))
 
 //Cambiar ventana "TELLER"
 WebUI.switchToWindowTitle('TELLER')
 
-//Seleccionar "Nuevo Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnNuevoRegistro'))
+//Esperar "boton De la Caja"
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
 
-//Seleccionar "boton Drop down Moneda"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownMonedaDepositoCustodia'))
+//Seleccionar "boton De la Caja"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
-//Seleccionar "EUR"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblEUR'))
+//Seleccionar "1542"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaPrimeraCaja'))
+
+//Esperar "boton Moneda"
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)
+
+//Seleccionar "boton Moneda"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'))
+
+//Seleccionar "USD"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblUSD'))
+
+//Esperar "Monto ME"
+WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), 3)
 
 //Setear "Monto ME"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), '100')
+WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), '10')
 
-//Seleccionar "Titular de la Custodia"
+//Seleccionar "txtComentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
 
-//Setear "Titular de la Custodia"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBAS CRECER')
+//Setear "Comentarios"
+WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBA DE SOLICITUD')
 
-//Seleccionar "Aceptar Registro"
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "Boton Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Aceptar Alertas"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
 
-//Verificar "Txn Comleta"
+//Verificar "Txn Completa"
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
 
-//Validar "Txn Comleta"
+//Validar "Txn Completa"
 def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 

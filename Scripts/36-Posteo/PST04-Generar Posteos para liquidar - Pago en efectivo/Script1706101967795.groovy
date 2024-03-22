@@ -38,14 +38,25 @@ WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/D2 - Posteos/Posteo/l
 
 //se cargan datos de posteo
 WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.waitForElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'), 3)
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'))
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lblConcepto1'))
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/txtNombrePosteo'))
 WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtNombrePosteo'), 'PRUEBAS CRECER')
-WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtImporte'), '1000')
+WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/txtImportePago'))
+WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtImportePago'), '1000')
 WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtReferPosteo'), 'PRUEBAS CRECER')
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAceptarRegistro'))
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lnkAceptarAlertas'))
+
+//Definir Objeto
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+
+//Dividir la cadena por espacios en blanco y tomar elemento
+def partes = Transaccion1.split('\\s+')
+def trx1 = partes[2]
+GlobalVariable.vTxn = trx1
+assert Transaccion1.contains('Txn Completa:')
 
 //Se verifica la txn y se saca captura del comprobante
 Completa = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))

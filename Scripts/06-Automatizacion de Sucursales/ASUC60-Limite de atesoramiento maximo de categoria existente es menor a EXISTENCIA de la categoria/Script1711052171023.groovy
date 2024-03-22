@@ -24,48 +24,43 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Ingresar "TELLER,DEPOSITO.CUSTODIA I" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TELLER,DEPOSITO.CUSTODIA I')
+//Seleccionar "Consultas de Operatoria en Linea de Cajas"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsultasdeOperatoriaenLineadeCajas'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Seleccionar "Consulta de Excesos en Linea"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Consultas de Operatoria en Linea de Cajas/lnkConsultadeExcesosenLinea'))
 
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
+WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
 
-//Seleccionar "Nuevo Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnNuevoRegistro'))
+//Filtro limpieza
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(0)
 
-//Seleccionar "boton Drop down Moneda"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownMonedaDepositoCustodia'))
+//Seleccionar "Consulta de Excesos en Linea"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Consultas de Operatoria en Linea de Cajas/lnkConsultadeExcesosenLinea'))
 
-//Seleccionar "EUR"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblEUR'))
+//Cambiar ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
+WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
 
-//Setear "Monto ME"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), '100')
+//Setear Numero de Cuenta
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/No.Caja'), '1546')
 
-//Seleccionar "Titular de la Custodia"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "Titular de la Custodia"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBAS CRECER')
+//Seleccionar "Ejecutar"
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Seleccionar "Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
+//Verificar "Diferencia"
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
 
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
-
-//Verificar "Txn Comleta"
-WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-
-//Validar "Txn Comleta"
-def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-assert element.contains('Txn Completa')
+//Validar "Diferencia"
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
+assert element.contains('Diferencia')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

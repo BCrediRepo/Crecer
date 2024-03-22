@@ -46,19 +46,19 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/
 WebUI.switchToWindowTitle('TELLER')
 
 //Esperar "boton De la Caja"
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownMoneda'), 3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
 
 //Seleccionar "boton De la Caja"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownMoneda'))
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
 //Seleccionar "1547"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaCuartaCaja'))
 
 //Esperar "boton Moneda"
-WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMoneda'), 3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)
 
 //Seleccionar "boton Moneda"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMoneda'))
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'))
 
 //Seleccionar "EUR"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblEUR'))

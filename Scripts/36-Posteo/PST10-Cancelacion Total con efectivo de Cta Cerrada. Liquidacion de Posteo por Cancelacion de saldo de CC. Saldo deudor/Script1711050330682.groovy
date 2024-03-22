@@ -26,6 +26,9 @@ import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 
+// Llamar caso PST04 por que genera un posteo para luego se va liquidar
+WebUI.callTestCase(findTestCase('36-Posteo/PST04-Generar Posteos para liquidar - Pago en efectivo'), [:], FailureHandling.STOP_ON_FAILURE)
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -33,97 +36,41 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPases'))
+//Ingresar "?1" en el buscador
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Solicitud de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkSolicituddePaseEntreCajas'))
+//Seleccionar "boton de buscar"
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar ventana "Temenos T24"
+WebUI.switchToWindowTitle('Temenos T24')
 
-//Esperar "boton De la Caja"
-WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
+//Seleccionar "Sucursal Piloto"
+WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkSucursalPiloto'))
 
-//Seleccionar "boton De la Caja"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
+//Seleccionar "D2-Posteo"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/lnkD2-Posteo'))
 
-//Seleccionar "1547"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaCuartaCaja'))
-
-//Esperar "boton Moneda"
-WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)
-
-//Seleccionar "boton Moneda"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'))
-
-//Seleccionar "ARS"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblARS'))
-
-//Esperar "Monto MN"
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), 3)
-
-//Setear "Monto MN"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), '1000')
-
-//Seleccionar "txtComentarios"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
-
-//Setear "Comentarios"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBA DE SOLICITUD')
+//Seleccionar "Posteo"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/lnkPOSTEO'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
+//Seleccionar "LIQUIDAR POSTEO EN CAJA"
+WebUI.click(findTestObject('Object Repository/37-Posteo/Temenos T24/Posteo/lnkLIQUIDARPOSTEOENCAJA'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Cambiar ventana "BCCL.E.EB.POSTEO.INAU"
+WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
-
-//Definir Objeto
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-
-//Dividir la cadena por espacios en blanco y tomar elemento
-def partes = Transaccion1.split('\\s+')
-def trx1 = partes[2]
-assert Transaccion1.contains('Txn Completa:')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Cerrar Sesion
-CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
-
-//Volver a Logearse con un nuevo usuario
-
-//Configuracion de ambiente
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 17), findTestData('MainData/Users').getValue(2, 17))
-WebUI.maximizeWindow()
-
-//Seleccionar "Autorizaciones"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizacionesPasesEntreCajas'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Autorizacion de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkAutorizaciondePaseEntreCajas'))
-
-//Cambiar ventana "BCCL.E.TT.PASE.ENTRE.CAJAS"
-WebUI.switchToWindowTitle('BCCL.E.TT.PASE.ENTRE.CAJAS')
+//Definir la variable trx1 como "variable"
+def variable = GlobalVariable.vTxn
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
-def buscarElementoEnTabla(String trx1) {
+def buscarElementoEnTabla(String variable) {
 	
 	//Obtener elemento de la tabla
 	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
@@ -141,11 +88,11 @@ def buscarElementoEnTabla(String trx1) {
 		String cellText = cell.getText()
 		
 		//Comparar valor de la celda con el valor especifico
-		if (cellText.equals(trx1)) {
+		if (cellText.equals(variable)) {
 			
 			//Realizar acciones necesarias si se encuentra el valor
 			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[6]
+			WebElement tdElement = tdList[8]
 			
 			// Intenta encontrar el elemento 'a' dentro del elemento td
 			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
@@ -165,7 +112,7 @@ def encontrado = false
 while (!encontrado) {
 	
 	//Logica para buscar el elemento en la tabla
-	encontrado = buscarElementoEnTabla(trx1)
+	encontrado = buscarElementoEnTabla(variable)
 		
 	//Si no se encontro el valor, Seleccionar boton "Siguiente" y buscar nuevamente
 	if (!encontrado) {
@@ -177,16 +124,6 @@ while (!encontrado) {
 		WebUI.delay(2)
 	}
 }
-			
-//Verificar "Moneda ARS"
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
-
-//Validar "Moneda ARS"
-def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
-assert element.contains('ARS')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Autorizar Registro"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/01-BCCL.E.TT.PASE.ENTRE.CAJAS/btnAutorizarRegistro'))
@@ -195,16 +132,15 @@ WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/01-BCCL.E.TT.
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
 
 //Validar "Txn Completa"
-def element2 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-assert element2.contains('Txn Completa')
+def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+assert element.contains('Txn Completa')
 
-//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }

@@ -37,19 +37,19 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/
 WebUI.switchToWindowTitle('TELLER')
 
 //Esperar "boton De la Caja"
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownMoneda'), 3)
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'),3)
 
 //Seleccionar "boton De la Caja"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnDropdownMoneda'))
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
 //Seleccionar "1542"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblEUR'))
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaPrimeraCaja'))
 
 //Seleccionar "boton A la Caja"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownAlaCaja'))
 
 //Seleccionar "1543"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblAlaCaja'))
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblAlaCajaSegundaCaja'))
 
 //Setear Monto
 WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '1000')

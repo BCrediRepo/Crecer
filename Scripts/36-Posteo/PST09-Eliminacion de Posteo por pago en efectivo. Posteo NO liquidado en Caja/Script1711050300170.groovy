@@ -1,0 +1,179 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.support.ui.Select
+import java.awt.Robot
+import java.awt.event.KeyEvent
+
+//Se ejecuta primero un pago en efectivo
+WebUI.callTestCase(findTestCase('36-Posteo/PST07-Posteos. Pago en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada. ARS'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(2, 14))
+WebUI.maximizeWindow()
+
+//Ingresar "?1" en el buscador
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "boton de buscar"
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
+//Cambiar ventana "Temenos T24"
+WebUI.switchToWindowTitle('Temenos T24')
+
+//Seleccionar "Sucursal Piloto"
+WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkSucursalPiloto'))
+
+//Seleccionar "D2-Posteo"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/lnkD2-Posteo'))
+
+//Seleccionar "Posteo"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/lnkPOSTEO'))
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "CONSULTAR, MODIFICAR o ELIMINAR OPERACIONES"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/POSTEO/lnkConsultarModificarEliminarOperaciones'))
+
+//Cambiar ventana "BCCL.E.EB.CONS.DEL.NAU"
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
+
+//Filtro limpieza
+CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.switchToWindowIndex(1)
+
+//Seleccionar "CONSULTAR, MODIFICAR o ELIMINAR OPERACIONES"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/POSTEO/lnkConsultarModificarEliminarOperaciones'))
+
+//Cambiar ventana "BCCL.E.EB.CONS.DEL.NAU"
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
+
+//Setear "Usuario"
+WebUI.setText(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/txtUsuario'), 'B.0273')
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "Ejecutar"
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//Definir la variable trx1 como "variable"
+def variable = GlobalVariable.vTxn
+
+//Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
+def buscarElementoEnTabla(String variable) {
+	
+	//Obtener elemento de la tabla
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	
+	//Obtener todas las filas de la tabla
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	
+	//Desplegar la columna donde se muestra la info de las transacciones
+	for (WebElement row : rows) {
+		
+		//Obtener tercer valor de la fila (índice 1, ya que las listas son base cero)
+		WebElement cell = row.findElements(By.tagName("td"))[1]
+
+		//Obtener texto
+		String cellText = cell.getText()
+		
+		//Comparar valor de la celda con el valor especifico
+		if (cellText.equals(variable)) {
+			
+			//Realizar acciones necesarias si se encuentra el valor
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[16]
+			
+			// Intenta encontrar el elemento 'a' dentro del elemento td
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			
+			//Seleccionar elemento 'lnk'
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
+
+//Logica para buscar el elemento en la tabla
+def encontrado = false
+
+//Bucle para buscar en multiples páginas
+while (!encontrado) {
+	
+	//Logica para buscar el elemento en la tabla
+	encontrado = buscarElementoEnTabla(variable)
+		
+	//Si no se encontro el valor, Seleccionar boton "Siguiente" y buscar nuevamente
+	if (!encontrado) {
+		
+		//Realizar busqueda nuevamente despues de Seleccionar "Siguiente"
+		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
+		
+		//Esperar 2 seg a que se cargue la pagina
+		WebUI.delay(2)
+	}
+}
+
+//Cambiar ventana "Movimiento de Fondos"
+WebUI.switchToWindowTitle('Movimiento de Fondos')
+
+//Seleccionar "boton Eliminar Registro"
+WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnEliminarRegistro'))
+
+//Crear una instancia de Robot
+Robot robot = new Robot()
+ 
+//Presionar la tecla Enter para aceptar la alerta
+robot.keyPress(KeyEvent.VK_ENTER)
+robot.keyRelease(KeyEvent.VK_ENTER)
+
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+
+//Validar "Txn Completa"
+def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+assert element.contains('Txn Completa')
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
