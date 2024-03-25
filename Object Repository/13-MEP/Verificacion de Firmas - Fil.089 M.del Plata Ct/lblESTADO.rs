@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFILAL</name>
+   <name>lblESTADO</name>
    <tag></tag>
-   <elementGuidId>f9eaf7e5-d75d-4bbd-b505-1bd2b26297a2</elementGuidId>
+   <elementGuidId>0270276f-1ae9-4e05-9352-e55cde3f715a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'FILAL' or . = 'FILAL')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>#columnHeaderText1</value>
+         <value>#columnHeaderText2</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//th[@id='columnHeaderText1']</value>
+         <value>//th[@id='columnHeaderText2']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>8b1c7383-3e0e-490c-9fdf-12dee93c11ab</webElementGuid>
+      <webElementGuid>f43e3dc5-e104-4c51-8226-3a032ad8b12e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>8c1250eb-ac71-4b28-9d3b-9298236cbbc8</webElementGuid>
+      <webElementGuid>f4bdd2ba-815f-4dae-9d6c-5db6530f98ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,102 +38,102 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>814ee5b5-971f-4bd9-83f6-92939ffeb17d</webElementGuid>
+      <webElementGuid>ef791005-760a-4fe2-836b-741f6fa8b20e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>columnHeaderText1</value>
-      <webElementGuid>7a115050-ec53-4aad-b0f6-4a5ba13e4fc3</webElementGuid>
+      <value>columnHeaderText2</value>
+      <webElementGuid>8e014332-bc0d-484c-a89a-4ee2de3a26fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>FILAL</value>
-      <webElementGuid>dff8265f-93e2-4e3c-8c35-3988560b6d1f</webElementGuid>
+      <value>ESTADO</value>
+      <webElementGuid>1fbf4fbd-b542-431f-9339-3a82e65407e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>eb824bdb-3295-4a99-bd9a-a40c72d121fb</webElementGuid>
+      <value>id(&quot;columnHeaderText2&quot;)</value>
+      <webElementGuid>ab9e12ff-caeb-4cf9-8312-8b99aaf203d8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>3801d2d0-9f68-42f7-8958-0021a2f1e52a</webElementGuid>
+      <value>//th[@id='columnHeaderText2']</value>
+      <webElementGuid>45615f9c-fc4f-47eb-b779-70e3984717f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>c69bca1e-2de0-46f8-8c03-6afbb780ce21</webElementGuid>
+      <value>//th[@id='columnHeader2']/table/tbody/tr/th</value>
+      <webElementGuid>b5a4b4b0-2fb8-4a18-b92c-7092d9cff956</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>dfa273c0-b38e-438f-9274-b834edc24cb2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::th[3]</value>
+      <webElementGuid>163e9b9c-296a-444e-8a79-79e6d670de64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>0d6cd8c0-faa9-4dd4-9796-ac9924cf7a3c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[6]</value>
+      <webElementGuid>1a92b099-8d46-40d7-ba59-679d2b555741</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CATEGORIA'])[1]/preceding::th[2]</value>
-      <webElementGuid>4d5c7865-46e1-4fac-b293-c27a7d701a89</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forzado de Firmas:'])[1]/preceding::th[2]</value>
+      <webElementGuid>7afca6f3-a8e8-4b38-8214-969e22eac11c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='DESC CATEGORIA'])[1]/preceding::th[5]</value>
-      <webElementGuid>37bda552-2c03-4b9f-a2be-b8cd683e5dac</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MEP2324090252511'])[1]/preceding::th[2]</value>
+      <webElementGuid>fa929466-a6ff-4868-b4ab-8b9e03951dbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='FILAL']/parent::*</value>
-      <webElementGuid>e19c3711-84b3-4ad9-b9d6-75747b2c0f7c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='ESTADO']/parent::*</value>
+      <webElementGuid>353bee9f-5c1e-494b-a1b7-2f08499ee752</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tbody/tr/th</value>
-      <webElementGuid>c1e79748-8873-4b10-9b07-2c617a679fe7</webElementGuid>
+      <value>//th[2]/table/tbody/tr/th</value>
+      <webElementGuid>c9d03e02-2b3f-4dc7-b2ac-3a09ff32dc22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[@id = 'columnHeaderText1' and (text() = 'FILAL' or . = 'FILAL')]</value>
-      <webElementGuid>31fb0e99-51e4-4ef3-9101-6c566b4c5646</webElementGuid>
+      <value>//th[@id = 'columnHeaderText2' and (text() = 'ESTADO' or . = 'ESTADO')]</value>
+      <webElementGuid>0a2262d3-cd46-4ff8-bc39-3e7b11db3f58</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

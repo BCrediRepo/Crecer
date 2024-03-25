@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC58-Consulta de operaciones reversadas. FECHA de reversa igual a fecha del dia. SUCURSAL igual a sucursal del usuario</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce3aec98-26ab-40e8-8688-d94a9b025717</testCaseGuid>
+</TestCaseEntity>

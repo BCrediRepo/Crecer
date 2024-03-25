@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC59-Consulta por código operativo. Usuario Filial. Código Operativo valido. Moneda Pesos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0d4960a-bafd-4390-bb84-abb2b69ff885</testCaseGuid>
+</TestCaseEntity>
