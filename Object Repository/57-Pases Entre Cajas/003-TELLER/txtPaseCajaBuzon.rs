@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtMoneda</name>
+   <name>txtPaseCajaBuzon</name>
    <tag></tag>
-   <elementGuidId>0028d19d-bf71-42a8-956d-8da876c5cc59</elementGuidId>
+   <elementGuidId>a7d6dbaf-1993-48d8-a889-b7e4590c35fe</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='value:2:1:1']</value>
+         <value>(//input[@id='transactionId'])[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>82d36148-e77d-43c2-8a1e-6069f24c8f5c</webElementGuid>
+      <webElementGuid>5446250d-b6da-46da-878f-67cf18a7982e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,23 +30,31 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>bc12cd8b-ac6e-4595-89c3-c74f9508dbd8</webElementGuid>
+      <webElementGuid>80a71e2e-9390-461b-9024-5a54ffe9a633</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>value:2:1:1</value>
-      <webElementGuid>ceaad58b-aa98-4b4a-ac70-584243ec3e8a</webElementGuid>
+      <value>transactionId</value>
+      <webElementGuid>98284c23-2a52-4460-a3ca-0061100993bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>value:2:1:1</value>
-      <webElementGuid>4831a366-9d34-4795-b5f3-46a72288bc0d</webElementGuid>
+      <value>transactionId</value>
+      <webElementGuid>b7cb6920-2cd1-4772-955b-2984c1a1f3f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>idbox idbox_TELLER idbox_TELLER_CAJABUZON</value>
+      <webElementGuid>fbbf2769-1d42-4681-bcab-dfc08c5a473c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,70 +62,62 @@
       <name>size</name>
       <type>Main</type>
       <value>20</value>
-      <webElementGuid>fd9f873f-407a-4328-8286-ca519ebd5364</webElementGuid>
+      <webElementGuid>9a71211f-3026-4ac7-9f7a-a919eed4be7f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>ondblclick</name>
       <type>Main</type>
-      <value>001</value>
-      <webElementGuid>047299fb-e198-4ab4-bc2b-296d4f2e6ee9</webElementGuid>
+      <value>javascript:help('','','','issueToken')</value>
+      <webElementGuid>63f32966-0bfe-4228-a7a1-a1de4af8df31</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>frequencydropfieldname</name>
+      <name>onfocus</name>
       <type>Main</type>
-      <value>value:2:1:1</value>
-      <webElementGuid>48675df2-db67-4fb5-af54-1ebadc3fb3db</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>enqseldata enqseldata_BCCLECONSULTACODIGO</value>
-      <webElementGuid>f1596c8c-0e4c-481b-8edd-1316f4e3c8c4</webElementGuid>
+      <value>doFieldFocusEvent(event)</value>
+      <webElementGuid>14b98136-84c0-41fd-9a8e-8dd3e2f43a0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;value:2:1:1&quot;)</value>
-      <webElementGuid>fa9cb73f-f459-41fd-8aa8-ae7edf61a3cd</webElementGuid>
+      <value>id(&quot;toolBar&quot;)/table[1]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/input[@id=&quot;transactionId&quot;]</value>
+      <webElementGuid>582f3bb6-e2fb-422b-bf2d-47246a2a6965</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='value:2:1:1']</value>
-      <webElementGuid>82877d21-ca23-44bc-9dae-3e0c299ded62</webElementGuid>
+      <value>(//input[@id='transactionId'])[2]</value>
+      <webElementGuid>a395676d-d402-415d-8202-2d34b8e49a85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='selectiondisplay']/tbody/tr[2]/td[3]/input</value>
-      <webElementGuid>7a85534c-1e70-40c6-8d03-7bf65be6621d</webElementGuid>
+      <value>//div[@id='toolBar']/table/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/input</value>
+      <webElementGuid>06eade28-92cf-4a34-9489-0b254d2316dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td[3]/input</value>
-      <webElementGuid>14d61b53-b77a-4c59-b3e4-13edbc88845e</webElementGuid>
+      <value>//td[2]/input</value>
+      <webElementGuid>cb7c4fa4-0764-4cc5-9cc3-5fb04018645c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'value:2:1:1' and @id = 'value:2:1:1']</value>
-      <webElementGuid>350305f3-4b92-4af0-bbcf-043983e8c249</webElementGuid>
+      <value>//input[@type = 'text' and @name = 'transactionId' and @id = 'transactionId']</value>
+      <webElementGuid>4c918230-524a-4aec-85d3-0a6805b55f70</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

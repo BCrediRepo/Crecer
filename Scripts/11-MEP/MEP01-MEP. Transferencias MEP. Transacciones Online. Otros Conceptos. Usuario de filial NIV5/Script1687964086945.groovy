@@ -29,7 +29,7 @@ WebUI.maximizeWindow()
 //Abriendo App Transferencias MEP Otros Conceptos
 WebUI.click(findTestObject('02-Dashboard/lnkTransferenciasMEP'))
 
-WebUI.click(findTestObject('02-Dashboard/10-MEP/lnkTransferenciasMEPOtrosConceptos'))
+WebUI.click(findTestObject('02-Dashboard/10-MEP/Transferencias MEP/lnkTransferenciasMEPOtrosConceptos'))
 
 WebUI.switchToWindowTitle('BCCL.MEP.FT.TRANSFER')
 

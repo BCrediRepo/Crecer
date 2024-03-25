@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtMoneda</name>
+   <name>txtCodigoOperativo</name>
    <tag></tag>
-   <elementGuidId>0028d19d-bf71-42a8-956d-8da876c5cc59</elementGuidId>
+   <elementGuidId>aaa8a077-9714-48cc-9cd2-21b643f1b95d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='value:2:1:1']</value>
+         <value>//input[@id='value:1:1:1']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>82d36148-e77d-43c2-8a1e-6069f24c8f5c</webElementGuid>
+      <webElementGuid>7c65a41d-08b7-485f-96d4-ade6ccc02d5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,23 +30,23 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>bc12cd8b-ac6e-4595-89c3-c74f9508dbd8</webElementGuid>
+      <webElementGuid>30ada488-89f8-4b38-8e2a-4959b5392107</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>value:2:1:1</value>
-      <webElementGuid>ceaad58b-aa98-4b4a-ac70-584243ec3e8a</webElementGuid>
+      <value>value:1:1:1</value>
+      <webElementGuid>815c7c35-d9e6-4062-91a7-c64b33ab417a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>value:2:1:1</value>
-      <webElementGuid>4831a366-9d34-4795-b5f3-46a72288bc0d</webElementGuid>
+      <value>value:1:1:1</value>
+      <webElementGuid>9cbb338f-e3f9-414f-a2f3-f19e6bb86638</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,23 +54,23 @@
       <name>size</name>
       <type>Main</type>
       <value>20</value>
-      <webElementGuid>fd9f873f-407a-4328-8286-ca519ebd5364</webElementGuid>
+      <webElementGuid>472f38b5-f5ef-4055-906e-a9d20fbb0120</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>001</value>
-      <webElementGuid>047299fb-e198-4ab4-bc2b-296d4f2e6ee9</webElementGuid>
+      <value>00119</value>
+      <webElementGuid>81e9f555-8009-4351-9f09-0bea2faa69ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>frequencydropfieldname</name>
       <type>Main</type>
-      <value>value:2:1:1</value>
-      <webElementGuid>48675df2-db67-4fb5-af54-1ebadc3fb3db</webElementGuid>
+      <value>value:1:1:1</value>
+      <webElementGuid>e336a354-91cd-4d7f-9c84-7a5bf29aa021</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,46 +78,46 @@
       <name>class</name>
       <type>Main</type>
       <value>enqseldata enqseldata_BCCLECONSULTACODIGO</value>
-      <webElementGuid>f1596c8c-0e4c-481b-8edd-1316f4e3c8c4</webElementGuid>
+      <webElementGuid>8c03781d-00a0-4d98-b110-256533a85d36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;value:2:1:1&quot;)</value>
-      <webElementGuid>fa9cb73f-f459-41fd-8aa8-ae7edf61a3cd</webElementGuid>
+      <value>id(&quot;value:1:1:1&quot;)</value>
+      <webElementGuid>fe5dc3d2-d9cd-4121-9c82-f686388ec0bb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='value:2:1:1']</value>
-      <webElementGuid>82877d21-ca23-44bc-9dae-3e0c299ded62</webElementGuid>
+      <value>//input[@id='value:1:1:1']</value>
+      <webElementGuid>2d486651-e5d4-44b4-8f91-2f35555597e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='selectiondisplay']/tbody/tr[2]/td[3]/input</value>
-      <webElementGuid>7a85534c-1e70-40c6-8d03-7bf65be6621d</webElementGuid>
+      <value>//table[@id='selectiondisplay']/tbody/tr/td[3]/input</value>
+      <webElementGuid>79facc70-32ce-4afa-8261-f10e92d854ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td[3]/input</value>
-      <webElementGuid>14d61b53-b77a-4c59-b3e4-13edbc88845e</webElementGuid>
+      <value>//td[3]/input</value>
+      <webElementGuid>49b02f6d-10f5-4419-a8b1-5a75d494eac9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'value:2:1:1' and @id = 'value:2:1:1']</value>
-      <webElementGuid>350305f3-4b92-4af0-bbcf-043983e8c249</webElementGuid>
+      <value>//input[@type = 'text' and @name = 'value:1:1:1' and @id = 'value:1:1:1']</value>
+      <webElementGuid>93d82788-95db-4cd1-b1e4-9d1b14db3349</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
