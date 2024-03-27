@@ -109,4 +109,53 @@
       <testCaseId>Test Cases/56-Pases Entre Cajas/PAS15-Pases entre cajas. Solicitud pase entre cajas_230000</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1a1fedf0-8e2a-4374-bbb8-abac463232fb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS16-Pases entre cajas. Solicitud pase entre cajas. Saldo Caja emisora IGUAL a Total de la solicitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>775d8d11-9233-4416-82c1-ae272a67b703</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS17-Pases entre cajas. Solicitud pase entre cajas. Menu Cajero. Cajas de la misma Filial. Saldo Caja emisora mayor a Total de la solicitud. DLRS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7c65b1f6-cccb-49c2-b421-426b55d2e56d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS18-Pases entre cajas. Solicitud pase entre cajas. Menu Cajero. Cajas de la misma Filial. Saldo Caja emisora mayor a Total de la solicitud. PESOS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f1b87df7-11c0-484a-b4a8-fcbf4e433c44</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS19-Pases entre cajas. Solicitud pase entre cajas_250000</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>82272663-dbe8-4450-87a5-682b5f6b2f7a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS20-Pases entre cajas. Solicitud pase entre cajas_Saldo Caja emisora MENOR a Total de la solicitud. Caja Sobregirada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1c5d829c-961b-4be1-8325-1a9752fe4759</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS21-Autorizacion pases entre cajas. Caja emisora menor al Limite de atesoramiento minimo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8dc0d1c0-b93e-47a2-a7f4-30843331de2a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS22-Autorizacion pases entre cajas. Monto del pase es mayor a la diferencia entre la caja emisora y el Limite de Atesoramiento Minimo caja emisora</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

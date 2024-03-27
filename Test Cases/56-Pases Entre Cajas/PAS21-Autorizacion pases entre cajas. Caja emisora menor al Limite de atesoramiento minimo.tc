@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS21-Autorizacion pases entre cajas. Caja emisora menor al Limite de atesoramiento minimo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c16f8f14-d7f6-4efa-aa01-6e7abb5be8dc</testCaseGuid>
+</TestCaseEntity>

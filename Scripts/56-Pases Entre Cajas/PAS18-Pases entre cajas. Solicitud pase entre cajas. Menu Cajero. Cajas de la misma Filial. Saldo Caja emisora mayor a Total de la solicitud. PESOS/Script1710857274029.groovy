@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lbl
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), 3)
 
 //Setear "Monto MN"
-WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '10000')
+WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '10')
 
 //Seleccionar "txtComentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
@@ -75,12 +75,42 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarReg
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Verificar "ATESORAMIENTO EXCEDE EL MAXIMO"
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblATESORAMIENTOEXCEDEELMAXIMO'))
+//Definir Objeto
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
 
-//Validar "ATESORAMIENTO EXCEDE EL MAXIMO"
-def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblATESORAMIENTOEXCEDEELMAXIMO'))
-assert element.contains('ATESORAMIENTO EXCEDE EL MAXIMO')
+//Dividir la cadena por espacios en blanco y tomar elemento
+def partes = Transaccion1.split('\\s+')
+def trx1 = partes[2]
+assert Transaccion1.contains('Txn Completa:')
+
+//Setear Transaccion
+WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.ENVIO.CAJA/txtPaseDeCajaATesoro'), trx1)
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "boton Ver Registro"
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
+
+//Verificar "Moneda ARS"
+WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
+
+//Validar "Moneda ARS"
+def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
+assert element.contains('ARS')
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "Audit"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblAudit'))
+
+//Verificar "Estado del Registro"
+WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblEstadoRegistroCajeroMN'))
+
+//Validar "Estado del Registro"
+def element2 = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblEstadoRegistroCajeroMN'))
+assert element2.contains('INAU')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

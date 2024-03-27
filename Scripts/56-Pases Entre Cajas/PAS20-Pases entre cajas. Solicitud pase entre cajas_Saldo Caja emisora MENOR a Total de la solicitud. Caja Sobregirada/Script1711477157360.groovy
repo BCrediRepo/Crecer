@@ -42,8 +42,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Caj
 //Seleccionar "boton De la Caja"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
-//Seleccionar "1542"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaPrimeraCaja'))
+//Seleccionar "1547"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaCuartaCaja'))
 
 //Esperar "boton Moneda"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)
@@ -51,14 +51,14 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Caj
 //Seleccionar "boton Moneda"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'))
 
-//Seleccionar "USD"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblUSD'))
+//Seleccionar "ARS"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblARS'))
 
-//Esperar "Monto ME"
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), 3)
+//Esperar "Monto MN"
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), 3)
 
-//Setear "Monto ME"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), '10')
+//Setear "Monto MN"
+WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '36.065.000.000,00')
 
 //Seleccionar "txtComentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
@@ -72,6 +72,13 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar "Boton Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
 
+//Verificar "Caja Sobregirada"
+WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblCajaSobregirada'))
+
+//Validar "Caja Sobregirada"
+def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblCajaSobregirada'))
+assert element.contains('Caja Sobregirada')
+
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -84,36 +91,11 @@ Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TEL
 //Dividir la cadena por espacios en blanco y tomar elemento
 def partes = Transaccion1.split('\\s+')
 def trx1 = partes[2]
+
+//Guardar transaccion en una Variable Global
+GlobalVariable.vTxn = trx1
+
 assert Transaccion1.contains('Txn Completa:')
-
-//Setear Transaccion
-WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.ENVIO.CAJA/txtPaseDeCajaATesoro'), trx1)
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
-
-//Verificar "Moneda USD"
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
-
-//Validar "Moneda USD"
-def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
-assert element.contains('USD')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Audit"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblAudit'))
-
-//Verificar "Estado del Registro"
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblEstadoRegistroCajeroME'))
-
-//Validar "Estado del Registro"
-def element2 = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblEstadoRegistroCajeroME'))
-assert element2.contains('INAU')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

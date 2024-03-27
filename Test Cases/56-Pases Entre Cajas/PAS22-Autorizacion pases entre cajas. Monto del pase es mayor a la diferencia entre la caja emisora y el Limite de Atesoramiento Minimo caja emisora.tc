@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS22-Autorizacion pases entre cajas. Monto del pase es mayor a la diferencia entre la caja emisora y el Limite de Atesoramiento Minimo caja emisora</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4622c8c6-aaaf-4c64-9fce-4f7ffa8d9aca</testCaseGuid>
+</TestCaseEntity>

@@ -42,8 +42,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Caj
 //Seleccionar "boton De la Caja"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
-//Seleccionar "1542"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaPrimeraCaja'))
+//Seleccionar "1547"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaCuartaCaja'))
 
 //Esperar "boton Moneda"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)
@@ -51,14 +51,14 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Caj
 //Seleccionar "boton Moneda"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'))
 
-//Seleccionar "USD"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblUSD'))
+//Seleccionar "ARS"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblARS'))
 
-//Esperar "Monto ME"
-WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), 3)
+//Esperar "Monto MN"
+WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), 3)
 
-//Setear "Monto ME"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoME'), '10')
+//Setear "Monto MN"
+WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '250000')
 
 //Seleccionar "txtComentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
@@ -75,45 +75,29 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarReg
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
+try {
+	//Verificar "Aceptar Alertas
+	WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'), 3)
+		
+	//Seleccionar "Aceptar Alertas"
+	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
+	
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+	assert element.contains('Txn Completa')
+	
+} catch (Exception e){
 
-//Definir Objeto
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-
-//Dividir la cadena por espacios en blanco y tomar elemento
-def partes = Transaccion1.split('\\s+')
-def trx1 = partes[2]
-assert Transaccion1.contains('Txn Completa:')
-
-//Setear Transaccion
-WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.ENVIO.CAJA/txtPaseDeCajaATesoro'), trx1)
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
-
-//Verificar "Moneda USD"
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
-
-//Validar "Moneda USD"
-def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblMoneda'))
-assert element.contains('USD')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Audit"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblAudit'))
-
-//Verificar "Estado del Registro"
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblEstadoRegistroCajeroME'))
-
-//Validar "Estado del Registro"
-def element2 = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblEstadoRegistroCajeroME'))
-assert element2.contains('INAU')
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element2 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+	assert element2.contains('Txn Completa')
+}
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

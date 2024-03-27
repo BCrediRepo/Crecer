@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PST12-Eliminacion de Posteo por cobro en efectivo. Posteo NO liquidado en Caja</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1f6740ac-ebd1-4e33-bbaf-54e487478b43</testCaseGuid>
+</TestCaseEntity>
