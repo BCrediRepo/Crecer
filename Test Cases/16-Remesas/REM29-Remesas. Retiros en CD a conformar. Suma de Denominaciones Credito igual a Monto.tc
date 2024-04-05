@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM29-Remesas. Retiros en CD a conformar. Suma de Denominaciones Credito igual a Monto</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9223401-0a0d-4115-98da-8d2b9848ad16</testCaseGuid>
+</TestCaseEntity>

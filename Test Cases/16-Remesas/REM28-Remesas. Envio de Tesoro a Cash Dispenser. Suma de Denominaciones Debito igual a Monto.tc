@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM28-Remesas. Envio de Tesoro a Cash Dispenser. Suma de Denominaciones Debito igual a Monto</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f8a4135-d7b9-4e54-889a-d1f57aac1673</testCaseGuid>
+</TestCaseEntity>

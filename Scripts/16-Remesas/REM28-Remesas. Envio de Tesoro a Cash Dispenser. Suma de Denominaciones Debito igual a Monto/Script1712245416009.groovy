@@ -16,62 +16,65 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2,2))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 31), findTestData('MainData/Users').getValue(2, 31))
 WebUI.maximizeWindow()
 
-//Ir a Pases
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPases'))
+//Ingresar "TELLER,ENVIO.DESDE.CD" en el buscador
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TELLER,ENVIO.DESDE.CD')
 
-//Ir a Solicitud de Pase Entre Cajas 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkSolicituddePaseEntreCajas'))
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Abre la pestaña TELLER
+//Seleccionar "boton de buscar"
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+
+//Cambiar ventana "TELLER"
 WebUI.switchToWindowTitle('TELLER')
 
-//Toma un ScreenShot
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Verifica titulo Pase Entre Cajas - Cajero
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/lblTituloPaseEntre Cajas-Cajero'))
+//Seleccionar "boton Nuevo Registro"
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnNuevoRegistro'))
 
-//Ingresa Numero de Caja
-WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/txtDeLaCaja'), '1542')
+//Seleccionar Monto MN
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'))
 
-//Ingresa Monto
-WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/txtMontoARS'), '1000')
+//Setear Monto MN
+WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), '2000')
 
-//Valida un registro
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/btnValidarRegistro'))
+//Seleccionar Comentarios
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
 
-//Ingresa comentarios
-WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/txtComentarios'), 'Prueba crecer')
+//Setear Comentarios
+WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBAS CRECER')
 
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-//Toma un ScreenShot
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Acepta un registro
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/btnAceptarRegistro'))
+//Seleccionar Denominaciones DB
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblDenominaciones'))
 
-//Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/btnAceptarAlertas'))
+//Setear Cantidad de 2000 ARS
+WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtCantidadDosMil'), '1')
 
-//Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//---------------------------------------------------------------------------------------------------------------------
+//Seleccionar "boton Aceptar Registro"
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
+
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+
+//Validar "Txn Completa"
+def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+assert element.contains('Txn Completa')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

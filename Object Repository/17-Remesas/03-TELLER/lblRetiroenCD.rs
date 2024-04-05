@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblRetiroenCD</name>
+   <tag></tag>
+   <elementGuidId>839fc081-0c22-4d31-b237-a6845760ffc1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.active-tab > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='headtab']/tbody/tr/td/a/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>09e533bd-8352-48fb-96b4-76bf1ed7f08d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Retiro en CD</value>
+      <webElementGuid>3f888154-64e6-44dd-9471-aa41f20e0545</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;headtab&quot;)/tbody[1]/tr[1]/td[1]/a[@class=&quot;active-tab&quot;]/span[1]</value>
+      <webElementGuid>a4c5680d-3cb6-4ae8-bab8-0e157b5de3bc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='headtab']/tbody/tr/td/a/span</value>
+      <webElementGuid>8235d7ad-db4f-40f4-8440-0c97fa4df09a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ct)'])[1]/following::span[1]</value>
+      <webElementGuid>ec4ece59-7214-4261-83da-5bdbce7c069e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TT23240069070700'])[1]/following::span[1]</value>
+      <webElementGuid>82a8df08-1056-4536-bd86-8011c21ef0bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denominaciones CR'])[1]/preceding::span[1]</value>
+      <webElementGuid>2e169af5-0f6d-44cd-89d9-e6421a67b909</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/preceding::span[2]</value>
+      <webElementGuid>f6982be3-fda5-4fd7-ab69-8bc679c6cb3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/span</value>
+      <webElementGuid>7eed4fb2-ea6a-4304-a08b-4b5ab507f49a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Retiro en CD' or . = 'Retiro en CD')]</value>
+      <webElementGuid>47d93e82-f770-4891-ab38-4fba0a6f70cb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

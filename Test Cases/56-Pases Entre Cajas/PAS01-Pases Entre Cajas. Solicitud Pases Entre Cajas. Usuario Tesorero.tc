@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PAS01-TC PASES CONS ARS</name>
+   <name>PAS01-Pases Entre Cajas. Solicitud Pases Entre Cajas. Usuario Tesorero</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>2348adcc-fcb7-42e3-bc58-b73a57414356</testCaseGuid>

@@ -701,7 +701,7 @@
       <guid>e703dfb3-0a10-4a39-b225-6e732d4b9add</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS01-TC PASES CONS ARS</testCaseId>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS01-Pases Entre Cajas. Solicitud Pases Entre Cajas. Usuario Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
