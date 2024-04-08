@@ -49,15 +49,15 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 
 //Selecciona D2 AUTOMATIZACION DE SUCURSALES
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-WebUI.delay(3)
+//WebUI.delay(3)
 
 //Selecciona POSTEO PLANTA CAJA
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/lnkPOSTEOPLANTACAJA'))
-WebUI.delay(3)
+//WebUI.delay(3)
 
 //Selecciona POSTEO
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/lnkPOSTEO'))
-WebUI.delay(3)
+//WebUI.delay(3)
 
 //Ir a Pago en Efectivo
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/lnkPAGOENEFECTIVO'))
@@ -96,11 +96,11 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click Aceptar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/btnAceptarRegistro'))
-WebUI.delay(10)
+//WebUI.delay(10)
 
 //Click Aceptar Alertas
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/btnAceptarAlertas'))
-WebUI.delay(10)
+//WebUI.delay(10)
 
 //Espera y recibe mensaje de tx completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/lblTxnCompleta'),6)
