@@ -414,7 +414,7 @@
       <guid>297a757d-65b4-4172-8849-c660d75e5b8c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/46-Mov rechazados pendientes de imputacion/MRPI02-Consulta. Usuario de Sucursal. Filtros Vacíos. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos</testCaseId>
+      <testCaseId>Test Cases/46-Mov rechazados pendientes de imputacion/MRPI02-Consulta. Usuario de Sucursal. Filtros Vacios. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -645,7 +645,7 @@
       <guid>d756f6b3-d292-487e-992e-3bb5211dc913</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/51-Variacion Deudora/VD01-Variación Deudora.Consulta de Saldos Diarios</testCaseId>
+      <testCaseId>Test Cases/51-Variacion Deudora/VD01-Variacion Deudora.Consulta de Saldos Diarios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

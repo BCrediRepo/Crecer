@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CICC05-Solicitud de Chequera Continua. Cuenta Activa. Cuenta admite Chequeras. Tipo de Chequera Valido. Se informa numeracion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>70b552a5-a909-4e17-a1e5-cf1a4383147c</testCaseGuid>
+</TestCaseEntity>

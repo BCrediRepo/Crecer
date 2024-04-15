@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>INB01-Consulta y Modificación de Inhabilitados Propios. Cambio de Estado. Estado de inhabilitación válido</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>000a05dc-a575-4b21-b074-2c4865c329f7</testCaseGuid>
-</TestCaseEntity>

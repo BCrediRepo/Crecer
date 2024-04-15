@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MON04-Consulta General de Cotizaciones para Filiales. Campo moneda. Tipo cotización otras operatorias</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e44aff18-7edf-4988-ae41-8985cb8fffc2</testCaseGuid>
-</TestCaseEntity>

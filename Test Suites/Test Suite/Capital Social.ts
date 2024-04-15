@@ -22,7 +22,7 @@
       <guid>49da5eb6-6a2a-4d35-966f-294b2a1b6027</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/18-Capital Social/CS02-Depósito. Aporte Voluntario a Capital Social - Pago por Ventanilla</testCaseId>
+      <testCaseId>Test Cases/18-Capital Social/CS02-Deposito. Aporte Voluntario a Capital Social - Pago por Ventanilla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

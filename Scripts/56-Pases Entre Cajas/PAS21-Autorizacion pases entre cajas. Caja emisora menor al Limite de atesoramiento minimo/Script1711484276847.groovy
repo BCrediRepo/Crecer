@@ -29,7 +29,7 @@ import java.awt.Robot
 import java.awt.event.KeyEvent
 
 //Primero se ejecuta el caso PAS20 para obtener la transaccion deseada
-WebUI.callTestCase(findTestCase('56-Pases Entre Cajas/PAS20-Pases entre cajas. Solicitud pase entre cajas_Saldo Caja emisora MENOR a Total de la solicitud. Caja Sobregirada'), 
+WebUI.callTestCase(findTestCase('56-Pases Entre Cajas/PAS20-Pases entre cajas. Solicitud pase entre cajas.Saldo Caja emisora MENOR a Total de la solicitud. Caja Sobregirada'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 //Configuracion de ambiente

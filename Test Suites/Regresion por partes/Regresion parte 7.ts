@@ -36,7 +36,7 @@
       <guid>5c4c0397-edd8-40d2-8319-5b17d548a183</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/53-MAP/MAP04-Transferencia entre cuentas BCCL MAP MAPCONTRA Cuenta origen con bloqueo a los créditos</testCaseId>
+      <testCaseId>Test Cases/53-MAP/MAP04-Transferencia entre cuentas BCCL MAP MAPCONTRA Cuenta origen con bloqueo a los creditos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

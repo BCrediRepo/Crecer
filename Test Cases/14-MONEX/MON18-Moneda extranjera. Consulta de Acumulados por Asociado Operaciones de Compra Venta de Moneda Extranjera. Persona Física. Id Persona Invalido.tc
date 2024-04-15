@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MON18-Moneda extranjera. Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Física. Id Persona Invalido</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>120c0095-08c9-40f3-98a4-804242e022f1</testCaseGuid>
-</TestCaseEntity>

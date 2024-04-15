@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MAP04-Transferencia entre cuentas BCCL MAP MAPCONTRA Cuenta origen con bloqueo a los creditos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af21a556-d624-402d-86dd-276794a76ed2</testCaseGuid>
+</TestCaseEntity>

@@ -176,7 +176,7 @@
       <guid>f1e2244b-0f9a-4075-9d41-5f7acbeeeea2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/18-Capital Social/CS02-Depósito. Aporte Voluntario a Capital Social - Pago por Ventanilla</testCaseId>
+      <testCaseId>Test Cases/18-Capital Social/CS02-Deposito. Aporte Voluntario a Capital Social - Pago por Ventanilla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -358,7 +358,7 @@
       <guid>b7419b6e-3fbc-42b2-b1bd-724b942e6388</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/23-Inhabilitados/INB01-Consulta y Modificación de Inhabilitados Propios. Cambio de Estado. Estado de inhabilitación válido</testCaseId>
+      <testCaseId>Test Cases/23-Inhabilitados/INB01-Consulta y Modificacion de Inhabilitados Propios. Cambio de Estado. Estado de inhabilitacion valido</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -456,7 +456,7 @@
       <guid>0a12943e-b2ac-401c-bd4b-0dd736dc8dad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP01-Consultas. Parametría. Codigo de IP</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP01-Consultas. Parametria. Codigo de IP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -477,21 +477,21 @@
       <guid>7f0a0f30-75e8-440e-bdcb-9c58a34e66a2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP04- Reversa Alta IP. Alta Cuenta Socio. Registro tiene Fecha de alta igual a TODAY. No tiene fecha de baja ni fecha de reclasificación</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP04- Reversa Alta IP. Alta Cuenta Socio. Registro tiene Fecha de alta igual a TODAY. No tiene fecha de baja ni fecha de reclasificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>411cdd6a-547a-4b9d-a041-08d4496c2928</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP05-IP.Reclasificación de partida de IP. Código de IP es de CR</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP05-IP.Reclasificacion de partida de IP. Codigo de IP es de CR</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b419f923-a9b8-47a5-ad2d-40aaa165262b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP06-IP.Reclasificación de partida de IP. Por casa central online para cuenta contable con COD.RECLA.SUC igual a código operativo</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP06-IP.Reclasificacion de partida de IP. Por casa central online para cuenta contable con COD.RECLA.SUC igual a codigo operativo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

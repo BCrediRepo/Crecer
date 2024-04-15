@@ -103,13 +103,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1e40b97d-e5ee-4c4b-b3d8-7a13113d91e3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS15-Pases entre cajas. Solicitud pase entre cajas_230000</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1a1fedf0-8e2a-4374-bbb8-abac463232fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -134,14 +127,14 @@
       <guid>f1b87df7-11c0-484a-b4a8-fcbf4e433c44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS19-Pases entre cajas. Solicitud pase entre cajas_250000</testCaseId>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS19-Pases entre cajas. Solicitud pase entre cajas Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>82272663-dbe8-4450-87a5-682b5f6b2f7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS20-Pases entre cajas. Solicitud pase entre cajas_Saldo Caja emisora MENOR a Total de la solicitud. Caja Sobregirada</testCaseId>
+      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS20-Pases entre cajas. Solicitud pase entre cajas.Saldo Caja emisora MENOR a Total de la solicitud. Caja Sobregirada</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

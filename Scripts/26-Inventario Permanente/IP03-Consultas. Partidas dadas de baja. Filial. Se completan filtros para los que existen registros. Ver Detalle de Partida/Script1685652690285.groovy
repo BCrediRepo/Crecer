@@ -56,7 +56,7 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.delay(120)
+//WebUI.delay(120)
 
 WebUI.maximizeWindow()
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON43-Operacion de Compra y Venta de Moneda Extranjera. Version BCCL.OP.CAMBIO,FILIAL.INMUEBLES.EFE</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1f4ab38-d656-45df-913d-04a4d070c62b</testCaseGuid>
+</TestCaseEntity>

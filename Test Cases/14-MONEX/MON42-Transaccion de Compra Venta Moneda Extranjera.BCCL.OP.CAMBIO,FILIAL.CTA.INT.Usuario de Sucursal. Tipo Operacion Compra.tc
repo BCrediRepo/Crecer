@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON42-Transaccion de Compra Venta Moneda Extranjera.BCCL.OP.CAMBIO,FILIAL.CTA.INT.Usuario de Sucursal. Tipo Operacion Compra</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0d33dbf9-995a-4107-86b8-38d9076e864e</testCaseGuid>
+</TestCaseEntity>

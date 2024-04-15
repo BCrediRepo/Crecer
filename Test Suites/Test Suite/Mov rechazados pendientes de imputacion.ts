@@ -22,7 +22,7 @@
       <guid>0bf08470-281d-4d99-b1b8-b17d8c36f3c5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/46-Mov rechazados pendientes de imputacion/MRPI02-Consulta. Usuario de Sucursal. Filtros Vacíos. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos</testCaseId>
+      <testCaseId>Test Cases/46-Mov rechazados pendientes de imputacion/MRPI02-Consulta. Usuario de Sucursal. Filtros Vacios. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
