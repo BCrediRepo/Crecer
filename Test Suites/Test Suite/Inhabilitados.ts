@@ -15,7 +15,7 @@
       <guid>f93a253d-0b50-4422-a0b4-daf2f36c2641</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/23-Inhabilitados/INB01-Consulta y Modificación de Inhabilitados Propios. Cambio de Estado. Estado de inhabilitación válido</testCaseId>
+      <testCaseId>Test Cases/23-Inhabilitados/INB01-Consulta y Modificacion de Inhabilitados Propios. Cambio de Estado. Estado de inhabilitacion valido</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

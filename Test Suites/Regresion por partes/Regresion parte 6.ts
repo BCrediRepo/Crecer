@@ -645,42 +645,42 @@
       <guid>4068392e-33bb-4e5d-bbe4-f652ba3fbcb7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC01-Cheques.Pago de Cheques por Cámara.Consulta de Cheques Cámara Recibida.Filtro por Fecha, Número de Cheque y Número de cuenta</testCaseId>
+      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC01-Cheques.Pago de Cheques por Camara.Consulta de Cheques Camara Recibida.Filtro por Fecha, Numero de Cheque y Numero de cuenta</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d3797914-ef75-4bd2-aed0-502c8d969f52</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC02-Cheques.Pago de Cheques por Cámara.Consulta de Cheques Pagados.Búsqueda. Filtro por Fecha y Número de cheque. Rango de fecha MENOR a 30 días</testCaseId>
+      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC02-Cheques.Pago de Cheques por Camara.Consulta de Cheques Pagados.Busqueda. Filtro por Fecha y Numero de cheque. Rango de fecha MENOR a 30 dias</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b9d0a65d-f1f2-41aa-b4ac-a34f99dc39d0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC03-Cheques.Pago de Cheques por Cámara.Consulta de Rechazos Automáticos.Cheque pertenece a una Cta de la misma Sucursal del usuario. Usuario Fil</testCaseId>
+      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC03-Cheques.Pago de Cheques por Camara.Consulta de Rechazos Automaticos.Cheque pertenece a una Cta de la misma Sucursal del usuario. Usuario Fil</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b7d247fc-e158-4bee-9bf0-2d68e600e1ec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC04-Cheques.Pago de Cheques por Ventanilla.Trx Consulta para Reversas de Pago de Cheques por Ventanilla.Cheque Mostrador. Opción Reversar</testCaseId>
+      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC04-Cheques.Pago de Cheques por Ventanilla.Trx Consulta para Reversas de Pago de Cheques por Ventanilla.Cheque Mostrador. Opcion Reversar</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d475657a-d122-43dc-8ccf-3d49419ea647</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC05-Solicitud de Chequera Continua. Cuenta Activa. Cuenta admite Chequeras. Tipo de Chequera Valido. Se informa numeración</testCaseId>
+      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC05-Solicitud de Chequera Continua. Cuenta Activa. Cuenta admite Chequeras. Tipo de Chequera Valido. Se informa numeracion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f16ffbe8-3efa-4a6b-ac88-79b40e6ff57a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC06-Cheques.Pago de Cheques por CámaraTrx ABM Validaciones Pago.Alta.Estado Pagado. Campos Obligatorios Completos</testCaseId>
+      <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC06-Cheques.Pago de Cheques por CamaraTrx ABM Validaciones Pago.Alta.Estado Pagado. Campos Obligatorios Completos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

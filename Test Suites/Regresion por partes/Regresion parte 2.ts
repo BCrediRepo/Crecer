@@ -71,21 +71,21 @@
       <guid>90019dc5-0d1f-493b-8693-6be7034ebf08</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON02- Consulta de Parámetros de Filiales. Filtro por sucursal</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON02- Consulta de Parametros de Filiales. Filtro por sucursal</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>fd7c76e5-e18a-4bc3-bde8-c35c9157090a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON03 -Consulta de Parámetros de Filiales. Sin Filtro</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON03 -Consulta de Parametros de Filiales. Sin Filtro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>369cdbe4-ac66-4d38-b551-db7ad4e8cf6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON04-Consulta General de Cotizaciones para Filiales. Campo moneda. Tipo cotización otras operatorias</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON04-Consulta General de Cotizaciones para Filiales. Campo moneda. Tipo cotizacion otras operatorias</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -148,21 +148,21 @@
       <guid>05853a04-fa31-4c67-8f71-04cedde86cf0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON13 - Ingreso de parametros grales de la operación de Monex. Ingreso de fondos es CUENTA y Egreso de Fondos es EFECTIVO</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON13 - Ingreso de parametros grales de la operacion de Monex. Ingreso de fondos es CUENTA y Egreso de Fondos es EFECTIVO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>da0c9482-c275-4dd5-8976-191beab2deda</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON14 -Ingreso de parametros grales de la operación de Monex. Ingreso de fondos es EFECTIVO y Egreso de Fondos es CUENTA</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON14 -Ingreso de parametros grales de la operacion de Monex. Ingreso de fondos es EFECTIVO y Egreso de Fondos es CUENTA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>14a5b4ad-63a5-45f9-94e5-34bd7384f6c4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON15 - Ingreso de parametros grales de la operación de Monex. Ingreso y Egreso de Fondos son iguales a CUENTA</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON15 - Ingreso de parametros grales de la operacion de Monex. Ingreso y Egreso de Fondos son iguales a CUENTA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -183,14 +183,14 @@
       <guid>fe31d45d-3016-4911-9113-43e69b83bdc2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON18-Moneda extranjera. Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Física. Id Persona Invalido</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON18-Moneda extranjera. Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Fisica. Id Persona Invalido</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4a944aba-303a-4754-8b58-40a790249e93</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON19-Moneda extranjera. Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Física. Id Persona vacio</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON19-Moneda extranjera. Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Fisica. Id Persona vacio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -211,21 +211,21 @@
       <guid>0e3aab2e-f2bf-41ef-8532-93b8c3a3e5cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/19-Cheque Cancelatorio/CHC01-Autorización de Baja de Cheque Financiero.Usuario de Casa Central. Sucursal con datos Válidos</testCaseId>
+      <testCaseId>Test Cases/19-Cheque Cancelatorio/CHC01-Autorizacion de Baja de Cheque Financiero.Usuario de Casa Central. Sucursal con datos Validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>36b2deb8-fc8e-4a75-9389-0c50d4410ff4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/19-Cheque Cancelatorio/CHC02-Cheque Cancelatorios. Consulta de Stock de Formulas. Usuario de Sucursal. Filtrar por Estado y Día de Emisión</testCaseId>
+      <testCaseId>Test Cases/19-Cheque Cancelatorio/CHC02-Cheque Cancelatorios. Consulta de Stock de Formulas. Usuario de Sucursal. Filtrar por Estado y Dia de Emision</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9fc22a63-c255-4d6d-bbb3-f9b3a6eb7b04</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/19-Cheque Cancelatorio/CHC03 - Consulta movimientos Cta. Interna. Usuario de sucursal. Ingresar Categoría y Moneda en pesos y Fecha</testCaseId>
+      <testCaseId>Test Cases/19-Cheque Cancelatorio/CHC03 - Consulta movimientos Cta. Interna. Usuario de sucursal. Ingresar Categoria y Moneda en pesos y Fecha</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -575,7 +575,7 @@
       <guid>ee3f0e74-c5f7-4d3e-b685-fa62888c6054</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON26-Consulta de Acumulados por Asociado Operaciones de Compra-Venta de Moneda Extranjera. Persona Física. Id Persona Valido</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON26-Consulta de Acumulados por Asociado Operaciones de Compra-Venta de Moneda Extranjera. Persona Fisica. Id Persona Valido</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -610,7 +610,7 @@
       <guid>dda1c17d-bbd5-483f-8440-63301696b8f2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON31-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario válido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON31-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

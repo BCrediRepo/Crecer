@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MON26-Consulta de Acumulados por Asociado Operaciones de Compra-Venta de Moneda Extranjera. Persona Física. Id Persona Valido</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bdce242e-c9ac-42e2-85e1-14a2140f028d</testCaseGuid>
-</TestCaseEntity>

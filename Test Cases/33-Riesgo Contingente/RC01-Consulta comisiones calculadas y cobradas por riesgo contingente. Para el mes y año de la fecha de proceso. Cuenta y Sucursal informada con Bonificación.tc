@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>RC01-Consulta comisiones calculadas y cobradas por riesgo contingente. Para el mes y año de la fecha de proceso. Cuenta y Sucursal informada con Bonificación</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4f9d5be3-109c-4a85-9f56-132a0002dbff</testCaseGuid>
-</TestCaseEntity>

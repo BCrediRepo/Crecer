@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MON14 -Ingreso de parametros grales de la operación de Monex. Ingreso de fondos es EFECTIVO y Egreso de Fondos es CUENTA</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7ad1d571-851c-4b2c-b947-d7f0e0a0bc56</testCaseGuid>
-</TestCaseEntity>

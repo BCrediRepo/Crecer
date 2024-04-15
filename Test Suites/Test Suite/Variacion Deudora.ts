@@ -15,7 +15,7 @@
       <guid>8152838a-7e32-46b7-823a-557afe55f027</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/51-Variacion Deudora/VD01-Variación Deudora.Consulta de Saldos Diarios</testCaseId>
+      <testCaseId>Test Cases/51-Variacion Deudora/VD01-Variacion Deudora.Consulta de Saldos Diarios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

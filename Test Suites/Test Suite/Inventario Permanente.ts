@@ -15,7 +15,7 @@
       <guid>37448036-9e35-4767-b103-df25a4035a5c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP01-Consultas. Parametría. Codigo de IP</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP01-Consultas. Parametria. Codigo de IP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -36,21 +36,21 @@
       <guid>cb732c3d-3292-457d-a2d0-317634092a04</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP04- Reversa Alta IP. Alta Cuenta Socio. Registro tiene Fecha de alta igual a TODAY. No tiene fecha de baja ni fecha de reclasificación</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP04- Reversa Alta IP. Alta Cuenta Socio. Registro tiene Fecha de alta igual a TODAY. No tiene fecha de baja ni fecha de reclasificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9d7e0fb4-0e0a-4171-a63d-4dfa19d6f7c7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP05-IP.Reclasificación de partida de IP. Código de IP es de CR</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP05-IP.Reclasificacion de partida de IP. Codigo de IP es de CR</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>1134c681-ecf2-4d69-a473-5f6980ffd781</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/26-Inventario Permanente/IP06-IP.Reclasificación de partida de IP. Por casa central online para cuenta contable con COD.RECLA.SUC igual a código operativo</testCaseId>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP06-IP.Reclasificacion de partida de IP. Por casa central online para cuenta contable con COD.RECLA.SUC igual a codigo operativo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

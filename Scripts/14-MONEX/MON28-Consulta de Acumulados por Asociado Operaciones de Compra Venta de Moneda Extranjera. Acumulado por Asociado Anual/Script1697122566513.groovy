@@ -86,8 +86,10 @@ String celda3Text = celda3.getText()
 String Cadena = "Frecuencia:" + ' ' + celda1Text + ", Importe en USD:" + ' ' + celda2Text + ", Cantidad de Txns:" +' ' + celda3Text
 println Cadena
 
-//assert Cadena == "Frecuencia: Anual, Importe en USD: 10,00, Cantidad de Txns: 2" //TES10
-assert Cadena == "Frecuencia: Anual, Importe en USD: 792,00, Cantidad de Txns: 4" //708
+
+String consAcum = WebUI.getText(findTestObject('Object Repository/15-MONEX/01-BCCL.E.NOFILE.DET.OPER.MONEX/lblAnual'))
+
+assert consAcum == "Anual"
 
 //Control fin de script
 

@@ -52,7 +52,7 @@ WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lnkNuev
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/lnkEjecutar'))
 
-//WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/btnLupita'))
+WebUI.click(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/btnLupita'))
 
 WebUI.setText(findTestObject('20-Cheque Cancelatorio/BCCL.CQ.CF.INVENTARIO/txtCuentaDeSucursal'), '074')
 

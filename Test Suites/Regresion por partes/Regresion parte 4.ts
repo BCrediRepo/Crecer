@@ -127,7 +127,7 @@
       <guid>bbbdcdd6-f9bf-4bcc-b03c-59a3007c08eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/33-Riesgo Contingente/RC01-Consulta comisiones calculadas y cobradas por riesgo contingente. Para el mes y año de la fecha de proceso. Cuenta y Sucursal informada con Bonificación</testCaseId>
+      <testCaseId>Test Cases/33-Riesgo Contingente/RC01-Consulta comisiones calculadas y cobradas por riesgo contingente. Para el mes y año de la fecha de proceso. Cuenta y Sucursal informada con Bonificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

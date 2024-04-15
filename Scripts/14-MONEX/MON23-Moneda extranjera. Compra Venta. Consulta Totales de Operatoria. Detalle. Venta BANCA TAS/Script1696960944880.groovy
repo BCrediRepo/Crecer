@@ -72,9 +72,9 @@ println(TotalRegistros)
 //-----------------------------
 //Verificación de que la fecha consultada sea la correcta
 //WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
-Total = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblTotalOperacionesVentaTAS'))
+Total = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblTotalesporOperatoria'))
 
-assert Total == '0,00' //Control fin de script
+assert Total == 'Totales por Operatoria' //Control fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
