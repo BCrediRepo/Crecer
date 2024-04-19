@@ -22,7 +22,7 @@
       <guid>60048282-d82e-42f2-930f-3f132280f813</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/45-Movimientos Pendientes Cancelados/MPC02-Consulta. Filtros Vacíos. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos. Cancelado en fecha IGUAL a SI</testCaseId>
+      <testCaseId>Test Cases/45-Movimientos Pendientes Cancelados/MPC02-Consulta. Filtros Vacios. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos. Cancelado en fecha IGUAL a SI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

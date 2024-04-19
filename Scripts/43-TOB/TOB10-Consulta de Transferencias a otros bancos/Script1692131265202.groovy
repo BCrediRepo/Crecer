@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('43-TOB/TOB03-Transferencia OnLine a otros bancos. Completitud de Campo Moneda. Cuenta en Dólares'), 
+WebUI.callTestCase(findTestCase('43-TOB/TOB03-Transferencia OnLine a otros bancos. Completitud de Campo Moneda. Cuenta en Dolares'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
 //Configuracion de ambiente

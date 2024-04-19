@@ -29,21 +29,21 @@
       <guid>a5f9205f-fe70-4095-9ea9-88453f766821</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA01-LIMITES Y ACUMULADORES. Consulta de acumulados. Desplegar combo Código de Acumulador</testCaseId>
+      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA01-LIMITES Y ACUMULADORES. Consulta de acumulados. Desplegar combo Codigo de Acumulador</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7fa8d903-610c-46ce-9ce8-39793ebb469e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA02-LIMITES Y ACUMULADORES. Parametrización de acumuladores. Alta de acumulador inexistente. Una sola frecuencia</testCaseId>
+      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA02-LIMITES Y ACUMULADORES. Parametrizacion de acumuladores. Alta de acumulador inexistente. Una sola frecuencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>1009043d-6ac3-4d48-b7ac-24ebe0c2a3ad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA03-LIMITES Y ACUMULADORES. Parametrización de límites. Alta de límite inexistente. No se ingresa frecuencia, ni override. Se ingresa monto por txn</testCaseId>
+      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA03-LIMITES Y ACUMULADORES. Parametrizacion de limites. Alta de limite inexistente. No se ingresa frecuencia, ni override. Se ingresa monto por txn</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -113,7 +113,7 @@
       <guid>c96e1417-c19c-493b-85c3-2776288857f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/32-Poderes y Mandatos/PYM01-Dictamenes. A-B-M Dictamen. Modificación</testCaseId>
+      <testCaseId>Test Cases/32-Poderes y Mandatos/PYM01-Dictamenes. A-B-M Dictamen. Modificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -127,7 +127,7 @@
       <guid>bbbdcdd6-f9bf-4bcc-b03c-59a3007c08eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/33-Riesgo Contingente/RC01-Consulta comisiones calculadas y cobradas por riesgo contingente. Para el mes y año de la fecha de proceso. Cuenta y Sucursal informada con Bonificacion</testCaseId>
+      <testCaseId>Test Cases/33-Riesgo Contingente/RC01-Consulta comisiones calculadas y cobradas por riesgo contingente. Para el mes y anio de la fecha de proceso. Cuenta y Sucursal informada con Bonificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -155,7 +155,7 @@
       <guid>f16274f5-d4c8-47c2-83fa-ab2a63c22f6e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/34-Sobregiros/SG04-Sobregiros.Tx Mantenimiento de sobregiro. Ingresar algún filtro. Existen sobregiros para los filtros ingresados. Datos válidos</testCaseId>
+      <testCaseId>Test Cases/34-Sobregiros/SG04-Sobregiros.Tx Mantenimiento de sobregiro. Ingresar algun filtro. Existen sobregiros para los filtros ingresados. Datos validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -169,42 +169,42 @@
       <guid>2efa3360-55e5-4629-aa2a-71dbe0e82ec7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/34-Sobregiros/SG06-Tx Reversión de sobregiros. Completitud de la pantalla</testCaseId>
+      <testCaseId>Test Cases/34-Sobregiros/SG06-Tx Reversion de sobregiros. Completitud de la pantalla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0dba3feb-0776-44b2-b07a-3a732472032e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/34-Sobregiros/SG07-Tx Reversión de sobregiros. Filtros vacíos</testCaseId>
+      <testCaseId>Test Cases/34-Sobregiros/SG07-Tx Reversion de sobregiros. Filtros vacios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>15efa8be-62c7-47b9-b2e8-b4aed292d93e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/34-Sobregiros/SG08-Tx Reversión de sobregiros. Ingresar cuenta inexistente</testCaseId>
+      <testCaseId>Test Cases/34-Sobregiros/SG08-Tx Reversion de sobregiros. Ingresar cuenta inexistente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d526caaf-201f-45c1-b7c1-998230e01a98</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/34-Sobregiros/SG09-Tx Reversión de sobregiros. Ingresar número de sobregiro no vigente ingresado en el día</testCaseId>
+      <testCaseId>Test Cases/34-Sobregiros/SG09-Tx Reversion de sobregiros. Ingresar numero de sobregiro no vigente ingresado en el dia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>89f2333b-0b3c-4af2-9bbc-5659849f18df</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/35-Movimientos Rechazados/MR01-Consulta pendientes de imputación. Usuario de Sucursal. Filtros Vacíos. Mov para mas de un tipo de producto-subproducto con distintos cod operativos</testCaseId>
+      <testCaseId>Test Cases/35-Movimientos Rechazados/MR01-Consulta pendientes de imputacion. Usuario de Sucursal. Filtros Vacios. Mov para mas de un tipo de producto-subproducto con distintos cod operativos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7c95b9d8-351a-4565-8917-814bc571fd28</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/35-Movimientos Rechazados/MR02-Consulta de mov pend cancelados. Filtros VacIos. Mov distintos cod op. Cancelado en fecha IGUAL a SI</testCaseId>
+      <testCaseId>Test Cases/35-Movimientos Rechazados/MR02-Consulta de mov pend cancelados. Filtros Vacios. Mov distintos cod op. Cancelado en fecha IGUAL a SI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -295,7 +295,7 @@
       <guid>7831709d-dcc7-4cd3-8010-79b84b42c424</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD01-Padrón Empresas. Modificación. Agregar mail válido, cantidad de mails menor a 5</testCaseId>
+      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD01-Padron Empresas. Modificacion. Agregar mail valido, cantidad de mails menor a 5</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -309,28 +309,28 @@
       <guid>bbf7c48c-050d-4ef1-8c57-bd6f85874533</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD03-Tarjetas de depósito.Alta ONL de Tarjeta.Paso 1.TX Alta de tarjeta PAGOCOOP</testCaseId>
+      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD03-Tarjetas de deposito.Alta ONL de Tarjeta.Paso 1.TX Alta de tarjeta PAGOCOOP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>952a1a6e-49d7-4e43-8258-6201a7be9b6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD04-Tarjetas de depósito.Alta ONL de Tarjeta.Paso 2.Proceso ABM</testCaseId>
+      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD04-Tarjetas de deposito.Alta ONL de Tarjeta.Paso 2.Proceso ABM</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>aff95228-14f3-4e17-b466-bf317cfa7aaa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD05-Tarjetas de depósito.Alta ONL de Tarjeta.Paso 3.Proceso BCCL.B.TD.ALTA.TDEPOSIT.Registro válido. Ejecución del proceso</testCaseId>
+      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD05-Tarjetas de deposito.Alta ONL de Tarjeta.Paso 3.Proceso BCCL.B.TD.ALTA.TDEPOSIT.Registro valido. Ejecucion del proceso</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b20f5ffe-e40f-4533-8009-747e5be794f2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD06-Tarjetas de Depósito.Consultas Tarjetas de Deposito (Enquiry BCCL.E.CARD.DEPOSIT ). Campo ID (Id.Tarjeta), Tarjeta Valida</testCaseId>
+      <testCaseId>Test Cases/39-Tarjeta de Deposito/TD06-Tarjetas de Deposito.Consultas Tarjetas de Deposito (Enquiry BCCL.E.CARD.DEPOSIT ). Campo ID (Id.Tarjeta), Tarjeta Valida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

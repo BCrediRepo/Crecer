@@ -169,7 +169,7 @@
       <guid>b67dd68a-8f6e-4e58-ad5a-d98901b28354</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/50-Deposito y Extracciones/DE04-Depósitos.Trx de Deposito en Efectivo por Caja.Cuenta Habilitada para uso de Chequeras. Saldo acreedor</testCaseId>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE04-Depositos.Trx de Deposito en Efectivo por Caja.Cuenta Habilitada para uso de Chequeras. Saldo acreedor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

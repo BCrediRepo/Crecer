@@ -239,7 +239,7 @@
       <guid>fbd6f499-f446-4008-b61c-e69456ec6d22</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/43-TOB/TOB03-Transferencia OnLine a otros bancos. Completitud de Campo Moneda. Cuenta en Dólares</testCaseId>
+      <testCaseId>Test Cases/43-TOB/TOB03-Transferencia OnLine a otros bancos. Completitud de Campo Moneda. Cuenta en Dolares</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -400,7 +400,7 @@
       <guid>f2ea86ac-318d-4639-b7ea-bb5d9bc7d166</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/45-Movimientos Pendientes Cancelados/MPC02-Consulta. Filtros Vacíos. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos. Cancelado en fecha IGUAL a SI</testCaseId>
+      <testCaseId>Test Cases/45-Movimientos Pendientes Cancelados/MPC02-Consulta. Filtros Vacios. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos. Cancelado en fecha IGUAL a SI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

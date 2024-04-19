@@ -169,7 +169,7 @@
       <guid>a840eb7a-5ae4-43a6-af27-28409d18bc29</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/18-Capital Social/CS01-Consulta de cuentas de Capital Social. Usuario de filial. Búsqueda por cuenta Dato. Id. Persona o Numero Cuenta</testCaseId>
+      <testCaseId>Test Cases/18-Capital Social/CS01-Consulta de cuentas de Capital Social. Usuario de filial. Busqueda por cuenta Dato. Id. Persona o Numero Cuenta</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

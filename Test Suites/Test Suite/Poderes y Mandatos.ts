@@ -15,7 +15,7 @@
       <guid>55905d40-85e7-4ad7-81e7-8e821c9ee184</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/32-Poderes y Mandatos/PYM01-Dictamenes. A-B-M Dictamen. Modificación</testCaseId>
+      <testCaseId>Test Cases/32-Poderes y Mandatos/PYM01-Dictamenes. A-B-M Dictamen. Modificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

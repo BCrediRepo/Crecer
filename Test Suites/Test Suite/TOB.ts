@@ -29,7 +29,7 @@
       <guid>980110bf-2602-4738-921f-01b99e5a02bd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/43-TOB/TOB03-Transferencia OnLine a otros bancos. Completitud de Campo Moneda. Cuenta en Dólares</testCaseId>
+      <testCaseId>Test Cases/43-TOB/TOB03-Transferencia OnLine a otros bancos. Completitud de Campo Moneda. Cuenta en Dolares</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
