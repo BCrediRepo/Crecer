@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>DE04-Depósitos.Trx de Deposito en Efectivo por Caja.Cuenta Habilitada para uso de Chequeras. Saldo acreedor</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>17d79204-01a7-41e5-920c-64b12edd85e9</testCaseGuid>
-</TestCaseEntity>

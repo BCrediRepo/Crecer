@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LYA02-LIMITES Y ACUMULADORES. Parametrizacion de acumuladores. Alta de acumulador inexistente. Una sola frecuencia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f0a9c569-c097-49d7-aa18-1217b47b0d5f</testCaseGuid>
+</TestCaseEntity>

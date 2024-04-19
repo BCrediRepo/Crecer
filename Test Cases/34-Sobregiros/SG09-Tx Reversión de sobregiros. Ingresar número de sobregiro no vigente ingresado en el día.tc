@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SG09-Tx Reversión de sobregiros. Ingresar número de sobregiro no vigente ingresado en el día</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bef4f364-de64-47e6-8e1d-d4efb1485b0e</testCaseGuid>
-</TestCaseEntity>

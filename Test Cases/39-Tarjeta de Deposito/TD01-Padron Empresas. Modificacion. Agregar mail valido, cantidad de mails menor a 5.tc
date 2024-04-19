@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TD01-Padron Empresas. Modificacion. Agregar mail valido, cantidad de mails menor a 5</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb5a7f9d-9c14-40bd-869c-aa3fe95c50a5</testCaseGuid>
+</TestCaseEntity>

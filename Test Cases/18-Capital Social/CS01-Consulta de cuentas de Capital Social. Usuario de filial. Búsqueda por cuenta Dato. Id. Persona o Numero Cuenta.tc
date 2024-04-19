@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CS01-Consulta de cuentas de Capital Social. Usuario de filial. Búsqueda por cuenta Dato. Id. Persona o Numero Cuenta</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bd5cfd69-c2ee-40d0-afda-9b94555c0fcc</testCaseGuid>
-</TestCaseEntity>

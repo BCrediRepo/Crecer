@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TD03-Tarjetas de deposito.Alta ONL de Tarjeta.Paso 1.TX Alta de tarjeta PAGOCOOP</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6e2943b2-ae57-4aee-9d68-c0d0e5ec0f72</testCaseGuid>
+</TestCaseEntity>

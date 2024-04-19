@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MR01-Consulta pendientes de imputacion. Usuario de Sucursal. Filtros Vacios. Mov para mas de un tipo de producto-subproducto con distintos cod operativos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>25fd1257-d102-4ba8-9a7c-30396c8054c4</testCaseGuid>
+</TestCaseEntity>
