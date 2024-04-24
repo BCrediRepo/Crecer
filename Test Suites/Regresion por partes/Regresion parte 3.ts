@@ -12,20 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>93061167-2a70-4c8e-b0b4-c1bed35418e2</testSuiteGuid>
    <testCaseLink>
-      <guid>e4084520-4c80-44b3-8971-71b216184521</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/16-Remesas/REM01-REMESAS.Consulta Instalación Remoción de Prosegur</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>52e57cc4-19f5-4f14-8201-26a51b863d01</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/16-Remesas/REM02-REMESAS.Reposición por menos. TELLER,REPOSICION.POR.MENOS.PN099</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>38554b65-d917-46fb-b4a9-6bfbb8c3ebc1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -166,6 +152,76 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>99bd57d0-bff5-4707-902e-79cc60da883e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC21-Consulta movimientos de cuenta por fecha. Campo Desagrupar Monetarios IGUAL a NULL</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a5ce11fc-a298-4a17-9a1f-4d54dda657bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC22-Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Movimientos ingresados entre Fecha de Desde y Fecha Hasta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e9b6e5e5-1c38-417b-999c-3216108cdcc7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC23-Consulta por Sucursal. Consulta Saldo de Cuenta. Encabezado. Cuenta operativa en Pesos con Estado Activa. Datos informados correctos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9f21e904-1007-49a6-9af7-7e63d8914eb3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC24-Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas. Cuenta Operativa en estado Cerrada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>647eba45-c04e-44f7-8b61-9eb6355be753</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC25-Consulta movimientos de cuenta por fecha valor. Campo Desagrupar Monetarios IGUAL a SI. No se informan fechas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f0901db4-c94b-405b-9dd6-c7330f0e4296</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC26-Resumen de Cuenta.Consulta de Movimiento de cuentas internas por fecha. Fecha desde y Fecha hasta vacios</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5744a913-8a72-4357-8d49-0b2137fd6f84</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC27-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuenta. Cuenta operativa en Pesos con Estado Activa</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>48a03763-f1cf-4065-9d52-6e8b48cc65d2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC28-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Detalle. Cuenta Operativa con Estado a Cerrada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>36cbe4b4-577c-48e3-9168-0bb11090f6ea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC29-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a60aebaa-b850-4207-a69b-237b7405ecc7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC30-Resumen de Cuenta.Consulta por Suc. Consulta Movimiento Fecha. Mov ingresado de Credito en Moneda Pesos con fecha IGUAL a Fecha de Proceso</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>a840eb7a-5ae4-43a6-af27-28409d18bc29</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -191,6 +247,34 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/20-Fallas Dispositivos/F02-FALLAS.Consulta sobrante PN por filial BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e2085df-c50c-4f1a-85db-2300d78843f0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F03-Alta de Faltantes de ATM CD TAS. Filial. Completitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7148a044-44c7-4e86-abf6-3d8725752691</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F04-BAJA Faltante en Disp PN - Deposito Intel - Tarj Precargada - Cta Contable</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bedffcf4-f011-46c0-b9d9-fb4924ff090d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F05-Baja Faltantes en Puntos Neutrales Delegados - Cta Cont</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b952d6ae-fbe6-438b-bb84-5cc7dc4c8066</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F06-Falla de dispositivo ALTA Faltante en Disp PN - Retiro. MAP</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -495,6 +579,20 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>e4084520-4c80-44b3-8971-71b216184521</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM01-REMESAS.Consulta Instalación Remoción de Prosegur</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>52e57cc4-19f5-4f14-8201-26a51b863d01</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM02-REMESAS.Reposición por menos. TELLER,REPOSICION.POR.MENOS.PN099</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>0af8167b-4520-454f-9e2f-272a6d03f90e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -541,6 +639,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/16-Remesas/REM09-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial NO existente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2f78a3f0-32fc-4c4f-a1d6-90b07d1834df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM10-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial vacio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -604,111 +709,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/13-Recaudaciones/RE02-Recaudaciones.Reversa de pago de tarjeta CABAL</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2f78a3f0-32fc-4c4f-a1d6-90b07d1834df</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/16-Remesas/REM10-Remesas. Consulta de Control de Saldos Asegurados en Línea. Filial vacio</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>99bd57d0-bff5-4707-902e-79cc60da883e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC21-Consulta movimientos de cuenta por fecha. Campo Desagrupar Monetarios IGUAL a NULL</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a5ce11fc-a298-4a17-9a1f-4d54dda657bd</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC22-Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Movimientos ingresados entre Fecha de Desde y Fecha Hasta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e9b6e5e5-1c38-417b-999c-3216108cdcc7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC23-Consulta por Sucursal. Consulta Saldo de Cuenta. Encabezado. Cuenta operativa en Pesos con Estado Activa. Datos informados correctos</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9f21e904-1007-49a6-9af7-7e63d8914eb3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC24-Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas. Cuenta Operativa en estado Cerrada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>647eba45-c04e-44f7-8b61-9eb6355be753</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC25-Consulta movimientos de cuenta por fecha valor. Campo Desagrupar Monetarios IGUAL a SI. No se informan fechas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8e2085df-c50c-4f1a-85db-2300d78843f0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas Dispositivos/F03-Alta de Faltantes de ATM CD TAS. Filial. Completitud</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7148a044-44c7-4e86-abf6-3d8725752691</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas Dispositivos/F04-BAJA Faltante en Disp PN - Deposito Intel - Tarj Precargada - Cta Contable</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>bedffcf4-f011-46c0-b9d9-fb4924ff090d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas Dispositivos/F05-Baja Faltantes en Puntos Neutrales Delegados - Cta Cont</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b952d6ae-fbe6-438b-bb84-5cc7dc4c8066</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/20-Fallas Dispositivos/F06-Falla de dispositivo ALTA Faltante en Disp PN - Retiro. MAP</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f0901db4-c94b-405b-9dd6-c7330f0e4296</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC26-Resumen de Cuenta.Consulta de Movimiento de cuentas internas por fecha. Fecha desde y Fecha hasta vacios</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5744a913-8a72-4357-8d49-0b2137fd6f84</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC27-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuenta. Cuenta operativa en Pesos con Estado Activa</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>48a03763-f1cf-4065-9d52-6e8b48cc65d2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC28-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Cuenta Cerrada. Detalle. Cuenta Operativa con Estado a Cerrada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>36cbe4b4-577c-48e3-9168-0bb11090f6ea</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC29-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a60aebaa-b850-4207-a69b-237b7405ecc7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC30-Resumen de Cuenta.Consulta por Suc. Consulta Movimiento Fecha. Mov ingresado de Credito en Moneda Pesos con fecha IGUAL a Fecha de Proceso</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

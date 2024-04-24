@@ -75,52 +75,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>d1dd1db9-e1f4-4ffc-8919-663c28f7b919</guid>
+      <guid>0efc6c1c-f3c7-4a48-beb2-0788e1802e0d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC42-Consulta operatoria de Filiales.Cambio de Denominación. Moneda Local</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2ac86e04-dfb9-4b3d-9dec-07df2de66792</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC41-Pases Entre Cajas.Consulta de Atesoramiento.Limite de Atesoramiento Max de Categoria existente es Menor a EXISTENCIA de la Categoria</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2b64ee7c-a831-4af2-a895-cd22f176991f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR12-Cheques rechazados.Asignación manual de firmantes. Agregar y Eliminar Firmante</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>80401331-deeb-4aaa-a803-4ebc7d6446e4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR11-Cheques rechazados.Consulta por Conciliación de Multas. Usuario de Sucursal. Ingresar filtro conciliado y rango de fechas de cobro</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>549983e1-4bae-4529-ac43-ff46280adda8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR10-Cheques Rechazados.Consulta de Cheques Informados al BCRA.Por Fecha de Generación.Usuario de Sucursal</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>aeceafe0-f4b9-49ec-9a47-2f39a06ecc83</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR09-Cheques Rechazados.Cuentas Corrientes.Consulta y Actualización Baja Programada de Firmantes</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>abff4aee-e53c-44ac-822d-504e10b1098a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR08-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Cheque informado. Datos correctos</testCaseId>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR06-Cheques Rechazados.Consulta de Aviso al Librador en Casa Central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -131,10 +89,38 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0efc6c1c-f3c7-4a48-beb2-0788e1802e0d</guid>
+      <guid>abff4aee-e53c-44ac-822d-504e10b1098a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR06-Cheques Rechazados.Consulta de Aviso al Librador en Casa Central</testCaseId>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR08-CHEQUES RECHAZADOS. Consulta de Aviso al Librador en Casa Central. Busqueda. Cheque informado. Datos correctos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aeceafe0-f4b9-49ec-9a47-2f39a06ecc83</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR09-Cheques Rechazados.Cuentas Corrientes.Consulta y Actualización Baja Programada de Firmantes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>549983e1-4bae-4529-ac43-ff46280adda8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR10-Cheques Rechazados.Consulta de Cheques Informados al BCRA.Por Fecha de Generación.Usuario de Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>80401331-deeb-4aaa-a803-4ebc7d6446e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR11-Cheques rechazados.Consulta por Conciliación de Multas. Usuario de Sucursal. Ingresar filtro conciliado y rango de fechas de cobro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2b64ee7c-a831-4af2-a895-cd22f176991f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR12-Cheques rechazados.Asignación manual de firmantes. Agregar y Eliminar Firmante</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -495,38 +481,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1ab64458-f344-4396-a780-d26b7f90abe1</guid>
+      <guid>cb3b07bd-1fe0-4063-a626-3fce26350ac8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P13-Personas. Persona Física. Modificación</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4036c0cb-e2b3-4ccb-ae8d-cdba88d8864d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P12-Personas. Modificación Persona Jurídica Especial</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c8076964-a131-4b0d-b2aa-65ef25bdd2dc</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P11-Personas. Modificación Persona Física Especial</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>333842ae-3ce1-4e34-a858-f632bf4c6018</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P10-Personas. Modificación Datos Localización Persona Física</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3777b8b5-13c6-4aba-8c52-15d1e41a759f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P09-Personas. Modificación Datos Empleados</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P07-Personas. Alta Persona Jurídica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -537,10 +495,66 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>cb3b07bd-1fe0-4063-a626-3fce26350ac8</guid>
+      <guid>3777b8b5-13c6-4aba-8c52-15d1e41a759f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P07-Personas. Alta Persona Jurídica</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P09-Personas. Modificación Datos Empleados</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>333842ae-3ce1-4e34-a858-f632bf4c6018</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/30-Personas/P10-Personas. Modificación Datos Localización Persona Física</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c8076964-a131-4b0d-b2aa-65ef25bdd2dc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/30-Personas/P11-Personas. Modificación Persona Física Especial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4036c0cb-e2b3-4ccb-ae8d-cdba88d8864d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/30-Personas/P12-Personas. Modificación Persona Jurídica Especial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1ab64458-f344-4396-a780-d26b7f90abe1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/30-Personas/P13-Personas. Persona Física. Modificación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8d0d1d49-79ed-4562-b468-bfc5e1f73dbb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/30-Personas/P14-Personas. Persona Jurídica. Modificación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>76313d50-7116-45a5-b8a5-01008c8631a5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST04-Generar Posteos para liquidar - Pago en efectivo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>49bccafd-3aff-4670-8549-c192d585f97a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST05-Reversa de posteo por pago en efectivo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2acb510d-b475-4937-acc6-109362ca6833</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST06-Cobro en Efectivo.Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada Pesos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -558,24 +572,31 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2acb510d-b475-4937-acc6-109362ca6833</guid>
+      <guid>c9d7faef-1c86-4b98-81b1-2b02c4174664</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/36-Posteo/PST06-Cobro en Efectivo.Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada Pesos</testCaseId>
+      <testCaseId>Test Cases/36-Posteo/PST09-Eliminacion de Posteo por pago en efectivo. Posteo NO liquidado en Caja</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>49bccafd-3aff-4670-8549-c192d585f97a</guid>
+      <guid>e5a17796-5b2e-43d1-a069-a0e090620ba0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/36-Posteo/PST05-Reversa de posteo por pago en efectivo</testCaseId>
+      <testCaseId>Test Cases/36-Posteo/PST10-Cancelacion Total con efectivo de Cta Cerrada. Liquidacion de Posteo por Cancelacion de saldo de CC. Saldo deudor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>76313d50-7116-45a5-b8a5-01008c8631a5</guid>
+      <guid>5001c00b-47ff-40c0-ba22-13b7db030964</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/36-Posteo/PST04-Generar Posteos para liquidar - Pago en efectivo</testCaseId>
+      <testCaseId>Test Cases/36-Posteo/PST11-Posteos. Cobro en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada. ARS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>62822af3-37ad-4602-b0eb-f556b46f8b84</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST12-Eliminacion de Posteo por cobro en efectivo. Posteo NO liquidado en Caja</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -695,13 +716,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/52-Consulta Chq Ingresados por Camara y Canje/CICC08-Cheques. ABM Validaciones pago. Alta. Estado Pagado</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e703dfb3-0a10-4a39-b225-6e732d4b9add</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/56-Pases Entre Cajas/PAS01-Pases Entre Cajas. Solicitud Pases Entre Cajas. Usuario Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

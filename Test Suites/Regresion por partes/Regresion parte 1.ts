@@ -47,6 +47,20 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>7e65d052-534f-4ac9-bc1e-9d3bdbe12213</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT06-Administracion de Piezas con Tarjetas. Envio a otra filal o al Activador Comercial. Envio o Entrega a AC de Card Carrier</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b93749bb-cdcd-4b5a-b82c-5032e7f5da79</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT07-Administracion de Piezas con Tarjetas. Consultas al Maestro de Card Carrier. Seleccion por Nombre. Documento. Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>9cf99b05-b436-4cb9-9d4e-6f87964ab9e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -387,27 +401,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/04-PlazoFijo/PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el día</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>23f47d33-4fda-476f-92df-dd3cfe05a8b3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/57-Puntos Neutrales/PN05-Falla puntos Neutrales. Alta de faltante CD Neutrales. Dispositivo de la Sucursal. Retiro</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7e65d052-534f-4ac9-bc1e-9d3bdbe12213</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT06-Administracion de Piezas con Tarjetas. Envio a otra filal o al Activador Comercial. Envio o Entrega a AC de Card Carrier</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b93749bb-cdcd-4b5a-b82c-5032e7f5da79</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT07-Administracion de Piezas con Tarjetas. Consultas al Maestro de Card Carrier. Seleccion por Nombre. Documento. Sucursal</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

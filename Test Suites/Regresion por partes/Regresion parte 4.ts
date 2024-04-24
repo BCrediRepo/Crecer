@@ -12,10 +12,10 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>af7aa984-fd49-4847-8d30-af079b9d7795</testSuiteGuid>
    <testCaseLink>
-      <guid>7a1d83c1-706b-4a6c-80a8-7bba81d3aba7</guid>
+      <guid>69734c5b-b6ef-41ea-a90a-9e7e38671697</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/27-Cobranza de Legales/LEG03-Version de input de cobranza de legales-Ingreso de registro</testCaseId>
+      <testCaseId>Test Cases/27-Cobranza de Legales/LEG01-Legales.Cobranza de legales.Txn de cobranza de legales BCCL.COBRANZAS.LEGALES INPUT F3</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -23,6 +23,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/27-Cobranza de Legales/LEG02-Legales.Ingreso de abogado. Cuenta corriente en legales con abogado no ingresado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a1d83c1-706b-4a6c-80a8-7bba81d3aba7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/27-Cobranza de Legales/LEG03-Version de input de cobranza de legales-Ingreso de registro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -222,10 +229,24 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>f3c0cfce-fccd-49a3-863d-bf74877504c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST03-Posteos. Liquidacion de posteo. Consulta de Posteos de planta a caja por pago en efectivo. Trx NO Autorizada</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>83c21dbb-aaed-4b6a-a262-087fcd51d576</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/38-Cuentas/C01-Cuentas. Modificación de denominación de cuenta de PJ</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0f53830c-cc65-41d8-b65c-2e5d55e8ba53</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C02-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -289,6 +310,41 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/38-Cuentas/C11-Cuentas. Consulta de cuentas por estado. Visualizar el detalle de cuenta con bloqueo parcial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d18045db-0bce-4a22-9250-145b45287066</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C12-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id cuenta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7336a637-e066-4c5a-8b8e-f89e1f4e2676</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C13-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>efa29c38-dfb2-401b-bd1c-60b833c3fd5b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C14-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f3c8837d-6682-41da-9e56-8a1c5bebbac0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consulta Enquiry BCCL.E.FIRMAS.FISICA. Encabezado. Visualización</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ad12cb7b-766a-4f95-9398-48c71ff6f89d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -565,41 +621,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f3c0cfce-fccd-49a3-863d-bf74877504c7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/36-Posteo/PST03-Posteos. Liquidacion de posteo. Consulta de Posteos de planta a caja por pago en efectivo. Trx NO Autorizada</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d18045db-0bce-4a22-9250-145b45287066</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C12-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id cuenta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7336a637-e066-4c5a-8b8e-f89e1f4e2676</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C13-Consulta Enquiry BCCL.E.FIRMAS.CUENTA. Encabezado. Visualización. id persona</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>efa29c38-dfb2-401b-bd1c-60b833c3fd5b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C14-Cuentas. Modificación de firmantes de Cuenta de PF. Agregar un titular a una cuenta con producto que permita la modif de titulares</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0f53830c-cc65-41d8-b65c-2e5d55e8ba53</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C02-Cuentas. Consultas de cuenta PJ. Consulta de Modificaciones a Cuentas. Ver Histórico</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>43b707bb-f665-4357-8ce7-905e14390c5d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -663,24 +684,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>13bbc1aa-06dc-494a-a882-1191ae63c0a2</guid>
+      <guid>27dfa930-259c-4b1a-b630-32f42fe3c30b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/27-Cobranza de Legales/LEG03-Version de input de cobranza de legales-Ingreso de registro</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ad12cb7b-766a-4f95-9398-48c71ff6f89d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C16-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f3c8837d-6682-41da-9e56-8a1c5bebbac0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/38-Cuentas/C15-Cuentas. Consulta Enquiry BCCL.E.FIRMAS.FISICA. Encabezado. Visualización</testCaseId>
+      <testCaseId>Test Cases/31-Pago de intereses/PDI01-PAGO DE INTERESES. Consulta Devengamiento FCI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

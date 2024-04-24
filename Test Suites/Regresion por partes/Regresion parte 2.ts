@@ -61,6 +61,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>7fb9e531-faf2-4034-98fd-8cc1da2b8920</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con débito en cuenta. Acumuladores. Total Débitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>814d6243-6734-414f-8c49-a6d4ec3e215f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -208,6 +215,76 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>0a4a988c-7811-4d7e-880f-56499ff1d36c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON22-Moneda extranjera. Compra Venta. Consulta Totales de Operatoria. Detalle. Compra BANCA TAS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b6e07c0c-b0a7-45f3-80b2-ca218a7c9a72</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON23-Moneda extranjera. Compra Venta. Consulta Totales de Operatoria. Detalle. Venta BANCA TAS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d5f8ff33-918f-4c38-97e9-c7313e2190b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON25-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Acumulado por Asociado Mensual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b96e19ec-0afa-47a6-8b34-90b4c184abfa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON24-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Acumulado por Asociado Anual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ee3f0e74-c5f7-4d3e-b685-fa62888c6054</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON26-Consulta de Acumulados por Asociado Operaciones de Compra-Venta de Moneda Extranjera. Persona Fisica. Id Persona Valido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5cdb553c-b3d6-4a71-9a97-72f71ea7b211</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON27-Consulta de Compra Venta de Moneda Extranjera. Persona Juridica. Asociado sin Operaciones de Cambio Efectuadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9424b87b-edfc-4f89-82c3-0b1f1b9c1ed9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON28-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Acumulado por Asociado Anual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99c28ced-52a3-4481-bfea-2e144a0d953d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON29-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Acumulado por Asociado Mensual</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4b72ff44-bed1-4f05-aae1-d01371eada5e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON30-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera.Asociado sin Operaciones de Cambio Efectuadas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dda1c17d-bbd5-483f-8440-63301696b8f2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON31-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>0e3aab2e-f2bf-41ef-8532-93b8c3a3e5cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -233,13 +310,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/19-Cheque Cancelatorio/CHC04-Inventario de Cheques Financieros.Detalle.Cuenta sucursal CON datos validos</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7fb9e531-faf2-4034-98fd-8cc1da2b8920</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con débito en cuenta. Acumuladores. Total Débitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -523,6 +593,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>3081b875-c04f-4065-8b7c-193e9a777dc1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>c28a3ff8-4c6c-4f67-9632-bcc2720381a3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -534,83 +611,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC40-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Cajero</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3081b875-c04f-4065-8b7c-193e9a777dc1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0a4a988c-7811-4d7e-880f-56499ff1d36c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON22-Moneda extranjera. Compra Venta. Consulta Totales de Operatoria. Detalle. Compra BANCA TAS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b6e07c0c-b0a7-45f3-80b2-ca218a7c9a72</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON23-Moneda extranjera. Compra Venta. Consulta Totales de Operatoria. Detalle. Venta BANCA TAS</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d5f8ff33-918f-4c38-97e9-c7313e2190b4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON25-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Acumulado por Asociado Mensual</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b96e19ec-0afa-47a6-8b34-90b4c184abfa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON24-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Acumulado por Asociado Anual</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ee3f0e74-c5f7-4d3e-b685-fa62888c6054</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON26-Consulta de Acumulados por Asociado Operaciones de Compra-Venta de Moneda Extranjera. Persona Fisica. Id Persona Valido</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5cdb553c-b3d6-4a71-9a97-72f71ea7b211</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON27-Consulta de Compra Venta de Moneda Extranjera. Persona Juridica. Asociado sin Operaciones de Cambio Efectuadas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9424b87b-edfc-4f89-82c3-0b1f1b9c1ed9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON28-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Acumulado por Asociado Anual</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>99c28ced-52a3-4481-bfea-2e144a0d953d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON29-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Acumulado por Asociado Mensual</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4b72ff44-bed1-4f05-aae1-d01371eada5e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON30-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera.Asociado sin Operaciones de Cambio Efectuadas</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>dda1c17d-bbd5-483f-8440-63301696b8f2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON31-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -660,6 +660,41 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/37-Ajustes Monetarios/AM07-Ajustes Monetarios. Contrasiento.Consulta Movimientos de la Transacción. Transacción es CHG. Detalle</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8d194c7b-ce82-475f-b707-2cabb4cf1c06</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP07-Alta de partida de IP. Caja</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>85e2a6da-c00a-4003-b9d0-be77d464881a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP08-Alta de partida de IP. Cuenta Contable</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5b4bcb0f-bdc9-497a-8c30-15010fd6c4c1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP09-Alta de partida IP-Cuenta de socio-codigoCR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>20b95f40-94ce-45fd-8a58-f987d30d8aea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP10-Alta de partida de IP-Cuenta de socio-CodigoDB</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fab87777-4f0f-4d13-aab6-7cfc1f057383</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/26-Inventario Permanente/IP11-Reversa Alta IP - Cuenta socio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
