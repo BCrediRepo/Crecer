@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblCONRESTRICCIONBLOQUEOTOTAL</name>
+   <name>lblATESORAMIENTODEBAJODELMINIMO</name>
    <tag></tag>
-   <elementGuidId>3c13df3a-430a-4092-8679-1ddd1e761d0b</elementGuidId>
+   <elementGuidId>205ce412-e31b-4968-83da-1bf32cd49094</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[@id='OVE1']</value>
+         <value>//td[@id='OVE3']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#OVE2</value>
+         <value>#OVE4</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>d4386c94-ee4e-4e2e-816b-83c0a15d1fba</webElementGuid>
+      <webElementGuid>f25bea9d-1540-42b2-bf1d-fa9d8f23c753</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>overrideOn</value>
-      <webElementGuid>09ef538e-5768-41e3-b1a7-459bb1926c20</webElementGuid>
+      <webElementGuid>22d4f97e-8f75-42e5-b86c-6ec64b5c1eee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>height</name>
       <type>Main</type>
       <value>15</value>
-      <webElementGuid>a097d9cc-6928-4334-8afe-5c55b4b52dcf</webElementGuid>
+      <webElementGuid>2ce511ea-a359-49fc-9cec-bc59fe5bed6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,102 +46,102 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>86efeedf-c60a-46b5-a554-c2e28e08af1d</webElementGuid>
+      <webElementGuid>0dfb999e-3012-4617-9f7f-b5c861244ecd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>OVE1</value>
-      <webElementGuid>8b8e0c47-2d1a-4a81-839c-e6eeaf79ecf8</webElementGuid>
+      <value>OVE3</value>
+      <webElementGuid>4d9b97f3-e87c-45c4-b1d7-d715be133e56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL</value>
-      <webElementGuid>a43d9568-1211-4435-b278-c8c90d20591a</webElementGuid>
+      <value>ATESORAMIENTO EXCEDE EL MAXIMO POR $ 211.802,90</value>
+      <webElementGuid>2a7d5c0d-3d25-4fa9-bc07-825ce07eea2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;OVE1&quot;)</value>
-      <webElementGuid>486fb273-651f-4626-9f13-343751b80f61</webElementGuid>
+      <value>id(&quot;OVE3&quot;)</value>
+      <webElementGuid>51018b09-bae5-451a-a73d-8c74fd32dbe2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//td[@id='OVE1']</value>
-      <webElementGuid>6de7162c-8dd6-4150-a5ba-c6a5e5793d2d</webElementGuid>
+      <value>//td[@id='OVE3']</value>
+      <webElementGuid>3336916f-619e-4cdf-bf54-41444f0dd050</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='error_box']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[2]</value>
-      <webElementGuid>8287013a-c9f4-4ab4-b87f-030e9c755fee</webElementGuid>
+      <value>//div[@id='error_box']/table/tbody/tr[3]/td/table[2]/tbody/tr[3]/td[2]</value>
+      <webElementGuid>72022394-e0aa-416b-924e-cc99209cedb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aceptar Alertas'])[1]/following::td[3]</value>
-      <webElementGuid>cbf6b631-8616-4ec9-8f02-48992e2985c4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV1'])[1]/following::td[2]</value>
+      <webElementGuid>37e0323e-0780-4c02-a4a7-04e7f3241cf2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ctr)'])[1]/following::td[7]</value>
-      <webElementGuid>c3213e29-c643-4105-914f-a2c5d8b4b549</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirme el importe de la transaccion'])[1]/following::td[4]</value>
+      <webElementGuid>e4995543-9684-4e0d-8472-255f4183c241</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV1'])[1]/preceding::td[2]</value>
-      <webElementGuid>3f01f69d-dcd2-4741-a978-e289ffaa2b14</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deposito De Efectivo En Ventanilla'])[2]/preceding::td[2]</value>
+      <webElementGuid>263ef592-19db-4784-8e0b-b65926e3f831</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='MOV A APLICAR SOBRE CTA 00890052464 TIPO BLOQUEO TOTAL REQUIERE AUTORIZACION'])[1]/preceding::td[4]</value>
-      <webElementGuid>c8e8d536-5f4b-440e-aa73-52385b164f33</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/preceding::td[3]</value>
+      <webElementGuid>363e9f0c-ff03-4a27-975c-ceb885d2544c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL']/parent::*</value>
-      <webElementGuid>e2b42c90-a59f-4ebb-b8ff-866b1ac7b3ed</webElementGuid>
+      <value>//*/text()[normalize-space(.)='ATESORAMIENTO EXCEDE EL MAXIMO POR $ 211.802,90']/parent::*</value>
+      <webElementGuid>ae2d08d8-f93e-48e8-9fab-fb97d295f2f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//table[2]/tbody/tr/td[2]</value>
-      <webElementGuid>ef9f4219-fe5e-4a1e-ae5b-84b15bfbb773</webElementGuid>
+      <value>//tr[3]/td[2]</value>
+      <webElementGuid>88412e15-3393-4e44-a407-2aaca7890b06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[@id = 'OVE1' and (text() = 'CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL' or . = 'CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL')]</value>
-      <webElementGuid>b56b699c-438c-4a69-8cdb-cbca7004a6d8</webElementGuid>
+      <value>//td[@id = 'OVE3' and (text() = 'ATESORAMIENTO EXCEDE EL MAXIMO POR $ 211.802,90' or . = 'ATESORAMIENTO EXCEDE EL MAXIMO POR $ 211.802,90')]</value>
+      <webElementGuid>ad748492-1573-4a69-950b-9b51e0b4dbc4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

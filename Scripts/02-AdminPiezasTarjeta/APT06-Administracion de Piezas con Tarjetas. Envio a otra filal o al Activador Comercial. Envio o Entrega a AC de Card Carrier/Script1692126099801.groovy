@@ -42,30 +42,33 @@ import java.sql.Statement
  
 
 import javax.swing.JOptionPane
-//-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM User WHERE User = 'F02055'"
-
-
-String vUser = null
-
-CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
-
-
-//Consulta a la base de datos
-ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
-
-vUser = vResult.getString(1)
-
-
-//Cierre de la conexion
-CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
-//---------------------------------------------------------------------------------------------------------------------
+////-------------------Conecta a base de datos--------------------------------------------
+//def vQuery = "SELECT * FROM User WHERE User = 'F02055'"
+//
+//
+//String vUser = null
+//
+//CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+//
+//
+////Consulta a la base de datos
+//ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+//
+//vUser = vResult.getString(1)
+//
+//
+////Cierre de la conexion
+//CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+////---------------------------------------------------------------------------------------------------------------------
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
+
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgMetodos.kwymetodos.Login'(vUser)
+//CustomKeywords.'pkgMetodos.kwymetodos.Login'(vUser)
 
 //Se accede al menu ?302
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')

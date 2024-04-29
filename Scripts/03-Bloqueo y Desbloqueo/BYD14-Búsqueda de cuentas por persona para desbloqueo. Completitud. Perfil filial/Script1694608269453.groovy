@@ -42,24 +42,24 @@ import java.sql.ResultSet
 import java.sql.Statement
 import javax.swing.JOptionPane
 
-//-------------------Conecta a base de datos--------------------------------------------
-def vQuery = "SELECT * FROM User WHERE User = 'F00076'"
-
-
-String vUser = null
-
-CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
-
-
-//Consulta a la base de datos
-ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
-
-vUser = vResult.getString(1)
-
-
-//Cierre de la conexion
-CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
-//---------------------------------------------------------------------------------------------------------------------
+////-------------------Conecta a base de datos--------------------------------------------
+//def vQuery = "SELECT * FROM User WHERE User = 'F00076'"
+//
+//
+//String vUser = null
+//
+//CustomKeywords.'pkgDatabase.kwySQL.connectDB'()
+//
+//
+////Consulta a la base de datos
+//ResultSet vResult = CustomKeywords.'pkgDatabase.kwySQL.executeQuery'(vQuery)
+//
+//vUser = vResult.getString(1)
+//
+//
+////Cierre de la conexion
+//CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
+////---------------------------------------------------------------------------------------------------------------------
 
 //Test Case Name: Búsqueda de cuentas por persona para desbloqueo. Completitud. Perfil filial
 
@@ -67,10 +67,10 @@ CustomKeywords.'pkgDatabase.kwySQL.closeDatabaseConnection'()
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Se loguea con el usuario seleccionado
-CustomKeywords.'pkgMetodos.kwymetodos.Login'(vUser)
+//CustomKeywords.'pkgMetodos.kwymetodos.Login'(vUser)
 
 //Login
-//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,19), findTestData('MainData/Users').getValue(2,19))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,19), findTestData('MainData/Users').getValue(2,19))
 WebUI.maximizeWindow()
 
 //Accedo al menu de Bloqueo y Desbloqueo

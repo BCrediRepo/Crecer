@@ -63,6 +63,9 @@ WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account C
 //Click en aceptar registro
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnAceptar Registro'))
 
+//Click en Aceptar Alertas
+WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkAceptar Alertas'))
+
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))

@@ -267,7 +267,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/17-Mov
 
 def element6 = WebUI.getText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTransaction Type'))
 
-assert element6.contains('Transaction Type')
+assert element6.contains('Tipo Operacion')
 
 
 //---------------------------------------------------------------------------------------------------------------------

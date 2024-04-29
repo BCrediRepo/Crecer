@@ -72,6 +72,9 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar "Boton Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
 
+//Seleccionar "Aceptar Alertas"
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
+
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 

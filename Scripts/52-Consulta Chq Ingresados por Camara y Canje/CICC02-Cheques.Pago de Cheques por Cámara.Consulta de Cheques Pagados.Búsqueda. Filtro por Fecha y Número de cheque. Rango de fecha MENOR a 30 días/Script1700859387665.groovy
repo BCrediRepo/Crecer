@@ -49,7 +49,7 @@ WebUI.switchToWindowTitle('BCCL.E.CHQ.PAGADOS')
 
 //SETEAR UNA FECHA MENOR A 30 DIAS DE LA FECHA ACTUAL DEL AMBIENTE
 //Setear "Fecha Desde"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.PAGADOS/txtFechaDesde'), '20230731') 
+WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.PAGADOS/txtFechaDesde'), '20230801') 
 
 //Setear "Sucursal"
 WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.PAGADOS/txtSucursal'), '173')
