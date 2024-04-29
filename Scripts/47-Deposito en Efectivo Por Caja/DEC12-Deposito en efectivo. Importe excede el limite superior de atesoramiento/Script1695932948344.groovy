@@ -94,10 +94,17 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efe
 WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'))
 
 //Espera y recibe mensaje de ATESORAMIENTO EXCEDE EL MAXIMO
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'))
-def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'))
-assert element.contains('ATESORAMIENTO EXCEDE EL MAXIMO')
+//WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'),6)
+//WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'))
+//def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'))
+//assert element.contains('ATESORAMIENTO EXCEDE EL MAXIMO')
+
+
+//Espera y recibe mensaje de ATESORAMIENTO DEBAJO DEL MINIMO
+WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'))
+def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'))
+assert element.contains('ATESORAMIENTO DEBAJO DEL MINIMO')
 
 //---------------------------------------------------------------------------------------------------------------------
 

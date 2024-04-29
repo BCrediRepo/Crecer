@@ -6,15 +6,15 @@
    <elementGuidId>de55493a-77dc-4c62-8a72-d512e94b9c5a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#OVE2</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//td[@id='OVE2']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#OVE3</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>d3ae86b3-7652-436a-9689-aaf495a4052d</webElementGuid>
+      <webElementGuid>d684900c-50c0-4551-b2dc-d08b9fb6c3ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>overrideOn</value>
-      <webElementGuid>a2747f62-3c63-46ff-9f59-c51d897a1e26</webElementGuid>
+      <webElementGuid>310b0ad3-ba8d-47b1-8762-30ccb979c19f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>height</name>
       <type>Main</type>
       <value>15</value>
-      <webElementGuid>5930fb9d-3827-4358-9632-700460f306a1</webElementGuid>
+      <webElementGuid>59feb819-d60c-4674-aa17-540f5402981e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>67917d61-6317-432d-bc7c-468570c9f308</webElementGuid>
+      <webElementGuid>3980a53d-9931-48e1-8899-4071d25addd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>id</name>
       <type>Main</type>
       <value>OVE2</value>
-      <webElementGuid>cc08dc35-9203-4d4c-93ad-d2713cec0460</webElementGuid>
+      <webElementGuid>e78f2539-77d5-42f3-8e41-44b4a2a27b41</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CUENTA 00890014534 CON RESTRICCION BLOQUEO DEBITOS</value>
-      <webElementGuid>725858b1-d41c-4bc7-847a-c88eed71035e</webElementGuid>
+      <webElementGuid>56963d97-e003-4713-8004-2cc6e3b31048</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;OVE2&quot;)</value>
-      <webElementGuid>77cb72b7-31b6-431b-8605-c14bb868651c</webElementGuid>
+      <webElementGuid>60d79492-5441-4cbe-8901-687b5de0b052</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//td[@id='OVE2']</value>
-      <webElementGuid>75caea8d-8cf4-4485-a40c-9d159a6bae75</webElementGuid>
+      <webElementGuid>0efa11c5-2c3b-47e9-bdbb-8de9508b8416</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='error_box']/table/tbody/tr[3]/td/table[2]/tbody/tr[2]/td[2]</value>
-      <webElementGuid>14a472bb-05f6-4e58-8da0-4c5a41130b6a</webElementGuid>
+      <webElementGuid>0a4c6795-719d-4c2d-b203-6db88404c746</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Caja Sobregirada'])[1]/following::td[2]</value>
-      <webElementGuid>0c5c7e96-8736-4480-b766-c0f0158a8ab9</webElementGuid>
+      <webElementGuid>b5b39494-68f8-4c0e-a241-64f20f526dfc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aceptar Alertas'])[1]/following::td[5]</value>
-      <webElementGuid>359d5467-12a9-42c3-90c2-9a344326bb51</webElementGuid>
+      <webElementGuid>a40e567d-4ac8-44c0-a722-48a4395d5fe0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV1'])[1]/preceding::td[2]</value>
-      <webElementGuid>90b5a224-0814-46b6-9218-976efcbcdf79</webElementGuid>
+      <webElementGuid>b1fd7f28-f437-4eaa-bbc2-62b0ab8f0683</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ATESORAMIENTO DEBAJO DEL MINIMO POR $ 181.190,15'])[1]/preceding::td[4]</value>
-      <webElementGuid>69b5b046-59a5-4121-9884-49d2a396910b</webElementGuid>
+      <webElementGuid>7cca1eae-fa9b-42e7-931a-162a0a36da62</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='CUENTA 00890014534 CON RESTRICCION BLOQUEO DEBITOS']/parent::*</value>
-      <webElementGuid>777cc9c0-b20c-4737-8e96-fd879f9ecf06</webElementGuid>
+      <webElementGuid>83b5a40b-8474-4bf2-bac8-41b05d2cf9b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td[2]</value>
-      <webElementGuid>6487322e-e0cb-4061-8de0-1be118a9db49</webElementGuid>
+      <webElementGuid>62441e22-90b3-4b98-b6e7-cd850ce078e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[@id = 'OVE2' and (text() = 'CUENTA 00890014534 CON RESTRICCION BLOQUEO DEBITOS' or . = 'CUENTA 00890014534 CON RESTRICCION BLOQUEO DEBITOS')]</value>
-      <webElementGuid>248df8af-3927-44c5-a50d-b92d04958282</webElementGuid>
+      <webElementGuid>bf032cc2-a12a-4ff0-b315-f52ff5619ba5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#tab2 > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(3) > span:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//table[@id='tab2']/tbody/tr/td[3]/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>7bb1ca5c-3e0e-4d1d-b264-ce5b61517c76</webElementGuid>
+      <webElementGuid>2dd689d5-47c7-4632-96f4-2b8d68f57ab0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_PASEENTRECAJAS</value>
-      <webElementGuid>d5794b53-9b97-47cb-b8a1-abc665080bf4</webElementGuid>
+      <webElementGuid>181e7bdd-e5dc-4c60-bbb0-0520095edaf8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>INAU</value>
-      <webElementGuid>5527a54d-f9ab-4374-acc6-eddbc887ed25</webElementGuid>
+      <webElementGuid>347ec4fe-5811-4488-9f10-85b2dcc1b86e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab2&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_PASEENTRECAJAS&quot;]</value>
-      <webElementGuid>844dfbc3-0c32-4a5f-8daf-b6d6d802699e</webElementGuid>
+      <webElementGuid>c832eb31-1c12-4e3b-9f7d-100f06b9dc6c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab2']/tbody/tr/td[3]/span</value>
-      <webElementGuid>8044ea9e-b261-47ad-a3df-c498e6fcd139</webElementGuid>
+      <webElementGuid>ffb37a41-7d23-43db-a7ac-b8571146f631</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado del Registro'])[1]/following::span[1]</value>
-      <webElementGuid>d3050d57-2ae5-4eec-8007-933e9e930c35</webElementGuid>
+      <webElementGuid>492729c6-9e3c-45b5-ba2c-1f729a0bbb78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='PRUEBA DE SOLICITUD'])[1]/following::span[2]</value>
-      <webElementGuid>beb5228a-3b31-4261-95fc-04fb5ddbbcb5</webElementGuid>
+      <webElementGuid>c4802a79-24a6-41ca-915b-a7eb80b8308d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizacion Nro'])[1]/preceding::span[1]</value>
-      <webElementGuid>e7b54429-3927-4e08-9dee-e01a92452755</webElementGuid>
+      <webElementGuid>27a050cf-f072-4b46-820f-4e5493c3ec00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresado Por.1'])[1]/preceding::span[2]</value>
-      <webElementGuid>fea8ec7d-4de5-43e4-9758-ea8b33ffed20</webElementGuid>
+      <webElementGuid>2f756baf-5089-4f8e-b995-b96806244561</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='INAU']/parent::*</value>
-      <webElementGuid>88ab935b-8f44-4294-b4ba-b0eca68421b1</webElementGuid>
+      <webElementGuid>19b68f12-7e1e-438c-9f02-f6b6c9922344</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//table[2]/tbody/tr/td[3]/span</value>
-      <webElementGuid>0cbfcf57-24f6-42c1-8eab-da6c91957e14</webElementGuid>
+      <webElementGuid>23a09929-b24f-4ad8-ae8d-eca16149bcd3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'INAU' or . = 'INAU')]</value>
-      <webElementGuid>05447e4f-afd3-4781-a9eb-6e9a0f5a9c1e</webElementGuid>
+      <webElementGuid>572b5db2-5033-4978-b21d-393098c9f051</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

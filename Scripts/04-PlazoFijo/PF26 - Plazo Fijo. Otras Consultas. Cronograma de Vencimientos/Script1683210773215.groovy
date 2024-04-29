@@ -35,9 +35,9 @@ WebUI.switchToWindowTitle('Cronograma Vencimientos')
 texto = WebUI.getText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lblPos3'))
 
 if (texto == 'Fecha Vto.') {
-    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos3'), '20230830')
+    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos3'), '20230901')
 } else {
-    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos1'), '20230830')
+    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos1'), '20230901')
 }
 
 // Captura el tiempo de inicio
@@ -49,7 +49,7 @@ WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Cronograma Vencimientos/
 
 fecha = WebUI.getText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lbl31AGO2022'))
 
-assert fecha == '30 AGO 2023'
+assert fecha == '01 SEP 2023'
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

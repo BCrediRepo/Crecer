@@ -100,7 +100,7 @@ WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtPorcentajeB
 
 //Ingresa Bonificacion.
 //Ingresa fecha hasta.
-WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtFechaVigenciaHasta'), '20230828')
+WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtFechaVigenciaHasta'), '20230831')
 
 //Acepta el registro
 WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/btnAceptarRegistro'))
@@ -113,8 +113,10 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.
 
 def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/BCCL.E.CTA.CONS.BONIF/lblFaltaIngresarInformacion'))
 
-assert element.contains('VALOR DEBE SER MAYOR A 0 Y MENOR O IGUAL A 100') //Control de fin de script
+assert element.contains('VALOR DEBE SER MAYOR A 0 Y MENOR O IGUAL A 100') 
 
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
