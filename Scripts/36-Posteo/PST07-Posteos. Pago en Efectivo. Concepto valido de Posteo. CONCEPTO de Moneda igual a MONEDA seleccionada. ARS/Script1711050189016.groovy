@@ -108,6 +108,15 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Pago en Efectivo/lblTxnCompleta'))
 assert element.contains('Txn Completa:') 
 
+//Definir Objeto
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+
+//Dividir la cadena por espacios en blanco y tomar elemento
+def partes = Transaccion1.split('\\s+')
+def trx1 = partes[2]
+GlobalVariable.vTxn = trx1
+assert Transaccion1.contains('Txn Completa:')
+
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 

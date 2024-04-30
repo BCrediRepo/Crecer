@@ -78,14 +78,14 @@
       <guid>74b3b61f-7ca4-41fe-abac-2dc5bd440014</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC10-Deposito en efectivo. Datos de Ingreso. Operación en Dolares. Persistencia</testCaseId>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC10-Deposito en efectivo. Datos de Ingreso. Operacion en Dolares. Persistencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f57b2833-9295-4919-801e-236d510a52f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC11-Deposito en efectivo. Datos de Ingreso. Operación en Pesos. Persistencia</testCaseId>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC11-Deposito en efectivo. Datos de Ingreso. Operacion en Pesos. Persistencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

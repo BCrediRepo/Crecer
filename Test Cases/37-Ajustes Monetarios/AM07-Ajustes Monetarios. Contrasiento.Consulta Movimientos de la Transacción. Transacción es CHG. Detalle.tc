@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>AM07-Ajustes Monetarios. Contrasiento.Consulta Movimientos de la Transacción. Transacción es CHG. Detalle</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1e045a78-917e-4f91-9a8b-81507b97fa17</testCaseGuid>
-</TestCaseEntity>

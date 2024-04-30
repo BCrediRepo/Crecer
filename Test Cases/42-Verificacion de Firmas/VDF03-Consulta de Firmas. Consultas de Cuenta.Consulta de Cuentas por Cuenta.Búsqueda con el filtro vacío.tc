@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>VDF03-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta.Búsqueda con el filtro vacío</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>81243745-7f0a-422d-9130-625135981de0</testCaseGuid>
-</TestCaseEntity>

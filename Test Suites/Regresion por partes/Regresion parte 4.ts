@@ -575,105 +575,105 @@
       <guid>e14ea029-c5ad-453d-a380-438f72bd0929</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF01-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Completitud de búsqueda</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF01-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Completitud de busqueda</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ee05fb50-0f7d-4d86-b882-08ff9fb8e80b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF02-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Cuenta inválida</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF02-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Cuenta invalida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>75bd52b7-9b2a-4a88-8153-53fd0f3de802</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF03-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta.Búsqueda con el filtro vacío</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF03-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta.Busqueda con el filtro vacio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>df25b797-2149-49a6-8aae-10656f67f199</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF04-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Completitud de búsqueda</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF04-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Completitud de busqueda</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7fc9c1e3-8b89-4c5f-8993-eafb2b97e3e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF05-Firmas. BCCL.AS.FIRMA,AUDIT. Acceder con valor FI FI22199057600818 válido y existente</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF05-Firmas. BCCL.AS.FIRMA,AUDIT. Acceder con valor valido y existente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>83c1abe9-5144-4499-bfc5-6482171304c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF06-Firmas. ENQ BCCL.E.AS.FIRMA. Validación de datos (Fecha igual VACÍO)</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF06-Firmas. ENQ BCCL.E.AS.FIRMA. Validacion de datos (Fecha igual VACIO)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ac49f5dc-49d6-4082-8d63-354041f18c8e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF07-Firmas. BCCL.AS.FIRMA,CONSULTA. Acceder con valor FI22173000006301 válido y existente</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF07-Firmas. BCCL.AS.FIRMA,CONSULTA. Acceder con valor valido y existente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>43b707bb-f665-4357-8ce7-905e14390c5d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF08-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Datos válidos</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF08-Consulta de Firmas. Consultas de Cuenta.Consulta de Cuentas por Cuenta. Datos validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4033f9e5-5bd4-47c5-b8f5-6e6b2f29ef0f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF09-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Búsqueda con el filtro vacío</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF09-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Busqueda con el filtro vacio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0a34d4d7-24c6-4d98-ab33-59ea0f4c7e88</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF10-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Persona inválida</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF10-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Persona invalida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>60d7a59a-2526-4eff-9d06-a9f9c328aba7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF11- Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante .Completitud de menú</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF11- Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante .Completitud de menu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>3b59c507-7816-44b2-b73e-9e38da135d97</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF12-Consulta de Firmas. Desde Consulta Gral. Persona Física. Consulta de Firmas Física. Datos válidos</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF12-Consulta de Firmas. Desde Consulta Gral. Persona Fisica. Consulta de Firmas Fisica. Datos validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d1564199-ab17-433f-b1bd-10174215a6b0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF13-Consulta de Firmas. Desde Consulta Gral. Persona Física. Consulta de Firmas Física. Búsqueda con el filtro vacío</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF13-Consulta de Firmas. Desde Consulta Gral. Persona Fisica. Consulta de Firmas Fisica. Busqueda con el filtro vacio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a0e65412-ed5b-446d-8185-9fee383715f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF14-Firmas. ENQ BCCL.E.AS.FIRMA. Validación de datos (Número de cuenta)</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF14-Firmas. ENQ BCCL.E.AS.FIRMA. Validacion de datos (Numero de cuenta)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a93b8f29-19bf-4274-a100-94e7ec0947ba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF15-Firmas. ENQ BCCL.E.AS.FIRMA. Número de cuenta y Fecha válidos y existentes</testCaseId>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF15-Firmas. ENQ BCCL.E.AS.FIRMA. Numero de cuenta y Fecha validos y existentes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

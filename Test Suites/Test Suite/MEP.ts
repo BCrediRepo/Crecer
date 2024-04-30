@@ -22,7 +22,7 @@
       <guid>9741e154-1d25-490e-8e59-4573528a2668</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/11-MEP/MEP02-MEP. Transferencuas enviadas. Eliminacion Map</testCaseId>
+      <testCaseId>Test Cases/11-MEP/MEP02-MEP. Transferencias enviadas. Eliminacion Map</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

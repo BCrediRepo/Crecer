@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>VDF09-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Búsqueda con el filtro vacío</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bd85856d-b475-4cb8-9836-52e06fdadc39</testCaseGuid>
-</TestCaseEntity>

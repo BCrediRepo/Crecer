@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>EXT01-Extracción en efectivo por Caja Impresión desde ticketeadora</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>8bac3928-284e-4821-bba9-ee62bde59cfa</testCaseGuid>
-</TestCaseEntity>

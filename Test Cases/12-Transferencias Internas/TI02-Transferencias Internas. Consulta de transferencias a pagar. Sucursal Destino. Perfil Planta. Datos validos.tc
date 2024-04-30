@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TI02-Transferencias Internas. Consulta de transferencias a pagar. Sucursal Destino. Perfil Planta. Datos validos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e27d6118-d37d-4d72-ac26-2f9951e5d4a8</testCaseGuid>
+</TestCaseEntity>

@@ -182,7 +182,7 @@ for (WebElement row : rows) {
 }
 
 
-WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAutorizar'))
 

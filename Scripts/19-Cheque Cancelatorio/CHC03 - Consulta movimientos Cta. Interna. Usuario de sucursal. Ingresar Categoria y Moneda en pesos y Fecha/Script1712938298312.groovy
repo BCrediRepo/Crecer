@@ -86,7 +86,7 @@ println TotalRegistros
 
 WebUI.click(findTestObject('20-Cheque Cancelatorio/Consulta Mov de Cuentas Internas/btnLargavista'))
 
-WebUI.delay(30)
+WebUI.delay(20)
 
 WebUI.switchToWindowTitle('Account Statement')
 

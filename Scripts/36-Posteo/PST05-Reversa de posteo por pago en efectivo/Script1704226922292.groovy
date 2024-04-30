@@ -51,14 +51,15 @@ WebUI.setText(findTestObject('37-Posteo/BCCL.E.EB.CONS.REVE/txtUsuario'), 'B.041
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.delay(15)
-
 //Reverso de posteo y verificacion de TXN completa
 WebUI.click(findTestObject('37-Posteo/BCCL.E.EB.CONS.REVE/lnkReversar'))
 
-WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.switchToWindowTitle('TELLER')
 
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnReversar'))
+
+//Seleccionar "Aceptar Alertas
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
 
 WebUI.verifyElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
 

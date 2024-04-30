@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>VDF07-Firmas. BCCL.AS.FIRMA,CONSULTA. Acceder con valor FI22173000006301 válido y existente</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a63efcb4-8ce9-4234-9e48-b0fc74e25ceb</testCaseGuid>
-</TestCaseEntity>

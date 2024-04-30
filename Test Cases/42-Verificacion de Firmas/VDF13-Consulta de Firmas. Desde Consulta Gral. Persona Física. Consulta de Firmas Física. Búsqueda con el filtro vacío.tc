@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>VDF13-Consulta de Firmas. Desde Consulta Gral. Persona Física. Consulta de Firmas Física. Búsqueda con el filtro vacío</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>90ccd74b-6150-42be-84af-99ea720a2801</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AM01 - Ajustes monetarios. Alta de Nota de Debito Ajuste. Fecha valor permitida. Saldo suficiente entre fecha valor y fecha de proceso. Cuenta sin bloqueos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6e7c17e6-23c0-4009-a5d3-04d36d526203</testCaseGuid>
+</TestCaseEntity>

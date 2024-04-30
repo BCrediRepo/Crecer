@@ -64,7 +64,7 @@
       <guid>7b5e9433-e8fb-4d9b-a70d-e3de9fbdf427</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/43-TOB/TOB08-Transferencia OnLine a otros bancos.CUIT Formato No Válido</testCaseId>
+      <testCaseId>Test Cases/43-TOB/TOB08-Transferencia OnLine a otros bancos.CUIT Formato No Valido</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
