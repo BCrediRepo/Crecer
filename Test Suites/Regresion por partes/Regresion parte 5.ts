@@ -274,7 +274,7 @@
       <guid>8914cc1a-bdab-4ffb-97bf-e4ddfb3d21db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/43-TOB/TOB08-Transferencia OnLine a otros bancos.CUIT Formato No Válido</testCaseId>
+      <testCaseId>Test Cases/43-TOB/TOB08-Transferencia OnLine a otros bancos.CUIT Formato No Valido</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -484,14 +484,14 @@
       <guid>f0ffbe95-e09f-4e88-80a5-44fea85a82b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC10-Deposito en efectivo. Datos de Ingreso. Operación en Dolares. Persistencia</testCaseId>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC10-Deposito en efectivo. Datos de Ingreso. Operacion en Dolares. Persistencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0679f043-5f69-437b-a88c-4e5b3fef6d58</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC11-Deposito en efectivo. Datos de Ingreso. Operación en Pesos. Persistencia</testCaseId>
+      <testCaseId>Test Cases/47-Deposito en Efectivo Por Caja/DEC11-Deposito en efectivo. Datos de Ingreso. Operacion en Pesos. Persistencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -540,91 +540,91 @@
       <guid>91a1eac0-f6f7-4f0a-89aa-ca9718187667</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT01-Extracción en efectivo por Caja Impresión desde ticketeadora</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT01-Extraccion en efectivo por Caja Impresion desde ticketeadora</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c48b6fd1-60a8-4310-b62d-06ac31fc0536</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT02-Extracción en efectivo por Caja. Contenido del Ticket. Caja de ahorro en dólares</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT02-Extraccion en efectivo por Caja. Contenido del Ticket. Caja de ahorro en dolares</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e98a5de3-f5ac-4fa8-b018-f44068abf070</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT03-Extracción en efectivo por Caja. Contenido del ticket. Importe con una cifra decimal</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT03-Extraccion en efectivo por Caja. Contenido del ticket. Importe con una cifra decimal</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0230fe85-5b84-437e-b296-d6ea63622448</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT04-Extracción en efectivo por Caja. Contenido del ticket. Moneda Dólares</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT04-Extraccion en efectivo por Caja. Contenido del ticket. Moneda Dolares</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c518d567-da31-450c-89ee-c1c5e9619850</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT05-Extracción en efectivo por Caja. Contenido del ticket. Moneda Pesos</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT05-Extraccion en efectivo por Caja. Contenido del ticket. Moneda Pesos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8afce880-95c5-47d7-ba96-f1c132093e22</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT06-Extracción en efectivo por Caja.Contenido del Ticket. Caja de ahorro en pesos</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT06-Extraccion en efectivo por Caja.Contenido del Ticket. Caja de ahorro en pesos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>659f2b1e-e852-4a47-9bc4-e135f7efa4c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT07-Extracción en efectivo por Caja. Extracción en Cuenta Cerrada</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT07-Extraccion en efectivo por Caja. Extraccion en Cuenta Cerrada</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>86c7d2fa-5e15-49c1-89e0-6387ecfe45b6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT08-Extracción en efectivo por Caja. Contenido del Ticket. Datos correctos</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT08-Extraccion en efectivo por Caja. Contenido del Ticket. Datos correctos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8815bfd8-c620-41ac-bd2b-6e007805d3a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT09-Extracción en efectivo por Caja. Contenido del ticket. Importe sin cifras decimales</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT09-Extraccion en efectivo por Caja. Contenido del ticket. Importe sin cifras decimales</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>14ae2227-944d-4e21-a677-e939cef82b26</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT10-Extracción en efectivo por Caja. Cuenta Abierta. Cuenta con Bloqueo a los DÉBITOS. Movimiento no aplica sobre cuentas bloqueadas</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT10-Extraccion en efectivo por Caja. Cuenta Abierta. Cuenta con Bloqueo a los DEBITOS. Movimiento no aplica sobre cuentas bloqueadas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e63eb7c5-65ad-4b06-9729-d784df1c9362</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT11-Extracción en efectivo por Caja. Cuenta Abierta. Cuenta con bloqueo TOTAL. Movimiento no aplica sobre cuentas bloqueadas</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT11-Extraccion en efectivo por Caja. Cuenta Abierta. Cuenta con bloqueo TOTAL. Movimiento no aplica sobre cuentas bloqueadas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f4287c29-a72f-4e90-9459-5d33e877272b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT12-Extracción en efectivo por Caja. Cuenta con Bloqueo a los CRÉDITOS</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT12-Extraccion en efectivo por Caja. Cuenta con Bloqueo a los CREDITOS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4d8f7597-2eac-469e-ab6c-f3c2713e8e06</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/48-Extraccion/EXT13-Extracción en efectivo por Caja. Cuenta con Bloqueo Parcial. Saldo no bloqueado insuficiente. Movimiento no aplica sobre cuentas bloqueadas</testCaseId>
+      <testCaseId>Test Cases/48-Extraccion/EXT13-Extraccion en efectivo por Caja. Cuenta con Bloqueo Parcial. Saldo no bloqueado insuficiente. Movimiento no aplica sobre cuentas bloqueadas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

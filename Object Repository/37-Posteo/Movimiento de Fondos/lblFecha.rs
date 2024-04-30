@@ -7,14 +7,17 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Fecha' or . = 'Fecha')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@id='fieldCaption:DEBIT.VALUE.DATE']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>553a3ff7-4b8f-4cd0-979d-d579f20d5adc</webElementGuid>
+      <webElementGuid>a74436d2-9f02-4f5a-94d7-8e13cb0df2da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +33,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>26241f61-0ca8-4f1b-a28b-356ee6a41ec8</webElementGuid>
+      <webElementGuid>0652ca7c-f1dc-4fb3-a963-cb79be31d3ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +41,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>916e2149-556d-4047-bb24-14b9955a1a20</webElementGuid>
+      <webElementGuid>948fb8d9-643c-4aa2-a499-f8f9260c5b23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,23 +49,23 @@
       <name>class</name>
       <type>Main</type>
       <value>field field_FUNDSTRANSFER field_FUNDSTRANSFER_POSTEOINGRESOS</value>
-      <webElementGuid>f3902827-21cd-4bdd-9641-1f6c2a8ee947</webElementGuid>
+      <webElementGuid>3b3da500-9fe0-49b5-ba5a-f93d7cf4b035</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
       <value>fieldCaption:DEBIT.VALUE.DATE</value>
-      <webElementGuid>36a181a4-87e7-4126-8bdd-a3a8b3e36c98</webElementGuid>
+      <webElementGuid>a905b302-b685-478e-b478-f3281107aa73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>fieldCaption:DEBIT.VALUE.DATE</value>
-      <webElementGuid>5dc7eaec-0e88-4e4b-932d-ede981863328</webElementGuid>
+      <webElementGuid>062ca244-ef95-4f14-b701-2827443aaa92</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,23 +73,23 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>65b12ae4-6a2c-4688-aec1-4885d685c7a2</webElementGuid>
+      <webElementGuid>4066b154-b3c6-440e-bb42-1d89430c3168</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:help('DEBIT.VALUE.DATE','','','issueToken')</value>
-      <webElementGuid>03161bf8-857a-4974-a433-e293e960a1a9</webElementGuid>
+      <webElementGuid>911df905-e061-402c-a909-5b9ae34bf8b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
       <value>Fecha</value>
-      <webElementGuid>23fd5b9e-3a2d-47ad-9161-3d2a897d3503</webElementGuid>
+      <webElementGuid>04e094d9-9bd6-4d63-a3e2-600091306be8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +97,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha</value>
-      <webElementGuid>25b8b4d9-ccc7-4b9a-a457-0567b4a5a91a</webElementGuid>
+      <webElementGuid>fc73a3a8-2017-43a4-88f9-7247d63f2b7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldCaption:DEBIT.VALUE.DATE&quot;)</value>
-      <webElementGuid>ded008aa-1935-4e76-a2c7-f1ecf8b53387</webElementGuid>
+      <webElementGuid>a282841c-cefa-45f5-8223-2ada21db3da4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='fieldCaption:DEBIT.VALUE.DATE']</value>
-      <webElementGuid>6810f159-fed8-4072-8c9f-05354d815e43</webElementGuid>
+      <webElementGuid>b4a0be43-dd13-4f70-b384-1c6eff2602ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td/label/a</value>
-      <webElementGuid>198d1a1d-fe49-40fa-a2fc-b47976bf0753</webElementGuid>
+      <webElementGuid>e474ee2e-e6b5-4f91-a320-1838bf0b8c22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Fecha')]</value>
-      <webElementGuid>6ec9d593-a156-43d1-88c4-19c8b1bb62f8</webElementGuid>
+      <webElementGuid>a771c75e-dbd4-4ce3-87a4-09ad21b2d4ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/following::a[1]</value>
-      <webElementGuid>c080eab3-61a3-409a-adb6-1dbbf564401b</webElementGuid>
+      <webElementGuid>6d375c7f-55d0-45d7-b91c-334613ac83f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +145,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Impuestos y Comisiones'])[1]/following::a[2]</value>
-      <webElementGuid>366c0ff4-1f1e-4ae0-9aba-7d04bfb387ec</webElementGuid>
+      <webElementGuid>076a81ba-8fe8-40a6-acee-6b83094cb1ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +153,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::a[1]</value>
-      <webElementGuid>e86671a1-dec1-4815-b3c8-cf403c11452c</webElementGuid>
+      <webElementGuid>910d810b-3f88-400b-a67e-0314da63798c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +161,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::a[2]</value>
-      <webElementGuid>38add066-ff3d-4850-88a1-efda79aceb8b</webElementGuid>
+      <webElementGuid>a945ae04-92b9-411c-b0ee-34e19ce69e67</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +169,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Fecha']/parent::*</value>
-      <webElementGuid>c542cc85-2869-49b2-b2e2-af4e00091f5b</webElementGuid>
+      <webElementGuid>1a41867b-280c-48c8-9ef2-a8439896f47f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,7 +177,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:help('DEBIT.VALUE.DATE','','','issueToken')&quot;)]</value>
-      <webElementGuid>e4fb1763-3b45-4cac-9606-c1407d5a33e4</webElementGuid>
+      <webElementGuid>55242f02-7c8f-4129-a1d7-c8cc2c99590a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,7 +185,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label/a</value>
-      <webElementGuid>a7fe7631-afd7-418a-b9f6-16426cdc8823</webElementGuid>
+      <webElementGuid>40a41616-091c-4d8b-a6b3-2293e2448a54</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -190,6 +193,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@name = 'fieldCaption:DEBIT.VALUE.DATE' and @id = 'fieldCaption:DEBIT.VALUE.DATE' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;DEBIT.VALUE.DATE&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Fecha' and (text() = 'Fecha' or . = 'Fecha')]</value>
-      <webElementGuid>e947dca0-795e-44f9-83ed-cc973e4d645d</webElementGuid>
+      <webElementGuid>3fe87945-aa37-49f0-83f3-4791722f57e7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

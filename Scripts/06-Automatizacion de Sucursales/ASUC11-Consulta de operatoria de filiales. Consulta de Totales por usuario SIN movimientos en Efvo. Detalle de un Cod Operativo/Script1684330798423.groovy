@@ -126,20 +126,20 @@ assert element.contains('Id')
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/btnVerDetalle'))
 
 //Se mueve a la ventana Account Charge Request
-//WebUI.switchToWindowTitle('Account Charge Request')
+WebUI.switchToWindowTitle('Account Charge Request')
 
 //Se mueve a la ventana Movimiento de Fondos
-WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-//Espera y verifica si se visualiza la primera columna del registro
-//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblRequestTypeJefe'),6)
-//def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblRequestTypeJefe'))
-//assert element2.contains('Request Type')
+//WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 //Espera y verifica si se visualiza la primera columna del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblRequestTypeJefe'),6)
 def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblRequestTypeJefe'))
-assert element2.contains('Transaction Type')
+assert element2.contains('Request Type')
+
+//Espera y verifica si se visualiza la primera columna del registro
+//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblRequestTypeJefe'),6)
+//def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/Page_Account Charge Request/lblRequestTypeJefe'))
+//assert element2.contains('Transaction Type')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

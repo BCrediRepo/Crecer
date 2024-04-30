@@ -15,21 +15,21 @@
       <guid>8fb91c30-1ca4-4e55-a6f9-81407e445249</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/12-Transferencias Internas/TI01-Transferencias Internas. Consulta de Altas Transf. Sucursal Origen. Perfil Planta. Ingresar criterio válido para el que haya registros. Datos válidos</testCaseId>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI01-Transferencias Internas. Consulta de Altas Transf. Sucursal Origen. Perfil Planta. Ingresar criterio valido para el que haya registros. Datos validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>779964e8-41e0-4bb9-bf38-67e7807c18dd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/12-Transferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar. Sucursal Destino. Perfil Planta. Datos válidos</testCaseId>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar. Sucursal Destino. Perfil Planta. Datos validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8c097d50-fa21-49a6-a6b1-b6d413c88df6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con débito en cuenta. Acumuladores. Total Débitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con debito en cuenta. Acumuladores. Total Debitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

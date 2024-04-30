@@ -44,7 +44,7 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowIndex(1)
 
 //Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20230828')
+WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), '20230831')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -75,7 +75,7 @@ WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta de Totales - Operat
 
 fecha = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
 
-assert fecha == '28/08/2023'
+assert fecha == '31/08/2023'
 
 //Control fin de script
 WebUI.maximizeWindow()

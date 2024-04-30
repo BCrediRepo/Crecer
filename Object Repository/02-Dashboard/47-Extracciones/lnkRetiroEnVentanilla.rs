@@ -6,15 +6,18 @@
    <elementGuidId>992d5462-7825-434b-aaf2-83465186ee65</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Retiro en Ventanilla (CA) ' or . = 'Retiro en Ventanilla (CA) ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,RETIRO.EFECTIVO.VENTANILLA I F3');processMenuHeaderText('Retiro en Ventanilla (CA)')&quot;]</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>41d2d25e-2f29-4ec8-8588-aa94c4c91d5f</webElementGuid>
+      <webElementGuid>f15b8a5c-80c0-4fed-90a2-9aae5f243731</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('NEW','TELLER,RETIRO.EFECTIVO.VENTANILLA I F3');processMenuHeaderText('Retiro en Ventanilla (CA)')</value>
-      <webElementGuid>7db29357-8635-4326-bb80-e46639b3c0dd</webElementGuid>
+      <webElementGuid>cdc60736-bfc4-4181-947e-bb2c4464e682</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('TELLER,RETIRO.EFECTIVO.VENTANILLA I F3');</value>
-      <webElementGuid>00bc0771-5431-47f1-b660-0f0ad0d3f3c1</webElementGuid>
+      <webElementGuid>a689e4f3-48c8-4be9-ade8-586e6d8d3bb0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Retiro en Ventanilla (CA) </value>
-      <webElementGuid>c0e0231f-3bd8-4a88-9735-cff20706ed05</webElementGuid>
+      <webElementGuid>e72a5e3f-d7e1-4817-be34-e11517745a09</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>b622e6d9-d510-40a3-9ade-f0dbbbd1b2b7</webElementGuid>
+      <webElementGuid>03a73ccd-99cd-446d-8628-0d9e5a5fc9da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>d90d2445-0172-41a7-bb68-35c4d574f328</webElementGuid>
+      <webElementGuid>32326620-f632-48fb-8519-a40311455c63</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('NEW','TELLER,RETIRO.EFECTIVO.VENTANILLA I F3');processMenuHeaderText('Retiro en Ventanilla (CA)')&quot;]</value>
-      <webElementGuid>d8ff5b6d-d12f-479d-8dc6-742aab446fed</webElementGuid>
+      <webElementGuid>bb635945-2609-45c6-aa83-39a68b54efb5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[3]/li/ul/li/a</value>
-      <webElementGuid>d5067c81-4158-4875-a913-186bed69d4d8</webElementGuid>
+      <webElementGuid>ba564827-2576-4299-a4fe-e2cfd438f415</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Retiro en Ventanilla (CA)')]</value>
-      <webElementGuid>92569f0e-b4c7-443d-a223-923729826583</webElementGuid>
+      <webElementGuid>cb1e42eb-1865-431e-9a80-05c495a466f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Extracciones'])[1]/following::a[1]</value>
-      <webElementGuid>71f29c14-20a1-423b-a26a-ef8428ec3fe3</webElementGuid>
+      <webElementGuid>d9cf2f18-5f13-469c-9bc4-c57c08294c96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Deposito en Fondo de Cese laboral'])[1]/following::a[1]</value>
-      <webElementGuid>1186148d-5383-4e9b-b157-39a6aa06e13e</webElementGuid>
+      <webElementGuid>1be6c7e0-e593-4b61-b2c5-7e05692568c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Retiro (CC sin Chequera - Solo Titular)'])[1]/preceding::a[1]</value>
-      <webElementGuid>7ecddf65-843e-4a92-b948-ad15311ebd63</webElementGuid>
+      <webElementGuid>7d0283e6-b25f-49cc-865a-0c236eeb552c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cheques'])[1]/preceding::a[2]</value>
-      <webElementGuid>4b7426a1-b77d-4185-965a-9bb4db0014fa</webElementGuid>
+      <webElementGuid>97e4225d-39d3-4695-beba-16ed6a521e3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Retiro en Ventanilla (CA)']/parent::*</value>
-      <webElementGuid>fd191939-dede-4723-b253-42da652902f4</webElementGuid>
+      <webElementGuid>40868d32-fe64-4fe8-90da-2f2fee15c0a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('TELLER,RETIRO.EFECTIVO.VENTANILLA I F3');&quot;)]</value>
-      <webElementGuid>ad794048-c187-484f-8b54-8a730c4c3ba2</webElementGuid>
+      <webElementGuid>434a23a6-b087-49e1-8f88-dd8416ac40fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +145,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[3]/li/ul/li/a</value>
-      <webElementGuid>dcbc62f5-bbc4-414a-9407-4bedc5f32940</webElementGuid>
+      <webElementGuid>76408fdf-2a7c-4663-8b1f-389839295ab7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +153,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;TELLER,RETIRO.EFECTIVO.VENTANILLA I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Retiro en Ventanilla (CA) ' or . = 'Retiro en Ventanilla (CA) ')]</value>
-      <webElementGuid>fef41acf-6324-4476-8c62-094cd87538da</webElementGuid>
+      <webElementGuid>3e4798c3-7bc0-4228-b2e2-f62e1b80319a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>EXT03-Extracción en efectivo por Caja. Contenido del ticket. Importe con una cifra decimal</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>38cbd0c1-8e06-47c7-9049-680c05e9ecc1</testCaseGuid>
-</TestCaseEntity>

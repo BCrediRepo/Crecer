@@ -125,12 +125,15 @@ assert element.contains('Id')
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/btnVerDetalle'))
 
 //Se mueve a la ventana Detalle Transacciones No Efectivo
-WebUI.switchToWindowTitle('Movimiento de Fondos')
+//WebUI.switchToWindowTitle('Movimiento de Fondos')
+
+//Cambiar Ventana "Account Charge Request"
+WebUI.switchToWindowTitle('Account Charge Request')
 
 //Espera y verifica si se visualiza la primera columna del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/Account Charge Request/lblDebitAccount'),6)
 def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Detalle Transacciones No Efectivo/Account Charge Request/lblDebitAccount'))
-assert element2.contains('Debit Acct No')
+assert element2.contains('Debit Account')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

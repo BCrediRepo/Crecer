@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VDF06-Firmas. ENQ BCCL.E.AS.FIRMA. Validacion de datos (Fecha igual VACIO)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe3d80fc-8151-48bf-9f2b-2838ca5e6867</testCaseGuid>
+</TestCaseEntity>

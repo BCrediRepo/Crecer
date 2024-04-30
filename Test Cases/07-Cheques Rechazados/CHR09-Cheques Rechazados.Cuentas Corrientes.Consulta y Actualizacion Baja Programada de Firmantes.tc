@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHR09-Cheques Rechazados.Cuentas Corrientes.Consulta y Actualizacion Baja Programada de Firmantes</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>70d1efca-0640-4f0c-b5e0-f7417d0fd9d6</testCaseGuid>
+</TestCaseEntity>

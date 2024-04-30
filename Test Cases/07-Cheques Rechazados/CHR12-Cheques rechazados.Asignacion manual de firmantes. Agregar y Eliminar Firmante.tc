@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHR12-Cheques rechazados.Asignacion manual de firmantes. Agregar y Eliminar Firmante</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8095cdef-fb48-4f61-b31d-47f930cfed3c</testCaseGuid>
+</TestCaseEntity>

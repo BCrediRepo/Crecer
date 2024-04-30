@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>EXT13-Extracción en efectivo por Caja. Cuenta con Bloqueo Parcial. Saldo no bloqueado insuficiente. Movimiento no aplica sobre cuentas bloqueadas</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ff5ce0a7-adf9-431e-a184-9482a56ace0d</testCaseGuid>
-</TestCaseEntity>
