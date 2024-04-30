@@ -45,10 +45,10 @@ WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARA
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en expandir subvalor
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnExpandirSubvalor'))
+//WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnExpandirSubvalor'))
 
 //Ingresamos datos
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtIds. Cod Oper.1.2/txtIds. Cod Oper.1.2'), '00100')
+//WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtIds. Cod Oper.1.2/txtIds. Cod Oper.1.2'), '00100')
 
 //Click en validar registro
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnValidarRegistro'))

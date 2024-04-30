@@ -45,7 +45,7 @@ WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARA
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ingresamos los datos para el alta del nuevo agrupamiento
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnExpandirMultivalor'))
+//WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnExpandirMultivalor'))
 
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/cbxTipoAgrupamiento'))
 

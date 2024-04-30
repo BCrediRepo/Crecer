@@ -51,6 +51,9 @@ long startTime = System.currentTimeMillis()
 //----------------------------
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
+WebUI.waitForElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFecha'), 
+    60)
+
 WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFecha'))
 
 // Captura el tiempo de finalización
@@ -74,7 +77,8 @@ Fecha = WebUI.getText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fe
 
 WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFechaValor'))
 
-FechaValor = WebUI.getText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFechaValor')) //Control fin de script
+FechaValor = WebUI.getText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFechaValor') //Control fin de script
+    )
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
