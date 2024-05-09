@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC40-Consulta existencia final de efectivo por denominacion. Usuario Filial. Perfil Cajero</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0e99aef-e710-4caf-807e-2db44eab385a</testCaseGuid>
+</TestCaseEntity>

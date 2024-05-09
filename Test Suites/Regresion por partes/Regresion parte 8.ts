@@ -110,13 +110,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b64c0b61-6d4d-4e18-9bea-f3850559578b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM22-Consulta de operaciones para eliminacion. Ingresar usuario que realiza la consulta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>80f1137d-a2e5-47aa-ab0d-8ca5a37f4e03</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

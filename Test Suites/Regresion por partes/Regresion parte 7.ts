@@ -260,7 +260,7 @@
       <guid>8ade801b-ec64-4b3c-a761-4de89f351b4d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC42-Consulta operatoria de Filiales.Cambio de Denominación. Moneda Local</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC42-Consulta operatoria de Filiales.Cambio de Denominacion. Moneda Local</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -379,7 +379,7 @@
       <guid>880eabd9-1fdf-40de-ad3c-35e3f17bc8d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC59-Consulta por código operativo. Usuario Filial. Código Operativo valido. Moneda Pesos</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC59-Consulta por codigo operativo. Usuario Filial. Codigo Operativo valido. Moneda Pesos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

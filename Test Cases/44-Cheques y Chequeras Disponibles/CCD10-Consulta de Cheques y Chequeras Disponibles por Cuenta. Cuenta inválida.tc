@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CCD10-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cuenta inválida</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>229ea08a-f114-427b-a4c4-fcd5e1176d18</testCaseGuid>
-</TestCaseEntity>

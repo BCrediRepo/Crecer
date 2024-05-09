@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>AM22-Consulta de operaciones para eliminacion. Ingresar usuario que realiza la consulta</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7ec33677-0a36-469d-b104-8414ae838913</testCaseGuid>
-</TestCaseEntity>

@@ -190,42 +190,42 @@
       <guid>99ed23be-ce8a-4a2d-af6c-7f99adcd8ade</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC27-Automatización de Sucursales.Consulta de Totales de Cajas.ENQ BCCL.E.TT.POSITION.USR</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC27-Automatizacion de Sucursales.Consulta de Totales de Cajas.ENQ BCCL.E.TT.POSITION.USR</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c9718682-ff4f-4fee-abba-a2e95dde9d19</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC28-Automatización de Sucursales.Automatización.Txn Consulta Toma del Tesoro.ENQ BCCL.E.TT.TOMA.TESORO</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC28-Automatizacion de Sucursales.Automatizacion.Txn Consulta Toma del Tesoro.ENQ BCCL.E.TT.TOMA.TESORO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>53d20381-6c6c-49de-816e-52ddf5f8dcbe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC29-Automatización de sucursales.Consulta Libro del Tesoro.Enquiry BCCL.E.TT.LIBRO.TESORO</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC29-Automatizacion de sucursales.Consulta Libro del Tesoro.Enquiry BCCL.E.TT.LIBRO.TESORO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>81edd4eb-31d8-4e6c-9970-34a01a775727</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC30-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominación.Perfil Cajero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC30-Automatizacion de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominacion.Perfil Cajero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>bff8d5ff-3395-4497-b03d-7aa20a5e3f0e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC31-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominación.Perfil Usuario Casa Central</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC31-Automatizacion de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominacion.Perfil Usuario Casa Central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>0d5b48fd-57ae-4d15-8530-9c3c08df1a88</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC32-Automatización de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominación.Perfil Tesorero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC32-Automatizacion de Sucursales.Consulta Operatoria de Filiales.Consulta de Existencias por Denominacion.Perfil Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -239,14 +239,14 @@
       <guid>fd48cb96-37ff-4444-b51a-90ff341a12d6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC34-Automatización de Sucursales.Pases Entre Cajas.Consulta Posición de efectivo en Sucursal. Perfil Tesorero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC34-Automatizacion de Sucursales.Pases Entre Cajas.Consulta Posicion de efectivo en Sucursal. Perfil Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>502a4c60-2c07-47aa-b400-66213a8926d3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC35-Automatización de Sucursales.Pases Entre Cajas.Consulta de Estado de cajas.Perfil Tesorero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC35-Automatizacion de Sucursales.Pases Entre Cajas.Consulta de Estado de cajas.Perfil Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -267,21 +267,21 @@
       <guid>53de0bbc-49e8-4de1-a9e3-93a67124fd55</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Tesorero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC38-Consulta existencia final de efectivo por denominacion. Usuario Filial. Perfil Tesorero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>28af1d1e-5109-49e3-ae04-b130b94880a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC39-Consulta existencia final de efectivo por denominación. Casa Central</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC39-Consulta existencia final de efectivo por denominacion. Casa Central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>568bca39-81b9-467f-b460-8610a14151e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC40-Consulta existencia final de efectivo por denominación. Usuario Filial. Perfil Cajero</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC40-Consulta existencia final de efectivo por denominacion. Usuario Filial. Perfil Cajero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -295,7 +295,7 @@
       <guid>a8afb691-2e53-471c-bf4e-f4c08ae655d8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC42-Consulta operatoria de Filiales.Cambio de Denominación. Moneda Local</testCaseId>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC42-Consulta operatoria de Filiales.Cambio de Denominacion. Moneda Local</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

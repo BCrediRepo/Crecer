@@ -22,14 +22,14 @@
       <guid>7b9a20b3-2ab4-4cd4-84b4-665c47333f4a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD02-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cheque desde y Cheque hasta inválidos</testCaseId>
+      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD02-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cheque desde y Cheque hasta invalidos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>fba2446c-185d-4d09-8b04-4efa664bf13a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD03-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cheque hasta informado. Cheque desde vacío</testCaseId>
+      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD03-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cheque hasta informado. Cheque desde vacio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -78,7 +78,7 @@
       <guid>2037354f-8040-41c0-a865-6f6aa9eea826</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD10-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cuenta inválida</testCaseId>
+      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD10-Consulta de Cheques y Chequeras Disponibles por Cuenta. Cuenta invalida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -99,7 +99,7 @@
       <guid>3dcf1db0-a67c-4c62-9615-e1cccc8cbfb2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD13-Consulta de Cheques y Chequeras Disponibles por Cuenta. Fecha desde y fecha hasta inválidos</testCaseId>
+      <testCaseId>Test Cases/44-Cheques y Chequeras Disponibles/CCD13-Consulta de Cheques y Chequeras Disponibles por Cuenta. Fecha desde y fecha hasta invalidos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

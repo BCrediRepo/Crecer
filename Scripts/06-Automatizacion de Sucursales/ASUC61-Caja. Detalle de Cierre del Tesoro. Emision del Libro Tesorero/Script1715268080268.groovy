@@ -21,64 +21,46 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 24), findTestData('MainData/Users').getValue(2, 24))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 61), findTestData('MainData/Users').getValue(2, 61))
 WebUI.maximizeWindow()
 
-//Ingresar "?327" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
 //Seleccionar "Caja"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCaja'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Cons. de Existencia por Denominacion"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Caja/lnkCons.deExistenciaporDenominacion'))
+//Seleccionar "Detalle de Cierre del Tesoro"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkDetalledeCierreDelTesoro'))
 
-//Cambiar ventana "BCCL.E.TT.CASH.DENOM"
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
+//Cambiar ventana "BCCL.E.TT.LIBRO.TESORO"
+WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
 
 //Filtro limpieza
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowIndex(0)
 
-//Seleccionar "Cons. de Existencia por Denominacion"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Caja/lnkCons.deExistenciaporDenominacion'))
+//Seleccionar "Detalle de Cierre del Tesoro"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkDetalledeCierreDelTesoro'))
 
-//Cambiar ventana "BCCL.E.TT.CASH.DENOM"
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
-
-//Setear Sucursal
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/txtSucursal'), '099')
-
-//Maximizar Ventana
-WebUI.maximizeWindow()
+//Cambiar ventana "BCCL.E.TT.LIBRO.TESORO"
+WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar boton ejecutar
+//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Verificar "DENOMINACION"
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
+//Verificar "FECHA"
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblCategoria'))
 
-//Validar "DENOMINACION"
-def element5 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
-assert element5.contains('DENOMINACION')
+//Validar "FECHA"
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblCategoria'))
+assert element.contains('CATEGORIA')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

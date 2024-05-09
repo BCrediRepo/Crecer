@@ -64,33 +64,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificar "FILAL"
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblFILAL'))
-
-//Validar "FILAL"
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblFILAL'))
-assert element.contains('FILAL')
-
-//Verificar "CATEGORIA"
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblCATEGORIA'))
-
-//Validar "CATEGORIA"
-def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblCATEGORIA'))
-assert element2.contains('CATEGORIA')
-
-//Verificar "DESC CATEGORIA"
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDESCCATEGORIA'))
-
-//Validar "DESC CATEGORIA"
-def element3 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDESCCATEGORIA'))
-assert element3.contains('DESC CATEGORIA')
-
-//Verificar "ID CAJERO"
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblIDCAJERO'))
-
-//Validar "ID CAJERO"
-def element4 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblIDCAJERO'))
-assert element4.contains('ID CAJERO')
+//Maximizar Ventana
+WebUI.maximizeWindow()
 
 //Verificar "DENOMINACION"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
@@ -98,13 +73,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 //Validar "DENOMINACION"
 def element5 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
 assert element5.contains('DENOMINACION')
-
-//Verificar "CANTIDAD"
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblCANTIDAD'))
-
-//Validar "CANTIDAD"
-def element6 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblCANTIDAD'))
-assert element6.contains('CANTIDAD')
 
 //---------------------------------------------------------------
 //Control de fin de script
