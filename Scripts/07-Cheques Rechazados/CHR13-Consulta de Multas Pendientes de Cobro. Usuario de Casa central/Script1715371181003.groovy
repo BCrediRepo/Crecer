@@ -21,15 +21,17 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 40), findTestData('MainData/Users').getValue(
+        2, 40))
+
 WebUI.maximizeWindow()
 
 //Seleccionar "Rechazo de Cheques"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkRechazodecheques'))
-	
+
 //Seleccionar "Consultas"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultas'))
-	
+
 //Seleccionar "Multas Pendientes"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkMultaspendientes'))
 
@@ -38,6 +40,7 @@ WebUI.switchToWindowTitle('BCCL.CHRECH.MULTAS.PENDIENTES')
 
 //Filtro limpieza
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+
 WebUI.switchToWindowIndex(0)
 
 //Seleccionar "Multas Pendientes"
@@ -47,25 +50,28 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados
 WebUI.switchToWindowTitle('BCCL.CHRECH.MULTAS.PENDIENTES')
 
 //Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.MULTAS.PENDIENTES/txtSucursal'), '001')
+WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.MULTAS.PENDIENTES/txtSucursal'), '089')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Seleccionar boton ejecutar
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar') //Control de fin de script
+    )
 
-//NO SE PUEDE CONTINUAR POR QUE DA UN TIME OUT
+WebUI.verifyElementVisible(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.MULTAS.PENDIENTES/lnkSucursalGirada'))
 
+sucursal = WebUI.getText(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.MULTAS.PENDIENTES/lnkSucursalGirada'))
 
+assert sucursal.contains("089") == true 
 
-//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

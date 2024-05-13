@@ -6,15 +6,19 @@
    <elementGuidId>3015559b-ae7f-4169-8deb-4639cc8be857</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.CHRECH.MULTAS.PENDIENTES');processMenuHeaderText('Multas pendientes')&quot;]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.clsHasKids:nth-child(7) > ul:nth-child(2) > li:nth-child(3) > a:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.CHRECH.MULTAS.PENDIENTES&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'MULTAS PENDIENTES' or . = 'MULTAS PENDIENTES') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c7020bf8-03b4-4be8-a872-125a68187961</webElementGuid>
+      <webElementGuid>9799a849-9759-45da-bd62-34da8e900a83</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.CHRECH.MULTAS.PENDIENTES');processMenuHeaderText('Multas pendientes')</value>
-      <webElementGuid>62b9ce5c-ea0b-4317-891f-e19bd01ea19c</webElementGuid>
+      <webElementGuid>a0952eb5-5fa9-4158-8ef3-820f9c901dbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,15 +42,15 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.CHRECH.MULTAS.PENDIENTES');</value>
-      <webElementGuid>2f126dfd-940f-42a0-9bcc-6503b588f2d4</webElementGuid>
+      <webElementGuid>f88c9127-e9d0-4e2f-890c-0b1ebbfdf086</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Multas pendientes </value>
-      <webElementGuid>dca51f56-b735-4cc9-8364-d70017df8be1</webElementGuid>
+      <value>MULTAS PENDIENTES</value>
+      <webElementGuid>f9c90e65-aa77-48d3-8ac9-52051f000f1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
-      <webElementGuid>e1177e0b-7d87-4496-8290-bf9219c32505</webElementGuid>
+      <webElementGuid>d7dadc39-dba1-4fb3-9b3c-8ea57d63ffc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
+      <webElementGuid>e5f02d03-0fc9-406d-b25a-cf3be66f61d9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.CHRECH.MULTAS.PENDIENTES');processMenuHeaderText('Multas pendientes')&quot;]</value>
-      <webElementGuid>16e66ca4-b867-4cf0-bc27-64da842ef019</webElementGuid>
+      <webElementGuid>68e207b4-c9aa-49a7-b515-67fa3cc93288</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[20]/li/ul/li[7]/ul/li[2]/a</value>
-      <webElementGuid>11226533-1a77-42aa-8164-9757ef6d21e2</webElementGuid>
+      <webElementGuid>95877bcc-650c-477d-bd04-8890bc23b798</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +90,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Multas pendientes')]</value>
-      <webElementGuid>0933855e-284a-48cb-8c71-1dcaa8d77931</webElementGuid>
+      <webElementGuid>29afd889-8318-404b-97a1-4a4287bfdca4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Multas'])[1]/following::a[1]</value>
-      <webElementGuid>85ec22f6-d676-4fbc-b68a-779b0804ad94</webElementGuid>
+      <webElementGuid>62218ddc-87be-4084-8d61-3e655b728ebe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consultas'])[2]/following::a[2]</value>
-      <webElementGuid>a888d2f5-5c63-41ba-9e60-308c029d1724</webElementGuid>
+      <webElementGuid>7e8cdb0e-830b-4923-8d0f-466447c1bb22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cheques Rechazados'])[1]/preceding::a[1]</value>
-      <webElementGuid>3091a263-5dff-486d-94d1-66066085f51f</webElementGuid>
+      <webElementGuid>ec53296c-00f3-4598-83df-007d6e5f67d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Historial Cheque'])[1]/preceding::a[2]</value>
-      <webElementGuid>a56c52b6-672c-4ef0-8424-e7632017abb0</webElementGuid>
+      <webElementGuid>ccb130d0-6404-4bac-96d0-e66bcadf4588</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Multas pendientes']/parent::*</value>
-      <webElementGuid>ea8c3bfa-61d7-4714-b652-f7adacfaa8d8</webElementGuid>
+      <webElementGuid>2ff7e356-6626-4e6b-a7e7-9eb9dd2422db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +138,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.CHRECH.MULTAS.PENDIENTES');&quot;)]</value>
-      <webElementGuid>8b06bd9f-b27d-44bc-a480-55d62d39124e</webElementGuid>
+      <webElementGuid>2bfbbb67-b1cb-4459-b1c5-1103e71fa69f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +146,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[20]/li/ul/li[7]/ul/li[2]/a</value>
-      <webElementGuid>eab569fe-f928-47e4-90f5-c1ba3ea44d16</webElementGuid>
+      <webElementGuid>15502fcc-dd0a-4e7b-8f96-cffad5501ef1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +154,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.CHRECH.MULTAS.PENDIENTES&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Multas pendientes ' or . = 'Multas pendientes ')]</value>
-      <webElementGuid>8364947f-5364-45cf-9529-bec1608c2a80</webElementGuid>
+      <webElementGuid>d901ecca-1962-4db6-9f19-4e70b29f4572</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
