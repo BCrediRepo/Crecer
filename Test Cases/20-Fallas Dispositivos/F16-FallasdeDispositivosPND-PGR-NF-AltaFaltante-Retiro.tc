@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>EC10-Emisión de chequeras. Consulta por Cheque</name>
+   <name>F16-FallasdeDispositivosPND-PGR-NF-AltaFaltante-Retiro</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>c6452b09-fd94-482a-a344-1b66e4d05f5b</testCaseGuid>
+   <testCaseGuid>0f88e4ac-f7b3-4632-8d03-c90f170518ee</testCaseGuid>
 </TestCaseEntity>

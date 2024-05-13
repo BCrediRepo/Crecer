@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNormal</name>
+   <tag></tag>
+   <elementGuidId>c33ad9f7-3f4e-4568-9471-c039bca8cb7d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[2]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>68f1a71c-76d5-42a4-a8e8-1adf2844ef1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLCQCHEQUES disabled_dealbox_BCCLCQCHEQUES_BAJACHEQUES</value>
+      <webElementGuid>e204149f-1fdd-40fa-9cb1-b3789e8501ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Normal</value>
+      <webElementGuid>d3483a65-8b73-4240-b790-27ac358dfc46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[2]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLCQCHEQUES disabled_dealbox_BCCLCQCHEQUES_BAJACHEQUES&quot;]</value>
+      <webElementGuid>ad294750-7f97-4c09-8875-a900cee301e9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[2]/td[3]/span</value>
+      <webElementGuid>2b205036-376c-470f-93b5-eb812ac8ffc0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cheque Status'])[1]/following::span[1]</value>
+      <webElementGuid>12d284bc-76de-4ee2-9041-913061f9ccee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta'])[1]/following::span[2]</value>
+      <webElementGuid>30e239c4-e276-4346-889c-5a4389ad6f8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cheque Status Date'])[1]/preceding::span[1]</value>
+      <webElementGuid>efb79795-9614-428a-b48d-ca7285f45e48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stock Entry'])[1]/preceding::span[2]</value>
+      <webElementGuid>9722aa91-071e-4835-9de7-aa1669f99e3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Normal']/parent::*</value>
+      <webElementGuid>8434b3aa-5e6b-4330-b35b-acf8dc8a769a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td[3]/span</value>
+      <webElementGuid>c82409db-5ca0-4e2f-91b0-ca10f483fdf0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Normal' or . = 'Normal')]</value>
+      <webElementGuid>0823dc68-27dc-40ea-8f7a-82d7ef2fce00</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

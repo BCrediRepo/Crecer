@@ -22,7 +22,7 @@
       <guid>eea5eeb4-6fdf-4205-baa9-b4be9f52c5ad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC02-Emision Chequera.Invocación del ENQ BCCL.CQ.CONS.ANUL con datos válidos para generar autorizaciones</testCaseId>
+      <testCaseId>Test Cases/09-Emision Chequera/EC02-Emision Chequera.Invocacion del ENQ BCCL.CQ.CONS.ANUL con datos validos para generar autorizaciones</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -43,7 +43,7 @@
       <guid>58a31318-3fc0-403a-a322-0a54dab1c4fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC05-Emision de Chequera. Impresión del Acta de Destrucción de Chequeras. Usuario de Filial. Imprimir Acta</testCaseId>
+      <testCaseId>Test Cases/09-Emision Chequera/EC05-Emision de Chequera. Impresion del Acta de Destruccion de Chequeras. Usuario de Filial. Imprimir Acta</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -78,7 +78,7 @@
       <guid>f0ba0dea-85c9-4da5-9608-b338526f29c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC10-Emisión de chequeras. Consulta por Cheque</testCaseId>
+      <testCaseId>Test Cases/09-Emision Chequera/EC10-Emision de chequeras. Consulta por Cheque</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -92,7 +92,7 @@
       <guid>a08bd3f2-97ae-4649-9a62-4e24c5bc544b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC12-Solicitud de Chequera Continua. Cuenta Activa. Cuenta admite Chequeras. Tipo de Chequera Valido. Se informa numeración</testCaseId>
+      <testCaseId>Test Cases/09-Emision Chequera/EC12-Solicitud de Chequera Continua. Cuenta Activa. Cuenta admite Chequeras. Tipo de Chequera Valido. Se informa numeracion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -106,7 +106,7 @@
       <guid>c6b817c8-6719-4568-87c9-44761c6baef2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/09-Emision Chequera/EC14-Autorización de Solicitud de Chequera Continua. Autorizar Solicitud</testCaseId>
+      <testCaseId>Test Cases/09-Emision Chequera/EC14-Autorizacion de Solicitud de Chequera Continua. Autorizar Solicitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
