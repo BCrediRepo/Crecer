@@ -3,7 +3,7 @@
    <description></description>
    <name>lblFecha</name>
    <tag></tag>
-   <elementGuidId>41c64ae0-bd99-4217-be4f-b5da27e7986c</elementGuidId>
+   <elementGuidId>c61f015d-2a2f-42e4-9807-456a64f6d03b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='fieldCaption:DEBIT.VALUE.DATE']</value>
+         <value>//a[@id='fieldCaption:CREDIT.VALUE.DATE']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>553a3ff7-4b8f-4cd0-979d-d579f20d5adc</webElementGuid>
+      <webElementGuid>5ae0b267-838d-4797-bc98-6ef2b0172103</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>26241f61-0ca8-4f1b-a28b-356ee6a41ec8</webElementGuid>
+      <webElementGuid>46d93b3e-eb96-451d-826a-6179afc43f67</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,31 +38,31 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>916e2149-556d-4047-bb24-14b9955a1a20</webElementGuid>
+      <webElementGuid>852637dd-a2cf-4b6c-aeee-f46535c54b44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>field field_FUNDSTRANSFER field_FUNDSTRANSFER_POSTEOINGRESOS</value>
-      <webElementGuid>f3902827-21cd-4bdd-9641-1f6c2a8ee947</webElementGuid>
+      <value>field field_FUNDSTRANSFER field_FUNDSTRANSFER_POSTEORETIRO</value>
+      <webElementGuid>0a7efb2e-ebf9-4629-aca6-215935785898</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldCaption:DEBIT.VALUE.DATE</value>
-      <webElementGuid>36a181a4-87e7-4126-8bdd-a3a8b3e36c98</webElementGuid>
+      <value>fieldCaption:CREDIT.VALUE.DATE</value>
+      <webElementGuid>acf89586-c6d0-453a-8c25-4d07cac5d097</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldCaption:DEBIT.VALUE.DATE</value>
-      <webElementGuid>5dc7eaec-0e88-4e4b-932d-ede981863328</webElementGuid>
+      <value>fieldCaption:CREDIT.VALUE.DATE</value>
+      <webElementGuid>fe950bff-b229-441d-9411-dd9cd0d6571d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,15 +70,15 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>65b12ae4-6a2c-4688-aec1-4885d685c7a2</webElementGuid>
+      <webElementGuid>af4b5f71-ee26-42f0-a429-ef678194ab5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:help('DEBIT.VALUE.DATE','','','issueToken')</value>
-      <webElementGuid>03161bf8-857a-4974-a433-e293e960a1a9</webElementGuid>
+      <value>javascript:help('CREDIT.VALUE.DATE','','','issueToken')</value>
+      <webElementGuid>c215b05e-a8ff-471c-a2a9-eafc343c3a65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Fecha</value>
-      <webElementGuid>23fd5b9e-3a2d-47ad-9161-3d2a897d3503</webElementGuid>
+      <webElementGuid>55aa29e9-0b81-46c6-8bd1-8fa4e042cb37</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,31 +94,31 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha</value>
-      <webElementGuid>25b8b4d9-ccc7-4b9a-a457-0567b4a5a91a</webElementGuid>
+      <webElementGuid>ca33232e-f78a-4c2b-bd29-a65110ca14f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldCaption:DEBIT.VALUE.DATE&quot;)</value>
-      <webElementGuid>ded008aa-1935-4e76-a2c7-f1ecf8b53387</webElementGuid>
+      <value>id(&quot;fieldCaption:CREDIT.VALUE.DATE&quot;)</value>
+      <webElementGuid>aa6800f2-117f-4272-9d8d-f675c934c5cc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@id='fieldCaption:DEBIT.VALUE.DATE']</value>
-      <webElementGuid>6810f159-fed8-4072-8c9f-05354d815e43</webElementGuid>
+      <value>//a[@id='fieldCaption:CREDIT.VALUE.DATE']</value>
+      <webElementGuid>13359c5d-c254-449a-bc60-18c4dc2269b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr/td/label/a</value>
-      <webElementGuid>198d1a1d-fe49-40fa-a2fc-b47976bf0753</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[4]/td[2]/label/a</value>
+      <webElementGuid>727fdbf7-ef70-4ddf-a06e-43fc75e05eb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,39 +126,39 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Fecha')]</value>
-      <webElementGuid>6ec9d593-a156-43d1-88c4-19c8b1bb62f8</webElementGuid>
+      <webElementGuid>aa74a252-67f0-4927-b753-9b5add097d1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/following::a[1]</value>
-      <webElementGuid>c080eab3-61a3-409a-adb6-1dbbf564401b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PRUEBAS CRECER'])[1]/following::a[1]</value>
+      <webElementGuid>6006bfe2-b405-4867-b28c-f983003cfbf7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Impuestos y Comisiones'])[1]/following::a[2]</value>
-      <webElementGuid>366c0ff4-1f1e-4ae0-9aba-7d04bfb387ec</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nombre Posteo'])[1]/following::a[1]</value>
+      <webElementGuid>58bca195-ce49-49ba-8d6b-58f68fcf3a43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::a[1]</value>
-      <webElementGuid>e86671a1-dec1-4815-b3c8-cf403c11452c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Importe'])[1]/preceding::a[1]</value>
+      <webElementGuid>ea41d604-2d6e-43c0-8532-9a780d822984</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::a[2]</value>
-      <webElementGuid>38add066-ff3d-4850-88a1-efda79aceb8b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Txn Original'])[1]/preceding::a[2]</value>
+      <webElementGuid>cac7cf3f-63f2-4431-97d3-3dc79c6e6975</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,30 +166,30 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Fecha']/parent::*</value>
-      <webElementGuid>c542cc85-2869-49b2-b2e2-af4e00091f5b</webElementGuid>
+      <webElementGuid>90b68b7c-3f3f-4b73-8a9d-304e71f13297</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, &quot;javascript:help('DEBIT.VALUE.DATE','','','issueToken')&quot;)]</value>
-      <webElementGuid>e4fb1763-3b45-4cac-9606-c1407d5a33e4</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:help('CREDIT.VALUE.DATE','','','issueToken')&quot;)]</value>
+      <webElementGuid>a4a14fb7-2826-48dc-9bcd-f70d3436886d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//label/a</value>
-      <webElementGuid>a7fe7631-afd7-418a-b9f6-16426cdc8823</webElementGuid>
+      <value>//tr[4]/td[2]/label/a</value>
+      <webElementGuid>c71c4247-08fd-4da0-ba47-0371cfd32b34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@name = 'fieldCaption:DEBIT.VALUE.DATE' and @id = 'fieldCaption:DEBIT.VALUE.DATE' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;DEBIT.VALUE.DATE&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Fecha' and (text() = 'Fecha' or . = 'Fecha')]</value>
-      <webElementGuid>e947dca0-795e-44f9-83ed-cc973e4d645d</webElementGuid>
+      <value>//a[@name = 'fieldCaption:CREDIT.VALUE.DATE' and @id = 'fieldCaption:CREDIT.VALUE.DATE' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;CREDIT.VALUE.DATE&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Fecha' and (text() = 'Fecha' or . = 'Fecha')]</value>
+      <webElementGuid>22a90815-c91c-45b6-a41c-6453eff78912</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

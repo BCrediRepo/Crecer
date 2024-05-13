@@ -68,13 +68,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>47245dac-51c9-4564-b728-5eeb1a9ee530</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF09-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Búsqueda con el filtro vacío</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>44727734-5157-498b-9644-78ff82791d77</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

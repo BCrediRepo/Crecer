@@ -74,12 +74,13 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Click en la opcion "Consulta de firma" del cbx
 WebUI.waitForElementVisible(findTestObject('31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 6)
-
 WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 5)
 
+WebUI.click(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/btnVerDatosPersonaFisica'))
+
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/BCCL.E.FIRMAS.FISICA/lblFirma'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/BCCL.E.FIRMAS.FISICA/lblFirma'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -89,10 +90,26 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/BCCL.E.FIRMAS.FISICA/lblFirma'))
 
-def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
+assert element.contains('Firma')
 
-assert element.contains('No.Documento')
+//ASSERT
+//WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'), 6)
+//WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
+
+// Captura el tiempo de finalización
+//long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+//long elapsedTime = endTime - startTime
+
+//println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+
+//def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
+
+//assert element.contains('No.Documento')
 
 //---------------------------------------------------------------------------------------------------------------------
 

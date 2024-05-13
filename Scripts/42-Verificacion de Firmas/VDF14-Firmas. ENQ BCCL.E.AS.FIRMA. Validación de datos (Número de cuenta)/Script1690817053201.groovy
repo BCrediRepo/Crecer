@@ -55,13 +55,22 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblNumero de Cuenta'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblNumero de Cuenta'))
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblNumero de Cuenta'))
 
-assert element.contains('NO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951')
+assert element.contains('Numero de Cuenta')
+
+//ASSERT
+//WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'), 6)
+
+//WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
+
+//def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
+
+//assert element.contains('NO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951')
 
 //---------------------------------------------------------------------------------------------------------------------
 

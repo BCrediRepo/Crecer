@@ -38,7 +38,7 @@ WebUI.switchToWindowTitle('CUENTAS')
 WebUI.maximizeWindow()
 
 //Ingresamos la cuenta a consultar
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '00430014075')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '10700010299') //00430014075
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -85,7 +85,7 @@ WebUI.maximizeWindow()
 
 //Ingresamos los datos para el pedido de resumen de cuenta
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '10430033951')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '10700010299') //10430033951
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/cbxDesdeInicioDelMesEnCurso'))
 
