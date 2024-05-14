@@ -596,7 +596,7 @@
       <guid>2d97a6a9-2de2-4ea5-9f5a-b664c2563d51</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/43-TOB/TOB14-Transferencia OnLine a otros bancos. Concepto de tipo Haberes.Después de las 14</testCaseId>
+      <testCaseId>Test Cases/43-TOB/TOB14-Transferencia OnLine a otros bancos. Concepto de tipo Haberes.Despues de las 14</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

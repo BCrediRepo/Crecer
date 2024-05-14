@@ -64,7 +64,7 @@
       <guid>a34498a1-0dc5-4c6a-ba77-c8be3ba1319f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM15-Ajustes Monetarios.Nota de debito.Reversa de Nota de Debito Ajuste. Operacion hecha en el día con fecha valor. Cuenta sin bloqueos</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM15-Ajustes Monetarios.Nota de debito.Reversa de Nota de Debito Ajuste. Operacion hecha en el dia con fecha valor. Cuenta sin bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -78,7 +78,7 @@
       <guid>8c913b7b-3cc6-4874-a15b-dd4198aa7918</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM17-Ajustes Monetarios.Notas Transitorias.Proceso reversa Notas de Títulos.BCCL.B.FT.REVE.TRANSITORIA</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM17-Ajustes Monetarios.Notas Transitorias.Proceso reversa Notas de Titulos.BCCL.B.FT.REVE.TRANSITORIA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -92,7 +92,7 @@
       <guid>02e0e108-93fc-415a-91f6-ccaa8a45506c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM19-Ajustes Monetarios.Reversa de Nota de Credito Ajuste. Operacion hecha en el día con fecha valor</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM19-Ajustes Monetarios.Reversa de Nota de Credito Ajuste. Operacion hecha en el dia con fecha valor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
