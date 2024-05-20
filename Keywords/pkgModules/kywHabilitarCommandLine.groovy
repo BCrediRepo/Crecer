@@ -16,7 +16,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
+import com.kms.katalon.core.testobject.ConditionType
 import internal.GlobalVariable
 
 public class kywHabilitarCommandLine {
@@ -27,8 +27,8 @@ public class kywHabilitarCommandLine {
 	@Keyword
 	def procesarUsuario(String usuario) {
 		// Verificar el usuario es nulo o tiene menos de dos caractes
-		if (usuario == null || usuario.length() < 2) {
-			usuario = "Usuario no valido";
+		if (usuario == null || usuario.length() < 2 || usuario == "CRECEREM" || usuario == "CRECERAB" || usuario == "CRECERAC" || usuario == "CRECERAD") {
+			usuario = null
 		} else {
 			char segundoCaracter = usuario.charAt(1);
 			// Verificar si el segundo caracter es una letra
@@ -39,10 +39,10 @@ public class kywHabilitarCommandLine {
 				if (usuario.length() >= 4) {
 					usuario = usuario.substring(usuario.length() - 4);
 				} else {
-					usuario = "Usuario no valido";
+					usuario = null
 				}
 			} else {
-				usuario = "Usuario no valido";
+				usuario = null
 			}
 		}
 		return 'B.'+usuario;
@@ -50,16 +50,6 @@ public class kywHabilitarCommandLine {
 
 	@Keyword
 	def habilitarCommandLine(String usuario) {
-		//Configuracion de ambiente
-		kywG.ConfigEnvironment(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-		//--- Ingreso de credenciales para el Login ---
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNUser'),findTestData('MainData/Users').getValue(1,12))
-		WebUI.setText(findTestObject('Object Repository/01-Login/txtLGNPassword'), findTestData('MainData/Users').getValue(2,12))
-		WebUI.click(findTestObject('Object Repository/01-Login/btnLGNSignIn'))
-		WebUI.delay(3)
-		WebUI.maximizeWindow()
-		kywS.takeScreenshotInScript()
 
 		//Se ingresa el comando USER,
 		WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('USER,'))
@@ -74,13 +64,23 @@ public class kywHabilitarCommandLine {
 		def user = procesarUsuario(usuario)
 		WebUI.setText(findTestObject('Object Repository/00-Utils/01-CommandLine/inputUSER,'),(user))
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/btnModificarRegistro'))
-		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/btnAgregarAtributos1'))
+
+		TestObject imgTestObject = new TestObject().addProperty("xpath", ConditionType.EQUALS, '//*[@id="fieldCaption:ATTRIBUTES"]/following::img[1]')
+		WebUI.click(imgTestObject)
+
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/cbAtributos2'))
 		WebUI.selectOptionByIndex(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/cbAtributos2'), 2)
 		kywS.takeScreenshotInScript()
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/btnAceptarRegistro'))
-		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
-
-		WebUI.closeBrowser()
+		try {
+			WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+			WebUI.delay(3)
+			WebUI.closeWindowIndex(1)
+			WebUI.switchToWindowIndex(0)
+		} catch (Exception e) {
+			WebUI.closeWindowIndex(1)
+			WebUI.switchToWindowIndex(0)
+		}
 	}
+
 }
