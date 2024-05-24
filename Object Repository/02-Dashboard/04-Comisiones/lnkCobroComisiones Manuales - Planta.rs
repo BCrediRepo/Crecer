@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>ul.menuMargin:nth-child(21) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('NEW','AC.CHARGE.REQUEST,BCCL.COM.PLANTA I F3');processMenuHeaderText('Cobro Comisiones Manuales - Planta ')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>509d1656-428a-41da-9211-fde7895fb6a8</webElementGuid>
+      <webElementGuid>a6e41e0d-4955-4e63-adc1-46aefb6c8356</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('NEW','AC.CHARGE.REQUEST,BCCL.COM.PLANTA I F3');processMenuHeaderText('Cobro Comisiones Manuales - Planta ')</value>
-      <webElementGuid>64520860-0d4b-4c14-ad9b-1e7661d425a8</webElementGuid>
+      <webElementGuid>c0231c0e-26e6-4e64-bcfa-e06f00c33db7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('AC.CHARGE.REQUEST,BCCL.COM.PLANTA I F3');</value>
-      <webElementGuid>62bf1f02-3644-4602-9bca-c11e7aac3a53</webElementGuid>
+      <webElementGuid>79a091d5-7c8c-4e17-b08a-d5a056567e7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cobro Comisiones Manuales - Planta  </value>
-      <webElementGuid>63fda3b9-85cf-4f27-aed4-528b988b5610</webElementGuid>
+      <webElementGuid>943fceec-3e5b-4d13-9c8b-7bff7a6ad5d6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>e4b4d9e9-6230-4094-9ca4-41ef54df4607</webElementGuid>
+      <webElementGuid>30006067-ce71-47f2-9635-ba019bacaa57</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>cd6f8236-8102-4461-bf57-47ae1ed7ff18</webElementGuid>
+      <webElementGuid>ab9c56d5-47a1-4b23-8fc3-e02a81e1696b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('NEW','AC.CHARGE.REQUEST,BCCL.COM.PLANTA I F3');processMenuHeaderText('Cobro Comisiones Manuales - Planta ')&quot;]</value>
-      <webElementGuid>7a3f555f-073f-48a1-8d6d-303808eb581a</webElementGuid>
+      <webElementGuid>b1793883-9485-4c76-8e32-f75438e1f92a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[21]/li/ul/li/ul/li/a</value>
-      <webElementGuid>fe530049-7f0c-4fe2-b814-fdba662e0236</webElementGuid>
+      <webElementGuid>bc2e0771-13d6-4330-891a-c9aa984b5dc7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Cobro Comisiones Manuales - Planta')]</value>
-      <webElementGuid>978590fb-4683-48b4-a960-e83334f6d16d</webElementGuid>
+      <webElementGuid>07e0e0f8-611d-4443-8c52-7ef693ff211a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Comisiones'])[1]/following::a[1]</value>
-      <webElementGuid>481ea980-a843-45c9-b1d7-dad0de8a929f</webElementGuid>
+      <webElementGuid>cf4e8eac-692a-4e14-94b2-ebf6533b5c29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Comisiones y Bonificaciones'])[1]/following::a[1]</value>
-      <webElementGuid>fa5e092d-1e7e-43b1-b33c-a3ddb77e5fe6</webElementGuid>
+      <webElementGuid>2e4fa4a2-50bd-4d59-9304-a209711a6861</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizacion reciclado de Comisiones'])[1]/preceding::a[1]</value>
-      <webElementGuid>46d98581-ddc7-44ca-8d40-1447f9c572d4</webElementGuid>
+      <webElementGuid>0727a46d-9b57-49d8-875e-1be3f184c358</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Comisiones Cobradas'])[1]/preceding::a[2]</value>
-      <webElementGuid>37e3c8b8-c4a1-486b-9e76-960c162a4830</webElementGuid>
+      <webElementGuid>4b5d3552-3b8d-4fda-91c4-75129e28fb97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cobro Comisiones Manuales - Planta']/parent::*</value>
-      <webElementGuid>d3cf04b3-9422-442f-9edc-cd5a0b779fde</webElementGuid>
+      <webElementGuid>9656b686-7271-4011-a100-9830e9adc14c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('AC.CHARGE.REQUEST,BCCL.COM.PLANTA I F3');&quot;)]</value>
-      <webElementGuid>ce4424b9-3abd-45e2-99ba-21bb0ca58194</webElementGuid>
+      <webElementGuid>601aa23c-1a50-4ff3-a0e5-6cf0a6aee1ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[21]/li/ul/li/ul/li/a</value>
-      <webElementGuid>bc3e6de0-c751-4504-8b4e-bb8319b21262</webElementGuid>
+      <webElementGuid>d5aac5ac-29b8-4179-bcb5-403c98738c13</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;AC.CHARGE.REQUEST,BCCL.COM.PLANTA I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Cobro Comisiones Manuales - Planta  ' or . = 'Cobro Comisiones Manuales - Planta  ')]</value>
-      <webElementGuid>a332caa9-0bb8-4ed0-9a37-e03bd87f670d</webElementGuid>
+      <webElementGuid>465be38d-9bf1-4b9a-b6d5-0b7fb937fabf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
