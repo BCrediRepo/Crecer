@@ -704,4 +704,11 @@
       <testCaseId>Test Cases/14-MONEX/MON43-Operacion de Compra y Venta de Moneda Extranjera. Version BCCL.OP.CAMBIO,FILIAL.INMUEBLES.EFE</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>52750fc6-ddc2-4a48-8fb6-3128ce6f21aa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/55-Comisiones Manuales/CMA11-Reversa Comisión manual por Planta. Fecha de registración de la transacción original es igual a Fecha de proceso</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
