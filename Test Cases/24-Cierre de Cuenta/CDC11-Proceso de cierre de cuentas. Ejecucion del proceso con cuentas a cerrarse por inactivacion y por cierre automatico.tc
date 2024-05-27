@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC11-Proceso de cierre de cuentas. Ejecucion del proceso con cuentas a cerrarse por inactivacion y por cierre automatico</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3d330660-80d1-418b-9e62-c866280787a4</testCaseGuid>
+</TestCaseEntity>

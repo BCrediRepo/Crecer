@@ -52,9 +52,44 @@ WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Ingreso de R
 
 WebUI.switchToWindowTitle('Relacion Entre Socios')
 
-WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnValidarRegistro'))
+//Seleccionar "boton Dropdown Tipo de Cargo"
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnDropdownTipoCargo'))
 
-WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
+//Definir Primer Tipo de Cargo
+TestObject tipoCargo = findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblPrimerTipoCargo')
+
+//Almacenar valorNumeroDocumento
+String valorTipoCargo = WebUI.getText(tipoCargo)
+
+if (valorTipoCargo.equals('10')) {
+	
+	//Setear Valor del cargo
+	WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtTipoCargo'), '1')
+	
+	//Seleccionar "boton Validar Registro"
+	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnValidarRegistro'))
+	
+	//Screenshot
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+	
+	//Seleccionar "boton Aceptar Registro"
+	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
+			
+} else {
+	
+	//Setear Valor del cargo
+	WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtTipoCargo'), '10')
+
+	//Seleccionar "boton Validar Registro"
+	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnValidarRegistro'))
+	
+	//Screenshot
+	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+	
+	//Seleccionar "boton Aceptar Registro"
+	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
+	
+}
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTxnCompleta'), 6)
 

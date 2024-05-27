@@ -15,49 +15,49 @@
       <guid>941f3456-7cb3-4051-89f6-2fe1c194c925</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS01-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona válida</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS01-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona valida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b1381649-50ca-4231-a120-371bc3711aba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS02-Compensación de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transacción en Último Día Hábil</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS02-Compensacion de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transaccion en Ultimo Dia Habil</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>73fab89c-1e38-45cb-a9b4-04678da9238a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS03-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacíos</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS03-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b15a15cd-65bd-4030-9f11-cb08a9976f17</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS04-Compensación de saldos. Consulta de Relaciones Compensación Completitud de pantalla</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS04-Compensacion de saldos. Consulta de Relaciones Compensacion Completitud de pantalla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8c0b9c4b-d716-404c-8094-f2ab54ca14af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS05-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS05-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>da656621-0022-4b2c-a46d-0e8b30fd7335</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS06-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS06-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f8c3046a-511e-4d07-a258-d2287f460ac9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS07-Compensación de saldos. Productos y Circulares. Código de producto no informado</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS07-Compensacion de saldos. Productos y Circulares. Codigo de producto no informado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -71,7 +71,7 @@
       <guid>b6063d06-fa26-4150-8ee3-505cb416da17</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD09-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta válida.Casa central</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD09-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta valida.Casa central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -85,7 +85,7 @@
       <guid>051aaa1d-0c28-482b-8af3-ba8db8982674</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD11-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta inexistente</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD11-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta inexistente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

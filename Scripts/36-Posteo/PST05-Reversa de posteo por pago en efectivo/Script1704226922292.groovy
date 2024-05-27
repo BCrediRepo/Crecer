@@ -54,19 +54,30 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 //Reverso de posteo y verificacion de TXN completa
 WebUI.click(findTestObject('37-Posteo/BCCL.E.EB.CONS.REVE/lnkReversar'))
 
-WebUI.switchToWindowTitle('TELLER')
+//WebUI.switchToWindowTitle('TELLER')
+
+//Cambiar ventana a "Movimiento de Fondos" o "TELLER"
+WebUI.switchToWindowIndex(1)
 
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnReversar'))
 
-//Seleccionar "Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
-
-WebUI.verifyElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-
-label = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-
-assert label.contains('Txn Completa:') == true
-
+try {
+	//Seleccionar "Aceptar Alertas
+	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
+	
+	WebUI.verifyElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
+	
+	label = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
+	
+	assert label.contains('Txn Completa:') == true
+	
+} catch (Exception e) {
+	WebUI.verifyElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
+	
+	label = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
+	
+	assert label.contains('Txn Completa:') == true
+}
 
 //---------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -78,4 +89,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

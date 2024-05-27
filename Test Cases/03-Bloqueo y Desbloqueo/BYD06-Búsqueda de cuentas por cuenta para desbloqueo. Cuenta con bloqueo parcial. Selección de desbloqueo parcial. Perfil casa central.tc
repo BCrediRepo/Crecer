@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>BYD06-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Selección de desbloqueo parcial. Perfil casa central</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>954209ce-4e83-407b-a2cd-0234f825ee62</testCaseGuid>
-</TestCaseEntity>

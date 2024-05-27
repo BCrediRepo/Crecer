@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD14-Busqueda de cuentas por persona para desbloqueo. Completitud. Perfil filial</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5a0bdae2-1661-4852-b3bb-a04f1e0622e5</testCaseGuid>
+</TestCaseEntity>

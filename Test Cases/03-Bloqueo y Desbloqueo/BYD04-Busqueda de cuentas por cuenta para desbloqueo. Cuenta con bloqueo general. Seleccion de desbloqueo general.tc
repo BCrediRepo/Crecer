@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD04-Busqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo general. Seleccion de desbloqueo general</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc669d0c-b756-42d0-8f28-fc1f3c4d9dde</testCaseGuid>
+</TestCaseEntity>

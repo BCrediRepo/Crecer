@@ -36,7 +36,7 @@
       <guid>33099464-cfe0-422b-a666-28d7bdf70493</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT04-Administracion de Piezas con Tarjetas. DESTRUCCIÓN MASIVA. Tarjetas con Plazo de atesoramiento vencido. CRÉDITO</testCaseId>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT04-Administracion de Piezas con Tarjetas. DESTRUCCION MASIVA. Tarjetas con Plazo de atesoramiento vencido. CREDITO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -64,140 +64,140 @@
       <guid>9cf99b05-b436-4cb9-9d4e-6f87964ab9e5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD01-Búsqueda de cuentas por cuenta para desbloqueo. Completitud</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD01-Busqueda de cuentas por cuenta para desbloqueo. Completitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>432b30a2-d750-4235-b6d6-a99d9e0634e1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD02-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta bloqueada. Perfil casa central</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD02-Busqueda de cuentas por cuenta para desbloqueo. Cuenta bloqueada. Perfil casa central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d76b6511-a03b-463f-b809-a1b075291965</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD03-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo general. Selección de desbloqueo parcial</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD03-Busqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo general. Seleccion de desbloqueo parcial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c1ee8434-c1cb-4880-9359-1d9f2e90a4ab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD04-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo general. Selección de desbloqueo general</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD04-Busqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo general. Seleccion de desbloqueo general</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e472c5a5-86ed-461e-bb72-cf6c2db83b93</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD05-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Selección de desbloqueo general</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD05-Busqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Seleccion de desbloqueo general</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>90e66858-d1c3-48fa-8426-387c2aa81e86</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD06-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Selección de desbloqueo parcial. Perfil casa central</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD06-Busqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Seleccion de desbloqueo parcial. Perfil casa central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ad067f3f-c067-4ae2-aeea-4dbf8b56470b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD07-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Selección de desbloqueo parcial. Perfil filial</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD07-Busqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Seleccion de desbloqueo parcial. Perfil filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>339adff9-71ee-448b-9eae-50938c7ee0fc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD08-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta no bloqueada. Validación</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD08-Busqueda de cuentas por cuenta para desbloqueo. Cuenta no bloqueada. Validacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>eae5edb2-2f3d-4221-ad0d-8cefbf19f80d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD09-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada distinta a la del usuario. Perfil filial. Validación</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD09-Busqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada distinta a la del usuario. Perfil filial. Validacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9e6302e2-e49e-4d6e-9396-f1877ca2e5b9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD10-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario. Perfil filial</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD10-Busqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario. Perfil filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>16d2bed2-ebd0-4029-a8a3-e6e6717cc156</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD11-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por Nro de CUI</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD11-Busqueda de cuentas por persona para desbloqueo. Busqueda por Nro de CUI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>89c55715-b65a-4eea-ad51-135f0bf5b59a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD12-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por Nro de documento</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD12-Busqueda de cuentas por persona para desbloqueo. Busqueda por Nro de documento</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2da5cb00-b031-4c0f-8805-74b4d003b931</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD13-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por persona</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD13-Busqueda de cuentas por persona para desbloqueo. Busqueda por persona</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>36e458cb-0f13-4a56-a9f9-2c45aff5c93d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD14-Búsqueda de cuentas por persona para desbloqueo. Completitud. Perfil filial</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD14-Busqueda de cuentas por persona para desbloqueo. Completitud. Perfil filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>cd1d0cfc-c8c5-4b3a-9a8a-4b466ae762b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD15-Búsqueda de cuentas por persona para desbloqueo. Cuenta no bloqueada. Validación</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD15-Busqueda de cuentas por persona para desbloqueo. Cuenta no bloqueada. Validacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>89c0f6cb-4c5f-4539-bba6-b1077cc0511d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD16-Búsqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil filial</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD16-Busqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ed0506eb-ff7c-49b0-81ba-ad6f9ea86691</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD17-Búsqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil casa central</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD17-Busqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil casa central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>99e6dd50-d5c3-4b5a-930d-96afeb9a7222</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD18-Consulta sobre el histórico de bloqueos. Cuenta con bloqueo de origen automático Filial</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD18-Consulta sobre el historico de bloqueos. Cuenta con bloqueo de origen automatico Filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2b01e5b5-3e0a-49a9-b8e9-4a1598fbc6fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD19-Bloqueo-Desbloqueo.Consulta Histórico de Bloqueos. Solo los campos Obligatorios completos</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD19-Bloqueo-Desbloqueo.Consulta Historico de Bloqueos. Solo los campos Obligatorios completos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>baa9dfbc-1700-4df2-8809-6956ec68863a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD20-Bloqueo-Desbloqueo.Consulta de Cuentas Bloqueadas por Sucursal. Visualización de Detalle de Bloqueo</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD20-Bloqueo-Desbloqueo.Consulta de Cuentas Bloqueadas por Sucursal. Visualizacion de Detalle de Bloqueo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

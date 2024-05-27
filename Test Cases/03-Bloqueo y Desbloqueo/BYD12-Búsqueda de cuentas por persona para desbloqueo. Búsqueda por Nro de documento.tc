@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>BYD12-Búsqueda de cuentas por persona para desbloqueo. Búsqueda por Nro de documento</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e66dffba-bb86-4bdd-93b5-b6d68f53bc6e</testCaseGuid>
-</TestCaseEntity>

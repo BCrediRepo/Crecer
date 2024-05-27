@@ -64,14 +64,14 @@
       <guid>038de03f-0f14-482d-a822-bdaced80052f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT15-Administrador de Piezas. Consulta por Número de Pieza</testCaseId>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT15-Administrador de Piezas. Consulta por Numero de Pieza</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9cb48ca0-a2ea-45fd-936f-0cbe2186a711</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT16-Administrador de Piezas. Modificación de Piezas</testCaseId>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT16-Administrador de Piezas. Modificacion de Piezas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -134,7 +134,7 @@
       <guid>f8d7dab5-29b3-4c94-b080-6ad397d4008e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD09-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta válida.Casa central</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD09-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta valida.Casa central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -148,7 +148,7 @@
       <guid>21af28bb-310d-440e-8a1c-f886f42736aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD11-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta inexistente</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CSD11-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta inexistente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -435,28 +435,28 @@
       <guid>ec1ad41f-df73-424c-be16-787e335e6f25</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC10-Cierre de Cuenta.Consulta de cuentas candidatas a cierre.Cuenta activa con más de X cheques rechazados</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC10-Cierre de Cuenta.Consulta de cuentas candidatas a cierre.Cuenta activa con mas de X cheques rechazados</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2153cf69-5e78-4b0d-9ae0-5bbaf30c8c3d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC11-Proceso de cierre de cuentas. Ejecución del proceso con cuentas a cerrarse por inactivación y por cierre automático</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC11-Proceso de cierre de cuentas. Ejecucion del proceso con cuentas a cerrarse por inactivacion y por cierre automatico</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b8d02083-96a6-4995-b97e-7a2400807e71</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC12-Cierre de cuenta.Administracion de nomina.Modificación de nómina de cuenta corriente en estado Cerrada. Adición de cheques a una nómina existente</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC12-Cierre de cuenta.Administracion de nomina.Modificacion de nomina de cuenta corriente en estado Cerrada. Adicion de cheques a una nomina existente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e5e71f38-f446-4c72-bc42-cc79e9c8ef0d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC13-Anexo de Cierre de Cta.Liquidación de Posteo por cierre de Cta con Cancelación Total.Saldo Acreedor</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC13-Anexo de Cierre de Cta.Liquidacion de Posteo por cierre de Cta con Cancelacion Total.Saldo Acreedor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -484,56 +484,56 @@
       <guid>cb3b07bd-1fe0-4063-a626-3fce26350ac8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P07-Personas. Alta Persona Jurídica</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P07-Personas. Alta Persona Juridica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>41b81a93-0924-48cc-aa18-26b72bfbc499</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P08-Personas. Modificacion Datos Domicilio y Teléfono</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P08-Personas. Modificacion Datos Domicilio y Telefono</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>3777b8b5-13c6-4aba-8c52-15d1e41a759f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P09-Personas. Modificación Datos Empleados</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P09-Personas. Modificacion Datos Empleados</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>333842ae-3ce1-4e34-a858-f632bf4c6018</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P10-Personas. Modificación Datos Localización Persona Física</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P10-Personas. Modificacion Datos Localizacion Persona Fisica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c8076964-a131-4b0d-b2aa-65ef25bdd2dc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P11-Personas. Modificación Persona Física Especial</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P11-Personas. Modificacion Persona Fisica Especial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4036c0cb-e2b3-4ccb-ae8d-cdba88d8864d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P12-Personas. Modificación Persona Jurídica Especial</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P12-Personas. Modificacion Persona Juridica Especial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>1ab64458-f344-4396-a780-d26b7f90abe1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P13-Personas. Persona Física. Modificación</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P13-Personas. Persona Fisica. Modificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8d0d1d49-79ed-4562-b468-bfc5e1f73dbb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P14-Personas. Persona Jurídica. Modificación</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P14-Personas. Persona Juridica. Modificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APT04-Administracion de Piezas con Tarjetas. DESTRUCCION MASIVA. Tarjetas con Plazo de atesoramiento vencido. CREDITO</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6e8c693-d0db-4a31-812c-08b4d6f1cf10</testCaseGuid>
+</TestCaseEntity>

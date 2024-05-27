@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDS02-Compensacion de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transaccion en Ultimo Dia Habil</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8cc65f4e-6c0f-427e-bcc6-2819794c67da</testCaseGuid>
+</TestCaseEntity>

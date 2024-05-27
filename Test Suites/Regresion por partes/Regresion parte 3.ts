@@ -456,49 +456,49 @@
       <guid>ca6eaa7d-740b-498a-aeaa-33ad607976e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC02-Cierre de Cuenta. Consulta de Nómina de Cuenta corriente en estado Cerrada</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC02-Cierre de Cuenta. Consulta de Nomina de Cuenta corriente en estado Cerrada</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>1d9e1e44-6568-4305-af87-0fa7746ac9fa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC03-Cierre de Cuentas. Consulta de cuentas por estado para socio específico.  Búsqueda. Cuenta con estado ACTIVA</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC03-Cierre de Cuentas. Consulta de cuentas por estado para socio especifico.  Busqueda. Cuenta con estado ACTIVA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>958d5277-1913-4cba-bf7b-6b1a7d500f24</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC04-Cierre de Cuentas. Consulta de cuentas por estado. Visualización de detalle de cuenta CERRADA</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC04-Cierre de Cuentas. Consulta de cuentas por estado. Visualizacion de detalle de cuenta CERRADA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9fa32d85-1c88-40ce-a1ca-e7810d5f0697</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC05-Búsqueda de cuentas para cierre con saldo. Búsqueda por Id de persona inexistente. Validación</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC05-Busqueda de cuentas para cierre con saldo. Busqueda por Id de persona inexistente. Validacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d0419ec5-78e9-4f12-921e-6e00a132aab1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC06-Búsqueda de cuentas para cierre con saldo. Búsqueda por Nro de CUI inexistente. Validación</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC06-Busqueda de cuentas para cierre con saldo. Busqueda por Nro de CUI inexistente. Validacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>1d424e2b-dc2a-4b70-a1e7-41e5d9221496</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC07-Búsqueda de cuentas para cierre con saldo. Búsqueda por Nro de documento inexistente. Validación</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC07-Busqueda de cuentas para cierre con saldo. Busqueda por Nro de documento inexistente. Validacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>3cfb28cf-60b2-4a08-8c2c-8069f29526ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC08-Consulta de cuentas para cierre con saldo. Búsqueda por Nro de cuenta. Cuenta cerrada. Validación</testCaseId>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC08-Consulta de cuentas para cierre con saldo. Busqueda por Nro de cuenta. Cuenta cerrada. Validacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -652,49 +652,49 @@
       <guid>a971c093-9d58-4304-8d4a-0c9c8088fd85</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS01-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona válida</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS01-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por ID de persona valida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>863ecea8-47c2-41bb-aae9-a34bd93b4d64</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS02-Compensación de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transacción en Último Día Hábil</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS02-Compensacion de Saldos. Consulta de Transacciones Plazo Fijo. Filtro por Nro Cuenta. Cuenta con Transaccion en Ultimo Dia Habil</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>fa23e5ee-667f-47cb-ae68-04f7d90e5590</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS03-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacíos</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS03-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>954799a6-25f6-422a-bfbd-d4d6bc59a6ec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS04-Compensación de saldos. Consulta de Relaciones Compensación Completitud de pantalla</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS04-Compensacion de saldos. Consulta de Relaciones Compensacion Completitud de pantalla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>831fea8a-aea2-45bc-97dc-7a32eae8951a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS05-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS05-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Completitud de pantalla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>314a1eed-6b75-484c-9523-80d09e2ed741</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS06-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS06-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuentas sin relaciones</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e67548ea-080f-4704-b035-f5938ddc46a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS07-Compensación de saldos. Productos y Circulares. Código de producto no informado</testCaseId>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS07-Compensacion de saldos. Productos y Circulares. Codigo de producto no informado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

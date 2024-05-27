@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CDC07-Búsqueda de cuentas para cierre con saldo. Búsqueda por Nro de documento inexistente. Validación</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>def5d4cd-e257-45a5-bc9d-17585c7a9eb3</testCaseGuid>
-</TestCaseEntity>
