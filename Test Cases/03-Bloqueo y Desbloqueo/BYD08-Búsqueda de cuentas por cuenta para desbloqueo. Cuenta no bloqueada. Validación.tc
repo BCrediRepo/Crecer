@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>BYD08-Búsqueda de cuentas por cuenta para desbloqueo. Cuenta no bloqueada. Validación</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>6f2c4e70-26f0-43f4-8ef4-5e19914625f3</testCaseGuid>
-</TestCaseEntity>

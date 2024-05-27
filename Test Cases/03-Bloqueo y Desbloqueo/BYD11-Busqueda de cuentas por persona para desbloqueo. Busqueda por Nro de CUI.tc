@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD11-Busqueda de cuentas por persona para desbloqueo. Busqueda por Nro de CUI</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da76cc06-7932-4fd2-b0d4-bf00857050b3</testCaseGuid>
+</TestCaseEntity>

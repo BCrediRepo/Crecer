@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDetalleOperacion</name>
+   <tag></tag>
+   <elementGuidId>62e90bb9-28a4-49b6-92e0-6eb19b27ec2c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[18]/td/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>eefa629f-ecc1-41dd-b672-02ab5a0a01cb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>comment comment_BCCLOPCAMBIO comment_BCCLOPCAMBIO_CONSULTA</value>
+      <webElementGuid>3d1ff807-ff0d-4d3f-b307-7533f62e4d78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Detalle de la Operacion</value>
+      <webElementGuid>de483a98-45b2-4a58-a2d8-3a0723d89273</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[18]/td[@class=&quot;field field_BCCLOPCAMBIO field_BCCLOPCAMBIO_CONSULTA&quot;]/span[@class=&quot;comment comment_BCCLOPCAMBIO comment_BCCLOPCAMBIO_CONSULTA&quot;]</value>
+      <webElementGuid>6321ff71-c57d-4df5-ba5c-d0031410c6ff</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[18]/td/span</value>
+      <webElementGuid>42a23824-fa26-40d9-9cae-6694f8e76c10</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID Anulacion BCRA'])[1]/following::span[4]</value>
+      <webElementGuid>e02f6a1e-dcf7-4e87-88b7-fd1f05aed960</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID Transaccion BCRA'])[1]/following::span[6]</value>
+      <webElementGuid>3e6bb2b9-33f6-414e-aad5-e21a7454ac08</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='_____________________________________________________________________________________'])[2]/preceding::span[1]</value>
+      <webElementGuid>64f11223-c7fa-4692-b865-d59b8b612a96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Importe en ME'])[1]/preceding::span[2]</value>
+      <webElementGuid>855d759b-55ef-4929-a1df-973494524e91</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Detalle de la Operacion']/parent::*</value>
+      <webElementGuid>0e4b822d-63dc-470a-be58-28a519cf30ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[18]/td/span</value>
+      <webElementGuid>c542fd2a-7281-475e-9d6d-d14251c619e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Detalle de la Operacion' or . = 'Detalle de la Operacion')]</value>
+      <webElementGuid>562bf6f6-aa65-4719-a566-ef5eb83d3652</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>BYD27-Consulta sobre el histórico de bloqueos. Cuenta con bloqueo de origen automático Filial</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>706f5054-2e8b-4945-9565-e019fdd30160</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD15-Busqueda de cuentas por persona para desbloqueo. Cuenta no bloqueada. Validacion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>64bfc1af-789d-4e9a-b210-867261b8958c</testCaseGuid>
+</TestCaseEntity>

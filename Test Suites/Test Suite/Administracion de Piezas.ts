@@ -36,7 +36,7 @@
       <guid>01f6be1c-4d7e-464b-907a-dfe9a0f26824</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT04-Administracion de Piezas con Tarjetas. DESTRUCCIÓN MASIVA. Tarjetas con Plazo de atesoramiento vencido. CRÉDITO</testCaseId>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT04-Administracion de Piezas con Tarjetas. DESTRUCCION MASIVA. Tarjetas con Plazo de atesoramiento vencido. CREDITO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -113,14 +113,14 @@
       <guid>106e21ee-06d0-412e-b89f-dc4ed17f2f81</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT15-Administrador de Piezas. Consulta por Número de Pieza</testCaseId>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT15-Administrador de Piezas. Consulta por Numero de Pieza</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c7e33dcf-c936-463a-ada3-2eefa2f06417</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT16-Administrador de Piezas. Modificación de Piezas</testCaseId>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT16-Administrador de Piezas. Modificacion de Piezas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

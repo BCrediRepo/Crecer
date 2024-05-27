@@ -32,8 +32,7 @@ import org.jsoup.nodes.Document
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(
-		2, 14))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 45), findTestData('MainData/Users').getValue(2, 45))
 
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -182,7 +181,9 @@ for (WebElement row : rows) {
 }
 
 
-WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+//WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+
+WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAutorizar'))
 
