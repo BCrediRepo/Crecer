@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>default</name>
+   <name>CrecerTES12</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>VPN Credi </description>
       <initValue>'https://sacrem.bancocredicoop.coop/'</initValue>
-      <name>vVPNCredicoop</name>
+      <name>vURLTSoftTest10</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>IP de ejecucion</description>
-      <initValue>findTestData('MainData/ServerIP').getValue(2, 1)</initValue>
+      <initValue>findTestData('MainData/ServerIP').getValue(2, 5)</initValue>
       <name>vServerIPRun</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Servidor de ejecucion</description>
-      <initValue>findTestData('MainData/TestsServers').getValue(2, 1)</initValue>
+      <initValue>findTestData('MainData/TestsServers').getValue(2, 5)</initValue>
       <name>vServerNameRun</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -30,13 +30,8 @@
       <name>vPass</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Se almacena el numero de transaccion</description>
-      <initValue>''</initValue>
-      <name>vTxn</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Fecha COB del Ambiente TES10</description>
-      <initValue>findTestData('MainData/Fechas').getValue(4, 1)</initValue>
-      <name>vFechaCOBAmbTES10</name>
+      <description>Fecha COB del Ambiente TES12</description>
+      <initValue>findTestData('MainData/Fechas').getValue(6, 1)</initValue>
+      <name>vFechaCOBAmbTES12</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

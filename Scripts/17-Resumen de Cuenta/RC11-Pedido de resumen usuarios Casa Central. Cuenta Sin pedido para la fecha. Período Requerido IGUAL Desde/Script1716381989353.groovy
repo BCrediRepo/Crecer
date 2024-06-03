@@ -17,12 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 5), findTestData('MainData/Users').getValue(2, 5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -33,14 +32,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Cambiamos a la ventana CUENTAS
 WebUI.switchToWindowTitle('CUENTAS')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
 //Ingresamos la cuenta a consultar
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '24400086749')
-
-//Screenshot
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '10730166496')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Ver registro
@@ -48,7 +43,6 @@ WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/
 
 //Verificamos el campo Working Balance
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/lblWorkingBalance'), 6)
-
 WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/lblWorkingBalance'), 6)
 
 //Screenshot
@@ -56,8 +50,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.closeBrowser()
 
+//---------------------------------------------------------------------------------------------------------------------
 //Volvemos a loguear
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -71,21 +65,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
 
 //Click en pedido de resumen de cuenta
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/spanPedido de Resumen de Cuenta'))
-
-//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/02-Pedido de Resumen de Cuenta/lnkPedido de resumen de cuenta'))
 
 //cambiamos a la ventana BCCL.RES.CTA.PEDIDO
 WebUI.switchToWindowTitle('BCCL.RES.CTA.PEDIDO')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
 //Ingresamos los datos para el pedido de resumen de cuenta
-
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '24400086749')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '10730166496')
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/cbxDesdeInicioDelMesEnCurso'))
 
@@ -97,9 +85,8 @@ WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btn
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnAceptarRegistro'))
 
-//Screenshot
+//Screenshot y aceptar alertas
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
 
 //ASSERT
@@ -110,6 +97,38 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES
 def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblTxn Completa'))
 
 assert element.contains('Txn Completa:')
+
+//INGRESO EL NUM DE TRX para realizar la reversa
+// Dividir la cadena por espacios en blanco y tomar el segundo elemento
+def partes = element.split('\\s+')
+def trx1 = partes[2]
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtSuperiorInputNumCuenta'), trx1)
+
+//Boton Herramienta
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnHerramienta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnReversar'), 6)
+WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnReversar'))
+
+//ASSERT PARA LA REVERSA DEL PEDIDO DE RESUMEN DE CUENTA
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblTxn Completa'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblTxn Completa'))
+def element2 = WebUI.getText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblTxn Completa'))
+assert element2.contains('Txn Completa:')
+
+//VALIDO QUE SE HAYA REVERSADO y valido el campo REVE
+// Dividir la cadena por espacios en blanco y tomar el segundo elemento
+def partes2 = element2.split('\\s+')
+def trx2 = partes[2]
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtSuperiorInputNumCuenta'), trx2)
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnVerRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnAudit'), 6)
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnAudit'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblREVE'))
+def element3 = WebUI.getText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblREVE'))
+assert element3.contains('REVE')
+
 
 //---------------------------------------------------------------------------------------------------------------------
 
