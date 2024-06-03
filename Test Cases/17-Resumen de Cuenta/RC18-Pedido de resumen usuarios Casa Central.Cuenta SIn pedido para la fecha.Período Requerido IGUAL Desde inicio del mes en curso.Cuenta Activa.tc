@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>RC18-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Período Requerido IGUAL Desde inicio del mes en curso.Cuenta Activa</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>6654e8cb-5393-4bf6-853c-e5ab4547395d</testCaseGuid>
-</TestCaseEntity>

@@ -45,7 +45,7 @@ WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
 WebUI.maximizeWindow()
 
 //Escribe la fecha en el Imput
-WebUI.setText(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/inpFecha de Boleto'), '20230831')
+WebUI.setText(findTestObject('15-MONEX/06-BCCL.E.TOTS.OPER.MONEX/inpFecha de Boleto'), GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

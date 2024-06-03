@@ -85,7 +85,7 @@
       <guid>3d71d78d-c615-442f-a42d-2875ec952b74</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC11-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Con resumen periódico emitido.Período Requerido IGUAL Desde último resumen periódico emitido</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC11-Pedido de resumen usuarios Casa Central. Cuenta Sin pedido para la fecha. Período Requerido IGUAL Desde</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -128,13 +128,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/17-Resumen de Cuenta/RC17-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimientos de cuenta por Fecha Valor.Fecha Desde y Hasta vacíos.Cuenta con movimientos en fecha del día</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>82dd498c-7aaf-4321-87e1-41ebecfc5d17</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC18-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Período Requerido IGUAL Desde inicio del mes en curso.Cuenta Activa</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

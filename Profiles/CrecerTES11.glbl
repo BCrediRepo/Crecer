@@ -29,4 +29,9 @@
       <initValue>findTestData('MainData/Users').getValue(2, 1)</initValue>
       <name>vPass</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Fecha COB del Ambiente TES11</description>
+      <initValue>findTestData('MainData/Fechas').getValue(5, 1)</initValue>
+      <name>vFechaCOBAmbTES11</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

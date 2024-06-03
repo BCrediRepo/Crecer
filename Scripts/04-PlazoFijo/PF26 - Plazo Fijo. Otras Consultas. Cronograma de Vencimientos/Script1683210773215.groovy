@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import com.kms.katalon.core.testobject.ConditionType
+
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -35,9 +37,9 @@ WebUI.switchToWindowTitle('Cronograma Vencimientos')
 texto = WebUI.getText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lblPos3'))
 
 if (texto == 'Fecha Vto.') {
-    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos3'), '20230901')
+    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos3'), '20230904')
 } else {
-    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos1'), '20230901')
+    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos1'), '20230904')
 }
 
 // Captura el tiempo de inicio
