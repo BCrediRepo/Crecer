@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblPrimerID</name>
+   <name>lblPlasticoNoRecibido</name>
    <tag></tag>
    <elementGuidId>0130f097-f93c-4c4e-ac34-17fb1266d979</elementGuidId>
    <selectorCollection>

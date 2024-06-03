@@ -66,7 +66,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'))
 
 //Definir Objeto
-Tarjeta = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/10-BCCL.AP.E.AP.LISTADO.EN.TRANSITO/lblPrimeraTarjeta'))
+Tarjeta = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/10-BCCL.AP.E.AP.LISTADO.EN.TRANSITO/lblNumPiezaenTransito'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -108,7 +108,7 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/14-BCCL.AP.
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnDropdownPlastico'))
 
 //Seleccionar Primer ID
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblPrimerID'))
+WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblPlasticoNoRecibido'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

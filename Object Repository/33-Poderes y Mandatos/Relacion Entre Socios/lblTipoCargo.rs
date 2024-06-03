@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblPrimeraTarjeta</name>
+   <name>lblTipoCargo</name>
    <tag></tag>
-   <elementGuidId>ce8400d6-3a3e-40d8-91d5-4c46c69e5f6d</elementGuidId>
+   <elementGuidId>eab5a713-6220-4c6b-908f-4f1761cd6582</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>b</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[13]</value>
+         <value>//tr[@id='dropDownRow1']/td/b</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>53760831-831b-4260-9ca8-b29a599c9187</webElementGuid>
+      <value>b</value>
+      <webElementGuid>f643dcbe-2b3d-4c5a-99d8-98f62fceca26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>5896570014763799</value>
-      <webElementGuid>ad6e65a2-3fbb-46ff-bc59-94882b816ffc</webElementGuid>
+      <value>10</value>
+      <webElementGuid>400bfba0-14ac-496f-8a86-8beb17a32be4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[13]</value>
-      <webElementGuid>8c4a05b6-2bed-4387-933a-c8b71fc8a8d9</webElementGuid>
+      <value>id(&quot;dropDownRow1&quot;)/td[@class=&quot;coloumntddata coloumntddata_EBCCLPERTIPOCARGO&quot;]/b[1]</value>
+      <webElementGuid>325fca2e-ab99-45e0-bc10-ffe18dae1ed3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[13]</value>
-      <webElementGuid>6ca5f884-84cb-4562-b08c-6f6d98728a96</webElementGuid>
+      <value>//tr[@id='dropDownRow1']/td/b</value>
+      <webElementGuid>68a0f528-75bb-4560-a5f8-663433030a60</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='A'])[1]/following::td[3]</value>
-      <webElementGuid>0f52d829-e8cc-4d81-ac38-a31cdc2571a5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vigencia'])[1]/following::b[1]</value>
+      <webElementGuid>dc5eac88-4898-4dd9-90bd-bc9b2ef438af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='RAWSON'])[1]/following::td[6]</value>
-      <webElementGuid>d011d62a-573c-4660-8dc4-ac06f89180f9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::b[1]</value>
+      <webElementGuid>d7bd2929-17f9-4d21-b0f8-fc46c2d5a2d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CABAL'])[2]/preceding::td[3]</value>
-      <webElementGuid>b69aa3d4-2c8c-4b0e-a816-0b907119a75e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PROSECRETARIO'])[2]/preceding::b[1]</value>
+      <webElementGuid>372dd04a-7cfa-4dda-900d-804759b561d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='DEBITO'])[1]/preceding::td[4]</value>
-      <webElementGuid>1af836f1-c3fb-44f2-a907-87ac60295cc0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PROSECRETARIO'])[3]/preceding::b[1]</value>
+      <webElementGuid>a0d96a74-7ad7-4e70-9d88-a3d97c58a89c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='5896570014763799']/parent::*</value>
-      <webElementGuid>a12422df-b55b-4ef1-bb3a-bf0efff52688</webElementGuid>
+      <value>//*/text()[normalize-space(.)='10']/parent::*</value>
+      <webElementGuid>f45de854-a2ae-472f-b245-b7733513c38a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[13]</value>
-      <webElementGuid>433a9f02-e783-4f9b-9dc2-9c777d5042c0</webElementGuid>
+      <value>//b</value>
+      <webElementGuid>1bcddc9c-79d5-4b1a-b7f2-9937ac5ac30e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '5896570014763799' or . = '5896570014763799')]</value>
-      <webElementGuid>a91358af-6ee3-4917-b7b2-66a7ba479672</webElementGuid>
+      <value>//b[(text() = '10' or . = '10')]</value>
+      <webElementGuid>2f5f26f6-073a-4778-ad8f-e94efe2d9552</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

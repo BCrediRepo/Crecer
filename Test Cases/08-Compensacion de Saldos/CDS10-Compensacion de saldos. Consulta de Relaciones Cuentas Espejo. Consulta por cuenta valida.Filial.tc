@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CSD10-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta valida.Filial</name>
+   <name>CDS10-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta valida.Filial</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>a0008b17-503e-46b9-bd34-d07ab818718c</testCaseGuid>

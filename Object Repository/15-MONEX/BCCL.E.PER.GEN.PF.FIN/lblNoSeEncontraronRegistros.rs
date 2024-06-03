@@ -6,15 +6,15 @@
    <elementGuidId>2463d524-8047-40ed-a190-6ae3639963c1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>tr > #message</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//td[@id='message']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.message</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>d2577fb4-4220-4c25-b52b-7bc5c5ec6861</webElementGuid>
+      <webElementGuid>2d33cede-a508-460f-b9f7-d5a57f7d7f06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>message</value>
-      <webElementGuid>9bf76588-26de-49a3-8bc3-b2f794011ff5</webElementGuid>
+      <webElementGuid>ff39be1b-06e2-464d-b2ad-a14e2c161519</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>message</value>
-      <webElementGuid>83077ce6-752e-413c-8371-5ea0621e50ac</webElementGuid>
+      <webElementGuid>d520c2ed-c1dd-42e2-ba06-8c00a2e9e9dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>6ef86438-0078-4b03-8c49-606884829c2c</webElementGuid>
+      <webElementGuid>a5a172c9-7e9d-4f5a-93f3-0f111f28835e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>NO SE ENCONTRARON REGISTROS</value>
-      <webElementGuid>9c06f4db-a0e7-48d1-a350-7d816576bd64</webElementGuid>
+      <webElementGuid>52d4b8fe-630d-4810-8cc6-080fe0748f26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;divMsg&quot;)/table[@id=&quot;message&quot;]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[@id=&quot;message&quot;]</value>
-      <webElementGuid>91370616-f2fb-4411-b5f2-78aa84cab6fe</webElementGuid>
+      <webElementGuid>1c57d719-fe9d-421e-b891-b4ca2c439d9d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//td[@id='message']</value>
-      <webElementGuid>6df839dd-af01-44f7-97a9-39a87ec7dab3</webElementGuid>
+      <webElementGuid>6a9d2062-4a3e-4cac-98a8-1e53c0e23ef5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='message']/tbody/tr[2]/td/table/tbody/tr/td</value>
-      <webElementGuid>0e917167-a1d9-4428-b3da-4ff25e310702</webElementGuid>
+      <webElementGuid>d0bb1fe3-c807-45a2-b24b-18a72bd8729a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensaje de Error'])[1]/following::td[2]</value>
-      <webElementGuid>1186a9e4-89eb-46ab-b4c9-31470046cd5c</webElementGuid>
+      <webElementGuid>00181bd4-dc90-4605-a655-7ab38a6a4a9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>d07a73b5-b721-4509-b540-6f365d6ae007</webElementGuid>
+      <webElementGuid>2ab6e52c-051d-41b2-b0c1-5e5f9974e60d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[1]</value>
-      <webElementGuid>9be0272d-a490-40bc-8743-f543402701f8</webElementGuid>
+      <webElementGuid>9b58a8b8-7659-481b-8993-756b28f57664</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta General de personas Fisica'])[1]/preceding::td[4]</value>
-      <webElementGuid>8438d6c7-39c5-4503-a1fb-0ac8b7a69e0b</webElementGuid>
+      <webElementGuid>171a52cd-f3a7-40ba-adcc-e3803f4c5e11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='NO SE ENCONTRARON REGISTROS']/parent::*</value>
-      <webElementGuid>6a317a63-c6cf-416f-9bc6-712910d2768b</webElementGuid>
+      <webElementGuid>bae836c9-eff6-48fd-bec2-be2ec078d0d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/table/tbody/tr/td</value>
-      <webElementGuid>fec43e7e-401d-48ea-adfb-5d6c606bcede</webElementGuid>
+      <webElementGuid>58b714fd-29e6-423a-a886-1bbd471c3f6d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[@id = 'message' and (text() = 'NO SE ENCONTRARON REGISTROS' or . = 'NO SE ENCONTRARON REGISTROS')]</value>
-      <webElementGuid>458dcc80-74ae-45a3-8848-035c083c79c9</webElementGuid>
+      <webElementGuid>07b3f343-91cd-4817-9d36-d8ba9d8e5af4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

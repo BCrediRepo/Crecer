@@ -56,7 +56,7 @@ WebUI.switchToWindowTitle('Relacion Entre Socios')
 WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnDropdownTipoCargo'))
 
 //Definir Primer Tipo de Cargo
-TestObject tipoCargo = findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblPrimerTipoCargo')
+TestObject tipoCargo = findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTipoCargo')
 
 //Almacenar valorNumeroDocumento
 String valorTipoCargo = WebUI.getText(tipoCargo)
