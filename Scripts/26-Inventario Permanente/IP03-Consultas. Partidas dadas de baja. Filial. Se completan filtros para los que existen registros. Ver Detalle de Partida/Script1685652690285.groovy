@@ -38,7 +38,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.FIL.BAJAS')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+/*CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 
 WebUI.switchToWindowIndex(0)
 
@@ -46,10 +48,10 @@ WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.I
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.FIL.BAJAS')
+WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.FIL.BAJAS')*/
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID Persona', '1003227493')
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.BAJAS/txtIDPersona_value611'), '1003227493')
-
+//WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.BAJAS/txtIDPersona_value611'), '1003227493')
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
@@ -57,7 +59,6 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //WebUI.delay(120)
-
 WebUI.maximizeWindow()
 
 estado = WebUI.getText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.BAJAS/lblEstadoCuenta'))

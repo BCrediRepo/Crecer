@@ -36,25 +36,27 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_
 
 WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+////Filtro para limpiar selección
+//CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//
+//WebUI.switchToWindowIndex(0)
+//
+//WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
 
-WebUI.switchToWindowIndex(0)
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//
+//WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
+//
+//WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
+//
+//WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), 
+//    6)
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), 
-    6)
-
+//def variable = GlobalVariable.vFechaCOBAmbTES10
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Proceso', GlobalVariable.vFechaCOBAmbTES10)
 
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), '20230828')
+//WebUI.setText(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), '20230828')
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
