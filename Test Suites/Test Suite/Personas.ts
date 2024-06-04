@@ -57,7 +57,7 @@
       <guid>67bbb7f0-ddeb-4232-891c-2e651a50f90a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P07-Personas. Alta Persona Juridica</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P07-Personas. Modificacion Persona Juridica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
