@@ -6,12 +6,16 @@
    <elementGuidId>2e95a468-d86b-4acb-8b54-7abaa62d12b8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.MODIPJ.F');processMenuHeaderText('Modificacion Persona Juridica')&quot;]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.MODIPJ.F');processMenuHeaderText('Modificacion Persona Juridica')&quot;]</value>
+         <key>BASIC</key>
+         <value>//*[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.PER.MODIPJ.F&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Modificacion Persona Juridica ' or . = 'Modificacion Persona Juridica ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>d5b6fa08-a2b7-4b8c-a3a3-c42310c081d8</webElementGuid>
+      <webElementGuid>d3ec2eb7-717e-4c1a-9639-fe977dc56da9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.MODIPJ.F');processMenuHeaderText('Modificacion Persona Juridica')</value>
-      <webElementGuid>2802a701-b39f-4290-91eb-1eb3f5501c9b</webElementGuid>
+      <webElementGuid>c9f4005f-c4ba-44a6-b18d-eb23a4698627</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.PER.MODIPJ.F');</value>
-      <webElementGuid>b06ac46b-ab51-429b-88fe-b752f7f55137</webElementGuid>
+      <webElementGuid>82360513-583f-491b-8a39-cad4ead8c1ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Modificacion Persona Juridica </value>
-      <webElementGuid>423bf151-d268-4d59-9729-4318769dd5b8</webElementGuid>
+      <webElementGuid>c4bd91c5-e7c5-4882-a47b-11b21044ac36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[2]/a[1]</value>
-      <webElementGuid>233e3a65-01d5-4cdd-b959-f60782e0f2ce</webElementGuid>
+      <webElementGuid>f79335eb-f9ae-48d7-882c-e7b01fff975c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.PER.MODIPJ.F');processMenuHeaderText('Modificacion Persona Juridica')&quot;]</value>
-      <webElementGuid>0c197302-b5bc-43ca-b3ea-4f8e6891ffed</webElementGuid>
+      <webElementGuid>983656c5-2427-474b-b592-1482bae1b568</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[2]/li/ul/li[2]/ul/li[2]/a</value>
-      <webElementGuid>880d87fa-f0e7-4f91-bab6-961e45f153e4</webElementGuid>
+      <webElementGuid>a12ab280-5705-4802-873b-b3dfbaf9123e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Modificacion Persona Juridica')]</value>
-      <webElementGuid>d728865b-5c18-48d6-8592-9c8625f862bd</webElementGuid>
+      <webElementGuid>42cbe032-b6c6-476b-a00c-5aca5b886d74</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion Persona Fisica'])[1]/following::a[1]</value>
-      <webElementGuid>48918afd-b0e9-4b52-8844-e3bfb195f193</webElementGuid>
+      <webElementGuid>ee904565-7faa-45c9-b5f6-d08651b5957b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion'])[1]/following::a[2]</value>
-      <webElementGuid>b2263c43-e62b-478a-95d4-8ef6b6b3db9a</webElementGuid>
+      <webElementGuid>90c2d6c8-2834-4264-8d41-4258716cdd82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta'])[1]/preceding::a[1]</value>
-      <webElementGuid>138f2fe3-1246-47b3-a79f-8001087a2e76</webElementGuid>
+      <webElementGuid>30618cb7-de7e-4442-aca0-6e376c259fdb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Referidos y Prospectos'])[1]/preceding::a[1]</value>
-      <webElementGuid>bf9d5732-9b45-4799-b6a3-d328ae9fb74c</webElementGuid>
+      <webElementGuid>8d98fb96-61fd-4429-b929-ba216988c572</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Modificacion Persona Juridica']/parent::*</value>
-      <webElementGuid>1b5d60ca-877a-4159-b8a6-d7cef8374fb8</webElementGuid>
+      <webElementGuid>0a1ca822-4e30-4283-88e5-adcf1ee200e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.PER.MODIPJ.F');&quot;)]</value>
-      <webElementGuid>7973716c-3160-400f-b9fd-a0011d712565</webElementGuid>
+      <webElementGuid>aa3229e1-ca3a-472b-8bad-4994825cb068</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/ul/li[2]/a</value>
-      <webElementGuid>2018cd02-6c85-4407-89c0-b33931152f98</webElementGuid>
+      <webElementGuid>ac8a91af-dfb6-45f6-b84b-ca74f089c2f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.PER.MODIPJ.F&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Modificacion Persona Juridica ' or . = 'Modificacion Persona Juridica ')]</value>
-      <webElementGuid>3204b6d7-cda3-4cd7-a544-5af5d2b98b5b</webElementGuid>
+      <webElementGuid>0f0464b3-84e8-473f-8083-a033ebb1df7e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
