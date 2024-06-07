@@ -27,7 +27,7 @@ import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+//import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 import java.awt.Robot
 import java.awt.event.KeyEvent
