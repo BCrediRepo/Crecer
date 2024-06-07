@@ -29,23 +29,17 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.delay(3)
-WebUI.closeWindowTitle('BCCL.AP.PIEZAS')
 
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
-
-//Continuo con la busqueda de datos
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtMARCA'), 'CABAL')
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtSUCURSAL'), '073')
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('AP.MARCA', 'CABAL')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('AP.SUCURSAL', '073')
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lnkEjecutar'))
+
+//Obtengo el num de pieza
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblNumPieza'), 6)
 numPieza = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/lblNumPieza'))
 WebUI.delay(3)
@@ -67,6 +61,7 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Ma
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 6)
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Modifico el registro
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'))
 if (prod.contains('PROGRESAR')) {
     WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/txtPRODUCTOPIEZAS'), 'CREDITO')
@@ -104,7 +99,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarje
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

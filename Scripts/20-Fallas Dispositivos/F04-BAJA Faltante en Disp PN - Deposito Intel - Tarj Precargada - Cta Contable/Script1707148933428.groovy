@@ -82,7 +82,9 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/08-BCCL.E
 
 def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'))
 
-assert element.contains('Moneda') //---------------------------------------------------------------------------------------------------------------------
+assert element.contains('Moneda') 
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
