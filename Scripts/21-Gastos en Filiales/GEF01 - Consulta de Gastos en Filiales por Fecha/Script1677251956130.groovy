@@ -43,8 +43,8 @@ WebUI.switchToWindowTitle('BCCL.E.GASTOS.FILIALES')
 
 WebUI.click(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkNuevaSeleccion'))
 
-//WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txtFecha_value111'), '20220713')
-WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txtFecha_value111'), GlobalVariable.vFechaCOBAmbTES10)
+WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txtFecha_value111'), '20220713')
+//WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txtFecha_value111'), GlobalVariable.vFechaCOBAmbTES10)
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
