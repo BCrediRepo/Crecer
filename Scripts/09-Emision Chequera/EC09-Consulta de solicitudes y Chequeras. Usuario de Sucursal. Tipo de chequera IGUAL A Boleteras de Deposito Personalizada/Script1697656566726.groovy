@@ -54,7 +54,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 
 //Ingresa Numero de Cuenta
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), '00730190958')
+WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), '00730222435') //00730190958
 
 //Ingresa Estado
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtEstado'), 6)

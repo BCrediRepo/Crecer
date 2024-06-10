@@ -39,7 +39,7 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkBaja de Sobrante de Caja'))
 WebUI.switchToWindowTitle('BCCL.E.TT.BAJA.SOBRANTE.CAJA')
 
-//Se accede al menu
+//Se accede al menu 
 WebUI.switchToWindowIndex(0)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TT.BAJA.SOBRANTE.CAJA')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -47,8 +47,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //WebUI.switchToWindowTitle('Temenos T24')
 //WebUI.maximizeWindow()
 //WebUI.click(findTestObject('Object Repository/21-Fallas/02-Temenos T24/lnkBaja de Sobrante de Caja'))
+
+//Switch a la ventana BCCL.E.TT.BAJA.SOBRANTE.CAJA
 WebUI.switchToWindowTitle('BCCL.E.TT.BAJA.SOBRANTE.CAJA')
 
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos la fecha
 WebUI.setText(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/inputFechaDesde'), '20200725')
 
 // Captura el tiempo de inicio
@@ -56,7 +62,6 @@ long startTime = System.currentTimeMillis()
 
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/tdId'),3)
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -65,6 +70,14 @@ long endTime = System.currentTimeMillis()
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/lblMoneda'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/lblMoneda'))
+
+def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/01-BCCL.E.TT.BAJA.SOBRANTE.CAJA/lblMoneda'))
+
+assert element.contains('Moneda')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>ul.menuMargin:nth-child(4) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > span:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(//span[@onclick='ProcessMouseClick(event)'])[12]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>92830848-7ae1-44d5-81c2-5f8bce06de85</webElementGuid>
+      <webElementGuid>a44879c8-8391-4ea4-8fc3-603703b7bf85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>018627ad-cd31-42e9-aa2b-97cbfacb6ac4</webElementGuid>
+      <webElementGuid>0a7d55fa-3087-4989-a9f8-023a7ed35ee1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>ec59ebee-f67b-46cb-89a4-61f196a7ed89</webElementGuid>
+      <webElementGuid>336401c4-ae2f-4c8b-8ca5-4a1dc11f5b80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consultas de Cuenta</value>
-      <webElementGuid>10fb90f8-5862-4369-8422-9e1c8d0e9bf2</webElementGuid>
+      <webElementGuid>0959f96e-90b9-4ff8-bc93-39e06eba65f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>2be35b75-f4d9-4efc-8813-0e145afae01b</webElementGuid>
+      <webElementGuid>3f288b4b-22de-4650-bd68-02c882d29cd7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>8cb301d7-8440-4df5-9051-14733b4a3a9d</webElementGuid>
+      <webElementGuid>a93e445e-f5cb-40fa-80fb-1bef65c6a657</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[12]</value>
-      <webElementGuid>23d1055a-aefe-4c11-b997-7ef910bcb4e0</webElementGuid>
+      <webElementGuid>db756b7a-76ea-4b0e-b5e6-9f6bd2f57f3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[3]/li/ul/li[2]/span</value>
-      <webElementGuid>64fc40c6-4a6a-48b2-9a39-23ea4ad39042</webElementGuid>
+      <webElementGuid>d9531165-d851-4005-9294-eb1731adbe35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Continuacion Proceso Alta'])[1]/following::span[1]</value>
-      <webElementGuid>87b33885-fc2f-4977-9747-a82c629d89e5</webElementGuid>
+      <webElementGuid>84d3ecc2-20ed-4c58-9f06-a2b8f6cb2986</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/following::span[1]</value>
-      <webElementGuid>afa04c2c-6fdd-4b8d-bd04-262273cd47bc</webElementGuid>
+      <webElementGuid>f61481fd-f600-410b-8228-43cefcd5a6cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::span[1]</value>
-      <webElementGuid>bdaed95f-f6db-42b7-9931-b15442c5d624</webElementGuid>
+      <webElementGuid>f00c28e4-eb90-461d-b3e3-2700f3c98355</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/preceding::span[1]</value>
-      <webElementGuid>c4c89998-8631-42a0-baad-41982609c42d</webElementGuid>
+      <webElementGuid>96581ef9-5ab0-4190-86f3-f699fc1462c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consultas de Cuenta']/parent::*</value>
-      <webElementGuid>85c19fd4-7938-4997-9b65-9197855f4f35</webElementGuid>
+      <webElementGuid>5a2e3433-4b26-4498-ade8-d24fac095a30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[3]/li/ul/li[2]/span</value>
-      <webElementGuid>94662633-1852-4d73-bec5-ad411cc36e76</webElementGuid>
+      <webElementGuid>1577ee9a-05de-4e7e-aeeb-919fb3b0dd19</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Consultas de Cuenta' or . = 'Consultas de Cuenta')]</value>
-      <webElementGuid>2829e2eb-9a6d-4829-9c1f-ee8f10eaa145</webElementGuid>
+      <webElementGuid>af7387d5-dc41-4833-a38a-9e09929a7926</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

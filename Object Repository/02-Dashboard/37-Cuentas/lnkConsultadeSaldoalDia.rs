@@ -6,15 +6,18 @@
    <elementGuidId>339227e5-ed08-4dcc-8c53-c87742c66b1d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RES.CTA.SALDO.CTA');processMenuHeaderText('Consulta de Saldo al Dia')&quot;]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Consulta de Saldo al Dia ' or . = 'Consulta de Saldo al Dia ') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RES.CTA.SALDO.CTA');processMenuHeaderText('Consulta de Saldo al Dia')&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>801fc69f-e2a0-4675-b612-13cdbf0419dc</webElementGuid>
+      <webElementGuid>9d019141-b6bf-4ab3-b03c-70a0dd577453</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,15 +33,15 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.RES.CTA.SALDO.CTA');processMenuHeaderText('Consulta de Saldo al Dia')</value>
-      <webElementGuid>796a1cdb-ea3f-4b99-8c76-35fcdbc69fc0</webElementGuid>
+      <webElementGuid>8a66631c-db33-48eb-896c-903f9e5b6653</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.RES.CTA.SALDO.CTA');</value>
-      <webElementGuid>1d1e955a-fa4c-487c-8342-40b150833108</webElementGuid>
+      <webElementGuid>1af7870e-0aa3-4eb5-afaf-a041353d783c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +49,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Saldo al Dia </value>
-      <webElementGuid>9c33388f-fe2f-4341-a4d5-18664de03048</webElementGuid>
+      <webElementGuid>3f0e1df6-ec65-443d-aa6e-e94823272cba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[6]/a[1]</value>
-      <webElementGuid>ce427650-531b-43b5-9acb-32f1ccb3a430</webElementGuid>
+      <webElementGuid>c5869353-be7f-4d3e-ba5e-423c36742793</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +65,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>29dee6ff-71b4-4f72-be72-35ce7814c656</webElementGuid>
+      <webElementGuid>b9d98fe0-7448-4c89-9a4d-ee849a530819</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RES.CTA.SALDO.CTA');processMenuHeaderText('Consulta de Saldo al Dia')&quot;]</value>
-      <webElementGuid>87fba129-1a79-4caa-b243-d8dd0daa2001</webElementGuid>
+      <webElementGuid>81b017ff-81a3-45f8-9afb-065f11465102</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/ul/li[6]/a</value>
-      <webElementGuid>206dd6e4-0ee9-4e6c-b2f5-a0545c1ecd6a</webElementGuid>
+      <webElementGuid>c56671af-48b0-4643-b1eb-22815ba5d532</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +89,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Saldo al Dia')]</value>
-      <webElementGuid>88fb1cba-abd0-4f30-9ed0-8d56e9ec40b5</webElementGuid>
+      <webElementGuid>c2a60f7b-048e-42c8-8ee9-43dfa331ab64</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Historica de Estados de Cuenta'])[1]/following::a[1]</value>
-      <webElementGuid>b7e02ef7-47d9-467a-b770-9cbd1ac6d81d</webElementGuid>
+      <webElementGuid>98acadd4-3e24-4c3b-8baf-55aa32c6ba97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Estado'])[1]/following::a[2]</value>
-      <webElementGuid>6e52ec1f-e1e9-4f61-acaf-141a8a66ac97</webElementGuid>
+      <webElementGuid>09ad003d-1a38-4059-9232-ab09186cf05b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Saldos Diarios'])[1]/preceding::a[1]</value>
-      <webElementGuid>6f0cc596-019e-45db-bbfb-e06d787dbecb</webElementGuid>
+      <webElementGuid>11001771-f741-445b-a7bf-160c468600d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Saldo Historico'])[1]/preceding::a[2]</value>
-      <webElementGuid>a62944d2-fda2-4c94-baf8-a8fc17672f5c</webElementGuid>
+      <webElementGuid>3c6d8b30-b287-452c-8f8f-86b29f3badf8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Saldo al Dia']/parent::*</value>
-      <webElementGuid>88d9f2e0-0dee-44c5-bc6e-fe34a0ad12e9</webElementGuid>
+      <webElementGuid>80355d73-d561-452d-9e28-275bebd20271</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +137,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.RES.CTA.SALDO.CTA');&quot;)]</value>
-      <webElementGuid>b125432e-c65a-4720-b409-a9f1e6c624d0</webElementGuid>
+      <webElementGuid>039e229c-dd78-45f5-9687-ade537d2636e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +145,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]/ul/li[6]/a</value>
-      <webElementGuid>62736120-478c-4f4a-8eea-b962ad568c28</webElementGuid>
+      <webElementGuid>adaaeb12-6bdf-4104-9444-0d1d184e9ec7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +153,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.RES.CTA.SALDO.CTA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Saldo al Dia ' or . = 'Consulta de Saldo al Dia ')]</value>
-      <webElementGuid>a72b4b25-d893-483b-9bab-654c0fdfdf9e</webElementGuid>
+      <webElementGuid>0ed5bef3-f281-4b39-8647-a4180aa7aed7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

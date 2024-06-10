@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNumero de Cuenta</name>
+   <tag></tag>
+   <elementGuidId>342f3043-9e86-4e4d-aa88-7fda6cbfc1e6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='selectiondisplay']/tbody/tr/td/span/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>b18416c4-a384-4dbc-ad83-56912351d779</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>value:1:1:1</value>
+      <webElementGuid>2e82a655-b740-463f-afcf-93a001824579</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Numero de Cuenta</value>
+      <webElementGuid>1a151fde-2935-47b3-8289-e7883d2c0f90</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[1]/td[1]/span[1]/label[1]</value>
+      <webElementGuid>f00cabd9-ade8-406b-b55a-f48908de6a06</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr/td/span/label</value>
+      <webElementGuid>bacf7a9d-0bb6-49ec-9658-0f327961b710</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='segundos'])[1]/following::label[1]</value>
+      <webElementGuid>68d6a669-4296-41ee-baf4-d1c8404a800d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rejecutar cada'])[1]/following::label[1]</value>
+      <webElementGuid>0199d496-97ba-4625-9402-9e77b04e8e57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='igual'])[1]/preceding::label[1]</value>
+      <webElementGuid>204277f3-97fa-4223-88c5-429bcd4fcc57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha (AAAAMMDD)'])[4]/preceding::label[1]</value>
+      <webElementGuid>95aa49a0-aad2-4921-8517-7e7a699fc00c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label</value>
+      <webElementGuid>3889ebdd-3b29-4f9e-8686-6f2100467654</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Numero de Cuenta' or . = 'Numero de Cuenta')]</value>
+      <webElementGuid>d4915e98-e6be-440b-a2a8-ae2c84dc38de</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

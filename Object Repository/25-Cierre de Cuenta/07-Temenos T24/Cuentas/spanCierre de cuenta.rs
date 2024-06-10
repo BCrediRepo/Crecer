@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblConsultas de Cuentas</name>
+   <name>spanCierre de cuenta</name>
    <tag></tag>
-   <elementGuidId>4660d7fa-b9de-43a0-a338-159fb1b1a477</elementGuidId>
+   <elementGuidId>69a13ee2-fa5a-4a34-ba72-65c2d24b980c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[20]</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>2a94a8e6-74e2-44a3-b3fb-b0a99c910719</webElementGuid>
+      <webElementGuid>1d45e522-39dd-40eb-97fa-6e7f82dd3ae1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>6de9f89a-5f76-455c-9735-a7f8ffc4382e</webElementGuid>
+      <webElementGuid>f15023d5-efae-4a25-b33a-05246e5bc968</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,15 +38,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>9224390e-83e7-4c3f-8645-b5c1649b4b0d</webElementGuid>
+      <webElementGuid>b13c6bad-729b-4f1c-bc87-898275053790</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consultas de Cuentas</value>
-      <webElementGuid>bbbc31f3-ac1a-42f1-95c3-0a66b0615d86</webElementGuid>
+      <value>Cierre de cuenta</value>
+      <webElementGuid>89a2f12a-c05e-444d-a980-19116045ce58</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,86 +54,78 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>860ef156-6514-467f-b272-388fbc10f913</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>4bb74dc4-22a5-4cb3-94a9-eb2b7bab9980</webElementGuid>
+      <webElementGuid>c018a12d-31c9-40ce-8ca8-71b2eb94b137</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
-      <webElementGuid>1c53b547-e727-49b8-ad5e-d5e2fa61adfb</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[20]</value>
+      <webElementGuid>4c85e271-3880-40bc-86f0-769cf75640e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>2031d1fc-12a8-4100-9913-8e933a984c33</webElementGuid>
+      <value>//div[@id='pane_']/ul[3]/li/ul/li[5]/span</value>
+      <webElementGuid>9cc4a989-13a9-4002-a7cc-71bc2c6f3fa8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Continuacion Proceso Alta'])[1]/following::span[1]</value>
-      <webElementGuid>e38969ee-c11c-4f5f-a4a6-35fe0fa79db4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pedido de Resumen de Cuenta'])[2]/following::span[1]</value>
+      <webElementGuid>7e8f1138-3d30-48c6-a234-9f7e5f70c6a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/following::span[1]</value>
-      <webElementGuid>289c08a5-8f00-4f10-b537-adadd16e96ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pedido de Resumen de Cuenta'])[1]/following::span[1]</value>
+      <webElementGuid>c364bd67-fc4f-4d98-ab27-1c92041806aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::span[1]</value>
-      <webElementGuid>f80b5836-b165-4645-9fce-f9d7c3b5a91f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre de Cuenta CON Cancelacion de Saldo'])[1]/preceding::span[1]</value>
+      <webElementGuid>a2fa9963-9f94-4d6c-b6cf-11d897f17d29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/preceding::span[1]</value>
-      <webElementGuid>3043c2a7-496a-4637-900b-7e532fb15ca3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre de Cuenta SIN Cancelacion de Saldo'])[1]/preceding::span[1]</value>
+      <webElementGuid>d8bc3f1b-594f-4db5-8c88-a2136f86f751</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consultas de Cuentas']/parent::*</value>
-      <webElementGuid>a856782c-74d1-4278-b4b6-a1073f5b2051</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cierre de cuenta']/parent::*</value>
+      <webElementGuid>f5b449f7-9027-4242-bc67-8c22b072d01a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>4fc2432e-4f53-4671-ad0d-c6229ad9d899</webElementGuid>
+      <value>//li[5]/span</value>
+      <webElementGuid>77997c27-6185-41b3-8db4-6442c2541793</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consultas de Cuentas' or . = 'Consultas de Cuentas')]</value>
-      <webElementGuid>d8f858fc-1988-4e37-b2b5-e39564bea453</webElementGuid>
+      <value>//span[(text() = 'Cierre de cuenta' or . = 'Cierre de cuenta')]</value>
+      <webElementGuid>ffa09100-d650-4d92-88ad-2b035bbc9c44</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

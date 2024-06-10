@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblConsultas de Cuentas</name>
+   <name>lblOperador</name>
    <tag></tag>
-   <elementGuidId>4660d7fa-b9de-43a0-a338-159fb1b1a477</elementGuidId>
+   <elementGuidId>cf36bc19-2015-450e-8366-28d298b66cbf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
+         <value>//th[@id='columnHeaderText5']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#columnHeaderText5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,119 +21,119 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>2a94a8e6-74e2-44a3-b3fb-b0a99c910719</webElementGuid>
+      <value>th</value>
+      <webElementGuid>7f633fab-96db-4a7d-929e-e41a2003dd12</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>scope</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>6de9f89a-5f76-455c-9735-a7f8ffc4382e</webElementGuid>
+      <value>col</value>
+      <webElementGuid>8064c70b-c24e-41ff-a320-7a65a1954d27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>9224390e-83e7-4c3f-8645-b5c1649b4b0d</webElementGuid>
+      <value>columnHeader</value>
+      <webElementGuid>97e64e92-998e-4255-b8de-f34ddbc202f5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>columnHeaderText5</value>
+      <webElementGuid>0d3f24ea-953c-4a61-bd4e-1e179942c647</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consultas de Cuentas</value>
-      <webElementGuid>bbbc31f3-ac1a-42f1-95c3-0a66b0615d86</webElementGuid>
+      <value>Operador</value>
+      <webElementGuid>94a72511-a19b-447e-a41d-8e24b9bf07ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>860ef156-6514-467f-b272-388fbc10f913</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>4bb74dc4-22a5-4cb3-94a9-eb2b7bab9980</webElementGuid>
+      <value>id(&quot;columnHeaderText5&quot;)</value>
+      <webElementGuid>db0f793c-c826-43d4-8e70-101cfa0995d0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
-      <webElementGuid>1c53b547-e727-49b8-ad5e-d5e2fa61adfb</webElementGuid>
+      <value>//th[@id='columnHeaderText5']</value>
+      <webElementGuid>dbce966f-459a-4034-b0d0-241cb5b1c5a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>2031d1fc-12a8-4100-9913-8e933a984c33</webElementGuid>
+      <value>//th[@id='columnHeader5']/table/tbody/tr/th</value>
+      <webElementGuid>01e77cc2-cb7d-448d-9075-11aaeceb3ed4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Continuacion Proceso Alta'])[1]/following::span[1]</value>
-      <webElementGuid>e38969ee-c11c-4f5f-a4a6-35fe0fa79db4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Suc Ref'])[1]/following::th[3]</value>
+      <webElementGuid>33e5e98a-0d60-4c7c-8482-7b84830b01eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/following::span[1]</value>
-      <webElementGuid>289c08a5-8f00-4f10-b537-adadd16e96ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='F/Hora ult mod'])[1]/following::th[6]</value>
+      <webElementGuid>bd4290a0-5c33-4c71-a2f8-163d884c637f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::span[1]</value>
-      <webElementGuid>f80b5836-b165-4645-9fce-f9d7c3b5a91f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DAO'])[1]/preceding::th[2]</value>
+      <webElementGuid>6e740032-9637-4c06-a65b-3a398efaeb0b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/preceding::span[1]</value>
-      <webElementGuid>3043c2a7-496a-4637-900b-7e532fb15ca3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Vers reg'])[1]/preceding::th[5]</value>
+      <webElementGuid>dcd97b1f-6b3a-44f3-892e-1e5014b6735f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consultas de Cuentas']/parent::*</value>
-      <webElementGuid>a856782c-74d1-4278-b4b6-a1073f5b2051</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Operador']/parent::*</value>
+      <webElementGuid>6c95ce6d-a383-4ab3-9f51-6ab4dfe6a58a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>4fc2432e-4f53-4671-ad0d-c6229ad9d899</webElementGuid>
+      <value>//th[5]/table/tbody/tr/th</value>
+      <webElementGuid>58bc9912-df0a-4775-8478-9d1988b09a71</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consultas de Cuentas' or . = 'Consultas de Cuentas')]</value>
-      <webElementGuid>d8f858fc-1988-4e37-b2b5-e39564bea453</webElementGuid>
+      <value>//th[@id = 'columnHeaderText5' and (text() = 'Operador' or . = 'Operador')]</value>
+      <webElementGuid>0f1caf7f-778b-49e6-b803-3533a563c13a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

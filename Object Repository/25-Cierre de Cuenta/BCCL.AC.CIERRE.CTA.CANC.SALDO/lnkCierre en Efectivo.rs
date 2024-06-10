@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkCierre en Efectivo</name>
+   <tag></tag>
+   <elementGuidId>107bad06-207b-4953-a2cb-1953148d9a0e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[7]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.enqDrillLink</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>f4750dd0-1292-48e2-87a9-01d3c1ef75d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqDrillLink</value>
+      <webElementGuid>f9a6d083-62a0-4ff2-83ab-926190ac95d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>242d4b41-9bbc-4cd6-8bf4-5d6638856bc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:drilldown('1','1_1')</value>
+      <webElementGuid>90d745e9-90a5-4583-8420-4a2e13bc9014</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cierre en Efectivo</value>
+      <webElementGuid>6a1d55c7-2b2b-4e5e-b81f-cf4d46c820dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLACCIERRECTACANCSALDO&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
+      <webElementGuid>08b21c46-df89-4b5b-a5f5-5f84106ce9af</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[7]/a</value>
+      <webElementGuid>65813720-0f01-49f3-a466-6345893ff97e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Cierre en Efectivo')]</value>
+      <webElementGuid>6587d5be-6fc8-4871-91fc-e304cfffe3b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INA'])[1]/following::a[1]</value>
+      <webElementGuid>4a1a3c88-03f3-41b8-88fe-bbff1adda504</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GOMIZ GOMIZ JOSE ANTONIO'])[1]/following::a[1]</value>
+      <webElementGuid>f2738e08-83c6-45f3-a8e4-864cb500c394</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre con Deb/Cred Cta Cliente'])[1]/preceding::a[1]</value>
+      <webElementGuid>b8699caf-a4f3-47aa-bdc9-88e6e722ad91</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::a[2]</value>
+      <webElementGuid>4257f91c-f1da-4c05-8867-f42e8d521a4c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Cierre en Efectivo']/parent::*</value>
+      <webElementGuid>fc9dd6dd-5327-4efd-8db6-f4ad0ebf7259</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
+      <webElementGuid>728716b5-a012-4fc3-93d6-2c50565825f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[7]/a</value>
+      <webElementGuid>b298be41-7329-4efb-964c-9c628c2c8a25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Cierre en Efectivo' or . = 'Cierre en Efectivo')]</value>
+      <webElementGuid>161000db-4534-4630-8459-ff1042ef2981</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

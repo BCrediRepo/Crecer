@@ -23,8 +23,7 @@ import java.util.Date as Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
-        2, 8))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
 
 WebUI.maximizeWindow()
 
@@ -64,7 +63,8 @@ WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 WebUI.maximizeWindow()
 
 //WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkNuevaSeleccion'))
-WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20230831')
+WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), GlobalVariable.vFechaCOBAmbTES10)
+
 
 WebUI.setText(findTestObject('21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal1'), '073')
 
@@ -77,8 +77,7 @@ long startTime = System.currentTimeMillis()
 
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 
-    6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 6)
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -88,13 +87,13 @@ long elapsedTime = endTime - startTime
 
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 
-    6)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/cbxSeleccion'), 6)
 
 WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/img'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 
-    6) //---------------------------------------------------------------------------------------------------------------------
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 6) 
+
+//---------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

@@ -35,11 +35,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsult
 //Verificamos el texto Consultas de Cuentas
 WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/10-T24 - Fil.043 Villa Mitre/lblConsultas de Cuentas'), 6)
 
-//WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/10-T24 - Fil.043 Villa Mitre/lblConsultas de Cuentas'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/10-T24 - Fil.043 Villa Mitre/lblConsultas de Cuentas'))
 
-//def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/10-T24 - Fil.043 Villa Mitre/lblConsultas de Cuentas'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/10-T24 - Fil.043 Villa Mitre/lblConsultas de Cuentas'))
 
-//assert element.contains('')
+assert element.contains('Consultas de Cuentas')
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script

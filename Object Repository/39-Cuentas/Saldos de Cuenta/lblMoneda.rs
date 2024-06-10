@@ -1,111 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>tdId</name>
+   <name>lblMoneda</name>
    <tag></tag>
-   <elementGuidId>e10e3589-4c59-46cc-96a2-541265748276</elementGuidId>
+   <elementGuidId>fd69fbc2-0179-4174-b7c6-7d2e200db670</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#r1 > td</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td</value>
+         <value>//table[@id='enqheader']/tbody/tr[4]/td</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>4c1231d3-74f7-485a-993c-f6c05f4fe14d</webElementGuid>
+      <webElementGuid>3fad324a-d869-4cf7-9c82-88bc6fa1c856</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTASALDOCTA</value>
+      <webElementGuid>597365b8-5783-4572-9507-b0aa065fc856</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>SO1521746797.05</value>
-      <webElementGuid>14a6b2b1-6639-4ce1-a3d7-d3789869d5b0</webElementGuid>
+      <value>Moneda</value>
+      <webElementGuid>e6e0aba2-6fc0-49cc-b1b6-92230a78d28f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>c76391e9-bb84-4ce0-a6af-67934e5c84a2</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[4]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTASALDOCTA&quot;]</value>
+      <webElementGuid>3aee0f6b-5c47-4cec-8b4b-5e5da74165cc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td</value>
-      <webElementGuid>b70e4690-d1cf-4802-b149-e1d978d2402b</webElementGuid>
+      <value>//table[@id='enqheader']/tbody/tr[4]/td</value>
+      <webElementGuid>d42bab74-d2b9-4788-92c2-94f28038668d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Legajo'])[1]/following::td[1]</value>
-      <webElementGuid>f38106a6-9598-426c-aff6-40644b616947</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto SubProducto'])[1]/following::td[2]</value>
+      <webElementGuid>aca56923-e77e-498c-a5fc-2a9c51384167</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo'])[1]/following::td[1]</value>
-      <webElementGuid>09935c7f-091c-4902-9cc4-ac3b4eef2272</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nro. de Cuenta'])[1]/following::td[4]</value>
+      <webElementGuid>d659a512-4c31-4fff-8208-13fe78daa8a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='TT22206590701034'])[1]/preceding::td[1]</value>
-      <webElementGuid>6448783d-4355-4c04-b2ce-c3ed130935cb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS PESOS ARGENTINOS'])[1]/preceding::td[1]</value>
+      <webElementGuid>aac36bda-0fdc-4f44-a8d1-99e6d7ad26b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[3]</value>
-      <webElementGuid>51eb8881-9348-4b96-a582-d74c7239ef0b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forma Operar'])[1]/preceding::td[2]</value>
+      <webElementGuid>386e176d-5ba1-4340-a7f2-531da8ed6cbe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='SO1521746797.05']/parent::*</value>
-      <webElementGuid>4231e2ad-f29b-41bd-86cb-083006c62604</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Moneda']/parent::*</value>
+      <webElementGuid>648fad5c-a24e-44fd-8591-cabaa45f7be8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>8c3cd3af-a179-4a14-a8e8-6f033ef292ba</webElementGuid>
+      <value>//tr[4]/td</value>
+      <webElementGuid>45187f3e-97e0-47f1-8910-b0cc349387c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'SO1521746797.05' or . = 'SO1521746797.05')]</value>
-      <webElementGuid>20a37ac3-eb55-40bc-bc26-8f292a017acf</webElementGuid>
+      <value>//td[(text() = 'Moneda' or . = 'Moneda')]</value>
+      <webElementGuid>51c24bc6-d754-4e2a-b248-e6f4692da848</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -22,55 +22,59 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,6), findTestData('MainData/Users').getValue(2,6))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ingresamos la ENQ en el command line
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AS.FIRMA,AUDIT')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
+//Se accede al menu ?1
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Switch a la ventana BCCL.AS.FIRMA,AUDIT
-WebUI.switchToWindowTitle('BCCL.AS.FIRMA')
+//Switch a la ventana Temenos T24
+WebUI.switchToWindowTitle('Temenos T24')
 
-//maximizamos
+//Maximizamos
 WebUI.maximizeWindow()
 
-//Seleccionar "Boton Drill down
-//WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/btnDrilldownListaRegistros'))
+//Click en sucursal piloto
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/lnkSucursalPiloto'))
 
-//Seleccionar Primer Valor
-//WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/lblPrimerValor'))
+//Click en compensacion de saldos
+WebUI.click(findTestObject('Object Repository/09-Compensacion de Saldos/02-Temenos T24/spanD4-Compensacion de Saldos'))
 
-//Seteamos el FI solicitado
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/txtAuditoria'), 'FI22199057600818')
+//Click en parametrizacion
+WebUI.click(findTestObject('Object Repository/09-Compensacion de Saldos/02-Temenos T24/spanParametrizacion'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Click en Productos y Circulares
+WebUI.click(findTestObject('Object Repository/09-Compensacion de Saldos/02-Temenos T24/lnkProductos y Circulares'))
 
-//Click en ver registro
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/btnVerRegistro'))
+//Switch a la ventana BCCL.AC.CP.PROD
+WebUI.switchToWindowTitle('BCCL.AC.CP.PROD')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Click en la lista de registro
+WebUI.click(findTestObject('Object Repository/09-Compensacion de Saldos/03-BCCL.AC.CP.PROD/btnLista De Registros'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/lblDepartamento'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/09-Compensacion de Saldos/03-BCCL.AC.CP.PROD/lblId'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/09-Compensacion de Saldos/03-BCCL.AC.CP.PROD/lblId'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/lblDepartamento'))
+def element = WebUI.getText(findTestObject('Object Repository/09-Compensacion de Saldos/03-BCCL.AC.CP.PROD/lblId'))
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/lblDepartamento'))
-
-assert element.contains('Departamento')
+assert element.contains('Id')
 
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed

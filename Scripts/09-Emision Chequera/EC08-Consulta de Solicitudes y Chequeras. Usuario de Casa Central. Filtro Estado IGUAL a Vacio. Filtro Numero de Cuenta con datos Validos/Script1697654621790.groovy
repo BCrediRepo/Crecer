@@ -54,7 +54,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 
 //Ingresa Numero de Cuenta
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), '00010112861')
+WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), '00010043082') //00010112861
 
 //DESCOMENTAR cuenta para el 708 con datos
 //WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), '00010033098')

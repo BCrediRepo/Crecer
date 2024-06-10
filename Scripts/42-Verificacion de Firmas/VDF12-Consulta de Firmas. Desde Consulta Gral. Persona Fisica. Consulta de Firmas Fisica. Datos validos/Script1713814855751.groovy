@@ -73,9 +73,9 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Click en la opcion "Consulta de firma" del cbx
-WebUI.waitForElementVisible(findTestObject('31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 6)
+WebUI.waitForElementVisible(findTestObject('31-Personas/Consulta General de personas Fisica/cbxConsultaGralPersonaFisica'), 6)
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 5)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxConsultaGralPersonaFisica'), 5)
 
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'), 6)

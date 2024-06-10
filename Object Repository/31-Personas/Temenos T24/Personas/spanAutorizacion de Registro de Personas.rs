@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblConsultas de Cuentas</name>
+   <name>spanAutorizacion de Registro de Personas</name>
    <tag></tag>
-   <elementGuidId>4660d7fa-b9de-43a0-a338-159fb1b1a477</elementGuidId>
+   <elementGuidId>2fbb4fa7-fe7d-4147-8fa2-9d1097963263</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[4]</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>2a94a8e6-74e2-44a3-b3fb-b0a99c910719</webElementGuid>
+      <webElementGuid>be9f03be-64fb-4bc4-9216-a6c901ac33e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>6de9f89a-5f76-455c-9735-a7f8ffc4382e</webElementGuid>
+      <webElementGuid>4be34f28-5159-4399-9f92-6c1b6cb25dba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,15 +38,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>9224390e-83e7-4c3f-8645-b5c1649b4b0d</webElementGuid>
+      <webElementGuid>bc25f72c-ea80-47fc-a112-3c523538ce6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Consultas de Cuentas</value>
-      <webElementGuid>bbbc31f3-ac1a-42f1-95c3-0a66b0615d86</webElementGuid>
+      <value>Autorizacion de Registro de Personas</value>
+      <webElementGuid>4d00fa8f-b6c0-4ea2-975d-11aa3c59708d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,86 +54,78 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>860ef156-6514-467f-b272-388fbc10f913</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>4bb74dc4-22a5-4cb3-94a9-eb2b7bab9980</webElementGuid>
+      <webElementGuid>899a83ff-6afe-4a44-81ff-24b09f75d0a6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[14]</value>
-      <webElementGuid>1c53b547-e727-49b8-ad5e-d5e2fa61adfb</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[4]</value>
+      <webElementGuid>2cd87e01-98ee-40e9-8599-dd696f319c2e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>2031d1fc-12a8-4100-9913-8e933a984c33</webElementGuid>
+      <value>//div[@id='pane_']/ul/li/ul/li[3]/span</value>
+      <webElementGuid>19001a6a-1a56-4880-bd81-8dd4024ebd38</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Continuacion Proceso Alta'])[1]/following::span[1]</value>
-      <webElementGuid>e38969ee-c11c-4f5f-a4a6-35fe0fa79db4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion Persona Juridica - Especial'])[1]/following::span[1]</value>
+      <webElementGuid>8b060940-f0fa-4c0c-bc4d-d75739db6b62</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cuenta Persona Fisica'])[1]/following::span[1]</value>
-      <webElementGuid>289c08a5-8f00-4f10-b537-adadd16e96ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modificacion Persona Fisica - Especial'])[1]/following::span[1]</value>
+      <webElementGuid>e6e3d3f1-816f-4eed-8d58-7f4af6ad0ff3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[1]/preceding::span[1]</value>
-      <webElementGuid>f80b5836-b165-4645-9fce-f9d7c3b5a91f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion de registro persona fisica'])[1]/preceding::span[1]</value>
+      <webElementGuid>b2dc867e-8bfa-4ce3-ac83-0c4e7f76f7f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Firmante'])[1]/preceding::span[1]</value>
-      <webElementGuid>3043c2a7-496a-4637-900b-7e532fb15ca3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Autorizacion de registro persona juridica'])[1]/preceding::span[1]</value>
+      <webElementGuid>4ea76ac5-a12d-4a0a-a72f-c9ed135a5993</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Consultas de Cuentas']/parent::*</value>
-      <webElementGuid>a856782c-74d1-4278-b4b6-a1073f5b2051</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Autorizacion de Registro de Personas']/parent::*</value>
+      <webElementGuid>8e826c71-2689-4cbb-97b4-30b3ba355430</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[4]/li/ul/li[2]/span</value>
-      <webElementGuid>4fc2432e-4f53-4671-ad0d-c6229ad9d899</webElementGuid>
+      <value>//li[3]/span</value>
+      <webElementGuid>fc4f6202-f30a-4c70-b1ab-33993c627a2a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Consultas de Cuentas' or . = 'Consultas de Cuentas')]</value>
-      <webElementGuid>d8f858fc-1988-4e37-b2b5-e39564bea453</webElementGuid>
+      <value>//span[(text() = 'Autorizacion de Registro de Personas' or . = 'Autorizacion de Registro de Personas')]</value>
+      <webElementGuid>20f45001-caa0-4c0d-8a8c-a9339c22410a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

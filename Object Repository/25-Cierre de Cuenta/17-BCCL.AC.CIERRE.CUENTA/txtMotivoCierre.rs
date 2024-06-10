@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtIds. Cod Oper.1.2</name>
+   <name>txtMotivoCierre</name>
    <tag></tag>
-   <elementGuidId>6f8ad29f-9f8e-47e7-a3ae-c369851ea69b</elementGuidId>
+   <elementGuidId>6da63fed-6727-4760-b039-4574d81d7759</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;fieldName:ID.COD.OPER:2:2&quot;]</value>
+         <value>//input[@id='fieldName:RAZON.CIERRE']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>5d2bd05f-3cfc-42e8-8679-8bcdd1da6c5b</webElementGuid>
+      <webElementGuid>4c6eae32-b04f-45fd-9a02-7e0e844fa9f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,31 +30,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>675ed4f4-7daa-4915-bbdb-36d86532967a</webElementGuid>
+      <webElementGuid>727d4e96-41f7-40af-b7c1-56e2f9982062</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>5</value>
-      <webElementGuid>4beb59ef-2487-41eb-ab99-68a183dee812</webElementGuid>
+      <value>6</value>
+      <webElementGuid>4eb620d6-dc45-4e5d-8c7f-db2838389aa9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:ID.COD.OPER:1:2</value>
-      <webElementGuid>728927e1-2719-45ba-9136-ef541c1859c4</webElementGuid>
+      <value>fieldName:RAZON.CIERRE</value>
+      <webElementGuid>4d3d63fd-4a97-4b74-baf3-36d32503df3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:ID.COD.OPER:1:2</value>
-      <webElementGuid>9ef6cd23-8d72-4bb2-be64-546e9754ac64</webElementGuid>
+      <value>fieldName:RAZON.CIERRE</value>
+      <webElementGuid>e1794fae-3adb-4da9-bea0-3652eaa07ad4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,31 +62,23 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>582687cf-7349-442c-8d28-c2a30d82c519</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>01783</value>
-      <webElementGuid>6a17dfe5-4a37-4911-b73f-177e83d12117</webElementGuid>
+      <webElementGuid>c58ac1c2-cef6-4bea-8435-e91d5b3a3ead</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_BCCLENQPARAMAGRP dealbox_BCCLENQPARAMAGRP_INPUT</value>
-      <webElementGuid>6b05e0c4-f7cd-4c22-b82e-6e681f90f746</webElementGuid>
+      <value>dealbox dealbox_BCCLACCIERRECUENTA dealbox_BCCLACCIERRECUENTA_EFECTIVO</value>
+      <webElementGuid>c02ea05d-fb84-4261-84a1-c354dfa5f2dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>5</value>
-      <webElementGuid>63dc2f65-cbba-4f4b-941a-b1bdcd15066a</webElementGuid>
+      <value>2</value>
+      <webElementGuid>53b1b87a-1728-40c8-b3f0-8cbcfe815f4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -93,7 +86,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>0f935f2a-4500-46b8-a0ef-1ed31ddbe68d</webElementGuid>
+      <webElementGuid>493e2e7c-9d83-40af-a439-ba267fde4e53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,78 +94,94 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>3a0898b6-8c63-40ec-9a6d-0e77215b037a</webElementGuid>
+      <webElementGuid>d11987f5-700b-437f-8dbb-77e34b272d00</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>enrifieldname</name>
+      <name>caseconv</name>
       <type>Main</type>
-      <value>enri_ID.COD.OPER:1:1</value>
-      <webElementGuid>6f865e90-0c1b-412d-b807-f68f7de5251f</webElementGuid>
+      <value>UPPERCASE</value>
+      <webElementGuid>ed098c8f-bdd8-42fe-b0c8-f07efeaa46be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onfocus</name>
+      <type>Main</type>
+      <value>doFieldFocusEvent(event)</value>
+      <webElementGuid>d07b27bb-4e2b-4e8a-aa52-c38675e91831</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'ID.COD.OPER','issueToken');</value>
-      <webElementGuid>1ef1f2c2-f472-46c6-a266-8a001a54c818</webElementGuid>
+      <value>invokeHelp(event,'RAZON.CIERRE','issueToken');</value>
+      <webElementGuid>f11afe70-998d-48f2-a689-7b8302c0a1d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeydown</name>
+      <type>Main</type>
+      <value>enterKeyListener(event);</value>
+      <webElementGuid>2412b372-9701-4340-adc3-38a9a4a41787</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>05c420ce-d37f-4594-9fc8-41bbf1f71c3b</webElementGuid>
+      <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
+      <webElementGuid>2bb1c227-1568-4cad-9cd5-af3fe9824e4a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('ID.COD.OPER','','','issueToken')</value>
-      <webElementGuid>916a2836-9db4-45d9-a976-171d8e2f94a7</webElementGuid>
+      <value>javascript:help('RAZON.CIERRE','','','issueToken')</value>
+      <webElementGuid>97c7610b-87d9-4cb7-b511-9a1e0df6adf1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:ID.COD.OPER:1:2&quot;)</value>
-      <webElementGuid>5607fb48-f2ec-4ef5-a6aa-a47dcd196433</webElementGuid>
+      <value>id(&quot;fieldName:RAZON.CIERRE&quot;)</value>
+      <webElementGuid>c91189ce-50fc-4999-a8f9-336e6459f858</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:ID.COD.OPER:1:2']</value>
-      <webElementGuid>6e8c3b9f-05af-4941-ad93-70069ff2ac7c</webElementGuid>
+      <value>//input[@id='fieldName:RAZON.CIERRE']</value>
+      <webElementGuid>a524043f-aaa9-43f7-999c-b8f37add7b1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[6]/td[3]/input</value>
-      <webElementGuid>6e570ed4-4a83-47d0-b955-2d717680f70e</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr/td[3]/input</value>
+      <webElementGuid>0b64ed26-1325-4aee-b3cb-474018496e47</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[6]/td[3]/input</value>
-      <webElementGuid>2409a474-d94d-4cab-8db5-ccec28080706</webElementGuid>
+      <value>//td[3]/input</value>
+      <webElementGuid>5482c75d-1162-4c8d-87cf-9554b386bcd7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:ID.COD.OPER:1:2' and @name = 'fieldName:ID.COD.OPER:1:2' and @type = 'text']</value>
-      <webElementGuid>357abb45-f6ed-4b4a-b43b-785faab05210</webElementGuid>
+      <value>//input[@id = 'fieldName:RAZON.CIERRE' and @name = 'fieldName:RAZON.CIERRE' and @type = 'text']</value>
+      <webElementGuid>0bac8b4b-afcb-4409-becb-bda19da0a8c1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

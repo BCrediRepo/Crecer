@@ -55,16 +55,21 @@ WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/T
 
 //Ingresa monto
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtImporteUSD'), 6)
-WebUI.setText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtImporteUSD'),' ')
+WebUI.setText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtImporteUSD'),'')
 
 //Click boton aceptar
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'),6)
 WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'))
 
 //Espera y Verifica mensaje de error "CAMPO OBLIGATORIO"
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblMontoCAMPOOBLIGATORIO'),6)
-def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblMontoCAMPOOBLIGATORIO'))
-assert element.contains('CAMPO OBLIGATORIO')
+WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblImporte a recibir USDCAMPO OBLIGATORIO'), 6)
+def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblImporte a recibir USDCAMPO OBLIGATORIO'))
+assert element.contains('Importe a recibir USD CAMPO OBLIGATORIO')
+
+//Espera y Verifica mensaje de error "CAMPO OBLIGATORIO"
+//WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblMontoCAMPOOBLIGATORIO'),6)
+//def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblMontoCAMPOOBLIGATORIO'))
+//assert element.contains('CAMPO OBLIGATORIO')
 
 //---------------------------------------------------------------------------------------------------------------------
 

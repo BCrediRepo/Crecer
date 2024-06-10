@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma</name>
+   <name>cbxConsultaGralPersonaFisica</name>
    <tag></tag>
    <elementGuidId>5b24f93a-3411-4957-9c38-0204bbdbb3f3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='drillbox:1_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
