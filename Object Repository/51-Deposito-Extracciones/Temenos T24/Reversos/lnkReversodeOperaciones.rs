@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAceptarAlertas</name>
+   <name>lnkReversodeOperaciones</name>
    <tag></tag>
-   <elementGuidId>bb110b3d-3a4f-4500-a97b-454cf4903c27</elementGuidId>
+   <elementGuidId>dec8f018-616b-494c-92b6-ff3cb0865c11</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.textbtn > a:nth-child(1)</value>
+         <value>ul.menuMargin:nth-child(13) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='errorImg']</value>
+         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.CONS.REVE');processMenuHeaderText('Reverso de Operaciones')&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,134 +22,126 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>66162a4f-e160-4b1d-b31f-09bdbb5a3c71</webElementGuid>
+      <webElementGuid>761ec590-8d0c-455e-943a-e790d7441ac0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>644b07cc-79b4-420f-8532-30e3d77760ba</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>errorImg</value>
-      <webElementGuid>793a0b68-7562-4106-8418-5f1e618219a4</webElementGuid>
+      <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.CONS.REVE');processMenuHeaderText('Reverso de Operaciones')</value>
+      <webElementGuid>825ec4f9-2ac8-4bb2-9d2b-14fe8e8af397</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:commitOverrides()</value>
-      <webElementGuid>6f643d8b-02e8-4e4c-84d0-9279ea1dfbc8</webElementGuid>
+      <value>javascript:doenq('ENQ BCCL.E.EB.CONS.REVE');</value>
+      <webElementGuid>999a7cba-9e74-4f87-a5c9-85660161cefb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Aceptar Alertas</value>
-      <webElementGuid>6b200ea9-a2de-47f7-8791-335975511960</webElementGuid>
+      <value>Reverso de Operaciones </value>
+      <webElementGuid>68865145-5df6-4fc6-92ca-bf2afe9da202</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;errorImg&quot;)</value>
-      <webElementGuid>0a8f2d26-956d-41f5-83f6-19014bb4d5dc</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
+      <webElementGuid>a64c2fad-6f08-4783-b55e-66a3fee861a1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@id='errorImg']</value>
-      <webElementGuid>a3dd8d8b-2681-4653-a8dc-4231ca7bf5ea</webElementGuid>
+      <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.CONS.REVE');processMenuHeaderText('Reverso de Operaciones')&quot;]</value>
+      <webElementGuid>c414aa64-1978-4690-b24a-c04611a500dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='error_box']/table/tbody/tr[3]/td/table/tbody/tr/td/a</value>
-      <webElementGuid>a3096d9e-947c-4103-80e8-50f37f6368ee</webElementGuid>
+      <value>//div[@id='pane_']/ul[13]/li/ul/li/a</value>
+      <webElementGuid>3912a7da-2568-40de-8327-111258b8663a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Aceptar Alertas')]</value>
-      <webElementGuid>a81ea4f5-8748-4f5f-b0aa-d2184c6d48ce</webElementGuid>
+      <value>//a[contains(text(),'Reverso de Operaciones')]</value>
+      <webElementGuid>4719f13b-8cc9-4a94-82dc-88e3b115df67</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ct)'])[1]/following::a[1]</value>
-      <webElementGuid>49dd1f97-0fab-4583-b92f-da0614861fdc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reversos'])[1]/following::a[1]</value>
+      <webElementGuid>76bf63c4-da33-4bd0-9ca7-5dc613f09f52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='TT23240905201152'])[1]/following::a[1]</value>
-      <webElementGuid>e6fe1501-1dfe-4550-b7d2-6cb32cdf7beb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Listado de Cod. a Controlar por Sector'])[1]/following::a[1]</value>
+      <webElementGuid>2a5f761c-9bc4-4e4a-b158-f20750dd58eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV1'])[1]/preceding::a[1]</value>
-      <webElementGuid>c11bbdc6-2826-46e0-bee1-95b281db86f5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Cheques'])[1]/preceding::a[1]</value>
+      <webElementGuid>7eb143d7-fa84-4e39-8c49-c9f2866efa37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deposito De Efectivo En Buzon A Toda Hora'])[2]/preceding::a[1]</value>
-      <webElementGuid>4c489e29-76a6-4741-931a-3998a1d6137d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Remesas'])[1]/preceding::a[2]</value>
+      <webElementGuid>cdc4245e-d638-4fde-b57b-6dbd5e050e57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Aceptar Alertas']/parent::*</value>
-      <webElementGuid>09bf6b67-ef94-4bc0-8ff8-c029d4826424</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Reverso de Operaciones']/parent::*</value>
+      <webElementGuid>4f961fff-2f4c-4d23-bf47-40dc930cc787</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, 'javascript:commitOverrides()')]</value>
-      <webElementGuid>0f6385fb-6c9c-4489-819c-61cd1bc7525b</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.EB.CONS.REVE');&quot;)]</value>
+      <webElementGuid>bae034b1-7813-41a6-a235-0b1a524423c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[3]/td/table/tbody/tr/td/a</value>
-      <webElementGuid>af1a1ec8-a0f7-4b07-a1b3-0961b0d2e2d0</webElementGuid>
+      <value>//ul[13]/li/ul/li/a</value>
+      <webElementGuid>4016549b-1328-4e3e-8b85-e9c4e8d29edb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@id = 'errorImg' and @href = 'javascript:commitOverrides()' and (text() = 'Aceptar Alertas' or . = 'Aceptar Alertas')]</value>
-      <webElementGuid>14235250-21f9-4a16-8293-0cb248e3920f</webElementGuid>
+      <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.EB.CONS.REVE&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Reverso de Operaciones ' or . = 'Reverso de Operaciones ')]</value>
+      <webElementGuid>cb2e4772-e634-4960-8770-078853504dca</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

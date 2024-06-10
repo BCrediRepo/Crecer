@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DE15-Reversa de extraccion en efectivo por Caja. Cuenta valida y sin bloqueos. Misma Sucursal. Pesos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed7a33e0-77b2-4ff8-babc-54abcb8968ec</testCaseGuid>
+</TestCaseEntity>
