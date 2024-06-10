@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFtBaja</name>
+   <tag></tag>
+   <elementGuidId>0eadc256-ad3d-458d-8ce0-bf0fc1b8ef91</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[12]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a4cde14e-80da-4075-af9c-e84fab2089f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLIPPARTIDAS</value>
+      <webElementGuid>ac516fed-7448-4c55-a225-aa8fa40b49fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>FT23244706066503</value>
+      <webElementGuid>77b7ee41-11ac-409c-a20f-e844570f7466</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[12]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLIPPARTIDAS&quot;]</value>
+      <webElementGuid>b2276fe9-9dee-4716-b0c1-23115c592a47</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[12]/td[3]/span</value>
+      <webElementGuid>0770d92a-3f7f-4834-a66d-3178d28b9903</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ft Baja'])[1]/following::span[1]</value>
+      <webElementGuid>20a1fb2d-668b-4397-a3bb-bc0e5aaa1996</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denom.: J M FAULBAUM - CUI: 20264158649 - Doc: 26415864'])[1]/following::span[1]</value>
+      <webElementGuid>a41bad8f-268d-4154-8fb6-7af8855c0201</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Usr Alta'])[1]/preceding::span[2]</value>
+      <webElementGuid>28c60a48-3efa-4d37-81ee-b20bbba4b948</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Usr Baja'])[1]/preceding::span[4]</value>
+      <webElementGuid>ea451925-ca99-4e05-8b39-09b9f3c90e33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='FT23244706066503']/parent::*</value>
+      <webElementGuid>7de72038-1571-4ad5-bfc2-cfcd813c3533</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[12]/td[3]/span</value>
+      <webElementGuid>3338ef50-a534-47ff-8ec7-f069c69e0dc8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'FT23244706066503' or . = 'FT23244706066503')]</value>
+      <webElementGuid>637df211-8bac-4ed6-8d62-cfce62ca74b2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

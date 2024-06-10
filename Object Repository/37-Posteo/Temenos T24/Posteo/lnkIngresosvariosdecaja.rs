@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Aceptar Alertas</name>
+   <name>lnkIngresosvariosdecaja</name>
    <tag></tag>
-   <elementGuidId>bad3677c-4298-4381-8554-af46f047cf1f</elementGuidId>
+   <elementGuidId>1ab837b2-c3d2-4ed5-8ec4-8c809685ec59</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='errorImg']</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#errorImg</value>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.INGRESOS I F3');processMenuHeaderText('Ingresos varios de caja')&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,134 +22,126 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>b53cc36b-a965-4d33-9e37-ffc4ab165b2b</webElementGuid>
+      <webElementGuid>159a08ab-e86f-4312-9218-2e5837b809e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>f6b263f6-f560-4d96-9455-5f049076434f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>errorImg</value>
-      <webElementGuid>3e0a0867-5044-499f-acd7-87cf86cb7106</webElementGuid>
+      <value>javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.INGRESOS I F3');processMenuHeaderText('Ingresos varios de caja')</value>
+      <webElementGuid>819e138c-0379-498f-873c-5678b121279e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>javascript:commitOverrides()</value>
-      <webElementGuid>b22bbd4c-65f3-4590-814c-bf75310aeddd</webElementGuid>
+      <value>javascript:docommand('FUNDS.TRANSFER,POSTEO.INGRESOS I F3');</value>
+      <webElementGuid>7530a91a-110b-4547-9610-126826f9c188</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Aceptar Alertas</value>
-      <webElementGuid>cc678ae9-c583-4c4f-8cb3-8aa706abc1f8</webElementGuid>
+      <value>Ingresos varios de caja </value>
+      <webElementGuid>d73ed5eb-9bda-4787-abc9-bdfd225c4b7f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;errorImg&quot;)</value>
-      <webElementGuid>16f7bb1d-c9ae-4723-84ca-2dc8a96ac360</webElementGuid>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
+      <webElementGuid>a76fa2a2-5e62-4131-9750-92a7ca97d426</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//a[@id='errorImg']</value>
-      <webElementGuid>be1531e6-1541-4659-bd1d-3cb5eb6be5b4</webElementGuid>
+      <value>//a[@onclick=&quot;javascript:menu_history('NEW','FUNDS.TRANSFER,POSTEO.INGRESOS I F3');processMenuHeaderText('Ingresos varios de caja')&quot;]</value>
+      <webElementGuid>6e2ab143-d842-460e-a279-8745c11cb1fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='error_box']/table/tbody/tr[3]/td/table/tbody/tr/td/a</value>
-      <webElementGuid>664fbfe6-dbcc-4bd2-b754-2a3da387b5fc</webElementGuid>
+      <value>//div[@id='pane_']/ul[23]/li/ul/li/a</value>
+      <webElementGuid>e9dc4a99-f22c-4f1c-b71c-cfcf8f461f86</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Aceptar Alertas')]</value>
-      <webElementGuid>454d338c-f39f-4fab-b3cc-1084f94c3999</webElementGuid>
+      <value>//a[contains(text(),'Ingresos varios de caja')]</value>
+      <webElementGuid>d075eda4-cd09-4a57-962c-74244a40cd0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ctr)'])[1]/following::a[1]</value>
-      <webElementGuid>8a565d66-16c3-4152-a77c-dda787a8e465</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Posteo'])[1]/following::a[1]</value>
+      <webElementGuid>9b933aa5-fef5-417a-9c96-2862564c0001</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='IP22206225584724'])[1]/following::a[1]</value>
-      <webElementGuid>f8474f43-318d-48e5-81ae-f281491c4eb8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contrasentar Movs NO Rendidos a Empresa'])[1]/following::a[1]</value>
+      <webElementGuid>77f4d0dd-835e-42ce-92e4-59ebd51524bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Se sobregirara la cuenta. Se requiere autorizacion de NIV5'])[1]/preceding::a[1]</value>
-      <webElementGuid>d42af830-2138-42e8-a869-35a4be46e473</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Egresos varios de caja'])[1]/preceding::a[1]</value>
+      <webElementGuid>ef63d37d-53d1-4caf-8e16-d4610b369c8d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='DATOS GENERALES'])[1]/preceding::a[1]</value>
-      <webElementGuid>77a1530b-16ce-470b-b5f7-b1ea2fef2505</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Facturas a pagar que incluyan IVA'])[1]/preceding::a[2]</value>
+      <webElementGuid>da7550f3-272a-4d69-aa8c-14bf9946e79a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Aceptar Alertas']/parent::*</value>
-      <webElementGuid>970386f2-bfc1-476c-8b8d-4c6afda7ab02</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Ingresos varios de caja']/parent::*</value>
+      <webElementGuid>7c490a57-8341-42b3-b695-791092858f9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, 'javascript:commitOverrides()')]</value>
-      <webElementGuid>2b552ffb-f898-475e-a455-a0cecd3f3e2a</webElementGuid>
+      <value>//a[contains(@href, &quot;javascript:docommand('FUNDS.TRANSFER,POSTEO.INGRESOS I F3');&quot;)]</value>
+      <webElementGuid>2f1236a4-061d-4bcb-9368-3f2d13067e7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[3]/td/table/tbody/tr/td/a</value>
-      <webElementGuid>c51cc61c-bd0c-4b3b-8cd4-abf86405e5a7</webElementGuid>
+      <value>//ul[23]/li/ul/li/a</value>
+      <webElementGuid>24255660-0b53-415e-ae9d-5dd161b31259</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@id = 'errorImg' and @href = 'javascript:commitOverrides()' and (text() = 'Aceptar Alertas' or . = 'Aceptar Alertas')]</value>
-      <webElementGuid>d8d92187-0434-4959-bf85-b8ebf39d3b87</webElementGuid>
+      <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;FUNDS.TRANSFER,POSTEO.INGRESOS I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Ingresos varios de caja ' or . = 'Ingresos varios de caja ')]</value>
+      <webElementGuid>f5e10d22-6a80-4c58-99d9-8bd90bc70ee2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
