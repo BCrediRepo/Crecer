@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
 WebUI.maximizeWindow()
 
 //Ingresar "ENQ BCCL.E.CONSULTA.CODIGO" en el buscador
@@ -36,21 +36,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "Consulta Por Codigo Operativo"
 WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Consulta Por Codigo Operativo"
-WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
-
-//Setear Codigo Operativo
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/txtCodOperativo'), '00101')
-
-//Setear Moneda
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/txtMoneda'), 'ARS')
+//Seteo de Datos "Moneda", "Codigo Operativo"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod Operativo', '00101')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

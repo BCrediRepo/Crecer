@@ -40,26 +40,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarj
 //Cambiar ventana "BCCL.E.AP.ARQUEO.EN.LINEA"
 WebUI.switchToWindowTitle('BCCL.E.AP.ARQUEO.EN.LINEA')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Click en Arqueo en linea
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkArqueoEnlinea'))
-
-//Cambiar ventana "BCCL.E.AP.ARQUEO.EN.LINEA"
-WebUI.switchToWindowTitle('BCCL.E.AP.ARQUEO.EN.LINEA')
-
-//Maximizar pantalla
-WebUI.maximizeWindow()
-
-//Setear Sucursal
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/09-BCCL.E.AP.ARQUEO.EN.LINEA/txtSucursal'), '043')
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar boton Ejecutar
+//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verificar "Tarjetas en Filial"

@@ -32,15 +32,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Tasas Promedio')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Tasas Promedio')
-
-WebUI.setText(findTestObject('05-PlazoFijo/Tasas Promedio/txtFechaValor'), '20220725')
+//Seteo de Datos "Fecha Valor"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor', GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -51,7 +45,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/Listad
 
 label = WebUI.getText(findTestObject('05-PlazoFijo/Tasas Promedio/lblFecha'))
 
-assert label == '25 JUL 2022'
+assert label == '01 SEP 2023'
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

@@ -32,18 +32,10 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,16))
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Se accede al menu Plazo Fijo
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPlazoFijo'))
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), "ENQ BCCL.MM.RENOVOMETRO.TOT.MON")
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,16))
-
+//Seteo de Datos "Moneda"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/lblConsultadePosicionEnLinea'))
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/09-Consulta de Posicion en Linea/txtMoneda'),"PESOS")
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'PESOS')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

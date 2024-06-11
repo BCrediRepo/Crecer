@@ -59,17 +59,8 @@ WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en consulta por codigo operativo
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Detalle de operaciones/lnkCONSULTA POR CODIGO OPERATIVO'))
-
-//Switch a la ventana Consulta Por Codigo Operativo
-WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
+//Limpio campos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizamos
 WebUI.maximizeWindow()

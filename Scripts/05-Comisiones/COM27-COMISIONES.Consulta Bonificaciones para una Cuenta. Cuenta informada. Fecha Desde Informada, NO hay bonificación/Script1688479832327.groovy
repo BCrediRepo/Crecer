@@ -37,22 +37,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia a ventana nueva
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Ingresa el ENQ en el Buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
-//Clickea en el btn "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambia a ventana nueva
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-//Ingresar Cuenta "00010035377"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtCuenta'), '00010035377')
+//Seteo de Datos "Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010035377')
 
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

@@ -36,18 +36,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Con
 //Cambiar ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
 WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Consulta de Excesos en Linea"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Consultas de Operatoria en Linea de Cajas/lnkConsultadeExcesosenLinea'))
-
-//Cambiar ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
-WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
-
-//Setear Numero de Cuenta
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/No.Caja'), '1546')
+//Seteo de Datos "No. de Caja"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. de Caja', '1546')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

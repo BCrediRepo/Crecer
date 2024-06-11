@@ -32,15 +32,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('05-PlazoFijo/Consulta Tasa Plazo Fijo/txtCircularvalue111'), '3')
+//Seteo de Datos "Circular"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Circular', '3')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

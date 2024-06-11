@@ -35,15 +35,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consu
 WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,12)) 
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,12))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lblPlazoFijosActivos'))
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtSucursal'), "089")
+//Seteo de Datos "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', findTestData('MainData/Users').getValue(3,2)) //089
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

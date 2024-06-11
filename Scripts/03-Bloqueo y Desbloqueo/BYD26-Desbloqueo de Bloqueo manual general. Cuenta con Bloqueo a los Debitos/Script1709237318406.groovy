@@ -37,15 +37,9 @@ WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01
 
 WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.CTA')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/01-Bloqueo/lnkSeleccionandoCuenta'))
-
-WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.CTA')
-
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.CTA/txtCuentaID'), '13220021806')
+//Seteo de Datos "Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '13220021806')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

@@ -40,21 +40,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarj
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Seleccion por Nombre / Documento / Sucursal"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionporNombreDocumentoSucursal'))
-
-//Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
-WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
-
-//Maximizar pantalla
-WebUI.maximizeWindow()
-
-//Setear "Nro. Documento"
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtNroDocumento'), '25580852')
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Documento', '25580852')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

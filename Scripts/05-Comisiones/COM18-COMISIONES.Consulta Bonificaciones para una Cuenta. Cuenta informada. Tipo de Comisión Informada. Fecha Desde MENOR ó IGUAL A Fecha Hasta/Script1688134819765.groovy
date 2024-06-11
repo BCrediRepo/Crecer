@@ -38,35 +38,12 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia a ventana nueva
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Ingresa el ENQ en el Buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
-//Clickea en el btn "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambia a ventana nueva
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-//Ingresar Comision "DEPDISP" = "Depositos ATM/TAS"
-//WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtTipoComision'), 'MANCTA') //habilitar para TES10
-//Ingresar Cuenta "00010015665"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtCuenta'), '00010015665')
-
-//Ingresar Fecha Desde
-//WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220727') //habilitar para TES10
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20171010' //habilitar para 708
-    )
-
-//Ingresar Fecha Hasta
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaHasta'), '20230828')
-
-//Ingresar Sucursal "001"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'), '001')
+//Seteo de Datos "Cuenta", "Fecha Desde", "Fecha Hasta", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010015665')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20171010')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -102,8 +79,7 @@ TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados
 println(TotalRegistros)
 
 //-----------------------------
-//def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblTipoComision')) //habilitar TES10
-//assert element0.contains('Mant Cuenta') == true //habilitar TES10
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
@@ -119,17 +95,17 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element2 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaDes'))
 
-//assert element2.contains('28 JUL 2022') == true //habilitar TES10
-//assert element2.contains('10 OCT 2017') == true
+
 //Asserts Fecha Hasta
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'), 6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
 
-def element3 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta')) //assert element3.contains('28 JUL 2022') == true //habilitar TES10
-assert element3.contains('31 DIC 2017') == true
-//Control de fin de script
+def element3 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta')) 
 
+assert element3.contains('31 DIC 2017') == true
+
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

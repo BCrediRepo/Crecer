@@ -55,35 +55,17 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Busqueda por Nombre o Documento"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/Administracion de Piezas con Tarjetas/Recepcion de Card-Carrier/lnkBusquedaporNombreoDocumento'))
-
-//Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
-WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
-
-//Maximizar pantalla
-WebUI.maximizeWindow()
-
-//Setear "Nro. Documento"
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtNroDocumento'), '25580852')
-
-//Setear "Id Persona"
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtIdPersona'), '1000873562')
-
-//Setear "Apellido"
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtApellido'), 'MARMETTO')
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtSucursal'), '089')
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Documento', '25580852')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1000873562')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'MARMETTO')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar boton Ejecutar
+//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verificar "Nombre y Apellido"

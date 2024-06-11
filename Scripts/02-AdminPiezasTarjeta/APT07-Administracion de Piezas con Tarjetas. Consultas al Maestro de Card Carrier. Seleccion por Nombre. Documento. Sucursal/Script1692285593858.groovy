@@ -58,29 +58,14 @@ WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en Seleccion por nombre/doc/suc
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/lnkSeleccion por Nombre Documento Sucursal'))
-
-//Switch a la ventana BCCL.E.AP.ENQ.NOMBRE.DOC
-WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Ingresamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtApellido'), 'RODRIGUEZ ROCIO')
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'RODRIGUEZ ROCIO')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en ejecutar
+//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lnkEjecutar'))
 
 //ASSERT

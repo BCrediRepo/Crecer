@@ -43,18 +43,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modific
 //Cambiar ventana "BCCL.AC.CTABLOQ.SUC"
 WebUI.switchToWindowTitle('BCCL.AC.CTABLOQ.SUC')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Historial de Bloqueos Activos"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/03-Consultas/lnkBloqueosActivos'))
-
-//Cambiar ventana "BCCL.AC.CTABLOQ.SUC"
-WebUI.switchToWindowTitle('BCCL.AC.CTABLOQ.SUC')
-
-//Setear Sucursal
-WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/txtSucursal'), '073')
+//Seteo de Datos "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '073')
 
 //Setear Tipo Bloqueo
 //WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/txtTipoBloqueo'), '02')

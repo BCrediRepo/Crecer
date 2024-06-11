@@ -32,17 +32,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.MM.COMPROBANTE.RENOV')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('05-PlazoFijo/BCCL.MM.COMPROBANTE.RENOV/txtNroOperacion_value111'), '11526723')
+//Seteo de Datos "Nro. Operacion"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Operacion', '11526723')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

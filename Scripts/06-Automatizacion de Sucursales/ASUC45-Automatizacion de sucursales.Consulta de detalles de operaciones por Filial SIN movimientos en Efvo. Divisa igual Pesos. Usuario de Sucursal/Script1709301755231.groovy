@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
 WebUI.maximizeWindow()
 
 //Ingresar "?70" en el buscador
@@ -57,24 +57,10 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Cambiar ventana "Totales Sucursal x Cod Oper."
 WebUI.switchToWindowTitle('Totales Sucursal x Cod Oper.')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Detalle de Operaciones Sin Efvo (Filial)"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas de Atencion a Usuarios/Consultas de Operatoria en Linea de Cajas/Consultas de Cierre Operatoria/lnkDetalleOpSinEfvo(Filial)'))
-
-//Cambiar ventana "Totales Sucursal x Cod Oper."
-WebUI.switchToWindowTitle('Totales Sucursal x Cod Oper.')
-
-//Setear Moneda
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales Usuario x Cod Oper/txtMoneda'), 'ARS')
-
-//Maximizar Ventana
-WebUI.maximizeWindow()
-
-//Setear Sucursal
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales Usuario x Cod Oper/txtUsuario'), '001')
+//Seteo de Datos "Moneda", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -88,12 +74,12 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Cambiar ventana "Detalle Transacciones No Efectivo"
 WebUI.switchToWindowTitle('Detalle Transacciones No Efectivo')
 
-//Verificar "001"
+//Verificar "043"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales Usuario x Cod Oper/lblSucursal'))
 
-//Validar "001"
+//Validar "043"
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales Usuario x Cod Oper/lblSucursal'))
-assert element.contains('001')
+assert element.contains('043')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

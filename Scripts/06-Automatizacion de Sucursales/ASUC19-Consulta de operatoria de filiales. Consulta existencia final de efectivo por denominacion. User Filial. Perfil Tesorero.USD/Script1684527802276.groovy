@@ -59,28 +59,13 @@ WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Ir a EXISTENCIA POR DENOMINACION
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkEXISTENCIAPORDENOMINACION'))
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
-
-//Verifica titulo de BCCL.E.TT.CASH.DENOM
+//Verifica titulo de BCCL.E.TT.CASH.DENOM y Seteo de Datos "Divisa", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblTituloBCCL.E.TT.CASH.DENOM'))
-
-//Ingresa Sucursal
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtSucursalValue1'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtSucursalValue1'),'074')
-
-//Ingresa Numero de Caja
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtNroCajaValue2'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtNroCajaValue2'),'9074')
-
-//Ingresa DIVISA USD
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtDivisaValue3'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtDivisaValue3'),'USD')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Divisa', 'USD')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '074')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Caja', '9074')
 
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

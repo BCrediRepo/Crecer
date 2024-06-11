@@ -34,26 +34,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña Tipos de Comision
 WebUI.switchToWindowTitle('Tipos de Comision')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ ENQ BCCL.E.TIP.COMISION
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.TIP.COMISION')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña Tipos de Comision
-WebUI.switchToWindowTitle('Tipos de Comision')
-
-//Espera titulo Tipos de Comision
-WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Tipos de Comision/lblTiposdeComision'),5)
-
-//Ingresa TIPO De Comision
+//Seteo de Datos "@ID"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Tipos de Comision/txtID'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/Tipos de Comision/txtID'), 'BUZATH')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('@ID', 'BUZATH')
 
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

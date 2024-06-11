@@ -33,15 +33,10 @@ WebUI.click(findTestObject('02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkCo
 
 WebUI.switchToWindowTitle('Consulta de Cuentas por Firmante')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentaPorFirmante'))
-
-WebUI.switchToWindowTitle('Consulta de Cuentas por Firmante')
-
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/Consulta de Cuentas por Firmante/txtPersonaID'), '1003747667')
+//Seteo de Datos "Id. Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtIdFirmante'), 6)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Persona', '1003747667')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
@@ -67,15 +62,9 @@ WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01
 
 WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.PER')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/01-Bloqueo/lnkSeleccionandoPersona'))
-
-WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.PER')
-
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.PER/txtPersonaID'), '1003747667')
+//Seteo de Datos "Id. Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Persona', '1003747667')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

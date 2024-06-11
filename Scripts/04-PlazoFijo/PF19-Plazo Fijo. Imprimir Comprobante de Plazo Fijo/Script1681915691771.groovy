@@ -32,17 +32,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.MM.CERT.CUENTA')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('05-PlazoFijo/Comprobante de Plazo Fijo/txtSucursal_value111'), '074')
+//Seteo de Datos "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '074')
 
 //WebUI.setText(findTestObject('05-PlazoFijo/Comprobante de Plazo Fijo/txtNOperacion074_value211'), '12077833')
 

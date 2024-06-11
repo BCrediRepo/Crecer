@@ -38,30 +38,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
-
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-
-WebUI.switchToWindowIndex(0)
-
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-//Se completan los filtros
-
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtTipoComision'), 'ECHQJ')
-
-
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaHasta'), '20200630')
-
-
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'), '001')
+//Seteo de Datos "Fecha Hasta", "Sucursal", "Tipo Comision"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo Comision', 'ECHQJ')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
 //Se toma un screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

@@ -33,16 +33,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de Datos "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 // DESCOMENTAR PARA LA REGRESION
 //WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtTipoComision'), 'GUVE')
 //
@@ -51,8 +45,6 @@ WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 //WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaDesde'), '20210725')
 //
 //WebUI.setText(findTestObject('06-Comisiones/Bon Com por Cuenta o Sucursal/txtFechaHasta'), '20220729')
-
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/Bon Com por Cuenta o Sucursal/txtSucursal'), '001')
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
