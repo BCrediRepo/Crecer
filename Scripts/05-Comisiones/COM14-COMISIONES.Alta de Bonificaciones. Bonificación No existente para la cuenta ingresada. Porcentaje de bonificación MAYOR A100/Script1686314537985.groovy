@@ -70,25 +70,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia a la ventana "Bonificacion - Consulta"
 WebUI.switchToWindowTitle('Bonificacion - Consulta')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Vuelve a ingresar en ENQ en el Buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CTA.CONS.BONIF')
-
-//Clickea en el btn "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambia a la ventana "Bonificacion - Consulta"
-WebUI.switchToWindowTitle('Bonificacion - Consulta')
-
-//Ingresa el Nro de Cuenta
-WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtNroCuenta'), '00010015665')
-
-//Ingresa la Comision
-WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtTipoComision'), 'DEPDISP')
+//Seteo de Datos "Nro de Cuenta", "Tipo Comision"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta', '00010015665')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo Comision', 'DEPDISP')
 
 //Click en Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
@@ -96,9 +81,9 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 //Click en Alta/Modificacion
 WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/lnkAltaModificacion'))
 
+//Ingresa Bonificacion.
 WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtPorcentajeBonif'), '500')
 
-//Ingresa Bonificacion.
 //Ingresa fecha hasta.
 WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtFechaVigenciaHasta'), GlobalVariable.vFechaCOBAmbTES10)
 

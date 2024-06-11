@@ -45,21 +45,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modific
 //Cambiar ventana "BCCL.E.AC.BLO.POR.CTA"
 WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.CTA')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Seleccionando Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/01-Bloqueo/lnkSeleccionandoCuenta'))
-
-//Cambiar ventana "BCCL.E.AC.BLO.POR.CTA"
-WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.CTA')
-
-//Maximizar Ventana
-WebUI.maximizeWindow()
-
-//Setear Cuenta
-WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/txtCuenta'), '00760481318')
+//Seteo de Datos "Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00760481318')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

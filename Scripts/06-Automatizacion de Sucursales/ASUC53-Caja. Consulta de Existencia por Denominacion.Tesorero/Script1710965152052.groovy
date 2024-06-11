@@ -48,15 +48,8 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Cambiar ventana "BCCL.E.TT.CASH.DENOM"
 WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Cons. de Existencia por Denominacion"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Caja/lnkCons.deExistenciaporDenominacion'))
-
-//Cambiar ventana "BCCL.E.TT.CASH.DENOM"
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
+//Limpio campos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

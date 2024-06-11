@@ -59,24 +59,12 @@ WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Ir a EXISTENCIA POR DENOMINACION
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkEXISTENCIAPORDENOMINACION'))
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
-
-//Verifica titulo de BCCL.E.TT.CASH.DENOM
+//Verifica titulo de BCCL.E.TT.CASH.DENOM y Seteo de Datos "Divisa", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblTituloBCCL.E.TT.CASH.DENOM'))
-
-//Ingresa Sucursal
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtSucursalValue1'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtSucursalValue1'),'001')
-
-//Ingresa DIVISA ARS
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtDivisaValue3'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtDivisaValue3'),'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Divisa', 'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
 //Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

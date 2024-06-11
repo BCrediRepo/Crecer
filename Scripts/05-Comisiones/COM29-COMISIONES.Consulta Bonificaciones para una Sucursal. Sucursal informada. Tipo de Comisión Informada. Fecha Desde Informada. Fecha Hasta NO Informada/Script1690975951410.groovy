@@ -37,28 +37,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia a ventana nueva
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Ingresa el ENQ en el Buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
-//Clickea en el btn "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambia a ventana nueva
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-//Ingresar Comision "DEPDISP" = "Depositos ATM/TAS"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtTipoComision'), 'DEPDISP')
-
-//Ingresar Fecha Desde
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20220729')
-
-//Ingresar Sucursal "001"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'), '001')
+//Seteo de Datos "Fecha Desde", "Sucursal", "Tipo Comision"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo Comision', 'DEPDISP')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20220729')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

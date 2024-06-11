@@ -32,19 +32,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('05-PlazoFijo/Consolidado Analitico Saldos x Suc/txtCircularvalue111'), '026')
-
-WebUI.setText(findTestObject('05-PlazoFijo/Consolidado Analitico Saldos x Suc/txtFechaValorvalue211'), '20220725')
-
-WebUI.setText(findTestObject('05-PlazoFijo/Consolidado Analitico Saldos x Suc/txtSucursalvalue311'), '074')
+//Seteo de Datos "Circular", "Fecha Valor", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Circular', '026')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '074')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -32,21 +32,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Limpiar
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-Label = WebUI.getText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/lblPosicion4'))
-
-if (Label == 'Fecha Vencimiento') {
-    WebUI.setText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/txtFecha_value411'), '20230828')
-} else {
-    WebUI.setText(findTestObject('05-PlazoFijo/Agenda de Vencimientos/txtFecha_value111'), '20230828')
-}
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Vencimiento', GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

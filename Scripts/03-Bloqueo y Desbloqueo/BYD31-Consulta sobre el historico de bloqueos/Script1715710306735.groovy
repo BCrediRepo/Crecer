@@ -37,17 +37,10 @@ WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/Co
 
 WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/03-Consultas/lnkHistorialdeBloqueosInactivos'))
-
-WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
-
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/txtCuenta'), '00010035377')
-
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/txtFechaBloqueo'), '20230828')
+//Seteo de Datos "Cuenta" y "Fecha de Bloqueo"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010035377')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', '20230828')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

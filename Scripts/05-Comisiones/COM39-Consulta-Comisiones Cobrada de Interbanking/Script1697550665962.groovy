@@ -34,35 +34,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.AC.COM.ITB
 WebUI.switchToWindowTitle('BCCL.E.AC.COM.ITB')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.AC.COM.ITB
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.ITB')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre BCCL.E.AC.COM.ITB
-WebUI.switchToWindowTitle('BCCL.E.AC.COM.ITB')
-
 //Espera titulo Consulta de Comisiones Interbaking
 //WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/lblTituloBCCL.E.AC.COM.ITB'),5)
 //WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/lblTituloBCCL.E.AC.COM.ITB'))
 
-//Ingresa Abonado
+//Seteo de Datos "Abonado", "Cuenta", "Fecha"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/txtAbonado'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/txtAbonado'), 'X88262A')
-
-//Ingresa Cuenta
-WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/txtCuenta'), '00010000164')
-
-//Ingresa Fecha
-WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/txtFecha'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/txtFecha'), '20220630')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Abonado', 'X88262A')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010000164')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha', '20220630')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -38,29 +38,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña ENQ BCCL.E.AC.COM.COBRADA
 WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.AC.COM.COBRADA
-WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
-
-//Espera titulo BCCL.E.AC.COM.COBRADA
-//WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.COBRADA/lblTitulo'), 15)
-
-//Ingresa Cuenta
-//WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.COBRADA/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.COBRADA/txtCuenta'), '00780012787')
-
-//Ingresa Fecha Desde
-//WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.COBRADA/txtFechaDesde'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.COBRADA/txtFechaDesde'), '20220725')
+//Seteo de Datos "Cuenta", "Fecha Desde"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00780012787')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20220725')
 
 //Maximiza la pantalla
 //WebUI.maximizeWindow()

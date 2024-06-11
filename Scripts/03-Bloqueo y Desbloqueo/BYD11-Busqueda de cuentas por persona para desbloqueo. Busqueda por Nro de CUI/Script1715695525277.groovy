@@ -44,17 +44,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modific
 WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'))
-WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
-WebUI.maximizeWindow()
-
-//Busco la Persona a Desbloquear por CUI
+//Seteo de Datos Persona a Desbloquear por CUI
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtNroCUI'), 6)
-WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtNroCUI'), '30605261716')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro CUI', '30605261716')
+
+//Seleccionar "Ejecutar"
 WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'), 6)
 WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'))
 
@@ -118,18 +113,12 @@ try {
 	WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
 	WebUI.maximizeWindow()
 	
-	//Filtro para limpiar selección
-	CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-	WebUI.switchToWindowIndex(0)
-	WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'), 6)
-	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'))
-	WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
-	WebUI.maximizeWindow()
-	
-	//Busco la Persona a Desbloquear por CUI
+	//Seteo de Datos (Persona a Desbloquear por CUI)
+	WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtNroCUI'), 6)
-	WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtNroCUI'), '30605261716')
-	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'), 6)
+	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro CUI', '30605261716')
+	
+	//Seleccionar "Ejecutar"
 	WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'))
 	
 	//Verifico que sea la cuenta que se muestra y verificamos

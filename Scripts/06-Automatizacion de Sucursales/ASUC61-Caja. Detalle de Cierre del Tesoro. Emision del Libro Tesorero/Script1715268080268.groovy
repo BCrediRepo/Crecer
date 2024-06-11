@@ -36,15 +36,8 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkDetalledeC
 //Cambiar ventana "BCCL.E.TT.LIBRO.TESORO"
 WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Detalle de Cierre del Tesoro"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkDetalledeCierreDelTesoro'))
-
-//Cambiar ventana "BCCL.E.TT.LIBRO.TESORO"
-WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
+//Limpio campos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

@@ -44,6 +44,8 @@ WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.CTA')
 
 WebUI.maximizeWindow()
 
+WebUI.delay(10)
+
 WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/txtCuenta'), 
     '00760481318')
 
@@ -97,7 +99,6 @@ catch (Exception e) {
 
     WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/01-Bloqueo/lnkSeleccionandoCuenta'))
 
-    //Switch a la ventana de Bloqueos por Cuenta
     WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.CTA')
 
     WebUI.maximizeWindow()
@@ -111,7 +112,6 @@ catch (Exception e) {
 
     WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/lnkBloqueoParcial'))
 
-    //Switch a la ventana de CUENTAS
     WebUI.switchToWindowTitle('LOCKED EVENTS')
 
     WebUI.maximizeWindow()
@@ -139,12 +139,10 @@ catch (Exception e) {
 
     WebUI.closeWindowTitle('LOCKED EVENTS')
 
-    //------------------------------------------------------------------
     WebUI.switchToWindowIndex(0)
 
     WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoCuenta'))
 
-    //Switch a la ventana de Bloqueos por Cuenta
     WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.CTA')
 
     WebUI.maximizeWindow()
@@ -154,7 +152,6 @@ catch (Exception e) {
 
     WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'))
 
-    //Verifico que sea la cuenta que se muestra y procedemos al Bloqueo Parcial
     WebUI.maximizeWindow()
 
     WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lblCuentaADesbloq'))
@@ -165,7 +162,6 @@ catch (Exception e) {
 
     WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lnkDesbloqueoParcial'))
 
-    //Switch a la ventana de Desbloqueo Parcial e ingresamos a desbloquear parcialmente
     WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.PAR')
 
     WebUI.maximizeWindow()
@@ -174,7 +170,6 @@ catch (Exception e) {
 
     WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/lnkDesbloqueoParcialFinal'))
 
-    //Switch a la ventana de Cuentas
     WebUI.switchToWindowTitle('LOCKED EVENTS')
 
     WebUI.maximizeWindow()
@@ -192,7 +187,13 @@ catch (Exception e) {
     CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
     isVisible = false
-} 
+} //Switch a la ventana de Bloqueos por Cuenta
+//Switch a la ventana de CUENTAS
+//------------------------------------------------------------------
+//Switch a la ventana de Bloqueos por Cuenta
+//Verifico que sea la cuenta que se muestra y procedemos al Bloqueo Parcial
+//Switch a la ventana de Desbloqueo Parcial e ingresamos a desbloquear parcialmente
+//Switch a la ventana de Cuentas
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 

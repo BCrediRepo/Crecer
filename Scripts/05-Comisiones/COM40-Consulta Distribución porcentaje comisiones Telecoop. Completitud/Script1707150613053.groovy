@@ -34,23 +34,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña Consulta de Comisiones Cobradas
 WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.AC.COM.POR.DIS.SUC
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.POR.DIS.SUC')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña Consulta de Comisiones Cobradas
-WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
-
-//Ingresa Fecha Proceso
-//WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.POR.DIS.SUC/txtFechaProceso1'), 6)
-WebUI.setText(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.POR.DIS.SUC/txtFechaProceso1'), '20230828')
+//Seteo de Datos "Fecha Proceso"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Proceso', '20230828')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

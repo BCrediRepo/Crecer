@@ -37,31 +37,12 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia a ventana nueva
 WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Ingresa el ENQ en el Buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.BONIFICACION')
-
-//Clickea en el btn "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambia a ventana nueva
-WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
-
-//Ingresar Cuenta "00010015665"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtCuenta'), '00010024069')
-
-//Ingresar Fecha Desde
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaDesde'), '20180511')
-
-//Ingresar Fecha Hasta
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtFechaHasta'), '20220809')
-
-//Ingresar Sucursal "001"
-WebUI.setText(findTestObject('06-Comisiones/Comision Bonificaciones/txtSucursal'), '001')
+//Seteo de Datos "Cuenta", "Fecha Desde", "Fecha Hasta" "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010024069')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20180511')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

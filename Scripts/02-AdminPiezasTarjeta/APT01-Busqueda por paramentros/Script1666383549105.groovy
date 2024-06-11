@@ -38,35 +38,25 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
-WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
-
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AP.ENQ.NOMBRE.DOC')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Vuelvo a la ventana de busqueda
-WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
-
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/txtSucursal'), findTestData(
-        'MainData/Users').getValue(3, 1))
-
+//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/btnEjecutar'))
 
 //WebUI.delay(30)
-
 //WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'), 
 //    10)
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'))
 
 consulta = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/01-SeleccionNombreDocSuc/lblConsultadePiezas'))
-assert consulta == " Consulta de Piezas"
+
+assert consulta == ' Consulta de Piezas'
 
 WebUI.delay(3 //---------------------------------------------------------------------------------------------------------------------
-    ) //Control de fin de script
+    //Control de fin de script
+    )
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

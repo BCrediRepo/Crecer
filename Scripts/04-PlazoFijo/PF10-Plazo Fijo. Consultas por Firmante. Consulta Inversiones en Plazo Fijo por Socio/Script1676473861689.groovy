@@ -38,21 +38,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consu
 
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,11))
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/03-Consulta Por Firmante/lnkConsultaInversionesEnPlazoFijoPorSocio'))
-
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,11))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/lblMonto Activo por Titular'), 6)
-
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtFormadeCalculo'), "TOTAL")
-
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtMoneda'), "1002709912")
-//Se cambia el orden de los campos de busqueda por que la aplicacion no limpia los registros con deberia!!!!!!!!!!!
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/010-Monto activo por titular/txtIDpersona'), "ARS")
+//Seteo de Datos "Forma de calculo", "Moneda", "Id Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/06-Consulta Inversiones en Plazo Fijo por Socio/lblMontoActivoporTitular'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Forma de calculo', 'TOTAL')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1002709912')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

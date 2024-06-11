@@ -43,24 +43,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modific
 //Cambiar ventana "BCCL.AC.CONS.HIST.BLOQ"
 WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
 
-//Filtro limpieza
-//CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-//WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Historial de Bloqueos inactivos"
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/03-Consultas/lnkHistorialdeBloqueosInactivos'))
-
-//Cambiar ventana "BCCL.AC.CONS.HIST.BLOQ"
-//WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
-
-//Setear "Numero de cuenta"
-WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/txtCuenta'), '00010043082')
-
-//Setear "Fecha de Bloqueo"
-WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/txtFechaBloqueo'), '')
-
-//Setear "NO.SORT.OPTION"
-WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/txtNoSortOption'), '')
+//Seteo de Datos "Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010043082')
 
 //Capturar el tiempo de inicio
 long startTime = System.currentTimeMillis()
