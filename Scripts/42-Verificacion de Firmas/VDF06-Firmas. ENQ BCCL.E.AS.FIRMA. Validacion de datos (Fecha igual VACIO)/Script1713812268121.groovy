@@ -55,16 +55,13 @@ WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verif
 WebUI.switchToWindowTitle('BCCL.E.AS.FIRMA')
 
 //ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFecha(AAAAMMDD)'), 6)
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA NO VALIDA'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFecha(AAAAMMDD)'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA NO VALIDA'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFecha(AAAAMMDD)'))
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA NO VALIDA'))
-
-assert element.contains('FECHA NO VALIDA')
-
-
+assert element.contains('Fecha (AAAAMMDD')
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script

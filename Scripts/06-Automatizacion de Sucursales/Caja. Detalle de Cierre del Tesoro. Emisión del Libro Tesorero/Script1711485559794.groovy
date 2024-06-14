@@ -22,50 +22,36 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,61), findTestData('MainData/Users').getValue(2,61))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en el menu Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+//Click en caja
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
 
-//Click en Consulta de Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
+//Click en detalle de cierre del tesoro
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDetalle de Cierre del Tesoro'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Click en Consulta de cuentas por cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
-
-//Swicht a la ventana
-WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
+//Switch a la ventana BCCL.E.TT.LIBRO.TESORO
+WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Click en nueva seleccion
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lnkNueva Seleccion'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/02-BCCL.E.VER.CUENTA.AMBI/lblID.CUENTA es de Ingreso Obligatorio'), 6)
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/02-BCCL.E.VER.CUENTA.AMBI/lblID.CUENTA es de Ingreso Obligatorio'))
-
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/02-BCCL.E.VER.CUENTA.AMBI/lblID.CUENTA es de Ingreso Obligatorio'))
-
-assert element.contains('ID.CUENTA es de Ingreso Obligatorio')
+assert element.contains('RESPONSABLE AREA TESORERIA')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

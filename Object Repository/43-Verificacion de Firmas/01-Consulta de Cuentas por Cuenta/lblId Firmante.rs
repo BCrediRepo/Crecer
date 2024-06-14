@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFECHA NO VALIDA</name>
+   <name>lblId Firmante</name>
    <tag></tag>
-   <elementGuidId>52f626e4-2d79-4fb3-b792-936a165f4810</elementGuidId>
+   <elementGuidId>88e4140d-64ba-4b24-80e8-efb49df62ab6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>tr > #message</value>
+         <value>#columnHeaderText2</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//td[@id='message']</value>
+         <value>//th[@id='columnHeaderText2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,119 +21,119 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>f01aa502-6aa6-44a9-ae30-dfd003dba8b1</webElementGuid>
+      <value>th</value>
+      <webElementGuid>26b5819d-37ae-4bb8-a198-cf8e6f8f91df</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>col</value>
+      <webElementGuid>0526a462-4368-4003-b3f9-2866ebeda1f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>message</value>
-      <webElementGuid>46bd03df-cee6-47da-9309-73d975d0a46e</webElementGuid>
+      <value>columnHeader</value>
+      <webElementGuid>0477c745-b9fe-43a4-8e92-1b41b030e602</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>message</value>
-      <webElementGuid>607923ad-f5a5-4742-9d0b-4965cef110e8</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>0</value>
-      <webElementGuid>5922917e-d3d0-4d8a-9ce9-131a8e668d65</webElementGuid>
+      <value>columnHeaderText2</value>
+      <webElementGuid>1d6eb203-0583-4c21-b1b8-52840cc3dad5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>FECHA NO VALIDA</value>
-      <webElementGuid>91681623-f910-4f03-8633-d7d5ce546026</webElementGuid>
+      <value>Id Firmante</value>
+      <webElementGuid>fb128c22-3ab5-4a41-8a30-3d4a4535ff58</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;divMsg&quot;)/table[@id=&quot;message&quot;]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[@id=&quot;message&quot;]</value>
-      <webElementGuid>80dd35cf-b33d-48ea-af9d-08686be65d47</webElementGuid>
+      <value>id(&quot;columnHeaderText2&quot;)</value>
+      <webElementGuid>c2da2e9d-fed4-45b1-9ae1-745d106228e7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//td[@id='message']</value>
-      <webElementGuid>5e672928-7676-4b74-a0df-849828fc9a82</webElementGuid>
+      <value>//th[@id='columnHeaderText2']</value>
+      <webElementGuid>37f14a57-bb7d-49b2-9291-58073c92dbda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='message']/tbody/tr[2]/td/table/tbody/tr/td</value>
-      <webElementGuid>5b65de3f-1cf2-4f4d-b6ea-1d67d5223de2</webElementGuid>
+      <value>//th[@id='columnHeader2']/table/tbody/tr/th</value>
+      <webElementGuid>5cafe1f5-b5d5-4812-a884-4ba2a3053697</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mensaje de Error'])[1]/following::td[2]</value>
-      <webElementGuid>8f7f8cf3-1662-4cab-a33d-e9d762113dbe</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Firma'])[1]/following::th[3]</value>
+      <webElementGuid>f5505555-40b3-479a-90fa-ff0119c599a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>34669d1a-1277-4e0f-9029-6c9e6575cf84</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forma de Operar :'])[1]/following::th[5]</value>
+      <webElementGuid>5973e10b-e360-463a-9878-372e9d0b83c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Verificacion de firmas y facultades'])[1]/preceding::td[2]</value>
-      <webElementGuid>63e9c506-071c-4629-bcae-45a88ca9d693</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Firmante'])[1]/preceding::th[2]</value>
+      <webElementGuid>17bac2fd-3c5f-4dad-9de2-dc0f47510ab7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::td[6]</value>
-      <webElementGuid>23d7c52b-dd5e-41f5-a28e-f44253a92076</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Relacion'])[1]/preceding::th[5]</value>
+      <webElementGuid>fb24657f-dcc1-42ec-a3ae-42487d64094a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='FECHA NO VALIDA']/parent::*</value>
-      <webElementGuid>5c40745e-4f9b-4115-a6d0-2f66ec19a676</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Id Firmante']/parent::*</value>
+      <webElementGuid>7b3b8e7e-25e2-4ae3-afd5-b3d8000fc59d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/table/tbody/tr/td</value>
-      <webElementGuid>71c9e90e-dc4c-4ddd-bbfb-48f0cc6d7a0f</webElementGuid>
+      <value>//th[2]/table/tbody/tr/th</value>
+      <webElementGuid>718d333f-e9c9-44f7-9b42-12cefb6ed180</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[@id = 'message' and (text() = 'FECHA NO VALIDA' or . = 'FECHA NO VALIDA')]</value>
-      <webElementGuid>491f1932-8e16-4437-919f-e344f7ed81ab</webElementGuid>
+      <value>//th[@id = 'columnHeaderText2' and (text() = 'Id Firmante' or . = 'Id Firmante')]</value>
+      <webElementGuid>636a8968-f5cb-4f01-9a5d-7fabc7beefd5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

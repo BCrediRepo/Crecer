@@ -68,6 +68,7 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+<<<<<<< HEAD
       <guid>47245dac-51c9-4564-b728-5eeb1a9ee530</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -75,6 +76,8 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+=======
+>>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68
       <guid>44727734-5157-498b-9644-78ff82791d77</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

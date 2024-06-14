@@ -18,6 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
+<<<<<<< HEAD
 ////Configuracion de ambiente
 //CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 //
@@ -48,6 +49,45 @@ import org.openqa.selenium.Keys as Keys
 ////Screenshot
 //CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //WebUI.closeBrowser()
+=======
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+// Ingreso en el commandline ACCOUNT para consultar el saldo de la cuenta
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ACCOUNT,')
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Cambiamos a la ventana CUENTAS
+WebUI.switchToWindowTitle('CUENTAS')
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Ingresamos la cuenta a consultar
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '10740044371') //10740044371//00430014075
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Click en Ver registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/btnVerRegistro'))
+
+//Verificamos el campo Working Balance
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/lblWorkingBalance'), 6)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/lblWorkingBalance'), 6)
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.closeBrowser()
+>>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68
 
 //---------------------------------------------------------------------------------------------------------------------
 //Volvemos a loguear
@@ -70,7 +110,12 @@ WebUI.switchToWindowTitle('BCCL.RES.CTA.PEDIDO')
 WebUI.maximizeWindow()
 
 //Ingresamos los datos para el pedido de resumen de cuenta
+<<<<<<< HEAD
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '00430014075') //00545293967//10740044371 //10740044371
+=======
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '10740044371') //00430014075 //10740044371//00545293967
+>>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/cbxDesdeInicioDelMesEnCurso'))
 

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>cbxConsultar Firmas</name>
+   <tag></tag>
+   <elementGuidId>3e805073-08bf-4c05-a078-42ca5e207c5f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='drillbox:1_1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>50d2d9df-12e6-43f3-8680-c92d5f06278a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>drillbox:1_1</value>
+      <webElementGuid>f7657885-350f-4a46-9f6f-c7eb1307058b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>drillbox drillbox_BCCLEVERCUENTAAMBI</value>
+      <webElementGuid>df615499-9461-49e2-b50c-e0883c5e0be1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ver CuentaVer FirmantesVer Datos MonetariosConsultar Firmas</value>
+      <webElementGuid>87738f03-c26a-4d89-a8d6-abfe9e5bcb2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;drillbox:1_1&quot;)</value>
+      <webElementGuid>939051e6-bd85-4ffe-900e-5a4b1beb92cc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='drillbox:1_1']</value>
+      <webElementGuid>927243cc-3bc6-46f2-b84f-7809db3ab6c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[8]/table/tbody/tr/td/select</value>
+      <webElementGuid>acc84674-772f-4989-a02d-0078af523905</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Activa'])[1]/following::select[1]</value>
+      <webElementGuid>87576111-97f9-4dfe-8b3d-fc65ff99b6d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::select[1]</value>
+      <webElementGuid>789cb0c5-afbf-4365-bf65-c74144460622</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Cuentas por Cuenta'])[2]/preceding::select[1]</value>
+      <webElementGuid>8eabacd1-e40b-41d0-819b-6c4bbd643a17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nueva Seleccion'])[1]/preceding::select[1]</value>
+      <webElementGuid>b9194838-b9b1-449c-b68b-2fb52b3e1573</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>b83a4612-6d27-410d-b825-559bea00096e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@id = 'drillbox:1_1' and (text() = 'Ver CuentaVer FirmantesVer Datos MonetariosConsultar Firmas' or . = 'Ver CuentaVer FirmantesVer Datos MonetariosConsultar Firmas')]</value>
+      <webElementGuid>b42ebb34-a8b4-4e5d-b0e0-4c8b84a56763</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

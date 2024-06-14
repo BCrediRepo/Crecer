@@ -55,6 +55,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkEjecutar'))
 
 //ASSERT
+<<<<<<< HEAD:Scripts/42-Verificacion de Firmas/VDF14-Firmas. ENQ BCCL.E.AS.FIRMA. Validacion de datos (Numero de cuenta)/Script1713817002804.groovy
 //WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'), 6)
 
 //WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
@@ -71,6 +72,24 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de 
 def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblNumero de Cuenta'))
 
 assert element.contains('Numero de Cuenta')
+=======
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblNumero de Cuenta'), 6)
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblNumero de Cuenta'))
+
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblNumero de Cuenta'))
+
+assert element.contains('Numero de Cuenta')
+
+//ASSERT
+//WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'), 6)
+
+//WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
+
+//def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblNO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951'))
+
+//assert element.contains('NO EXISTEN REGISTROS EN LA FECHA INDICADA PARA LA CUENTA 10430033951')
+>>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68:Scripts/42-Verificacion de Firmas/VDF14-Firmas. ENQ BCCL.E.AS.FIRMA. Validación de datos (Número de cuenta)/Script1690817053201.groovy
 
 //---------------------------------------------------------------------------------------------------------------------
 

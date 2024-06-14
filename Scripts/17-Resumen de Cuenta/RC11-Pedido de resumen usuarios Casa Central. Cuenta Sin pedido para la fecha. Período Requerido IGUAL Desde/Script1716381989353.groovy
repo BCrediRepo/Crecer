@@ -35,7 +35,13 @@ WebUI.switchToWindowTitle('CUENTAS')
 WebUI.maximizeWindow()
 
 //Ingresamos la cuenta a consultar
+<<<<<<< HEAD:Scripts/17-Resumen de Cuenta/RC11-Pedido de resumen usuarios Casa Central. Cuenta Sin pedido para la fecha. Período Requerido IGUAL Desde/Script1716381989353.groovy
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '10730166496')
+=======
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '03195011374') //24400086749
+
+//Screenshot
+>>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68:Scripts/17-Resumen de Cuenta/RC18-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Período Requerido IGUAL Desde inicio del mes en curso.Cuenta Activa/Script1687528575696.groovy
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Ver registro
@@ -73,7 +79,12 @@ WebUI.switchToWindowTitle('BCCL.RES.CTA.PEDIDO')
 WebUI.maximizeWindow()
 
 //Ingresamos los datos para el pedido de resumen de cuenta
+<<<<<<< HEAD:Scripts/17-Resumen de Cuenta/RC11-Pedido de resumen usuarios Casa Central. Cuenta Sin pedido para la fecha. Período Requerido IGUAL Desde/Script1716381989353.groovy
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '10730166496')
+=======
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtNrode Cuenta'), '03195011374') //24400086749
+>>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68:Scripts/17-Resumen de Cuenta/RC18-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Período Requerido IGUAL Desde inicio del mes en curso.Cuenta Activa/Script1687528575696.groovy
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/cbxDesdeInicioDelMesEnCurso'))
 

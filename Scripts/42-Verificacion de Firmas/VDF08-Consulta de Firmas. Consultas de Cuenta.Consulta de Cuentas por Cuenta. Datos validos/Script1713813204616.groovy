@@ -60,11 +60,19 @@ long startTime = System.currentTimeMillis()
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
+//Click en el cbx y seleccionamos la opcion consultar firmas
+WebUI.selectOptionByIndex(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/cbxConsultar Firmas'), 3)
+
+//Click en el btnDrilldown
+WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnDrilldown'))
+
+//Switch a la ventana BCCL.E.FIRMAS.CUENTA
+WebUI.switchToWindowTitle('BCCL.E.FIRMAS.CUENTA')
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblId Firmante'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblId Firmante'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -74,9 +82,26 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblId Firmante'))
 
-assert element.contains('Nro Cuenta')
+assert element.contains('Id Firmante')
+
+//ASSERT
+//WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 6)
+
+//WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+
+// Captura el tiempo de finalización
+//long endTime = System.currentTimeMillis()
+
+//Calcula la diferencia para obtener el tiempo transcurrido
+//long elapsedTime = endTime - startTime
+
+//println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+//def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
+
+//assert element.contains('Nro Cuenta')
 
 //---------------------------------------------------------------------------------------------------------------------
 

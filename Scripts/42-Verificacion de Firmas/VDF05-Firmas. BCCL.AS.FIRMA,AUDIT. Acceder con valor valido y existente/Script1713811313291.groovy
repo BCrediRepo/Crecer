@@ -40,6 +40,7 @@ WebUI.switchToWindowTitle('BCCL.AS.FIRMA')
 //maximizamos
 WebUI.maximizeWindow()
 
+<<<<<<< HEAD:Scripts/42-Verificacion de Firmas/VDF05-Firmas. BCCL.AS.FIRMA,AUDIT. Acceder con valor valido y existente/Script1713811313291.groovy
 //Seleccionar "Boton Drill down
 //WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/btnDrilldownListaRegistros'))
 
@@ -48,6 +49,10 @@ WebUI.maximizeWindow()
 
 //Seteamos el FI solicitado
 WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/txtAuditoria'), 'FI22199057600818')
+=======
+//Ingresamos datos para la consulta
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/04-BCCL.AS.FIRMA/txtAuditoria'), 'FI23212000000666')
+>>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68:Scripts/42-Verificacion de Firmas/VDF05-Firmas. BCCL.AS.FIRMA,AUDIT. Acceder con valor FI FI22199057600818 válido y existente/Script1689546788904.groovy
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
