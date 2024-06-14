@@ -95,4 +95,11 @@
       <testCaseId>Test Cases/08-Compensacion de Saldos/CSD12-Consulta de Relaciones Cuentas Espejo. Consulta por cuenta. Sucursal de usuario logueado dintinto de sucursal de cuenta</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9509fbe2-88bd-4a06-9f19-910d1d5850aa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/08-Compensacion de Saldos/CDS13-Productos y Circulares. Combo Productos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

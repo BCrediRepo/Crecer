@@ -63,7 +63,10 @@ WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 WebUI.maximizeWindow()
 
 //WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/lnkNuevaSeleccion'))
-WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), GlobalVariable.vFechaCOBAmbTES10)
+
+WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20230831')
+
+//WebUI.setText(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), GlobalVariable.vFechaCOBAmbTES10)
 
 
 WebUI.setText(findTestObject('21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal1'), '073')
@@ -91,7 +94,16 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/21-Fallas/03-BCCL.E.
 
 WebUI.click(findTestObject('Object Repository/21-Fallas/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/img'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 6) 
+//Switch a la ventana TELLER
+WebUI.switchToWindowTitle('TELLER')
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/06-TELLER/lblALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/06-TELLER/lblALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn'))
+def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/06-TELLER/lblALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn'))
+assert element.contains('ALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn')
+
+//WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 6) 
 
 //---------------------------------------------------------------------------
 //Control de fin de script
