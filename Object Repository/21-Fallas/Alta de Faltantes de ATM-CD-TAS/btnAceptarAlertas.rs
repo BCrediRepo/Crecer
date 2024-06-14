@@ -6,15 +6,15 @@
    <elementGuidId>e675406b-5a51-45b8-883d-f01517e5f06f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#errorImg</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//a[@id='errorImg']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.textbtn > a:nth-child(1)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>e327615d-b608-4008-b4b8-f9ec3b017574</webElementGuid>
+      <webElementGuid>dc891403-3582-4f4b-acb4-e603069f8422</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>c771f685-fc92-4dcc-b019-f47854c86877</webElementGuid>
+      <webElementGuid>e3c2ed0a-65dd-4cc0-a5de-42461ea878ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>errorImg</value>
-      <webElementGuid>4300d4a3-cd30-4cb1-b164-c0b47805f50f</webElementGuid>
+      <webElementGuid>0079a78e-6b01-4708-bea8-a33d38aeaab5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:commitOverrides()</value>
-      <webElementGuid>039b7256-0a0d-4096-b631-153ab3bedaed</webElementGuid>
+      <webElementGuid>0fde5ebd-a793-4722-a986-8e401da8cdec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Aceptar Alertas</value>
-      <webElementGuid>36f105d9-1728-420a-b62a-85e6f9865dbb</webElementGuid>
+      <webElementGuid>5d2475a2-1229-4bb2-8118-cf6db61c8ee8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;errorImg&quot;)</value>
-      <webElementGuid>c834b0ab-4c17-4182-a6d9-6efe7a916f1d</webElementGuid>
+      <webElementGuid>30a6032e-5ab4-425f-9837-7621eddb77b5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='errorImg']</value>
-      <webElementGuid>54c6321b-b7a4-4259-9b49-72eb1eba0607</webElementGuid>
+      <webElementGuid>5cbe0456-52fe-4032-b83a-89770237343a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='error_box']/table/tbody/tr[3]/td/table/tbody/tr/td/a</value>
-      <webElementGuid>fb5e0605-aad0-4d35-b738-4454ec670a7b</webElementGuid>
+      <webElementGuid>fd90cdef-0fcd-4247-abc4-27d206d1ccfd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Aceptar Alertas')]</value>
-      <webElementGuid>be965180-cd39-4593-993f-aaf0a68d053f</webElementGuid>
+      <webElementGuid>06b4e385-a618-4bb2-8842-90c54b2bc54c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ct)'])[1]/following::a[1]</value>
-      <webElementGuid>f9fd1374-5865-49cd-b609-23f77f2f9ea4</webElementGuid>
+      <webElementGuid>b3d88b1f-5e71-42f9-b9cf-f2eb9f9cb6e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='TT23240553136054'])[1]/following::a[1]</value>
-      <webElementGuid>8fc1431b-149a-4d17-acb3-654802972d2e</webElementGuid>
+      <webElementGuid>39578c15-e94c-48b8-ac7e-991d0ec6c8e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV5'])[1]/preceding::a[1]</value>
-      <webElementGuid>10766a7c-2c1f-4ad0-9705-c737524c702a</webElementGuid>
+      <webElementGuid>89c0af72-2215-49e9-80d4-3141c9972421</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Faltantes en Dipositivo'])[1]/preceding::a[1]</value>
-      <webElementGuid>f320549c-3408-4578-9654-4f1d744f7afa</webElementGuid>
+      <webElementGuid>fa7c4657-5b0e-4d66-afb5-31f2d7366ca8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Aceptar Alertas']/parent::*</value>
-      <webElementGuid>9fdc39ea-507c-401b-9b0b-949ab01da422</webElementGuid>
+      <webElementGuid>523872a1-3739-44c2-806c-601a09b5caa5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'javascript:commitOverrides()')]</value>
-      <webElementGuid>630766f6-6e03-45f0-89c8-ad9110421de1</webElementGuid>
+      <webElementGuid>90a99a9b-5d59-4253-b6bb-e94e051e4587</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td/table/tbody/tr/td/a</value>
-      <webElementGuid>6fb46c2a-c9e7-4741-9bb0-c2f3a5020b93</webElementGuid>
+      <webElementGuid>5108f57d-975d-4815-9d70-8690dc0cf216</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@id = 'errorImg' and @href = 'javascript:commitOverrides()' and (text() = 'Aceptar Alertas' or . = 'Aceptar Alertas')]</value>
-      <webElementGuid>c6da9c74-4057-481f-9f6c-82b0274169a0</webElementGuid>
+      <webElementGuid>6c3b1ba8-917d-49d2-8309-6fe29ab48679</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
