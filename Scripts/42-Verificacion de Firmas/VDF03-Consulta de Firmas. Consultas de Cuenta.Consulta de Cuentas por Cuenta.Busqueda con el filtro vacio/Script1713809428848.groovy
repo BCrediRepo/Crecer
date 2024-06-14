@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
 
 //Click en Consulta de cuentas por cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuenta'))
 
 //Swicht a la ventana
 WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')

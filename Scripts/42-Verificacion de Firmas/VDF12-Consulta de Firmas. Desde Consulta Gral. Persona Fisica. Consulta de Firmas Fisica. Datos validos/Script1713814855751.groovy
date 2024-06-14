@@ -73,20 +73,13 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Click en la opcion "Consulta de firma" del cbx
-<<<<<<< HEAD:Scripts/42-Verificacion de Firmas/VDF12-Consulta de Firmas. Desde Consulta Gral. Persona Fisica. Consulta de Firmas Fisica. Datos validos/Script1713814855751.groovy
-WebUI.waitForElementVisible(findTestObject('31-Personas/Consulta General de personas Fisica/cbxConsultaGralPersonaFisica'), 6)
-
-WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxConsultaGralPersonaFisica'), 5)
-=======
 WebUI.waitForElementVisible(findTestObject('31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 6)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 5)
->>>>>>> 9c6d651b45b2b4c4610f7b585794b5b75cda7d68:Scripts/42-Verificacion de Firmas/VDF12-Consulta de Firmas. Desde Consulta Gral. Persona Física. Consulta de Firmas Física. Datos válidos/Script1690492856111.groovy
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/btnVerDatosPersonaFisica'))
+WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 5)
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/BCCL.E.FIRMAS.FISICA/lblFirma'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/BCCL.E.FIRMAS.FISICA/lblFirma'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -96,26 +89,10 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/BCCL.E.FIRMAS.FISICA/lblFirma'))
 
-assert element.contains('Firma')
+def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
 
-//ASSERT
-//WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'), 6)
-//WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
-
-// Captura el tiempo de finalización
-//long endTime = System.currentTimeMillis()
-
-//Calcula la diferencia para obtener el tiempo transcurrido
-//long elapsedTime = endTime - startTime
-
-//println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-
-//def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
-
-//assert element.contains('No.Documento')
+assert element.contains('No.Documento')
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -129,6 +106,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

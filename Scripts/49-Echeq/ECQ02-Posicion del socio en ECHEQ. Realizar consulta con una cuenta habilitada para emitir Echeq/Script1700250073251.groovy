@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
 
 //Seleccionar "Consulta de Cuentas por Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuenta'))
 
 //Cambiar ventana "Consulta de Cuentas por Cuenta"
 WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
@@ -38,7 +38,7 @@ CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
 WebUI.switchToWindowIndex(0)
 
 //Seleccionar "Consulta de Cuentas por Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuenta'))
 
 //Cambiar ventana "Consulta de Cuentas por Cuenta"
 WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')

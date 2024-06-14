@@ -41,13 +41,9 @@ WebUI.switchToWindowTitle('Verificacion de firmas y facultades')
 WebUI.maximizeWindow()
 
 //Ingresamos los datos
-
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '10430033951')
-
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtFecha'), '53453779')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta', '10430033951')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha (AAAAMMDD)', '')
 
 WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkEjecutar'))
 
@@ -55,15 +51,15 @@ WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verif
 WebUI.switchToWindowTitle('BCCL.E.AS.FIRMA')
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFecha(AAAAMMDD)'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFechaIngresoObligatorio'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFecha(AAAAMMDD)'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFechaIngresoObligatorio'))
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFecha(AAAAMMDD)'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFechaIngresoObligatorio'))
 
-assert element.contains('Fecha (AAAAMMDD')
+assert element.contains('FECHA es de Ingreso Obligatorio')
+
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -74,5 +70,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

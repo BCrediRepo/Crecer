@@ -26,41 +26,38 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en el menu Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
-
-//Click en Consulta de Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
+//Ingresamos la ENQ en el command line
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AS.FIRMA')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en Consulta de cuentas por cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsulta de Cuentas por Firmante'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Swicht a la ventana
-WebUI.switchToWindowTitle('Consulta de Cuentas por Firmante')
+//Switch a la ventana BCCL.AS.FIRMA,AUDIT
+WebUI.switchToWindowTitle('Verificacion de firmas y facultades')
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Click en nueva seleccion
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta', '')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha (AAAAMMDD)', GlobalVariable.vFechaCOBAmbTES10)
 
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnEjecutar'))
+WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkEjecutar'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/08-BCCL.E.AC.FIRM/lblNoSeIngresoNingunCriterio'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblCuentaIngresoObligatorio'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/08-BCCL.E.AC.FIRM/lblNoSeIngresoNingunCriterio'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblCuentaIngresoObligatorio'))
 
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/08-BCCL.E.AC.FIRM/lblNoSeIngresoNingunCriterio'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblCuentaIngresoObligatorio'))
 
-assert element.contains('No se ingreso ningun criterio de seleccion')
+assert element.contains('ID.CUENTA es de Ingreso Obligatorio')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -71,6 +68,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

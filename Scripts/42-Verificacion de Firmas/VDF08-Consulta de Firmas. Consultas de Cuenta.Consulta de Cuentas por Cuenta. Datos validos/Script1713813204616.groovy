@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsult
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Consulta de cuentas por cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuenta'))
 
 //Swicht a la ventana
 WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
@@ -86,23 +86,6 @@ def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de
 
 assert element.contains('Id Firmante')
 
-//ASSERT
-//WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'), 6)
-
-//WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
-
-// Captura el tiempo de finalización
-//long endTime = System.currentTimeMillis()
-
-//Calcula la diferencia para obtener el tiempo transcurrido
-//long elapsedTime = endTime - startTime
-
-//println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-//def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/lblNroCuenta'))
-
-//assert element.contains('Nro Cuenta')
-
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
@@ -115,6 +98,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
