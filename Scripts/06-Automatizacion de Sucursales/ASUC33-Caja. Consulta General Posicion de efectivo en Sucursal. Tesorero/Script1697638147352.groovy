@@ -34,19 +34,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCons. Posicion de 
 //Switch a la ventana BCCL.E.TT.TOMA.TESORO
 WebUI.switchToWindowTitle('BCCL.E.TT.TOMA.TESORO')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar Link de Consulta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCons. Posicion de efectivo en Sucursal'))
-
-//Cambiar ventana "BCCL.E.TT.CASH.DENOM"
-WebUI.switchToWindowTitle('BCCL.E.TT.TOMA.TESORO')
-
-//Completo los campos mandatorios moneda y sucursal
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/txtMoneda'), 'ARS')
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/txtSucursal'), '089')
+//Seteo de Datos "Moneda", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

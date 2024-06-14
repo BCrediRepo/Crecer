@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>BYD23-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>be660133-8e7d-4ff9-bd28-a7d38ea288ec</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDS12-Consulta de Relaciones Cuentas Espejo. Consulta por cuenta. Sucursal de usuario logueado dintinto de sucursal de cuenta</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>083eac2d-105f-4912-a0fa-deb867945770</testCaseGuid>
+</TestCaseEntity>

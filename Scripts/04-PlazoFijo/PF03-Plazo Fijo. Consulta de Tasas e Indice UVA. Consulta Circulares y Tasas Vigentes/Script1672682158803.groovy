@@ -53,6 +53,7 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 WebUI.maximizeWindow()
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lnkConsulta Tasas'))
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lnkConsulta Tasas'))
+
 //cambio a frame Consulta Tasa Plazo Fijo
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,6))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/02-ConsultaCircularesyTasasVigentes/lblConsultaTasasPlazoFijo'))

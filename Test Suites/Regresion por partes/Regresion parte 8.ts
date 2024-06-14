@@ -64,7 +64,7 @@
       <guid>a34498a1-0dc5-4c6a-ba77-c8be3ba1319f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM15-Ajustes Monetarios.Nota de debito.Reversa de Nota de Debito Ajuste. Operacion hecha en el día con fecha valor. Cuenta sin bloqueos</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM15-Ajustes Monetarios.Nota de debito.Reversa de Nota de Debito Ajuste. Operacion hecha en el dia con fecha valor. Cuenta sin bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -78,7 +78,7 @@
       <guid>8c913b7b-3cc6-4874-a15b-dd4198aa7918</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM17-Ajustes Monetarios.Notas Transitorias.Proceso reversa Notas de Títulos.BCCL.B.FT.REVE.TRANSITORIA</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM17-Ajustes Monetarios.Notas Transitorias.Proceso reversa Notas de Titulos.BCCL.B.FT.REVE.TRANSITORIA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -92,7 +92,7 @@
       <guid>02e0e108-93fc-415a-91f6-ccaa8a45506c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM19-Ajustes Monetarios.Reversa de Nota de Credito Ajuste. Operacion hecha en el día con fecha valor</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM19-Ajustes Monetarios.Reversa de Nota de Credito Ajuste. Operacion hecha en el dia con fecha valor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -162,14 +162,14 @@
       <guid>6e0b71a1-68a9-4250-8a74-25abb8c4b1ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD23-Búsqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD23-Busqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>32593a61-61d9-4a39-b6ad-1d7ed62e01e6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD24-Búsqueda de cuentas por persona para bloqueo. Búsqueda por persona</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD24-Busqueda de cuentas por persona para bloqueo. Busqueda por persona</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -190,35 +190,35 @@
       <guid>9c9f2db8-8ab4-4586-bcd2-ef219e544654</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD28-Consulta sobre el histórico de bloqueos. Cuenta con más de un bloqueo parcial y general. Origen de bloqueo en casa central</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD28-Consulta sobre el historico de bloqueos. Cuenta con mas de un bloqueo parcial y general. Origen de bloqueo en casa central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f9a682ed-dcc1-4a4e-885a-ce0680abee48</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD27-Consulta sobre el histórico de bloqueos. Cuenta con bloqueo de origen automático Filial</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD27-Consulta sobre el historico de bloqueos. Cuenta con bloqueo de origen automatico Filial</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>5f4c1281-321d-4b01-8104-5c88b3a4622f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD29-Consulta sobre el histórico de bloqueos. Fecha desde igual a Hoy</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD29-Consulta sobre el historico de bloqueos. Fecha desde igual a Hoy</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a8ab5023-de23-4c69-ab4d-f229624b0a2c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD30-Bloqueo-Desbloqueo.Consulta de Cuentas Bloqueadas por Sucursal. Visualización de Detalle de Bloqueo</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD30-Bloqueo-Desbloqueo.Consulta de Cuentas Bloqueadas por Sucursal. Visualizacion de Detalle de Bloqueo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ea945a09-8b05-4709-b166-214991343895</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD31-Consulta sobre el histórico de bloqueos</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD31-Consulta sobre el historico de bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

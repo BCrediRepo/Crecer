@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHR14-Cheques rechazados.Rechazo cheque de caja desde Gerencia Operativa. Cheque existente en tabla de Cheques. Estado del cheque es Rechazado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb04eee6-952a-43a4-8f30-e1a103f09ddf</testCaseGuid>
+</TestCaseEntity>

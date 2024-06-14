@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD32-Busqueda de cuentas por cuenta para bloqueo. Completitud</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a5f1c01b-588d-4b1e-87f5-d795310fdbcc</testCaseGuid>
+</TestCaseEntity>

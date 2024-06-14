@@ -44,15 +44,9 @@ WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Mod
 
 WebUI.switchToWindowTitle('Bloqueo Plazo Fijo Inmovilizado')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/Modificacion de plazo fijo/Bloqueo y desbloqueo/lnk_BloqueoPlazoFijoInmovilizado'))
-
-WebUI.switchToWindowTitle('Bloqueo Plazo Fijo Inmovilizado')
-
-WebUI.setText(findTestObject('05-PlazoFijo/Bloqueo Plazo Fijo Inmovilizado/txtNroOperacion_value111'), '0211579')
+//Seteo de Datos "Nro. Operacion"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Operacion', '0211579')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

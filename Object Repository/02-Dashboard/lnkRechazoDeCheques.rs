@@ -11,9 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
+         <value>ul.menuMargin:nth-child(8) > li:nth-child(1) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>b26d0bb6-6318-490c-a815-b349be8b05bc</webElementGuid>
+      <webElementGuid>f7377f3c-4ad6-48dd-805d-516d6e2607e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>06516d38-8bdc-4e54-87d1-ea488c8f44fb</webElementGuid>
+      <webElementGuid>55a3d9a0-9fbe-4374-a847-7c4f9c7981d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>120f8b3e-d0ff-4e6d-b700-83672da2a8d3</webElementGuid>
+      <webElementGuid>ab090f5d-119f-4cd0-a3ba-5c0a23c7230f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Rechazo de Cheques</value>
-      <webElementGuid>0e5952dc-28fb-4fe4-b20d-8b0b52a926e1</webElementGuid>
+      <webElementGuid>d1896611-3b5a-4b7d-aa99-f5fa916b2254</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>5e78fad7-38d1-42fb-8039-34dce18fd700</webElementGuid>
+      <webElementGuid>9e2d54d9-2c29-45ea-85fa-85990ca00c33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>67b1bf1f-c868-407d-a15b-9f570bdc213d</webElementGuid>
+      <webElementGuid>80baca27-291c-4355-bdb5-7eba2c3004e8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[82]</value>
-      <webElementGuid>16d718fe-81eb-49cb-9d9a-30212aca6ee7</webElementGuid>
+      <webElementGuid>2a809255-3dc7-46a1-bef5-1243964b8656</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[20]/li/span</value>
-      <webElementGuid>5007601e-ee48-43de-828a-56172b32b69d</webElementGuid>
+      <webElementGuid>6c03143a-63c6-44e4-8900-4e6919cbc11c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rechazos Automaticos NO Identificados'])[1]/following::span[1]</value>
-      <webElementGuid>da814873-c719-4da2-9395-fed56e6fbd50</webElementGuid>
+      <webElementGuid>08734714-d9a1-4254-9b5c-f0789f6cf26e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cheques Recibidos por Camara'])[1]/following::span[1]</value>
-      <webElementGuid>29a32395-7eb6-4cca-bcd3-3b8f34a86f0b</webElementGuid>
+      <webElementGuid>a5730492-3ce2-4509-96bd-8edbb994ffb6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rechazo Cheques de Caja'])[1]/preceding::span[1]</value>
-      <webElementGuid>7ae07a9c-080b-47ad-913d-2f27a2332325</webElementGuid>
+      <webElementGuid>c7d911ee-5c25-4ab2-b936-451367f90c0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso Cancelacion de Cheque Rechazado'])[1]/preceding::span[1]</value>
-      <webElementGuid>8cf80456-febf-4eb8-bb7e-3e0bf5cfe206</webElementGuid>
+      <webElementGuid>062b057e-7313-46b9-a116-8b8b73e95924</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Rechazo de Cheques']/parent::*</value>
-      <webElementGuid>472dd543-8f68-4e44-8d44-558d5239b220</webElementGuid>
+      <webElementGuid>3cd72a7a-7254-4c45-9301-7e68f78300de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[20]/li/span</value>
-      <webElementGuid>978ecfd2-e1a8-4235-a38f-85c315a7339a</webElementGuid>
+      <webElementGuid>2136052a-a4cf-42a3-9c90-b8d174e3503a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Rechazo de Cheques' or . = 'Rechazo de Cheques')]</value>
-      <webElementGuid>ba97d042-64f4-4d35-81e6-488e039914d0</webElementGuid>
+      <webElementGuid>0f196b4a-7cd1-4984-845c-211f21deba3d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

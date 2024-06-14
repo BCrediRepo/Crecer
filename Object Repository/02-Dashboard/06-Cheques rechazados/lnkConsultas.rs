@@ -11,9 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
+         <value>li.clsHasKids:nth-child(7) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>47352998-6766-41b3-825d-804843c8c2e0</webElementGuid>
+      <webElementGuid>01f5e36c-fd7e-4dfc-8115-8ce65ff6021b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>d017cee8-3dab-4fcf-8157-1ec910d48f19</webElementGuid>
+      <webElementGuid>a0028abe-768e-4f0a-9073-737a92c46451</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>08865021-769d-4961-877d-a50ea5b37172</webElementGuid>
+      <webElementGuid>ae277222-318c-425a-9344-c3956860a630</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consultas</value>
-      <webElementGuid>d875735a-e4ff-4a37-b5b6-60dffad56a4f</webElementGuid>
+      <webElementGuid>144170b8-5931-476b-a186-e7ff3beef7e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>14f77fc9-175e-4f53-a8a8-5ddd42ec57f4</webElementGuid>
+      <webElementGuid>d86f0097-5107-481c-b506-fff78c5294ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>5b076788-e303-44c7-87a5-ab7dfdc6fba5</webElementGuid>
+      <webElementGuid>25bd819f-18f4-401a-9d6c-e5d04f239ca8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[83]</value>
-      <webElementGuid>e8dacd69-ad08-4227-adb1-7d5c0691ee83</webElementGuid>
+      <webElementGuid>91562d16-78ac-4c10-8f14-8b1ccde44bb4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[20]/li/ul/li[7]/span</value>
-      <webElementGuid>6d12d77a-4a0c-41b8-9918-d979303fce8f</webElementGuid>
+      <webElementGuid>b69a3cab-4673-47e4-881c-5d9b9a2ce29f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reversar Rechazo Cheques de Caja'])[1]/following::span[1]</value>
-      <webElementGuid>93170cf4-d6e8-46cd-83df-f709fe5da9eb</webElementGuid>
+      <webElementGuid>f67002ec-1e80-4571-95a0-bd5dbb31940d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Multas Cobradas en Filial'])[1]/following::span[1]</value>
-      <webElementGuid>dbe9cc3f-ee8e-4948-97b2-1e286789fe76</webElementGuid>
+      <webElementGuid>155caeee-c2a3-4cd3-bccc-e5bd2ac16826</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Multas'])[1]/preceding::span[1]</value>
-      <webElementGuid>92821ae0-fdb3-4bff-a44a-52c5b5b0a907</webElementGuid>
+      <webElementGuid>8e777f88-a2a8-49ea-9635-84c142594586</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Multas pendientes'])[1]/preceding::span[1]</value>
-      <webElementGuid>9d985e74-44c7-4725-8f99-b7bba7ce43b1</webElementGuid>
+      <webElementGuid>2b1ce4e9-2dff-4897-b85a-d6638c11ccff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[20]/li/ul/li[7]/span</value>
-      <webElementGuid>581ae028-cb98-48c3-b42f-6bf547fd13fb</webElementGuid>
+      <webElementGuid>affffb3e-4c5e-4623-a180-8c0ce0b6568e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Consultas' or . = 'Consultas')]</value>
-      <webElementGuid>e89de0e0-d8b1-414f-85a6-7a442296b14d</webElementGuid>
+      <webElementGuid>6f325f00-b04c-406d-9b87-da1bf36b1a4a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

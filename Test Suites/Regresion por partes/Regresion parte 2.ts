@@ -36,35 +36,35 @@
       <guid>f707465b-d796-4684-8e34-399625255ba6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR04-CHEQUES RECHAZADOS.Modificación de firmantes. Cheque rechazado ya informado al BCRA. Cheque rechazado con mas de un firmante asignado. Eliminar firmante</testCaseId>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR04-CHEQUES RECHAZADOS.Modificacion de firmantes. Cheque rechazado ya informado al BCRA. Cheque rechazado con mas de un firmante asignado. Eliminar firmante</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f37409fc-8f5c-4816-bf2d-91178344c3dd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/07-Cheques Rechazados/CHR05-Modificación estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante</testCaseId>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR05-Modificacion estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>1d2f282c-fd56-4fa2-b1c5-4abde9d1710a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/12-Transferencias Internas/TI01-Transferencias Internas. Consulta de Altas Transf. Sucursal Origen. Perfil Planta. Ingresar criterio válido para el que haya registros. Datos válidos</testCaseId>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI01-Transferencias Internas. Consulta de Altas Transf. Sucursal Origen. Perfil Planta. Ingresar criterio valido para el que haya registros. Datos validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d698918f-62be-40c2-9a70-7c19c9ce403b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/12-Transferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar. Sucursal Destino. Perfil Planta. Datos válidos</testCaseId>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI02-Transferencias Internas. Consulta de transferencias a pagar. Sucursal Destino. Perfil Planta. Datos validos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7fb9e531-faf2-4034-98fd-8cc1da2b8920</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con débito en cuenta. Acumuladores. Total Débitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI03-Alta con debito en cuenta. Acumuladores. Total Debitos para Riesgo Contingente. Caja de Ahorro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -323,7 +323,7 @@
       <guid>3798559b-cc7b-493b-b71b-dea67916da99</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/11-MEP/MEP02-MEP. Transferencuas enviadas. Eliminacion Map</testCaseId>
+      <testCaseId>Test Cases/11-MEP/MEP02-MEP. Transferencias enviadas. Eliminacion Map</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -617,21 +617,21 @@
       <guid>40e19ff9-d27e-40e1-8423-07818916b33c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM01 - Ajustes monetarios. Alta de Nota de Débito Ajuste. Fecha valor permitida. Saldo suficiente entre fecha valor y fecha de proceso. Cuenta sin bloqueos</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM01 - Ajustes monetarios. Alta de Nota de Debito Ajuste. Fecha valor permitida. Saldo suficiente entre fecha valor y fecha de proceso. Cuenta sin bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>780073cf-b16f-49c7-9dfc-7c6715fe8f18</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM02 - Ajustes monetarios. Reversa de Nota de Débito Ajuste. Operación del día. Usuario Inputter</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM02 - Ajustes monetarios. Reversa de Nota de Debito Ajuste. Operacion del dia. Usuario Inputter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>84aef1b3-38b6-4730-b228-5909ffa0a14e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM03 - Ajustes monetarios. Proceso de Reversa de Notas Transitorias. Operación del día. Saldo de la cuenta suficiente. Sin bloqueos</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM03 - Ajustes monetarios. Proceso de Reversa de Notas Transitorias. Operacion del dia. Saldo de la cuenta suficiente. Sin bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -645,21 +645,21 @@
       <guid>350d2076-7a2c-4d08-bfa7-47667054bd23</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM05-Ajustes Monetarios. Contrasiento. Consulta de Transacciones a Contrasentar. Transacción buscada es CHG</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM05-Ajustes Monetarios. Contrasiento. Consulta de Transacciones a Contrasentar. Transaccion buscada es CHG</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b1009879-f7c7-4a28-a13a-cf112c2be299</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM06-Consulta de operaciones para eliminación. Ingresar usuario que realiza la consulta</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM06-Consulta de operaciones para eliminacion. Ingresar usuario que realiza la consulta</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>dc981d87-884a-4a5b-a63b-db24cd7e800e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/37-Ajustes Monetarios/AM07-Ajustes Monetarios. Contrasiento.Consulta Movimientos de la Transacción. Transacción es CHG. Detalle</testCaseId>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM07-Ajustes Monetarios. Contrasiento.Consulta Movimientos de la Transaccion. Transaccion es CHG. Detalle</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

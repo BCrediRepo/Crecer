@@ -43,15 +43,9 @@ WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/lnk
 
 WebUI.switchToWindowTitle('Acreditados en Cuenta Segmentado')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('02-Dashboard/03-PlazoFijo/Temenos T24/Plazo Fijo/lnkPFVencidosAcreditadosEnCuenta'))
-
-WebUI.switchToWindowTitle('Acreditados en Cuenta Segmentado')
-
-WebUI.setText(findTestObject('05-PlazoFijo/Acreditados en Cuenta Segmentado/txtDNI_value211'), '12633779')
+//Seteo de datos "Nro. Documento"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Documento', '12633779')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

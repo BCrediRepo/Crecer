@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDS09-Compensacion de saldos. Consulta de Relaciones Cuentas Espejo. Consulta por cuenta valida.Casa central</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4f03b46-007c-40ed-9c29-2e2a33f4a7ce</testCaseGuid>
+</TestCaseEntity>

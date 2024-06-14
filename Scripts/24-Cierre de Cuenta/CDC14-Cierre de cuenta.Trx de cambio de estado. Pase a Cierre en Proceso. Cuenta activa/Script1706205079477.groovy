@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//ES NECESARIO EJECUTAR PRIMERO EL CASO 16 POR QUE LLAMA EN CASCADA EL CASO 15 (EL CASO 15 LLAMA AL 14)
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -35,14 +33,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkModific
 //Seleccionar "Cambio / Mantenimiento de Estado"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkCambio-MantenimientodeEstado'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "A Cierre en Proceso"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkACierreenProceso'))
 
 //Cambiar ventana "BCCL.AC.POSIB.CIERRE.EN.PROC"
-WebUI.switchToWindowTitle('BCCL.AC.POSIB.CIERRE.EN.PROC')
+WebUI.switchToWindowIndex(1)
 
 //Filtro limpieza
 CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
@@ -52,16 +47,13 @@ WebUI.switchToWindowIndex(0)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkACierreenProceso'))
 
 //Cambiar ventana "BCCL.AC.POSIB.CIERRE.EN.PROC"
-WebUI.switchToWindowTitle('BCCL.AC.POSIB.CIERRE.EN.PROC')
-
-//Maximizar Ventana
-WebUI.maximizeWindow()
+WebUI.switchToWindowIndex(1)
 
 //Setear "Numero Cuenta"
 WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/13-BCCL.AC.POSIB.CIERRE.EN.PROC/txtNumeroCuenta'), '01730054895')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Maximizar Ventana
+WebUI.maximizeWindow()
 
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
@@ -73,23 +65,125 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/13-BCCL.AC.POSIB.CIERRE.EN.PROC/lnkPaseaCierreenProceso'))
 
 //Cambiar ventana "ACCT.CLOSURE"
-WebUI.switchToWindowTitle('ACCT.CLOSURE')
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "boton Dropdown de Motivo Cierre"
+//Seleccionar "boton Motivo de Cierre"
 WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnDropdownMotivoCierre'))
 
-//Seleccionar "01"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/lbl01'))
+//Seleccionar Primer Codigo
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/lblMotivodeCierre'))
 
-//Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
-
-//Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-
-//Validar "Txn Completa"
-def element = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-assert element.contains('Txn Completa')
+try {
+	
+	//Seleccionar "boton Aceptar Registro"
+	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
+	
+	//Seleccionar "Aceptar Alertas
+	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
+	
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	assert element.contains('Txn Completa')
+	
+	//Cambiar a la ventana del Dashboard
+	WebUI.switchToWindowIndex(0)
+	
+	//Seleccionar "Anul. / Mant. Cierre en Proceso Susp.Pago Ch"
+	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkAnul.-Mant.CierreenProcesoSusp.PagoCh'))
+	
+	//Cambiar ventana "BCCL.AC.MANTMTO.CPSPC"
+	WebUI.switchToWindowIndex(2)
+	
+	//Filtro limpieza
+	CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+	WebUI.switchToWindowIndex(0)
+	
+	//Seleccionar "Anul. / Mant. Cierre en Proceso Susp.Pago Ch"
+	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkAnul.-Mant.CierreenProcesoSusp.PagoCh'))
+	
+	//Cambiar ventana "BCCL.AC.MANTMTO.CPSPC"
+	WebUI.switchToWindowIndex(2)
+	
+	//Setear "No. Cuenta"
+	WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/15-BCCL.AC.MANTMTO.CPSPC/txtNoCuenta'), '01730054895')
+	
+	//Maximizar Ventana
+	WebUI.maximizeWindow()
+	
+	//Seleccionar "Ejecutar"
+	WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+	
+	//Seleccionar "Revertir Estado"
+	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/15-BCCL.AC.MANTMTO.CPSPC/lnkRevertirEstado'))
+	
+	//Seleccionar "boton Reversar Registro"
+	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnReversarRegistro'))
+	
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element2 = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	assert element2.contains('Txn Completa')
+	
+	
+}catch (Exception e) {
+	
+	//Seleccionar "boton Aceptar Registro"
+	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
+	
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	assert element.contains('Txn Completa')
+	
+	//Cambiar a la ventana del Dashboard
+	WebUI.switchToWindowIndex(0)
+	
+	//Seleccionar "Anul. / Mant. Cierre en Proceso Susp.Pago Ch"
+	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkAnul.-Mant.CierreenProcesoSusp.PagoCh'))
+	
+	//Cambiar ventana "BCCL.AC.MANTMTO.CPSPC"
+	WebUI.switchToWindowIndex(2)
+	
+	//Filtro limpieza
+	CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+	WebUI.switchToWindowIndex(0)
+	
+	//Seleccionar "Anul. / Mant. Cierre en Proceso Susp.Pago Ch"
+	WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkAnul.-Mant.CierreenProcesoSusp.PagoCh'))
+	
+	//Cambiar ventana "BCCL.AC.MANTMTO.CPSPC"
+	WebUI.switchToWindowIndex(2)
+	
+	//Setear "No. Cuenta"
+	WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/15-BCCL.AC.MANTMTO.CPSPC/txtNoCuenta'), '01730054895')
+	
+	//Maximizar Ventana
+	WebUI.maximizeWindow()
+	
+	//Seleccionar "Ejecutar"
+	WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+	
+	//Seleccionar "Revertir Estado"
+	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/15-BCCL.AC.MANTMTO.CPSPC/lnkRevertirEstado'))
+	
+	//Seleccionar "boton Reversar Registro"
+	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnReversarRegistro'))
+	
+	//Verificar "Txn Completa"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	
+	//Validar "Txn Completa"
+	def element2 = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+	assert element2.contains('Txn Completa')
+	
+}
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

@@ -32,17 +32,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('05-PlazoFijo/Cronograma de Inversores/txtPESOSvalue111'), '10')
-
-WebUI.setText(findTestObject('05-PlazoFijo/Cronograma de Inversores/txtDOLARvalue211'), '10')
+//Seteo de Datos "Importe Minimo PESOS", "Importe Minimo DOLAR"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Importe Minimo PESOS', '10')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Importe Minimo DOLAR', '10')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

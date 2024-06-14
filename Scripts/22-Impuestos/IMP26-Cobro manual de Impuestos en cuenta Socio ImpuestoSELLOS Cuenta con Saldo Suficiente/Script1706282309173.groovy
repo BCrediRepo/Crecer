@@ -262,13 +262,12 @@ WebUI.click(findTestObject('Object Repository/23-Impuestos/18-Movimientos por Fe
 //Switch a la ventaa movimiento de fondos
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTransaction Type'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTransaction Type'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTipoOperacion'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTipoOperacion'))
 
-def element6 = WebUI.getText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTransaction Type'))
+def element6 = WebUI.getText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTipoOperacion'))
 
 assert element6.contains('Tipo Operacion')
-
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -282,7 +281,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-

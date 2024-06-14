@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
+//PARA EXTRAER DATOS VALIDOS DE MOVIMIENTOS ACEPTADOS: BCCL.MOV.AUT.INP.DATA  //SUC:001 SEC:0300753
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 

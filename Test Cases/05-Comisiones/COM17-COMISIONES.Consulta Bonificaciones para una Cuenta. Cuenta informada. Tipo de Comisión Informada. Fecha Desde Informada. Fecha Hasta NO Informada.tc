@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TEST ID: 153970
-
-1. Ingresar al sistema con usuario y password válidos.
-2. Acceder a la Consulta de Bonificaciones Cuenta/Sucursal 
-3. Completar los campos según Datos.
-4. Buscar
+   <description>TEST ID: 153970&#xd;
+&#xd;
+1. Ingresar al sistema con usuario y password válidos.&#xd;
+2. Acceder a la Consulta de Bonificaciones Cuenta/Sucursal &#xd;
+3. Completar los campos según Datos.&#xd;
+4. Buscar&#xd;
 HQFIS&quot;</description>
    <name>COM17-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión Informada. Fecha Desde Informada. Fecha Hasta NO Informada</name>
    <tag></tag>

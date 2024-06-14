@@ -21,46 +21,21 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(
-        2, 7))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(2, 7))
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONS.PARAM.COM.CREDEB')
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONS.PARAM.COM.CREDEB')
-
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo comision', 'CREIB')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Abonado', 'A00243A')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
-
-WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txt_value111_TipoComision'), 'CREIB')
-
-label = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lblPos4'))
-
-if (label == 'Abonado') {
-    WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtpos4'), 'A00243A')
-} else {
-    WebUI.setText(findTestObject('Object Repository/06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtAbonado'), 'A00243A')
-}
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkEjecutar'))
 
 WebUI.maximizeWindow()
@@ -81,7 +56,7 @@ if (monto == '10,00') {
     desaparecio = 1
 }
 
-WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), '20230831')
+WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), GlobalVariable.vFechaCOBAmbTES10)
 
 WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnAceptarRegistro'))
 
@@ -149,9 +124,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('CONSULTA PARAMETRIA COMISIONES')
 
-WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txt_value111_TipoComision'), 'CREIB')
-
-WebUI.setText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/txtAbonado'), 'A00243A')
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo comision', 'CREIB')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Abonado', 'A00243A')
 
 WebUI.click(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lnkEjecutar'))
 
@@ -159,8 +134,9 @@ WebUI.maximizeWindow()
 
 nuevoMonto = WebUI.getText(findTestObject('06-Comisiones/CONSULTA PARAMETRIA COMISIONES/lblMonto'))
 
-assert monto != nuevoMonto //---------------------------------------------------------------------------------------------------------------------
+assert monto != nuevoMonto 
 
+//---------------------------------------------------------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

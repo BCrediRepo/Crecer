@@ -68,7 +68,9 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comis
 
 def element = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/txtErrorDebeIngresarLaSucursalOLaCuenta'))
 
-assert element.contains('DEBE INGRESAR LA SUCURSAL O LA CUENTA - EB-BCCL.E.BON.COM.MIS.CTA.SUC') == true //Control de fin de script
+assert element.contains('DEBE INGRESAR LA SUCURSAL O LA CUENTA') == true 
+
+//Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

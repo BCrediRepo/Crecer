@@ -39,19 +39,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consu
 
 WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,15))
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkConsultaPagosPlazosFijos'))
-
-WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,15))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lblConsultaPagosPlazoFijo'),6)
-
+//Seteo de Datos "Numero Operacion"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/lblConsultaPagosPlazoFijo'))
-
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/08-Consulta Pagos Plazo Fijo/txtNumeroOperacion'), '11918739')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero Operacion', '11918739')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

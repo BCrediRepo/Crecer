@@ -92,7 +92,7 @@
       <guid>228ea188-26dd-4d27-8b59-e4f25864501b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P03-Personas. Persona Física. Consulta Ultima modificación Persona Fisica</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P03-Personas. Persona Fisica. Consulta Ultima modificacion Persona Fisica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -106,14 +106,14 @@
       <guid>d2880a7a-377f-4c72-8b30-ef803e2cdf4d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P05-Personas. Consulta Evolución Tamaño de la Empresa</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P05-Personas. Consulta Evolucion Tamanio de la Empresa</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>691e61a0-65cc-4309-aca6-621c35c5b483</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/30-Personas/P06-Personas. Consulta Gral de Grupos de Depuración. Busqueda y consulta gral de Grupos de Depu</testCaseId>
+      <testCaseId>Test Cases/30-Personas/P06-Personas. Consulta Gral de Grupos de Depuracion. Busqueda y consulta gral de Grupos de Depu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

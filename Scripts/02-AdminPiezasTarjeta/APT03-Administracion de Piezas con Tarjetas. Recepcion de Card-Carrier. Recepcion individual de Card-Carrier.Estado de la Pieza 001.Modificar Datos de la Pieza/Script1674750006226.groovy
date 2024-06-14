@@ -30,25 +30,32 @@ WebUI.maximizeWindow()
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.delay(3)
-WebUI.closeWindowTitle('BCCL.AP.PIEZAS')
+//WebUI.delay(3)
+//WebUI.closeWindowTitle('BCCL.AP.PIEZAS')
 
 //Switch a la ventana de Consulta Maestro Card-Carrier
 WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
+////Aplico KYW de limpieza de busqueda
+//CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//WebUI.switchToWindowTitle('T24 - Fil.001 Centro')
+//WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.AP.PIEZAS L L')
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//WebUI.switchToWindowTitle('%BCCL.AP.PIEZAS')
 
-//Continuo con la busqueda de datos
-WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtSUCURSALPIEZA'), 6)
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtSUCURSALPIEZA'), '001')
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtESTADOPIEZA'), '001')
+////Continuo con la busqueda de datos
+//WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtSUCURSALPIEZA'), 6)
+
+//WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtSUCURSALPIEZA'), '001')
+//WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/txtESTADOPIEZA'), '001')
+
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('AP.SUCURSAL', '001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('AP.ESTADO.PIEZA', '001')
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/lnkEjecutar'))
 
+//Obtengo el num de pieza
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/lblNumPiezas'), 6)
 numPieza = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/lblNumPiezas'))
 WebUI.delay(3)
@@ -59,7 +66,9 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcio
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/selectEntrega'), 6)
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Modifico el registro
 entrega = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/selectEntrega'))
+WebUI.println (entrega)
 if (entrega.contains('Cabal')){
 	WebUI.selectOptionByLabel(findTestObject('Object Repository/03-AdminPiezasTarjetas/03-Recepcion Individual de CardCarrier/selectEntrega'), 'CoopBan', false)
 }else{

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC06-Busqueda de cuentas para cierre con saldo. Busqueda por Nro de CUI inexistente. Validacion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbfde549-e1af-4967-8772-334a89299ea3</testCaseGuid>
+</TestCaseEntity>

@@ -20,21 +20,33 @@ import org.openqa.selenium.Keys as Keys
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,12), findTestData('MainData/Users').getValue(2,12))
-//WebUI.maximizeWindow()
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Login con un user generico
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,47), findTestData('MainData/Users').getValue(2,47))
 
-//Se ingresa el comando USER,
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), ('USER,'))
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+// Obtener el número de filas en la tabla de datos
+TestData usersData = findTestData('MainData/Users')
+int rowCount = usersData.getRowNumbers()
 
-//Se cambia a la ventana USER PROFILE
-WebUI.switchToWindowTitle('USER PROFILE')
-//WebUI.maximizeWindow()
+// Iterar sobre cada fila en la tabla de datos y llamar a la funcion de habilitar por cada user
+for (int row = 1; row <= rowCount; row++) {
+    String usuario = findTestData('MainData/Users').getValue(1, row)
+    def user = CustomKeywords.'pkgModules.kywHabilitarCommandLine.procesarUsuario'(usuario)
+    def val2 = "B.null"
+    if (user == val2) {
+        continue
+    }
+    CustomKeywords.'pkgModules.kywHabilitarCommandLine.habilitarCommandLine'(usuario)
+}
 
-//Se ingresa el usuario a habilitar
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-def user = CustomKeywords.'pkgModules.kywUserForCommandLine.procesarUsuario'(null)
-WebUI.setText(findTestObject('Object Repository/00-Utils/01-CommandLine/inputUSER,'),(user))
-WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/btnModificarRegistro'))
+
+//---------------------------------------------------------------------------------------------------------------------
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}

@@ -65,7 +65,7 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarg
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
 
 //Captura de Pantalla PDF
-WebUI.switchToWindowTitle('e-forms')
+//WebUI.switchToWindowTitle('e-forms')
 
 WebUI.maximizeWindow()
 

@@ -102,4 +102,25 @@
       <testCaseId>Test Cases/50-Deposito y Extracciones/DE13-Extraccion Caja Efectivo ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>113689bf-fd5a-40f1-9095-2374ee075835</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE14-Depositos-Extracciones.Extracciones.Trx de Extraccion en efectivo por Caja.Saldo suficiente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>be742357-cdea-4be2-a5aa-ee97e3d1fd9f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE15-Reversa de extraccion en efectivo por Caja. Cuenta valida y sin bloqueos. Misma Sucursal. Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4afe63c3-d408-4472-a00d-c11e3828c57c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE16-Depositos-Extracciones.Verificacion de Firmas.Verificacion de firmas sobre cuenta Persona Juridica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

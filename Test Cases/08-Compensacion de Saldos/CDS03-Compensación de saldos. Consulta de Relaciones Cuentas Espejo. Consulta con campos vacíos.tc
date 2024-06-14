@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CDS03-Compensación de saldos. Consulta de Relaciones Cuentas Espejo. Consulta con campos vacíos</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>100b2e4f-0b37-4fa2-b730-3afcafe087d3</testCaseGuid>
-</TestCaseEntity>

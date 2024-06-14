@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblConceptoIngresosVariosPosteo</name>
+   <tag></tag>
+   <elementGuidId>b67e1f73-3518-4c66-9aa5-b8849b989906</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow3 > td.coloumntddata.coloumntddata_BCCLEEBCONCEPTOS > b</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow3']/td/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>9f92484d-7bbf-46a4-88d0-01c7a069d28f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>18108IEI</value>
+      <webElementGuid>ab29e5c8-1ec1-4e0c-b444-e18228a0006e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow3&quot;)/td[@class=&quot;coloumntddata coloumntddata_BCCLEEBCONCEPTOS&quot;]/b[1]</value>
+      <webElementGuid>a15d6f07-9f69-41b4-8fff-beaa819401eb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow3']/td/b</value>
+      <webElementGuid>1a36eb16-f07e-434c-b761-30489d4bd16e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='COM CAJAS SEGURIDAD'])[1]/following::b[1]</value>
+      <webElementGuid>a5f8d628-c6e0-48ab-9540-9072d516b673</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fondos de Terceros Pend de'])[1]/following::b[2]</value>
+      <webElementGuid>73e1a478-498f-4061-846e-a2d0be2c039d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresos Varios Posteo'])[1]/preceding::b[1]</value>
+      <webElementGuid>466ba5e4-dd17-47de-b99b-5d3d765ca5b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comision TELEGR CABLES CARTAS DOC'])[1]/preceding::b[2]</value>
+      <webElementGuid>e0ccb40b-a547-4e18-935d-319206c73dad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='18108IEI']/parent::*</value>
+      <webElementGuid>569f51a3-b966-4432-90f7-032979b3bf88</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td/b</value>
+      <webElementGuid>b71a67e5-c84b-4028-a536-d789301eb11b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = '18108IEI' or . = '18108IEI')]</value>
+      <webElementGuid>8ab1dd4c-42f0-4b33-8125-8c0b87a79995</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

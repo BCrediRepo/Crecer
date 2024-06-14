@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>ul.menuMargin:nth-child(4) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>7bd990a3-a46a-451e-bc3b-949bdfd7e566</webElementGuid>
+      <webElementGuid>26b4b72a-01f5-40ae-b86e-6daf0a48830d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('NEW','BCCL.RES.CTA.PEDIDO,INPUT I F3');processMenuHeaderText('Pedido de resumen de cuenta')</value>
-      <webElementGuid>eb0f36ff-4508-45a6-9e04-5aa74a48420e</webElementGuid>
+      <webElementGuid>f3e6e588-068e-46c4-9af9-0a184c9806b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:docommand('BCCL.RES.CTA.PEDIDO,INPUT I F3');</value>
-      <webElementGuid>13aa3b4a-2a1e-406f-a111-86145e2d14a2</webElementGuid>
+      <webElementGuid>f2a890e3-b736-4686-b1d4-57fbe5486b70</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Pedido de resumen de cuenta </value>
-      <webElementGuid>58b155e1-b95f-49de-82e5-7d43308318f5</webElementGuid>
+      <webElementGuid>3cb006cb-f0e1-40de-8cdf-63ec903384ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>7e798fac-0ccc-4d60-9428-1f2b5bfade77</webElementGuid>
+      <webElementGuid>8ad7a941-a78d-4e60-be09-17e8b468e393</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>a02b2b30-a3ea-457c-9132-a7feeeeeaafa</webElementGuid>
+      <webElementGuid>005b6935-f004-4141-a835-f0f4afe9b5ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('NEW','BCCL.RES.CTA.PEDIDO,INPUT I F3');processMenuHeaderText('Pedido de resumen de cuenta')&quot;]</value>
-      <webElementGuid>66aa91e9-b85e-4800-aec9-55726c459125</webElementGuid>
+      <webElementGuid>438e36a4-16df-4557-87bf-50fb2705a279</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/ul/li[4]/ul/li/a</value>
-      <webElementGuid>9de90abd-8179-46d6-8f73-06376c6a9d94</webElementGuid>
+      <webElementGuid>88d38fbd-1cb8-4fd4-80a1-d5c5584c56e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Pedido de resumen de cuenta')]</value>
-      <webElementGuid>60780d47-92bd-42ac-b961-abb5ff212d29</webElementGuid>
+      <webElementGuid>47a10dd4-1b76-4943-b8c3-9aa0fbb2d1b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pedido de Resumen de Cuenta'])[1]/following::a[1]</value>
-      <webElementGuid>9272d2d3-ebeb-4494-96a3-6d620aa3954f</webElementGuid>
+      <webElementGuid>c7a32165-26ee-41ba-b59f-5d17b644b4b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Historial de Bloqueos Inactivos'])[1]/following::a[1]</value>
-      <webElementGuid>620e8596-7c1a-4f19-9003-1e3916821305</webElementGuid>
+      <webElementGuid>ffede598-5eac-4256-aa52-62ee47076250</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre de cuenta'])[1]/preceding::a[1]</value>
-      <webElementGuid>e20ee864-a407-4f24-a815-cc52f9acfca0</webElementGuid>
+      <webElementGuid>14c25f26-b012-4f9f-8524-bdddcec72793</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre de Cuenta CON Cancelacion de Saldo'])[1]/preceding::a[1]</value>
-      <webElementGuid>d7086435-94eb-4b9b-beef-b2171ff88843</webElementGuid>
+      <webElementGuid>181318dc-ef8f-4976-a941-f6400befe2bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Pedido de resumen de cuenta']/parent::*</value>
-      <webElementGuid>c4f05fa4-8cef-4f4a-b8a1-8d83ce6187eb</webElementGuid>
+      <webElementGuid>ef7d91f0-1e4a-4500-8039-641fc7451734</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:docommand('BCCL.RES.CTA.PEDIDO,INPUT I F3');&quot;)]</value>
-      <webElementGuid>df4d5c26-80b9-40d5-b7d4-8e18e648fd22</webElementGuid>
+      <webElementGuid>cdf73210-b6a6-4665-b1af-16158b771425</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[4]/li/ul/li[4]/ul/li/a</value>
-      <webElementGuid>970e8633-71a8-4ec5-a8ab-4f1b40f4a368</webElementGuid>
+      <webElementGuid>d20b745e-4786-4cf8-8482-e4f05015d9ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:docommand(&quot; , &quot;'&quot; , &quot;BCCL.RES.CTA.PEDIDO,INPUT I F3&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Pedido de resumen de cuenta ' or . = 'Pedido de resumen de cuenta ')]</value>
-      <webElementGuid>81687c0c-e787-457f-90e4-ad94272ac7b7</webElementGuid>
+      <webElementGuid>3ce93d2d-29cb-4315-a806-745770e67d60</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

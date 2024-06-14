@@ -55,6 +55,7 @@ WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito po
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/lblTxnCompleta'), 6)
 def element = WebUI.getText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
+WebUI.println(element)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
