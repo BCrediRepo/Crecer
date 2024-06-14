@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>IMP29-Cobro manual de Impuestos en cuenta Socio ImpuestoIBR Cuenta con Saldo Suficiente</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>07c9fa98-8319-4737-895e-6fb497a46bff</testCaseGuid>
-</TestCaseEntity>
