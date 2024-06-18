@@ -53,6 +53,12 @@ WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblDescCorta'))
 
+//Verificar "Monto por Txn"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblMontoporTxn'))
+
+//Validar "Monto por Txn"
+def element = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblMontoporTxn'))
+assert element.contains('16.000')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

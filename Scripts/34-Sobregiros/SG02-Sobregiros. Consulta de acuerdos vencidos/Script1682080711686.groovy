@@ -33,33 +33,89 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOAC
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/a_Consulta de Acuerdos Vencidos'))
 
+//Cambiar a la ventana "BCCL.E.ACDOS.VENCIDOS"
+WebUI.switchToWindowIndex(1)
+
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00890010860')
+
+//Maximizar Ventana
 WebUI.maximizeWindow()
 
-WebUI.switchToWindowTitle('BCCL.E.ACDOS.VENCIDOS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20210719')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', '20220725')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/a_Consulta de Acuerdos Vencidos'))
-
-WebUI.switchToWindowTitle('BCCL.E.ACDOS.VENCIDOS')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/txtCuenta'), '00890010860')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/txtFecha Desde'), '20210719')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/txtFecha Hasta'), '20220725')
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//boton ejecutar
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+//Seleccionar "boton Ejecutar"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
+//Esperar elemento Cuenta
 WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCuenta'), 6)
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Verificar "Cuenta"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCuenta'))
+
+//Validar "Cuenta"
+def element = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCuenta'))
+assert element.contains('Cuenta')
+
+//Verificar "Descripcion"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblDescripcion'))
+
+//Validar "Descripcion"
+def element2 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblDescripcion'))
+assert element2.contains('Descripcion')
+
+//Verificar "Numero Acuerdo"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblNumeroAcuerdo'))
+
+//Validar "Numero Acuerdo"
+def element3 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblNumeroAcuerdo'))
+assert element3.contains('Numero Acuerdo')
+
+//Verificar "Monto"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblMonto'))
+
+//Validar "Monto"
+def element4 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblMonto'))
+assert element4.contains('Monto')
+
+//Verificar "Fecha inicio"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblFechainicio'))
+
+//Validar "Fecha inicio"
+def element5 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblFechainicio'))
+assert element5.contains('Fecha inicio')
+
+//Verificar "Fecha vence"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblFechavence'))
+
+//Validar "Fecha vence"
+def element6 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblFechavence'))
+assert element6.contains('Fecha vence')
+
+//Verificar "Codigo de garantia"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCodigodegarantia'))
+
+//Validar "Codigo de garantia"
+def element7 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCodigodegarantia'))
+assert element7.contains('Codigo de garantia')
+
+//Verificar "Cod. Acdo RAC"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCod.AcdoRAC'))
+
+//Validar "Cod. Acdo RAC"
+def element8 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS.VENCIDOS/lblCod.AcdoRAC'))
+assert element8.contains('Cod. Acdo RAC')
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -81,6 +137,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

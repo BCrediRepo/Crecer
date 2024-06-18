@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFrecuenciaAnual</name>
+   <tag></tag>
+   <elementGuidId>e46d097c-624b-470f-b897-c8bb5ff95c2e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[6]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>be268405-1d5a-42fe-9b33-7b29d4b968f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLEBLMACUPAR disabled_dealbox_BCCLEBLMACUPAR_MAN</value>
+      <webElementGuid>1a84048a-083d-4366-b21b-5c5548982070</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ANUAL</value>
+      <webElementGuid>6b003986-1dfe-4e85-9c53-fe519095228b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[6]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLEBLMACUPAR disabled_dealbox_BCCLEBLMACUPAR_MAN&quot;]</value>
+      <webElementGuid>13f8e90b-8b02-4915-ba18-cc5d6f95b29d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[6]/td[3]/span</value>
+      <webElementGuid>c0c1fb50-3517-4cfb-bef2-d329a061954d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Frecuencia.1'])[1]/following::span[1]</value>
+      <webElementGuid>de8c2b68-982c-4982-b1e8-30487efc0898</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.S.LM.AC.ACRED.ATP.IFE'])[1]/following::span[1]</value>
+      <webElementGuid>0e58e63b-1035-4965-87c1-caf0698e57ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Periodo Ret.1'])[1]/preceding::span[1]</value>
+      <webElementGuid>9ad77cc5-d7e4-4e85-a65a-83ffe5c66991</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::span[2]</value>
+      <webElementGuid>19111c22-c0ad-478c-9cfd-0b1889bd6326</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='ANUAL']/parent::*</value>
+      <webElementGuid>2ee5e99c-c894-44d4-9c80-44c77ce8c951</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[3]/span</value>
+      <webElementGuid>54eb05ad-3eca-4154-acc0-50fad1485fba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'ANUAL' or . = 'ANUAL')]</value>
+      <webElementGuid>8f05c9da-01d5-42a1-b3a1-4b5555a906b9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

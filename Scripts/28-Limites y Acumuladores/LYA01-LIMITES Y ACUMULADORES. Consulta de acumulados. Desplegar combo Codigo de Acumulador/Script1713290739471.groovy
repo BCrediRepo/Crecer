@@ -25,8 +25,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-
-// Ingreso al menu ?1
+//Ingresar al menu ?1
 
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
 
@@ -54,6 +53,41 @@ WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.E
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblID'))
 
+//Verificar "ID"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblID'))
+
+//Validar "ID"
+def element = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblID'))
+assert element.contains('Id')
+
+//Verificar "Description"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblDescription'))
+
+//Validar "Description"
+def element2 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblDescription'))
+assert element2.contains('Description')
+
+//Verificar "Desc corta"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblDesccorta'))
+
+//Validar "Desc corta"
+def element3 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblDesccorta'))
+assert element3.contains('Desc corta')
+
+//Verificar "Apl"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblApl'))
+
+//Validar "Apl"
+def element4 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblApl'))
+assert element4.contains('Apl')
+
+//Verificar "Mon"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblMon'))
+
+//Validar "Mon"
+def element5 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblMon'))
+assert element5.contains('Mon')
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -65,9 +99,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-
-
-

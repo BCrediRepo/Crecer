@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TIME OUT-Consulta de oNP para cheque electronico. Realizar la consulta a Echeq con oNP generada previamente. ID.CHEQUE</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>6c1a1abb-d8ae-4b9b-8619-b36ae08f1046</testCaseGuid>
-</TestCaseEntity>

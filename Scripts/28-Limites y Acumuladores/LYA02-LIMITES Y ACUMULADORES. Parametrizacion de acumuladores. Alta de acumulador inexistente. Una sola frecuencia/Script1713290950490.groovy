@@ -55,6 +55,19 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumul
 
 WebUI.maximizeWindow()
 
+//Verificar "Frecuencia"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuencia'))
+
+//Validar "Frecuencia"
+def element = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuencia'))
+assert element.contains('Frecuencia.1')
+
+//Verificar "Frecuencia Anual"
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuenciaAnual'))
+
+//Validar "Frecuencia Anual"
+def element2 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuenciaAnual'))
+assert element2.contains('ANUAL')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

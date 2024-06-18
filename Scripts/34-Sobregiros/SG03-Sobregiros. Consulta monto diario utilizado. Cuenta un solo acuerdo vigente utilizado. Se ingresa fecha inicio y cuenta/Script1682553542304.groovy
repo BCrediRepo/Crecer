@@ -33,34 +33,46 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOAC
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/lnkConsulta de LOACC'))
 
-WebUI.switchToWindowTitle('Consulta de Sobregiros')
+//Cambiar a la ventana "Consulta de Sobregiros"
+WebUI.switchToWindowIndex(1)
 
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00890012958')
+
+//Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Linea de sobregiro', 'ADSACT')
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/01-LOACC/lnkConsulta de LOACC'))
-
-WebUI.switchToWindowTitle('Consulta de Sobregiros')
-
-WebUI.maximizeWindow()
-
-//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtCuenta'), '00430014075')
-
-//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtLinea de sobregiro'), 'ADSACT')
-
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtLinea de sobregiro'), 'ADSACT')
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//boton ejecutar
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+//Seleccionar "boton Ejecutar"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//Se pone un tiempo de espera de 100 porque tarda muchisimo en traer los registros
-WebUI.waitForElementPresent(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/cbxConsultar'), 100)
+//Seleccionar opcion Consultar en el ComboBox
+WebUI.selectOptionByIndex(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/cbxConsultar'), 2)
+
+//Seleccionar boton Select Drilldown
+WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/btnDrillDrown'))
+
+//Verificar "Monto Acuerdo"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.AC.ACUERDO/lblMontoAcuerdo'))
+
+//Validar "Monto Acuerdo"
+def element = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.AC.ACUERDO/lblMontoAcuerdo'))
+assert element.contains('Monto Acuerdo')
+
+//Verificar "Fecha Inicio"
+WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.AC.ACUERDO/lblFechaInicio'))
+
+//Validar "Fecha Inicio"
+def element2 = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/BCCL.AC.ACUERDO/lblFechaInicio'))
+assert element2.contains('Fecha Inicio')
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -69,14 +81,6 @@ long endTime = System.currentTimeMillis()
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-//WebUI.selectOptionByIndex(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/cbxConsultar'), 2)
-//
-//WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/btnDrillDrown'))
-//
-//WebUI.switchToWindowTitle('BCCL.AC.ACUERDO')
-//
-//WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.AC.ACUERDO/lblCONSULTA'), 6)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -89,8 +93,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-
-
