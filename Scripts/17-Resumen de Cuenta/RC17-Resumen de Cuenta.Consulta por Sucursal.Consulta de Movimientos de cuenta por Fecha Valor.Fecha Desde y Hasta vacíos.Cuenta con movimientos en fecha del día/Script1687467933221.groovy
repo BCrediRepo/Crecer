@@ -38,27 +38,9 @@ WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Switch a la ventana T24 - Fil.102 Gerencia Operat
-//WebUI.switchToWindowTitle('T24 - Fil.102 Gerencia Operat')
-
-//Swicht a la ventana
-WebUI.switchToWindowTitle('T24 - CRECER XXI')
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Swicht a la ventana Movimientos de ctas por fecha valor
-WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
-WebUI.maximizeWindow()
-
-
-//Ingresamos los datos para la consulta
-//WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lnkNueva Seleccion'))
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/txtNroDeCuenta'), '11360019594')
+//Seteo de Datos "Nro de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','11360019594')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

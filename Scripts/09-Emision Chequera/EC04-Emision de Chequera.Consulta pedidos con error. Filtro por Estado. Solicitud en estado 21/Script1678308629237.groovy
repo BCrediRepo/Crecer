@@ -51,22 +51,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/0
 //Switch a la ventana de chequeras con errores
 WebUI.switchToWindowTitle('Solicitudes Chequeras con Errores')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultaConfdeChequerasconErrores(21)'))
-
-//Switch a la ventana de chequeras con errores
-WebUI.switchToWindowTitle('Solicitudes Chequeras con Errores')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/txtSucursal'), 
-    6)
-
-
-//Descomentar esta linea para el caso de regresion 
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/txtSucursal'), findTestData('MainData/Users').getValue(3,9))
+//Seteo de Datos "SUCURSAL"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SUCURSAL', findTestData('MainData/Users').getValue(3,9))
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -74,12 +61,8 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.delay(120)
-
 //Resultados de la Sucursal
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/lblSUCURSAL'), 
-    6)
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/lblSUCURSAL'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/lblSUCURSAL'))
 
 // Captura el tiempo de finalización

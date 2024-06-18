@@ -39,23 +39,9 @@ WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Switch a la ventana T24 - Fil.102 Gerencia Operat
-WebUI.switchToWindowIndex(0)
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Swicht a la ventana Movimientos por fecha de cuentas
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
-WebUI.maximizeWindow()
-
-//Completamos los datos para la consulta
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/lnkNueva Seleccion'))
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/txtNroDeCuenta'), '10430033951')
+//Seteo de Datos "Nro de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','10430033951')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio

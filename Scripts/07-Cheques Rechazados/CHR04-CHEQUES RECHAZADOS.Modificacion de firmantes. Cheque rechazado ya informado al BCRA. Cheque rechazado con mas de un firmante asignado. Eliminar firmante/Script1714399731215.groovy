@@ -32,20 +32,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-
-WebUI.setText(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCuenta_value111'), '02180086531')
-
-WebUI.setText(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCheque_value211'), '10013')
+//Seteo de Datos "NUMERO DE CUENTA", "NUMERO CHEQUE"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '02180086531')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '10013')
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/lnkEjecutar'))
 

@@ -33,17 +33,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.REP.BCRA')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
-
-WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFechaRepvalue511'), '20220725')
+//Seteo de Datos "Fec Rep Info"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fec Rep Info', '20220725')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

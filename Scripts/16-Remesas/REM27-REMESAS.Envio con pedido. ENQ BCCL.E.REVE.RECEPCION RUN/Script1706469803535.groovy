@@ -54,18 +54,9 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Cuentas/Con
 //Cambiar ventana "Movimientos por Fecha Ctas Internas"
 WebUI.switchToWindowTitle('Movimientos por Fecha Ctas Internas')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Cons.de mov. por fecha - Cuenta Interna"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Cuentas/Consultas/Consulta de Saldos y Movimientos/lnkCons.demov.porfecha-CuentaInterna'))
-
-//Cambiar ventana "Movimientos por Fecha Ctas Internas"
-WebUI.switchToWindowTitle('Movimientos por Fecha Ctas Internas')
-
-//Setear "Nro de Cuenta"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/09-Movimientos por Fecha Ctas Internas/txtNroCuenta'), 'ARS1001190011001')
+//Seteo de Datos "Nro de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','ARS1001190011001')
 
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

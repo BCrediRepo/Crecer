@@ -23,8 +23,7 @@ import java.util.Date as Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 30), findTestData('MainData/Users').getValue(
-        2, 30))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
 
 WebUI.maximizeWindow()
 
@@ -38,33 +37,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.CHQ.SOL.IMPRENTA
 WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando BCCL.E.CHQ.SOL.IMPRENTA
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CHQ.SOL.IMPRENTA')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.CHQ.SOL.IMPRENTA
-WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
-
 //Verifica titulo BCCL.E.CHQ.SOL.IMPRENTA
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.IMPRENTA/lblTituloBCCL.E.CHQ.SOL.IMPRENTA'), 
-    6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.IMPRENTA/lblTituloBCCL.E.CHQ.SOL.IMPRENTA'))
 
-//Ingresa Filtro Imprenta
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), 
-    6)
-
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), '02')
+//Seteo de datos "Imprenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Imprenta', '02')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
@@ -78,11 +56,8 @@ long startTime = System.currentTimeMillis()
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.delay(120)
-
 //Espera y Verifica que devuelva un registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipodeChequera'), 
-    6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipodeChequera'),6)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipodeChequera'))
 

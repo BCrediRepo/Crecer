@@ -32,22 +32,15 @@ WebUI.maximizeWindow()
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
 //Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
+WebUI.switchToWindowIndex(1)
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-////Completo la busqueda
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
+//Seteo de Datos "Nro de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtFechaDesde'), '20220701')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','05330013359')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220701')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -63,11 +56,10 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
+//ingresa el detalle del movimiento y valida resultados
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'), 10)
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'))
-WebUI.delay(4)
-//WebUI.switchToWindowTitle('STMT.ENTRY')
-WebUI.switchToWindowTitle('Account Charge Request')
+
 WebUI.maximizeWindow()
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'))

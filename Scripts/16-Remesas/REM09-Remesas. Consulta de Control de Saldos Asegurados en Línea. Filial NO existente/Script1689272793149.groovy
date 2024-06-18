@@ -45,30 +45,23 @@ WebUI.click(findTestObject('17-Remesas/Temenos T24/lnkControlDeSaldosAseguradosE
 
 WebUI.switchToWindowTitle('BCCL.E.TT.TESORERIA.GENERAL')
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de Datos "Fecha", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha','20220706')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal','008899')
 
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('17-Remesas/Temenos T24/lnkControlDeSaldosAseguradosEnLinea'))
-
-WebUI.switchToWindowTitle('BCCL.E.TT.TESORERIA.GENERAL')
-
-//seteo de datos
-WebUI.setText(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/txtFecha'), '20220706')
-
-WebUI.setText(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/txtSucursal'), '')
-
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar')) //Control de fin de script
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/lblMensajeDeError'))
 
-WebUI.verifyElementVisible(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/lblSucursalVacio'))
+WebUI.verifyElementVisible(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/lblSucursalInvalida'))
 
-label = WebUI.getText(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/lblSucursalVacio'))
+label = WebUI.getText(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/lblSucursalInvalida'))
 
-assert label == 'SUCURSAL es de Ingreso Obligatorio'
+assert label == 'SUCURSAL INVALIDA'
 
+//--------------------------------------------------------
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

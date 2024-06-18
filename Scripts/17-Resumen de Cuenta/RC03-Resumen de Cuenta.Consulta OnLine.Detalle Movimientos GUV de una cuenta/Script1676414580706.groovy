@@ -35,18 +35,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.099 Casa Central')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.B.RES.GUV')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Completo la busqueda
-WebUI.switchToWindowTitle('BCCL.E.B.RES.GUV')
+//Seteo de Datos "Numero de cuenta", "Fecha valor"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtCuenta'), '00010026843')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/03-BCCL.E.B.RES.GUV/txtFechaValor'), '20210802')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de cuenta','00010026843')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha valor','20210802')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

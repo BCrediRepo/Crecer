@@ -30,14 +30,11 @@ WebUI.click(findTestObject('02-Dashboard/lnkANSES'))
 WebUI.click(findTestObject('02-Dashboard/57-ANSES/lnkDetalleHistoricoBeneficioPagoImpago'))
 WebUI.switchToWindowTitle('BCCL.NOF.ANSES.GENERAL')
 
-//Limpieza de filtro
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-WebUI.click(findTestObject('02-Dashboard/57-ANSES/lnkDetalleHistoricoBeneficioPagoImpago'))
-WebUI.switchToWindowTitle('BCCL.NOF.ANSES.GENERAL')
+//Seteo de Datos "ID Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro Beneficiario', '88141171370')
 
-//Seteo de datos
-WebUI.setText(findTestObject('10-ANSES/BCCL.NOF.ANSES.GENERAL/txtNroBeneficiario'), '88141171370')
+//Seleccionar Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verifica que el beneficiario tenga un estado "historico" y lo valida con un assert

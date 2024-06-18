@@ -35,17 +35,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
 
-//Limpieza de filtro
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
-
-//Seteo de datos
-WebUI.setText(findTestObject('18-Resumen de Cuenta/Saldos de Cuenta/txtCuenta'), '01000021927')
+//Seteo de Datos "NRO.CUENTA"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NRO.CUENTA','01000021927')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -63,12 +55,11 @@ long elapsedTime = endTime - startTime
 
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
-//---------------------------
 Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblCuenta'))
 
-assert Cuenta.contains('01000021927' //Control fin de script
-    )
-
+assert Cuenta.contains('01000021927')
+//---------------------------
+//Control fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

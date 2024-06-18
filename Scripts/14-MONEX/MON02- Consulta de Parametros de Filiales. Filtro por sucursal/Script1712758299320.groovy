@@ -59,20 +59,9 @@ WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/
 //Cambia a la ventana "Consulta de Parametros de Filiales"
 WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Cambiar a ventanta T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en "Administracion Parametros  de Sucursales"
-WebUI.click(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/lnkAdministracionParametrosdeSucursales'))
-
-//Cambia a la ventana "Consulta de Parametros de Filiales"
-WebUI.switchToWindowTitle('Consulta de Parametros de Filiales')
-
-//Setea el texto "074" en el textbox "txtFilial" 
-WebUI.setText(findTestObject('15-MONEX/02-Administracion Parametros de Sucursales/txtFilial'), '074')
+//Seteo de Datos "Filial"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Filial', '074')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

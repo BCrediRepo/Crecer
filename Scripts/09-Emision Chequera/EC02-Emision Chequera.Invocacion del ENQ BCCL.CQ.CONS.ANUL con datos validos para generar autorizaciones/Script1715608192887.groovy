@@ -34,26 +34,21 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana de busqueda de consulta de pedidos
 WebUI.switchToWindowTitle('Consulta de Pedidos')
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblConsulta de Pedidos'), 6)
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//Limpieza de Filtros
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-//Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CQ.CONS.ANUL')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana de busqueda de consulta de pedidos
-WebUI.switchToWindowTitle('Consulta de Pedidos')
+//Espera y Verifica
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblConsulta de Pedidos'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblConsulta de Pedidos'), 6)
+
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar Boton "Ejecutar"
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lnkEjecutar'))
 
+//Espera y Verifica
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
 WebUI.maximizeWindow()

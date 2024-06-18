@@ -36,32 +36,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.MOV.AUT.INP.DATA
 WebUI.switchToWindowTitle('%BCCL.MOV.AUT.INP.DATA')
 
-//Nueva seleccion
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lnkNuevaSeleccion'))
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando BCCL.MOV.AUT.INP.DATA L L
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'BCCL.MOV.AUT.INP.DATA L L')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.MOV.AUT.INP.DATA
-WebUI.switchToWindowTitle('%BCCL.MOV.AUT.INP.DATA')
-
-//Filtra por SBL.SETTLEMENT = N, SBL.RETURN=4, SBL.STATUS=NOT.POSTED,SBL.COD-SUC: 063
+//Seteo de Datos SBL.SETTLEMENT = N, SBL.RETURN=4, SBL.STATUS=NOT.POSTED,SBL.COD.SUC: 063
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+//valido objeto
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/txtTituloBCCL.MOV.AUT.INP.DATA'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.SETTLEMENT'),6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.SETTLEMENT'), 'N')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.RETURN'), '4')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.STATUS'), 'NOT.POSTED')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.COD.SUC'), '063')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.SETTLEMENT','N')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','4')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.STATUS','NOT.POSTED')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','063')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -48,24 +48,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de saldos historicos de cuenta
 WebUI.switchToWindowTitle('Saldos Historicos de Cuenta')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Se accede al menu
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.HIS.SALDO')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//WebUI.switchToWindowTitle('Temenos T24')
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnk SALDO HISTORICO DE CUENTAS'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnk SALDO HISTORICO DE CUENTAS'))
-
-//Completo la busqueda //Descomentar para la regresion
-WebUI.switchToWindowTitle('Saldos Historicos de Cuenta')
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), 6)
+//Seteo de Datos "Cuenta", "Fecha"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta','00010026843')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha','20220701')
 //WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), '05330013359')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), '00010026843')
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtFecha'), '20220701')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

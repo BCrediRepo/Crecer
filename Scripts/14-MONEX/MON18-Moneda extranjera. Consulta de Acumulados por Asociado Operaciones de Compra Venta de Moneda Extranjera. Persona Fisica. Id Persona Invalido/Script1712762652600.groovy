@@ -34,17 +34,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-//Seteo del caso con datos invalidos
-WebUI.setText(findTestObject('15-MONEX/Consulta General de personas Fisica/txtIDPersona'), 'ABC9999999')
+//Seteo de Datos "Id Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', 'ABC9999999')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

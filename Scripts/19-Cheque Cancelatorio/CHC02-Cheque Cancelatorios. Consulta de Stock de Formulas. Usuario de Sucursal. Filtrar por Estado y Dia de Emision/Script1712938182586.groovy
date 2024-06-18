@@ -41,17 +41,11 @@ WebUI.click(findTestObject('Object Repository/20-Cheque Cancelatorio/lnkReporteI
 
 WebUI.switchToWindowTitle('Control Stock Certificacion Cheques')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('Temenos T24')
-WebUI.click(findTestObject('Object Repository/20-Cheque Cancelatorio/lnkReporteInvFormDeCertificacion'))
-WebUI.switchToWindowTitle('Control Stock Certificacion Cheques')
-
-WebUI.setText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtSUCURSAL'), '089')
-
-WebUI.setText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtNUMERO DE CUENTA'), '00890172593')
-
-WebUI.setText(findTestObject('Object Repository/20-Cheque Cancelatorio/01-Reporte Inv Form de Certificacion/txtNUMERO DE CHEQUE'), '22182765')
+//Seteo de Datos "SUCURSAL" "NUMERO DE CUENTA" "NUMERO DE CHEQUE"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SUCURSAL','089')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA','00890172593')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CHEQUE','22182765')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

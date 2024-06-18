@@ -35,28 +35,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Cambiamos a la ventava Consulta Detalle Movs Agrupados
 WebUI.switchToWindowTitle('Consulta Detalle Movs Agrupados')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Consulta Detalle Movs Agrupados')
-
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Completamos los datos para la consulta
-
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtNumeroDeCuenta'), '21190118359')
-
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtFechaValor'), '20200902')
-
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtCodigoAgrupamiento'), 'IDCC3')
-
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/txtAgrupDeImpuestos'), 'IDC')
+//Seteo de Datos "Numero de Cuenta", "Fecha Valor", "Codigo Agrupamiento", "Agrup de Impuestos"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta','21190118359')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor','20200902')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo Agrupamiento','IDCC3')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Agrup de Impuestos','IDC')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

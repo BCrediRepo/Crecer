@@ -182,7 +182,9 @@ assert txn.contains('Txn Completa: ' ////login final de validacion
 //assert anterior.contains('7')
 //
 //assert actual.contains('9')
-
+	
+//---------------------------------------------------------------------------------------------------
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

@@ -45,24 +45,13 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/
 //Cambiar ventana "BCCL.E.CQ.CHRECH.REP.BCRA"
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Consulta de Cheques Informados al BCRA"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Rechazo de Cheques/Operatoria con BCRA/lnkConsultadeChequesInformadosalBCRA'))
-
-//Cambiar ventana "BCCL.E.CQ.CHRECH.REP.BCRA"
-WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtSucursal'), '019')
+//Seteo de Datos "Sucursal", "Fec Gen Info"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '019')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fec Gen Info', '20220719')
 
 //Seleccionar y Cambiar a "Entre" de "Fec Gen Info"
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/cbFecGenInfo'), 0)
-
-//Setear "Fec Gen Info"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFechaGenalue411'), '20220719')
 
 //Seleccionar Boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

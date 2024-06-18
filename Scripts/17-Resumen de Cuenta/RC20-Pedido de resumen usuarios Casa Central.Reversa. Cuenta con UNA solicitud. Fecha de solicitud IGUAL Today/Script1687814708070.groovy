@@ -56,7 +56,9 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.closeBrowser()
 
+//-------------------------------------------------------------------------------------------------------------------------
 //Volvemos a loguear
+//-------------------------------------------------------------------------------------------------------------------------
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)

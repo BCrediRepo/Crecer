@@ -36,21 +36,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados
 //Cambiar ventana "BCCL.E.CQ.CHRECH.AVI.LIBRADOR"
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Consulta de aviso al librado"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
-
-//Cambiar ventada "BCCL.E.CQ.CHRECH.AVI.LIBRADOR"
-WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/txtSucursal-value111'), '001')
-
-//Setear "Numero de cheque"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/txtNumeroDeCheque'), '04478485')
+//Seteo de Datos "Sucursal", "Numero de Cheque"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cheque', '04478485')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

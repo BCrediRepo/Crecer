@@ -48,26 +48,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
 WebUI.maximizeWindow()
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Se accede al menu
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.CER')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-////Swicht a la venta Temenos T24
-//WebUI.switchToWindowTitle('Temenos T24')
-//
-////Click en Movimientos cuenta cerrada
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnk MOVIMIENTOS CUENTA CERRADA'))
-//
-////Swicht a la ventana Movimientos cuenta cerrada
-WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
-WebUI.maximizeWindow()
-
-//Completamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtNroCuenta'), '01195030041')
+//Seteo de Datos "Nro. Cuenta", "Fecha Desde", "Fecha Hasta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','01195030041')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20171201')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

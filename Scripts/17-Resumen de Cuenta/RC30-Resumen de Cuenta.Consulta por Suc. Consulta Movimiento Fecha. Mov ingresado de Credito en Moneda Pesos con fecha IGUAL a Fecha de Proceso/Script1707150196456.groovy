@@ -31,28 +31,18 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de Datos "Nro de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','00540468975')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220722')
 
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
-
-WebUI.setText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/txtCuenta'), 
-    '00540468975')
-
-WebUI.setText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/txtFechaDesde'), 
-    '20220722')
-
+//----------------------------
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//----------------------------
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.waitForElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFecha'), 
-    60)
+WebUI.waitForElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFecha'),60)
 
 WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblFecha'))
 

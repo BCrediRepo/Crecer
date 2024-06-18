@@ -6,15 +6,16 @@
    <elementGuidId>afeb7c1d-ae02-4f08-8939-072b0d8b8dd8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#caption</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//td[@id='caption']</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value>.message</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>644ce40e-5922-40c4-b61f-55e8adab48b7</webElementGuid>
+      <webElementGuid>68904e93-2677-442c-bac8-75ac770a890c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>caption</value>
-      <webElementGuid>d75f0efc-f075-4bd3-b011-7b9b057282f3</webElementGuid>
+      <webElementGuid>b83e3202-95cf-4ca2-8ad8-b74eb4696c8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>id</name>
       <type>Main</type>
       <value>caption</value>
-      <webElementGuid>2535d4eb-b278-48d4-a26c-7741697d3733</webElementGuid>
+      <webElementGuid>35edca2d-690e-4125-829f-70df49c99221</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +47,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>e79181a3-850b-4b07-8cc3-a0685cf5e1d7</webElementGuid>
+      <webElementGuid>68b170f8-910a-4f59-8540-22b2e9d10df6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +55,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Mensaje de Error</value>
-      <webElementGuid>d291ba44-b58b-4ff8-b4be-25d9bab32ae3</webElementGuid>
+      <webElementGuid>243bd447-7a75-4f06-9b6d-d98e8563a920</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +63,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;caption&quot;)</value>
-      <webElementGuid>70ebfef9-0b6d-4c8f-b302-b134638a802d</webElementGuid>
+      <webElementGuid>e7e57d33-97ec-4430-8a31-7673058256bb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +71,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//td[@id='caption']</value>
-      <webElementGuid>025785ad-bdc5-4dea-9abe-e327daac8b79</webElementGuid>
+      <webElementGuid>f9dd008b-5d01-4482-92ac-062210a086dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='message']/tbody/tr/td</value>
-      <webElementGuid>3be42c13-54bc-41f7-8701-101260f70d1b</webElementGuid>
+      <webElementGuid>150aaa26-05aa-4b4f-a41b-1e0578478dd2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[2]</value>
-      <webElementGuid>f95a50ad-6d42-4066-ae62-98aa90d6b4ef</webElementGuid>
+      <webElementGuid>8f5b021a-1b73-4fd0-a58c-80433cb8a92e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[3]</value>
-      <webElementGuid>f0a81d69-af49-4597-9fe9-51af1d950e7b</webElementGuid>
+      <webElementGuid>a90e9292-21f2-460d-8092-0e5a060900e9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='NO SE ENCONTRARON REGISTROS'])[1]/preceding::td[1]</value>
-      <webElementGuid>d4def4ee-b43b-41f0-b92f-0d5862f30d60</webElementGuid>
+      <webElementGuid>050f06fa-d8df-433b-8151-62d8f1c4a3d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +111,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[3]</value>
-      <webElementGuid>af8f403c-6ef7-4580-8930-1fda47d72786</webElementGuid>
+      <webElementGuid>509908fc-c937-40ab-9eb1-adb840abf1fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +119,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Mensaje de Error']/parent::*</value>
-      <webElementGuid>5303118e-5e04-43c1-ad28-898e3d9f3af0</webElementGuid>
+      <webElementGuid>04568f2f-d141-4fdf-b9ed-a68be04c8264</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +127,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>091cae28-b821-475b-9a66-ca25566cf782</webElementGuid>
+      <webElementGuid>f9857bce-5cea-4bd1-99fd-2a3f1c4d7140</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +135,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[@id = 'caption' and (text() = 'Mensaje de Error' or . = 'Mensaje de Error')]</value>
-      <webElementGuid>575384a5-c14f-433e-8302-bacb0d4535e2</webElementGuid>
+      <webElementGuid>524bcb84-9dd1-48c5-b111-347b30d19439</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

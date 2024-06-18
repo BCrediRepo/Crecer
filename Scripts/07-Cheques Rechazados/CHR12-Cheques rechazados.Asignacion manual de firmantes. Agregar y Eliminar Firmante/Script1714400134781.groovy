@@ -36,24 +36,13 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
 WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-
 //Maximizar pantalla
 WebUI.maximizeWindow()
 
-//Setear "Numero de Cuenta"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCuenta_value111'), '02180086531')
-	
-//Setear "Numero de Cheque"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCheque_value211'), '10014')
+//Seteo de Datos "NUMERO DE CUENTA", "NUMERO CHEQUE"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '02180086531')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '10014')
 
 //Seleccionar "boton Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
@@ -145,24 +134,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
 WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-	
-//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
-
-//Maximizar pantalla
-WebUI.maximizeWindow()
-
-//Setear "Numero de Cuenta"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCuenta_value111'), '02180086531')
-	
-//Setear "Numero de Cheque"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/txtNCheque_value211'), '10014')
+//Seteo de Datos "NUMERO DE CUENTA", "NUMERO CHEQUE"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '02180086531')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '10014')
 
 //Seleccionar "boton Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

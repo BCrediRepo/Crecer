@@ -50,33 +50,10 @@ WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Se accede al menu ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-////Filtro para limpiar selección
-//CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-//WebUI.switchToWindowIndex(0)
-//
-//WebUI.switchToWindowTitle('T24 - Fil.089 M.del Plata Ctr')
-//
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/16-Resumen de Cuentas/lnkConsulta de Mov. por Fecha Valor'))
-
-WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Completamos los datos para la consulta
-//WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lnkNueva Seleccion'))
-
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/txtNroDeCuenta'), '00430014075')
-
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/txtFechaDesde'), '20220727')
+//Seteo de Datos "Nro de Cuenta", "Fecha Desde"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','00430014075')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220727')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
