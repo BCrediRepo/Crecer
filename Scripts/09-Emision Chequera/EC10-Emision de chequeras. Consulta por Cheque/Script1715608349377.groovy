@@ -34,26 +34,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.NOF.CONS.CHEQUES
 WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.CHEQUES')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.NOF.CONS.CHEQUES
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.NOF.CONS.CHEQUES')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.NOF.CONS.CHEQUES
-WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.CHEQUES')
-
 //Verifica titulo BCCL.E.NOF.CONS.CHEQUES
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.NOF.CONS.CHEQUES/lblTituloBCCL.E.NOF.CONS.CHEQUES'))
 
-//Ingresa Numero de Cheque
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.NOF.CONS.CHEQUES/txtNumCheque'), 6)
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.NOF.CONS.CHEQUES/txtNumCheque'), '75963653')
+//Seteo de Datos "Num. Cheque"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Num. Cheque', '75963653')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

@@ -35,17 +35,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
-//Seteo de datos de consulta
-WebUI.setText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/txtCuenta'), 
-    '00540468975')
+//Seteo de Datos "Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','00540468975')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -69,13 +61,13 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 println TotalRegistros
-//-----------------------------
 
 Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblCuenta'))
 
 assert Cuenta == "00540468975 METALURGICASIAM SA"
 
 
+//-----------------------------
 //Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

@@ -36,23 +36,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.ANAQUEL')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.NOF.CONS.ANAQUEL')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.ANAQUEL')
-
+//Seteo de Datos "Moneda", "Tipo"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+//validacion txt
 WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtMoneda'), 6)
-WebUI.setText(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtMoneda'), 'ARS')
-WebUI.setText(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtTipo'), 'ANAQUEL')
-//WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtTipo'), 6)
-//WebUI.setText(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtTipo'), 'PROSEGUR')
-WebUI.delay(10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda','ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo','PROSEGUR')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

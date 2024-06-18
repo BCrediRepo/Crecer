@@ -34,22 +34,13 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
 
-//Se accede al menu Compensacion de Saldos - Consulta de Relaciones
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.ACCP.GROUP')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtIDcuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtIDcuenta'), '00895279268')
-WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtClase'), 'ESP')
-WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtIDPersona'), '1000901207')
-WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtNumDoc'), '20494456')
+//Seteo de Datos "ID Cuenta", "TIPO.REGLA", "ID Persona", "Nro Doc"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID Cuenta', '00895279268')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('TIPO.REGLA', 'ESP')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID Cliente', '1000901207')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro Doc', '20494456')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

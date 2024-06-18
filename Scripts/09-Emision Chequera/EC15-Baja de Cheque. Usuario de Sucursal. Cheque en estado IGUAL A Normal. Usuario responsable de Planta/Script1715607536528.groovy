@@ -57,18 +57,9 @@ WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24
 //Cambiar ventana "BCCL.CQ.BAJA.CHEQUES"
 WebUI.switchToWindowTitle('BCCL.CQ.BAJA.CHEQUES')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "BAJA DE CHEQUES"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/CC1 - Emision Chequera/Consultas Chequera Boletera/lnkBAJADECHEQUES'))
-
-//Cambiar ventana "BCCL.CQ.BAJA.CHEQUES"
-WebUI.switchToWindowTitle('BCCL.CQ.BAJA.CHEQUES')
-
-//Setear Número de Cuenta
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/09-BCCL.CQ.BAJA.CHEQUES/txtCuenta'), '00010001266')
+//Seteo de Datos "NUMERO DE CUENTA"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CUENTA', '00010001266')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

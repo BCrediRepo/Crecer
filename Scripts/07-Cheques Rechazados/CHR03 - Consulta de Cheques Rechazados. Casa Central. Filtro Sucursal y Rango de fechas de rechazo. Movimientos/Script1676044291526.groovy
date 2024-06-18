@@ -35,23 +35,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CHRECH.RECHAZADOS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaDesde'), 
-    6)
-
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaDesde'), '20230825')
-
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaHasta'), '20230829')
+//Seteo de Datos "Fecha rechazo desde", "Fecha rechazo hasta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo desde', '20230825')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo hasta', GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -59,8 +46,7 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//WebUI.delay(30)
-//WebUI.delay(30)
+//Verificar
 WebUI.verifyElementVisible(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblSuc'))
 
 // Captura el tiempo de finalización
@@ -69,8 +55,9 @@ long endTime = System.currentTimeMillis()
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
-println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos' //---------------------------------------------------------------------------------------------------------------------
-    )
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
+
+//---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
 sucursal = WebUI.getText(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblNumSuc'))

@@ -60,13 +60,6 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarg
 
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
 
-//Captura de Pantalla PDF
-//WebUI.switchToWindowTitle('e-forms')
-//
-//WebUI.maximizeWindow()
-//
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 ////Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
@@ -101,24 +94,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.EB.POSTEO.INAU
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//Maximiza la pantalla
+WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.POSTEO.INAU
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.POSTEO.INAU')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.EB.POSTEO.INAU
-WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+//Limpieza
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Verifica titulo BCCL.E.FIRMAS.FISICA
 WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblTituloBCCL.E.EB.POSTEO.INAU'))
 
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-//
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 

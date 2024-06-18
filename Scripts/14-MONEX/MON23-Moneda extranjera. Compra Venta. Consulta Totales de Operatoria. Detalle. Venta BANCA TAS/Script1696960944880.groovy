@@ -34,17 +34,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-//Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), GlobalVariable.vFechaCOBAmbTES10)
+//Seteo de Datos "Fecha de Boleto"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Boleto', GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -74,8 +66,10 @@ println(TotalRegistros)
 //WebUI.switchToWindowTitle('Consulta de Totales - Operatoria de Compra Venta')
 Total = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblTotalesporOperatoria'))
 
-assert Total == 'Totales por Operatoria' //Control fin de script
+assert Total == 'Totales por Operatoria' 
 
+//-----------------------------
+//Control fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

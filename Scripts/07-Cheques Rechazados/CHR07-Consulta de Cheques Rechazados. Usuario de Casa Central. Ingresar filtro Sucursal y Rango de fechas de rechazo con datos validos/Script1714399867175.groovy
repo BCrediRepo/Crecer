@@ -36,24 +36,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados
 //Cambiar ventana "BCCL.CHRECH.RECHAZADOS"
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Cheques Rechazados"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkChequesRechazados'))
-
-//Cambiar ventana "BCCL.CHRECH.RECHAZADOS"
-WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtSucursal'), '001')
-
-//Setear "Fecha desde"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaDesde'), '20220801')
-
-//Setear "Fecha hasta"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/txtFechaHasta'), '20220801')
+//Seteo de Datos "Sucursal", "Fecha rechazo desde", "Fecha rechazo hasta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo desde', '20220801')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo hasta', '20220831')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -34,26 +34,21 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.maximizeWindow()
-
-//Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CHQ.SOL.IMPRENTA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
-
+//Seteo de Datos "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), 6)
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/txtImprenta'), '02')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Imprenta', '01')
+
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton "Ejecutar"
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblImprentaTitulo'), 30)
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lnkVerSolicitudes'))
 
 //Switch a la ventana de tipo de chequera

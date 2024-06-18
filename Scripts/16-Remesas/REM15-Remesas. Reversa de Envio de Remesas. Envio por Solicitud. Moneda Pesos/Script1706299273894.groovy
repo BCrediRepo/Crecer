@@ -99,15 +99,8 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "BCCL.E.REVE.RECEPCION"
 WebUI.switchToWindowTitle('BCCL.E.REVE.RECEPCION')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "BCCL.E.REVE.RECEPCION"
-WebUI.switchToWindowTitle('BCCL.E.REVE.RECEPCION')
+//Limpieza
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar pantalla
 WebUI.maximizeWindow()

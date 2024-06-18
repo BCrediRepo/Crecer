@@ -34,35 +34,13 @@ WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.C
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-//WebUI.switchToWindowTitle('Temenos T24')
-//
-//WebUI.click(findTestObject('02-Dashboard/lnkCapitalSocial'))
-//
-//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkConsultaDeCuentasDeCapitalSocial'))
-//
-//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkConsultasDeCapitalSocial'))
-//
-//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSocialPorPersonaOCuenta'))
 WebUI.switchToWindowTitle('Consulta Cuenta Capital Social')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Se accede al menu
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CS.VER.CTA')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//WebUI.switchToWindowTitle('Temenos T24')
-//
-//WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkCuentasCapitalSocialPorPersonaOCuenta'))
-WebUI.switchToWindowTitle('Consulta Cuenta Capital Social')
-
+//Seteo de Datos "Id. Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Persona','1002190185')
 //Descomentar para regresion
-//WebUI.setText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/txtNroCuenta_value411'), '90890008453')
-WebUI.setText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/txtIDPersona'), '1002190185')
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero Cuenta','90890008453')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -90,8 +68,6 @@ TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados
 
 println(TotalRegistros)
 
-//-----------------------------
-//Control de fin de script
 //Descomentar para regresiion
 //WebUI.verifyElementVisible(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblCuenta'))
 //
@@ -104,6 +80,8 @@ persona = WebUI.getText(findTestObject('19-Capital Social/Consulta Cuenta Capita
 
 assert persona == '1002190185'
 
+//-----------------------------
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

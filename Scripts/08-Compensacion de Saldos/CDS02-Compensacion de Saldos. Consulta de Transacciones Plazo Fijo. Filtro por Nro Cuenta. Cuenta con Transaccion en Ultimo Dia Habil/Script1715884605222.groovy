@@ -41,20 +41,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consu
 
 WebUI.switchToWindowTitle('Plazo Fijos Activos')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/03-PlazoFijo/02-Consultas de Plazo Fijo/02-Consulta por Plazo Fijo/lnkPlazosFijosActivos'))
-
-WebUI.switchToWindowTitle('Plazo Fijos Activos')
-
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtNroOperacion'), '14094811')
-
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtSucursal'), '089')
-
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/txtMoneda'), 'ARS')
+//Seteo de Datos "Sucursal", "Moneda", "Nro. Operacion"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Operacion', '14094811')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -75,8 +66,8 @@ WebUI.click(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activ
 WebUI.switchToWindowTitle('PLAZO FIJO')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/05-PlazoFijo/07-Plazos Fijos Activos/lblIMPOSICION'), 6) //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
 
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'('Screenshot/Fails/CDC01Error.png')

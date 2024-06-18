@@ -35,32 +35,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.MOV.AUT.INP.DATA
 WebUI.switchToWindowTitle('%BCCL.MOV.AUT.INP.DATA')
 
-//Nueva seleccion
-WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lnkNuevaSeleccion'))
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando BCCL.MOV.AUT.INP.DATA L L
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'BCCL.MOV.AUT.INP.DATA L L')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.MOV.AUT.INP.DATA
-WebUI.switchToWindowTitle('%BCCL.MOV.AUT.INP.DATA')
-
-//Filtra por SBL.RETURN=0, SBL.STATUS=POSTED,SBL.COD-SUC: 001, SBL.SETTLEMENT= S
+//Filtra por SBL.RETURN=0, SBL.STATUS=POSTED,SBL.COD.SUC: 001, SBL.SETTLEMENT= S
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+//valido objeto
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/txtTituloBCCL.MOV.AUT.INP.DATA'),6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.RETURN'),6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.RETURN'), '0')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.STATUS'), 'POSTED')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.COD.SUC'), '001')
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/inputSBL.SETTLEMENT'), 'S')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','0')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.STATUS','POSTED')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.SETTLEMENT','S')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/btnEjecutar'))

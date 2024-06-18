@@ -35,31 +35,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//Seteo de Datos "Usuario"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0073')
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/txtUsuario'), 6)
-WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/txtUsuario'), 'B.0073')
+//Seleccionar Ejecutar
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkEjecutar'))
 
+//Validacion
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lblHora'), 10)
 WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkReversar'), 6)
 WebUI.click(findTestObject('Object Repository/14-Recaudaciones/02-BCCL.E.EB.CONS.REVE/lnkReversar'))

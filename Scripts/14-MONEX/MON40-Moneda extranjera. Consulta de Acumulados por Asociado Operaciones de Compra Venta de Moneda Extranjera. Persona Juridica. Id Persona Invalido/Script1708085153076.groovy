@@ -36,18 +36,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "Consulta General personas Juridicas"
 WebUI.switchToWindowTitle('Consulta General personas Juridicas')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Consulta General personas Juridicas"
-WebUI.switchToWindowTitle('Consulta General personas Juridicas')
-
-//Setear ID Persona
-WebUI.setText(findTestObject('Object Repository/15-MONEX/Consulta General personas Juridicas/txtIDPersona'), '7T1GEDQSGW8U3')
+//Seteo de Datos "Id Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '7T1GEDQSGW8U3')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -62,6 +53,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/15-MONEX/BCCL.E.PER
 def element = WebUI.getText(findTestObject('Object Repository/15-MONEX/BCCL.E.PER.GEN.PF.FIN/lblError'))
 assert element.contains('Mensaje de Error')
 
+//------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

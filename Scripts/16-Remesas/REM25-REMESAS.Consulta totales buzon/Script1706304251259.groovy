@@ -36,21 +36,12 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "BCCL.E.NOF.CONS.BUZON"
 WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.BUZON')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "BCCL.E.NOF.CONS.BUZON"
-WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.BUZON')
-
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Setear "Moneda"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtMoneda'), 'ARS')
+//Seteo de Datos "Moneda"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda','ARS')
 
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

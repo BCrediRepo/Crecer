@@ -30,17 +30,10 @@ WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarAr
 //WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
 WebUI.switchToWindowIndex(1)
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//Seteo de Datos "SUCURSAL"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SUCURSAL','043')
 
-WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/txtSUCURSAL_value2'), '043')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 

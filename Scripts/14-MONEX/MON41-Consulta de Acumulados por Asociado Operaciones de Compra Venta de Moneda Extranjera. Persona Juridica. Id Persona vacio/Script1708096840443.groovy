@@ -36,18 +36,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "Consulta General personas Juridicas"
 WebUI.switchToWindowTitle('Consulta General personas Juridicas')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Consulta General personas Juridicas"
-WebUI.switchToWindowTitle('Consulta General personas Juridicas')
-
-//Setear ID Persona
-WebUI.setText(findTestObject('Object Repository/15-MONEX/Consulta General personas Juridicas/txtIDPersona'), '')
+//Seteo de Datos "Id Persona" = Vacio
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

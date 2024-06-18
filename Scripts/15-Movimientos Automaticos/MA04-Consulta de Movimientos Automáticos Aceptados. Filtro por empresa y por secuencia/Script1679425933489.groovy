@@ -43,38 +43,10 @@ WebUI.maximizeWindow()
 //Verifica que se visualice el titulo BCCL.E.MOV.AUT.ACPT
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloBCCL.E.MOV.AUT.ACPT'), 6)
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.ACPT
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.ACPT')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.MOV.AUT.ACPT
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.ACPT')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Maximiza la pestaña
-WebUI.maximizeWindow()
-
-//Verifica que se visualice el titulo BCCL.E.MOV.AUT.ACPT
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloBCCL.E.MOV.AUT.ACPT'), 6)
-
-//Ingresa el codigo de empresa
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/inputcCodEmpresa'),6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/inputcCodEmpresa'),'853')
-
-//Ingresa la secuencia
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/inputSecuencia'),6)
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/inputSecuencia'),'0361224')
+//Seteo de Datos "Cod. Empresa", "Secuencia"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Empresa','852')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0363857')
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

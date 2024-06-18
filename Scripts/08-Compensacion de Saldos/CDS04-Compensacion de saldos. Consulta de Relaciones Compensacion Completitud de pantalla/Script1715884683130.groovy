@@ -41,23 +41,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Sa
 //Switch a la ventana BCCL.E.ACCP.GROUP
 WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Switch a la ventana T24 - Fil.043 Villa Mitre
-WebUI.switchToWindowTitle('T24 - Fil.043 Villa Mitre')
-
-//Click en consulta de relaciones
-WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'))
-
-//Switch a la ventana BCCL.E.ACCP.GROUP
-WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
-
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Completamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/04-BCCL.E.ACCP.GROUP/txtIDCuenta'), '00435011415')
+//Seteo de Datos "ID Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID Cuenta', '00435011415')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

@@ -36,15 +36,8 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "BCCL.E.TXN.PNEUTRAL"
 WebUI.switchToWindowTitle('BCCL.E.TXN.PNEUTRAL')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "BCCL.E.TXN.PNEUTRAL"
-WebUI.switchToWindowTitle('BCCL.E.TXN.PNEUTRAL')
+//Limpieza
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
@@ -55,11 +48,9 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.
 //Selecionar "ARS"
 WebUI.click(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.CAT/lblARS'))
 
-//Setear "Fecha Desde"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.CAT/txtFechaDesde'), '20220101')
-
-//Setear "Dispositivo"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.CAT/txtDispositivo'), '00000')
+//Seteo de Datos "Fecha desde", "Dispositivo"
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha desde','20220101')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Dispositivo','00000')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

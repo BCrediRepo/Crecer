@@ -35,21 +35,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
 
-//Limpieza de filtro
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
-
-//Seteo de datos
-WebUI.setText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtNroCuenta'), '01000021927')
-
-WebUI.setText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtFechaDesde'), '20010901')
-
-WebUI.setText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtFechaHasta'), '20200902')
+//Seteo de Datos "Nro. Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','01000021927')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20010901')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -75,7 +65,7 @@ TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados
 
 println(TotalRegistros)
 
-//-----------------------------
+
 Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
 
 WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
@@ -84,8 +74,10 @@ Estado = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuent
 
 assert Cuenta.contains('01000021927')
 
-assert Estado == 'CERRADA' //Control Fin de script
+assert Estado == 'CERRADA' 
 
+//-----------------------------
+//Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

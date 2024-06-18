@@ -30,28 +30,22 @@ WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarAr
 //WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
 WebUI.switchToWindowIndex(1)
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//Seteo de Datos "CUENTA"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CUENTA','10430046944')
 
-WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.ARR')
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/txtNroCuenta_value411'), '10430047640')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Seleccionar Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-Cabecera = WebUI.getText(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lblMovimientosrechazaninforme'))
-if (Cabecera == true) {
-    WebUI.maximizeWindow()
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	} else {
-    WebUI.maximizeWindow()
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-}
+//Verificacion
+WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lblMovimientosrechazaninforme'))
+
+//Validar "CUENTA"
+def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/lblCUENTA'))
+assert element.contains('10430046944')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

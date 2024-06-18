@@ -40,23 +40,19 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/0
 //Switch a la ventana de impresion de acta
 WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/02-Modificacion de Chequera/lnkImpresionActadeDestruccion'))
-
-//Switch a la ventana de impresion de acta
-WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/txtFECHAESTADO'), 6)
+//Seteo de Datos "FECHA CAMBIO ESTADO"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.selectOptionByIndex(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/selectorFECHA'), 1)
-WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/txtFECHAESTADO'), '20220101')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('FECHA CAMBIO ESTADO', '20220101')
+
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkEjecutar'))
 
 //Seleccionamos Imprimir acta de un registro
 WebUI.maximizeWindow()
-WebUI.delay(120)
+
+//Esperar hasta encontrar datos
+WebUI.delay(15)
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkImprimirActa'), 6)
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkImprimirActa'))
 

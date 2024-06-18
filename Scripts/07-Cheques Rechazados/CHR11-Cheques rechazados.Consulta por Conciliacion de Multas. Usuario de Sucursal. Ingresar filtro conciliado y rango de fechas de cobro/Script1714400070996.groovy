@@ -45,27 +45,12 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/
 //Cambiar ventana "CONSULTA DE CONCILIACION DE MULTAS"
 WebUI.switchToWindowTitle('CONSULTA DE CONCILIACION DE MULTAS')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Concilación de multas"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Rechazo de Cheques/Consultas/lnkConciliaciondeMultas'))
-
-//Cambiar ventana "CONSULTA DE CONCILIACION DE MULTAS"
-WebUI.switchToWindowTitle('CONSULTA DE CONCILIACION DE MULTAS')
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/CONSULTA DE CONCILIACION DE MULTAS/txtSucursal'), '089')
-	
-//Setear "Fecha Cobro Desde"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/CONSULTA DE CONCILIACION DE MULTAS/txtFechaCobroDesde'), '20210910')
-
-//Setear "Fecha Cobro Hasta"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/CONSULTA DE CONCILIACION DE MULTAS/txtFechaCobroHasta'), '20211007')
-
-//Setear "Conciliado"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/CONSULTA DE CONCILIACION DE MULTAS/txtConciliado'), 'Si')
+//Seteo de Datos "Sucursal", "Fecha Cobro Desde", "Fecha Cobro Hasta", "Conciliado"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Cobro Desde', '20210910')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Cobro Hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Conciliado', 'Si')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

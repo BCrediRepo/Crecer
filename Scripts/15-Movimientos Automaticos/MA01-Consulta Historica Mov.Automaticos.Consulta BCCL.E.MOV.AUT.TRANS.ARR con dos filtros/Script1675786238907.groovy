@@ -38,16 +38,10 @@ WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.HIST')
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//Seteo de Datos "Numero de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta','10430040953')
 
-WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkConsultaMovimientosHistoricos'))
-
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.HIST')
-
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/txtNumeroCuenta'),'10430040953')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

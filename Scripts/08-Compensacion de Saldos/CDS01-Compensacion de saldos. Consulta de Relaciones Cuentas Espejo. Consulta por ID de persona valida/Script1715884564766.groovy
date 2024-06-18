@@ -43,15 +43,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Sa
 
 WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('T24 - Fil.043 Villa Mitre')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/07-Compensacion de Saldos/01-Consultas/lnkConsultadeRelaciones'))
-WebUI.switchToWindowTitle('BCCL.E.ACCP.GROUP')
-
-//WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtIDcuenta'), '00895279268')
-
-//WebUI.setText(findTestObject('Object Repository/09-Compensacion de Saldos/01-Consulta de Relaciones/txtClase'), 'ESP')
+//Seteo de Datos "ID Cliente"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID Cliente', '1003745861')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -54,18 +54,9 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/
 //Cambiar ventana "Baja Firmantes Programada"
 WebUI.switchToWindowTitle('Baja Firmantes Programada')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Baja programada de firmantes"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Sucursal Piloto/D3-CC3/Cheques Rechazados/ChequesRechazadosProceso/Cheques Rechazados/lnkBajaProgramadadeFirmantes'))
-
-//Cambiar ventana "Baja Firmantes Programada"
-WebUI.switchToWindowTitle('Baja Firmantes Programada')
-
-//Setear "Sucursal Cuenta"
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/Baja Firmantes Programada/txtSucursalCuenta'), '001')
+//Seteo de Datos "SUCURSAL CUENTA"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SUCURSAL CUENTA', '001')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

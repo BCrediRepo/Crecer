@@ -66,13 +66,6 @@ WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarg
 
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
 
-//Captura de Pantalla PDF
-//WebUI.switchToWindowTitle('e-forms')
-//
-//WebUI.maximizeWindow()
-//
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Verificacion de txn finalizada
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
@@ -116,22 +109,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.EB.POSTEO.INAU
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
+//Maximiza la pantalla
+WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.POSTEO.INAU
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.POSTEO.INAU')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.EB.POSTEO.INAU
-WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+//Limpieza
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Verifica titulo BCCL.E.FIRMAS.FISICA
 WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblTituloBCCL.E.EB.POSTEO.INAU'))
 
-//Maximiza la pantalla
-WebUI.maximizeWindow()
 
 //
 //Selecciona boton EJECUTAR
@@ -214,27 +200,12 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 ///Abre la pestaña BCCL.E.EB.CONS.REVE
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.REVE
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.EB.CONS.REVE
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
 WebUI.maximizeWindow()
 
-//Ingresa Usuario
-WebUI.setText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/txtUsuario'),'B.0489')
-
-//Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/txtNroContrato'), trx1)
+//Seteo de Datos "Usuario", "Nro. Contrato"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0489')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Contrato', trx1)
 
 //Selecciona botón Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

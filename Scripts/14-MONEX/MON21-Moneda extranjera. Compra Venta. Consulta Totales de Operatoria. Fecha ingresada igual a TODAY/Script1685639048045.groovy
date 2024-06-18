@@ -18,6 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
+import java.text.SimpleDateFormat
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -34,17 +35,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de Datos "Fecha de Boleto"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Boleto', GlobalVariable.vFechaCOBAmbTES10)
 
-WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-//Seteo del caso con datos de fecha TODAY (de negocio)
-WebUI.setText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/txtFechaBoleto'), GlobalVariable.vFechaCOBAmbTES10)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -70,12 +65,21 @@ TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados
 
 println(TotalRegistros)
 
+// Definir el formato original y el formato deseado 
+SimpleDateFormat originalFormat = new SimpleDateFormat("yyyyMMdd") 
+SimpleDateFormat desiredFormat = new SimpleDateFormat("dd/MM/yyyy")
+
+// Parsear la cadena al objeto Date 
+Date date = originalFormat.parse(GlobalVariable.vFechaCOBAmbTES10)
+
+// Formatear el objeto Date al nuevo formato 
+String formattedDateStr = desiredFormat.format(date)
+
 //-----------------------------
 WebUI.verifyElementVisible(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
 
 fecha = WebUI.getText(findTestObject('15-MONEX/Consulta de Totales - Operatoria de Compra Venta/lblFecha'))
-
-assert fecha == '31/08/2023'
+assert fecha == formattedDateStr
 
 //Control fin de script
 WebUI.maximizeWindow()

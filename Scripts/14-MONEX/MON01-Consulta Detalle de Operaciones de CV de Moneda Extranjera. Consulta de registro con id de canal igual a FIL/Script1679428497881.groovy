@@ -42,7 +42,7 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('Det. de Oper de Compra-Venta MONEX')
 
 
-//WebUI.maximizeWindow()//
+//WebUI.maximizeWindow()
 
 WebUI.waitForElementVisible(findTestObject('15-MONEX/01-BCCL.E.NOFILE.DET.OPER.MONEX/lblTitulo'), 3)
 

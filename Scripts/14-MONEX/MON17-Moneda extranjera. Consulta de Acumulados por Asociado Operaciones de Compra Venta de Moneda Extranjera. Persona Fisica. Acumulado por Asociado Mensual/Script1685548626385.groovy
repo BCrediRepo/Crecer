@@ -34,17 +34,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowIndex(1)
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowIndex(1)
-
-//Seteo del caso
-WebUI.setText(findTestObject('15-MONEX/Consulta General de personas Fisica/txtIDPersona'), '1000873562')
+//Seteo de Datos "Id Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1000873562')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -89,7 +81,7 @@ NumDoc = WebUI.getText(findTestObject('15-MONEX/BCCL.E.ACUM.OPER.MONEX/lblNro.Do
 
 assert NumDoc == ' Nro. Doc:'
 
-//verificación acumulado anual
+//verificación acumulado MENSUAL
 WebUI.verifyElementVisible(findTestObject('15-MONEX/BCCL.E.ACUM.OPER.MONEX/lblMensual'))
 
 WebUI.verifyElementVisible(findTestObject('15-MONEX/BCCL.E.ACUM.OPER.MONEX/lblImporteUSDCompraMensual'))

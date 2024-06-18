@@ -42,30 +42,12 @@ WebUI.maximizeWindow()
 //Verifica que se visualice el titulo BCCL.E.MOV.AUT.REJ
 WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblTituloBCCL.E.MOV.AUT.REJ'), 6)
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.REJ
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.REJ')
-
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.MOV.AUT.REJ
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.REJ')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Maximiza la pestaña
-WebUI.maximizeWindow()
-
-//Ingresa una secuencia 
-WebUI.setText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/inputSecuencia'),'0092845')
+//Seteo de Datos "Secuencia"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0065823')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

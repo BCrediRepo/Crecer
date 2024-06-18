@@ -39,24 +39,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/15-Remesas/02-Adminis
 //Cambiar ventana "BCCL.E.NOF.CONS.ANAQUEL"
 WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.ANAQUEL')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Selecionar "Consulta de Totales Anaquel/Prosegur"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/15-Remesas/02-Administracion de Tesoros/lnkConsultadeTotalesAnaquel-Prosegur'))
-
-//Cambiar ventana "BCCL.E.NOF.CONS.ANAQUEL"
-WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.ANAQUEL')
-
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Setear "Moneda"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtMoneda'), 'ARS')
-
-//Setear "Tipo"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/01-BCCL.E.NOF.CONS.ANAQUEL/txtTipo'), 'ANAQUEL')
+//Seteo de Datos "Moneda", "Tipo"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda','ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo','ANAQUEL')
 
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

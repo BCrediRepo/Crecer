@@ -47,19 +47,10 @@ WebUI.click(findTestObject('17-Remesas/Temenos T24/lnkControlDeSaldosAseguradosE
 
 WebUI.switchToWindowTitle('BCCL.E.TT.TESORERIA.GENERAL')
 
-//Limpieza de filtros
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('17-Remesas/Temenos T24/lnkControlDeSaldosAseguradosEnLinea'))
-
-WebUI.switchToWindowTitle('BCCL.E.TT.TESORERIA.GENERAL')
-
-//seteo de datos
-WebUI.setText(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/txtFecha'), '20220725')
-
-WebUI.setText(findTestObject('17-Remesas/BCCL.E.TT.TESORERIA.GENERAL/txtSucursal'), '074')
+//Seteo de Datos "Fecha", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha',GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal','074')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
