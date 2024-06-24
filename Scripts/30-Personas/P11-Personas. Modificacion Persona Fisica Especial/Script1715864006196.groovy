@@ -52,21 +52,12 @@ WebUI.click(findTestObject('Object Repository/31-Personas/Temenos T24/lnkModific
 //Switch a la venta Modif. Especial Persona Fisica
 WebUI.switchToWindowTitle('Modif. Especial Persona Fisica')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Click en Modificacion Persona Fisica - Especial
-WebUI.click(findTestObject('Object Repository/31-Personas/Temenos T24/lnkModificacion Persona Fisica - Especial'))
-
-//Switch a la venta Modif. Especial Persona Fisica
-WebUI.switchToWindowTitle('Modif. Especial Persona Fisica')
-
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Completamos los datos
-WebUI.setText(findTestObject('Object Repository/31-Personas/Modificacion Domicilio Pers. Fisica/txtID Persona'), '1001247832')
+//Seteo de datos "Id Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1001247832')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

@@ -72,18 +72,9 @@ WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24
 //Cambiar ventana "BCCL.E.EB.CONS.DEL.NAU"
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "CONSULTAR, MODIFICAR o ELIMINAR OPERACIONES"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/POSTEO/lnkConsultarModificarEliminarOperaciones'))
-
-//Cambiar ventana "BCCL.E.EB.CONS.DEL.NAU"
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
-
-//Setear "Usuario"
-WebUI.setText(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/txtUsuario'), 'B.0273')
+//Seteo de datos "Fecha Desde", "Usuario"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0273')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

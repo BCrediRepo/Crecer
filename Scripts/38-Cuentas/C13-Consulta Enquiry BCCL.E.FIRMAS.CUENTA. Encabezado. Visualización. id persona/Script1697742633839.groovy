@@ -34,26 +34,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.FIRMAS.FISICA
 WebUI.switchToWindowTitle('BCCL.E.FIRMAS.FISICA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.FIRMAS.FISICA
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.FIRMAS.FISICA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.FIRMAS.FISICA
-WebUI.switchToWindowTitle('BCCL.E.FIRMAS.FISICA')
-
 //Verifica titulo BCCL.E.FIRMAS.FISICA
 WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.E.FIRMAS.FISICA/lblTituloBCCL.E.FIRMAS.FISICA'))
 
-//Ingresa Id Persona
+//Seteo de datos "ID Persona Fisica"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.E.FIRMAS.FISICA/txtIdPersonaFisica'), 6)
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.E.FIRMAS.FISICA/txtIdPersonaFisica'), '2000186599')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID Persona Fisica', '2000186599')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

@@ -44,20 +44,9 @@ WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
 //
 //WebUI.switchToWindowIndex(1)
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Se accede al menu
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.CER')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultaSaldoCuentaCerrada'))
-
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
-
-WebUI.setText(findTestObject('25-Cierre de Cuenta/Saldos de Cuentas Cerrada/txrNroCuenta'), '15170000212')
+//Seteo de Datos "NRO.CUENTA"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NRO.CUENTA','15170000212')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

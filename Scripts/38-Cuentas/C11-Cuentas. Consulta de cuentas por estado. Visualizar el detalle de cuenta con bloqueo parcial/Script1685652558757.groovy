@@ -37,26 +37,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsult
 
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultaDeCuentasPorEstado'))
-
-WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
-
 // Maximizamos
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/txtIDCliente'), '1000873562')
-
+//Seteo de datos "Id. Cliente" y drop down de Estado
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Cliente', '1000873562')
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/btndropdown'))
-
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.AC.CONSULTA.X.ESTADO/lblACT'))
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

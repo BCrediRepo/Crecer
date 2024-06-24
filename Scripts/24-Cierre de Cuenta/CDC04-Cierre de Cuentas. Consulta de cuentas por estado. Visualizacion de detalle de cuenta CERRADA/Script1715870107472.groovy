@@ -38,24 +38,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/lnkConsultasdeCuentas'))
 //
 //WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
-//
+
+//cambio de ventana a "BCCL.AC.CONSULTA.X.ESTADO"
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Se accede al menu
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.AC.CONSULTA.X.ESTADO')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
-
-WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
-
-WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtClienteID'), '1000873562')
-
-WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtEstado'), 'CER')
+//Seteo de Datos "Id. Cliente" y "Estado"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Cliente','1000873562')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Estado','CER')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

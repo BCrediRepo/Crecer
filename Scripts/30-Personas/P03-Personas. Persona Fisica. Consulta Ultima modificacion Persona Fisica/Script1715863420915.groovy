@@ -47,16 +47,6 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas
 
 WebUI.switchToWindowTitle('Consulta Gral Pers Fisica Historia')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Ultimas Modificaciones/lnkConsultaUltimas modif a Pers Fisica'))
-
-WebUI.switchToWindowTitle('Consulta Gral Pers Fisica Historia')
-
 //WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkNueva Seleccion'))
 //
 //WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkEjecutar'))
@@ -65,11 +55,11 @@ WebUI.switchToWindowTitle('Consulta Gral Pers Fisica Historia')
 
 //WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/btnLupa'))
 
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/txtIDpersona'), '1000873562')
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/txtNroDocumento'), '20144835')
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/txtApellido'), 'ENRICO')
+//Seteo de datos "Id Persona", "Nro Documento", "Apellido"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1000873562')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Documento', '20144835')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'ENRICO')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -42,18 +42,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modific
 //Cambiar ventana "BCCL.AC.MANTMTO.CPSPC"
 WebUI.switchToWindowTitle('BCCL.AC.MANTMTO.CPSPC')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Anul. / Mant. Cierre en Proceso Susp.Pago Ch"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkAnul.-Mant.CierreenProcesoSusp.PagoCh'))
-
-//Cambiar ventana "BCCL.AC.MANTMTO.CPSPC"
-WebUI.switchToWindowTitle('BCCL.AC.MANTMTO.CPSPC')
-
-//Setear "No. Cuenta"
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/15-BCCL.AC.MANTMTO.CPSPC/txtNoCuenta'), '10430033951')
+//Seteo de Datos "No. Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Cuenta','10430033951')
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
@@ -92,18 +83,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modific
 //Cambiar ventana "BCCL.AC.POSIB.CIERRE.EN.PROC"
 WebUI.switchToWindowIndex(2)
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "A Cierre en Proceso"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/02-Cambio-Mantenimiento de Estado/lnkACierreenProceso'))
-
-//Cambiar ventana "BCCL.AC.POSIB.CIERRE.EN.PROC"
-WebUI.switchToWindowIndex(2)
-
-//Setear "Numero Cuenta"
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/13-BCCL.AC.POSIB.CIERRE.EN.PROC/txtNumeroCuenta'), '10430033951')
+//Seteo de Datos "Numero Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero Cuenta','10430033951')
 
 //Maximizar Ventana
 WebUI.maximizeWindow()

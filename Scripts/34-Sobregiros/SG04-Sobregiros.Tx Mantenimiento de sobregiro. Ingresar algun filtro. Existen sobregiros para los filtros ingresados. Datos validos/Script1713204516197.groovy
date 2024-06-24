@@ -50,28 +50,19 @@ WebUI.switchToWindowTitle('Consulta de Sobregiros')
 
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/33-Sobregiros/02-Temenos T24/lnkMantenimento de Sobregiro'))
-
-WebUI.switchToWindowTitle('Consulta de Sobregiros')
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/lnkNueva Seleccion'))
-
-//Ingresamos nro de cuenta
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/txtCuenta'), '00430014075')
+//Seteo de Datos "Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00430014075')
 
 //Click en btn ejecutar
 WebUI.click(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/lnkEjecutar'))
 
 //Verificamos el lbl cuenta
 WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/lblCuenta'), 6)
+
+//ASSERT
+def element = WebUI.getText(findTestObject('Object Repository/35-Sobregiros/Consulta de sobregiros/lblCuenta'))
+assert element.contains('00430014075')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
