@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//***PARA REVERSAR MANUALMENTE UN RCP (RESUMEN DE CUENTA - PEDIDO) INGRESAR A BCCL.RES.CTA.PEDIDO L L CON EN NUM DE CUENTA A BUSCAR***
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -32,22 +34,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Cambiamos a la ventana CUENTAS
 WebUI.switchToWindowTitle('CUENTAS')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
 //Ingresamos la cuenta a consultar
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '00430014075')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Ver registro
 WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/btnVerRegistro'))
 
 //Verificamos el campo Working Balance
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/lblWorkingBalance'), 6)
-
 WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/lblWorkingBalance'), 6)
 
 //Screenshot

@@ -113,6 +113,38 @@ def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/BCCL.RE
 
 assert element.contains('Txn Completa:')
 
+//INGRESO EL NUM DE TRX para realizar la reversa
+// Dividir la cadena por espacios en blanco y tomar el segundo elemento
+def partes = element.split('\\s+')
+def trx1 = partes[2]
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtSuperiorInputNumCuenta'), trx1)
+
+//Boton Herramienta
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnHerramienta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnReversar'), 6)
+WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnReversar'))
+
+//ASSERT PARA LA REVERSA DEL PEDIDO DE RESUMEN DE CUENTA
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblTxn Completa'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblTxn Completa'))
+def element2 = WebUI.getText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblTxn Completa'))
+assert element2.contains('Txn Completa:')
+
+//VALIDO QUE SE HAYA REVERSADO y valido el campo REVE
+// Dividir la cadena por espacios en blanco y tomar el segundo elemento
+def partes2 = element2.split('\\s+')
+def trx2 = partes[2]
+
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtSuperiorInputNumCuenta'), trx2)
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnVerRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnAudit'), 6)
+WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/btnAudit'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblREVE'))
+def element3 = WebUI.getText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lblREVE'))
+assert element3.contains('REVE')
+
+
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script

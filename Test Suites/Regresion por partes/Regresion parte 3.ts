@@ -85,7 +85,7 @@
       <guid>3d71d78d-c615-442f-a42d-2875ec952b74</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC11-Pedido de resumen usuarios Casa Central. Cuenta Sin pedido para la fecha. Período Requerido IGUAL Desde</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC11-Pedido de resumen usuarios Casa Central. Cuenta Sin pedido para la fecha. Periodo Requerido IGUAL Desde ultimo resumen periodico emitido. Cuenta Activa</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
