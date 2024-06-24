@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//***PARA REVERSAR MANUALMENTE UN RCP (RESUMEN DE CUENTA - PEDIDO) INGRESAR A BCCL.RES.CTA.PEDIDO L L CON EN NUM DE CUENTA A BUSCAR***
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -36,7 +38,6 @@ WebUI.maximizeWindow()
 
 //Ingresamos la cuenta a consultar
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/txtCuenta'), '10730166496')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Ver registro
 WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS Consulta Saldo/btnVerRegistro'))
@@ -77,7 +78,7 @@ WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/t
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/cbxDesdeInicioDelMesEnCurso'))
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/cbxDesdeInicioDelMesEnCurso'), 2)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/cbxDesdeInicioDelMesEnCurso'), 1)
 
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/txtCantidad de Copias'), '1')
 

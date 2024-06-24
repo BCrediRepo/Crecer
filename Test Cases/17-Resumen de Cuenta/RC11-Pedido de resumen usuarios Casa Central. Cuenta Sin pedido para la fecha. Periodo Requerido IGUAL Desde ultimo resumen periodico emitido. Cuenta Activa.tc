@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>RC11-Pedido de resumen usuarios Casa Central. Cuenta Sin pedido para la fecha. Período Requerido IGUAL Desde</name>
+   <name>RC11-Pedido de resumen usuarios Casa Central. Cuenta Sin pedido para la fecha. Periodo Requerido IGUAL Desde ultimo resumen periodico emitido. Cuenta Activa</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>decda049-41a5-4068-b1d4-30287b555229</testCaseGuid>
