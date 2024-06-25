@@ -79,27 +79,12 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 ///Abre la pestaña BCCL.E.EB.CONS.REVE
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.REVE
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.EB.CONS.REVE
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
 WebUI.maximizeWindow()
 
-//Ingresa Usuario
-WebUI.setText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/txtUsuario'),'B.0043')
-
-//Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/txtNroContrato'),terceraPalabra)
+//Seteo de datos "Usuario", "Nro. Contrato"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0043')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Contrato', terceraPalabra)
 
 //Selecciona botón Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

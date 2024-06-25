@@ -34,22 +34,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch ENQ BCCL.E.EB.CONS.DEL.NAU
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.DEL.NAU
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.DEL.NAU')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Switch ENQ BCCL.E.EB.CONS.DEL.NAU
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
-
-//Ingresa Usuario
-WebUI.setText(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/txtUsuario'), 'B.0289')
+//Seteo de datos "Fecha Desde", "Usuario"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0289')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -11,10 +11,11 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>.idbox</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>d7f89ff2-4ad3-4098-a4d3-b829d4dbe2a2</webElementGuid>
+      <webElementGuid>b92de796-4d68-46a0-b136-c18619309f6a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +31,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>429a03c4-bc6d-461a-8b07-ef3d68e418bf</webElementGuid>
+      <webElementGuid>bf618122-33a0-4dee-b7a7-286e27150b36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>name</name>
       <type>Main</type>
       <value>transactionId</value>
-      <webElementGuid>63293afc-defb-48d6-b034-e5bc9b3744d6</webElementGuid>
+      <webElementGuid>6ef1df80-feba-4f9f-924e-74d0cbaff1fe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +47,7 @@
       <name>id</name>
       <type>Main</type>
       <value>transactionId</value>
-      <webElementGuid>b29f007d-ac57-4c18-8e57-3065e18b90e0</webElementGuid>
+      <webElementGuid>ce488a19-fee5-41db-aee1-967a498089ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +55,7 @@
       <name>class</name>
       <type>Main</type>
       <value>idbox idbox_ACCOUNT</value>
-      <webElementGuid>2f796379-29ba-4dae-91e8-2d15bcf65fb0</webElementGuid>
+      <webElementGuid>3695e9b8-1264-433b-bfd9-52a6398dd8c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +63,7 @@
       <name>size</name>
       <type>Main</type>
       <value>019</value>
-      <webElementGuid>14b668ef-13ea-465c-8eeb-668d7a765fb4</webElementGuid>
+      <webElementGuid>2c77008c-51b1-48e9-a9d9-93f5c99c8a04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +71,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('','','','issueToken')</value>
-      <webElementGuid>9e55c7e1-7a8d-468b-b180-077cc11689c6</webElementGuid>
+      <webElementGuid>c332e483-db85-450e-ac3b-891566fe77f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>dc6cc177-0c96-4c91-ac9c-852320fabf5a</webElementGuid>
+      <webElementGuid>f8b7a570-436a-4d22-bb74-be55306788f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;toolBar&quot;)/table[1]/thead[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/input[@id=&quot;transactionId&quot;]</value>
-      <webElementGuid>6288e412-9450-4436-8314-e75ce7eb393c</webElementGuid>
+      <webElementGuid>0f932257-111e-429e-a31c-cad61e9ef58e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +95,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@id='transactionId'])[2]</value>
-      <webElementGuid>fb207174-30a8-4a81-83b6-26a5bbdf3a04</webElementGuid>
+      <webElementGuid>b0158afc-36d9-4a64-9cf3-715f89ec57d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +103,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='toolBar']/table/thead/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/input</value>
-      <webElementGuid>a6bc9070-fe18-40b0-85b8-99f2980060d1</webElementGuid>
+      <webElementGuid>57a65da3-27c8-4fa4-a5f1-dc3e4df7b6a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +111,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/input</value>
-      <webElementGuid>e7c9482a-eaf6-494a-8665-40ab32cb0c72</webElementGuid>
+      <webElementGuid>21c47ea5-0dd7-48a1-b953-c60d70b6f694</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +119,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @name = 'transactionId' and @id = 'transactionId']</value>
-      <webElementGuid>2a2e1c67-83f4-47e9-a9e1-c0824ee35ee7</webElementGuid>
+      <webElementGuid>0ff8432f-b667-477e-ba29-b3837718055a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

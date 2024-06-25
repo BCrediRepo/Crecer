@@ -56,21 +56,9 @@ WebUI.switchToWindowTitle('NAU Consulta para Autorizacion - PF')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en Autorizacion de registro persona fisica
-WebUI.click(findTestObject('Object Repository/31-Personas/Temenos T24/Personas/lnkAutorizacion de registro persona fisica'))
-
-//Switch a la ventana NAU Consulta para Autorizacion - PF
-WebUI.switchToWindowTitle('NAU Consulta para Autorizacion - PF')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Ingresamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/31-Personas/NAU Consulta para Autorizacion - PF/txtNombre'), 'O F DA ROSA')
+//Seteo de datos "Nombre(s)"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nombre(s)', 'O F DA ROSA')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

@@ -50,28 +50,9 @@ WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
 //Se maximiza la ventana
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Espera a que sea visible el buscador.
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 3)
-
-//Se realiza una busqueda
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
-
-//Click en el boton "Ejecutar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Se cambia de ventana
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
-
-//Se maximiza la ventana
-WebUI.maximizeWindow()
-
-//Se ingresa el valor "B.0043"
-WebUI.setText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/txtUsuario'), 'B.0273')
+//Seteo de datos "Fecha Desde", "Usuario"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0273')
 
 //Se espera a que sea visible "Ejecutar"
 WebUI.waitForElementVisible(findTestObject('00-Utils/02-Filtros/lnkEjecutar'), 3)

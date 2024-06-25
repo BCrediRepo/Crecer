@@ -42,21 +42,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/10-Cierre 
 //Cambiar ventana "BCCL.AC.ADM.NOMINA"
 WebUI.switchToWindowTitle('BCCL.AC.ADM.NOMINA')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar Administracion de Nomina
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/10-Cierre de cuenta/Nomina/lnkAdministracionNomina'))
-
-//Cambiar ventana "BCCL.AC.ADM.NOMINA"
-WebUI.switchToWindowTitle('BCCL.AC.ADM.NOMINA')
-
 //Maximizar pantalla
 WebUI.maximizeWindow()
 
-//Setear "No.Cuenta"
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/12-BCCL.AC.ADM.NOMINA/txtNo.Cuenta'), '00560212394')
+//Seteo de Datos "No. Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Cuenta','00560212394')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

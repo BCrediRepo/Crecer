@@ -47,26 +47,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnk Consulta Evolucion Tamao Empresa'))
 
 WebUI.switchToWindowTitle('BCCL.PER.EVOL.TAMEMP')
-
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Se accede al menu
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.PER.EVOL.TAMEMP')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//WebUI.switchToWindowTitle('Temenos T24')
-//
-//WebUI.maximizeWindow()
-//
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnk Consulta Evolucion Tamao Empresa'))
-
-WebUI.switchToWindowTitle('BCCL.PER.EVOL.TAMEMP')
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/BCCL.PER.EVOL.TAMEMP/txtIDPersona'), '1000000011')
+//Seteo de datos "Id. Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Persona', '1000000011')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

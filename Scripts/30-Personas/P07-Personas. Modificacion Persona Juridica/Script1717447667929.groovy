@@ -52,21 +52,12 @@ WebUI.click(findTestObject('Object Repository/31-Personas/Temenos T24/lnkAlta Pe
 //Switch a la ventana Lista de PJ - Alta
 WebUI.switchToWindowTitle('Lista de PJ - Alta')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Click en Alta Persona Juridica
-WebUI.click(findTestObject('Object Repository/31-Personas/Temenos T24/lnkAlta Persona Juridica'))
-
-//Switch a la ventana Lista de PJ - Alta
-WebUI.switchToWindowTitle('Lista de PJ - Alta')
-
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Completamos los datos
-WebUI.setText(findTestObject('Object Repository/31-Personas/Lista de PJ - Alta/txtNo.CUI'), '30709901482')
+//Seteo de datos "No. CUI"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. CUI', '30709901482')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

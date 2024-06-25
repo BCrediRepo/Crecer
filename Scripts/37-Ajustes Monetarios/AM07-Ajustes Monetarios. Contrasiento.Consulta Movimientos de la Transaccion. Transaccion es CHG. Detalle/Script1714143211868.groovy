@@ -41,30 +41,16 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Abre la pestaña del menú Contrasiento total
 WebUI.switchToWindowTitle('Contrasiento Total')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.STMS.ENT.BOOK.CA
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.STMS.ENT.BOOK.CA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña del menú Contrasiento total
-WebUI.switchToWindowTitle('Contrasiento Total')
+//Maximiza la pantalla
+WebUI.maximizeWindow()
 
 //Verifica titulo Contrasiento total
 WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblTituloContrasientoTotal'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblTituloContrasientoTotal'))
 
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-//Ingresa ID de la transacción
-WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/txtIdTransaccion'), 6)
-WebUI.setText(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/txtIdTransaccion'),'CHG232343BKMF')  //antes estaba: CHG222100002J
+//Seteo de datos "Id Transaccion"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', 'CHG232343BKMF') //antes estaba: CHG222100002J
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

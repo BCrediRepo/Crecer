@@ -51,27 +51,15 @@ WebUI.click(findTestObject('Object Repository/21-Fallas/07- Temenos T24 III/lnkC
 //Switch a la ventana BCCL.E.EXTORNO.DISPO.GEOP.PN
 WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP.PN')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en consulta de faltantes en puntos neutrales
-WebUI.click(findTestObject('Object Repository/21-Fallas/07- Temenos T24 III/lnkConsulta Faltantes en Puntos Neutrales'))
-
-//Switch a la ventana BCCL.E.EXTORNO.DISPO.GEOP.PN
-WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP.PN')
-
 //Maximizamos
 WebUI.maximizeWindow()
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/txtFechaDesde'), '20230823')
+//Seteo de Datos "Fecha Desde"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20230823')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lnkEjecutar'))

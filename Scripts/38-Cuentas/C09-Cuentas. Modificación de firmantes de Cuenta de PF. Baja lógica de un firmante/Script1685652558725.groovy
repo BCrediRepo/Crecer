@@ -48,27 +48,16 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/Baja Logic
 // Cambia a la ventana Firmas
 WebUI.switchToWindowTitle('Firmas')
 
-// Maximizamos
+//Maximizar
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/Baja Logica PF - Temenos T24/lnkModificacion y Baja de Firmantes'))
-
-WebUI.switchToWindowTitle('Firmas')
-
-WebUI.maximizeWindow()
-
-//Completamos los datos para la busqueda
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Firmas - Baja log firmante/lnkNueva Seleccion'))
-
-//WebUI.setText(findTestObject('Object Repository/39-Cuentas/Firmas - Baja log firmante/txtNroCuenta'), '21190118359')
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Firmas - Baja log firmante/txtNroCuenta'), '10430033951')
+//Seteo de datos "Nro. Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', '10430033951')
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', '21190118359')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Seleccionar ejecutar
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Firmas - Baja log firmante/lnkEjecutar'))
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

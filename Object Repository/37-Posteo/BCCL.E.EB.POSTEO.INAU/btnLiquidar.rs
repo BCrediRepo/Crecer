@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>a.enqDrillLink</value>
+         <value>#r1 > td:nth-child(9) > a:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -18,7 +18,8 @@
          <value>//*[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Liquidar' or . = 'Liquidar')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>4d353758-10bc-4f99-8534-64a742dd7d01</webElementGuid>
+      <webElementGuid>03b51dc0-6660-4115-bfca-348fea3dae6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>enqDrillLink</value>
-      <webElementGuid>15c0fc24-9141-42cb-8305-f5839d4e65e1</webElementGuid>
+      <webElementGuid>2bf65852-a372-4e78-aa08-1404263676fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +43,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>66ef7f34-3a62-4d35-b357-969ddde22fa5</webElementGuid>
+      <webElementGuid>ccac1479-9551-4e17-8573-bf29d2122ba7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +51,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:drilldown('1','1_1')</value>
-      <webElementGuid>08d18326-70fc-4b87-8aec-e4e090e9657e</webElementGuid>
+      <webElementGuid>965fe19f-6110-4c3f-8240-4f98ef6b6913</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +59,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Liquidar</value>
-      <webElementGuid>f7334dd5-ec3f-4769-a849-fd8ed8650022</webElementGuid>
+      <webElementGuid>b447a36f-c334-4093-b680-6f6c932e7143</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +67,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEEBPOSTEOINAU&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
-      <webElementGuid>e5fbc70f-7770-48e6-80c5-e493146c77d1</webElementGuid>
+      <webElementGuid>489000fc-2805-4ce4-8db6-6f2473dc7486</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -74,7 +75,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[9]/a</value>
-      <webElementGuid>4e5a2ba9-a1ed-4172-b234-a841e98d39e3</webElementGuid>
+      <webElementGuid>afe60562-a5b5-451e-9dae-c7532a7edcf9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +83,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Liquidar')]</value>
-      <webElementGuid>5aec8f9a-2df9-4c30-bec6-fe9cb677dc6c</webElementGuid>
+      <webElementGuid>93cee68d-6530-41a5-bed2-b1a4e74ef630</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +91,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='B.0274'])[1]/following::a[1]</value>
-      <webElementGuid>62ea2ef4-a46d-4e26-bd14-8444a0ba42c2</webElementGuid>
+      <webElementGuid>94b0b52e-749e-4b19-ba43-988adae526ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre Cta -Canc Ef-SdoDr'])[1]/following::a[1]</value>
-      <webElementGuid>95fb2131-0c66-4855-b0ab-654a724fbeb9</webElementGuid>
+      <webElementGuid>2e6681b5-c59b-41b9-b89b-2cf63db4a077</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='C C LEMOS'])[1]/preceding::a[1]</value>
-      <webElementGuid>d3524eaf-4a47-4ae8-bade-ae82a4efba16</webElementGuid>
+      <webElementGuid>0381a524-61d2-4f3d-9916-2f26ad0e9660</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cierre Cta -Canc Ef-SdoDr'])[2]/preceding::a[1]</value>
-      <webElementGuid>5a7af1a6-8b0d-4571-a09d-6d80b09c910c</webElementGuid>
+      <webElementGuid>ab08ed9c-3a33-428c-a55b-0e316087b9eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +123,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Liquidar']/parent::*</value>
-      <webElementGuid>5d5e62ba-c2ef-444c-9c49-047718ea3bab</webElementGuid>
+      <webElementGuid>ff24d097-457d-4b0d-b9e3-2531670678f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +131,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
-      <webElementGuid>b1510823-8130-426d-8d83-49b57082b5cc</webElementGuid>
+      <webElementGuid>144c4013-b972-400d-85bf-d281a8cea150</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,7 +139,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[9]/a</value>
-      <webElementGuid>876dbc41-7bf6-4a88-89ce-6eb5f652180c</webElementGuid>
+      <webElementGuid>976ce0eb-dde1-4788-89f9-65333ee0bf25</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -146,6 +147,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Liquidar' or . = 'Liquidar')]</value>
-      <webElementGuid>a3881d74-3370-4a97-a75f-54522c572a74</webElementGuid>
+      <webElementGuid>4401e0c6-a7e1-494d-90b3-93941db1b9b3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

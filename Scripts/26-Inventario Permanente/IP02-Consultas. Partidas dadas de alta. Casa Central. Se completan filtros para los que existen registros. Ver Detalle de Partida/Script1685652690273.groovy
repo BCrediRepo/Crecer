@@ -36,24 +36,13 @@ WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.I
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.CC.ALTAS')
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.PARTIDAS.CC.ALTAS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.CC.ALTAS')
-
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/txtSucursal'), '001')
+//Seteo de Datos "Sucursal", "Codigo IP"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP', '1008')
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/txtCodigoIP'), '1008')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

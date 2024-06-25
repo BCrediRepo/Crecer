@@ -39,23 +39,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //
 //WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
 
+//Cambio de ventana a "BCCL.AC.CONSULTA.X.ESTADO"
 WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Se accede al menu
-WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.AC.CONSULTA.X.ESTADO')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/Consulta de Cuentas/lnkConsultadeCuentasporEstado'))
-
-WebUI.switchToWindowTitle('BCCL.AC.CONSULTA.X.ESTADO')
-
-WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtClienteID'), '1002131534')
-
+//Seteo de Datos "Id. Cliente" y "Estado" 
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Cliente','1002131534')
 //WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
-WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/txtEstado'), 'ACT')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Estado','ACT')
 //WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CONSULTA.X.ESTADO/rbEstadoDropdown'))
 
 // Captura el tiempo de inicio
