@@ -25,25 +25,69 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingresamos el menu ?1 en el comandline
-
+//Setear "?1" en el comandline
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscar'), '?1')
 
+//Seleccionar boton buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana de "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-WebUI.maximizeWindow()
-
+//Seleccionar "Sucursal Piloto"
 WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
 
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
+//Seleccionar "D3 - CC1"
 WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/spanD3-CC1'))
 
+//Seleccionar "CC1 - Cheques certificados y Financieros"
 WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/spanCC1-ChequesCertificadosyFinancieros'))
 
+//Seleccionar "CHEQUES FINANCIEROS"
 WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/Cheques Certificados y Financieros/spanChequesFinancieros'))
 
+//Seleccionar "AUTORIZACION DE BAJA DE CHEQUES FINANCIEROS"
+WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/CC1/Cheques Certificados y Financieros/CHEQUES FINANCIEROS/lnkAUTORIZACIONDEBAJADECHEQUESFINANCIEROS'))
 
+//Cambiar a la ventana "BCCL.CQ.CF.AUT.BAJA"
+WebUI.switchToWindowIndex(2)
 
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta Cheque', '10430033951')
 
+//Maximizar Pantalla
+WebUI.maximizeWindow()
 
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar "boton Ejecutar"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+
+//Seleccionar "Autorizar"
+WebUI.click()
+
+//Seleccionar "boton Autorizar Registro"
+WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnAutorizarRegistro'))
+
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+
+//Validar "Txn Completa"
+def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+assert element.contains('Txn Completa')
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}

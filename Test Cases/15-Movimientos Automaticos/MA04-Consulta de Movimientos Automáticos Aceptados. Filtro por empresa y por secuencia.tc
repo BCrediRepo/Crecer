@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MA04-Consulta de Movimientos Automáticos Aceptados. Filtro por empresa y por secuencia</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>eb4ab123-3876-4f71-b176-addec84e16b9</testCaseGuid>
-</TestCaseEntity>

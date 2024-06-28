@@ -23,7 +23,7 @@ import java.time.format.DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,18), findTestData('MainData/Users').getValue(2,18))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,68), findTestData('MainData/Users').getValue(2,68))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -36,36 +36,21 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Cambiar a la ventana "%BCCL.MOV.AUT.INP.DATA"
 WebUI.switchToWindowIndex(2)
 
-//Seteo de Datos SBL.SETTLEMENT = N, SBL.RETURN=4, SBL.STATUS=NOT.POSTED,SBL.COD.SUC: 063
+//Filtra por SBL.RETURN=6, SBL.STATUS=NOT.POSTED,SBL.COD.SUC: 063
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.SETTLEMENT','N')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','4')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','6')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.STATUS','NOT.POSTED')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','063')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','030')
 
 //ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Capturar el tiempo de inicio
-long startTime = System.currentTimeMillis()
-
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/btnEjecutar'))
-
-//Verificar las columnas del registro Y EL titulo
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblTituloBCCL.MOV.AUT.INP.DATA-ListaDefault'))
-
-//Capturar tiempo de finalización
-long endTime = System.currentTimeMillis()
-
-//Calcular diferencia para obtener el tiempo transcurrido
-long elapsedTime = endTime - startTime
-
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //Seleccionar primer registro
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/btnVerRegistro'))
@@ -75,28 +60,21 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Auto
 
 //Validar valor de "Sbl Cod Suc"
 def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodSuc'))
-assert element.contains('063')
+assert element.contains('030')
 
-//Verificar valor de "Sbl Return"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturn'))
+//Verificar valor de "Sbl Return CGU"
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturnCGU'))
 
-//Validar valor de "Sbl Return"
-def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturn'))
-assert element2.contains('4')
+//Validar valor de "Sbl Return CGU"
+def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturnCGU'))
+assert element2.contains('6')
 
-//Verificar valor de "Sbl Settlement Rechazado"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementRechazado'))
+//Verificar valor de "Sbl Status NOT POSTED CGU"
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTEDCGU'))
 
-//Validar valor de "Sbl Settlement Rechazado"
-def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementRechazado'))
-assert element3.contains('N')
-
-//Verificar valor de "Sbl Status NOT POSTED"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
-
-//Validar valor de "Sbl Status NOT POSTED"
-def element4 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
-assert element4.contains('NOT.POSTED')
+//Validar valor de "Sbl Status NOT POSTED CGU"
+def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTEDCGU'))
+assert element3.contains('NOT.POSTED')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

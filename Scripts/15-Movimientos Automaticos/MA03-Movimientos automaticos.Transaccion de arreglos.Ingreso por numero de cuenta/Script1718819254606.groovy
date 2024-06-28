@@ -21,65 +21,53 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 11), findTestData('MainData/Users').getValue(2, 11))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,11), findTestData('MainData/Users').getValue(2,11))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Movimientos Automaticos"
 WebUI.click(findTestObject('02-Dashboard/lnkMovimientosAutomaticos'))
 
-//Seleccionar "Movimientos Historicos"
-WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkConsultaMovimientosHistoricos'))
+//Seleccionar "Imputar Arreglos"
+WebUI.click(findTestObject('02-Dashboard/14-Movimientos Automaticos/lnkImputarArreglos'))
 
-//Cambiar a la ventana "BCCL.E.MOV.AUT.TRANS.HIST"
+//Cambiar a la ventana "BCCL.E.MOV.AUT.TRANS.ARR"
 WebUI.switchToWindowIndex(1)
 
-//Seteo de Datos "Numero de Cuenta"
+//Seteo de Datos "CUENTA"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta','10430040953')
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Seleccionar la opcion "Mayor que" en el ComboBox
-WebUI.selectOptionByIndex(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/cbFechadeProceso'), 6)
-
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Proceso', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CUENTA','10430047770')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Capturar tiempo de inicio
-long startTime = System.currentTimeMillis()
-
+//Seleccionar Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Seleccionar icono de larga vista
-WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/btnVista'))
+//Seleccionar boton Fix
+WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.ARR/btnFix'))
 
-//Sacar Captura
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Verificar "Informacion del debito automatico"
+//Verificar Informacion debito automatico
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblInfodebitoautomatico'))
 
-//Validar "Informacion del debito automatico"
-def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblInfodebitoautomatico'))
-assert element.contains('Informacion del debito automatico')
+//Validar Informacion debito automatico
+def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblInfodebitoautomatico'))
+assert element2.contains('Informacion del Debito Automatico')
 
-//Capturar tiempo de finalización
-long endTime = System.currentTimeMillis()
-
-//Calcular diferencia para obtener el tiempo transcurrido
-long elapsedTime = endTime - startTime
-
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+//Verificar boton Aceptar Registro
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }

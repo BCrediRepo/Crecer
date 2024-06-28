@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA16-Consulta de Movimientos Automaticos Aceptados. Movimiento aceptado. Movimiento no arreglado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc99de4a-a14f-4507-908d-34891e2c5282</testCaseGuid>
+</TestCaseEntity>

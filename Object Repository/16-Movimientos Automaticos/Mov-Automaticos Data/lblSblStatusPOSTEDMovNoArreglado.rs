@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblSblStatusPOSTEDMovNoArreglado</name>
+   <tag></tag>
+   <elementGuidId>1e1aa257-9481-4e64-b4c2-659409bdf25a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[81]/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>600892d8-98f5-4c56-bf51-19e9c8eed623</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLMOVAUTINPDATA</value>
+      <webElementGuid>220f3f50-d5e7-4c6c-9937-d954489493b9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>POSTED</value>
+      <webElementGuid>fb2d5d81-c764-4b00-81a7-bfac1c691812</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[81]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLMOVAUTINPDATA&quot;]</value>
+      <webElementGuid>37551247-dad2-4de5-bb91-31690ee4e07b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[81]/td[3]/span</value>
+      <webElementGuid>7f5cd7e1-456d-456f-82e1-a3ee4045fca9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Status'])[1]/following::span[1]</value>
+      <webElementGuid>d8a72f2e-4ba4-4899-b6b9-3e5365c4ff4d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Fec Value'])[1]/following::span[3]</value>
+      <webElementGuid>5e7bd211-729a-432a-9d7e-30684f2a5aea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Resp Flag'])[1]/preceding::span[2]</value>
+      <webElementGuid>85f84a23-9674-420a-9057-4b0186b95ebe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Y'])[1]/preceding::span[2]</value>
+      <webElementGuid>2b471850-1e45-438f-874d-205b931c8fb9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='POSTED']/parent::*</value>
+      <webElementGuid>9335e203-ab67-46dc-828c-30bdec43cf42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[81]/td[3]/span</value>
+      <webElementGuid>9a890a72-22ba-477a-aaaa-2acbb72b00d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'POSTED' or . = 'POSTED')]</value>
+      <webElementGuid>643e197e-19aa-465b-a337-7825c2440254</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

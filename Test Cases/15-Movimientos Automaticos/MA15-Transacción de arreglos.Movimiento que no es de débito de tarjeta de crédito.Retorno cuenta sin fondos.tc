@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MA15-Transacción de arreglos.Movimiento que no es de débito de tarjeta de crédito.Retorno cuenta sin fondos</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>2c1c64cd-52c4-49a2-894a-0961752405ab</testCaseGuid>
-</TestCaseEntity>

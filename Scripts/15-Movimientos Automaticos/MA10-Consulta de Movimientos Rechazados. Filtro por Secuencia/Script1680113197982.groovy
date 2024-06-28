@@ -27,55 +27,55 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.REJ
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+//Setear "ENQ BCCL.E.MOV.AUT.REJ" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.REJ')
 
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Abre la pestaña BCCL.E.MOV.AUT.REJ
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.REJ')
-
-//Maximiza la pestaña
-WebUI.maximizeWindow()
-
-//Verifica que se visualice el titulo BCCL.E.MOV.AUT.REJ
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblTituloBCCL.E.MOV.AUT.REJ'), 6)
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Cambiar a la ventana "BCCL.E.MOV.AUT.REJ"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Secuencia"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0065823')
 
-// Captura el tiempo de inicio
+//Capturar el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Presiona botón ejecutar
+//ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/btnEjecutar'))
 
 //Verifica que se mueste el titulo del informe de movimientos rechazados
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblTituloMovimientosrechazaninforme'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//Toma un ScreenShot
+//ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ver detalle del informe
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/btnVerRegistro'))
 
-//Verifica la secuencia ingresada
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblSecuencia'),6)
+//Verificar la secuencia ingresada
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblSecuencia'))
 
-//---------------------------------------------------------------------------------------------------------------------
+//Validar la secuencia ingresada
+def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblSecuencia'))
+assert element.contains('0065823')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

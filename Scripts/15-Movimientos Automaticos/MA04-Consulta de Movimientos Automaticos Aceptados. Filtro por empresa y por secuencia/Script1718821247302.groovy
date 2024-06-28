@@ -23,43 +23,44 @@ import java.time.format.DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,18), findTestData('MainData/Users').getValue(2,18))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "BCCL.MOV.AUT.INP.DATA L L" en el buscador
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'BCCL.MOV.AUT.INP.DATA L L')
+//Setear "ENQ BCCL.E.MOV.AUT.ACPT" en el buscador
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.ACPT')
 
-//Seleccionar boton buscar
+//Seleccionar boton de buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Cambiar a la ventana "%BCCL.MOV.AUT.INP.DATA"
-WebUI.switchToWindowIndex(2)
+//Cambiar a la ventana "BCCL.E.MOV.AUT.ACPT"
+WebUI.switchToWindowIndex(1)
 
-//Seteo de Datos SBL.SETTLEMENT = N, SBL.RETURN=4, SBL.STATUS=NOT.POSTED,SBL.COD.SUC: 063
+//Seteo de Datos "Cod. Empresa", "Secuencia"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Empresa','852')
 
-//Maximizar Ventana
+//Maximizar la Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.SETTLEMENT','N')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','4')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.STATUS','NOT.POSTED')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','063')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0363857')
 
-//ScreenShot
+//Tomar ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Capturar el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Seleccionar boton Ejecutar
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/btnEjecutar'))
+//Presionar boton ejecutar
+WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/btnEjecutar'))
 
-//Verificar las columnas del registro Y EL titulo
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblTituloBCCL.MOV.AUT.INP.DATA-ListaDefault'))
+//Tomar un ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Capturar tiempo de finalización
+//Verificar Registro Filtrado
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblMovimientosaceptadasinforme'))
+
+//Capturar tiempo de finalizacion
 long endTime = System.currentTimeMillis()
 
 //Calcular diferencia para obtener el tiempo transcurrido
@@ -67,36 +68,29 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//Seleccionar primer registro
-WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/btnVerRegistro'))
+//Ver detalle del registro
+WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/btnVerRegistro'))
 
 //Verificar valor de "Sbl Cod Suc"
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodSuc'))
 
 //Validar valor de "Sbl Cod Suc"
 def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodSuc'))
-assert element.contains('063')
+assert element.contains('073')
 
-//Verificar valor de "Sbl Return"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturn'))
+//Verificar valor de "Sbl Secuence"
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSecuence'))
 
-//Validar valor de "Sbl Return"
-def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturn'))
-assert element2.contains('4')
+//Validar valor de "Sbl Secuence"
+def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSecuence'))
+assert element2.contains('0363857')
 
-//Verificar valor de "Sbl Settlement Rechazado"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementRechazado'))
+//Verificar valor de "Sbl Cod Emp"
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodEmp'))
 
-//Validar valor de "Sbl Settlement Rechazado"
-def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementRechazado'))
-assert element3.contains('N')
-
-//Verificar valor de "Sbl Status NOT POSTED"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
-
-//Validar valor de "Sbl Status NOT POSTED"
-def element4 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
-assert element4.contains('NOT.POSTED')
+//Validar valor de "Sbl Cod Emp"
+def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodEmp'))
+assert element3.contains('852')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

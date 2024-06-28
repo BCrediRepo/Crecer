@@ -36,36 +36,22 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Cambiar a la ventana "%BCCL.MOV.AUT.INP.DATA"
 WebUI.switchToWindowIndex(2)
 
-//Seteo de Datos SBL.SETTLEMENT = N, SBL.RETURN=4, SBL.STATUS=NOT.POSTED,SBL.COD.SUC: 063
+//Seteo de Datos SBL.RETURN=0, SBL.STATUS=POSTED,SBL.COD.SUC: 063, SBL.SETTLEMENT= N
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.SETTLEMENT','N')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','4')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.STATUS','NOT.POSTED')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','0')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.STATUS','POSTED')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','063')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.SETTLEMENT','N')
 
 //ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Capturar el tiempo de inicio
-long startTime = System.currentTimeMillis()
-
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/btnEjecutar'))
-
-//Verificar las columnas del registro Y EL titulo
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/lblTituloBCCL.MOV.AUT.INP.DATA-ListaDefault'))
-
-//Capturar tiempo de finalización
-long endTime = System.currentTimeMillis()
-
-//Calcular diferencia para obtener el tiempo transcurrido
-long elapsedTime = endTime - startTime
-
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //Seleccionar primer registro
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/btnVerRegistro'))
@@ -82,21 +68,21 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Auto
 
 //Validar valor de "Sbl Return"
 def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturn'))
-assert element2.contains('4')
+assert element2.contains('0')
 
-//Verificar valor de "Sbl Settlement Rechazado"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementRechazado'))
+//Verificar valor de "Sbl Status POSTED Mov No Arreglado"
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusPOSTEDMovNoArreglado'))
 
-//Validar valor de "Sbl Settlement Rechazado"
-def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementRechazado'))
-assert element3.contains('N')
+//Validar valor de "Sbl Status POSTED Mov No Arreglado"
+def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusPOSTEDMovNoArreglado'))
+assert element3.contains('POSTED')
 
-//Verificar valor de "Sbl Status NOT POSTED"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
+//Verificar valor de "Sbl Settlement Aceptado"
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementAceptado'))
 
-//Validar valor de "Sbl Status NOT POSTED"
-def element4 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
-assert element4.contains('NOT.POSTED')
+//Validar valor de "Sbl Settlement Aceptado"
+def element4 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementAceptado'))
+assert element4.contains('N')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

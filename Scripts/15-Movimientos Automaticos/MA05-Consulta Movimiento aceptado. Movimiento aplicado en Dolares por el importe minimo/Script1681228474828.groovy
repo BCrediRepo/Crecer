@@ -28,39 +28,28 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.ACPT
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+//Setear "ENQ BCCL.E.MOV.AUT.ACPT" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.ACPT')
 
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
+//Seleccionar el boton de buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Abre la pestaña BCCL.E.MOV.AUT.ACPT
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.ACPT')
+//Cambiar a la ventana "BCCL.E.MOV.AUT.ACPT"
+WebUI.switchToWindowIndex(1)
 
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Maximiza la pestaña
-WebUI.maximizeWindow()
-
-//Verifica que se visualice el titulo BCCL.E.MOV.AUT.ACPT
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloBCCL.E.MOV.AUT.ACPT'), 6)
-
-//Nueva seleccion
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lnkNuevaSeleccion'),6)
+//Limpiar Registros de Busqueda
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lnkNuevaSeleccion'))
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Presiona botón ejecutar
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/btnEjecutar'),6)
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/btnEjecutar'))
 
-//Verifica que se mueste el titulo del informe de movimientos aceptados
+//Verificar que se mueste el titulo del informe de movimientos aceptados
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloMovimientosaceptadasinforme'))
 
 // Captura el tiempo de finalización
@@ -71,13 +60,19 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//Verifica el monto en dolares
+//Verificar Importe Dolar
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblImporteDolar'))
 
-//Verifica el importe minimo
+//Validar Importe Dolar
+def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblImporteDolar'))
+assert element.contains('Importe Dolar')
+
+//Verificar Pago Minimo
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblPagoMinimo'))
 
-//---------------------------------------------------------------------------------------------------------------------
+//Validar Pago Minimo
+def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblPagoMinimo'))
+assert element2.contains('Pago Minimo')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

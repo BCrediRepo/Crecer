@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>cbFechadeProceso</name>
+   <tag></tag>
+   <elementGuidId>be2fd8a9-e555-4afc-b5fc-5b5f881644aa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>select[name=&quot;operand:2:1:1&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@name='operand:2:1:1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>4ff8d800-e157-494f-8dc6-5fe610810658</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>operand:2:1:1</value>
+      <webElementGuid>04487928-a22f-4ca5-b2dc-41cda2dcacce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqsel enqsel_BCCLEMOVAUTTRANSHIST</value>
+      <webElementGuid>be3f610a-4c42-4294-992d-4d2ee70382de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>igualcomono comono igual amayor quemayor o igual quemenor quemenor o igual queentreno entrecontieneno contienecomienza confinaliza conno comienza conno finaliza consuena como</value>
+      <webElementGuid>82030f28-20d4-4850-8cf7-a4433978cde6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[2]/td[@class=&quot;oper oper_BCCLEMOVAUTTRANSHIST&quot;]/select[@class=&quot;enqsel enqsel_BCCLEMOVAUTTRANSHIST&quot;]</value>
+      <webElementGuid>ad4e4425-a7c4-4022-b412-b6fcda1786c4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@name='operand:2:1:1']</value>
+      <webElementGuid>0b944b95-6470-40c0-aee9-6a176e8733b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='selectiondisplay']/tbody/tr[2]/td[2]/select</value>
+      <webElementGuid>1779026f-c34c-4521-abe0-2507b5b29ad3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha de Proceso'])[4]/following::select[1]</value>
+      <webElementGuid>792d715b-a587-4e84-a6a2-c3ad65d97d1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Numero de Cuenta'])[4]/following::select[2]</value>
+      <webElementGuid>c23b4b1a-e6fa-49d2-8059-17c0943f2bd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AR0011043 : BCCL.E.MOV.AUT.TRANS.HIST'])[1]/preceding::select[1]</value>
+      <webElementGuid>50b25726-a4e2-400c-bb11-64642b5882c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::select[1]</value>
+      <webElementGuid>df511338-1f73-4c06-ad25-97f6ba783c89</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/table/tbody/tr[2]/td[2]/select</value>
+      <webElementGuid>a655507f-86d5-48fc-8c7b-2bba3131c257</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'operand:2:1:1' and (text() = 'igualcomono comono igual amayor quemayor o igual quemenor quemenor o igual queentreno entrecontieneno contienecomienza confinaliza conno comienza conno finaliza consuena como' or . = 'igualcomono comono igual amayor quemayor o igual quemenor quemenor o igual queentreno entrecontieneno contienecomienza confinaliza conno comienza conno finaliza consuena como')]</value>
+      <webElementGuid>512bfd47-b7d8-4ba1-b78d-ee7ff8b5479c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

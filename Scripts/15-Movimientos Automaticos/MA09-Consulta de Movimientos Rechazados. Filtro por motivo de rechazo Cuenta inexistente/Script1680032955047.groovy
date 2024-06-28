@@ -27,43 +27,46 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.REJ
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+//Setear "ENQ BCCL.E.MOV.AUT.REJ" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.REJ')
 
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Abre la pestaña BCCL.E.MOV.AUT.REJ
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.REJ')
-
-//Maximiza la pestaña
-WebUI.maximizeWindow()
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Cambiar a la ventana "BCCL.E.MOV.AUT.REJ"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Error"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Error','1')
 
-// Captura el tiempo de inicio
+//Tomar ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Presiona botón ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/btnEjecutar'))
 
-//Verifica que se mueste el titulo del informe de movimientos rechazados
+//Verificar "Movimientos rechazan informe"
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblTituloMovimientosrechazaninforme'))
 
-// Captura el tiempo de finalización
+//Validar "Movimientos rechazan informe"
+def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblTituloMovimientosrechazaninforme'))
+assert element.contains('Movimientos rechazan informe')
+
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-//---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

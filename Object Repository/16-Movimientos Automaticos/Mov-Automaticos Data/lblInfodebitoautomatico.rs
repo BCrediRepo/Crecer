@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblInfodebitoautomatico</name>
+   <tag></tag>
+   <elementGuidId>09e40c79-af0f-49a6-a368-49407646dfbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr/td/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.comment.comment_BCCLMOVAUTINPDATABKP.comment_BCCLMOVAUTINPDATABKP_TRANSARR</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b4706836-eb57-4195-af03-a3c18251e91f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>comment comment_BCCLMOVAUTINPDATABKP comment_BCCLMOVAUTINPDATABKP_TRANSARR</value>
+      <webElementGuid>3695e67e-17ca-49c2-b78f-76dc353731d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Informacion del debito automatico</value>
+      <webElementGuid>d8672825-10da-48b2-983b-52d1b89e1465</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[@class=&quot;field field_BCCLMOVAUTINPDATABKP field_BCCLMOVAUTINPDATABKP_TRANSARR&quot;]/span[@class=&quot;comment comment_BCCLMOVAUTINPDATABKP comment_BCCLMOVAUTINPDATABKP_TRANSARR&quot;]</value>
+      <webElementGuid>eb3d0735-a028-4f67-9700-01c16a84e95a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr/td/span</value>
+      <webElementGuid>83b3dfa6-343a-4fb9-9486-3cd37de97ae5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.043 Villa Mitre)'])[1]/following::span[1]</value>
+      <webElementGuid>f45ef5f8-b1d5-4763-bf5e-bc603c587924</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BCCL.MOV.AUT.INP.DATA.BKP,TRANS.ARR'])[1]/following::span[2]</value>
+      <webElementGuid>3e6ea26f-04b8-40e3-bed4-767e16331f73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal de Adhesion'])[1]/preceding::span[2]</value>
+      <webElementGuid>27dc159f-d4e2-446d-8548-f200b2461974</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Secuencia'])[1]/preceding::span[3]</value>
+      <webElementGuid>81748b10-e74f-4794-b64a-6ccf1c33d110</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Informacion del debito automatico']/parent::*</value>
+      <webElementGuid>1bd61669-0d5f-47e6-89ca-cd3806b3a22b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td/table/tbody/tr/td/span</value>
+      <webElementGuid>050851e9-92e2-4db9-90a0-2b5af4ea146a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Informacion del debito automatico' or . = 'Informacion del debito automatico')]</value>
+      <webElementGuid>ac41bd35-2012-447d-a299-abd23fd3698b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

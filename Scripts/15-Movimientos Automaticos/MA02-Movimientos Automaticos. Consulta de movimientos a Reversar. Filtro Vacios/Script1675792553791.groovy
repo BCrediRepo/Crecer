@@ -25,14 +25,22 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Setear "ENQ BCCL.E.MOV.AUT.TRANS.REVM" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.MOV.AUT.TRANS.REVM')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.TRANS.REVM')
+//Cambiar a la ventana "BCCL.E.MOV.AUT.TRANS.REVM"
+WebUI.switchToWindowIndex(1)
+
+//Limpiar los registros de busqueda
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkNuevaSeleccion'))
 
-// Captura el tiempo de inicio
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 WebUI.click(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lnkEjecutar'))
@@ -40,23 +48,27 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 label = WebUI.verifyElementVisible(findTestObject('16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/lblMovimientosrechazaninforme'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-if (label == true) {
-	WebUI.maximizeWindow()
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	}else {
-	WebUI.maximizeWindow()
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-}
+//Seleccionar boton Fix
+WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.REVM/btnFix'))
 
-//---------------------------------------------------------------------------------------------------------------------
+//Verificar Informacion debito automatico
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblInfodebitoautomatico'))
+
+//Validar Informacion debito automatico
+def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblInfodebitoautomatico'))
+assert element2.contains('Informacion del debito automatico')
+
+//Verificar boton Aceptar Registro
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

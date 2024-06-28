@@ -127,14 +127,14 @@
       <guid>b327c6e5-4bad-4a8c-bf1b-d8780f86221f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por número de cuenta</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA03-Movimientos automaticos.Transaccion de arreglos.Ingreso por numero de cuenta</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>1dd345ec-4daf-4d6a-b19a-e38b4c6c716a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA04-Consulta de Movimientos Automáticos Aceptados. Filtro por empresa y por secuencia</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA04-Consulta de Movimientos Automaticos Aceptados. Filtro por empresa y por secuencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -155,7 +155,7 @@
       <guid>eb54e3ec-4fb2-4869-9ba7-f8d9c41862cf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA07-Consulta Movimiento aceptado. Movimiento aplicado en Pesos por el importe mínimo</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA07-Consulta Movimiento aceptado. Movimiento aplicado en Pesos por el importe minimo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -190,42 +190,42 @@
       <guid>03450dee-17f5-4d7c-9cf5-e6b0af608ae9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA12-Transacción de arreglos.Ingreso por código de resultado</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA12-Transaccion de arreglos.Ingreso por codigo de resultado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>bebbf1f0-3e20-47e5-a612-34ff354a5314</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA13-Transacción de arreglos.Movimiento de débito de tarjeta de credito rechazado por fondos insuficientes.Completitud</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA13-Transaccion de arreglos.Movimiento de debito de tarjeta de credito rechazado por fondos insuficientes.Completitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>f4696fe5-a62d-41b0-9a89-ffdac47e321f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA14-Transacción de arreglos.Movimiento para arreglar.No es pago de tarjeta de credito</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA14-Transaccion de arreglos.Movimiento para arreglar.No es pago de tarjeta de credito</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>21fca0ca-f1d0-4d55-83d0-52e906f5c88e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA15-Transacción de arreglos.Movimiento que no es de débito de tarjeta de crédito.Retorno cuenta sin fondos</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA15-Transaccion de arreglos.Movimiento que no es de debito de tarjeta de credito.Retorno cuenta sin fondos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4711406d-2a12-4fa3-a732-9c0188606b8b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA16-Consulta de Movimientos Automáticos Aceptados. Movimiento aceptado. Movimiento no arreglado</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA16-Consulta de Movimientos Automaticos Aceptados. Movimiento aceptado. Movimiento no arreglado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>999483d9-3dd7-4ee3-b540-5a06966cf90f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA17-Consulta de Movimientos Automáticos Aceptados. Movimiento aceptado. Movimiento arreglado</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA17-Consulta de Movimientos Automaticos Aceptados. Movimiento aceptado. Movimiento arreglado</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -239,14 +239,14 @@
       <guid>8a80c6ba-42f7-45cb-9aeb-32de33bb03c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA19-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta CGU excede el límite</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA19-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta CGU excede el limite</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>5fce0f0a-6575-4d5e-9a2a-7405cd338fee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/MA20-Movimientos Automaticos.Transaccion de arreglos.Movimiento sin fecha valor.Nueva cuenta valida</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/REVISAR-Movimientos Automaticos.Transaccion de arreglos.Movimiento sin fecha valor.Nueva cuenta valida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

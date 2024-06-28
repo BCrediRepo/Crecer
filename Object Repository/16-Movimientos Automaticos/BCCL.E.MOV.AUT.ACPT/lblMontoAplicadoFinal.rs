@@ -6,15 +6,15 @@
    <elementGuidId>34fb43c1-cc5e-4676-9436-c95e357f7573</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText16</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText16']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#columnHeaderText17</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>e873b21b-2cbf-49ac-bc3c-90e84a3b7765</webElementGuid>
+      <webElementGuid>f5d87a79-0463-4a44-8115-6fae1a980efe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>4a85a101-bbf8-44fa-a53a-d5e6421f2bfe</webElementGuid>
+      <webElementGuid>7a1509b4-1e8a-41d3-b36e-352eaee74ba2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>56d842ff-58e4-4df2-90fa-0fcc4b3847ee</webElementGuid>
+      <webElementGuid>ade57329-4c50-4686-a1de-1693b99c7fd5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText16</value>
-      <webElementGuid>4855331b-3cce-458d-b10e-1ff1a85ad531</webElementGuid>
+      <webElementGuid>a25d0dc7-127e-4fae-aab9-bdbe3a3df9bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Monto Aplicado</value>
-      <webElementGuid>58c4e3b1-2d83-465d-bab2-e1366851fc8e</webElementGuid>
+      <webElementGuid>7a7603b4-c8dc-4496-a51b-75e07e393048</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText16&quot;)</value>
-      <webElementGuid>452cbb4b-4e18-4d30-af52-3ca0d7fff24e</webElementGuid>
+      <webElementGuid>04c1ef6d-9c4c-4220-8d07-92bf749810c1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText16']</value>
-      <webElementGuid>516916fc-0038-4a06-a088-a850bd73b723</webElementGuid>
+      <webElementGuid>1aebbc9d-d528-4ac2-a9b9-5b338d6a2b77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader16']/table/tbody/tr/th</value>
-      <webElementGuid>896d7697-ee3c-4ad3-8e99-7576d3fadc83</webElementGuid>
+      <webElementGuid>310f645e-166a-4d5d-b39d-1966595b493a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Aplicada'])[1]/following::th[3]</value>
-      <webElementGuid>ec74c613-0f44-4acd-bf4f-0180a76767ad</webElementGuid>
+      <webElementGuid>e668ad2f-fd02-43e8-a77f-1e5eac66e3fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Aplicacion'])[1]/following::th[6]</value>
-      <webElementGuid>771591ef-950e-463c-ad9c-95399d5643e6</webElementGuid>
+      <webElementGuid>e3891b3d-e0b5-402c-a796-525ef71b9722</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='VISCCO'])[1]/preceding::th[3]</value>
-      <webElementGuid>b74b5205-f2e4-474e-92bd-4df6add31582</webElementGuid>
+      <webElementGuid>b187374f-0c52-4607-96fc-0e7e023bd067</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='D'])[1]/preceding::th[3]</value>
-      <webElementGuid>e712ce3e-049f-44a2-a4f6-59bb3856ddf8</webElementGuid>
+      <webElementGuid>e9250c6b-be00-47f1-8fa2-25ffa85c5a2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Monto Aplicado']/parent::*</value>
-      <webElementGuid>4b5df2c7-132a-455a-a703-f650068185de</webElementGuid>
+      <webElementGuid>f63c8dc9-94f2-4366-8f2b-3a5dbf067608</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th[16]/table/tbody/tr/th</value>
-      <webElementGuid>62115971-ce78-4fed-98c4-53a77fdec821</webElementGuid>
+      <webElementGuid>218dcd35-d338-4f13-bc84-384acb215b77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText16' and (text() = 'Monto Aplicado' or . = 'Monto Aplicado')]</value>
-      <webElementGuid>37c97ed5-dfe5-4128-bb4e-39ec716e572e</webElementGuid>
+      <webElementGuid>cb91ad0a-727f-4a84-b8da-dfec59013606</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

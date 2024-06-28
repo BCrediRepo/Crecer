@@ -27,45 +27,66 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.MOV.AUT.ACPT
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
+//Setear "ENQ BCCL.E.MOV.AUT.ACPT" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MOV.AUT.ACPT')
 
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Abre la pestaña BCCL.E.MOV.AUT.ACPT
-WebUI.switchToWindowTitle('BCCL.E.MOV.AUT.ACPT')
+//Cambiar a la ventana "BCCL.E.MOV.AUT.ACPT"
+WebUI.switchToWindowIndex(1)
 
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Maximiza la pestaña
-WebUI.maximizeWindow()
-
-//Verifica que se visualice el titulo BCCL.E.MOV.AUT.ACPT
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloBCCL.E.MOV.AUT.ACPT'), 6)
-
-//Nueva seleccion
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lnkNuevaSeleccion'),6)
+//Limpiar Registros de Busqueda
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lnkNuevaSeleccion'))
 
-//Presiona botón ejecutar
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/btnEjecutar'),6)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Account Id','00730011369')
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
+//Tomar ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/btnEjecutar'))
 
-//Verifica que se mueste el titulo del informe de movimientos aceptados
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloMovimientosaceptadasinforme'),6)
+//Verificar que se mueste el titulo del informe de movimientos aceptados
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblTituloMovimientosaceptadasinforme'))
 
-//Verifica el monto en dolares
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblImporteDolar'),6)
+//Verificar Titulo de la columna Importe Dolar
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblImporteDolar'))
 
-//Verifica el importe total
-WebUI.waitForElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblMontoAplicadoFinal'),6)
+//Validar Titulo de la columna Importe Dolar
+def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblImporteDolar'))
+assert element.contains('Importe Dolar')
 
-//---------------------------------------------------------------------------------------------------------------------
+//Verificar Primer Valor de Importe Dolar
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblValorImporteDolar'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblMontoAplicadoFinal'), 5)
+
+//Verificar Monto Aplicado
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblMontoAplicadoFinal'))
+
+//Validar Monto Aplicado
+def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblMontoAplicadoFinal'))
+assert element2.contains('Monto Aplicado')
+
+//Verificar primer valor Importe Dolar
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblValorImporteDolar'))
+
+//Almacenar Valor Importe Dolar
+def valorImporteDolar = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.ACPT/lblValorImporteDolar'))
+
+if (valorImporteDolar != null) {
+			
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+
+} else {
+
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+	
+	}
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

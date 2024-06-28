@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTituloMovimientosrechazaninforme</name>
+   <name>lblSblSettlementRechazado</name>
    <tag></tag>
-   <elementGuidId>4209c2e1-8c42-4657-a80c-6d7017811522</elementGuidId>
+   <elementGuidId>cb12e7c4-1288-42f6-8053-c4b536736239</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+         <value>//table[@id='tab1']/tbody/tr[73]/td[3]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,79 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>a6f50358-457f-4282-acfb-d6c87d281732</webElementGuid>
+      <value>span</value>
+      <webElementGuid>75a185af-8cfe-4c4f-876f-9be4465393df</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_BCCLMOVAUTINPDATA</value>
+      <webElementGuid>24b6aed6-f0e1-476d-9aeb-2175061a998a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> Movimientos rechazan informe</value>
-      <webElementGuid>77792b97-7cfb-477e-a5b4-070a5a7b954c</webElementGuid>
+      <value>N</value>
+      <webElementGuid>10b26ec8-6d00-41d1-bd05-3d6819a4b595</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[1]</value>
-      <webElementGuid>9e18de74-6d30-4929-a1ae-beb9e6f8d8a2</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[73]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLMOVAUTINPDATA&quot;]</value>
+      <webElementGuid>0e13c54a-907e-43ad-81d2-e65c0164c983</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
-      <webElementGuid>b6c5b025-7d60-43bb-b012-b5c62c00ba43</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[73]/td[3]/span</value>
+      <webElementGuid>0b254020-ee62-4a53-a6a0-bbc8dbbc4265</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>278c3a9b-740a-4dbb-a366-276174217bd8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Settlement'])[1]/following::span[1]</value>
+      <webElementGuid>2d6f847e-87cc-4f15-bad0-8ca3215d76d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>af194a42-644f-41ef-8eac-db551e617abd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Return'])[1]/following::span[3]</value>
+      <webElementGuid>17d73eb3-7bc6-4384-bd10-fec29df27f26</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID'])[1]/preceding::td[2]</value>
-      <webElementGuid>35fd8b28-45ba-430c-ab88-7c5a067d94dd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Post Settlmnt'])[1]/preceding::span[2]</value>
+      <webElementGuid>80de778f-0687-4c45-b084-8d13dd158e2d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Secuencia'])[1]/preceding::td[2]</value>
-      <webElementGuid>d9022107-44ea-45f6-9785-d913554f9301</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='S'])[2]/preceding::span[2]</value>
+      <webElementGuid>08c384de-a497-45c7-9ccb-ef1a72ff14de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td</value>
-      <webElementGuid>04b990e4-5897-48a5-a212-1ddda76d9202</webElementGuid>
+      <value>//tr[73]/td[3]/span</value>
+      <webElementGuid>bb9f6cc7-44da-4821-8638-95a591409425</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = ' Movimientos rechazan informe' or . = ' Movimientos rechazan informe')]</value>
-      <webElementGuid>cb5abd08-d254-4fe2-af3d-feef0fec9243</webElementGuid>
+      <value>//span[(text() = 'N' or . = 'N')]</value>
+      <webElementGuid>8874b76c-106b-4acb-8492-1e733138c624</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

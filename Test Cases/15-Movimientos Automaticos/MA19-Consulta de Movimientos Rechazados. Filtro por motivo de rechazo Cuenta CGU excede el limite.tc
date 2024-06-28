@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MA19-Consulta de Movimientos Rechazados. Filtro por motivo de rechazo Cuenta CGU excede el limite</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9fc7fdfa-4cbb-44a0-ab64-fbdfe3bddb58</testCaseGuid>
+</TestCaseEntity>
