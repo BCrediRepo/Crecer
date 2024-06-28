@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>spanDL1ALQ</name>
+   <tag></tag>
+   <elementGuidId>9fa03a9e-991c-4f0f-9854-843348ad3cbe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[24]/td[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow1 > td:nth-child(1) > b:nth-child(1)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>818570a9-cbfa-4e79-9b73-47c920601cdc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>100</value>
+      <webElementGuid>4192f460-3601-43b6-b74d-75e4dd9a0d7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[24]/td[3]</value>
+      <webElementGuid>750b425c-5aed-40c6-88f2-fb5075d9034c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[24]/td[3]</value>
+      <webElementGuid>fb1caced-4c10-452c-92c7-75738d14c40b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Observaciones internas'])[1]/following::td[2]</value>
+      <webElementGuid>eb877bf5-0586-4b8b-bd12-dc2c470ed6db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion Motivo'])[1]/following::td[5]</value>
+      <webElementGuid>81aae4ea-2a93-4d54-979b-6f28987dcd3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='______________________________________________________________________________'])[3]/preceding::td[1]</value>
+      <webElementGuid>e8a9fb86-8693-447f-84f6-e23475d6c13f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Totales generados por la Transaccion:'])[1]/preceding::td[2]</value>
+      <webElementGuid>95b03074-3f92-433f-a019-bd498f120355</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[24]/td[3]</value>
+      <webElementGuid>8e383a92-5b12-4ada-bfff-e43c9045166d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

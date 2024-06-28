@@ -44,17 +44,58 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkNueva Seleccion'))
 
 //Ingresamos los datos
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '')
-
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtFecha'), '')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '00150044569')
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha (AAAAMMDD)', '20230801')
 
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkEjecutar'))
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA es de Ingreso Obligatorio'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA es de Ingreso Obligatorio'))
+def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA es de Ingreso Obligatorio'))
+assert element.contains('FECHA es de Ingreso Obligatorio')
 
+//Switch a la ventana principal
+//WebUI.switchToWindowIndex(0)
+
+//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Click nueva seleccion
+//WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkNueva Seleccion'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Ingresamos los datos
+WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '00150044569')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha (AAAAMMDD)', '20230801')
+
+//Screenshot
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Click en ejecutar
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+
+//Switch a la ventana Verificacion de firmas y facultades
+WebUI.switchToWindowTitle('Verificacion de firmas y facultades')
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblCanal'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblCanal'))
+def element2 = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lblCanal'))
+assert element2.contains('Canal')
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
 
 
 
