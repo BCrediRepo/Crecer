@@ -111,22 +111,15 @@ assert element.contains('Id')
 //Ver detalle de la primera transacción
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/btnVerDetalle'))
 
+//Cambiar a la ventana donde se Valida el elemento
+WebUI.switchToWindowIndex(2)
+
 try {
-	
-	//Cambiar a la ventana donde se Valida el elemento
-	WebUI.switchToWindowIndex(2)
-		
-	//Verificar elemento en el ambiente tes10
 	//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'),6)
 	def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'))
 	assert element2.contains('Transaction Type')
-		
-	} catch (Exception e) {
 	
-	//Cambiar a la ventana donde se Valida el elemento
-	WebUI.switchToWindowIndex(2)
-		
-	//Verificar elemento en el ambiente 708
+	} catch (Exception e) {
 	//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Compra-Venta/lblDetalleOperacion'), 6)
 	def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Compra-Venta/lblDetalleOperacion'))
 	assert element2.contains('Detalle de la Operacion')

@@ -6,15 +6,15 @@
    <elementGuidId>44b83015-e194-4675-a41b-eae6a0694ef1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(13) > td:nth-child(3) > select:nth-child(1)</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//select[@id='fieldName:L.G.COM.IMP.ORG:1']</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>07d2d939-c38b-42a6-8df6-6183c80d67a5</webElementGuid>
+      <webElementGuid>f0606bc0-b363-4d31-9d94-fecfdba9d494</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_BCCLIMPTOSCOBCTA</value>
-      <webElementGuid>405150d1-37c7-49a9-8d95-115e3be96d36</webElementGuid>
+      <webElementGuid>b1048abe-ad35-447f-9eaa-e5d3dc93d384</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:L.G.COM.IMP.ORG:1</value>
-      <webElementGuid>34292010-e8bb-4717-875b-f7b0a796763b</webElementGuid>
+      <webElementGuid>8309f00a-23c1-4c0d-aec2-57cff31ad7bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:L.G.COM.IMP.ORG:1</value>
-      <webElementGuid>f5ea4091-6359-4ae0-ac48-f5b8b943730e</webElementGuid>
+      <webElementGuid>3f0349f5-c6cd-4231-bcae-72f0d8b63eeb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>14f8a752-753c-44f2-8de6-efb474954b50</webElementGuid>
+      <webElementGuid>a4158d8c-19a7-48ba-a21a-51a295eb8b5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>1fe391f6-69a9-45da-9688-7982c8dbe171</webElementGuid>
+      <webElementGuid>9e3f8278-b8e9-4827-bcaa-f5875374c151</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_L.G.COM.IMP.ORG:1</value>
-      <webElementGuid>ba0f0893-b95c-4ae6-98c1-bcc64c1a0363</webElementGuid>
+      <webElementGuid>66b90362-81e4-4143-b013-0f5290bc8cc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'L.G.COM.IMP.ORG','issueToken');</value>
-      <webElementGuid>4149f0c2-4282-4d5f-a580-88604420c632</webElementGuid>
+      <webElementGuid>168aecfa-a76e-4dce-b40f-e4e7fe43441f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>9ac6fbde-ddbf-4f8c-ace1-b031b68a5776</webElementGuid>
+      <webElementGuid>fc996fcd-8df5-4715-93d3-fcac22e36eb9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('L.G.COM.IMP.ORG','','','issueToken')</value>
-      <webElementGuid>9bda3b69-85bc-4ae6-bd04-5baa9b7fd592</webElementGuid>
+      <webElementGuid>618f5172-b349-459a-aa15-3ec2d1378429</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -102,7 +102,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CRDB</value>
-      <webElementGuid>6c910a51-f89f-429d-b7d4-d9fffc7bde6e</webElementGuid>
+      <webElementGuid>8c8b8a88-7caa-4cc3-a3e9-983257bb04b6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:L.G.COM.IMP.ORG:1&quot;)</value>
-      <webElementGuid>87071af1-0ca8-42df-a3cf-e19a0c76d532</webElementGuid>
+      <webElementGuid>39f7e69b-fc22-4265-9c10-2ac45e7841fd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='fieldName:L.G.COM.IMP.ORG:1']</value>
-      <webElementGuid>daecb630-fd9d-4bcb-a9c0-2da92de1bf39</webElementGuid>
+      <webElementGuid>b0dc3624-9267-4cee-a60c-96be9da416d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[13]/td[3]/select</value>
-      <webElementGuid>87a90a58-01ab-4523-98e1-8ce8813d27d8</webElementGuid>
+      <webElementGuid>8a6d3846-0df1-49d6-8d65-25a5e51872a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mvto gravado original'])[1]/following::select[1]</value>
-      <webElementGuid>8b19d1ea-30ff-40ac-beda-bea1a2682181</webElementGuid>
+      <webElementGuid>c4fcd466-f046-4269-8d1b-5f4b8b27f3b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Prov. Jurisdiccion'])[1]/following::select[1]</value>
-      <webElementGuid>056050bc-882c-4ec2-bedd-7241adebdf13</webElementGuid>
+      <webElementGuid>14dd34b1-0c84-4731-acab-efd560d39fd7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo.1'])[1]/preceding::select[1]</value>
-      <webElementGuid>30dd050f-1347-4408-8795-6964d0dfb2eb</webElementGuid>
+      <webElementGuid>8bd11e3a-737c-4035-81d3-f02527f51879</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='IMP'])[1]/preceding::select[1]</value>
-      <webElementGuid>e965a3b2-d76e-4755-8a11-116ef169c56a</webElementGuid>
+      <webElementGuid>e6c8cc48-f622-45ab-9587-6e662cc80984</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//select</value>
-      <webElementGuid>38edbd47-9f56-4f8f-9da8-091b61c387dd</webElementGuid>
+      <webElementGuid>a31ce4ad-36b9-4e38-847b-924a493b809d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,6 +174,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//select[@name = 'fieldName:L.G.COM.IMP.ORG:1' and @id = 'fieldName:L.G.COM.IMP.ORG:1' and (text() = 'CRDB' or . = 'CRDB')]</value>
-      <webElementGuid>17581037-47bc-4434-b4c8-bf5b0caa37fe</webElementGuid>
+      <webElementGuid>993fc205-8c25-4a25-80e6-4c9b53a8c8ba</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

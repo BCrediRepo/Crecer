@@ -48,7 +48,7 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Click en ejecutar
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/01-Consulta de Cuentas por Cuenta/btnEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/08-BCCL.E.AC.FIRM/lblNoSeIngresoNingunCriterio'), 6)

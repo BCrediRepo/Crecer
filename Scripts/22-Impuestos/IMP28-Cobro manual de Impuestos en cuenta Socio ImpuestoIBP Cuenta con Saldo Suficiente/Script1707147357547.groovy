@@ -245,15 +245,11 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 //Click en btn ver detalle completo Txn
 WebUI.click(findTestObject('Object Repository/23-Impuestos/18-Movimientos por Fecha de Cuentas/btnVerDetalleCompletoTxn'))
 
-def TipoOperacion = WebUI.getText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/spanCOB'))
-
-
-// Verifica el valor de check y reporta el resultado
-if (TipoOperacion == "COB") {
-	TipoOperacion ==  ("Checkpoint estado: Coincide")
-} else {
-	TipoOperacion == ("Checkpoint estado: No coincide")
-}
+//Validacion del Tipo de Impuesto
+def tipoImpuesto = WebUI.getText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTipoImp'))
+WebUI.println(tipoImpuesto)
+WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTipoImp'))
+assert tipoImpuesto.contains('BP')
 
 
 //---------------------------------------------------------------------------------------------------------------------

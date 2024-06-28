@@ -6,15 +6,15 @@
    <elementGuidId>42f62c77-eca9-42ac-a01f-36612dcb27c2</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>ul.menuMargin:nth-child(4) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > ul:nth-child(2) > li:nth-child(10) > a:nth-child(1)</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RES.CTA.MOV.FECHA');processMenuHeaderText('Consulta de Mov. por Fecha Proceso')&quot;]</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>8a247ca8-d3ab-4cda-ab08-2736017daa24</webElementGuid>
+      <webElementGuid>fdacc7f7-9708-4d04-8d4e-561f3eb69fc2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.RES.CTA.MOV.FECHA');processMenuHeaderText('Consulta de Mov. por Fecha Proceso')</value>
-      <webElementGuid>dc9819ba-4c15-4b63-b8a3-244dd9f2e90f</webElementGuid>
+      <webElementGuid>d7b61458-df06-4ef5-a172-069a4a35450d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.RES.CTA.MOV.FECHA');</value>
-      <webElementGuid>c6393417-01ee-4c5f-b8fa-3483f0a73bf9</webElementGuid>
+      <webElementGuid>7b4ace30-0ef3-4f19-a3be-3b860330b014</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consulta de Mov. por Fecha Proceso </value>
-      <webElementGuid>a6e1708f-6301-48a8-b6a5-1dee3911f03d</webElementGuid>
+      <webElementGuid>aace03a1-5fea-4d17-92ac-9ad31d44671c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[10]/a[1]</value>
-      <webElementGuid>a2c97922-a186-4448-91f0-675bbc446067</webElementGuid>
+      <webElementGuid>a0e1c13b-6a52-49ca-b36a-85d1354021c1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>158cc8b4-08c3-430e-b860-56695f2d3794</webElementGuid>
+      <webElementGuid>c12ad14a-5d2d-4a1e-b2c5-1f2f01b2239b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.RES.CTA.MOV.FECHA');processMenuHeaderText('Consulta de Mov. por Fecha Proceso')&quot;]</value>
-      <webElementGuid>d94b9393-a346-453a-9bfa-12e6e8e7b71f</webElementGuid>
+      <webElementGuid>e8b98901-0b68-465c-9c1f-33c791054c08</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[4]/li/ul/li[2]/ul/li[10]/a</value>
-      <webElementGuid>58ef65f5-506e-41d3-8102-9322612a1f67</webElementGuid>
+      <webElementGuid>6f8a6e9c-0611-4aea-835e-342a13599aee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Consulta de Mov. por Fecha Proceso')]</value>
-      <webElementGuid>43276dff-5ab2-4558-a9c4-dc89cabbc5db</webElementGuid>
+      <webElementGuid>e17ae6f6-f2e8-412b-bbc3-6666c3f7f235</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Mov. por Fecha Valor'])[1]/following::a[1]</value>
-      <webElementGuid>4a5217de-4b29-426a-8cb7-fc4289c03c84</webElementGuid>
+      <webElementGuid>8c8a782e-fc98-4376-adaf-7681e7c42436</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Saldo Historico'])[1]/following::a[2]</value>
-      <webElementGuid>50e55c9a-389a-42a0-ac94-2d8a6305090d</webElementGuid>
+      <webElementGuid>3441a586-8d7c-4f7f-b7a5-033ce67e4123</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Mov. por Fecha - Cuenta Interna'])[1]/preceding::a[1]</value>
-      <webElementGuid>6bd43991-ea7d-4ef8-80c1-608832495914</webElementGuid>
+      <webElementGuid>68b3de65-48fa-4829-93e4-f651613c2364</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Firmas por ID Persona'])[1]/preceding::a[2]</value>
-      <webElementGuid>d92a201b-a1bf-4c7c-8d6a-0f8c624f221e</webElementGuid>
+      <webElementGuid>05c503ac-b552-4540-9e2f-35f5ceb433c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Consulta de Mov. por Fecha Proceso']/parent::*</value>
-      <webElementGuid>0ae0fa2a-8eeb-46c7-a7b3-b3a77c1f9c20</webElementGuid>
+      <webElementGuid>de1681ca-faf2-48e8-8a19-ec016d02fd3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.RES.CTA.MOV.FECHA');&quot;)]</value>
-      <webElementGuid>60b50ccc-8dc3-49a1-a210-741eea808fba</webElementGuid>
+      <webElementGuid>f7f34f9c-fbd3-42a1-9b6a-cdced781bc82</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[10]/a</value>
-      <webElementGuid>8d49e35d-dc72-4783-8cf4-cf99f3090dd7</webElementGuid>
+      <webElementGuid>58875298-6e45-4471-9f2c-96d33e2513ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.RES.CTA.MOV.FECHA&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Consulta de Mov. por Fecha Proceso ' or . = 'Consulta de Mov. por Fecha Proceso ')]</value>
-      <webElementGuid>9d8e3d21-ef61-47dd-bfc3-ab1c5691da0e</webElementGuid>
+      <webElementGuid>3cfb7e64-2fe8-4206-bee2-575682db9d14</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
