@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAutorizar</name>
+   <name>btnAutorizaRegistro</name>
    <tag></tag>
-   <elementGuidId>b58d1af0-d493-4147-be4d-723d70db683c</elementGuidId>
+   <elementGuidId>2f2022f0-34b7-4aa2-bc64-7b31a4d1680a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'Autoriza el registro']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[4]/a/img</value>
+         <value>/html/body/div[3]/div[2]/form[1]/div[2]/table[2]/thead/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[4]/a/img</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>img[alt=&quot;Autoriza el registro&quot;]</value>
+         <value>#goButton > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(4) > a:nth-child(1) > img:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,24 +29,24 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>42ae49a5-8925-4e6a-99c2-4708c12fa2d4</webElementGuid>
+      <webElementGuid>9aba7d1d-0c9f-41f6-a66c-a0a206b97b84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/tools/txnauthorise.gif
 															</value>
-      <webElementGuid>0032b62c-b715-4caa-9139-86bcbaabf5ec</webElementGuid>
+      <webElementGuid>11c041f4-4d42-49dc-95d7-c0a28006899a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
       <value>Autoriza el registro</value>
-      <webElementGuid>d4062688-040f-40d2-a115-0ac8a77b3db0</webElementGuid>
+      <webElementGuid>ee935f2e-f35e-4fa9-b606-aa6bd60cd6b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +54,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Autoriza el registro</value>
-      <webElementGuid>cfa2dc9c-5882-4f52-a679-c344f768afeb</webElementGuid>
+      <webElementGuid>3490ada0-0330-42ab-bddd-3b9322dde266</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]/img[1]</value>
-      <webElementGuid>673c2037-9f7d-4d5e-84a2-5dc9d4b06f1c</webElementGuid>
+      <webElementGuid>e5c563c3-56fc-4fd6-bdc9-92161592ba5b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[4]/a/img</value>
-      <webElementGuid>9d7d3dc0-6909-4b2f-867e-76dfb66abfe4</webElementGuid>
+      <webElementGuid>fe6b9eb9-bafc-48a8-a159-ff2ef9f243ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +78,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Autoriza el registro']</value>
-      <webElementGuid>2e7d3042-046b-4d46-aa34-9d902b1ad99a</webElementGuid>
+      <webElementGuid>c04a8de9-0c1d-4806-884f-2dfe9c78fc57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>84c54466-5d59-4558-95af-58c05052bf54</webElementGuid>
+      <webElementGuid>d0caed3c-8c97-400d-abe8-6e91917b004f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +95,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/txnauthorise.gif
 															' and @alt = 'Autoriza el registro' and @title = 'Autoriza el registro']</value>
-      <webElementGuid>6282f8bc-074f-40f1-8ed9-a5ec9c848c44</webElementGuid>
+      <webElementGuid>f5eea25f-108e-44d3-92b0-5f5ae93f37f8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

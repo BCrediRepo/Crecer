@@ -6,15 +6,15 @@
    <elementGuidId>707bb984-ebc3-43c5-886d-e153451a7040</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='radio:tab1:L.TITULARIDAD']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(14) > td:nth-child(3) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > input:nth-child(1)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>b831e593-aa01-45d5-8d5c-8bd49cca20e6</webElementGuid>
+      <webElementGuid>5eebdda8-20fe-4121-96e3-f958c21c9e50</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>radioCheckStyle radioCheckStyle_BCCLMEPFTTRANSFER radioCheckStyle_BCCLMEPFTTRANSFER_BCCLALTAMEPZZZ</value>
-      <webElementGuid>cf594fbe-04df-4d74-8af8-9de052fc369c</webElementGuid>
+      <webElementGuid>dce77d0f-0f61-427b-9fd6-d00e9ecbdc49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>57e34713-4261-464c-bbae-1d0939c5b3a5</webElementGuid>
+      <webElementGuid>115e11cc-f669-4f8a-8393-f15fa14fa01e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>cae0e401-7011-42ff-94ae-6fddc5d0c1d5</webElementGuid>
+      <webElementGuid>b92624c0-ba37-4a46-bb1e-82d55129675f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:toggleRadio(event)</value>
-      <webElementGuid>33f898ee-bcf4-476c-99e8-7063c2d150e5</webElementGuid>
+      <webElementGuid>1c85c0ad-63bd-41bd-be36-e5c3eb6ec908</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>javascript:enableFocus(this)</value>
-      <webElementGuid>7961c3ec-9b44-4b90-b24c-73aa2ad19665</webElementGuid>
+      <webElementGuid>9455114e-35eb-4fcc-965f-ffad4b6d2631</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>javascript:disableFocus(this)</value>
-      <webElementGuid>cbaeb79f-6462-4079-b708-f58f8d48ecb8</webElementGuid>
+      <webElementGuid>d73915ab-2d4c-4b72-8c75-bcbaac50b92d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>e996b85a-e954-4025-9bb0-f422d3aee09f</webElementGuid>
+      <webElementGuid>14997795-6c51-4f6a-b1c3-7f8d44b4f103</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>aa95c5a9-018a-444e-aff9-3ecdf6c4370a</webElementGuid>
+      <webElementGuid>63d24867-e21e-4e0f-8843-a7bb5b6e2cde</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>id</name>
       <type>Main</type>
       <value>radio:tab1:L.TITULARIDAD</value>
-      <webElementGuid>b86cacbe-8156-42e4-b9dc-9cb4cc0e3fe6</webElementGuid>
+      <webElementGuid>efe589a9-33ee-4f38-b936-05c8f4f94d41</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -102,7 +102,7 @@
       <name>name</name>
       <type>Main</type>
       <value>radio:tab1:L.TITULARIDAD</value>
-      <webElementGuid>18a6d3fe-e6ac-43a6-a236-f8d6bada7de7</webElementGuid>
+      <webElementGuid>50589ae3-cb30-4664-a408-8ab358eb99de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>value</name>
       <type>Main</type>
       <value>NO</value>
-      <webElementGuid>f0774ff9-87d1-4d74-acba-d41e04308f86</webElementGuid>
+      <webElementGuid>53fe0de2-9dcb-46e9-aebc-3bffe4792576</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -120,7 +120,7 @@
       <value>
           javascript:clearEnrichment(event);
         </value>
-      <webElementGuid>2be00d1a-3e15-4bcd-ada7-4f5459db1ff5</webElementGuid>
+      <webElementGuid>67607a29-5bda-4a7d-a1c4-ef920220a6a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -128,7 +128,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'','issueToken');</value>
-      <webElementGuid>7e0485c3-4597-4c91-8e6f-b3de59040f3c</webElementGuid>
+      <webElementGuid>d7bf1d81-ee91-4d1c-9082-a3f87d5d9b8a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -136,7 +136,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('','','','issueToken')</value>
-      <webElementGuid>6a023ffa-4ff9-422c-93bd-199f59a69d47</webElementGuid>
+      <webElementGuid>a405954b-e550-4ee1-acb0-65891a37cee1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -144,7 +144,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[11]/td[3]/table[1]/tbody[1]/tr[1]/td[1]/input[@id=&quot;radio:tab1:L.TITULARIDAD&quot;]</value>
-      <webElementGuid>770f0f0b-a14f-41b9-bee9-94687859cb19</webElementGuid>
+      <webElementGuid>5c7f77d8-28a6-4a57-b73e-61205d166f15</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -152,7 +152,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='radio:tab1:L.TITULARIDAD']</value>
-      <webElementGuid>96fd408f-ae92-4a10-86a6-f7d24f6ecc3f</webElementGuid>
+      <webElementGuid>b0e0fa08-1879-473f-a328-d46a22ee9618</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -160,7 +160,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[11]/td[3]/table/tbody/tr/td/input</value>
-      <webElementGuid>b5019e01-a422-4ba4-8f3d-985bb53798a0</webElementGuid>
+      <webElementGuid>067fd0d4-4356-49c7-8152-156c79a4bfab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -168,7 +168,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/table/tbody/tr/td/input</value>
-      <webElementGuid>46b7a250-b02b-476b-b79f-9f0b66aa9774</webElementGuid>
+      <webElementGuid>1991f27f-ec91-4271-bc83-0761a9bf5535</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -176,6 +176,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@selected = 'false' and @type = 'radio' and @id = 'radio:tab1:L.TITULARIDAD' and @name = 'radio:tab1:L.TITULARIDAD']</value>
-      <webElementGuid>6f3aa209-1e34-46f8-9e7d-cbd0c446794f</webElementGuid>
+      <webElementGuid>4810a32e-7730-4cb2-ac3d-e2025ab6c217</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
