@@ -48,25 +48,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Cambiamos de ventana
 WebUI.switchToWindowTitle('Busqueda de Persona')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Se busca el TestBox de "Buscador"
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CARD.EMPRESA.PER')
-
-//Click en Ejecutar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Cambiamos de ventana
-WebUI.switchToWindowTitle('Busqueda de Persona')
-
-//Esperamos a que este visible el objeto
+//Seteo de datos "ID Persona/DNI/CUIT"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtPersonaDNICUIT'), 3)
-
-//Ingresamos el ID  de persona
-WebUI.setText(findTestObject('40-Tarjeta de Deposito/ENQ BCCL.E.CARD.EMPRESA.PER/txtPersonaDNICUIT'), '1000097988')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID Persona/DNI/CUIT', '1000097988')
 
 //Click en Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))

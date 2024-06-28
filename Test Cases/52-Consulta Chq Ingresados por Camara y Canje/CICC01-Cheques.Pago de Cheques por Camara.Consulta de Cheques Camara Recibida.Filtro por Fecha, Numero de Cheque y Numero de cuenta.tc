@@ -4,5 +4,6 @@
    <name>CICC01-Cheques.Pago de Cheques por Camara.Consulta de Cheques Camara Recibida.Filtro por Fecha, Numero de Cheque y Numero de cuenta</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>764385d0-04ed-4e8a-9beb-84e92153ab6a</testCaseGuid>
 </TestCaseEntity>

@@ -34,19 +34,10 @@ WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de Datos "Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Persona','9999999999')
 
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/23-Cierre de Cuenta/01-Cierre de cuenta/lnkCdCConCancelaciondeSaldo'))
-
-WebUI.switchToWindowIndex(1)
-
-if (findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CIERRE.CTA.CANC.SALDO/lblPos2') == 'Nro. Documento') {
-    WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CIERRE.CTA.CANC.SALDO/txtPos2'), '9999999999')
-} else {
-    WebUI.setText(findTestObject('25-Cierre de Cuenta/BCCL.AC.CIERRE.CTA.CANC.SALDO/txtPos1'), '9999999999')
-}
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

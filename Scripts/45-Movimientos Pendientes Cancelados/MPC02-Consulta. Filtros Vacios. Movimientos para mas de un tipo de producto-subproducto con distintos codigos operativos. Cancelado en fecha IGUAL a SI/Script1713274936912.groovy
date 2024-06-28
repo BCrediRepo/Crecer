@@ -37,28 +37,14 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Abre la pestaña del menú BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
 WebUI.switchToWindowTitle('BCCL.E.MR.PARTIDAS.PEND.CANCELADAS')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando menu ENQ BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MR.PARTIDAS.PEND.CANCELADAS')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña del menú BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
-WebUI.switchToWindowTitle('BCCL.E.MR.PARTIDAS.PEND.CANCELADAS')
-
 //Verifica titulo BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
 WebUI.verifyElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblTituloBCCL.E.MR.PARTIDAS.PEND.CANCELADAS'))
 
-//Ingresa Cancelado
+//Seteo de datos "Cancelado" "Suc. VACIO"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/txtCancelado1'), 6)
-WebUI.setText(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/txtCancelado1'), 'SIN FONDOS')
-
-//Ingresa Sucursal
-WebUI.waitForElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/txtSucursal2'), 6)
-WebUI.setText(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/txtSucursal2'), '')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cancelado', '')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Suc.', '')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

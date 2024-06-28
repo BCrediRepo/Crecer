@@ -42,26 +42,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('BCCL.AS.HIS.AJUS.DEPOSITOS')
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.DEP.EFE.TAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.AS.HIS.AJUS.DEPOSITOS')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.DEP.EFE.TAS
-WebUI.switchToWindowTitle('BCCL.AS.HIS.AJUS.DEPOSITOS')
-WebUI.maximizeWindow()
-
-//Setea Dispositivo
+//Seteo de Datos "Dispositivo"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/inputDispositivo'),6)
-WebUI.setText(findTestObject('Object Repository/26-Dispositivos/BCCL.AS.HIS.AJUS.DEPOSITOS/inputDispositivo'), '07321')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Dispositivo', '07321')
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

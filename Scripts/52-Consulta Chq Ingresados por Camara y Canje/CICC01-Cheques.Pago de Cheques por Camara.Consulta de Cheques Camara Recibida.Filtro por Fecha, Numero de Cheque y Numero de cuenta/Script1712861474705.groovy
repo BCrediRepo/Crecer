@@ -34,27 +34,14 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/51-Consulta Chq Ingre
 //Cambiar ventana "BCCL.E.CHQ.CAM.REC"
 WebUI.switchToWindowTitle('BCCL.E.CHQ.CAM.REC')
 
-//filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Cheques Recibidos"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/51-Consulta Chq Ingresados por Camara y Canje/lnkChequesRecibidos'))
-
-//Cambiar ventana "BCCL.E.CHQ.CAM.REC"
-WebUI.switchToWindowTitle('BCCL.E.CHQ.CAM.REC')
-
 //Cambiar a "entre" del combobox de "Fecha"
 WebUI.selectOptionByIndex(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.CAM.REC/cbFecha'), 1)
 
-//Setear "Fecha"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.CAM.REC/txtFecha'), '20120901') 
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.CAM.REC/txtSucursal'), '173') 
-
-//Setear "ID de la Cuenta"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.CAM.REC/txtIDdelaCuenta'), '01730054895') 
+//Seteo de datos "Fecha", "Sucursal", "ID de la Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha', '20190801')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '173')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID de la Cuenta', '01730054895')
 
 //Capturar el tiempo de inicio
 long startTime = System.currentTimeMillis()

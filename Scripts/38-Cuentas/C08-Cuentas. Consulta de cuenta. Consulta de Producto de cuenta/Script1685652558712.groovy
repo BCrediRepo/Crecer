@@ -50,19 +50,8 @@ WebUI.switchToWindowTitle('Consulta de Productos de Cuenta')
 // Maximizamos
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//Cambia a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/06- Consulta Producto - Temenos T24/lnkConsultaDeProductos'))
-
-//Swicht a la venta Consulta de Productos de Cuenta
-WebUI.switchToWindowTitle('Consulta de Productos de Cuenta')
-
-// Maximizamos
-WebUI.maximizeWindow()
+//Limpieza
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Ingresamos los datos para la consulta
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))

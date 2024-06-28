@@ -39,12 +39,12 @@ WebUI.switchToWindowIndex(1)
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00890010860')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20210719')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', '20220725')
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20210719')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', '20220725')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

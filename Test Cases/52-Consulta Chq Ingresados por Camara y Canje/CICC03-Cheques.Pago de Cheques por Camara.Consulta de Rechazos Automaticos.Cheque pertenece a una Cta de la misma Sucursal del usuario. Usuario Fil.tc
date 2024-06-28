@@ -4,5 +4,6 @@
    <name>CICC03-Cheques.Pago de Cheques por Camara.Consulta de Rechazos Automaticos.Cheque pertenece a una Cta de la misma Sucursal del usuario. Usuario Fil</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>9028b3b7-fbbc-4e83-a5a5-01d046e57e12</testCaseGuid>
 </TestCaseEntity>

@@ -4,5 +4,6 @@
    <name>PST03-Posteos. Liquidacion de posteo. Consulta de Posteos de planta a caja por pago en efectivo. Trx NO Autorizada</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>466367c6-0072-433c-b17a-15adc3be933d</testCaseGuid>
 </TestCaseEntity>

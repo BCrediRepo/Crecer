@@ -49,22 +49,13 @@ WebUI.click(findTestObject('Object Repository/21-Fallas/07- Temenos T24 III/lnkC
 //Switch a la ventana BCCL.E.EXTORNO.DISPO.GEOP
 WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en consultas de faltantes en dispositivos
-WebUI.click(findTestObject('Object Repository/21-Fallas/07- Temenos T24 III/lnkConsultas de Faltantes en Dispositivos'))
-
-//Switch a la ventana BCCL.E.EXTORNO.DISPO.GEOP
-WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP')
-
 //Maximizamos
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/txtFechaDesde'), '20230823')
+
+//Seteo de Datos "Fecha Desde"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20230823')
+
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lnkEjecutar'))
 

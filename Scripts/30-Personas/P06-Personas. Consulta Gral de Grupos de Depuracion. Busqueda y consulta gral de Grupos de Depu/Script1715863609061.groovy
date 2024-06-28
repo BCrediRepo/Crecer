@@ -49,23 +49,10 @@ WebUI.switchToWindowTitle('LISTADO DE GRUPOS DE DEPURACION')
 
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta Gral de Grupos de Depuracion/lnkBusqueda y consulta gral de Grupos de Depu'))
-
-WebUI.maximizeWindow()
-
-WebUI.switchToWindowTitle('LISTADO DE GRUPOS DE DEPURACION')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/LISTADO DE GRUPOS DE DEPURACION/txtID GRUPO'), '1002163270')
-
-WebUI.setText(findTestObject('Object Repository/31-Personas/LISTADO DE GRUPOS DE DEPURACION/txtESTADO'), 'AP')
+//Seteo de datos "ID GRUPO", "ESTADO"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID GRUPO', '1002163270')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ESTADO', 'AP')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

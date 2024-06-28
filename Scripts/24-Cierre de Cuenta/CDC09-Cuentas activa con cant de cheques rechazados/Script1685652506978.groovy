@@ -35,23 +35,13 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Switch a la ventana de Cierre de Cuenta
 WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.CANDT.CIERRE')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana de Cierre de Cuenta
-WebUI.switchToWindowTitle (findTestData('Modulos/Modulos').getValue(4,2))
-
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/txtSucursal'))
+//Seteo de Datos "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal',findTestData('MainData/Users').getValue(3,1))
 
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/txtSucursal'),findTestData('MainData/Users').getValue(3,1))
 
 WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/03-Impresion Certificados y Formularios/btnEjecutar'))
 

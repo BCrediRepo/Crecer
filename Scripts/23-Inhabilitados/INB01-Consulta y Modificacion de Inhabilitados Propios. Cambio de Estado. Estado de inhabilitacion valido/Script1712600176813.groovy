@@ -41,19 +41,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/22-Inhabilitados/lnkC
 
 WebUI.switchToWindowTitle('BCCL.E.INHAB.PROPIOS')
 
-//Aplico KYW de limpieza de busqueda
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowTitle('Temenos T24')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/22-Inhabilitados/lnkConsulta y Modificacion de Inhabilitados prop'))
-WebUI.switchToWindowTitle('BCCL.E.INHAB.PROPIOS')
+//Seteo de Datos "FECHA ULT ACTUAL"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('FECHA ULT ACTUAL','20220701')
 
 //Completo los campos de busqueda
 //WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtCUITCUIL'), "20033555211")
 //WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtIDPERSONA'), "1004020304")
-//WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtCUITCUIL'), "27177194064")
-//WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtIDPERSONA'), "1000779000")
-
-WebUI.setText(findTestObject('Object Repository/24-Inhabilitados/01-Consulta y Modificacion de Inhabilitados prop/txtFECHA'), "20220701")
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

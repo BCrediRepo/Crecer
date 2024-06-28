@@ -4,5 +4,6 @@
    <name>CICC02-Cheques.Pago de Cheques por Camara.Consulta de Cheques Pagados.Busqueda. Filtro por Fecha y Numero de cheque. Rango de fecha MENOR a 30 dias</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>523115b9-ea58-44bb-bcba-ad7ccafdcac5</testCaseGuid>
 </TestCaseEntity>

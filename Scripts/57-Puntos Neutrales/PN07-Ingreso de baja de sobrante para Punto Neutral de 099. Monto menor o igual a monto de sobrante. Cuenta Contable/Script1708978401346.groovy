@@ -49,30 +49,15 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN"
 WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN"
-WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
-
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Setear "Fecha Desde"
-WebUI.setText(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtFechaDesde'), '20200101')
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtSucursal'), '073')
-
-//Setear "ID Dispositivo"
-WebUI.setText(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtIdDispositivo'), '70151')
-
-//Setear "Cartucho/Gaveta"
-WebUI.setText(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/txtCartucho-Gaveta'), 'DEPOSITO')
+//Seteo de datos "Fecha Desde", "Sucursal", "Id Dispositivo", "Cartucho Gaveta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20200101')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '073')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Dispositivo', '70151')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cartucho/Gaveta', 'DEPOSITO')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

@@ -4,5 +4,6 @@
    <name>CICC07-Cheques rechazados.Pago cheque con rechazo definitivo. Cheque rechazado</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8bcd4446-88cd-433d-b8f3-81d5aba1385c</testCaseGuid>
 </TestCaseEntity>

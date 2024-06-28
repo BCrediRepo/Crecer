@@ -52,23 +52,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04 - Ultim
 //Switch a la ventana Consulta de Modificaciones a Ctas
 WebUI.switchToWindowTitle('Consulta de Modificaciones a Ctas')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-//switch a Temenos t24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en cons mod a cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04 - Ultima Modificacion - Temenos T24/lnkConsulta de Modificaciones a Cuentas'))
-
-//Switch a la ventana Consulta de Modificaciones a Ctas
-WebUI.switchToWindowTitle('Consulta de Modificaciones a Ctas')
-
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Ingresamos datos para la consulta
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/txtID Persona'), '1000000011')
+//Seteo de datos "Id. Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Persona', '1000000011')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/lnkEjecutar'))

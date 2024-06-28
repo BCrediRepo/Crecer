@@ -36,27 +36,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.DEP.EFE.TAS
 WebUI.switchToWindowTitle('BCCL.E.DEP.EFE.TAS')
 
-//Nueva seleccion
-//WebUI.click(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lnkNuevaSeleccion'))
-
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.DEP.EFE.TAS
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.DEP.EFE.TAS')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.DEP.EFE.TAS
-WebUI.switchToWindowTitle('BCCL.E.DEP.EFE.TAS')
-
-//Setea un monto ARS
-WebUI.setText(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/inputMoneda'), 'ARS')
+//Seteo de Datos "Moneda"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -68,8 +50,6 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 //WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_DEPOSITOSDEEFECTIVOENTAS'),6)
 def element = WebUI.getText((findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_DEPOSITOSDEEFECTIVOENTAS')))
 assert element.contains('DEPOSITOS DE EFECTIVO EN TAS')
-//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_CANTIDADDEDEPOSITOS'),6)
-//WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/BCCL.E.DEP.EFE.TAS/lbl_IMPORTETOTALDEDEPOSITOS'),6)
 
 //---------------------------------------------------------------------------------------------------------------------
 

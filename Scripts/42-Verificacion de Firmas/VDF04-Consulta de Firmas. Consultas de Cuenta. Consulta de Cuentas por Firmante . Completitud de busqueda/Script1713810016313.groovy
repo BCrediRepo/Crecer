@@ -45,24 +45,9 @@ WebUI.switchToWindowTitle('Consulta de Cuentas por Firmante')
 //maximizamos
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Volvemos a la ventana anterior
-WebUI.switchToWindowTitle('T24 - Fil.073 Jujuy')
-
-//Click en Consulta de Cuentas por firmantes
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsulta de Cuentas por Firmante'))
-
-//Volvemos a la ventana Consulta de Cuentas por Firmante
-WebUI.switchToWindowTitle('Consulta de Cuentas por Firmante')
-
-//maximizamos
-WebUI.maximizeWindow()
-
-//Ingresamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/03-Consulta de Cuentas por Firmante/txtNroDocumento'), '20144835')
+//Seteo de datos "Nro. Documento"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Documento', '20144835')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

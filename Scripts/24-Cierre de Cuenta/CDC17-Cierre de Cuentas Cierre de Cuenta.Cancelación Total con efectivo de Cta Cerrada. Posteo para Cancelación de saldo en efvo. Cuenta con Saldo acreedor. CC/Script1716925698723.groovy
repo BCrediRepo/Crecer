@@ -49,21 +49,9 @@ WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24
 //Switch a la ventana BCCL.AC.CIERRE.CTA.CANC.SALDO
 WebUI.switchToWindowTitle('BCCL.AC.CIERRE.CTA.CANC.SALDO')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
-
-//Click en Cierre de Cuenta con cancelacion de Saldo
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Cuentas/lnkCierre de Cuenta CON Cancelacion de Saldo'))
-
-//Switch a la ventana BCCL.AC.CIERRE.CTA.CANC.SALDO
-WebUI.switchToWindowTitle('BCCL.AC.CIERRE.CTA.CANC.SALDO')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Ingresamos el numero de cuenta
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/BCCL.AC.CIERRE.CTA.CANC.SALDO/txtNumeroCuenta'), '12420106863')
+//Seteo de Datos "Numero Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero Cuenta','12420106863')
 
 //Click en ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))

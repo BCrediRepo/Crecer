@@ -4,5 +4,6 @@
    <name>VD01-Variacion Deudora.Consulta de Saldos Diarios</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>16af0fd6-587d-4188-9a1e-428d3589c474</testCaseGuid>
 </TestCaseEntity>

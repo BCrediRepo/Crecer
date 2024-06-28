@@ -50,21 +50,9 @@ WebUI.click(findTestObject('02-Dashboard/38-Tarjeta de Deposito/lnkConsultaTarje
 //Cambiamos a la ventana "BCCL.E.CARD.DEPOSIT"
 WebUI.switchToWindowTitle('BCCL.E.CARD.DEPOSIT')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Cambiamos a la ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en Consulta Tarjetas de Deposito"
-WebUI.click(findTestObject('02-Dashboard/38-Tarjeta de Deposito/lnkConsultaTarjetasdeDeposito'))
-
-//Cambiamos a la ventana "BCCL.E.CARD.DEPOSIT"
-WebUI.switchToWindowTitle('BCCL.E.CARD.DEPOSIT')
-
-//Seteamos el dato "6042018000002609"
-WebUI.setText(findTestObject('40-Tarjeta de Deposito/BCCL.E.CARD.DEPOSIT/txtIdTarjeta'), '6042018000002609')
+//Seteo de datos "Id.Tarjeta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id.Tarjeta', '6042018000002609')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

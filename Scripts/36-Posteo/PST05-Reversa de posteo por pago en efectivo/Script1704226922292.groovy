@@ -38,16 +38,9 @@ WebUI.click(findTestObject('02-Dashboard/35-Posteos/Reversos/lnkReversodeOperaci
 
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/35-Posteos/Reversos/lnkReversodeOperaciones'))
-
-//Seteo de datos y busqueda de posteo a reversar
-WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
-
-WebUI.setText(findTestObject('37-Posteo/BCCL.E.EB.CONS.REVE/txtUsuario'), 'B.0419')
+//Seteo de datos "Fecha Desde", "Usuario"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0419')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

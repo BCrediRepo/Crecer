@@ -35,20 +35,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.AC.COM.COBRADA
 WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.AC.COM.COBRADA
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.COBRADA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.AC.COM.COBRADA
-WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
-
 //Maximiza la pestaña
 WebUI.maximizeWindow()
+
+//Seteo de datos "Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00890010860')
 
 //Ingresa el numero de la cuenta
 WebUI.setText(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/txtCuenta'), '00890010860')

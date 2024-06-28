@@ -87,23 +87,12 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.IP.RECLA.PARTIDAS')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de datos "Codigo IP", "Id Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP', '0099')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1002388512')
 
-WebUI.switchToWindowIndex(0)
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.RECLA.PARTIDAS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.IP.RECLA.PARTIDAS')
-
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/txtCodigoIP'), '0099')
-
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/txtIDPersona'), '1002388512')
-
+//Seleccionar ejecutar
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/lnkEjecutar'))
 
 WebUI.selectOptionByIndex(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/cbxOpciones'), 1)

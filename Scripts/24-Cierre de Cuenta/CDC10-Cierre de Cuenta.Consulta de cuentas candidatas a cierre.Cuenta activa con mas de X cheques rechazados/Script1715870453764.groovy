@@ -36,24 +36,13 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "BCCL.E.CANDT.CIERRE"
 WebUI.switchToWindowTitle('BCCL.E.CANDT.CIERRE')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "BCCL.E.CANDT.CIERRE"
-WebUI.switchToWindowTitle('BCCL.E.CANDT.CIERRE')
-
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/10-BCCL.E.CANDT.CIERRE/txtSucursal'), '001')
-
-//Setear "Motivo"
-WebUI.setText(findTestObject('Object Repository/25-Cierre de Cuenta/10-BCCL.E.CANDT.CIERRE/txtMotivo'), '07')
+//Seteo de Datos "Sucursal", "Motivo"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SUCURSAL','001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('MOTIVO','07')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

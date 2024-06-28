@@ -34,19 +34,8 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.EB.POSTEO.INAU
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.POSTEO.INAU
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.POSTEO.INAU')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.EB.POSTEO.INAU
-WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+//Limpieza
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Verifica titulo BCCL.E.FIRMAS.FISICA
 WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblTituloBCCL.E.EB.POSTEO.INAU'))
@@ -91,26 +80,17 @@ println TotalRegistros
 //Selecciona boton Liquidar de la primera tx
 WebUI.click(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/btnLiquidar'))
 
-//Abre la pestaña BCCL.AC.CIERRE.CUENTA
-//WebUI.switchToWindowTitle('BCCL.AC.CIERRE.CUENTA')
+//cambio a pestaña Movimientos de Fondos
+WebUI.switchToWindowIndex(1)
 
-//Abre la pestaña Movimiento de Fondos
-WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-//Ver información de la transacción y valida que se muestre un elemento de la tabla
-WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblFecha'))
-
-//Selecciona pestaña Auditoria
+//Selecciono Audit
 WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnAudit'))
 
 //Valida el mensaje de las tx no autorizadas
-WebUI.waitForElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblOperacionparaliquidarenCajaCAJA'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblOperacionparaliquidarenCajaCAJA'))
-def element2 = WebUI.getText(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblOperacionparaliquidarenCajaCAJA'))
-assert element2.contains('Operacion para liquidar en Caja')
+WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblINAO'))
+def element2 = WebUI.getText(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblINAO'))
+assert element2.contains('INAO')
 
-//Volver a la tabla para que no se bloquee el registro
-WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnBCCL.E.EB.POSTEO.INAU'))
 
 //---------------------------------------------------------------------------------------------------------------------
 

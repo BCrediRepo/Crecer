@@ -49,24 +49,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04 - Ultim
 //Swicht a la ventana Consulta de Modificaciones a Ctas
 WebUI.switchToWindowTitle('Consulta de Modificaciones a Ctas')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-// Cambia a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Click en Consulta de modificaciones a cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04 - Ultima Modificacion - Temenos T24/lnkConsulta de Modificaciones a Cuentas'))
-
-//Swicht a la ventana Consulta de Modificaciones a Ctas
-WebUI.switchToWindowTitle('Consulta de Modificaciones a Ctas')
-
 // Maximizamos
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/lnkNueva Seleccion'))
-
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Consulta de Modificaciones a Ctas/txtNroCuenta'), '01000395279')
+//Seteo de datos "Nro. Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', '01000395279')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

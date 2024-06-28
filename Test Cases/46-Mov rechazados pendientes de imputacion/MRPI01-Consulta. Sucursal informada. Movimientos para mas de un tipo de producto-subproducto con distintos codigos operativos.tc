@@ -4,5 +4,6 @@
    <name>MRPI01-Consulta. Sucursal informada. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>af28cbbb-93ac-4e4f-9974-f4deb0589a06</testCaseGuid>
 </TestCaseEntity>

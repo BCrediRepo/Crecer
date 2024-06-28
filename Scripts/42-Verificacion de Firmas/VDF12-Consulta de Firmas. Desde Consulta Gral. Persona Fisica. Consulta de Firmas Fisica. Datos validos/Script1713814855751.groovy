@@ -47,21 +47,12 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas
 //Switch a la ventana Consulta General de personas Fisica
 WebUI.switchToWindowTitle('Consulta General de personas Fisica')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Click en Busqueda y Consulta General de personas Fisica
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnkBusqueda y consulta general Persona Fisica'))
-
-//Switch a la ventana Consulta General de personas Fisica
-WebUI.switchToWindowTitle('Consulta General de personas Fisica')
-
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Ingresamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/txtNroDocumento'), '20144835')
+//Seteo de datos "Nro. Documento"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Documento', '20144835')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -72,14 +63,16 @@ long startTime = System.currentTimeMillis()
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Click en la opcion "Consulta de firma" del cbx
-WebUI.waitForElementVisible(findTestObject('31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 6)
-
-WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxDatosDePersonaFisica Relaciones AntecedentesInternos EvaluacionCrediticia ConsultaDeDomicilioPorProducto ConsultaDeFirma'), 5)
-
-//ASSERT
+//Validacion
 WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
+
+//Click en la opcion "Consulta de firma" del cbx
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxConsultaGralPersonaFisica'), 6)
+
+WebUI.selectOptionByIndex(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/cbxConsultaGralPersonaFisica'), 5)
+
+WebUI.click(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/btnSelectDrillDown'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -89,10 +82,10 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-
-def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNo.Documento'))
-
-assert element.contains('No.Documento')
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNumeroDocumento'),6)
+def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblNumeroDocumento'))
+assert element.contains('20144835')
 
 //---------------------------------------------------------------------------------------------------------------------
 

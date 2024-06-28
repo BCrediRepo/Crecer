@@ -4,5 +4,6 @@
    <name>ECQ01-Consulta Monto en echeq pendientes de pago x persona</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>08aab3ad-0a59-4faf-a154-2a5634eb3aa4</testCaseGuid>
 </TestCaseEntity>

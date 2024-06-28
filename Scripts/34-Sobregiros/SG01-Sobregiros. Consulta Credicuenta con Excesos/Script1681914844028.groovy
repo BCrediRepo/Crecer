@@ -36,25 +36,14 @@ WebUI.switchToWindowTitle('BCCL.E.ACDOS')
 
 WebUI.maximizeWindow()
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
+//Seteo de datos "Fecha Desde", "Fecha Hasta", "Estado"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20220718')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20150725')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOBAmbTES10)
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Estado', 'AC')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Estado', 'VC')
 
-//WebUI.delay(40)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.ACDOS')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.ACDOS')
-
-//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaDesde'), '20220718')
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaDesde'), '20150725')
-//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaHasta'), '20220725')
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtFechaHasta'), '20220729')
-//WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtEstado'), 'AC')
-WebUI.setText(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/txtEstado'), 'VC')
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
@@ -62,11 +51,8 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //WebUI.click(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lnkEjecutar'))
 
-WebUI.maximizeWindow()
-
 //ASSERT
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lblCuenta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lblCuenta'), 20)
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/35-Sobregiros/BCCL.E.ACDOS/lblCuenta'))
 

@@ -21,30 +21,21 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
 //Seleccionar "Cuentas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentasEcheq'))
 
 //Seleccionar "Consulta de Cuentas por Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuentaCasoEcheq'))
 
 //Cambiar ventana "Consulta de Cuentas por Cuenta"
 WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Consulta de Cuentas por Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuenta'))
-
-//Cambiar ventana "Consulta de Cuentas por Cuenta"
-WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')
-
-//Setear "Numero de Cuenta"
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Consulta de Cuentas por Cuenta/txtNroCuenta'), '00890012958') 
+//Seteo de datos "Nro. Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', '00890012958')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

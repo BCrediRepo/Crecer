@@ -35,14 +35,7 @@ WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaDeRechazosSinDocument
 
 WebUI.switchToWindowTitle('Consulta Rechazos sin documentacion')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaDeRechazosSinDocumentacion'))
-
-WebUI.switchToWindowTitle('Consulta Rechazos sin documentacion')
-
+//Limpieza de datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 WebUI.click(findTestObject('30-ONP/Consulta Rechazos sin documentacion/btnDrillDown'))

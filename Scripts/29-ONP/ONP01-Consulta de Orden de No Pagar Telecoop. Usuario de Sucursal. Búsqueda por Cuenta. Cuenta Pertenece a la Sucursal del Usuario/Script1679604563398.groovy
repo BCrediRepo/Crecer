@@ -36,15 +36,9 @@ WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaONPTelecoop'))
 
 WebUI.switchToWindowTitle('Consulta de ONP Telecoop')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaONPTelecoop'))
-
-WebUI.switchToWindowTitle('Consulta de ONP Telecoop')
-
-WebUI.setText(findTestObject('30-ONP/Consulta de ONP Telecoop/txtNumerodeCuenta'), '00890157848')
+//Seteo de datos "Numero de cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de cuenta', '00890157848')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
