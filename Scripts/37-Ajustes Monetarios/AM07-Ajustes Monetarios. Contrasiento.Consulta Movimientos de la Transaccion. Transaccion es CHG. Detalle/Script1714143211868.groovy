@@ -50,7 +50,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetari
 
 //Seteo de datos "Id Transaccion"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', 'CHG232343BKMF') //antes estaba: CHG222100002J
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', 'CHG232350092L') //antes estaba: CHG222100002J
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

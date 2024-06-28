@@ -34,24 +34,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "BCCL.E.CHQ.RECH.AUT"
 WebUI.switchToWindowTitle('BCCL.E.CHQ.RECH.AUT')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ingresar "ENQ BCCL.E.CHQ.RECH.AUT" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CHQ.RECH.AUT')
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "BCCL.E.CHQ.RECH.AUT"
-WebUI.switchToWindowTitle('BCCL.E.CHQ.RECH.AUT')
-
-//Setear id de la cuenta
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.RECH.AUT/txtIDdelaCuenta'), '00010504543') 
-	
-//Setear Numero de cheque completo
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.RECH.AUT/txtNroChequeCompleto'), '76067505') 
+//Seteo de datos "ID de la Cuenta" "Nro Cheque(Completo)"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID de la Cuenta', '00010504543')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro Cheque(Completo)', '76067505')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

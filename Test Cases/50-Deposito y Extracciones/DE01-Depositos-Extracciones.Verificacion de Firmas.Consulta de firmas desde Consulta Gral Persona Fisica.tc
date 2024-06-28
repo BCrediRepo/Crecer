@@ -4,5 +4,6 @@
    <name>DE01-Depositos-Extracciones.Verificacion de Firmas.Consulta de firmas desde Consulta Gral Persona Fisica</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>04f0fbe6-1c82-445b-8d44-c46a59a4f020</testCaseGuid>
 </TestCaseEntity>

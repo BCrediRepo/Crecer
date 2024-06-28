@@ -34,15 +34,9 @@ WebUI.click(findTestObject('02-Dashboard/43-TOB/Transferencias a Cuentas de Otro
 
 WebUI.switchToWindowTitle('BCCL.E.SNP.FT.TRANSFER')
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/43-TOB/Transferencias a Cuentas de Otros Bancos SNP/lnkConsultaDeTransfaOtrosBancos'))
-
-WebUI.switchToWindowTitle('BCCL.E.SNP.FT.TRANSFER')
-
-WebUI.setText(findTestObject('44-TOB/BCCL.E.SNP.FT.TRANSFER/txtCuenta'), '21190118359')
+//Seteo de datos "CUENTA"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CUENTA', '21190118359')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

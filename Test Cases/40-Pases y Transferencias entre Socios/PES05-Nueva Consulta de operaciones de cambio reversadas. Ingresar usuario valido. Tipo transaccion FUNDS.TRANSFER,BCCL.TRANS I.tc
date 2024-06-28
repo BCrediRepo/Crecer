@@ -4,5 +4,6 @@
    <name>PES05-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. Tipo transaccion FUNDS.TRANSFER,BCCL.TRANS I</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>07a5d067-d196-48f7-992f-0d1f5f9cab6e</testCaseGuid>
 </TestCaseEntity>

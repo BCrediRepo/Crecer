@@ -111,20 +111,6 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña Movimiento por Fecha de Cuentas
 WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.CONS.SALDOS.DIARIOS
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña Movimiento por Fecha de Cuentas
-WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
-
 //Verifica titulo Deposito De Efectivo En Ventanilla
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Movimientos de Ctas por Fecha Valor/lblTituloMovimientosdeCtasporFechaValor'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/Movimientos de Ctas por Fecha Valor/lblTituloMovimientosdeCtasporFechaValor'))
@@ -132,8 +118,9 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/Movimien
 //Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Ingresa la cuenta
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Movimientos de Ctas por Fecha Valor/txtNroDeCuenta11'),'12420050078')
+//Seteo de datos "Nro de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta', '12420050078')
 
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

@@ -4,5 +4,6 @@
    <name>AM07-Ajustes Monetarios. Contrasiento.Consulta Movimientos de la Transaccion. Transaccion es CHG. Detalle</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1e045a78-917e-4f91-9a8b-81507b97fa17</testCaseGuid>
 </TestCaseEntity>

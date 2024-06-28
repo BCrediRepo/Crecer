@@ -42,7 +42,7 @@ WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtC
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
 
-WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtFecha'), '30 AGO 2023')
+WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtFecha'), GlobalVariable.vFechaCOBAmbTES10)
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
 
@@ -75,17 +75,10 @@ WebUI.click(findTestObject('02-Dashboard/54-Reversos/lnkReversodeOperaciones'))
 
 WebUI.switchToWindowIndex(1)
 
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('02-Dashboard/54-Reversos/lnkReversodeOperaciones'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('55-Reversos/BCCL.E.EB.CONS.REVE/txtNroContrato'), transaccion)
-
-WebUI.setText(findTestObject('55-Reversos/BCCL.E.EB.CONS.REVE/txtUsuario'), 'B.2055')
+//Seteo de datos "Usuario" "Nro. Contrato"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Contrato', transaccion)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.2055')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

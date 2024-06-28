@@ -4,5 +4,6 @@
    <name>VDF16-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante .Persona inexistente</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>87072b71-22d5-4c79-a776-c91037e1ee0f</testCaseGuid>
 </TestCaseEntity>

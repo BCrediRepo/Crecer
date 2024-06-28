@@ -48,22 +48,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas
 //Switch a la ventana Consulta General de personas Fisica
 WebUI.switchToWindowTitle('Consulta General de personas Fisica')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-
-WebUI.switchToWindowIndex(0)
-
-//Switch a la ventana
-WebUI.switchToWindowTitle('T24 - Fil.043 Villa Mitre')
-
-//Click en Busqueda y Consulta General de personas Fisica
-WebUI.click(findTestObject('Object Repository/02-Dashboard/29-Personas/Consultas/Consulta General/lnkBusqueda y consulta general Persona Fisica'))
-
-//Switch a la ventana Consulta General de personas Fisica
-WebUI.switchToWindowTitle('Consulta General de personas Fisica')
-
 //Maximizamos
 WebUI.maximizeWindow()
+
+//Limpieza
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

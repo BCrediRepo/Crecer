@@ -34,18 +34,9 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/48-Echeq/lnkMontoenEc
 //Cambiar ventana "BCCL.E.CQ.ACUM.ECHEQ"
 WebUI.switchToWindowTitle('BCCL.E.CQ.ACUM.ECHEQ')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Monto en Echeq Pendientes de Pago X Persona"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/48-Echeq/lnkMontoenEcheqPendientesdePagoXPersona'))
-
-//Cambiar ventana "BCCL.E.CQ.ACUM.ECHEQ"
-WebUI.switchToWindowTitle('BCCL.E.CQ.ACUM.ECHEQ')
-
-//Setear "IDPersona"
-WebUI.setText(findTestObject('Object Repository/50-Echeq/BCCL.E.CQ.ACUM.ECHEQ/txtIdPersonaNroDoc'), '1003398047') 
+//Seteo de datos "Id Persona/Nro Doc"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona/Nro Doc', '1003398047')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

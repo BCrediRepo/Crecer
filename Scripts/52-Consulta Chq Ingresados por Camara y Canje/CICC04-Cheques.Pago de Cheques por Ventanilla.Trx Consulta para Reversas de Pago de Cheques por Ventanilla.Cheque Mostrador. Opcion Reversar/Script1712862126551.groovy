@@ -49,22 +49,11 @@ WebUI.click(findTestObject('Object Repository/53-Consulta Chq Ingresados por Cam
 //Cambiar ventana "BCCL.Q.CONS.REVE.CHQ"
 WebUI.switchToWindowTitle('BCCL.Q.CONS.REVE.CHQ')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(1)
+//Seteo de datos "Usuario", "Numero de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0073')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta', '10730166496')
 
-//Seleccionar "Consulta de reversos"
-WebUI.click(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/Temenos T24/Sucursal Piloto/D3 - CC3/Cheques por Ventanilla/lnkConsultadereversos'))
-
-//Cambiar ventana "BCCL.Q.CONS.REVE.CHQ"
-WebUI.switchToWindowTitle('BCCL.Q.CONS.REVE.CHQ')
-
-//Setear "Usuario"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.Q.CONS.REVE.CHQ/txtUsuario'), 'B.0073') 
-
-//Setear "Numero de cuenta"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.Q.CONS.REVE.CHQ/txtNumerodeCuenta'), '10730166496')
-	
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 

@@ -4,5 +4,6 @@
    <name>PES04-Reversa de pase entre socios. Acumuladores de Limites genericos</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a704de1a-3bf2-456a-83cd-de9dcf2d34e5</testCaseGuid>
 </TestCaseEntity>

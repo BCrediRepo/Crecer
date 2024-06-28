@@ -4,5 +4,6 @@
    <name>VDF13-Consulta de Firmas. Desde Consulta Gral. Persona Fisica. Consulta de Firmas Fisica. Busqueda con el filtro vacio</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>90ccd74b-6150-42be-84af-99ea720a2801</testCaseGuid>
 </TestCaseEntity>

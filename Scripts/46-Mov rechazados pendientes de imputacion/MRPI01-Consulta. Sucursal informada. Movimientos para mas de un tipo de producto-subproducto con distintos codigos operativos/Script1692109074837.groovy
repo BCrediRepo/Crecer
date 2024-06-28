@@ -37,24 +37,13 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Abre la pestaña del menú BCCL.E.MR.PARTIDAS.PENDIENTES
 WebUI.switchToWindowTitle('BCCL.E.MR.PARTIDAS.PENDIENTES')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando menu ENQ BCCL.E.MR.PARTIDAS.PENDIENTES
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'ENQ BCCL.E.MR.PARTIDAS.PENDIENTES')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña del menú BCCL.E.MR.PARTIDAS.PENDIENTES
-WebUI.switchToWindowTitle('BCCL.E.MR.PARTIDAS.PENDIENTES')
-
 //Verifica titulo BCCL.E.MR.PARTIDAS.PENDIENTES
 WebUI.verifyElementVisible(findTestObject('Object Repository/47-Mov rechazados pendientes de imputacion/BCCL.E.MR.PARTIDAS.PENDIENTES/lblTituloBCCL.E.MR.PARTIDAS.PENDIENTES'))
 
-//Ingresa Sucursal
+//Seteo de datos "Suc."
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/47-Mov rechazados pendientes de imputacion/BCCL.E.MR.PARTIDAS.PENDIENTES/txtSuc1'), 6)
-WebUI.setText(findTestObject('Object Repository/47-Mov rechazados pendientes de imputacion/BCCL.E.MR.PARTIDAS.PENDIENTES/txtSuc1'), '117')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Suc.', '117')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

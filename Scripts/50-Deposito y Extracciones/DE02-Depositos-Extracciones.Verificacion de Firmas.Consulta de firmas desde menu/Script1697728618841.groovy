@@ -34,26 +34,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña BCCL.E.FIRMAS.CUENTA
 WebUI.switchToWindowTitle('BCCL.E.FIRMAS.CUENTA')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.FIRMAS.CUENTA
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.FIRMAS.CUENTA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña BCCL.E.FIRMAS.CUENTA
-WebUI.switchToWindowTitle('BCCL.E.FIRMAS.CUENTA')
-
 //Verifica titulo BCCL.E.FIRMAS.CUENTA
 WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.E.FIRMAS.CUENTA/lblBCCL.E.FIRMAS.CUENTA'))
 
-//Ingresa Numero de Cuenta
+//Seteo de datos "Numero de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.E.FIRMAS.CUENTA/txtNroCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/BCCL.E.FIRMAS.CUENTA/txtNroCuenta'), '01195394033')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta', '01195394033')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

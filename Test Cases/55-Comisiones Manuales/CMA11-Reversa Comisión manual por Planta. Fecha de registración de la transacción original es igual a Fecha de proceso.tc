@@ -4,5 +4,6 @@
    <name>CMA11-Reversa Comisión manual por Planta. Fecha de registración de la transacción original es igual a Fecha de proceso</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f409bbad-ef91-4ba5-8af3-6f8cb5b7cc2b</testCaseGuid>
 </TestCaseEntity>

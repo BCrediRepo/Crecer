@@ -4,5 +4,6 @@
    <name>VDF12-Consulta de Firmas. Desde Consulta Gral. Persona Fisica. Consulta de Firmas Fisica. Datos validos</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0567ff94-dc4c-4f0e-a9c3-0cab1f5bbfe6</testCaseGuid>
 </TestCaseEntity>

@@ -34,26 +34,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña Consulta General de personas Fisica
 WebUI.switchToWindowTitle('Consulta General de personas Fisica')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.PER.GEN.PF
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.PER.GEN.PF')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña Consulta General de personas Fisica
-WebUI.switchToWindowTitle('Consulta General de personas Fisica')
-
 //Verifica titulo //Abre la pestaña Consulta General de personas Fisica
 WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblTituloConsulta General de personas Fisica'))
 
-//Ingresa ID Persona
+//Seteo de datos "Id Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/txtIdPersona'), 6)
-WebUI.setText(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/txtIdPersona'), '1002570602')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1002570602')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

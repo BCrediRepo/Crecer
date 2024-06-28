@@ -4,5 +4,6 @@
    <name>VDF04-Consulta de Firmas. Consultas de Cuenta. Consulta de Cuentas por Firmante . Completitud de busqueda</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a7505c08-387c-4a13-aeb3-4252f95bd397</testCaseGuid>
 </TestCaseEntity>

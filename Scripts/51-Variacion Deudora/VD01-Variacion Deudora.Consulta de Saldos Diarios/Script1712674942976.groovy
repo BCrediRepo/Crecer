@@ -34,26 +34,13 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Abre la pestaña Movimiento por Fecha de Cuentas
 WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
 
-//Filtro para limpiar selección
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Ejecuta en la linea de comando ENQ BCCL.E.CONS.SALDOS.DIARIOS
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONS.SALDOS.DIARIOS')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña Movimiento por Fecha de Cuentas
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
-
 //Verifica titulo Movimiento por Fecha de Cuentas
 WebUI.verifyElementVisible(findTestObject('Object Repository/52-Variacion Deudora/Movimientos por Fecha de Cuentas/lblMovimientosporFechadeCuentas'))
 
-//Ingresa Numero de Cuenta
+//Seteo de datos "Nro de Cuenta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/52-Variacion Deudora/Movimientos por Fecha de Cuentas/txtNrodeCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/52-Variacion Deudora/Movimientos por Fecha de Cuentas/txtNrodeCuenta'), '11190118359')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta', '11190118359')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()

@@ -37,24 +37,11 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/51-Consulta Chq Ingre
 //Cambiar ventana "BCCL.E.CHQ.PAGADOS"
 WebUI.switchToWindowTitle('BCCL.E.CHQ.PAGADOS')
 
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Cheques Pagados"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/51-Consulta Chq Ingresados por Camara y Canje/lnkChequesPagados'))
-
-//Cambiar ventana "BCCL.E.CHQ.PAGADOS"
-WebUI.switchToWindowTitle('BCCL.E.CHQ.PAGADOS')
-
-//Setear "Fecha Desde"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.PAGADOS/txtFechaDesde'), '20210901')
-
-//Setear "Fecha Hasta"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.PAGADOS/txtFechaHasta'), '20210922')
-
-//Setear "Sucursal"
-WebUI.setText(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.E.CHQ.PAGADOS/txtSucursal'), '089')
+//Seteo de datos "Fecha Desde", "Fecha Hasta", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20210901')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', '20210922')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
