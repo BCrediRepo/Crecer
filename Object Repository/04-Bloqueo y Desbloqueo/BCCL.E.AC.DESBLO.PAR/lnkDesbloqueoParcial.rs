@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnkDesbloqueoParcial</name>
+   <tag></tag>
+   <elementGuidId>74a57146-4027-4046-aaea-391fe5c9b217</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>.enqDrillLink</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[8]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>e35bc5ac-4184-46e4-a899-a3405603d74c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqDrillLink</value>
+      <webElementGuid>fc0c6716-ce09-416a-a0da-13e392218d12</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>74920d79-c415-4730-8910-78caffb82785</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:drilldown('1','1_1')</value>
+      <webElementGuid>de7cbffe-ea09-430b-a01f-3f40142da1c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Desbloqueo General</value>
+      <webElementGuid>91b0c461-a8a3-4f3e-bc0f-14f300643e1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEACDESBLOPORCTA&quot;]/a[@class=&quot;enqDrillLink&quot;]</value>
+      <webElementGuid>6e0ed748-86e7-4083-aeb0-f3c815965470</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[8]/a</value>
+      <webElementGuid>660833dd-0410-4cfa-87c1-9e7d78bed13b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Desbloqueo General')]</value>
+      <webElementGuid>d94e7512-ffa8-40be-b542-721cd5d72c71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BLOQUEO CREDITOS'])[1]/following::a[1]</value>
+      <webElementGuid>cd86cc7a-ad31-4842-9ab7-1815193dfdb4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L F ARAUJO'])[2]/following::a[1]</value>
+      <webElementGuid>3309d1eb-eb7a-4b95-8849-9cae538c3486</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Desbloqueo Parcial'])[1]/preceding::a[1]</value>
+      <webElementGuid>a0b166b0-dfa7-43e3-ac28-c2081dceeb10</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::a[2]</value>
+      <webElementGuid>c1a802d3-e23b-4e03-9c9c-1a2f2ec0a664</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Desbloqueo General']/parent::*</value>
+      <webElementGuid>9792f3b1-25e6-4edf-b271-57dbef53bcf2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
+      <webElementGuid>869e6fc2-6e23-4dcb-81f6-a17144353c7a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[8]/a</value>
+      <webElementGuid>26fc7cdb-ea73-4728-a4d4-b91e94b53321</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Desbloqueo General' or . = 'Desbloqueo General')]</value>
+      <webElementGuid>dbbaab88-6479-4e32-b2e7-737e2d6bcb81</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
