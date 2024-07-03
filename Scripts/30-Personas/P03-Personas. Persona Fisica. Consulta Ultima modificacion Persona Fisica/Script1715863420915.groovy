@@ -57,9 +57,9 @@ WebUI.switchToWindowTitle('Consulta Gral Pers Fisica Historia')
 
 //Seteo de datos "Id Persona", "Nro Documento", "Apellido"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1000873562')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Documento', '20144835')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'ENRICO')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1003337040')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Documento', '5501746')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'MILLA')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -82,12 +82,9 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Ult Modif'))
 
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/spanConsulta Gral Pers Fisica Historia'))
-
-WebUI.click(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lnkVer Historico'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lblLISTADOHISTORICO'), 6)
-
+WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lblULTIMAMODIF'))
+def element = WebUI.getText(findTestObject('Object Repository/31-Personas/Consulta Gral Pers Fisica Historia/lblULTIMAMODIF'))
+assert element.contains('CONSULTA DE ULTIMA MODIF PERSONA')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

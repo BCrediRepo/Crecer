@@ -4,5 +4,6 @@
    <name>C08-Cuentas. Consulta de cuenta. Consulta de Producto de cuenta</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1777a311-9800-4e05-b399-c5ffd1347dbd</testCaseGuid>
 </TestCaseEntity>

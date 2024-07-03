@@ -50,21 +50,10 @@ WebUI.switchToWindowTitle('Consulta de Productos de Cuenta')
 // Maximizamos
 WebUI.maximizeWindow()
 
-//Limpieza
+//Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Ingresamos los datos para la consulta
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/btndropdownTarifario'))
-
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/lbl000'))
-
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/btndropdownMoneda'))
-
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta de Productos de Cuenta/lblARS'))
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tarifario', '000')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
