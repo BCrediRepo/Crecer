@@ -86,10 +86,27 @@ WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmant
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtFormaDeOperar'), 6)
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtFormaDeOperar'), '02')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtFormaDeOperar'), '00')
 
 //Validamos el registro
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/btnValidarRegistro'))
+
+//Aceptamos el registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/btnAceptarRegistro'))
+
+//Aceptamos Alertas
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/lnkAceptarAlertas'))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
