@@ -6,15 +6,15 @@
    <elementGuidId>641e3a46-57ec-4522-bac3-431748e0b716</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>ul.menuMargin:nth-child(31) > li:nth-child(1) > span:nth-child(1)</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/div[3]/ul[12]/li/span</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>ul.menuMargin:nth-child(31) > li:nth-child(1) > span:nth-child(1)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>10fa7fc4-01f0-4ab1-9569-a28ead73be08</webElementGuid>
+      <webElementGuid>ff76564d-ba05-4ec3-a647-6dacb865fe91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>bb75433c-75e5-4c3b-a432-977aab1ed2b0</webElementGuid>
+      <webElementGuid>2cd5e6e5-e394-4ace-add2-4a90a2daf1fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>99c47214-8776-4414-a9d1-65b7597fa42f</webElementGuid>
+      <webElementGuid>e7ba1194-beb7-44fd-9759-16b7b7ca3828</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Reversos</value>
-      <webElementGuid>83c970f8-f263-4b6b-8994-d1e48a9aa822</webElementGuid>
+      <webElementGuid>f94a029c-79a7-48cf-9d12-c925bc4f69f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>3a05c872-3b08-4b54-9ab5-c4673bfb90aa</webElementGuid>
+      <webElementGuid>1f32c534-749c-4d47-a299-def9aebb2b29</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>fa3eea5d-7038-4191-8795-31cd2ca6e7ba</webElementGuid>
+      <webElementGuid>f86a2457-ed98-4f24-a326-b8d6b40002cd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[27]</value>
-      <webElementGuid>582fead1-5e2b-4162-84f1-d88ab8f5e778</webElementGuid>
+      <webElementGuid>5919ae0a-2012-47f4-b882-f651e6fa0792</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[13]/li/span</value>
-      <webElementGuid>7ea7cca8-e10e-4232-958b-34644f738c1c</webElementGuid>
+      <webElementGuid>49644cf8-caf7-4832-80f4-6511a1930402</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Listado de Cod. a Controlar por Sector'])[1]/following::span[1]</value>
-      <webElementGuid>a43be0b6-15fd-47f4-8f50-24d588dfc085</webElementGuid>
+      <webElementGuid>8f75895d-ddfc-4c34-9821-028e1a6d65d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Sobrantes Caja'])[1]/following::span[1]</value>
-      <webElementGuid>407fe07f-b116-4cbe-89b2-1d3e9cd0814e</webElementGuid>
+      <webElementGuid>4991d007-74d2-44b3-a9ed-08a86fc51620</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Operaciones'])[1]/preceding::span[1]</value>
-      <webElementGuid>38073cc4-b478-4443-a11a-62699f45fbb1</webElementGuid>
+      <webElementGuid>79c70e65-fd4c-41d9-a7f4-280ff47ff149</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Cheques'])[1]/preceding::span[1]</value>
-      <webElementGuid>7e5f893a-f29e-40a6-aeed-16da4ccfd6d2</webElementGuid>
+      <webElementGuid>6b6d1922-6e7e-4951-8b25-1dae486005ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Reversos']/parent::*</value>
-      <webElementGuid>1d850b8e-8965-401d-9322-68d8d7e9ca7b</webElementGuid>
+      <webElementGuid>f41bff8b-4422-4fba-b708-7f1045c676bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[13]/li/span</value>
-      <webElementGuid>16b81254-427c-4b26-ac0d-3a262dfcd224</webElementGuid>
+      <webElementGuid>a681fdcf-7f02-4b6c-ac73-99b8ac8e207e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Reversos' or . = 'Reversos')]</value>
-      <webElementGuid>64359bc1-3d2f-4ae9-9bd5-458e7738d098</webElementGuid>
+      <webElementGuid>634952be-d8dd-4695-b706-1abad0a59307</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

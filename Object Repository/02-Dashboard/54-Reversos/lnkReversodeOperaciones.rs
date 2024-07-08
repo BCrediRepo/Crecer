@@ -6,15 +6,15 @@
    <elementGuidId>0f1d07d4-7bf8-4555-81ab-4a997d4ad7e3</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/ul[12]/li/ul/li[1]/a</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>ul.menuMargin:nth-child(31) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.CONS.REVE');processMenuHeaderText('Reverso de Operaciones')&quot;]</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>1cb81bdf-1475-437c-bd11-e26d511b0e09</webElementGuid>
+      <webElementGuid>0101b025-4fe2-4654-9ddc-867c56f02aa4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.CONS.REVE');processMenuHeaderText('Reverso de Operaciones')</value>
-      <webElementGuid>97728c35-6934-4c56-93a0-5a8c56759b1b</webElementGuid>
+      <webElementGuid>db2099a4-362b-4e57-855d-052fdfb6ed35</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:doenq('ENQ BCCL.E.EB.CONS.REVE');</value>
-      <webElementGuid>1aa32346-2854-44d3-90cd-007f0688ff2c</webElementGuid>
+      <webElementGuid>8fdf16bb-dc31-4345-9271-bcfd67d446fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Reverso de Operaciones </value>
-      <webElementGuid>7b5d81a9-de25-444b-9768-ccce69313899</webElementGuid>
+      <webElementGuid>28fede40-725e-4d49-babe-59d3b6b962c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[1]/a[1]</value>
-      <webElementGuid>748d44a9-2574-4aea-a812-c4e29eceedf4</webElementGuid>
+      <webElementGuid>0d127562-6bc8-404e-b215-c4254726c388</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>a99766ca-d6be-49e3-816f-b9a39ca37fe1</webElementGuid>
+      <webElementGuid>9d292259-698f-46af-8dae-ad0e0b77c5c5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@onclick=&quot;javascript:menu_history('ENQUIRY','ENQ BCCL.E.EB.CONS.REVE');processMenuHeaderText('Reverso de Operaciones')&quot;]</value>
-      <webElementGuid>031b407b-2017-4d7c-a025-5429d00bfa96</webElementGuid>
+      <webElementGuid>e4d3edfa-f2f1-494c-8114-9f8c1d04b190</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[13]/li/ul/li/a</value>
-      <webElementGuid>66b4d119-a464-41c7-a19a-0c6feb206e07</webElementGuid>
+      <webElementGuid>57be82d5-f54a-4141-82e4-ece0d4a70d34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Reverso de Operaciones')]</value>
-      <webElementGuid>2a80ba2b-4d00-4964-a7de-6de91bd210bf</webElementGuid>
+      <webElementGuid>3c670191-db36-4271-8d0d-ed804a3eed48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reversos'])[1]/following::a[1]</value>
-      <webElementGuid>9fe1106b-40f8-4eb6-9df0-008ee4ef2a85</webElementGuid>
+      <webElementGuid>f324a0c6-cfce-4d54-bbd9-9df5258c9b51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Listado de Cod. a Controlar por Sector'])[1]/following::a[1]</value>
-      <webElementGuid>470c97d5-9070-4b55-868b-37d8d6cbb31e</webElementGuid>
+      <webElementGuid>fc1be605-e76a-44a6-867b-67c9c0b3a1e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Cheques'])[1]/preceding::a[1]</value>
-      <webElementGuid>c6662f8d-be40-4183-b7d3-543af3b46ef2</webElementGuid>
+      <webElementGuid>037e72ac-10b9-48f6-882c-57b292a31d0a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Remesas'])[1]/preceding::a[2]</value>
-      <webElementGuid>08d3dbed-1548-4b4e-9094-d9fd5b2369e5</webElementGuid>
+      <webElementGuid>c62773a2-16f5-4e7a-b1b2-bf151f7c1c05</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Reverso de Operaciones']/parent::*</value>
-      <webElementGuid>1b273b6f-638a-4d09-aa91-a6776b3c1147</webElementGuid>
+      <webElementGuid>9d102ac1-6e35-44f0-bbf1-a010ba307ad4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:doenq('ENQ BCCL.E.EB.CONS.REVE');&quot;)]</value>
-      <webElementGuid>d672d28e-cb23-40d0-860b-b25b0a2ba213</webElementGuid>
+      <webElementGuid>9b059ebf-4482-448c-9592-2b2a40967506</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[13]/li/ul/li/a</value>
-      <webElementGuid>ee4aecef-2bb2-4b6f-af95-7691e11b20d0</webElementGuid>
+      <webElementGuid>63bcc255-29a2-4a98-be1f-3dc2be43ea45</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = concat(&quot;javascript:doenq(&quot; , &quot;'&quot; , &quot;ENQ BCCL.E.EB.CONS.REVE&quot; , &quot;'&quot; , &quot;);&quot;) and (text() = 'Reverso de Operaciones ' or . = 'Reverso de Operaciones ')]</value>
-      <webElementGuid>9085e7e0-0104-49af-921a-7c944232a96e</webElementGuid>
+      <webElementGuid>80ff2e16-e675-47f2-a812-1a2ce0183858</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
