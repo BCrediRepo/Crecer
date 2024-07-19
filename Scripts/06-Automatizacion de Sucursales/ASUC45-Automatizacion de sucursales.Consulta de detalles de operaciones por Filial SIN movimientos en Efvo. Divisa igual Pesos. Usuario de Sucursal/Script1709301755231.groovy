@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Ingresar "?70" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?70')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar boton de buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -47,9 +44,6 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 
 //Seleccionar "Consultas de Cierre Operatoria"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas de Atencion a Usuarios/Consultas de Operatoria en Linea de Cajas/lnkConsultasdeCierreOperatoria'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Detalle de Operaciones Sin Efvo (Filial)"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas de Atencion a Usuarios/Consultas de Operatoria en Linea de Cajas/Consultas de Cierre Operatoria/lnkDetalleOpSinEfvo(Filial)'))
@@ -74,13 +68,12 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Cambiar ventana "Detalle Transacciones No Efectivo"
 WebUI.switchToWindowTitle('Detalle Transacciones No Efectivo')
 
-//Verificar "043"
+//Verificar la sucursal
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales Usuario x Cod Oper/lblSucursal'))
-
-//Validar "043"
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales Usuario x Cod Oper/lblSucursal'))
 assert element.contains('043')
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

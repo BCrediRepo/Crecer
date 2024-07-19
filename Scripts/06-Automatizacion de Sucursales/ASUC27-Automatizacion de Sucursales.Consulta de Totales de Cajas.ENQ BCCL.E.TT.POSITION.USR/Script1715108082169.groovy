@@ -24,7 +24,6 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en caja
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
@@ -45,7 +44,6 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.POSITION.USR/lnkEjecutar'))
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //ASSERT
@@ -59,16 +57,12 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.POSITION.USR/lblTotal'))
-
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.POSITION.USR/lblTotal'))
-
 assert element.contains('Total')
 
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -79,7 +73,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-

@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Ingresar "?70" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?70')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar boton de buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -41,9 +38,6 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 
 //Seleccionar "Consultas Auditoria Automatizacion Sucursales"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/lnkConsultasAuditoriaAutomatizacionSucursales'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Consulta de Cajas Abiertas del Banco"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas Auditoria Automatizacion Sucursales/lnkConsultadeCajasAbiertasdelBanco'))
@@ -58,6 +52,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Cajas Abiertas del Banco/lblEstadoActual'))
 assert element.contains('Estado Actual')
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

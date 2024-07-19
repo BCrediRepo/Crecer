@@ -36,9 +36,6 @@ WebUI.maximizeWindow()
 //Seleccionar "Caja"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "Consulta de Estados de Cajas"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkConsultadeEstadodeCajas'))
 
@@ -50,8 +47,6 @@ WebUI.maximizeWindow()
 
 //Verificar "OPEN"
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
-
-//Validar "OPEN"
 def element2 = WebUI.getText(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
 assert element2.contains('OPEN')
 

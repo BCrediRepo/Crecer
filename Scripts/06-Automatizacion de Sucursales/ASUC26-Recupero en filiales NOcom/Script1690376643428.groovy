@@ -24,12 +24,8 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
 
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION')
-
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -38,9 +34,6 @@ WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
-
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verifica que estemos en la ventana correcta
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTituloImputaciondeSuscripNOCOMSuc-PR'))

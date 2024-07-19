@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Seleccionar "Consultas de Operatoria en Linea de Cajas"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsultasdeOperatoriaenLineadeCajas'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "Consulta de Excesos en Linea"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Consultas de Operatoria en Linea de Cajas/lnkConsultadeExcesosenLinea'))
 
@@ -53,6 +50,8 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
 assert element.contains('Diferencia')
 
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

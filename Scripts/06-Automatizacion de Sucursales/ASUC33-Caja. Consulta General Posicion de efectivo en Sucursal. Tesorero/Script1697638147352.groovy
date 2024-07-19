@@ -60,14 +60,10 @@ long elapsedTime = endTime - startTime
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimientos por Fecha Ctas Internas/lblCodigo'))
-
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimientos por Fecha Ctas Internas/lblCodigo'))
-
 assert element.contains('Codigo')
 
-
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -78,5 +74,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

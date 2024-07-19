@@ -26,16 +26,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ejecuta en la linea de comando menu ?1
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Abre la pestaña del menú ?01
 WebUI.switchToWindowTitle('Temenos T24')
@@ -56,9 +51,6 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkEXISTENCIAPORDENOMINACION'))
 WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Verifica titulo de BCCL.E.TT.CASH.DENOM y Seteo de Datos "Divisa", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblTituloBCCL.E.TT.CASH.DENOM'))
@@ -75,7 +67,6 @@ long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//WebUI.delay(10)
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
@@ -88,11 +79,11 @@ assert element.contains('FILAL')
 //Espera y verifica que se muestren los demás registros de la tabla
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblCANTIDAD'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDESCCATEGORIA'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIDCAJERO'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIMPORTExDENOMINACION'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIMPORTExMONEDA'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/th_CATEGORIA'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDESCCATEGORIA'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIDCAJERO'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIMPORTExDENOMINACION'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIMPORTExMONEDA'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblCATEGORIA'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

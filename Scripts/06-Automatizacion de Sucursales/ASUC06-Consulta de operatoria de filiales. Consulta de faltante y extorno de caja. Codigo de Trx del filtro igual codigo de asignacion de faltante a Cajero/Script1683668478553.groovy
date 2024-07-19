@@ -49,66 +49,19 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA')
 
-//Verifica titulo de Caja Faltantes Extonos Caja
+//Verifica titulo de Caja Faltantes Extonos Caja y seteo de Datos
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lbltituloBCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA'))
-
-
-//EL PROBLEMA ESTA EN EL FILTRO DE BUSQUEDA, AL NO FUNCIONAR CORRECTAMENTE LAS VARIANTES DE BUSQUEDA SON INUTILES YA SE INFORMO EL ERROR DEL PROBLEMA Y NADIE HACE NADA
-
-
-
-////Ingresa fecha desde
-//Label = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/llbFechaDesdePosicion2'))
-////Label = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblFechaDesdePosicion3'))
-//
-////if (Label == 'Fecha Desde') {
-//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaDesdevalue2'), '20230824')
-//	//WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaDesdevalue3'), '20230824')
-////} //else {
-//	//WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtCodTransaccionvalue1'), '20220725')
-////}
-//
-////Ingresa Codigo de Transaccion
-//Label = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblCodTransaccionPosicion1'))
-//
-//if (Label == 'Cod. Transaccion') {
-//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtCodTransaccionvalue1'), '4')
-//} //else {
-//	//WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtNroLegajovalue2'), '4')
-////}
-//
-////Ingresa Sucursal
-////Label = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblSucursalPosicion5'))
-//
-////if (Label == 'Sucursal') {
-//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtSucursalvalue5'), '001')
-//
-////Borra el numero de legajo
-///*	
-//if (Label == 'No. Legajo') {
-//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtNroLegajovalue2'), '')
-//} else {
-//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaDesdevalue3'), '')
-//}
-//
-/////Borra el campo de sucursal
-//if (Label == 'Sucursal') {
-//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtSucursalvalue5'), '')
-//} else {
-//	WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/txtFechaDesdevalue3'), '')
-//}
-//*/
-//
-////Toma un ScreenShot
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Transaccion', '4')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/btnEjecutar'))
-WebUI.delay(20)
+WebUI.delay(10)
 
 //Espera y verifica que se muestren los registros de la tabla
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblCuentaInternaCaja'),20)
@@ -117,13 +70,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblDescripcion'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblFecha'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblFilial'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblImporte'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblLegajoCajero'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblMoneda'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTxnId'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTransaccion'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTotalExtorno'))
-//WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblCajero'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -136,9 +83,6 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 //Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Ver el primer registro
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/btnVerDetalles'))
 
@@ -146,7 +90,6 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BC
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'),6)
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'))
 assert element.contains('Transaction Code')
-
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

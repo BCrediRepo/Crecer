@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Seleccionar "Caja"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "Apertura de Caja"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkAperturadeCaja'))
 
@@ -40,7 +37,6 @@ WebUI.switchToWindowTitle('TELLER ID')
 WebUI.maximizeWindow()
 
 try {
-	
 	//Seleccionar "Boton Aceptar Registro"
 	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
 
@@ -96,8 +92,6 @@ catch (Exception e) {
 
 	//Verificar "OPEN"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPEN'))
-
-	//Validar "OPEN"
 	def element2 = WebUI.getText(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPEN'))
 	assert element2.contains('OPEN')
 }

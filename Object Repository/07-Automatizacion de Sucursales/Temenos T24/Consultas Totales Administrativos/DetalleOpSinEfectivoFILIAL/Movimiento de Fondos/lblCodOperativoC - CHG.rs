@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>th_CATEGORIA</name>
+   <name>lblCodOperativoC - CHG</name>
    <tag></tag>
-   <elementGuidId>81781317-1531-4ff4-821b-37a24955cba2</elementGuidId>
+   <elementGuidId>71f039f9-d7bd-4f93-86c7-3b8f5b01bf99</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText2</value>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeaderText2']</value>
+         <key>CSS</key>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(15) > td:nth-child(3) > span:nth-child(1)</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'CATEGORIA' or . = 'CATEGORIA')]</value>
+         <value>//*[(text() = 'Cod. Operativo' or . = 'Cod. Operativo')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>aa1069a6-80e7-4e36-9e6f-768ef9cb7302</webElementGuid>
+      <webElementGuid>7b1920ef-d84c-44db-b573-a8523a912ba3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>6457d133-7fd5-4b4a-a939-da6a49ca3d11</webElementGuid>
+      <webElementGuid>5ef53c8d-533a-43fc-a196-75c6ab87b3af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,102 +42,102 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>1c8b79a3-c6e0-4380-869c-52c456e9bc46</webElementGuid>
+      <webElementGuid>0d49947f-dc62-40a4-9460-72651f0f6551</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>columnHeaderText2</value>
-      <webElementGuid>3cb69061-2211-479c-a17c-5d28770d17df</webElementGuid>
+      <value>columnHeaderText1</value>
+      <webElementGuid>01e2a4fc-7494-4b1b-9532-eae087291c8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>CATEGORIA</value>
-      <webElementGuid>1b28917f-211b-4a79-b4b5-17cafb51ca10</webElementGuid>
+      <value>Cod. Operativo</value>
+      <webElementGuid>fbd426fa-2998-4442-a28c-fcfcf9be6c04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;columnHeaderText2&quot;)</value>
-      <webElementGuid>c5335f00-2afe-46a5-b3ba-5597eb3468de</webElementGuid>
+      <value>id(&quot;columnHeaderText1&quot;)</value>
+      <webElementGuid>b1315307-b4fa-44ea-9563-cc6628bd456e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[@id='columnHeaderText2']</value>
-      <webElementGuid>08f81f1c-a07b-4bf7-a8c2-c883fc384b8f</webElementGuid>
+      <value>//th[@id='columnHeaderText1']</value>
+      <webElementGuid>5937efe3-396e-499f-a02d-9ec1a49d3c07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='columnHeader2']/table/tbody/tr/th</value>
-      <webElementGuid>036fef84-ae0b-430e-b7ea-3995f4bcc99f</webElementGuid>
+      <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
+      <webElementGuid>d9146d80-ba21-4912-be50-e5abc683f3e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='FILAL'])[1]/following::th[3]</value>
-      <webElementGuid>95aea8d1-857a-44de-8ad2-58e26fe77c8a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/following::th[2]</value>
+      <webElementGuid>b6d60b2a-f992-4874-bbd9-37410243caa9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[6]</value>
-      <webElementGuid>cadb78ae-5ef7-4d29-9e17-55371ab940f1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::th[2]</value>
+      <webElementGuid>b86ce78b-be1f-45cc-9c7b-9f8e97d49bd2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='DESC CATEGORIA'])[1]/preceding::th[2]</value>
-      <webElementGuid>85f02b26-8c84-4bd2-a4ee-727b29fed22e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/preceding::th[2]</value>
+      <webElementGuid>3bfb9301-db54-4224-94c6-055c5b74e224</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID CAJERO'])[1]/preceding::th[5]</value>
-      <webElementGuid>bf4d272f-be94-48ec-ab03-da8d78b53c7c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cant Operaciones'])[1]/preceding::th[5]</value>
+      <webElementGuid>65f01e84-214b-4d69-9467-0d784a9dbd74</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='CATEGORIA']/parent::*</value>
-      <webElementGuid>6c720bc0-cefd-4dbb-86d9-84c545fdd048</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cod. Operativo']/parent::*</value>
+      <webElementGuid>d4350395-697d-47ee-be98-39e242131ab4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[2]/table/tbody/tr/th</value>
-      <webElementGuid>d2cd801e-641a-40f7-9592-7c00df779558</webElementGuid>
+      <value>//tbody/tr/th</value>
+      <webElementGuid>8757f8d3-eb6a-4dce-940a-9c9be688793d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[@id = 'columnHeaderText2' and (text() = 'CATEGORIA' or . = 'CATEGORIA')]</value>
-      <webElementGuid>13c29a99-6f30-4efe-8f99-31b569dac63c</webElementGuid>
+      <value>//th[@id = 'columnHeaderText1' and (text() = 'Cod. Operativo' or . = 'Cod. Operativo')]</value>
+      <webElementGuid>d0a1946e-244b-4b6d-bf01-43dc52e013e7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

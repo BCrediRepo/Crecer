@@ -24,12 +24,8 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2,2))
 
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TSA.SERVICE,')
-
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -38,9 +34,6 @@ WebUI.switchToWindowIndex(1)
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
-
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/TSA.SERVICE/txtTSA.SERVICEId'), 'BNK/BCCL.B.AC.SALDOS.FILIAL')
 
@@ -77,9 +70,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
 assert element2.contains('Txn Completa:')
 
-
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

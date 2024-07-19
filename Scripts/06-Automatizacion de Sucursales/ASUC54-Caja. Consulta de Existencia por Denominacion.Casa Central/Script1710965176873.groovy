@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Ingresar "?327" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar boton de buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -38,9 +35,6 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 //Seleccionar "Caja"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCaja'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Cons. de Existencia por Denominacion"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Caja/lnkCons.deExistenciaporDenominacion'))
@@ -63,8 +57,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion 
 
 //Verificar "DENOMINACION"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
-
-//Validar "DENOMINACION"
 def element5 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
 assert element5.contains('DENOMINACION')
 

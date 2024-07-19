@@ -1,139 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkReversos</name>
+   <name>lblCodOperativoC - FT</name>
    <tag></tag>
-   <elementGuidId>641e3a46-57ec-4522-bac3-431748e0b716</elementGuidId>
+   <elementGuidId>bd41f3e5-e049-4f94-864f-f7c6205e15a6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[3]/ul[12]/li/span</value>
+         <value>//th[@id='columnHeaderText1']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ul.menuMargin:nth-child(31) > li:nth-child(1) > span:nth-child(1)</value>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(20) > td:nth-child(3) > span:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Cod. Operativo' or . = 'Cod. Operativo')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-      <webElementGuid>ff76564d-ba05-4ec3-a647-6dacb865fe91</webElementGuid>
+      <value>th</value>
+      <webElementGuid>0fb8ac51-4339-471e-a8c8-659208550123</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>scope</name>
       <type>Main</type>
-      <value>ProcessMouseClick(event)</value>
-      <webElementGuid>2cd5e6e5-e394-4ace-add2-4a90a2daf1fa</webElementGuid>
+      <value>col</value>
+      <webElementGuid>6b9c641c-1222-43db-83d0-da19fdf4bb0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onkeypress</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ProcessKeyPress(event)</value>
-      <webElementGuid>e7ba1194-beb7-44fd-9759-16b7b7ca3828</webElementGuid>
+      <value>columnHeader</value>
+      <webElementGuid>d2c5c5bc-a40a-4c23-945d-c78de16f18be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>columnHeaderText1</value>
+      <webElementGuid>15a20826-e072-428f-8827-05e8b892d9c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Reversos</value>
-      <webElementGuid>f94a029c-79a7-48cf-9d12-c925bc4f69f9</webElementGuid>
+      <value>Cod. Operativo</value>
+      <webElementGuid>6a23e7cb-31da-4e45-98f8-f2740dec63d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>1f32c534-749c-4d47-a299-def9aebb2b29</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>f86a2457-ed98-4f24-a326-b8d6b40002cd</webElementGuid>
+      <value>id(&quot;columnHeaderText1&quot;)</value>
+      <webElementGuid>17f366cf-25a0-4728-9f88-d37dd6a2f1c4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[27]</value>
-      <webElementGuid>5919ae0a-2012-47f4-b882-f651e6fa0792</webElementGuid>
+      <value>//th[@id='columnHeaderText1']</value>
+      <webElementGuid>19efa35a-7ac7-4d14-82c2-dc48c79fea44</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[13]/li/span</value>
-      <webElementGuid>49644cf8-caf7-4832-80f4-6511a1930402</webElementGuid>
+      <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
+      <webElementGuid>548643b0-2c74-45a5-aa61-990c33a05093</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Listado de Cod. a Controlar por Sector'])[1]/following::span[1]</value>
-      <webElementGuid>8f75895d-ddfc-4c34-9821-028e1a6d65d2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/following::th[2]</value>
+      <webElementGuid>09f42840-ad5b-4352-a4a6-bc6923339357</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta de Sobrantes Caja'])[1]/following::span[1]</value>
-      <webElementGuid>4991d007-74d2-44b3-a9ed-08a86fc51620</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/following::th[2]</value>
+      <webElementGuid>3b4626b3-233e-46c0-a7eb-b7784bf89f81</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Operaciones'])[1]/preceding::span[1]</value>
-      <webElementGuid>79c70e65-fd4c-41d9-a7f4-280ff47ff149</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/preceding::th[2]</value>
+      <webElementGuid>4b241819-f866-4c59-839d-540d08d4acd9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso de Cheques'])[1]/preceding::span[1]</value>
-      <webElementGuid>6b6d1922-6e7e-4951-8b25-1dae486005ab</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cant Operaciones'])[1]/preceding::th[5]</value>
+      <webElementGuid>acdbf538-7636-45d8-9603-e585c46cf0b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Reversos']/parent::*</value>
-      <webElementGuid>f41bff8b-4422-4fba-b708-7f1045c676bc</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cod. Operativo']/parent::*</value>
+      <webElementGuid>f0ef3cd4-a8b9-40e1-a8c4-26fdfc3bf40b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[13]/li/span</value>
-      <webElementGuid>a681fdcf-7f02-4b6c-ac73-99b8ac8e207e</webElementGuid>
+      <value>//tbody/tr/th</value>
+      <webElementGuid>0576e659-041d-4bd2-8267-f1531f4d171d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Reversos' or . = 'Reversos')]</value>
-      <webElementGuid>634952be-d8dd-4695-b706-1abad0a59307</webElementGuid>
+      <value>//th[@id = 'columnHeaderText1' and (text() = 'Cod. Operativo' or . = 'Cod. Operativo')]</value>
+      <webElementGuid>30897bec-2d2f-49a9-8376-b29c7484a406</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

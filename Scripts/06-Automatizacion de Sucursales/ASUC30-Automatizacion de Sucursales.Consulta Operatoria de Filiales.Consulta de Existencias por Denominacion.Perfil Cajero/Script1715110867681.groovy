@@ -24,7 +24,6 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,36), findTestData('MainData/Users').getValue(2, 36))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ingresamos en el commandline el menu ?323
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?323')
@@ -38,9 +37,6 @@ WebUI.maximizeWindow()
 
 //Click en consulta de operatoria
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultadeoperatoria'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en consulta de existencia por denominacion
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consulta de operatoria/lnkConsulta de Existencia por Denominacion'))
@@ -62,7 +58,6 @@ long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lnkEjecutar'))
 
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblFILAL'), 6)
@@ -76,14 +71,10 @@ long elapsedTime = endTime - startTime
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblFILAL'))
-
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblFILAL'))
-
 assert element.contains('FILAL')
 
-
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -94,6 +85,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
 
