@@ -24,7 +24,6 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,31), findTestData('MainData/Users').getValue(2,31))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ingresamos el menu ?1 en el buscador
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
@@ -80,13 +79,10 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/lblMonto'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/lblMonto'))
-
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/lblMonto'))
-
 assert element.contains('Monto')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -97,8 +93,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-
-

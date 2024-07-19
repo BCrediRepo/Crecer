@@ -18,6 +18,15 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.support.ui.Select
+import java.awt.Robot
+import java.awt.event.KeyEvent
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -26,15 +35,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ejecuta en la linea de comando menu ?1
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Abre la pestaña del menú ?01
 WebUI.switchToWindowIndex(1)
@@ -54,9 +59,6 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Ir a Detalle de operaciones sin efectivo (Para Usuario)
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/lnkDetalleOperacionesSinEfectivoUSUARIO'))
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.switchToWindowIndex(2)
 
 //Verifica titulo de Detalle de operaciones sin efectivo y Seteo de Datos "Moneda", "Usuario"
@@ -74,7 +76,6 @@ long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//WebUI.delay(10)
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
@@ -91,11 +92,46 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+def codigoOperativo = "18602" //El codigo operativo 18602 corresponde a "Nota de Credito Ajuste sin Imp"
+// Obtén el elemento de la tabla
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+ 
+// Obtén todas las filas dentro de la tabla
+List<WebElement> rows = table.findElements(By.tagName("tr"))
 
-//Ver el primer registro
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Totales Usuario x Cod Oper/btnVerDetalle'))
+// Valor específico que estás buscando
+String targetValue = codigoOperativo
+ 
+// Variable para rastrear si se encontró el valor específico
+boolean foundTargetValue = false
+ 
+// Itera a través de las filas
+for (WebElement row : rows) {
+	// Obtiene el tercer valor de la fila (índice 2, ya que las listas son base cero)
+	WebElement cell = row.findElements(By.tagName("td"))[0]
+ 
+	// Obtiene el texto de la celda
+	String cellText = cell.getText()
+ 
+	// Compara el valor de la celda con el valor específico
+	if (cellText.equals(targetValue)) {
+		foundTargetValue = true
+			
+		// Obtiene la lista de elementos td
+		List<WebElement> tdList = row.findElements(By.tagName("td"))
+		
+		// Accede al elemento td en la posición 4 que es el detalle del codigo operativo buscado
+		WebElement tdElement = tdList[4]
+ 
+		// Intenta encontrar el elemento 'a' dentro del elemento td
+		WebElement verDetalle = tdElement.findElement(By.tagName("a"))
+ 
+		// Haz clic en el enlace
+		verDetalle.click()
+		
+		break
+	}
+}
 
 //Se mueve a la ventana Detalle Transacciones No Efectivo
 WebUI.switchToWindowIndex(2)
@@ -108,27 +144,14 @@ assert element.contains('Id')
 //Ver detalle de la primera transacción
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/btnVerDetalle'))
 
-try {
-	
-	//Cambiar a la ventana donde se Valida el elemento
-	WebUI.switchToWindowIndex(2)
-		
-	//Verificar elemento en el ambiente tes10
-	//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'),6)
-	def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'))
-	assert element2.contains('Transaction Type')
-		
-	} catch (Exception e) {
-	
-	//Cambiar a la ventana donde se Valida el elemento
-	WebUI.switchToWindowIndex(2)
-		
-	//Verificar elemento en el ambiente 708
-	//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Compra-Venta/lblDetalleOperacion'), 6)
-	def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Compra-Venta/lblDetalleOperacion'))
-	assert element2.contains('Detalle de la Operacion')
-	
-	}
+//Valido elementos del detalle
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'),6)
+def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'))
+assert element2.contains('Transaction Type')
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblCodOperativoC - FT'), 6)
+def element3 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblCodOperativoC - FT'))
+assert element3.contains(codigoOperativo)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

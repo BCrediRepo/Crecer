@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Ingresar "?1" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar boton de buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -44,9 +41,6 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/lnkD2-Autom
 
 //Seleccionar "Administracion"
 WebUI.click(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/lnkAdministracion'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Alta o Modificacion de grupos de codigos oper"
 WebUI.click(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/Administracion/lnkAltaoModificaciondegruposdecodigosoper'))
@@ -78,17 +72,11 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 //Seleccionar "boton radio button SI"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/rbtnSI'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "boton Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
 
 //Setear Alta de grupos
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtAltadeGrupos'), '91')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Ver Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
@@ -100,17 +88,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/lblCodigodeOperacion.2'))
 assert element.contains('Codigo de Operacion.2')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "boton Volver Pantalla Aplicacion"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/btnVolverPantallaAplicacion'))
 
 //Setear Alta de grupos 91
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtAltadeGrupos'), '91')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Modificar Registro"
 WebUI.click(findTestObject('Object Repository/15-MONEX/14-GRUPO.COTIZACION/btnModificarRegistro'))
@@ -118,15 +100,16 @@ WebUI.click(findTestObject('Object Repository/15-MONEX/14-GRUPO.COTIZACION/btnMo
 //Seleccionar "boton Borrar Codigo Operacion"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/btnBorrarCodigoOperacion'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "boton Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
 
-//Esperar 4 seg hasta que se realice la operacion
-WebUI.delay(4)
+//Espera y recibe mensaje de tx completa
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
+def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
+assert element2.contains('Txn Completa:')
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

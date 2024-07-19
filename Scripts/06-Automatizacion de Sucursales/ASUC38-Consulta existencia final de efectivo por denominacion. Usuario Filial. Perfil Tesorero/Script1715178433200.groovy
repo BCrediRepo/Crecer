@@ -24,15 +24,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ejecuta en la linea de comando el menu ?323
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?323')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
@@ -44,9 +40,6 @@ WebUI.maximizeWindow()
 
 //Click en consulta de operatoria
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultadeoperatoria'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en consulta de existencia por denominacion
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consulta de operatoria/lnkConsulta de Existencia por Denominacion'))
@@ -76,11 +69,9 @@ long elapsedTime = endTime - startTime
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDESCCATEGORIA'))
-
 assert element.contains('DESC CATEGORIA')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -91,8 +82,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-
 

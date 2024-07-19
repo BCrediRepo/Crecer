@@ -24,7 +24,6 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,35), findTestData('MainData/Users').getValue(2, 35))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en caja
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
@@ -42,7 +41,6 @@ WebUI.maximizeWindow()
 long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lnkEjecutar'))
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //ASSERT
@@ -57,14 +55,10 @@ long elapsedTime = endTime - startTime
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'))
-
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'))
-
 assert element.contains('RESPONSABLE AREA TESORERIA')
 
-
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

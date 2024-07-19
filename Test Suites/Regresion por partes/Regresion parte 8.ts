@@ -221,4 +221,165 @@
       <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD31-Consulta sobre el historico de bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b896ed2b-88e4-4434-9356-821bd93d7038</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT17-Administrador de Piezas. Denuncia de Tarjetas. No Recibido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ac1cb7cc-122c-4e6a-ac72-1da149fe11f0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT18-Administrador de Piezas. Entrega de Pieza a Activador Comercial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>138d31d3-f7ed-4f8f-abf0-df34f95de072</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT19-Administrador de Piezas. Envio de Pieza a Otra Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d6091e0-2e8c-4edd-ad20-38d9a2ced5a7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD32-Busqueda de cuentas por cuenta para bloqueo. Completitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1876b51d-2900-4966-9ec1-18581d4ec39f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC61-Caja. Detalle de Cierre del Tesoro. Emision del Libro Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bac453f9-c078-491b-bfaa-76c1d9ee5f7b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/09-Emision Chequera/EC15-Baja de Cheque. Usuario de Sucursal. Cheque en estado IGUAL A Normal. Usuario responsable de Planta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15b8c6a3-2fc6-47c9-a777-647121e140b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP07-Transferencias entre cuentas Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5b29e720-8727-451c-a3eb-8d832ffab8b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F16-FallasdeDispositivosPND-PGR-NF-AltaFaltante-Retiro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4f1d776f-19d9-4c24-b615-050a73f0e2d6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F17-FallasdeDispositivosPND-PGR-NF-AltaSobrante-Retiro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>991c9542-5b94-4433-ab5e-d640999cc80e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP28-Cobro manual de Impuestos en cuenta Socio ImpuestoIBP Cuenta con Saldo Suficiente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>986f0515-7f0f-4c9f-9bbd-abac69733bee</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/22-Impuestos/IMP29-Cobro manual de Impuestos en cuenta Socio ImpuestoIBR Cuenta con Saldo Suficientes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8a906471-dbcd-4a5d-b0ea-4397486d8835</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/25-Dispositivos/DIS05-Consulta de Ajustes Realizados</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>835f18bf-aa80-460c-98a1-d9fbcf297dda</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST14-Posteos. Liquidacion de posteo. Posteo por ingreso de caja</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2cdfd6df-b0f3-4256-a3d9-b08cd25ba62b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST15-Posteos. Liquidacion de posteo. Posteo IP por alta en efectivo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>26020df8-3556-4bca-a46c-48158b2d6c83</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST16-Posteos. Liquidacion de posteo. Posteo Legales por cobranza</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99289302-ec7c-4b8c-b2be-9e2cd6e99d07</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST17-Posteos. Liquidacion de posteo. Posteo por egreso de caja temporal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>696600d0-e4df-4006-b005-c5864c76c309</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/42-Verificacion de Firmas/VDF17-Firmas. ENQ BCCL.E.AS.FIRMA. Validación de datos. Número de cuenta VACIO</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>50dc62b4-7664-48ce-bee8-6b039fd20cc2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/43-TOB/TOB16-Alta Transferencia OnLine a otros bancos. Cuenta DB. Concepto Pago a Proveedores. Cajero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1657e9a3-c44a-41c3-99f0-d5d8ac596412</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE14-Depositos-Extracciones.Extracciones.Trx de Extraccion en efectivo por Caja.Saldo suficiente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>efbde352-5660-471b-a91e-667c605a34b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE15-Reversa de extraccion en efectivo por Caja. Cuenta valida y sin bloqueos. Misma Sucursal. Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6e7fea8d-8438-4a20-bbb5-ee1e5dc92078</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE16-Depositos-Extracciones.Verificacion de Firmas.Verificacion de firmas sobre cuenta Persona Juridica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a77a7aae-d535-472e-9352-4a6e7a234b71</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/55-Comisiones Manuales/CMA12-Comisión Manual por Planta. Tipo de Pago IGUAL A Débito. Comisión no permite bonificación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>233cbbaa-1229-43f2-ab23-a376fa893c35</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/30-Personas/P15-Personas. Autorización de registro Persona Física</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

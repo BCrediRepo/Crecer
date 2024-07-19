@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Ingresar "ENQ BCCL.E.CONSULTA.CODIGO" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONSULTA.CODIGO')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar boton de buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -54,6 +51,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/lblIdTransaccion'))
 assert element.contains('Id Transaccion')
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

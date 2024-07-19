@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Seleccionar "Caja"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "Detalle de Cierre del Tesoro"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkDetalledeCierreDelTesoro'))
 
@@ -39,9 +36,6 @@ WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
 //Limpio campos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
@@ -50,12 +44,18 @@ WebUI.maximizeWindow()
 
 //Verificar "FECHA"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblCategoria'))
-
-//Validar "FECHA"
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblCategoria'))
 assert element.contains('CATEGORIA')
 
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'))
+def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblRESPONSABLE AREA TESORERIA'))
+assert element2.contains('RESPONSABLE AREA TESORERIA')
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

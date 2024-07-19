@@ -24,13 +24,9 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en consultas de operatoria en linea de cajas
 WebUI.click(findTestObject('Object Repository/02-Dashboard/spanConsultas de Operatoria en Linea de Cajas'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en consulta de excesos en linea
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsulta de Excesos en Linea'))
@@ -44,9 +40,6 @@ WebUI.maximizeWindow()
 //Seteo de Datos "No. Caja"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Caja', '1546')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -67,7 +60,6 @@ long elapsedTime = endTime - startTime
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblCajero'))
-
 assert element.contains('Cajero')
 
 //---------------------------------------------------------------------------------------------------------------------

@@ -36,9 +36,6 @@ WebUI.maximizeWindow()
 //Seleccionar "Caja"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "Apertura de Caja"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkAperturadeCaja'))
 
@@ -49,7 +46,6 @@ WebUI.switchToWindowTitle('TELLER ID')
 WebUI.maximizeWindow()
 
 try {
-	
 	//Seleccionar "Boton Aceptar Registro"
 	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
 
@@ -74,53 +70,6 @@ try {
 
 	//Maximizar pantalla
 	WebUI.maximizeWindow()
-	
-//	def element2
-//	
-//	// Obtén el elemento de la tabla
-//	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-//	 
-//	// Obtén todas las filas dentro de la tabla
-//	List<WebElement> rows = table.findElements(By.tagName("tr"))
-//	 
-//	// Valor específico que estás buscando
-//	String targetValue = 'B.0489'
-//	 
-//	// Variable para rastrear si se encontró el valor específico
-//	boolean foundTargetValue = false
-//	 
-//	// Itera a través de las filas
-//	for (WebElement row : rows) {
-//		// Obtiene el tercer valor de la fila (índice 2, ya que las listas son base cero)
-//		WebElement cell = row.findElements(By.tagName("td"))[1]
-//	 
-//		// Obtiene el texto de la celda
-//		String cellText = cell.getText()
-//	 
-//		// Compara el valor de la celda con el valor específico
-//		if (cellText.equals(targetValue)) {
-//			foundTargetValue = true
-//				
-//			// Obtiene la lista de elementos td
-//			List<WebElement> tdList = row.findElements(By.tagName("td"))
-//			
-//			// Accede al elemento td en la posición 3
-//			WebElement tdElement = tdList[3]
-//
-//			// Intenta encontrar el elemento 'a' dentro del elemento td
-//			WebElement liquidar = tdElement.findElement(By.tagName("td"))
-//			println(liquidar)
-////			findElement(By.tagName("a"))
-//			// Haz clic en el enlace
-//			element2 = liquidar.getText()
-//			
-//			break
-//			
-//		}
-//	}
-//	
-//	
-	
 
 	//Verificar "OPEN"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
@@ -152,8 +101,6 @@ catch (Exception e) {
 
 	//Verificar "OPEN"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
-
-	//Validar "OPEN"
 	def element2 = WebUI.getText(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
 	assert element2.contains('OPEN')
 }

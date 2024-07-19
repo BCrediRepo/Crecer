@@ -27,16 +27,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Ejecuta en la linea de comando menu ?1
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Abre la pestaña del menú ?01
 WebUI.switchToWindowTitle('Temenos T24')
@@ -56,9 +51,6 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Ir a AJUSTES DE DENOMINACIONES
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkAJUSTESDEDENOMINACION'))
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.switchToWindowTitle('TELLER')
 
 //Verifica titulo de ajustes monetarios
@@ -68,9 +60,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/inputMonto'),6)
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/inputMonto'),'1000')
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Valida el registro
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnValidarRegistro'))
 
@@ -79,21 +68,15 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Aj
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/inputCantidad.1DB'),6)
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/inputCantidad.1DB'),'1')
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Ingresa una DENOMINACIONES CR 1
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnDenominacionesCR'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/input_Cantidad.1CR'),6)
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/input_Cantidad.1CR'),'1')
 
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Acepta el registro
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnAceptarRegistro'))
 
-//Aceptar alertas.
+//Aceptar alertas
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnAceptarAlertas'),6)
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnAceptarAlertas'))
 
@@ -102,7 +85,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion 
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/lblTxnCompleta'))
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
-
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -116,4 +98,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
