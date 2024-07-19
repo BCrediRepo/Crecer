@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnkRechazoDeCheques</name>
+   <name>lnkTransaEspeciales</name>
    <tag></tag>
-   <elementGuidId>e6586676-8724-464b-8678-f9141eeec8dc</elementGuidId>
+   <elementGuidId>258baae2-ab8c-40b1-b2a5-755c3812f011</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@onclick='ProcessMouseClick(event)'])[83]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>ul.menuMargin:nth-child(20) > li:nth-child(1) > span:nth-child(1)</value>
+         <key>XPATH</key>
+         <value>(//span[@onclick='ProcessMouseClick(event)'])[12]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Transacciones Especiales&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3340cf40-14dc-4d89-a35c-8bc1a3ef2278</webElementGuid>
+      <webElementGuid>4e0ad6bd-3358-42d0-aa0b-3badfcd2c5e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +37,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>c0f463c2-8e3d-491c-9ee1-4ec1824d0b4f</webElementGuid>
+      <webElementGuid>e7f6c9fc-29b5-4ac6-aaac-6e9d8b9ed0a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,15 +45,15 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>bcbab4e7-11b4-4b22-ae8e-731896cc8650</webElementGuid>
+      <webElementGuid>fe9fdc4a-63b9-4017-bebb-02066db9f347</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Rechazo de Cheques</value>
-      <webElementGuid>d0f55ac0-bc6a-4e0c-99c5-1151f925a282</webElementGuid>
+      <value>Transacciones Especiales</value>
+      <webElementGuid>517b00bc-ce35-447a-b69d-710b36b0ecbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,86 +61,78 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>8842ec2b-6c52-45f3-b7cf-0a5316d17c6f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>84f56c05-9079-4d36-8f1b-aa1548729e7e</webElementGuid>
+      <webElementGuid>4cab66d8-a222-464f-afca-f8cf31320eb3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//span[@onclick='ProcessMouseClick(event)'])[82]</value>
-      <webElementGuid>8da699fb-4251-43c3-b6d9-11f61e487bd8</webElementGuid>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[12]</value>
+      <webElementGuid>bcc2a088-8dab-4b0f-9d23-d28fb2836d38</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='pane_']/ul[20]/li/span</value>
-      <webElementGuid>726f8431-4479-4949-bfca-bfa99b047949</webElementGuid>
+      <value>//div[@id='pane_']/ul[5]/li/span</value>
+      <webElementGuid>07e11394-74e2-4a51-b034-2212f335a3f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rechazos Automaticos NO Identificados'])[1]/following::span[1]</value>
-      <webElementGuid>0eb06a4d-7b6a-4efb-acfb-6d1add946275</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ABM Eb.Lookup'])[1]/following::span[1]</value>
+      <webElementGuid>36172328-ade9-470f-8c79-f3a6cea111c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cheques Recibidos por Camara'])[1]/following::span[1]</value>
-      <webElementGuid>e4dcc347-fe5e-4a69-9905-51de5b5bd603</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ABM Override'])[1]/following::span[1]</value>
+      <webElementGuid>14fe94ae-2e35-4a81-bd4e-731798aa4fa9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rechazo Cheques de Caja'])[1]/preceding::span[1]</value>
-      <webElementGuid>3d1b6279-d026-431b-be19-e7dd6bffbaa9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ABM de Sucursales'])[1]/preceding::span[1]</value>
+      <webElementGuid>9b0cee0f-b300-4981-9deb-776165967531</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reverso Cancelacion de Cheque Rechazado'])[1]/preceding::span[1]</value>
-      <webElementGuid>ed8a329e-c90f-4f5d-98f5-b80ba104eacc</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Acuerdos sin servicio'])[1]/preceding::span[1]</value>
+      <webElementGuid>1c9a1725-8fde-4460-8b3c-08bb2dca53d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Rechazo de Cheques']/parent::*</value>
-      <webElementGuid>955f4c98-1177-46e7-9e75-5b418ffb268c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Transacciones Especiales']/parent::*</value>
+      <webElementGuid>b2a523e7-4cda-46ef-a33b-342c70f22d9e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//ul[20]/li/span</value>
-      <webElementGuid>729d83f3-342c-419f-a931-d034859432ea</webElementGuid>
+      <value>//ul[5]/li/span</value>
+      <webElementGuid>3a5241c2-892d-44b8-a6ec-b0862b02566e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Rechazo de Cheques' or . = 'Rechazo de Cheques')]</value>
-      <webElementGuid>ca78e04b-9336-43c0-b108-15611648c4af</webElementGuid>
+      <value>//span[(text() = 'Transacciones Especiales' or . = 'Transacciones Especiales')]</value>
+      <webElementGuid>1cdd0113-53cf-4303-8789-5628d8439726</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

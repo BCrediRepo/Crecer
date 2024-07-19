@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CDC14-Cierre de cuenta.Trx de cambio de estado. Pase a Cierre en Proceso. Cuenta activa</name>
+   <name>PYM03-Dictamenes. A-B-M Dictamen Con Autorizacion. Modificacion</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>56fa6733-fb17-4de6-ab81-d0e77074d082</testCaseGuid>
+   <testCaseGuid>fbb7352d-b26b-47e5-bdb3-3c4001ed11f7</testCaseGuid>
 </TestCaseEntity>

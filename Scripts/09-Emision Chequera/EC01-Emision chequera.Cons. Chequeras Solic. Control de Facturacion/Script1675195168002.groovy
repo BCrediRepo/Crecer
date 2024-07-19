@@ -53,8 +53,16 @@ WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.
 
 //Switch a la ventana de tipo de chequera
 WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.TIPO')
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'))
+//WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'), 6)
+//WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'))
+
+//Verificar lbl "Solicitud"
+WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.TIPO/lblSolicitud'))
+ 
+//Validar lbl "Solicitud"
+def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.TIPO/lblSolicitud'))
+assert element.contains('Solicitud')
+
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

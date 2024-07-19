@@ -50,7 +50,7 @@
       <guid>1009043d-6ac3-4d48-b7ac-24ebe0c2a3ad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA03-LIMITES Y ACUMULADORES. Parametrizacion de limites. Alta de limite inexistente. No se ingresa frecuencia, ni override. Se ingresa monto por txn</testCaseId>
+      <testCaseId>Test Cases/28-Limites y Acumuladores/LYA03-LIMITES Y ACUMULADORES. Parametrizacion de limites. Alta de limite inexistente. No se ingresa frecuencia, ni override. Se ingresa monto por txn. Modificacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

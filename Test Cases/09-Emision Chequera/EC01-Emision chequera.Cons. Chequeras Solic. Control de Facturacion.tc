@@ -4,5 +4,6 @@
    <name>EC01-Emision chequera.Cons. Chequeras Solic. Control de Facturacion</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0bcd1c43-bb1a-4920-85bc-d4b2ccce9d4c</testCaseGuid>
 </TestCaseEntity>

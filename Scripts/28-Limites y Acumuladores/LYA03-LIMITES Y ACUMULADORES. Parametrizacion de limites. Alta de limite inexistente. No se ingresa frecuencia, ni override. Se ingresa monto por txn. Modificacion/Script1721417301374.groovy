@@ -25,41 +25,42 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?1
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.EB.LM.LIM.PAR,MAN')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
+//ingreso a BCCL.EB.LM.LIM.PAR,MAN
+WebUI.switchToWindowIndex(1)
 
-WebUI.maximizeWindow()
+//Ingreso el limite
+WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/txtAltadePartidasIP-CuentaSocioTransactionId'),"LM.LIM.PRUEBA.TES12")
 
-WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
+// modifico el registro
+WebUI.click(findTestObject('Object Repository/06-Comisiones/BCCL.AS.ACCOUNT/btnModificarRegistro'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/spanLimites y Acumuladores'), 6)
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/btnDropdownSectResp'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/spanLimites y Acumuladores'))
+//valido si el id del sector responsable es uno y lo cambio al otro
+SectResp1 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblSectRespo'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/Limites y Acumuladores/lnkParametrizacionLimitesOperativos'))
+if(SectResp1.equals('4914000050000')) {
+	WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/txtSectResp'), "4914000060000")
+	WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnAceptarRegistro'))
+}else if (SectResp1.equals('4914000060000')) {
+	WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/txtSectResp'), "4914000050000")
+	WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnAceptarRegistro'))
+}
 
-WebUI.switchToWindowTitle('BCCL.EB.LM.LIM.PAR')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/txtTransactionId'), 'LM.AC.COM.REGADM')
-
-WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/btnVerRegistro'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblDescCorta'))
-
-//Verificar "Monto por Txn"
-WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblMontoporTxn'))
-
-//Validar "Monto por Txn"
-def element = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.LIM.PAR/lblMontoporTxn'))
-assert element.contains('16.000')
-
+	
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+ 
+//Validar "Txn Completa"
+def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+assert element.contains('Txn Completa')
+	
+	
+	
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

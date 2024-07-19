@@ -13,6 +13,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -21,53 +22,114 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso al menu ?1
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
+// Ingreso al menu ?399
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?399')
 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Temenos T24')
+//ingreso temenos T24
+WebUI.switchToWindowIndex(1)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
+//espando Transacciones Especiales
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/Temenos T24/lnkTransaEspeciales'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/spanLimites y Acumuladores'), 6)
+WebUI.waitForElementPresent(findTestObject('Object Repository/29-Limites y Acumuladores/Temenos T24/Transacciones Especiales/lnkABMdeAcum'), 6)
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/spanLimites y Acumuladores'))
+//Click en ABM de Acumuladores
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/Temenos T24/Transacciones Especiales/lnkABMdeAcum'))
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/27-Suc.Piloto/Limites y Acumuladores/lnkParametrizacionAcumuladores'))
+//ingreso Consulta ABM acumuladores
+WebUI.switchToWindowIndex(2)
 
-WebUI.switchToWindowTitle('BCCL.EB.LM.ACU.PAR')
+//Seteo de datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. acumulador','AC.COT.PGC.B112')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Aplica a','SUCURSAL')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Entidad','043')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Frecuencia','DIARIA')
 
-WebUI.maximizeWindow()
+//Seleccionar ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/txtTransactionId'), 'AC.ACRED.ATP.IFE')
+//Click en Alta
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.ABM.ACUMULADORES/lnkAltaAcum'))
 
-WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/btnVerRegistro'))
+//seteo Importe
+WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACUM.AUX/txtImporteAltaAcumulad'), '123')
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblDescCorta'))
+//seteo cantidad de transacciones
+WebUI.setText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACUM.AUX/txtCantTransAcum'), '2')
 
-WebUI.maximizeWindow()
+//Click en aceptar registros
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
 
-//Verificar "Frecuencia"
-WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuencia'))
+//Definir Objeto
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+//Dividir la cadena por espacios en blanco y tomar elemento
+def partes = Transaccion1.split('\\s+')
+def trx1 = partes[2]
+def Acum = trx1.split('-')
+def NroAcum = Acum[0]
 
-//Validar "Frecuencia"
-def element = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuencia'))
-assert element.contains('Frecuencia.1')
+//volvemos a tememos T24
+WebUI.switchToWindowIndex(1)
 
-//Verificar "Frecuencia Anual"
-WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuenciaAnual'))
+//espandimos Parametria Suc Piloto
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/Temenos T24/lnkParamSucPiloto'))
 
-//Validar "Frecuencia Anual"
-def element2 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.EB.LM.ACU.PAR/lblFrecuenciaAnual'))
-assert element2.contains('ANUAL')
+//entras a la tabla de Consulta de Acumuladores
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/Temenos T24/Parametria Suc Piloto/lnkTablaAcum'))
+
+//switch a BCCL.E.EB.LM.ACUM.GEN
+WebUI.switchToWindowIndex(3)
+
+//Seteo de datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod Acumulador',NroAcum)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Entidad','043')
+
+//Seleccionar ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//Verifico que se encuentre el lbl Fecha inicio = 01 SEP 2023
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblFechaInicio'))
+def element2 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblFechaInicio'))
+assert element2.contains("01 SEP 2023")
+
+//Verifico que se encuentre el lbl frecuencia = diario
+WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblFrecuenciaDiario'))
+def element3 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblFrecuenciaDiario'))
+assert element3.contains("Diario")
+
+//volvemos a tememos 24
+WebUI.switchToWindowIndex(1)
+
+//Click en ABM de Acumuladores
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/Temenos T24/Transacciones Especiales/lnkABMdeAcum'))
+
+//ingreso Consulta ABM acumuladores
+WebUI.switchToWindowIndex(4)
+
+//Seleccionar ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//Click Baja
+WebUI.click(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.ABM.ACUMULADORES/lnkBajaAcum'))
+
+//Click en aceptar registros
+WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
+
+//Validar txn completa
+WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+assert element.contains('Txn Completa:')
+
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
