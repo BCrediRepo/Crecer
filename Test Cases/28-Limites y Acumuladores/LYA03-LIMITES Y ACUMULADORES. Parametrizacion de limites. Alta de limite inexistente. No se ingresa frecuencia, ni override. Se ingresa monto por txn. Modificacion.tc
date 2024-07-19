@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>LYA03-LIMITES Y ACUMULADORES. Parametrizacion de limites. Alta de limite inexistente. No se ingresa frecuencia, ni override. Se ingresa monto por txn</name>
+   <name>LYA03-LIMITES Y ACUMULADORES. Parametrizacion de limites. Alta de limite inexistente. No se ingresa frecuencia, ni override. Se ingresa monto por txn. Modificacion</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
