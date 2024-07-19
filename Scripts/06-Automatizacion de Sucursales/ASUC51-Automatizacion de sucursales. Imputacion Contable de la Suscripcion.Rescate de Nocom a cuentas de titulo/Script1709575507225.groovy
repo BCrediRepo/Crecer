@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Ingresar "FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "boton de buscar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -90,6 +87,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/lblSucursalDestino'))
 assert element.contains('073')
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

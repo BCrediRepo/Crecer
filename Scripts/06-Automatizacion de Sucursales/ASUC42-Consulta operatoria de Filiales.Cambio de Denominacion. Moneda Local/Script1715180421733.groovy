@@ -24,13 +24,9 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2, 24))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en transacciones especiales
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransacciones Especiales'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en ajustes de denominacion del tesoro
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAjustesDe Denominacion del Tesoro'))
@@ -75,7 +71,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion 
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/lblTxn Completa'))
 
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/lblTxn Completa'))
-
 assert element.contains('Txn Completa')
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -90,6 +85,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
 

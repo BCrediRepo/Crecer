@@ -27,9 +27,6 @@ WebUI.maximizeWindow()
 //Ingresar "TELLER.ID,REASIGNA.USUARIO" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TELLER.ID,REASIGNA.USUARIO')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "boton de buscar"
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
@@ -48,50 +45,26 @@ TestObject nombreFilial = findTestObject('Object Repository/17-Remesas/04-TELLER
 //Almacenar valorNumeroCajero
 String valorNombreFilial = WebUI.getText(nombreFilial)
 
+//Seleccionar "Boton Cajero"
+WebUI.click(findTestObject('Object Repository/17-Remesas/04-TELLER ID/btnDropdownCajero'))
+
 if (valorNombreFilial.equals('FILIAL 001 AI CENT')) {
-	
-	//Seleccionar "Boton Cajero"
-	WebUI.click(findTestObject('Object Repository/17-Remesas/04-TELLER ID/btnDropdownCajero'))
-	
 	//Seleccionar "B.0805"
 	WebUI.click(findTestObject('Object Repository/17-Remesas/04-TELLER ID/lblBOchocientoscinco'))
-	
-	//Screenshot
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
-	
-	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-	
-	//Validar "Txn Completa"
-	def element = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-	assert element.contains('Txn Completa')
-	
 } else {
-	
-	//Seleccionar "Boton Cajero"
-	WebUI.click(findTestObject('Object Repository/17-Remesas/04-TELLER ID/btnDropdownCajero'))
-	
 	//Seleccionar "B.0901"
 	WebUI.click(findTestObject('Object Repository/17-Remesas/04-TELLER ID/lblBNovecientosuno'))
-
-	//Screenshot
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
-	
-	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-	
-	//Validar "Txn Completa"
-	def element2 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-	assert element2.contains('Txn Completa')
-
 	}
 
+//Seleccionar "Aceptar el registro"
+WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
+
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+def element2 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+assert element2.contains('Txn Completa')
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

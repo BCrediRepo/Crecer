@@ -24,13 +24,9 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en caja
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en consulta de posicion de efect en sucursal
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCons. Posicion de efectivo en Sucursal'))
@@ -41,15 +37,11 @@ WebUI.switchToWindowTitle('BCCL.E.TT.TOMA.TESORO')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/lnkEjecutar'))
 
 //Click en detalle cuenta
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.TOMA.TESORO/DetalleCuenta'))
@@ -66,14 +58,10 @@ long elapsedTime = endTime - startTime
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimientos por Fecha Ctas Internas/lblID Transaccion'))
-
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimientos por Fecha Ctas Internas/lblID Transaccion'))
-
 assert element.contains('ID Transaccion')
 
-
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -84,4 +72,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
