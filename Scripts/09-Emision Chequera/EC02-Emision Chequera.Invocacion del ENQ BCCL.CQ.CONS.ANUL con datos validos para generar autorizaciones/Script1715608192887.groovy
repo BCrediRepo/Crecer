@@ -48,10 +48,14 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar Boton "Ejecutar"
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lnkEjecutar'))
 
-//Espera y Verifica
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
-WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'), 6)
 WebUI.maximizeWindow()
+
+//Verificar lbl "NO DE PEDIDO"
+WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'))
+ 
+//Validar lbl "NO DE PEDIDO"
+def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'))
+assert element.contains('NO DE PEDIDO')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

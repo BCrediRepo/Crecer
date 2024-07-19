@@ -4,5 +4,6 @@
    <name>LYA03-LIMITES Y ACUMULADORES. Parametrizacion de limites. Alta de limite inexistente. No se ingresa frecuencia, ni override. Se ingresa monto por txn</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>092c79f1-7c8c-4f27-abdb-98afdb5d296d</testCaseGuid>
 </TestCaseEntity>

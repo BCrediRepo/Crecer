@@ -23,7 +23,7 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,14), findTestData('MainData/Users').getValue(2,14))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando BCCL.CQ.CHEQUERAS
@@ -40,7 +40,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 //Seteo de Datos "Numero de Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/txtNumeroDeCuenta'), 6)
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '01340051307')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ESTADO', '30')
 
 //Maximiza la pantalla

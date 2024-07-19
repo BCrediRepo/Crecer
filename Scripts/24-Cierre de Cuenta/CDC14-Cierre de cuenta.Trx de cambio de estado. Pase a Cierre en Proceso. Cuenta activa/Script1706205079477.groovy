@@ -65,16 +65,15 @@ WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSUR
 WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/lblMotivodeCierre'))
 
 try {
-	
-	//Seleccionar "boton Aceptar Registro"
-	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
-	
-	//Seleccionar "Aceptar Alertas
+	//haces click en aceptar alertas
 	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
 	
+	//Seleccionar "boton Aceptar Registro"
+	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
+	
 	//Verificar "Txn Completa"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-	
+		
 	//Validar "Txn Completa"
 	def element = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
 	assert element.contains('Txn Completa')
@@ -90,7 +89,7 @@ try {
 	
 	//Seteo de Datos "Numero Cuenta"
 	WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero Cuenta','01730054895')
+	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Cuenta','01730054895')
 	
 	//Maximizar Ventana
 	WebUI.maximizeWindow()
@@ -111,15 +110,14 @@ try {
 	def element2 = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
 	assert element2.contains('Txn Completa')
 	
-	
-}catch (Exception e) {
+} catch (Exception e){
 	
 	//Seleccionar "boton Aceptar Registro"
 	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
 	
 	//Verificar "Txn Completa"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-	
+		
 	//Validar "Txn Completa"
 	def element = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
 	assert element.contains('Txn Completa')
@@ -135,7 +133,7 @@ try {
 	
 	//Seteo de Datos "Numero Cuenta"
 	WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero Cuenta','01730054895')
+	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Cuenta','01730054895')
 	
 	//Maximizar Ventana
 	WebUI.maximizeWindow()
@@ -155,8 +153,8 @@ try {
 	//Validar "Txn Completa"
 	def element2 = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
 	assert element2.contains('Txn Completa')
-	
 }
+
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

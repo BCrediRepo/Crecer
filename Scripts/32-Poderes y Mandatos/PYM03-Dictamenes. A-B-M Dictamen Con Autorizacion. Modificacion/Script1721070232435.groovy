@@ -44,7 +44,7 @@ WebUI.switchToWindowTitle('Ingreso de Relaciones JUR')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Ingreso de Relaciones JUR/txtIDPersona'), '1002163270')
+WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Ingreso de Relaciones JUR/txtIDPersona'), '1004425912')
 
 WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Ingreso de Relaciones JUR/lnkEjecutar'))
 
@@ -52,38 +52,17 @@ WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Ingreso de R
 
 WebUI.switchToWindowTitle('Relacion Entre Socios')
 
-//Seleccionar "boton Dropdown Tipo de Cargo"
-WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnDropdownTipoCargo'))
+//Click en el "+" para agregar socio relacionado
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnExpandirMultivalor'))
 
-//Definir Primer Tipo de Cargo
-TestObject tipoCargo = findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTipoCargo')
+//Seteo datos para el nuevo socio relacionado
+WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtIdSocio2'), "1004417459")
+WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtTipoCargoSocio2'), "2")
+WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtGrupoFirmaSocio2'), "01")
+WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtTipoFirmaSocio2'), "00")
 
-//Almacenar valorNumeroDocumento
-String valorTipoCargo = WebUI.getText(tipoCargo)
-
-if (valorTipoCargo.equals('10')) {
-	
-	//Setear Valor del cargo
-	WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtTipoCargo'), '1')
-	
-	//Seleccionar "boton Validar Registro"
-	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnValidarRegistro'))
-	
-	//Seleccionar "boton Aceptar Registro"
-	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
-			
-} else {
-	
-	//Setear Valor del cargo
-	WebUI.setText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/txtTipoCargo'), '10')
-
-	//Seleccionar "boton Validar Registro"
-	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnValidarRegistro'))
-	
-	//Seleccionar "boton Aceptar Registro"
-	WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
-	
-}
+//click "aceptar registro"
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTxnCompleta'), 6)
 
@@ -93,6 +72,30 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/33-Poderes y Mandat
 //Validar "Txn Completa"
 def element = WebUI.getText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTxnCompleta'))
 assert element.contains('Txn Completa')
+
+//pasos para eliminar el socio que hemos creado
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lnkIngresoRelacJUR'))
+
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Ingreso de Relaciones JUR/btnDrilldown'))
+
+//elimino el socio relacionado creado anteriormente
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnDeleteValue'))
+
+//click "aceptar registro"
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
+
+//click "aceptar registro"
+WebUI.click(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/btnAceptarRegistro'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTxnCompleta'), 6)
+
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTxnCompleta'))
+
+//Validar "Txn Completa"
+def element2 = WebUI.getText(findTestObject('Object Repository/33-Poderes y Mandatos/Relacion Entre Socios/lblTxnCompleta'))
+assert element2.contains('Txn Completa')
+
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
@@ -105,3 +108,10 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
+
+
+
+
+
+
