@@ -18,94 +18,61 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
+def moneda = 'ARS'
+def iva = 'F'
+def cuit = '27032150220'
+def concepto = '18301CMI'
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,17), findTestData('MainData/Users').getValue(2,17))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en comisiones
+//Desde el menu principal (dashboard) accedemos al menu de Cobro de Comisiones manuales en efectivo
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisiones'))
-
-//Click en Cobro de Comisiones Manuales EN EFECTIVO 
 WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/lnkCobro de Comisiones Manuales EN EFECTIVO'))
-
-//Switch a la ventana Account Charge Request
 WebUI.switchToWindowTitle('Account Charge Request')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
-//Selecionamos la moneda
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtMoneda'), 'ARS')
-
-//Seleccionamos del dropdown EsSocio. "NO"
+//Cargamos los datos informados - No es socio, en pesos, en efectivo y sin bonificacion
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtMoneda'), moneda)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/cbxEsSocio'))
 WebUI.selectOptionByIndex(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/cbxEsSocio'), 1) 
-
-//Seleccionamos el IVA
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtIVA'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtIVA'), 'F')
-
-//Seleccionamos el CUIT
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtIVA'), iva)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCUIT'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCUIT'), '27032150220')
-
-//Seleciono Codigo Concepto
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCUIT'), cuit)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), '18301CMI')
-
-//Agregamos comentarios de observaciones
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), concepto)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'))
 WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), 'TEST')
-
-//Click en Validar Registro
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
-
-//Click en Aceptar Registro
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnAceptar Registro'))
-
-//Click en Aceptar Alertas
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkAceptar Alertas'))
 
-//ASSERT
+//validamos que la comision haya finalizado con exito y guardamos el numero de operacion
 WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
-
-def element = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
-
-assert element.contains('Txn Completa')
-
-//Switch a la ventana Account Charge Request
+def txn = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+assert txn.contains('Txn Completa')
+String[] palabras = txn.split(" ")
+String transaccion = palabras[2]
+ 
+//Validaciones de comision en pesos, en efectivo y sin bonificacion
 WebUI.switchToWindowTitle('Account Charge Request')
-
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
- 
-//Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
- 
-// Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
-String terceraPalabra = palabras[2];
- 
-// Imprimir la tercera palabra seleccionada
-println("La tercera palabra es: " + terceraPalabra);
- 
-//Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), terceraPalabra)
-
-//Click en ver un registro
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), transaccion)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
-
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblMoneda'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblMoneda'))
+tipoMoneda = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblMoneda'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+TipoPago = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
+Bonificacion = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
 
-def element2 = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblMoneda'))
-
-assert element2.contains('Moneda')
+assert tipoMoneda == moneda
+assert TipoPago == "EFECTIVO"
+assert Bonificacion == "0,00"
 
 
 //---------------------------------------------------------------------------------------------------------------------

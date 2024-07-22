@@ -18,6 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
+def cuenta = '00430300691'
+def concepto = '18301CMI'
+def observacion = 'PRUEBAS CRECER'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,89 +29,48 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en comisiones y bonificaciones
+//Desde el menu principal, accedemos a la aplicación para cobrar una comision manual - planta
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisionesyBonificaciones'))
-
-//Click en comisiones
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisiones'))
-
-//Click en Cobro Comisiones Manuales
 WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/lnkCobroComisiones Manuales - Planta'))
-
-//Switch a la ventana Account Charge Request
 WebUI.switchToWindowTitle('Account Charge Request')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
-//Selecionamos el tipo de pago
+//Se cargan los datos los datos de la comision
 WebUI.selectOptionByIndex(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/cbxTipoPago'), 1)
-
-//Ingresamos la cuenta de debito 00545293967
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), '00430300691')
-
-//Seleciono Codigo Concepto
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), cuenta)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), '18301CMI')
-
-//Agregamos comentarios de observaciones
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), concepto)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), 'PRUEBAS CRECER')
-
-//Click en aceptar registro
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), observacion)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnAceptar Registro'))
-
-//Click en aceptar alertas
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkAceptar Alertas'))
 
-//ASSERT
+//validamos que la transaccion haya finalizado correctamente
 WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+def txn = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+assert txn.contains('Txn Completa')
 
-def element = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
-
-assert element.contains('Txn Completa')
-
+//separamos el numero de transaccion
+String[] palabras = txn.split(" ")
+String transaccion = palabras[2]
 
 //Switch a la ventana Account Charge Request
 WebUI.switchToWindowTitle('Account Charge Request')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
- 
-//Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
- 
-// Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
-String terceraPalabra = palabras[2];
- 
-// Imprimir la tercera palabra seleccionada
-println("La tercera palabra es: " + terceraPalabra);
-
-//Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), terceraPalabra)
-
-//Click en ver un registro
+//ingresamos la transaccion obtenida previamente y validamos que la misma esté hecha en pesos
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), transaccion)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
-
 def Moneda = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/spanARS'))
+assert Moneda == "ARS"
 
+//Deslogeamos y volvemos a logear con otro user para poder reversar la comision creada
+WebUI.closeWindowTitle("Account Charge Request")
+WebUI.switchToWindowIndex(0)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
 
-// Verifica el valor de check y reporta el resultado
-if (Moneda == "ARS") {
-	Moneda ==  ("Checkpoint estado: Coincide")
-} else {
-	Moneda == ("Checkpoint estado: No coincide")
-}
-
-
-WebUI.closeBrowser()
-
-
-//Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
@@ -116,51 +78,28 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en reversos
+//Desde el dashboard iremos al aplicativo de reversos para poder buscar nuestra comision creada y reversarla
 WebUI.click(findTestObject('Object Repository/02-Dashboard/spanReversos'))
-
-//Click en reverso de operaciones
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkReverso de Operaciones'))
-
-//Switch a la ventana BCCL.E.EB.CONS.REVE
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
- 
-//Maximizamos
 WebUI.maximizeWindow()
 
-//Ingresamos el numero de contrato
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/BCCL.E.EB.CONS.REVE/txtNroContrato'), terceraPalabra)
-
-//Ingresamos en usuario
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/BCCL.E.EB.CONS.REVE/txtUsuario'), 'B.0043')
-
-//Click en ejecutar
+//Ingresamos los datos de busqueda
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Contrato', transaccion)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0043')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//Click en reversar
+//abrimos menu de reversar y reversamos el registro
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/BCCL.E.EB.CONS.REVE/lnkReversar'))
-
-//Click en reversar un registro
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnReversarRegistro'))
 
-//Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), terceraPalabra)
-
-//Click en ver un registro
+//validamos que la reversa esté realizada correctameente viendo el estado en los detalles del registro
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), transaccion)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
-
-//Click en audit
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/spanAudit'))
-
-def Estado = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkEstado'))
-
-// Verifica el valor de check y reporta el resultado
-if (Estado == "REVE") {
-	Estado ==  ("Checkpoint estado: Coincide")
-} else {
-	Estado == ("Checkpoint estado: No coincide")
-}
-
+def Estado = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblREVE'))
+assert Estado.contains('REVE')
 
 
 //---------------------------------------------------------------------------------------------------------------------
