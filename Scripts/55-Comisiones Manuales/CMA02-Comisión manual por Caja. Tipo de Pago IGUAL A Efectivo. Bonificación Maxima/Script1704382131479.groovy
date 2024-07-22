@@ -16,97 +16,95 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.support.ui.Select
+import java.awt.Robot
+import java.awt.event.KeyEvent
 
+def idOrdenante = '1000027871'
+def concepto = '18301CMI'
+def bonificacion = '99,99'
+def observaciones = 'PRUEBA'
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,17), findTestData('MainData/Users').getValue(2,17))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en comisiones
+//Desde el menu principal accedemos a la aplicacion de cobro de comisiones manuales en efectivo
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisiones'))
-
-//Click en Cobro de Comisiones Manuales EN EFECTIVO
 WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/lnkCobro de Comisiones Manuales EN EFECTIVO'))
-
-//Switch a la ventana Account Charge Request
 WebUI.switchToWindowTitle('Account Charge Request')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
-//Selecionamos la moneda
+//Cargamos los datos de la comision segun lo requerido - moneda pesos, es socio (id ordenante), concepto permite bonificacion, bonificacion maxima
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btndropdown'))
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblPesos Argentinos'))
-
-//Selecionamos si es o no socio
 WebUI.selectOptionByIndex(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/cbxEsSocio'), 2)
-
-//Ingresamos el ID ordenante
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtId Ordenante'), '1000027871')
-
-//Seleciono Codigo Concepto
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtId Ordenante'), idOrdenante)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), '18301CMI')
-
-//Ingresamos las bonificaciones
-//WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtBonificacion'))
-//WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtBonificacion'), '99,99')
-
-//Agregamos comentarios de observaciones
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), concepto)
+WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtBonificacion'))
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtBonificacion'), bonificacion)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), 'PRUEBA')
-
-//Click en aceptar registro
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), observaciones)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnAceptar Registro'))
-
-//Click en Aceptar Alertas
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkAceptar Alertas'))
 
-//ASSERT
+//validamos que la operacion haya finalizado con exito y guardamos el numero de la misma
 WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+assert TxnInicial.contains('Txn Completa:')
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
 
-def element = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+//Deslogueamos
+WebUI.closeWindowTitle('Account Charge Request')
+WebUI.switchToWindowIndex(0)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
 
-assert element.contains('Txn Completa')
+//Login con user NIV 5 para autorizar la transaccion anterior
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,39), findTestData('MainData/Users').getValue(2,39))
+WebUI.maximizeWindow()
 
-//Switch a la ventana Account Charge Request
+WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/Cheques rechazados/Autorizacion/lnkAutorizaciones'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/Cheques rechazados/Autorizacion/lnkAutorizacionesPendientes'))
+WebUI.switchToWindowTitle('BCCL.E.AUTHORIZATION')
+
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[0]
+		String cellText = cell.getText()
+		
+		if (cellText.equals(transaccion)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[10]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()	
+			break
+		}
+		
+	}
+
+	//validaciones finales - Pago en EFECTIVO y bonificacion maxima (99,99%)
 WebUI.switchToWindowTitle('Account Charge Request')
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+TipoPago = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+assert TipoPago == "EFECTIVO"
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
+Bonificacion = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
+assert Bonificacion == "99,99"
 
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
- 
-//Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
- 
-// Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
-String terceraPalabra = palabras[2];
- 
-// Imprimir la tercera palabra seleccionada
-println("La tercera palabra es: " + terceraPalabra);
- 
-//Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), terceraPalabra)
-
-//Click en ver un registro
-WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
-
-//Click en audit
-WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/spanAudit'))
-
-
-def check = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/span1'))
-
-// Verifica el valor de check y reporta el resultado
-if (check == "1") {
-	check ==  ("Checkpoint estado: Coincide")
-} else {
-	check == ("Checkpoint estado: No coincide")
-}
 
 
 //---------------------------------------------------------------------------------------------------------------------

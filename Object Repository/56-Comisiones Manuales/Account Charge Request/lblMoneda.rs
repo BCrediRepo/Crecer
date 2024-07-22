@@ -6,15 +6,15 @@
    <elementGuidId>9a04a622-9268-4176-9f50-94e537943c27</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(4) > span:nth-child(1)</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@id='fieldCaption:L.AC.COM.MON']</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>42454297-5e93-4497-991e-27e663544c33</webElementGuid>
+      <webElementGuid>084dfb6b-e689-4262-affa-bf38c4649b0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>770fc52d-c659-4a52-a198-6a07d7019f01</webElementGuid>
+      <webElementGuid>e44533be-a50b-4a60-be02-c844d7fd9438</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>a5d09d64-ea3d-4d4a-80fa-b7d5fc087796</webElementGuid>
+      <webElementGuid>a96d6c9a-5223-49a5-9443-d7c4bbd9d861</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>field field_ACCHARGEREQUEST field_ACCHARGEREQUEST_BCCLCOMCAJA</value>
-      <webElementGuid>79bc9f2f-1a4c-4ca0-a9f5-e0272e0eec41</webElementGuid>
+      <webElementGuid>8c8754ed-2e70-4423-8177-377963cdaa35</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldCaption:L.AC.COM.MON</value>
-      <webElementGuid>fa3f6ad5-3d21-4501-bdd5-3f5107a39668</webElementGuid>
+      <webElementGuid>31359e24-43b0-419a-81c9-aadcc3372e05</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldCaption:L.AC.COM.MON</value>
-      <webElementGuid>a7dc5ae8-220f-435b-9ce5-7755436502e2</webElementGuid>
+      <webElementGuid>a07560b0-e0a3-4d93-a91c-48e412f6bed9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>ce33d956-4e73-4f78-a251-1859ec9ca494</webElementGuid>
+      <webElementGuid>1ab69552-e0ec-498c-95d4-3031aebb1ffe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:help('L.AC.COM.MON','','','issueToken')</value>
-      <webElementGuid>df6fe2d0-fa15-4707-8f50-93525095c920</webElementGuid>
+      <webElementGuid>822f746b-e2b6-4d4d-baa0-3e00f6671913</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Moneda</value>
-      <webElementGuid>46cbf5c5-1f4b-45ff-a904-c70722614091</webElementGuid>
+      <webElementGuid>8348958f-b136-41f5-acfd-1b72a3f7ad85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Moneda</value>
-      <webElementGuid>7cb3f20c-782f-4828-b000-a8eb058d79c1</webElementGuid>
+      <webElementGuid>fdfd482b-8bc8-45ae-9fbd-7b2aec50eca4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldCaption:L.AC.COM.MON&quot;)</value>
-      <webElementGuid>86e48ca6-ecc3-43ba-a1c4-bad5d8dcdd27</webElementGuid>
+      <webElementGuid>3a6b0db5-b576-4f8d-946a-e6eb2fb7f7b1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='fieldCaption:L.AC.COM.MON']</value>
-      <webElementGuid>31dd87e8-f3fc-4b96-a334-49b319cb7b98</webElementGuid>
+      <webElementGuid>59a56d81-3167-4ef5-88f9-b652e5a3014d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[3]/td[2]/label/a</value>
-      <webElementGuid>f200d97c-9038-4f77-8694-b0215df0f431</webElementGuid>
+      <webElementGuid>9c7efc7d-d102-4649-b197-b81d1487e7b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Moneda')]</value>
-      <webElementGuid>03eb7227-147b-4de2-be05-bd4a096db1c8</webElementGuid>
+      <webElementGuid>e0df0bf3-da74-4019-9a21-5a35c8c83830</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Valor'])[1]/following::a[1]</value>
-      <webElementGuid>615a8a40-4d48-46f2-8995-e15e6fe62a00</webElementGuid>
+      <webElementGuid>f01dd2e6-749c-4b65-8c67-64bfef756fde</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='EFECTIVO'])[1]/following::a[2]</value>
-      <webElementGuid>0c67859d-4573-49dd-9160-40d07808b5d5</webElementGuid>
+      <webElementGuid>c7d6aa9c-b674-4e45-a042-768c25dd11ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::a[1]</value>
-      <webElementGuid>22bdba02-b382-49ea-be1c-3992a87b15af</webElementGuid>
+      <webElementGuid>3a389cbf-4116-4c4f-bf5f-89e447fab91a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentino'])[1]/preceding::a[1]</value>
-      <webElementGuid>2caff54f-84ef-49d2-a6f2-bbbb772944d1</webElementGuid>
+      <webElementGuid>493509b6-06dc-430d-bd1f-511d3b5eb992</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Moneda']/parent::*</value>
-      <webElementGuid>46fba22e-ccb1-4b76-8fd6-cb7e793d3189</webElementGuid>
+      <webElementGuid>c6f2d69d-cbd3-460b-9c04-35eddebdebbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,7 +174,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:help('L.AC.COM.MON','','','issueToken')&quot;)]</value>
-      <webElementGuid>d6ddce07-5fdb-481a-854d-7b9c5a421860</webElementGuid>
+      <webElementGuid>15cf5b9b-4154-4f36-9a4e-85bdf56b4198</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,7 +182,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td[2]/label/a</value>
-      <webElementGuid>98bd9ce1-8c2b-4885-a764-a5d22f35d2a9</webElementGuid>
+      <webElementGuid>b88cc7f1-139f-4111-aca6-813abe5c68bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -190,6 +190,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@name = 'fieldCaption:L.AC.COM.MON' and @id = 'fieldCaption:L.AC.COM.MON' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;L.AC.COM.MON&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Moneda' and (text() = 'Moneda' or . = 'Moneda')]</value>
-      <webElementGuid>e9359086-cf9b-46ec-9e5b-de9e36c50656</webElementGuid>
+      <webElementGuid>b4ee0958-592a-4e45-9c59-1269e51b74c8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

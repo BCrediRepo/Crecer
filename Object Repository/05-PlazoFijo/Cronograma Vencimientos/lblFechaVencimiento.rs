@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFecha</name>
+   <name>lblFechaVencimiento</name>
    <tag></tag>
-   <elementGuidId>ca612a5b-c99a-4695-9139-e4b5efdda93f</elementGuidId>
+   <elementGuidId>dd2e15e5-a07e-49cd-8485-3413861f6dab</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[2]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#r1 > td:nth-child(2)</value>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = '25 JUL 2022' or . = '25 JUL 2022')]</value>
+         <value>//*[(text() = '31 AGO 2022' or . = '31 AGO 2022')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,86 +26,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>44157333-1697-4c4f-a61f-0e2365d3433a</webElementGuid>
+      <webElementGuid>5a0c0c40-9704-4646-9a72-8f91d03d5c0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>25 JUL 2022</value>
-      <webElementGuid>ced9dcb1-6b31-4df3-ae92-e7a09edfbc8f</webElementGuid>
+      <value>31 AGO 2022</value>
+      <webElementGuid>67c4db0c-8084-487d-8aba-f6c38ad19f47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[2]</value>
-      <webElementGuid>c5da23f4-3774-4ac6-b3cb-7f9706486eee</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[2]</value>
+      <webElementGuid>0021c795-cc54-4078-baee-9183e3901f20</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[2]</value>
-      <webElementGuid>3c7e739f-2416-4893-960e-ff0dde635532</webElementGuid>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
+      <webElementGuid>6a1b7f6d-d17b-413d-9978-b184732433e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Interes'])[1]/following::td[2]</value>
-      <webElementGuid>f3d7f8d9-7ddb-4725-9830-8faa2c10b234</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Vencimiento :'])[1]/following::td[1]</value>
+      <webElementGuid>7b467b73-6a4f-46e1-9dd8-432e97e6c74c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capital'])[1]/following::td[2]</value>
-      <webElementGuid>bc3e784b-d0af-45c7-a312-b403ab812923</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cronograma Vencimientos'])[1]/following::td[2]</value>
+      <webElementGuid>e513c664-5941-47b1-8350-edf081296ffd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[138]</value>
-      <webElementGuid>f72d8df3-c27a-466b-b0a6-e896bfdc10ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda:'])[1]/preceding::td[1]</value>
+      <webElementGuid>91b93ab5-0ca9-4ca0-a72d-140f05e88572</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tasas Promedio'])[2]/preceding::td[141]</value>
-      <webElementGuid>88df14ed-584e-4b2e-b1d3-f82ae882362c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[2]</value>
+      <webElementGuid>65c62eec-b28d-442c-b6ec-2544d7de59fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='25 JUL 2022']/parent::*</value>
-      <webElementGuid>99a24318-8f7e-4ae5-b8ee-1e8be2ac36d9</webElementGuid>
+      <value>//*/text()[normalize-space(.)='31 AGO 2022']/parent::*</value>
+      <webElementGuid>131da860-cd35-4863-8f73-f6d55f0f5e09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td[2]</value>
-      <webElementGuid>7e8aa17d-b9e3-4add-a6c1-d34cd9c4f973</webElementGuid>
+      <value>//tr[2]/td[2]</value>
+      <webElementGuid>cb05e9f4-b90e-47c7-b548-9ba2242532d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '25 JUL 2022' or . = '25 JUL 2022')]</value>
-      <webElementGuid>fa7879da-c28d-41db-9ffc-bef43d1bc04c</webElementGuid>
+      <value>//td[(text() = '31 AGO 2022' or . = '31 AGO 2022')]</value>
+      <webElementGuid>7dd0fe09-f40e-4569-a91b-fc7c80f634fa</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

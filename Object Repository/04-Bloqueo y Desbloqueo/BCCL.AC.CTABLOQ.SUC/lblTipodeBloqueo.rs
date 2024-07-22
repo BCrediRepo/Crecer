@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#fieldCaption\:POS\.RES</value>
+         <value>#r1 > td:nth-child(4)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>5ab51b94-5a8d-4f82-8217-5e3836b070fe</webElementGuid>
+      <webElementGuid>a88268ac-3350-431c-a5a6-89f5c60fbe24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>focusonKey('inline',event);</value>
-      <webElementGuid>40ea5163-a4e3-42cd-8291-a764e39ef019</webElementGuid>
+      <webElementGuid>4e207a6f-dcf4-4e51-a016-cdaae4d549c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>hideTooltip(event);</value>
-      <webElementGuid>99e5f674-0471-46a2-8216-5c96ce0bc170</webElementGuid>
+      <webElementGuid>43fdc58e-009d-4243-831f-c282d4700493</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>field field_BCCLACBLOQUEOS field_BCCLACBLOQUEOS_CONSULTA</value>
-      <webElementGuid>6ae2e81c-9bb5-4a4d-94b8-7d87e70e214f</webElementGuid>
+      <webElementGuid>ad489fa7-2104-49c3-9010-7b9fef04d5ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldCaption:POS.RES</value>
-      <webElementGuid>2a365c6e-ffc5-4978-9998-174bb418b3b2</webElementGuid>
+      <webElementGuid>894fad83-0b90-4d23-87e4-6838aa93f43d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldCaption:POS.RES</value>
-      <webElementGuid>efcedcfa-10cd-42c0-8f0a-2d51bce73662</webElementGuid>
+      <webElementGuid>fd454503-0ae7-4c44-ad81-05f1d69b8b9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>9f97277f-8656-4a4a-8769-3bb18c3ba3a3</webElementGuid>
+      <webElementGuid>71dd0beb-7d79-455a-a87a-6861bfb80461</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>href</name>
       <type>Main</type>
       <value>javascript:help('POS.RES','','','issueToken')</value>
-      <webElementGuid>2f71a584-2ad4-46b4-8dd6-0d9a64a4432c</webElementGuid>
+      <webElementGuid>8f6977ed-06e2-4868-9e4d-ce8938e64d11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Tipo de Bloqueo</value>
-      <webElementGuid>371c359e-ff31-4b13-8750-03de128ab412</webElementGuid>
+      <webElementGuid>4ccb1092-7fd3-4fd9-b0dd-8544c5ed87c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Tipo de Bloqueo</value>
-      <webElementGuid>9eed8529-e875-4b84-8db0-c4d68e753a66</webElementGuid>
+      <webElementGuid>17c9622d-75b3-4e2c-af05-2106213e1bce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldCaption:POS.RES&quot;)</value>
-      <webElementGuid>403b870e-d37f-47b7-aba0-7f2deba4112f</webElementGuid>
+      <webElementGuid>8429cfed-1933-4d33-8e33-9ae4b29c9c12</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='fieldCaption:POS.RES']</value>
-      <webElementGuid>780f2abc-e897-4826-885c-1f4dcef8db53</webElementGuid>
+      <webElementGuid>5cb56a6d-01ca-4686-817d-a0b0cbd9317d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td/label/a</value>
-      <webElementGuid>ea27632c-4494-400f-912b-f03bc7127b1c</webElementGuid>
+      <webElementGuid>36ae6bea-06de-4937-96e5-414faf13d495</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Tipo de Bloqueo')]</value>
-      <webElementGuid>538779fb-6bdf-422b-8d0f-8f500314bf0d</webElementGuid>
+      <webElementGuid>043975bb-11cf-49bf-9626-9185839f167d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.001 Centro)'])[1]/following::a[1]</value>
-      <webElementGuid>1194946f-d11a-4dc9-92e1-bb49f0d82615</webElementGuid>
+      <webElementGuid>ba7421fa-590e-47f0-8acc-d57865c88406</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Consulta Bloqueos'])[1]/following::a[1]</value>
-      <webElementGuid>1480d74a-4527-4d65-aff9-855897d66ef6</webElementGuid>
+      <webElementGuid>fa252b2f-0078-48a9-ac8a-02792e63082e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BLOQUEO PARCIAL'])[1]/preceding::a[1]</value>
-      <webElementGuid>f5583d3c-d659-4dd1-9fdd-08934af3140a</webElementGuid>
+      <webElementGuid>8732aec6-b23e-48bd-b409-86e0eba08f3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha desde'])[1]/preceding::a[1]</value>
-      <webElementGuid>ee55a265-728a-447e-9830-f5d3a171936c</webElementGuid>
+      <webElementGuid>7dcecc9f-e59b-4c48-a5a2-63171f104396</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Tipo de Bloqueo']/parent::*</value>
-      <webElementGuid>b42b988a-751c-42e2-ba85-7dd42f8d0f12</webElementGuid>
+      <webElementGuid>d9fd83c3-5222-40d9-aaa9-aeecdd90c7aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,7 +174,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, &quot;javascript:help('POS.RES','','','issueToken')&quot;)]</value>
-      <webElementGuid>a213d500-c6aa-4871-8cc3-11435baa3adf</webElementGuid>
+      <webElementGuid>854b83dc-5289-4080-a22a-461897cdeb31</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -182,7 +182,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//label/a</value>
-      <webElementGuid>582bbaf9-3c46-4467-bf02-b033a824a904</webElementGuid>
+      <webElementGuid>cc5484d8-97c2-4ad8-8a8a-1c2ab0fd92d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -190,6 +190,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@name = 'fieldCaption:POS.RES' and @id = 'fieldCaption:POS.RES' and @href = concat(&quot;javascript:help(&quot; , &quot;'&quot; , &quot;POS.RES&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;issueToken&quot; , &quot;'&quot; , &quot;)&quot;) and @title = 'Tipo de Bloqueo' and (text() = 'Tipo de Bloqueo' or . = 'Tipo de Bloqueo')]</value>
-      <webElementGuid>51f345ce-1d71-4702-873c-cf035743cb3a</webElementGuid>
+      <webElementGuid>7e5fd03e-c60a-4545-9d97-6db16898f1f0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

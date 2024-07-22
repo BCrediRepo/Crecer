@@ -17,89 +17,49 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def cuenta = '00430300691'
+def concepto = '18306CMI'
 
-//Configuracion de ambiente
+
+//Configuracion de ambiente y login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-//Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,11), findTestData('MainData/Users').getValue(2,11))
-WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en comisiones y bonificaciones
+//desde el menu principal, accedemos a la aplicacion de cobro de comisiones manuales - planta
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisionesyBonificaciones'))
-
-//Click en comisiones
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisiones'))
-
-//Click en Cobro Comisiones Manuales
-WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/lnkCobroComisiones Manuales - Planta'))
-
-//Switch a la ventana Account Charge Request
+WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/lnkComisiones'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/1-Comisiones y Bonificaciones/Comisiones/lnkCobroComisiones Manuales - Planta'))
 WebUI.switchToWindowTitle('Account Charge Request')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
-//Selecionamos el tipo de pago
+//Cargamos los valores requeridos por el caso - cuenta debito, comision que no permita bonificacion
 WebUI.selectOptionByIndex(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/cbxTipoPago'), 1)
-
-//Ingresamos la cuenta de debito
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), '00430300691')
-
-//Seleciono Codigo Concepto
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), cuenta)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), '18306CMI')
-
-//Agregamos comentarios de observaciones
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), concepto)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), 'PRUEBAS')
-
-//Click en aceptar registro
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), 'PRUEBA')
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnAceptar Registro'))
-
-//Click en aceptar alertas
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkAceptar Alertas'))
 
-//ASSERT
+//validamos que la operacion haya finalizado con exito y guardamos el numero de la misma 
 WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+assert TxnInicial.contains('Txn Completa')
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
 
-def element = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
-
-assert element.contains('Txn Completa')
-
-
-//Switch a la ventana Account Charge Request
+//validamos que la comision una vez realizada, esté en DEBITO y sin bonificacion
 WebUI.switchToWindowTitle('Account Charge Request')
-
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
- 
-//Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
- 
-// Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
-String terceraPalabra = palabras[2];
- 
-// Imprimir la tercera palabra seleccionada
-println("La tercera palabra es: " + terceraPalabra);
- 
-//Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), terceraPalabra)
-
-//Click en ver un registro
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), transaccion)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
-
-
-def check = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/span0,70'))
-
-// Verifica el valor de check y reporta el resultado
-if (check == "0,70") {
-	check ==  ("Checkpoint estado: Coincide")
-} else {
-	check == ("Checkpoint estado: No coincide")
-}
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+TipoPago = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
+Bonificacion = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
+assert TipoPago == "DEBITO"
+assert Bonificacion == ""
 
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -114,6 +74,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
 

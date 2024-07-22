@@ -31,16 +31,20 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Accedo al menu Autorizaciones
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizacionesPendientes'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsElimindeTxPendientes'))
 
 //Switch a la ventana de Nota de Debito por Ajustes
-WebUI.switchToWindowTitle('BCCL.E.AUTHORIZATION')
-
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
+//Seteo de Datos 
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0289')
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator')
 //Espera y recibe mensaje de tx completa reversada
-WebUI.waitForElementVisible(findTestObject('Object Repository/13-MEP/BCCL.E.AUTHORIZATION/lblNombrePuesto'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/13-MEP/BCCL.E.AUTHORIZATION/lblNombrePuesto'))
-def element = WebUI.getText(findTestObject('Object Repository/13-MEP/BCCL.E.AUTHORIZATION/lblNombrePuesto'))
-assert element.contains('JEFE DE GESTION OPERATIVA Y COMERCIAL')
+//WebUI.waitForElementVisible(findTestObject('Object Repository/13-MEP/BCCL.E.AUTHORIZATION/lblNombrePuesto'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator'))
+def element = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator'))
+assert element.contains('B.0289')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

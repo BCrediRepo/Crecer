@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFecha</name>
+   <name>lblMoneda</name>
    <tag></tag>
-   <elementGuidId>ca612a5b-c99a-4695-9139-e4b5efdda93f</elementGuidId>
+   <elementGuidId>38a19cd2-3a32-4704-ae70-688e79857459</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td[2]</value>
+         <value>//table[@id='tab1']/tbody/tr[20]/td[3]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td:nth-child(2)</value>
+         <value>#r1 > td:nth-child(6)</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = '25 JUL 2022' or . = '25 JUL 2022')]</value>
+         <value>//*[(text() = 'ALTA' or . = 'ALTA')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -25,87 +25,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>44157333-1697-4c4f-a61f-0e2365d3433a</webElementGuid>
+      <value>span</value>
+      <webElementGuid>595a409d-db71-47fb-8425-f471e97ec6f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_ACCOUNT disabled_dealbox_ACCOUNT_BCCLCTAMODCCPJ</value>
+      <webElementGuid>37610cc5-fdf5-428a-aafa-7a55469c83dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>25 JUL 2022</value>
-      <webElementGuid>ced9dcb1-6b31-4df3-ae92-e7a09edfbc8f</webElementGuid>
+      <value>ALTA</value>
+      <webElementGuid>61413907-a233-4da8-9ea6-9aade1f2d2c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[2]</value>
-      <webElementGuid>c5da23f4-3774-4ac6-b3cb-7f9706486eee</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[20]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_ACCOUNT disabled_dealbox_ACCOUNT_BCCLCTAMODCCPJ&quot;]</value>
+      <webElementGuid>a1ebf912-eaf7-43fd-93e1-f7d58037b0fe</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td[2]</value>
-      <webElementGuid>3c7e739f-2416-4893-960e-ff0dde635532</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[20]/td[3]/span</value>
+      <webElementGuid>03d2b37e-3c27-4027-99ae-25aae214605a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Interes'])[1]/following::td[2]</value>
-      <webElementGuid>f3d7f8d9-7ddb-4725-9830-8faa2c10b234</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Emision Echeq'])[1]/following::span[1]</value>
+      <webElementGuid>6d0131a3-be2a-4626-91af-a8c9f65c458c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capital'])[1]/following::td[2]</value>
-      <webElementGuid>bc3e784b-d0af-45c7-a312-b403ab812923</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='S'])[1]/following::span[1]</value>
+      <webElementGuid>4f03a59a-2538-4c2e-9711-4da3d8dc5581</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[138]</value>
-      <webElementGuid>f72d8df3-c27a-466b-b0a6-e896bfdc10ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Emision Echeq'])[1]/preceding::span[1]</value>
+      <webElementGuid>7f77ad38-70f3-4b85-80af-acfafc50561d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tasas Promedio'])[2]/preceding::td[141]</value>
-      <webElementGuid>88df14ed-584e-4b2e-b1d3-f82ae882362c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pieza Unica'])[1]/preceding::span[2]</value>
+      <webElementGuid>cc3fc2cf-3548-4dbc-bc83-dcfe90b0bd17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='25 JUL 2022']/parent::*</value>
-      <webElementGuid>99a24318-8f7e-4ae5-b8ee-1e8be2ac36d9</webElementGuid>
+      <value>//*/text()[normalize-space(.)='ALTA']/parent::*</value>
+      <webElementGuid>503e5293-9d64-4fc5-8fb3-3ff9f2cf2cff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td[2]</value>
-      <webElementGuid>7e8aa17d-b9e3-4add-a6c1-d34cd9c4f973</webElementGuid>
+      <value>//tr[20]/td[3]/span</value>
+      <webElementGuid>376fe67f-a5ff-4aee-8e89-d2a205812b1f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '25 JUL 2022' or . = '25 JUL 2022')]</value>
-      <webElementGuid>fa7879da-c28d-41db-9ffc-bef43d1bc04c</webElementGuid>
+      <value>//span[(text() = 'ALTA' or . = 'ALTA')]</value>
+      <webElementGuid>f4b303dc-50c2-4643-89b2-410eece4dbb9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
