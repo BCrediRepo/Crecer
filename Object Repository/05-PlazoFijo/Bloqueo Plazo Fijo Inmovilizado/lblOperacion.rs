@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lbl31AGO2022</name>
+   <name>lblOperacion</name>
    <tag></tag>
-   <elementGuidId>dd2e15e5-a07e-49cd-8485-3413861f6dab</elementGuidId>
+   <elementGuidId>f4a27744-cea2-41d6-8aec-b32d422802d8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
+         <value>//tr[@id='r1']/td[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '31 AGO 2022' or . = '31 AGO 2022')]</value>
+         <value>#r1 > td:nth-child(2)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,86 +22,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>5a0c0c40-9704-4646-9a72-8f91d03d5c0a</webElementGuid>
+      <webElementGuid>c492a12a-fb79-4410-ae83-6c8e3003ba3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>31 AGO 2022</value>
-      <webElementGuid>67c4db0c-8084-487d-8aba-f6c38ad19f47</webElementGuid>
+      <value>026</value>
+      <webElementGuid>e5e89bf9-d8a8-4d7e-bdac-8882bc4c1310</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[2]</value>
-      <webElementGuid>0021c795-cc54-4078-baee-9183e3901f20</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[2]</value>
+      <webElementGuid>0ec760c4-ebe1-4752-acaa-343a7aaea3d3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>6a1b7f6d-d17b-413d-9978-b184732433e7</webElementGuid>
+      <value>//tr[@id='r1']/td[2]</value>
+      <webElementGuid>91901177-fbde-4c1a-a4ad-46cf0b0f406f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Vencimiento :'])[1]/following::td[1]</value>
-      <webElementGuid>7b467b73-6a4f-46e1-9dd8-432e97e6c74c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo Actual'])[1]/following::td[2]</value>
+      <webElementGuid>261f364f-3593-493c-b1e3-c5f6d4195a12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cronograma Vencimientos'])[1]/following::td[2]</value>
-      <webElementGuid>e513c664-5941-47b1-8350-edf081296ffd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enviado a Inmovilizado'])[1]/following::td[2]</value>
+      <webElementGuid>a405015b-31b8-4e0a-b3f0-a9f6353a7b0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda:'])[1]/preceding::td[1]</value>
-      <webElementGuid>91b93ab5-0ca9-4ca0-a72d-140f05e88572</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='---'])[1]/preceding::td[7]</value>
+      <webElementGuid>13c06115-a241-4690-b653-5d6cd8cd64d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[2]</value>
-      <webElementGuid>65c62eec-b28d-442c-b6ec-2544d7de59fb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='---'])[2]/preceding::td[8]</value>
+      <webElementGuid>5ff8dfc7-d30a-4cba-8350-4ef051df9a7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='31 AGO 2022']/parent::*</value>
-      <webElementGuid>131da860-cd35-4863-8f73-f6d55f0f5e09</webElementGuid>
+      <value>//*/text()[normalize-space(.)='026']/parent::*</value>
+      <webElementGuid>ad8835b1-3c95-4ffb-9b40-f8341bdb9312</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td[2]</value>
-      <webElementGuid>cb05e9f4-b90e-47c7-b548-9ba2242532d1</webElementGuid>
+      <value>//div[2]/div/table/tbody/tr/td[2]</value>
+      <webElementGuid>28a6ea8d-8bb7-46dc-8221-43a39a1afaf6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '31 AGO 2022' or . = '31 AGO 2022')]</value>
-      <webElementGuid>7dd0fe09-f40e-4569-a91b-fc7c80f634fa</webElementGuid>
+      <value>//td[(text() = '026' or . = '026')]</value>
+      <webElementGuid>78d51818-c793-4bcb-b519-7969229569da</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

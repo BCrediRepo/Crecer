@@ -16,7 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.support.ui.Select
+import java.awt.Robot
+import java.awt.event.KeyEvent
 
+//Definimos los datos a utilizar
+def cuenta = '10700010299'
+def  concepto = '18301CMI'
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -26,96 +40,68 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Por medio del dashboard accedemos al aplicativo de consulta de cuentas por cuenta
+//En esa ventana vamos a poder validar que la cuenta este activa y sea una cuenta en pesos (condiciones iniciales del caso)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuenta'))
+WebUI.switchToWindowTitle("Consulta de Cuentas por Cuenta")
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', cuenta)
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Click en comisiones y bonificaciones
+//Recorremos la tabla consultada buscando el numero de cuenta que ingresamos para la busqueda
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+List<WebElement> rows = table.findElements(By.tagName("tr"))
+for (WebElement row : rows) {		
+	WebElement cell = row.findElements(By.tagName("td"))[1]
+	String cellText = cell.getText()	
+	if (cellText.equals(cuenta)) {				
+		List<WebElement> tdList = row.findElements(By.tagName("td"))		
+		//Aqui estamos validando que la cuenta este activa y en pesos
+		assert tdList[4].getText().contains('ARS') : "Expected 'ARS' but found ${tdList[4].getText()}"
+		assert tdList[5].getText().contains('Activa') : "Expected 'Activa' but found ${tdList[5].getText()}"
+		return true
+	}
+}
+//cerramnos la ventana una vez terminada la verificacion y nos dirigimos al dashboard de nuevo
+//ahora si, para hacer la comision manual requerida en el caso
+WebUI.closeWindowIndex(1)
+WebUI.switchToWindowIndex(0)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisionesyBonificaciones'))
-
-//Click en comisiones
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkComisiones'))
-
-//Click en Cobro Comisiones Manuales
 WebUI.click(findTestObject('Object Repository/02-Dashboard/04-Comisiones/lnkCobroComisiones Manuales - Planta'))
-
-//Switch a la ventana Account Charge Request
 WebUI.switchToWindowTitle('Account Charge Request')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
-//Selecionamos el tipo de pago
+//cargamos los datos de la comision. Pago en debito, cuenta debito activa en pesos, comision por cerificacion de firmas
+//sin bonificacion 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/cbxTipoPago'), 1)
-
-//Ingresamos la cuenta de debito 00545293967
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), '10700010299')
-
-//Seleciono Codigo Concepto
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), cuenta)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'))
-WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), '18301CMI')
-
-//Agregamos comentarios de observaciones
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), concepto)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'))
 WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), 'COBRO DE FIRMAS')
 
-//Click en aceptar registro
+//validamos la carga
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnAceptar Registro'))
 
-//Click en aceptar alertas
-//WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkAceptar Alertas'))
-
-//ASSERT
+//verificamos que la transaccion haya sido completada con exito
 WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+def Txn = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+assert Txn.contains('Txn Completa')
 
-def element = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+//nos guardamos el numero de transaccion para ver en detalles de que se haya cargado correctamente, validando por ultimo
+//que el tipo de pago sea debito
+def parts = Txn.tokenize(' ')
+def transaccion = parts[2]
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), transaccion)
+WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+TipoPago = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+assert TipoPago.contains('DEBITO')
 
-assert element.contains('Txn Completa')
-
-//Switch a la ventana principal
-WebUI.switchToWindowIndex(0)
-
-//Click en cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
-
-//Click consultas de cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
-
-//Click en Consulta de Mov. por Fecha Valor
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsulta de Mov. por Fecha Valor'))
-
-//Switch a la ventana Movimientos de Ctas por Fecha Valor
-WebUI.switchToWindowTitle('Movimientos de Ctas por Fecha Valor')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en nueva seleccion
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Ingresamos Nro de cuenta
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Movimientos de Ctas por Fecha Valor/txtNro de Cuenta'), '10700010299')
-
-//Ingresamos la Fecha desde
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Movimientos de Ctas por Fecha Valor/txtFechaDesde'), '20220726')
-
-//Click en ejecutar
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
-
-//Click en ver detalle completo txn
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Movimientos de Ctas por Fecha Valor/btnVerDetalleCompletotxn'))
-
-//Switch a la ventana Consulta Mov. de una TXN
-WebUI.switchToWindowTitle('Consulta Mov. de una TXN')
-
-//Click en boton ver
-WebUI.click(findTestObject('Object Repository/39-Cuentas/Consulta Mov. de una TXN/btnVer'))
-
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblRequest Type'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblRequest Type'))
-
-def element2 = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblRequest Type'))
-
-assert element2.contains('Request Type')
 
 
 //---------------------------------------------------------------------------------------------------------------------

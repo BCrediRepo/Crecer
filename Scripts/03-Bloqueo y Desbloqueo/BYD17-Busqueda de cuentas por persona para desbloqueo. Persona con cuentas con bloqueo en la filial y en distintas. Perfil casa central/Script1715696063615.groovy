@@ -48,7 +48,7 @@ import javax.swing.JOptionPane
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,19), findTestData('MainData/Users').getValue(2,19))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,71), findTestData('MainData/Users').getValue(2,71))
 WebUI.maximizeWindow()
 
 //Accedo al menu de Bloqueo y Desbloqueo
@@ -70,7 +70,7 @@ WebUI.maximizeWindow()
 //Seteo de Datos "Id Firmante"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtIdFirmante'), 6)
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Firmante', '1000319037') //1003485586
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Firmante', '1001357663') 
 
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'))
@@ -100,7 +100,7 @@ try {
 	
 	//Busco la Cuenta a Bloquear
 	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/txtCuenta'), 6)
-	WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/txtCuenta'), '10010012918') //00010035377
+	WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/txtCuenta'), '00255222844') 
 	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'), 6)
 	WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'))
 	
@@ -138,7 +138,7 @@ try {
 	//Seteo de Datos "Id Firmante"
 	WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 	WebUI.waitForElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/03-Desbloqueo seleccionando Persona/txtIdFirmante'), 6)
-	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Firmante', '1003485586')
+	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Firmante', '1001357663')
 	
 	//Seleccionar "Ejecutar"
 	WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/02-Desbloqueo seleccionando Cuenta/btnEjecutar'))

@@ -19,6 +19,12 @@ import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
 
+
+def cuenta = '00430300691'
+def concepto = '18301CMI'
+def bonificacion = '15'
+def observaciones = 'PRUEBASCRECER'
+
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
@@ -38,27 +44,31 @@ WebUI.selectOptionByIndex(findTestObject('56-Comisiones Manuales/Account Charge 
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
 
-WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), '00430300691')
+WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), cuenta)
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
 
-WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtFecha'), '30 AGO 2023')
+WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtFecha'), GlobalVariable.vFechaCOBAmbTES10)
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
 
-WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), '18306CMI')
+WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtCodigo Concepto'), concepto)
 
+WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtBonificacion'))
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtBonificacion'), bonificacion)
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtObservaciones'), observaciones)
 
-WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtObservaciones'), 'PRUEBASCRECER')
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnAceptar Registro'))
 
 //tarda una monstruosidad en dar el codigo de txn completa en TES11
 //Si en TES10 anda piola, borrar o comentar este paso
-WebUI.delay(60)
+//WebUI.delay(60)
+WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lnkAceptar Alertas'))
 
-TxnInicial = WebUI.getText(findTestObject('56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
+TxnInicial = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
 
 def parts = TxnInicial.tokenize(' ')
 
@@ -76,11 +86,12 @@ WebUI.closeWindowIndex(2)
 
 WebUI.switchToWindowIndex(1)
 
+WebUI.verifyElementVisible(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
+TipoPago = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblTipoDePago'))
 WebUI.verifyElementVisible(findTestObject('56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
-
 Bonif = WebUI.getText(findTestObject('56-Comisiones Manuales/Account Charge Request/lblBonificacion'))
-
-assert Bonif == ""
+assert TipoPago == "DEBITO"
+assert Bonif == "15,00"
 
 //Control fin de script
 

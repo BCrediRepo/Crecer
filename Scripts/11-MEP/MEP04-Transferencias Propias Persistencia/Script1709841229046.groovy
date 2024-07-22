@@ -18,32 +18,32 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.By
-import org.openqa.selenium.WebElement
-import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.support.ui.Select
-
-
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+import org.jsoup.Jsoup as Jsoup
+import org.jsoup.nodes.Document as Document
+import org.openqa.selenium.support.ui.Select as Select
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,59), findTestData('MainData/Users').getValue(2,59))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 59), findTestData('MainData/Users').getValue(
+        2, 59))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click de cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+WebUI.click(findTestObject('02-Dashboard/10-MEP/Menu del dshb para user 688 - MEP04 - NO BORRAR NI CAMBIAR DE LUGAR/lnkCuentas'))
 
 //Click en consultas de cuenta
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/spanConsultas de Cuenta'))
+WebUI.click(findTestObject('02-Dashboard/10-MEP/Menu del dshb para user 688 - MEP04 - NO BORRAR NI CAMBIAR DE LUGAR/lnkConsultadeCuentas'))
 
 //Click en consulta de saldo al dia
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultadeSaldoalDia'))
+WebUI.click(findTestObject('02-Dashboard/10-MEP/Menu del dshb para user 688 - MEP04 - NO BORRAR NI CAMBIAR DE LUGAR/lnkConsultadeSaldoAlDia'))
 
 //Switch a la ventana Saldos de Cuenta
 WebUI.switchToWindowTitle('Saldos de Cuenta')
@@ -59,6 +59,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'), 6)
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'))
 
 def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'))
@@ -71,8 +72,11 @@ WebUI.closeBrowser()
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
+        2, 3))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en transferencias mep
@@ -94,16 +98,19 @@ WebUI.click(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP
 WebUI.setText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/txtImporte'), '45')
 
 //Seleccionamos la opcion SI en Conozca a su asociado
-WebUI.selectOptionByIndex(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/cbxAsociado'), 2)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/cbxAsociado'), 
+    2)
 
 //Ingresamos el CBU del beneficiario
 WebUI.setText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/txtCBU Beneficiario'), '1980001730000000606629')
 
 //Ingresamos el CUIL/CUIT del beneficiario
-WebUI.setText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/txtCUIT-CUIL Beneficiario'), '27040510740')
+WebUI.setText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/txtCUIT-CUIL Beneficiario'), 
+    '27040510740')
 
 //Ingresamos la descripcion/motivo
-WebUI.setText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/txtDescripcion Motivo'), 'Pruebas')
+WebUI.setText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/txtDescripcion Motivo'), 
+    'Pruebas')
 
 //Ingresamos la referencia
 WebUI.setText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/txtReferencia'), 'pruebas001')
@@ -118,28 +125,33 @@ WebUI.click(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP
 WebUI.click(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/btnAceptar Alertas'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'), 
+    6)
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'))
 
 def element2 = WebUI.getText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'))
 
 // Dividir la cadena por espacios en blanco y tomar el segundo elemento
 def partes = element2.split('\\s+')
- 
+
 def trx1 = partes[2]
 
 assert element2.contains('Txn Completa')
 
 WebUI.delay(5)
-WebUI.closeBrowser()
 
+WebUI.closeBrowser()
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,8), findTestData('MainData/Users').getValue(2,8))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
+        2, 8))
+
 WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en autorizaciones
@@ -158,86 +170,100 @@ WebUI.maximizeWindow()
 def variable = trx1
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
-def buscarElementoEnTabla(String targetValue) {
-	//Itero en la tabla buscado la FT originada y cliqueando en PAGAR
-	// Obtén el elemento de la tabla
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	// Obtén todas las filas dentro de la tabla
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	// Itera a través de las filas
-	//Despliego la columna donde se muestra la info de las transacciones
-	//WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
-	for (WebElement row : rows) {
-		// Obtiene el tercer valor de la fila (índice 1, ya que las listas son base cero)
-		WebElement cell = row.findElements(By.tagName("td"))[0]
- 
-		// Obtiene el texto de la celda
-		String cellText = cell.getText()
-		println(cellText)
-		println(targetValue)
-		// Compara el valor de la celda con el valor específico
-		if (cellText.equals(targetValue)) {
-			// Realiza las acciones necesarias si se encuentra el valor
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[8]
-			WebElement comboBox = tdElement.findElement(By.tagName("select"))
-			// Utiliza Select para interactuar con el comboBox
-			def select = new Select(comboBox)
-			select.selectByVisibleText("AUTORIZAR TRANSACCION")
-			// Encuentra el elemento 'img' dentro del enlace 'a'
-			WebElement imgElement = tdElement.findElement(By.cssSelector("a[title='Select Drilldown'] img"))
-			// Haz clic en el elemento 'img'
-			imgElement.click()
-			return true
-		}
-	}
-	return false
-}
- 
+//Itero en la tabla buscado la FT originada y cliqueando en PAGAR
+// Obtén el elemento de la tabla
+// Obtén todas las filas dentro de la tabla
+// Itera a través de las filas
+//Despliego la columna donde se muestra la info de las transacciones
+//WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
+// Obtiene el tercer valor de la fila (índice 1, ya que las listas son base cero)
+// Obtiene el texto de la celda
+// Compara el valor de la celda con el valor específico
+// Realiza las acciones necesarias si se encuentra el valor
+// Utiliza Select para interactuar con el comboBox
+// Encuentra el elemento 'img' dentro del enlace 'a'
+// Haz clic en el elemento 'img'
 // Lógica para buscar el elemento en la tabla
 def encontrado = false
- 
-// Bucle para buscar en múltiples páginas
-while (!encontrado) {
-	// Lógica para buscar el elemento en la tabla
-	encontrado = buscarElementoEnTabla(variable)
-	// Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
-	if (!encontrado) {
-		// Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		// Espera a que la nueva página se cargue completamente
-		WebUI.delay(2)
-	}
-}
 
+// Bucle para buscar en múltiples páginas
+while (!(encontrado)) {
+    // Lógica para buscar el elemento en la tabla
+    encontrado = buscarElementoEnTabla(variable)
+
+    // Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
+    if (!(encontrado)) {
+        // Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
+        WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
+
+        // Espera a que la nueva página se cargue completamente
+        WebUI.delay(2)
+    }
+}
 
 //Switch a la ventana BCCL.MEP.FT.TRANSFER
 WebUI.switchToWindowTitle('BCCL.MEP.FT.TRANSFER')
 
 //Click en autorizar registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAutorizaRegistro'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAutorizaRegistro'), 
+    6)
+
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/imgAutorizaRegistro'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'), 
+    6)
+
 WebUI.verifyElementVisible(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'))
 
 def element3 = WebUI.getText(findTestObject('Object Repository/13-MEP/Transferencias MEP/BCCL.MEP.FT.TRANSFER/lblTxnCompleta'))
 
-assert element3.contains('Txn Completa')
-
-//---------------------------------------------------------------------------------------------------------------------
+assert element3.contains('Txn Completa') //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
+
+def buscarElementoEnTabla(String targetValue) {
+    WebElement table = DriverFactory.getWebDriver().findElement(By.id('datadisplay'))
+
+    List<WebElement> rows = table.findElements(By.tagName('tr'))
+
+    for (WebElement row : rows) {
+        WebElement cell = row.findElements(By.tagName('td'))[0]
+
+        String cellText = cell.getText()
+
+        println(cellText)
+
+        println(targetValue)
+
+        if (cellText.equals(targetValue)) {
+            List<WebElement> tdList = row.findElements(By.tagName('td'))
+
+            WebElement tdElement = tdList[8]
+
+            WebElement comboBox = tdElement.findElement(By.tagName('select'))
+
+            def select = new Select(comboBox)
+
+            select.selectByVisibleText('AUTORIZAR TRANSACCION')
+
+            WebElement imgElement = tdElement.findElement(By.cssSelector('a[title=\'Select Drilldown\'] img'))
+
+            imgElement.click()
+
+            return true
+        }
+    }
+    
+    return false
+}
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
 

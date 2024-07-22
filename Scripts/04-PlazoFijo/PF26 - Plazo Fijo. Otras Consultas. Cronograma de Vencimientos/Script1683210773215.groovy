@@ -18,8 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
-import com.kms.katalon.core.testobject.ConditionType
-
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -47,11 +46,11 @@ long startTime = System.currentTimeMillis()
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lbl31AGO2022'))
+WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lblFechaVencimiento'))
 
-fecha = WebUI.getText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lbl31AGO2022'))
+fecha = WebUI.getText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lblFechaVencimiento'))
 
-assert fecha == '01 SEP 2023'
+assert fecha == '04 SEP 2023'
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -59,23 +58,23 @@ long endTime = System.currentTimeMillis()
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 //---------------------------
-
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
-println TotalRegistros
-//-----------------------------
+println(TotalRegistros) //-----------------------------
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
-	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+    CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+

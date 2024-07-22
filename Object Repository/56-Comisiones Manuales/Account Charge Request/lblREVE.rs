@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span180,00</name>
+   <name>lblREVE</name>
    <tag></tag>
-   <elementGuidId>1eea19c5-47ae-4256-b77a-7c6318804437</elementGuidId>
+   <elementGuidId>58e3d0a2-ea95-4e74-9ad6-b9fef140e560</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//table[@id='tab3']/tbody/tr[8]/td[3]/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr[14]/td[8]/span</value>
+         <key>CSS</key>
+         <value>#tab3 > tbody:nth-child(1) > tr:nth-child(8) > td:nth-child(3) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>cea8a8e0-6f33-40f8-9edd-bc7e881989eb</webElementGuid>
+      <webElementGuid>b4a9a446-0433-46ec-b02b-2852012f1c23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,78 +30,86 @@
       <name>class</name>
       <type>Main</type>
       <value>disabled_dealbox disabled_dealbox_ACCHARGEREQUEST disabled_dealbox_ACCHARGEREQUEST_BCCLCOMPLANTA</value>
-      <webElementGuid>6f76d650-a3a7-43b9-bb97-534bf83e3673</webElementGuid>
+      <webElementGuid>9a2deab1-70cc-4823-bee5-0d937eb22d34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>180,00</value>
-      <webElementGuid>a4a8f4f5-2ea6-4246-bd1b-dc293c98d563</webElementGuid>
+      <value>REVE</value>
+      <webElementGuid>12e7b831-583e-4c73-9ad9-9ec3b79901ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab1&quot;)/tbody[1]/tr[14]/td[8]/span[@class=&quot;disabled_dealbox disabled_dealbox_ACCHARGEREQUEST disabled_dealbox_ACCHARGEREQUEST_BCCLCOMPLANTA&quot;]</value>
-      <webElementGuid>fc4bdf84-5e55-4218-96eb-90235f487d4a</webElementGuid>
+      <value>id(&quot;tab3&quot;)/tbody[1]/tr[8]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_ACCHARGEREQUEST disabled_dealbox_ACCHARGEREQUEST_BCCLCOMPLANTA&quot;]</value>
+      <webElementGuid>a176ac23-5680-4db4-a828-a0d8dacecdd3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[14]/td[8]/span</value>
-      <webElementGuid>19736650-f6a1-456b-8332-27c8dab48437</webElementGuid>
+      <value>//table[@id='tab3']/tbody/tr[8]/td[3]/span</value>
+      <webElementGuid>04718b24-f5d5-4015-a10c-c150bab3a6d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total.1'])[1]/following::span[1]</value>
-      <webElementGuid>f9511ed2-ec48-4b83-ad23-ed97442b25d7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Record Status'])[1]/following::span[1]</value>
+      <webElementGuid>144ff149-a44e-4961-ba51-c26c98c0b151</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cantidad'])[1]/following::span[2]</value>
-      <webElementGuid>1b773ba5-71cc-480f-a3d0-b58ab615f1c4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Se sobregirara la cuenta. Se requiere autorizacion de NIV5*NIV5*I'])[1]/following::span[2]</value>
+      <webElementGuid>1de5869b-11ca-45be-a398-e7ee4362f33e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bonificacion%'])[1]/preceding::span[1]</value>
-      <webElementGuid>b11e3ca4-bfdb-442e-a7b8-88baede593de</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Curr No'])[1]/preceding::span[1]</value>
+      <webElementGuid>6189fe50-5f5f-46d4-bf64-b65d2a9f1dc4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total + Imp.'])[1]/preceding::span[2]</value>
-      <webElementGuid>c617dd57-f04e-4c59-a1ae-3231a27a2fc6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inputter Id.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>1dec3879-1685-49fe-9076-1112f2f277fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='REVE']/parent::*</value>
+      <webElementGuid>8689be96-5025-45ca-8141-a17d5a474010</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[8]/span</value>
-      <webElementGuid>2db20bb5-d35e-4870-9064-874791093472</webElementGuid>
+      <value>//tr[8]/td[3]/span</value>
+      <webElementGuid>d1454810-481a-46de-9f55-89cd2fa8b81f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = '180,00' or . = '180,00')]</value>
-      <webElementGuid>6ee30832-6223-4fe5-a834-43a6bc588820</webElementGuid>
+      <value>//span[(text() = 'REVE' or . = 'REVE')]</value>
+      <webElementGuid>b1bbcc22-aa3f-447d-a106-5a500f8f5755</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

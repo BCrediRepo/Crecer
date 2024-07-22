@@ -81,6 +81,7 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Contrato', transaccion)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.2055')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
+WebUI.waitForElementVisible(findTestObject('55-Reversos/BCCL.E.EB.CONS.REVE/btnReversar'), 10)
 
 WebUI.click(findTestObject('55-Reversos/BCCL.E.EB.CONS.REVE/btnReversar'))
 
@@ -88,7 +89,19 @@ WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnRev
 
 TxnCompleta = WebUI.getText(findTestObject('56-Comisiones Manuales/Account Charge Request/lblTxn Completa'))
 
-assert TxnCompleta.contains('Txn Completa:') //Control fin de script
+assert TxnCompleta.contains('Txn Completa:') 
+
+
+//validamos que la reversa esté realizada correctameente viendo el estado en los detalles del registro
+WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), transaccion)
+WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/spanAudit'))
+def Estado = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblRecordStatusPos1'))
+assert Estado.contains('REVE')
+
+
+
+//Control fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
