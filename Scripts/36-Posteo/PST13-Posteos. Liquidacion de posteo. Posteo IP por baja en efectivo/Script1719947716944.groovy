@@ -105,7 +105,7 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
 
 //Definir ftBaja
-ftBaja = WebUI.getText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblFTBaja'))
+ftBaja = WebUI.getText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblFtBaja'))
 
 //Definir Variable Global
 GlobalVariable.vTxn = ftBaja
