@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>icoHerramientas</name>
+   <name>btnCajaDeHerramientas</name>
    <tag></tag>
    <elementGuidId>ac1e1db5-cf0c-4f82-a07b-b7f288db22d8</elementGuidId>
    <selectorCollection>
@@ -18,7 +18,7 @@
          <value>id(&quot;enq_toolHeader&quot;)/tbody[1]/tr[1]/td[@class=&quot;popup-tools popup-tools_BCCLEAPENQNOMBREDOC&quot;]/img[1][count(. | //img[@src = '../plaf/images/bccl/tools/tools_menu.gif' and @alt = 'Enquiry Actions' and @title = 'Enquiry Actions']) = count(//img[@src = '../plaf/images/bccl/tools/tools_menu.gif' and @alt = 'Enquiry Actions' and @title = 'Enquiry Actions'])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>ce299c4d-1a4e-4360-b921-f5cbe43b4c9a</webElementGuid>
+      <webElementGuid>c6af5e8c-e534-4472-851d-42b49d145802</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/tools/tools_menu.gif</value>
-      <webElementGuid>fdc26f9f-961f-4f13-9640-44bc01ae48b3</webElementGuid>
+      <webElementGuid>0cd6e3dc-d09c-4fe5-8deb-010e657cd01a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Enquiry Actions</value>
-      <webElementGuid>e2f10216-e1c0-4b50-972e-833a3a5ad312</webElementGuid>
+      <webElementGuid>19b28879-f3cd-45d3-b6e3-907865351fb6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Enquiry Actions</value>
-      <webElementGuid>a13fbf2c-37d8-4f21-9b4e-93a8b6267f2a</webElementGuid>
+      <webElementGuid>b483b1bf-a3a2-4d41-abd4-f7997bb9a9f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enq_toolHeader&quot;)/tbody[1]/tr[1]/td[@class=&quot;popup-tools popup-tools_BCCLEAPENQNOMBREDOC&quot;]/img[1]</value>
-      <webElementGuid>e5d6c980-5f70-4758-ba97-92a058082b53</webElementGuid>
+      <webElementGuid>fc317757-cb1e-45aa-a306-a99579b08ea3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enq_toolHeader']/tbody/tr/td[3]/img</value>
-      <webElementGuid>7f5bf5d4-9ec2-44dd-87c6-61807bc9c858</webElementGuid>
+      <webElementGuid>a320f607-c9ad-472d-b5a5-1e5ea8e97c99</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Enquiry Actions']</value>
-      <webElementGuid>4c077490-aad7-46ba-8123-6655db7b94ff</webElementGuid>
+      <webElementGuid>bd4df903-bdaf-43d8-a70b-ff7bc50e88e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/img</value>
-      <webElementGuid>b55bbd05-7ba6-4ac5-ab42-0e4b840ff4a9</webElementGuid>
+      <webElementGuid>a8977705-34ac-4156-9c2a-c9856ebaab41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,6 +90,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/tools_menu.gif' and @alt = 'Enquiry Actions' and @title = 'Enquiry Actions']</value>
-      <webElementGuid>41e8f838-79c3-4c4d-919b-ab1e1d7f25b7</webElementGuid>
+      <webElementGuid>c4c86516-db5f-4310-b455-9d0b90737ca1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
