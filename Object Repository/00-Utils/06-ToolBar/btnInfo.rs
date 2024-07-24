@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>icoInfo</name>
+   <name>btnInfo</name>
    <tag></tag>
    <elementGuidId>97509447-8b98-4879-bded-9071c55961d8</elementGuidId>
    <selectorCollection>

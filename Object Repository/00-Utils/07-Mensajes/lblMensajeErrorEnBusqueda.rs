@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>msgNoSeEncontraronRegistros</name>
+   <name>lblMensajeErrorEnBusqueda</name>
    <tag></tag>
    <elementGuidId>4afc8c66-1728-4f1a-a89a-5f11b4989ca8</elementGuidId>
    <selectorCollection>
