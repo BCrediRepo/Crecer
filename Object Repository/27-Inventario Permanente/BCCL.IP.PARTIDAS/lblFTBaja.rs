@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblFTBaja</name>
+   <name>lblFtBaja</name>
    <tag></tag>
    <elementGuidId>7053a799-59b8-4525-9057-86ea74aa6ac7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
