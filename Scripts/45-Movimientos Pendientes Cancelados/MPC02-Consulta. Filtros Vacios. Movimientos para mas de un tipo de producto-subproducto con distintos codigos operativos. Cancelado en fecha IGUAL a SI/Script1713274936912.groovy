@@ -26,55 +26,56 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,25), findTestData('MainData/Users').getValue(2,25))
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando menu ENQ BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Setear "ENQ BCCL.E.MR.PARTIDAS.PEND.CANCELADAS" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.MR.PARTIDAS.PEND.CANCELADAS')
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Cambiar a la ventana "BCCL.E.MR.PARTIDAS.PEND.CANCELADAS"
+WebUI.switchToWindowIndex(1)
 
-//Abre la pestaña del menú BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
-WebUI.switchToWindowTitle('BCCL.E.MR.PARTIDAS.PEND.CANCELADAS')
-
-//Verifica titulo BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
+//Verificar titulo BCCL.E.MR.PARTIDAS.PEND.CANCELADAS
 WebUI.verifyElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblTituloBCCL.E.MR.PARTIDAS.PEND.CANCELADAS'))
 
 //Seteo de datos "Cancelado" "Suc. VACIO"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/txtCancelado1'), 6)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cancelado', '')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Suc.', '')
 
-//Maximiza la pantalla
+//Maximizar ventana
 WebUI.maximizeWindow()
 
-//Toma un ScreenShot
+//ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Selecciona boton EJECUTAR
+//Seleccionar boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 //WebUI.delay(15)
 
-//Espera y Verifica la primera columna del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblSuc'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblSuc'))
+//Verificar mensaje de error "CAMPO.CANCELADO es de Ingreso Obligatorio"
+WebUI.verifyElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblCanceladoIngresoObligatorio'))
 
-// Captura el tiempo de finalización
+//Validar mensaje de error "CAMPO.CANCELADO es de Ingreso Obligatorio"
+def element = WebUI.getText(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblCanceladoIngresoObligatorio'))
+assert element.contains('CAMPO.CANCELADO es de Ingreso Obligatorio')
+
+//Espera y Verifica la primera columna del registro
+//WebUI.verifyElementVisible(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblSuc'))
+
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-def element = WebUI.getText(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblSuc'))
-assert element.contains('Suc.')
-
-//---------------------------------------------------------------------------------------------------------------------
+//def element = WebUI.getText(findTestObject('Object Repository/46-Movimientos Pendientes Cancelados/BCCL.E.MR.PARTIDAS.PEND.CANCELADAS/lblSuc'))
+//assert element.contains('Suc.')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

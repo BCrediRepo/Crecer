@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2,2))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -51,17 +51,17 @@ WebUI.switchToWindowTitle('BCCL.Q.CONS.REVE.CHQ')
 
 //Seteo de datos "Usuario", "Numero de Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0073')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta', '10730166496')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0489')
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta', '10730166496')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Seleccionar boton de Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Maximizar ventana
-WebUI.maximizeWindow()
 
 //Verificar "Id Operacion"
 WebUI.verifyElementVisible(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/BCCL.Q.CONS.REVE.CHQ/lblIdOperacion'))

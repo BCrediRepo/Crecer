@@ -29,50 +29,72 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2,24))
 WebUI.maximizeWindow()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Setear "ENQ BCCL.E.RES.CTA.HIS.SALDO" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.HIS.SALDO')
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-////Switch a la ventana de busqueda de consulta
-//WebUI.switchToWindowTitle('Temenos T24')
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkSucursalPiloto'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkSucursalPiloto'))
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/lnkResumendeCuentas'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/lnkResumendeCuentas'))
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/lnkConsultas'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/lnkConsultas'))
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnkSALDOHISTORICODECUENTAS'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnk SALDO HISTORICO DE CUENTAS'))
-
-//Switch a la ventana de saldos historicos de cuenta
-WebUI.switchToWindowTitle('Saldos Historicos de Cuenta')
+//Cambiar a la ventana "saldos historicos de Cuenta"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Cuenta", "Fecha"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta','00010026843')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha','20220701')
-//WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/txtCuenta'), '05330013359')
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'), 6)
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNumCuentaValue'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNumCuentaValue'))
+//Verificar "Estado de la cuenta"
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblEstadoActiva'))
 
-// Captura el tiempo de finalización
+//Validar "Estado de la cuenta"
+def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblEstadoActiva'))
+assert element.contains('ACTIVA')
+
+//Verificar "Nro. de Cuenta"
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNro.deCuenta'))
+
+//Validar "00010026843 CARNES WAGYU ARG SA"
+def element2 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblNro.deCuenta'))
+assert element2.contains('00010026843')
+
+//Verificar "Saldo Cuenta del Día seteado"
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblSaldoCuentaalDia'))
+
+//Validar "Saldo Cuenta del Día seteado"
+def element3 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblSaldoCuentaalDia'))
+assert element3.contains('Saldo cuenta al 01/07/2022')
+
+//Verificar "Total Creditos Dia"
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblTotalCreditosDia'))
+
+//Validar "Total Creditos Dia"
+def element4 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblTotalCreditosDia'))
+assert element4.contains('Total Creditos Dia')
+
+//Verificar "Total Debitos Dia"
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblTotalDebitosDia'))
+
+//Validar "Total Debitos Dia"
+def element5 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/02-Saldos Historicos de Cuenta/lblTotalDebitosDia'))
+assert element5.contains('Total Debitos Dia')
+
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-//---------------------------
 
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
@@ -80,7 +102,7 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 println TotalRegistros
-//-----------------------------
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

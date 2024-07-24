@@ -221,4 +221,11 @@
       <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD31-Consulta sobre el historico de bloqueos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>753c3130-aad4-44c1-aa13-2095935d2fa0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON44-BCCL.OP.CAMBIO,FILIALES.CTA.EFE. Usuario de Sucursal. Validacion TIPO.OPER igual a C - Socio Compra. Cotz.Esp -IPAIS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

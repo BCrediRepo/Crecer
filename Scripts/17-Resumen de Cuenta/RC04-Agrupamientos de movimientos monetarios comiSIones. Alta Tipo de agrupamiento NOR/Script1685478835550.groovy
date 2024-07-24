@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,46 +25,67 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso en el commandline BCCL.ENQ.PARAM.AGRP,INPUT
+//Setear "BCCL.ENQ.PARAM.AGRP,INPUT" en el command line
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.ENQ.PARAM.AGRP,INPUT')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Cambiamos de ventana
-WebUI.switchToWindowTitle('BCCL.ENQ.PARAM.AGRP')
+//Cambiar a la ventana "BCCL.ENQ.PARAM.AGRP"
+WebUI.switchToWindowIndex(1)
 
-// Maximizamos
+//Maximizar ventana
 WebUI.maximizeWindow()
 
-//Ingresamos datos
+//Setear la palabra "ONLINE"
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtAgrupadoDeMovMonetariosYComisiones'), 'ONLINE')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Seleccionar boton modificar registro
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnModificarRegistro'))
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en expandir subvalor
+//Seleccionar "expandir subvalor"
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnExpandirSubvalor'))
 
-//Ingresamos datos
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtIds. Cod Oper.1.2/txtIds. Cod Oper.1.2'), '01053')
+//Ingresar datos
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtIds. Cod Oper.1.2/txtIds. Cod Oper.1.2'), '00105')
 
-//Click en validar registro
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton validar registro
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnValidarRegistro'))
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Aceptamos el registro
+//Seleccionar boton Aceptar Registro
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnAceptarRegistro'))
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//ASSERT
+//Verificar que se encuentra visible el cartel de transaccion completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/lblTxnCompleta'), 6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/lblTxnCompleta'))
 
+//Validar transaccion completa
 def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/lblTxnCompleta'))
-
 assert element.contains('Txn Completa:')
+
+//Setear la palabra "ONLINE"
+WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtAgrupadoDeMovMonetariosYComisiones'), 'ONLINE')
+
+//Seleccionar boton modificar registro
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnModificarRegistro'))
+
+//Seleccionar boton Eliminar Codigo Operativo
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnEliminarIdsCodOper'))
+
+//Seleccionar boton Aceptar Registro
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnAceptarRegistro'))
+
+//Verificar transaccion completa
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/lblTxnCompleta'))
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -78,5 +98,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

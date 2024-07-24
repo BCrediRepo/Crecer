@@ -43,7 +43,7 @@
       <guid>170e0908-1c40-4434-b3cc-e325f6145c45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC05-Agrupamientos de movimientos monetarios comiSIones.Baja . Existen más de dos agrupamientos. Se elimina un solo agrupamiento</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC05-Agrupamientos de movimientos monetarios comiSIones.Baja . Existen mas de dos agrupamientos. Se elimina un solo agrupamiento</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -64,7 +64,7 @@
       <guid>2154d1f9-f113-46ed-b7da-ea529d126575</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC08-Generación de Resumen de Cuenta a Pedido-Buzón. Cuenta SIn pedido para la fecha. Período Requerido IGUAL Desde inicio del mes en curso. Cuenta Activa</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC08-Generacion de Resumen de Cuenta a Pedido-Buzon. Cuenta SIn pedido para la fecha. Periodo Requerido IGUAL Desde inicio del mes en curso. Cuenta Activa</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -92,7 +92,7 @@
       <guid>74129896-7fc9-4abe-a278-8ceeb4abae47</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC12-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Período Requerido IGUAL Desde inicio del mes en curso.Cuenta Activa</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC12-Pedido de resumen usuarios Casa Central.Cuenta SIn pedido para la fecha.Periodo Requerido IGUAL Desde inicio del mes en curso.Cuenta Activa</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -120,21 +120,21 @@
       <guid>89f0a1b1-8535-4933-8988-ba9eb0f7a160</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC16-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimiento por Fecha.Movimientos Debitos existentes entre Fecha Desde y Hasta.Agrupacion DC sobre Débitos</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC16-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimiento por Fecha.Movimientos Debitos existentes entre Fecha Desde y Hasta.Agrupacion DC sobre Debitos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6af8f0b3-e8e7-42de-9227-ec93f2f12daa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC17-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimientos de cuenta por Fecha Valor.Fecha Desde y Hasta vacíos.Cuenta con movimientos en fecha del día</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC17-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimientos de cuenta por Fecha Valor.Fecha Desde y Hasta vacios.Cuenta con movimientos en fecha del dia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>74bff2a8-82b6-46a9-89f1-87e66311a8e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC19-Pedido de resumen usuarios Casa Central.Período Requerido IGUAL Desde inicio del mes en curso.Fecha Alta de cuenta MAYOR Día 1 de mes en curso.Cuenta Activa</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC19-Pedido de resumen usuarios Casa Central.Periodo Requerido IGUAL Desde inicio del mes en curso.Fecha Alta de cuenta MAYOR Dia 1 de mes en curso.Cuenta Activa</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -211,7 +211,7 @@
       <guid>a60aebaa-b850-4207-a69b-237b7405ecc7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/17-Resumen de Cuenta/RC30-Resumen de Cuenta.Consulta por Suc. Consulta Movimiento Fecha. Mov ingresado de Credito en Moneda Pesos con fecha IGUAL a Fecha de Proceso</testCaseId>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC18-Resumen de Cuenta.Consulta por Suc. Consulta Movimiento Fecha. Mov ingresado de Credito en Moneda Pesos con fecha IGUAL a Fecha de Proceso</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

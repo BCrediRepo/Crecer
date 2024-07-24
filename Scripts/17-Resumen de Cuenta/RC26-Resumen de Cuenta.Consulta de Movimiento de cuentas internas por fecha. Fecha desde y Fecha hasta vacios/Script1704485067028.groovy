@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,34 +25,41 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+//Setear "ENQ BCCL.E.RES.CTA.MOV.INT.FECHA" en el buscador
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.INT.FECHA')
 
-//Click en Consulta de Mov. por Fecha - Cuenta Interna
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsulta de Mov. por Fecha - Cuenta Interna'))
+//Seleccionar boton buscar
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Switch a la ventana Movimientos por Fecha Ctas Internas
-WebUI.switchToWindowTitle('Movimientos por Fecha Ctas Internas')
+//Cambiar a la ventana "Movimientos por Fecha Ctas Internas"
+WebUI.switchToWindowIndex(1)
 
-//Maximizamos
-WebUI.maximizeWindow()
+//Click en Nueva Seleccion
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-//Ingresamos los datos para la consulta
+//Ingresar los datos para la consulta
 WebUI.setText(findTestObject('Object Repository/39-Cuentas/Movimientos por Fecha Ctas Internas/txtNrodeCuenta'), 'ARS1001070011001')
 
-//boton ejecutar
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
+//Verificar que aparezca el texto "Nro. de Cuenta"
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Movimientos por Fecha Ctas Internas/lblNro. de Cuenta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/Movimientos por Fecha Ctas Internas/lblNro. de Cuenta'))
 
+//Validar "Nro. de Cuenta"
 def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/Movimientos por Fecha Ctas Internas/lblNro. de Cuenta'))
-
 assert element.contains('Nro. de Cuenta')
 
-
-//---------------------------------------------------------------------------------------------------------------------
+//Validar Fecha
+def fecha = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos por Fecha Ctas Internas/lblFecha'))
+assert fecha.contains('01-09-2023')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -65,6 +71,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

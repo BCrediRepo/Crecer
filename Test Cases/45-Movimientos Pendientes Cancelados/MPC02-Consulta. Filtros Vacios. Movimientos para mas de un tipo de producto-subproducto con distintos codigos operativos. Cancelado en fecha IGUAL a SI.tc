@@ -4,6 +4,5 @@
    <name>MPC02-Consulta. Filtros Vacios. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos. Cancelado en fecha IGUAL a SI</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>0e735609-6808-467d-afcb-fcfabc6e1f98</testCaseGuid>
 </TestCaseEntity>
