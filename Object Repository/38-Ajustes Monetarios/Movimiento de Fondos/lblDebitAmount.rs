@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblDebitAmount</name>
+   <tag></tag>
+   <elementGuidId>fa9c56c6-a75b-4909-aa99-652981f971f1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[5]/td[3]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>02ed182e-a2c7-4af6-a467-601375541b48</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER</value>
+      <webElementGuid>9961adb7-30c7-4bb5-88e6-c9cf723dd257</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>100,00</value>
+      <webElementGuid>9a3a84bf-dd8c-412a-8f85-78ca3cf1dbe9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[5]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER&quot;]</value>
+      <webElementGuid>402ffa26-8949-46d5-9cb3-dfa1b9751fdd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[5]/td[3]/span</value>
+      <webElementGuid>50c92cf7-4a98-4e21-96c5-6f1f0d0977db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Amount'])[1]/following::span[1]</value>
+      <webElementGuid>b111e237-5408-40a0-9c02-a0f0652cd2e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/following::span[1]</value>
+      <webElementGuid>04b0b265-ecb0-4ce7-8d95-9ab12cf9a485</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Debit Value Date'])[1]/preceding::span[2]</value>
+      <webElementGuid>05e2f72c-8e84-4897-a8ec-8066c2263dde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Credit Acct No'])[1]/preceding::span[4]</value>
+      <webElementGuid>9af3f1dd-f62d-470e-af3e-2374af16ff84</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='100,00']/parent::*</value>
+      <webElementGuid>32ac1b59-588e-4398-a405-7c7b37f61b26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[5]/td[3]/span</value>
+      <webElementGuid>42eaf9a8-138a-47e8-af46-be6be7993767</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '100,00' or . = '100,00')]</value>
+      <webElementGuid>f454d2e0-fb14-45ba-98ad-702a0be35076</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

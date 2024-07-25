@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFechaCierre</name>
+   <tag></tag>
+   <elementGuidId>a4ab3fa7-f61a-45c1-acbb-8b0a9138d832</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[8]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>f02e8163-6500-464c-8af2-f64b89492edb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTACER</value>
+      <webElementGuid>59780307-399d-4e88-8d63-3167e6cc5544</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Fecha Cierre</value>
+      <webElementGuid>7680bcc9-6631-413f-83ab-9e57f03c4beb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[8]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTACER&quot;]</value>
+      <webElementGuid>5cd85f8e-8f97-49f3-ad64-7d74ec405551</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[8]/td</value>
+      <webElementGuid>a06bb551-b8d4-4de9-b125-3b28786eb939</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado'])[1]/following::td[2]</value>
+      <webElementGuid>f80f1617-d3ca-4f03-bef5-d78054b79e23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Cierre'])[1]/following::td[4]</value>
+      <webElementGuid>6fced67d-d8f2-4daa-a392-8c59b9d91396</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Canc. Saldo'])[1]/preceding::td[2]</value>
+      <webElementGuid>9ebadfc7-46cc-460a-a782-c071ceefacf8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SALDOS TOTALES:'])[1]/preceding::td[4]</value>
+      <webElementGuid>37262193-8367-4961-af88-1bdffe9e9828</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Fecha Cierre']/parent::*</value>
+      <webElementGuid>ce44d9e3-274d-4c98-b900-2db82c81878c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[8]/td</value>
+      <webElementGuid>4a2bfb31-9255-43ef-b7dd-f6fb17e9327c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Fecha Cierre' or . = 'Fecha Cierre')]</value>
+      <webElementGuid>9a09d225-db07-44e7-b446-86ec3289c24b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

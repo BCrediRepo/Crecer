@@ -43,7 +43,8 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 //Seteo de datos "Imprenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Imprenta', '02')
-
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230806')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', '20230825')
 //Maximiza la pantalla
 WebUI.maximizeWindow()
 

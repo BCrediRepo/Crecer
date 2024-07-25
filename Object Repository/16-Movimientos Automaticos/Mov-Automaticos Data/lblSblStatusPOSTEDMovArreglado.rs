@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(81) > td:nth-child(3) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>d3cc451d-0779-4106-8296-8cf584736891</webElementGuid>
+      <webElementGuid>9fdf843c-0428-44ec-bb99-36fefc5f1e9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>disabled_dealbox disabled_dealbox_BCCLMOVAUTINPDATA</value>
-      <webElementGuid>a2b8dca7-4e8c-443b-b534-bdd86cfc6fa2</webElementGuid>
+      <webElementGuid>5d332771-376f-4c02-9f10-3d58edba6249</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>POSTED</value>
-      <webElementGuid>a68db32e-3fde-4e2d-a7c7-9f6faf710154</webElementGuid>
+      <webElementGuid>405e0229-265b-4169-b038-2539a63126cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[78]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLMOVAUTINPDATA&quot;]</value>
-      <webElementGuid>2560907c-90bb-484d-8180-18eb2a98b496</webElementGuid>
+      <webElementGuid>c74633c5-515f-47ee-a9f5-f19e4e7d88fe</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[78]/td[3]/span</value>
-      <webElementGuid>30f4a06e-3b14-4676-b22b-cf8dfef7d83a</webElementGuid>
+      <webElementGuid>2660fe53-f996-4011-b122-aac6e7214f39</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Status'])[1]/following::span[1]</value>
-      <webElementGuid>10be70f5-ae7a-43ed-8052-50813305ae60</webElementGuid>
+      <webElementGuid>06c65df7-2470-4af5-b828-083967c15a45</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='E'])[1]/following::span[2]</value>
-      <webElementGuid>697375cd-c111-4302-88e1-13d8d1562050</webElementGuid>
+      <webElementGuid>6f3c837b-5230-41a1-845c-be100420939d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sbl Resp Flag'])[1]/preceding::span[2]</value>
-      <webElementGuid>cd3327bc-ddcc-4cb5-b404-b506f5db7f3e</webElementGuid>
+      <webElementGuid>c9e22321-27df-4689-a708-3112452360d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Y'])[1]/preceding::span[2]</value>
-      <webElementGuid>30933e18-abfa-4cf6-a1a0-41941d29b47b</webElementGuid>
+      <webElementGuid>6ea44f71-7530-4acc-a7c7-7ca84fb8f17a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='POSTED']/parent::*</value>
-      <webElementGuid>a59455a0-6d6b-4f63-9b37-e1058018124d</webElementGuid>
+      <webElementGuid>6fa380a5-08af-4063-af36-536d68fa7ad5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[78]/td[3]/span</value>
-      <webElementGuid>91815b4f-5ebd-4cc1-b23d-1c8def9fb2d4</webElementGuid>
+      <webElementGuid>86b5068d-f1c5-4f7c-8482-5e7b27cf5f15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'POSTED' or . = 'POSTED')]</value>
-      <webElementGuid>1171bc67-e8f3-4ed4-ab6a-2ead0aa1f493</webElementGuid>
+      <webElementGuid>b685b458-f89d-453d-8608-8497dc252c54</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

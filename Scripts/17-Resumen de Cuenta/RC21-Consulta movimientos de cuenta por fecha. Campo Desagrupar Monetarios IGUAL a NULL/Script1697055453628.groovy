@@ -23,50 +23,47 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 31), findTestData('MainData/Users').getValue(2, 31))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso en el commandline BCCL.E.RES.CTA.MOV.FECHA
+//Setear "ENQ BCCL.E.RES.CTA.MOV.FECHA" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Cambiamos a la ventana "Movimientos de Ctas por Fecha Valor"
-WebUI.switchToWindowTitle('Movimientos por Fecha de Cuentas')
-
-//Maximizamos
-WebUI.maximizeWindow()
+//Cambiar a la ventana "Movimientos por Fecha de Cuentas"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Nro de Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','00540468975')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//boton ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblCuenta'), 6)
+//Validar Fecha
+def fecha = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/lblFecha'))
+assert fecha.contains('01-09-2023')
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblCuenta'))
-
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblCuenta'))
-
-assert element.contains('00540468975')
 
 //---------------------------------------------------------------------------------------------------------------------
 

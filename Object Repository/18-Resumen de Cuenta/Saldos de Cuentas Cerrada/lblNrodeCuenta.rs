@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNrodeCuenta</name>
+   <tag></tag>
+   <elementGuidId>4f075d09-41a6-4eb1-ab48-18a7d36911d4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.ENQ-H-TITLE.ENQ-H-TITLE_BCCLERESCTACER</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>ad50048d-0c8a-41f8-a0e0-55c6cd358121</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTACER</value>
+      <webElementGuid>695d81d8-2930-4bb8-a944-1518919a54f5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nro. de Cuenta</value>
+      <webElementGuid>4b966099-bcca-456b-85c2-5e844ee1c5d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTACER&quot;]</value>
+      <webElementGuid>9c250a47-f3e9-477f-aabd-07a808acab33</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      <webElementGuid>668d2aa1-182e-4450-bccf-8a1bff449753</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto SubProducto'])[1]/preceding::td[2]</value>
+      <webElementGuid>eeecf198-48fd-4797-92b8-c69fbd12989f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[4]</value>
+      <webElementGuid>4ae4f340-4009-4777-b60a-daad6b532e69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nro. de Cuenta']/parent::*</value>
+      <webElementGuid>3d1d6809-306d-44a0-b843-5c1302ac03f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td</value>
+      <webElementGuid>d49cdd6e-4a23-4dde-8a8f-f646b0f66b27</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Nro. de Cuenta' or . = 'Nro. de Cuenta')]</value>
+      <webElementGuid>48b8831b-b973-43d6-b596-64b4ba791053</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

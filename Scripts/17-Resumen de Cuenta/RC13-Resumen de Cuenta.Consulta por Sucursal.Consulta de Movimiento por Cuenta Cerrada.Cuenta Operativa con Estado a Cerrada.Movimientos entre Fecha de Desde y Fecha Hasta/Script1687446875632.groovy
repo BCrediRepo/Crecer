@@ -27,58 +27,61 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Setear "ENQ BCCL.E.RES.CTA.MOV.CER" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.CER')
+
+//Seleccionar boton de buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-////Switch a la ventana de busqueda de consulta
-//WebUI.switchToWindowTitle('Temenos T24')
-//WebUI.maximizeWindow()
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkSucursalPiloto'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkSucursalPiloto'))
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/lnkResumendeCuentas'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/lnkResumendeCuentas'))
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/lnkConsultas'), 6)
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/lnkConsultas'))
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Resumen de Cuentas/Consultas/lnk MOVIMIENTOS CUENTA CERRADA'))
-
-
-//Switch a la ventana de Movimientos cuenta cerrada
-WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
-WebUI.maximizeWindow()
+//Cambiar a la ventana "Movimientos Cuenta Cerrada"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Nro. Cuenta", "Fecha Desde", "Fecha Hasta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','01195030041')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20171201')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOBAmbTES10)
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Boton ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
+//Verificar Estado de la Cuenta
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'), 6)
+//Validar Estado de la Cuenta
+def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
+assert element.contains('CERRADA')
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
+//Verificar Fecha Estado
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaEstado'))
 
-// Captura el tiempo de finalización
+//Validar Fecha Estado
+def element2 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaEstado'))
+assert element2.contains('Fecha Estado')
+
+//Verificar Fecha Cierre
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaCierre'))
+
+//Validar Fecha Cierre
+def element3 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaCierre'))
+assert element3.contains('Fecha Cierre')
+
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
-
-assert element.contains('Estado')
-
-//---------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

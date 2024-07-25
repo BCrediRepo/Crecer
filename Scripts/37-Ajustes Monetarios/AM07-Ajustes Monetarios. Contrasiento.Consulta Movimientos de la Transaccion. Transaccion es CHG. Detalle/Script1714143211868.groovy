@@ -20,71 +20,116 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
-		2, 3))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.STMS.ENT.BOOK.CA
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.STMS.ENT.BOOK.CA')
+//Setear "AC.CHARGE.REQUEST L L" en el buscador
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'AC.CHARGE.REQUEST L L')
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Abre la pestaña del menú Contrasiento total
-WebUI.switchToWindowTitle('Contrasiento Total')
+//Cambiar a la ventana "Contrasiento Total"
+WebUI.switchToWindowIndex(2)
 
-//Maximiza la pantalla
+//Seteo de datos "CHARGE.DATE"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Formato de la fecha en la cadena de texto
+String dateFormat = "yyyyMMdd"
+
+//Fecha inicial como cadena de texto
+String initialDate = GlobalVariable.vFechaCOBAmbTES10
+
+//Convertir la cadena de texto en un objeto Date
+SimpleDateFormat sdf = new SimpleDateFormat(dateFormat)
+Date date = sdf.parse(initialDate)
+
+//Usar Calendar para manipular la fecha
+Calendar calendar = Calendar.getInstance()
+calendar.setTime(date)
+calendar.add(Calendar.DAY_OF_MONTH, -1) // Restar 1 día
+
+//Asegurar fecha resultante sea un día hábil
+while (calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY) {
+	calendar.add(Calendar.DAY_OF_MONTH, -1) // Restar 1 día si es fin de semana
+}
+
+//Convertir fecha modificada de vuelta a una cadena de texto
+Date modifiedDate = calendar.getTime()
+String resultDate = sdf.format(modifiedDate)
+
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CHARGE.DATE', resultDate)
+
+//Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Verifica titulo Contrasiento total
-WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblTituloContrasientoTotal'),6)
+//ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton Ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+//Definir valor de la transaccion CHG
+variableGHC = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/AC.CHARGE.REQUEST/lblIdOperacionCHG'))
+
+//Cambiar a la ventana del Dashboard
+WebUI.switchToWindowIndex(0)
+
+//Setear "ENQ BCCL.E.STMS.ENT.BOOK.CA" en el buscador
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.STMS.ENT.BOOK.CA')
+
+//Seleccionar boton buscar
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Cambiar a la ventana "Contrasiento Total"
+WebUI.switchToWindowIndex(3)
+
+//Verificar titulo Contrasiento total
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblTituloContrasientoTotal'))
 
 //Seteo de datos "Id Transaccion"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', 'CHG232350092L') //antes estaba: CHG222100002J
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', variableGHC)
 
-//Toma un ScreenShot
+//Maximizar la Ventana
+WebUI.maximizeWindow()
+
+//ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Click en boton ejecutar
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'),6)
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Espera y comprueba que se muestre la primera columna del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblIdTransaccion'),6)
+//Comprobar primera columna del registro
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblIdTransaccion'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//boton ver detalle tx
-WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/btnVerDetalleTxn'),6)
+//Seleccionar boton Ver Detalle Txn
 WebUI.click(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/btnVerDetalleTxn'))
 
-//Espera y comprueba que se muestre la primera columna del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/lblRequestType'),6)
+//Verificar y Validar primera columna del registro
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/lblRequestType'))
 def element = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/lblRequestType'))
 assert element.contains('Request Type')
-
-//---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

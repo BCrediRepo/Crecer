@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnVerDetalle</name>
+   <tag></tag>
+   <elementGuidId>ffaf1904-390a-452a-b820-ba4a672335c2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Ver Detalle&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[11]/a/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>138ed06c-37fb-42c3-92ef-134bdd9d6a39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/enquiry/drilldown/drill.gif</value>
+      <webElementGuid>9e0c16fd-6ef5-45e9-b286-28ae5f769f99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Ver Detalle</value>
+      <webElementGuid>fda2a7e2-1de6-4d1e-8665-edb3989bf034</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Ver Detalle</value>
+      <webElementGuid>1246e8cb-a236-408a-a306-479bdb1d16ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEBRESGUV&quot;]/a[1]/img[1]</value>
+      <webElementGuid>81a9fbe1-b5d3-4578-8f76-6436e70e59f9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[11]/a/img</value>
+      <webElementGuid>ea9b3893-d594-4572-8780-fc1603195ecb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Ver Detalle']</value>
+      <webElementGuid>0e66cfb3-9626-4041-b4a0-65b2d45228bb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[11]/a/img</value>
+      <webElementGuid>00554c5d-46ae-4ac2-8479-e5f1f525efe4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/enquiry/drilldown/drill.gif' and @alt = 'Ver Detalle' and @title = 'Ver Detalle']</value>
+      <webElementGuid>be61cce1-7f67-43a6-b01a-5b1af44c98f6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblFechaEstado</name>
+   <tag></tag>
+   <elementGuidId>3abdb203-2152-4762-b2b7-d7e922483264</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[6]/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>fd979b64-13ef-45f0-ab96-83a6e00675c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVFECHAVALOR</value>
+      <webElementGuid>351e2982-a079-40bc-9ffd-a4069b526d69</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>01-09-2023</value>
+      <webElementGuid>abc185ee-3054-42bc-b6a5-4600db7fac5d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[6]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVFECHAVALOR&quot;]</value>
+      <webElementGuid>d71c4425-3ebc-4dd7-8fce-616fe9a76dd3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[6]/td[2]</value>
+      <webElementGuid>028468fa-1b2e-4e08-aacf-e07a96b8773c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado'])[1]/following::td[1]</value>
+      <webElementGuid>d9812a9c-552e-49a6-8508-68e4b88b2a26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CIERRE EN PROCESO'])[1]/following::td[2]</value>
+      <webElementGuid>493a260f-02ed-4c21-b667-69ac3cd22005</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo en U.V.A.'])[1]/preceding::td[1]</value>
+      <webElementGuid>cdb0d1c9-e5b4-4675-a0b9-0e8338c5b724</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo al'])[1]/preceding::td[2]</value>
+      <webElementGuid>752a7930-5175-445c-bdab-edfaa005b299</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='01-09-2023']/parent::*</value>
+      <webElementGuid>d56e994b-708e-4109-8c70-c514b64ef334</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[2]</value>
+      <webElementGuid>154593f2-6868-4795-8ba7-b89a85c3e013</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '01-09-2023' or . = '01-09-2023')]</value>
+      <webElementGuid>801ec226-13d1-4d70-ac19-f50f0712f9fd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

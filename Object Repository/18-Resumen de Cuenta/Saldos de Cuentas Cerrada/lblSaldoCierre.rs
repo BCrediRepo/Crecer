@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblSaldoCierre</name>
+   <tag></tag>
+   <elementGuidId>f3e6e279-5536-4f29-91a7-c2bb0ad1225a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[11]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>85b73d04-5402-4c05-9309-e0d480fcddca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTACER</value>
+      <webElementGuid>cce2010b-e0b6-47ea-8c3b-9a95820b3771</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Saldo Cierre</value>
+      <webElementGuid>03cce8da-2b7c-42c0-9671-b7943ae0b5d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[11]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTACER&quot;]</value>
+      <webElementGuid>852066e3-b5a8-4c1b-a2cb-e39a1293737a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[11]/td</value>
+      <webElementGuid>dda46cb9-6396-4a82-8ea2-312308030fa8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SALDOS TOTALES:'])[1]/following::td[1]</value>
+      <webElementGuid>659fcab9-78ef-4e76-9bb3-e929d9cdf107</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Canc. Saldo'])[1]/following::td[3]</value>
+      <webElementGuid>09dc786e-1c69-4fb6-83d4-d3cab736a7d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo Cierre en U.V.A.'])[1]/preceding::td[2]</value>
+      <webElementGuid>7f2dea61-5f56-4ee9-8942-b290b1d29826</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo Actual'])[1]/preceding::td[3]</value>
+      <webElementGuid>7e88be61-823a-43b6-a796-3c92e1fcb3e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Saldo Cierre']/parent::*</value>
+      <webElementGuid>45524ee5-703b-47e3-bbae-69a73c2a456b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[11]/td</value>
+      <webElementGuid>2db6eb55-f8f0-4acc-af36-ec2b1eb1ded6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Saldo Cierre' or . = 'Saldo Cierre')]</value>
+      <webElementGuid>25c5b077-c5a3-49b2-8b0e-3f4e3a3dc9f8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -4,6 +4,5 @@
    <name>MPC01-Consulta. Sucursal informada. Movimientos para mas de un tipo de producto-subproducto con distintos codigos operativos. Cancelado en fecha IGUAL a SI</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>c3508cd3-5d7f-437b-b2f4-2ed18235593d</testCaseGuid>
 </TestCaseEntity>
