@@ -25,58 +25,58 @@ import org.openqa.selenium.WebElement as WebElement
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(
-        2, 2))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 
-//busqueda de ENQ
+//Setear "ENQ BCCL.E.RES.CTA.MOV.CER" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.CER')
 
+//Seleccionar boton buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
+//Cambiar a la ventana "Movimientos Cuenta Cerrada"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Nro. Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','01000021927')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20010901')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220901')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOBAmbTES10)
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//----------------------------
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
-//---------------------------
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 println(TotalRegistros)
 
-
-Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
-
-WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
-
-Estado = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
-
-assert Cuenta.contains('01000021927')
-
-assert Estado == 'CERRADA' 
-
-//-----------------------------
+//Validar numero de cuenta, Estado, Fecha Estado y Fecha Cierre
+cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
+assert cuenta.contains('01000021927')
+estado = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
+assert estado.contains('CERRADA') 
+fechaEstado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaEstado'))
+assert fechaEstado.contains('Fecha Estado')
+fechaCierre = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaCierre'))
+assert fechaCierre.contains('Fecha Cierre')
+//---------------------------------------------------------------------------------------------------------------------
 //Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -87,4 +87,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

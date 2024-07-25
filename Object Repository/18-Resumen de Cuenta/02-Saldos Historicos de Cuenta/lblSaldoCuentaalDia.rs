@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblSaldoCuentaalDia</name>
+   <tag></tag>
+   <elementGuidId>04064368-34b9-4f47-8bca-00e50a583402</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[8]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>3d7dd462-5901-4d3c-b7ce-868fc92dbc19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAHISSALDO</value>
+      <webElementGuid>94683e05-8c6e-49c7-b1cc-c46a1f56b596</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Saldo cuenta al 01/07/2022</value>
+      <webElementGuid>fd4f6453-36b2-4709-9223-cafd50ec8a34</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[8]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAHISSALDO&quot;]</value>
+      <webElementGuid>c118bcdb-72f7-4910-a3a1-99a0f93ca48c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[8]/td</value>
+      <webElementGuid>963dde84-691b-4d89-bd55-5bf0e045e5e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Informacion Cuenta Operativa:'])[1]/following::td[1]</value>
+      <webElementGuid>82b5a171-1e20-4a43-b27d-f35f3ffcd14a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado'])[1]/following::td[3]</value>
+      <webElementGuid>08849670-2950-4830-95eb-f4ddefc4ff3a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo en U.V.A. al 01/07/2022'])[1]/preceding::td[2]</value>
+      <webElementGuid>b42237b9-f8af-4edb-8b6a-92c90c9e021c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Creditos Dia'])[1]/preceding::td[3]</value>
+      <webElementGuid>f7070f6b-e78f-42d4-8f4a-056cdf50bfc3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Saldo cuenta al 01/07/2022']/parent::*</value>
+      <webElementGuid>970bb16a-fa21-414f-b73a-ea365a742893</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[8]/td</value>
+      <webElementGuid>28a1cf57-242b-4269-a5e5-027a67138b78</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Saldo cuenta al 01/07/2022' or . = 'Saldo cuenta al 01/07/2022')]</value>
+      <webElementGuid>2b69c35a-4f6d-4ced-b041-57898c4ea67d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

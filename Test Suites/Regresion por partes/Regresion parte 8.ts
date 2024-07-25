@@ -372,7 +372,7 @@
       <guid>a77a7aae-d535-472e-9352-4a6e7a234b71</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/55-Comisiones Manuales/CMA12-Comisión Manual por Planta. Tipo de Pago IGUAL A Débito. Comisión no permite bonificación</testCaseId>
+      <testCaseId>Test Cases/55-Comisiones Manuales/CMA12-Comisión Manual por Planta. Tipo de Pago IGUAL A Débito. Con bonificacion. Comisión permite bonificación</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

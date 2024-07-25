@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnEliminarIdsCodOper</name>
+   <tag></tag>
+   <elementGuidId>4a45a364-d009-42a5-9550-5aaf97791984</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[15]/td[2]/a[2]/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>3eb4c3d6-9e26-45c9-ba70-03c2743ca1f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_BCCLENQPARAMAGRP ascell_BCCLENQPARAMAGRP_INPUT</value>
+      <webElementGuid>6f5bf1c5-88dd-46c8-807f-cc887d32550d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/deal/mvdelete.gif</value>
+      <webElementGuid>16ffa3eb-5145-4bdb-9a15-81d7559345bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>1bc69d77-ef04-4603-8705-e1c6dd797bba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Delete Value</value>
+      <webElementGuid>e38ae05b-034f-4ec2-a75b-2ee7adcfcc83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[15]/td[@class=&quot;action_container action_container_BCCLENQPARAMAGRP action_container_BCCLENQPARAMAGRP_INPUT&quot;]/a[2]/img[@class=&quot;ascell ascell_BCCLENQPARAMAGRP ascell_BCCLENQPARAMAGRP_INPUT&quot;]</value>
+      <webElementGuid>1d5607ed-aaf4-4279-a527-334c449f0aff</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='tab1']/tbody/tr[15]/td[2]/a[2]/img</value>
+      <webElementGuid>dd5d28a9-de7a-4e6f-990f-e7e04efe4109</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Delete Value'])[9]</value>
+      <webElementGuid>5c59806b-50e4-419f-a8e5-0838f411b8da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[15]/td[2]/a[2]/img</value>
+      <webElementGuid>005b073e-7d83-4095-87df-226eaf36a9c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvdelete.gif' and @alt = 'Delete Value' and @title = 'Delete Value']</value>
+      <webElementGuid>d8a1ae1c-b32f-4b08-bea5-ad5bb914a7e1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

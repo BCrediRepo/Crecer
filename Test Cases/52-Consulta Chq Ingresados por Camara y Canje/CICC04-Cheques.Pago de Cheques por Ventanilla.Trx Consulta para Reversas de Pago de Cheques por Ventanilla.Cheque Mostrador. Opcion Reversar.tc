@@ -4,6 +4,5 @@
    <name>CICC04-Cheques.Pago de Cheques por Ventanilla.Trx Consulta para Reversas de Pago de Cheques por Ventanilla.Cheque Mostrador. Opcion Reversar</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>f64eaa27-5480-4639-83e9-5376b1043994</testCaseGuid>
 </TestCaseEntity>

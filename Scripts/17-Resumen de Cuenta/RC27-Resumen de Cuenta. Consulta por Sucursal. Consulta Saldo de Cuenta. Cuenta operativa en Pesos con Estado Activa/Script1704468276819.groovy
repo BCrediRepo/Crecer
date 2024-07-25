@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,50 +25,55 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Setear "?1" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en Sucursal Piloto
+//Seleccionar "Sucursal Piloto"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkSucursalPiloto'))
 
-//Click en Resumen de Cuentas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanResumen de Cuentas'))
-
-//Click en Consultas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanConsultas'))
-
-//Click en Saldo de Cuentas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/lnkSALDO DE CUENTAS'))
-
-//Switch a la ventana Saldo de Cuentas
-WebUI.switchToWindowTitle('Saldos de Cuenta')
-
-//Maximizamos
+//Maximizar ventana
 WebUI.maximizeWindow()
 
-//Ingresamos la cuenta a consultar
+//Seleccionar "Resumen de Cuentas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanResumen de Cuentas'))
+
+//Seleccionar "Consultas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanConsultas'))
+
+//Seleccionar "Saldo de Cuentas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/lnkSALDO DE CUENTAS'))
+
+//Cambiar a la ventana "Saldos de Cuenta"
+WebUI.switchToWindowIndex(2)
+
+//Ingresar la cuenta a consultar
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/txtCuenta'), '00010067819')
 
-//Click en ejecutar
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblNro. de Cuenta'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblNro. de Cuenta'))
+//Verificar que aparezca que la moneda es en pesos argentinos
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblMonedaARS'))
 
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblNro. de Cuenta'))
+//Validar "ARS PESOS ARGENTINOS"
+def monedaARS = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblMonedaARS'))
+assert monedaARS.contains('ARS PESOS ARGENTINOS')
 
-assert element.contains('Nro. de Cuenta')
+//Verificar estado
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblEstadoActiva'))
 
-//---------------------------------------------------------------------------------------------------------------------
+//Validar "ACTIVA"
+def estadoACTIVA = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblEstadoActiva'))
+assert estadoACTIVA.contains('ACTIVA')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -81,4 +85,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

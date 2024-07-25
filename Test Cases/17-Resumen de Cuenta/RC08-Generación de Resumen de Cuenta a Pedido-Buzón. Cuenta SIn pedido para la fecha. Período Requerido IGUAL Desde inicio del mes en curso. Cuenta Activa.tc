@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>RC08-Generación de Resumen de Cuenta a Pedido-Buzón. Cuenta SIn pedido para la fecha. Período Requerido IGUAL Desde inicio del mes en curso. Cuenta Activa</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e03ee9b5-d72c-4789-9d94-ae1d4c008fa5</testCaseGuid>
-</TestCaseEntity>

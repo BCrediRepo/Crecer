@@ -246,7 +246,7 @@
       <guid>5fce0f0a-6575-4d5e-9a2a-7405cd338fee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/15-Movimientos Automaticos/REVISAR-Movimientos Automaticos.Transaccion de arreglos.Movimiento sin fecha valor.Nueva cuenta valida</testCaseId>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/SIN DATA-Movimientos Automaticos.Transaccion de arreglos.Movimiento sin fecha valor.Nueva cuenta valida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

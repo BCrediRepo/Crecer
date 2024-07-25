@@ -40,7 +40,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CUENTA','10430047770')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CUENTA','10430050442')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

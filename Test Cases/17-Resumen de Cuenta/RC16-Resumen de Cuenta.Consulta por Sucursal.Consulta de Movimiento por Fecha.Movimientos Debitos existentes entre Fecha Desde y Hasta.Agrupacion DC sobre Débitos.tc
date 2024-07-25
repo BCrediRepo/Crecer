@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>RC16-Resumen de Cuenta.Consulta por Sucursal.Consulta de Movimiento por Fecha.Movimientos Debitos existentes entre Fecha Desde y Hasta.Agrupacion DC sobre Débitos</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>24d2668c-fb42-4b01-ab0e-5da2adf00be4</testCaseGuid>
-</TestCaseEntity>
