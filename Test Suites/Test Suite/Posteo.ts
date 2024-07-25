@@ -106,7 +106,7 @@
       <guid>7492226c-a595-4195-9937-957b8b3bc63f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/36-Posteo/REVISAR- Posteos. Liquidacion de posteo. Posteo IP por baja en efectivo</testCaseId>
+      <testCaseId>Test Cases/36-Posteo/PST13-Posteos. Liquidacion de posteo. Posteo IP por baja en efectivo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

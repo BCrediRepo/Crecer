@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblMonedaARS</name>
+   <tag></tag>
+   <elementGuidId>9fcf0ee7-d98f-4851-b1aa-a3cf4640ade0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[4]/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>58ec9653-3a5a-424d-ba7d-5416e8c590ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTASALDOCTA</value>
+      <webElementGuid>62f3430d-2707-4c4a-b0d6-eabae83b19f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ARS PESOS ARGENTINOS</value>
+      <webElementGuid>2bedfeb8-04e9-41ca-8966-6385486a2ea7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[4]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTASALDOCTA&quot;]</value>
+      <webElementGuid>42bf03f0-09e6-4699-a6a2-0e6ea57a4cae</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[4]/td[2]</value>
+      <webElementGuid>a1590d9a-798d-42cf-969f-84b61bddf0a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/following::td[1]</value>
+      <webElementGuid>f5820e29-3c99-41e5-9b7e-a1d0b31112c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto SubProducto'])[1]/following::td[3]</value>
+      <webElementGuid>92c7fd76-5da8-4d63-b93a-ddcaa66492cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forma Operar'])[1]/preceding::td[1]</value>
+      <webElementGuid>2a687c05-93f9-4b9e-865a-4ed093457914</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='INDISTINTA'])[1]/preceding::td[2]</value>
+      <webElementGuid>6b2b3c94-0f0b-4fe0-b9eb-d013690a6be1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='ARS PESOS ARGENTINOS']/parent::*</value>
+      <webElementGuid>dadf516a-3c53-48cf-869c-1e0a3385c4f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[2]</value>
+      <webElementGuid>4bfb0f65-67c7-41fe-9b3f-49787f70851e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'ARS PESOS ARGENTINOS' or . = 'ARS PESOS ARGENTINOS')]</value>
+      <webElementGuid>1ff524fb-57e8-4f0b-87bc-e26128c7b7f0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

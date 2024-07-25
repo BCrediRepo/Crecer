@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblTotalCreditosDia</name>
+   <tag></tag>
+   <elementGuidId>428e4f8c-ee70-4cb4-82d6-c409aee8feff</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enqheader']/tbody/tr[10]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>65069b6d-aa77-4e84-b57a-2219b3ef3448</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAHISSALDO</value>
+      <webElementGuid>89bc3601-ed8c-4dfd-8654-9058de0c0407</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Total Creditos Dia</value>
+      <webElementGuid>b48e621e-da35-4caf-898f-9fdc2475010f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[10]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAHISSALDO&quot;]</value>
+      <webElementGuid>8f3f7fef-c367-471a-9732-c7d8e390826d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enqheader']/tbody/tr[10]/td</value>
+      <webElementGuid>af856ce3-4bc2-4487-8de0-be911c65c6c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo en U.V.A. al 01/07/2022'])[1]/following::td[1]</value>
+      <webElementGuid>7b7e8818-29b7-4120-b98f-400ee8150325</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Saldo cuenta al 01/07/2022'])[1]/following::td[3]</value>
+      <webElementGuid>466b9e00-122c-4723-a19c-692d8fe4b9bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Debitos Dia'])[1]/preceding::td[2]</value>
+      <webElementGuid>9d005ecd-e84a-4c96-82a9-206b8efc6a14</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[12]</value>
+      <webElementGuid>e2b498b7-7242-4108-83d1-deaba8c12af8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Total Creditos Dia']/parent::*</value>
+      <webElementGuid>f8e8c8c0-e8eb-4be5-888c-138d6f7607dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[10]/td</value>
+      <webElementGuid>7386c69a-6f1d-4bf2-a0f7-61a1ff440f3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Total Creditos Dia' or . = 'Total Creditos Dia')]</value>
+      <webElementGuid>d34863b2-40b9-4939-abf3-e35962c0e27a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

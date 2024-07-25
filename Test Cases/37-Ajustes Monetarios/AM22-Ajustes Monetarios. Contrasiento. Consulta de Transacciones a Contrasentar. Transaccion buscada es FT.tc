@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AM22-Ajustes Monetarios. Contrasiento. Consulta de Transacciones a Contrasentar. Transaccion buscada es FT</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d0e2cfde-c6bc-4ee6-92b2-fc870f120b3a</testCaseGuid>
+</TestCaseEntity>

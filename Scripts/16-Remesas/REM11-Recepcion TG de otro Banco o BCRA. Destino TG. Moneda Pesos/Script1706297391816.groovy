@@ -80,7 +80,7 @@ def partes = Transaccion1.split('\\s+')
 def trx1 = partes[2]
 assert Transaccion1.contains('Txn Completa:')
 
-//Screenshot
+//Screensho
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Switch a la ventana del Dashboard

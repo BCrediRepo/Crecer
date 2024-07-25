@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RC05-Agrupamientos de movimientos monetarios comiSIones.Baja . Existen mas de dos agrupamientos. Se elimina un solo agrupamiento</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b7d4293-067d-40bd-b44c-3973f365684f</testCaseGuid>
+</TestCaseEntity>

@@ -18,6 +18,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.text.SimpleDateFormat as SimpleDateFormat
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.support.ui.Select
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -27,52 +41,68 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Ingreso en el commandline ACCOUNT para consultar el saldo de la cuenta
+//Setear "ENQ BCCL.E.DET.MOV.AGR" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.DET.MOV.AGR')
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Cambiamos a la ventava Consulta Detalle Movs Agrupados
-WebUI.switchToWindowTitle('Consulta Detalle Movs Agrupados')
-
-//Maximizamos
-WebUI.maximizeWindow()
+//Cambiar a la ventana "Consulta Detalle Movs Agrupados"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Numero de Cuenta", "Fecha Valor", "Codigo Agrupamiento", "Agrup de Impuestos"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta','21190118359')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor','20200902')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta','02265027828')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor', GlobalVariable.vFechaCOBAmbTES10)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo Agrupamiento','IDCC3')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Agrup de Impuestos','IDC')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//boton ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
+//Obtener elemento de la tabla
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
+ 
+//Obtener la fila de encabezado
+WebElement header = table.findElement(By.tagName("tr"))
+ 
+//Obtener todas las celdas de la fila de encabezado
+List<WebElement> cells = header.findElements(By.tagName("th"))
+ 
+//Validar que haya al menos 8 celdas
+assert cells.size() >= 8 : "Expected at least 8 cells but found ${cells.size()}"
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/lblNrodeCuenta'), 6)
+//Validar los titulos de todas las columnas
+assert cells[0].getText().contains('Fecha') : "Expected 'Id Transaccion' but found ${cells[0].getText()}"
+assert cells[3].getText().contains('ID Transaccion') : "Expected 'Cod Op' but found ${cells[3].getText()}"
+assert cells[6].getText().contains('Codigo') : "Expected 'Descripcion' but found ${cells[6].getText()}"
+assert cells[9].getText().contains('Descripcion') : "Expected 'Cuenta Debito' but found ${cells[9].getText()}"
+assert cells[12].getText().contains('Monto Debito') : "Expected 'Cuenta Credito' but found ${cells[12].getText()}"
+assert cells[15].getText().contains('Monto Credito') : "Expected 'Mon' but found ${cells[15].getText()}"
+assert cells[18].getText().contains('Fecha Valor') : "Expected 'Importe' but found ${cells[18].getText()}"
+assert cells[21].getText().contains('Combte') : "Expected 'Fec Valor' but found ${cells[21].getText()}"
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/lblNrodeCuenta'))
+//Validar Fecha valor
+def fechaValor = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/lblFechaValor'))
+assert fechaValor.contains('01-09-2023')
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/lblNrodeCuenta'))
-
-assert element.contains('Nro. de Cuenta')
-
-//---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -84,6 +114,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,50 +25,61 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Setear "?1" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en Sucursal Piloto
+//Seleccionar "Sucursal Piloto"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkSucursalPiloto'))
 
-//Click en Resumen de Cuentas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanResumen de Cuentas'))
-
-//Click en Consultas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanConsultas'))
-
-//Click en Saldo de Cuentas Cerradas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/lnkSALDO DE CUENTAS CERRADAS'))
-
-//Switch a la ventana Saldos de Cuentas Cerrada
-WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
-
-//Maximizamos
+//Maximizar ventana
 WebUI.maximizeWindow()
 
-//Ingresamos el numero de cuenta
+//Seleccionar "Resumen de Cuentas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanResumen de Cuentas'))
+
+//Seleccionar "Consultas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanConsultas'))
+
+//Seleccionar "Saldo de Cuentas Cerradas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/lnkSALDO DE CUENTAS CERRADAS'))
+
+//Cambiar a la ventana "Saldos de Cuentas Cerrada"
+WebUI.switchToWindowIndex(2)
+
+//Ingresar el numero de cuenta
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/txtNroCuenta'), '01000021927')
 
-//Click en ejecutar
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblMoneda'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblMoneda'))
+//Validar titulos del encabezado
+def nroCuenta = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblNrodeCuenta'))
+assert nroCuenta.contains('Nro. de Cuenta')
+def productoSubProducto = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblProductoSubProducto'))
+assert productoSubProducto.contains('Producto SubProducto')
+def moneda = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblMoneda'))
+assert moneda.contains('Moneda')
+def estado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblEstado'))
+assert estado.contains('Estado')
+def fechaEstado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblFechaEstado'))
+assert fechaEstado.contains('Fecha Estado')
+def fechaCierre = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblFechaCierre'))
+assert fechaCierre.contains('Fecha Cierre')
+def SaldoCierre = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblSaldoCierre'))
+assert SaldoCierre.contains('Saldo Cierre')
 
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblMoneda'))
-
-assert element.contains('Moneda')
-
-//---------------------------------------------------------------------------------------------------------------------
+//Validar "CERRADA"
+def estadoACTIVA = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
+assert estadoACTIVA.contains('CERRADA')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -81,5 +91,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
