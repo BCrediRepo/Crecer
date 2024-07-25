@@ -17,24 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//librerias necesarias
-import org.openqa.selenium.By
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import com.kms.katalon.core.webui.driver.DriverFactory
-
-
-
-def menuDesplegable = ["Tarjetas", "Tarjeta CABAL Debito"]
-def link = "Alta de Tarjeta CABAL Debito"
-
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
-/*
-Para usar la kywBusquedaMenu.navegacionMenu primero declarar dos variables, una variable en forma de arreglo 
-que va a contener los nombres de los menu tipo span que debemos hacer click para acceder al link de la aplicacion y 
-otra variable de tipo string con el nombre del link. Los nombres deben ir de manera LITERAL para que funcione, 
-ya que la funcion busca match con "equals" para mayor precision.
- Al momento de usar la kyw, solo deberemos pasarle por parametros las dos variables previamente declaradas en el 
- orden de (lista de menus, link)
-*/
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert TxnInicial.contains('Txn Completa')
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
