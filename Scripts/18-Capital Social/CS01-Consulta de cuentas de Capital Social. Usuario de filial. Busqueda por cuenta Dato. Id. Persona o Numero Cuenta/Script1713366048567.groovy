@@ -19,21 +19,14 @@ import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
 
-//Configuracion de ambiente
+//Configuracion de ambiente y login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-//Login
-//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(
-//        2, 4))
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 32), findTestData('MainData/Users').getValue(
         2, 32))
-
 WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CS.VER.CTA')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('Consulta Cuenta Capital Social')
 
 //Seteo de Datos "Id. Persona"
@@ -44,28 +37,20 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id. Persona','1002190185')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
-
 //boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
 WebUI.maximizeWindow()
-
 WebUI.verifyElementVisible(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblCuenta'), FailureHandling.STOP_ON_FAILURE)
-
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
-
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
-
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 //---------------------------
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 println(TotalRegistros)
 
 //Descomentar para regresiion
@@ -74,10 +59,9 @@ println(TotalRegistros)
 //cuenta = WebUI.getText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblCuenta'))
 //
 //assert cuenta == '90890008453'
+WebUI.delay(10)
 WebUI.verifyElementVisible(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblIDPersona'))
-
 persona = WebUI.getText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblIDPersona'))
-
 assert persona == '1002190185'
 
 //-----------------------------
