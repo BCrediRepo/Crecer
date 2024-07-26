@@ -75,14 +75,12 @@ public class kywBusquedaMenu {
 
 	@Keyword
 	def navegacionMenu(List<String> menuDesplegables, String link) {
-		
+
 		// Obtener el WebDriver actual de Katalon
 		WebDriver driver = DriverFactory.getWebDriver()
 
 		try {
-			// Cambiar al frame donde se encuentra el menú
-			WebUI.switchToFrame(frame, 0)  // Ajusta el nombre del frame según sea necesario
-
+			
 			// Desplegar los menús recursivamente
 			if (!buscarYDesplegarMenu(driver, menuDesplegables)) {
 				println "No se pudieron desplegar todos los menús"
@@ -101,7 +99,7 @@ public class kywBusquedaMenu {
 			return false
 		}
 	}
-	
+
 	@Keyword
 	def navegacionDashboard(List<String> menuDesplegables, String link) {
 		def frame = findTestObject('Object Repository/02-Dashboard/frmDashboardMenu')

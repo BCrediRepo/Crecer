@@ -53,13 +53,7 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 println(TotalRegistros)
 
-//Descomentar para regresiion
-//WebUI.verifyElementVisible(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblCuenta'))
-//
-//cuenta = WebUI.getText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblCuenta'))
-//
-//assert cuenta == '90890008453'
-WebUI.delay(10)
+//verificacion final
 WebUI.verifyElementVisible(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblIDPersona'))
 persona = WebUI.getText(findTestObject('19-Capital Social/Consulta Cuenta Capital Social/lblIDPersona'))
 assert persona == '1002190185'
