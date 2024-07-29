@@ -225,7 +225,7 @@
       <guid>2d95fd63-7993-47f4-8ef7-4548aaf11cb9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON31-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON31-MONEX. Operación de Compra y Venta de Moneda Extranjera.Usuario de Sucursal. Validación TIPO.OPER igual a V - Socio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
