@@ -18,11 +18,4 @@
       <testCaseId>Test Cases/51-Variacion Deudora/VD01-Variacion Deudora.Consulta de Saldos Diarios</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>683864d3-313c-4ff6-8154-263c206bf933</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/51-Variacion Deudora/VD02-Variacion Deudora.Fecha valor.Recomposicion de Saldos.Alta de Nota de Debito Ajuste. F Valor y F Proceso corresponden al mismo mes</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>

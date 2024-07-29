@@ -30,44 +30,39 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
  
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
- 
-WebUI.click(findTestObject('02-Dashboard/lnkAjustesMonetarios'))
- 
-WebUI.click(findTestObject('02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeDebitoTransitoria'))
- 
+
+//Accedo al menu de Ajustes Monetarios - Alta de Nota de Debito Transitoria
+def menuDesplegable = ["Ajustes Monetarios"]
+def link = "Nota de Debito Transitoria"
+
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+
 WebUI.switchToWindowTitle('Movimiento de Fondos')
- 
+
+ //Ingresa datos (cuenta, importe, concepto)
 WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtNroCuenta'), '00730029258')
- 
 WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'))
- 
-WebUI.waitForElementVisible(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'), 3)
- 
 WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'), '100')
- 
 WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtConcepto'), '18299NTI')
- 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
  
-WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/btnValidarRegistro'))
- 
-WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/btnAceptarRegistro'))
+//Valida y acepta registro
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
+//Espero y acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),3)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-WebUI.waitForElementVisible(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/lnkAceptarAlertas'),
-	3)
+txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
-WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/lnkAceptarAlertas'))
-
-element = WebUI.getText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/lblTXNcompleta'))
-
-assert element.contains("Txn Completa: FT")
+assert txn.contains("Txn Completa: FT")
  
 // Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
+println("El ID de la txt es: " + txn)
  
 //Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
+String[] palabras = txn.split(" ");
  
 // Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
 String terceraPalabra = palabras[2];
@@ -79,22 +74,21 @@ println("La tercera palabra es: " + terceraPalabra);
 WebUI.setText(findTestObject('Object Repository/38-Ajustes Monetarios/Movimiento de Fondos/txtNotadeCreditoTransitoriaTransactionId'),terceraPalabra)
 //
 //Selecciona botón herramienta (reversar un registro segun estado
-WebUI.click(findTestObject('Object Repository/38-Ajustes Monetarios/Movimiento de Fondos/btnHerramienta'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnHerramienta'))
 
 //Reversa el registro
-WebUI.click(findTestObject('Object Repository/38-Ajustes Monetarios/Movimiento de Fondos/btnReversarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnReversar'))
 
 //Acepta alertas
-WebUI.click(findTestObject('Object Repository/38-Ajustes Monetarios/Movimiento de Fondos/btnAceptarAlertasReversa'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa y reversada
-WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTxnCompleta'), 6)
-WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTxnCompleta'))
-def element2 = WebUI.getText(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTxnCompleta'))
-assert element2.contains('Txn Completa:')
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def reversa = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert reversa.contains('Txn Completa:')
  
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
