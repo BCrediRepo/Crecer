@@ -39,20 +39,19 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('TSA.SERVICE,')
 
 //Selecciona boton estado Start
-WebUI.selectOptionByIndex(findTestObject('Object Repository/38-Ajustes Monetarios/TSA.SERVICE,/cbxAUTODEBUGSTARTSTOP'), 
-    3)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/38-Ajustes Monetarios/TSA.SERVICE,/cbxAUTODEBUGSTARTSTOP'), 3)
 
 //Selecciona boton aceptar registro
-WebUI.click(findTestObject('Object Repository/38-Ajustes Monetarios/TSA.SERVICE,/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Espera y Verifica que se muestren las columnas del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/TSA.SERVICE,/lblTxnCompleta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/TSA.SERVICE,/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
-def element = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/TSA.SERVICE,/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
-assert element.contains('Txn Completa:')
+assert txn.contains('Txn Completa:')
 
 WebUI.switchToWindowIndex(0)
 
@@ -71,14 +70,11 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/38-Ajustes Monetario
     4)
 
 //Selecciona boton aceptar registro
-WebUI.click(findTestObject('Object Repository/38-Ajustes Monetarios/TSA.SERVICE,/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-assert element.contains('Txn Completa:')
+assert txn.contains('Txn Completa:')
 
- //---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

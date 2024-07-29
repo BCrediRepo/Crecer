@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -27,55 +31,51 @@ WebUI.maximizeWindow()
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en Ajustes Monetarios
-WebUI.click(findTestObject('02-Dashboard/lnkAjustesMonetarios'))
+//Ir Ajustes Monetarios, "Nota de Credito Transitoria"
+def menuDesplegable = ["Ajustes Monetarios"]
+def link = "Nota de Credito Transitoria"
 
-//Click en "Nota de Credito Transitoria"
-WebUI.click(findTestObject('02-Dashboard/36-Ajustes Monetarios/lnkNotaCreditoTransitoria'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiamos a la ventana "Movimiento de Fondos"
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 //Esperamos a que el imputo "Nro de Cuenta" sea visible
-WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/04 - Nota de Credito Transitoria/txtNroCuenta'), 6)
+WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/02 - Nota de Credito Transitoria/txtNroCuenta'), 6)
 
-//Seteamos el texto "02180086531"
-WebUI.setText(findTestObject('38-Ajustes Monetarios/04 - Nota de Credito Transitoria/txtNroCuenta'), '02180086531')
+//Ingresamos numero de cuenta
+WebUI.setText(findTestObject('38-Ajustes Monetarios/02 - Nota de Credito Transitoria/txtNroCuenta'), '02180086531')
 
-//Clickeamos en el fondo de la aplicacion para que se apliquen los cambios
-WebUI.click(findTestObject('38-Ajustes Monetarios/04 - Nota de Credito Transitoria/divFondo'))
+//Validamos para que se apliquen los cambios
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
-//Seteamos 100 en el imput de "Importe"
-WebUI.setText(findTestObject('38-Ajustes Monetarios/04 - Nota de Credito Transitoria/txtImporte'), '100')
+//Ingresamos importe
+WebUI.setText(findTestObject('38-Ajustes Monetarios/02 - Nota de Credito Transitoria/txtImporte'), '100')
 
-//Volvemos a clickear en el fondo de la aplicacion para que se apliquen los cambios.
-WebUI.click(findTestObject('38-Ajustes Monetarios/04 - Nota de Credito Transitoria/divFondo'))
-
-//Click en "Lista de Registros" (CONCEPTO)
+//Click en "Lista de Registros"
 WebUI.click(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/btnListaRegistros'))
 
 //Click en "NotaDebAjs" (CONCEPTO)
 WebUI.click(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblNotaDebAjs'))
 
 //Click en "Aceptar Registro"
-WebUI.click(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Verfify
 WebUI.verifyElementText(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTransaccionRequiereAutorizacion'), 'Transaccion requiere autorizacion por monto. Nivel NIV1')
 
-WebUI.click(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lnkAceptarAlertas'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTxnCompleta'), 6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
 
-WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
-def element = WebUI.getText(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
-assert element.contains('Txn Completa:')
- //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+assert txn.contains('Txn Completa:')
 
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -85,5 +85,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

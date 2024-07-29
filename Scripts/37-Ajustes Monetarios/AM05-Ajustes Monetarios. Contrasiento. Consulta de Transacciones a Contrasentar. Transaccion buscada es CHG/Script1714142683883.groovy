@@ -31,7 +31,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando menu Account Charge Request
+//Ejecuta en la linea de comando menu Ac Charge Request
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'AC.CHARGE.REQUEST')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -44,8 +44,6 @@ WebUI.switchToWindowTitle('Account Charge Request')
 //Verifica titulo Account Charge Request
 WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/lblCHARGE.REQUEST'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/lblCHARGE.REQUEST'))
-
-//Maximiza la pantalla
 WebUI.maximizeWindow()
 
 //Ingresa el nombre de la TX chg
@@ -59,8 +57,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 long startTime = System.currentTimeMillis()
 
 //Click en boton VER REGISTRO
-WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/VerRegistro'),6)
-WebUI.click(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/VerRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Espera y comprueba que se muestre la primera columna del registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/lblRequestType'),6)
@@ -77,9 +75,7 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 def element = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/Account Charge Request/lblRequestType'))
 assert element.contains('Request Type')
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

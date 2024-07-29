@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTxnCompletaFT222</name>
+   <name>lblOK</name>
    <tag></tag>
-   <elementGuidId>fa138d75-c1d0-4727-82c3-8154ef552126</elementGuidId>
+   <elementGuidId>530d78fc-4a71-417a-be00-29703160df36</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+         <key>CSS</key>
+         <value>td.BOLD-RED.BOLD-RED_BCCLCQCONFANUL</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>td.message</value>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[4]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'OK' or . = 'OK')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,94 +26,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>9e2caaeb-ce52-476d-96b5-1b6628dae76e</webElementGuid>
+      <webElementGuid>1a386c05-9f32-4a9a-b049-71e0543ecb7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>message</value>
-      <webElementGuid>da5076f1-91ab-47cf-bf3f-2df808f906f1</webElementGuid>
+      <value>BOLD-RED BOLD-RED_BCCLCQCONFANUL</value>
+      <webElementGuid>ba1f670a-b805-4f1c-a0b8-99ba42511ffb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Txn Completa: FT22207172704709 15:50:11 12 MAY 2023 FUNDS.TRANSFER,BCCL.ACCJ R </value>
-      <webElementGuid>a8018a07-f3ef-4beb-a685-83a75962415c</webElementGuid>
+      <value>OK</value>
+      <webElementGuid>a818dd2c-0187-47c0-9cb8-86d66cc07672</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_FUNDSTRANSFER display_box_FUNDSTRANSFER_BCCLACCJ&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
-      <webElementGuid>3374cac6-a940-4c7f-b73a-3566fe988fb4</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;BOLD-RED BOLD-RED_BCCLCQCONFANUL&quot;]</value>
+      <webElementGuid>e0758196-85a3-4ee0-964e-8987101e961c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
-      <webElementGuid>827fde97-5953-4930-bff0-c8098245e6cd</webElementGuid>
+      <value>//tr[@id='r1']/td[4]</value>
+      <webElementGuid>5eb0f383-0a30-433e-875d-b0ed2285057b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.043 Villa Mitre)'])[1]/following::td[7]</value>
-      <webElementGuid>b2a74556-957a-48c2-ab1e-6d2ecd818b98</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PUESTO'])[1]/following::td[4]</value>
+      <webElementGuid>4900a00a-c79f-42a4-87af-59b45dfec93c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota Credito por Ajuste'])[1]/following::td[15]</value>
-      <webElementGuid>6c03529b-ec6d-4e2a-b6df-01a7776f0766</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CANAL DE ATENCION'])[1]/following::td[4]</value>
+      <webElementGuid>bf1112cb-2f8e-40a6-9a95-8a8308c91bcb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[2]</value>
-      <webElementGuid>19193f69-3dfa-4413-9236-e3568c7514e4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DIGI ARGENTINA SRL'])[1]/preceding::td[3]</value>
+      <webElementGuid>da2e95fe-2049-4e27-b17b-4608b5d61f2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::td[2]</value>
-      <webElementGuid>50e656d0-9738-4c44-bdae-7b94d03bccc3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LCCA'])[1]/preceding::td[4]</value>
+      <webElementGuid>37b76346-a71b-4962-ad3b-a80fba9a2ade</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Txn Completa: FT22207172704709 15:50:11 12 MAY 2023 FUNDS.TRANSFER,BCCL.ACCJ R']/parent::*</value>
-      <webElementGuid>d47f12b7-231c-41e4-a746-857f1577b173</webElementGuid>
+      <value>//*/text()[normalize-space(.)='OK']/parent::*</value>
+      <webElementGuid>b4cef3ad-73a0-497b-a7a4-560d0fc04e59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//table[2]/tbody/tr/td</value>
-      <webElementGuid>e9db8444-bf48-4097-8395-16330592fe19</webElementGuid>
+      <value>//div[3]/div/table/tbody/tr/td[4]</value>
+      <webElementGuid>2e036098-c0f8-43c4-b403-4ff70e0c3e63</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'Txn Completa: FT22207172704709 15:50:11 12 MAY 2023 FUNDS.TRANSFER,BCCL.ACCJ R ' or . = 'Txn Completa: FT22207172704709 15:50:11 12 MAY 2023 FUNDS.TRANSFER,BCCL.ACCJ R ')]</value>
-      <webElementGuid>ebb326f1-c97e-46d9-aeb6-f37f41c0a2ca</webElementGuid>
+      <value>//td[(text() = 'OK' or . = 'OK')]</value>
+      <webElementGuid>f79a6116-38ff-4dfe-933b-6fa4f5f24935</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,147 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAutorizacion</name>
+   <name>lblMANDATOVIG</name>
    <tag></tag>
-   <elementGuidId>5f8f051b-d33c-4824-b1d1-fc345aec8853</elementGuidId>
+   <elementGuidId>bbd3a7f9-51cb-4302-8348-33a67f97cca2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[@id='OVE1']</value>
+         <key>CSS</key>
+         <value>#columnHeaderText2</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#OVE1</value>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText2']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'MANDATO VIG' or . = 'MANDATO VIG')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>b46533ab-ddb3-4690-aaf9-86c26cac5df2</webElementGuid>
+      <value>th</value>
+      <webElementGuid>ade71040-5d90-4300-bae8-b575d467a4f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scope</name>
+      <type>Main</type>
+      <value>col</value>
+      <webElementGuid>7ec9e0ba-decc-445d-8d74-98e73249b6d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>overrideOn</value>
-      <webElementGuid>f4e621e4-aee9-45c7-b605-7788d30c73de</webElementGuid>
+      <value>columnHeader</value>
+      <webElementGuid>2e70f861-e1eb-4b4c-a1c4-a3966baeca46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>0</value>
-      <webElementGuid>1a42b3a9-db34-469a-9310-e4490dcaf80b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>OVE1</value>
-      <webElementGuid>18369f89-1d52-46cc-b5c9-2e8e336feac2</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>15</value>
-      <webElementGuid>e4cc0970-d77f-458c-a52d-e0e1e504ace4</webElementGuid>
+      <value>columnHeaderText2</value>
+      <webElementGuid>852294ac-8977-4f73-a6ba-a62f01d3212d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Transaccion requiere autorizacion por monto. Nivel NIV1</value>
-      <webElementGuid>91552291-2829-4e02-8630-98306ebd7598</webElementGuid>
+      <value>MANDATO VIG</value>
+      <webElementGuid>2054a7d6-aff9-4a4f-9cbf-1bec3795f1e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;OVE1&quot;)</value>
-      <webElementGuid>a0a83951-a208-43f1-ba6e-d74f901c6064</webElementGuid>
+      <value>id(&quot;columnHeaderText2&quot;)</value>
+      <webElementGuid>362837e1-4474-4709-adfe-985370ec800a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//td[@id='OVE1']</value>
-      <webElementGuid>4ca06e10-aef4-485c-91d9-51f82a04ca20</webElementGuid>
+      <value>//th[@id='columnHeaderText2']</value>
+      <webElementGuid>74398cda-ac67-42e2-9421-3486f0958f83</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='error_box']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[2]</value>
-      <webElementGuid>a5202ffc-ab4a-4f56-8e7b-4c13802cea05</webElementGuid>
+      <value>//th[@id='columnHeader2']/table/tbody/tr/th</value>
+      <webElementGuid>95bd755e-c64c-4191-89e8-8b53cd1eeaa5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Aceptar Alertas'])[1]/following::td[3]</value>
-      <webElementGuid>d89d42d3-78c7-4867-bf09-5aa6d0e3f384</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NO DE PEDIDO'])[1]/following::th[3]</value>
+      <webElementGuid>5bffe82c-5bca-44d9-aea6-865fe0b4a4b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.043 Villa Mitre)'])[1]/following::td[7]</value>
-      <webElementGuid>9d13ef30-96c8-4ec3-98e4-4aa8e43db783</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[6]</value>
+      <webElementGuid>5b159df6-46db-4e70-9dd6-ae5904e230b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nota Credito por Ajuste'])[2]/preceding::td[2]</value>
-      <webElementGuid>4cc26c01-679f-4ecd-b888-6af7c2a6e7dd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NO. DE LOTE'])[1]/preceding::th[2]</value>
+      <webElementGuid>f6a6033e-fa8c-4409-8b2c-07bdd6328122</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/preceding::td[3]</value>
-      <webElementGuid>9f980b02-f758-4bd6-8f46-32e4220da293</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ID CUENTA'])[1]/preceding::th[5]</value>
+      <webElementGuid>cbe956c9-4ec4-40f9-af96-1e28221f2344</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV1']/parent::*</value>
-      <webElementGuid>b8b12791-9035-44ea-a6a1-42bf11de86f7</webElementGuid>
+      <value>//*/text()[normalize-space(.)='MANDATO VIG']/parent::*</value>
+      <webElementGuid>52d67cd2-ff97-452f-9601-59c63c0398e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//table[2]/tbody/tr/td[2]</value>
-      <webElementGuid>b88c1d75-d76e-4452-a95d-9d83279cb377</webElementGuid>
+      <value>//th[2]/table/tbody/tr/th</value>
+      <webElementGuid>dc566ee5-d231-49d5-b08c-d1219faad342</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[@id = 'OVE1' and (text() = 'Transaccion requiere autorizacion por monto. Nivel NIV1' or . = 'Transaccion requiere autorizacion por monto. Nivel NIV1')]</value>
-      <webElementGuid>d7c471c9-188e-42ed-b8ff-5b608dc9d30c</webElementGuid>
+      <value>//th[@id = 'columnHeaderText2' and (text() = 'MANDATO VIG' or . = 'MANDATO VIG')]</value>
+      <webElementGuid>7caa1e13-0e9d-489c-baec-004aa9f8f1a2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
