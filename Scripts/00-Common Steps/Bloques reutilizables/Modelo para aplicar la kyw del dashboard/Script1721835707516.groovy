@@ -28,6 +28,10 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 def menuDesplegable = ["Tarjetas", "Tarjeta CABAL Debito"]
 def link = "Alta de Tarjeta CABAL Debito"
 
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+
+//si el menú que busco está en Temenos T24, uso esta funcion
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 /*

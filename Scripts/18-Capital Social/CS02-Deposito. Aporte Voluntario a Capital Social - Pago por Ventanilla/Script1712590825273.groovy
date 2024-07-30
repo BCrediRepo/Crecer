@@ -17,39 +17,31 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Configuracion de ambiente
+//Configuracion de ambiente y login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-//Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(
         2, 4))
 
+def menuDesplegable = ["Capital Social"]
+def link = "Deposito en Efectivo Cuenta Cap Soc."
+
+//busqueda y apertura de app de deposito en efectivo, capital social, desde el menu ?327
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('02-Dashboard/lnkCapitalSocial'))
-
-WebUI.click(findTestObject('02-Dashboard/17-Capital Social/lnkDepositoEnEfectivoCuentaCapSoc'))
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 WebUI.switchToWindowTitle('TELLER')
 
+//seteo de datos de deposito
 WebUI.setText(findTestObject('19-Capital Social/TELLER/txtPersonaID'), '1004568475')
-
 WebUI.setText(findTestObject('19-Capital Social/TELLER/txtImporte'), '100')
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('19-Capital Social/TELLER/btnValidarRegistro'))
-
-WebUI.click(findTestObject('19-Capital Social/TELLER/btnAceptarRegistro'))
-
-WebUI.verifyElementVisible(findTestObject('19-Capital Social/TELLER/lblTXcompleta'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.switchToWindowIndex(3)
-
-WebUI.takeScreenshot('Screenshot/Capital Social/CS02-Depósito. Aporte Voluntario a Capital Social - Pago por Ventanilla.png')
-
+//validacion final
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txn.contains("Txn Completa:")
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script

@@ -22,11 +22,8 @@ WebUI.callTestCase(findTestCase('37-Ajustes Monetarios/AM01 - Ajustes monetarios
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
-
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(2, 14))
-
-//Se maximiza la ventana
 WebUI.maximizeWindow()
 
 //Toma screenshot
@@ -54,42 +51,34 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0273')
 
-//Se espera a que sea visible "Ejecutar"
-WebUI.waitForElementVisible(findTestObject('00-Utils/02-Filtros/lnkEjecutar'), 3)
-
 //Se clickea en "Ejecutar"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se espera a que este visible "Reversar"
-WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblFT222'), 3)
-
-//Se clickea en "Reversar"
+//Se clickea en lnk "Reversar"
 WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lnkReversar'))
 
-//Se clickea en btn "Reversar"
+//Realiza la Reversa
 WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/btnReversar'))
 
 //Se espera a que sea visible el mensaje de alertas
-//WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/btnAutorizacion'), 3)
-Alerta = WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lnkAceptar Alertas'))
+Alerta = WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 if (Alerta == true) {
     //Se aceptan las alertas
-    WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lnkAceptar Alertas'))
+    WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 }
 
 //Valido que se haya completado la transaccion
-WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblTxnCompletaFT222'), 6)
-
-WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblTxnCompletaFT222'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Definir Objeto
-Transaccion = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblTxnCompletaFT222'))
+Transaccion = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
-//Dividir la cadena por espacios en blanco y tomar elemento
+//Dividir la cadena por espacios en blanco y tomar elemento solo el número de transacción
 def partes = Transaccion.split('\\s+')
 def trx1 = partes[2]
 assert Transaccion.contains('Txn Completa:')
@@ -97,11 +86,11 @@ assert Transaccion.contains('Txn Completa:')
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se inserta el numero de transaccion en el input "Nota de Debito por Ajuste"
+//Completa numero de transaccion en "Nota de Debito por Ajuste"
 WebUI.setText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/inputNotadeDebitoporAjuste'), trx1)
 
 //Se clickea en btn "Ver Un Registro"
-WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/btnVerunRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -114,16 +103,11 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se realiza un assert del estado del registro "REVE"
 WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'), 3)
-
 WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'))
+def reversa = WebUI.getText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'))
+assert reversa.contains('REVE')
 
-def element2 = WebUI.getText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'))
-
-assert element2.contains('REVE')
-
-
-//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

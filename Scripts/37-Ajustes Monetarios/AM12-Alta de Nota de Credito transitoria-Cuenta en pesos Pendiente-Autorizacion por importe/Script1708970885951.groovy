@@ -18,6 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+
 //TEST NAME: Impuestos.Ajustes monetarios. Alta de Nota de Crédito Transitoria. Cuenta en pesos. Persistencia
 //Configuro el ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -27,39 +32,33 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Accedo al menu de Ajustes Monetarios - Alta de Nota de Credito Transitoria y completo el registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAjustesMonetarios'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeCreditoTransitoria'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/05-Ajustes Monetarios/lnkNotadeCreditoTransitoria'))
+//Accedo al menu de Ajustes Monetarios - Alta de Nota de Credito Transitoria
+def menuDesplegable = ["Ajustes Monetarios"]
+def link = "Nota de Credito Transitoria"
+
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana de Nota de Credito por Ajustes
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 WebUI.maximizeWindow()
 
-//Completo los campos necesarios para la nota de Credito
+//Completo los campos necesarios para la nota de Credito (cuenta, importe y concepto)
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtNroCuenta'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtNroCuenta'), '00730029258')
 WebUI.click(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtImporte'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtImporte'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtImporte'), '100')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtConcepto'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtConcepto'), '18699NTE')
 WebUI.click(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/txtImporte'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/btnAceptarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/10-Nota de Credito Transitoria/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTransaccionRequiereAutorizacion'), 6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTransaccionRequiereAutorizacion'))
-
 def element = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/lblTransaccionRequiereAutorizacion'))
-
 assert element.contains('Transaccion requiere autorizacion por monto') 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

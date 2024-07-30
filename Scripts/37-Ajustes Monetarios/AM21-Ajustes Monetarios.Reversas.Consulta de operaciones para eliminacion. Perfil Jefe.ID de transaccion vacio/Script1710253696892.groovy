@@ -29,25 +29,27 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Accedo al menu Autorizaciones
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsElimindeTxPendientes'))
+def menuDesplegable = ["Autorizaciones"]
+def link = "Cons/Elimin de Tx Pendientes"
+
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana de Nota de Debito por Ajustes
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
+
 //Seteo de Datos 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0289')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator')
-//Espera y recibe mensaje de tx completa reversada
-//WebUI.waitForElementVisible(findTestObject('Object Repository/13-MEP/BCCL.E.AUTHORIZATION/lblNombrePuesto'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator'))
-def element = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator'))
-assert element.contains('B.0289')
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+//Verifica usuario
+WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator'))
+def user = WebUI.getText(findTestObject('Object Repository/38-Ajustes Monetarios/BCCL.E.EB.CONS.DEL.NAU/lblOperator'))
+assert user.contains('B.0289')
+
+//----------------------------------------------Control de fin de script----------------------------------------------//
+
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -57,4 +59,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

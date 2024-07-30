@@ -677,13 +677,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c649c886-fd4a-4c25-aa24-4bf8cfab50f8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/51-Variacion Deudora/VD02-Variacion Deudora.Fecha valor.Recomposicion de Saldos.Alta de Nota de Debito Ajuste. F Valor y F Proceso corresponden al mismo mes</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>ee1fb1ef-27f9-4f5c-a77c-6ed7cc9fcc4f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -695,6 +688,13 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/49-Echeq/ECQ02-Posicion del socio en ECHEQ. Realizar consulta con una cuenta habilitada para emitir Echeq</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9feff843-9167-4676-857a-2704fafa9a7d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM24-Fecha valor.Recomposicion de Saldos.Alta de Nota de Debito Ajuste. F Valor y F Proceso corresponden al mismo mes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

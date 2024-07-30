@@ -43,8 +43,6 @@ long startTime = System.currentTimeMillis()
 
 //Selecciona boton EJECUTAR
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Maximiza la pantalla
 WebUI.maximizeWindow()
 
 //Toma un ScreenShot
@@ -73,10 +71,8 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 println TotalRegistros
-//-----------------------------
 
-//---------------------------------------------------------------------------------------------------------------------
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -87,4 +83,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
