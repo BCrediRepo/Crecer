@@ -6,15 +6,15 @@
    <elementGuidId>46a9daaa-638d-460b-bba6-303e0278160f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='fieldName:L.CO.FORMA.OP:3']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#fieldName\:L\.CO\.FORMA\.OP\:2</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>7a3e8d03-bf17-4c89-9f47-d991396b201c</webElementGuid>
+      <webElementGuid>551dc26b-5b31-4b55-a5c8-9159ead8e139</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>cce2de6e-bcab-4011-b43d-d0ad71d8b2f7</webElementGuid>
+      <webElementGuid>75144f1b-638c-412d-8be1-a68f709881ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>size</name>
       <type>Main</type>
       <value>2</value>
-      <webElementGuid>cdffecdf-6d93-4e78-91d3-354952446a9f</webElementGuid>
+      <webElementGuid>96f1bc8f-434a-417d-9a09-68218d3ac752</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:L.CO.FORMA.OP:3</value>
-      <webElementGuid>cc215996-205c-486d-95f1-1644cc75e7c1</webElementGuid>
+      <webElementGuid>9747ba43-900f-4071-9844-503fdaef4d55</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:L.CO.FORMA.OP:3</value>
-      <webElementGuid>e51a6de8-ece7-47a7-9b25-1b8123e7ccf4</webElementGuid>
+      <webElementGuid>ab337837-3e88-412d-aa02-2e044bfe94d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>4322549c-4eb3-4c8e-b13a-9538fc3d135e</webElementGuid>
+      <webElementGuid>82d8c79a-0a13-4e17-adf6-842b484d86d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_ACCOUNT dealbox_ACCOUNT_BCCLFIRMANTEMODFISICA</value>
-      <webElementGuid>dddcc987-1ea0-4603-ac1c-b895171ab564</webElementGuid>
+      <webElementGuid>dd643c4e-20ba-41c1-bc14-5dbb0ccc0f29</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>2</value>
-      <webElementGuid>8711c5c8-d193-443d-9f66-bff501f9d964</webElementGuid>
+      <webElementGuid>136f37e7-2a2f-4b44-8a30-9ff88284e346</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>0e66d734-e07f-482f-b175-043fbc6a39ef</webElementGuid>
+      <webElementGuid>1b944597-0f9f-4de8-9af0-3c89129441cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>9e8515b7-4f35-4dbe-a368-c7fbf76eec0b</webElementGuid>
+      <webElementGuid>0cb29801-61bb-4a7a-bf6d-4801ffedb1f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_L.CO.FORMA.OP:3</value>
-      <webElementGuid>67212bef-27f4-4150-9853-f1e1d57d31f0</webElementGuid>
+      <webElementGuid>111c6570-2ee0-471f-a0c0-1503ac8fce95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'L.CO.FORMA.OP','issueToken');</value>
-      <webElementGuid>925a2523-1367-4ab8-8bd2-e3917f3ffbd3</webElementGuid>
+      <webElementGuid>792b758d-b780-4d5a-bb0e-4492e0eaa3f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>26eb59c7-fd1a-4a83-ba42-bfabd8044c74</webElementGuid>
+      <webElementGuid>237ffde1-7aec-49df-b5df-1d5e45d1923f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('L.CO.FORMA.OP','','','issueToken')</value>
-      <webElementGuid>e46ce1eb-168d-4f17-bed9-a04eba0af507</webElementGuid>
+      <webElementGuid>2644e760-d55d-47f2-b7bf-94c9c0f88ec1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:L.CO.FORMA.OP:3&quot;)</value>
-      <webElementGuid>584ebbd3-e1dc-44a6-9f0f-0d1b5d16e9c4</webElementGuid>
+      <webElementGuid>7f50615a-6556-4aad-a0cc-c1108401394f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:L.CO.FORMA.OP:3']</value>
-      <webElementGuid>56311828-2d6f-442e-bbfd-a87e809bd319</webElementGuid>
+      <webElementGuid>4e8b6a3c-812d-4d4b-9e14-1a848f1144ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[28]/td[3]/input</value>
-      <webElementGuid>935ade25-efd3-4bcf-81c1-9487d3bcb47c</webElementGuid>
+      <webElementGuid>80f22a1b-8122-49ae-81fb-b48cae1c6596</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[28]/td[3]/input</value>
-      <webElementGuid>8a43a71b-cbfc-471c-9824-98b7e75c5c34</webElementGuid>
+      <webElementGuid>05e1ff6c-138f-4b47-ac49-981fca0ce8c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,6 +166,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:L.CO.FORMA.OP:3' and @name = 'fieldName:L.CO.FORMA.OP:3' and @type = 'text']</value>
-      <webElementGuid>06796b18-d83e-425c-a136-6d58bc3a6688</webElementGuid>
+      <webElementGuid>c5bb08ce-3d31-40ce-be5b-ae9b080baa38</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
