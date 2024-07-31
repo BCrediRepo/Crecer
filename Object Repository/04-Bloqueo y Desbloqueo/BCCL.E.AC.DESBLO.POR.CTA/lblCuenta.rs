@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblPAGODETARJETACABAL</name>
+   <name>lblCuenta</name>
    <tag></tag>
-   <elementGuidId>c8fa1863-2cf3-4460-84e4-3cd142f78b59</elementGuidId>
+   <elementGuidId>941fd1e0-2cd3-401d-a365-d5897ff6b095</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#r1 > td</value>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[6]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td</value>
+         <key>CSS</key>
+         <value>#r1 > td:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,86 +22,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>f74877df-d645-4e5b-b5d5-fe1d358f7858</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>align</name>
-      <type>Main</type>
-      <value>right</value>
-      <webElementGuid>2d27c1f9-628e-4947-86f4-61666e5e0670</webElementGuid>
+      <webElementGuid>f8a170cd-3d93-4daa-9a5b-e85625e707d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PAGO DE TARJETA: CABAL</value>
-      <webElementGuid>4bd15551-764f-405a-a913-7c1c2915fa41</webElementGuid>
+      <value>BLOQUEO CREDITOS</value>
+      <webElementGuid>ce2d8fec-6f2d-473d-9f0b-6d3abc619759</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>d57921ac-c4d5-4591-88e7-eb2e9daf63dd</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[6]</value>
+      <webElementGuid>a41ed663-6e52-40d5-95ee-6358d6d3993d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td</value>
-      <webElementGuid>84ed7c52-8a4b-4ca9-8aaf-f8febeb84575</webElementGuid>
+      <value>//tr[@id='r1']/td[6]</value>
+      <webElementGuid>59ef4437-cc34-4f6d-a39c-7ed963633db6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ESTADO'])[1]/following::td[1]</value>
-      <webElementGuid>32cb1e4a-368c-429e-a76d-38136b564792</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='L F ARAUJO'])[2]/following::td[1]</value>
+      <webElementGuid>55c692a2-7928-4f4d-8c94-7142bf85c6f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::td[1]</value>
-      <webElementGuid>0c15af20-16f8-4383-b779-8b4aaa1e71ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pesos Argentinos'])[1]/following::td[2]</value>
+      <webElementGuid>e2cf0ffd-9c4c-43e7-ab6f-cc691f890ef0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='NO AUTORIZADA'])[1]/preceding::td[1]</value>
-      <webElementGuid>51c30701-72ce-4b04-805d-d61754db8527</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Desbloqueo General'])[1]/preceding::td[2]</value>
+      <webElementGuid>0e3e9f5e-7e4f-4f1c-8b55-37eb70574b58</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PAGO DE TARJETA: CABAL']/parent::*</value>
-      <webElementGuid>b353178a-e3a4-460d-9f59-a75bd63cdbf6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Desbloqueo Parcial'])[1]/preceding::td[3]</value>
+      <webElementGuid>dd22538b-607a-4a17-8a6a-bbab0c1a06ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='BLOQUEO CREDITOS']/parent::*</value>
+      <webElementGuid>4e91326e-ebf6-46af-8ac3-f057da1f3f2d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>5b602a22-8d56-4a3a-8831-f389980ba888</webElementGuid>
+      <value>//td[6]</value>
+      <webElementGuid>7a097009-d9ce-4641-ae5a-6818be1c908a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'PAGO DE TARJETA: CABAL' or . = 'PAGO DE TARJETA: CABAL')]</value>
-      <webElementGuid>454754d1-6b41-4d0a-b1ae-8d3843f16235</webElementGuid>
+      <value>//td[(text() = 'BLOQUEO CREDITOS' or . = 'BLOQUEO CREDITOS')]</value>
+      <webElementGuid>f9cb0613-914f-4be7-810c-7b4715fc27c9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
