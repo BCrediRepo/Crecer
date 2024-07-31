@@ -80,7 +80,7 @@ public class kywBusquedaMenu {
 		WebDriver driver = DriverFactory.getWebDriver()
 
 		try {
-			
+
 			// Desplegar los menús recursivamente
 			if (!buscarYDesplegarMenu(driver, menuDesplegables)) {
 				println "No se pudieron desplegar todos los menús"
@@ -124,6 +124,38 @@ public class kywBusquedaMenu {
 
 			return true
 		} catch (Exception e) {
+			println "Error: ${e.message}"
+			return false
+		}
+	}
+
+	@Keyword
+	def clickearEnLinkDashboard(String link) {
+		def frame = findTestObject('Object Repository/02-Dashboard/frmDashboardMenu')
+		WebDriver driver = DriverFactory.getWebDriver()
+		try {
+			WebUI.switchToFrame(frame, 0)
+			if (!buscarYHacerClickEnHref(driver, link)) {
+				println "No se pudo encontrar el enlace: ${link}"
+				return false
+			}
+
+		}catch (Exception e) {
+			println "Error: ${e.message}"
+			return false
+		}
+	}
+
+	@Keyword
+	def clickearEnLinkMenu(String link) {
+		WebDriver driver = DriverFactory.getWebDriver()
+		try {
+			if (!buscarYHacerClickEnHref(driver, link)) {
+				println "No se pudo encontrar el enlace: ${link}"
+				return false
+			}
+
+		}catch (Exception e) {
 			println "Error: ${e.message}"
 			return false
 		}
