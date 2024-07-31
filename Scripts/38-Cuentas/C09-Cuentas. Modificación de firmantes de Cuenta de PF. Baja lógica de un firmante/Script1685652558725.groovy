@@ -53,7 +53,7 @@ WebUI.maximizeWindow()
 
 //Seteo de datos "Nro. Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', '10430033951')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', '13220017001') //10430033951
 //CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta', '21190118359')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -68,13 +68,13 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.switchToWindowTitle('CUENTAS')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtFecha Baja.2'), '20230828')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtFecha Baja.2'), '20230901') //20230828
 
-//WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtForma de Operar.1'), '01')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtForma de Operar.1'), '01')
 
-//WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtMotivo de Baja.2'), '01')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtMotivo de Baja.2'), '1')
 
-//WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtForma de Operar'), '01')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/txtForma de Operar'), '01')
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Baja Logica Firmante/btnValidarRegistro'))
 
@@ -96,7 +96,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verificacion
 //WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ACCOUNT S [21190118359]')
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ACCOUNT S [10430033951]')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ACCOUNT S [13220017001]') //10430033951
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -105,7 +105,7 @@ WebUI.switchToWindowTitle('CUENTAS')
 // Maximizamos
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mantenimiento/txtACCOUNT'), '10430033951')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mantenimiento/txtACCOUNT'), '13220017001') //10430033951
 
 WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS - Mantenimiento/btnModificarRegistro'))
 

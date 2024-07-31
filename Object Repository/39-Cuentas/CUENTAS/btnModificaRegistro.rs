@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAutorizarRegistro</name>
+   <name>btnModificaRegistro</name>
    <tag></tag>
-   <elementGuidId>c100f044-b395-45b9-936e-b700f2ec06dc</elementGuidId>
+   <elementGuidId>d93123f9-6bcb-49d1-ac32-533024e23f94</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
+         <key>CSS</key>
+         <value>img[alt=&quot;Modifica registro&quot;]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Aut/Borra/Rev registro segun estado&quot;]</value>
+         <key>XPATH</key>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,72 +22,72 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>adc804ec-27fa-44e8-9f05-8c2f83c364ee</webElementGuid>
+      <webElementGuid>47334484-bc20-4b57-b359-9123e83cb01e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>../plaf/images/bccl/tools/txnaction.gif
+      <value>../plaf/images/bccl/tools/txnedit.gif
 															</value>
-      <webElementGuid>bab1d4a5-f385-4eda-aa3b-74f3a220b3df</webElementGuid>
+      <webElementGuid>d39e9ff3-d31c-4b8c-abcf-6c17e584a488</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
-      <value>Aut/Borra/Rev registro segun estado</value>
-      <webElementGuid>965f85a0-e101-4f05-8620-517c241c210a</webElementGuid>
+      <value>Modifica registro</value>
+      <webElementGuid>b3d1b80f-c0a7-4756-9462-6a0e85fe3e8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Aut/Borra/Rev registro segun estado</value>
-      <webElementGuid>c5a9b26b-462b-45a2-9466-dad60040467f</webElementGuid>
+      <value>Modifica registro</value>
+      <webElementGuid>29ddb082-a724-4e92-9dcd-3070ce7bb550</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[3]/a[1]/img[1]</value>
-      <webElementGuid>1aca5980-7761-4fef-bd51-36ce89dca76e</webElementGuid>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
+      <webElementGuid>97374734-b5d6-4070-9f52-b0431b5b4d24</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
-      <webElementGuid>be66fd48-b682-485b-a9f2-896286592250</webElementGuid>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+      <webElementGuid>dd506e1f-e457-4a12-85a4-449ec670e133</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>//img[@alt='Aut/Borra/Rev registro segun estado']</value>
-      <webElementGuid>8d28e834-7b21-4ca1-a557-2cea88c37856</webElementGuid>
+      <value>//img[@alt='Modifica registro']</value>
+      <webElementGuid>918ea1ca-bc95-441d-90e2-953dff53b848</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[3]/a/img</value>
-      <webElementGuid>86bfa4bb-cc87-4fa5-bd95-92afb58032a9</webElementGuid>
+      <value>//a/img</value>
+      <webElementGuid>cd054a92-2c6a-4e26-b6bd-d2c070d47e97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = '../plaf/images/bccl/tools/txnaction.gif
-															' and @alt = 'Aut/Borra/Rev registro segun estado' and @title = 'Aut/Borra/Rev registro segun estado']</value>
-      <webElementGuid>71c2a7d3-1c79-411b-b303-9a9c1e8e8f02</webElementGuid>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnedit.gif
+															' and @alt = 'Modifica registro' and @title = 'Modifica registro']</value>
+      <webElementGuid>dfa88768-9987-406c-b5d7-eeec998216f4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnExpandirSubvalor</name>
+   <name>btnDeleteValue</name>
    <tag></tag>
-   <elementGuidId>746e987d-2d48-4dfd-a228-a131d30572e6</elementGuidId>
+   <elementGuidId>e99d9a69-b9a0-4762-8030-53ed11780233</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > a:nth-child(1) > img:nth-child(1)</value>
+         <key>XPATH</key>
+         <value>//table[@id='tab1']/tbody/tr[95]/td[2]/a[2]/img</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,78 +22,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>e8fe880b-70e0-4452-a29f-f402ba6b9c6a</webElementGuid>
+      <webElementGuid>a8992d8e-4110-4af4-9627-528024c69cfc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA</value>
-      <webElementGuid>ef082537-1082-4af0-9dae-4896d1d8dee0</webElementGuid>
+      <value>ascell ascell_ACCOUNT</value>
+      <webElementGuid>657496d7-23ca-4919-8b1c-a7ebcd442352</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>../plaf/images/bccl/deal/svexpansion.gif</value>
-      <webElementGuid>3eeab565-4622-433b-9397-ecc2f7a9eb24</webElementGuid>
+      <value>../plaf/images/bccl/deal/mvdelete.gif</value>
+      <webElementGuid>62206ab2-f48b-4bb5-8b7f-899e7bfc2ad1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
-      <value>Expandir Subvalor</value>
-      <webElementGuid>27359059-d285-404c-8fbc-3e26f0fefc43</webElementGuid>
+      <value>Delete Value</value>
+      <webElementGuid>33a1f2ee-44a9-4df8-a928-1eac198817a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Expandir Subvalor</value>
-      <webElementGuid>a398e634-d046-432d-a7c2-84bea9724fb4</webElementGuid>
+      <value>Delete Value</value>
+      <webElementGuid>25c51d35-57b2-4cdc-8a6b-f9ce69de7f0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab1&quot;)/tbody[1]/tr[11]/td[@class=&quot;action_container action_container_ACCOUNT action_container_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]/a[1]/img[@class=&quot;ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]</value>
-      <webElementGuid>263051f5-8404-4bca-bc52-e2f035c4ba84</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[95]/td[@class=&quot;action_container action_container_ACCOUNT&quot;]/a[2]/img[@class=&quot;ascell ascell_ACCOUNT&quot;]</value>
+      <webElementGuid>f42e504a-e3f2-4716-9ba5-30e98228eb54</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
-      <webElementGuid>31df3005-b284-48ca-bc0d-751d2df8c76f</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[95]/td[2]/a[2]/img</value>
+      <webElementGuid>b203fc3e-aee3-42b5-a4eb-b4f11343d07c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>(//img[@alt='Expandir Subvalor'])[2]</value>
-      <webElementGuid>7c0ba6a3-cd39-4d5f-a85b-0f14dee4b2de</webElementGuid>
+      <value>(//img[@alt='Delete Value'])[7]</value>
+      <webElementGuid>fe7900ec-6e76-4fc6-af67-8cecfb31628d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[11]/td[2]/a/img</value>
-      <webElementGuid>99808924-9bdc-4fb3-b51a-b3709061915f</webElementGuid>
+      <value>//tr[95]/td[2]/a[2]/img</value>
+      <webElementGuid>5f5392fa-1a64-4bab-9931-1eaa68af031d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = '../plaf/images/bccl/deal/svexpansion.gif' and @alt = 'Expandir Subvalor' and @title = 'Expandir Subvalor']</value>
-      <webElementGuid>a756d4a3-0d50-4832-b7d7-23725ae44385</webElementGuid>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvdelete.gif' and @alt = 'Delete Value' and @title = 'Delete Value']</value>
+      <webElementGuid>55f5e3d3-7a46-425c-9694-b9c96a9abf14</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

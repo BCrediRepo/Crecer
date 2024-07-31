@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnExpandirSubvalor</name>
+   <name>btnReversarRegistro</name>
    <tag></tag>
-   <elementGuidId>746e987d-2d48-4dfd-a228-a131d30572e6</elementGuidId>
+   <elementGuidId>5525088c-6e10-4b8c-a36f-b5489effc1f8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > a:nth-child(1) > img:nth-child(1)</value>
+         <value>#goButton > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(5) > a:nth-child(1) > img:nth-child(1)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,78 +22,72 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>e8fe880b-70e0-4452-a29f-f402ba6b9c6a</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA</value>
-      <webElementGuid>ef082537-1082-4af0-9dae-4896d1d8dee0</webElementGuid>
+      <webElementGuid>7e7c56e0-9676-4290-88fc-6685cfd52980</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>../plaf/images/bccl/deal/svexpansion.gif</value>
-      <webElementGuid>3eeab565-4622-433b-9397-ecc2f7a9eb24</webElementGuid>
+      <value>../plaf/images/bccl/tools/txnaction.gif
+															</value>
+      <webElementGuid>69ef139a-8646-46ef-9253-c2c139c76541</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
-      <value>Expandir Subvalor</value>
-      <webElementGuid>27359059-d285-404c-8fbc-3e26f0fefc43</webElementGuid>
+      <value>Aut/Borra/Rev registro segun estado</value>
+      <webElementGuid>07e97fe0-0392-41b7-8670-32cb2b4dff6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Expandir Subvalor</value>
-      <webElementGuid>a398e634-d046-432d-a7c2-84bea9724fb4</webElementGuid>
+      <value>Aut/Borra/Rev registro segun estado</value>
+      <webElementGuid>9548c612-800e-4f7f-9918-63b77210cf11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab1&quot;)/tbody[1]/tr[11]/td[@class=&quot;action_container action_container_ACCOUNT action_container_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]/a[1]/img[@class=&quot;ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]</value>
-      <webElementGuid>263051f5-8404-4bca-bc52-e2f035c4ba84</webElementGuid>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[3]/a[1]/img[1]</value>
+      <webElementGuid>f1d286e5-3590-4eda-b8be-340e196564d4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
-      <webElementGuid>31df3005-b284-48ca-bc0d-751d2df8c76f</webElementGuid>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
+      <webElementGuid>f95eb8a7-5f6a-4ae0-abb0-9b29c2ba50b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>(//img[@alt='Expandir Subvalor'])[2]</value>
-      <webElementGuid>7c0ba6a3-cd39-4d5f-a85b-0f14dee4b2de</webElementGuid>
+      <value>//img[@alt='Aut/Borra/Rev registro segun estado']</value>
+      <webElementGuid>db1e01d5-599d-41da-bcd5-7a12f6636752</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[11]/td[2]/a/img</value>
-      <webElementGuid>99808924-9bdc-4fb3-b51a-b3709061915f</webElementGuid>
+      <value>//td[3]/a/img</value>
+      <webElementGuid>aae92417-d4a9-4ffe-b561-ec3e190e8006</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = '../plaf/images/bccl/deal/svexpansion.gif' and @alt = 'Expandir Subvalor' and @title = 'Expandir Subvalor']</value>
-      <webElementGuid>a756d4a3-0d50-4832-b7d7-23725ae44385</webElementGuid>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnaction.gif
+															' and @alt = 'Aut/Borra/Rev registro segun estado' and @title = 'Aut/Borra/Rev registro segun estado']</value>
+      <webElementGuid>94d0887b-0e6e-41eb-b214-8faf691d63ed</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

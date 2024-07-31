@@ -32,4 +32,32 @@
       <testCaseId>Test Cases/11-MEP/MEP03-Autorizacion de transferencias MEP propias con usuario N5</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>27e6006f-674b-4c7f-965e-7de57aba76aa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP04-Transferencias Propias Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aaec934a-a00a-40c0-8678-64c3a2e0c1cc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP05-Otros Conceptos Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ee0adc37-d277-4338-aafe-a53e0cb5e3c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP06-Transferencias MEP. Transacciones Online. Otros Conceptos. Datos validos. Cuenta Socio. Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>49e5257c-5608-4ad1-bd95-76b68112fe81</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP07-Transferencias entre cuentas Persistencia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
