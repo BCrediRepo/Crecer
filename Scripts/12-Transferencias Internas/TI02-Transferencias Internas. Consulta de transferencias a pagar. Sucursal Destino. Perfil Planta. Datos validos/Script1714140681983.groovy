@@ -41,9 +41,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'),3)
-WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -53,11 +52,11 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'),3)
-WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdFTEnvio'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'))
+def dato = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.TINTERNAS.APAGAR/tdReferencia'))
+assert dato.contains('Referencia')
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

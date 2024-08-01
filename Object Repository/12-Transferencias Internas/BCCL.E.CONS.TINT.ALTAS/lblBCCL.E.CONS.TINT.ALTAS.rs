@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>pBCCL.E.CONS.TINT.ALTAS</name>
+   <name>lblBCCL.E.CONS.TINT.ALTAS</name>
    <tag></tag>
    <elementGuidId>8553290c-7f9b-4e16-9c9d-9631c5da83ed</elementGuidId>
-   <imagePath></imagePath>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>body.window</value>
+         <key>IMAGE</key>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//body</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>/html[1]/body[@class=&quot;window&quot;]</value>
+         <key>CSS</key>
+         <value>body.window</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>/html[1]/body[@class=&quot;window&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
