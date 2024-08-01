@@ -6,16 +6,16 @@
    <elementGuidId>3783a876-c774-4ebe-8141-1f3525b0d133</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#r1 > td</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'TI22206000000009' or . = 'TI22206000000009')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td</value>
+         <value>html body.window div#pane_ div.denqresponse.denqresponse_BCCLETINTERNASAPAGAR form#enquiryData div#enquiry_response.enquiry_response.enquiry_response_BCCLETINTERNASAPAGAR.display_box.display_box_BCCLETINTERNASAPAGAR table#enquiryResponseData tbody tr td div#enquiryHeadingScroller div#enquiryHeadingSizer table#headingdisplay.enquirydata thead tr th#columnHeader1.columnHeader table.columnHeader tbody tr th#columnHeaderText1.columnHeader</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'TI22206000000009' or . = 'TI22206000000009')]</value>
+         <key>CSS</key>
+         <value>#columnHeaderText1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>9f49e2f2-3ae5-4469-90b3-79882a0a5678</webElementGuid>
+      <webElementGuid>9f4bb0e1-e8e2-4cc2-973f-85b34795eff1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>TI22206000000009</value>
-      <webElementGuid>6543d8e8-4534-4bdb-b968-acdaa58be79e</webElementGuid>
+      <webElementGuid>1d9466db-560b-4cb3-939a-3bd2f81d304f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>d9256e9d-8670-4c9f-941f-9bc70cd72926</webElementGuid>
+      <webElementGuid>b69b8cfd-f372-4b86-a3a0-6d97752f4bf4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td</value>
-      <webElementGuid>af0f2ad9-f10b-4188-a0a2-f3a7879feee0</webElementGuid>
+      <webElementGuid>b5964a64-a809-4a67-9900-b14f1ea63daa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nombre Beneficiario'])[1]/following::td[1]</value>
-      <webElementGuid>d336cb4a-f8bb-498b-ab02-f7ec3afa25d5</webElementGuid>
+      <webElementGuid>dd548474-ccce-434f-8d8b-e9cd45b6c7d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Beneficiario'])[1]/following::td[1]</value>
-      <webElementGuid>78264913-fbcd-4464-9c3e-313a7680709d</webElementGuid>
+      <webElementGuid>23f60135-5864-47a1-a821-1e8ad270e2bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='FT22206903662588'])[1]/preceding::td[1]</value>
-      <webElementGuid>db52cea7-a5b6-4f14-88f3-8f1ed7216833</webElementGuid>
+      <webElementGuid>61129b0b-b88d-4697-89df-cce8eaf4aff3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Denom.: METALURGICASIAM SA - CUI: 30711351937'])[1]/preceding::td[5]</value>
-      <webElementGuid>0d190b9b-4643-4a60-8b70-7a20b6bd194b</webElementGuid>
+      <webElementGuid>f1856024-8328-406e-ab4a-c1eb1d4b74dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='TI22206000000009']/parent::*</value>
-      <webElementGuid>4030b586-f52c-461b-9156-496875974d52</webElementGuid>
+      <webElementGuid>5a69c21f-1fb0-4bb9-ba9c-0955d9536b96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>2501e692-c4a0-4318-992c-328f6abe7788</webElementGuid>
+      <webElementGuid>7004b0be-15d7-4ef8-8eb9-d1dc72a50129</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'TI22206000000009' or . = 'TI22206000000009')]</value>
-      <webElementGuid>f8767c6d-459c-404f-aa12-b8e908597678</webElementGuid>
+      <webElementGuid>0bba2c90-4fed-4376-b552-2c81b90322ad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>tdReferencia</name>
+   <name>lblIdOrdenante</name>
    <tag></tag>
-   <elementGuidId>a824e69a-e41d-4ecd-8e16-6f95eab90c04</elementGuidId>
+   <elementGuidId>eb26a447-9975-4d99-8c57-37d44257990b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//tr[@id='r1']/td</value>
+         <value>//*[@id=&quot;columnHeaderText2&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r1 > td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,86 +21,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>4502bdfe-5307-411c-b762-78712e496278</webElementGuid>
+      <webElementGuid>59ecf364-e023-4783-af01-0aaeabea660c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>TI19297000000051</value>
-      <webElementGuid>740bad03-3ff0-43f6-8c9b-497db0c11134</webElementGuid>
+      <value>1001027908</value>
+      <webElementGuid>12c35013-d4f2-467e-a559-ea965b042bea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>d4197a55-6295-4654-95c0-ef09cff237b4</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[2]</value>
+      <webElementGuid>43950eb7-6b84-46cf-8ea2-d7ef157b6503</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td</value>
-      <webElementGuid>1f24ecab-017f-478a-bf47-df98e307b968</webElementGuid>
+      <value>//tr[@id='r1']/td[2]</value>
+      <webElementGuid>18a06ec7-3701-4ae2-b781-0d76be45857b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hora'])[1]/following::td[1]</value>
-      <webElementGuid>717a69e4-a203-4207-825d-3b112afda23d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TI19297000000051'])[1]/following::td[1]</value>
+      <webElementGuid>c82e07f6-67c3-4e99-8d18-e01fb5f05dfa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresado'])[1]/following::td[1]</value>
-      <webElementGuid>6dab76ac-e0f1-4151-8a2f-9f57eef3edb3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hora'])[1]/following::td[2]</value>
+      <webElementGuid>6568caa9-09e2-4a27-9331-7c7388e00cfa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denom.: MIÑO PABLO HECTOR - CUI: 20223414029 - Doc: 22341402'])[1]/preceding::td[2]</value>
-      <webElementGuid>e681cde9-efa7-4baa-8ef7-961b0393e7b2</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denom.: MIÑO PABLO HECTOR - CUI: 20223414029 - Doc: 22341402'])[1]/preceding::td[1]</value>
+      <webElementGuid>d7423c3b-5903-41f1-93fc-34098fd384fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[6]</value>
-      <webElementGuid>fbec36a9-5126-4468-8f15-97e1ba0bf6f1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[5]</value>
+      <webElementGuid>b170b4e3-7d5a-4846-9460-a07cdfed968e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='TI19297000000051']/parent::*</value>
-      <webElementGuid>d790249f-0d8a-4090-97eb-c561e2c55806</webElementGuid>
+      <value>//*/text()[normalize-space(.)='1001027908']/parent::*</value>
+      <webElementGuid>b96711f7-2a55-42a4-b1c5-508de8901f34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>188dddc1-a6c4-4398-b768-47dc5942318c</webElementGuid>
+      <value>//div[2]/div/table/tbody/tr/td[2]</value>
+      <webElementGuid>9d50dabb-75fa-416d-8c98-31868dedc081</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'TI19297000000051' or . = 'TI19297000000051')]</value>
-      <webElementGuid>942052fe-cdb3-404a-93a2-e6182febe65a</webElementGuid>
+      <value>//td[(text() = '1001027908' or . = '1001027908')]</value>
+      <webElementGuid>62d6febb-2e36-4a84-9926-4576d5afc1ce</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

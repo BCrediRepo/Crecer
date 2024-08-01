@@ -34,76 +34,62 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
         2, 3))
 
-WebUI.click(findTestObject('02-Dashboard/lnkTransferenciasInternas'))
+//Ir a transferencias internas, alta transferencia interna origen cuenta
+def menuDesplegable = ["Transferencias Internas"]
+def link = "Alta Transf. Interna Origen Cuenta"
 
-WebUI.click(findTestObject('02-Dashboard/11-Transferencias Internas/lnkAltaTransfInternaOrigenCuenta'))
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.maximizeWindow()
 
+//Ingresa datos (sucursal, id ordenante, importe,cta debito, motivo, id beneficiario)
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtSucursalDestino'), '089')
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDOrdenante'), '1003174696')
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnDrillDownCtaDebito'))
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblCtaDebito'))
-
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/btnDrillDownMotivo'))
-
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblVarios'))
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '15')
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDBeneficiario'), '1003174696')
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
-
-WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
+//Acepto registro y alertas
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.089 M.del Plata Ct')
-
+WebUI.maximizeWindow()
 WebUI.selectOptionByIndex(findTestObject('44-TOB/Verificacion de Firmas/cbxAccion'), 2)
-
 WebUI.click(findTestObject('44-TOB/Verificacion de Firmas/btnAceptar'))
-
 WebUI.verifyElementVisible(findTestObject('44-TOB/Verificacion de Firmas/lblFinalizada'))
 
 Finalizada = WebUI.getText(findTestObject('44-TOB/Verificacion de Firmas/lblFinalizada'))
-
 WebUI.verifyElementVisible(findTestObject('44-TOB/Verificacion de Firmas/lblAutorizada'))
-
 Autorizada = WebUI.getText(findTestObject('44-TOB/Verificacion de Firmas/lblAutorizada'))
-
 assert Finalizada == 'FINALIZADA'
-
 assert Autorizada == 'AUTORIZADA'
 
 //GUARDAR EL NUM DE TXN
 Ft = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblFT'))
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verificacion de txn finalizada
 WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-WebUI.verifyElementVisible(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //VALIDO que la transaccion se haya completado y guardo el FT
-Transaccion1 = WebUI.getText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
+Transaccion = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 // Dividir la cadena por espacios en blanco y tomar el segundo elemento
-def partes = Transaccion1.split('\\s+')
+def partes = Transaccion.split('\\s+')
 def trx1 = partes[2]
-assert Transaccion1.contains('Txn Completa:')
+assert Transaccion.contains('Txn Completa:')
 
 //Cierro las ventanas que ya no se usan y van a interceder con las proximas por tener el mismo nombre
 WebUI.closeWindowTitle('Movimiento de Fondos')
@@ -115,6 +101,7 @@ WebUI.switchToWindowIndex(0)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkPagoTransfInternaPosteo'))
 
 WebUI.switchToWindowTitle('BCCL.E.TINTERNAS.APAGAR')
+WebUI.maximizeWindow()
 
 // Valor específico que estás buscando
 String targetValue = trx1
@@ -164,23 +151,16 @@ while (!encontrado) {
 	}
 }
 
-
+//Acepto registros
+WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/btnAceptarRegistro'))
+//Valido la tx
+assert Transaccion.contains('Txn Completa:') == true
 
-WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
-
-WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-Transaccion2 = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
-
-assert Transaccion2.contains('Txn Completa:') == true
-
-
-//---------------------------------------------------
-//Control Fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -190,4 +170,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

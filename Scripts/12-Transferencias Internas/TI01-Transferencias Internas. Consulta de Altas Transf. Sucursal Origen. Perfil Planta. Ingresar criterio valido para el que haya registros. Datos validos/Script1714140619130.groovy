@@ -28,17 +28,19 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu Transferencias Internas - Consulta de Altas Transf. Internas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransferenciasInternas'))
+def menuDesplegable = ["Transferencias Internas"]
+def link = "Consulta de Altas Transf. Internas"
+
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkConsultadeAltasTransfInternas'))
-
 //Se espera la carga de BCCL.E.CONS.TINT.ALTAS
 WebUI.switchToWindowIndex(1)
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS'), 5)
-WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/pBCCL.E.CONS.TINT.ALTAS'))
+WebUI.maximizeWindow()
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/lblBCCL.E.CONS.TINT.ALTAS'), 5)
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/lblBCCL.E.CONS.TINT.ALTAS'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -52,35 +54,21 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se valida la existencia de objetos en BCCL.E.CONS.TINT.ALTAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'),3)
-WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdReferencia'))
-
-//// Captura el tiempo de finalización
-//long endTime = System.currentTimeMillis()
-//
-////Calcula la diferencia para obtener el tiempo transcurrido
-//long elapsedTime = endTime - startTime
-//
-//println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'),3)
-WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/tdIdOrdenante'))
-
-//---------------------------
+WebUI.waitForElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/lblIdOrdenante'),3)
+WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/lblIdOrdenante'))
+def dato = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/BCCL.E.CONS.TINT.ALTAS/lblIdOrdenante'))
+assert dato.contains('Id Ordenante')
 
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 println TotalRegistros
-//-----------------------------
-//Control de fin de script
+
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

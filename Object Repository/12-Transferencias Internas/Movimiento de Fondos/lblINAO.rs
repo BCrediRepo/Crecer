@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblUSD</name>
+   <name>lblINAO</name>
    <tag></tag>
-   <elementGuidId>1faeac5f-d5e6-4fee-9bbf-169ee0056965</elementGuidId>
+   <elementGuidId>5110aaf8-9469-4f56-87c9-76510124b942</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/div[2]/form[1]/div[4]/table/tbody/tr[2]/td/table/tbody/tr[50]/td[3]/span</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>#dropDownRow14 > td.coloumntddata.coloumntddata_CURRENCYLIST > b</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='dropDownRow14']/td/b</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>b</value>
-      <webElementGuid>242bf728-d675-42bf-8cc4-2d63ac954df4</webElementGuid>
+      <webElementGuid>61aa2f26-eec3-4e04-8bfe-d53af37b0e90</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>USD</value>
-      <webElementGuid>a7537133-dcc1-40c0-a54a-35330509de08</webElementGuid>
+      <webElementGuid>5e77c71f-3875-47cb-b23e-f0aeb4dac5b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;dropDownRow14&quot;)/td[@class=&quot;coloumntddata coloumntddata_CURRENCYLIST&quot;]/b[1]</value>
-      <webElementGuid>327734ef-f2aa-4bec-96cd-589bd0619cd8</webElementGuid>
+      <webElementGuid>cdc6acc4-0c27-4555-8756-51dda55b89ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='dropDownRow14']/td/b</value>
-      <webElementGuid>b5502153-873e-4e73-b4b2-ba4d78753bd5</webElementGuid>
+      <webElementGuid>f427827c-a3b3-4534-bfeb-9b95e486dd72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Convenio'])[1]/following::b[1]</value>
-      <webElementGuid>3ee9c42b-1e29-4abf-9231-1ff72c436c43</webElementGuid>
+      <webElementGuid>72940fad-fd85-4072-88d8-59aa3605d81b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='USC'])[1]/following::b[1]</value>
-      <webElementGuid>cd52264a-1b00-4619-8f35-87fa593e5dae</webElementGuid>
+      <webElementGuid>cc23ddc7-0116-489f-85ef-49acf4dd9471</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Estadounidense'])[1]/preceding::b[1]</value>
-      <webElementGuid>c52e183b-fa3a-4857-ad02-99fac24be5cf</webElementGuid>
+      <webElementGuid>8584dfd8-fc67-4eeb-86d7-49b5fd6a4937</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='UYU'])[1]/preceding::b[1]</value>
-      <webElementGuid>9df225a1-a248-4219-befb-7d42a818168c</webElementGuid>
+      <webElementGuid>c4018fdc-c0c9-41bc-bcb7-ce69687db19c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='USD']/parent::*</value>
-      <webElementGuid>5350e1ce-3892-4f60-acb1-4c897d4e159d</webElementGuid>
+      <webElementGuid>b4b23cdf-ca65-4049-b677-ef8249958fae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[15]/td/b</value>
-      <webElementGuid>874cda0f-5763-4df3-95fb-469cfe1bd023</webElementGuid>
+      <webElementGuid>03688007-fe24-47e4-8bdf-266e47f14bd3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//b[(text() = 'USD' or . = 'USD')]</value>
-      <webElementGuid>19b5606a-7684-463b-adfa-ff7f4d848a48</webElementGuid>
+      <webElementGuid>2ad91406-9da6-4619-8145-0537afb6247e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
