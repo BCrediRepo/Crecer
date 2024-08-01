@@ -6,15 +6,15 @@
    <elementGuidId>c100f044-b395-45b9-936e-b700f2ec06dc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Aut/Borra/Rev registro segun estado&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Aut/Borra/Rev registro segun estado&quot;]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>a3382960-f5a9-44d6-a763-1e067b691e92</webElementGuid>
+      <webElementGuid>adc804ec-27fa-44e8-9f05-8c2f83c364ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <type>Main</type>
       <value>../plaf/images/bccl/tools/txnaction.gif
 															</value>
-      <webElementGuid>8c32726a-6b9d-4058-b8ce-8ca16a99ee32</webElementGuid>
+      <webElementGuid>bab1d4a5-f385-4eda-aa3b-74f3a220b3df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Aut/Borra/Rev registro segun estado</value>
-      <webElementGuid>68704821-ec1b-495e-877f-3f0a4e0844ba</webElementGuid>
+      <webElementGuid>965f85a0-e101-4f05-8620-517c241c210a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Aut/Borra/Rev registro segun estado</value>
-      <webElementGuid>c8fcbe29-881f-475d-a6ce-39aa006faabe</webElementGuid>
+      <webElementGuid>c5a9b26b-462b-45a2-9466-dad60040467f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[3]/a[1]/img[1]</value>
-      <webElementGuid>5eeb6ccb-1947-4d05-8118-a5257ca21502</webElementGuid>
+      <webElementGuid>1aca5980-7761-4fef-bd51-36ce89dca76e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[3]/a/img</value>
-      <webElementGuid>772aec0b-ac4d-4607-a4fd-cecd02d3c9e9</webElementGuid>
+      <webElementGuid>be66fd48-b682-485b-a9f2-896286592250</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Aut/Borra/Rev registro segun estado']</value>
-      <webElementGuid>a5b3bd26-b40b-4346-9c6c-b990e8450ab0</webElementGuid>
+      <webElementGuid>8d28e834-7b21-4ca1-a557-2cea88c37856</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/a/img</value>
-      <webElementGuid>6ab4aaf2-0327-473b-b573-4c5c1509d634</webElementGuid>
+      <webElementGuid>86bfa4bb-cc87-4fa5-bd95-92afb58032a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,6 +88,6 @@
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/tools/txnaction.gif
 															' and @alt = 'Aut/Borra/Rev registro segun estado' and @title = 'Aut/Borra/Rev registro segun estado']</value>
-      <webElementGuid>c1a194ef-cfd6-476f-a582-4750fbb79f01</webElementGuid>
+      <webElementGuid>71c2a7d3-1c79-411b-b303-9a9c1e8e8f02</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

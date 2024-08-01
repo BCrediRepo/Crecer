@@ -18,55 +18,101 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
 
-//Configuracion de ambiente
+
+def buscarElementoEnTabla(String variable1, String variable2) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell1 = row.findElements(By.tagName("td"))[2]
+		String cellText1 = cell1.getText()
+		WebElement cell2 = row.findElements(By.tagName("td"))[6]
+		String cellText2 = cell2.getText()
+		if (cellText1.equals(variable1)&&cellText2.equals(variable2)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[19]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
+
+def ValidarElementoEnTabla(String variable1, String variable2) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell1 = row.findElements(By.tagName("td"))[0]
+		assert cell1.getText().contains(variable1)
+		WebElement cell2 = row.findElements(By.tagName("td"))[1]
+		assert cell2.getText().contains(variable2)
+		return true
+	}
+	return false
+}
+
+//Configuracion de ambiente y login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-//Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 64), findTestData('MainData/Users').getValue(
         2, 64))
 
 WebUI.maximizeWindow()
 
-//Se accede al menu 
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Vamos a la tabla ENQ BCCL.E.VISION.PAGO.TJ
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.VISION.PAGO.TJ')
-
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana de busqueda de consulta
 WebUI.switchToWindowTitle('BCCL.E.VISION.PAGO.TJ')
 
-//Seteo de Datos "Persona"
+//Seteo los datos del script
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Persona', '1000000011') //1004140888
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Persona', '1000922908')
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Seleccionar Ejecutar
-WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkEjecutar'))
+//validamos en la tabla que sea una tarjeta CABAL de tipo EMPRESA
+def Producto = "CB"
+def TipoCuenta= "EMPRESA"
+def encontrado = false
+while (!encontrado) {
+	encontrado = buscarElementoEnTabla(Producto,TipoCuenta)
+	if (!encontrado) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnSiguiente'))
+		WebUI.delay(2)
+	}
+}
 
-//Seleccionar Pagar
-WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lnkPagar'))
-
-//Switch a la ventana de busqueda de seleccion de pago
+//Cargamos los valores EFECTIVO y 50
 WebUI.switchToWindowTitle('Pago de Tarjetas S/ Cod Barra. - Fil.042 Saavedra')
-
-//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), 6)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), '1')
-
-//WebUI.waitForElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), 6)
-WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), '1')
-
-WebUI.click(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/imgAceptarRegistro'))
-
-//Switch a la ventana de pago realizado
+WebUI.selectOptionByIndex(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/selectTipo'), '3')
+WebUI.setText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/txtImporte'), '50')
+WebUI.switchToFrame(findTestObject('Object Repository/00-Utils/04-Frames/frmInferior'), 3)
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert TxnInicial.contains('Txn Completa')
+def parts = TxnInicial.tokenize(' ')
+GlobalVariable.vTxn = parts[2]
 WebUI.switchToWindowTitle('BCCL.E.EST.PAGO.TARJ')
 
-//Validacion del Pago
-WebUI.verifyElementVisible(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'))
+//Validamos que el pago de la tarjeta haya sido autorizado
+def Descripcion = "CABAL"
+def Estado = "AUTORIZADA"
 
-def noRec = WebUI.getText(findTestObject('Object Repository/14-Recaudaciones/01-BCCL.E.VISION.PAGO.TJ/lblPAGODETARJETACABAL'))
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+List<WebElement> rows = table.findElements(By.tagName("tr"))
+for (WebElement row : rows) {
+	WebElement cell3 = row.findElements(By.tagName("td"))[0]
+	WebElement cell4 = row.findElements(By.tagName("td"))[1]
+	
+	assert cell3.getText().contains(Descripcion)
+	assert cell4.getText().equals(Estado)
+	
+}
 
-assert noRec.contains('PAGO DE TARJETA:') //---------------------------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

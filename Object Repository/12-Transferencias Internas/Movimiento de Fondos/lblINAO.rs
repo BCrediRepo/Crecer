@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblPAGODETARJETACABAL</name>
+   <name>lblINAO</name>
    <tag></tag>
-   <elementGuidId>c8fa1863-2cf3-4460-84e4-3cd142f78b59</elementGuidId>
+   <elementGuidId>5110aaf8-9469-4f56-87c9-76510124b942</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#r1 > td</value>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/div[2]/form[1]/div[4]/table/tbody/tr[2]/td/table/tbody/tr[50]/td[3]/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='r1']/td</value>
+         <key>CSS</key>
+         <value>#dropDownRow14 > td.coloumntddata.coloumntddata_CURRENCYLIST > b</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>f74877df-d645-4e5b-b5d5-fe1d358f7858</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>align</name>
-      <type>Main</type>
-      <value>right</value>
-      <webElementGuid>2d27c1f9-628e-4947-86f4-61666e5e0670</webElementGuid>
+      <value>b</value>
+      <webElementGuid>61aa2f26-eec3-4e04-8bfe-d53af37b0e90</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>PAGO DE TARJETA: CABAL</value>
-      <webElementGuid>4bd15551-764f-405a-a913-7c1c2915fa41</webElementGuid>
+      <value>USD</value>
+      <webElementGuid>5e77c71f-3875-47cb-b23e-f0aeb4dac5b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;r1&quot;)/td[1]</value>
-      <webElementGuid>d57921ac-c4d5-4591-88e7-eb2e9daf63dd</webElementGuid>
+      <value>id(&quot;dropDownRow14&quot;)/td[@class=&quot;coloumntddata coloumntddata_CURRENCYLIST&quot;]/b[1]</value>
+      <webElementGuid>cdc6acc4-0c27-4555-8756-51dda55b89ce</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='r1']/td</value>
-      <webElementGuid>84ed7c52-8a4b-4ca9-8aaf-f8febeb84575</webElementGuid>
+      <value>//tr[@id='dropDownRow14']/td/b</value>
+      <webElementGuid>f427827c-a3b3-4534-bfeb-9b95e486dd72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ESTADO'])[1]/following::td[1]</value>
-      <webElementGuid>32cb1e4a-368c-429e-a76d-38136b564792</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Convenio'])[1]/following::b[1]</value>
+      <webElementGuid>72940fad-fd85-4072-88d8-59aa3605d81b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion'])[1]/following::td[1]</value>
-      <webElementGuid>0c15af20-16f8-4383-b779-8b4aaa1e71ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='USC'])[1]/following::b[1]</value>
+      <webElementGuid>cc23ddc7-0116-489f-85ef-49acf4dd9471</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='NO AUTORIZADA'])[1]/preceding::td[1]</value>
-      <webElementGuid>51c30701-72ce-4b04-805d-d61754db8527</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Estadounidense'])[1]/preceding::b[1]</value>
+      <webElementGuid>8584dfd8-fc67-4eeb-86d7-49b5fd6a4937</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='PAGO DE TARJETA: CABAL']/parent::*</value>
-      <webElementGuid>b353178a-e3a4-460d-9f59-a75bd63cdbf6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='UYU'])[1]/preceding::b[1]</value>
+      <webElementGuid>c4018fdc-c0c9-41bc-bcb7-ce69687db19c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='USD']/parent::*</value>
+      <webElementGuid>b4b23cdf-ca65-4049-b677-ef8249958fae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/table/tbody/tr/td</value>
-      <webElementGuid>5b602a22-8d56-4a3a-8831-f389980ba888</webElementGuid>
+      <value>//tr[15]/td/b</value>
+      <webElementGuid>03688007-fe24-47e4-8bdf-266e47f14bd3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'PAGO DE TARJETA: CABAL' or . = 'PAGO DE TARJETA: CABAL')]</value>
-      <webElementGuid>454754d1-6b41-4d0a-b1ae-8d3843f16235</webElementGuid>
+      <value>//b[(text() = 'USD' or . = 'USD')]</value>
+      <webElementGuid>2ad91406-9da6-4619-8145-0537afb6247e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>REVISAR-Alta con debito en cuenta. Campos calculados. Comision bonificada. Operacion en Dolares</name>
+   <name>TI12-Alta con debito en cuenta. Campos calculados. Comision bonificada. Operacion en Dolares</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5377459b-74b8-41d9-b17a-c39041794ea7</testCaseGuid>

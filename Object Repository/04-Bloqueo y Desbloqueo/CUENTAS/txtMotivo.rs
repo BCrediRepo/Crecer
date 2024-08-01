@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtPorcentajeBonificaciondeComision</name>
+   <name>txtMotivo</name>
    <tag></tag>
-   <elementGuidId>7074f5d2-b82a-4979-89d2-f058b412f357</elementGuidId>
+   <elementGuidId>a78d7c45-05ee-4212-86a6-83c40a57af4d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='fieldName:L.AC.MOT.BLO']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='fieldName:L.G.COM.BON.PER']</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>f334f317-2a00-4de9-846a-eeff0c33207f</webElementGuid>
+      <webElementGuid>91c09cc4-6cca-4d8f-bffa-1e5fa48bf606</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,31 +29,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>af036841-84dd-4428-94b6-d41a0a8a5498</webElementGuid>
+      <webElementGuid>451f34d9-2c9c-4242-bc45-ca4d1d911f9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>6</value>
-      <webElementGuid>ebeda3b9-334f-4da8-8b8a-8dfdbc5b9dd4</webElementGuid>
+      <value>2</value>
+      <webElementGuid>a5f4ce74-bfd2-4a39-899c-0e84b58f2bb9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:L.G.COM.BON.PER</value>
-      <webElementGuid>aa9a327b-c82e-4c59-8a7f-ac34f87ad5c5</webElementGuid>
+      <value>fieldName:L.AC.MOT.BLO</value>
+      <webElementGuid>6e74882e-1fbd-427f-aa20-92249cb79c04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:L.G.COM.BON.PER</value>
-      <webElementGuid>2a1aae88-e04d-4bf8-bc63-191d32251b13</webElementGuid>
+      <value>fieldName:L.AC.MOT.BLO</value>
+      <webElementGuid>f774cb46-7715-4eb5-8b59-0d719c5cbce1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,23 +61,23 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>1fec4d8c-8f90-4f9e-a943-ae58c45ccf14</webElementGuid>
+      <webElementGuid>244f912a-36b1-4ee7-bbcd-6681102c3f41</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_FUNDSTRANSFER dealbox_FUNDSTRANSFER_POSTEOTINTERNAALTA</value>
-      <webElementGuid>d37157cd-af34-417f-b510-c4a039a9a6f9</webElementGuid>
+      <value>dealbox dealbox_ACLOCKEDEVENTS dealbox_ACLOCKEDEVENTS_BCCLACBLOQPAR</value>
+      <webElementGuid>212dba11-cb66-4dc2-a562-08164ff642d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>6</value>
-      <webElementGuid>c44455f1-433f-4472-ac46-3b2369b9d832</webElementGuid>
+      <value>2</value>
+      <webElementGuid>463a63d8-de21-459c-bf89-39328c67be95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,23 +85,31 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>f7fc0243-8956-4d2c-b595-9715cf1df437</webElementGuid>
+      <webElementGuid>22f017bc-2b02-4002-9e81-cf348dd2b769</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>dropdown</name>
+      <type>Main</type>
+      <value>Y</value>
+      <webElementGuid>9851d30f-42d8-47e7-9cd5-ff5e45249399</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>enrifieldname</name>
       <type>Main</type>
-      <value>enri_L.G.COM.BON.PER</value>
-      <webElementGuid>4c36266f-48ac-49b4-904b-ea1659057540</webElementGuid>
+      <value>enri_L.AC.MOT.BLO</value>
+      <webElementGuid>a22c20ec-ba33-4388-93f5-a5ee4e1f2c1f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'L.G.COM.BON.PER','issueToken');</value>
-      <webElementGuid>06ec2e68-970b-4eab-996b-501ee5b5ce9f</webElementGuid>
+      <value>invokeHelp(event,'L.AC.MOT.BLO','issueToken');</value>
+      <webElementGuid>bd09bb13-fdb8-4035-86c4-8411988d5ab5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,54 +117,54 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>1bc7dc8c-58f5-4e3a-bd7a-436bb2af0bb0</webElementGuid>
+      <webElementGuid>2906753c-36cf-416b-be0d-2688db5fa27b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('L.G.COM.BON.PER','','','issueToken')</value>
-      <webElementGuid>19a0a2bc-7e14-4c67-ae2f-367928d14ee2</webElementGuid>
+      <value>javascript:help('L.AC.MOT.BLO','','','issueToken')</value>
+      <webElementGuid>7902d074-15ca-47f8-8405-23a3a470d620</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:L.G.COM.BON.PER&quot;)</value>
-      <webElementGuid>02dd44d7-00c4-4098-846d-79eee496eb24</webElementGuid>
+      <value>id(&quot;fieldName:L.AC.MOT.BLO&quot;)</value>
+      <webElementGuid>90e63f6c-1d78-4cde-a58e-f17781afe348</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:L.G.COM.BON.PER']</value>
-      <webElementGuid>e13a61a6-3501-4f41-955a-85a32c24ef9e</webElementGuid>
+      <value>//input[@id='fieldName:L.AC.MOT.BLO']</value>
+      <webElementGuid>f10f7260-40ea-4930-aa25-9cbc0ca05eff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[14]/td[3]/input</value>
-      <webElementGuid>fc98ad56-8b65-48b0-a208-bf17f522f696</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[3]/td[3]/input</value>
+      <webElementGuid>e7e6e0b4-b553-466a-81b2-a0269afa407a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[14]/td[3]/input</value>
-      <webElementGuid>401cc21e-111a-4950-9090-0e9d805892a2</webElementGuid>
+      <value>//tr[3]/td[3]/input</value>
+      <webElementGuid>1347f95f-6101-4b01-a8a7-c4956fe5966f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:L.G.COM.BON.PER' and @name = 'fieldName:L.G.COM.BON.PER' and @type = 'text']</value>
-      <webElementGuid>d2ced401-ddd3-4b39-a3bc-7a3398c61482</webElementGuid>
+      <value>//input[@id = 'fieldName:L.AC.MOT.BLO' and @name = 'fieldName:L.AC.MOT.BLO' and @type = 'text']</value>
+      <webElementGuid>b6860b04-ce19-42a9-8580-7fec0bd70d10</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnAceptarRegistro</name>
+   <name>btnDeleteValue</name>
    <tag></tag>
-   <elementGuidId>3af8d5c3-35c2-4ef0-b2ce-edce6cfe6f9d</elementGuidId>
+   <elementGuidId>e99d9a69-b9a0-4762-8030-53ed11780233</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>img[alt=&quot;Aceptar el registro&quot;]</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
+         <value>//table[@id='tab1']/tbody/tr[95]/td[2]/a[2]/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,72 +22,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>99b13116-8b1a-4fab-affb-33cf518c8e1d</webElementGuid>
+      <webElementGuid>a8992d8e-4110-4af4-9627-528024c69cfc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ascell ascell_ACCOUNT</value>
+      <webElementGuid>657496d7-23ca-4919-8b1c-a7ebcd442352</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>../plaf/images/bccl/tools/txncommit.gif
-															</value>
-      <webElementGuid>9d1a16e0-d00a-4a2d-ada3-8c4d438d432d</webElementGuid>
+      <value>../plaf/images/bccl/deal/mvdelete.gif</value>
+      <webElementGuid>62206ab2-f48b-4bb5-8b7f-899e7bfc2ad1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
-      <value>Aceptar el registro</value>
-      <webElementGuid>e3560773-d615-441d-aa6a-c487571b4d7b</webElementGuid>
+      <value>Delete Value</value>
+      <webElementGuid>33a1f2ee-44a9-4df8-a928-1eac198817a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Aceptar el registro</value>
-      <webElementGuid>357d09e1-3113-49ba-b7e5-dc05489026be</webElementGuid>
+      <value>Delete Value</value>
+      <webElementGuid>25c51d35-57b2-4cdc-8a6b-f9ce69de7f0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]</value>
-      <webElementGuid>961d82d7-e4f1-49d4-b3dd-f62e6dc4ec4d</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[95]/td[@class=&quot;action_container action_container_ACCOUNT&quot;]/a[2]/img[@class=&quot;ascell ascell_ACCOUNT&quot;]</value>
+      <webElementGuid>f42e504a-e3f2-4716-9ba5-30e98228eb54</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td/a/img</value>
-      <webElementGuid>a3362e38-6ea4-48d1-a850-498f42b7c470</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[95]/td[2]/a[2]/img</value>
+      <webElementGuid>b203fc3e-aee3-42b5-a4eb-b4f11343d07c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>//img[@alt='Aceptar el registro']</value>
-      <webElementGuid>acf945ef-2bfe-4d8e-98d8-cf9658c0549f</webElementGuid>
+      <value>(//img[@alt='Delete Value'])[7]</value>
+      <webElementGuid>fe7900ec-6e76-4fc6-af67-8cecfb31628d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//a/img</value>
-      <webElementGuid>1e101794-9cff-470b-b38a-5ca26a0dd920</webElementGuid>
+      <value>//tr[95]/td[2]/a[2]/img</value>
+      <webElementGuid>5f5392fa-1a64-4bab-9931-1eaa68af031d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = '../plaf/images/bccl/tools/txncommit.gif
-															' and @alt = 'Aceptar el registro' and @title = 'Aceptar el registro']</value>
-      <webElementGuid>4729b4fd-bffc-413b-9266-b43b5cd2d8bb</webElementGuid>
+      <value>//img[@src = '../plaf/images/bccl/deal/mvdelete.gif' and @alt = 'Delete Value' and @title = 'Delete Value']</value>
+      <webElementGuid>55f5e3d3-7a46-425c-9694-b9c96a9abf14</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

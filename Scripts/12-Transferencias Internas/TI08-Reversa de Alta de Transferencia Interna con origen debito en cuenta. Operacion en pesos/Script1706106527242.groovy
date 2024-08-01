@@ -32,69 +32,54 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 39), findTestData('MainData/Users').getValue(
         2, 39))
 
-WebUI.click(findTestObject('02-Dashboard/lnkTransferenciasInternas'))
+//Ir a transferencias internas, alta transferencia interna origen cuenta
+def menuDesplegable = ["Transferencias Internas"]
+def link = "Alta Transf. Interna Origen Cuenta"
 
-WebUI.click(findTestObject('02-Dashboard/11-Transferencias Internas/lnkAltaTransfInternaOrigenCuenta'))
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.maximizeWindow()
 
+//Ingresa datos (sucursal, id ordenante, importe,cta debito, motivo, id beneficiario)
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtSucursalDestino'), '001')
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDOrdenante'), '1003174696')
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnDrillDownCtaDebito'))
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblCtaDebito'))
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/btnDrillDownMotivo'))
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblVarios'))
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDBeneficiario'), '1003194990')
-
 WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'))
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '100')
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
-
-WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
+//Acepto registro y alertas
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.089 M.del Plata Ct')
-
+WebUI.maximizeWindow()
 WebUI.selectOptionByIndex(findTestObject('44-TOB/Verificacion de Firmas/cbxAccion'), 2)
-
 WebUI.click(findTestObject('44-TOB/Verificacion de Firmas/btnAceptar'))
-
 WebUI.verifyElementVisible(findTestObject('44-TOB/Verificacion de Firmas/lblFinalizada'))
 
 Finalizada = WebUI.getText(findTestObject('44-TOB/Verificacion de Firmas/lblFinalizada'))
-
 WebUI.verifyElementVisible(findTestObject('44-TOB/Verificacion de Firmas/lblAutorizada'))
-
 Autorizada = WebUI.getText(findTestObject('44-TOB/Verificacion de Firmas/lblAutorizada'))
-
 assert Finalizada == 'FINALIZADA'
-
 assert Autorizada == 'AUTORIZADA'
 
 //GUARDAR EL NUM DE TXN
 Ft = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblFT'))
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Verificacion de txn finalizada
 WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-WebUI.verifyElementVisible(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
-
-Completada = WebUI.getText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lblTxnCoimpleta'))
-
+WebUI.maximizeWindow()
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+Completada = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert Completada.contains('Txn Completa:') 
-
 WebUI.switchToWindowIndex(0)
 
 //Ingreso el FT a comparar
@@ -107,15 +92,14 @@ WebUI.switchToWindowIndex(4)
 //Maximizamos
 WebUI.maximizeWindow()
 
-//VALIDO LA CURRENCY
+//Valido divisa ARS
 WebUI.verifyElementVisible(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblCurrency'))
-
 currencyVal = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/lblCurrency'))
-
 assert currencyVal.contains('ARS')
 
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.REVE
+//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.REVE para reversar un registro
 WebUI.switchToWindowIndex(0)
+WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.CONS.REVE')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
@@ -124,6 +108,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 ///Abre la pestaña BCCL.E.EB.CONS.REVE
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
+WebUI.maximizeWindow()
 
 //Seteo de Datos "Usuario", "Nro. Contrato"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -149,23 +134,20 @@ WebUI.click(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/bt
 WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnReversarRegistro'))
 
 //Acepto alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'),6)
-WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa reversada
-WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'))
-def element5 = WebUI.getText(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'))
-assert element5.contains('Txn Completa:')
+assert Completada.contains('Txn Completa:')
 
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se inserta el numero de transaccion en el input "Nota de Debito por Ajuste"
+//Ingreso numero de transaccion en "Nota de Debito por Ajuste"
 WebUI.setText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/inputNotadeDebitoporAjuste'), Ft)
 
-//Se clickea en btn "Ver Un Registro"
-WebUI.click(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/btnVerunRegistro'))
+//Click  "Ver Un Registro"
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Toma screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -178,17 +160,11 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se realiza un assert del estado del registro "REVE"
 WebUI.waitForElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'), 3)
-
 WebUI.verifyElementVisible(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'))
+def REVERSA = WebUI.getText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'))
+assert REVERSA.contains('REVE')
 
-def element2 = WebUI.getText(findTestObject('38-Ajustes Monetarios/ENQ BCCL.E.EB.CONS.REVE/lblEstadodelRegistroREVE'))
-
-assert element2.contains('REVE')
-
-
-//---------------------------------------------------
-//Control Fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -198,4 +174,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

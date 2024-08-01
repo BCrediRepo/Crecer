@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblUSD</name>
+   <name>lblIdOrdenante</name>
    <tag></tag>
-   <elementGuidId>1faeac5f-d5e6-4fee-9bbf-169ee0056965</elementGuidId>
+   <elementGuidId>eb26a447-9975-4d99-8c57-37d44257990b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#dropDownRow14 > td.coloumntddata.coloumntddata_CURRENCYLIST > b</value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;columnHeaderText2&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='dropDownRow14']/td/b</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +20,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>b</value>
-      <webElementGuid>242bf728-d675-42bf-8cc4-2d63ac954df4</webElementGuid>
+      <value>td</value>
+      <webElementGuid>59ecf364-e023-4783-af01-0aaeabea660c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>USD</value>
-      <webElementGuid>a7537133-dcc1-40c0-a54a-35330509de08</webElementGuid>
+      <value>1001027908</value>
+      <webElementGuid>12c35013-d4f2-467e-a559-ea965b042bea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;dropDownRow14&quot;)/td[@class=&quot;coloumntddata coloumntddata_CURRENCYLIST&quot;]/b[1]</value>
-      <webElementGuid>327734ef-f2aa-4bec-96cd-589bd0619cd8</webElementGuid>
+      <value>id(&quot;r1&quot;)/td[2]</value>
+      <webElementGuid>43950eb7-6b84-46cf-8ea2-d7ef157b6503</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='dropDownRow14']/td/b</value>
-      <webElementGuid>b5502153-873e-4e73-b4b2-ba4d78753bd5</webElementGuid>
+      <value>//tr[@id='r1']/td[2]</value>
+      <webElementGuid>18a06ec7-3701-4ae2-b781-0d76be45857b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Convenio'])[1]/following::b[1]</value>
-      <webElementGuid>3ee9c42b-1e29-4abf-9231-1ff72c436c43</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TI19297000000051'])[1]/following::td[1]</value>
+      <webElementGuid>c82e07f6-67c3-4e99-8d18-e01fb5f05dfa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='USC'])[1]/following::b[1]</value>
-      <webElementGuid>cd52264a-1b00-4619-8f35-87fa593e5dae</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hora'])[1]/following::td[2]</value>
+      <webElementGuid>6568caa9-09e2-4a27-9331-7c7388e00cfa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dolar Estadounidense'])[1]/preceding::b[1]</value>
-      <webElementGuid>c52e183b-fa3a-4857-ad02-99fac24be5cf</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Denom.: MIÑO PABLO HECTOR - CUI: 20223414029 - Doc: 22341402'])[1]/preceding::td[1]</value>
+      <webElementGuid>d7423c3b-5903-41f1-93fc-34098fd384fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='UYU'])[1]/preceding::b[1]</value>
-      <webElementGuid>9df225a1-a248-4219-befb-7d42a818168c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS'])[1]/preceding::td[5]</value>
+      <webElementGuid>b170b4e3-7d5a-4846-9460-a07cdfed968e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='USD']/parent::*</value>
-      <webElementGuid>5350e1ce-3892-4f60-acb1-4c897d4e159d</webElementGuid>
+      <value>//*/text()[normalize-space(.)='1001027908']/parent::*</value>
+      <webElementGuid>b96711f7-2a55-42a4-b1c5-508de8901f34</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[15]/td/b</value>
-      <webElementGuid>874cda0f-5763-4df3-95fb-469cfe1bd023</webElementGuid>
+      <value>//div[2]/div/table/tbody/tr/td[2]</value>
+      <webElementGuid>9d50dabb-75fa-416d-8c98-31868dedc081</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//b[(text() = 'USD' or . = 'USD')]</value>
-      <webElementGuid>19b5606a-7684-463b-adfa-ff7f4d848a48</webElementGuid>
+      <value>//td[(text() = '1001027908' or . = '1001027908')]</value>
+      <webElementGuid>62d6febb-2e36-4a84-9926-4576d5afc1ce</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

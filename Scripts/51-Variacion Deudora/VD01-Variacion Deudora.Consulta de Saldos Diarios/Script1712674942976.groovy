@@ -69,19 +69,14 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 def element = WebUI.getText(findTestObject('Object Repository/52-Variacion Deudora/Movimientos por Fecha de Cuentas/lblNro.deCuenta'))
 assert element.contains('Nro. de Cuenta')
 
-//---------------------------
-
+//---------------------------------------------------------------------------------------------------------------------
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 println TotalRegistros
-//-----------------------------
-
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
