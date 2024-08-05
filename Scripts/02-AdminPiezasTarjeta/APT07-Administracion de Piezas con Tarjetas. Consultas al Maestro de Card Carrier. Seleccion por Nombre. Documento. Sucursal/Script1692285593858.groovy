@@ -24,21 +24,16 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se accede al menu ?302
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Switch a la ventana Temenos T24
 WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizamos
 WebUI.maximizeWindow()
+
+//NAVEGACION DASHBOARD?
 
 //Click en admin de piezas con tarjetas
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/spanAdministracion de Piezas con Tarjetas'))
@@ -46,39 +41,25 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos 
 //Click en Consultas al maestro Card-Carrier
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/spanConsultas al Maestro de Card-Carrier'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Click en Seleccion por nombre/doc/suc
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/lnkSeleccion por Nombre Documento Sucursal'))
 
 //Switch a la ventana BCCL.E.AP.ENQ.NOMBRE.DOC
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'RODRIGUEZ ROCIO')
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Ejecutar"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lnkEjecutar'))
-
-//ASSERT
+//Validacion de Marca
 WebUI.waitForElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblMarca'), 6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblMarca'))
-
 def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblMarca'))
-
 assert element.contains('CABAL')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -90,5 +71,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

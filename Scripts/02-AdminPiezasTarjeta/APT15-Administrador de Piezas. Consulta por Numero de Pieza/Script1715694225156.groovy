@@ -23,42 +23,28 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Administracion de Piezas con Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
-//Seleccionar "Consultas al Maestro de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier (1)'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Click en "Consulta por Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkConsultaPorCard-Carrier'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
+link = "Consulta por Card-Carrier"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.PIEZAS"
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
-
-//Maximizar pantalla
 WebUI.maximizeWindow()
 
 //Setear "Nro. de pieza"
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), '0000000001')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), '0000000001')
 
 //Seleccionar "Boton Ver un Registro"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnVerRegistro'))
-
-//Verificar "Estado"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEstado'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Validar "Estado"
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEstado'))
 estado = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEstado'))
 assert estado == "090"
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

@@ -78,7 +78,7 @@ assert Transaccion1.contains('Txn Completa:')
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtImputaciondeSuscripNOCOMSuc-PR'), trx1)
 
 //Seleccionar "boton VerRegistro"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/02-Carga Manual de Card-Carrier No Encontrado/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Verificar "073"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/lblSucursalDestino'))

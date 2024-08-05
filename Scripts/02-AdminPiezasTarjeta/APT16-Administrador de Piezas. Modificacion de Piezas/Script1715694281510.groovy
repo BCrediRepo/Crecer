@@ -16,6 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -23,108 +26,68 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Administracion de Piezas con Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
-//Seleccionar "Consultas al Maestro de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier (1)'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Seleccion por Nombre / Documento / Sucursal"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionporNombreDocumentoSucursal'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
+link = "Seleccion por Nombre / Documento / Sucursal"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
 //Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Definir Primera pieza
-TestObject primeraPieza = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblPrimeraPieza')
+//Selecciono una pieza de la tabla con estado 010 para luego modificarla
+def estadoValor = "010"
+def buscarElementoEnTabla(String estadoValor, String numPieza) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[7]
+		String cellText = cell.getText()
+		if (cellText.equals(estadoValor)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[0]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			numPieza = lnkElement.getText()
+			return true
+		}
+	}
+	return false
+}
 
-//Almacenar ValorPrimeraPieza
-String valorPrimeraPieza = WebUI.getText(primeraPieza)
+/*
+def encontrado = false
+def numPieza
+while (!encontrado) {
+	encontrado = buscarElementoEnTabla(estadoValor, numPieza)
+	if (!encontrado) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnSiguiente'))
+		WebUI.delay(2)
+	}
+}
 
-//Definir Segunda pieza
-TestObject segundaPieza = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblSegundaPieza')
 
-//Capturar elemento y almacenar en una variable
-String valorSegundaPieza = WebUI.getText(segundaPieza)
+//Cambiar ventana principal
+WebUI.switchToWindowIndex(0)
 
-//Definir Tercera pieza
-TestObject terceraPieza = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblTerceraPieza')
-
-//Capturar elemento y almacenar en una variable
-String valorTerceraPieza = WebUI.getText(terceraPieza)
-
-//Definir Primer estado
-TestObject primerEstado = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblPrimerEstado')
-
-//Almacenar ValorPrimerEstado
-String valorPrimerEstado = WebUI.getText(primerEstado)
-
-//Definir Segundo estado
-TestObject segundoEstado = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblSegundoEstado')
-
-//Capturar elemento y almacenar en una variable
-String valorSegundoEstado = WebUI.getText(segundoEstado)
-
-//Definir Tercer estado
-TestObject tercerEstado = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblTercerEstado')
-
-//Capturar elemento y almacenar en una variable
-String valorTercerEstado = WebUI.getText(tercerEstado)
-
-//Definir Primera Marca
-TestObject primeraMarca = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblPrimeraMarca')
-
-//Almacenar valor Primera Marca
-String valorPrimeraMarca = WebUI.getText(primeraMarca)
-
-//Definir Segunda Marca
-TestObject segundaMarca = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblSegundaMarca')
-
-//Almacenar valor Segunda Marca
-String valorSegundaMarca = WebUI.getText(segundaMarca)
-
-//Definir Tercera Marca
-TestObject terceraMarca = findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblTerceraMarca')
-
-//Almacenar valor Tercera Marca
-String valorTerceraMarca = WebUI.getText(terceraMarca)
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Cambiar ventana "T24 - Fil.043 Villa Mitre"
-WebUI.switchToWindowTitle('T24 - Fil.043 Villa Mitre')
-
-//Seleccionar "Modificaciones sobre Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkModificacionesSobreCard-Carrier'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Modificacion datos de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/05-Modificaciones sobre Card-Carrier/lnkModificacionDatosdeCard-Carrier'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Modificaciones sobre Card-Carrier"]
+link = "Modificacion datos de Card-Carrier"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.PIEZAS"
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
-
-//Maximizar pantalla
 WebUI.maximizeWindow()
+
+//Modificamos el numero de pieza elegido
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), numPieza)
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
+
+
 
 if (valorPrimerEstado.equals('010') && valorPrimeraMarca.equals('CABAL')) {
 	WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), valorPrimeraPieza)
@@ -132,8 +95,6 @@ if (valorPrimerEstado.equals('010') && valorPrimeraMarca.equals('CABAL')) {
 	//Screenshot
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	
-	//Seleccionar "Boton Modificar Registro"
-	WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnModificarRegistro'))
 	
 	//Setear Marca VISA
 	WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtMARCA'), 'VISA')
@@ -221,7 +182,8 @@ if (valorPrimerEstado.equals('010') && valorPrimeraMarca.equals('CABAL')) {
 		}
 	}
 }
-
+*/
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

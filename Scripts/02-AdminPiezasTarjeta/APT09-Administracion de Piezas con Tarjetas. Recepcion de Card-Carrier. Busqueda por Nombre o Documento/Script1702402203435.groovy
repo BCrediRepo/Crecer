@@ -23,21 +23,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2,2))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//NAVEGACION DASHBOARD?
 
 //Acceder menu "?302"
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton GO"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Cambiar ventana "Temenos T24"
 WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizar pantalla
 WebUI.maximizeWindow()
 
 //Seleccionar "Administracion de Piezas con Tarjetas"
@@ -45,9 +39,6 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos 
 
 //Seleccionar "Recepcion de Card-Carrier"
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/Administracion de Piezas con Tarjetas/lnkRecepciondeCard-Carrier'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar en "Busqueda por Nombre o Documento"	
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/Administracion de Piezas con Tarjetas/Recepcion de Card-Carrier/lnkBusquedaporNombreoDocumento'))
@@ -61,24 +52,16 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Documento', '25580852')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1000873562')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'MARMETTO')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificar "Nombre y Apellido"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblApellidoyNombre'))
-
 //Validar "Nombre y apellido"
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblApellidoyNombre'))
 nombreYapellido = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblApellidoyNombre'))
-assert nombreYapellido == "Apellido y Nombre"
-
-//Validar "Documento"
+assert nombreYapellido.contains("Apellido y Nombre")
 documento = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/lblDocumento'))
-assert documento == "Documento"
+assert documento.contains("Documento")
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

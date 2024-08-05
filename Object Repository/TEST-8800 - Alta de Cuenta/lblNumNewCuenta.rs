@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblNumNewCuenta</name>
+   <tag></tag>
+   <elementGuidId>cd7a3ebf-6157-4b56-8084-c81e20854698</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r1']/td[7]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#r1 > td:nth-child(3)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>2939e71a-305d-4157-a892-702571438d39</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>enqDrillLink keyboardlinks-scanned</value>
+      <webElementGuid>42ff09e2-008b-47bf-9e84-406bb68c39b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>javascript:drilldown('1','1_1')</value>
+      <webElementGuid>15347e11-6de1-4eb6-80f7-a2ebd0effb04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ver</value>
+      <webElementGuid>4bc01893-2807-4c92-8f4a-6703c854e5e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEPREALTA&quot;]/a[@class=&quot;enqDrillLink keyboardlinks-scanned&quot;]</value>
+      <webElementGuid>307d45a8-b854-436f-b5ab-0ab964ae10f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/39-Cuentas/Mantenimiento/frmBusquedaPersonaFisica2</value>
+      <webElementGuid>6ff7c511-1fef-4921-b4f0-236b22b85fbe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r1']/td[7]/a</value>
+      <webElementGuid>52be68b9-3bfe-44ca-b6f1-2e72686136b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Ver')]</value>
+      <webElementGuid>46c4e084-e2ca-4323-9445-ed04af669619</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FILIAL 001 AI CENTRO 0901'])[1]/following::a[1]</value>
+      <webElementGuid>aafb0b57-bca2-43c0-ba83-b4c7caa9ad8a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NOMBCORTO'])[1]/following::a[1]</value>
+      <webElementGuid>1168cb8f-2f5c-4e1c-bcbc-eae8c80daf9d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PRE2302400043'])[1]/preceding::a[1]</value>
+      <webElementGuid>59376f6d-f50d-4e00-9e1f-c00fe0d0db47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Caja de Ahorro'])[2]/preceding::a[1]</value>
+      <webElementGuid>99d1d81a-1d41-409e-ac9e-7acebb4d546f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Ver']/parent::*</value>
+      <webElementGuid>c21ec8cd-01f1-4606-a8c9-47dcedfe202d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, &quot;javascript:drilldown('1','1_1')&quot;)]</value>
+      <webElementGuid>4036f9da-c193-4bb4-be5e-410429b3ce2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[7]/a</value>
+      <webElementGuid>c2e76972-a1d7-43b8-92bf-b4d01a5648c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = concat(&quot;javascript:drilldown(&quot; , &quot;'&quot; , &quot;1&quot; , &quot;'&quot; , &quot;,&quot; , &quot;'&quot; , &quot;1_1&quot; , &quot;'&quot; , &quot;)&quot;) and (text() = 'Ver' or . = 'Ver')]</value>
+      <webElementGuid>fdbdb67d-cdd2-4e19-bbe5-1ce55449138c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
