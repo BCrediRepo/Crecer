@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AC03-Ejecutar Prueba Recursiva</name>
+   <name>03-Alta de Cuentas MASIVAS</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ede35439-5d71-438a-8901-a72ecee27352</testCaseGuid>
