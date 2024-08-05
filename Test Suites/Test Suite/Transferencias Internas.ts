@@ -88,4 +88,11 @@
       <testCaseId>Test Cases/12-Transferencias Internas/TI11-Reversa de pago de transferencia interna. Operacion en dolares con origen en efectivo. Pago efectuado en el dia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>65b499fd-554a-41cd-9964-a22a8d418ae0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/12-Transferencias Internas/TI12-Alta con debito en cuenta. Campos calculados. Comision bonificada. Operacion en Dolares</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
