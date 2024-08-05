@@ -27,7 +27,7 @@ import java.time.DayOfWeek
 //el while nos asegura de que la fecha seleccionada es un dia habil
 //en formato assert definimos el formato dia mes año 
 //en fecha assert le decimos que a esa fecha (numerica) el mes pase a estar escrito (toUpperCase), es decir, la fecha 20230902 se transforma en 02 SEP 2023
-fecha = GlobalVariable.vFechaCOBAmbTES10
+fecha = GlobalVariable.vFechaCOB
 LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
 LocalDate fechaModificada = fechaParse.plusDays(1)
 while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {	
@@ -43,7 +43,7 @@ String fechaAssert = fechaModificada.format(formatoAssert).toUpperCase()
 //FECHA ANTERIOR
 //Unica diferencia es que en vez de plusDays(cantidad de dias) usaremos minusDays(cantidad de dias)
 
-fecha = GlobalVariable.vFechaCOBAmbTES10
+fecha = GlobalVariable.vFechaCOB
 LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
 LocalDate fechaModificada = fechaParse.minusDays(1)
 while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {

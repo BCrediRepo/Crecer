@@ -36,7 +36,7 @@ WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Fecha de Boleto"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Boleto', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Boleto', GlobalVariable.vFechaCOB)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

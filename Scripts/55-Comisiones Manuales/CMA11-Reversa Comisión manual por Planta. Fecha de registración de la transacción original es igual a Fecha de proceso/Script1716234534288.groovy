@@ -42,7 +42,7 @@ WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtC
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
 
-WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtFecha'), GlobalVariable.vFechaCOBAmbTES10)
+WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtFecha'), GlobalVariable.vFechaCOB)
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
 

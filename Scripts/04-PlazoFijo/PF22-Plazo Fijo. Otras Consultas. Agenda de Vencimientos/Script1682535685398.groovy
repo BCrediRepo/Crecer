@@ -35,7 +35,7 @@ WebUI.switchToWindowIndex(1)
 //Limpiar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Vencimiento', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Vencimiento', GlobalVariable.vFechaCOB)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

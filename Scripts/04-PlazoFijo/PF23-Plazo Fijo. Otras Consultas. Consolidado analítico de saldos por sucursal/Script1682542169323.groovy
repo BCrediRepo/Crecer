@@ -35,7 +35,7 @@ WebUI.switchToWindowIndex(1)
 //Seteo de Datos "Circular", "Fecha Valor", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Circular', '026')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor', GlobalVariable.vFechaCOB)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '074')
 
 // Captura el tiempo de inicio

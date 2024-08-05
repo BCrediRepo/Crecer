@@ -44,7 +44,7 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','01000021927')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220901')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOB)
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

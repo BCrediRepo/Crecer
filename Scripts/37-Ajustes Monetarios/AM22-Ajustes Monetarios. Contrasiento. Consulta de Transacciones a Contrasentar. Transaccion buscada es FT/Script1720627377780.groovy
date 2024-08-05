@@ -65,7 +65,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //String dateFormat = "yyyyMMdd"
 //
 ////Fecha inicial como cadena de texto
-//String initialDate = GlobalVariable.vFechaCOBAmbTES10
+//String initialDate = GlobalVariable.vFechaCOB
 //
 ////Convertir la cadena de texto en un objeto Date
 //SimpleDateFormat sdf = new SimpleDateFormat(dateFormat)

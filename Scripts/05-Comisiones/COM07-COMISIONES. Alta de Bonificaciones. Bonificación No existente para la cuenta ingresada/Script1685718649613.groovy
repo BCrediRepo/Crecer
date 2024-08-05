@@ -51,7 +51,7 @@ WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/lnkAltaModificac
 //WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtPorcentajeBonif'), '100')
 
 //Ingresa fecha hasta.
-WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtFechaVigenciaHasta'), GlobalVariable.vFechaCOBAmbTES10)
+WebUI.setText(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/txtFechaVigenciaHasta'), GlobalVariable.vFechaCOB)
 
 //Acepta el registro
 WebUI.click(findTestObject('06-Comisiones/BCCL.E.CTA.CONS.BONIF/btnAceptarRegistro'))

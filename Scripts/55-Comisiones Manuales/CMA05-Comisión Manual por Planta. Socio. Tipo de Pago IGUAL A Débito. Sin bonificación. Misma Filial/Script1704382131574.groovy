@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 def cuenta = '11190118359'
 def concepto = '18301CMI'
-String fecha = GlobalVariable.vFechaCOBAmbTES10
+String fecha = GlobalVariable.vFechaCOB
 
 
 //Configuracion de ambiente

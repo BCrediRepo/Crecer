@@ -57,7 +57,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta','02265027828')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor',GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Valor',GlobalVariable.vFechaCOB)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo Agrupamiento','IDCC3')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Agrup de Impuestos','IDC')
 

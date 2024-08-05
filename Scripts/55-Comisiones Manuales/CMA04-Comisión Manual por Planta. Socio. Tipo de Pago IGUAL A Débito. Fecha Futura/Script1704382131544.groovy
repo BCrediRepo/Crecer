@@ -25,7 +25,7 @@ def concepto = '18301CMI'
 //manejo de fecha. Primero se aumenta un dia (fecha futura = fecha proceso +1) 
 //en formato assert definimos el formato dia mes año y en fecha assert le decimos que a esa fecha (numerica)
 //el mes pase a estar escrito (toUpperCase), es decir, la fecha 20230902 se transforma en 02 SEP 2023
-fecha = GlobalVariable.vFechaCOBAmbTES10
+fecha = GlobalVariable.vFechaCOB
 LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
 LocalDate fechaModificada = fechaParse.plusDays(1)
 DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")

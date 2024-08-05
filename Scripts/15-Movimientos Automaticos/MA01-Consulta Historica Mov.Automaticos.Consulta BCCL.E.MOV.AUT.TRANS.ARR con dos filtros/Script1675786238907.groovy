@@ -42,7 +42,7 @@ WebUI.maximizeWindow()
 //Seleccionar la opcion "Mayor que" en el ComboBox
 WebUI.selectOptionByIndex(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.TRANS.HIST/cbFechadeProceso'), 6)
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Proceso', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Proceso', GlobalVariable.vFechaCOB)
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

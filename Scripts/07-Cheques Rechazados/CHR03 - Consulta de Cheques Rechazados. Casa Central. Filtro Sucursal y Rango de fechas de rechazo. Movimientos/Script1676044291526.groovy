@@ -38,7 +38,7 @@ WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 //Seteo de Datos "Fecha rechazo desde", "Fecha rechazo hasta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo desde', '20230825')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo hasta', GlobalVariable.vFechaCOB)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

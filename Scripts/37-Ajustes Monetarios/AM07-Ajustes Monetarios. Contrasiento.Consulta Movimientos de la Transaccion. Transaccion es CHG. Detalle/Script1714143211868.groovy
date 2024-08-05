@@ -47,7 +47,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 String dateFormat = "yyyyMMdd"
 
 //Fecha inicial como cadena de texto
-String initialDate = GlobalVariable.vFechaCOBAmbTES10
+String initialDate = GlobalVariable.vFechaCOB
 
 //Convertir la cadena de texto en un objeto Date
 SimpleDateFormat sdf = new SimpleDateFormat(dateFormat)

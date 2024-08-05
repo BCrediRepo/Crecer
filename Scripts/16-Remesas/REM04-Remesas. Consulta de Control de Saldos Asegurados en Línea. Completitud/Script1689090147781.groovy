@@ -49,7 +49,7 @@ WebUI.switchToWindowTitle('BCCL.E.TT.TESORERIA.GENERAL')
 
 //Seteo de Datos "Fecha", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha',GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha',GlobalVariable.vFechaCOB)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal','074')
 
 // Captura el tiempo de inicio

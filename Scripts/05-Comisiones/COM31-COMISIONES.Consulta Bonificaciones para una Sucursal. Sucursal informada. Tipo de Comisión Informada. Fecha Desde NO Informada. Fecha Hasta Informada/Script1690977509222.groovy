@@ -41,7 +41,7 @@ WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 //Seteo de Datos "Fecha Hasta", "Sucursal", "Tipo Comision"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo Comision', 'ECHQJ')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOB)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
 //Se toma un screen

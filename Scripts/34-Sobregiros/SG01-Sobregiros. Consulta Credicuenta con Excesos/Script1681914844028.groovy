@@ -40,7 +40,7 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20220718')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20150725')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOB)
 //CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Estado', 'AC')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Estado', 'VC')
 
