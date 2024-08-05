@@ -45,7 +45,7 @@
             <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Regresion por partes/Regresion parte 4 - xD</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Regresion por partes/Regresion parte 4</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
