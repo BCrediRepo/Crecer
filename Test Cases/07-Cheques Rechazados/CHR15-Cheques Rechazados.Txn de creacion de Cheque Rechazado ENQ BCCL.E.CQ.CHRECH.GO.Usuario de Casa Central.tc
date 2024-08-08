@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHR15-Cheques Rechazados.Txn de creacion de Cheque Rechazado ENQ BCCL.E.CQ.CHRECH.GO.Usuario de Casa Central</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df5a5bbc-7fc7-4b5a-99b6-caceb10b3b58</testCaseGuid>
+</TestCaseEntity>
