@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CHR17-Cheques Rechazados.Txn de creacion de Cheque No Migrado.ENQ BCCL.E.CREAR.CHQ.NOMIG</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a7401b30-eaf0-459d-a2d6-e71c89a95a2a</testCaseGuid>
+</TestCaseEntity>
