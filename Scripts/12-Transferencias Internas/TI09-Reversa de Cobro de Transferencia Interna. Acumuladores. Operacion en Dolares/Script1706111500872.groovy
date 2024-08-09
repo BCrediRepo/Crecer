@@ -70,6 +70,7 @@ Transaccion = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensaj
 def partes = Transaccion.split('\\s+')
 def trx1 = partes[2]
 assert Transaccion.contains('Txn Completa:')
+println trx1
 
 //DESLOGUEO
 WebUI.switchToWindowIndex(0)

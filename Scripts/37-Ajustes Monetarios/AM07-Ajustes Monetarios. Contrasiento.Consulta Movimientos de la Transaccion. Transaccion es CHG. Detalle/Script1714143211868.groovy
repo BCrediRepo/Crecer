@@ -23,6 +23,9 @@ import java.util.Date
 import java.text.SimpleDateFormat
 import java.util.Calendar
 
+
+//HACER UNA LOGICA PARA LA FECHA. RECORRER VARIAS FECHAS ATRAS EN CASO DE NO ENCONTRAR RESULTADOS A LA PRIMERA.
+//ALGUN CICLO WHILE O FOR QUE RECORRA 2 O 3 SEMANAS ATRAS, Y EN CASO DE NO ENCONTRAR DATOS AHI, DAR POR FAILED EL TEST CASE
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 

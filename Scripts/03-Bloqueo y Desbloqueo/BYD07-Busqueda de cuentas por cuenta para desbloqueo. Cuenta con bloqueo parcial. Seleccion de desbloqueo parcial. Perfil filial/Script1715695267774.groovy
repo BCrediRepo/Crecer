@@ -113,7 +113,7 @@ try {
 		
 		
 		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/CUENTAS/txtMotivo'), 'AF')
-		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtFechaDesde'), GlobalVariable.vFechaCOBAmbTES10)
+		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtFechaDesde'), GlobalVariable.vFechaCOB)
 		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtMonto'), '100')
 		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
@@ -164,7 +164,7 @@ try {
 		
 		
 		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/CUENTAS/txtMotivo'), 'AF')
-		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtFechaDesde'), GlobalVariable.vFechaCOBAmbTES10)
+		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtFechaDesde'), GlobalVariable.vFechaCOB)
 		WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtMonto'), '100')
 		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
