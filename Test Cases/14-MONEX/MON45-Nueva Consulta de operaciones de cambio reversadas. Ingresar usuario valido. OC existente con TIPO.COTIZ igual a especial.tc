@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON45-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. OC existente con TIPO.COTIZ igual a especial</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>386949c5-97dd-48e5-97ba-663dfc306074</testCaseGuid>
+</TestCaseEntity>

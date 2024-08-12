@@ -18,6 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -25,25 +29,23 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
         2, 1))
 
-//Apertura de app
-WebUI.click(findTestObject('02-Dashboard/lnkANSES'))
-WebUI.click(findTestObject('02-Dashboard/57-ANSES/lnkDetalleHistoricoBeneficioPagoImpago'))
+def menuDesplegable = ["ANSES"]
+def link = "Detalle Historico de Beneficio - Pago/Impago"
+
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('BCCL.NOF.ANSES.GENERAL')
 
 //Seteo de Datos "ID Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro Beneficiario', '88141171370')
-
-//Seleccionar Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verifica que el beneficiario tenga un estado "historico" y lo valida con un assert
 WebUI.verifyElementVisible(findTestObject('10-ANSES/BCCL.NOF.ANSES.GENERAL/lblHistorico'))
 estado = WebUI.getText(findTestObject('10-ANSES/BCCL.NOF.ANSES.GENERAL/lblHistorico'))
 assert estado.contains("Historico") == true
-
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
 
 //Control fin de script
 

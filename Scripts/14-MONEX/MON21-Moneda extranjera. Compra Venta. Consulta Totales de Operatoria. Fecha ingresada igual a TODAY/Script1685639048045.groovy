@@ -37,7 +37,7 @@ WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Fecha de Boleto"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Boleto', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Boleto', GlobalVariable.vFechaCOB)
 
 
 
@@ -70,7 +70,7 @@ SimpleDateFormat originalFormat = new SimpleDateFormat("yyyyMMdd")
 SimpleDateFormat desiredFormat = new SimpleDateFormat("dd/MM/yyyy")
 
 // Parsear la cadena al objeto Date 
-Date date = originalFormat.parse(GlobalVariable.vFechaCOBAmbTES10)
+Date date = originalFormat.parse(GlobalVariable.vFechaCOB)
 
 // Formatear el objeto Date al nuevo formato 
 String formattedDateStr = desiredFormat.format(date)

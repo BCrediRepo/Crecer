@@ -32,53 +32,45 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
         2, 3))
 
-WebUI.click(findTestObject('02-Dashboard/lnkTransferenciasInternas'))
+//Ir a transferencias internas, alta transferencia interna origen efectivo
+def menuDesplegable = ["Transferencias Internas"]
+def link = "Alta Transf. Interna Origen Efectivo"
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/11-Transferencias Internas/lnkAltaTransfInternaOrigenEfectivo'))
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.maximizeWindow()
 
+//Ingresa datos (sucursal, id ordenante, importe, motivo, beneficiario)
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtSucursalDestino'), '089')
-
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'))
-
 WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'), '1003174696')
-
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtImporte'))
-
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnDrillDownMotivo'))
-
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblFAC'))
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtIDBeneficiario'), '1003174696')
-
 WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtImporte'))
-
 WebUI.setText(findTestObject('12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '100')
 
-WebUI.click(findTestObject('44-TOB/Movimiento de Fondos/btnAceptarRegistroRecarga'))
+//Acepto registro y alertas
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-WebUI.click(findTestObject('12-Transferencias Internas/Movimiento de Fondos/lnkAceptarAlertas'))
-
-////Forzado y verificacion de firma
 WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.maximizeWindow()
 
 //VALIDO que la transaccion se haya completado y guardo el FT
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblTxnCompleta'))
+Transaccion = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 // Dividir la cadena por espacios en blanco y tomar el segundo elemento
-def partes = Transaccion1.split('\\s+')
-
+def partes = Transaccion.split('\\s+')
 def trx1 = partes[2]
-
-assert Transaccion1.contains('Txn Completa:')
+assert Transaccion.contains('Txn Completa:')
 
 //DESLOGUEO
 WebUI.switchToWindowIndex(0)
-
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
 
-//Nos volvemos a loguear para liquidar con cajero para liquidar la transaccion hecha
+//Nos volvemos a loguear con cajero para liquidar la transaccion hecha
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -109,11 +101,8 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 //Espera y Verifica que devuelva un registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'))
-
-
-def element = WebUI.getText(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'))
-assert element.contains('Id Transaccion')
-
+def dato = WebUI.getText(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'))
+assert dato.contains('Id Transaccion')
 
 // Obtén el elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
@@ -152,29 +141,21 @@ for (WebElement row : rows) {
 		liquidar.click()
 		
 		break
-		
 	}
 }
 
-
 WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAutorizar'))
-
+//Autoriza
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 WebUI.switchToWindowIndex(2)
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 WebUI.switchToWindowTitle('Movimiento de Fondos')
+assert Transaccion.contains('Txn Completa:') == true
 
-Transaccion2 = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-
-assert Transaccion2.contains('Txn Completa:') == true
-
-
-//---------------------------------------------------
-//Control Fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -184,4 +165,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblYaEstaAutorizado</name>
+   <tag></tag>
+   <elementGuidId>4a87d742-da6b-40ea-b9ae-a9fd43ba9b2d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.messageWrap > span</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='messages']/tbody/tr/td[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>7f77a53f-b354-4fb4-abd7-a52227879e0b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>466beecb-ca10-470c-904b-a7971bf6c95b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ID=75963681: YA ESTA AUTORIZADO, VERIFIQUE</value>
+      <webElementGuid>7ddfcb0f-c9f9-4abb-a0d4-f9f73aa93e74</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;messages&quot;)/tbody[1]/tr[1]/td[@class=&quot;messageWrap&quot;]/span[1]</value>
+      <webElementGuid>aa011a6a-a6ae-4ae7-93a4-d50cd4562e7a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='messages']/tbody/tr/td[2]/span</value>
+      <webElementGuid>a2b7cc7f-9794-4149-8816-198c8d9c5b8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.102 Gcia Operativa)'])[1]/following::span[1]</value>
+      <webElementGuid>0e31f186-0943-47b8-b082-3e8448a13d71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Cheque Rechazado'])[1]/following::span[2]</value>
+      <webElementGuid>5a662157-dbb7-4f12-ac08-61e7bbc55593</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Num Cuenta'])[1]/preceding::span[1]</value>
+      <webElementGuid>9b111d43-f9b3-43c4-a2b0-e539c0e61025</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CER'])[1]/preceding::span[2]</value>
+      <webElementGuid>278a231a-d261-4c3c-b5fc-a8e601bd6295</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='ID=75963681: YA ESTA AUTORIZADO, VERIFIQUE']/parent::*</value>
+      <webElementGuid>6613c223-5017-493a-89b0-1d70a38a787e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[2]/td/table/tbody/tr/td[2]/span</value>
+      <webElementGuid>42ddab61-12b8-4df9-864d-3a5d27e67ad5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'ID=75963681: YA ESTA AUTORIZADO, VERIFIQUE' or . = 'ID=75963681: YA ESTA AUTORIZADO, VERIFIQUE')]</value>
+      <webElementGuid>d9aa791a-9c79-4162-b00f-7c9b6eed5bb3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -39,6 +39,11 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.PO
 WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/lblTxnCompleta'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
+println transaccion
+assert TxnInicial.contains('Txn Completa')
 
 //---------------------------------------------------------------------------------------------------------------------
 

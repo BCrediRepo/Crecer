@@ -23,19 +23,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Administracion de Piezas con Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
-//Seleccionar "Consultas al maestro Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier (1)'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Arqueo en linea"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkArqueoEnlinea'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
+link = "Arqueo en linea"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ARQUEO.EN.LINEA"
 WebUI.switchToWindowTitle('BCCL.E.AP.ARQUEO.EN.LINEA')
@@ -43,20 +35,14 @@ WebUI.switchToWindowTitle('BCCL.E.AP.ARQUEO.EN.LINEA')
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificar "Tarjetas en Filial"
+//Verificar  y Validar "Tarjetas en Filial"
 WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/09-BCCL.E.AP.ARQUEO.EN.LINEA/lblTarjetasEnFilial'))
-
-//Validar "Tarjetas en Filial"
 tarjetasFilial = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/09-BCCL.E.AP.ARQUEO.EN.LINEA/lblTarjetasEnFilial'))
-assert tarjetasFilial == "TARJETAS EN FILIAL"
+assert tarjetasFilial.contains("TARJETAS EN FILIAL")
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

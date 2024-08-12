@@ -6,15 +6,15 @@
    <elementGuidId>746e987d-2d48-4dfd-a228-a131d30572e6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > a:nth-child(1) > img:nth-child(1)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>0eef75e3-773d-44db-87ec-eace1c465400</webElementGuid>
+      <webElementGuid>e8fe880b-70e0-4452-a29f-f402ba6b9c6a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA</value>
-      <webElementGuid>90a9152a-2b39-425a-a787-99e11c12d8ae</webElementGuid>
+      <webElementGuid>ef082537-1082-4af0-9dae-4896d1d8dee0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/deal/svexpansion.gif</value>
-      <webElementGuid>dcfaf7df-f9e1-478a-b243-25a0bb169832</webElementGuid>
+      <webElementGuid>3eeab565-4622-433b-9397-ecc2f7a9eb24</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Expandir Subvalor</value>
-      <webElementGuid>8085f4b8-0d63-479a-891f-e503134d0e08</webElementGuid>
+      <webElementGuid>27359059-d285-404c-8fbc-3e26f0fefc43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Expandir Subvalor</value>
-      <webElementGuid>9efff303-f570-4893-93b6-c0fb428872b7</webElementGuid>
+      <webElementGuid>a398e634-d046-432d-a7c2-84bea9724fb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[11]/td[@class=&quot;action_container action_container_ACCOUNT action_container_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]/a[1]/img[@class=&quot;ascell ascell_ACCOUNT ascell_ACCOUNT_BCCLFIRMANTEMODFISICA&quot;]</value>
-      <webElementGuid>cbeecb62-e0aa-43b1-b333-914186bbd3b3</webElementGuid>
+      <webElementGuid>263051f5-8404-4bca-bc52-e2f035c4ba84</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[11]/td[2]/a/img</value>
-      <webElementGuid>2f3285da-cc5f-4932-8609-1e7abd22a1ee</webElementGuid>
+      <webElementGuid>31df3005-b284-48ca-bc0d-751d2df8c76f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>(//img[@alt='Expandir Subvalor'])[2]</value>
-      <webElementGuid>df0c6ee4-e652-4e6d-9e94-4308dff3294e</webElementGuid>
+      <webElementGuid>7c0ba6a3-cd39-4d5f-a85b-0f14dee4b2de</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[11]/td[2]/a/img</value>
-      <webElementGuid>c9609f27-dfb7-4f61-926d-d4fabf3aea5b</webElementGuid>
+      <webElementGuid>99808924-9bdc-4fb3-b51a-b3709061915f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/deal/svexpansion.gif' and @alt = 'Expandir Subvalor' and @title = 'Expandir Subvalor']</value>
-      <webElementGuid>93a87fa8-064b-4448-92b0-c500b00714c6</webElementGuid>
+      <webElementGuid>a756d4a3-0d50-4832-b7d7-23725ae44385</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

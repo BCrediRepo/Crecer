@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login con un user generico
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,47), findTestData('MainData/Users').getValue(2,47))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,41), findTestData('MainData/Users').getValue(2,41))
 
 // Obtener el número de filas en la tabla de datos
 TestData usersData = findTestData('MainData/Users')

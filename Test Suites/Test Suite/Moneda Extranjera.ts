@@ -225,7 +225,98 @@
       <guid>2d95fd63-7993-47f4-8ef7-4548aaf11cb9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/14-MONEX/MON31-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
+      <testCaseId>Test Cases/14-MONEX/MON31-MONEX. Operación de Compra y Venta de Moneda Extranjera.Usuario de Sucursal. Validación TIPO.OPER igual a V - Socio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f8d7fe52-a942-4ceb-9b36-0c710c341a22</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON32-MONEX. Ingreso de parametros grales de la operacion de Monex. IngresoEgreso EFECTIVO</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>58975882-52f5-41b6-b6ce-7d5918c0b4ff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON33-Operacion de Compra y Venta de Moneda Extranjera.BCCL.OP.CAMBIO,FILIALES.CTA.EFE</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ba02ddf4-b5f0-4462-a769-8c128b1b215b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON34-Operacion de Compra y Venta de Moneda Extranjera.BCCL.OP.CAMBIO,FILIALES.EFE.CTA</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5485a6f6-600e-4892-a19a-658eb1475a6e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON35-Operacion de Compra y Venta de Moneda Extranjera.Version BCCL.OP.CAMBIO,FILIALES.CTA.CTA</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>425986cc-2bc9-481f-b745-68b479aaaae0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON36-Transaccion de Compra Venta Moneda Extranjera.BCCL.OP.CAMBIO,CC.OFICIOS.Casa central. Tipo Operacion Venta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>881ab7f8-4a7e-4451-9c20-f1f5118bd1d2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON37-Operacion de Compra y Venta de Moneda Extranjera. Version BCCL.OP.CAMBIO,FILIAL.INMUEBLES.CTA</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0f6e11e2-a23e-4b91-b647-800d4e95fe4e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON38-MONEX. Modificar registro de una cotizacion en Pizarra Otras Operatorias</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ac163ade-4eaf-4b6c-ba77-5ecc0c1b2cab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON39-MONEX. Modificar registro de una cotizacion en Pizarra Region</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cae31c44-4a66-4e29-8c36-4d847750cade</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON40-Moneda extranjera. Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Id Persona Invalido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ddc906e0-d093-4df4-881c-c718828f1426</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON41-Consulta de Acumulados por Asociado Operaciones de Compra Venta de Moneda Extranjera. Persona Juridica. Id Persona vacio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0c6b7f16-9ba8-4fa9-95ec-ab9613a9569f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON42-Transaccion de Compra Venta Moneda Extranjera.BCCL.OP.CAMBIO,FILIAL.CTA.INT.Usuario de Sucursal. Tipo Operacion Compra</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5c647d1c-aab5-4271-80b1-ba741b45f59a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON43-Operacion de Compra y Venta de Moneda Extranjera. Version BCCL.OP.CAMBIO,FILIAL.INMUEBLES.EFE</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>70c352fa-d449-4ffa-b79e-9e58ebaf13db</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON44-BCCL.OP.CAMBIO,FILIALES.CTA.EFE. Usuario de Sucursal. Validacion TIPO.OPER igual a C - Socio Compra. Cotz.Esp -IPAIS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

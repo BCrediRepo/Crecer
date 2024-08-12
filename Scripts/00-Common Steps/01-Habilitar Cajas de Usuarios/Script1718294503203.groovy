@@ -57,28 +57,28 @@ for (int row = 1; row <= rowCount; row++) {
 			CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, user), findTestData('MainData/Users').getValue(
 					2, user))
 			println usuario + " " + "logeado con exito"
-	
-			WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
-	
-			WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-	
-			WebUI.switchToWindowTitle('Temenos T24')
-	
-			WebUI.click(findTestObject('00-Utils/05-Apertura de caja/Temenos T24/lnkCaja'))
-	
-			WebUI.click(findTestObject('00-Utils/05-Apertura de caja/Temenos T24/lnkAperturaDeCaja'))
-	
-			WebUI.switchToWindowTitle('TELLER ID')
-		
-			WebUI.waitForElementVisible(findTestObject('00-Utils/05-Apertura de caja/TELLER ID/btnAceptarRegistro'), 6)
-		
-			WebUI.click(findTestObject('00-Utils/05-Apertura de caja/TELLER ID/btnAceptarRegistro'))
-		
-		
-	
+			
 			try {
 	
-				WebUI.verifyElementVisible(findTestObject('00-Utils/05-Apertura de caja/TELLER ID/lblTxnCompleta'))
+				WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
+	
+				WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+	
+				WebUI.switchToWindowTitle('Temenos T24')
+	
+				def menuDesplegable = ["Caja"]
+				def link = "Apertura de Caja"
+
+				//Si el menu que busco está en dashboard uso esta funcion
+				CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+	
+				WebUI.switchToWindowTitle('TELLER ID')
+		
+				WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'), 6)			
+			
+				WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))	
+	
+				WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 				
 				println "apertura exitosa para la caja del usuario" + " " + usuario
 	
@@ -91,7 +91,7 @@ for (int row = 1; row <= rowCount; row++) {
 				WebUI.click(findTestObject('02-Dashboard/btnLogout'))
 			
 				continue
-			}
+				}
 			catch (Exception e) {
 				WebUI.closeWindowTitle('TELLER ID')
 			
@@ -103,7 +103,7 @@ for (int row = 1; row <= rowCount; row++) {
 					
 				continue
 			}
-			}catch(Exception e) {
+		}catch(Exception err) {
 				WebUI.verifyElementVisible(findTestObject('Object Repository/01-Login/lblErrMsgLogin'))
 				msg = WebUI.getText(findTestObject('Object Repository/01-Login/lblErrMsgLogin'))
 				if (msg.contains("TOO MANY ATEMPTS")) {
@@ -119,11 +119,8 @@ for (int row = 1; row <= rowCount; row++) {
 					println "-------------------------------------------------------------------"
 					continue
 				}
-			}
-			
-		}
-	
-    
+			}			
+		}    
 }
 
 //Control de fin de script

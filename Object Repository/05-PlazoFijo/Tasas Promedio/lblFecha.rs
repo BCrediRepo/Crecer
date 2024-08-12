@@ -11,14 +11,14 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#r1 > td:nth-child(2)</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[(text() = '25 JUL 2022' or . = '25 JUL 2022')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>67449e27-3283-4363-b13f-b5d4eadc0d26</webElementGuid>
+      <webElementGuid>44157333-1697-4c4f-a61f-0e2365d3433a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>25 JUL 2022</value>
-      <webElementGuid>a3294d8e-f4ab-4d16-a261-6af1108a89b4</webElementGuid>
+      <webElementGuid>ced9dcb1-6b31-4df3-ae92-e7a09edfbc8f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[2]</value>
-      <webElementGuid>a5e01352-cba2-4c28-a9a4-9ec9c8e321a1</webElementGuid>
+      <webElementGuid>c5da23f4-3774-4ac6-b3cb-7f9706486eee</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[2]</value>
-      <webElementGuid>88780128-e0ee-423a-9ef9-f5f5ff8a1d83</webElementGuid>
+      <webElementGuid>3c7e739f-2416-4893-960e-ff0dde635532</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Interes'])[1]/following::td[2]</value>
-      <webElementGuid>588b67d5-f656-4672-9e8e-0b6d92dc4eaa</webElementGuid>
+      <webElementGuid>f3d7f8d9-7ddb-4725-9830-8faa2c10b234</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capital'])[1]/following::td[2]</value>
-      <webElementGuid>07b6a18b-1009-4745-8ced-a7c24455813b</webElementGuid>
+      <webElementGuid>bc3e784b-d0af-45c7-a312-b403ab812923</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Favoritos'])[1]/preceding::td[138]</value>
-      <webElementGuid>99c31c06-6739-47bc-acc4-22fb5d9eb7b4</webElementGuid>
+      <webElementGuid>f72d8df3-c27a-466b-b0a6-e896bfdc10ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tasas Promedio'])[2]/preceding::td[141]</value>
-      <webElementGuid>0db1471e-8fd1-42ba-a70e-b154c63f3aa0</webElementGuid>
+      <webElementGuid>88df14ed-584e-4b2e-b1d3-f82ae882362c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='25 JUL 2022']/parent::*</value>
-      <webElementGuid>fb5625a9-10e4-4425-b52e-82d8b85f04d1</webElementGuid>
+      <webElementGuid>99a24318-8f7e-4ae5-b8ee-1e8be2ac36d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/table/tbody/tr/td[2]</value>
-      <webElementGuid>691c1d9c-4d8a-4a3f-bf70-9417f87bf997</webElementGuid>
+      <webElementGuid>7e8aa17d-b9e3-4add-a6c1-d34cd9c4f973</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '25 JUL 2022' or . = '25 JUL 2022')]</value>
-      <webElementGuid>433b1ea5-0a9c-407c-8cc7-768275d3deb5</webElementGuid>
+      <webElementGuid>fa7879da-c28d-41db-9ffc-bef43d1bc04c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

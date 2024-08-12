@@ -28,43 +28,51 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Setear "ENQ BCCL.E.RES.CTA.MOV.FECHA" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
+
+//Seleccionar boton de buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Switch a la ventana de busqueda de consulta
+//Cambiar a la ventana "Movimientos por Fecha de Cuentas"
 WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "Nro de Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/txtNumCuenta'), 6)
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','05330013359')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220701')
 
-// Captura el tiempo de inicio
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Boton Ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//ingresa el detalle del movimiento y valida resultados
+//Seleccionar boron Ver detalle
 WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'), 10)
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'))
 
-WebUI.maximizeWindow()
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/lblRequestTypeValue'))
+//Verificar "Numero de cuenta"
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/STMT.ENTRY/lblAccountNumber'))
 
-//---------------------------------------------------------------------------------------------------------------------
+//Validar "Numero de cuenta"
+def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/STMT.ENTRY/lblAccountNumber'))
+assert element.contains('05330013359')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

@@ -23,54 +23,28 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Administracion de Piezas con Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
-//Seleccionar "Proceso de destruccion de Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkProcesodeDestrucciondeTarjetas'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Impresion del ACTA DE DESTRUCCION"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/06-Proceso de Destruccion de Tarjetas/lnkImpresiondelACTADEDESTRUCCION'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Proceso de destruccion de Tarjetas"]
+link = "Impresion del ACTA DE DESTRUCCION"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "Imprimir Acta de Destruccion"
 WebUI.switchToWindowTitle('Imprimir Acta de Destruccion')
-
-//Maximizar pantalla
 WebUI.maximizeWindow()
 
-//Limpiar todos los txt
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Seleccionar Drill Down Marca
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/12-Imprimir Acta de Destruccion/btnDrillDownMarca'))
-
-//Seleccionar "CABAL"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/12-Imprimir Acta de Destruccion/lblCABAL'))
-
-//Seleccionar Drill Down Producto
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/12-Imprimir Acta de Destruccion/btnDrillDownProducto'))
-
-//Seleccionar "PRECARGADA"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/12-Imprimir Acta de Destruccion/lblPRECARGADA'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar boton Ejecutar
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Marca', 'CABAL')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Producto', 'PRECARGADA')
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificar "Vencimiento"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/12-Imprimir Acta de Destruccion/lblVencimiento'))
-
 //Validar "Vencimiento"
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/12-Imprimir Acta de Destruccion/lblVencimiento'))
 vencimiento = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/12-Imprimir Acta de Destruccion/lblVencimiento'))
 assert vencimiento == "Vencimiento"
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

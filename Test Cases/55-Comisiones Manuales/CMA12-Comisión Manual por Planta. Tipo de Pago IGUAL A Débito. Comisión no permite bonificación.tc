@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CMA12-Comisión Manual por Planta. Tipo de Pago IGUAL A Débito. Comisión no permite bonificación</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f2087572-991c-4fd9-bd0e-f1d79e6671c3</testCaseGuid>
-</TestCaseEntity>

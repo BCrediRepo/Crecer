@@ -28,26 +28,17 @@ import org.openqa.selenium.support.ui.Select
 import java.awt.Robot
 import java.awt.event.KeyEvent
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Administracion de Piezas con Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
-//Seleccionar "Consultas al Maestro de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier (1)'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Seleccion por Nombre/Documento/Sucursal"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkSeleccionporNombreDocumentoSucursal'))
+//Se accede al menu Administracion de piezas
+def menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
+def link = "Seleccion por Nombre / Documento / Sucursal"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
@@ -55,43 +46,28 @@ WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
-
-//Maximizar pantalla
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.maximizeWindow()
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Ejecutar"
-WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'))
-
-//Esperar a que se cargue la tabla completamente
-WebUI.delay(3)
 
 //Almacenar el valor "010" del primer estado
 def estadoPiezaRecibida = '010'
 
 //Funcion invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
 def buscarElementoEnTabla(String estadoPiezaRecibida) {
-   
 	//Obtener elemento tabla
     WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-   
 	//Obtener todas las filas que están adentro de la tabla
     List<WebElement> rows = table.findElements(By.tagName("tr"))
-   
    //Itera a través de las filas
    for (WebElement row : rows) {
 	   
 	   //Obtener el valor del Estado de la fila
-	   WebElement cell = row.findElements(By.tagName("td"))[7]
-	   
+	   WebElement cell = row.findElements(By.tagName("td"))[7]	   
 	   //Verificar que la celda no sea null
 	   if (cell != null) {
 		   //Obtener el texto de la celda
-		   String estado = cell.getText();
-		   println(estado);
-	   
+		   String estado = cell.getText()
+		   println(estado)
 	   //Comparar el valor de la celda con el valor específico
 	   if (estado.equals(estadoPiezaRecibida)) {
 		   
@@ -105,9 +81,7 @@ def buscarElementoEnTabla(String estadoPiezaRecibida) {
 	   		}
 	   }  
    }
-   
    return false
-   
 }
 
 //Lógica para buscar el elemento en la tabla
@@ -115,50 +89,34 @@ def encontrado = false
 
 //Bucle para buscar en múltiples páginas
 while (!encontrado) {
-   
    //Lógica para buscar el elemento en la tabla
    encontrado = buscarElementoEnTabla(estadoPiezaRecibida)
-	   
    //Si no se encontró el valor, hacer clic en el botón "Siguiente" y buscar nuevamente
    if (!encontrado) {
-	   
 	   //Realiza la búsqueda nuevamente después de hacer clic en "Siguiente"
 	   WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-	   
 	   //Espera a que la nueva página se cargue completamente
 	   WebUI.delay(3)
    }
 }
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Cambiar a la ventana del Dashboard
 WebUI.switchToWindowIndex(0)
 
-//Seleccionar "Envio a otra filal o al Activador Comercial"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkEnvio a otra filal o al Activador Comercial'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Envio o Entrega a AC de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/02-Envio a otra filial o al Activador Comercial/lnkEnviooEntregaaACdeCard-Carrier'))
+//Se accede al menu Administracion de piezas - Envio o Entrega a AC de Card-Carrier
+menuDesplegable = ["Envio a otra filal o al Activador Comercial"]
+link = "Envio o Entrega a AC de Card-Carrier"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.PIEZAS"
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
-
-//Maximizar pantalla
 WebUI.maximizeWindow()
 
 //Setear Numero de Pieza
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), GlobalVariable.vTxn)
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), GlobalVariable.vTxn)
 
 //Seleccionar "Boton Modificar Registro"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnModificarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 
 //Seleccionar "boton Drop down de Estado"
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnDropdownEstado'))
@@ -169,24 +127,19 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.
 //Setear la sucursal
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtSucursal'), '073')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "Aceptar el registro"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-
-//Validar "Txn Completa"
-def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
+//Verificar y Validar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 
 //Setear Numero de Pieza
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), GlobalVariable.vTxn)
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), GlobalVariable.vTxn)
 
 //Ver registro
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Validar estado
 def element2 = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEstado'))
@@ -195,14 +148,10 @@ assert element2.contains('020')
 //Cambiar a la ventana del Dashboard
 WebUI.switchToWindowIndex(0)
 
-//Seleccionar "Reversa de Estado de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkReversadeEstadodeCard-Carrier'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Reversa de Estado del Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/08-Reversa de Estado Card-Carrier/lnkReversadeEstadodelCard-Carrier'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Reversa de Estado de Card-Carrier"]
+link = "Reversa de Estado del Card-Carrier"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar a la ventana de "Reversa de Estado"
 WebUI.switchToWindowIndex(3)
@@ -211,32 +160,28 @@ WebUI.switchToWindowIndex(3)
 WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), GlobalVariable.vTxn)
 
 //Seleccionar "Boton Modificar Registro"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnModificarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 
 //Seleccionar "Aceptar el registro"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-
-//Validar "Txn Completa"
-def element3 = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
+//Verificar y Validar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element3 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element3.contains('Txn Completa')
 
 //Setear Numero de Pieza
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), GlobalVariable.vTxn)
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), GlobalVariable.vTxn)
 
 //Ver registro
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Validar estado
 def element4 = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEstado'))
 assert element4.contains('010')
 
-
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

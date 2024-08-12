@@ -61,14 +61,16 @@ public class kywHabilitarCommandLine {
 
 		//Se ingresa el usuario a habilitar
 		def user = procesarUsuario(usuario)
+		def fechaPW = "12 DIC 2028 M0612"
 		WebUI.setText(findTestObject('Object Repository/00-Utils/01-CommandLine/inputUSER,'),(user))
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/btnModificarRegistro'))
-
+		
+		WebUI.setText(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/txtPwValidity'), fechaPW)
 		TestObject imgTestObject = new TestObject().addProperty("xpath", ConditionType.EQUALS, '//*[@id="fieldCaption:ATTRIBUTES"]/following::img[1]')
 		WebUI.click(imgTestObject)
 
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/cbAtributos2'))
-		WebUI.selectOptionByIndex(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/cbAtributos2'), 2)
+		WebUI.selectOptionByIndex(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/cbAtributos2'), 2)		
 		kywS.takeScreenshotInScript()
 		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/btnAceptarRegistro'))
 		try {

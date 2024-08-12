@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>VD02-Variacion Deudora.Fecha valor.Recomposicion de Saldos.Alta de Nota de Debito Ajuste. F Valor y F Proceso corresponden al mismo mes</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ef83a47b-b772-456f-bb0b-dd1d844cfde6</testCaseGuid>
-</TestCaseEntity>

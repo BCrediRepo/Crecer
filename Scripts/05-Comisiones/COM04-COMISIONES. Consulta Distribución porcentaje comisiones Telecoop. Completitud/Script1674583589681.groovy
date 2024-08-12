@@ -52,9 +52,9 @@ WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
 //WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), 
 //    6)
 
-//def variable = GlobalVariable.vFechaCOBAmbTES10
+//def variable = GlobalVariable.vFechaCOB
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Proceso', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Proceso', GlobalVariable.vFechaCOB)
 
 //WebUI.setText(findTestObject('Object Repository/06-Comisiones/Consulta de Comisiones Cobradas/txtFechaProceso'), '20230828')
 

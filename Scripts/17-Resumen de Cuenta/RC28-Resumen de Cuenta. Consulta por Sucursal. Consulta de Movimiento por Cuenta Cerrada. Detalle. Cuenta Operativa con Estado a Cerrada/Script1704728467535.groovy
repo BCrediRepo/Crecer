@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,56 +25,54 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+//Setear "?1" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
+
+//Seleccionar boton buscar
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en Sucursal Piloto
+//Seleccionar "Sucursal Piloto"
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkSucursalPiloto'))
 
-//Click en Resumen de Cuentas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanResumen de Cuentas'))
-
-//Click en Consultas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanConsultas'))
-
-//Click en movimientos cuentas cerradas
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/lnkMOVIMIENTOS CUENTA CERRADA'))
-
-//Switch a la ventana Movimientos Cuenta Cerrada
-WebUI.switchToWindowTitle('Movimientos Cuenta Cerrada')
-
-//Maximizamos
+//Maximizar ventana
 WebUI.maximizeWindow()
 
-//Ingresamos la cuenta
+//Seleccionar "Resumen de Cuentas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanResumen de Cuentas'))
+
+//Seleccionar "Consultas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/spanConsultas'))
+
+//Seleccionar "movimientos cuentas cerradas"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Temenos T24/lnkMOVIMIENTOS CUENTA CERRADA'))
+
+//Cambiar a la ventana "Movimientos Cuenta Cerrada"
+WebUI.switchToWindowIndex(2)
+
+//Ingresar la cuenta
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtNroCuenta'), '01000021927')
 
-//Ingresamos Fecha Desde
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+//Ingresar "Fecha Desde"
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtFechaDesde'), '20010901')
 
-//Ingresamos Fecha Hasta
+//Ingresar "Fecha Hasta"
 WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/txtFechaHasta'), '20200902')
 
-//Click en ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
+//Verificar estado
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
 
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
-
-assert element.contains('Estado')
-
-//---------------------------------------------------------------------------------------------------------------------
+//Validar "CERRADA"
+def estadoACTIVA = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
+assert estadoACTIVA.contains('CERRADA')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
@@ -87,5 +84,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

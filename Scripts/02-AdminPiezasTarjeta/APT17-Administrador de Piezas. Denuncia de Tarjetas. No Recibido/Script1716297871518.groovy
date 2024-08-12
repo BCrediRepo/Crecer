@@ -23,83 +23,39 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Administracion de Piezas con Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAdministracionPiezasTarjetas'))
-
-//Seleccionar "Consultas al Maestro de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkConsultasalMaestrodeCard-Carrier (1)'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Piezas en Transito"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkPiezasenTransito'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
+link = "Piezas en Transito"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.E.AP.LISTADO.EN.TRANSITO"
 WebUI.switchToWindowTitle('BCCL.AP.E.AP.LISTADO.EN.TRANSITO')
-
-//Filtro limpieza
-CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-WebUI.switchToWindowIndex(0)
-
-//Seleccionar "Piezas en Transito"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/04-ConsultaMaestroCardCarrier/lnkPiezasenTransito'))
-
-//Cambiar ventana "BCCL.AP.E.AP.LISTADO.EN.TRANSITO"
-WebUI.switchToWindowTitle('BCCL.AP.E.AP.LISTADO.EN.TRANSITO')
-
-//Seleccionar "boton Drop down Marca"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/10-BCCL.AP.E.AP.LISTADO.EN.TRANSITO/btnDrillDownMarca'))
-
-//Seleccionar "CABAL"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/10-BCCL.AP.E.AP.LISTADO.EN.TRANSITO/lblCabal'))
-
-//Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton Ejecutar"
-WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'))
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Marca', 'CABAL')
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Definir Objeto
 Tarjeta = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/10-BCCL.AP.E.AP.LISTADO.EN.TRANSITO/lblNumPiezaenTransito'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Cambiar a la ventana del Dashboard
 WebUI.switchToWindowIndex(0)
 
-//Seleccionar "Modificaciones sobre Card-Carrier"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/lnkModificacionesSobreCard-Carrier'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Denuncia de Tarjetas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/01-AdminPiezasConTarjetas/05-Modificaciones sobre Card-Carrier/lnkDenunciadeTarjetas'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Modificaciones sobre Card-Carrier"]
+link = "Denuncia de Tarjetas"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.E.AP.ESTADO.DENUNCIA"
 WebUI.switchToWindowTitle('BCCL.AP.E.AP.ESTADO.DENUNCIA')
 
-//Setear Numero de Tarjeta
-WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/14-BCCL.AP.E.AP.ESTADO.DENUNCIA/txtPlastico'), Tarjeta)
-
-//Maximizar Ventana
-WebUI.maximizeWindow()
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton Ejecutar"
-WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/btnEjecutar'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Plastico', Tarjeta)
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Seleccionar "Registrar Denuncia"
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/14-BCCL.AP.E.AP.ESTADO.DENUNCIA/lnkRegistrarDenuncia'))
@@ -110,19 +66,15 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.
 //Seleccionar Primer ID
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblPlasticoNoRecibido'))
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnAceptarRegistro'))
-
-//Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/lblTxnCompleta'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Validar "Txn Completa"
-def element = WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/01-Bloqueo seleccionando Cuenta/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

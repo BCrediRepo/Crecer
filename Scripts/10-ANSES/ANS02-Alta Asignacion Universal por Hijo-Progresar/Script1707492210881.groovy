@@ -25,54 +25,41 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
         2, 1))
 
-//busqueda app
-WebUI.click(findTestObject('02-Dashboard/lnkANSES'))
+def menuDesplegable = ["ANSES"]
+def link = "Alta Asignacion Universal por Hijo/Progresar"
 
-WebUI.click(findTestObject('02-Dashboard/57-ANSES/lknAltaAsignacionUniversalxHijoPROGRESAR'))
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('BCCL.ANSES.BEN')
 
 //Seteo de datos
 WebUI.setText(findTestObject('10-ANSES/BCCL.ANSES.BEN/txtCuilBeneficiario'), '27175137209')
 
-WebUI.click(findTestObject('10-ANSES/BCCL.ANSES.BEN/btnModificarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 WebUI.click(findTestObject('10-ANSES/BCCL.ANSES.BEN/rbtnSI'))
-
-WebUI.click(findTestObject('10-ANSES/BCCL.ANSES.BEN/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //verificacion de txn completa
-WebUI.verifyElementVisible(findTestObject('10-ANSES/BCCL.ANSES.BEN/lblTxnCompleta'))
-
-txn = WebUI.getText(findTestObject('10-ANSES/BCCL.ANSES.BEN/lblTxnCompleta'))
-
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 WebUI.closeWindowIndex(3)
-
 WebUI.closeWindowIndex(2)
-
-assert txn.contains('Txn Completa: ') == true
-
+assert txn.contains('Txn Completa:') == true
 WebUI.closeWindowIndex(1)
-
 WebUI.switchToWindowIndex(0)
 
 //apertura de app para verificación final
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.ANSES.BEN')
-
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
 WebUI.switchToWindowTitle('BCCL.ANSES.BEN')
 
 //Busqueda y verificacion de cambio realizado en AUH
 WebUI.setText(findTestObject('10-ANSES/BCCL.ANSES.BEN/txtCuilBeneficiario'), '27175137209')
-
-WebUI.click(findTestObject('10-ANSES/BCCL.ANSES.BEN/btnVerRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 WebUI.verifyElementVisible(findTestObject('10-ANSES/BCCL.ANSES.BEN/lblAUH'))
-
 AUH = WebUI.getText(findTestObject('10-ANSES/BCCL.ANSES.BEN/lblAUH'))
+assert AUH.contains('SI') == true
 
-assert AUH.contains('SI') == true //Control fin de script
+ //Control fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

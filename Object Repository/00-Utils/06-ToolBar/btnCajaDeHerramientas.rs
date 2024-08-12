@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnCajaDeHerramientas</name>
+   <tag></tag>
+   <elementGuidId>ac1e1db5-cf0c-4f82-a07b-b7f288db22d8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='enq_toolHeader']/tbody/tr/td[3]/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img[alt=&quot;Enquiry Actions&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;enq_toolHeader&quot;)/tbody[1]/tr[1]/td[@class=&quot;popup-tools popup-tools_BCCLEAPENQNOMBREDOC&quot;]/img[1][count(. | //img[@src = '../plaf/images/bccl/tools/tools_menu.gif' and @alt = 'Enquiry Actions' and @title = 'Enquiry Actions']) = count(//img[@src = '../plaf/images/bccl/tools/tools_menu.gif' and @alt = 'Enquiry Actions' and @title = 'Enquiry Actions'])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>c6af5e8c-e534-4472-851d-42b49d145802</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/tools/tools_menu.gif</value>
+      <webElementGuid>0cd6e3dc-d09c-4fe5-8deb-010e657cd01a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Enquiry Actions</value>
+      <webElementGuid>19b28879-f3cd-45d3-b6e3-907865351fb6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Enquiry Actions</value>
+      <webElementGuid>b483b1bf-a3a2-4d41-abd4-f7997bb9a9f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;enq_toolHeader&quot;)/tbody[1]/tr[1]/td[@class=&quot;popup-tools popup-tools_BCCLEAPENQNOMBREDOC&quot;]/img[1]</value>
+      <webElementGuid>fc317757-cb1e-45aa-a306-a99579b08ea3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='enq_toolHeader']/tbody/tr/td[3]/img</value>
+      <webElementGuid>a320f607-c9ad-472d-b5a5-1e5ea8e97c99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Enquiry Actions']</value>
+      <webElementGuid>bd4df903-bdaf-43d8-a70b-ff7bc50e88e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]/img</value>
+      <webElementGuid>a8977705-34ac-4156-9c2a-c9856ebaab41</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '../plaf/images/bccl/tools/tools_menu.gif' and @alt = 'Enquiry Actions' and @title = 'Enquiry Actions']</value>
+      <webElementGuid>c4c86516-db5f-4310-b455-9d0b90737ca1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

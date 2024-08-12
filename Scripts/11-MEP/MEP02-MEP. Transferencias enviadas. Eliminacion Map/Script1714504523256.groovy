@@ -37,7 +37,8 @@ WebUI.switchToWindowTitle('AUTORIZAC. PENDIENTES')
 
 WebUI.click(findTestObject('13-MEP/AUTORIZAC. PENDIENTES/lnkELIMINARTRANSACCION'))
 
-WebUI.switchToWindowTitle('BCCL.MEP.FT.TRANSFER.HIS')
+//WebUI.switchToWindowTitle('BCCL.MEP.FT.TRANSFER.HIS')
+WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER.HIS/btnValidarRegistro'))
 

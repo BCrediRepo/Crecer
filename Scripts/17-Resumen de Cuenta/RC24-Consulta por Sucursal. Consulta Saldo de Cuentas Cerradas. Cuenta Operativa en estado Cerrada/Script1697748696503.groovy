@@ -25,40 +25,46 @@ import org.openqa.selenium.WebElement as WebElement
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
-        2, 3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 
-//Busqueda de app
+//Setear "ENQ BCCL.E.RES.CTA.CER" en el buscador
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.CER')
 
+//Seleccionar boton buscar
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
-WebUI.switchToWindowTitle('Saldos de Cuentas Cerrada')
+//Cambiar a la ventana "Saldos de Cuentas Cerrada"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "NRO.CUENTA"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NRO.CUENTA','01000021927')
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//----------------------------
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
+//Verificar que aparezca el numero de Cuenta
 WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblCuenta'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
-Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblCuenta'))
-
-assert Cuenta.contains('01000021927')
-//---------------------------
+//Validar el estado de la cuenta
+estado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuentas Cerrada/lblEstadoCerrada'))
+assert estado.contains('CERRADA')
+//--------------------------------------------------------------------------------------------------------------------------------
 //Control fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -69,4 +75,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

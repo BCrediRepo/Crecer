@@ -32,6 +32,6 @@
    <GlobalVariableEntity>
       <description>Fecha COB del Ambiente TES12</description>
       <initValue>findTestData('MainData/Fechas').getValue(6, 1)</initValue>
-      <name>vFechaCOBAmbTES12</name>
+      <name>vFechaCOB</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

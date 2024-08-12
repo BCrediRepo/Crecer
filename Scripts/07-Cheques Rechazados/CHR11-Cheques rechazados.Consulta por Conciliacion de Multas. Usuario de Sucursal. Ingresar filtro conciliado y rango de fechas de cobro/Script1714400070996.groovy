@@ -49,7 +49,7 @@ WebUI.switchToWindowTitle('CONSULTA DE CONCILIACION DE MULTAS')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Cobro Desde', '20210910')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Cobro Hasta', GlobalVariable.vFechaCOBAmbTES10)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Cobro Hasta', GlobalVariable.vFechaCOB)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Conciliado', 'Si')
 
 //Capturar tiempo de inicio

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>.error</value>
+         <value>#error</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>d205e222-b935-483e-91d1-d7dffebf1737</webElementGuid>
+      <webElementGuid>e733a7a2-8283-47d0-a1e7-d27fb41295a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>error</value>
-      <webElementGuid>f22e0477-b8b8-4fee-b9ea-3f35c522c27f</webElementGuid>
+      <webElementGuid>1d5ef462-5577-439f-9ae5-820c4faf0b99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -40,7 +40,7 @@
       <value>
 									  
 					TOO MANY ATTEMPTS</value>
-      <webElementGuid>5fbbdfaa-a919-485a-a05c-c0ea177f0ecb</webElementGuid>
+      <webElementGuid>8937cb47-8b19-428d-a2f6-0a56094882c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,7 +48,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;login-window&quot;)/span[@class=&quot;error&quot;]</value>
-      <webElementGuid>65cabf74-5c74-4180-8bcf-f5ad676657e6</webElementGuid>
+      <webElementGuid>7599c2f3-2af6-44f8-9482-b898b8943f79</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -56,7 +56,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='login-window']/span[2]</value>
-      <webElementGuid>c6456d93-2f79-42a6-8c7a-496eecae83c2</webElementGuid>
+      <webElementGuid>4d5c4fe9-06f8-481e-b0a7-819e1ad99a28</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,7 +64,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='T24 Sign in'])[2]/following::span[1]</value>
-      <webElementGuid>18166e29-7f96-4e34-bd26-160024ebba9d</webElementGuid>
+      <webElementGuid>38f883ce-b89a-4fef-8ff4-248eb8e1ca59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -72,7 +72,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Temenos Web Site'])[1]/following::span[2]</value>
-      <webElementGuid>d0668292-6018-4e16-b2f3-6a6e99e65aa4</webElementGuid>
+      <webElementGuid>26f521ee-1360-4d86-83c2-b8c947bf971d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,7 +80,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/preceding::span[2]</value>
-      <webElementGuid>7ce9b93b-7dc2-42b2-9b8b-ecafcb115e1d</webElementGuid>
+      <webElementGuid>84ff6294-0d10-438a-9c93-1a1194fae22d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,7 +88,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::span[3]</value>
-      <webElementGuid>0c7726c8-18e9-411a-b626-b0bff1b8e66f</webElementGuid>
+      <webElementGuid>f4e83213-db40-4e9d-a574-9d757810939b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -96,7 +96,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span[2]</value>
-      <webElementGuid>0a01d0bc-f63d-4b19-bf99-4f6ddcb055dd</webElementGuid>
+      <webElementGuid>7f90bd78-ecb3-4505-9df6-931d29961e02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,6 +108,6 @@
 					TOO MANY ATTEMPTS' or . = '
 									  
 					TOO MANY ATTEMPTS')]</value>
-      <webElementGuid>3b2467d6-63af-48b1-b531-006382e64286</webElementGuid>
+      <webElementGuid>8fa0ac1c-bead-4e84-ac01-00e26d3e49d3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -27,6 +27,26 @@ import org.openqa.selenium.support.ui.Select as Select
 import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 
+def buscarElementoEnTabla(String variable) {
+	WebElement table1 = DriverFactory.getWebDriver().findElement(By.cssSelector("#datadisplay"))
+	List<WebElement> rows = table1.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[0]
+		String cellText = cell.getText()
+		println cellText
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement0 = tdList[8]
+			WebElement selectElement = tdElement0.findElement(By.tagName("select"))
+			Select select = new Select(selectElement)
+			select.selectByIndex(1)
+			WebElement btnElement = tdElement0.findElement(By.cssSelector(".iconLink"))
+			btnElement.click()
+			return true
+		}
+	}
+	return false
+}
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -74,17 +94,17 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq 
 
 try {
 	//valida el rechazo del cheque y devuelve la txn
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/btnValidarRegistro'))
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/btnValidarRegistro'))
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/btnAceptarRegistro'))
-	WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lnkAceptarAlertas'), 4)
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lnkAceptarAlertas'), 4)
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lblTxnCompleta'))
-	Txn = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lblTxnCompleta'))
-	assert Txn.contains("Txn Completa: ")
+	WebUI.switchToFrame(findTestObject('Object Repository/00-Utils/04-Frames/frmInferior'), 3)	
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+	assert WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta')).contains("Txn Completa: ")
 }catch (Exception e) {
-	//verifica el mensaje de que está pendiente de autorización
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro/lblExisteRegistroPendiente'))
+	WebUI.switchToWindowIndex(0)
+	WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
+	
 	
 	//logea con usuario NIV4 o superior (en este caso, el 2055, que es Niv5
 	//Configuracion de ambiente
@@ -100,29 +120,17 @@ try {
 	WebUI.switchToWindowTitle("BCCL.E.AUTHORIZATION")
 	
 	//se guarda el dato a buscar en tabla en una variable
-	String descripcion = "Rechazo Chq p/Caja CTA 00010108387"
+	String idTransaccion = "254598140"
 	
 	//utilizando listas y manejo de  dato en tablas, se busca la variable anterior (descripcion) en la tabla actual
 	//por medio del metodo select podemos manipular los combobox. En este caso, para seleccionar la segunda opcion de este cbx
 	//que es "autorizar registro"
-
-	WebElement table1 = DriverFactory.getWebDriver().findElement(By.cssSelector("#datadisplay"))
-	List<WebElement> rows = table1.findElements(By.tagName("tr"))
-	for (WebElement row : rows) {
-		WebElement cell = row.findElements(By.tagName("td"))[3]
-		String cellText = cell.getText()
-		if (cellText.equals(descripcion)) {
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement0 = tdList[8]
-			WebElement selectElement = tdElement0.findElement(By.tagName("select"))
-			Select select = new Select(selectElement)
-			select.selectByIndex(1)
-//			WebElement tdElement1 = tdList[8]
-			WebElement btnElement = tdElement0.findElement(By.cssSelector(".iconLink"))
-			btnElement.click()
-			return true
-		}
+	def encontrado = false
+	while (!encontrado) {
+		encontrado = buscarElementoEnTabla(idTransaccion)
 	}
+
+	
 	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/btnAutorizar'))
 	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblTxncompleta'))
 	txn1 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblTxncompleta'))
@@ -175,15 +183,15 @@ try {
 	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro/lnkRechazochequesdecajaenfilial'))
 	
 	//valida el rechazo del cheque y devuelve la txn
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/btnValidarRegistro'))
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/btnValidarRegistro'))
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/btnAceptarRegistro'))
-	WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lnkAceptarAlertas'), 4)
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lnkAceptarAlertas'), 4)
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lblTxnCompleta'))
-	Txn = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro - Objetos con Frame asociado/lblTxnCompleta'))
-	assert Txn.contains("Txn Completa: ")
 	
+	WebUI.switchToFrame(findTestObject('Object Repository/00-Utils/04-Frames/frmInferior'), 3)	
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+	assert WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta')).contains("Txn Completa: ")
+		
 }
 
 

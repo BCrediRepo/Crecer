@@ -52,7 +52,9 @@ WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtImporte'), '100')
 
 WebUI.setText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/txtEntidadAcreedora'), 'CRECER')
 
-WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/rbtnNO'))
+//WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/rbtnNO'))
+
+WebUI.click(findTestObject('Object Repository/13-MEP/BCCL.MEP.FT.TRANSFER/rbtnNO - Copy'))
 
 WebUI.selectOptionByIndex(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER/cbxConoceAsociado'), 2)
 

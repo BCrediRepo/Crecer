@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MON44-BCCL.OP.CAMBIO,FILIALES.CTA.EFE. Usuario de Sucursal. Validacion TIPO.OPER igual a C - Socio Compra. Cotz.Esp -IPAIS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4e7dc995-223f-486b-a496-5b8bb70e5bf0</testCaseGuid>
+</TestCaseEntity>

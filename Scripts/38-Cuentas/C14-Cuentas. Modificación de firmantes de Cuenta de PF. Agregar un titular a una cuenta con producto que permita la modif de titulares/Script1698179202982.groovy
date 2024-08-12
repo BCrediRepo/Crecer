@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 72), findTestData('MainData/Users').getValue(2, 72))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -56,7 +56,8 @@ WebUI.switchToWindowTitle('Firmas')
 WebUI.maximizeWindow()
 
 //Ingresamos la cuenta
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Firmas/txtNroCuenta'), '00890093805')
+//WebUI.setText(findTestObject('Object Repository/39-Cuentas/Firmas/txtNroCuenta'), '00890093805')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Firmas/txtNroCuenta'), '10220064365')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Firmas/lnkEjecutar'))
@@ -71,7 +72,8 @@ WebUI.switchToWindowTitle('CUENTAS')
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/btnExpandirSubvalor'))
 
 //Agregamos el codigo de firmante
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtCodigo de Firmante-Socio.3'), '1000607997')
+//WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtCodigo de Firmante-Socio.2'), '1000607997')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtCodigo de Firmante-Socio.2'), '1000755088')
 //WebUI.delay(3)
 
 //Click en tipo de relacion
@@ -79,18 +81,84 @@ WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmant
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtTipoRelacion'), 6)
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtTipoRelacion'), '2')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtTipoRelacion'), '1')
 
 //Click en Forma de operar.3
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtFormaDeOperar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtFormaDeOperar'), 6)
 
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtFormaDeOperar'), '02')
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/txtFormaDeOperar'), '00')
 
 //Validamos el registro
 WebUI.click(findTestObject('Object Repository/39-Cuentas/Modificacion de Firmantes de CTA/btnValidarRegistro'))
 
+//Aceptamos el registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/btnAceptarRegistro'))
 
+//Aceptamos Alertas
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/lnkAceptarAlertas'))
 
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS/lblTRANSACCION FINALIZADA'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS/lblTRANSACCION FINALIZADA'))
+
+def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/CUENTAS/lblTRANSACCION FINALIZADA'))
+assert element.contains('TRANSACCION FINALIZADA')
+
+WebUI.closeBrowser()
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 72), findTestData('MainData/Users').getValue(2, 72))
+WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Ingresamos ACCOUNT, en el command line
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ACCOUNT,')
+
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+
+//Switch a la ventana CUENTAS
+WebUI.switchToWindowTitle('CUENTAS')
+
+//Ingresamos la cuenta
+WebUI.setText(findTestObject('Object Repository/39-Cuentas/CUENTAS/txtACCOUNT_transactionId'), '10220064365')
+
+//Click en Modificar Registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/btnModificaRegistro'))
+
+//Eliminamos el nuevo titular
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/btnDeleteValue'))
+
+//Click en Validar Registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/btnValidarRegistro'))
+
+//Click en Aceptar Registro
+WebUI.click(findTestObject('Object Repository/39-Cuentas/CUENTAS/btnAceptarRegistro'))
+
+//ASSERT
+WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/CUENTAS/lblTxnCompleta'))
+
+def element2 = WebUI.getText(findTestObject('Object Repository/39-Cuentas/CUENTAS/lblTxnCompleta'))
+assert element2.contains('Txn Completa')
+
+//---------------------------------------------------------------------------------------------------------------------
+
+//Control de fin de script
+@com.kms.katalon.core.annotation.TearDownIfFailed
+void fTakeFailScreenshot() {
+	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
+}
+
+@com.kms.katalon.core.annotation.TearDownIfPassed
+void fPassScript() {
+	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
+}
 
