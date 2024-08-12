@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>cbxEsSocio</name>
+   <name>cbxTipoAgrupamiento2</name>
    <tag></tag>
-   <elementGuidId>ba2c998a-06f8-4908-a377-77e210e82ad6</elementGuidId>
+   <elementGuidId>2e2648ef-9cb7-429b-ad37-cff6d239877d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#fieldName\:L\.SOC\.NO\.SOC</value>
+         <key>XPATH</key>
+         <value>//select[@id='fieldName:TIPO.AGRUP:1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='fieldName:L.SOC.NO.SOC']</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,31 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>5caef460-5593-47ea-b8a1-79ae7a9eec75</webElementGuid>
+      <webElementGuid>af016617-7138-4b0a-be54-4f75098aa70d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_ACCHARGEREQUEST dealbox_ACCHARGEREQUEST_BCCLCOMCAJA</value>
-      <webElementGuid>1acb8af1-02a3-405e-9a7e-1cac3bf5ff8f</webElementGuid>
+      <value>dealbox dealbox_BCCLENQPARAMAGRP dealbox_BCCLENQPARAMAGRP_INPUT</value>
+      <webElementGuid>8e32b1c2-bb05-462f-9e9f-98b8a33eacf0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:L.SOC.NO.SOC</value>
-      <webElementGuid>32f6ea6f-b22d-4cd4-ac1d-7247a94d2ef8</webElementGuid>
+      <value>fieldName:TIPO.AGRUP:2</value>
+      <webElementGuid>8554a30e-c038-46aa-bffd-ef97f10125ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:L.SOC.NO.SOC</value>
-      <webElementGuid>acc661ea-d127-43ab-b73b-7a885ad2f3b4</webElementGuid>
+      <value>fieldName:TIPO.AGRUP:2</value>
+      <webElementGuid>d9feae99-9ae9-4677-a869-b3214c004dbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +54,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>b58767c6-c6e7-4bee-8169-215d876d58cf</webElementGuid>
+      <webElementGuid>b6a8bebb-c661-4ca4-b783-2262db52716a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,142 +62,118 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>ab6ace5c-ea97-402f-b640-041d5a7e050b</webElementGuid>
+      <webElementGuid>e3b8241a-83cb-492c-8a14-6148b13e75ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>hot</name>
+      <name>enrifieldname</name>
       <type>Main</type>
-      <value>Y</value>
-      <webElementGuid>7e230070-d59f-48c0-8a8f-f6109093bd17</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
-      <type>Main</type>
-      <value>off</value>
-      <webElementGuid>d8b3031e-d1ff-4f3b-8cd2-e9ceafeba958</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
-      <type>Main</type>
-      <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>bdf1fabc-75b1-4dde-b991-1a5c9604443d</webElementGuid>
+      <value>enri_TIPO.AGRUP:1</value>
+      <webElementGuid>14af418d-069a-4586-9b42-ae20fe74b587</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'L.SOC.NO.SOC','issueToken');</value>
-      <webElementGuid>fe4184a7-2f4c-4775-8c29-933cfdcdf9a4</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeydown</name>
-      <type>Main</type>
-      <value>enterKeyListener(event);</value>
-      <webElementGuid>a6516c27-6756-4292-ad38-140214c56b89</webElementGuid>
+      <value>invokeHelp(event,'TIPO.AGRUP','issueToken');</value>
+      <webElementGuid>07d34313-c67e-4c7d-b9fe-0d28918617e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>40b0c919-6e7a-49f5-8f22-6893e87dfef4</webElementGuid>
+      <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
+      <webElementGuid>53ae10fc-4dcd-4376-9c54-bc350bd13e4f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('L.SOC.NO.SOC','','','issueToken')</value>
-      <webElementGuid>3b8c3694-b086-4315-82b0-31db12e16a38</webElementGuid>
+      <value>javascript:help('TIPO.AGRUP','','','issueToken')</value>
+      <webElementGuid>fbbe2f05-823f-448e-bdf7-11915b8a7d98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>  NOSI</value>
-      <webElementGuid>39a6e231-5236-44b2-9b9d-5c46db8583bb</webElementGuid>
+      <value>AMBCOMNOR</value>
+      <webElementGuid>a98756e0-3521-4fc7-bb14-eb03d6370851</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:L.SOC.NO.SOC&quot;)</value>
-      <webElementGuid>c12647e9-bb79-4b11-81df-691cbabe9e37</webElementGuid>
+      <value>id(&quot;fieldName:TIPO.AGRUP:2&quot;)</value>
+      <webElementGuid>dd0d6ed7-0eeb-42b0-8ae3-c0a6b3c4a375</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='fieldName:L.SOC.NO.SOC']</value>
-      <webElementGuid>7b446387-4961-4540-ae86-c90e9e047eae</webElementGuid>
+      <value>//select[@id='fieldName:TIPO.AGRUP:2']</value>
+      <webElementGuid>714a2f15-7a6e-4543-9b48-cef09d0adf10</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[4]/td[4]/select</value>
-      <webElementGuid>85d6fc49-5ceb-4b4f-80f0-a3f4163104a3</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[27]/td[3]/select</value>
+      <webElementGuid>a5e922f4-e4a1-47e9-9d37-40726c722757</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Es Socio?'])[1]/following::select[1]</value>
-      <webElementGuid>93211e25-80fa-4ed9-88b3-5d214f9207c7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Agrupamiento.2'])[1]/following::select[1]</value>
+      <webElementGuid>de07ad35-e0ee-46e5-8478-af7538657f42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/following::select[1]</value>
-      <webElementGuid>bcae39f7-c21c-4bec-bdb6-ffd50c3d83b5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ECHEQ - Acreditac Valores - C.'])[3]/following::select[1]</value>
+      <webElementGuid>98e07966-c924-46c1-9608-58e26339df5e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id Ordenante'])[1]/preceding::select[1]</value>
-      <webElementGuid>cacdc569-7793-4127-97ca-e7d1e713b9b0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Codigo Agrupamiento.2'])[1]/preceding::select[1]</value>
+      <webElementGuid>e0ca9f95-d37d-48a5-896d-d8e69295f127</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CUIT/CUIL'])[1]/preceding::select[1]</value>
-      <webElementGuid>00057a52-4bac-49df-af2e-c1e6c077002f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Descripcion Agrupamiento.2'])[1]/preceding::select[1]</value>
+      <webElementGuid>a575d4d9-0a5c-4a23-a144-8aa2a2c25362</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//select</value>
-      <webElementGuid>c3bf5b2e-dd67-4bdc-9a7a-e63f2f22a9c7</webElementGuid>
+      <value>//tr[27]/td[3]/select</value>
+      <webElementGuid>43af60d0-9d4a-428a-8f09-4a8142c08db2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//select[@name = 'fieldName:L.SOC.NO.SOC' and @id = 'fieldName:L.SOC.NO.SOC' and (text() = '  NOSI' or . = '  NOSI')]</value>
-      <webElementGuid>a5fd31b1-6918-4e43-b18b-fd4ec1f578d6</webElementGuid>
+      <value>//select[@name = 'fieldName:TIPO.AGRUP:2' and @id = 'fieldName:TIPO.AGRUP:2' and (text() = 'AMBCOMNOR' or . = 'AMBCOMNOR')]</value>
+      <webElementGuid>6eba839d-72aa-4fdf-8d09-8d4b6f106ffe</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

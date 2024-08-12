@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>REVISAR-Búsqueda de cuentas para cierre. Búsqueda por Id de persona. La persona tiene cuentas en distintas sucursales</name>
+   <name>CDC18-Busqueda de cuentas para cierre con Cancelacion. Busqueda por Id de persona. La persona tiene cuentas en distintas sucursales</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>66e3b7a0-e969-4090-8061-48b4bff86536</testCaseGuid>
 </TestCaseEntity>
