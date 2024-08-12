@@ -4,5 +4,6 @@
    <name>CDC05-Busqueda de cuentas para cierre con saldo. Busqueda por Id de persona inexistente. Validacion</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>e23ebc08-ff31-48ec-8dd1-2103075f9907</testCaseGuid>
 </TestCaseEntity>

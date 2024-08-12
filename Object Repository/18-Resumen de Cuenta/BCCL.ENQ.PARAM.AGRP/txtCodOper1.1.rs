@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtIVA</name>
+   <name>txtCodOper1.1</name>
    <tag></tag>
-   <elementGuidId>b97a98cd-3fa4-4fae-b58a-69ffc99246f9</elementGuidId>
+   <elementGuidId>b89e8a9b-f839-410e-b004-3fa4cc912380</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#fieldName\:L\.IVA</value>
+         <key>XPATH</key>
+         <value>//input[@id='fieldName:ID.COD.OPER:1:1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='fieldName:L.IVA']</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
@@ -23,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>faf0b3ed-32ba-49c2-bc12-d24267de4e03</webElementGuid>
+      <webElementGuid>e02e480c-60dd-4300-8ad6-bb21efb80fcb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,31 +30,31 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>5ecd13c3-161a-4064-a134-2670a95505c8</webElementGuid>
+      <webElementGuid>e33d89cc-1d08-459d-ab91-71e128a7dba2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>size</name>
       <type>Main</type>
-      <value>8</value>
-      <webElementGuid>bf4d40bb-8327-411b-93a9-b865cc6143f4</webElementGuid>
+      <value>5</value>
+      <webElementGuid>7f957024-1aaa-4493-b422-cf75f41cc663</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>fieldName:L.IVA</value>
-      <webElementGuid>b5d916dc-311e-4957-a57c-03bbaa09e9d9</webElementGuid>
+      <value>fieldName:ID.COD.OPER:1:2</value>
+      <webElementGuid>4fa1defe-9d0d-46d5-8a2b-03a5e3ad882c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>fieldName:L.IVA</value>
-      <webElementGuid>223330de-17e9-4bfd-a058-a194af817e0e</webElementGuid>
+      <value>fieldName:ID.COD.OPER:1:2</value>
+      <webElementGuid>79ddcaeb-9c29-4e0f-8923-514655f488f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,23 +62,31 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>f9ebd20e-68aa-49e2-b9b8-720ce00577ec</webElementGuid>
+      <webElementGuid>783a1b3c-a653-489d-a9f8-3bf2c323d17a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>01783</value>
+      <webElementGuid>804bb7b6-baf5-4857-a527-a0c588da5226</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dealbox dealbox_ACCHARGEREQUEST dealbox_ACCHARGEREQUEST_BCCLCOMCAJA</value>
-      <webElementGuid>8a644199-9e30-449b-8140-0439808e0068</webElementGuid>
+      <value>dealbox dealbox_BCCLENQPARAMAGRP dealbox_BCCLENQPARAMAGRP_INPUT</value>
+      <webElementGuid>c26cf272-5e3c-4a9d-b31a-4063ed032f93</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>1</value>
-      <webElementGuid>f14bfbdb-8a8d-4a7c-83fb-2747197453f5</webElementGuid>
+      <value>5</value>
+      <webElementGuid>96286fc3-9621-49b9-ac35-9a445f3b8864</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -87,7 +94,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>3bf05a8b-85aa-4a9f-9f01-1c9b9e1e1089</webElementGuid>
+      <webElementGuid>71c4daff-43ba-4ca7-88df-9b16547bf6d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -95,94 +102,78 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>ab642fb5-2184-4a84-9ec6-6821e6add6ae</webElementGuid>
+      <webElementGuid>b581cf24-e0d3-45bb-aae3-16433e76995a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>caseconv</name>
+      <name>enrifieldname</name>
       <type>Main</type>
-      <value>UPPERCASE</value>
-      <webElementGuid>0c1c2c92-52c6-49f8-aab1-6b05d3ab9911</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
-      <type>Main</type>
-      <value>doFieldFocusEvent(event)</value>
-      <webElementGuid>17e63318-edf0-4d60-9794-6cb0b0dd9e02</webElementGuid>
+      <value>enri_ID.COD.OPER:1:1</value>
+      <webElementGuid>beda7b21-a90f-42cf-88c7-4568bcda5e86</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>invokeHelp(event,'L.IVA','issueToken');</value>
-      <webElementGuid>8a20ac07-c7b4-4cbd-b411-9ac504d91d0f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeydown</name>
-      <type>Main</type>
-      <value>enterKeyListener(event);</value>
-      <webElementGuid>8eb59a20-4d70-4e96-8bff-fd679c25f3de</webElementGuid>
+      <value>invokeHelp(event,'ID.COD.OPER','issueToken');</value>
+      <webElementGuid>2854f741-e837-4731-acdc-695961842e6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event); doFieldChangeEvent(event);</value>
-      <webElementGuid>c2a30baf-8210-4e37-8a65-6b62bd95e37a</webElementGuid>
+      <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
+      <webElementGuid>86dbeb66-61c0-4c3e-b8f1-faa7058660f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ondblclick</name>
       <type>Main</type>
-      <value>javascript:help('L.IVA','','','issueToken')</value>
-      <webElementGuid>2759240a-45fc-4f56-b103-3d4baca6e80d</webElementGuid>
+      <value>javascript:help('ID.COD.OPER','','','issueToken')</value>
+      <webElementGuid>fbe52331-45ae-4ead-953c-55f2a0f71a32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;fieldName:L.IVA&quot;)</value>
-      <webElementGuid>b7ce2f9a-2898-40ff-8513-7d42a00c0767</webElementGuid>
+      <value>id(&quot;fieldName:ID.COD.OPER:1:2&quot;)</value>
+      <webElementGuid>5f214151-f4d6-44c6-9763-368046471412</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='fieldName:L.IVA']</value>
-      <webElementGuid>c1d7a719-1fc6-4170-a408-218c8243d23c</webElementGuid>
+      <value>//input[@id='fieldName:ID.COD.OPER:1:2']</value>
+      <webElementGuid>33623404-b384-4dd3-bd62-1a2a8f8d0e9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='tab1']/tbody/tr[6]/td[4]/input</value>
-      <webElementGuid>3db7a1b1-2735-4d2e-a781-4075bd3174e9</webElementGuid>
+      <value>//table[@id='tab1']/tbody/tr[6]/td[3]/input</value>
+      <webElementGuid>46a8e3e8-34f9-4377-83f5-1e611900504a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[6]/td[4]/input</value>
-      <webElementGuid>d5f89870-9218-46a2-89e5-43847b09037f</webElementGuid>
+      <value>//tr[6]/td[3]/input</value>
+      <webElementGuid>a3164667-631d-4fb8-a173-6483787de2f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@id = 'fieldName:L.IVA' and @name = 'fieldName:L.IVA' and @type = 'text']</value>
-      <webElementGuid>fedc6c46-19e3-4c0c-94e2-5154818df7f7</webElementGuid>
+      <value>//input[@id = 'fieldName:ID.COD.OPER:1:2' and @name = 'fieldName:ID.COD.OPER:1:2' and @type = 'text']</value>
+      <webElementGuid>c57edb0a-be64-4b7b-85e8-ef828f67b64e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CDC17-Cierre de Cuentas Cierre de Cuenta.Cancelación Total con efectivo de Cta Cerrada. Posteo para Cancelación de saldo en efvo. Cuenta con Saldo acreedor. CC</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>20fdb94c-81e4-45ff-b49e-791b68e868ab</testCaseGuid>
-</TestCaseEntity>

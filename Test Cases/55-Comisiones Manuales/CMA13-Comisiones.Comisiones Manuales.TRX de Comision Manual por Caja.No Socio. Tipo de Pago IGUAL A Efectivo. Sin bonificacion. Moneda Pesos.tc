@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CMA13-Comisiones.Comisiones Manuales.TRX de Comision Manual por Caja.No Socio. Tipo de Pago IGUAL A Efectivo. Sin bonificacion. Moneda Pesos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bcb6c85c-aee9-41c5-8ead-6ca847e506b8</testCaseGuid>
+</TestCaseEntity>

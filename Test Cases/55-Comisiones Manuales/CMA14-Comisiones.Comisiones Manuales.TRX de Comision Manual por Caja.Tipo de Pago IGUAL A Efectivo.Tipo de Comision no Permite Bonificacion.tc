@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CMA14-Comisiones.Comisiones Manuales.TRX de Comision Manual por Caja.Tipo de Pago IGUAL A Efectivo.Tipo de Comision no Permite Bonificacion</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9f73b160-1388-4e02-8dfc-bc75434634b0</testCaseGuid>
+</TestCaseEntity>

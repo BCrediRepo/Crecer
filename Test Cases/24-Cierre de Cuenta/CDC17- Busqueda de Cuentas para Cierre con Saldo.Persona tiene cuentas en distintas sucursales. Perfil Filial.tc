@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CDC17- Busqueda de Cuentas para Cierre con Saldo.Persona tiene cuentas en distintas sucursales. Perfil Filial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1130692a-a707-40a4-a1c1-09e77401a430</testCaseGuid>
+</TestCaseEntity>
