@@ -160,4 +160,16 @@ public class kywBusquedaMenu {
 			return false
 		}
 	}
+
+	//Keyword para parametrizar las busquedas que se realizan por command line
+	//En el primer argumento de kyw se le pasa lo que se quiere buscar y en el segundo argumento el index (o numero) de la ventana
+	//Entonces la kyw ya se pocisiona en la ventana deseada
+	@Keyword
+	def seteoCommandLine(String comando, int ventana) {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 3)
+		WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), comando)
+		WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+		WebUI.delay(2)
+		WebUI.switchToWindowIndex(ventana)
+	}
 }

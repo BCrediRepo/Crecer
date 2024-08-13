@@ -24,32 +24,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
-
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando menu ?1
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Abre la pestaña del menú ?01
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Ir a Sucursal piloto
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
-
-//Selecciona D2 AUTOMATIZACION DE SUCURSALES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-
-//Selecciona CONSULTA OPERATORIA DE FILIALES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTASOPERATORIASDEFILIALES'))
-
-//Selecciona DETALLE DE OPERACIONES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkDETALLEDEOPERACIONES'))
-
-//Ir a AJUSTES DE DENOMINACIONES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkAJUSTESDEDENOMINACION'))
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Sucursal Piloto","D2 - Automatizacion de Sucursales","CONSULTAS OPERATORIAS DE FILIALES","DETALLE DE OPERACIONES"]
+link = "AJSUTES DE DENOMINACION"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('TELLER')
 
@@ -61,7 +44,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion 
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/inputMonto'),'1000')
 
 //Valida el registro
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Ingresa una DENOMINACIONES DB 1
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnDenominacionesDB'))
@@ -73,22 +56,19 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Aj
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/input_Cantidad.1CR'),6)
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/input_Cantidad.1CR'),'1')
 
-//Acepta el registro
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnAceptarRegistro'))
-
-//Aceptar alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnAceptarAlertas'),6)
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/btnAceptarAlertas'))
+//Acepta el registro y alertas
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Ajustes De Denominacion/lblTxnCompleta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
