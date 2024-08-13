@@ -76,6 +76,7 @@ println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/lblDepositoporcajaenefectivo'))
 assert element.contains('Deposito por caja en efectivo') 
 
+//-------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

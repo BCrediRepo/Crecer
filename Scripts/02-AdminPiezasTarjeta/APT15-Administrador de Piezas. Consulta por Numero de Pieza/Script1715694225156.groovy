@@ -27,7 +27,7 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
 link = "Consulta por Card-Carrier"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.PIEZAS"
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')

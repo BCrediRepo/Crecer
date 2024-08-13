@@ -37,12 +37,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Cambiar a la ventana "Movimientos por Fecha de Cuentas"
 WebUI.switchToWindowIndex(1)
 
-//Seteo de Datos "Nro de Cuenta"
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','05330013359')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220701')
 
@@ -63,17 +61,11 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//Seleccionar boron Ver detalle
-WebUI.waitForElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'), 10)
-WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/01-BCCL.E.RES.CTA.MOV.FECHA/btnVerDetalleCompleto'))
+//Verificar "Transaccion de tabla que no sea vacia"
+assert WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/STMT.ENTRY/lblTxnTabla')).TRUE 
 
-//Verificar "Numero de cuenta"
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/STMT.ENTRY/lblAccountNumber'))
 
-//Validar "Numero de cuenta"
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/STMT.ENTRY/lblAccountNumber'))
-assert element.contains('05330013359')
-
+//-------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

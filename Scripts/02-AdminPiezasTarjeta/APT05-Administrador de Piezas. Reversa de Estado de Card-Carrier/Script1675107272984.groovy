@@ -29,7 +29,7 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 def menuDesplegable = ["Administracion de Piezas con Tarjetas","Reversa de Estado de Card-Carrier"]
 def link = "Reversa de Estado del Card-Carrier"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana de Reversa
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')

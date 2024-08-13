@@ -94,7 +94,7 @@ assert cells[21].getText().contains('Combte') : "Expected 'Fec Valor' but found 
 
 //Validar Fecha valor
 def fechaValor = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/lblFechaValor'))
-assert fechaValor.contains('01-09-2023')
+assert fechaValor.contains('01-09-2023')//PARSEAR FECHA COB PARA QUE TODOS LOS AMBIENTES CON DISTINTA FECHA PUEDAN VALIDAR ESTE CAMPO
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()

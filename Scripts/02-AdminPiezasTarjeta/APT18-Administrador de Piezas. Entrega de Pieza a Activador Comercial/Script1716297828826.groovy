@@ -38,7 +38,7 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
 link = "Seleccion por Nombre / Documento / Sucursal"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
@@ -116,7 +116,7 @@ WebUI.switchToWindowIndex(0)
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Envio a otra filal o al Activador Comercial"]
 link = "Envio o Entrega a AC de Card-Carrier"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.PIEZAS"
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
@@ -138,8 +138,8 @@ WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Validar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 
 //Setear Numero de Pieza
@@ -158,7 +158,7 @@ WebUI.switchToWindowIndex(0)
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Reversa de Estado de Card-Carrier"]
 link = "Reversa de Estado del Card-Carrier"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar a la ventana de "Reversa de Estado"
 WebUI.switchToWindowIndex(3)
@@ -173,8 +173,8 @@ WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRe
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Validar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-def element3 = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element3 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element3.contains('Txn Completa')
 
 //Setear Numero de Pieza

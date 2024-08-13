@@ -33,16 +33,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('Temenos T24')
 WebUI.maximizeWindow()
 
-//NAVEGACION DASHBOARD?
-
-//Click en admin de piezas con tarjetas
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/spanAdministracion de Piezas con Tarjetas'))
-
-//Click en Consultas al maestro Card-Carrier
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/spanConsultas al Maestro de Card-Carrier'))
-
-//Click en Seleccion por nombre/doc/suc
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/lnkSeleccion por Nombre Documento Sucursal'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
+link = "Seleccion por Nombre / Documento / Sucursal"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Switch a la ventana BCCL.E.AP.ENQ.NOMBRE.DOC
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')

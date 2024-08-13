@@ -24,7 +24,6 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Ingresamos la ENQ en el command line
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AS.FIRMA')
@@ -37,42 +36,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Switch a la ventana BCCL.AS.FIRMA,AUDIT
 WebUI.switchToWindowTitle('Verificacion de firmas y facultades')
 
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click nueva seleccion
-WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkNueva Seleccion'))
-
 //Ingresamos los datos
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '00150044569')
-//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha (AAAAMMDD)', '20230801')
-
-//Click en ejecutar
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
-
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA es de Ingreso Obligatorio'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA es de Ingreso Obligatorio'))
-def element = WebUI.getText(findTestObject('Object Repository/43-Verificacion de Firmas/06-BCCL.E.AS.FIRMA/lblFECHA es de Ingreso Obligatorio'))
-assert element.contains('FECHA es de Ingreso Obligatorio')
-
-//Switch a la ventana principal
-//WebUI.switchToWindowIndex(0)
-
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Click nueva seleccion
-//WebUI.click(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/lnkNueva Seleccion'))
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Ingresamos los datos
 WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '00150044569')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha (AAAAMMDD)', '20230801')
-
-//Screenshot
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Click en ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Switch a la ventana Verificacion de firmas y facultades

@@ -66,6 +66,7 @@ cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/Saldos de Cuenta/lbl
 assert cuenta.contains('13206207767')
 estado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Saldos de Cuenta/lblEstadoActiva'))
 assert estado.contains('ACTIVA')
+
 //-----------------------------------------------------------------------------------------------------------------
 //Control fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

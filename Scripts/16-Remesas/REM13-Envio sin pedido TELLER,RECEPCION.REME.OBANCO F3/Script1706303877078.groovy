@@ -102,6 +102,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLE
 def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblRecepcionRemesasOtrosBanco'))
 assert element.contains('RECEPCION REMESAS OTROS BANCO')
 
+//---------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

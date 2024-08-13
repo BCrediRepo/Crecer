@@ -27,7 +27,7 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
 link = "Arqueo en linea"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ARQUEO.EN.LINEA"
 WebUI.switchToWindowTitle('BCCL.E.AP.ARQUEO.EN.LINEA')
