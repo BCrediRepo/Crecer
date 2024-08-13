@@ -38,7 +38,7 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
 link = "Seleccion por Nombre / Documento / Sucursal"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
@@ -115,7 +115,7 @@ WebUI.switchToWindowIndex(0)
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Envio a otra filal o al Activador Comercial"]
 link = "Envio o Entrega a AC de Card-Carrier"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AP.PIEZAS"
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
@@ -160,7 +160,7 @@ WebUI.switchToWindowIndex(0)
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Reversa de Estado de Card-Carrier"]
 link = "Reversa de Estado del Card-Carrier"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar a la ventana de "Reversa de Estado"
 WebUI.switchToWindowIndex(3)

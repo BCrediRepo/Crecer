@@ -24,8 +24,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
-        2, 1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 26), findTestData('MainData/Users').getValue(2, 26))
 
 WebUI.maximizeWindow()
 
@@ -50,7 +49,7 @@ WebUI.setText(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajus
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Ingresamos importe
-WebUI.setText(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/txtImporte'), '100')
+WebUI.setText(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/txtImporte'), '100000000')
 
 //Click en "Lista de Registros"
 WebUI.click(findTestObject('38-Ajustes Monetarios/01 - Nota de Debito por Ajuste/btnListaRegistros'))

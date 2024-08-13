@@ -31,7 +31,7 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 def menuDesplegable = ["Administracion de Piezas con Tarjetas","Proceso de destruccion de Tarjetas"]
 def link = "Tarjetas con Plazo de atesoramiento vencido"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana de Destruccion Masiva
 WebUI.switchToWindowTitle('BCCL.AP.E.AP.DESTRUCCION.MASIVA')

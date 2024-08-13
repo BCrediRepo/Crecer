@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblAccountNumber</name>
+   <name>lblAPMarca</name>
    <tag></tag>
-   <elementGuidId>65af7b28-76f8-4f81-8602-ab52ec52fae2</elementGuidId>
+   <elementGuidId>2fbee884-eaaf-4ad7-8468-56e49802bd6e</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>span.disabled_dealbox.disabled_dealbox_STMTENTRY</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#fieldName\:AP\.MARCA</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,31 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3a5f566b-7644-418c-8f4e-fd9e8ddf2015</webElementGuid>
+      <webElementGuid>eca8fb1e-b741-48b7-930c-0f6cd04af867</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>disabled_dealbox disabled_dealbox_STMTENTRY</value>
-      <webElementGuid>1c0c1e35-adfe-43f8-aca4-7ce6a2f7757d</webElementGuid>
+      <value>disabled_dealbox disabled_dealbox_BCCLAPPIEZAS disabled_dealbox_BCCLAPPIEZAS_BCCLVAPCONSULTAPIEZA</value>
+      <webElementGuid>69615492-f60e-4587-90c7-1b972c0190b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>05330013359</value>
-      <webElementGuid>97c6d6e0-ff26-4330-a5e1-abc704a48dae</webElementGuid>
+      <value>090</value>
+      <webElementGuid>e68afb57-7fb6-4e76-8423-dcf9f58e1789</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_STMTENTRY&quot;]</value>
-      <webElementGuid>9822eecb-2904-425f-a851-6b71ffe9a8fa</webElementGuid>
+      <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLAPPIEZAS disabled_dealbox_BCCLAPPIEZAS_BCCLVAPCONSULTAPIEZA&quot;]</value>
+      <webElementGuid>d4abf9d6-3e4a-409f-bfc8-e1f8cf6c9522</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,47 +54,47 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
-      <webElementGuid>7a205267-3015-4f7e-8207-7cb3a9931d98</webElementGuid>
+      <webElementGuid>b6be9642-2eb7-4d57-b027-ae0bf459000e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Account Number'])[1]/following::span[1]</value>
-      <webElementGuid>d5a02cde-652f-4a88-b817-6764fe77bb1e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ESTADO'])[1]/following::span[1]</value>
+      <webElementGuid>70fd330f-8bbc-4d29-9365-c9d57ccd981b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.073 Jujuy)'])[1]/following::span[1]</value>
-      <webElementGuid>f8df26d5-2736-4e3a-84ad-98a6b159312b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Auditoria'])[1]/following::span[1]</value>
+      <webElementGuid>41b45bb6-bf8e-4291-90e1-3dadc7ee9846</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='EL HADO SRL'])[1]/preceding::span[1]</value>
-      <webElementGuid>f0ef361f-c162-4884-8b73-4f2555819a39</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Entregada al Socio'])[1]/preceding::span[1]</value>
+      <webElementGuid>7b32ab42-0007-448f-adb4-a69887867fc2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Company Code'])[1]/preceding::span[2]</value>
-      <webElementGuid>43687729-b160-4e19-a862-94a8c1bc9859</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado Actual'])[1]/preceding::span[2]</value>
+      <webElementGuid>34bd5edb-0b28-4cdf-a05c-c26fe5b8a22e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='05330013359']/parent::*</value>
-      <webElementGuid>19bf91e4-d545-420f-b4f6-b5132c3ffc37</webElementGuid>
+      <value>//*/text()[normalize-space(.)='090']/parent::*</value>
+      <webElementGuid>f3b623e0-72fc-46e5-abbb-2eb1b623afad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,14 +102,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/span</value>
-      <webElementGuid>cb25ff45-5265-43c5-b484-e39f5e96b81f</webElementGuid>
+      <webElementGuid>3e6bc59a-ba11-46cc-911b-0f7042e9708f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = '05330013359' or . = '05330013359')]</value>
-      <webElementGuid>2bc74f2a-66fe-4407-a4fe-f8f46a873fc6</webElementGuid>
+      <value>//span[(text() = '090' or . = '090')]</value>
+      <webElementGuid>56bb209d-d95b-45f1-81a7-ac4f134f7592</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

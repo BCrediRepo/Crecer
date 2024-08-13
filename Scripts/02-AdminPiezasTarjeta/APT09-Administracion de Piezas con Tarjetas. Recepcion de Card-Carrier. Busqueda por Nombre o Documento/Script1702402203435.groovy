@@ -24,8 +24,6 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2,2))
 WebUI.maximizeWindow()
 
-//NAVEGACION DASHBOARD?
-
 //Acceder menu "?302"
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?302')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
@@ -34,14 +32,10 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle('Temenos T24')
 WebUI.maximizeWindow()
 
-//Seleccionar "Administracion de Piezas con Tarjetas"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/spanAdministracion de Piezas con Tarjetas'))
-
-//Seleccionar "Recepcion de Card-Carrier"
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/Administracion de Piezas con Tarjetas/lnkRecepciondeCard-Carrier'))
-
-//Seleccionar en "Busqueda por Nombre o Documento"	
-WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/06-Temenos T24/Administracion de Piezas con Tarjetas/Recepcion de Card-Carrier/lnkBusquedaporNombreoDocumento'))
+//Se accede al menu Administracion de piezas
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Recepcion de Card-Carrier"]
+link = "Busqueda por Nombre o Documento"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')

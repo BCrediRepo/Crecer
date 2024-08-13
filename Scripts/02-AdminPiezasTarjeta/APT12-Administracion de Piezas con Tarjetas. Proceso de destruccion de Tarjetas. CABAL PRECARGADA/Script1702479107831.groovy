@@ -27,7 +27,7 @@ WebUI.maximizeWindow()
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Proceso de destruccion de Tarjetas"]
 link = "Impresion del ACTA DE DESTRUCCION"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "Imprimir Acta de Destruccion"
 WebUI.switchToWindowTitle('Imprimir Acta de Destruccion')

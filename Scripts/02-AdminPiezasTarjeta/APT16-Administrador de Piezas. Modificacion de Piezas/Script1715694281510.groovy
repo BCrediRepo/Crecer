@@ -28,9 +28,9 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
-menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
+menuDesplegable = ["Administracion de Piezas con Tarjetas","Modificaciones sobre Card-Carrier","Consultas al Maestro de Card-Carrier"]
 link = "Seleccion por Nombre / Documento / Sucursal"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
 WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
@@ -39,150 +39,68 @@ WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Selecciono una pieza de la tabla con estado 010 para luego modificarla
-def estadoValor = "010"
-def buscarElementoEnTabla(String estadoValor, String numPieza) {
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	for (WebElement row : rows) {
-		WebElement cell = row.findElements(By.tagName("td"))[7]
-		String cellText = cell.getText()
-		if (cellText.equals(estadoValor)) {
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[0]
-			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
-			numPieza = lnkElement.getText()
-			return true
-		}
-	}
-	return false
-}
-
-/*
-def encontrado = false
-def numPieza
-while (!encontrado) {
-	encontrado = buscarElementoEnTabla(estadoValor, numPieza)
-	if (!encontrado) {
-		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnSiguiente'))
-		WebUI.delay(2)
-	}
-}
-
-
-//Cambiar ventana principal
-WebUI.switchToWindowIndex(0)
-
-//Se accede al menu Administracion de piezas
-menuDesplegable = ["Modificaciones sobre Card-Carrier"]
-link = "Modificacion datos de Card-Carrier"
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
-//Cambiar ventana "BCCL.AP.PIEZAS"
-WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
-WebUI.maximizeWindow()
-
-//Modificamos el numero de pieza elegido
-WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), numPieza)
-WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
-
-
-
-if (valorPrimerEstado.equals('010') && valorPrimeraMarca.equals('CABAL')) {
-	WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), valorPrimeraPieza)
 	
-	//Screenshot
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	
-	
-	//Setear Marca VISA
-	WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtMARCA'), 'VISA')
-	
-	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnAceptarRegistro'))
-	
-	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-	
-	//Validar "Txn Completa"
-	def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-	assert element.contains('Txn Completa')
-	
-	
-} else {
-	if (valorSegundoEstado.equals('010') && valorSegundaMarca.equals('CABAL')) {
-		WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), valorSegundaPieza)
+//Variable booleana de corte
+def accionRealizada = false
+int i = 0
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+List<WebElement> rows = table.findElements(By.tagName("tr"))
+
+//Bucle interno para recorrer las filas de la tabla que no se por que pero en el codigo HTML vienen dado por un indice que va de dos en dos
+while (i < rows.size() && !accionRealizada) {
+	WebElement row = rows.get(i)
+	WebElement cell = row.findElements(By.tagName("td"))[0]
+	String numPieza = cell.getText()
+	try {
+		//Cambiar ventana principal
+		WebUI.switchToWindowIndex(0)
 		
-		//Screenshot
-		CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-		
-		//Seleccionar "Boton Modificar Registro"
-		WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnModificarRegistro'))
-		
-		//Setear Marca VISA
-		WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtMARCA'), 'VISA')
-		
+		//Se accede al menu Administracion de piezas
+						menuDesplegable = []
+						link = "Modificacion datos de Card-Carrier"
+						CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+						
+		//Cambiar ventana "BCCL.AP.PIEZAS"
+						WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
+						WebUI.maximizeWindow()
+						
+		//Modificamos el numero de pieza elegido
+						WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), numPieza)
+						WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
+						
+		//OBTENGO EL VALUE DE UN INPUT
+						WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblAPMarca'))
+						WebElement inputElement = DriverFactory.getWebDriver().findElement(By.id("fieldName:AP.MARCA"))
+						String marca = inputElement.getAttribute("value")
+						
+		//Pregunto el valor predeterminado para realizar la modificacion de la marca
+						if (marca == "CABAL") {
+							WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblAPMarca'), "VISA")
+						} else {
+							WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblAPMarca'), "CABAL")
+						}
+				
 		//Seleccionar "Aceptar el registro"
-		WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnAceptarRegistro'))
-		
-		//Verificar "Txn Completa"
-		WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-		
+						WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+				
 		//Validar "Txn Completa"
-		def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-		assert element.contains('Txn Completa')
+						WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+						def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+						assert element.contains('Txn Completa')
+		//Condicion de corte
+						accionRealizada = true
 		
-		
-	} else {
-		if (valorTercerEstado.equals('010') && valorTerceraMarca.equals('CABAL')) {
-			WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), valorTerceraPieza)
-			
-			//Screenshot
-			CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-			
-			//Seleccionar "Boton Modificar Registro"
-			WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnModificarRegistro'))
-			
-			//Setear Marca VISA
-			WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtMARCA'), 'VISA')
-			
-			//Seleccionar "Aceptar el registro"
-			WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnAceptarRegistro'))
-			
-			//Verificar "Txn Completa"
-			WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-			
-			//Validar "Txn Completa"
-			def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-			assert element.contains('Txn Completa')
-			
-			
-		} else {
-			WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtNro.de Pieza'), valorPrimeraPieza)
-			
-			//Screenshot
-			CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-			
-			//Seleccionar "Boton Modificar Registro"
-			WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnModificarRegistro'))
-			
-			//Setear Marca CABAL
-			WebUI.setText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/txtMARCA'), 'CABAL')
-			
-			//Seleccionar "Aceptar el registro"
-			WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/btnAceptarRegistro'))
-			
-			//Verificar "Txn Completa"
-			WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-			
-			//Validar "Txn Completa"
-			def element = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblTxnCompleta'))
-			assert element.contains('Txn Completa')
-		}
-	}
+	} catch (Exception e) {
+		WebUI.closeWindowIndex(2)
+		WebUI.switchToWindowIndex(1)
+		accionRealizada = false
+        // Manejo de errores
+        WebUI.comment("Error al realizar la acción: " + e.message)
+          	}	
+	i = i+2
 }
-*/
+
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

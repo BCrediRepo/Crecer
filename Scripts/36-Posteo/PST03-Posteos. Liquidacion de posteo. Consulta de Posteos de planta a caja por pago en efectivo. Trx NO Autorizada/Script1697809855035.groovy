@@ -18,6 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Date
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
+
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -86,10 +90,27 @@ WebUI.switchToWindowIndex(1)
 //Selecciono Audit
 WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnAudit'))
 
-//Valida el mensaje de las tx no autorizadas
-WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblINAO'))
-def element2 = WebUI.getText(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/lblINAO'))
-assert element2.contains('INAO')
+//Valida el mensaje de las tx no autorizadas 
+//Esta funcion busca en los resultados el contenido de: "Estado del registro"
+//Siendo "INAO" el resultado esperado para las transacciones no autorizadas
+//La posicion de ese label puede variar segun los ambientes
+def variable = "Estado del Registro"
+		
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("tab2"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {		
+		WebElement cell = row.findElements(By.tagName("td"))[0]		
+		String cellText = cell.getText()
+		println (cellText)
+		if (cellText.equals(variable)) {			
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[2]
+			String texto = tdElement.getText()
+			println (texto)
+			assert texto == "INAO"
+			break
+			}
+}
 
 
 //---------------------------------------------------------------------------------------------------------------------

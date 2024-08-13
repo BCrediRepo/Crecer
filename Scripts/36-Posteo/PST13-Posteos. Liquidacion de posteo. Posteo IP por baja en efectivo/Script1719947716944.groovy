@@ -47,30 +47,16 @@ WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP', '0099')
-
-//Maximizar Pantalla
 WebUI.maximizeWindow()
-
-//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Cambiar opción del ComboBox a "Baja Cuenta Caja"
-WebUI.selectOptionByIndex(findTestObject('Object Repository/27-Inventario Permanente/BCCL.E.IP.BAJA.PARTIDAS/cbBajaCuentaContable'), 
-    3)
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.selectOptionByIndex(findTestObject('Object Repository/27-Inventario Permanente/BCCL.E.IP.BAJA.PARTIDAS/cbBajaCuentaContable'), 3)
 
 //Seleccionar "boton Select Drill down"
 WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.E.IP.BAJA.PARTIDAS/btnSelectDrilldown'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnAceptarRegistro'))
