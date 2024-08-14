@@ -27,16 +27,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,17), findTestData('MainData/Users').getValue(2,17))
 WebUI.maximizeWindow()
 
-//Selecciona Deposito
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/Fil.089 M.del Plata Ctr/btnDepositos'))
-
-//Selecciona Deposito en Buzon a toda hora
-WebUI.click(findTestObject('Object Repository/02-Dashboard/49-Depositos/LnkDepositoEnBuzonATodaHora'))
+//Ir a Deposito, Deposito en Buzon a toda hora
+def menuDesplegable = ["Depositos"]
+def link = "Deposito en Buzon a Toda Hora"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Abre la pestaña TELLER
 WebUI.switchToWindowTitle('TELLER')
 
-//Verifica titulo Deposito en Buzon a toda hora
+//Verifica si estamos en la ventana Deposito en Buzon a toda hora
 WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblTituloDepositoDeEfectivoEnBuzonATodaHora'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblTituloDepositoDeEfectivoEnBuzonATodaHora'))
 
@@ -51,8 +50,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extrac
 WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/txtNrodeCuenta'),'01000015386')
 
 //Click en boton validar
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnValidarRegistro'),6)
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Ingresa monto
 WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/txtMontoARS'), 6)
@@ -61,23 +59,21 @@ WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposit
 //Selecciona orden de tercero "NO"
 WebUI.selectOptionByIndex(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/cbOrdenDeTercero'), 1)
 
-//Click boton Validar
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnValidarRegistro'))
+//Click en boton validar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Click boton aceptar
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarRegistro'),6)
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Acepto alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarAlertas'),6)
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarAlertas'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txn.contains('Txn Completa:')
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script

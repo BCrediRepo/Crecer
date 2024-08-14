@@ -27,13 +27,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,17), findTestData('MainData/Users').getValue(2,17))
 WebUI.maximizeWindow()
 
-//Selecciona Deposito
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/Fil.089 M.del Plata Ctr/btnDepositos'))
-
-//Selecciona Deposito en Fondo de Cese laboral 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/49-Depositos/lnkDepositoenFondodeCese laboral'))
-
-//Abre la pestaña TELLER
+//Ir a Deposito, Deposito en Fondo de Cese laboral 
+def menuDesplegable = ["Depositos"]
+def link = "Deposito en Fondo de Cese laboral"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('Teller Financial Services')
 
 //Verifica titulo TELLER.FINANCIAL.SERVICES,CESE.LABORAL
@@ -55,33 +52,27 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extrac
 WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/txtImporte'),'100')
 
 //Click en boton validar
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnValidarRegistro'),6)
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Click boton aceptar
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnAceptarRegistro'),6)
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//Aceptar alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'),6)
-WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txn.contains('Txn Completa:')
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

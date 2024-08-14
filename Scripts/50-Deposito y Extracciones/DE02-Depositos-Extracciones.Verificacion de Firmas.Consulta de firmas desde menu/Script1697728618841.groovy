@@ -26,15 +26,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.FIRMAS.CUENTA
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.FIRMAS.CUENTA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecuta en la linea de comando
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.FIRMAS.CUENTA", 1)
 
-//Abre la pestaña BCCL.E.FIRMAS.CUENTA
-WebUI.switchToWindowTitle('BCCL.E.FIRMAS.CUENTA')
-
-//Verifica titulo BCCL.E.FIRMAS.CUENTA
+//Verifica que estemos en la ventana BCCL.E.FIRMAS.CUENTA
 WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/BCCL.E.FIRMAS.CUENTA/lblBCCL.E.FIRMAS.CUENTA'))
 
 //Seteo de datos "Numero de Cuenta"
@@ -77,11 +72,8 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
 println TotalRegistros
-//-----------------------------
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

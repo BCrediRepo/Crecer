@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnValidarRegistro</name>
+   <name>lnkReversarRegistro</name>
    <tag></tag>
-   <elementGuidId>a8ab151c-f615-4cb8-8c02-f694e6af47f7</elementGuidId>
+   <elementGuidId>6f2979c2-79c2-407e-bfa8-d55251897218</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[2]/a/img</value>
+         <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[5]/a/img</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>img[alt=&quot;Validar un registro&quot;]</value>
+         <value>img[alt=&quot;Reversar un registro&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,72 +22,72 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>6ae09ac5-59ee-4895-a9ed-5f1ec73d1604</webElementGuid>
+      <webElementGuid>c452cc0b-d0f5-4ad3-976e-8ea8f48e1d2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>../plaf/images/bccl/tools/txnvalidate.gif
+      <value>../plaf/images/bccl/tools/txnreverse.gif
 															</value>
-      <webElementGuid>51ec5a39-3ebc-437e-ad5c-57a3aa3af0f2</webElementGuid>
+      <webElementGuid>62dee083-f70b-49fc-8bfa-be99a7c418b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>alt</name>
       <type>Main</type>
-      <value>Validar un registro</value>
-      <webElementGuid>25fcdd48-b358-40e6-bd61-7dc31b8b0801</webElementGuid>
+      <value>Reversar un registro</value>
+      <webElementGuid>faa1c525-46f8-4bcd-b2a0-5005973b537a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Validar un registro</value>
-      <webElementGuid>c1d915ea-9660-464d-995f-f67346a91652</webElementGuid>
+      <value>Reversar un registro</value>
+      <webElementGuid>f310fdd9-51ce-4da5-b8f3-eaf48a042dd3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/img[1]</value>
-      <webElementGuid>9b12c21a-0d6d-4f52-8b70-dfc9ef845b36</webElementGuid>
+      <value>id(&quot;goButton&quot;)/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[5]/a[1]/img[1]</value>
+      <webElementGuid>3edc7613-ed1e-48af-84e0-03c28476fc79</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[2]/a/img</value>
-      <webElementGuid>6fe235b8-00cc-4e27-97ba-77b0277815fe</webElementGuid>
+      <value>//table[@id='goButton']/tbody/tr/td/table/tbody/tr/td[5]/a/img</value>
+      <webElementGuid>59331245-8311-4a66-afc9-7b838d80554a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>//img[@alt='Validar un registro']</value>
-      <webElementGuid>fcdf1780-8b49-454d-a974-e0c1b791c902</webElementGuid>
+      <value>//img[@alt='Reversar un registro']</value>
+      <webElementGuid>e2ed049f-504c-496a-a14d-093dd96b18f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[2]/a/img</value>
-      <webElementGuid>313e08c9-346e-49af-b58a-cafdf1b4f133</webElementGuid>
+      <value>//a/img</value>
+      <webElementGuid>31fd3a11-7853-4d84-a3ad-9da67b665719</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = '../plaf/images/bccl/tools/txnvalidate.gif
-															' and @alt = 'Validar un registro' and @title = 'Validar un registro']</value>
-      <webElementGuid>a5d9202b-21bd-493c-80fa-fb85f2e952b7</webElementGuid>
+      <value>//img[@src = '../plaf/images/bccl/tools/txnreverse.gif
+															' and @alt = 'Reversar un registro' and @title = 'Reversar un registro']</value>
+      <webElementGuid>ffe879fa-99a2-4b10-8a63-d5b33e09229d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

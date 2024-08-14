@@ -28,13 +28,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Selecciona Deposito
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/Fil.089 M.del Plata Ctr/btnDepositos'))
-
-//Selecciona Deposito en Fondo de Cese laboral 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/49-Depositos/lnkDepositoenFondodeCese laboral'))
-
-//Abre la pestaña TELLER
+//Ir a Deposito, Deposito en Fondo de Cese laboral 
+def menuDesplegable = ["Depositos"]
+def link = "Deposito en Fondo de Cese laboral"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('Teller Financial Services')
 
 //Verifica titulo TELLER.FINANCIAL.SERVICES,CESE.LABORAL
@@ -64,37 +61,26 @@ WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposit
     '100')
 
 //Click en boton validar
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnValidarRegistro'), 
-    6)
-
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Click boton aceptar
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnAceptarRegistro'), 
-    6)
-
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Acepto alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'), 6)
-
-WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/lblTxnCompleta'), 
-    6)
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/lblTxnCompleta'))
-
-def element = WebUI.getText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito en Fondo de Cese Laboral/Teller Financial Services/lblTxnCompleta'))
-
-assert element.contains('Txn Completa:')
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txn.contains('Txn Completa:')
 
 // Imprimir el numero de operacion en consola
-println('El ID de la txt es: ' + element)
+println('El ID de la txt es: ' + txn)
 
 //Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(' ')
+String[] palabras = txn.split(' ')
 
 // Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
 String terceraPalabra = palabras[2]
@@ -102,27 +88,17 @@ String terceraPalabra = palabras[2]
 // Imprimir la tercera palabra seleccionada
 println('La tercera palabra es: ' + terceraPalabra)
 
-//Cierra Deposito
+//Ir a Reversos de operaciones
 WebUI.switchToWindowIndex(0)
-
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/Fil.089 M.del Plata Ctr/btnDepositos'))
-
-//Ir a Reversos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkReversos'))
-
-//Selecciona Reverso de operaciones
-WebUI.click(findTestObject('Object Repository/02-Dashboard/54-Reversos/lnkReversodeOperaciones'))
-
-//Abre la pestaña BCCL.E.EB.CONS.REVE
+def menuDesplegable2 = ["Reversos"]
+def link2 = "Reverso de Operaciones"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
-
 WebUI.maximizeWindow()
 
 //Seteo de datos "Usuario", "Nro. Contrato"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.2547')
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Contrato', terceraPalabra)
 
 //Selecciona botón Ejecutar
@@ -130,12 +106,9 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Espera y verifica que se muestre al menos 1 dato de la tx buscada
 WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/lblIdOperacion'), 6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/lblIdOperacion'))
-
-def element2 = WebUI.getText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/lblIdOperacion'))
-
-assert element2.contains('Id Operacion')
+def dato = WebUI.getText(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/lblIdOperacion'))
+assert dato.contains('Id Operacion')
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -145,33 +118,20 @@ WebUI.click(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/bt
 
 //Reversa el registro
 WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarRegistro'))
-
-//Acepto alertas
-//WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'),6)
-//WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarAlertas'))
-
 WebUI.switchToWindowTitle('Teller Financial Services')
 
-//Espera y recibe mensaje de tx completa reversada
-WebUI.waitForElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'))
-def element3 = WebUI.getText(findTestObject('Object Repository/55-Reversos/TELLER/lblTxnCompletaReversada'))
-
 // Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element3)
+println("El ID de la txt es: " + txn)
 
-assert element3.contains('Txn Completa:')
+//Espera y recibe mensaje de tx completa reversada
+assert txn.contains('Txn Completa:')
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

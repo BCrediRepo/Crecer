@@ -26,14 +26,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 //Maximizar Pantalla
 WebUI.maximizeWindow()
 
-//Seleccionar Extracciones
-WebUI.click(findTestObject('02-Dashboard/lnkExtracciones'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar Retiro en Ventanilla (CA)
-WebUI.click(findTestObject('02-Dashboard/47-Extracciones/lnkRetiroEnVentanilla'))
+//Ir Extracciones, Retiro En Ventanilla
+def menuDesplegable = ["Extracciones"]
+def link = "Retiro en Ventanilla (CA)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "TELLER"
 WebUI.switchToWindowTitle('TELLER')
@@ -42,7 +38,7 @@ WebUI.switchToWindowTitle('TELLER')
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '11190215166')
 
 //Seleccionar "boton Validar Registro"
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Setear Monto
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '5')
@@ -50,14 +46,15 @@ WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '5')
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "boton Aceptar Registro
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnAceptarRegistro'))
+//Click boton aceptar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "boton Aceptar alertas"
-WebUI.click(findTestObject('49-Extracciones/TELLER/lnkAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Cambiar ventana "Verificacion de Firmas - Fil.019 La Plata"
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.019 La Plata')
@@ -94,7 +91,7 @@ WebUI.setText(findTestObject('Object Repository/49-Extracciones/TELLER/txtRetiro
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Verificar "FORZADO FIRMA"
 WebUI.verifyElementVisible(findTestObject('Object Repository/49-Extracciones/TELLER/lblFORZADOFIRMA'))
@@ -158,12 +155,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/49-Extracciones/Con
 firmantesCuenta = WebUI.getText(findTestObject('Object Repository/49-Extracciones/Consulta Firmantes Cuenta/lblFirmantesCuenta'))
 assert firmantesCuenta == "Firmantes Cuenta:"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

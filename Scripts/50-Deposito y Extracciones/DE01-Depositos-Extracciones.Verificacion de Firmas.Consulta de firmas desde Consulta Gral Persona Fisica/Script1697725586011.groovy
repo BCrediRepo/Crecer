@@ -26,15 +26,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.PER.GEN.PF
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.PER.GEN.PF')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecuta en la linea de comando 
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.PER.GEN.PF", 1)
 
-//Abre la pestaña Consulta General de personas Fisica
-WebUI.switchToWindowTitle('Consulta General de personas Fisica')
-
-//Verifica titulo //Abre la pestaña Consulta General de personas Fisica
+//Verifica que estemos en la ventana Consulta General de personas Fisica
 WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/Consulta General de personas Fisica/lblTituloConsulta General de personas Fisica'))
 
 //Seteo de datos "Id Persona"
@@ -91,9 +86,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/31-Personas/ARCHIVO
 def element2 = WebUI.getText(findTestObject('Object Repository/31-Personas/ARCHIVOS PERSONAS/lblIdentificaciondelaPersonaFisica'))
 assert element2.contains('Identificacion de la Persona Fisica')
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

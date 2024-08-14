@@ -21,37 +21,32 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(
-		2, 7))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(2, 7))
 
 WebUI.maximizeWindow()
 
-//Busqueda de  app
-WebUI.click(findTestObject('02-Dashboard/lnkExtracciones'))
-
-WebUI.click(findTestObject('02-Dashboard/47-Extracciones/lnkRetiroEnVentanilla'))
-
+//Ir a Extracciones, Retiro en Ventanilla
+def menuDesplegable = ["Extracciones"]
+def link = "Retiro en Ventanilla (CA)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('TELLER')
 
 //Seteo de datos
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '11190215166')
-
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnValidarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '50000000')
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnAceptarRegistro'))
-
-WebUI.click(findTestObject('49-Extracciones/TELLER/lnkAceptarAlertas'))
+//Aceptar alertas y registros
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de fondos insuficientes
 WebUI.waitForElementVisible(findTestObject('Object Repository/49-Extracciones/TELLER/lblFONDOSINSUFICIENTES'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/49-Extracciones/TELLER/lblFONDOSINSUFICIENTES'))
-def element2 = WebUI.getText(findTestObject('Object Repository/49-Extracciones/TELLER/lblFONDOSINSUFICIENTES'))
-assert element2.contains('FONDOS INSUFICIENTES')
+def mensaje = WebUI.getText(findTestObject('Object Repository/49-Extracciones/TELLER/lblFONDOSINSUFICIENTES'))
+assert mensaje.contains('FONDOS INSUFICIENTES')
 
-//------------------------------//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

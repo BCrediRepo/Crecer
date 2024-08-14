@@ -26,29 +26,26 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Busqueda de  app
-WebUI.click(findTestObject('02-Dashboard/lnkExtracciones'))
-
-WebUI.click(findTestObject('02-Dashboard/47-Extracciones/lnkRetiroEnVentanilla'))
-
+//Ir a Extracciones, Retiro en Ventanilla
+def menuDesplegable = ["Extracciones"]
+def link = "Retiro en Ventanilla (CA)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('TELLER')
 
 //Seteo de datos
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '11190215166')
-
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnValidarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '5')
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnAceptarRegistro'))
-
-WebUI.click(findTestObject('49-Extracciones/TELLER/lnkAceptarAlertas'))
+//Aceptar alertas y registros
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/49-Extracciones/TELLER/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/49-Extracciones/TELLER/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/49-Extracciones/TELLER/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txn.contains('Txn Completa:')
 
 //Forzamos la firma de la tx realizada
 WebUI.switchToWindowIndex(2)
@@ -61,21 +58,19 @@ WebUI.click(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas
 //Espera y recibe Estado FINALIZADA
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
-def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
-assert element2.contains('FINALIZADA')
-
+def estado1 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
+assert estado1.contains('FINALIZADA')
 
 //Espera y recibe Estado AUTORIZADA
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
-def element3 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
-assert element3.contains('AUTORIZADA')
+def estado2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
+assert estado2.contains('AUTORIZADA')
 
 // Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
+println("El ID de la txt es: " + txn)
 
-//------------------------------//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -85,4 +80,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

@@ -198,7 +198,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/btnReversar'))
 
 //Reversa el registro
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnReversarRegistro'))
+WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/lnkReversarRegistro'))
 
 //Acepto alertas
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)

@@ -23,14 +23,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 
-//Seleccionar "Extracciones"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkExtracciones'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Retiro (CC sin Chequera - Solo Titular)"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/47-Extracciones/lnkRetiro(CCsinChequera-SoloTitular)'))
+//Ir a Extracciones, Retiro (CC sin Chequera - Solo Titular) 
+def menuDesplegable = ["Extracciones"]
+def link = "Retiro (CC sin Chequera - Solo Titular)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Canbiar a la ventana "TELLER"
 WebUI.switchToWindowIndex(1)
@@ -54,13 +50,14 @@ WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/TELLER/
 WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/TELLER/txtIdPersona'), '1003174696')
 
 //Seleccionar "Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Cambiar ventana a Verificación de firmas
 WebUI.switchToWindowIndex(2)
@@ -86,35 +83,13 @@ Transaccionforzada = WebUI.getText(findTestObject('Object Repository/51-Deposito
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Cambiar ventana al menu del Dashboard
+//Ir a Reversos de operaciones
 WebUI.switchToWindowIndex(0)
-
-//Ingresar "?327" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar a la ventana "Temenos T24"
-WebUI.switchToWindowIndex(4)
-
-//Seleccionar "Reversos"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Temenos T24/lnkReversos'))
-
-//Maximizar Pantalla
+def menuDesplegable2 = ["Reversos"]
+def link2 = "Reverso de Operaciones"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
+WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
 WebUI.maximizeWindow()
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Reverso de Operaciones"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Temenos T24/Reversos/lnkReversodeOperaciones'))
-
-//Cambiar a la ventana "BCCL.E.EB.CONS.REVE"
-WebUI.switchToWindowIndex(5)
 
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -135,13 +110,14 @@ WebUI.click(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/bt
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Reversar un registro"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnReversarRegistro'))
+WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/lnkReversarRegistro'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Setear en Pago de Cheque Mostrador
 WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/txtBajaPartidasIP-CuentaContable'), Transaccionforzada)
@@ -150,19 +126,19 @@ WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Seleccionar "Audit"
 WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblAudit'))
 
 //Verificar "REVE"
-WebUI.verifyElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblREVE'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblREVE'))
 
 //Validar "REVE"
-def element = WebUI.getText(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/lblREVE'))
+def element = WebUI.getText(findTestObject('Object Repository/55-Reversos/TELLER/lblREVE'))
 assert element.contains('REVE')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

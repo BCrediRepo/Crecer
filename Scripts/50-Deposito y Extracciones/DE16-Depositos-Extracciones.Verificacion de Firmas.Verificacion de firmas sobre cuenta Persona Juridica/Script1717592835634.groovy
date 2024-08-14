@@ -23,11 +23,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 45), findTestData('MainData/Users').getValue(2, 45))
 
-//Seleccionar "Extracciones"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkExtracciones'))
-
-//Seleccionar "Retiro (CC sin Chequera - Solo Titular)"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/47-Extracciones/lnkRetiro(CCsinChequera-SoloTitular)'))
+//Ir a Extracciones, Retiro (CC sin Chequera - Solo Titular) 
+def menuDesplegable = ["Extracciones"]
+def link = "Retiro (CC sin Chequera - Solo Titular)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Canbiar a la ventana "TELLER"
 WebUI.switchToWindowIndex(1)
@@ -54,13 +53,14 @@ WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/TELLER/
 WebUI.setText(findTestObject('Object Repository/51-Deposito-Extracciones/TELLER/txtIdPersona'), '1002159673')
 
 //Seleccionar "Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Cambiar ventana a Verificación de firmas
 WebUI.switchToWindowIndex(2)
@@ -84,15 +84,15 @@ Transaccionforzada = WebUI.getText(findTestObject('Object Repository/51-Deposito
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
 
 //Validar "FINALIZADA"
-def element = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
-assert element.contains('FINALIZADA')
+def estado1 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
+assert estado1.contains('FINALIZADA')
 
 //Verificar "AUTORIZADA"
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
 
 //Validar "AUTORIZADA"
-def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
-assert element2.contains('AUTORIZADA')
+def estado2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
+assert estado2.contains('AUTORIZADA')
 
 //Canbiar a la ventana "TELLER"
 WebUI.switchToWindowIndex(1)
@@ -104,16 +104,16 @@ WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito De Efectivo En Buzon A Toda Hora/TELLER/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Verificar "FORZADO FIRMA"
 WebUI.verifyElementVisible(findTestObject('Object Repository/51-Deposito-Extracciones/TELLER/lblForzadoFirma'))
 
 //Validar "FORZADO FIRMA"
-def element3 = WebUI.getText(findTestObject('Object Repository/51-Deposito-Extracciones/TELLER/lblForzadoFirma'))
-assert element3.contains('FORZADO FIRMA')
+def firma = WebUI.getText(findTestObject('Object Repository/51-Deposito-Extracciones/TELLER/lblForzadoFirma'))
+assert firma.contains('FORZADO FIRMA')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

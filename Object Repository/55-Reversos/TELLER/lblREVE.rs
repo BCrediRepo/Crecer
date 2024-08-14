@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTxnCompleta</name>
+   <name>lblREVE</name>
    <tag></tag>
-   <elementGuidId>90d2a513-1205-48e1-92e3-540e90b603d8</elementGuidId>
+   <elementGuidId>f458d48e-873b-448c-a9dc-287be0ca9ce0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
+         <value>//table[@id='tab2']/tbody/tr[7]/td[3]/span</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>td.message</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,95 +20,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
-      <webElementGuid>7ff0c4c5-4d61-4d73-8082-0af30e116063</webElementGuid>
+      <value>span</value>
+      <webElementGuid>187779e7-a3c1-4f2f-b074-1263825e38f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>message</value>
-      <webElementGuid>487c26a6-a11f-4bfd-899e-47c568fceb97</webElementGuid>
+      <value>disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_BCCLPAGOCQMOS</value>
+      <webElementGuid>821802af-a3e0-4f1d-87e2-3290a24e717e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Txn Completa: TFS2324008368 10:22:51 28 DEC 2023 TELLER.FINANCIAL.SERVICES,CESE.LABORAL I </value>
-      <webElementGuid>31ee4a25-12a3-4c42-b6c4-4176b5e395b5</webElementGuid>
+      <value>REVE</value>
+      <webElementGuid>faa1829e-031f-4480-85ea-9fde896374ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;appreq&quot;)/div[@class=&quot;display_box display_box_TELLERFINANCIALSERVICES display_box_TELLERFINANCIALSERVICES_CESELABORAL&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@id=&quot;messages&quot;]/tbody[1]/tr[2]/td[2]/table[2]/tbody[1]/tr[1]/td[@class=&quot;message&quot;]</value>
-      <webElementGuid>149b7260-bef5-44e0-ad93-76755b96096d</webElementGuid>
+      <value>id(&quot;tab2&quot;)/tbody[1]/tr[7]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_BCCLPAGOCQMOS&quot;]</value>
+      <webElementGuid>97e18e43-a350-4912-a2e5-cc62d9408cf7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='messages']/tbody/tr[2]/td[2]/table[2]/tbody/tr/td</value>
-      <webElementGuid>12c9039a-76b1-4f85-aa61-9a1b027991a4</webElementGuid>
+      <value>//table[@id='tab2']/tbody/tr[7]/td[3]/span</value>
+      <webElementGuid>b973682c-b38b-489e-9bd5-e2e0012f4ee6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.019 La Plata)'])[1]/following::td[7]</value>
-      <webElementGuid>9bce6346-b65a-492e-adec-e03b9f76c9d3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado del Registro'])[1]/following::span[1]</value>
+      <webElementGuid>0bda4f15-6aa5-4ae7-814a-49b7100f7062</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='TELLER.FINANCIAL.SERVICES,CESE.LABORAL'])[1]/following::td[15]</value>
-      <webElementGuid>81f33551-c812-410f-ab98-7835f439a5f5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ATESORAMIENTO EXCEDE EL MAXIMO'])[2]/following::span[1]</value>
+      <webElementGuid>cbd7921a-02bb-4adc-9744-524cc9fb4221</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::td[2]</value>
-      <webElementGuid>1b84646f-4564-4015-ac95-c36b4f52f43c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizacion Nro'])[1]/preceding::span[1]</value>
+      <webElementGuid>e889aa06-070c-4c23-8195-d03b96554b52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::td[2]</value>
-      <webElementGuid>c18bf9a9-0a55-4a92-89a9-d3bf5f196f79</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresado Por.1'])[1]/preceding::span[2]</value>
+      <webElementGuid>a5de116c-0d47-4a72-b1b5-5ceb0a08951b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Txn Completa: TFS2324008368 10:22:51 28 DEC 2023 TELLER.FINANCIAL.SERVICES,CESE.LABORAL I']/parent::*</value>
-      <webElementGuid>833e8c18-42cb-44f5-8efe-7a1208879a36</webElementGuid>
+      <value>//*/text()[normalize-space(.)='REVE']/parent::*</value>
+      <webElementGuid>2261927f-2442-4376-b5ec-4b15b1ac127c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//table[2]/tbody/tr/td</value>
-      <webElementGuid>1cd08014-0411-41f9-9349-685537678cbe</webElementGuid>
+      <value>//table[2]/tbody/tr[7]/td[3]/span</value>
+      <webElementGuid>539d6b42-f732-49c1-ba05-a6c3eed0ff1f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'Txn Completa: TFS2324008368 10:22:51 28 DEC 2023 TELLER.FINANCIAL.SERVICES,CESE.LABORAL I ' or . = 'Txn Completa: TFS2324008368 10:22:51 28 DEC 2023 TELLER.FINANCIAL.SERVICES,CESE.LABORAL I ')]</value>
-      <webElementGuid>ee7e7e6a-9e72-4dc1-995f-b4e830a35422</webElementGuid>
+      <value>//span[(text() = 'REVE' or . = 'REVE')]</value>
+      <webElementGuid>2d644790-0682-43c4-8add-ce0e5d400cdc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -27,16 +27,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,17), findTestData('MainData/Users').getValue(2,17))
 WebUI.maximizeWindow()
 
-//Selecciona Deposito
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/Fil.089 M.del Plata Ctr/btnDepositos'))
-
-//Selecciona Deposito en Ventanilla
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/Fil.089 M.del Plata Ctr/btnDepositoenVentanilla'))
+//Ir a Deposito, Deposito en Ventanilla
+def menuDesplegable = ["Depositos"]
+def link = "Deposito en Ventanilla"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Abre la pestaña TELLER
 WebUI.switchToWindowTitle('TELLER')
 
-//Verifica titulo Deposito De Efectivo En Ventanilla
+//Verifica que estemos en la ventana Deposito De Efectivo En Ventanilla
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTituloDepositoDeEfectivoEnVentanilla'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTituloDepositoDeEfectivoEnVentanilla'))
 
@@ -51,8 +50,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efe
 WebUI.setText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtNrodeCuenta'),'11190215166')
 
 //Click en boton validar
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnValidar'),6)
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnValidar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Ingresa monto
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtImporteARS'), 6)
@@ -61,28 +59,25 @@ WebUI.setText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja
 //Selecciona orden de tercero "NO"
 WebUI.selectOptionByIndex(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/cbNOSI'), 1)
 
-//Click boton Validar
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnValidar'))
+//Click en boton validar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 //Click boton aceptar
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'),6)
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Acepto alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarAlertas'),6)
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarAlertas'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txn.contains('Txn Completa:')
 
 //Ejecuta en la linea de comando TELLER,DEPOSITO.EFECTIVO.VENTANILLA
 WebUI.switchToWindowIndex(0)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'TELLER,DEPOSITO.EFECTIVO.VENTANILLA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("TELLER,DEPOSITO.EFECTIVO.VENTANILLA", 3)
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -91,10 +86,10 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.switchToWindowTitle('TELLER')
 
 // Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
+println("El ID de la txt es: " + txn)
 
 //Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
+String[] palabras = txn.split(" ");
 
 // Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
 String terceraPalabra = palabras[2];
@@ -103,24 +98,23 @@ String terceraPalabra = palabras[2];
 println("La tercera palabra es: " + terceraPalabra);
 
 //Ingresa el numero de operacion obtenido
-WebUI.setText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/txtDepositoDeEfectivoEnVentanillaTransactionId'),terceraPalabra)
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'),6)
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'),terceraPalabra)
 
 //Selecciona botón ver Registro
-WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnVerUnRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Espera y verifica que se muestre al menos 1 dato de la tx buscada
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblFechaDetalletxt'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblFechaDetalletxt'))
-def element2 = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblFechaDetalletxt'))
-assert element2.contains('Fecha')
-//---------------------------------------------------------------------------------------------------------------------
+def dato = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblFechaDetalletxt'))
+assert dato.contains('Fecha')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
