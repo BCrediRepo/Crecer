@@ -74,4 +74,11 @@
       <testCaseId>Test Cases/34-Sobregiros/SG09-Tx Reversion de sobregiros. Ingresar numero de sobregiro no vigente ingresado en el dia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5d6fd9b1-3d05-4b70-907f-37a7290d7fc2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/34-Sobregiros/SG10-Alta de sobregiros. Completitud de la pantalla</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

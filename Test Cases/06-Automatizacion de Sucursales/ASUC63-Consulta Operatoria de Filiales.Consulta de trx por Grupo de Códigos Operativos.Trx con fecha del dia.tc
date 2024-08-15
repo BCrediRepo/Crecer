@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ASUC63-Consulta Operatoria de Filiales.Consulta de trx por Grupo de Códigos Operativos.Trx con fecha del dia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d53ec05e-0217-4bc4-8e1b-69852eb1e520</testCaseGuid>
+</TestCaseEntity>

@@ -368,4 +368,88 @@
       <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC52-Caja. Consulta de Existencia por Denominacion.Cajero</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>bfea0122-c1ab-4ce1-9446-89febfa88eec</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC52-Caja. Consulta de Existencia por Denominacion.Cajero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>30ebeff5-3935-4569-b0df-78105859dcd8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC53-Caja. Consulta de Existencia por Denominacion.Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>64976b4d-f8dd-4013-a39f-300bad26d372</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC54-Caja. Consulta de Existencia por Denominacion.Casa Central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1eb38ccb-e6af-4ec0-8d46-110742ef60c9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC55-Caja. Apertura de caja. Cajero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>87992ef6-d4be-48cc-9643-b08fe846da29</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC56-Caja. Apertura de caja. Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a01e6d36-b98b-400d-9d55-6d881cbfcc19</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC57-Caja. Consulta de Estado de Cajas. Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8ac45765-90ec-4dae-adca-228246d911bb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC58-Consulta de operaciones reversadas. FECHA de reversa igual a fecha del dia. SUCURSAL igual a sucursal del usuario</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3f9f2992-bb44-490c-9d6d-048e6bb31f10</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC59-Consulta por codigo operativo. Usuario Filial. Codigo Operativo valido. Moneda Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>01c545b3-1a08-4413-8c9a-811f29e8385a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC60-Limite de atesoramiento maximo de categoria existente es menor a EXISTENCIA de la categoria</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>02082128-56ed-4a19-93db-40d78d2b2938</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC61-Caja. Detalle de Cierre del Tesoro. Emision del Libro Tesorero</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>05d2106c-8a83-4cd1-b14c-98d15fa26883</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC62-Consulta Operatoria de Filiales.Consulta de trx por Código Operativo.Usuario Casa Central.Moneda Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>35da11af-ec79-4c05-8337-56205a681213</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/06-Automatizacion de Sucursales/ASUC63-Consulta Operatoria de Filiales.Consulta de trx por Grupo de Códigos Operativos.Trx con fecha del dia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
