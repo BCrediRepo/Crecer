@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblUnipersonal</name>
+   <tag></tag>
+   <elementGuidId>3b77e3a1-595f-43a2-b98f-67a83b9ffacc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='dropDownRow3']/td/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dropDownRow3 > td.coloumntddata.coloumntddata_EBCCLFORMAOPERARPROD > b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>8a7231b3-b6fa-41de-a4b5-7143714c1ae9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>01</value>
+      <webElementGuid>52387f7d-69bd-402d-92a7-d48babfd0fa2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dropDownRow3&quot;)/td[@class=&quot;coloumntddata coloumntddata_EBCCLFORMAOPERARPROD&quot;]/b[1]</value>
+      <webElementGuid>cd8c4db6-7c44-4e8d-9bd8-4734f2f778cf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='dropDownRow3']/td/b</value>
+      <webElementGuid>0e8a9ec1-b144-4010-a3e0-b66ea9d35d1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACCOUNT'])[1]/following::b[1]</value>
+      <webElementGuid>b7fa4ef2-e6aa-4370-a4ae-567830828195</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MM.MONEY.MARKET'])[1]/following::b[2]</value>
+      <webElementGuid>74d4285b-feb5-413a-a837-084fe48d1af7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unipersonal'])[1]/preceding::b[1]</value>
+      <webElementGuid>020eca8b-7705-409e-85b0-21b6c69f985a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unipersonal'])[2]/preceding::b[1]</value>
+      <webElementGuid>21301020-21a2-4494-a0e5-47d0159c9ed9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td/b</value>
+      <webElementGuid>ea831ce7-7fbf-4f3a-81d8-d58ef938be17</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = '01' or . = '01')]</value>
+      <webElementGuid>df30a424-b1f1-4716-95cc-ad9051814735</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

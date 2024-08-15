@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PF23-Plazo Fijo. Otras Consultas. Consolidado analítico de saldos por sucursal</name>
+   <name>PF23-Plazo Fijo. Otras Consultas. Consolidado analitico de saldos por sucursal</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0396fa2c-7056-454c-a4f8-435906204e57</testCaseGuid>

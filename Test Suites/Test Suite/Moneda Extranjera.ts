@@ -319,4 +319,11 @@
       <testCaseId>Test Cases/14-MONEX/MON44-BCCL.OP.CAMBIO,FILIALES.CTA.EFE. Usuario de Sucursal. Validacion TIPO.OPER igual a C - Socio Compra. Cotz.Esp -IPAIS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>876d260f-e219-4f75-a478-9328aed175df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/14-MONEX/MON45-Nueva Consulta de operaciones de cambio reversadas. Ingresar usuario valido. OC existente con TIPO.COTIZ igual a especial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

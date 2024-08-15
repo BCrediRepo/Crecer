@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PF02-Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posición en línea Renovómetro</name>
+   <name>PF02-Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posicion en linea Renovometro</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>202e0470-00b6-4f9f-b3ba-bf5694a7a8d2</testCaseGuid>

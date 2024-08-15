@@ -42,7 +42,7 @@ WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la ope
     'Socio Compra')
 
 WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/txtTipoCotizacion'), 
-    'E')
+    'V')
 
 WebUI.setText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/txtIngresoFondos'), 
     'CUENTA')
@@ -80,7 +80,7 @@ println(TotalRegistros)
 Cotizacion = WebUI.getText(findTestObject('15-MONEX/Ingreso de parametros generales de la operacion de Moneda Extranjera/lblEspecial'))
 
 //Verificacion
-assert Cotizacion == 'E - Especial'
+assert Cotizacion == 'V - Vigente'
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

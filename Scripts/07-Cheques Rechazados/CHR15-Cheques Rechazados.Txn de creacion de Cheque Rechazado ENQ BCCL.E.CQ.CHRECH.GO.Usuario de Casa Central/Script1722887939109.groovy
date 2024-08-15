@@ -57,32 +57,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-def variable = "Rechazar Cheque/Camb Fec cancel"
-def buscarElementoEnTabla(String variable) {
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	for (WebElement row : rows) {
-		WebElement cell = row.findElements(By.tagName("td"))[4]
-		String cellText = cell.getText()
-		if (cellText.equals(variable)) {
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[4]
-			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
-			lnkElement.click()
-			return true
-		}
-	}
-	return false
-}
-
-def encontrado = false
-while (!encontrado) {
-	encontrado = buscarElementoEnTabla(variable)
-	if (!encontrado) {
-		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnSiguiente'))
-		WebUI.delay(2)
-	}
-}
+//Seleccionar "Rechazar Cheque/Camb Fec cancel"
+WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/ALTA DE CHEQUE RECHAZADO/lnkRechazarChequeCambFeccancel'))
 
 //Setear Monto del Cheque
 WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CQ.CHEQUES.RECHAZADOS/txtMntCheque'), '100')

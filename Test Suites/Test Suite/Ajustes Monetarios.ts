@@ -179,4 +179,11 @@
       <testCaseId>Test Cases/37-Ajustes Monetarios/AM24-Fecha valor.Recomposicion de Saldos.Alta de Nota de Debito Ajuste. F Valor y F Proceso corresponden al mismo mes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>a3d262fc-f1fb-4728-bfb6-b567a941d10e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/37-Ajustes Monetarios/AM25-Ajustes Monetarios.Reversas.Consulta de operaciones para eliminacion. Perfil Operador.Id transaccion vacio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

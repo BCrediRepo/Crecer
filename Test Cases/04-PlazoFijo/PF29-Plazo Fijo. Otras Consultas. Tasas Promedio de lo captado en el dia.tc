@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el día</name>
+   <name>PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el dia</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e25be957-988f-4636-8fb7-8d454436c5bb</testCaseGuid>

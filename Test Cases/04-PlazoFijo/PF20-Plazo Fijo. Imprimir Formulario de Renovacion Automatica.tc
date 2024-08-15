@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PF20-Plazo Fijo. Imprimir Formulario de Renovación Automática</name>
+   <name>PF20-Plazo Fijo. Imprimir Formulario de Renovacion Automatica</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3f7c1246-b01e-4767-bbd6-c1d8fe781b9f</testCaseGuid>

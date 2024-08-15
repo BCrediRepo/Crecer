@@ -211,7 +211,7 @@
       <guid>d7156739-584d-4431-b7f3-278a51e5c5bf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-PlazoFijo/PF02-Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posición en línea Renovómetro</testCaseId>
+      <testCaseId>Test Cases/04-PlazoFijo/PF02-Plazo Fijo. Consultas Especiales de Plazo Fijo. Consulta de Posicion en linea Renovometro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -337,14 +337,14 @@
       <guid>0cdffa8c-7215-44d2-8bc7-78857ba9892e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-PlazoFijo/PF20-Plazo Fijo. Imprimir Formulario de Renovación Automática</testCaseId>
+      <testCaseId>Test Cases/04-PlazoFijo/PF20-Plazo Fijo. Imprimir Formulario de Renovacion Automatica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4940b6fa-f015-43de-995f-0cc74ca3b961</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-PlazoFijo/PF21-Plazo Fijo. Imprimir Liquidación Renovación Automática</testCaseId>
+      <testCaseId>Test Cases/04-PlazoFijo/PF21-Plazo Fijo. Imprimir Liquidacion Renovacion Automatica</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -358,7 +358,7 @@
       <guid>e0de4459-8c67-4d0b-8fd1-f2f304df87b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-PlazoFijo/PF23-Plazo Fijo. Otras Consultas. Consolidado analítico de saldos por sucursal</testCaseId>
+      <testCaseId>Test Cases/04-PlazoFijo/PF23-Plazo Fijo. Otras Consultas. Consolidado analitico de saldos por sucursal</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -400,7 +400,7 @@
       <guid>23d39cd8-003e-4406-86b5-e301cd62aa73</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/04-PlazoFijo/PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el día</testCaseId>
+      <testCaseId>Test Cases/04-PlazoFijo/PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el dia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

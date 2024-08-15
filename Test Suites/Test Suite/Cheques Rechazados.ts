@@ -95,4 +95,39 @@
       <testCaseId>Test Cases/07-Cheques Rechazados/CHR12-Cheques rechazados.Asignacion manual de firmantes. Agregar y Eliminar Firmante</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ed2fc33c-bf45-4b97-9630-afe72873283e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR13-Consulta de Multas Pendientes de Cobro. Usuario de Casa central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e72f8e2e-8195-4812-b756-2ecb4b8b27f8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR14-Cheques rechazados.Rechazo cheque de caja desde Gerencia Operativa. Cheque existente en tabla de Cheques. Estado del cheque es Rechazado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d3af0b24-320b-4831-a75e-02e5bcfcdd84</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR15-Cheques Rechazados.Txn de creacion de Cheque Rechazado ENQ BCCL.E.CQ.CHRECH.GO.Usuario de Casa Central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6c73aaaf-a8df-4127-84ab-5a8cb508f2d4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR16-Cheques Rechazados.Consulta de Rechazos Transaccion Duplicada. Transaccion duplicada. Ambos cheques con Rechazo Automatico</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>36a9851d-62bc-4fa7-94a4-f00024a445b7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR17-Cheques Rechazados.Txn de creacion de Cheque No Migrado.ENQ BCCL.E.CREAR.CHQ.NOMIG</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
