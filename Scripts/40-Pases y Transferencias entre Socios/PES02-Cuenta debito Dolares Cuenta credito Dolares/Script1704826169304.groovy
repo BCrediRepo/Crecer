@@ -26,11 +26,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Ir a pases y transferencias de socios
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPasesyTransferenciasEntreSocios'))
-
-//Ir a Pase entre Cuentas Misma Titularidad 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/39-Pases y Transferencias Entre Socios/lnkPaseEntreCuentasMismaTitularidad'))
+//Ir a pases y transferencias de socios, Pase entre Cuentas Misma Titularidad 
+def menuDesplegable = ["Pases y Transferencias entre Socios"]
+def link = "Pase entre Cuentas Misma Titularidad"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana de Movimiento de Fondos
 WebUI.switchToWindowTitle('Movimiento de Fondos')
@@ -49,20 +48,24 @@ WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre 
 //Ingresa Importe
 WebUI.setText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/txtImporte'), '50')
 
-//Validar Registro
-WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnValidarRegistro'))
+//Click en boton validar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
-//Aceptar Registro
-WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/btnAceptarRegistro'))
+//Click boton aceptar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lnkAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/41-Pases y Transferencias entre Socios/01-Pase entre Cuentas Misma Titularidad/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txn.contains('Txn Completa:')
+
+// Imprimir el numero de operacion en consola
+println("El ID de la txt es: " + txn)
 
 //Forzamos la firma de la tx realizada
 WebUI.switchToWindowIndex(2)
@@ -75,26 +78,20 @@ WebUI.click(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas
 //Espera y recibe Estado FINALIZADA
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
-def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
-assert element2.contains('FINALIZADA')
-
+def estado1 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
+assert estado1.contains('FINALIZADA')
 
 //Espera y recibe Estado AUTORIZADA
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
-def element3 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
-assert element3.contains('AUTORIZADA')
+def estado2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
+assert estado2.contains('AUTORIZADA')
 
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
-
-//------------------------------//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
