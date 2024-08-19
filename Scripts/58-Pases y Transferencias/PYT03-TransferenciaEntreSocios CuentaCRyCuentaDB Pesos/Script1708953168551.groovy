@@ -24,14 +24,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 57), findTestData('MainData/Users').getValue(2, 57))
 WebUI.maximizeWindow()
 
-//Seleccionar "Pases y Transferencias"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPasesyTransferencias'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Transferencia a Cuentas del Banco"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/57-Pases y Transferencias/lnkTransferenciaaCuentasdelBanco'))
+//Ir a Pases y Transferencias, Transferencia a Cuentas del Banco
+def menuDesplegable = ["Pases y Transferencias"]
+def link = "Transferencia a Cuentas del Banco"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "Movimiento de Fondos"
 WebUI.switchToWindowTitle('Movimiento de Fondos')
@@ -66,14 +62,15 @@ WebUI.click(findTestObject('Object Repository/59-Pases y Transferencias/Movimien
 //Setear Observaciones
 WebUI.setText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtObservaciones'), 'PRUEBAS CRECER')
 
-//Seleccionar "boton Validar Registro"
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnValidarRegistro'))
+//Click en boton validar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
-//Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnAceptarRegistro'))
+//Click boton aceptar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//Seleccionar Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/lnkAceptar Alertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Cambiar ventana "Verificacion de Firmas - Fil.074 Caseros Centro"
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.074 Caseros Centro')
@@ -97,10 +94,10 @@ WebUI.click(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
 
 //Validar "Finalizada"
-def element = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
-assert element.contains('FINALIZADA')
+def estado = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblFinalizada'))
+assert estado.contains('FINALIZADA')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

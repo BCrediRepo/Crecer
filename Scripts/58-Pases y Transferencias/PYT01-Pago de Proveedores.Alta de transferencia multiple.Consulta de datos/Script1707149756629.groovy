@@ -24,16 +24,12 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 55), findTestData('MainData/Users').getValue(2, 55))
 WebUI.maximizeWindow()
 
-//Seleccionar "Pases y Transferencias"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPasesyTransferencias'))
+//Ir "Pases y Transferencias", "Pago de Haberes/Proveedores"
+def menuDesplegable = ["Pases y Transferencias"]
+def link = "Pago de Haberes/Proveedores"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Pago de Haberes/Proveedores"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/57-Pases y Transferencias/lnkPagodeHaberesProveedores'))
-
-//Esperar 50 segundos
+//Esperar 50 segundos, la ventana se demora en iniciar, ya fue comentado a funcional y no lo reportaron.
 WebUI.delay(50)
 
 //Cambiar ventana "BCCL.AS.TRANSF.MULTIPLE"
@@ -61,10 +57,10 @@ WebUI.setText(findTestObject('Object Repository/59-Pases y Transferencias/BCCL.A
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/59-Pases y Transferencias/BCCL.AS.TRANSF.MULTIPLE/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Definir Objeto
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Dividir la cadena por espacios en blanco y tomar elemento
 def partes = Transaccion1.split('\\s+')
@@ -72,13 +68,13 @@ def trx1 = partes[2]
 assert Transaccion1.contains('Txn Completa:')
 
 //Setear Transaccion
-WebUI.setText(findTestObject('Object Repository/59-Pases y Transferencias/BCCL.AS.TRANSF.MULTIPLE/txtBCCLASTRANSFMULTIPLESUCURSAL'), trx1)
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), trx1)
 	
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/59-Pases y Transferencias/BCCL.AS.TRANSF.MULTIPLE/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Definir Objeto
 Transaccion2 = WebUI.getText(findTestObject('Object Repository/59-Pases y Transferencias/BCCL.AS.TRANSF.MULTIPLE/lblIdTransaccion'))
@@ -105,12 +101,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/59-Pases y Transfer
 def element = WebUI.getText(findTestObject('Object Repository/59-Pases y Transferencias/Movimiento de Fondos/lblPagoaProveedores'))
 assert element.contains('Pago a Proveedores')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
