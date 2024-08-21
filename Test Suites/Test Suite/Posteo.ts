@@ -109,4 +109,32 @@
       <testCaseId>Test Cases/36-Posteo/PST13-Posteos. Liquidacion de posteo. Posteo IP por baja en efectivo</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e3ce49ac-c6bf-462d-be6c-c40170a2dfbe</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST15-Posteos. Liquidacion de posteo. Posteo IP por alta en efectivo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>60f25190-c61b-4f0f-a8bf-c2f9dafaf1cf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST16-Posteos. Liquidacion de posteo. Posteo Legales por cobranza</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bef69c6c-a11b-48b1-a241-1bfe4f2604c6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST17-Posteos. Liquidacion de posteo. Posteo por egreso de caja temporal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>56fa5471-a701-432b-8726-7ea91a1465e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/36-Posteo/PST18-Posteo.Liquidacion de Posteo.Liquidacion por Cobro en Efectivo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

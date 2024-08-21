@@ -102,4 +102,39 @@
       <testCaseId>Test Cases/50-Deposito y Extracciones/DE13-Extraccion Caja Efectivo ARS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5f4b10b1-c92b-4a0e-8a23-87baa711ce4e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE14-Depositos-Extracciones.Extracciones.Trx de Extraccion en efectivo por Caja.Saldo suficiente</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6a0ec32f-7c9e-4724-b12f-9a23a6b02e9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE15-Reversa de extraccion en efectivo por Caja. Cuenta valida y sin bloqueos. Misma Sucursal. Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>183b118e-e2e1-43e6-b02d-6e3e1c72a92a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE16-Depositos-Extracciones.Verificacion de Firmas.Verificacion de firmas sobre cuenta Persona Juridica</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3cfe7d97-e70a-475e-8f31-7bca3b285f18</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE17-Depositos-Extracciones.Verificacion de Firmas.Consulta de firmas desde Context Enquiry</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dbe0d8ab-9779-4eb1-8c6e-e80236e18a37</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/50-Deposito y Extracciones/DE18-Depositos-Extracciones.Cheque Mostrador.Trx Pago de Cheque Mostrador por Ventanilla.Destinatario es titular de Cta.Monto del cheque Excede Limite por Cta Diario</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

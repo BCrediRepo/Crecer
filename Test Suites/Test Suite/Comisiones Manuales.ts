@@ -81,4 +81,32 @@
       <testCaseId>Test Cases/55-Comisiones Manuales/CMA10-Comisiones.Comisiones Manuales.Reversa.Comisión Certificación de Firmas. Pago por caja</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3a765e61-7bc5-4c38-9bdc-a7710eeeaa9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/55-Comisiones Manuales/CMA11-Reversa Comisión manual por Planta. Fecha de registración de la transacción original es igual a Fecha de proceso</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a39bb7f1-c5e7-42c4-8e6f-08ba1060b247</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/55-Comisiones Manuales/CMA12-Comisión Manual por Planta. Tipo de Pago IGUAL A Débito. Con bonificacion. Comisión permite bonificación</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d41202dc-6c52-4e2a-ac6e-e0f2249894b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/55-Comisiones Manuales/CMA13-Comisiones.Comisiones Manuales.TRX de Comision Manual por Caja.No Socio. Tipo de Pago IGUAL A Efectivo. Sin bonificacion. Moneda Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e5bdb2d5-913f-4978-96bd-1ade07c22560</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/55-Comisiones Manuales/CMA14-Comisiones.Comisiones Manuales.TRX de Comision Manual por Caja.Tipo de Pago IGUAL A Efectivo.Tipo de Comision no Permite Bonificacion</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

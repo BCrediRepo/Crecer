@@ -207,4 +207,11 @@
       <testCaseId>Test Cases/17-Resumen de Cuenta/RC29-Resumen de Cuenta. Consulta por Sucursal. Consulta Saldo de Cuentas Cerradas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>fd51026b-1d64-4da0-a2a6-ff710dbdb3e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC30-Resumen de Cuenta. Agrupamientos de movimientos monetarios comisiones.Modificacion. Se modifica codigo operativo y tipo de Agrupamiento NOR COM AMB</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

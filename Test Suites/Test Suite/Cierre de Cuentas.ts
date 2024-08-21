@@ -103,10 +103,38 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>b506807d-6ac9-4ed9-863b-3addcbc6722d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC14-Cierre de cuenta.Trx de cambio de estado. Pase a Cierre en Proceso. Cuenta activa</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0b1c9d91-e826-4029-b5b4-35acea395122</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC15-Cierre de cuenta.Trx de cambio de estado. Reversa del pase a SPC o CPR. Revertir estado</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>6ecbc0d7-e601-4d3b-9dba-a36b40e6dedb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/24-Cierre de Cuenta/CDC16-Cierre de cuenta.Cuenta cambia de estado. Pase a Susp Pago de Cheque. Cuenta Corriente activa</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>27c7baaf-1a72-452c-a39b-865a611a507c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC17- Busqueda de Cuentas para Cierre con Saldo.Persona tiene cuentas en distintas sucursales. Perfil Filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1097d99c-673b-4205-ac75-cf7c69e32b1a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/24-Cierre de Cuenta/CDC18-Busqueda de cuentas para cierre con Cancelacion. Busqueda por Id de persona. La persona tiene cuentas en distintas sucursales</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PST18-Posteo.Liquidacion de Posteo.Liquidacion por Cobro en Efectivo</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>629b3b76-9681-4a01-85b4-7f82a508430b</testCaseGuid>
+</TestCaseEntity>

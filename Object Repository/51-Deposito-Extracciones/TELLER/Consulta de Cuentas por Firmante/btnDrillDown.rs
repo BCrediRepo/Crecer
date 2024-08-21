@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnDrillDown</name>
+   <tag></tag>
+   <elementGuidId>65f36fe2-f99f-4093-a50a-c137b2277400</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#r3 > td.enqdrilldowncell.enqdrilldowncell_BCCLEACFIRM > table > tbody > tr.enqdrilldowncell.enqdrilldowncell_BCCLEACFIRM > td:nth-of-type(2) > a.iconLink > img[alt=&quot;Select Drilldown&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='r3']/td[8]/table/tbody/tr/td[2]/a/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;02745972431 ASOC MUTUAL ROQUE NOSETTO 1020.1050 Cuenta Corriente Especial Pesos ARS Activa Select Drilldown&quot;s] >> internal:attr=[title=&quot;Select Drilldown&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>957f5c7d-cfd8-4dd4-a863-f91aba97c66c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Select Drilldown</value>
+      <webElementGuid>393bf765-5ca9-4968-baba-18b8732fb47a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>../plaf/images/bccl/menu/go.gif</value>
+      <webElementGuid>be1c04cb-d936-4b05-a936-01c874f2aa68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;r3&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEACFIRM&quot;]/table[1]/tbody[1]/tr[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEACFIRM&quot;]/td[2]/a[@class=&quot;iconLink&quot;]/img[1]</value>
+      <webElementGuid>c03071d6-22a3-4000-a4ce-cf5a2e28c884</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='r3']/td[8]/table/tbody/tr/td[2]/a/img</value>
+      <webElementGuid>a37829ba-38ce-494e-bd54-a267cf2e02e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Select Drilldown'])[3]</value>
+      <webElementGuid>9a9d4f3f-1049-4847-96e9-0996a8c04b36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td[8]/table/tbody/tr/td[2]/a/img</value>
+      <webElementGuid>c5900e98-acda-4ddc-829a-88c9c2a40d69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@alt = 'Select Drilldown' and @src = '../plaf/images/bccl/menu/go.gif']</value>
+      <webElementGuid>e22ba67b-838d-4608-9cfa-33637997f2ab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

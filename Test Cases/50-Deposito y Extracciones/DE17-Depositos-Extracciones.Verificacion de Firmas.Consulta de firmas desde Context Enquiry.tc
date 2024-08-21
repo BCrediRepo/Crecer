@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DE17-Depositos-Extracciones.Verificacion de Firmas.Consulta de firmas desde Context Enquiry</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>16036fee-47cf-4a64-9dd6-38b9d47147c0</testCaseGuid>
+</TestCaseEntity>
