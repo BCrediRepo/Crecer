@@ -23,22 +23,12 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Cuentas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+def menuDesplegable = ['Cuentas', 'Modificacion de cuenta', 'Bloqueo y Desbloqueo', 'Consultas']
+def link = "Bloqueos Activos"
 
-//Seleccionar "Modificación de Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkModificaciondDeCuenta'))
-
-//Seleccionar "Bloqueo y Desbloqueo"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkBloqueoyDesbloqueo'))
-
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkConsultas'))
-
-//Seleccionar "Historial de Bloqueos Activos"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/03-Consultas/lnkBloqueosActivos'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.AC.CTABLOQ.SUC"
 WebUI.switchToWindowTitle('BCCL.AC.CTABLOQ.SUC')
@@ -84,8 +74,8 @@ WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CT
 WebUI.switchToWindowTitle('Account Blocking Details')
 
 //Validar "Tipo de Bloqueo"
-def tipodeBloqueo = WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipodeBloqueo'))
-assert tipodeBloqueo.contains('Tipo de Bloqueo')
+assert WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipodeBloqueo')).contains('Tipo de Bloqueo')
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

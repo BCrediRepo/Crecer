@@ -16,60 +16,73 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.By
-import org.openqa.selenium.WebDriver
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+def validacionTxt (String campo) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("selectiondisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[0]
+		String cellText = cell.getText()
+		if (cellText.equals(campo)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[2]
+			WebElement txtElement = tdElement.findElement(By.tagName("input"))
+			txtElement.isEnabled().TRUE
+			return true
+		}
+	}
+	return false
+}
 
-
-//Configuracion de ambiente
+//Configuracion del ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,19), findTestData('MainData/Users').getValue(2,19))
 WebUI.maximizeWindow()
 
-def menuDesplegable = ['Cuentas', 'Modificacion de cuenta', 'Bloqueo y Desbloqueo', 'Consultas']
-def link = "Historial de Bloqueos Inactivos"
+def menuDesplegable0 = ["Cuentas", "Modificacion de cuenta", "Bloqueo y Desbloqueo", "Bloqueo" ]
+def link0 = "Seleccionando Cuenta"
 
 //Si el menu que busco está en dashboard uso esta funcion
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
-//Cambiar ventana "Historial de Bloqueos"
-WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
+//Cambiar ventana "BCCL.E.AC.BLO.POR.CTA"
+WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.CTA')
 
 //Seteo de Datos "Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010043082')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', '20230825')
-
-//Capturar el tiempo de inicio
-long startTime = System.currentTimeMillis()
-
-//Seleccionar boton de Ejecutar
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Verificar "Fecha de Bloqueo"
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechaBloqueo'))
-
-//Capturar el tiempo de finalización
-long endTime = System.currentTimeMillis()
-
-//Calcular la diferencia para obtener el tiempo transcurrido
-long elapsedTime = endTime - startTime
-println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
-//Conteo registros
-WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
-TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
-println TotalRegistros
-
-//Validar la fecha
-assert WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechaBloqueo')).contains('20230825')
 
 
-//---------------------------------------------------------------------------------------------------------------------
+//definimos una bandera que inicie en falso. Los while van a cortar cuando la bandera se vuelva true.
+//el assert valida que la bandera este en true y luego se la reinicia para el siguiente while
+//de esta manera se pueden validar los txt. Si encuentran una forma mejor, aplicarlo.
+def flag = false
+String variable
+while (!flag) {
+	variable = "Id Firmante"
+	flag = validacionTxt(variable)
+}
+assert flag == true
+//-------
+flag = false
+while (!flag) {
+	variable = "Nro Documento"
+	flag = validacionTxt(variable)
+}
+assert flag == true
+//-------
+while (!flag) {
+	variable = "Nro CUI"
+	flag = validacionTxt(variable)
+}
+assert flag == true
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
