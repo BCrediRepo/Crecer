@@ -29,6 +29,12 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Calendar
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
+
+//FALTA CUENTA QUE TENGA FTs 2 DIAS ANTES DE LA FECHACOB
+def cuenta = ''
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -39,121 +45,80 @@ WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 
-//Camino para hacer que el codigo no esté hardcodeado --------------------------------------------------------------------------------------
+//Camino para hacer que el codigo no esté hardcodeado --------------------------------------------------------------------------
 
-////Seleccionar "Cuentas"
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
-//
-////Seleccionar "Consultas de Cuentas"
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
-//
-////Seleccionar "Consulta de Mov. por Fecha Valor"
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultadeMov.porFechaValor'))
-//
-////Cambiar a la ventana "Movimientos de Ctas por Fecha Valor"
-//WebUI.switchToWindowIndex(1)
-//
-////Seteo de datos "Nro de Cuenta" y "Fecha Desde"
-//WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-//
-////Maximizar Ventana
-//WebUI.maximizeWindow()
-//
-//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta', '02180086531')
-//
-////Formato de la fecha en la cadena de texto
-//String dateFormat = "yyyyMMdd"
-//
-////Fecha inicial como cadena de texto
-//String initialDate = GlobalVariable.vFechaCOB
-//
-////Convertir la cadena de texto en un objeto Date
-//SimpleDateFormat sdf = new SimpleDateFormat(dateFormat)
-//Date date = sdf.parse(initialDate)
-//
-////Usar Calendar para manipular la fecha
-//Calendar calendar = Calendar.getInstance()
-//calendar.setTime(date)
-//calendar.add(Calendar.DAY_OF_MONTH, -1) // Restar 1 día
-//
-////Asegurar fecha resultante sea un día hábil
-//while (calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY) {
-//	calendar.add(Calendar.DAY_OF_MONTH, -1) // Restar 1 día si es fin de semana
-//}
-//
-////Convertir fecha modificada de vuelta a una cadena de texto
-//Date modifiedDate = calendar.getTime()
-//String resultDate = sdf.format(modifiedDate)
-//
-////Formatear la nueva fecha al formato deseado
-//SimpleDateFormat desiredFormat = new SimpleDateFormat("dd-MM-yyyy") 
-//String fechaFormateada = desiredFormat.format(modifiedDate)
-//
-//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', resultDate)
-//
-////ScreenShot
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-//
-////Seleccionar boton Ejecutar
-//WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//
-////Defino la variable ftTransaccion
-//String ftTransaccion
-//
-////Obtener elemento de la tabla
-//WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-//
-////Obtener todas las filas de la tabla
-//List<WebElement> rows = table.findElements(By.tagName("tr"))
-//
-////Funcion buscarftentabla (REVISAR)----------------------------------------------------------------------------------------------------
-//def buscarftentabla () {
-//	
-//	for (WebElement row : rows) {
-//		rowText = row.getText()
-//		println rowText
-//		
-//		//Obtener valor de la columna "Fec Valor"
-//		WebElement cell = row.findElements(By.tagName("td"))[0]
-//		
-//		//Obtener texto
-//		String cellText = cell.getText()
-//		
-//		//Obtener valor de la columna "Fec Valor"
-//		WebElement cell2 = row.findElements(By.tagName("td"))[3]
-//		
-//		//Obtener texto
-//		String cellText2 = cell2.getText()
-//	
-//		//Comprobar que aparezca la fecha específica y que NO aparezca la palabra "REVE"
-//		if(cellText.equals('31-08-2023') && !cellText2.contains("REVE")) {
-//		
-//		//Obtener valor de la FT
-//		WebElement valorFT = row.findElements(By.tagName("td"))[1]
-//		
-//		//Almacenar valor de la FT en "valorFT"
-//		ftTransaccion = valorFT.getText()
-//		
-//		return true
-//	}
-//	
-//}
-//	
-//}
-//def encontrado = false
-////Bucle para buscar en multiples páginas
-//while (!encontrado) {
-//	
-//	//Logica para buscar el elemento en la tabla
-//	encontrado = buscarftentabla
-//		
-//}
-//
-////Cambiar a la ventana del Dashboard
-//WebUI.switchToWindowIndex(0)
+//Ir a la ventana "Movimientos de Ctas por Fecha Valor"
+def menuDesplegable = ["Cuentas", "Consultas de Cuentas"]
+def link = "Consulta de Mov. por Fecha Valor"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 
+//Seteo de datos "Nro de Cuenta" y "Fecha Desde"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta', cuenta)
+
+//Parseo fecha porque la busqueda de contrasiento total no permite FT del dia
+fecha = GlobalVariable.vFechaCOB
+LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
+LocalDate fechaModificada = fechaParse.minusDays(2)
+while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {
+		fechaModificada = fechaModificada.minusDays(1)
+}
+
+DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
+String fechaPasada = fechaModificada.format(formato)
+
+DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaAssert = fechaModificada.format(formatoAssert).toUpperCase()
+
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', fechaPasada)
+
+fecha2 = GlobalVariable.vFechaCOB
+LocalDate fechaParse2 = LocalDate.parse(fecha2, DateTimeFormatter.ofPattern("yyyyMMdd"))
+DateTimeFormatter formatoAssert2 = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaAssert2 = fechaParse2.format(formatoAssert2).toUpperCase()
+//ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton Ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+
+def buscarElementoEnTabla(String fechaAssert) {		
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {		
+		WebElement cell = row.findElements(By.tagName("td"))[0]		
+		String cellText = cell.getText()
+		if (cellText.equals(fechaAssert)) {			
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[1]
+			String ft = tdElement.getText()
+			println(ft)
+			GlobalVariable.vTxn=ft
+			return true
+		}
+	}
+	return false
+}
+
+def encontrado = false
+while (!encontrado) {
+	encontrado = buscarElementoEnTabla(fechaAssert)
+	if (!encontrado) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnSiguiente'))
+		WebUI.delay(2)
+	}	
+}
+
+///Cambiar a la ventana del Dashboard
+WebUI.switchToWindowIndex(0)
+ 
 //-----------------------------------------------------------------------------------------------------------------------------
-
 //Setear "ENQ BCCL.E.STMS.ENT.BOOK.CA" en el buscador
 WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.STMS.ENT.BOOK.CA')
 
@@ -161,7 +126,7 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Cambiar a la ventana "Contrasiento Total"
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowIndex(2)
 
 //Verificar titulo Contrasiento total
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblTituloContrasientoTotal'))
@@ -172,7 +137,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', 'FT23243188772993')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', GlobalVariable.vTxn)
 
 //ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

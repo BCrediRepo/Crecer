@@ -4,5 +4,6 @@
    <name>APT07-Administracion de Piezas con Tarjetas. Consultas al Maestro de Card Carrier. Seleccion por Nombre. Documento. Sucursal</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>eb77f6b5-4006-4f79-b9e6-35f043648869</testCaseGuid>
 </TestCaseEntity>

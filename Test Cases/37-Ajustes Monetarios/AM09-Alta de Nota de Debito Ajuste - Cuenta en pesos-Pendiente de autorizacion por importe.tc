@@ -4,5 +4,6 @@
    <name>AM09-Alta de Nota de Debito Ajuste - Cuenta en pesos-Pendiente de autorizacion por importe</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>87267686-993e-49e7-8668-7c8855c984d8</testCaseGuid>
 </TestCaseEntity>
