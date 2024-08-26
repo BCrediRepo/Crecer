@@ -16,7 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.By
@@ -30,9 +29,14 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Calendar
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
-import java.util.Locale
+
+//FALTA CUENTA QUE TENGA FTs 2 DIAS ANTES DE LA FECHACOB
+def cuenta = ''
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -42,9 +46,78 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Aqui se coloca el camino para sacar la FT del caso AM22----------------------------------------------------------------------------------------------------------------------------------------------------
+//Camino para hacer que el codigo no esté hardcodeado --------------------------------------------------------------------------
 
-//Aquí se introduce el código
+//Ir a la ventana "Movimientos de Ctas por Fecha Valor"
+def menuDesplegable = ["Cuentas", "Consultas de Cuentas"]
+def link = "Consulta de Mov. por Fecha Valor"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
+
+//Seteo de datos "Nro de Cuenta" y "Fecha Desde"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta', cuenta)
+
+//Parseo fecha porque la busqueda de contrasiento total no permite FT del dia
+fecha = GlobalVariable.vFechaCOB
+LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
+LocalDate fechaModificada = fechaParse.minusDays(2)
+while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {
+		fechaModificada = fechaModificada.minusDays(1)
+}
+
+DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
+String fechaPasada = fechaModificada.format(formato)
+
+DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaAssert = fechaModificada.format(formatoAssert).toUpperCase()
+
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', fechaPasada)
+
+fecha2 = GlobalVariable.vFechaCOB
+LocalDate fechaParse2 = LocalDate.parse(fecha2, DateTimeFormatter.ofPattern("yyyyMMdd"))
+DateTimeFormatter formatoAssert2 = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaAssert2 = fechaParse2.format(formatoAssert2).toUpperCase()
+//ScreenShot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Seleccionar boton Ejecutar
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+
+
+def buscarElementoEnTabla(String fechaAssert) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[0]
+		String cellText = cell.getText()
+		if (cellText.equals(fechaAssert)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[1]
+			String ft = tdElement.getText()
+			println(ft)
+			GlobalVariable.vTxn=ft
+			return true
+		}
+	}
+	return false
+}
+
+def encontrado = false
+while (!encontrado) {
+	encontrado = buscarElementoEnTabla(fechaAssert)
+	if (!encontrado) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnSiguiente'))
+		WebUI.delay(2)
+	}
+}
+
+///Cambiar a la ventana del Dashboard
+WebUI.switchToWindowIndex(0)
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -55,7 +128,7 @@ WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscado
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 
 //Cambiar a la ventana "Contrasiento Total"
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowIndex(2)
 
 //Verificar titulo Contrasiento total
 WebUI.verifyElementVisible(findTestObject('Object Repository/38-Ajustes Monetarios/ContrasientoTotal/lblTituloContrasientoTotal'))
@@ -66,7 +139,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', 'FT23243340991370' )
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Transaccion', GlobalVariable.vTxn)
 
 //ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

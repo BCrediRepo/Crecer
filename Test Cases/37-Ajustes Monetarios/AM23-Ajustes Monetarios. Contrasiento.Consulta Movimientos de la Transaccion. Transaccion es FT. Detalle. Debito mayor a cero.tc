@@ -4,5 +4,6 @@
    <name>AM23-Ajustes Monetarios. Contrasiento.Consulta Movimientos de la Transaccion. Transaccion es FT. Detalle. Debito mayor a cero</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>33bda6f8-fe62-4daa-a2c2-a4fe0af97645</testCaseGuid>
 </TestCaseEntity>
