@@ -194,13 +194,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f9a682ed-dcc1-4a4e-885a-ce0680abee48</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD27-Consulta sobre el historico de bloqueos. Cuenta con bloqueo de origen automatico Filial</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>5f4c1281-321d-4b01-8104-5c88b3a4622f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -246,7 +239,7 @@
       <guid>0d6091e0-2e8c-4edd-ad20-38d9a2ced5a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD32-Busqueda de cuentas por cuenta para bloqueo. Completitud</testCaseId>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD27-Busqueda de cuentas por cuenta para bloqueo. Completitud</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

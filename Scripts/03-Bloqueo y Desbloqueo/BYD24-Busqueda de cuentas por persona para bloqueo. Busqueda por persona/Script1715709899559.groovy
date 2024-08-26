@@ -29,30 +29,32 @@ import java.awt.Robot as Robot
 import java.awt.event.KeyEvent as KeyEvent
 
 //Funcion para desbloquear cuenta
-def desbloqueo(String TipoBloq){	
+def desbloqueo(String TipoBloq, String cuenta){	
 	
 	if (TipoBloq == 'BLOQUEO PARCIAL') {
 		WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/BCCL.E.AC.DESBLO.POR.CTA/lnkDesbloqueoParcial'))
 		WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.PAR')
 		WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.E.AC.DESBLO.PAR/lnkDesbloqueoParcial'))
 		WebUI.switchToWindowTitle('LOCKED EVENTS')
-		WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/btnReversarRegistro'))
-		WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/lnkAceptarAlertas'))		
+		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnReversar'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))		
 		
 	}else {
 		WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/BCCL.E.AC.DESBLO.POR.CTA/lnkDesbloqueoGeneral'))
 		WebUI.switchToWindowTitle('CUENTAS')
-		WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/btnAceptarRegistro'))
-		WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/LOCKED EVENTS/lnkAceptarAlertas'))		
+		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))		
 		
 	}
 	WebUI.closeWindowIndex(1)
 	WebUI.switchToWindowIndex(0)
-	WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/01-Bloqueo/lnkSeleccionandoPersona'))
+	def menuDesplegableFuncion = ["Desbloqueo", "Bloqueo"]
+	def linkFuncion = "Seleccionando Cuenta"
+	CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegableFuncion, linkFuncion)
 	WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.PER')
 	//Seteo de Datos "Id. Persona"
 	WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1003747667')
+	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', cuenta)
 	WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 	//WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.PER/lblTipoBloqueValor'))
 	TipoBloq = WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.PER/lblTipoBloqueValor'))
@@ -70,23 +72,18 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 42), findTestData('MainData/Users').getValue(
         2, 42))
 
-WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
+def menuDesplegable0 = ["Cuentas", "Modificacion de cuenta", "Bloqueo y Desbloqueo", "Bloqueo" ]
+def link0 = "Seleccionando Persona"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/lnkModificaciondDeCuenta'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkBloqueoyDesbloqueo'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkBloqueo'))
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkDesbloqueo'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/01-Bloqueo/lnkSeleccionandoPersona'))
+def persona = '1003747667'
 
 WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.PER')
 
 //Seteo de Datos "Id. Persona"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1003747667')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', persona)
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
@@ -110,7 +107,8 @@ catch (Exception e) {
 			WebUI.closeWindowIndex(1)
 		
 			WebUI.switchToWindowIndex(0)			
-		
+			def menuDesplegable1 = ["Desbloqueo", "Bloqueo"]
+			CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable1, link0)
 			WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/02-Desbloqueo/lnkSeleccionandoPersona'))
 		
 			WebUI.switchToWindowTitle('BCCL.E.AC.DESBLO.POR.PER')
@@ -118,14 +116,14 @@ catch (Exception e) {
 			//Seteo de Datos "Id. Persona"
 			WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 		
-			CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Firmante', '1003747667')
+			CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Firmante', persona)
 		
 			WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 		
 			WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.PER/lblTipoBloqueValor'))
 		
 			TipoBloq = WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.PER/lblTipoBloqueValor'))
-			encontrado = desbloqueo(TipoBloq)		
+			encontrado = desbloqueo(TipoBloq, persona)		
 	}	
 	WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.PER/lblTipoBloqueValor'))
     TipoBloq = WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.PER/lblTipoBloqueValor'))

@@ -23,29 +23,20 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Cuentas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+def menuDesplegable = ['Cuentas', 'Modificacion de cuenta', 'Bloqueo y Desbloqueo', 'Consultas']
+def link = "Historial de Bloqueos Inactivos"
 
-//Seleccionar "Modificación de Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkModificaciondDeCuenta'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Seleccionar "Bloqueo y Desbloqueo"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkBloqueoyDesbloqueo'))
-
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkConsultas'))
-
-//Seleccionar "Historial de Bloqueos inactivos"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/03-Consultas/lnkHistorialdeBloqueosInactivos'))
-
-//Cambiar ventana "BCCL.AC.CONS.HIST.BLOQ"
+//Cambiar ventana "Historial de Bloqueos"
 WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
 
 //Seteo de Datos "Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010043082')
+
 
 //Capturar el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -54,7 +45,7 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verificar "Fecha de Bloqueo"
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechadeBloqueo'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechaBloqueo'))
 
 //Capturar el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -68,9 +59,10 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 println TotalRegistros
 
-//Validar "Fecha de Bloqueo"
-def fechaBloqueo = WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechadeBloqueo'))
-assert fechaBloqueo.contains('Fecha de Bloqueo')
+//Validar la fecha
+assert WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechaBloqueo')).contains('20230825')
+
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

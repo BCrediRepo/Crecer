@@ -18,48 +18,66 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
 
+def buscarElementoEnTabla(String variable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[0]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posLink]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 56), findTestData('MainData/Users').getValue(
         2, 56))
+def cuenta = '10200022000'
+def fecha = GlobalVariable.vFechaCOB
+def menuDesplegable0 = ["Cuentas", "Modificacion de cuenta", "Bloqueo y Desbloqueo", "Bloqueo" ]
+def link0 = "Seleccionando Cuenta"
 
-WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/lnkModificaciondDeCuenta'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkBloqueoyDesbloqueo'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/lnkBloqueo'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/01-Bloqueo y Desbloqueo/01-Bloqueo/lnkSeleccionandoCuenta'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
 WebUI.switchToWindowTitle('BCCL.E.AC.BLO.POR.CTA')
 
 //Seteo de Datos "Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '10200022000')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', cuenta)
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/BCCL.E.AC.BLO.POR.CTA/lnkBloqueoParcial'))
 
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtMotivo'), 'AF')
+def encontrado1 = false
+while (!encontrado1) {
+	encontrado1 = buscarElementoEnTabla(cuenta, 8)
+}
+		
+WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtMotivo'), 'AF')	
+WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtFechaDesde'), fecha)	
+WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtMonto'), '100')	
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))	
+assert WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta')).contains("Txn Completa: ")
+	
+	
 
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtFechaDesde'), '20230828')
 
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/txtMonto'), '100')
-
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/btnAceptarRegistro'))
-
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/lnkAceptarAlertas'))
-
-WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/lblTxnCompleta'))
-
-txn = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/LOCKED EVENTS/lblTxnCompleta'))
-
-assert txn.contains("Txn Completa: ") == true
 
 //Control fin de script
 

@@ -18,6 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -25,15 +30,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
         2, 1))
 
-WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
+def menuDesplegable0 = ["Cuentas", "Modificacion de cuenta", "Bloqueo y Desbloqueo", "Consultas"]
+def link0 = "Bloqueos Activos"
 
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/lnkModificaciondDeCuenta'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkBloqueoyDesbloqueo'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkConsultas'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/Consultas/lnkHistorialBloqueosActivos'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
 WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
 

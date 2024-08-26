@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lblIDFilial</name>
+   <tag></tag>
+   <elementGuidId>b2342864-07dc-49e3-a592-13a157270cfb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/ul[29]/li/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#pane_ > center:nth-child(4) > table:nth-child(4) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > font:nth-child(2) > strong:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Compensacion de Saldos' or . = 'Compensacion de Saldos') and @ref_element = 'Object Repository/02-Dashboard/frmDashboardMenu']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c50e3aed-e5df-45ab-b55e-0f9f584102e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>ProcessMouseClick(event)</value>
+      <webElementGuid>b3b4a5c1-7291-43f3-8ea5-8b86a01c9e68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onkeypress</name>
+      <type>Main</type>
+      <value>ProcessKeyPress(event)</value>
+      <webElementGuid>1fd54892-69cb-4a0f-9501-36356309937b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Compensacion de Saldos</value>
+      <webElementGuid>6ab855d8-454e-4d26-a76e-5e5b78603b6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
+      <webElementGuid>398d66b1-7a79-4a91-b6e8-dd2c55ea7c97</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/02-Dashboard/frmDashboardMainMenu</value>
+      <webElementGuid>6db5eb67-ecbb-420d-b724-d0c7b3f4a7e7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//span[@onclick='ProcessMouseClick(event)'])[100]</value>
+      <webElementGuid>553d7c83-c75e-4413-b4d0-8791b7cc2c12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pane_']/ul[29]/li/span</value>
+      <webElementGuid>600e65f3-fc66-4795-b452-eb2504129274</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Devolucion de Impuestos en Cuenta Contable'])[1]/following::span[1]</value>
+      <webElementGuid>debfe62e-61b4-4edd-a384-2dc095646de3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cobro de Impuestos en Cuenta Contable'])[1]/following::span[1]</value>
+      <webElementGuid>a788e959-95ee-4a13-ad9b-8b6baa405a41</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Relaciones de Cuenta Espejo'])[1]/preceding::span[1]</value>
+      <webElementGuid>76549113-1e67-4cfe-917b-24d0970ffe49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alta de Relaciones'])[1]/preceding::span[2]</value>
+      <webElementGuid>728d5645-e97e-47b4-872b-8bec5122e7ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Compensacion de Saldos']/parent::*</value>
+      <webElementGuid>bd158c2c-c298-4984-a952-5f023ef3d42f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//ul[29]/li/span</value>
+      <webElementGuid>16d4d715-e221-4ee0-9a3f-c9e233c54ef8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Compensacion de Saldos' or . = 'Compensacion de Saldos')]</value>
+      <webElementGuid>42c402b0-6c84-42f5-bf54-7b5c7e14d61a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
