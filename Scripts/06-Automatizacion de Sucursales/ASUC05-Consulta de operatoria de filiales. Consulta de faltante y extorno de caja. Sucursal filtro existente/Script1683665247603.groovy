@@ -18,28 +18,24 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 21), findTestData('MainData/Users').getValue(2, 21))
-
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando menu ?323
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?323')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecuta en la linea de comando menu ?1
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?323", 1)
 
-//Abre la pestaña del menú ?323
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Ir a consulta de operatoria
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultadeoperatoria'))
-
-//Selecciona Consulta de Caja Faltantes Extonos Caja
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultadeCajaFaltantesExtonosCaja'))
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Consulta de operatoria"]
+link = "Consulta de Caja Faltantes/Extonos Caja"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA')
 
@@ -49,33 +45,28 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Transaccion', '4')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
-//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Legajo', '13')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-WebUI.delay(10)
-
-//Maximiza la pantalla
+WebUI.delay(15)
 WebUI.maximizeWindow()
 
-//Espera y verifica que se muestren los registros de la tabla
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblCuentaInternaCaja'),20)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblCuentaInternaFaltante'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblCuentaInternaCaja'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblDescripcion'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblFecha'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblFilial'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblImporte'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblLegajoCajero'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblMoneda'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTxnId'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTransaccion'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTotalExtorno'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblCajero'))
+// Validar los textos de las celdas directamente
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
+WebElement header = table.findElement(By.tagName("tr"))
+List<WebElement> cells = header.findElements(By.tagName("th"))
 
+assert cells[0].getText().contains('Cuenta Interna Caja') : "Expected 'Cuenta Interna Caja' but found ${cells[0].getText()}"
+assert cells[3].getText().contains('Cuenta Interna') : "Expected 'Cuenta Interna' but found ${cells[1].getText()}"
+assert cells[6].getText().contains('Filial') : "Expected 'Filial' but found ${cells[2].getText()}"
+assert cells[9].getText().contains('Cajero') : "Expected 'Cajero' but found ${cells[3].getText()}"
+assert cells[12].getText().contains('Legajo Cajero') : "Expected 'Legajo Cajero' but found ${cells[4].getText()}"
+assert cells[15].getText().contains('Transaccion') : "Expected 'Transaccion' but found ${cells[5].getText()}"
+assert cells[18].getText().contains('Descripcion') : "Expected 'Descripcion' but found ${cells[6].getText()}"
+assert cells[21].getText().contains('Fecha') : "Expected 'Fecha' but found ${cells[7].getText()}"
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -93,10 +84,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion 
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'))
 assert element.contains('Transaction Code')
 
-
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
