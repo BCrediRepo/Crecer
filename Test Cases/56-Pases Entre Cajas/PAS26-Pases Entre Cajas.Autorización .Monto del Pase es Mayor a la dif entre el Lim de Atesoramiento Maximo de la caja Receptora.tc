@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS26-Pases Entre Cajas.Autorización .Monto del Pase es Mayor a la dif entre el Lim de Atesoramiento Maximo de la caja Receptora</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92d88183-efe7-4bee-aef3-c86d18be7a97</testCaseGuid>
+</TestCaseEntity>
