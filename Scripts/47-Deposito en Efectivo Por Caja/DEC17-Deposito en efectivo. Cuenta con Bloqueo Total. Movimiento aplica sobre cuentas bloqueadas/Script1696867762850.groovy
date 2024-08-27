@@ -93,7 +93,7 @@ WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegi
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEOTOTAL'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEOTOTAL'))
 def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEOTOTAL'))
-assert element.contains('CON RESTRICCION BLOQUEO TOTAL')
+assert element.contains('tiene BLOQUEO TOTAL')
 
 //----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed

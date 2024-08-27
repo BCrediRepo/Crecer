@@ -21,75 +21,26 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,18), findTestData('MainData/Users').getValue(2,18))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
 
+def menuDesplegable = ["Chequeras", "Consulta"]
+def link = "Consulta de Chequeras y Cheques por Cuenta"
+
 //Ejecuta en la linea de comando menu ?327
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?327')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la pestaña del menú ?01
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Selecciona CHEQUERAS
-WebUI.click(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/Temenos T24/lnkChequeras'))
-
-//Selecciona consulta
-WebUI.click(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/Temenos T24/lnkConsulta'))
-
-//Selecciona CONSULTA DE CHEQUERAS Y CHEQUES POR CUENTA
-WebUI.click(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/Temenos T24/lnkConsultadeChequerasyChequesporCuenta'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Abre la pestaña de cheques y chequeras por cuenta
 WebUI.switchToWindowTitle('BCCL.E.CONS.CHQ.CUENTA.FIL')
 
-//Filtro para limpiar selección
-//CustomKeywords.'pkgModules.kywGeneric.LimpiarFiltroenScript'()
-//WebUI.switchToWindowTitle('Temenos T24')
-
-//Selecciona CONSULTA DE CHEQUERAS Y CHEQUES POR CUENTA
-//WebUI.click(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/Temenos T24/lnkConsultadeChequerasyChequesporCuenta'))
-
-//Abre la pestaña de cheques y chequeras por cuenta
-//WebUI.switchToWindowTitle('BCCL.E.CONS.CHQ.CUENTA.FIL')
-
-//Verifica titulo de cheques y chequeras
-WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblTituloBCCL.E.CONS.CHQ.CUENTA.FIL'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblTituloBCCL.E.CONS.CHQ.CUENTA.FIL'))
-
-//Ingresa Cuenta Debito
-WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtCuentaDB1'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtCuentaDB1'), '00630024139')
-
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-//Ingresa FECHA DESDE
-WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaDesde2'), '20220729')
-
-//Ingresa FECHA HASTA
-WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtFechaHasta3'), '20220729')
-
-//Ingresa CHEQUE DESDE
-WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeDesde4'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeDesde4'), '123')
-
-//Ingresa CHEQUE HASTA
-WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeHasta5'), 6)
-WebUI.setText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/txtChequeHasta5'), '124')
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Selecciona boton EJECUTAR
-WebUI.click(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/btnEjecutar'))
-//WebUI.delay(15)
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CUENTA.DB', "00010623433")
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('FECHA.DESDE', "20220329")
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('FECHA.HASTA', "20220329")
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CHQ.DESDE', "123")
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('CHQ.HASTA', "124")
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Espera y Verifica Mensaje de Error
 WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblMensajeError'), 6)

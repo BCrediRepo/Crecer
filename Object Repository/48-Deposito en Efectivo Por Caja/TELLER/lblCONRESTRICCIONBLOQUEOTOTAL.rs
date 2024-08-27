@@ -6,15 +6,15 @@
    <elementGuidId>3c13df3a-430a-4092-8679-1ddd1e761d0b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;OVE1&quot;]</value>
+         <key>CSS</key>
+         <value>.captionError</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#OVE2</value>
+         <key>XPATH</key>
+         <value>//td[@id='OVE1']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>984d2daa-8bf5-4c6a-95ce-cf402d094097</webElementGuid>
+      <webElementGuid>798fe9db-6b9c-4fea-b785-74aa42cca381</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>overrideOn</value>
-      <webElementGuid>a6396d07-67b7-4571-a0fa-b3ceb405df4d</webElementGuid>
+      <webElementGuid>3d4a9fa3-7a23-44fc-9807-e57a050a2ec3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>height</name>
       <type>Main</type>
       <value>15</value>
-      <webElementGuid>f8ab2fd9-9919-4958-89fe-04287e229a65</webElementGuid>
+      <webElementGuid>d5b04e78-ae45-4039-9eb7-d6435e15fdae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>1d9a438e-37e9-4588-93d7-82e520c39313</webElementGuid>
+      <webElementGuid>e2551fe8-d892-47ad-9241-2cf9a2061adc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>id</name>
       <type>Main</type>
       <value>OVE1</value>
-      <webElementGuid>af8fe825-9940-46db-a3e5-44a5ee92fa4f</webElementGuid>
+      <webElementGuid>4dd7fcc1-ce60-4ecc-9679-c19b270818a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL</value>
-      <webElementGuid>888fe3c2-25d3-4e93-bf42-c2f7b2ba790d</webElementGuid>
+      <webElementGuid>367b7545-a921-45ad-8118-7dfab863c8ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;OVE1&quot;)</value>
-      <webElementGuid>56aae3a4-a858-495e-b132-0aaea181b51c</webElementGuid>
+      <webElementGuid>fcaeeef3-b570-4d27-aa6a-9cdcdb22787d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//td[@id='OVE1']</value>
-      <webElementGuid>5f73bf6f-5981-4723-b3cc-6730ba568b44</webElementGuid>
+      <webElementGuid>9a55f057-2759-4939-acbb-a00bd51677ca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='error_box']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[2]</value>
-      <webElementGuid>bb470ee9-1cb1-4337-8c37-9b3622b42a5a</webElementGuid>
+      <webElementGuid>da2a5ea0-37a6-4aee-b8f1-6b0c13b85d6e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Aceptar Alertas'])[1]/following::td[3]</value>
-      <webElementGuid>206818d4-e4de-489d-acd6-4355601b2453</webElementGuid>
+      <webElementGuid>d4c633e8-e2a0-4a5b-86a1-55bb9ef3ee7a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='(Fil.089 M.del Plata Ctr)'])[1]/following::td[7]</value>
-      <webElementGuid>4f4b9ce0-4760-4828-877e-e8adb9ae98f6</webElementGuid>
+      <webElementGuid>ba55aa1f-5ea9-4771-ad3a-6a9a45614604</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Transaccion requiere autorizacion por monto. Nivel NIV1'])[1]/preceding::td[2]</value>
-      <webElementGuid>078b242a-5514-4817-800a-fa5da02cda78</webElementGuid>
+      <webElementGuid>03bb4f92-4905-4992-a3eb-66714c595ab2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='MOV A APLICAR SOBRE CTA 00890052464 TIPO BLOQUEO TOTAL REQUIERE AUTORIZACION'])[1]/preceding::td[4]</value>
-      <webElementGuid>ffe521ae-a66b-41ac-92db-c043d400b076</webElementGuid>
+      <webElementGuid>1d50e04f-3a9f-4de6-b246-0a2fa3567a76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL']/parent::*</value>
-      <webElementGuid>3d597648-cb2a-4970-857e-b6ae9f037138</webElementGuid>
+      <webElementGuid>637f23df-eee8-471b-ba46-376a458ff0df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//table[2]/tbody/tr/td[2]</value>
-      <webElementGuid>9cc5d0c1-c748-4915-9bb1-9349b0aecd26</webElementGuid>
+      <webElementGuid>e3c1b2fd-edee-42c7-899b-204bf0358028</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[@id = 'OVE1' and (text() = 'CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL' or . = 'CUENTA 00890052464 CON RESTRICCION BLOQUEO TOTAL')]</value>
-      <webElementGuid>3ef67c6b-71a4-4b33-8d83-26a064efda7c</webElementGuid>
+      <webElementGuid>ba3f7b4b-3ec5-4c2c-bba7-5f2119a67c15</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -70,10 +70,10 @@ def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Au
 assert element2.contains('6')
 
 //Verificar valor de "Sbl Status NOT POSTED CGU"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTEDCGU'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
 
 //Validar valor de "Sbl Status NOT POSTED CGU"
-def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTEDCGU'))
+def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusNOTPOSTED'))
 assert element3.contains('NOT.POSTED')
 
 //Control de fin de script
