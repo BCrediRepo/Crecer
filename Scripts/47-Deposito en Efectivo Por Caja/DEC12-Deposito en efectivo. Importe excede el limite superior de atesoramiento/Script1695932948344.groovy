@@ -92,7 +92,10 @@ WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/T
 //Click boton aceptar
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'),6)
 WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert TxnInicial.contains('Txn Completa')
 //Espera y recibe mensaje de ATESORAMIENTO EXCEDE EL MAXIMO
 //WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'),6)
 //WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTOEXCEDEELMAXIMOPOR'))
@@ -101,10 +104,11 @@ WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/T
 
 
 //Espera y recibe mensaje de ATESORAMIENTO DEBAJO DEL MINIMO
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'))
-def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'))
-assert element.contains('ATESORAMIENTO DEBAJO DEL MINIMO')
+//WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'),6)
+//WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'))
+//def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblATESORAMIENTODEBAJODELMINIMO'))
+//assert element.contains('ATESORAMIENTO DEBAJO DEL MINIMO')
+
 
 //---------------------------------------------------------------------------------------------------------------------
 

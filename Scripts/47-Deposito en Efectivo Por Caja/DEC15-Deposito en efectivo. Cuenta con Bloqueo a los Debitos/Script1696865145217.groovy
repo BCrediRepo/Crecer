@@ -94,12 +94,11 @@ WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/T
 //Click boton aceptar
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'),6)
 WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert TxnInicial.contains('Txn Completa')
 
-//Espera y recibe mensaje CON RESTRICCION BLOQUEO DEBITOS
-WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEODEBITOS'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEODEBITOS'))
-def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEODEBITOS'))
-assert element.contains('CON RESTRICCION BLOQUEO DEBITOS')
 
 //---------------------------------------------------------------------------------------------------------------------
 

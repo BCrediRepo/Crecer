@@ -24,11 +24,9 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Cuentas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentasEcheq'))
-
-//Seleccionar "Consulta de Cuentas por Cuenta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/04-Consulta de cuentas/lnkConsultaDeCuentasPorCuentaCasoEcheq'))
+def menuDesplegable = ["Cuentas"]
+def link = "Consulta de Cuentas por Cuenta"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "Consulta de Cuentas por Cuenta"
 WebUI.switchToWindowTitle('Consulta de Cuentas por Cuenta')

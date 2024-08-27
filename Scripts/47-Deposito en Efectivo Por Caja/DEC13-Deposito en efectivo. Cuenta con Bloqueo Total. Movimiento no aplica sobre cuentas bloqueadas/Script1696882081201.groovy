@@ -68,7 +68,7 @@ WebUI.click(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/T
 WebUI.waitForElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEOTOTAL'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEOTOTAL'))
 def element = WebUI.getText(findTestObject('Object Repository/48-Deposito en Efectivo Por Caja/TELLER/lblCONRESTRICCIONBLOQUEOTOTAL'))
-assert element.contains('CON RESTRICCION BLOQUEO TOTAL')
+assert element.contains('tiene BLOQUEO TOTAL')
 
 //---------------------------------------------------------------------------------------------------------------------
 

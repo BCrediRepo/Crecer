@@ -4,6 +4,5 @@
    <name>ECQ02-Posicion del socio en ECHEQ. Realizar consulta con una cuenta habilitada para emitir Echeq</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>1038f491-8177-4de6-9454-985cb8730acf</testCaseGuid>
 </TestCaseEntity>
