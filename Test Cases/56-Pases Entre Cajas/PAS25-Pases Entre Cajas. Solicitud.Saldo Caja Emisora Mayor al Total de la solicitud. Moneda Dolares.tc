@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PAS25-Pases Entre Cajas. Solicitud.Saldo Caja Emisora Mayor al Total de la solicitud. Moneda Dolares</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca5d77dd-8994-4f3f-984c-6d62c4263d2c</testCaseGuid>
+</TestCaseEntity>
