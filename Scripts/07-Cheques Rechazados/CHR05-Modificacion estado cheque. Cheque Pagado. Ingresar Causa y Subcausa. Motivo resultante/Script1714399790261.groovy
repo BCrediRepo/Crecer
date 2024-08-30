@@ -73,7 +73,7 @@ WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/txtNumCheque
 
 WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarRegistro'))
 
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnReversarRegistro'))
+//WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnReversarRegistro'))
 
 WebUI.maximizeWindow()
 

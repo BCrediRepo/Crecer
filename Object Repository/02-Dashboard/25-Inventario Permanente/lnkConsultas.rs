@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>ul.menuMargin:nth-child(29) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>1a78edad-7371-4383-882f-ace52b89fa38</webElementGuid>
+      <webElementGuid>8e8432ea-fbcb-4add-a7fb-6ab48be0abfe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>ProcessMouseClick(event)</value>
-      <webElementGuid>6550dd6c-ac27-47a6-9231-667c42eb8ae4</webElementGuid>
+      <webElementGuid>97eb3237-972a-4123-ab47-f78fac6bf580</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onkeypress</name>
       <type>Main</type>
       <value>ProcessKeyPress(event)</value>
-      <webElementGuid>d504cde8-0fa9-4aed-b27d-4650426e34f0</webElementGuid>
+      <webElementGuid>1316e5a3-a1cd-4f91-a925-702e149c9f0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Consultas</value>
-      <webElementGuid>73c74eaa-7c2c-4e57-8645-3bde5b7c847a</webElementGuid>
+      <webElementGuid>c627a133-ff58-4c1c-a28e-17188903dd23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pane_&quot;)/ul[@class=&quot;menuMargin&quot;]/li[@class=&quot;clsHasKids&quot;]/ul[1]/li[@class=&quot;clsHasKids&quot;]/span[1]</value>
-      <webElementGuid>d1f8b6c3-c2e5-46ea-b1e5-d53a8bc0469d</webElementGuid>
+      <webElementGuid>3f799c71-a382-48c2-a47f-6db87774b3f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/02-Dashboard/frmDashboardMenu</value>
-      <webElementGuid>0d23a62e-f3f2-47a3-87d5-aa172835ff67</webElementGuid>
+      <webElementGuid>8168cd50-b97c-4a99-8d31-c6df1d5e94f1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//span[@onclick='ProcessMouseClick(event)'])[177]</value>
-      <webElementGuid>1ec1bbbe-c7d2-4a7c-8052-d41963740ac8</webElementGuid>
+      <webElementGuid>4ba4217f-5b0d-47a4-b187-5c50f8572ed3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pane_']/ul[28]/li/ul/li/span</value>
-      <webElementGuid>6ce8cf72-58d1-4552-91fa-15835e631692</webElementGuid>
+      <webElementGuid>cb8a1eb4-207d-444e-b7dc-6fd9155b5a13</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Inventario Permanente'])[2]/following::span[1]</value>
-      <webElementGuid>724ee5de-e34f-4974-afd0-cbee19eefe8e</webElementGuid>
+      <webElementGuid>0fe1ea7a-6ddb-4add-a822-4b405a0ec34d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuentas Capital Social por Fecha de alta'])[2]/following::span[2]</value>
-      <webElementGuid>de9df949-ca87-4926-b182-b65e417c9fe9</webElementGuid>
+      <webElementGuid>c548c09e-a0fb-4a3f-975a-7a649118fa51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Partidas Dadas de Alta'])[2]/preceding::span[1]</value>
-      <webElementGuid>f3c93e25-1f73-4c0d-8bb6-123bf56199ff</webElementGuid>
+      <webElementGuid>ca03991c-f0fc-419f-b64d-467cc9ff5f93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Partidas Dadas de Baja'])[2]/preceding::span[1]</value>
-      <webElementGuid>9c8ae250-2f63-4f8f-82d7-97f0ea4619bf</webElementGuid>
+      <webElementGuid>22679c02-fa32-434b-8777-84d3eb8f3d11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ul[28]/li/ul/li/span</value>
-      <webElementGuid>920688fd-3ea8-4cc6-8d7c-0a2441b956ed</webElementGuid>
+      <webElementGuid>eb86e9d9-5542-4fe9-8df0-22e1c55dcc15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Consultas' or . = 'Consultas')]</value>
-      <webElementGuid>9a732e68-4287-4578-8687-80dd41d578be</webElementGuid>
+      <webElementGuid>9759d6a8-1ac2-4413-8263-e6bcc55c9e55</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

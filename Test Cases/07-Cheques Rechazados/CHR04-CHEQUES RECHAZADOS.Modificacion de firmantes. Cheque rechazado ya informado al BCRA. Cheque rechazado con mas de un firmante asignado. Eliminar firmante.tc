@@ -4,6 +4,5 @@
    <name>CHR04-CHEQUES RECHAZADOS.Modificacion de firmantes. Cheque rechazado ya informado al BCRA. Cheque rechazado con mas de un firmante asignado. Eliminar firmante</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>7d0e28a3-0a04-4280-a2aa-f82899892467</testCaseGuid>
 </TestCaseEntity>

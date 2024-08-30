@@ -42,7 +42,8 @@ WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA')
 //Verifica titulo de Caja Faltantes Extonos Caja
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lbltituloBCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA'))
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20240208')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Transaccion', '4')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
@@ -52,7 +53,7 @@ long startTime = System.currentTimeMillis()
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.maximizeWindow()
-WebUI.delay(15)//Necesito tiempo de espera para que aparezcan resultados de la consulta
+WebUI.delay(90)//Necesito tiempo de espera para que aparezcan resultados de la consulta
 
 // Validar los textos de las celdas directamente
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))

@@ -70,7 +70,7 @@ assert element.contains('Txn Completa:')
 
 //Agrego un nuevo firmante para luego eliminarlo validando el aceptar alertas
 //if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), FailureHandling.CONTINUE_ON_FAILURE)) {
-//    WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
+    //WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))
 //}
 
 //Proceso para eliminar el firmante agregado anteriormente

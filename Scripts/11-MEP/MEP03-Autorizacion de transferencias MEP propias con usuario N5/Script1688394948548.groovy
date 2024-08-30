@@ -27,9 +27,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
         2, 8))
 
-WebUI.click(findTestObject('02-Dashboard/10-MEP/AutorizacionesAnovello/lnkAutorizacionesAnovello'))
+def menuDesplegable = ["Autorizaciones"]
+def link = "Autorizaciones Pendientes"
 
-WebUI.click(findTestObject('02-Dashboard/10-MEP/AutorizacionesAnovello/lnkAutorizacionesPendientes'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('BCCL.E.AUTHORIZATION')
 
