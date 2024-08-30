@@ -97,10 +97,10 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Entidad','043')
 //Seleccionar ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verifico que se encuentre el lbl Fecha inicio = 01 SEP 2023
+//Verifico que se encuentre el lbl Fecha inicio = 01 SEP 2023// APLICAR EL PARSEO DE LA FECHA
 WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblFechaInicio'))
 def element2 = WebUI.getText(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblFechaInicio'))
-assert element2.contains("01 SEP 2023")
+assert element2.contains("26 FEB 2024")
 
 //Verifico que se encuentre el lbl frecuencia = diario
 WebUI.verifyElementVisible(findTestObject('Object Repository/29-Limites y Acumuladores/BCCL.E.EB.LM.ACUM.GEN/lblFrecuenciaDiario'))

@@ -106,7 +106,7 @@ for (int row = 1; row <= rowCount; row++) {
 		}catch(Exception err) {
 				WebUI.verifyElementVisible(findTestObject('Object Repository/01-Login/lblErrMsgLogin'))
 				msg = WebUI.getText(findTestObject('Object Repository/01-Login/lblErrMsgLogin'))
-				if (msg.contains("TOO MANY ATEMPTS")) {
+				if (msg.contains("TOO MANY ATEMPTS") || (msg.contains("Please check your Login Credential and/or access rights"))) {
 					println "-------------------------------------------------------------------"
 					println "el usario" + " " + usuario + " " + "no pudo logear correctamente en el ambiente"
 					println GlobalVariable.vServerNameRun				
@@ -120,7 +120,7 @@ for (int row = 1; row <= rowCount; row++) {
 					continue
 				}
 			}			
-		}    
+		}
 }
 
 //Control de fin de script
