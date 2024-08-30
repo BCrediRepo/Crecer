@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,42 +28,34 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
 WebUI.maximizeWindow()
 
-//Ingresar "?70" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?70')
+def menuDesplegable = ["Consultas Varias", "Consultas de Atencion a Usuarios", "Consultas de Cierre Operatoria"]
+def link = "Detalle de Operaciones Sin Efvo (Filial)"
 
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?70"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?70", 1)
 
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "Consultas Varias"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultasVarias'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Seleccionar "Consultas de Atencion a Usuarios"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/lnkConsultasdeAtencionaUsuarios'))
-
-//Seleccionar "Consultas de Operatoria en Linea de Cajas"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas de Atencion a Usuarios/lnkConsultasdeOperatoriaenLineadeCajas'))
-
-//Seleccionar "Consultas de Cierre Operatoria"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas de Atencion a Usuarios/Consultas de Operatoria en Linea de Cajas/lnkConsultasdeCierreOperatoria'))
-
-//Seleccionar "Detalle de Operaciones Sin Efvo (Filial)"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas de Atencion a Usuarios/Consultas de Operatoria en Linea de Cajas/Consultas de Cierre Operatoria/lnkDetalleOpSinEfvo(Filial)'))
-
-//Cambiar ventana "Totales Sucursal x Cod Oper."
-WebUI.switchToWindowTitle('Totales Sucursal x Cod Oper.')
+//Cambiar a la ventana "Totales Sucursal x Cod Oper."
+WebUI.switchToWindowIndex(2)
 
 //Seteo de Datos "Moneda", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Ejecutar"
+//Seleccionar boton "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Seleccionar "boton Ver Detalle"

@@ -25,11 +25,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "ACCOUNT," en el buscador
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ACCOUNT,')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "ACCOUNT"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ACCOUNT", 1)
 
 //Cambiar a la ventana "CUENTAS"
 WebUI.switchToWindowIndex(1)

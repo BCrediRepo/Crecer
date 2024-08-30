@@ -38,6 +38,9 @@ WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCodigoIP'), '0099')
 
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'))
 
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), 3)
@@ -50,7 +53,7 @@ WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha')
 
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), 3)
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), '20230829')
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), GlobalVariable.vFechaCOB)
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtMonto'), '2000')
 
@@ -76,6 +79,10 @@ WebUI.switchToWindowTitle('BCCL.E.IP.RECLA.PARTIDAS')
 
 //Seteo de datos "Codigo IP", "Id Persona"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP', '0099')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1002388512')
 
@@ -91,8 +98,7 @@ WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtCodigoIPReclasificacion'), 
     '0795')
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtFechaReclasificacion'), 
-    '20230829')
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtFechaReclasificacion'), GlobalVariable.vFechaCOB)
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/btnAceptarRegistro'))
 
@@ -109,4 +115,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

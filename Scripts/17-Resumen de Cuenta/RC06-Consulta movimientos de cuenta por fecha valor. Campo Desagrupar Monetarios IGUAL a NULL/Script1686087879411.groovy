@@ -77,9 +77,13 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//Validar texto "Nro de cuenta"
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblNrodeCuenta'))
-assert element.contains('Nro. de Cuenta')
+//Validar que aparezca en el encabezado el texto "Nro de cuenta"
+def nroCuenta = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblNrodeCuenta'))
+assert nroCuenta.contains('Nro. de Cuenta')
+
+//Validar que aparezca la columna "Fec Valor"
+def fecValor = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblFecValor'))
+assert fecValor.contains('Fec Valor')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

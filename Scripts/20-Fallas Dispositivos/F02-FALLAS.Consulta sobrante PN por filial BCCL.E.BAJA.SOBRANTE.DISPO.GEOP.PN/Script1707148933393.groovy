@@ -76,7 +76,7 @@ WebUI.switchToWindowTitle('TELLER')
 WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/06-TELLER/lblALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/06-TELLER/lblALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn'))
 def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/06-TELLER/lblALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn'))
-assert element.contains('ALTA Sobrante en Disp Pn - Deposito ALTA Sobrante en Disp Pn')
+assert element.contains('ALTA Sobrante en Disp Pn - Retiro ALTA Sobrante en Disp Pn -')
 
 //WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/04-Movimientos de Fondos/lblSOBRANTES EN DISPOSITIVO MAP'), 6) 
 
@@ -92,4 +92,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

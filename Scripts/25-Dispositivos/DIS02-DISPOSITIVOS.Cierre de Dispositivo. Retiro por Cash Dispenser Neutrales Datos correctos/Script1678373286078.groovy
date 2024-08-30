@@ -27,21 +27,14 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ir a operatoria de Caja
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkOperatoriadeCaja-Reemplazo'))
+def menuDesplegable = ["Operatoria de Caja- Reemplazo", "Dispositivos", "Cierre de Dispositivos"]
+def link = "Dispensado de Cash Dispenser Neutrales"
 
-//Ir a Dispositivos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
+//Navegar por el Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Ir a cierre de Dispositivos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/spanCierredeDispositivos'))
-
-//Ir a Dispensado de Cash Dispenser Neutrales
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/lnkCashDispenserNeutrales'),6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/lnkCashDispenserNeutrales'))
-
-//Abre la ventana Dispensado de Cash Dispenser Neutrales
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(1)
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -93,5 +86,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

@@ -214,11 +214,4 @@
       <testCaseId>Test Cases/04-PlazoFijo/PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el dia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>c6492890-d5a5-4fea-ae28-80eef7fca1e2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/04-PlazoFijo/PF30-Plazo Fijo. Alta. Efectivo. Persona Fisica. Circular 35 Imposicion en efectivo. Pago en efectivo. Uso exento</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>

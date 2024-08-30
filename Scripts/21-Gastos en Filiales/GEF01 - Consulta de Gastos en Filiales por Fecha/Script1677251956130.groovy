@@ -22,49 +22,49 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
-
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
+def menuDesplegable = ["Sucursal Piloto", "GL - Entregas Global Logic", "Gastos en Filiales"]
+def link = "Consulta de Gastos en Filiales"
 
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?1"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/lnkGL-EntregasGlobalLogic'))
+//Cambiar a la venana "BCCL.E.GASTOS.FILIALES"
+WebUI.switchToWindowIndex(2)
 
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/Global Logic/lnkGastosenFiliales'))
+//Seteo de Datos
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/Global Logic/lnkConsultadeGastosenFiliales'))
+//Maximizamos
+WebUI.maximizeWindow()
 
-WebUI.switchToWindowTitle('BCCL.E.GASTOS.FILIALES')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha','20220713')
 
-WebUI.click(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkNuevaSeleccion'))
-
-WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txtFecha_value111'), '20220713')
-//WebUI.setText(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/txtFecha_value111'), GlobalVariable.vFechaCOB)
-
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-// Captura el tiempo de inicio
+//Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-WebUI.click(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lnkEjecutar'))
-
-WebUI.maximizeWindow()
+//Seleccionar boton Ejecutar
+WebUI.click(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lnkEjecutar'))
 
 //WebUI.delay(15)
 
 WebUI.waitForElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha'), 6)
-
 WebUI.verifyElementVisible(findTestObject('22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblFecha'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
@@ -77,6 +77,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/22 - Gastos en Fil
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/22 - Gastos en Filiales/BCCL.E.GASTOS.FILIALES/lblRubro'))
 
+//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //---------------------------------------------------------------------------------------------------------------------

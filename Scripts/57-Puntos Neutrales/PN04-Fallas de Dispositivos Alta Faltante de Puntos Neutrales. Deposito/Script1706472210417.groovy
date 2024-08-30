@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,35 +28,23 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 6), findTestData('MainData/Users').getValue(2, 6))
 WebUI.maximizeWindow()
 
-//Ingresar "?327" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
+def menuDesplegable = ["Dispositivos", "Registro de Fallas en Dispositivos"]
+def link = "Alta de Faltantes Puntos Neutrales"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
 //Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
+WebUI.switchToWindowIndex(1)
 
 //Maximizar pantalla
 WebUI.maximizeWindow()
 
-//Seleccionar "Dispositivos"
-WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/02-Temenos T24/lnkDispositivos'))
-
-//Seleccionar "Registro de Fallas en Dispositivos "
-WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/02-Temenos T24/Dispositivos/lnkRegistrodeFallasenDispositivos'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Alta de Faltantes Puntos Neutrales"
-WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/02-Temenos T24/Dispositivos/Registro de Fallas en Dispositivos/lnkAltadeFaltantesPuntosNeutrales'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+WebUI.switchToWindowIndex(2)
 
 //Esperar elemento "txtMontoMN"
 WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), 3)
@@ -62,6 +54,9 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'))
 
 //Setear "Monto MN"
 WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), '100')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Seleccionar "Comentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
@@ -108,7 +103,7 @@ def trx1 = partes[2]
 assert Transaccion1.contains('Txn Completa:')
 
 //Setear en "Faltantes en Dispositivos Pn"
-WebUI.setText(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/txtFaltantesenDispositivosPn'), trx1)
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), trx1)
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

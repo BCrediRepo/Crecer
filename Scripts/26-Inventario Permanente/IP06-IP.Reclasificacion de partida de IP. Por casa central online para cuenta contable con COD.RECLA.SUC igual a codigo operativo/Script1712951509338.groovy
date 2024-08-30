@@ -23,9 +23,7 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
-        2, 1))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('02-Dashboard/lnkInventarioPermanente'))
@@ -37,6 +35,9 @@ WebUI.click(findTestObject('02-Dashboard/25-Inventario Permanente/Alta de Partid
 WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCodigoIP'), '0099')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'))
 
@@ -61,7 +62,7 @@ WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha')
 
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), 3)
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), '20230829') //20220729
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), GlobalVariable.vFechaCOB)
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtMonto'), '2000')
 
@@ -89,6 +90,10 @@ WebUI.switchToWindowTitle('BCCL.E.IP.RECLA.PARTIDAS')
 
 //Seteo de datos "Codigo IP", "Id Persona"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP', '0099')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1002388512')
 
@@ -104,8 +109,7 @@ WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtCodigoIPReclasificacion'), 
     '0795')
 
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtFechaReclasificacion'), 
-    '20230829')
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtFechaReclasificacion'), GlobalVariable.vFechaCOB)
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/btnAceptarRegistro'))
 
@@ -122,4 +126,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

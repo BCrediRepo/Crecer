@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,40 +25,32 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu ?327
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?327')
+def menuDesplegable = ["Dispositivos", "Registro de Fallas en Dispositivos"]
+def link = "Alta de Faltantes de ATM/CD/TAS"
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en Dispositivos
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanDispositivos'))
-
-//Click en Registro de Fallas
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanRegistro de Fallas en Dispositivos'))
-
-//Click en Alta de faltantes ATM/CD/TAS
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/lnkAlta de Faltantes de ATMCDTAS'))
-
-//Switch a la ventana TELLER
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-//ASSERT
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(2)
+
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Esperar y validar titulo de la pestaña "Faltantes en Dispositivos"
 WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/06-TELLER/lblFaltantes en Dispositivos'), 6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/06-TELLER/lblFaltantes en Dispositivos'))
-
-def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/06-TELLER/lblFaltantes en Dispositivos'))
-
-assert element.contains('Faltantes en Dispositivos')
+def faltantesDispositivos = WebUI.getText(findTestObject('Object Repository/21-Fallas/06-TELLER/lblFaltantes en Dispositivos'))
+assert faltantesDispositivos.contains('Faltantes en Dispositivos')
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -73,6 +64,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

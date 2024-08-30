@@ -16,7 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -25,36 +28,37 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Click en consultas de operatoria en linea de cajas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanConsultas de Operatoria en Linea de Cajas'))
+def menuDesplegable = ["Consultas de Operatoria en Linea de Cajas"]
+def link = "Consulta de Excesos en Linea"
 
-//Click en consulta de excesos en linea
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsulta de Excesos en Linea'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Switch a la ventana BCCL.E.TT.CONSULTA.ATESORAMIENTO
-WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
-
-//Maximizamos
-WebUI.maximizeWindow()
+//Cambiar a la ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "No. Caja"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Caja', '1546')
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
-//Click en ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//ASSERT
+//Esperar y validar "lblCajero"
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblCajero'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblCajero'))
 
-// Captura el tiempo de finalización
+//Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
 
-//Calcula la diferencia para obtener el tiempo transcurrido
+//Calcular diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
@@ -74,4 +78,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

@@ -25,6 +25,7 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
+import org.openqa.selenium.WebDriver
 
 //Ejecutar caso PN06
 WebUI.callTestCase(findTestCase('57-Puntos Neutrales/PN06-Alta de Sobrante para Punto Neutral de 099. Monto MN ME valido. Ingresar comentarios. Dispositivo de la Sucursal. Sucursal tiene PN'), 
@@ -37,23 +38,18 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 53), findTestData('MainData/Users').getValue(2, 53))
 WebUI.maximizeWindow()
 
-//Ingresar "ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN", 1)
 
 //Cambiar ventana "BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN"
-WebUI.switchToWindowTitle('BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN')
+WebUI.switchToWindowIndex(1)
+
+//Seteo de datos "Fecha Desde", "Sucursal", "Id Dispositivo", "Cartucho Gaveta"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Seteo de datos "Fecha Desde", "Sucursal", "Id Dispositivo", "Cartucho Gaveta"
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20200101')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '073')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Dispositivo', '70151')

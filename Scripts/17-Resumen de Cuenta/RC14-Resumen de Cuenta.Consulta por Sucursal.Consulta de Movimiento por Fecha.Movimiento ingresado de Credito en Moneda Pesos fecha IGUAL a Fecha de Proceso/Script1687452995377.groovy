@@ -50,13 +50,15 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 //Cambiar a la ventana "Movimientos por Fecha de Cuentas"
 WebUI.switchToWindowIndex(1)
 
-//Seteo de Datos "Nro de Cuenta"
+//Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','10430033951')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','00430014075')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220727')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta','20220727')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -95,9 +97,9 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-//Validar Fecha de Estado
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/lblFechaEstado'))
-assert element.contains('Fecha Estado')
+//Validar valor de la fecha
+def valorFecha = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/lblValordelaFecha'))
+assert valorFecha.contains('27-07-2022')
 
 //---------------------------------------------------------------------------------------------------------------------
 

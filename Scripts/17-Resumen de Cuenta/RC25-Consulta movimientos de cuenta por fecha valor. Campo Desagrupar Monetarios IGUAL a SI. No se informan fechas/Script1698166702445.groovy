@@ -38,28 +38,31 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Calendar
 
+//Es valido que aparezca el texto "SIN MOVIMIENTOS" por que cuando el campo 'Fecha desde' esta vacio, muestra los movimientos de la fecha today.En este caso no tiene movimientos.
+
+//Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 
-//Setear "ENQ BCCL.E.RES.CTA.MOV.FECHA" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
+def menuDesplegable = ["Cuentas", "Consultas de Cuentas"]
+def link = "Consulta de Mov. por Fecha Valor"
 
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Navegar por el Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Cambiar a la ventana "Movimientos por Fecha de Cuentas"
+//Cambiar a la ventana "Movimientos de Ctas por Fecha Valor"
 WebUI.switchToWindowIndex(1)
 
-//Seteo de Datos "Cuenta"
+//Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar ventana
 WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','00540468975')
-
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Desagrupar Monetarios (Ingresar SI)','SI')
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
@@ -69,8 +72,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificar que aparezca el numero de Cuenta
-WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblCuenta'))
+//Verificar que aparezca en la cabezera "Nro. de Cuenta"
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblNrodeCuenta'))
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -85,9 +88,9 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 println TotalRegistros
 
-//Validar Numero de cuenta
-Cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/Movimientos por Fecha de Cuentas/lblCuenta'))
-assert Cuenta == "00540468975 METALURGICASIAM SA"
+//Validar que aparezca en la cabezera "Nro. de Cuenta"
+nroCuenta = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblNrodeCuenta'))
+assert nroCuenta == "Nro. de Cuenta"
 
 //Obtener elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
@@ -102,14 +105,14 @@ List<WebElement> cells = header.findElements(By.tagName("th"))
 assert cells.size() >= 9 : "Expected at least 9 cells but found ${cells.size()}"
 
 //Validar los titulos de todas las columnas
-assert cells[0].getText().contains('Fecha') : "Expected 'Id Transaccion' but found ${cells[0].getText()}"
+assert cells[0].getText().contains('Fec Valor') : "Expected 'Id Transaccion' but found ${cells[0].getText()}"
 assert cells[3].getText().contains('ID Transaccion') : "Expected 'Cod Op' but found ${cells[3].getText()}"
 assert cells[6].getText().contains('Codigo') : "Expected 'Descripcion' but found ${cells[6].getText()}"
 assert cells[9].getText().contains('Descripcion') : "Expected 'Cuenta Debito' but found ${cells[9].getText()}"
 assert cells[12].getText().contains('Monto Debito') : "Expected 'Cuenta Credito' but found ${cells[12].getText()}"
 assert cells[15].getText().contains('Monto Credito') : "Expected 'Mon' but found ${cells[15].getText()}"
 assert cells[18].getText().contains('Saldo') : "Expected 'Importe' but found ${cells[18].getText()}"
-assert cells[21].getText().contains('Fec Valor') : "Expected 'Fec Valor' but found ${cells[21].getText()}"
+assert cells[21].getText().contains('Fecha Ingr') : "Expected 'Fec Valor' but found ${cells[21].getText()}"
 assert cells[24].getText().contains('Combte') : "Expected 'Fec Valor' but found ${cells[24].getText()}"
 
 //Control Fin de script

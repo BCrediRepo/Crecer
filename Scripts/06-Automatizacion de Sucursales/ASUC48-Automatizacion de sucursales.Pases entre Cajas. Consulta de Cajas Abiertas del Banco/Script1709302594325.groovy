@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,29 +28,29 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 WebUI.maximizeWindow()
 
-//Ingresar "?70" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?70')
+def menuDesplegable = ["Consultas Varias", "Consultas Auditoria Automatizacion Sucursales"]
+def link = "Consulta de Cajas Abiertas del Banco"
 
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?70"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?70", 1)
 
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "Consultas Varias"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultasVarias'))
+//Maximizar ventana
+WebUI.maximizeWindow()
 
-//Seleccionar "Consultas Auditoria Automatizacion Sucursales"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/lnkConsultasAuditoriaAutomatizacionSucursales'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Seleccionar "Consulta de Cajas Abiertas del Banco"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/ConsultasVarias/Consultas Auditoria Automatizacion Sucursales/lnkConsultadeCajasAbiertasdelBanco'))
-
-//Cambiar ventana "Cajas Abiertas del Banco"
-WebUI.switchToWindowTitle('Cajas Abiertas del Banco')
+//Cambiar a la ventana "Cajas Abiertas del Banco"
+WebUI.switchToWindowIndex(2)
 
 //Verificar "Estado Actual"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Cajas Abiertas del Banco/lblEstadoActual'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Validar "Estado Actual"
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Cajas Abiertas del Banco/lblEstadoActual'))

@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,32 +28,35 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Consultas de Operatoria en Linea de Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsultasdeOperatoriaenLineadeCajas'))
+def menuDesplegable = ["Consultas de Operatoria en Linea de Cajas"]
+def link = "Consulta de Excesos en Linea"
 
-//Seleccionar "Consulta de Excesos en Linea"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/Consultas de Operatoria en Linea de Cajas/lnkConsultadeExcesosenLinea'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
-WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.ATESORAMIENTO')
+WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "No. de Caja"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. de Caja', '1546')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Caja', '1546')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar "Ejecutar"
+//Seleccionar boton "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verificar "Diferencia"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
 
 //Validar "Diferencia"
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
-assert element.contains('Diferencia')
-
+def diferencia = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
+assert diferencia.contains('Diferencia')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

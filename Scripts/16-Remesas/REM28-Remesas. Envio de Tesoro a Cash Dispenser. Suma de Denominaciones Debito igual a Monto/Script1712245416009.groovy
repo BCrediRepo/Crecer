@@ -24,17 +24,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 31), findTestData('MainData/Users').getValue(2, 31))
 WebUI.maximizeWindow()
 
-//Ingresar "TELLER,ENVIO.DESDE.CD" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TELLER,ENVIO.DESDE.CD')
+//Ejecutar en la linea de comando "TELLER,ENVIO.DESDE.CD"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("TELLER,ENVIO.DESDE.CD", 1)
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(1)
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -47,6 +41,9 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'))
 
 //Setear Monto MN
 WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), '2000')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Seleccionar Comentarios
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))

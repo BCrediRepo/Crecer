@@ -24,35 +24,26 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 26), findTestData('MainData/Users').getValue(2, 26))
 WebUI.maximizeWindow()
 
-//Ingresar "?303" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?303')
+def menuDesplegable = ["Dispositivos", "Atencion a Dispositivos"]
+def link = "Pase de Caja a ATM/CD"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?303"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?303", 1)
 
 //Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "Dispositivos"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/lnkDispositivos'))
-
-//Seleccionar "Atencion a Dispositivos"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/01-Dispositivos/lnkAtencionaDispositivos'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Pase de Caja a ATM/CD"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/01-Dispositivos/01-Atencion a Dispositivos/lnkPasedeCajaaATM-CD'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+WebUI.switchToWindowIndex(2)
 
 //Setear "Monto MN"
 WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '1000000')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Seleccionar "Comentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
@@ -66,7 +57,10 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar "Denominaciones DB"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblDenominaciones'))
 
-//Setear "Cantidad Mil"
+//Seleccionar "Cantidad Mil Pesos"
+WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtCantidadMilPesos'))
+
+//Setear "Cantidad Mil Pesos"
 WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtCantidadMilPesos'), '1000')
 
 //Screenshot

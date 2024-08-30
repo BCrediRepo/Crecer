@@ -32,6 +32,9 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -41,11 +44,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR" en el buscador
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR", 1)
 
 //Cambiar a la ventana "Movimientos de Ctas por Fecha Valor"
 WebUI.switchToWindowIndex(1)
@@ -56,13 +56,24 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //Maximizar ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','10430033951')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','00540468975')
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lnkEjecutar'))
+
+//Parsear FechaCOB
+fecha = GlobalVariable.vFechaCOB
+	
+//Parsear la fecha de String a LocalDate
+DateTimeFormatter formatoEntrada = DateTimeFormatter.ofPattern("yyyyMMdd")
+LocalDate fechaParseo = LocalDate.parse(fecha, formatoEntrada)
+		
+//Convertir la fecha al nuevo formato dd-MM-yyyy
+DateTimeFormatter formatoSalida = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaParseada = fechaParseo.format(formatoSalida)
 
 //Obtener elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
@@ -87,9 +98,9 @@ assert cells[18].getText().contains('Saldo') : "Expected 'Importe' but found ${c
 assert cells[21].getText().contains('Fecha Ingr') : "Expected 'Fec Valor' but found ${cells[21].getText()}"
 assert cells[24].getText().contains('Combte') : "Expected 'Fec Valor' but found ${cells[24].getText()}"
 
-//Validar la fecha de estado actual
-def fechaEstado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblFechaEstado'))
-assert fechaEstado.contains('01-09-2023')
+//Validar primer resultado de la columna "fecha valor"
+def fechaValor = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblNumFecValor'))
+assert fechaValor.contains(fechaParseada)
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()

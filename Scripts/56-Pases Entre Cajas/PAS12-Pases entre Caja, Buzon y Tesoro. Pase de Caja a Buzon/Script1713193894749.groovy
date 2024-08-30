@@ -16,7 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -26,20 +29,20 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Click en pases
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPases'))
+def menuDesplegable = ["Pases"]
+def link = "Pase de Caja a Buzon"
 
-//Click en pase de caja a buzon
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkPasedeCajaaBuzon'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Switch a la ventana TELLER
-WebUI.switchToWindowTitle('TELLER')
-
-//Maximizamos
-WebUI.maximizeWindow()
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(1)
 
 //Ingresamos Monto MN
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/txtMontoMN'), '10')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Click en validar registro
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/btnValidarRegistro'))
@@ -47,41 +50,37 @@ WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/bt
 //Click en aceptar registro
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/btnAceptarRegistro'))
 
-//ASSERT
+//Esperar y validar transaccion completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblTxn Completa'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblTxn Completa'))
 
-def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblTxn Completa'))
+def txnCompleta = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblTxn Completa'))
+assert txnCompleta.contains('Txn Completa')
 
-assert element.contains('Txn Completa')
-
-
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
+//Imprimir el numero de operacion en consola
+println("El ID de la txt es: " + txnCompleta)
  
-//Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
+//Dividir oración en palabras individuales utilizando el espacio como separador
+String[] palabras = txnCompleta.split(" ");
  
-// Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
+//Obtener tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
 String terceraPalabra = palabras[2];
  
-// Imprimir la tercera palabra seleccionada
+//Imprimir tercera palabra seleccionada
 println("La tercera palabra es: " + terceraPalabra);
 
-
-//Ingresa el numero de operacion obtenido
+//Ingresar numero de operacion obtenido
 WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/txtPaseCajaBuzon'), terceraPalabra)
 
 //Click en ver un registro
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/btnVerRegistro'))
 
-//ASSERT
+//Esperar y validar moneda ARS
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblARS'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblARS'))
 
-def element2 = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblARS'))
-
-assert element2.contains('ARS')
+def monedaARS = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/003-TELLER/lblARS'))
+assert monedaARS.contains('ARS')
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -95,7 +94,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-

@@ -24,23 +24,23 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 17), findTestData('MainData/Users').getValue(2, 17))
 WebUI.maximizeWindow()
 
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkPases'))
+def menuDesplegable = ["Pases"]
+def link = "Pase Caja al Tesoro"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Pase Caja al Tesoro"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkPaseCajaalTesoro'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+WebUI.switchToWindowIndex(1)
 
 //Esperar Monto MN
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), 3)
 
 //Setear Monto MN
 WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '100')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Seleccionar Comentarios
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))

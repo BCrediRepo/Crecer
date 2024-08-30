@@ -23,29 +23,18 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(
-        2, 14))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(2, 14))
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ir a operatoria de Caja
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkOperatoriadeCaja-Reemplazo'))
+def menuDesplegable = ["Operatoria de Caja- Reemplazo", "Dispositivos", "Cierre de Dispositivos"]
+def link = "Dispensado de ATM/CD"
 
-//Ir a Dispositivos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
+//Navegar por el Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Ir a cierre de Dispositivos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/spanCierredeDispositivos'))
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/02-Cierre De Dispositivos/lnkDispensadodeATMCD'))
-
-//Toma un ScreenShot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Abre la ventana Dispensador de ATM/CD
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(1)
 
 //Ingresa monto
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtMontoMN'), 6)
@@ -59,14 +48,12 @@ WebUI.click(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Selecciona la pestaña Denominaciones CR y hace click en denominaciones 2
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/spanDenominacionesCR'), 
-    6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/spanDenominacionesCR'),6)
 
 WebUI.click(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/spanDenominacionesCR'))
 
 //Setea la denominación
-WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom1000'), 
-    6)
+WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom1000'), 6)
 
 WebUI.setText(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/txtCantidadDenom1000'), '1')
 
@@ -78,11 +65,8 @@ WebUI.click(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM
 
 //Espera y recibe mensaje de tx completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/lblTxnCompleta'), 6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/lblTxnCompleta'))
-
 def element = WebUI.getText(findTestObject('Object Repository/26-Dispositivos/01-DispensadoDeATM-CD/lblTxnCompleta'))
-
 assert element.contains('Txn Completa:') 
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -97,4 +81,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

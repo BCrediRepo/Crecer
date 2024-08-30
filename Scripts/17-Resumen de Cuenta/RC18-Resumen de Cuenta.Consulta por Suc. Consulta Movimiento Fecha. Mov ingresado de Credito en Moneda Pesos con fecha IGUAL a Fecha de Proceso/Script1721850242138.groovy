@@ -34,17 +34,17 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 31), findTestData('MainData/Users').getValue(2, 31))
 
-//Setear "ENQ BCCL.E.RES.CTA.MOV.FECHA" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "ENQ BCCL.E.RES.CTA.MOV.FECHA"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.RES.CTA.MOV.FECHA", 1)
 
 //Cambiar a la ventana "Movimientos por Fecha de Cuentas"
 WebUI.switchToWindowIndex(1)
@@ -68,8 +68,19 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Esperar 18 segundos a que cargue la tabla
-WebUI.delay(18)
+WebUI.delay(45)
 
+//Parsear FechaCOB
+fecha = GlobalVariable.vFechaCOB
+	
+//Parsear la fecha de String a LocalDate
+DateTimeFormatter formatoEntrada = DateTimeFormatter.ofPattern("yyyyMMdd")
+LocalDate fechaParseo = LocalDate.parse(fecha, formatoEntrada)
+		
+//Convertir la fecha al nuevo formato dd-MM-yyyy
+DateTimeFormatter formatoSalida = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaParseada = fechaParseo.format(formatoSalida)
+		
 //Obtener elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
  
@@ -95,7 +106,7 @@ assert cells[24].getText().contains('Combte') : "Expected 'Fec Valor' but found 
 
 //Validar Fecha - PARSEAR FECHA
 def fecha = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/lblFecha'))
-assert fecha.contains('01-09-2023')
+assert fecha.contains(fechaParseada)
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
