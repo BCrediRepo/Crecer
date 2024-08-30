@@ -49,7 +49,8 @@ WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/txtTip
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipodeBloqueo'))
+//WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipodeBloqueo'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipoBloqueo'))
 
 TipoBloq = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipoBloqueo'))
 println TipoBloq

@@ -36,7 +36,7 @@ def link0 = "Bloqueos Activos"
 //Si el menu que busco está en dashboard uso esta funcion
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
-WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
+WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')//BCCL.AC.CTABLOQ.SUC
 
 //Seteo de Datos "Cuenta" y "Fecha de Bloqueo"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))

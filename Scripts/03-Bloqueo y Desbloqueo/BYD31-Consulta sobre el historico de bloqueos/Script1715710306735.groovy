@@ -40,7 +40,8 @@ WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
 //Seteo de Datos "Cuenta" y "Fecha de Bloqueo"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010035377')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', '20230828')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', '20240226')
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', '20230828')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
@@ -48,7 +49,8 @@ WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.
 
 fecha = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechaBloqueo'))
 
-assert fecha == '20230828'
+assert fecha == '20240226'
+//assert fecha == '20230828'
 
 //Control fin de script
 

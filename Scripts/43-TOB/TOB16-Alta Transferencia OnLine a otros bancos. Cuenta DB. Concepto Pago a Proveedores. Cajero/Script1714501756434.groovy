@@ -24,8 +24,20 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 65), findTestData('MainData/Users').getValue(2, 65))
 WebUI.maximizeWindow()
 
+//Ingresamos el menu correspondiente
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?324')
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+WebUI.switchToWindowTitle("Temenos T24")
+WebUI.maximizeWindow()
+
+def menuDesplegable = ["Transferencia a Cuentas de Otros Bancos SNP"]
+def link = "Transferencias Otros Bancos Diferida"
+
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+
 //Seleccionar "Transferencia a Cuentas de Otros Bancos SNP"
-WebUI.click(findTestObject('02-Dashboard/43-TOB/lnkTransferenciasACuentasdeOtrosBancosSNP'))
+//WebUI.click(findTestObject('02-Dashboard/43-TOB/lnkTransferenciasACuentasdeOtrosBancosSNP'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

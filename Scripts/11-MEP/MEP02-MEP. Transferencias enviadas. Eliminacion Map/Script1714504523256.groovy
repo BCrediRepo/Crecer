@@ -38,11 +38,13 @@ WebUI.switchToWindowTitle('AUTORIZAC. PENDIENTES')
 WebUI.click(findTestObject('13-MEP/AUTORIZAC. PENDIENTES/lnkELIMINARTRANSACCION'))
 
 //WebUI.switchToWindowTitle('BCCL.MEP.FT.TRANSFER.HIS')
-WebUI.switchToWindowTitle('Movimiento de Fondos')
+//WebUI.switchToWindowTitle('Movimiento de Fondos')
+WebUI.switchToWindowTitle('BCCL.CQ.SOLICITUD')
 
-WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER.HIS/btnValidarRegistro'))
+//WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER.HIS/btnValidarRegistro'))
+//WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER.HIS/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER.HIS/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnEliminarRegistro'))
 
 label = WebUI.getText(findTestObject('13-MEP/BCCL.MEP.FT.TRANSFER.HIS/lblTXNCompleta'))
 
