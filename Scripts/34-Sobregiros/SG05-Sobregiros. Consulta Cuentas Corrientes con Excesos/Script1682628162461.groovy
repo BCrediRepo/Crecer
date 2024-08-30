@@ -43,7 +43,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', '20230925')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', '20240826')  //PARAMETRIZAR LA FECHAAAAAAAAAAAAAAAAAAAAAAAAAA 
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

@@ -236,13 +236,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0d6091e0-2e8c-4edd-ad20-38d9a2ced5a7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD27-Busqueda de cuentas por cuenta para bloqueo. Completitud</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1876b51d-2900-4966-9ec1-18581d4ec39f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
