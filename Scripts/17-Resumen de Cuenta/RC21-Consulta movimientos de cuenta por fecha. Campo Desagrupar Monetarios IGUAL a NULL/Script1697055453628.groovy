@@ -18,6 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -27,11 +30,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "ENQ BCCL.E.RES.CTA.MOV.FECHA" en el buscador
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "ENQ BCCL.E.RES.CTA.MOV.FECHA"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.RES.CTA.MOV.FECHA", 1)
 
 //Cambiar a la ventana "Movimientos por Fecha de Cuentas"
 WebUI.switchToWindowIndex(1)
@@ -53,9 +53,20 @@ long startTime = System.currentTimeMillis()
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
+//Parsear FechaCOB
+fecha = GlobalVariable.vFechaCOB
+	
+//Parsear la fecha de String a LocalDate
+DateTimeFormatter formatoEntrada = DateTimeFormatter.ofPattern("yyyyMMdd")
+LocalDate fechaParseo = LocalDate.parse(fecha, formatoEntrada)
+		
+//Convertir la fecha al nuevo formato dd-MM-yyyy
+DateTimeFormatter formatoSalida = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaParseada = fechaParseo.format(formatoSalida)
+
 //Validar Fecha
 def fecha = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/06-Movimientos por fecha de cuentas/lblFecha'))
-assert fecha.contains('01-09-2023')
+assert fecha.contains(fechaParseada)
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()

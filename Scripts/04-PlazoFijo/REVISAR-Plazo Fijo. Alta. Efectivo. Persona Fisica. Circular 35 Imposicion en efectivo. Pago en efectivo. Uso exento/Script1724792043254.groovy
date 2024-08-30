@@ -25,7 +25,9 @@ import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
-
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //CADA VEZ QUE SE ACTUALICE LA FECHA COB - LA FECHA DE VENCIMIENTO TIENE QUE SER UNA DIFERENCIA DE UN MES
 
@@ -37,21 +39,25 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,70), findTestData('MainData/Users').getValue(2,70))
 WebUI.maximizeWindow()
 
-//Setear "?302" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?302')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar a la ventana "Temenos T24"
-WebUI.switchToWindowIndex(1)
-
-//Esperar 3 seg a que se cargue el menu
-WebUI.delay(3)
-
 def menuDesplegable = ["Plazo Fijo", "Alta de Plazo Fijo"]
 def link = "Alta Plazo Fijo Persona Fisica"
 
+//Definir y parsear Fecha COB y fechaFutura
+fecha = GlobalVariable.vFechaCOB
+LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
+LocalDate fechaModificada = fechaParse.plusDays(30)
+while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {
+		fechaModificada = fechaModificada.plusDays(1)
+}
+DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
+String fechaFutura = fechaModificada.format(formato)
+DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd MMM yyyy")
+String fechaAssert = fechaModificada.format(formatoAssert).toUpperCase()
+
+//Setear "?302" en la linea de comando
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?302", 1)
+
+//Navegar por el menu Temenos T24
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar a la ventana "Alta Plazo Fijo Persona Fisica"
@@ -62,8 +68,8 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar Ventana
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nombre(s)', 'HECTOR ANTONIO')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'ORTIZ')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nombre(s)', 'HECTOR ANTONIO') //DEBORA CINTI
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Apellido', 'ORTIZ') //ESTUDILLA
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -87,7 +93,7 @@ WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/PLAZO FIJO/txtCapit
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/PLAZO FIJO/txtFechaVencimiento'))
 
 //Setear fecha de vencimiento
-WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/PLAZO FIJO/txtFechaVencimiento'), '20231003')
+WebUI.setText(findTestObject('Object Repository/05-PlazoFijo/PLAZO FIJO/txtFechaVencimiento'), fechaFutura)
 
 //Seleccionar txt forma de operar
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/PLAZO FIJO/txtFormaOperar'))
@@ -125,14 +131,14 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar "Aceptar Alertas"
 WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-//Esperar 5 seg a que se cargue la tabla
-WebUI.delay(5)
+//Esperar 3 seg a que se cargue la tabla
+WebUI.delay(3)
 
 //Obtener elemento de la tabla
-WebElement table2 = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
  
 //Obtener la fila de encabezado
-WebElement header = table2.findElement(By.tagName("tr"))
+WebElement header = table.findElement(By.tagName("tr"))
  
 //Obtener todas las celdas de la fila de encabezado
 List<WebElement> cells = header.findElements(By.tagName("th"))

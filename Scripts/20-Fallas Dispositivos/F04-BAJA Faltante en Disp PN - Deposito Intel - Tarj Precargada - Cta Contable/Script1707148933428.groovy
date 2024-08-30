@@ -21,35 +21,27 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
-        2, 8))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu ?327
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?327')
+def menuDesplegable = ["Dispositivos", "Registro de Fallas en Dispositivos"]
+def link = "Consulta Faltantes en Puntos Neutrales"
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Click en Dispositivos
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanDispositivos'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Click en Registro de Fallas
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanRegistro de Fallas en Dispositivos'))
-
-//Click en consulta de faltantes en puntos neutrales
-WebUI.click(findTestObject('Object Repository/21-Fallas/07- Temenos T24 III/lnkConsulta Faltantes en Puntos Neutrales'))
-
-//Switch a la ventana BCCL.E.EXTORNO.DISPO.GEOP.PN
-WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP.PN')
+//Cambiar a la ventana "BCCL.E.EXTORNO.DISPO.GEOP.PN"
+WebUI.switchToWindowIndex(2)
 
 //Maximizamos
 WebUI.maximizeWindow()
@@ -59,18 +51,20 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seteo de Datos "Fecha Desde"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar Ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20230823')
 
-//Click en ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lnkEjecutar'))
 
-//ASSERT
+//Validar que aparezca la columna de "Moneda"
 //WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'))
-
-def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'))
-
-assert element.contains('Moneda') 
+def moneda = WebUI.getText(findTestObject('Object Repository/21-Fallas/08-BCCL.E.EXTORNO.DISPO.GEOP.PN/lblMoneda'))
+assert moneda.contains('Moneda') 
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
@@ -84,4 +78,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

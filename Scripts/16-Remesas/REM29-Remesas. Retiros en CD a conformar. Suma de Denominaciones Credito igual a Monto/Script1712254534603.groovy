@@ -24,50 +24,32 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
+def menuDesplegable = ["Sucursal Piloto", "D2 - Automatizacion de Sucursales", "TESORERO GENERAL", "ADMINISTRACION DE TESORERO GENERAL", "ENVIOS"]
+def link = "RETIROS EN CD A CONFORMAR"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Ejecutar en la linea de comando "?1"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/lnkSucursalPiloto'))
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
 //Maximizar pantalla
 WebUI.maximizeWindow()
 
-//Seleccionar "D2 - Automatizacion de Sucursales"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Sucursal Piloto/D2-AutomatizaciondeSucursales'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Seleccionar "TESORERO GENERAL"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/lnkTesoreroGeneral'))
-
-//Seleccionar "ADMINISTRACION DE TESORERO GENERAL"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/TESORERO GENERAL/lnkAdministraciondeTesoreroGeneral'))
-
-//Seleccionar "ENVIOS"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/TESORERO GENERAL/ADMINISTRACION DE TESORERO GENERAL/lnkEnvios'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "RETIROS EN CD A CONFORMAR"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/TESORERO GENERAL/ADMINISTRACION DE TESORERO GENERAL/ENVIOS/lnkRetirosenCDaConformar'))
-
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(2)
 
 //Seleccionar Monto MN
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'))
 
 //Setear Monto MN
 WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), '2000')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Seleccionar Comentarios
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
@@ -99,7 +81,7 @@ def trx1 = partes[2]
 assert Transaccion1.contains('Txn Completa:')
 
 //Setear en "Retiro en CD"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtTELLER'), trx1)
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), trx1)
 
 //Seleccionar "boton Ver Registro"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))

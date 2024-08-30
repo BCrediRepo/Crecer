@@ -25,6 +25,9 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
+import java.text.SimpleDateFormat
+import java.util.Date
+import org.openqa.selenium.WebDriver
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -33,23 +36,25 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPases'))
+def menuDesplegable = ["Pases"]
+def link = "Solicitud de Pase Entre Cajas"
+def menuDesplegable2 = ["Autorizaciones"]
+def link2 = "Autorizacion de Pase Entre Cajas"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Seleccionar "Solicitud de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkSolicituddePaseEntreCajas'))
-
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(1)
 
 //Esperar "boton De la Caja"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
 
 //Seleccionar "boton De la Caja"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Selecciono la cuarta caja
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaCuartaCaja'))
@@ -110,17 +115,14 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 17), findTestData('MainData/Users').getValue(2, 17))
 WebUI.maximizeWindow()
 
-//Seleccionar "Autorizaciones"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizacionesPasesEntreCajas'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Autorizacion de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkAutorizaciondePaseEntreCajas'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
 
 //Cambiar ventana "BCCL.E.TT.PASE.ENTRE.CAJAS"
-WebUI.switchToWindowTitle('BCCL.E.TT.PASE.ENTRE.CAJAS')
+WebUI.switchToWindowIndex(1)
+
+//Esperar 3 seg a que se cargue la tabla
+WebUI.delay(3)
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
 def buscarElementoEnTabla(String trx1) {

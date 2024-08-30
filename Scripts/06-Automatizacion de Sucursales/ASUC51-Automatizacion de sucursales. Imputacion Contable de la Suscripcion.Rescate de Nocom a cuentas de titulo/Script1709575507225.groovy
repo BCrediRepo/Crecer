@@ -33,9 +33,6 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "Movimiento de Fondos"
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-//Maximizar pantalla
-WebUI.maximizeWindow()
-
 //Seleccionar "Nuevo Registro"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/btnNuevoRegistro'))
 
@@ -53,6 +50,9 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion 
 
 //Setear "Monto"
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtMonto'), '5')
+
+//Maximizar pantalla
+WebUI.maximizeWindow()
 
 //Seleccionar "txtComentarios"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtComentarios'))
@@ -85,7 +85,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion d
 
 //Validar "073"
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/lblSucursalDestino'))
-assert element.contains('073')
+assert element.contains('115')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

@@ -25,6 +25,7 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
+import org.openqa.selenium.WebDriver
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -33,23 +34,25 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 26), findTestData('MainData/Users').getValue(2, 26))
 WebUI.maximizeWindow()
 
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkPases'))
+def menuDesplegable = ["Pases"]
+def link = "Pase Caja al Tesoro"
+def menuDesplegable2 = ["Autorizaciones"]
+def link2 = "Autorizacion de Pase a Tesoro"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Seleccionar "Pase Caja al Tesoro"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkPaseCajaalTesoro'))
-
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(1)
 
 //Esperar Monto MN
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), 3)
 
 //Setear Monto MN
 WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), '10')
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Seleccionar Comentarios
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
@@ -107,17 +110,14 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 31), findTestData('MainData/Users').getValue(2, 31))
 WebUI.maximizeWindow()
 
-//Seleccionar "Autorizaciones"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizacionesPasesEntreCajas'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Autorizacion de Pase a Tesoro"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkAutorizaciondePaseaTesoro'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
 
 //Cambiar ventana "BCCL.E.TT.ENVIO.CAJA"
-WebUI.switchToWindowTitle('BCCL.E.TT.ENVIO.CAJA')
+WebUI.switchToWindowIndex(1)
+
+//Esperar 3 seg a que se cargue la tabla
+WebUI.delay(3)
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
 def buscarElementoEnTabla(String trx1) {
@@ -178,6 +178,9 @@ while (!encontrado) {
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 //Seleccionar "boton Autorizar Registro"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/01-BCCL.E.TT.PASE.ENTRE.CAJAS/btnAutorizarRegistro'))
 
@@ -190,7 +193,7 @@ def trx2 = partes2[2]
 assert Transaccion2.contains('Txn Completa:')
 
 //Setear en "Pase De Caja A Tesoro"
-WebUI.setText(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.ENVIO.CAJA/txtPaseDeCajaATesoro'), trx2)
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), trx2)
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -208,8 +211,8 @@ WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.
 WebUI.verifyElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.ENVIO.CAJA/lblAutorizadoPor'))
 
 //Validar "Autorizado Por"
-def element = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.ENVIO.CAJA/lblAutorizadoPor'))
-assert element.contains('Autorizado Por')
+def autorizado = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/05-BCCL.E.TT.ENVIO.CAJA/lblAutorizadoPor'))
+assert autorizado.contains('Autorizado Por')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

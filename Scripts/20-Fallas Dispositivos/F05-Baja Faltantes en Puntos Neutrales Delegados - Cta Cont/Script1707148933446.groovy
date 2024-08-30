@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,48 +25,40 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu ?327
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?327')
+def menuDesplegable = ["Dispositivos", "Registro de Fallas en Dispositivos"]
+def link = "Consultas de Faltantes en Dispositivos"
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en Dispositivos
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanDispositivos'))
-
-//Click en Registro de Fallas
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanRegistro de Fallas en Dispositivos'))
-
-//Click en consultas de faltantes en dispositivos
-WebUI.click(findTestObject('Object Repository/21-Fallas/07- Temenos T24 III/lnkConsultas de Faltantes en Dispositivos'))
-
-//Switch a la ventana BCCL.E.EXTORNO.DISPO.GEOP
-WebUI.switchToWindowTitle('BCCL.E.EXTORNO.DISPO.GEOP')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
 //Maximizamos
 WebUI.maximizeWindow()
+
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+
+//Cambiar a la ventana "BCCL.E.EXTORNO.DISPO.GEOP"
+WebUI.switchToWindowIndex(2)
 
 //Seteo de Datos "Fecha Desde"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizamos
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20230823')
 
-//Click en ejecutar
+//Seleccionar boton Ejecutar
 WebUI.click(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lnkEjecutar'))
 
-//ASSERT
+//Validar la columna de "Dispositivo"
 //WebUI.waitForElementVisible(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lblDispositivo'), 6)
-
 WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lblDispositivo'))
-
 def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/09-BCCL.E.EXTORNO.DISPO.GEOP/lblDispositivo'))
-
 assert element.contains('Dispositivo')
-
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -81,5 +72,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

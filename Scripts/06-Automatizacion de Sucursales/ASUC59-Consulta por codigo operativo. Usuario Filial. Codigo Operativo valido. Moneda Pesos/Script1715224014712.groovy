@@ -55,23 +55,15 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Te
 //Switch a la ventana Consulta Por Codigo Operativo
 WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
 
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Limpio campos
+//Seteo de datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
-//Maximizamos
+//Maximizar ventana
 WebUI.maximizeWindow()
 
-//Ingresamos el cod operativo
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/txtCodigoOperativo'), '00101')
-
-//Ingresamos la moneda
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/txtMoneda'), 'ARS')
-
-//Ingresamos el codigo sucursal
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Consulta Por Codigo Operativo/txtCodSucursal'), '001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod Operativo', '00101')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod Sucursal', '001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

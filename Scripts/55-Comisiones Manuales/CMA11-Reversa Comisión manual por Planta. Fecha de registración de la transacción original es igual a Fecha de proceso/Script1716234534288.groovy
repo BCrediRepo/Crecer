@@ -22,8 +22,10 @@ import java.util.Date as Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
-        2, 1))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
+
+def menuDesplegable = ["Reversos"]
+def link = "Reverso de Operaciones"
 
 //Carga comision inicial
 WebUI.click(findTestObject('02-Dashboard/lnkComisionesyBonificaciones'))
@@ -37,6 +39,9 @@ WebUI.switchToWindowIndex(1)
 WebUI.selectOptionByIndex(findTestObject('56-Comisiones Manuales/Account Charge Request/cbxTipoPago'), 1)
 
 WebUI.click(findTestObject('56-Comisiones Manuales/Account Charge Request/btnValidar Registro'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('56-Comisiones Manuales/Account Charge Request/txtCuentaDebito'), '10700010299')
 
@@ -69,14 +74,18 @@ WebUI.closeWindowIndex(1)
 WebUI.switchToWindowIndex(0)
 
 //buscamos en la aplicacion de reversos el codigo de operacion almacenado anteriormente
-WebUI.click(findTestObject('02-Dashboard/lnkReversos'))
 
-WebUI.click(findTestObject('02-Dashboard/54-Reversos/lnkReversodeOperaciones'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowIndex(1)
 
 //Seteo de datos "Usuario" "Nro. Contrato"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Contrato', transaccion)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.2055')
 
@@ -91,7 +100,6 @@ TxnCompleta = WebUI.getText(findTestObject('56-Comisiones Manuales/Account Charg
 
 assert TxnCompleta.contains('Txn Completa:') 
 
-
 //validamos que la reversa esté realizada correctameente viendo el estado en los detalles del registro
 WebUI.setText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/txtComisiones Manuales-Caja'), transaccion)
 WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/btnVerRegistro'))
@@ -99,10 +107,7 @@ WebUI.click(findTestObject('Object Repository/56-Comisiones Manuales/Account Cha
 def Estado = WebUI.getText(findTestObject('Object Repository/56-Comisiones Manuales/Account Charge Request/lblRecordStatusPos1'))
 assert Estado.contains('REVE')
 
-
-
 //Control fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -112,4 +117,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

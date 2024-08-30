@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,29 +28,23 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
+def menuDesplegable = ["Sucursal Piloto", "D2 - Automatizacion de Sucursales", "Administracion"]
+def link = "Alta o Modificacion de grupos de codigos oper"
 
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?1"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
+//Maximizar ventana
+WebUI.maximizeWindow()
 
-//Seleccionar "D2 - Automatizacion de Sucursales"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/lnkD2-AutomatizacionDeSuc'))
-
-//Seleccionar "Administracion"
-WebUI.click(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/lnkAdministracion'))
-
-//Seleccionar "Alta o Modificacion de grupos de codigos oper"
-WebUI.click(findTestObject('Object Repository/53-Consulta Chq Ingresados por Camara y Canje/Temenos T24/Sucursal Piloto/D2 - Automatizacion de Sucursales/Administracion/lnkAltaoModificaciondegruposdecodigosoper'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL EB GRUPO CODOPE"
-WebUI.switchToWindowTitle('BCCL EB GRUPO CODOPE')
+WebUI.switchToWindowIndex(2)
 
 //Setear Alta de grupos
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtAltadeGrupos'), '91')
@@ -85,8 +83,8 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistr
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/lblCodigodeOperacion.2'))
 
 //Validar "Codigos de Operaciones"
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/lblCodigodeOperacion.2'))
-assert element.contains('Codigo de Operacion.2')
+def codigoOperacion = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/lblCodigodeOperacion.2'))
+assert codigoOperacion.contains('Codigo de Operacion.2')
 
 //Seleccionar "boton Volver Pantalla Aplicacion"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/btnVolverPantallaAplicacion'))
@@ -106,8 +104,8 @@ WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.PO
 //Espera y recibe mensaje de tx completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
-def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
-assert element2.contains('Txn Completa:')
+def txnCompleta = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
+assert txnCompleta.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

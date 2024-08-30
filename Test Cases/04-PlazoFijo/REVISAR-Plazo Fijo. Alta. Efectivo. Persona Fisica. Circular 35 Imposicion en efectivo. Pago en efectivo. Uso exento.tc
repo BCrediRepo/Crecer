@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PF30-Plazo Fijo. Alta. Efectivo. Persona Fisica. Circular 35 Imposicion en efectivo. Pago en efectivo. Uso exento</name>
+   <name>REVISAR-Plazo Fijo. Alta. Efectivo. Persona Fisica. Circular 35 Imposicion en efectivo. Pago en efectivo. Uso exento</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d0b4ed68-49b3-4992-b284-4add7903a453</testCaseGuid>

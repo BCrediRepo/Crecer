@@ -21,60 +21,57 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 6), findTestData('MainData/Users').getValue(
-        2, 6))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 6), findTestData('MainData/Users').getValue(2, 6))
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu ?327
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?327')
+def menuDesplegable = ["Dispositivos", "Registro de Fallas en Dispositivos"]
+def link = "Alta de Sobrantes Puntos Neutrales"
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en Dispositivos
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanDispositivos'))
-
-//Click en Registro de Fallas
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/spanRegistro de Fallas en Dispositivos'))
-
-//Click en alta de faltantes puntos neutrales
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/lnkAlta de Faltantes Puntos Neutrales'))
-
-//Switch a la ventana TELLER
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
 //Maximizamos
 WebUI.maximizeWindow()
+
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(2)
 
 //Ingresamos el monto
 WebUI.setText(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/txtMonto'), '100')
 
-//Ingresamos el comentario
+//Maximizamos
+WebUI.maximizeWindow()
+
+//Seleccionar txt comentarios
 WebUI.click(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/txtComentarios'))
 
-
+//Setear Comentario
 WebUI.setText(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/txtComentarios'), 'CRECER')
 
-//Click en id dispositivo
+//Setear numero de dispositivo
 WebUI.setText(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/txtIDdispositivo'), '70151')
 
 //Click en retiro
 WebUI.click(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/btnRetiro'))
 WebUI.click(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/btnRetiro'))
 
+//Seleccionar boton "Aceptar Registro"
 WebUI.click(findTestObject('21-Fallas/06-TELLER/btnAceptarRegistro'))
 
+//Seleccionar cartel de error
 WebUI.click(findTestObject('21-Fallas/06-TELLER/btnError'))
 
-//Completamos la denominacion
+//Seleccionar txt denominacion
+WebUI.click(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/txtDenominacion'))
+	
+//Setear Denominacion
 WebUI.setText(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/txtDenominacion'), '1')
 
 //Aceptamos el registro
@@ -82,15 +79,15 @@ WebUI.click(findTestObject('21-Fallas/06-TELLER/btnAceptarRegistro'))
 
 //Aceptamos las alertas
 WebUI.click(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/lnkAceptar Alertas'))
-//ASSERT
+
+//Verificamos y Validamos la Transaccion Completa
 WebUI.verifyElementVisible(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/lblTxnCompleta'))
-
 def element = WebUI.getText(findTestObject('Object Repository/21-Fallas/10-TELLER Alt falt PN/lblTxnCompleta'))
+assert element.contains('Txn Completa') 
 
-assert element.contains('Txn Completa' //---------------------------------------------------------------------------------------------------------------------
-    //Control de fin de script
-    )
-
+//---------------------------------------------------------------------------------------------------------------------
+    
+//Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -100,4 +97,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

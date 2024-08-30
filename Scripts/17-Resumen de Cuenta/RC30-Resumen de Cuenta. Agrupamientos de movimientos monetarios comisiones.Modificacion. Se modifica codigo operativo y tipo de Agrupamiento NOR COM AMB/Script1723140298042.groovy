@@ -27,11 +27,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "BCCL.ENQ.PARAM.AGRP,INPUT" en el command line
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'BCCL.ENQ.PARAM.AGRP,INPUT')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "BCCL.ENQ.PARAM.AGRP,INPUT"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("BCCL.ENQ.PARAM.AGRP,INPUT", 1)
 
 //Cambiar a la ventana "BCCL.ENQ.PARAM.AGRP"
 WebUI.switchToWindowIndex(1)
@@ -40,7 +37,7 @@ WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 //Setear la palabra "ONLINE"
-WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtAgrupadoDeMovMonetariosYComisiones'), 'ONLINE')
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), 'ONLINE')
 
 //Maximizar ventana
 WebUI.maximizeWindow()
@@ -51,34 +48,57 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar boton modificar registro
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 
+//Eliminar "Ids. Cod Oper.1.1"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnDeleteValueCodOperUno'))
+
 //Guardo en varible lo que se encuentra en cbx
-String tipAgrup = WebUI.getAttribute(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/cbxTipoAgrupamiento2'), 'value')
+//String tipAgrup = WebUI.getAttribute(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/cbxTipoAgrupamiento2'), 'value')
  
-if (tipAgrup == "AMB" || tipAgrup == "NOR") {
+//if (tipAgrup == "AMB" || tipAgrup == "NOR") {
 	//cambio el tipo de agrupamiento a COM y el cod. operativo
-	WebUI.selectOptionByIndex(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/cbxTipoAgrupamiento2'), 2)
+	//WebUI.selectOptionByIndex(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/cbxTipoAgrupamiento2'), 2)
 
-	WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtCodOper1.1'), codOper)
+	//WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtCodOper1.1'), codOper)
 
-}else if (tipAgrup == "COM") {
+//}else if (tipAgrup == "COM") {
 	//cambio el tipo de agrupamiento a AMB y el cod. operativo
 	WebUI.selectOptionByIndex(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/cbxTipoAgrupamiento2'), 1)
 
 	WebUI.setText(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/txtCodOper1.1'), codOper2)
-}
+//}
 
-//Valido y Aceptar registro
+//Screenshot
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+	
+//Seleccionar boton "Validar Registro"
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+
+//Seleccionar boton "Aceptar Registro"
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Validar transaccion completa
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
-assert element.contains('Txn Completa:')
+def txnCompleta = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert txnCompleta.contains('Txn Completa:')
 
+//Setear la palabra "ONLINE"
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), 'ONLINE')
 
+//Seleccionar boton modificar registro
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 
-//---------------------------------------------------------------------------------------------------------------------
+//Eliminar "Ids. Cod Oper.1.1"
+WebUI.click(findTestObject('Object Repository/18-Resumen de Cuenta/BCCL.ENQ.PARAM.AGRP/btnDeleteValueCodOperUno'))
+
+//Seleccionar boton "Validar Registro"
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+
+//Seleccionar boton "Aceptar Registro"
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+
+//Verificar txn Completa
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
