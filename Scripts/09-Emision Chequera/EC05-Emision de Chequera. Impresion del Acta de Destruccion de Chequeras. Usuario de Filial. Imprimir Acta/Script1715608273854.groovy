@@ -28,14 +28,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkChequeras'), 6)
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkChequeras'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkModificaciondechequera'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkModificaciondechequera'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/02-Modificacion de Chequera/lnkImpresionActadeDestruccion'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/02-Modificacion de Chequera/lnkImpresionActadeDestruccion'))
+def menuDesplegable = ["Chequeras", "Modificacion de chequera"]
+def link = "Impresion Acta de Destruccion"
+
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+
 
 //Switch a la ventana de impresion de acta
 WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')
@@ -45,7 +42,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.selectOptionByIndex(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/selectorFECHA'), 1)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('FECHA CAMBIO ESTADO', '20220101')
 
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkEjecutar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Seleccionamos Imprimir acta de un registro
 WebUI.maximizeWindow()
@@ -63,8 +60,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequer
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/btnAceptarRegistro'))
 
 //Se aceptan las alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkAceptarAlertas'), 6)
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkAceptarAlertas'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lblTxnCompleta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lblTxnCompleta'))

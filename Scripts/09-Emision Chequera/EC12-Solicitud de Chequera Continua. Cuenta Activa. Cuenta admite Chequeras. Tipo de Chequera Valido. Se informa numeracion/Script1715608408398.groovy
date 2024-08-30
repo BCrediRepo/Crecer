@@ -24,35 +24,12 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 50), findTestData('MainData/Users').getValue(2, 50))
 WebUI.maximizeWindow()
 
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
 WebUI.switchToWindowTitle('Temenos T24')
+def menuDesplegable = ['Sucursal Piloto', 'D3 - CC1', 'CC1 - Emision Chequera', 'Solicitudes de Chequeras / Boleteras']
+def link = 'SOLICITUD DE CHEQUERAS'
 
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/lnkSucursalPiloto'))
-
-//Seleccionar "D3 - CC1"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/lnkD3-CC1'))
-
-//Seleccionar "CC1 - Emision Chequera"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/lnkCC1-EmisionChequera'))
-
-//Seleccionar "Solicitudes de Chequeras / Boleteras"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/CC1 - Emision Chequera/lnkSolicitudesdeChequeras-Boleteras'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "SOLICITUD DE CHEQUERAS"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/CC1 - Emision Chequera/Solicitudes de Chequeras - Boleteras/lnkSOLICITUDDECHEQUERAS'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.CQ.SOLICITUD"
 WebUI.switchToWindowTitle('BCCL.CQ.SOLICITUD')

@@ -28,14 +28,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkChequeras'), 6)
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkChequeras'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkEmisiondechequera'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkEmisiondechequera'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/03-Emision de Chequera/lnkPedidodeChequera'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/03-Emision de Chequera/lnkPedidodeChequera'))
+def menuDesplegable = ["Chequeras", "Emision de chequera"]
+def link = "Pedido de Chequera"
+
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+
 
 //Switch a la ventana de impresion de acta
 WebUI.switchToWindowTitle('BCCL.CQ.SOLICITUD')
@@ -52,8 +49,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequer
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/06-Pedido de Chequera/btnAceptarRegistro'))
 
 //Se aceptan las alertas
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/06-Pedido de Chequera/lnkAceptarAlertas'), 6)
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/06-Pedido de Chequera/lnkAceptarAlertas'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Verificamos que la transaccion se haya completado
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/06-Pedido de Chequera/lblTxnCompleta'), 6)
