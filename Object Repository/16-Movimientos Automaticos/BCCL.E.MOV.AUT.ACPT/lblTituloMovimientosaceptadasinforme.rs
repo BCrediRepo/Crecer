@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>.enqheader > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>c6651511-7021-4d1e-83b3-62ae13bd629b</webElementGuid>
+      <webElementGuid>7e1e6526-6499-42fa-bbba-73a31c061d61</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Movimientos aceptadas informe</value>
-      <webElementGuid>634a7fe0-e5d3-4ede-b848-d71f212e4cb3</webElementGuid>
+      <webElementGuid>997b240a-ee01-4bc6-9cf2-81d0131ba528</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[1]</value>
-      <webElementGuid>2bd0b06f-70cd-45d0-9777-e8e006f464f7</webElementGuid>
+      <webElementGuid>9ab79a2b-bad4-4383-ba62-2d7a631bca69</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
-      <webElementGuid>4b62f4b0-9c31-47b7-9178-d9dc87cc8a9c</webElementGuid>
+      <webElementGuid>365c899a-22a6-47e0-bb74-c9ba67d37c68</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
-      <webElementGuid>685046f2-26a6-4e70-9277-8fd071d31e9b</webElementGuid>
+      <webElementGuid>bafd8bb1-202b-455f-a99e-1c2cb4dcd6e2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
-      <webElementGuid>139a91f9-ec11-437a-84ce-71b49a1e373e</webElementGuid>
+      <webElementGuid>4a793cdc-7734-4f8e-b398-fa97ea16fe3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='@ID'])[1]/preceding::td[2]</value>
-      <webElementGuid>f0a15282-c76a-4b49-9060-991028545cb5</webElementGuid>
+      <webElementGuid>5d73c07f-3a6f-4209-a7da-4ce632689943</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Secuencia'])[1]/preceding::td[2]</value>
-      <webElementGuid>79272216-1864-4d50-a0f4-6f7ae8a9c817</webElementGuid>
+      <webElementGuid>3983bc9e-3487-46d3-a682-457804bcfed3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/td</value>
-      <webElementGuid>6638d548-82a9-4ab1-8d7b-e796f07a1570</webElementGuid>
+      <webElementGuid>40215e6d-1e4b-4dcb-96ca-77789c10e385</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = ' Movimientos aceptadas informe' or . = ' Movimientos aceptadas informe')]</value>
-      <webElementGuid>c62e9715-c7b8-4ea7-838e-674b9b940760</webElementGuid>
+      <webElementGuid>c9a5f7b9-362d-42d1-9a2a-23dbc1cea3d9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

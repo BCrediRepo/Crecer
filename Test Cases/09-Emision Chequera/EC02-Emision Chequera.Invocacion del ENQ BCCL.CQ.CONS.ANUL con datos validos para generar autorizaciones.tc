@@ -4,6 +4,5 @@
    <name>EC02-Emision Chequera.Invocacion del ENQ BCCL.CQ.CONS.ANUL con datos validos para generar autorizaciones</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>e25ac81d-86ed-43b5-83b7-ac97e25a79d1</testCaseGuid>
 </TestCaseEntity>
