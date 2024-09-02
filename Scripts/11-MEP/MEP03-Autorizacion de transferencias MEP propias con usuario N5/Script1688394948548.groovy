@@ -24,8 +24,7 @@ WebUI.callTestCase(findTestCase('11-MEP/MEP01-MEP. Transferencias MEP. Transacci
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(
-        2, 8))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
 
 def menuDesplegable = ["Autorizaciones"]
 def link = "Autorizaciones Pendientes"
