@@ -4,5 +4,6 @@
    <name>APT14-Administrador de Piezas. Consulta por Sucursal</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8497e46f-8540-492e-9d37-ce11ba5567f2</testCaseGuid>
 </TestCaseEntity>

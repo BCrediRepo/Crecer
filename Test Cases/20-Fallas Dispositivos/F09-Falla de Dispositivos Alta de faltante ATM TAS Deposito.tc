@@ -4,5 +4,6 @@
    <name>F09-Falla de Dispositivos Alta de faltante ATM TAS Deposito</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ff3037ce-1228-41d0-99a3-63898c74e62d</testCaseGuid>
 </TestCaseEntity>

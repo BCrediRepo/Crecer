@@ -4,5 +4,6 @@
    <name>Parseo de fecha</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ef8a086f-0594-4230-84d4-040c768bcec2</testCaseGuid>
 </TestCaseEntity>

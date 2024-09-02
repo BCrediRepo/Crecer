@@ -25,7 +25,6 @@ import org.openqa.selenium.WebElement
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -88,9 +87,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 49), findTestData('MainData/Users').getValue(
         2, 49))
 
-WebUI.click(findTestObject('02-Dashboard/lnkPosteo'))
+def menuDesplegable = ["Posteo"]
+def link = "Transacciones Pendientes de Liquidacion"
 
-WebUI.click(findTestObject('02-Dashboard/35-Posteos/lnkTransaccionesPendientesdeLiquidacion'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 
@@ -135,12 +136,9 @@ for (WebElement row : rows) {
     }
 }
 
-
-
-
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAutorizar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 WebUI.switchToWindowIndex(2)
 

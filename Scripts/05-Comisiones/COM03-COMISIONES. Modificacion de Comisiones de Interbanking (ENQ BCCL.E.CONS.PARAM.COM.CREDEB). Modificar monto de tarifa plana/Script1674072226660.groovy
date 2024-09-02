@@ -59,23 +59,23 @@ if (monto == '10,00') {
 WebUI.setText(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/txtFechaVigencia'), GlobalVariable.vFechaCOB)
 
 WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/btnAceptarRegistro'))
-
-//WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Solucion poco convencional para salvar el problema de bandera de que no exista el link aceptar alertas
-if (desaparecio == 0) {
-    linkAlertas = WebUI.verifyElementClickable(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
-
-    if (linkAlertas == true) {
-        WebUI.click(findTestObject('06-Comisiones/FT.COMMISSION.TYPE/lnkAceptarAlertas'))
-
-        WebUI.delay(3)
-    } else {
-        WebUI.delay(1)
-    }
+// Verifica si el elemento está presente
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
 }
+
+// Valido txn completa
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert TxnInicial.contains('Txn Completa')
+// Usa split para dividir la cadena en el asterisco y obtener la parte que sigue
+def creibConId = TxnInicial.split('\\*')[1].trim()
+// Extrae los tres números después del asterisco
+def id = creibConId.substring(0, 3)
+println(id)
+
+//Log out
+WebUI.switchToWindowIndex(0)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
 WebUI.closeBrowser()
 
 //Login gerente operativo
@@ -90,13 +90,17 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.click(findTestObject('02-Dashboard/lnkComisiones'))
+//Autorizo comisiones pendientes
+WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.COM.FTC.AUTH')
 
-WebUI.click(findTestObject('02-Dashboard/04-Comisiones/lnkParametrizacion'))
-
-WebUI.click(findTestObject('02-Dashboard/04-Comisiones/lnkAutorizarEliminarCambiosComisiones'))
+WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Comisiones Pendientes de Autorizar')
+
+//ACA DEBERIA INGRESAR ID
+//Limpia
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('ID', id)
 
 WebUI.click(findTestObject('06-Comisiones/Comisiones Pendientes de Autorizar/lnkEjecutar'))
 

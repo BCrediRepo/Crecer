@@ -4,5 +4,6 @@
    <name>BYD16-Busqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil filial</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>77497ce2-c8d1-48db-8d1d-f89f94d851e4</testCaseGuid>
 </TestCaseEntity>

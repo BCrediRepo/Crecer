@@ -4,5 +4,6 @@
    <name>COM22-COMISIONES.Consulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde NO Informada. Fecha Hasta Informada</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6fda321d-4cb7-4ae8-a45c-49df5ee0a8fc</testCaseGuid>
 </TestCaseEntity>

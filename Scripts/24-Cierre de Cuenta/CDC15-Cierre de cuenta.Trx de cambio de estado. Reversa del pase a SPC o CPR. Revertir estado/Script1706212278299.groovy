@@ -111,34 +111,19 @@ WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSUR
 //Seleccionar Primer Codigo
 WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/lblMotivodeCierre'))
 
-try {
+//Seleccionar "boton Aceptar Registro"
+WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
 	
-	//Seleccionar "boton Aceptar Registro"
-	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
-	
-	//Seleccionar "Aceptar Alertas
-	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
-	
-	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-	
-	//Validar "Txn Completa"
-	def element2 = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-	assert element2.contains('Txn Completa')
+// Verifica si el elemento está presente
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))}
 
-}catch (Exception e) {
+//Verificar "Txn Completa"
+WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
 	
-	//Seleccionar "boton Aceptar Registro"
-	WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/14-ACCT.CLOSURE/btnAceptarRegistro'))
-	
-	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-	
-	//Validar "Txn Completa"
-	def element2 = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
-	assert element2.contains('Txn Completa')
-
-}
+//Validar "Txn Completa"
+def element2 = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/08-Movimiento de Fondos/lblTxnCompleta'))
+assert element2.contains('Txn Completa')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

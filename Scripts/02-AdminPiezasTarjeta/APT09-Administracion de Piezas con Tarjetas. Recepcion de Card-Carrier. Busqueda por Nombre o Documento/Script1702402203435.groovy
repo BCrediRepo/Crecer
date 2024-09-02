@@ -34,7 +34,7 @@ WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Recepcion de Card-Carrier"]
-link = "Busqueda por Nombre o Documento"
+link = "Seleccion por Persona/Sucursal/Lote"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"

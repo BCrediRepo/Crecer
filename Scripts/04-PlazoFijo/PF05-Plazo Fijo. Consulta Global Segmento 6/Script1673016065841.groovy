@@ -33,9 +33,8 @@ WebUI.switchToWindowTitle(findTestData('Modulos/Modulos').getValue(4,8))
 
 //Limpia
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Circular', '004')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Alta/Pago', '20230802')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Alta/Pago', GlobalVariable.vFechaCOB)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -44,8 +43,8 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lnkEjecutar'))
 //WebUI.waitForElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'), 6)
 
-//Se pone 90 de delay porque tarda un montón en traer los registros, se probo con menos tiempo y no funciona
-WebUI.delay(90)
+//Se pone 70 de delay porque tarda un montón en traer los registros, se probo con menos tiempo y no funciona
+WebUI.delay(70)
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/04-Altas-Pagos-Impagos/lblEstado'))
 
 // Captura el tiempo de finalización

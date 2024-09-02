@@ -4,5 +4,6 @@
    <name>COM39-Consulta-Comisiones Cobrada de Interbanking</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>7935f0f3-2b6e-4d1c-b012-36c9a2c81083</testCaseGuid>
 </TestCaseEntity>

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
-
+def suc = '043'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -29,7 +29,7 @@ WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Modificaciones sobre Card-Carrier","Consultas al Maestro de Card-Carrier"]
-link = "Seleccion por Nombre / Documento / Sucursal"
+link = "Seleccion por Persona/Sucursal/Lote"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
@@ -37,7 +37,7 @@ WebUI.switchToWindowTitle('BCCL.E.AP.ENQ.NOMBRE.DOC')
 
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', suc)
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 	
 //Variable booleana de corte

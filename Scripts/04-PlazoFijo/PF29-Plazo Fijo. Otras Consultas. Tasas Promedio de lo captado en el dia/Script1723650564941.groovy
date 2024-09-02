@@ -18,6 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -43,9 +46,14 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/05-PlazoFijo/Listado Principales Inversores/lbl1raParte'))
 
+String fecha = GlobalVariable.vFechaCOB;
+LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"));
+DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd MMM yyyy", Locale.ENGLISH);
+String fechaAssert = fechaParse.format(formatoAssert).toUpperCase();
+
 label = WebUI.getText(findTestObject('05-PlazoFijo/Tasas Promedio/lblFecha'))
 
-assert label == '01 SEP 2023'
+assert label == fechaAssert
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

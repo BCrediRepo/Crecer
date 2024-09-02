@@ -4,5 +4,6 @@
    <name>COM21-COMISIONESConsulta Bonificaciones para una Cuenta. Cuenta informada. Tipo de Comisión NO Informada. Fecha Desde MENOR ó IGUAL A Fecha Hasta</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c5a68c0c-c07b-4e0a-8973-540e4d331883</testCaseGuid>
 </TestCaseEntity>

@@ -17,6 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def suc='001'
+def fechaD='20220801'
+def fechaH='20220831'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -24,23 +27,19 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
 WebUI.maximizeWindow()
 
-//Seleccionar "Rechazo de Cheques"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkRechazodecheques'))
-
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultasCHR'))
-
-//Seleccionar "Cheques Rechazados"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkChequesRechazados'))
+def menuDesplegable0 = ["Rechazo de Cheques", "Consultas"]
+def link0 = "Cheques Rechazados"
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
 //Cambiar ventana "BCCL.CHRECH.RECHAZADOS"
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
 
 //Seteo de Datos "Sucursal", "Fecha rechazo desde", "Fecha rechazo hasta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo desde', '20220801')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo hasta', '20220831')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', suc)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo desde', fechaD)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha rechazo hasta', fechaH)
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

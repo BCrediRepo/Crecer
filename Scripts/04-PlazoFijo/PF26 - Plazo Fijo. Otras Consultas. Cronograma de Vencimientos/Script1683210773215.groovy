@@ -19,6 +19,9 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -27,19 +30,27 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
         2, 9))
 
+//PARSEO FECHA COB PARA QUE SEA UN DIA DESPUES
+fecha = GlobalVariable.vFechaCOB
+LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
+LocalDate fechaModificada = fechaParse.plusDays(1)
+while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {
+		fechaModificada = fechaModificada.plusDays(1)
+}
+DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
+String fechaFutura = fechaModificada.format(formato)
+DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd MMM yyyy", Locale.ENGLISH);
+String fechaAssert = fechaModificada.format(formatoAssert).toUpperCase();
+
 WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.MM.VENCIMIENTOS')
 
 WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Cronograma Vencimientos')
 
-texto = WebUI.getText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lblPos3'))
-
-if (texto == 'Fecha Vto.') {
-    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos3'), '20230904')
-} else {
-    WebUI.setText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/txtPos1'), '20230904')
-}
+//Limpia y setea
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Vto.', fechaFutura)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -50,7 +61,7 @@ WebUI.verifyElementVisible(findTestObject('05-PlazoFijo/Cronograma Vencimientos/
 
 fecha = WebUI.getText(findTestObject('05-PlazoFijo/Cronograma Vencimientos/lblFechaVencimiento'))
 
-assert fecha == '04 SEP 2023'
+assert fecha == fechaAssert
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

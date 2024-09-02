@@ -31,10 +31,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//apertura de app y limpieza de filtro
-WebUI.click(findTestObject('02-Dashboard/35-Posteos/lnkReversos'))
+def menuDesplegable = ["Reversos"]
+def link = "Reverso de Operaciones"
 
-WebUI.click(findTestObject('02-Dashboard/35-Posteos/Reversos/lnkReversodeOperaciones'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.REVE')
 
@@ -54,23 +55,16 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnReversar'))
 
-try {
-	//Seleccionar "Aceptar Alertas
-	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
-	
-	WebUI.verifyElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-	
-	label = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-	
-	assert label.contains('Txn Completa:') == true
-	
-} catch (Exception e) {
-	WebUI.verifyElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-	
-	label = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-	
-	assert label.contains('Txn Completa:') == true
+// Verifica si el elemento está presente
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
 }
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+	
+label = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+	
+assert label.contains('Txn Completa:') == true
+
 
 //---------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed

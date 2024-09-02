@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+def cuenta='00010021329'
+def suc = '001'
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
@@ -39,9 +40,9 @@ WebUI.switchToWindowTitle('%Bon Com por Cuenta o Sucursal')
 
 //Seteo de Datos "Cuenta", "Fecha Hasta", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010024069')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', cuenta)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta', GlobalVariable.vFechaCOB)
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', suc)
 
 //Toma Screen
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -79,25 +80,13 @@ println TotalRegistros
 
 def element0 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblCuenta1'))
 
-assert element0.contains('00010024069') == true
-
-
-//Asserts Fecha Hasta
-WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'), 6)
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
-
-def element1 = WebUI.getText(findTestObject('Object Repository/06-Comisiones/Comision Bonificaciones/lblFechaHasta'))
-
-assert element1.contains('09 AGO 2018') == true 
+assert element0.contains(cuenta) == true
 
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

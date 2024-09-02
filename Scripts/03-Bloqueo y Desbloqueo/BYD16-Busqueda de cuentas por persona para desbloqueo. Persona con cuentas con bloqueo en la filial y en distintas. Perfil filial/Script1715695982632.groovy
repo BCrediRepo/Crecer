@@ -200,8 +200,8 @@ try {
 	while (!encontrado) {
 		encontrado = validarElementoEnTabla(titular, 5, "BLOQUEO DEBITOS")
 	}
-	String cuentita = GlobalVariable.vTxn
-	assert cuentita.contains('0001')
+	String cuentita1 = GlobalVariable.vTxn
+	assert cuentita1.contains('0001')
 }
 
 

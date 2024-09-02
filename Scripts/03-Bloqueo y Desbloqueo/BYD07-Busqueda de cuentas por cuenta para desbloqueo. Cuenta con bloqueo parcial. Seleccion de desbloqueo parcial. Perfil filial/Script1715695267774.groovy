@@ -97,7 +97,7 @@ try {
 	
 }catch(Exception e) {
 	try {
-		WebUI.closeWindowTitle('BCCL.E.AC.DESBLO.POR.CTA')
+		WebUI.closeWindowTitle('BCCL.E.AC.DESBLO.PAR')
 		WebUI.switchToWindowIndex(0)
 		def menuDesplegable1 = ["Desbloqueo", "Bloqueo"]
 		CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable1, link0)

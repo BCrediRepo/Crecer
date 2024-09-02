@@ -4,5 +4,6 @@
    <name>REM27-REMESAS.Envio con pedido. ENQ BCCL.E.REVE.RECEPCION RUN</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>32805233-4f74-442c-9e60-d72ebd1b4215</testCaseGuid>
 </TestCaseEntity>

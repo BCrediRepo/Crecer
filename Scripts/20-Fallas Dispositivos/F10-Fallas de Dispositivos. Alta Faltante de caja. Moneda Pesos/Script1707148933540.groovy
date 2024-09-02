@@ -16,7 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -37,11 +40,11 @@ WebUI.switchToWindowTitle('Temenos T24')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Click en Registros de Fallas de caja
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/lnkRegistrodeFallasdeCaja'))
+def menuDesplegable = ["Registro de Fallas de Caja"]
+def link = "Faltante de Caja"
 
-//Click en Faltante de caja
-WebUI.click(findTestObject('Object Repository/21-Fallas/05-Temenos T24/Registro de Fallas de Caja/lnkFaltantedeCaja'))
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Switch a la ventana TELLER
 WebUI.switchToWindowTitle('TELLER')

@@ -4,5 +4,6 @@
    <name>F15-Falla de Dispositivos. Alta de sobrante ATM MAP. Sucursal valida. Dispositivo de la sucursal. Retiro</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5bfe3583-881e-4644-9aee-48cba5766438</testCaseGuid>
 </TestCaseEntity>

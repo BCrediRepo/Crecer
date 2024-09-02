@@ -4,5 +4,6 @@
    <name>F13-Fallas de Dispositivos. Alta Sobrante otro usuario (TELLER,SOBRANTE.CAJA.USU)</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>fefd91d0-3780-4ed0-8f15-454d76e125f5</testCaseGuid>
 </TestCaseEntity>

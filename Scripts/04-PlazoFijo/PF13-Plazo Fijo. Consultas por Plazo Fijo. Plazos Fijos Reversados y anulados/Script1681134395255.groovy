@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 
+def fecha = '20220722'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -34,9 +35,9 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('Consulta de Operaciones Reversadas')
 
+//Limpia y seteo
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-WebUI.setText(findTestObject('05-PlazoFijo/Consulta de Operaciones Reversadas/txtFechaBajaReversa'), '20220722')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Baja / Reversa', fecha)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

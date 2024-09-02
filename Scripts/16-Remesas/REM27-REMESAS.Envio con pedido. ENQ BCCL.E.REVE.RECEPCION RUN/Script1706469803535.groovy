@@ -16,6 +16,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+
+def cuenta = 'ARS1001190011001'
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -36,27 +42,18 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "Temenos T24"
 WebUI.switchToWindowTitle('Temenos T24')
 
-//Seleccionar "Cuentas"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/lnkCuentas'))
+def menuDesplegable = ["Cuentas", "Consultas", "Consulta de Saldos y Movimientos"]
+def link = "Cons.de mov. por fecha - Cuenta Interna"
 
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Cuentas/lnkConsultas'))
-
-//Seleccionar "Consulta de Saldos y Movimientos"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Cuentas/Consultas/lnkConsultadeSaldosyMovimientos'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Cons.de mov. por fecha - Cuenta Interna"
-WebUI.click(findTestObject('Object Repository/17-Remesas/Temenos T24/Cuentas/Consultas/Consulta de Saldos y Movimientos/lnkCons.demov.porfecha-CuentaInterna'))
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "Movimientos por Fecha Ctas Internas"
 WebUI.switchToWindowTitle('Movimientos por Fecha Ctas Internas')
 
 //Seteo de Datos "Nro de Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta','ARS1001190011001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Cuenta',cuenta)
 
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

@@ -4,5 +4,6 @@
    <name>PF13-Plazo Fijo. Consultas por Plazo Fijo. Plazos Fijos Reversados y anulados</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6c9d47bd-cff2-4872-83a9-b8ffeeedf449</testCaseGuid>
 </TestCaseEntity>

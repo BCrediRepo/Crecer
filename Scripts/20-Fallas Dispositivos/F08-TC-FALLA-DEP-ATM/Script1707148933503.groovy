@@ -26,17 +26,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ingreso al modulo Operatoria de Caja - Reemplazo
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkOperatoriadeCaja-Reemplazo'))
-
-//Click en Dispositivos
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/lnkDispositivos'))
-
-//Click en Registro de Fallas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/lnkRegistroDeFallasEnDispositivos'))
-
-//Click en Alta de sobrantes ATM/CD/TAS
-WebUI.click(findTestObject('Object Repository/02-Dashboard/09-OperatoriaDeCaja-Reemplazo/01-Dispositivos/01-Registro de Fallas en Dispositivos/lnkAltaDeSobrantesDeATMCDTAS'))
+def menuDesplegable0 = ["Operatoria de Caja- Reemplazo", "Dispositivos", "Registro de Fallas en Dispositivos"]
+def link0 = "Alta de Sobrantes de ATM/CD/TAS"
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
 //Switch a la ventana TELLER
 WebUI.switchToWindowTitle('TELLER')

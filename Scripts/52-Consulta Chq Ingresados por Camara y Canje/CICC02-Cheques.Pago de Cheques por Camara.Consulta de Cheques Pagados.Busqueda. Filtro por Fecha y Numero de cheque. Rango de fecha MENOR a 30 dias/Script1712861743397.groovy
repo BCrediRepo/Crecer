@@ -16,9 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Calendar
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -38,9 +38,18 @@ WebUI.click(findTestObject('Object Repository/02-Dashboard/51-Consulta Chq Ingre
 WebUI.switchToWindowTitle('BCCL.E.CHQ.PAGADOS')
 
 //SETEAR UNA FECHA MENOR A 30 DIAS DE LA FECHA ACTUAL DEL AMBIENTE
+fecha = GlobalVariable.vFechaCOB
+LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
+LocalDate fechaModificada = fechaParse.minusDays(15)
+while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {
+		fechaModificada = fechaModificada.minusDays(1)
+}
+DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
+String fechaPasada = fechaModificada.format(formato)
+
 //Seteo de datos "Fecha Desde", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230810')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', fechaPasada)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '173')
 
 //Capturar tiempo de inicio
