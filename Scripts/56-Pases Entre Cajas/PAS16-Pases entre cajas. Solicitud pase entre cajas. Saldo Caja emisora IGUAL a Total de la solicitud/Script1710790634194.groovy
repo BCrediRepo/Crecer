@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,17 +28,16 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 17), findTestData('MainData/Users').getValue(2, 17))
 WebUI.maximizeWindow()
 
-//Seleccionar "Caja"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
+def menuDesplegable = ["Caja"]
+def link = "Apertura de Caja"
+def menuDesplegable2 = ["Pases"]
+def link2 = "Solicitud de Pase entre Cajas"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Seleccionar "Apertura de Caja"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/01-Caja/lnkAperturadeCaja'))
-
-//Cambiar ventana "TELLER ID"
-WebUI.switchToWindowTitle('TELLER ID')
+//Cambiar a la ventana "TELLER ID"
+WebUI.switchToWindowIndex(1)
 
 //Definir "Saldo al Cierre"
 SaldoalCierre = WebUI.getText(findTestObject('Object Repository/57-Pases Entre Cajas/06-TELLER ID/lblSaldoalCierreARS'))
@@ -42,32 +45,20 @@ SaldoalCierre = WebUI.getText(findTestObject('Object Repository/57-Pases Entre C
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Switch a la ventana del Dashboard
+//Cambiar a la ventana del Dashboard
 WebUI.switchToWindowIndex(0)
 
-//Ingresar "?303" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?303')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?303"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?303", 1)
 
 //Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
+WebUI.switchToWindowIndex(2)
 
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/lnkPases'))
+//Navegar por el menu de Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable2, link2)
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Solicitud de Pase entre Cajas"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/02-Pases/lnkSolicituddePaseentreCajas'))
-
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(3)
 
 //Esperar "boton De la Caja"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
@@ -75,8 +66,11 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Caj
 //Seleccionar "boton De la Caja"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
-//Seleccionar "1544"
+//Seleccionar Tercera caja
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaTerceraCaja'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Esperar "boton Moneda"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)

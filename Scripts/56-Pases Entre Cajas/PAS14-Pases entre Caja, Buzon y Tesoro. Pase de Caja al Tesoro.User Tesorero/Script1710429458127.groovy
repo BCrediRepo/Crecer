@@ -25,6 +25,7 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
+import org.openqa.selenium.WebDriver
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -33,29 +34,20 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 26), findTestData('MainData/Users').getValue(2, 26))
 WebUI.maximizeWindow()
 
-//Ingresar "?303" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?303')
+def menuDesplegable = ["Pases"]
+def link = "Pase Caja al Tesoro"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Ejecutar en la linea de comando "?303"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?303", 1)
+ 
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Navegar por el menu de Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/lnkPases'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Pase Caja al Tesoro"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/02-Pases/lnkPaseCajaalTesoro'))
-
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(2)
 
 //Esperar Dropdown Moneda
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMoneda'), 3)
@@ -65,6 +57,9 @@ WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btn
 
 //Seleccionar "ARS"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblARS'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Esperar Monto MN
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/txtMontoMN'), 3)

@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,17 +28,14 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkPases'))
+def menuDesplegable = ["Pases"]
+def link = "Solicitud de Pase Entre Cajas"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-//Seleccionar "Solicitud de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkSolicituddePaseEntreCajas'))
-
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+//Cambiar a la ventana "TELLER"
+WebUI.switchToWindowIndex(1)
 
 //Esperar "boton De la Caja"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
@@ -42,8 +43,11 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Caj
 //Seleccionar "boton De la Caja"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
-//Seleccionar "1542"
+//Seleccionar Primera Caja
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaPrimeraCaja'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Esperar "boton Moneda"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)

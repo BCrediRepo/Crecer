@@ -27,6 +27,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 import java.awt.Robot
 import java.awt.event.KeyEvent
+import org.openqa.selenium.WebDriver
 
 //Ejecutar primero caso PAS01 para luego autorizar la Txn
 WebUI.callTestCase(findTestCase('56-Pases Entre Cajas/PAS01-Pases Entre Cajas. Solicitud Pases Entre Cajas. Usuario Tesorero'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -38,32 +39,26 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 39), findTestData('MainData/Users').getValue(2, 39))
 WebUI.maximizeWindow()
 
-//Ingresar "?303" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?303')
+def menuDesplegable = ["Autorizaciones"]
+def link = "Autorizacion de Pase Entre Cajas"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Ejecutar en la linea de comando "?303"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?303", 1)
+ 
+//Cambiar a la ventana "Temenos T24"
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Autorizaciones"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/lnkAutorizaciones'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Autorizacion de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/03-Autorizaciones/lnkAutorizaciondePaseEntreCajas'))
+//Navegar por el menu de Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.TT.PASE.ENTRE.CAJAS"
-WebUI.switchToWindowTitle('BCCL.E.TT.PASE.ENTRE.CAJAS')
+WebUI.switchToWindowIndex(2)
 
 //Definir la variable trx1 como "variable"
 def variable = GlobalVariable.vTxn
+
+//Esperar 3 seg a que se cargue la tabla
+WebUI.delay(3)
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
 def buscarElementoEnTabla(String variable) {
@@ -121,14 +116,14 @@ while (!encontrado) {
 	}
 }
 
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
-
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Autorizar Registro"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/01-BCCL.E.TT.PASE.ENTRE.CAJAS/btnAutorizarRegistro'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Verificar "Txn Completa"
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))

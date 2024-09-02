@@ -27,6 +27,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 import java.awt.Robot
 import java.awt.event.KeyEvent
+import org.openqa.selenium.WebDriver
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -35,29 +36,22 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 17), findTestData('MainData/Users').getValue(2, 17))
 WebUI.maximizeWindow()
 
-//Ingresar "?303" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?303')
+def menuDesplegable = ["Pases"]
+def link = "Solicitud de Pase entre Cajas"
+def menuDesplegable2 = ["Autorizaciones"]
+def link2 = "Autorizacion de Pase Entre Cajas"
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?303"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?303", 1)
 
 //Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "Pases"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/lnkPases'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Solicitud de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/02-Temenos T24/02-Pases/lnkSolicituddePaseentreCajas'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
+WebUI.switchToWindowIndex(2)
 
 //Esperar "boton De la Caja"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'), 3)
@@ -65,8 +59,11 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Caj
 //Seleccionar "boton De la Caja"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownDelaCaja'))
 
-//Seleccionar "1544"
+//Seleccionar Tercera Caja
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/lblDelaCajaTerceraCaja'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Esperar "boton Moneda"
 WebUI.waitForElementVisible(findTestObject('Object Repository/57-Pases Entre Cajas/03-TELLER/btnDropdownMonedaPASCajero'), 3)
@@ -121,17 +118,14 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Autorizaciones"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'))
+//Navegar por el menu del Dashboard
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//Cambiar a la ventana "BCCL.E.TT.PASE.ENTRE.CAJAS"
+WebUI.switchToWindowIndex(1)
 
-//Seleccionar "Autorizacion de Pase Entre Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/55-Pases Entre Cajas/lnkAutorizaciondePaseEntreCajas'))
-
-//Cambiar ventana "BCCL.E.TT.PASE.ENTRE.CAJAS"
-WebUI.switchToWindowTitle('BCCL.E.TT.PASE.ENTRE.CAJAS')
+//Esperar 3 seg a que se cargue la tabla
+WebUI.delay(3)
 
 //Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
 def buscarElementoEnTabla(String trx1) {
@@ -189,14 +183,14 @@ while (!encontrado) {
 	}
 }
 
-//Cambiar ventana "TELLER"
-WebUI.switchToWindowTitle('TELLER')
-
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Autorizar Registro"
 WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/01-BCCL.E.TT.PASE.ENTRE.CAJAS/btnAutorizarRegistro'))
+
+//Maximizar ventana
+WebUI.maximizeWindow()
 
 //Verificar "Txn Completa"
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))

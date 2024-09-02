@@ -18,7 +18,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
