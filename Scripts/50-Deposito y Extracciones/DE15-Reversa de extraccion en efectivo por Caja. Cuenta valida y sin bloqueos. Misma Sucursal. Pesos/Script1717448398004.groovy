@@ -16,6 +16,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
+
+def validarElementoEnTabla(String variable, int posVariable, String razon, int postdList) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("tab2"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+					String cuentauser = tdList[postdList].getText()
+					println(cuentauser)
+			assert tdList[postdList].getText().contains(razon) : "Expected " + razon + " but found ${tdList[postdList].getText()}"
+			GlobalVariable.vTxn = cuentauser
+			return true
+		}
+	}
+	return false
+}
+
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -134,9 +158,12 @@ WebUI.click(findTestObject('Object Repository/51-Deposito-Extracciones/Deposito 
 //Verificar "REVE"
 WebUI.verifyElementVisible(findTestObject('Object Repository/55-Reversos/TELLER/lblREVE'))
 
-//Validar "REVE"
-def element = WebUI.getText(findTestObject('Object Repository/55-Reversos/TELLER/lblREVE'))
-assert element.contains('REVE')
+def encontrado = false
+while (!encontrado) {
+	encontrado = validarElementoEnTabla('Estado del Registro', 0, "REVE", 2)
+}
+String Estado = GlobalVariable.vTxn
+assert Estado.contains('REVE')
 
 //----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed

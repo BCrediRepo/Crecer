@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CH
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'),6)
 
-WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'), '1001530154') //antes estaba: 1002089452
+WebUI.setText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/txtFIRMANTE3'), '1002089452') //antes estaba:1001530154
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -58,6 +58,8 @@ WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CH
 WebUI.waitForElementVisible(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'), 6)
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
+
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Valido que la transaccion se complete correctamente
 WebUI.waitForElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lblTxnCompleta'),6)
@@ -84,6 +86,8 @@ TestObject imgTestObject = new TestObject().addProperty("xpath", ConditionType.E
 WebUI.click(imgTestObject)
 
 WebUI.click(findTestObject('08-Cheques Rechazados/Cambio De Firmantes Informados/btnAceptarRegistro'))
+
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //if (WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'), FailureHandling.CONTINUE_ON_FAILURE)) {
 //    WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Cambio De Firmantes Informados/lnkAceptarAlertas'))

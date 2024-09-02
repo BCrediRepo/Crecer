@@ -11,9 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
+         <value>#tab2 > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(3) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>187779e7-a3c1-4f2f-b074-1263825e38f1</webElementGuid>
+      <webElementGuid>4d021e94-f645-4886-8884-192210d4f443</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_BCCLPAGOCQMOS</value>
-      <webElementGuid>821802af-a3e0-4f1d-87e2-3290a24e717e</webElementGuid>
+      <webElementGuid>21af1c23-6d51-4701-a9e6-27e11f19ea27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>REVE</value>
-      <webElementGuid>faa1829e-031f-4480-85ea-9fde896374ca</webElementGuid>
+      <webElementGuid>74103f02-f6fd-4112-862c-635c3b588731</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab2&quot;)/tbody[1]/tr[7]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_TELLER disabled_dealbox_TELLER_BCCLPAGOCQMOS&quot;]</value>
-      <webElementGuid>97e18e43-a350-4912-a2e5-cc62d9408cf7</webElementGuid>
+      <webElementGuid>7692d17c-6bc0-44c4-9b54-d591821218d0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab2']/tbody/tr[7]/td[3]/span</value>
-      <webElementGuid>b973682c-b38b-489e-9bd5-e2e0012f4ee6</webElementGuid>
+      <webElementGuid>c41944f3-6c68-425a-9202-23f44a1a127b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado del Registro'])[1]/following::span[1]</value>
-      <webElementGuid>0bda4f15-6aa5-4ae7-814a-49b7100f7062</webElementGuid>
+      <webElementGuid>e2236980-d28d-4c69-91be-5f24f61ba495</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ATESORAMIENTO EXCEDE EL MAXIMO'])[2]/following::span[1]</value>
-      <webElementGuid>cbd7921a-02bb-4adc-9744-524cc9fb4221</webElementGuid>
+      <webElementGuid>ad5d185c-2306-423a-89fe-22f4ae853bf0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Actualizacion Nro'])[1]/preceding::span[1]</value>
-      <webElementGuid>e889aa06-070c-4c23-8195-d03b96554b52</webElementGuid>
+      <webElementGuid>5c93b2e5-92d1-4972-b3cc-c07a96d2821b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ingresado Por.1'])[1]/preceding::span[2]</value>
-      <webElementGuid>a5de116c-0d47-4a72-b1b5-5ceb0a08951b</webElementGuid>
+      <webElementGuid>2566da2b-8a4b-4308-9655-faf22fb3857c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='REVE']/parent::*</value>
-      <webElementGuid>2261927f-2442-4376-b5ec-4b15b1ac127c</webElementGuid>
+      <webElementGuid>cdbbe956-2aa9-47ee-a464-1290d5f0bdaa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//table[2]/tbody/tr[7]/td[3]/span</value>
-      <webElementGuid>539d6b42-f732-49c1-ba05-a6c3eed0ff1f</webElementGuid>
+      <webElementGuid>c872f9aa-e02f-4270-ab90-033952f02bea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'REVE' or . = 'REVE')]</value>
-      <webElementGuid>2d644790-0682-43c4-8add-ce0e5d400cdc</webElementGuid>
+      <webElementGuid>0140ca83-75e6-4c42-a6da-009e5c6075e8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -42,3 +42,23 @@ assert cells[4].getText().contains('Cuenta Credito') : "Expected 'Cuenta Credito
 assert cells[5].getText().contains('Mon') : "Expected 'Mon' but found ${cells[5].getText()}"
 assert cells[6].getText().contains('Importe') : "Expected 'Importe' but found ${cells[6].getText()}"
 assert cells[7].getText().contains('Fec Valor') : "Expected 'Fec Valor' but found ${cells[7].getText()}"
+
+//----------------------------------------------------------------
+
+def validarElementoEnTabla(String variable, int posVariable, String razon, int postdList) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("tab2"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+					String cuentauser = tdList[postdList].getText()
+					println(cuentauser)
+			assert tdList[postdList].getText().contains(razon) : "Expected " + razon + " but found ${tdList[postdList].getText()}"
+			GlobalVariable.vTxn = cuentauser
+			return true
+		}
+	}
+	return false
+}
