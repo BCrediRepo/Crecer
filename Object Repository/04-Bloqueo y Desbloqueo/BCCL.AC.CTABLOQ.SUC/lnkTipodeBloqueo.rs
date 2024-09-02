@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblTipodeBloqueo</name>
+   <name>lnkTipodeBloqueo</name>
    <tag></tag>
    <elementGuidId>c56fa6f6-6719-4e2d-b3d2-892b29c669fe</elementGuidId>
    <selectorCollection>

@@ -65,23 +65,18 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 def flag = false
 String variable
 while (!flag) {
-	variable = "Id Firmante"
+	variable = "Cuenta"
 	flag = validacionTxt(variable)
 }
 assert flag == true
 //-------
 flag = false
 while (!flag) {
-	variable = "Nro Documento"
+	variable = "NO.SORT.OPTION"
 	flag = validacionTxt(variable)
 }
 assert flag == true
-//-------
-while (!flag) {
-	variable = "Nro CUI"
-	flag = validacionTxt(variable)
-}
-assert flag == true
+
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

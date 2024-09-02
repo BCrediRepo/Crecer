@@ -25,31 +25,26 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(
         2, 1))
 
-WebUI.click(findTestObject('02-Dashboard/lnkCuentas'))
+def menuDesplegable0 = ["Cuentas", "Modificacion de cuenta", "Bloqueo y Desbloqueo", "Consultas"]
+def link0 = "Historial de Bloqueos Inactivos"
+def fecha = GlobalVariable.vFechaCOB
 
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/lnkModificaciondDeCuenta'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkBloqueoyDesbloqueo'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/lnkConsultas'))
-
-WebUI.click(findTestObject('02-Dashboard/37-Cuentas/08-Modificacion De Cuenta/Consultas/lnkHistorialBloqueosActivos'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
 WebUI.switchToWindowTitle('BCCL.AC.CONS.HIST.BLOQ')
 
 //Seteo de Datos "Cuenta" y "Fecha de Bloqueo"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010035377')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', '20240226')
-//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', '20230828')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha de Bloqueo', fecha)
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechadeBloqueo'))
+fechaConsulta = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechadeBloqueo'))
 
-fecha = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CONS.HIST.BLOQ/lblFechadeBloqueo'))
-
-assert fecha == 'Fecha de Bloqueo' //Control fin de script
+assert fechaConsulta == fecha //Control fin de script
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

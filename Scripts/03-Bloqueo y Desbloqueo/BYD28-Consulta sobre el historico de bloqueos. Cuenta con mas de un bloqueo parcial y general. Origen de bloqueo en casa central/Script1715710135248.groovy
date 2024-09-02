@@ -31,7 +31,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
         2, 1))
 
 def menuDesplegable0 = ["Cuentas", "Modificacion de cuenta", "Bloqueo y Desbloqueo", "Consultas"]
-def link0 = "Bloqueos Activos"
+def link0 = "Historial de Bloqueos Inactivos"
 
 //Si el menu que busco está en dashboard uso esta funcion
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)

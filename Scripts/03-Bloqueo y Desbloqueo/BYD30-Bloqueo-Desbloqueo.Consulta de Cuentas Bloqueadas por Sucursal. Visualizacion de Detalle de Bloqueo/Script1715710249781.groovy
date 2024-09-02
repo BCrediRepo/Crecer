@@ -25,32 +25,21 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(
         2, 2))
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?302')
+def menuDesplegable0 = ["Cuentas", "Modificacion de cuenta", "Bloqueo y Desbloqueo", "Consultas"]
+def link0 = "Bloqueos Activos"
+def fecha = GlobalVariable.vFechaCOB
 
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Temenos T24')
-
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/Temenos T24/lnkCuentas'))
-
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/Temenos T24/Cuentas/lnkModificacionDeCuentas'))
-
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/Temenos T24/Cuentas/Modificacion de Cuenta/lnkBloqueoYDesbloqueo'))
-
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/Temenos T24/Cuentas/Modificacion de Cuenta/Bloqueo y Desbloqueo/lnkConsultas'))
-
-WebUI.click(findTestObject('04-Bloqueo y Desbloqueo/Temenos T24/Cuentas/Modificacion de Cuenta/Bloqueo y Desbloqueo/Consultas/lnkBloqueosActivos'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?302', 1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable0, link0)
 
 WebUI.switchToWindowTitle('BCCL.AC.CTABLOQ.SUC')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Tipo Bloqueo', '02')
 
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/txtSucursal'), '089')
-
-WebUI.setText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/txtTipoBloqueo'), '02')
 
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-//WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipodeBloqueo'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipoBloqueo'))
+WebUI.verifyElementVisible(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lnkTipodeBloqueo'))
 
 TipoBloq = WebUI.getText(findTestObject('04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipoBloqueo'))
 println TipoBloq
