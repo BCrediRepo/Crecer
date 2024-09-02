@@ -6,19 +6,19 @@
    <elementGuidId>9f0d6315-2b18-4142-bf70-24991db9d668</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Fecha de Bloqueo' or . = 'Fecha de Bloqueo')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//th[@id='columnHeaderText1']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#columnHeaderText1</value>
+         <value>#r1 > td:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Fecha de Bloqueo' or . = 'Fecha de Bloqueo')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>5db8baf9-39c7-4d98-a2d4-cc27be9aeb04</webElementGuid>
+      <webElementGuid>16759518-01ec-44e9-98a4-62d5f848e29a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +34,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>a1bbe888-a4a4-4777-a605-692ab4fd9204</webElementGuid>
+      <webElementGuid>64a4c7bc-28eb-4455-894c-d05d7bccce30</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>c56f5da0-1d54-4580-a5b1-ebbe03b1c571</webElementGuid>
+      <webElementGuid>d9315712-9804-40b8-9d91-f78d398a0b5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +50,7 @@
       <name>id</name>
       <type>Main</type>
       <value>columnHeaderText1</value>
-      <webElementGuid>231ee2ab-a1ae-464b-b572-1af23d5e06a8</webElementGuid>
+      <webElementGuid>f3d2d3c9-7ff2-46c4-81a8-5a06e3f92d0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Fecha de Bloqueo</value>
-      <webElementGuid>97860cd7-5973-47aa-81fe-00194c0916ca</webElementGuid>
+      <webElementGuid>23d32b2c-8748-424e-9ad9-5946120a0f3e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;columnHeaderText1&quot;)</value>
-      <webElementGuid>94e62d4a-563e-48a7-ba28-6352e3564b61</webElementGuid>
+      <webElementGuid>7026a9c5-a299-4e8d-9e1f-7977ef59364e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//th[@id='columnHeaderText1']</value>
-      <webElementGuid>0b895cd9-be37-4de5-9b65-919aff0a9267</webElementGuid>
+      <webElementGuid>74819fa9-3fcb-44fd-bd96-2ab8a16474a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
-      <webElementGuid>720edd2b-f714-4797-8d31-a05aa48bd86b</webElementGuid>
+      <webElementGuid>9d1ca1ad-fa6c-4347-acbe-d1da18a9e771</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
-      <webElementGuid>b418e1bc-7975-4d8f-a1e9-dbee1aa4bbe4</webElementGuid>
+      <webElementGuid>ec13300e-7574-4051-8804-75bb55854eda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
-      <webElementGuid>14c1c2d1-c72c-4848-8a23-c3155cdbfc08</webElementGuid>
+      <webElementGuid>6fb8ffa0-4bc9-44fc-82c1-fd4b0b7f2ed3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Hasta'])[1]/preceding::th[2]</value>
-      <webElementGuid>98ca48f9-2595-43e7-a81e-3ad72e5035e6</webElementGuid>
+      <webElementGuid>089a96d4-ee0b-49f2-92c1-cec5ba5b3490</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Bloqueo'])[1]/preceding::th[5]</value>
-      <webElementGuid>572ad359-47f7-4d8c-a8d7-ea1058c31d12</webElementGuid>
+      <webElementGuid>470826a9-86fe-4894-a383-7597a4a1b150</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Fecha de Bloqueo']/parent::*</value>
-      <webElementGuid>65fa704a-7af4-4c5f-a53e-ac88a108f93c</webElementGuid>
+      <webElementGuid>adfd07a5-ed55-455d-adcb-3f385ddfcda0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tbody/tr/th</value>
-      <webElementGuid>09a157a3-c25c-4360-be34-91d196d0012f</webElementGuid>
+      <webElementGuid>69d63807-b5f1-4714-8e6e-f6e3c8384063</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[@id = 'columnHeaderText1' and (text() = 'Fecha de Bloqueo' or . = 'Fecha de Bloqueo')]</value>
-      <webElementGuid>bd84644a-528a-4b15-8a81-c058e7f10fc4</webElementGuid>
+      <webElementGuid>0025e848-ffba-4d76-b1b6-64ee4ed9b362</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

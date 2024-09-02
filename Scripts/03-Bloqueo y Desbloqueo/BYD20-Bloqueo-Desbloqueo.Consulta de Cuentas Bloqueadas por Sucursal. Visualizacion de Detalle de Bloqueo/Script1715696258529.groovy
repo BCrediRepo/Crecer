@@ -37,9 +37,6 @@ WebUI.switchToWindowTitle('BCCL.AC.CTABLOQ.SUC')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '073')
 
-//Setear Tipo Bloqueo
-//WebUI.setText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/txtTipoBloqueo'), '02')
-
 //Capturar el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
@@ -74,7 +71,7 @@ WebUI.click(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CT
 WebUI.switchToWindowTitle('Account Blocking Details')
 
 //Validar "Tipo de Bloqueo"
-assert WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lblTipodeBloqueo')).contains('Tipo de Bloqueo')
+assert WebUI.getText(findTestObject('Object Repository/04-Bloqueo y Desbloqueo/BCCL.AC.CTABLOQ.SUC/lnkTipodeBloqueo')).contains('Tipo de Bloqueo')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
