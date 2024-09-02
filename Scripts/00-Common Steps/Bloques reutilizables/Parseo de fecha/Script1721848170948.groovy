@@ -35,7 +35,7 @@ while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.g
 }
 DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
 String fechaFutura = fechaModificada.format(formato)
-DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd MMM yyyy")
+DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd MMM yyyy", Locale.ENGLISH) //se le agrega el Locale.ENGLISH para que el formato que como queremos
 String fechaAssert = fechaModificada.format(formatoAssert).toUpperCase()
 
 //-------------------------------------------------------------------
@@ -51,7 +51,7 @@ while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.g
 }
 DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
 String fechaFutura = fechaModificada.format(formato)
-DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd MMM yyyy")
+DateTimeFormatter formatoAssert = DateTimeFormatter.ofPattern("dd MMM yyyy", Locale.ENGLISH) //se le agrega el Locale.ENGLISH para que el formato que como queremos
 String fechaAssert = fechaModificada.format(formatoAssert).toUpperCase()
 
 

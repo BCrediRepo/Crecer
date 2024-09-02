@@ -16,7 +16,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
+def suc = '019'
+def fecha = '20240116'
+def cuenta = '00190239651'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -33,25 +40,20 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "Temenos T24"
 WebUI.switchToWindowTitle('Temenos T24')
 
-//Seleccionar "Rechazo de Cheques"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkRechazodecheques'))
+def menuDesplegable = ["Rechazo de cheques", "Operatoria con BCRA"]
+def link = "Consulta de Cheques Informados al BCRA"
 
-//Seleccionar "Operatoria con BCRA"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Rechazo de Cheques/lnkOperatoriaconBCRA'))
-
-//Seleccionar "Consulta de Cheques Informados al BCRA"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Rechazo de Cheques/Operatoria con BCRA/lnkConsultadeChequesInformadosalBCRA'))
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.CQ.CHRECH.REP.BCRA"
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
 
-//Seteo de Datos "Sucursal", "Fec Gen Info"
+//Seteo de Datos "Sucursal", "Fec Gen Info" "Numero Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '019')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fec Gen Info', '20220719')
-
-//Seleccionar y Cambiar a "Entre" de "Fec Gen Info"
-//WebUI.selectOptionByIndex(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/cbFecGenInfo'), 0)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', suc)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fec Gen Info', fecha)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero Cuenta', cuenta)
 
 //Seleccionar Boton Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))

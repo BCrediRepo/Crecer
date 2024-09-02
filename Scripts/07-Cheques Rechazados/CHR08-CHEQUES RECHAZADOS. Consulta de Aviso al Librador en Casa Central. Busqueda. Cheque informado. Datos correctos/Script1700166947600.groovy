@@ -16,7 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+def suc = '001'
+def cheque = '04478485'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -24,22 +25,18 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
 WebUI.maximizeWindow()
 
-//Seleccionar "Rechazo de cheques"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkRechazodecheques'))
-
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultasCHR'))
-
-//Seleccionar "Consulta de aviso al librado"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkConsultaDeAvisosAlLibrador'))
+def menuDesplegable0 = ["Rechazo de Cheques", "Consultas"]
+def link0 = "Consulta de Avisos al Librador"
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
 //Cambiar ventana "BCCL.E.CQ.CHRECH.AVI.LIBRADOR"
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
 //Seteo de Datos "Sucursal", "Numero de Cheque"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cheque', '04478485')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', suc)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cheque', cheque)
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()

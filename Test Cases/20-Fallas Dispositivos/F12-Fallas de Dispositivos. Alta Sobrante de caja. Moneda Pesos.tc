@@ -4,5 +4,6 @@
    <name>F12-Fallas de Dispositivos. Alta Sobrante de caja. Moneda Pesos</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>d42560dd-d744-4585-a587-558b210ae893</testCaseGuid>
 </TestCaseEntity>

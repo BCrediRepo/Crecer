@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
-
+def moneda = 'ARS'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -34,13 +34,10 @@ WebUI.switchToWindowTitle('Posicion de Cambio')
 
 WebUI.setText(findTestObject('05-PlazoFijo/Posicion de Cambio/txtPos1'), 'ARS')
 
-texto = WebUI.getText(findTestObject('05-PlazoFijo/Posicion de Cambio/lblPos4'))
-
-if (texto == 'Fecha Alta') {
-    WebUI.setText(findTestObject('05-PlazoFijo/Posicion de Cambio/txtPos4'), '20220714')
-} else {
-    WebUI.setText(findTestObject('05-PlazoFijo/Posicion de Cambio/txtPos2'), '20220714')
-}
+//Limpia y setea
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Alta', GlobalVariable.vFechaCOB)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', moneda)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

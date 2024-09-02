@@ -4,5 +4,6 @@
    <name>CHR10-Cheques Rechazados.Consulta de Cheques Informados al BCRA.Por Fecha de Generacion.Usuario de Sucursal</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f0b7c66e-5ac0-4ba4-ae73-c65de5b7e02e</testCaseGuid>
 </TestCaseEntity>

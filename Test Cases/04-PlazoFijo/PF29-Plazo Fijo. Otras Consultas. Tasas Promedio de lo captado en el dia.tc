@@ -4,5 +4,6 @@
    <name>PF29-Plazo Fijo. Otras Consultas. Tasas Promedio de lo captado en el dia</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>e25be957-988f-4636-8fb7-8d454436c5bb</testCaseGuid>
 </TestCaseEntity>

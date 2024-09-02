@@ -43,7 +43,6 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/06-Comisiones/BCCL.E.AC.COM.ITB/txtAbonado'), 6)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Abonado', 'X88262A')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00010000164')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha', '20220630')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

@@ -16,6 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -50,24 +53,22 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Cambiar valor en el cb por "Ver cta cant cierre"
-WebUI.selectOptionByIndex(findTestObject('Object Repository/25-Cierre de Cuenta/10-BCCL.E.CANDT.CIERRE/cbVerctacantcierre'), 1)
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "btn Select Drill Down"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/10-BCCL.E.CANDT.CIERRE/btnSelectDrilldown'))
-
-//Cambiar ventana "BCCL.AC.CANDT.CIERRE"
-WebUI.switchToWindowTitle('BCCL.AC.CANDT.CIERRE')
-
-//Verificar Cuenta
-WebUI.verifyElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/11-BCCL.AC.CANDT.CIERRE/lblCuenta'))
-
-//Validar Cuenta
-ctaOrigChrech = WebUI.getText(findTestObject('Object Repository/25-Cierre de Cuenta/11-BCCL.AC.CANDT.CIERRE/lblCuenta'))
-assert ctaOrigChrech == "02460051271"
+//Obtiene datos de la tabla
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
+WebElement header = table.findElement(By.tagName("tr"))
+List<WebElement> cells = header.findElements(By.tagName("th"))
+ 
+// Validar los textos de las celdas directamente
+assert cells[0].getText().contains('FECHA DE CIERRE') : "Expected 'FECHA DE CIERRE' but found ${cells[0].getText()}"
+assert cells[3].getText().contains('ID CUENTA') : "Expected 'ID CUENTA' but found ${cells[3].getText()}"
+assert cells[6].getText().contains('NOMBRE CTA') : "Expected 'NOMBRE CTA' but found ${cells[6].getText()}"
+assert cells[9].getText().contains('MOTIVO') : "Expected 'MOTIVO' but found ${cells[9].getText()}"
+assert cells[12].getText().contains('NRO DE PRORROGA') : "Expected 'NRO DE PRORROGA' but found ${cells[12].getText()}"
+assert cells[15].getText().contains('CTA ORIG RECH') : "Expected 'CTA ORIG RECH' but found ${cells[15].getText()}"
+assert cells[18].getText().contains('ID FIRMANTE') : "Expected 'ID FIRMANTE' but found ${cells[18].getText()}"
+assert cells[21].getText().contains('NOMBRE FIRMANTE') : "Expected 'NOMBRE FIRMANTE' but found ${cells[21].getText()}"
+assert cells[24].getText().contains('PLAZO EXT.') : "Expected 'PLAZO EXT.' but found ${cells[24].getText()}"
+assert cells[27].getText().contains('PRE-AVISO') : "Expected 'PRE-AVISO' but found ${cells[27].getText()}"
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

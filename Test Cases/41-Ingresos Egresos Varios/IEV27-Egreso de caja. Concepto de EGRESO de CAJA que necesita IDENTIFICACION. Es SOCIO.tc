@@ -4,5 +4,6 @@
    <name>IEV27-Egreso de caja. Concepto de EGRESO de CAJA que necesita IDENTIFICACION. Es SOCIO</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>9c924439-8b29-4315-8719-6acdf852d11b</testCaseGuid>
 </TestCaseEntity>

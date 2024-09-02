@@ -4,5 +4,6 @@
    <name>REM22-REMESAS. Consulta de control de puntos neutrales</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8c6a57af-a5db-40ad-9087-8c9ce804983a</testCaseGuid>
 </TestCaseEntity>

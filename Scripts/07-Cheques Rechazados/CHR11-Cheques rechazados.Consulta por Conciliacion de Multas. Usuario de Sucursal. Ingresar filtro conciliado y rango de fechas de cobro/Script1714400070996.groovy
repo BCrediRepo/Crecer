@@ -33,6 +33,12 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiar ventana "Temenos T24"
 WebUI.switchToWindowTitle('Temenos T24')
 
+def menuDesplegable = ["Rechazo de cheques", "Consultas"]
+def link = "CONCILIACION DE MULTAS"
+
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+
 //Seleccionar "Rechazo de Cheques"
 WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkRechazodecheques'))
 

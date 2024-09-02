@@ -4,5 +4,6 @@
    <name>APT13-Administrador de Piezas. Consulta por Apellido y DNI</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8fda2c90-cefc-498f-af12-bcebdc0f285c</testCaseGuid>
 </TestCaseEntity>

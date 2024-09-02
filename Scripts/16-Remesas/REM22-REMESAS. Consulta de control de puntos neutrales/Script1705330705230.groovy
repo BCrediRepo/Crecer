@@ -17,6 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def moneda = 'ARS'
+def fechaD = '20200301'
+def dispositivo = '00000'
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -49,17 +52,11 @@ WebUI.switchToWindowTitle('BCCL.E.TXN.PNEUTRAL.CAT')
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-//Seleccionar "boton Drop down Moneda"
-WebUI.click(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.CAT/btnDropdownMoneda'))
-
-//Selecionar "ARS"
-WebUI.click(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.CAT/lblARS'))
-
-//Setear "Fecha Desde"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.CAT/txtFechaDesde'), '20200301')
-
-//Setear "Dispositivo"
-WebUI.setText(findTestObject('Object Repository/17-Remesas/07-BCCL.E.TXN.PNEUTRAL.CAT/txtDispositivo'), '00000')
+//Busco la Cuenta a Desbloquear
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', moneda)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha desde', fechaD)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Dispositivo', dispositivo)
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()

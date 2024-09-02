@@ -4,5 +4,6 @@
    <name>F07-TC-FALLA-SOB-ATM</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>685bd62f-738a-4bdb-b525-beead2328456</testCaseGuid>
 </TestCaseEntity>

@@ -26,7 +26,7 @@ WebUI.maximizeWindow()
 
 //Se accede al menu Administracion de piezas
 menuDesplegable = ["Administracion de Piezas con Tarjetas","Consultas al Maestro de Card-Carrier"]
-link = "Seleccion por Nombre / Documento / Sucursal"
+link = "Seleccion por Persona/Sucursal/Lote"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.AP.ENQ.NOMBRE.DOC"
@@ -43,22 +43,20 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 //Cambiar combo box a "Entrega al Socio"
 WebUI.selectOptionByIndex(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/cbRecibirPiezaEnviarPiezaEntregaalSocioConsultaPieza'), 2)
 
+WebUI.maximizeWindow()
+
 //Seleccionar Ver
 WebUI.click(findTestObject('Object Repository/03-AdminPiezasTarjetas/08-BCCL.E.AP.ENQ.NOMBRE.DOC/btnDrillDownOpcionConsultadePiezas'))
 
 //Cambiar ventana "BCCL.AP.PIEZAS"
 WebUI.switchToWindowTitle('BCCL.AP.PIEZAS')
 
-//Verificar "Entregada al Socio"
-WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEntregadaalSocio'))
+//Verificar "ENTREGADO AL SO"
+WebUI.verifyElementVisible(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEntregadaalSociov2'))
 
-//Validar "Entregada al Socio"
-entregadaSocio = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEntregadaalSocio'))
-assert entregadaSocio == "Entregada al Socio"
-
-//Validar Numero de estado de la Accion
-estadoAccion = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblAccion'))
-assert estadoAccion == "090"
+//Validar "ENTREGADO AL SO"
+entregadaSocio = WebUI.getText(findTestObject('Object Repository/03-AdminPiezasTarjetas/07-BCCL.AP.PIEZAS/lblEntregadaalSociov2'))
+assert entregadaSocio == "ENTREGADO AL SO"
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

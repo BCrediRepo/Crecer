@@ -4,5 +4,6 @@
    <name>APT10-Administracion de Piezas con Tarjetas. Consultas al Maestro de Card-Carrier. Piezas en Transito</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>eaff8b66-72c5-468c-a1e2-43747d8d3372</testCaseGuid>
 </TestCaseEntity>

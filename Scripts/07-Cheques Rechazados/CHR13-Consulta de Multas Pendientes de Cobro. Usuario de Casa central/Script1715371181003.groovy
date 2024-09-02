@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -26,14 +27,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Seleccionar "Rechazo de Cheques"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkRechazodecheques'))
-
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/lnkConsultas'))
-
-//Seleccionar "Multas Pendientes"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/1-Consultas - Temenos T24/lnkMultaspendientes'))
+def menuDesplegable0 = ["Rechazo de cheques", "Consultas"]
+def link0 = "MULTAS PENDIENTES"
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
 
 //Cambiar ventana "BCCL.CHRECH.MULTAS.PENDIENTES"
 WebUI.switchToWindowTitle('BCCL.CHRECH.MULTAS.PENDIENTES')

@@ -4,5 +4,6 @@
    <name>CHR13-Consulta de Multas Pendientes de Cobro. Usuario de Casa central</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>dee975ba-09ab-4550-8b05-9687ea0384b3</testCaseGuid>
 </TestCaseEntity>

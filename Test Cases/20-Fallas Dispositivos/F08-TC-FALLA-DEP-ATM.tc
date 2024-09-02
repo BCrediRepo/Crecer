@@ -4,5 +4,6 @@
    <name>F08-TC-FALLA-DEP-ATM</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>56836b7c-9587-4903-a4a2-a0f581cc43a5</testCaseGuid>
 </TestCaseEntity>

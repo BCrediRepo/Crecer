@@ -4,5 +4,6 @@
    <name>PF27 - Plazo Fijo. Otras Consultas. Posicion de Cambios</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f5698af2-81ac-4b49-932e-e3d958f1308e</testCaseGuid>
 </TestCaseEntity>

@@ -4,5 +4,6 @@
    <name>PF05-Plazo Fijo. Consulta Global Segmento 6</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8d031d40-a97d-489d-9f30-f60ee6aaa4d1</testCaseGuid>
 </TestCaseEntity>

@@ -36,7 +36,7 @@ WebUI.switchToWindowTitle('Consulta de Comisiones Cobradas')
 
 //Seteo de Datos "Fecha Proceso"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Proceso', '20230828')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Proceso', GlobalVariable.vFechaCOB)
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

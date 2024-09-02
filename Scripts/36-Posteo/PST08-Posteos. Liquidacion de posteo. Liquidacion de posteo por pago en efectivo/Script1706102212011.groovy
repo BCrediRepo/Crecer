@@ -77,9 +77,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 49), findTestData('MainData/Users').getValue(
 		2, 49))
 
-WebUI.click(findTestObject('02-Dashboard/lnkPosteo'))
+def menuDesplegable = ["Posteo"]
+def link = "Transacciones Pendientes de Liquidacion"
 
-WebUI.click(findTestObject('02-Dashboard/35-Posteos/lnkTransaccionesPendientesdeLiquidacion'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 

@@ -4,5 +4,6 @@
    <name>BYD07-Busqueda de cuentas por cuenta para desbloqueo. Cuenta con bloqueo parcial. Seleccion de desbloqueo parcial. Perfil filial</name>
    <tag>F00076</tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6a281a0b-2c19-4f17-bd85-ba8ca7971759</testCaseGuid>
 </TestCaseEntity>

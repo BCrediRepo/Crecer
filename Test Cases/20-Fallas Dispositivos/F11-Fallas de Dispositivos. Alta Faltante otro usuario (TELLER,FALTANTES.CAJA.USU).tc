@@ -4,5 +4,6 @@
    <name>F11-Fallas de Dispositivos. Alta Faltante otro usuario (TELLER,FALTANTES.CAJA.USU)</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c42a25b8-001a-4731-b63a-b6b9d0b39493</testCaseGuid>
 </TestCaseEntity>
