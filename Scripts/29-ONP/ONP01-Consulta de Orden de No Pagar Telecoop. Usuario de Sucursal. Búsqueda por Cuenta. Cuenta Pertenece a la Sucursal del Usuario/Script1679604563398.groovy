@@ -27,12 +27,9 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(
         2, 3))
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('02-Dashboard/lnkONP'))
-
-WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaONPTelecoop'))
+def menuDesplegable = ['ONP']
+def link = 'Consulta de ONP Telecoop'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('Consulta de ONP Telecoop')
 

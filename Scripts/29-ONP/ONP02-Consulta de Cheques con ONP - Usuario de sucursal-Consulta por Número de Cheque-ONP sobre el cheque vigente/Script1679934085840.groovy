@@ -29,16 +29,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
         2, 3))
 
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('BCCL.CQ.ONP.SOLICITUD', 1)
+//WebUI.switchToWindowTitle('BCCL.CQ.ONP.SOLICITUD')
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.CQ.ONP.SOLICITUD ')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.CQ.ONP.SOLICITUD')
-
-WebUI.setText(findTestObject('30-ONP/BCCL.CQ.ONP.SOLICITUD/txtCheque'), '20011214_1115638')
-
-WebUI.click(findTestObject('30-ONP/BCCL.CQ.ONP.SOLICITUD/btnVerRegistro'))
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), '20011214_1115638')
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 WebUI.maximizeWindow()
 

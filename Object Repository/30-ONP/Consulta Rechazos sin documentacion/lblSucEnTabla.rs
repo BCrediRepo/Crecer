@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>formConsulta</name>
+   <name>lblSucEnTabla</name>
    <tag></tag>
    <elementGuidId>aaaaff86-43c6-44fd-ad3e-07bf23b3dd9f</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='enquiry_response']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#r1 > td:nth-child(1)</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[(text() = '
@@ -309,14 +317,6 @@ Fecha de paso a sin fondos
 07420210831_0078292202108313-Denuncia Judicial a PresentarTI-TitularN00740052642CPDA-545837903-Denuncia Judicial a Presentar24 SEP 2021   2-Denuncia Policial Presentada4910-Sin Fondos Suficientes en Cuenta20211004
 ')]</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='enquiry_response']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#enquiry_response</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
@@ -326,7 +326,7 @@ Fecha de paso a sin fondos
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>f59144ea-ea86-4745-bce4-7f9c99b10dac</webElementGuid>
+      <webElementGuid>e3c15c12-62d8-46e3-8fac-87f100a2ff2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -334,7 +334,7 @@ Fecha de paso a sin fondos
       <name>id</name>
       <type>Main</type>
       <value>enquiry_response</value>
-      <webElementGuid>a3257487-8b7f-486e-bd30-a9e5558ed82c</webElementGuid>
+      <webElementGuid>e16e925c-0096-4a59-83d8-461739d35b57</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -342,7 +342,7 @@ Fecha de paso a sin fondos
       <name>class</name>
       <type>Main</type>
       <value> enquiry_response enquiry_response_BCCLEONPSINDOC display_box display_box_BCCLEONPSINDOC</value>
-      <webElementGuid>dcb4ef98-1859-4cd9-9fb9-b48ab930aca3</webElementGuid>
+      <webElementGuid>545c0a40-1613-4079-ad11-bc82cb782516</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -350,7 +350,7 @@ Fecha de paso a sin fondos
       <name>onclick</name>
       <type>Main</type>
       <value>raiseEnquiryClick( event, this, 'BCCL.E.ONP.SINDOC');</value>
-      <webElementGuid>1d872caf-5e32-4d55-bd3d-55929a25c102</webElementGuid>
+      <webElementGuid>b95b8e5d-8288-4f91-831f-1cb3873ff0c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -508,7 +508,7 @@ Fecha de paso a sin fondos
 
 07420210831_0078292202108313-Denuncia Judicial a PresentarTI-TitularN00740052642CPDA-545837903-Denuncia Judicial a Presentar24 SEP 2021   2-Denuncia Policial Presentada4910-Sin Fondos Suficientes en Cuenta20211004
 </value>
-      <webElementGuid>df4cbfb3-647e-4247-9948-35821b95c62f</webElementGuid>
+      <webElementGuid>c825181c-dda6-4e2a-9e4e-4106cd90cc07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -516,7 +516,7 @@ Fecha de paso a sin fondos
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;enquiry_response&quot;)</value>
-      <webElementGuid>aed045eb-b705-4473-8137-750d14e463e2</webElementGuid>
+      <webElementGuid>65c72247-5e68-4ba6-a598-cbf3537123db</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -524,7 +524,7 @@ Fecha de paso a sin fondos
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='enquiry_response']</value>
-      <webElementGuid>52f41a4b-5841-4c59-9e32-27bb4c11a738</webElementGuid>
+      <webElementGuid>c2cf1bf5-b95b-43fb-93d9-4aa8a8e1fe65</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -532,7 +532,7 @@ Fecha de paso a sin fondos
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='enquiryData']/div</value>
-      <webElementGuid>32c65e78-5516-4d0f-94b4-391ad9a371cd</webElementGuid>
+      <webElementGuid>df912c84-6c3d-4e3c-a614-82c18b5a1644</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -540,7 +540,7 @@ Fecha de paso a sin fondos
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::div[1]</value>
-      <webElementGuid>27d18ec1-2d31-4de5-8b2e-055452063135</webElementGuid>
+      <webElementGuid>7f709453-efa4-4ce0-933d-28ec903d2712</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -548,7 +548,7 @@ Fecha de paso a sin fondos
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::div[1]</value>
-      <webElementGuid>9e569b60-7820-4de5-b426-5ecb668a4281</webElementGuid>
+      <webElementGuid>3f238aeb-3fda-4acc-969d-92da4040e91b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -556,7 +556,7 @@ Fecha de paso a sin fondos
       <name>xpath:position</name>
       <type>Main</type>
       <value>//form/div</value>
-      <webElementGuid>75d772d9-bfb2-4d1c-b1f9-17387c4b3e92</webElementGuid>
+      <webElementGuid>a182be20-fab2-4a7a-a75b-c61f3acea7dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -864,6 +864,6 @@ Fecha de paso a sin fondos
 
 07420210831_0078292202108313-Denuncia Judicial a PresentarTI-TitularN00740052642CPDA-545837903-Denuncia Judicial a Presentar24 SEP 2021   2-Denuncia Policial Presentada4910-Sin Fondos Suficientes en Cuenta20211004
 ')]</value>
-      <webElementGuid>b7599670-7b5e-4004-b090-69033f115262</webElementGuid>
+      <webElementGuid>6ac9a1aa-42ef-4d50-b435-76fc4030981e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

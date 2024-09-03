@@ -29,18 +29,14 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('02-Dashboard/lnkONP'))
-
-WebUI.click(findTestObject('02-Dashboard/28-ONP/lnkConsultaDeRechazosSinDocumentacion'))
+def menuDesplegable = ['ONP']
+def link = 'Consulta de Rechazos sin Documentacion'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('Consulta Rechazos sin documentacion')
-
 //Limpieza de datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-WebUI.click(findTestObject('30-ONP/Consulta Rechazos sin documentacion/btnDrillDown'))
-
-WebUI.click(findTestObject('30-ONP/Consulta Rechazos sin documentacion/lblSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Motivo de rechazo', '10')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -48,7 +44,7 @@ long startTime = System.currentTimeMillis()
 //boton ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-form = WebUI.verifyElementVisible(findTestObject('30-ONP/Consulta Rechazos sin documentacion/formConsulta'))
+WebUI.verifyElementVisible(findTestObject('30-ONP/Consulta Rechazos sin documentacion/lblSucEnTabla'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -58,7 +54,7 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-assert form == true
+assert WebUI.getText(findTestObject('30-ONP/Consulta Rechazos sin documentacion/lblSucEnTabla')).contains('074')
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
