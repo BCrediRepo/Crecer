@@ -66,9 +66,9 @@ WebElement header = table2.findElement(By.tagName("tr"))
 List<WebElement> cells = header.findElements(By.tagName("th"))
 
 assert cells[0].getText().contains('Cod. Operativo') : "Expected 'Cod. Operativo' but found ${cells[0].getText()}"
-assert cells[3].getText().contains('Descripcion') : "Expected 'Descripcion' but found ${cells[1].getText()}"
-assert cells[6].getText().contains('Cant Operaciones') : "Expected 'Cant Operaciones' but found ${cells[2].getText()}"
-assert cells[9].getText().contains('Monto') : "Expected 'Monto' but found ${cells[3].getText()}"
+assert cells[3].getText().contains('Descripcion') : "Expected 'Descripcion' but found ${cells[3].getText()}"
+assert cells[6].getText().contains('Cant Operaciones') : "Expected 'Cant Operaciones' but found ${cells[6].getText()}"
+assert cells[9].getText().contains('Monto') : "Expected 'Monto' but found ${cells[9].getText()}"
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

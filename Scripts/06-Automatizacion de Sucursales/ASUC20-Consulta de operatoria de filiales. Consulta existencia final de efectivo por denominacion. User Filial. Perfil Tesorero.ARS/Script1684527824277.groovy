@@ -18,72 +18,59 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.support.ui.Select
+import java.awt.Robot
+import java.awt.event.KeyEvent
+
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
-
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando menu ?1
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Abre la pestaña del menú ?01
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Ir a Sucursal piloto
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
-
-//Selecciona D2 AUTOMATIZACION DE SUCURSALES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-
-//Selecciona CONSULTA OPERATORIA DE FILIALES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTASOPERATORIASDEFILIALES'))
-
-//Selecciona DETALLE DE OPERACIONES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkDETALLEDEOPERACIONES'))
-
-//Ir a EXISTENCIA POR DENOMINACION
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkEXISTENCIAPORDENOMINACION'))
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Sucursal Piloto","D2 - Automatizacion de Sucursales","CONSULTAS OPERATORIAS DE FILIALES","DETALLE DE OPERACIONES"]
+link = "EXISTENCIA POR DENOMINACION"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+WebUI.switchToWindowIndex(2)
 
 //Verifica titulo de BCCL.E.TT.CASH.DENOM y Seteo de Datos "Divisa", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblTituloBCCL.E.TT.CASH.DENOM'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/txtSucursalValue1'),6)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Divisa', 'ARS')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro de Caja', '9089')
-
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Valida si se visualiza la primera columna del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblFILAL'),6)
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblFILAL'))
-assert element.contains('FILAL')
+// Validar los textos de las celdas directamente
+WebElement table2 = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
+WebElement header = table2.findElement(By.tagName("tr"))
+List<WebElement> cells = header.findElements(By.tagName("th"))
 
-//Espera y verifica que se muestren los demás registros de la tabla
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblCANTIDAD'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblDESCCATEGORIA'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIDCAJERO'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIMPORTExDENOMINACION'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblIMPORTExMONEDA'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/BCCL.E.TT.CASH.DENOM/lblCATEGORIA'))
+assert cells[0].getText().contains('FILAL') : "Expected 'FILAL' but found ${cells[0].getText()}"
+assert cells[3].getText().contains('CATEGORIA') : "Expected 'CATEGORIA' but found ${cells[3].getText()}"
+assert cells[6].getText().contains('DESC CATEGORIA') : "Expected 'DESC CATEGORIA' but found ${cells[6].getText()}"
+assert cells[9].getText().contains('ID CAJERO') : "Expected 'ID CAJERO' but found ${cells[9].getText()}"
+assert cells[12].getText().contains('DENOMINACION') : "Expected 'DENOMINACION' but found ${cells[12].getText()}"
+assert cells[15].getText().contains('CANTIDAD') : "Expected 'CANTIDAD' but found ${cells[15].getText()}"
+assert cells[18].getText().contains('IMPORTEPOR DENOMINACION') : "Expected 'IMPORTEPOR DENOMINACION' but found ${cells[18].getText()}"
+assert cells[21].getText().contains('IMPORTEPOR MONEDA') : "Expected 'IMPORTEPOR MONEDA' but found ${cells[21].getText()}"
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -95,7 +82,6 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

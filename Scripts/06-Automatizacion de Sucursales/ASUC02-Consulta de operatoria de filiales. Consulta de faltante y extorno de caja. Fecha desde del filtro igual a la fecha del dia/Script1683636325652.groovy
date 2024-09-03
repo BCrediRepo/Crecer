@@ -59,13 +59,13 @@ WebElement header = table.findElement(By.tagName("tr"))
 List<WebElement> cells = header.findElements(By.tagName("th"))
 
 assert cells[0].getText().contains('Cuenta Interna Caja') : "Expected 'Cuenta Interna Caja' but found ${cells[0].getText()}"
-assert cells[3].getText().contains('Cuenta Interna') : "Expected 'Cuenta Interna' but found ${cells[1].getText()}"
-assert cells[6].getText().contains('Filial') : "Expected 'Filial' but found ${cells[2].getText()}"
-assert cells[9].getText().contains('Cajero') : "Expected 'Cajero' but found ${cells[3].getText()}"
-assert cells[12].getText().contains('Legajo Cajero') : "Expected 'Legajo Cajero' but found ${cells[4].getText()}"
-assert cells[15].getText().contains('Transaccion') : "Expected 'Transaccion' but found ${cells[5].getText()}"
-assert cells[18].getText().contains('Descripcion') : "Expected 'Descripcion' but found ${cells[6].getText()}"
-assert cells[21].getText().contains('Fecha') : "Expected 'Fecha' but found ${cells[7].getText()}"
+assert cells[3].getText().contains('Cuenta Interna') : "Expected 'Cuenta Interna' but found ${cells[3].getText()}"
+assert cells[6].getText().contains('Filial') : "Expected 'Filial' but found ${cells[6].getText()}"
+assert cells[9].getText().contains('Cajero') : "Expected 'Cajero' but found ${cells[9].getText()}"
+assert cells[12].getText().contains('Legajo Cajero') : "Expected 'Legajo Cajero' but found ${cells[12].getText()}"
+assert cells[15].getText().contains('Transaccion') : "Expected 'Transaccion' but found ${cells[15].getText()}"
+assert cells[18].getText().contains('Descripcion') : "Expected 'Descripcion' but found ${cells[18].getText()}"
+assert cells[21].getText().contains('Fecha') : "Expected 'Fecha' but found ${cells[21].getText()}"
 
 //Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
