@@ -28,6 +28,24 @@ import org.openqa.selenium.support.ui.Select
 import java.awt.Robot
 import java.awt.event.KeyEvent
 
+def clickLinkBotonTabla(String variable, int posVariable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posLink]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
+
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -93,44 +111,9 @@ long elapsedTime = endTime - startTime
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
 def codigoOperativo = "18602" //El codigo operativo 18602 corresponde a "Nota de Credito Ajuste sin Imp"
-// Obtén el elemento de la tabla
-WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
- 
-// Obtén todas las filas dentro de la tabla
-List<WebElement> rows = table.findElements(By.tagName("tr"))
-
-// Valor específico que estás buscando
-String targetValue = codigoOperativo
- 
-// Variable para rastrear si se encontró el valor específico
-boolean foundTargetValue = false
- 
-// Itera a través de las filas
-for (WebElement row : rows) {
-	// Obtiene el tercer valor de la fila (índice 2, ya que las listas son base cero)
-	WebElement cell = row.findElements(By.tagName("td"))[0]
- 
-	// Obtiene el texto de la celda
-	String cellText = cell.getText()
- 
-	// Compara el valor de la celda con el valor específico
-	if (cellText.equals(targetValue)) {
-		foundTargetValue = true
-			
-		// Obtiene la lista de elementos td
-		List<WebElement> tdList = row.findElements(By.tagName("td"))
-		
-		// Accede al elemento td en la posición 4 que es el detalle del codigo operativo buscado
-		WebElement tdElement = tdList[4]
- 
-		// Intenta encontrar el elemento 'a' dentro del elemento td
-		WebElement verDetalle = tdElement.findElement(By.tagName("a"))
- 
-		// Haz clic en el enlace
-		verDetalle.click()
-		
-		break
-	}
+def encontrado = false
+while (!encontrado) {
+	encontrado = clickLinkBotonTabla(codigoOperativo, 0, 4)	
 }
 
 //Se mueve a la ventana Detalle Transacciones No Efectivo

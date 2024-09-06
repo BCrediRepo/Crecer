@@ -6,15 +6,15 @@
    <elementGuidId>56e88e7d-788c-41b4-90a1-faad853f6193</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>.iconLink > img:nth-child(1)</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//tr[@id='r1']/td[19]/table/tbody/tr/td[2]/a/img</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Select Drilldown&quot;]</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>4dfb18ab-f6e0-4c32-9dbd-eecf2e756d9f</webElementGuid>
+      <webElementGuid>cca20096-40f6-41e7-8b01-06733db4f6ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Select Drilldown</value>
-      <webElementGuid>4d7d0e6d-a99b-435c-b15a-6b088af41ddf</webElementGuid>
+      <webElementGuid>21d4fefb-2270-476c-ae54-8d976a75b178</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/menu/go.gif</value>
-      <webElementGuid>38a77026-b86f-49c5-9d9d-91d81f72c7c9</webElementGuid>
+      <webElementGuid>2d42f884-2260-49af-9f7b-3fd39da30f71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEAPENQNOMBREDOC&quot;]/table[1]/tbody[1]/tr[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEAPENQNOMBREDOC&quot;]/td[2]/a[@class=&quot;iconLink&quot;]/img[1]</value>
-      <webElementGuid>5db09458-0a2d-44fc-9d56-3b781d129534</webElementGuid>
+      <webElementGuid>e4e6dba9-c6cc-4146-8ca8-8df5ac00a618</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[19]/table/tbody/tr/td[2]/a/img</value>
-      <webElementGuid>851e1c26-015b-4808-8282-9c3fbc63db0e</webElementGuid>
+      <webElementGuid>7661dce6-7e3d-49e6-a54e-5a418213833b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Select Drilldown']</value>
-      <webElementGuid>7c2cee9f-348c-4685-a66d-8521438da825</webElementGuid>
+      <webElementGuid>59a1110a-2e63-4fc6-ab54-a972292a3dd6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[19]/table/tbody/tr/td[2]/a/img</value>
-      <webElementGuid>07e3da6e-5e20-4837-b16a-9a95143e3a34</webElementGuid>
+      <webElementGuid>56b88ab9-d831-441c-aadf-dbc840ec21c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +78,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@alt = 'Select Drilldown' and @src = '../plaf/images/bccl/menu/go.gif']</value>
-      <webElementGuid>eb6f931f-96d9-4db1-9fd8-80ba4b99c216</webElementGuid>
+      <webElementGuid>3087da4d-d686-4a3a-966e-1a06f5739710</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

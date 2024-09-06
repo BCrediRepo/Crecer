@@ -66,7 +66,7 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BC
 	
 //Setear Codigo de Operacion 
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtCodigoOperacion'), '00743')
-
+WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtCodigoOperacion2'), '00743')
 //Seleccionar "boton radio button SI"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/rbtnSI'))
 
