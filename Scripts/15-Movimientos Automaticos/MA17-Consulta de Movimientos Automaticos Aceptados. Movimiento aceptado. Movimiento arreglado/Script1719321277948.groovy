@@ -18,6 +18,27 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
+
+def validarElementoEnTabla(String tabla, String variable, int colVariable, String razon, int colRazon) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[colVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+					String resultado = tdList[colRazon].getText()
+					println(resultado)
+			assert tdList[colRazon].getText().contains(razon) : "Expected " + razon + " but found ${tdList[colRazon].getText()}"
+			GlobalVariable.vTxn = resultado
+			return true
+		}
+	}
+	return false
+}
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -44,7 +65,7 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.RETURN','0')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.STATUS','POSTED')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','001')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.COD.SUC','076')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('SBL.SETTLEMENT','S')
 
 //ScreenShot
@@ -56,33 +77,37 @@ WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MO
 //Seleccionar primer registro
 WebUI.click(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.MOV.AUT.INP.DATA/BCCL.MOV.AUT.INP.DATA - Lista Default/btnVerRegistro'))
 
-//Verificar valor de "Sbl Cod Suc"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodSuc'))
+//Valido "Sbl Status"
+def encontrado = false
+while (!encontrado) {
+	encontrado = validarElementoEnTabla('tab1','Sbl Cod Suc', 0, "076", 2)
+}
+String Estado = GlobalVariable.vTxn
+assert Estado.contains('076')
 
-//Validar valor de "Sbl Cod Suc"
-def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodSuc'))
-assert element.contains('001')
+//Valido "Sbl Status"
+encontrado = false
+while (!encontrado) {
+	encontrado = validarElementoEnTabla('tab1','Sbl Return', 0, "0", 2)
+}
+String Estado1 = GlobalVariable.vTxn
+assert Estado1.contains('0')
 
-//Verificar valor de "Sbl Return"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturn'))
+//Valido "Sbl Status"
+encontrado = false
+while (!encontrado) {
+	encontrado = validarElementoEnTabla('tab1','Sbl Status', 0, "POSTED", 2)
+}
+String Estado2 = GlobalVariable.vTxn
+assert Estado2.contains('POSTED')
 
-//Validar valor de "Sbl Return"
-def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblReturn'))
-assert element2.contains('0')
-
-//Verificar valor de "Sbl Status POSTED Mov Arreglado"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusPOSTEDMovArreglado'))
-
-//Validar valor de "Sbl Status POSTED Mov Arreglado"
-def element3 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblStatusPOSTEDMovArreglado'))
-assert element3.contains('POSTED')
-
-//Verificar valor de "Sbl Settlement Aceptado"
-WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementAceptado'))
-
-//Validar valor de "Sbl Settlement Aceptado"
-def element4 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSettlementAceptado'))
-assert element4.contains('S')
+//Valido "Sbl Settlement"
+encontrado = false
+while (!encontrado) {
+	encontrado = validarElementoEnTabla('tab1','Sbl Settlement', 0, "S", 2)
+}
+String Estado3 = GlobalVariable.vTxn
+assert Estado3.contains('S')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

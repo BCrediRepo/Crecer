@@ -28,11 +28,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/lnkOperatoriaDeCajaReemplazo'))
+def menuDesplegable = ["Operatoria de Caja- Reemplazo", "Varios de Caja"]
+def link = "Egresos Varios de Caja"
 
-WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Operatoria de caja - reemplazo/lnkVariosDeCaja'))
-
-WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Operatoria de caja - reemplazo/Varios de caja/lnkEgresosVariosDeCaja'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('TELLER')
 

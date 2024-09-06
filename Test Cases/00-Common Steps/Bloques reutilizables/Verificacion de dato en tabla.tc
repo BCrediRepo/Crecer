@@ -4,5 +4,6 @@
    <name>Verificacion de dato en tabla</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>7493c62c-eaee-4398-b176-b0ad28e7e553</testCaseGuid>
 </TestCaseEntity>

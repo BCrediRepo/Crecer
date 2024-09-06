@@ -33,7 +33,6 @@ def link = "Pedido de Chequera"
 
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-
 //Switch a la ventana de impresion de acta
 WebUI.switchToWindowTitle('BCCL.CQ.SOLICITUD')
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/06-Pedido de Chequera/txtID.DECUENTA'), 6)

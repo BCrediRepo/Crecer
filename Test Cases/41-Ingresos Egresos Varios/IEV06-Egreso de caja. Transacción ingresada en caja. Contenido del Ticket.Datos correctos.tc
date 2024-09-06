@@ -4,5 +4,6 @@
    <name>IEV06-Egreso de caja. Transacción ingresada en caja. Contenido del Ticket.Datos correctos</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>db6c8802-4cd5-42c6-81fe-246560f5927e</testCaseGuid>
 </TestCaseEntity>

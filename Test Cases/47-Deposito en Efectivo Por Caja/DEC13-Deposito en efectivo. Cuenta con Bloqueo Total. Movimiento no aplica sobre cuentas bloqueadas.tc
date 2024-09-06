@@ -4,5 +4,6 @@
    <name>DEC13-Deposito en efectivo. Cuenta con Bloqueo Total. Movimiento no aplica sobre cuentas bloqueadas</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a5b652a1-9494-4695-8137-44b23b8e5088</testCaseGuid>
 </TestCaseEntity>

@@ -4,5 +4,6 @@
    <name>MA04-Consulta de Movimientos Automaticos Aceptados. Filtro por empresa y por secuencia</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>eb4ab123-3876-4f71-b176-addec84e16b9</testCaseGuid>
 </TestCaseEntity>

@@ -18,6 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Date
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -38,14 +42,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiamos a la ventana "Temenos T24"
 WebUI.switchToWindowTitle('Temenos T24')
 
-//Click en "Tarjetas"
-WebUI.click(findTestObject('02-Dashboard/lnkTarjetas311'))
+def menuDesplegable = ["Tarjetas", "Tarjetas de Deposito"]
+def link = "Consulta Tarjetas de Deposito"
 
-//Click en Tarjetas de Deposito"
-WebUI.click(findTestObject('02-Dashboard/lnkTarjetasdeDeposito'))
-
-//Click en Consulta Tarjetas de Deposito"
-WebUI.click(findTestObject('02-Dashboard/38-Tarjeta de Deposito/lnkConsultaTarjetasdeDeposito'))
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiamos a la ventana "BCCL.E.CARD.DEPOSIT"
 WebUI.switchToWindowTitle('BCCL.E.CARD.DEPOSIT')

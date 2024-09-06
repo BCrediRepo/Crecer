@@ -20,6 +20,10 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Date
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -44,14 +48,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambia a ventana con el nombre "Temenos T24"
 WebUI.switchToWindowTitle('Temenos T24')
 
-//Clickea en Tarjetas
-WebUI.click(findTestObject('02-Dashboard/lnkTarjetas311'))
+def menuDesplegable = ["Tarjetas", "Tarjetas de Deposito"]
+def link = "Consulta Padron de Empresas"
 
-//Clickea en Tarjetas de Deposito
-WebUI.click(findTestObject('02-Dashboard/lnkTarjetasdeDeposito'))
-
-//Clickea en Consulta Padron de Empresas
-WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ.BCCL.E.PADRON.EMPRESA/lnkConsultaPadrondeEmpresas'))
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambia a la ventana con el nombre "BBCL.E.PADRON.EMPRESA"
 WebUI.switchToWindowTitle('BCCL.E.PADRON.EMPRESA')

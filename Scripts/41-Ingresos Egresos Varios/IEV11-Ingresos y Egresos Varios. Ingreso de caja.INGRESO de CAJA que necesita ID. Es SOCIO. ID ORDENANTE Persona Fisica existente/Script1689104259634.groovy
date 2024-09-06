@@ -93,7 +93,6 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 
 //Click en Validar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnValidarRegistro'))
-WebUI.delay(3)
 
 //Maximiza la pantalla
 WebUI.maximizeWindow()
@@ -103,10 +102,11 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click en Aceptar
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/btnAceptarRegistro'))
-WebUI.delay(3)
 
-//Click en Aceptar Alertas
-WebUI.click(findTestObject('42-Ingresos Egresos Varios/TELLER-Ingresos/lnkAceptarAlertas'))
+// Verifica si el elemento está presente
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+}
 
 //Espera y recibe mensaje de tx completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/IngresosDeCaja/lblTxnCompleta'), 6)

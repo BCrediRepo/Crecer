@@ -42,7 +42,7 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //Maximizar Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0065823')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0061562')
 
 //Capturar el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -75,7 +75,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Auto
 
 //Validar la secuencia ingresada
 def element = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/BCCL.E.MOV.AUT.REJ/lblSecuencia'))
-assert element.contains('0065823')
+assert element.contains('0061562')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

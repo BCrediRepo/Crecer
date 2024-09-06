@@ -38,7 +38,7 @@ WebUI.switchToWindowTitle('Verificacion de firmas y facultades')
 
 //Ingresamos los datos
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-WebUI.setText(findTestObject('Object Repository/43-Verificacion de Firmas/05-Verificacion de firmas y facultades/txtNumero de Cuenta'), '00150044569')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Numero de Cuenta', '11370083398')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha (AAAAMMDD)', '20230801')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

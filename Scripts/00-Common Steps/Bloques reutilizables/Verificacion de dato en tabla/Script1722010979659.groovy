@@ -45,18 +45,18 @@ assert cells[7].getText().contains('Fec Valor') : "Expected 'Fec Valor' but foun
 
 //----------------------------------------------------------------
 
-def validarElementoEnTabla(String variable, int posVariable, String razon, int postdList) {
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("tab2"))
+def validarElementoEnTabla(String tabla, String variable, int colVariable, String razon, int colRazon) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
 	List<WebElement> rows = table.findElements(By.tagName("tr"))
 	for (WebElement row : rows) {
-		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		WebElement cell = row.findElements(By.tagName("td"))[colVariable]
 		String cellText = cell.getText()
 		if (cellText.equals(variable)) {
 			List<WebElement> tdList = row.findElements(By.tagName("td"))
-					String cuentauser = tdList[postdList].getText()
-					println(cuentauser)
-			assert tdList[postdList].getText().contains(razon) : "Expected " + razon + " but found ${tdList[postdList].getText()}"
-			GlobalVariable.vTxn = cuentauser
+					String resultado = tdList[colRazon].getText()
+					println(resultado)
+			assert tdList[colRazon].getText().contains(razon) : "Expected " + razon + " but found ${tdList[colRazon].getText()}"
+			GlobalVariable.vTxn = resultado
 			return true
 		}
 	}

@@ -4,5 +4,6 @@
    <name>APT19-Administrador de Piezas. Envio de Pieza a Otra Sucursal</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>920fddf8-92db-405f-8fa6-7b2e21ee80f2</testCaseGuid>
 </TestCaseEntity>

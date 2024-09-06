@@ -4,5 +4,6 @@
    <name>DEC15-Deposito en efectivo. Cuenta con Bloqueo a los Debitos</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1d4bf97c-a8c5-47a8-97ab-d5b41d3da817</testCaseGuid>
 </TestCaseEntity>
