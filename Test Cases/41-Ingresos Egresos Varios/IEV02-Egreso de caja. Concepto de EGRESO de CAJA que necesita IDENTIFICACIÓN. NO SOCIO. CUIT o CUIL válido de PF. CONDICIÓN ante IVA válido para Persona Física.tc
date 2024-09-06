@@ -4,5 +4,6 @@
    <name>IEV02-Egreso de caja. Concepto de EGRESO de CAJA que necesita IDENTIFICACIÓN. NO SOCIO. CUIT o CUIL válido de PF. CONDICIÓN ante IVA válido para Persona Física</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>93fbcdce-0f51-4e73-ba71-7d83a586ad0e</testCaseGuid>
 </TestCaseEntity>

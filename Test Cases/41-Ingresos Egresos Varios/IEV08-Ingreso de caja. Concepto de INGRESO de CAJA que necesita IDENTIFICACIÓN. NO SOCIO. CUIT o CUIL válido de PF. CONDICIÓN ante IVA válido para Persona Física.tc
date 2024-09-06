@@ -4,5 +4,6 @@
    <name>IEV08-Ingreso de caja. Concepto de INGRESO de CAJA que necesita IDENTIFICACIÓN. NO SOCIO. CUIT o CUIL válido de PF. CONDICIÓN ante IVA válido para Persona Física</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>98ddb3f1-7379-4b91-8dca-f90bd2089c73</testCaseGuid>
 </TestCaseEntity>

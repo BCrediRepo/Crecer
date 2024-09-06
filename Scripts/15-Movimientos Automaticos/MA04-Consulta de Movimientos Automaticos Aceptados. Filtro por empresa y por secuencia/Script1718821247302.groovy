@@ -43,7 +43,7 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Empresa','852')
 //Maximizar la Ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0363857')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Secuencia','0376944')
 
 //Tomar ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -83,7 +83,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Auto
 
 //Validar valor de "Sbl Secuence"
 def element2 = WebUI.getText(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblSecuence'))
-assert element2.contains('0363857')
+assert element2.contains('0376944')
 
 //Verificar valor de "Sbl Cod Emp"
 WebUI.verifyElementVisible(findTestObject('Object Repository/16-Movimientos Automaticos/Mov-Automaticos Data/lblSblCodEmp'))

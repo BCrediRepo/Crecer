@@ -4,5 +4,6 @@
    <name>IEV05-Egreso de caja. Contenido del ticket. Moneda Pesos</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5d30e163-db22-47c8-b756-094112e3fde3</testCaseGuid>
 </TestCaseEntity>

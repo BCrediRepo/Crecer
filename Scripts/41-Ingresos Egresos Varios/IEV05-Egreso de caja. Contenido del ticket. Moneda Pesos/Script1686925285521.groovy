@@ -28,9 +28,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/lnkPosteo'))
+def menuDesplegable = ["Posteo"]
+def link = "Egresos varios de caja"
 
-WebUI.click(findTestObject('02-Dashboard/41-Ingresos Egresos Varios/Posteo/lnkEgresosVariosDeCaja'))
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 WebUI.switchToWindowIndex(1)
 
@@ -62,6 +64,8 @@ def partes = stringCompleto.split(' ')
 
 def token = partes[2]
 
+WebUI.switchToWindowIndex(0)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
 WebUI.closeBrowser()
 
 //Configuracion de ambiente

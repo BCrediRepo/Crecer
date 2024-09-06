@@ -18,6 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -42,14 +46,11 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 //Cambiamos a la ventana Temenos T24
 WebUI.switchToWindowTitle('Temenos T24')
 
-//Clickeamos en Tarjetas
-WebUI.click(findTestObject('02-Dashboard/lnkTarjetas311'))
+def menuDesplegable = ["Tarjetas", "Tarjetas de Deposito"]
+def link = "Alta Tarjetas de Deposito PAGOCOOP"
 
-//Clickeamos en Tarjetas de Deposito
-WebUI.click(findTestObject('02-Dashboard/lnkTarjetasdeDeposito'))
-
-//Clickeamos en Tarjetas de Deposito PAGOCOOP
-WebUI.click(findTestObject('40-Tarjeta de Deposito/ENQ.BCCL.E.PADRON.EMPRESA/lnkAltaTPAGOCOOP'))
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiamos a la ventana con el nombre "Tarjetas de Depositos Pago Coop"
 WebUI.switchToWindowTitle('Tarjetas de Depositos Pagos Coop')

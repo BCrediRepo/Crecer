@@ -34,7 +34,7 @@ import java.time.format.DateTimeFormatter
 import java.time.DayOfWeek
 
 //FALTA CUENTA QUE TENGA FTs 2 DIAS ANTES DE LA FECHACOB
-def cuenta = ''
+def cuenta = '11370083398'
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)

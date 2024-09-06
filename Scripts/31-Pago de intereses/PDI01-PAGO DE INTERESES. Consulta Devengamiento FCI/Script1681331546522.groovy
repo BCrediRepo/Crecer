@@ -18,6 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Date
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -38,9 +42,11 @@ WebUI.switchToWindowTitle('Temenos T24')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/30-Pago de intereses/spanTasas FCI'))
+def menuDesplegable = ["Tasas FCI"]
+def link = "Consulta Devengamiento para FCI"
 
-WebUI.click(findTestObject('Object Repository/02-Dashboard/30-Pago de intereses/01-Tasas FCI/lnkConsultaDevengamiento para FCI'))
+//si el menú que busco está en Temenos T24, uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 WebUI.switchToWindowTitle('BCCL.E.DEVENGAMIENTO.FCI')
 

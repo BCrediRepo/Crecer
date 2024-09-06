@@ -4,5 +4,6 @@
    <name>DEC12-Deposito en efectivo. Importe excede el limite superior de atesoramiento</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>18acd805-bd82-4934-9688-b6803f934b57</testCaseGuid>
 </TestCaseEntity>

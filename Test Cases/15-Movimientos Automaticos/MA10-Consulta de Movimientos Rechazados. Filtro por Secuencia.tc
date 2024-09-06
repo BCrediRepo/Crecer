@@ -4,5 +4,6 @@
    <name>MA10-Consulta de Movimientos Rechazados. Filtro por Secuencia</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>ca5de08a-f605-48d6-906e-796428d40a07</testCaseGuid>
 </TestCaseEntity>

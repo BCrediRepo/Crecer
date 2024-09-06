@@ -4,5 +4,6 @@
    <name>MA17-Consulta de Movimientos Automaticos Aceptados. Movimiento aceptado. Movimiento arreglado</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>3594c173-9581-48c6-9424-ade5178f7b8e</testCaseGuid>
 </TestCaseEntity>

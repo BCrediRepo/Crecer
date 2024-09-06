@@ -4,5 +4,6 @@
    <name>PDI01-PAGO DE INTERESES. Consulta Devengamiento FCI</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>f5b775c6-0ace-4a4c-bbc8-0b369457a49c</testCaseGuid>
 </TestCaseEntity>
