@@ -25,13 +25,8 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('ACCOUNT', 1)
 
-//Seteamos en el commandline
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ACCOUNT')
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana CUENTAS
-WebUI.switchToWindowTitle('CUENTAS')
 
 //Maximizamos
 WebUI.maximizeWindow()
@@ -40,17 +35,12 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/14-CUENTAS/txtACCOUNT'), '00895279312')
 
 //Click en ver registro
-WebUI.click(findTestObject('Object Repository/23-Impuestos/14-CUENTAS/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
-//Switch a la ventana principal
+WebUI.closeWindowIndex(1)
 WebUI.switchToWindowIndex(0)
 
-//seteamos en el commandline
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.PERSONA')
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana ARCHIVOS PERSONAS
-WebUI.switchToWindowTitle('ARCHIVOS PERSONAS')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('BCCL.PERSONA', 1)
 
 //Maximizamos
 WebUI.maximizeWindow()
@@ -58,9 +48,7 @@ WebUI.maximizeWindow()
 //Ingresamos los datos
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/15-ARCHIVOS PERSONAS/txtBCCL.PERSONA'), '1000740898')
 
-//Click en ver registro
-WebUI.click(findTestObject('Object Repository/23-Impuestos/14-CUENTAS/btnVerRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/15-ARCHIVOS PERSONAS/lblPer Co Cprov'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/15-ARCHIVOS PERSONAS/lblPer Co Cprov'))
@@ -69,15 +57,10 @@ def element = WebUI.getText(findTestObject('Object Repository/23-Impuestos/15-AR
 
 assert element.contains('Per Co Cprov')
 
-//Switch a la ventana Principal
+WebUI.closeWindowIndex(1)
 WebUI.switchToWindowIndex(0)
 
-//seteamos en el commandline
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.ALICUOTAS')
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana BCCL.ALICUOTA
-WebUI.switchToWindowTitle('BCCL.ALICUOTAS')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('BCCL.PERSONA', 1)
 
 //Maximizamos
 WebUI.maximizeWindow()
@@ -86,7 +69,7 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/txtBCCL.ALICUOTAS'), 'SE01AA.20150706')
 
 //Click en ver registro
-WebUI.click(findTestObject('Object Repository/23-Impuestos/14-CUENTAS/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/spanNumerales'), 6)
@@ -99,14 +82,10 @@ assert element2.contains('Numerales')
 //Switch a la ventana Principal
 WebUI.switchToWindowIndex(0)
 
-//Click de cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
+def menuDesplegable = ['Cuentas', 'Consultas de Cuentas']
+def link = 'Consulta de Saldo al Dia'
 
-//Click en consultas de cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
-
-//Click en consulta de saldo al dia
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultadeSaldoalDia'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana Saldos de Cuenta
 WebUI.switchToWindowTitle('Saldos de Cuenta')
@@ -114,9 +93,7 @@ WebUI.switchToWindowTitle('Saldos de Cuenta')
 //Maximizamos
 WebUI.maximizeWindow()
 
-//Ingresamos la cuenta a consultar
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/txtCuenta'), '00895279312')
-
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00895279312')
 //Click en ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 

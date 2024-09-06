@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>img[alt=&quot;Ver Detalle&quot;]</value>
+         <value>.enqdrilldowncell > a:nth-child(1) > img:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>6d5c10da-56c6-4225-b8ed-112f343f6a9f</webElementGuid>
+      <webElementGuid>3bc7047c-cca7-487a-91ee-250126879d46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/enquiry/drilldown/view.gif</value>
-      <webElementGuid>78735c22-b072-4c69-be1b-0df5c8298b21</webElementGuid>
+      <webElementGuid>9ee78b99-df68-49df-9ea7-2e24f1d884bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Ver Detalle</value>
-      <webElementGuid>a1a410cc-5f89-4367-8bf6-a8223045b157</webElementGuid>
+      <webElementGuid>6e2549d4-dcb1-4861-a1a1-fc9c4be2cc4a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Ver Detalle</value>
-      <webElementGuid>9fa583b4-cc3f-4874-82a9-a8ffef990d13</webElementGuid>
+      <webElementGuid>426af34c-4506-4117-8bf1-207fa16162c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;r1&quot;)/td[@class=&quot;enqdrilldowncell enqdrilldowncell_BCCLEEBTOTALUSUARIOSMEDET&quot;]/a[1]/img[1]</value>
-      <webElementGuid>61500919-2d96-42a3-a9b9-420b12726c56</webElementGuid>
+      <webElementGuid>06c15961-612c-456c-b07b-d095d3728443</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='r1']/td[3]/a/img</value>
-      <webElementGuid>9f40b896-12a1-404e-88f0-23e259a4d5e8</webElementGuid>
+      <webElementGuid>4d3819d6-9a7a-4d5c-adf5-8b8089864a6d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='Ver Detalle']</value>
-      <webElementGuid>3562104d-ebdf-4386-be6a-e189e6c51d8b</webElementGuid>
+      <webElementGuid>29b8fd4c-cb07-448e-b6f7-7c4dc10535a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>3e84b9f0-edfa-4b2a-9232-21d3c073f3f0</webElementGuid>
+      <webElementGuid>50c06e38-9c70-4f50-932c-5707f38343ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/enquiry/drilldown/view.gif' and @alt = 'Ver Detalle' and @title = 'Ver Detalle']</value>
-      <webElementGuid>de5eb402-d97d-42a5-b37a-115999dc7657</webElementGuid>
+      <webElementGuid>65ba3b5d-fa21-4197-9a5f-51852e12b961</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
