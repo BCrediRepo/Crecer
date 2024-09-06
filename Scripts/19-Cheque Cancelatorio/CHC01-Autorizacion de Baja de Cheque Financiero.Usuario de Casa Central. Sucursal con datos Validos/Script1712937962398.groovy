@@ -25,32 +25,14 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "?1" en el comandline
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscar'), '?1')
+def menuDesplegable = ["Sucursal Piloto", "D3 - CC1", "CC1 - Cheques certificados y Financieros", "CHEQUES FINANCIEROS"]
+def link = "AUTORIZACION DE BAJA DE CHEQUES FINANCIEROS"
 
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?1"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Cambiar a la ventana de "Temenos T24"
-WebUI.switchToWindowIndex(1)
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
-
-//Maximizar Ventana
-WebUI.maximizeWindow()
-
-//Seleccionar "D3 - CC1"
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/spanD3-CC1'))
-
-//Seleccionar "CC1 - Cheques certificados y Financieros"
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/spanCC1-ChequesCertificadosyFinancieros'))
-
-//Seleccionar "CHEQUES FINANCIEROS"
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/CC1/Cheques Certificados y Financieros/spanChequesFinancieros'))
-
-//Seleccionar "AUTORIZACION DE BAJA DE CHEQUES FINANCIEROS"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/05-SucursalPiloto/CC1/Cheques Certificados y Financieros/CHEQUES FINANCIEROS/lnkAUTORIZACIONDEBAJADECHEQUESFINANCIEROS'))
+//Navegar por el menu Temenos T24
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar a la ventana "BCCL.CQ.CF.AUT.BAJA"
 WebUI.switchToWindowIndex(2)
@@ -69,7 +51,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Seleccionar "Autorizar"
-WebUI.click()
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 //Seleccionar "boton Autorizar Registro"
 WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnAutorizarRegistro'))

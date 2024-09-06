@@ -3,19 +3,19 @@
    <description></description>
    <name>lblEstado</name>
    <tag></tag>
-   <elementGuidId>6edf9855-b232-4846-88e5-9fd709d66e56</elementGuidId>
+   <elementGuidId>0ae19693-310c-464c-92fe-1e06390cd014</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Estado' or . = 'Estado')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(2)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[5]/td</value>
+         <value>//table[@id='enqheader']/tbody/tr[5]/td[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'CERRADA' or . = 'CERRADA')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,94 +26,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>38d3469b-f9f1-454d-8c18-b45eceb86ad3</webElementGuid>
+      <webElementGuid>96ad1cde-1984-4888-9cdc-81c6752561e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVCER</value>
-      <webElementGuid>0aedc483-02b1-4ea5-b43d-f68e98b4b674</webElementGuid>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVCER</value>
+      <webElementGuid>2b81d220-4ccc-40bb-8306-c66bd65f414b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Estado</value>
-      <webElementGuid>418cb36f-4376-4d1d-af26-7c03cab6434b</webElementGuid>
+      <value>CERRADA</value>
+      <webElementGuid>093ffc23-0a62-466c-8904-f99c63a3877e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[5]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVCER&quot;]</value>
-      <webElementGuid>47a2d63c-4a00-416d-92a4-baca848d5185</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[5]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVCER&quot;]</value>
+      <webElementGuid>9d211f48-5d3d-4b35-99e8-dec19b941e9d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr[5]/td</value>
-      <webElementGuid>620af2be-e3f1-46dc-93e1-ec1f51dc16bb</webElementGuid>
+      <value>//table[@id='enqheader']/tbody/tr[5]/td[2]</value>
+      <webElementGuid>225d02c8-686e-434d-ab12-df6563891b09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS PESOS ARGENTINOS'])[1]/following::td[1]</value>
-      <webElementGuid>7976b472-1ce0-4012-95d3-924cbd070ebd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado'])[1]/following::td[1]</value>
+      <webElementGuid>052c7170-85d2-4cae-89be-b24112b2f8a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/following::td[2]</value>
-      <webElementGuid>51e4d263-cf4b-40ff-9c06-6e490688b56a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS PESOS ARGENTINOS'])[1]/following::td[2]</value>
+      <webElementGuid>9705416a-10a7-49bc-972a-82c37032e484</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='CERRADA'])[1]/preceding::td[1]</value>
-      <webElementGuid>4d5897c8-c9b7-4d0c-8b06-22bc2f25ecf0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Cierre'])[1]/preceding::td[1]</value>
+      <webElementGuid>8009b4a5-169b-47fc-aa75-77f522905f1c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Cierre'])[1]/preceding::td[2]</value>
-      <webElementGuid>d1b69a9f-dec6-4070-9757-b98738f584bd</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado'])[1]/preceding::td[3]</value>
+      <webElementGuid>421d2865-8d2e-4656-861d-243763341e7b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Estado']/parent::*</value>
-      <webElementGuid>8a61161f-f002-41e3-85b4-9c2c2484b2d7</webElementGuid>
+      <value>//*/text()[normalize-space(.)='CERRADA']/parent::*</value>
+      <webElementGuid>e0a83f09-0501-41dd-9fc3-a6a7fce45ab7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[5]/td</value>
-      <webElementGuid>f3f3f7ab-d45a-422c-9482-afd6a2efa5bf</webElementGuid>
+      <value>//tr[5]/td[2]</value>
+      <webElementGuid>7f96d762-5993-4aba-9988-c33d5fd86e0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'Estado' or . = 'Estado')]</value>
-      <webElementGuid>84b3b76e-4d22-4efe-9a14-98dbbad7e54c</webElementGuid>
+      <value>//td[(text() = 'CERRADA' or . = 'CERRADA')]</value>
+      <webElementGuid>5d1a1f9d-fd02-47fc-937c-8a9d87a9da0f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

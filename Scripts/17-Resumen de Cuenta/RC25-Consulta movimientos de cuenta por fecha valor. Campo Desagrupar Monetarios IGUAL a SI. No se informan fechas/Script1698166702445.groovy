@@ -37,6 +37,9 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //Es valido que aparezca el texto "SIN MOVIMIENTOS" por que cuando el campo 'Fecha desde' esta vacio, muestra los movimientos de la fecha today.En este caso no tiene movimientos.
 
@@ -68,6 +71,17 @@ long startTime = System.currentTimeMillis()
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Parsear FechaCOB
+fecha = GlobalVariable.vFechaCOB
+	
+//Parsear la fecha de String a LocalDate
+DateTimeFormatter formatoEntrada = DateTimeFormatter.ofPattern("yyyyMMdd")
+LocalDate fechaParseo = LocalDate.parse(fecha, formatoEntrada)
+		
+//Convertir la fecha al nuevo formato dd-MM-yyyy
+DateTimeFormatter formatoSalida = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaParseada = fechaParseo.format(formatoSalida)
 
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
@@ -114,6 +128,10 @@ assert cells[15].getText().contains('Monto Credito') : "Expected 'Mon' but found
 assert cells[18].getText().contains('Saldo') : "Expected 'Importe' but found ${cells[18].getText()}"
 assert cells[21].getText().contains('Fecha Ingr') : "Expected 'Fec Valor' but found ${cells[21].getText()}"
 assert cells[24].getText().contains('Combte') : "Expected 'Fec Valor' but found ${cells[24].getText()}"
+
+//Validar primer resultado de la columna "fecha valor"
+def fechaValor = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/Movimientos de Ctas por Fecha Valor/lblNumFecValor'))
+assert fechaValor.contains(fechaParseada)
 
 //Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

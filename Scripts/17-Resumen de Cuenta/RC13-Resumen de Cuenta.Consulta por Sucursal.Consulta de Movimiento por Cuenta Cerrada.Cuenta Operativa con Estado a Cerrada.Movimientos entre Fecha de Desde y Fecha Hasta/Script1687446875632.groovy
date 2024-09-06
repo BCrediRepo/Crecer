@@ -23,27 +23,24 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 25), findTestData('MainData/Users').getValue(2, 25))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "ENQ BCCL.E.RES.CTA.MOV.CER" en el buscador
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.CER')
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "ENQ BCCL.E.RES.CTA.MOV.CER"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.RES.CTA.MOV.CER", 1)
 
 //Cambiar a la ventana "Movimientos Cuenta Cerrada"
 WebUI.switchToWindowIndex(1)
 
-//Seteo de Datos "Nro. Cuenta", "Fecha Desde", "Fecha Hasta"
+//Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Maximizar ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','01195030041')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20171201')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','03645259635')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220707')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOB)
 
 //Capturar tiempo de inicio
@@ -53,25 +50,29 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verificar Estado de la Cuenta
-WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
 
 //Validar Estado de la Cuenta
-def element = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
-assert element.contains('CERRADA')
+def estadoCuenta = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
+assert estadoCuenta.contains('CERRADA')
 
-//Verificar Fecha Estado
+//Verificar que aparezca en el encabezado "Fecha Estado"
 WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaEstado'))
 
 //Validar Fecha Estado
-def element2 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaEstado'))
-assert element2.contains('Fecha Estado')
+def fechaEstado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaEstado'))
+assert fechaEstado.contains('Fecha Estado')
 
-//Verificar Fecha Cierre
+//Verificar que aparezca en el encabezado "Fecha Cierre"
 WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaCierre'))
 
 //Validar Fecha Cierre
-def element3 = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaCierre'))
-assert element3.contains('Fecha Cierre')
+def fechaCierre = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaCierre'))
+assert fechaCierre.contains('Fecha Cierre')
+
+//Validar primer valor de la columna Fecha
+primeraFecha = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblValorFecha'))
+assert primeraFecha.contains('07 JUL 2022')
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()

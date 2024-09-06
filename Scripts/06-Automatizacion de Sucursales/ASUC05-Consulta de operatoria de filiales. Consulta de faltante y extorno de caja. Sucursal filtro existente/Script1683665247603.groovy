@@ -37,12 +37,13 @@ menuDesplegable = ["Consulta de operatoria"]
 link = "Consulta de Caja Faltantes/Extonos Caja"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA')
+//Cambiar a la ventana"BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA"
+WebUI.switchToWindowIndex(2)
 
 //Verifica titulo de Caja Faltantes Extonos Caja
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lbltituloBCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA'))
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', GlobalVariable.vFechaCOB)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Transaccion', '4')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
 
@@ -51,7 +52,7 @@ long startTime = System.currentTimeMillis()
 
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-WebUI.delay(15)
+//WebUI.delay(15)
 WebUI.maximizeWindow()
 
 // Validar los textos de las celdas directamente

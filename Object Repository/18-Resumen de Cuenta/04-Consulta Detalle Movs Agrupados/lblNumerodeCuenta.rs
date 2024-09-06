@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblEstadoCerrado</name>
+   <name>lblNumerodeCuenta</name>
    <tag></tag>
-   <elementGuidId>0ae19693-310c-464c-92fe-1e06390cd014</elementGuidId>
+   <elementGuidId>fa8b8861-6d59-4829-8e9f-6f21a0211ccd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(2)</value>
+         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[5]/td[2]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'CERRADA' or . = 'CERRADA')]</value>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,94 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>96ad1cde-1984-4888-9cdc-81c6752561e4</webElementGuid>
+      <webElementGuid>682d9b7e-626c-4f55-859b-e0f5c7167b46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVCER</value>
-      <webElementGuid>2b81d220-4ccc-40bb-8306-c66bd65f414b</webElementGuid>
+      <value>ENQ-H-DATA ENQ-H-DATA_BCCLEDETMOVAGR</value>
+      <webElementGuid>4ff5a3ef-9573-4b92-8f35-33fc0a97a7b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>CERRADA</value>
-      <webElementGuid>093ffc23-0a62-466c-8904-f99c63a3877e</webElementGuid>
+      <value>01000021927</value>
+      <webElementGuid>16127ccd-b814-4a8f-ab9e-7f1fb730b8b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[5]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVCER&quot;]</value>
-      <webElementGuid>9d211f48-5d3d-4b35-99e8-dec19b941e9d</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLEDETMOVAGR&quot;]</value>
+      <webElementGuid>e1663fd0-1aa4-4a7e-a5f5-2879ae6d4e75</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr[5]/td[2]</value>
-      <webElementGuid>225d02c8-686e-434d-ab12-df6563891b09</webElementGuid>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
+      <webElementGuid>98c96d6b-0e2c-460b-9c95-e40028936878</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Estado'])[1]/following::td[1]</value>
-      <webElementGuid>052c7170-85d2-4cae-89be-b24112b2f8a1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nro. de Cuenta'])[1]/following::td[1]</value>
+      <webElementGuid>b3f76d4e-88fe-4c94-9583-02592e84267a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS PESOS ARGENTINOS'])[1]/following::td[2]</value>
-      <webElementGuid>9705416a-10a7-49bc-972a-82c37032e484</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
+      <webElementGuid>1e4ae14b-ba22-4c25-a04d-ace993c9125c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Motivo Cierre'])[1]/preceding::td[1]</value>
-      <webElementGuid>8009b4a5-169b-47fc-aa75-77f522905f1c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Valor'])[1]/preceding::td[1]</value>
+      <webElementGuid>8f217dc5-a9f8-4640-a3ae-8b0aa17945cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha Estado'])[1]/preceding::td[3]</value>
-      <webElementGuid>421d2865-8d2e-4656-861d-243763341e7b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fecha'])[1]/preceding::td[4]</value>
+      <webElementGuid>d2b13b06-6f36-4568-ba83-86c5974cf70f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='CERRADA']/parent::*</value>
-      <webElementGuid>e0a83f09-0501-41dd-9fc3-a6a7fce45ab7</webElementGuid>
+      <value>//*/text()[normalize-space(.)='01000021927']/parent::*</value>
+      <webElementGuid>a9f298c1-32e9-4bd8-b076-15dd61712d52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[5]/td[2]</value>
-      <webElementGuid>7f96d762-5993-4aba-9988-c33d5fd86e0c</webElementGuid>
+      <value>//tr[2]/td[2]</value>
+      <webElementGuid>e8af6709-a640-4ae2-88ba-9a93156ce33f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = 'CERRADA' or . = 'CERRADA')]</value>
-      <webElementGuid>5d1a1f9d-fd02-47fc-937c-8a9d87a9da0f</webElementGuid>
+      <value>//td[(text() = '01000021927' or . = '01000021927')]</value>
+      <webElementGuid>58a743ab-96ac-4b3c-801f-5440f9b6a3b9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

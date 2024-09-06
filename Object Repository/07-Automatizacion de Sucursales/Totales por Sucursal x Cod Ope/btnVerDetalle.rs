@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#r4 > td:nth-child(5) > a:nth-child(1) > img:nth-child(1)</value>
+         <value>#r1 > td:nth-child(3) > a:nth-child(1) > img:nth-child(1)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>9a230e80-cfbb-4426-97d8-d42d30ddc670</webElementGuid>
+      <webElementGuid>f27cfe42-fc8c-4f50-9d79-91b7b6102806</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/deal/dropdown.gif</value>
-      <webElementGuid>e8450672-cf98-4e19-b9b7-0f950778c45d</webElementGuid>
+      <webElementGuid>52bb0ec3-2f05-4d30-be87-31bc154e76ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dropdown_button dropdown_button_BCCLEEBTOTALFILIALME</value>
-      <webElementGuid>a026f7b3-b87a-4ff4-a343-d20c323a259b</webElementGuid>
+      <webElementGuid>fae80724-1b5a-4931-abcf-b5f3e041a8b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;selectiondisplay&quot;)/tbody[1]/tr[1]/td[4]/a[@class=&quot;keyboardlinks-scanned&quot;]/img[@class=&quot;dropdown_button dropdown_button_BCCLEEBTOTALFILIALME&quot;]</value>
-      <webElementGuid>34f2ea76-90e2-40fd-b59a-e58ff958f167</webElementGuid>
+      <webElementGuid>fbac961a-8ed2-49c9-9598-de12fd7c1084</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='selectiondisplay']/tbody/tr/td[4]/a/img</value>
-      <webElementGuid>5068b9f5-8fbb-42d2-bdeb-281129202baa</webElementGuid>
+      <webElementGuid>ebc0f764-a9fc-413a-93d8-b3549dfd4425</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/img</value>
-      <webElementGuid>8fa1bbd7-a1a1-4da2-b036-d2437cdd408d</webElementGuid>
+      <webElementGuid>c2e366f2-4939-4f09-bfb1-92e59de8ddcc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,6 +70,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/deal/dropdown.gif']</value>
-      <webElementGuid>2862a1e7-e54f-46a1-a6d9-4f30e67cfe79</webElementGuid>
+      <webElementGuid>2ecac0dc-266d-4f8a-b6ab-e0e40d28c7ed</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

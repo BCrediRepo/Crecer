@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lblCuenta</name>
+   <name>lblNrodeCuenta</name>
    <tag></tag>
-   <elementGuidId>9273c3b8-573d-4e3f-acb3-b51146923651</elementGuidId>
+   <elementGuidId>c570da80-4356-4f2d-abc7-fd047ee957de</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#enqheader > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)</value>
+         <value>td.ENQ-H-TITLE.ENQ-H-TITLE_BCCLERESCTAMOVCER</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '01000021927 COUTSIERS MARIELA ALEJANDRA' or . = '01000021927 COUTSIERS MARIELA ALEJANDRA')]</value>
+         <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,94 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>49e428a9-3d30-4322-9ba0-326fa121215f</webElementGuid>
+      <webElementGuid>acb21a9b-d149-4e51-ae4d-7d2e8a2ef326</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVCER</value>
-      <webElementGuid>c9c44e9f-9816-4d56-893b-797f25fc52eb</webElementGuid>
+      <value>ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVCER</value>
+      <webElementGuid>64c9f48d-2be3-4e87-a026-afb54420f059</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>01000021927 COUTSIERS MARIELA ALEJANDRA</value>
-      <webElementGuid>4ad528f5-28c3-4fe0-be1a-02f22ab820bf</webElementGuid>
+      <value>Nro. de Cuenta</value>
+      <webElementGuid>32da1857-42ec-4680-9613-35f9750120dd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-DATA ENQ-H-DATA_BCCLERESCTAMOVCER&quot;]</value>
-      <webElementGuid>81be27c9-d6c0-4f7a-bb37-cc2a1cadac54</webElementGuid>
+      <value>id(&quot;enqheader&quot;)/tbody[1]/tr[2]/td[@class=&quot;ENQ-H-TITLE ENQ-H-TITLE_BCCLERESCTAMOVCER&quot;]</value>
+      <webElementGuid>b77e4eb0-3023-4eca-803c-ac20363b21f3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//table[@id='enqheader']/tbody/tr[2]/td[2]</value>
-      <webElementGuid>cdf3d6d6-f04b-4958-a45a-090246083c30</webElementGuid>
+      <value>//table[@id='enqheader']/tbody/tr[2]/td</value>
+      <webElementGuid>fed40a97-b622-465f-929c-374a915f0155</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nro. de Cuenta'])[1]/following::td[1]</value>
-      <webElementGuid>1ad62b34-9beb-466f-a56a-6d8478ba91d0</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[3]</value>
+      <webElementGuid>73ca1b7a-ef9d-496d-bdf5-e4e3f2d6fec8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::td[4]</value>
-      <webElementGuid>d1836742-90d3-4024-a274-e46f3491f580</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::td[4]</value>
+      <webElementGuid>b572c8a4-339b-429c-b941-8092c574ec33</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto'])[1]/preceding::td[1]</value>
-      <webElementGuid>0e6dccb8-7625-43fd-974f-cdd0a3a69d3f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Producto'])[1]/preceding::td[2]</value>
+      <webElementGuid>52457ae3-2901-428c-ae82-7ab141a16768</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[3]</value>
-      <webElementGuid>fd912201-fcc8-4f68-815a-0b448f24ae5e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Moneda'])[1]/preceding::td[4]</value>
+      <webElementGuid>c8cfa4fc-4b9f-4d67-b8fd-cc3277b70031</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='01000021927 COUTSIERS MARIELA ALEJANDRA']/parent::*</value>
-      <webElementGuid>bb332537-d24a-407c-a3f9-3e85820ff7df</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Nro. de Cuenta']/parent::*</value>
+      <webElementGuid>f6fbdf77-e219-4bdf-916d-8b438931df78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[2]/td[2]</value>
-      <webElementGuid>4f8e39cb-2544-4848-9768-d66531ee5b7b</webElementGuid>
+      <value>//tr[2]/td</value>
+      <webElementGuid>1fc5433d-c6b4-493e-86aa-91066972a8bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '01000021927 COUTSIERS MARIELA ALEJANDRA' or . = '01000021927 COUTSIERS MARIELA ALEJANDRA')]</value>
-      <webElementGuid>a91d1dce-906f-4a52-8fe5-06805e3cbf8a</webElementGuid>
+      <value>//td[(text() = 'Nro. de Cuenta' or . = 'Nro. de Cuenta')]</value>
+      <webElementGuid>9e5743b8-8f76-449c-bbf6-c27663de9aa0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -32,6 +32,8 @@ import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.time.LocalDate
+import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -41,14 +43,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "ENQ BCCL.E.DET.MOV.AGR" en el buscador
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.DET.MOV.AGR')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Cambiar a la ventana "Consulta Detalle Movs Agrupados"
-WebUI.switchToWindowIndex(1)
+//Ejecutar en la linea de comando "ENQ BCCL.E.DET.MOV.AGR"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.DET.MOV.AGR", 1)
 
 //Seteo de Datos "Numero de Cuenta", "Fecha Valor", "Codigo Agrupamiento", "Agrup de Impuestos"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -63,6 +59,17 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Agrup de Impuestos','IDC')
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+
+//Parsear FechaCOB
+fecha = GlobalVariable.vFechaCOB
+	
+//Parsear la fecha de String a LocalDate
+DateTimeFormatter formatoEntrada = DateTimeFormatter.ofPattern("yyyyMMdd")
+LocalDate fechaParseo = LocalDate.parse(fecha, formatoEntrada)
+		
+//Convertir la fecha al nuevo formato dd-MM-yyyy
+DateTimeFormatter formatoSalida = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+String fechaParseada = fechaParseo.format(formatoSalida)
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -94,7 +101,7 @@ assert cells[21].getText().contains('Combte') : "Expected 'Fec Valor' but found 
 
 //Validar Fecha valor
 def fechaValor = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/04-Consulta Detalle Movs Agrupados/lblFechaValor'))
-assert fechaValor.contains(GlobalVariable.vFechaCOB)
+assert fechaValor.contains(fechaParseada)
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()

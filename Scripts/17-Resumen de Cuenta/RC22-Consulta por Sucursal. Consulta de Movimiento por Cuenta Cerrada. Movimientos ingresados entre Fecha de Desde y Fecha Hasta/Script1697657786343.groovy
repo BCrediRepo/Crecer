@@ -27,14 +27,8 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 
-//Setear "ENQ BCCL.E.RES.CTA.MOV.CER" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.CER')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar a la ventana "Movimientos Cuenta Cerrada"
-WebUI.switchToWindowIndex(1)
+//Ejecutar en la linea de comando "ENQ BCCL.E.RES.CTA.MOV.CER"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.RES.CTA.MOV.CER", 1)
 
 //Seteo de Datos "Nro. Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -42,8 +36,8 @@ WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 //Maximizar ventana
 WebUI.maximizeWindow()
 
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','01000021927')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220901')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro. Cuenta','03645259635')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde','20220707')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Hasta',GlobalVariable.vFechaCOB)
 
 //Capturar tiempo de inicio
@@ -52,7 +46,7 @@ long startTime = System.currentTimeMillis()
 //Seleccionar boton Ejecutar
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-WebUI.verifyElementVisible(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblNrodeCuenta'))
 
 //Capturar tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -67,15 +61,16 @@ WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
 println(TotalRegistros)
 
-//Validar numero de cuenta, Estado, Fecha Estado y Fecha Cierre
-cuenta = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblCuenta'))
-assert cuenta.contains('01000021927')
-estado = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
+//Validar estado de la cuenta, Fecha Estado, Fecha Cierre y primer valor de la columna Fecha
+estado = WebUI.getText(findTestObject('18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
 assert estado.contains('CERRADA') 
 fechaEstado = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaEstado'))
 assert fechaEstado.contains('Fecha Estado')
 fechaCierre = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblFechaCierre'))
 assert fechaCierre.contains('Fecha Cierre')
+primeraFecha = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblValorFecha'))
+assert primeraFecha.contains('07 JUL 2022')
+
 //---------------------------------------------------------------------------------------------------------------------
 //Control Fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed

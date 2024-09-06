@@ -78,7 +78,7 @@ def SaldoCierre = WebUI.getText(findTestObject('Object Repository/18-Resumen de 
 assert SaldoCierre.contains('Saldo Cierre')
 
 //Validar "CERRADA"
-def estadoACTIVA = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstadoCerrado'))
+def estadoACTIVA = WebUI.getText(findTestObject('Object Repository/18-Resumen de Cuenta/05-Movimientos Cuenta Cerrada/lblEstado'))
 assert estadoACTIVA.contains('CERRADA')
 
 //Control de fin de script

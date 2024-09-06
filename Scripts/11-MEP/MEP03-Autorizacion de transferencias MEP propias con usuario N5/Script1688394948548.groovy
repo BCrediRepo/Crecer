@@ -32,7 +32,8 @@ def link = "Autorizaciones Pendientes"
 //Si el menu que busco está en dashboard uso esta funcion
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-WebUI.switchToWindowTitle('BCCL.E.AUTHORIZATION')
+//Cambiar de ventana
+WebUI.switchToWindowIndex(1)
 
 WebUI.selectOptionByIndex(findTestObject('13-MEP/BCCL.E.AUTHORIZATION/cbxAccion'), 1)
 
@@ -79,4 +80,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

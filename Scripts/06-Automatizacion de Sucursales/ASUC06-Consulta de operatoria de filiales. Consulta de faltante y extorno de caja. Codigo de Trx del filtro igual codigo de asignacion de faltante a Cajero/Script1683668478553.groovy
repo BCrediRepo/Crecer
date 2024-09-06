@@ -21,6 +21,9 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -28,6 +31,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
 WebUI.maximizeWindow()
+
+fecha = GlobalVariable.vFechaCOB
+LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
+LocalDate fechaModificada = fechaParse.minusDays(16)
+while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {
+		fechaModificada = fechaModificada.minusDays(1)
+}
+DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
+String fechaAnterior = fechaModificada.format(formato)
 
 //Ejecuta en la linea de comando menu ?1
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?323", 1)
@@ -37,23 +49,29 @@ menuDesplegable = ["Consulta de operatoria"]
 link = "Consulta de Caja Faltantes/Extonos Caja"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA')
+//Cambiar a la ventana"BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA"
+WebUI.switchToWindowIndex(2)
 
 //Verifica titulo de Caja Faltantes Extonos Caja y seteo de Datos
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lbltituloBCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA'))
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', fechaAnterior)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Transaccion', '4')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
-// Captura el tiempo de inicio
+//Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
 
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-WebUI.delay(15)
 
-// Validar los textos de las celdas directamente
+//Esperar 70 seg a que encuentre resultados
+WebUI.delay(70)
+
+//Maximizar ventana
+WebUI.maximizeWindow()
+
+//Validar los textos de las celdas directamente
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
 WebElement header = table.findElement(By.tagName("tr"))
 List<WebElement> cells = header.findElements(By.tagName("th"))

@@ -27,23 +27,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Setear "ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR" en el buscador 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-////Click en cuentas
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
-//
-////Click en Consultas de cuentas
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
-//
-////Screenshot
-//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-//
-////Click en Consulta de Mov. por fecha valor
-//WebUI.click(findTestObject('Object Repository/02-Dashboard/16-Resumen de Cuentas/lnkConsulta de Mov. por Fecha Valor'))
+//Ejecutar en la linea de comando "ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.RES.CTA.MOV.FECHA.VALOR", 1)
 
 //Cambiar a la ventana "Movimientos de Ctas por Fecha Valor"
 WebUI.switchToWindowIndex(1)
