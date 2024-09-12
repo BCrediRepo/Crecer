@@ -25,23 +25,18 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Click en caja
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-// Captura el tiempo de inicio
-long startTime = System.currentTimeMillis()
-
-//click en consulta de estado de cajas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsulta de Estado de Cajas'))
-
-//Switch a la ventana BCCL.E.TID.CAJA.ESTADO
-WebUI.switchToWindowTitle('BCCL.E.TID.CAJA.ESTADO')
-
-//Maximizamos
+//Se accede al menu Cajas
+menuDesplegable = ["Caja"]
+link = "Consulta de Estado de Cajas"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 //ASSERT
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TID.CAJA.ESTADO/lblCajero'), 6)
+
+// Captura el tiempo de inicio
+long startTime = System.currentTimeMillis()
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()

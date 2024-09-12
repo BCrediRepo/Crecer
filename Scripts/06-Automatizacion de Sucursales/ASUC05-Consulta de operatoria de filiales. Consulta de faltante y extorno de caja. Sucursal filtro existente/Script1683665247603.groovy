@@ -37,13 +37,12 @@ menuDesplegable = ["Consulta de operatoria"]
 link = "Consulta de Caja Faltantes/Extonos Caja"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Cambiar a la ventana"BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA"
-WebUI.switchToWindowIndex(2)
+WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA')
 
 //Verifica titulo de Caja Faltantes Extonos Caja
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lbltituloBCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA'))
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', GlobalVariable.vFechaCOB)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Transaccion', '4')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '089')
 
@@ -52,7 +51,6 @@ long startTime = System.currentTimeMillis()
 
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-//WebUI.delay(15)
 WebUI.maximizeWindow()
 
 // Validar los textos de las celdas directamente
@@ -81,8 +79,8 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/btnVerDetalles'))
 
 //Espera y verifica si se visualiza la primera columna del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'),6)
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTransaction Code'),6)
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTransaction Code'))
 assert element.contains('Transaction Code')
 
 //---------------------------------------------------------------------------------------------------------------------

@@ -21,25 +21,13 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.DayOfWeek
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 46), findTestData('MainData/Users').getValue(2, 46))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 24), findTestData('MainData/Users').getValue(2, 24))
 WebUI.maximizeWindow()
-
-fecha = GlobalVariable.vFechaCOB
-LocalDate fechaParse = LocalDate.parse(fecha, DateTimeFormatter.ofPattern("yyyyMMdd"))
-LocalDate fechaModificada = fechaParse.minusDays(16)
-while (fechaModificada.getDayOfWeek() == DayOfWeek.SATURDAY || fechaModificada.getDayOfWeek() == DayOfWeek.SUNDAY) {
-		fechaModificada = fechaModificada.minusDays(1)
-}
-DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyyMMdd")
-String fechaAnterior = fechaModificada.format(formato)
 
 //Ejecuta en la linea de comando menu ?323
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?323", 1)
@@ -49,13 +37,12 @@ menuDesplegable = ["Consulta de operatoria"]
 link = "Consulta de Caja Faltantes/Extonos Caja"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Cambiar a la ventana"BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA"
-WebUI.switchToWindowIndex(2)
+WebUI.switchToWindowTitle('BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA')
 
 //Verifica titulo de Caja Faltantes Extonos Caja y seteo de Datos
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lbltituloBCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA'))
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', fechaAnterior)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20230824')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod. Transaccion', '4')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 
@@ -64,11 +51,6 @@ long startTime = System.currentTimeMillis()
 
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Esperar 70 seg a que encuentre resultados
-WebUI.delay(70)
-
-//Maximizar ventana
 WebUI.maximizeWindow()
 
 // Validar los textos de las celdas directamente
@@ -97,8 +79,8 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/btnVerDetalles'))
 
 //Espera y verifica si se visualiza la primera columna del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'),6)
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/TELLER/lblTransaction Code'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTransaction Code'),6)
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.FAL.SOB.EXT.CAJA/lblTransaction Code'))
 assert element.contains('Transaction Code')
 
 //---------------------------------------------------------------------------------------------------------------------

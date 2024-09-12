@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -25,16 +24,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,35), findTestData('MainData/Users').getValue(2, 35))
 WebUI.maximizeWindow()
 
-//Click en caja
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Click en detalle de cierre del tesoro
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkDetalle de Cierre del Tesoro'))
-
-//Switch a la venta BCCL.E.TT.LIBRO.TESORO
-WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
-
-//Maximizamos
+//Se accede al menu Cajas
+menuDesplegable = ["Caja"]
+link = "Detalle de Cierre del Tesoro"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 // Captura el tiempo de inicio

@@ -26,47 +26,19 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando menu ?1
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizamos
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Sucursal Piloto","D2 - Automatizacion de Sucursales","CONSULTAS OPERATORIAS DE FILIALES","CONSULTA TOTALES ADMINISTRATIVOS"]
+link = "DETALLE DE OPERACIONES en Efectivo (PARA LA"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+WebUI.switchToWindowIndex(2)
 WebUI.maximizeWindow()
 
-//Click en sucursal piloto
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
-
-//Click en D2-Automatizacion de sucursales
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-
-//Click en consultas operatorias de filiales
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTASOPERATORIASDEFILIALES'))
-
-//Click en consultas totales administrativos
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTATOTALESADMINISTRATIVOS'))
-
-//Click en detalles de operaciones en efectivo para la suc
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkDETALLE DE OPERACIONES Efect Suc'))
-
-//Switch a la ventana Totales por Sucursal x Cod Ope
-WebUI.switchToWindowTitle('Totales por Sucursal x Cod Ope')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Click en nueva seleccion
+//Seteo de Datos "Moneda y Suc"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Click en el boton de registros
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales por Sucursal x Cod Ope/btnListaDeRegistros'))
-
-//Seleccionamos la moneda ARS
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales por Sucursal x Cod Ope/lblARS'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '119')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()

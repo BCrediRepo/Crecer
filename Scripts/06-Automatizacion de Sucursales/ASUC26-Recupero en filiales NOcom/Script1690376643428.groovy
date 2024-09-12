@@ -22,21 +22,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
-
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña Movimiento de Fondos
-WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-//Verifica que estemos en la ventana correcta
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTituloImputaciondeSuscripNOCOMSuc-PR'))
+//Ejecuta en la linea de comando
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION", 1)
 
 //Selecciona añadir un nuevo registro
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/btnNuevoRegistro'))
@@ -54,26 +43,16 @@ WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Re
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/txtSucursalDestino'),'100')
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/rbSucursalDestino'))
 
-//Valida el registro
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/btnValidarRegistro'))
-
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 //Acepta el registro
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -84,5 +63,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

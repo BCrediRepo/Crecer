@@ -24,23 +24,14 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,33), findTestData('MainData/Users').getValue(2, 33))
 WebUI.maximizeWindow()
 
-//Ejecutar en la linea de comando "ENQ BCCL.E.TT.TOMA.TESORO"
+//Ejecuta en la linea de comando
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.TT.TOMA.TESORO", 1)
-
-//Cambiar a la ventana "BCCL.E.TT.TOMA.TESORO"
-WebUI.switchToWindowIndex(1)
-
-//Seteo datos
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Maximizar ventana
 WebUI.maximizeWindow()
 
+//Seteo de Datos "Moneda", "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '099')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
