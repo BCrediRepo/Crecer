@@ -33,12 +33,7 @@ WebUI.maximizeWindow()
 
 
 // Ingreso al menu ?28
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?28')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('Temenos T24')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?28', 1)
 
 WebUI.maximizeWindow()
 
@@ -51,8 +46,9 @@ CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link
 WebUI.switchToWindowTitle('BCCL.E.DEVENGAMIENTO.FCI')
 
 WebUI.maximizeWindow()
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '01000395279')
 
-WebUI.setText(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/txtCuenta'), '01000395279')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -61,9 +57,7 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Validamos
-WebUI.waitForElementVisible(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/lblCuenta - Periodo'), 6)
-
-//WebUI.verifyElementVisible('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/lblCuenta - Periodo')
+WebUI.verifyElementVisible(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/lblCuentaDevengamiento'))
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -72,6 +66,16 @@ long endTime = System.currentTimeMillis()
 long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+WebUI.verifyElementVisible(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/lblCuentaDevengamiento'))
+assert WebUI.getText(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/lblCuentaDevengamiento')).contains('01000395279')
+WebUI.click(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEVENGAMIENTO.FCI/btnLupaDevengamiento'))
+
+WebUI.switchToWindowTitle('BCCL.E.DEV.FCI.DETALLE')
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEV.FCI.DETALLE/lblIntDevengados'))
+assert WebUI.getText(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEV.FCI.DETALLE/lblIntDevengados')).contains('Int. devengados')
+WebUI.verifyElementVisible(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEV.FCI.DETALLE/lblIntDevengadoCantidad'))
+assert WebUI.getText(findTestObject('Object Repository/32-Pago de intereses/BCCL.E.DEV.FCI.DETALLE/lblIntDevengadoCantidad')).contains('0,07')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

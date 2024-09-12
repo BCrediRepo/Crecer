@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtMovCanal</name>
+   <name>lblCuentaDevengamiento</name>
    <tag></tag>
-   <elementGuidId>d5b56c0a-2e8d-49ac-99bf-6a64f4f8ba21</elementGuidId>
+   <elementGuidId>761cbc4a-c5ee-4fc9-b498-b4225a4f96fd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#columnHeaderText5</value>
+         <key>XPATH</key>
+         <value>//th[@id='columnHeaderText1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//th[@id='columnHeaderText5']</value>
+         <key>CSS</key>
+         <value>#r1 > td:nth-child(1)</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>cd05313b-6baa-4083-bc61-52a9906e46ce</webElementGuid>
+      <webElementGuid>dccb7b47-df86-4283-9660-6a119f536f2e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>scope</name>
       <type>Main</type>
       <value>col</value>
-      <webElementGuid>316557c5-d379-4eee-afca-ab61fae8951f</webElementGuid>
+      <webElementGuid>86866f94-1295-414e-aeaa-94978e318560</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,102 +38,102 @@
       <name>class</name>
       <type>Main</type>
       <value>columnHeader</value>
-      <webElementGuid>9d1d15d1-3667-412b-b757-704100a48d78</webElementGuid>
+      <webElementGuid>9bf427b3-f3b9-4859-9cfa-b1df296ef663</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>columnHeaderText5</value>
-      <webElementGuid>45a77646-3cd3-4f80-897b-d73f02ecbe58</webElementGuid>
+      <value>columnHeaderText1</value>
+      <webElementGuid>26682ff7-7d0d-42c1-bfcf-eb4b2d134b08</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Mov canal</value>
-      <webElementGuid>ed616d75-95cc-45ed-83d3-8c9e7620bf59</webElementGuid>
+      <value>Cuenta - Periodo</value>
+      <webElementGuid>9404388e-0857-4f36-bbdb-8d831fe20fa2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;columnHeaderText5&quot;)</value>
-      <webElementGuid>f472e338-fcc9-49ff-8d55-76023c310c1b</webElementGuid>
+      <value>id(&quot;columnHeaderText1&quot;)</value>
+      <webElementGuid>9307e418-ea4b-4166-87c4-844c7a4a12a4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//th[@id='columnHeaderText5']</value>
-      <webElementGuid>b9ddc355-8c45-4dfa-9b25-956d3ba13600</webElementGuid>
+      <value>//th[@id='columnHeaderText1']</value>
+      <webElementGuid>a3042f32-4649-4908-9192-44ab164adb30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//th[@id='columnHeader5']/table/tbody/tr/th</value>
-      <webElementGuid>99abd454-11ce-4cfe-a77f-b8630b5c2ed2</webElementGuid>
+      <value>//th[@id='columnHeader1']/table/tbody/tr/th</value>
+      <webElementGuid>c67e4aa7-2941-48d5-8fd5-8bb4be3d630f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov tip mov'])[1]/following::th[3]</value>
-      <webElementGuid>9883987e-49c8-4a31-8f49-999a3df455da</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como XML'])[2]/following::th[3]</value>
+      <webElementGuid>2b12d1d1-e78e-48a8-9da1-9c2aebd7c903</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov orig mov'])[1]/following::th[6]</value>
-      <webElementGuid>f46fc73b-c6fd-4cb0-b07c-332c26e13375</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Guardar como HTML'])[2]/following::th[3]</value>
+      <webElementGuid>53c7a890-b34f-4d31-a6e2-5ae79bf3ae38</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mov fec ing'])[1]/preceding::th[2]</value>
-      <webElementGuid>185e0851-33fe-4a7d-9589-42b306f2565b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::th[3]</value>
+      <webElementGuid>ea2c439f-22bd-4509-aee5-88e159e96b3c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='MR17188442967119400'])[1]/preceding::th[5]</value>
-      <webElementGuid>2fc7004a-d51e-4b5c-ac7a-c2fcf49ce636</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::th[3]</value>
+      <webElementGuid>ae847c7b-8436-4b01-8423-58502eed75d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Mov canal']/parent::*</value>
-      <webElementGuid>ada76b2a-ed69-40ee-9c77-96b63247d304</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Cuenta - Periodo']/parent::*</value>
+      <webElementGuid>4bdbd648-69b5-4cee-a395-7df3ad770106</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//th[5]/table/tbody/tr/th</value>
-      <webElementGuid>83b9fe6b-8746-47a5-ad7b-52bab876a746</webElementGuid>
+      <value>//tbody/tr/th</value>
+      <webElementGuid>c7e8775e-eeef-4450-a242-5e6278e6c1d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//th[@id = 'columnHeaderText5' and (text() = 'Mov canal' or . = 'Mov canal')]</value>
-      <webElementGuid>b0db5a9e-ef2d-4b4d-8137-9a213c72b410</webElementGuid>
+      <value>//th[@id = 'columnHeaderText1' and (text() = 'Cuenta - Periodo' or . = 'Cuenta - Periodo')]</value>
+      <webElementGuid>ecd5b4fa-d7cf-4278-95c0-90d45ad13798</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
