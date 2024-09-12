@@ -25,16 +25,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Click en caja
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Click en consulta de posicion de efect en sucursal
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCons. Posicion de efectivo en Sucursal'))
-
-//Switch a la ventana BCCL.E.TT.TOMA.TESORO
-WebUI.switchToWindowTitle('BCCL.E.TT.TOMA.TESORO')
-
-//Maximizamos
+//Se accede al menu Cajas
+menuDesplegable = ["Caja"]
+link = "Cons. Posicion de efectivo en Sucursal"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 // Captura el tiempo de inicio

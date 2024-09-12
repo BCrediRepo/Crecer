@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -25,20 +24,16 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Click en caja
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Click en consulta de totales de cajas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkConsulta de Totales de Cajas'))
-
-//Switch a la ventana BCCL.E.TT.POSITION.USR
-WebUI.switchToWindowTitle('BCCL.E.TT.POSITION.USR')
-
-//Maximizamos
+//Se accede al menu Cajas
+menuDesplegable = ["Caja"]
+link = "Consulta de Totales de Cajas"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
-//Completamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.POSITION.USR/txtMoneda'), 'ARS')
+//Seteo de Datos "Moneda"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -60,7 +55,6 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.POSITION.USR/lblTotal'))
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.POSITION.USR/lblTotal'))
 assert element.contains('Total')
-
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

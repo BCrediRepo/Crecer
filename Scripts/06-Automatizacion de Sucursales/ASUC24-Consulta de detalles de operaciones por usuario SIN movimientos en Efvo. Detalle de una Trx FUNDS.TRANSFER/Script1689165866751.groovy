@@ -33,42 +33,21 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 11), findTestData('MainData/Users').getValue(2, 11))
-
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando menu ?1
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Abre la pestaña del menú ?01
-WebUI.switchToWindowIndex(1)
-
-//Ir a Sucursal piloto
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
-
-//Selecciona D2 AUTOMATIZACION DE SUCURSALES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-
-//Selecciona CONSULTA OPERATORIA DE FILIALES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTASOPERATORIASDEFILIALES'))
-
-//Selecciona CONSULTAS TOTALES ADMINITRATIVOS
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTATOTALESADMINISTRATIVOS'))
-
-//Ir a Detalle de operaciones sin efectivo (Para Usuario)
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/lnkDetalleOperacionesSinEfectivoUSUARIO'))
-
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Sucursal Piloto","D2 - Automatizacion de Sucursales","CONSULTAS OPERATORIAS DE FILIALES","CONSULTA TOTALES ADMINISTRATIVOS"]
+link = "DETALLE DE OPERACIONES SIN Efectivo (PARA EL"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 WebUI.switchToWindowIndex(2)
 
 //Verifica titulo de Detalle de operaciones sin efectivo y Seteo de Datos "Moneda", "Usuario"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/lblTituloOpSinEfectivoUsuario'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/txtMonedaValue1'),6)
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0043')
-
-//Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
@@ -76,16 +55,17 @@ long startTime = System.currentTimeMillis()
 
 //Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Espera y verifica que se muestren los registros de la tabla
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblCantOperaciones'),10)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblCantOperaciones'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblCodOperativo'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblDescripcion'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/lblMonto'))
+// Validar los textos de las celdas directamente
+WebElement table2 = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
+WebElement header = table2.findElement(By.tagName("tr"))
+List<WebElement> cells = header.findElements(By.tagName("th"))
+
+assert cells[0].getText().contains('Cod. Operativo') : "Expected 'Cod. Operativo' but found ${cells[0].getText()}"
+assert cells[3].getText().contains('Descripcion') : "Expected 'Descripcion' but found ${cells[3].getText()}"
+assert cells[6].getText().contains('Cant Operaciones') : "Expected 'Cant Operaciones' but found ${cells[6].getText()}"
+assert cells[9].getText().contains('Monto') : "Expected 'Monto' but found ${cells[9].getText()}"
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
@@ -95,7 +75,7 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-def codigoOperativo = "00476" //El codigo operativo 00476 corresponde a "Debito/Credito Automatico - CN"
+def codigoOperativo = "18602" //El codigo operativo 00476 corresponde a "Nota de Credito Ajuste sin Imp"
 // Obtén el elemento de la tabla
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
  
@@ -136,29 +116,18 @@ for (WebElement row : rows) {
 	}
 }
 
-//Se mueve a la ventana Detalle Transacciones No Efectivo
-WebUI.switchToWindowIndex(2)
-
 //Espera y verifica si se visualiza la primera columna del registro
-//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/lblId'),6)
-//def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/lblId'))
-//assert element.contains('Id')
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/lblId'),6)
+def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/lblId'))
+assert element.contains('Id')
 
 //Ver detalle de la primera transacción
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/btnVerDetalle'))
-
-//Ver detalle de la primera transacción
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales por Sucursal x Cod Ope/btnVerDetalle'))
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/btnVerDetalle'))
-
-//Switch a la ventana Detalle Transacciones No Efectivo
-WebUI.switchToWindowTitle('Detalle Transacciones No Efectivo')
-//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Detalle Transacciones No Efectivo/btnVerDetalle'))
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoUSUARIO/Detalle Transacciones No Efectivo/btnVerDetalle'))
 
 //Valido elementos del detalle
-//WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'),6)
-//def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'))
-//assert element2.contains('Transaction Type')	
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'),6)
+def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblTransactionType'))
+assert element2.contains('Transaction Type')	
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblCodOperativoC - FT'), 6)
 def element3 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Movimiento de Fondos/lblCodOperativoC - FT'))
@@ -166,7 +135,6 @@ assert element3.contains(codigoOperativo)
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

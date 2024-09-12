@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -25,32 +24,20 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,36), findTestData('MainData/Users').getValue(2, 36))
 WebUI.maximizeWindow()
 
-//Ingresamos en el commandline el menu ?323
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?323')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizamos
+//Ejecuta en la linea de comando menu ?323
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?323", 1)
 WebUI.maximizeWindow()
 
-//Click en consulta de operatoria
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkConsultadeoperatoria'))
-
-//Click en consulta de existencia por denominacion
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consulta de operatoria/lnkConsulta de Existencia por Denominacion'))
-
-//Switch a la ventana BCCL.E.TT.CASH.DENOM
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
-
-//Maximizamos
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Consulta de operatoria"]
+link = "Consulta de Existencia por Denominacion"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+WebUI.switchToWindowIndex(2)
 WebUI.maximizeWindow()
 
-//Ingresamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/txtSucursal'), '063')
-
-//Screenshot
+//Seteo de Datos "Sucursal"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '063')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 // Captura el tiempo de inicio
