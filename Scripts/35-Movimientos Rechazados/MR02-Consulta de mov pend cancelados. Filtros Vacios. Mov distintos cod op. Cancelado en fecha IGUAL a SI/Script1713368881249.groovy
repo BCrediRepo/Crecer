@@ -25,24 +25,16 @@ import java.util.Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,18), findTestData('MainData/Users').getValue(2,18))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,1), findTestData('MainData/Users').getValue(2,1))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'),'BCCL.MOV.RECHAZADOS L L')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.MOV.RECHAZADOS
-WebUI.switchToWindowTitle('%BCCL.MOV.RECHAZADOS')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('ENQ BCCL.E.MR.PARTIDAS.PEND.CANCELADAS', 1)
 
 //Validacion de pestaña correcta
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/tituloBCCL.MOV.RECHAZADOS'),6)
 
 //Limpieza
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cancelado', 'SI')
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -53,12 +45,6 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.maximizeWindow()
 
-//Toma un ScreenShot
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/tituloBCCL.MOV.RECHAZADOS'),6)
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Verifica los datos del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtID'),6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtID'),6)
 
 // Captura el tiempo de finalización
@@ -69,17 +55,8 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtMovCanal'),6)
 
-//Ver primer registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/btnVerRegistro'),6)
-WebUI.click(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/btnVerRegistro'))
-
-//Verifica los datos del registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/MovEnvGdp'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/MovEnvGdp'))
-def element = WebUI.getText(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS/MovEnvGdp'))
-assert element.contains('Mov Env Gdp')
+assert WebUI.getText(findTestObject('Object Repository/36-MovimientosRechazados/BCCL.MOV.RECHAZADOS - Lista Default/txtID')).contains('MR')
 
 //---------------------------------------------------------------------------------------------------------------------
 

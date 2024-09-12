@@ -18,6 +18,28 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat
 import java.util.Date
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
+
+
+def validarElementoEnTabla(String tabla, String variable, int colVariable, String razon, int colRazon) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[colVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+					String resultado = tdList[colRazon].getText()
+					println(resultado)
+			assert tdList[colRazon].getText().contains(razon) : "Expected " + razon + " but found ${tdList[colRazon].getText()}"
+			GlobalVariable.vTxn = resultado
+			return true
+		}
+	}
+	return false
+}
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -25,25 +47,14 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.AC.COM.COBRADA
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.AC.COM.COBRADA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.AC.COM.COBRADA
-WebUI.switchToWindowTitle('BCCL.E.AC.COM.COBRADA')
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('ENQ BCCL.E.AC.COM.COBRADA', 1)
 //Maximiza la pestaña
 WebUI.maximizeWindow()
 
 //Seteo de datos "Cuenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00890010860')
-
-//Ingresa el numero de la cuenta
-WebUI.setText(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/txtCuenta'), '00890010860')
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -56,11 +67,17 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/34-Riesgo Contingen
 
 // Captura el tiempo de finalización
 long endTime = System.currentTimeMillis()
-
-//Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
-
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
+
+def encontrado = false
+while(!encontrado) {
+	encontrado = validarElementoEnTabla('enquiryHeaderContainer', 'Cuenta :', 0, '00890010860', 1)
+	result = GlobalVariable.vTxn
+	assert result == '00890010860'
+}
+
+assert WebUI.getText(findTestObject('Object Repository/34-Riesgo Contingente/BCCL.E.AC.COM.COBRADA/lblTipo de Comision')) != null
 
 //---------------------------------------------------------------------------------------------------------------------
 
