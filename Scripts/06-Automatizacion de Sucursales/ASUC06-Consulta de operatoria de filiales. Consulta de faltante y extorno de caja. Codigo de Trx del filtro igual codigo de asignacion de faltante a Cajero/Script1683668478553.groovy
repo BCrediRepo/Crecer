@@ -51,7 +51,6 @@ long startTime = System.currentTimeMillis()
 
 //Presiona Ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-WebUI.delay(15)
 
 // Validar los textos de las celdas directamente
 WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
