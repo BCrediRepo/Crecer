@@ -117,7 +117,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/55-Reversos/BCCL.E.EB.CONS.REVE/btnReversar'))
 
 //Reversa el registro
-WebUI.click(findTestObject('Object Repository/55-Reversos/TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 WebUI.switchToWindowTitle('Teller Financial Services')
 
 // Imprimir el numero de operacion en consola

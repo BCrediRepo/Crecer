@@ -41,9 +41,9 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('FECHA.HASTA', '#@$&!')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 //Espera y Verifica Mensaje de Error
-WebUI.waitForElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblMensajeError'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblMensajeError'))
-def element = WebUI.getText(findTestObject('Object Repository/45-Cheques y Chequeras Disponibles/BCCL.E.CONS.CHQ.CUENTA.FIL/lblMensajeError'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblMensajeErrorEnBusqueda'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblMensajeErrorEnBusqueda'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblMensajeErrorEnBusqueda'))
 assert element.contains('NO SE ENCONTRARON REGISTROS')
 
 //---------------------------------------------------------------------------------------------------------------------
