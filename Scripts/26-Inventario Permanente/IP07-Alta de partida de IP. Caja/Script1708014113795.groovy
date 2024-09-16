@@ -22,6 +22,9 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat
 import java.util.Date
 
+def cuenta ='03195011374'
+def cod = '0099'
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -44,7 +47,7 @@ WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 WebUI.verifyElementVisible(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/lblCaja'))
 
 //Ingresa codigo IP
-WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/txtCodigoIP'), '0099')
+WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/txtCodigoIP'), cod)
 
 //btn Validar
 WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnValidarRegistro'))
@@ -53,7 +56,7 @@ WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.P
 WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/txtPersona'), '2000514092')
 
 //Ingresa cuenta socio
-WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/txtCuenta'), '03195011374')
+WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/txtCuenta'), cuenta)
 
 //btn Validar
 WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnValidarRegistro'))
@@ -70,18 +73,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/27-Inventario Perma
 def element = WebUI.getText(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + element)
- 
-//Dividir la oración en palabras individuales utilizando el espacio como separador
-String[] palabras = element.split(" ");
- 
-// Obtener la tercera palabra (índice 2 ya que los índices comienzan en 0 en arrays)
-String terceraPalabra = palabras[2];
- 
-// Imprimir la tercera palabra seleccionada
-println("La tercera palabra es: " + terceraPalabra);
-
 WebUI.closeWindowTitle('BCCL.IP.PARTIDAS')
 
 WebUI.switchToWindowIndex(0)
@@ -93,8 +84,10 @@ WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
 
 WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.FIL.ALTAS')
 
-//Ingresa numero de operacion 
-WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.ALTAS/txtNroPartida'), terceraPalabra)
+//Seteo de Datos "Id. Persona"
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP',cod)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro Cuenta',cuenta)
 
 //Boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
