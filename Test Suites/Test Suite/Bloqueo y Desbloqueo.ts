@@ -130,4 +130,109 @@
       <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD17-Busqueda de cuentas por persona para desbloqueo. Persona con cuentas con bloqueo en la filial y en distintas. Perfil casa central</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c74cc934-aff6-4653-a281-b9d4b7856f02</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD18-Consulta sobre el historico de bloqueos. Cuenta con bloqueo de origen automatico Filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f3fd165a-2b77-4d32-b7d5-5c0ac3aff0a9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD19-Bloqueo-Desbloqueo.Consulta Historico de Bloqueos. Solo los campos Obligatorios completos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4e5ab2ca-30d0-4f00-a1d4-826df53fe054</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD20-Bloqueo-Desbloqueo.Consulta de Cuentas Bloqueadas por Sucursal. Visualizacion de Detalle de Bloqueo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>035d3eac-a154-40e4-8c76-d88b59661e32</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD21-Bloqueo manual general. Cuenta activa.Tipo de bloqueo Parcial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>52b9cc5b-40d7-44d8-8787-c05ec1c13dd8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD22-Bloqueo manual general. Cuenta activa.Tipo de bloqueo Total</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4f501472-73ad-4586-9488-8aa359f2d89f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD23-Busqueda de cuentas por cuenta para desbloqueo. Sucursal de la cuenta bloqueada igual a la del usuario</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>933b574a-2ddb-4683-9914-6407cdb0ef76</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD24-Busqueda de cuentas por persona para bloqueo. Busqueda por persona</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a4e23a2a-fb4f-4ecb-85a0-fb6ffbcaa421</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD25-Desbloqueo de Bloqueo manual general. Cuenta con Bloqueo a los Creditos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>02fa57e0-527f-4e3c-9c1a-55705eddb644</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD26-Desbloqueo de Bloqueo manual general. Cuenta con Bloqueo a los Debitos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>db673018-a033-4b57-b33c-03dd33acb48d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD27-Busqueda de cuentas por cuenta para bloqueo. Completitud</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>92455672-929b-4fed-97fd-52c316be3b3a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD28-Consulta sobre el historico de bloqueos. Cuenta con mas de un bloqueo parcial y general. Origen de bloqueo en casa central</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2f55a84c-5be8-46ab-8e61-18d3b80f3dd5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD29-Consulta sobre el historico de bloqueos. Fecha desde igual a Hoy</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4b9172fc-437e-4c6b-b861-94299a774ecf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD30-Bloqueo-Desbloqueo.Consulta de Cuentas Bloqueadas por Sucursal. Visualizacion de Detalle de Bloqueo</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dcf67d3b-a0aa-4291-92bd-890429cdb710</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD31-Consulta sobre el historico de bloqueos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cb276b4c-05d8-456b-95a8-b06f08144fc0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/03-Bloqueo y Desbloqueo/BYD32-Bloqueo y Desbloqueo. Consulta de cuentas bloqueadas por embargos con acreditaciones</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

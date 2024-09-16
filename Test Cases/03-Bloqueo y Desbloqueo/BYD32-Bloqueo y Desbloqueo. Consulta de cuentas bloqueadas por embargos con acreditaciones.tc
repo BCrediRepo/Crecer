@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BYD32-Bloqueo y Desbloqueo. Consulta de cuentas bloqueadas por embargos con acreditaciones</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be3ffc9e-96d6-488d-bd1b-f189ec6e24f8</testCaseGuid>
+</TestCaseEntity>

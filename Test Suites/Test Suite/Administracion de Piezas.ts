@@ -123,4 +123,32 @@
       <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT16-Administrador de Piezas. Modificacion de Piezas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>79bdd7eb-a167-4a5c-8ae8-ff0175b6dd4b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT17-Administrador de Piezas. Denuncia de Tarjetas. No Recibido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8ee691f9-dac0-467f-a7f4-672d2368d4e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT18-Administrador de Piezas. Entrega de Pieza a Activador Comercial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ba7a517f-cb51-4f9e-b178-5bde17d2c47a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT19-Administrador de Piezas. Envio de Pieza a Otra Sucursal</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a0d4e83-191f-4ae8-a058-efaea11a150f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/02-AdminPiezasTarjeta/APT20-Administrador de Piezas. Carga inicial del Stock de la Filial</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
