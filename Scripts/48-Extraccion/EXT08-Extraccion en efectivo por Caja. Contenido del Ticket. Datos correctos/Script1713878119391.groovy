@@ -26,23 +26,26 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Busqueda de  app
-WebUI.click(findTestObject('02-Dashboard/lnkExtracciones'))
-
-WebUI.click(findTestObject('02-Dashboard/47-Extracciones/lnkRetiroEnVentanilla'))
-
+//Ir a Extracciones, Retiro en Ventanilla
+def menuDesplegable = ["Extracciones"]
+def link = "Retiro en Ventanilla (CA)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('TELLER')
 
 //Seteo de datos
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '11190118359')
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnValidarRegistro'))
+//Click en boton validar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '10')
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnAceptarRegistro'))
+//Click boton aceptar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/lnkAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 WebUI.switchToWindowIndex(3)
 
@@ -67,7 +70,7 @@ WebUI.closeWindowTitle('Verificacion de Firmas - Fil.074 Caseros Centro')
 WebUI.switchToWindowTitle('TELLER')
 
 //Se verifica la txn completa
-txn = WebUI.getText(findTestObject('49-Extracciones/TELLER/lblTxnCompleta'))
+txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 assert txn.contains('Txn Completa:') == true
 
@@ -78,14 +81,12 @@ assert ticket.contains('Nro. De Cuenta: 119 - 0118359')==true
 assert ticket.contains('Denominacion: ENRICO EDIE A OR OTRO')==true
 assert ticket.contains('Importe: $ **********************10,00.-')==true
 assert ticket.contains('Son: PESOS DIEZ CON 00/100')==true
-//------------------------------
-//Control de fin de script
 
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

@@ -26,36 +26,36 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Busqueda de  app
-WebUI.click(findTestObject('02-Dashboard/lnkExtracciones'))
-
-WebUI.click(findTestObject('02-Dashboard/47-Extracciones/lnkRetiroEnVentanilla'))
-
+//Ir a Extracciones, Retiro en Ventanilla
+def menuDesplegable = ["Extracciones"]
+def link = "Retiro en Ventanilla (CA)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('TELLER')
 
 //Seteo de datos
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtNroCuenta'), '10740100273')
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnValidarRegistro'))
+//Click en boton validar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
 WebUI.setText(findTestObject('49-Extracciones/TELLER/txtMonto'), '5')
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/btnAceptarRegistro'))
+//Click boton aceptar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('49-Extracciones/TELLER/lnkAceptarAlertas'))
+//Acepto alertas
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'),6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 mensaje = WebUI.getText(findTestObject('49-Extracciones/TELLER/lblCuentaCerrada'))
+assert mensaje.contains('BLOQUEO DEBITOS') == true 
 
-assert mensaje.contains('BLOQUEO DEBITOS') == true //------------------------------
-//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
