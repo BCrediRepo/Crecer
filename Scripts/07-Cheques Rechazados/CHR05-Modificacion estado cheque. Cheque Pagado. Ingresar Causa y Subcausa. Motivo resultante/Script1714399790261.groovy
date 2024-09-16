@@ -149,8 +149,10 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazad
 
 txn = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
 
-assert txn.contains('Txn Completa: ' ////login final de validacion
-    ) //CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(
+assert txn.contains('Txn Completa: ')
+
+////login final de validacion
+ //CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(
 //        2, 7))
 //
 //WebUI.maximizeWindow()

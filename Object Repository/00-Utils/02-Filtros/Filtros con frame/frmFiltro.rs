@@ -11,6 +11,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -18,7 +19,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>IFRAME</value>
-      <webElementGuid>5c7ac179-1271-4453-9e67-d5bb4f718664</webElementGuid>
+      <webElementGuid>7e53217d-b94a-4915-a3cc-77d5b476805b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +27,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>xpath1700162592831</value>
-      <webElementGuid>9d9cd90d-2aff-46b8-92d8-bc9505990533</webElementGuid>
+      <webElementGuid>3a0b4864-7ea3-4c68-aae7-875db21dc78d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

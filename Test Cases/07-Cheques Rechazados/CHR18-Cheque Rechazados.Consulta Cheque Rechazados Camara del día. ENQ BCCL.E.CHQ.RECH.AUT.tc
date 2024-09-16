@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>IP07-Alta de partida de IP. Caja</name>
+   <name>CHR18-Cheque Rechazados.Consulta Cheque Rechazados Camara del día. ENQ BCCL.E.CHQ.RECH.AUT</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>bd2ec5bc-2b80-44c7-9786-80ad5bf1dbf0</testCaseGuid>
+   <testCaseGuid>325f9ed4-97db-4a98-9c87-1ff562bdc435</testCaseGuid>
 </TestCaseEntity>

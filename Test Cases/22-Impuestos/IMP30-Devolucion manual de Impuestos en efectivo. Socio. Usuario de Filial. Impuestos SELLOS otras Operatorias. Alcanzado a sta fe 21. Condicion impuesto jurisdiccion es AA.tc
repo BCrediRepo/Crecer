@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP30-Devolucion manual de Impuestos en efectivo. Socio. Usuario de Filial. Impuestos SELLOS otras Operatorias. Alcanzado a sta fe 21. Condicion impuesto jurisdiccion es AA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2fd6e6c8-a544-4f2e-a746-456684b0b95c</testCaseGuid>
+</TestCaseEntity>
