@@ -21,41 +21,29 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 24), findTestData('MainData/Users').getValue(2, 24))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 52), findTestData('MainData/Users').getValue(2, 52))
 WebUI.maximizeWindow()
 
-//Ingresar "?327" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Caja"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCaja'))
-
-//Seleccionar "Cons. de Existencia por Denominacion"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Caja/lnkCons.deExistenciaporDenominacion'))
-
-//Cambiar ventana "BCCL.E.TT.CASH.DENOM"
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Caja"]
+link = "Cons. de Existencia por Denominacion"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+WebUI.switchToWindowIndex(2)
+WebUI.maximizeWindow()
 
 //Seteo datos "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
-
-//Screenshot
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '099')
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Espero que aparezca DENOMINACION
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'), 20)
-
 //Verificar "DENOMINACION"
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'), 20)
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
 def element5 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CASH.DENOM/lblDENOMINACION'))
 assert element5.contains('DENOMINACION')

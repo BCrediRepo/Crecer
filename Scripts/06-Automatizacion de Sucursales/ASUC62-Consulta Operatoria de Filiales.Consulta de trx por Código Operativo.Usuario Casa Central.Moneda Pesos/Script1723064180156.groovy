@@ -20,30 +20,22 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-
-
 //Configuracion del ambiente y login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,21), findTestData('MainData/Users').getValue(2,21))
 WebUI.maximizeWindow()
 
-//Ingresamos la enq correspondiente
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle("Temenos T24")
-WebUI.maximizeWindow()
-
 def CodOperativo = '00101'
 def Moneda = 'ARS'
 
-def menuDesplegable = ["Sucursal Piloto", "D2 - Automatizacion de Sucursales", "CONSULTAS OPERATORIAS DE FILIALES", "DETALLE DE OPERACIONES"]
-def link = "CONSULTA POR CODIGO OPERATIVO"
+//Ejecutar en la linea de comando "?1"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
 //si el menú que busco está en Temenos T24, uso esta funcion
+def menuDesplegable = ["Sucursal Piloto", "D2 - Automatizacion de Sucursales", "CONSULTAS OPERATORIAS DE FILIALES", "DETALLE DE OPERACIONES"]
+def link = "CONSULTA POR CODIGO OPERATIVO"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
-//Switch a la ventana Consulta Por Codigo Operativo
-WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
+WebUI.switchToWindowIndex(2)
 WebUI.maximizeWindow()
 
 //Seteo de datos
@@ -69,6 +61,7 @@ assert cells[15].getText().contains('Monto') : "Expected 'Monto' but found ${cel
 assert cells[18].getText().contains('Fec. Proceso') : "Expected 'Fec. Proceso' but found ${cells[18].getText()}"
 assert cells[21].getText().contains('Fecha Valor') : "Expected 'Fecha Valor' but found ${cells[21].getText()}"
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -79,6 +72,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

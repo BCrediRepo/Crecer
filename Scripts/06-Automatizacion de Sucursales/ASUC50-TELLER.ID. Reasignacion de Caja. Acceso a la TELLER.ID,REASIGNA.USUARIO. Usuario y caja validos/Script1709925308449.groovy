@@ -24,20 +24,14 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 31), findTestData('MainData/Users').getValue(2, 31))
 WebUI.maximizeWindow()
 
-//Ingresar "TELLER.ID,REASIGNA.USUARIO" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TELLER.ID,REASIGNA.USUARIO')
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "TELLER ID"
-WebUI.switchToWindowTitle('TELLER ID')
+//Ejecutar en la linea de comando "TELLER.ID,REASIGNA.USUARIO"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("TELLER.ID,REASIGNA.USUARIO", 1)
 
 //Setear "Reasignar Caja"
 WebUI.setText(findTestObject('Object Repository/17-Remesas/04-TELLER ID/txtReasignarCaja'), '0008')
 
 //Seleccionar "boton Modificar Registro"
-WebUI.click(findTestObject('Object Repository/15-MONEX/14-GRUPO.COTIZACION/btnModificarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 
 //Definir Nombre de la Filial
 TestObject nombreFilial = findTestObject('Object Repository/17-Remesas/04-TELLER ID/lblCajeroNombreFilial')
@@ -57,11 +51,11 @@ if (valorNombreFilial.equals('FILIAL 001 AI CENT')) {
 	}
 
 //Seleccionar "Aceptar el registro"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-def element2 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element2.contains('Txn Completa')
 
 //---------------------------------------------------------------------------------------------------------------------

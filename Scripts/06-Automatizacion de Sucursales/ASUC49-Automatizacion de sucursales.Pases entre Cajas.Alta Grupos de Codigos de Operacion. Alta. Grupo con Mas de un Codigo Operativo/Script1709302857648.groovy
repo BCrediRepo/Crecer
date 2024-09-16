@@ -28,58 +28,33 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-def menuDesplegable = ["Sucursal Piloto", "D2 - Automatizacion de Sucursales", "Administracion"]
-def link = "Alta o Modificacion de grupos de codigos oper"
-
 //Ejecutar en la linea de comando "?1"
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Cambiar a la ventana "Temenos T24"
-WebUI.switchToWindowIndex(1)
-
-//Maximizar ventana
-WebUI.maximizeWindow()
-
 //Navegar por el menu Temenos T24
+def menuDesplegable = ["Sucursal Piloto", "D2 - Automatizacion de Sucursales", "Administracion"]
+def link = "Alta o Modificacion de grupos de codigos oper"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
 //Cambiar ventana "BCCL EB GRUPO CODOPE"
 WebUI.switchToWindowIndex(2)
 
 //Setear Alta de grupos
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtAltadeGrupos'), '91')
-
-//Maximizar Ventana
 WebUI.maximizeWindow()
 
 //Seleccionar "boton Modificar Registro"
-WebUI.click(findTestObject('Object Repository/15-MONEX/14-GRUPO.COTIZACION/btnModificarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 
-//Setear Descripcion
+//Completo el Registro - Formulario
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtDescripcion'), 'PRUEBA ALTA GRUPO COD OP')
-
-//Setear Descripcion corta
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtDescripcionCorta'), 'PRUEBA')
-
-//Seleccionar "boton Expandir Multivalor"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/btnExpandirMultivalor'))
-	
-//Setear Codigo de Operacion 
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtCodigoOperacion'), '00743')
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtCodigoOperacion2'), '00743')
-//Seleccionar "boton radio button SI"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/rbtnSI'))
-
-//Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
-
-//Setear Alta de grupos
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtAltadeGrupos'), '91')
-
-//Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
-
-//Verificar "Codigos de Operaciones"
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/lblCodigodeOperacion.2'))
 
 //Validar "Codigos de Operaciones"
@@ -87,24 +62,25 @@ def codigoOperacion = WebUI.getText(findTestObject('Object Repository/07-Automat
 assert codigoOperacion.contains('Codigo de Operacion.2')
 
 //Seleccionar "boton Volver Pantalla Aplicacion"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/btnVolverPantallaAplicacion'))
+//WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/btnVolverPantallaAplicacion'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVolver'))
 
 //Setear Alta de grupos 91
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/txtAltadeGrupos'), '91')
 
 //Seleccionar "boton Modificar Registro"
-WebUI.click(findTestObject('Object Repository/15-MONEX/14-GRUPO.COTIZACION/btnModificarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 
 //Seleccionar "boton Borrar Codigo Operacion"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL EB GRUPO CODOPE/btnBorrarCodigoOperacion'))
 
 //Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/02-TELLER,REPOSICION.POR.MENOS.PN099/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
-def txnCompleta = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def txnCompleta = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert txnCompleta.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------

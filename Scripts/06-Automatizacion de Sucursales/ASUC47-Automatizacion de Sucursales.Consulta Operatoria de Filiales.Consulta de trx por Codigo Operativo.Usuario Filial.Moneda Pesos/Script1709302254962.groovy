@@ -24,21 +24,13 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
 WebUI.maximizeWindow()
 
-//Ingresar "ENQ BCCL.E.CONSULTA.CODIGO" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CONSULTA.CODIGO')
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Consulta Por Codigo Operativo"
-WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CONSULTA.CODIGO", 1)
 
 //Seteo de Datos "Moneda", "Codigo Operativo"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod Operativo', '00101')
-
-//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Ejecutar"

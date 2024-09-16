@@ -24,50 +24,34 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 5), findTestData('MainData/Users').getValue(2, 5))
 WebUI.maximizeWindow()
 
-//Ingresar "FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION')
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Movimiento de Fondos"
-WebUI.switchToWindowTitle('Movimiento de Fondos')
+//Ejecutar en la linea de comando "FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("FUNDS.TRANSFER,NOCOM.FILIAL.SUSCRIPCION", 1)
 
 //Seleccionar "Nuevo Registro"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/btnNuevoRegistro'))
 
-//Esperar "boton Sucursal Destino"
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/btnDropdownSucursalDestino'), 3)
-
 //Seleccionar "boton Sucursal Destino"
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/btnDropdownSucursalDestino'), 3)
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/btnDropdownSucursalDestino'))
 
 //Seleccionar "073 Jujuy"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/lblJujuy'))
 
-//Esperar "Monto"
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtMonto'), 3)
-
 //Setear "Monto"
+WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtMonto'), 3)
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtMonto'), '5')
-
-//Maximizar pantalla
 WebUI.maximizeWindow()
 
-//Seleccionar "txtComentarios"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtComentarios'))
-
 //Setear "Comentarios"
+WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtComentarios'))
 WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/txtComentarios'), 'PRUEBAS CRECER')
-
-//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Definir Objeto
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Dividir la cadena por espacios en blanco y tomar elemento
 def partes = Transaccion1.split('\\s+')
@@ -80,10 +64,8 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 //Seleccionar "boton VerRegistro"
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
-//Verificar "073"
+//Validar Sucursal Destino
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/lblSucursalDestino'))
-
-//Validar "073"
 def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Movimiento de Fondos/lblSucursalDestino'))
 assert element.contains('115')
 

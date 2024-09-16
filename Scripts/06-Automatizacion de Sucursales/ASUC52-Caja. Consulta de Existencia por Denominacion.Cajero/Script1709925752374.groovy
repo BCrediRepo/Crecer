@@ -24,31 +24,21 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 WebUI.maximizeWindow()
 
-//Ingresar "?327" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?327')
+//Ejecutar en la linea de comando "?327"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Caja"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCaja'))
-
-//Seleccionar "Cons. de Existencia por Denominacion"
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Caja/lnkCons.deExistenciaporDenominacion'))
-
-//Cambiar ventana "BCCL.E.TT.CASH.DENOM"
-WebUI.switchToWindowTitle('BCCL.E.TT.CASH.DENOM')
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Caja"]
+link = "Cons. de Existencia por Denominacion"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+WebUI.switchToWindowIndex(2)
+WebUI.maximizeWindow()
 
 //Limpio campos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Seleccionar boton ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Maximizar Ventana
 WebUI.maximizeWindow()
 
 //Verificar "DENOMINACION"

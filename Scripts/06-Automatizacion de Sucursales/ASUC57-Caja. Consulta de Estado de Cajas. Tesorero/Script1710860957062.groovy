@@ -33,23 +33,17 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Caja"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Seleccionar "Consulta de Estados de Cajas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkConsultadeEstadodeCajas'))
-
-//Cambiar ventana "BCCL.E.TID.CAJA.ESTADO"
-WebUI.switchToWindowTitle('BCCL.E.TID.CAJA.ESTADO')
-
-//Maximizar pantalla
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Caja"]
+link = "Consulta de Estado de Cajas"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 //Verificar "OPEN"
 WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
 def element2 = WebUI.getText(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
 assert element2.contains('OPEN')
-
 
 //----------------------------------------------------------
 //Control de fin de script

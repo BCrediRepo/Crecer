@@ -28,28 +28,17 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 WebUI.maximizeWindow()
 
-def menuDesplegable = ["Consultas Varias", "Consultas Auditoria Automatizacion Sucursales"]
-def link = "Consulta de Cajas Abiertas del Banco"
-
 //Ejecutar en la linea de comando "?70"
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?70", 1)
 
-//Cambiar a la ventana "Temenos T24"
-WebUI.switchToWindowIndex(1)
-
-//Maximizar ventana
-WebUI.maximizeWindow()
-
 //Navegar por el menu Temenos T24
+def menuDesplegable = ["Consultas Varias", "Consultas Auditoria Automatizacion Sucursales"]
+def link = "Consulta de Cajas Abiertas del Banco"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
-//Cambiar a la ventana "Cajas Abiertas del Banco"
 WebUI.switchToWindowIndex(2)
 
 //Verificar "Estado Actual"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Cajas Abiertas del Banco/lblEstadoActual'))
-
-//Maximizar ventana
 WebUI.maximizeWindow()
 
 //Validar "Estado Actual"
