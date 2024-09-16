@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -25,47 +24,21 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,31), findTestData('MainData/Users').getValue(2,31))
 WebUI.maximizeWindow()
 
-//Ingresamos el menu ?1 en el buscador
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecutar en la linea de comando "?1"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?1", 1)
 
-//Switch a la ventana Temenos T24
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Maximizamos
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Sucursal Piloto","D2 - Automatizacion de Sucursales","CONSULTAS OPERATORIAS DE FILIALES","DETALLE DE OPERACIONES"]
+link = "CONSULTA POR CODIGO OPERATIVO"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+WebUI.switchToWindowIndex(2)
 WebUI.maximizeWindow()
-
-//Click en sucursal piloto
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
-
-//Click en D2 automatizacion de sucursales
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-
-//Click en consultas operatorias de filiales
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkCONSULTASOPERATORIASDEFILIALES'))
-
-//Click en detalle de operaciones
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkDETALLEDEOPERACIONES'))
-
-//Click en consulta por codigo operativo
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Detalle de operaciones/lnkCONSULTA POR CODIGO OPERATIVO'))
-
-//Switch a la ventana Consulta Por Codigo Operativo
-WebUI.switchToWindowTitle('Consulta Por Codigo Operativo')
 
 //Seteo de datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Maximizar ventana
-WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod Operativo', '00101')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cod Sucursal', '001')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
-
-//Click en ejecutar
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //ASSERT

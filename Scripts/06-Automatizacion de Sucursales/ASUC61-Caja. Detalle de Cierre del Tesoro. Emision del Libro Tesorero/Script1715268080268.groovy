@@ -24,23 +24,17 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 61), findTestData('MainData/Users').getValue(2, 61))
 WebUI.maximizeWindow()
 
-//Seleccionar "Caja"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Seleccionar "Detalle de Cierre del Tesoro"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkDetalledeCierreDelTesoro'))
-
-//Cambiar ventana "BCCL.E.TT.LIBRO.TESORO"
-WebUI.switchToWindowTitle('BCCL.E.TT.LIBRO.TESORO')
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Caja"]
+link = "Detalle de Cierre del Tesoro"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
+WebUI.maximizeWindow()
 
 //Limpio campos
-WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Seleccionar "Ejecutar"
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//Maximizar Ventana
 WebUI.maximizeWindow()
+WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Verificar "FECHA"
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.LIBRO.TESORO/lblCategoria'))
@@ -55,7 +49,6 @@ assert element2.contains('RESPONSABLE AREA TESORERIA')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
-
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

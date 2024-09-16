@@ -22,7 +22,6 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
 
-
 //Configuracion del ambiente y login
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
@@ -30,14 +29,12 @@ WebUI.maximizeWindow()
 
 def GrpCodOpe = '5'
 def Moneda = 'ARS'
-def menuDesplegable = ["Operatoria de Caja- Reemplazo", "Consultas de Operatoria en Linea de Cajas" ]
-def link = "Control de Codigos al Cierre por Area"
 
 //Si el menu que busco está en dashboard uso esta funcion
+def menuDesplegable = ["Operatoria de Caja- Reemplazo", "Consultas de Operatoria en Linea de Cajas" ]
+def link = "Control de Codigos al Cierre por Area"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
-
-//Switch a la ventana Consulta Grupo Cod. Operativo
-WebUI.switchToWindowTitle('Consulta Grupo Cod. Operativo')
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 //Seteo de datos
@@ -61,6 +58,7 @@ assert cells[9].getText().contains('Cant Operaciones') : "Expected 'Cant Operaci
 assert cells[12].getText().contains('Moneda') : "Expected 'Moneda' but found ${cells[12].getText()}"
 assert cells[15].getText().contains('Monto') : "Expected 'Monto' but found ${cells[15].getText()}"
 
+//---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -71,6 +69,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-

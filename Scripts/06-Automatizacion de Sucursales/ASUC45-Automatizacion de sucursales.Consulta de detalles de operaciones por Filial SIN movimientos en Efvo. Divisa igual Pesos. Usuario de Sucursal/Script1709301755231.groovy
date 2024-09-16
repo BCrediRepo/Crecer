@@ -28,41 +28,27 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 4), findTestData('MainData/Users').getValue(2, 4))
 WebUI.maximizeWindow()
 
-def menuDesplegable = ["Consultas Varias", "Consultas de Atencion a Usuarios", "Consultas de Cierre Operatoria"]
-def link = "Detalle de Operaciones Sin Efvo (Filial)"
-
 //Ejecutar en la linea de comando "?70"
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?70", 1)
 
-//Cambiar a la ventana "Temenos T24"
-WebUI.switchToWindowIndex(1)
-
 //Navegar por el menu Temenos T24
+def menuDesplegable = ["Consultas Varias", "Consultas de Atencion a Usuarios", "Consultas de Cierre Operatoria"]
+def link = "Detalle de Operaciones Sin Efvo (Filial)"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
-//Cambiar a la ventana "Totales Sucursal x Cod Oper."
 WebUI.switchToWindowIndex(2)
 
 //Seteo de Datos "Moneda", "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Maximizar ventana
-WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '043')
-
-//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.maximizeWindow()
 
 //Seleccionar boton "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Seleccionar "boton Ver Detalle"
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/Consultas Totales Administrativos/DetalleOpSinEfectivoFILIAL/Totales Sucursal x Cod Oper/btnVerDetalle'))
-
-//Cambiar ventana "Detalle Transacciones No Efectivo"
-WebUI.switchToWindowTitle('Detalle Transacciones No Efectivo')
 
 //Verificar la sucursal
 WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Totales Usuario x Cod Oper/lblSucursal'))

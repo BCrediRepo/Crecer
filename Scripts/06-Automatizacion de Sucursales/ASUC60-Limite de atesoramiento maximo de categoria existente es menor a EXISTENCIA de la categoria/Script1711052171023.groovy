@@ -28,33 +28,21 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
+//Navegar por el menu del Dashboard
 def menuDesplegable = ["Consultas de Operatoria en Linea de Cajas"]
 def link = "Consulta de Excesos en Linea"
-
-//Navegar por el menu del Dashboard
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
-
-//Cambiar ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
 WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "No. de Caja"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Maximizar ventana
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Caja', '1546')
-
-//Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar boton "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Verificar "Diferencia"
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
-
 //Validar "Diferencia"
+WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
 def diferencia = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/BCCL.E.TT.CONSULTA.ATESORAMIENTO/lblDiferencia'))
 assert diferencia.contains('Diferencia')
 

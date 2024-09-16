@@ -33,30 +33,23 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
-//Seleccionar "Caja"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCaja'))
-
-//Seleccionar "Apertura de Caja"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/52-Caja/lnkAperturadeCaja'))
-
-//Cambiar ventana "TELLER ID"
-WebUI.switchToWindowTitle('TELLER ID')
-
-//Maximizar pantalla
+//Se accede al menu Automatizacion de Sucursales
+menuDesplegable = ["Caja"]
+link = "Apertura de Caja"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 try {
 	//Seleccionar "Boton Aceptar Registro"
-	WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
-
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+	
 	//Verificar "IMPOSIBLE ABRIR CAJA QUE YA SE ENCUENTRA ABIERTA"
 	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/04-TELLER ID/lblImposibleAbrirCaja'))
 
 	//Validar "IMPOSIBLE ABRIR CAJA QUE YA SE ENCUENTRA ABIERTA"
 	def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/04-TELLER ID/lblImposibleAbrirCaja'))
 	assert element.contains('IMPOSIBLE ABRIR CAJA QUE YA SE ENCUENTRA ABIERTA')
-
-	//Screenshot
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 	//Switch a la ventana del Dashboard
@@ -67,24 +60,16 @@ try {
 
 	//Cambiar ventana "BCCL.E.TID.CAJA.ESTADO"
 	WebUI.switchToWindowTitle('BCCL.E.TID.CAJA.ESTADO')
-
-	//Maximizar pantalla
 	WebUI.maximizeWindow()
 
-	//Verificar "OPEN"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
-
 	//Validar "OPEN"
+	WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
 	def element2 = WebUI.getText(findTestObject('Object Repository/17-Remesas/05-BCCL.E.TID.CAJA.ESTADO/lblOPENTesoro'))
 	assert element2.contains('OPEN')
 }
 catch (Exception e) {
 	//Definir Objeto
-	Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-	
-	//Dividir la cadena por espacios en blanco y tomar elemento
-	def partes = Transaccion1.split('\\s+')
-	def trx1 = partes[2]
+	Transaccion1 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	assert Transaccion1.contains('Txn Completa:')
 	
 	//Switch a la ventana del Dashboard
@@ -95,8 +80,6 @@ catch (Exception e) {
 
 	//Cambiar ventana "BCCL.E.TID.CAJA.ESTADO"
 	WebUI.switchToWindowTitle('BCCL.E.TID.CAJA.ESTADO')
-
-	//Maximizar pantalla
 	WebUI.maximizeWindow()
 
 	//Verificar "OPEN"

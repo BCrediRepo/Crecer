@@ -23,51 +23,35 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2,2))
 
+//Ejecuta en la linea de comando menu ?323
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("TSA.SERVICE,", 1)
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'TSA.SERVICE,')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña Movimiento de Fondos
-WebUI.switchToWindowIndex(1)
-
-//Maximiza la pantalla
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/TSA.SERVICE/txtTSA.SERVICEId'), 'BNK/BCCL.B.AC.SALDOS.FILIAL')
-
-//Selecciona Modificar un Registro
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/05-TSA.SERVICE,/btnModificarRegistro'))
-
+//Seteo BNK/BCCL.B.AC.SALDOS.FILIAL para modificar el estado
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), 'BNK/BCCL.B.AC.SALDOS.FILIAL')
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/05-TSA.SERVICE,/select_ServiceControl'), 6)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/25-Cierre de Cuenta/05-TSA.SERVICE,/select_ServiceControl'), 3)
-
-WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
-
-//Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('Object Repository/40-Tarjeta de Deposito/TSA.SERVICE/txtTSA.SERVICEId'), 'BNK/BCCL.B.AC.SALDOS.FILIAL')
-
-//Selecciona Modificar un Registro
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/05-TSA.SERVICE,/btnModificarRegistro'))
-
+//Seteo BNK/BCCL.B.AC.SALDOS.FILIAL para modificar el estado
+WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), 'BNK/BCCL.B.AC.SALDOS.FILIAL')
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/25-Cierre de Cuenta/05-TSA.SERVICE,/select_ServiceControl'), 6)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/25-Cierre de Cuenta/05-TSA.SERVICE,/select_ServiceControl'), 4)
-
-WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
-def element2 = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Recupero de Filiales/lblTxn Completa'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element2.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------

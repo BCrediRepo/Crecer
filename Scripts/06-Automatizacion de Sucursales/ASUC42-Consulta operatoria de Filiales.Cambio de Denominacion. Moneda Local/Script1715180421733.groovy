@@ -16,25 +16,48 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
 
+//Funcion que setea la cantidad de denominaciones pasadas por parametro en 'tab2' con la denominacion 'CIEN PESOS'
+def SetTabla(String tabla, String variable, int posVariable, int posInput, String cant) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (int i = 0; i < rows.size(); i++) {
+		WebElement row = rows[i]
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			// Incrementamos la fila (i + 1)
+			if (i + 1 < rows.size()) {
+				WebElement nextRow = rows[i + 1]
+				List<WebElement> tdList = nextRow.findElements(By.tagName("td"))
+				WebElement tdElement = tdList[posInput]
+				WebElement lnkElement = tdElement.findElement(By.tagName("input"))
+				lnkElement.sendKeys(cant)
+				return true
+			} else {
+				println("No hay una fila siguiente.")
+				return false
+			}
+		}
+	}
+	return false
+}
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,24), findTestData('MainData/Users').getValue(2, 24))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,7), findTestData('MainData/Users').getValue(2, 7))
 WebUI.maximizeWindow()
 
-//Click en transacciones especiales
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkTransacciones Especiales'))
-
-//Click en ajustes de denominacion del tesoro
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAjustesDe Denominacion del Tesoro'))
-
-//Switch a la ventana TELLER
-WebUI.switchToWindowTitle('TELLER')
-
-//Maximizamos
+//Se accede al menu Cajas
+def menuDesplegable = ["Transacciones Especiales"]
+def link = "Ajustes de Denominacion del Tesoro"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
 //Ingresamos el monto
@@ -47,34 +70,34 @@ WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/
 //Click en Denominaciones DB
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/spanDenominaciones DB'))
 
-//Ingresamos la cantidad en Denominaciones DB
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/txtDenominacionDB.8'), '1')
+//Funcion que setea la cantidad de denominaciones pasadas por parametro en 'tab2' con la denominacion 'CIEN PESOS'
+def encontrado = false
+while (!encontrado) {
+	encontrado = SetTabla('tab2','CIEN PESOS', 4, 3, '1')
+}
 
 //Click en Denominaciones CR
 WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/spanDenominaciones CR'))
 
-//Ingresamos la cantidad en Denominaciones CR
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/txtDenominacion.8'), '1')
-
-//Click en validar registro
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/btnValidarRegistro'))
+//Funcion que setea la cantidad de denominaciones pasadas por parametro en 'tab2' con la denominacion 'CIEN PESOS'
+encontrado = false
+while (!encontrado) {
+	encontrado = SetTabla('tab3','CIEN PESOS', 4, 3, '1')
+}
 
 //Click en aceptar registro
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Click en aceptar alertas
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/lnkAceptar Alertas'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/lblTxn Completa'), 6)
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/lblTxn Completa'))
-
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/TELLER/lblTxn Completa'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
@@ -85,4 +108,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

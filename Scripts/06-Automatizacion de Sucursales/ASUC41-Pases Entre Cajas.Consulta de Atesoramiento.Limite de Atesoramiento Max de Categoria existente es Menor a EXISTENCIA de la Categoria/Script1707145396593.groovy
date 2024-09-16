@@ -28,22 +28,16 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,2), findTestData('MainData/Users').getValue(2, 2))
 WebUI.maximizeWindow()
 
+//Se accede al menu Cajas
 def menuDesplegable = ["Consultas de Operatoria en Linea de Cajas"]
 def link = "Consulta de Excesos en Linea"
-
-//Navegar por el menu del Dashboard
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
-
-//Cambiar a la ventana "BCCL.E.TT.CONSULTA.ATESORAMIENTO"
 WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos "No. Caja"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Maximizar ventana
-WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('No. Caja', '1546')
+WebUI.maximizeWindow()
 
 //Capturar tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -67,7 +61,6 @@ def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion 
 assert element.contains('Cajero')
 
 //---------------------------------------------------------------------------------------------------------------------
-
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
