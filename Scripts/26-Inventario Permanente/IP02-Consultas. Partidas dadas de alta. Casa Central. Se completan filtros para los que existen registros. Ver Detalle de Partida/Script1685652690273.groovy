@@ -31,18 +31,14 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.PARTIDAS.CC.ALTAS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.CC.ALTAS')
+//Ejecuta en la linea de comando menu ?1
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.IP.PARTIDAS.CC.ALTAS", 1)
 WebUI.maximizeWindow()
 
 //Seteo de Datos "Sucursal", "Codigo IP"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '001')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP', '1008')
-
 
 // Captura el tiempo de inicio
 long startTime = System.currentTimeMillis()
@@ -51,7 +47,6 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.maximizeWindow()
-//WebUI.delay(120)
 
 WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/lblSucursal'))
 
@@ -63,29 +58,21 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
+WebUI.verifyElementVisible(findTestObject('Object Repository/27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/lblSucursal'))
 Sucursal = WebUI.getText(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/lblSucursal'))
-
-if (Sucursal == '001') {
-    CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-} else {
-    CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
-}
+assert Sucursal.contains('001')
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.PARTIDAS.CC.ALTAS/lnkVerDetalle'))
-
 WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
-
 WebUI.maximizeWindow()
 
-Formulario = WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/formDetalle'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblCodigoIP'))
 
-if (Formulario == true) {
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-}else {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
-}
+codigoIP = WebUI.getText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblCodigoIP'))
+println(codigoIP)
+assert codigoIP.contains('Codigo Ip')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
@@ -94,4 +81,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

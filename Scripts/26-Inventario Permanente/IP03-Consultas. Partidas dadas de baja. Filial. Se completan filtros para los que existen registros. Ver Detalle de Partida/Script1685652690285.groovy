@@ -29,14 +29,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
         2, 15))
 
 WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.PARTIDAS.FIL.BAJAS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.FIL.BAJAS')
+//Ejecuta en la linea de comando menu ENQ BCCL.E.IP.PARTIDAS.FIL.BAJAS
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.IP.PARTIDAS.FIL.BAJAS", 1)
 
 //Seteo de datos "ID Persona"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -60,6 +56,7 @@ long elapsedTime = endTime - startTime
 
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
+//Verifico que la cuenta se encuentre en estado INACTIVA
 if (estado == 'INACTIVA') {
     CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
@@ -69,21 +66,20 @@ if (estado == 'INACTIVA') {
 }
 
 WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
-
-WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/formDetalleBaja'))
-
 WebUI.maximizeWindow()
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'( //Control de fin de script
-    )
+WebUI.verifyElementVisible(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblCodigoIP'))
+codigoIP = WebUI.getText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblCodigoIP'))
+println(codigoIP)
+assert codigoIP.contains('Codigo Ip')
 
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

@@ -31,11 +31,8 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.CODIGOS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.IP.CODIGOS')
+//Ejecuta en la linea de comando menu ENQ BCCL.E.IP.CODIGOS
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.IP.CODIGOS", 1)
 
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
@@ -57,15 +54,11 @@ long elapsedTime = endTime - startTime
 
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 
-Cabecera = WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.E.IP.CODIGOS/lblCabeceraCodigo'))
+def detalleCodigo = WebUI.getText(findTestObject('27-Inventario Permanente/BCCL.E.IP.CODIGOS/lblCodigo'))
 
-if (Codigo == true && Cabecera == true) {
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-}else {
-	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
-}
+assert detalleCodigo.contains('1001')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

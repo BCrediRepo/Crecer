@@ -26,12 +26,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('02-Dashboard/lnkInventarioPermanente'))
-
-WebUI.click(findTestObject('02-Dashboard/25-Inventario Permanente/spanAltaDePartidas'))
-
-WebUI.click(findTestObject('02-Dashboard/25-Inventario Permanente/Alta de Partidas/lnkContraCuentaContable'))
-
+//Ir a Inventario Permanente, Alta de partidas, contra cuenta del socio
+def menuDesplegable = ["Inventario Permanente", "Alta de Partidas"]
+def link = "Contra Cuenta Contable"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCodigoIP'), '0099')
@@ -40,53 +38,37 @@ WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCodig
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'))
-
-//WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), 3)
-
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), '1002388512')
-
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/btnDrillDown'))
-
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/lblCuenta'))
 
 //WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'))
 //WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'), 3)
 //WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'), '00890170146')
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCtaContableAltaID'))
-
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCtaContableAltaID'), 3)
-
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCtaContableAltaID'), '2921952')
-
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'))
-
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), 3)
-
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), GlobalVariable.vFechaCOB)
-
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtMonto'), '2000')
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/btnValidarRegistro'))
+//Click en boton validar y  aceptar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/btnAceptarRegistro'))
-
-//alertas = WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/lnkAceptarAlertas'))
+//alertas = WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 //if(alertas == true) {
-//WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/lnkAceptarAlertas'))
+//WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 //}
-txn = WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/lblTxnCompletada'))
-
+txn = WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert txn == true
 
 WebUI.closeWindowTitle('BCCL.IP.PARTIDAS')
-
 WebUI.switchToWindowIndex(0)
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.RECLA.PARTIDAS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.IP.RECLA.PARTIDAS')
+//Setear ENQ BCCL.E.IP.RECLA.PARTIDAS
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.IP.RECLA.PARTIDAS", 1)
 
 //Seteo de datos "Codigo IP", "Id Persona"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -98,30 +80,23 @@ CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Codigo IP', '0099')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Persona', '1002388512')
 
 //Seleccionar ejecutar
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/lnkEjecutar'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.selectOptionByIndex(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/cbxOpciones'), 1)
-
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/btnVisto'))
-
+WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/btnSelectDrilldown'))
 WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
-
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtCodigoIPReclasificacion'), 
-    '0795')
-
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtCodigoIPReclasificacion'), '0795')
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/txtFechaReclasificacion'), GlobalVariable.vFechaCOB)
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/btnAceptarRegistro'))
-
-txn = WebUI.verifyElementVisible(findTestObject('27-Inventario Permanente/BCCL.E.IP.RECLA.PARTIDAS/Validacion Registro (BCCL.IP.PARTIDAS)/lblTXNcompleta'))
-
+txn = WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert txn == true
+
+//----------------------------------------------Control de fin de script----------------------------------------------//
 
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

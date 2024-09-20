@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+         <value>#fieldCaption\:CODIGO\.IP</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>5a327517-b583-41bb-a0f0-3457c7dbea32</webElementGuid>
+      <webElementGuid>8597115a-49ed-4645-91a8-dacdc77bec36</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>disabled_dealbox disabled_dealbox_BCCLIPPARTIDAS disabled_dealbox_BCCLIPPARTIDAS_BAJACC</value>
-      <webElementGuid>bd334ef8-a31d-4598-ae1b-6f191b9fe1b9</webElementGuid>
+      <webElementGuid>d5e5940f-97ae-400e-9620-9b47f74a34d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>0099</value>
-      <webElementGuid>1652643f-bbd9-4180-86db-78f732817752</webElementGuid>
+      <webElementGuid>b171d7e2-a079-4060-b5eb-bc19eb833031</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[3]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_BCCLIPPARTIDAS disabled_dealbox_BCCLIPPARTIDAS_BAJACC&quot;]</value>
-      <webElementGuid>3f8c927e-69cd-460b-bc81-3823002350e5</webElementGuid>
+      <webElementGuid>113f7501-b139-44a1-bdf5-e5312f90f949</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[3]/td[3]/span</value>
-      <webElementGuid>ae103a2c-5da8-4459-b91b-f568cbb89de5</webElementGuid>
+      <webElementGuid>42d33c71-f011-4b5d-9788-941c1c65347b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Codigo IP'])[1]/following::span[1]</value>
-      <webElementGuid>c9949db3-a059-40ff-a074-1413b7cd77d7</webElementGuid>
+      <webElementGuid>235fd4b7-7cbf-46fc-9316-447104779f5f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Contable'])[1]/following::span[2]</value>
-      <webElementGuid>ae247807-9e10-49f9-9482-a372652b4a1f</webElementGuid>
+      <webElementGuid>68230d3a-bd30-4dc3-bc77-c679a8b431bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ARS COBROS A CUENTA DE CAPITAL'])[1]/preceding::span[1]</value>
-      <webElementGuid>af598d14-775b-4c68-86ab-1190b907eb25</webElementGuid>
+      <webElementGuid>6c857ee6-a458-46d7-a24c-956ee1876d59</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sucursal'])[1]/preceding::span[2]</value>
-      <webElementGuid>05f97ed2-074b-42ba-8253-58a7087f2fc0</webElementGuid>
+      <webElementGuid>e30c1583-1aac-443a-9835-f6bbd3286a91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='0099']/parent::*</value>
-      <webElementGuid>ddba2877-b0b7-480e-b175-66c678461357</webElementGuid>
+      <webElementGuid>97503cd3-0328-46b5-8c74-f1dd3c29b4fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[3]/td[3]/span</value>
-      <webElementGuid>7bd3c93b-d151-4695-8e48-5cf68184bae4</webElementGuid>
+      <webElementGuid>a1808871-2e86-4538-a969-d6ad9e86e750</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '0099' or . = '0099')]</value>
-      <webElementGuid>152e573b-4b2d-4a1a-8ad1-7b301183a3f1</webElementGuid>
+      <webElementGuid>25adac98-cde4-43d5-97dc-c3cfbf821a70</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

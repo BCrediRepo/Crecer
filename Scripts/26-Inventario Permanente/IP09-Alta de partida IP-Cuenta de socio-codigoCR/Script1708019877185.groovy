@@ -18,6 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -28,43 +32,34 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('02-Dashboard/lnkInventarioPermanente'))
-
-WebUI.click(findTestObject('02-Dashboard/25-Inventario Permanente/spanAltaDePartidas'))
-
-WebUI.click(findTestObject('02-Dashboard/25-Inventario Permanente/Alta de Partidas/lnkContraCuentaDelSocio'))
-
+//Ir a Inventario Permanente, Alta de partidas, contra cuenta del socio
+def menuDesplegable = ["Inventario Permanente", "Alta de Partidas"]
+def link = "Contra Cuenta del Socio"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCodigoIP'), '0099')
-
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'))
-
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), 3)
-
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), '2000514092')
-
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtCuentaSocio'), '13190056217')
-
 WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'))
-
 WebUI.waitForElementVisible(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), 3)
-
-//WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), '20230828')
-WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), '20240223')//20230901
-
+WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtFecha'), '20240223')
 WebUI.setText(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/txtMonto'), '100')
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/btnValidarRegistro'))
+//Click en boton validar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
-WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/btnAceptarRegistro'))
+//Click boton aceptar
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//WebUI.click(findTestObject('27-Inventario Permanente/BCCL.IP.PARTIDAS/lnkAceptarAlertas'))
+//WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblTxnCompletada'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblTxnCompletada'))
-def element = WebUI.getText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblTxnCompletada'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'),6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
 // Imprimir el numero de operacion en consola
@@ -80,14 +75,10 @@ String terceraPalabra = palabras[2];
 println("La tercera palabra es: " + terceraPalabra);
 
 WebUI.closeWindowTitle('BCCL.IP.PARTIDAS')
-
 WebUI.switchToWindowIndex(0)
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.IP.PARTIDAS.FIL.ALTAS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.IP.PARTIDAS.FIL.ALTAS')
+//Ejecuta en la linea de comando ENQ BCCL.E.EB.CONS.REVE
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.IP.PARTIDAS.FIL.ALTAS", 1)
 
 //Ingresa numero de operacion
 WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.ALTAS/txtNroPartida'), terceraPalabra)
@@ -101,16 +92,13 @@ WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/Alta part
 WebUI.switchToWindowTitle('BCCL.IP.PARTIDAS')
 
 CodigoIp = WebUI.verifyElementVisible(findTestObject('Object Repository/27-Inventario Permanente/Alta partidas - Caja/lblCodigoIP'))
-
 assert CodigoIp == true
 
-//----------------------------------
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
