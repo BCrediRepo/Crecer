@@ -18,6 +18,43 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+
+def rellenarFormulario(String tabla, String variable, int posVariable, String valor, int posValor) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posValor]
+			WebElement lnkElement = tdElement.findElement(By.tagName("input"))
+			lnkElement.sendKeys(valor)
+			return true
+		}
+	}
+	return false
+}
+
+def clickLinkBotonTabla(String tabla, String variable, int posVariable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posLink]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -27,43 +64,35 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Accedemos a la enq a traves sucursal piloto en el menu ?1
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-WebUI.switchToWindowTitle('Temenos T24')
-WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/lnkD2-Posteo'))
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/D2 - Posteos/lnkPosteo'))
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/D2 - Posteos/Posteo/lnkPagoEnEfectivo'))
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
 
-//se cargan datos de posteo
+menuDesplegable = ['Sucursal Piloto', 'D2 - Automatizacion de Sucursales', 'POSTEO PLANTA CAJA', 'POSTEO']
+link = 'PAGO EN EFECTIVO'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+
 WebUI.switchToWindowTitle('Movimiento de Fondos')
-WebUI.waitForElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'), 3)
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'))
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lblConcepto1'))
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/txtNombrePosteo'))
-WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtNombrePosteo'), 'PRUEBAS CRECER')
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/txtImportePago'))
-WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtImportePago'), '1000')
-WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtReferPosteo'), 'PRUEBAS CRECER')
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAceptarRegistro'))
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lnkAceptarAlertas'))
 
-//Definir Objeto
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+def encontrado = false
+while(!encontrado) {
+	encontrado = rellenarFormulario('tab1', 'Moneda', 1, 'ARS', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Concepto', 1, '18950PME', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Nombre Posteo', 1, 'PRUEBAS CRECER', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Importe', 1, '1000', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Observaciones.1', 1, 'PRUEBAS CRECER', 3)
+}
 
-//Dividir la cadena por espacios en blanco y tomar elemento
-def partes = Transaccion1.split('\\s+')
-def trx1 = partes[2]
-GlobalVariable.vTxn = trx1
-assert Transaccion1.contains('Txn Completa:')
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-//Se verifica la txn y se saca captura del comprobante
-Completa = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-assert Completa.contains('Txn Completa:') == true
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-//WebUI.switchToWindowTitle('e-forms')
-
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
+GlobalVariable.vTxn = transaccion
+assert TxnInicial.contains('Txn Completa')
 
 //----------------------------------------------------------------------------
 @com.kms.katalon.core.annotation.TearDownIfFailed

@@ -26,78 +26,16 @@ import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 
-// Llamar caso PST04 por que genera un posteo para luego se va liquidar
-WebUI.callTestCase(findTestCase('36-Posteo/PST04-Generar Posteos para liquidar - Pago en efectivo'), [:], FailureHandling.STOP_ON_FAILURE)
-
-//Configuracion de ambiente
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
-WebUI.maximizeWindow()
-
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkSucursalPiloto'))
-
-//Seleccionar "D2-Posteo"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/lnkD2-Posteo'))
-
-//Seleccionar "Posteo"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/lnkPOSTEO'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "LIQUIDAR POSTEO EN CAJA"
-WebUI.click(findTestObject('Object Repository/37-Posteo/Temenos T24/Posteo/lnkLIQUIDARPOSTEOENCAJA'))
-
-//Cambiar ventana "BCCL.E.EB.POSTEO.INAU"
-WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
-
-//Definir la variable trx1 como "variable"
-def variable = GlobalVariable.vTxn
-
-//Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
-def buscarElementoEnTabla(String variable) {
-	
-	//Obtener elemento de la tabla
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	
-	//Obtener todas las filas de la tabla
+def clickLinkBotonTabla(String tabla, String variable, int posVariable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
 	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	
-	//Desplegar la columna donde se muestra la info de las transacciones
 	for (WebElement row : rows) {
-		
-		//Obtener tercer valor de la fila (índice 1, ya que las listas son base cero)
-		WebElement cell = row.findElements(By.tagName("td"))[0]
-
-		//Obtener texto
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
 		String cellText = cell.getText()
-		
-		//Comparar valor de la celda con el valor especifico
 		if (cellText.equals(variable)) {
-			
-			//Realizar acciones necesarias si se encuentra el valor
 			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[8]
-			
-			// Intenta encontrar el elemento 'a' dentro del elemento td
+			WebElement tdElement = tdList[posLink]
 			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
-			
-			//Seleccionar elemento 'lnk'
 			lnkElement.click()
 			return true
 		}
@@ -105,34 +43,34 @@ def buscarElementoEnTabla(String variable) {
 	return false
 }
 
-//Logica para buscar el elemento en la tabla
+// Llamar caso PST04 por que genera un posteo para luego se va liquidar
+WebUI.callTestCase(findTestCase('36-Posteo/PST04-Generar Posteos para liquidar - Pago en efectivo'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//Configuracion de ambiente
+CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+//Login
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 2), findTestData('MainData/Users').getValue(2, 2))
+WebUI.maximizeWindow()
+
+def menuDesplegable = ['Sucursal Piloto', 'D2 - Automatizacion de Sucursales', 'POSTEO PLANTA CAJA', 'POSTEO']
+def link = 'LIQUIDAR POSTEO EN CAJA'
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+//Definir la variable trx1 como "variable"
+def transaccion = GlobalVariable.vTxn
+WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 def encontrado = false
-
-//Bucle para buscar en multiples páginas
-while (!encontrado) {
-	
-	//Logica para buscar el elemento en la tabla
-	encontrado = buscarElementoEnTabla(variable)
-		
-	//Si no se encontro el valor, Seleccionar boton "Siguiente" y buscar nuevamente
-	if (!encontrado) {
-		
-		//Realizar busqueda nuevamente despues de Seleccionar "Siguiente"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		
-		//Esperar 2 seg a que se cargue la pagina
-		WebUI.delay(2)
-	}
+while(!encontrado) {
+	encontrado = clickLinkBotonTabla('datadisplay', transaccion, 0, 8)
 }
-
 //Seleccionar "boton Autorizar Registro"
-WebUI.click(findTestObject('Object Repository/57-Pases Entre Cajas/01-BCCL.E.TT.PASE.ENTRE.CAJAS/btnAutorizarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 //Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Validar "Txn Completa"
-def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 
 @com.kms.katalon.core.annotation.TearDownIfFailed

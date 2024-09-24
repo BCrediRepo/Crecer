@@ -36,13 +36,13 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 //Reacondicionar en cada script segun sea necesario, este es solo un modelo para seguir
 
 def variable = "valor"
-def clickLinkBotonTabla(String variable, int posVariable, int posLink) {		
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+def clickLinkBotonTabla(String tabla, String variable, int posVariable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
 	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	for (WebElement row : rows) {		
-		WebElement cell = row.findElements(By.tagName("td"))[posVariable]		
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
 		String cellText = cell.getText()
-		if (cellText.equals(variable)) {			
+		if (cellText.equals(variable)) {
 			List<WebElement> tdList = row.findElements(By.tagName("td"))
 			WebElement tdElement = tdList[posLink]
 			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
@@ -52,6 +52,7 @@ def clickLinkBotonTabla(String variable, int posVariable, int posLink) {
 	}
 	return false
 }
+
 
 def encontrado = false
 while (!encontrado) {

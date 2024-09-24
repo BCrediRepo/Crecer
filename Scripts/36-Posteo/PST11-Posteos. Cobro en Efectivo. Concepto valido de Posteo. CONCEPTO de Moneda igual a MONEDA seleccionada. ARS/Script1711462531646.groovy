@@ -16,81 +16,62 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
 
+def rellenarFormulario(String tabla, String variable, int posVariable, String valor, int posValor) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posValor]
+			WebElement lnkElement = tdElement.findElement(By.tagName("input"))
+			lnkElement.sendKeys(valor)
+			return true
+		}
+	}
+	return false
+}
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(2, 14))
 
-//Setear "?1" en el buscador del Dashboard
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
+def menuDesplegable = ['Sucursal Piloto', 'D2 - Automatizacion de Sucursales', 'POSTEO PLANTA CAJA', 'POSTEO']
+def link = 'COBRO EN EFECTIVO'
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar a la ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('02-Dashboard/lnkSucursalPiloto'))
-
-//Seleccionar "D2-Posteo"
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/lnkD2-Posteo'))
-
-//Seleccionar "Posteo"
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/D2 - Posteos/lnkPosteo'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Cobro en efectivo"
-WebUI.click(findTestObject('02-Dashboard/05-SucursalPiloto/D2 - Posteos/Posteo/lnkCobroEnEfectivo'))
-
-//Cambiar a la ventana "Movimiento de Fondos"
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
-//Esperar elemento "boton Desplegar Concepto"
-WebUI.waitForElementVisible(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'), 3)
+def encontrado = false
+while(!encontrado) {
+	encontrado = rellenarFormulario('tab1', 'Moneda', 1, 'ARS', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Concepto', 1, '18450PMI', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Nombre Posteo', 1, 'PAGO EN EFECTIVO', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Importe', 1, '550', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Observaciones.1', 1, 'PRUEBAS CRECER', 3)
+}
 
-//Seleccionar "boton Desplegar Concepto"
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnDesplegarConcepto'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//Seleccionar Concepto
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lblConcepto2'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-//Setear Comentarios
-WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtNombrePosteo'), 'PRUEBAS CRECER')
-
-//Setear Importe
-WebUI.setText(findTestObject('37-Posteo/Movimiento de Fondos/txtImporte'), '5')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAceptarRegistro'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/lnkAceptarAlertas'))
-
-//Definir objeto
-Transaccion1 = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-
-//Dividir la cadena por espacios en blanco y tomar el segundo elemento
-def partes = Transaccion1.split('\\s+')
-def trx1 = partes[2]
-
-//Guardar objeto como variable global
-GlobalVariable.vTxn = trx1
-
-assert Transaccion1.contains('Txn Completa:')
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
+GlobalVariable.vTxn = transaccion
+assert TxnInicial.contains('Txn Completa')
 
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
