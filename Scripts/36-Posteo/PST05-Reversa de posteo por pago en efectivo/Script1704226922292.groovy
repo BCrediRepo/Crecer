@@ -53,11 +53,11 @@ WebUI.click(findTestObject('37-Posteo/BCCL.E.EB.CONS.REVE/lnkReversar'))
 //Cambiar ventana a "Movimiento de Fondos" o "TELLER"
 WebUI.switchToWindowIndex(1)
 
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnReversar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnReversar'))
 
 // Verifica si el elemento está presente
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
-	WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+	WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 }
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	

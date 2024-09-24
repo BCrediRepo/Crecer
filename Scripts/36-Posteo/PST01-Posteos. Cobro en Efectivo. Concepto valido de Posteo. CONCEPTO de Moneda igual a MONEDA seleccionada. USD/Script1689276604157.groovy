@@ -28,6 +28,40 @@ import org.openqa.selenium.WebElement
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
+def rellenarFormulario(String tabla, String variable, int posVariable, String valor, int posValor) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posValor]
+			WebElement lnkElement = tdElement.findElement(By.tagName("input"))
+			lnkElement.sendKeys(valor)
+			return true
+		}
+	}
+	return false
+}
+
+def clickLinkBotonTabla(String tabla, String variable, int posVariable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posLink]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -36,35 +70,12 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Ejecuta en la linea de comando menu ?1
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?1')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña del menú ?01
-WebUI.switchToWindowTitle('Temenos T24')
-
+def menuDesplegable = ['Sucursal Piloto', 'D2 - Automatizacion de Sucursales', 'POSTEO PLANTA CAJA', 'POSTEO']
+def link = 'COBRO EN EFECTIVO'
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 //Maximiza la pantalla
 WebUI.maximizeWindow()
-
-//Ir a Sucursal piloto
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkSucursalPiloto'))
-
-//Selecciona D2 AUTOMATIZACION DE SUCURSALES
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/lnkD2AutomatizaciondeSucursales'))
-
-//Selecciona POSTEO PLANTA CAJA
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/lnkPOSTEOPLANTACAJA'))
-
-//Selecciona POSTEO
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/lnkPOSTEO'))
-
-//Ir a cobro en Efectivo
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/lnkCOBROENEFECTIVO'))
-
-//Toma un Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Se mueve a la ventana Movimiento de Fondos
 WebUI.switchToWindowTitle('Movimiento de Fondos')
@@ -72,52 +83,36 @@ WebUI.switchToWindowTitle('Movimiento de Fondos')
 //Maximiza la pantalla
 WebUI.maximizeWindow()
 
-//Verifica titulo de Detalle de operaciones sin efectivo
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/lblTituloPosteoCobroenEfectivo'))
+WebUI.delay(5)
+def encontrado = false
+while(!encontrado) {
+	encontrado = rellenarFormulario('tab1', 'Moneda', 1, 'USD', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Concepto', 1, '18030PMI', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Nombre Posteo', 1, 'PRUEBAS CRECER', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Importe', 1, '50', 3)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Observaciones.1', 1, 'PRUEBAS CRECER', 3)
+}
 
-//Ingresa moneda en USD
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtMoneda'),6)
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/btnMonedaDropdown'))
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtMoneda'),"USD")
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/btnMonedaDropdown'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 
-//Ingresa CONCEPTO 18030PMI (Legales - Cobranza en efectivo)
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtConcepto'),6)
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/btnConceptoDropdown'))
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtConcepto'),'18030PMI')
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/btnConceptoDropdown'))
-
-//Ingreso nombre posteo
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtNombrePosteo'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtNombrePosteo'),'COBRO EN EFECTIVO')
-
-//Ingresa monto
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtImporte'),6)
-WebUI.setText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/txtImporte'),'5')
-
-//Validar la operación
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/btnValidar'))
-
-//Toma un Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Click Aceptar
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/btnAceptar'))
-
-//Click Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/btnAceptarAlertas'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Espera y recibe mensaje de tx completa
-WebUI.waitForElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/lblTxnCompleta'),6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/07-Automatizacion de Sucursales/Temenos T24/PosteoPlantaCaja/Posteo/Cobro en Efectivo/lblTxnCompleta'))
-// Dividir la cadena por espacios en blanco y tomar el segundo elemento
-def partes = element.split('\\s+')
-def trx1 = partes[2]
-assert element.contains('Txn Completa:')
 
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
+assert TxnInicial.contains('Txn Completa')
 
-//Me deslogueo para poder autorizar la transaccion con otro usuario
 WebUI.switchToWindowIndex('0')
 
 WebUI.click(findTestObject('02-Dashboard/btnLogout'))
@@ -129,69 +124,27 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 49), findTestData('MainData/Users').getValue(
 		2, 49))
 
-def menuDesplegable = ["Posteo"]
-def link = "Transacciones Pendientes de Liquidacion"
+def menuDesplegable1 = ["Posteo"]
+def link1 = "Transacciones Pendientes de Liquidacion"
 
 //Si el menu que busco está en dashboard uso esta funcion
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable1, link1)
 WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
 
-// Obtén el elemento de la tabla
-WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
- 
-// Obtén todas las filas dentro de la tabla
-List<WebElement> rows = table.findElements(By.tagName("tr"))
- 
-// Valor específico que estás buscando
-String targetValue = trx1
- 
-// Variable para rastrear si se encontró el valor específico
-boolean foundTargetValue = false
- 
-// Itera a través de las filas
-for (WebElement row : rows) {
-	// Obtiene el tercer valor de la fila (índice 2, ya que las listas son base cero)
-	WebElement cell = row.findElements(By.tagName("td"))[0]
- 
-	// Obtiene el texto de la celda
-	String cellText = cell.getText()
- 
-	// Compara el valor de la celda con el valor específico
-	if (cellText.equals(targetValue)) {
-		foundTargetValue = true
-			
-		// Obtiene la lista de elementos td
-		List<WebElement> tdList = row.findElements(By.tagName("td"))
-		
-		// Accede al elemento td en la posición 8
-		WebElement tdElement = tdList[8]
- 
-		// Intenta encontrar el elemento 'a' dentro del elemento td
-		WebElement liquidar = tdElement.findElement(By.tagName("a"))
- 
-		// Haz clic en el enlace
-		liquidar.click()
-		
-		break
-		
-	}
+encontrado = false
+
+while (!encontrado) {
+	encontrado = clickLinkBotonTabla('datadisplay', transaccion, 0, 8)
 }
 
-
-//WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
-
 WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-WebUI.click(findTestObject('37-Posteo/Movimiento de Fondos/btnAutorizar'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 WebUI.switchToWindowIndex(2)
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-Transaccion2 = WebUI.getText(findTestObject('37-Posteo/Movimiento de Fondos/lblTxnCompleta'))
-
+Transaccion2 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert Transaccion2.contains('Txn Completa:') == true
 
 //---------------------------------------------------------------------------------------------------------------------

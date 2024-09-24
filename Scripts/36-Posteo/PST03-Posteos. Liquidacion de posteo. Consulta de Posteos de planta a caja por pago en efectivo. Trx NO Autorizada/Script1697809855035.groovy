@@ -22,6 +22,23 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+def validarElementoEnTabla(String tabla, String variable, int colVariable, String razon, int colRazon) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[colVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+					String resultado = tdList[colRazon].getText()
+					println(resultado)
+			assert tdList[colRazon].getText().contains(razon) : "Expected " + razon + " but found ${tdList[colRazon].getText()}"
+			GlobalVariable.vTxn = resultado
+			return true
+		}
+	}
+	return false
+}
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -30,22 +47,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando ENQ BCCL.E.EB.POSTEO.INAU
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.EB.POSTEO.INAU')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.EB.POSTEO.INAU
-WebUI.switchToWindowTitle('BCCL.E.EB.POSTEO.INAU')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('ENQ BCCL.E.EB.POSTEO.INAU', 1)
 
 //Limpieza
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Verifica titulo BCCL.E.FIRMAS.FISICA
-WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblTituloBCCL.E.EB.POSTEO.INAU'))
-
-//Maximiza la pantalla
-WebUI.maximizeWindow()
 
 //Toma un ScreenShot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -57,7 +62,6 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Espera y Verifica que devuelva un registro
-WebUI.waitForElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'),6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/37-Posteo/BCCL.E.EB.POSTEO.INAU/lblIdTransaccion'))
 
 // Captura el tiempo de finalización
@@ -90,28 +94,13 @@ WebUI.switchToWindowIndex(1)
 //Selecciono Audit
 WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnAudit'))
 
-//Valida el mensaje de las tx no autorizadas 
-//Esta funcion busca en los resultados el contenido de: "Estado del registro"
-//Siendo "INAO" el resultado esperado para las transacciones no autorizadas
-//La posicion de ese label puede variar segun los ambientes
 def variable = "Estado del Registro"
-		
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("tab2"))
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	for (WebElement row : rows) {		
-		WebElement cell = row.findElements(By.tagName("td"))[0]		
-		String cellText = cell.getText()
-		println (cellText)
-		if (cellText.equals(variable)) {			
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[2]
-			String texto = tdElement.getText()
-			println (texto)
-			assert texto == "INAO"
-			break
-			}
+def encontrado = false
+while(!encontrado) {
+	encontrado = validarElementoEnTabla('tab2', 'Estado del Registro', 0, 'INAO', 2)
+	String valida = GlobalVariable.vTxn
+	assert valida.contains('INAO')
 }
-
 
 //---------------------------------------------------------------------------------------------------------------------
 

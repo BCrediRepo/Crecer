@@ -26,6 +26,40 @@ import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 
+def rellenarFormulario(String tabla, String variable, int posVariable, String valor, int posValor) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posValor]
+			WebElement lnkElement = tdElement.findElement(By.tagName("input"))
+			lnkElement.sendKeys(valor)
+			return true
+		}
+	}
+	return false
+}
+
+def clickLinkBotonTabla(String tabla, String variable, int posVariable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posLink]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -33,61 +67,37 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 66), findTestData('MainData/Users').getValue(2, 66))
 WebUI.maximizeWindow()
 
-//Seleccionar "Inventario Permanente"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkInventarioPermanente'))
-
-//Seleccionar "Alta de Partidas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/25-Inventario Permanente/spanAltaDePartidas'))
-
-//Seleccionar "Alta Partidas - Caja"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/25-Inventario Permanente/Alta de Partidas/lnkAltaPartidas-Caja'))
-
+menuDesplegable = ['Inventario Permanente', 'Alta de Partidas']
+link = 'Alta Partidas - Caja'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 //Cambiar a la ventana "BCCL.IP.PARTIDAS"
 WebUI.switchToWindowIndex(1)
+WebUI.delay(5)
 
-//Seleccionar "boton Dropdown Codigo IP Datos Generales"
-WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnCodigoIPDatosGenerales'))
-
-//Maximizar Pantalla
-WebUI.maximizeWindow()
-
-//Seleccionar Codigo 0099 "ARS Cobros a cuenta de capital"
-WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblARSCobrosCuentaCapital'))
-
-//Setear Numero de Persona 
-WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/txtPersonaID'), '2000514092')
-
-//Seleccionar "boton Cuenta Datos Generales"
-WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnCuentaDatosGenerales'))
-
-//Seleccionar Cuenta 03195011374
-WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblCuenta'))
-
-//Setear Monto 
-WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/txtMonto'), '10')
-
-//Setear Observaciones
-WebUI.setText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/txtObservaciones'), 'PRUEBAS CRECER')
-
-//Seleccionar "boton Validar Registro"
-WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnValidarRegistro'))
-
-//Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/btnAceptarRegistro'))
+def encontrado = false
+while(!encontrado) {
+	encontrado = rellenarFormulario('tab1', 'Codigo IP', 0, '0099', 2)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Persona', 0, '2000514092', 2)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Cuenta', 0, '03195011374', 2)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Monto', 0, '10', 2)
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+	encontrado = rellenarFormulario('tab1', 'Observaciones', 0, 'PRUEBASCRECER', 2)	
+}
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Definir Transaccion
-Transaccion = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-
-//Dividir la cadena por espacios en blanco y tomar elemento
-def partes = Transaccion.split('\\s+')
-def trx1 = partes[2]
-assert Transaccion.contains('Txn Completa:')
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def parts = TxnInicial.tokenize(' ')
+def transaccion = parts[2]
+assert TxnInicial.contains('Txn Completa')
 
 //Volver a Logearse con el usuario que liquida Posteos
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -95,21 +105,16 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 67), findTestData('MainData/Users').getValue(2, 67))
 WebUI.maximizeWindow()
 
-//Seleccionar "Inventario Permanente"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkInventarioPermanente'))
-
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/25-Inventario Permanente/lnkConsultas'))
-
-//Seleccionar "Partidas Dadas de Alta"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/25-Inventario Permanente/Consultas/lnkPartidasDadasdeAlta'))
+menuDesplegable1 = ['Inventario Permanente', 'Consultas']
+link1 = 'Partidas Dadas de Alta'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable1, link1)
 
 //Cambiar a la ventana "BCCL.E.IP.PARTIDAS.FIL.ALTAS"
 WebUI.switchToWindowIndex(1)
 
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro Partida', trx1)
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Nro Partida', transaccion)
 
 //Maximizar Pantalla
 WebUI.maximizeWindow()
@@ -117,9 +122,10 @@ WebUI.maximizeWindow()
 //Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
-//Seleccionar "Ver detalle de Partida"
-WebUI.click(findTestObject('Object Repository/27-Inventario Permanente/BCCL.E.IP.PARTIDAS.FIL.ALTAS/btnVerDetalleDePartida'))
-
+encontrado = false
+while(!encontrado) {
+	encontrado = clickLinkBotonTabla('datadisplay', transaccion, 3, 11)
+}
 //Cambiar ventana "BCCL.IP.PARTIDAS"
 WebUI.switchToWindowIndex(1)
 
@@ -128,106 +134,36 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Definir ftAlta
 ftAlta = WebUI.getText(findTestObject('Object Repository/27-Inventario Permanente/BCCL.IP.PARTIDAS/lblFtAlta'))
-
-//Definir Variable Global
-GlobalVariable.vTxn = ftAlta
-
+WebUI.closeWindowIndex(1)
 //Cambiar a la ventana del Dashboard
 WebUI.switchToWindowIndex(0)
 
-//Ingresar "?303" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?303')
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-	
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowIndex(2)
-
-//Seleccionar "Posteo"
-WebUI.click(findTestObject('Object Repository/37-Posteo/Temenos T24/lnkPosteoLiquidacion'))
-
-//Seleccionar "Transacciones Pendientes de Liquidacion"
-WebUI.click(findTestObject('Object Repository/37-Posteo/Temenos T24/Posteo/lblTransaccionesPendientesdeLiquidacion'))
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?303', 1)
+menuDesplegable2 = ['Posteo']
+link2 = 'Transacciones Pendientes de Liquidacion'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable2, link2)
 //Cambiar ventana "BCCL.E.EB.POSTEO.INAU"
-WebUI.switchToWindowIndex(3)
+WebUI.switchToWindowIndex(2)
 
 //Maximizar Pantalla
 WebUI.maximizeWindow()
 
-//Esperar 2 seg a que se cargue la pagina
-WebUI.delay(2)
-
-//Definir GlobalVariable como "variable"
-def variable = GlobalVariable.vTxn
-
-//Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
-def buscarElementoEnTabla(String variable) {
-	
-	//Obtener elemento de la tabla
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	
-	//Obtener todas las filas de la tabla
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	
-	for (WebElement row : rows) {
-		
-		//Obtener tercer valor de la fila (índice 1, ya que las listas son base cero)
-		WebElement cell = row.findElements(By.tagName("td"))[0]
-
-		//Obtener texto
-		String cellText = cell.getText()
-
-		//Comparar valor de la celda con el valor especifico
-		if (cellText.equals(variable)) {
-			
-			//Realizar acciones necesarias si se encuentra el valor
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[8]
-			String tdElementText = tdElement.getText()
-
-			WebElement liquidar = tdElement.findElement(By.tagName("a"))
-			
-			//Seleccionar liquidar
-			liquidar.click()
-			return true
-		}
-	}
-	return false
-}
-
-//Logica para buscar el elemento en la tabla
-def encontrado = false
-
-//Bucle para buscar en multiples páginas
-while (!encontrado) {
-	
-	//Logica para buscar el elemento en la tabla
-	encontrado = buscarElementoEnTabla(variable)
-		
-	//Si no se encontro el valor, Seleccionar boton "Siguiente" y buscar nuevamente
-	if (!encontrado) {
-		
-		//Realizar busqueda nuevamente despues de Seleccionar "Siguiente"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		
-		//Esperar 2 seg a que se cargue la pagina
-		WebUI.delay(2)
-	}
+encontrado = false
+while(!encontrado) {
+	encontrado = clickLinkBotonTabla('datadisplay', ftAlta, 0, 8)
 }
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Autorizar Registro"
-WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnAutorizarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 //Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Validar "Txn Completa"
-def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 
 //Control de fin de script

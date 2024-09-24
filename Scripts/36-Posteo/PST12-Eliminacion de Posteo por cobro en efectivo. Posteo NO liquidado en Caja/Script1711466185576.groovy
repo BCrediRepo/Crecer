@@ -31,6 +31,22 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.Alert as Alert
 
+def clickLinkBotonTabla(String tabla, String variable, int posVariable, int posLink) {
+	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
+	List<WebElement> rows = table.findElements(By.tagName("tr"))
+	for (WebElement row : rows) {
+		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
+		String cellText = cell.getText()
+		if (cellText.equals(variable)) {
+			List<WebElement> tdList = row.findElements(By.tagName("td"))
+			WebElement tdElement = tdList[posLink]
+			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
+			lnkElement.click()
+			return true
+		}
+	}
+	return false
+}
 //Se ejecuta primero un cobro en efectivo
 WebUI.callTestCase(findTestCase('36-Posteo/PST11-Posteos. Cobro en Efectivo. Concepto valido de Posteo. CONCEPTO de Moneda igual a MONEDA seleccionada. ARS'), 
     [:], FailureHandling.STOP_ON_FAILURE)
@@ -42,32 +58,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 14), findTestData('MainData/Users').getValue(2, 14))
 WebUI.maximizeWindow()
 
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkSucursalPiloto'))
-
-//Seleccionar "D2-Posteo"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/lnkD2-Posteo'))
-
-//Seleccionar "Posteo"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/lnkPOSTEO'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "CONSULTAR, MODIFICAR o ELIMINAR OPERACIONES"
-WebUI.click(findTestObject('Object Repository/25-Cierre de Cuenta/07-Temenos T24/Sucursal Piloto/D2 - Posteo/POSTEO/lnkConsultarModificarEliminarOperaciones'))
+def menuDesplegable = ['Sucursal Piloto', 'D2 - Posteo', 'POSTEO']
+def link = 'CONSULTAR, MODIFICAR o ELIMINAR OPERACIONES'
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.E.EB.CONS.DEL.NAU"
 WebUI.switchToWindowTitle('BCCL.E.EB.CONS.DEL.NAU')
@@ -83,82 +77,28 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Definir la variable trx1 como "variable"
-def variable = GlobalVariable.vTxn
+def transaccion = GlobalVariable.vTxn
 
-//Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
-def buscarElementoEnTabla(String variable) {
-	
-	//Obtener elemento de la tabla
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	
-	//Obtener todas las filas de la tabla
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	
-	//Desplegar la columna donde se muestra la info de las transacciones
-	for (WebElement row : rows) {
-		
-		//Obtener tercer valor de la fila (índice 1, ya que las listas son base cero)
-		WebElement cell = row.findElements(By.tagName("td"))[1]
-
-		//Obtener texto
-		String cellText = cell.getText()
-		
-		//Comparar valor de la celda con el valor especifico
-		if (cellText.equals(variable)) {
-			
-			//Realizar acciones necesarias si se encuentra el valor
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[16]
-			
-			// Intenta encontrar el elemento 'a' dentro del elemento td
-			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
-			
-			//Seleccionar elemento 'lnk'
-			lnkElement.click()
-			return true
-		}
-	}
-	return false
-}
-
-//Logica para buscar el elemento en la tabla
 def encontrado = false
-
-//Bucle para buscar en multiples páginas
-while (!encontrado) {
-	
-	//Logica para buscar el elemento en la tabla
-	encontrado = buscarElementoEnTabla(variable)
-		
-	//Si no se encontro el valor, Seleccionar boton "Siguiente" y buscar nuevamente
-	if (!encontrado) {
-		
-		//Realizar busqueda nuevamente despues de Seleccionar "Siguiente"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		
-		//Esperar 2 seg a que se cargue la pagina
-		WebUI.delay(2)
-	}
+while(!encontrado) {
+	encontrado = clickLinkBotonTabla('datadisplay', transaccion, 1, 16)
 }
-
 //Cambiar ventana "Movimiento de Fondos"
 WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 //Seleccionar "boton Eliminar Registro"
-WebUI.click(findTestObject('Object Repository/37-Posteo/Movimiento de Fondos/btnEliminarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnEliminarRegistro'))
 
 //definir Driver
 WebDriver driver = DriverFactory.getWebDriver()
-
-//Aceptar ventana emergente
 Alert alerta = driver.switchTo().alert()
 alerta.accept()
 
 //Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Validar "Txn Completa"
-def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 
 //Control de fin de script
