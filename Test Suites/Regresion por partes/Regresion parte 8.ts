@@ -368,4 +368,53 @@
       <testCaseId>Test Cases/30-Personas/P15-Personas. Autorización de registro Persona Física</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>8342d1a4-a8a3-4ff2-8b6d-1754e2b4d0f5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F18-Fallas de Dispositivos Consulta Sobrante de dispositivo PND. Perfil Gerencia operativa. Filtro Cartucho.Gaveta valido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5e8db4ba-10d9-4897-88c7-79a783d113cf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F19-Faltantes en Dispositivos MAP. Alta con Gerencia Operativa.Reclasificacion no numerico</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99e6ba7b-9253-4908-b4c7-9382d7fbb7e1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F20-Faltantes en Dispositivos.Consulta de Fallas de Remesas Pendientes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>359bd69c-763e-4925-83d2-199421332006</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F21-Faltantes en Dispositivos.Proceso de reclasificación fallas map</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>07a8eb8c-85f0-4b47-921b-9810857e0ad4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA20-Consulta movimientos a Reversar. Filtro Vacios. Movimiento Aceptado de tipo MT.Movimientos parametrizados para Reversar</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e389a1a-a1f5-43b8-a4eb-9c48f3743a4e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C17-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora. Sin debitos futuros (WORKING.BALANCE negativo)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5e1b6f38-1db7-41fd-bd0e-ade2b9becc3f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC31-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Fecha. Detalle. Movimiento de Debito ingresado de Transferencia entre Socios</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

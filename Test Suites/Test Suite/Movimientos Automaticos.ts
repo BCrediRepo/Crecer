@@ -151,4 +151,11 @@
       <testCaseId>Test Cases/15-Movimientos Automaticos/SIN DATA-Movimientos Automaticos.Transaccion de arreglos.Movimiento sin fecha valor.Nueva cuenta valida</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>bf5874e0-e677-4029-99ac-9526410800b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/15-Movimientos Automaticos/MA20-Consulta movimientos a Reversar. Filtro Vacios. Movimiento Aceptado de tipo MT.Movimientos parametrizados para Reversar</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

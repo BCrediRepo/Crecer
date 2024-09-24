@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>C17-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora. Sin debitos futuros (WORKING.BALANCE negativo)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f597b714-b230-4527-8122-d01352e27304</testCaseGuid>
+</TestCaseEntity>

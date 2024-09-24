@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>T01(REVISAR)-Tarjeta de credito cabal-Consulta Datos de Cuenta y Plasticos (ENQ BCCL.E.CONS.CABAL.CTA)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>018a5b2c-b1b7-4b1b-b40d-26e87f658760</testCaseGuid>
+</TestCaseEntity>

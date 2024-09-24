@@ -116,4 +116,46 @@
       <testCaseId>Test Cases/20-Fallas Dispositivos/F15-Falla de Dispositivos. Alta de sobrante ATM MAP. Sucursal valida. Dispositivo de la sucursal. Retiro</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>cbb24e3b-62d2-403f-936a-24c1477bdafc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F16-FallasdeDispositivosPND-PGR-NF-AltaFaltante-Retiro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>00d00594-e15c-4f1c-9357-9555077c10f1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F17-FallasdeDispositivosPND-PGR-NF-AltaSobrante-Retiro</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>37962e22-1fc5-4cf9-a388-216e8f201a87</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F18-Fallas de Dispositivos Consulta Sobrante de dispositivo PND. Perfil Gerencia operativa. Filtro Cartucho.Gaveta valido</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>226263a8-7399-47e3-951f-1c9a53fd60b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F19-Faltantes en Dispositivos MAP. Alta con Gerencia Operativa.Reclasificacion no numerico</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>68a7e3fa-5701-4423-948f-602d5b5a4604</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F20-Faltantes en Dispositivos.Consulta de Fallas de Remesas Pendientes</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>79543a86-884d-4477-b65c-c5ed20daf97a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/20-Fallas Dispositivos/F21-Faltantes en Dispositivos.Proceso de reclasificación fallas map</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

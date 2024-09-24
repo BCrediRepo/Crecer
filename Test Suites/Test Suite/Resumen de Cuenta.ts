@@ -214,4 +214,11 @@
       <testCaseId>Test Cases/17-Resumen de Cuenta/RC30-Resumen de Cuenta. Agrupamientos de movimientos monetarios comisiones.Modificacion. Se modifica codigo operativo y tipo de Agrupamiento NOR COM AMB</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>98f926c1-e757-4e30-801b-034cb5f77229</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/17-Resumen de Cuenta/RC31-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Fecha. Detalle. Movimiento de Debito ingresado de Transferencia entre Socios</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

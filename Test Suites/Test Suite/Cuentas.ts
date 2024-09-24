@@ -123,4 +123,11 @@
       <testCaseId>Test Cases/38-Cuentas/C16-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>284d229b-35f9-4f1f-b6eb-db8642b40973</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/38-Cuentas/C17-Cuentas.Consulta de Cuentas deudoras de la sucursal 102.Al menos una Cuenta CC de la 102 deudora. Sin debitos futuros (WORKING.BALANCE negativo)</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
