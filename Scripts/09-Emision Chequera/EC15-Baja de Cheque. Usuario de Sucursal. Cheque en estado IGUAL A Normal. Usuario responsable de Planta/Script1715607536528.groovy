@@ -24,35 +24,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 1), findTestData('MainData/Users').getValue(2, 1))
 WebUI.maximizeWindow()
 
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
 WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/lnkSucursalPiloto'))
-
-//Seleccionar "D3 - CC1"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/lnkD3-CC1'))
-
-//Seleccionar "CC1 - Emision Chequera"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/lnkCC1-EmisionChequera'))
-
-//Seleccionar "Consultas Chequera Boletera"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/CC1 - Emision Chequera/lnkConsultasChequeraBoletera'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "BAJA DE CHEQUES"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/CC1 - Emision Chequera/Consultas Chequera Boletera/lnkBAJADECHEQUES'))
+def menuDesplegable = ['Sucursal Piloto', 'D3 - CC1', 'CC1 - Emision Chequera', 'Consultas Chequera Boletera']
+def link = 'BAJA DE CHEQUES'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.CQ.BAJA.CHEQUES"
 WebUI.switchToWindowTitle('BCCL.CQ.BAJA.CHEQUES')
@@ -83,7 +59,7 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnReversarRegistro'))
 
 //Definir Objeto
-Transaccion = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+Transaccion = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Dividir la cadena por espacios en blanco y tomar elemento
 def partes = Transaccion.split('\\s+')
@@ -97,7 +73,7 @@ WebUI.setText(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/tx
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Ver Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnVerRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Verificar Estado Normal
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/10-BCCL.CQ.CHEQUES/lblNormal'))
@@ -106,12 +82,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 def element2 = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/10-BCCL.CQ.CHEQUES/lblNormal'))
 assert element2.contains('Normal')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

@@ -4,6 +4,5 @@
    <name>EC06-Emision de Chequera. Solicitud de Chequera en Sucursal. Tipo de Chequera Pago Comun</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>80beed2e-b165-4329-9f9f-6f8178d1e9f5</testCaseGuid>
 </TestCaseEntity>

@@ -50,13 +50,13 @@ WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLI
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lnkAceptarAlertas'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Cambiar ventana "Verificacion de Firmas - Fil.103 Necochea"
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.103 Necochea')
@@ -77,7 +77,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verific
 def element = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
 assert element.contains('AUTORIZADA')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

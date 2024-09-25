@@ -24,35 +24,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 51), findTestData('MainData/Users').getValue(2, 51))
 WebUI.maximizeWindow()
 
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
 WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/lnkSucursalPiloto'))
-
-//Seleccionar "D3 - CC1"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/lnkD3-CC1'))
-
-//Seleccionar "CC1 - Emision Chequera"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/lnkCC1-EmisionChequera'))
-
-//Seleccionar "Solicitudes de Chequeras / Boleteras"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/CC1 - Emision Chequera/lnkSolicitudesdeChequeras-Boleteras'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "SOLICITUD DE CHEQUERAS"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/07-Temenos T24/Sucursal Piloto/D3 - CC1/CC1 - Emision Chequera/Solicitudes de Chequeras - Boleteras/lnkSOLICITUDDECHEQUERAS'))
+def menuDesplegable = ['Sucursal Piloto', 'D3 - CC1', 'CC1 - Emision Chequera', 'Solicitudes de Chequeras / Boleteras']
+def link = 'SOLICITUD DE CHEQUERAS'
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.CQ.SOLICITUD"
 WebUI.switchToWindowTitle('BCCL.CQ.SOLICITUD')
@@ -76,13 +52,13 @@ WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLI
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lnkAceptarAlertas'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Cambiar ventana "Verificacion de Firmas - Fil.103 Necochea"
 WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.103 Necochea')
@@ -118,14 +94,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 50), findTestData('MainData/Users').getValue(2, 50))
 WebUI.maximizeWindow()
 
-//Seleccionar "Autorizaciones"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizaciones'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Autorizaciones Pendientes"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkAutorizacionesPendientes'))
+//Ir a "Autorizaciones", "Autorizaciones Pendientes", 
+def menuDesplegable2 = ["Autorizaciones"]
+def link2 = "Autorizaciones Pendientes"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
 
 //Cambiar ventana "BCCL.E.AUTHORIZATION"
 WebUI.switchToWindowTitle('BCCL.E.AUTHORIZATION')
@@ -143,21 +115,20 @@ WebUI.click(findTestObject('Object Repository/11-Emision Chequera/08-BCCL.E.AUTH
 WebUI.switchToWindowTitle('BCCL.CQ.SOLICITUD')
 
 //Seleccionar "boton Autorizar Registro"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/btnAutorizarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 //Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Validar "Txn Completa"
-def element2 = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lblTxnCompleta'))
+def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element2.contains('Txn Completa')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

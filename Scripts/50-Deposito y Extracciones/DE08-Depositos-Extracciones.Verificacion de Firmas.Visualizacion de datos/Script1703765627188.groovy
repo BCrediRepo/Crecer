@@ -67,9 +67,6 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verific
 def estado2 = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
 assert estado2.contains('AUTORIZADA')
 
-// Imprimir el numero de operacion en consola
-println("El ID de la txt es: " + txn)
-
 //----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

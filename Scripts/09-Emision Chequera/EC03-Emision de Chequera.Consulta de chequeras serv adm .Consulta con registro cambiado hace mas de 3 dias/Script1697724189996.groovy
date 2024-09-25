@@ -29,16 +29,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkChequeras'), 6)
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkChequeras'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkConsulta'), 6)
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkConsulta'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultadeChequerahastaEmitida(40)'), 6)
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultadeChequerahastaEmitida(40)'))
+//Ir a Chequeras, Consulta, Consulta de Chequera hasta Emitida(40)
+def menuDesplegable = ["Chequeras", "Consulta"]
+def link = "Consulta de Chequera hasta Emitida (40)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana de busqueda de consulta de chequeras
 WebUI.switchToWindowTitle('BCCL.CQ.CHEQUERAS')
@@ -71,8 +65,7 @@ println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
 def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/03-Consulta De Chequeta Hasta Emitida (40)/lblIDCuenta'))
 assert element.contains('ID Cuenta')
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

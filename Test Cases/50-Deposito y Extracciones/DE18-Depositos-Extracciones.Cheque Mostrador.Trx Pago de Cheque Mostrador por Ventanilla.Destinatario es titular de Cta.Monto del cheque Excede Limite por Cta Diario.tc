@@ -4,6 +4,5 @@
    <name>DE18-Depositos-Extracciones.Cheque Mostrador.Trx Pago de Cheque Mostrador por Ventanilla.Destinatario es titular de Cta.Monto del cheque Excede Limite por Cta Diario</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>e54275fa-c763-412b-819c-64128c8b18de</testCaseGuid>
 </TestCaseEntity>

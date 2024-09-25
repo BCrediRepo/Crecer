@@ -26,20 +26,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,30), findTestData('MainData/Users').getValue(2,30))
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando BCCL.CQ.CHEQUERAS
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CQ.CHEQUERAS')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.CQ.CHEQUERAS
-WebUI.switchToWindowTitle('BCCL.CQ.CHEQUERAS')
+//Ejecuta en la linea de comando ENQ BCCL.CQ.CHEQUERAS
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.CQ.CHEQUERAS", 1)
 
 //Verificacion
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.CHEQUERAS/lblTituloBCCL.CQ.CHEQUERAS'))
 
 //Seteo de Datos "NUMERO DE CUENTA"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '03380093068')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '00011062721')
 
 //DESCOMENTAR cuenta para el 708 con datos
 //CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '00010033098')
@@ -72,7 +67,6 @@ def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequer
 assert element.contains('ID Cuenta')
 
 //---------------------------
-
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
 
@@ -90,14 +84,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 def element2 = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lblCqCta'))
 assert element2.contains('Cq Cta')
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
