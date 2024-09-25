@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MEP08-MEP. Transferencias MEP. Transacciones Online. Otros Conceptos. Usuario de filial NIV menor a 5</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7aa7cba6-588d-4eec-abb8-19beab599907</testCaseGuid>
+</TestCaseEntity>
