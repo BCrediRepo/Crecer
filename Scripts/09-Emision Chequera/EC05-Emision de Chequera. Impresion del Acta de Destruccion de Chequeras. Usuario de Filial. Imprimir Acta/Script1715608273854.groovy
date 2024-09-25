@@ -33,7 +33,6 @@ def link = "Impresion Acta de Destruccion"
 
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
-
 //Switch a la ventana de impresion de acta
 WebUI.switchToWindowTitle('BCCL.CQ.STOCK.ENTRY.ACTA')
 
@@ -48,7 +47,7 @@ WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 WebUI.maximizeWindow()
 
 //Esperar hasta encontrar datos
-WebUI.delay(15)
+//WebUI.delay(15)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkImprimirActa'), 6)
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkImprimirActa'))
@@ -56,25 +55,23 @@ WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión 
 //Switch a la ventana acptar el registro de impresion
 WebUI.switchToWindowTitle('STOCK.ENTRY')
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lnkActaDestrucciondeChequeras'), 6)
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/btnAceptarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/btnAceptarRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'), 6)
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Se aceptan las alertas
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
 WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lblTxnCompleta'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lblTxnCompleta'))
-def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/05-Impresión del Acta de Destrucción de Chequeras/lblTxnCompleta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

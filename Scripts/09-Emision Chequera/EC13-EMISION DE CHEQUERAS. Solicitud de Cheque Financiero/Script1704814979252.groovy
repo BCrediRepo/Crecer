@@ -24,17 +24,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 WebUI.maximizeWindow()
 
-//Seleccionar "Chequeras"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkChequeras'))
-
-//Seleccionar "Emision de Chequera"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkEmisiondechequera'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Pedido de Cheque Financiero"
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/03-Emision de Chequera/lnkPedidodeChequeFinanciero'))
+//Ir a Chequeras, Emision de chequeras, pedido de cheque financiero
+def menuDesplegable = ["Chequeras", "Emision de chequera"]
+def link = "Pedido de Cheque Financiero"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.CQ.SOLICITUD"
 WebUI.switchToWindowTitle('BCCL.CQ.SOLICITUD')
@@ -49,13 +42,13 @@ WebUI.setText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLI
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 	
 //Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lnkAceptarAlertas'))
+//WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
 //Cambiar ventana "Verificacion de Firmas - Fil.089 M.del Plata Ct"
-WebUI.switchToWindowTitle('Verificacion de Firmas - Fil.089 M.del Plata Ct')
+WebUI.switchToWindowIndex(2)
 
 //Seleccionar "FORZAR" del combo box
 WebUI.selectOptionByIndex(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/cbxAccion'), 2)
@@ -73,7 +66,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/03-Verific
 def element = WebUI.getText(findTestObject('Object Repository/00-Utils/03-Verificacion de Firmas/lblAutorizada'))
 assert element.contains('AUTORIZADA')
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

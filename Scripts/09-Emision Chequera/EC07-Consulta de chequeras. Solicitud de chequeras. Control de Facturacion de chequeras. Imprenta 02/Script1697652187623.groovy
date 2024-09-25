@@ -27,18 +27,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando BCCL.E.CHQ.SOL.IMPRENTA
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CHQ.SOL.IMPRENTA')
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.CHQ.SOL.IMPRENTA
-WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
+//Ejecuta en la linea de comando ENQ BCCL.E.CHQ.SOL.IMPRENTA
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CHQ.SOL.IMPRENTA", 1)
 
 //Verifica titulo BCCL.E.CHQ.SOL.IMPRENTA
-WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.IMPRENTA/lblTituloBCCL.E.CHQ.SOL.IMPRENTA'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTituloBCCL.E.CHQ.SOL.IMPRENTA'))
 
 //Seteo de datos "Imprenta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -84,7 +77,7 @@ println(TotalRegistros)
 
 //-----------------------------
 //Selecciona Ver Solicitudes
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.IMPRENTA/lnkVerSolicitudes'))
+WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lnkVerSolicitudes'))
 
 //Espera y Verifica que devuelva un registro
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.TIPO/lblSolicitud'), 6)
@@ -105,16 +98,14 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 
 def element3 = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lblCqCta'))
 
-assert element3.contains('Cq Cta') //---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+assert element3.contains('Cq Cta')
 
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

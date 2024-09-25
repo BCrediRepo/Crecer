@@ -27,12 +27,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CHQ.SOL.IMPRENTA')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-//Switch a la ventana de busqueda de consulta
-WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.IMPRENTA')
+//Ejecuta en la linea de comando ENQ BCCL.E.CHQ.SOL.IMPRENTA
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CHQ.SOL.IMPRENTA", 1)
 
 //Seteo de Datos "Sucursal"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -46,15 +42,11 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblImprentaTitulo'), 30)
-
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
 WebUI.click(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lnkVerSolicitudes'))
 
 //Switch a la ventana de tipo de chequera
 WebUI.switchToWindowTitle('BCCL.E.CHQ.SOL.TIPO')
-//WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'), 6)
-//WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/01-BCCL.E.CHQ.SOL.IMPRENTA/lblTipochequeraTitulo'))
 
 //Verificar lbl "Solicitud"
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.TIPO/lblSolicitud'))
@@ -63,14 +55,11 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.CHQ.SOL.TIPO/lblSolicitud'))
 assert element.contains('Solicitud')
 
-
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

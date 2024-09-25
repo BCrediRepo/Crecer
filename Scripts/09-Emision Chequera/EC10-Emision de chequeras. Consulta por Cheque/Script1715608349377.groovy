@@ -27,12 +27,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Ejecuta en la linea de comando ENQ BCCL.E.NOF.CONS.CHEQUES
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.NOF.CONS.CHEQUES')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Abre la pestaña BCCL.E.NOF.CONS.CHEQUES
-WebUI.switchToWindowTitle('BCCL.E.NOF.CONS.CHEQUES')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.NOF.CONS.CHEQUES", 1)
 
 //Verifica titulo BCCL.E.NOF.CONS.CHEQUES
 WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.E.NOF.CONS.CHEQUES/lblTituloBCCL.E.NOF.CONS.CHEQUES'))
@@ -77,14 +72,11 @@ TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados
 
 println TotalRegistros
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

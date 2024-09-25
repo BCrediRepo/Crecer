@@ -34,8 +34,8 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkChequeras'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkEmisiondechequera'), 6)
 WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkEmisiondechequera'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/03-Emision de Chequera/lnkConfAnuldePedidos'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/03-Emision de Chequera/lnkConfAnuldePedidos'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Emision de Chequera/lnkConfAnuldePedidos'), 6)
+WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Emision de Chequera/lnkConfAnuldePedidos'))
 
 //Switch a la ventana de Change Status Checkbook Req
 WebUI.switchToWindowTitle('Change Status Checkbook Req')
@@ -65,7 +65,7 @@ WebUI.closeWindowTitle('Change Status Checkbook Req')
 
 //Se accede al menu Conf / Anul de Pedidos (20,30)
 WebUI.switchToWindowIndex(0)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/03-Emision de Chequera/lnkConfAnuldePedidos'))
+WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Emision de Chequera/lnkConfAnuldePedidos'))
 
 //Switch a la ventana de Change Status Checkbook Req
 WebUI.switchToWindowTitle('Change Status Checkbook Req')

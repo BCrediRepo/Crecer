@@ -32,21 +32,10 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu Administracion de piezas
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkChequeras'), 6)
-
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkChequeras'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkConsulta'), 6)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/lnkConsulta'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultaConfdeChequerasconErrores(21)'), 
-    6)
-
-WebUI.click(findTestObject('Object Repository/02-Dashboard/08-Emision Chequera/01-Consulta/lnkConsultaConfdeChequerasconErrores(21)'))
+//Ir a Chequeras, Consulta, Consulta Conf de Chequeras con Errores(21)
+def menuDesplegable = ["Chequeras", "Consulta"]
+def link = "Consulta / Conf de Chequeras con Errores (21)"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Switch a la ventana de chequeras con errores
 WebUI.switchToWindowTitle('Solicitudes Chequeras con Errores')
@@ -75,26 +64,19 @@ println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
 //Conteo registros
 WebUI.verifyElementVisible(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 TotalRegistros = WebUI.getText(findTestObject('00-Utils/02-Filtros/lblResultados'))
-
 println(TotalRegistros)
 
 //-----------------------------
 def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/04-Solicitudes Chequeras con Errores/lblSUCURSAL'))
-
 assert element.contains('SUCURSAL') 
 
-//---------------------------------------------------------------------------------------------------------------------
-//Control de fin de script
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

@@ -72,7 +72,7 @@ assert element.contains('FINALIZADA')
 WebUI.switchToWindowIndex(1)
 
 //Definir Objeto
-Transaccion = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+Transaccion = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
  
 //Dividir la cadena por espacios en blanco y tomar elemento
 def partes = Transaccion.split('\\s+')
@@ -132,13 +132,13 @@ while (!encontrado) {
 }
 
 //Seleccionar "boton Autorizar Registro"
-WebUI.click(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/btnAutorizarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 //Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Validar "Txn Completa"
-def element2 = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/BCCL.CQ.SOLICITUD/lblTxnCompleta'))
+def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element2.contains('Txn Completa')
 
 //----------------------------------------------Control de fin de script----------------------------------------------//

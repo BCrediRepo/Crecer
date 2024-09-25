@@ -27,10 +27,8 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Se accede al menu Administracion de piezas
-//WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CQ.CONS.ANUL')
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
+//Ejecuta en la linea de comando ENQ BCCL.CQ.CONS.ANUL
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.CQ.CONS.ANUL", 1)
 
 //Switch a la ventana de busqueda de consulta de pedidos
 WebUI.switchToWindowTitle('Consulta de Pedidos')
@@ -39,7 +37,6 @@ WebUI.switchToWindowTitle('Consulta de Pedidos')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 
 //Espera y Verifica
-//WebUI.waitForElementVisible(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblConsulta de Pedidos'), 6)
 WebUI.verifyElementPresent(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblConsulta de Pedidos'), 6)
 
 //Screenshot
@@ -57,7 +54,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/11-Emision Chequera
 def element = WebUI.getText(findTestObject('Object Repository/11-Emision Chequera/02-BCCL.CQ.CONS.ANUL/lblNODEPEDIDO'))
 assert element.contains('NO DE PEDIDO')
 
-//---------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------Control de fin de script----------------------------------------------//
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
