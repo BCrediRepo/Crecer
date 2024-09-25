@@ -60,4 +60,11 @@
       <testCaseId>Test Cases/11-MEP/MEP07-Transferencias entre cuentas Persistencia</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c2241c3d-ca4a-41c5-8645-06985b270826</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/11-MEP/MEP08-MEP. Transferencias MEP. Transacciones Online. Otros Conceptos. Usuario de filial NIV menor a 5</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -60,12 +60,15 @@ CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Definir Objeto
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
 //Dividir la cadena por espacios en blanco y tomar elemento
 def partes = Transaccion1.split('\\s+')
 def trx1 = partes[2]
 assert Transaccion1.contains('Txn Completa:')
+
+//Para utilizar en el caso PYT05
+GlobalVariable.vTxn = trx1
 
 //Setear Transaccion
 WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), trx1)

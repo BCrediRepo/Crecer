@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PYT02-Pago de Haberes.Alta de transferencia multiple.Consulta de datos</name>
+   <name>PYT05-Pago de Haberes. Consulta Reversas Pago de Haberes - Proveedores</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>bd8fcb93-55fa-43f3-bce6-14d82e935124</testCaseGuid>
+   <testCaseGuid>121484d7-ec6d-47a3-9d9a-bd2bc40a87a8</testCaseGuid>
 </TestCaseEntity>

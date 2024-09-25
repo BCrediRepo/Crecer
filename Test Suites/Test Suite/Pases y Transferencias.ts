@@ -26,6 +26,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>5bdf87f9-42d4-4328-9f66-1ae3ec5d32db</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/58-Pases y Transferencias/PYT03-TransferenciaEntreSocios CuentaCRyCuentaDB Pesos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>4ada9d66-36e8-45ae-9742-12761cd8f927</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -33,10 +40,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5bdf87f9-42d4-4328-9f66-1ae3ec5d32db</guid>
+      <guid>b9f328c7-4e16-42a8-a868-22a211195015</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/58-Pases y Transferencias/PYT03-TransferenciaEntreSocios CuentaCRyCuentaDB Pesos</testCaseId>
+      <testCaseId>Test Cases/58-Pases y Transferencias/PYT05-Pago de Haberes. Consulta Reversas Pago de Haberes - Proveedores</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
