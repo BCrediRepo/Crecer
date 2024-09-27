@@ -25,13 +25,13 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Ingresamos el menu correspondiente
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?324')
+WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), '?328')
 WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
 WebUI.switchToWindowTitle("Temenos T24")
 WebUI.maximizeWindow()
 
 def menuDesplegable = ["Transferencia a Cuentas de Otros Bancos SNP"]
-def link = "Transferencias Otros Bancos Diferida"
+def link = "Transf. a Ctas Otros Bancos Diferida"//Transferencias Otros Bancos Diferida
 
 //si el menú que busco está en Temenos T24, uso esta funcion
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
@@ -43,7 +43,7 @@ CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
 //Transf. a Ctas Otros Bancos Diferida
-WebUI.click(findTestObject('02-Dashboard/43-TOB/Transferencias a Cuentas de Otros Bancos SNP/lnkTransferenciasOtrosBancosDiferida'))
+//WebUI.click(findTestObject('02-Dashboard/43-TOB/Transferencias a Cuentas de Otros Bancos SNP/lnkTransferenciasOtrosBancosDiferida'))
 
 //Cambiar ventana "Movimiento de Fondos"
 WebUI.switchToWindowTitle('Movimiento de Fondos')

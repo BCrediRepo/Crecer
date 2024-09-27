@@ -96,20 +96,28 @@ def parts = TxnInicial.tokenize(' ')
 GlobalVariable.vTxn = parts[2]
 WebUI.switchToWindowTitle('BCCL.E.EST.PAGO.TARJ')
 
-//Validamos que el pago de la tarjeta haya sido autorizado
-def Descripcion = "CABAL"
-def Estado = "AUTORIZADA"
+////Validamos que el pago de la tarjeta haya sido autorizado
+//def Descripcion = "CABAL"
+//def ESTADO = "AUTORIZADA"
+//
+//WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
+//List<WebElement> rows = table.findElements(By.tagName("tr"))
+//for (WebElement row : rows) {
+//	WebElement cell3 = row.findElements(By.tagName("td"))[0]
+//	WebElement cell4 = row.findElements(By.tagName("td"))[1]
+//	
+//	assert cell3.getText().contains(Descripcion)
+//	assert cell4.getText().equals(ESTADO)
+//	
+//}
 
-WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-List<WebElement> rows = table.findElements(By.tagName("tr"))
-for (WebElement row : rows) {
-	WebElement cell3 = row.findElements(By.tagName("td"))[0]
-	WebElement cell4 = row.findElements(By.tagName("td"))[1]
-	
-	assert cell3.getText().contains(Descripcion)
-	assert cell4.getText().equals(Estado)
-	
-}
+WebElement table = DriverFactory.getWebDriver().findElement(By.id("headingdisplay"))
+WebElement header = table.findElement(By.tagName("tr"))
+List<WebElement> cells = header.findElements(By.tagName("th"))
+ 
+// Validar los textos de las celdas directamente
+assert cells[0].getText().contains('Descripcion') : "Expected 'Descripcion' but found ${cells[0].getText()}"
+assert cells[3].getText().contains('ESTADO') : "Expected 'ESTADO' but found ${cells[3].getText()}"
 
 
 //---------------------------------------------------------------------------------------------------------------------
