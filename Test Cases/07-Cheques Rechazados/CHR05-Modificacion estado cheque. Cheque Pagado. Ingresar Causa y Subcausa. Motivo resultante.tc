@@ -4,6 +4,5 @@
    <name>CHR05-Modificacion estado cheque. Cheque Pagado. Ingresar Causa y Subcausa. Motivo resultante</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>6da03295-5253-45be-9462-b7c2733bb696</testCaseGuid>
 </TestCaseEntity>

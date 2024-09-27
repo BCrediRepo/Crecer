@@ -25,16 +25,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Ingresar "ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-	
-//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO", 1)
 
 //Maximizar pantalla
 WebUI.maximizeWindow()
@@ -42,7 +33,7 @@ WebUI.maximizeWindow()
 //Seteo de Datos "NUMERO DE CUENTA", "NUMERO CHEQUE"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '02180086531')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '10014')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '10016')
 
 //Seleccionar "boton Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
@@ -73,18 +64,17 @@ if (valorNumeroDocumento.equals('20105693614')) {
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	
 	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 	
 	// Verifica si el elemento está presente
-	if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
-		WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
-	}
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))}
 	
 	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	
 	//Validar "Txn Completa"
-	def element = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	assert element.contains('Txn Completa')
 
 	//Screenshot
@@ -101,18 +91,18 @@ if (valorNumeroDocumento.equals('20105693614')) {
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	
 	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 	
 	// Verifica si el elemento está presente
-	if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
-		WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 	}
 	
 	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	
 	//Validar "Txn Completa"
-	def element2 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	def element2 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	assert element2.contains('Txn Completa')
 
 	//Screenshot
@@ -133,21 +123,12 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Ingresar "ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-	
-//Cambiar ventana "CAMBIO DE FIRMANTES INFORMADOS"
-WebUI.switchToWindowTitle('CAMBIO DE FIRMANTES INFORMADOS')
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CQ.CHRECH.MODFIRM.INFORMADO", 1)
 
 //Seteo de Datos "NUMERO DE CUENTA", "NUMERO CHEQUE"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '02180086531')
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '10014')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '10016')
 
 //Seleccionar "boton Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
@@ -163,56 +144,53 @@ WebUI.switchToWindowTitle('BCCL.CQ.CHRECH.REP.BCRA')
 
 if (valorNumeroDocumento.equals('20105693614')) {
 	//Seleccionar "Boton Eliminar Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante3'))
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante2'))
 	
 	//Screenshot
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	
 	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 	
 	// Verifica si el elemento está presente
-	if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
-		WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
-	}
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))}
 	
 	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	
 	//Validar "Txn Completa"
-	def element3 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-	assert element3.contains('Txn Completa')
+	def txn3 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+	assert txn3.contains('Txn Completa')
 	
 } else {
 	//Seleccionar "Boton Eliminar Firmante"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante3'))
+	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnEliminarFirmante2'))
 	
 	//Screenshot
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 	
 	//Seleccionar "Aceptar el registro"
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/btnAceptarRegistro'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 	
 	// Verifica si el elemento está presente
-	if (WebUI.verifyElementPresent(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
-		WebUI.click(findTestObject('Object Repository/39-Cuentas/BCCL.RES.CTA.PEDIDO/lnkAceptarAlertas'))
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 5, FailureHandling.OPTIONAL)) {
+		WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 	}
 	
 	//Verificar "Txn Completa"
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	
 	//Validar "Txn Completa"
-	def element4 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-	assert element4.contains('Txn Completa')
-	
+	def txn4 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+	assert txn4.contains('Txn Completa')
 }
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

@@ -57,14 +57,10 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-//Seleccionar "Rechazo de Cheques"
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/Cheques rechazados/lnkChequesRechazados'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Rechazo Cheques de Caja"
-WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/Cheques rechazados/lnkChequesRechazadosCaja'))
+//Ir a "Rechazo de Cheques", "Rechazo Cheques de Caja"
+def menuDesplegable = ["Rechazo de Cheques"]
+def link = "Rechazo Cheques de Caja"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "Rechazo Chq Caja Filial - Fil.001 Centro"
 WebUI.switchToWindowTitle('Rechazo Chq Caja Filial - Fil.001 Centro')
@@ -74,13 +70,9 @@ WebUI.maximizeWindow()
 
 //Seleccionar "Nueva Seleccion con filtro"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/Filtros con frame/lnkNuevaSeleccion'))
-
 WebUI.switchToFrame(findTestObject('00-Utils/02-Filtros/Filtros con frame/frmFiltro'), 0)
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '00010108387')
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '54598140')
-
 
 //Screenshot
 CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -115,8 +107,9 @@ try {
 	WebUI.maximizeWindow()
 	
 	//ingresa en la ventana de autorizaciones pendientes desde el dashboard
-	WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/Cheques rechazados/Autorizacion/lnkAutorizaciones'))
-	WebUI.click(findTestObject('Object Repository/02-Dashboard/06-Cheques rechazados/Cheques rechazados/Autorizacion/lnkAutorizacionesPendientes'))
+	def menuDesplegable2 = ["Autorizaciones"]
+	def link2 = "Autorizaciones Pendientes"
+	CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
 	WebUI.switchToWindowTitle("BCCL.E.AUTHORIZATION")
 	
 	//se guarda el dato a buscar en tabla en una variable
@@ -129,15 +122,14 @@ try {
 	while (!encontrado) {
 		encontrado = buscarElementoEnTabla(idTransaccion)
 	}
-
-	
-	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/btnAutorizar'))
-	WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblTxncompleta'))
-	txn1 = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblTxncompleta'))
+	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
+	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+	txn1 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	assert txn1.contains("Txn Completa: ")
 	
 	WebUI.switchToWindowIndex(0)
 	WebUI.click(findTestObject('Object Repository/02-Dashboard/btnLogout'))
+	
 	//Configuracion de ambiente
 	CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 	
@@ -147,14 +139,8 @@ try {
 	
 	WebUI.maximizeWindow()
 	
-	//Seleccionar "Rechazo de Cheques"
-	WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/Cheques rechazados/lnkChequesRechazados'))
-	
-	//Screenshot
-	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-	
-	//Seleccionar "Rechazo Cheques de Caja"
-	WebUI.click(findTestObject('02-Dashboard/06-Cheques rechazados/Cheques rechazados/lnkChequesRechazadosCaja'))
+	//Ir a "Rechazo de Cheques", "Rechazo Cheques de Caja"
+	CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 	
 	//Cambiar ventana "Rechazo Chq Caja Filial - Fil.001 Centro"
 	WebUI.switchToWindowTitle('Rechazo Chq Caja Filial - Fil.001 Centro')
@@ -164,13 +150,9 @@ try {
 	
 	//Seleccionar "Nueva Seleccion con filtro"
 	WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/Filtros con frame/lnkNuevaSeleccion'))
-	
 	WebUI.switchToFrame(findTestObject('00-Utils/02-Filtros/Filtros con frame/frmFiltro'), 0)
-	
 	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO DE CUENTA', '00010108387')
-	
 	CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('NUMERO CHEQUE', '54598140')
-	
 	
 	//Screenshot
 	CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
@@ -183,7 +165,6 @@ try {
 	WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Rechazo Chq Caja Filial - Fil.001 Centro/lnkRechazochequesdecajaenfilial'))
 	
 	//valida el rechazo del cheque y devuelve la txn
-	
 	WebUI.switchToFrame(findTestObject('Object Repository/00-Utils/04-Frames/frmInferior'), 3)	
 	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
@@ -191,18 +172,14 @@ try {
 	WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 	WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 	assert WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta')).contains("Txn Completa: ")
-		
 }
 
-
-
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //****************************************************************//
 //********** preparación de dato para caso CHR05 *****************//
@@ -24,65 +28,45 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login 
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(
-        2, 7))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(2, 7))
 
 WebUI.maximizeWindow()
 
 WebUI.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.CQ.CHEQUES')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.CQ.CHEQUES')
+//Ejecuta en la linea de comando BCCL.CQ.CHEQUES
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("BCCL.CQ.CHEQUES", 1)
 
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/txtNumCheque'), '502004')
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnEditarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 WebUI.selectOptionByIndex(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/cbEstadoCheque'), '7')
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 WebUI.closeWindowIndex(1)
-
 WebUI.switchToWindowIndex(0)
-
 WebUI.click(findTestObject('02-Dashboard/btnLogout'))
 
-//WebUI.closeWindowIndex(0)
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login para autorizar dato y finalizar preparación de caso CHR05
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
 
 WebUI.maximizeWindow()
 
 WebUI.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.CQ.CHEQUES')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.CQ.CHEQUES')
+//Ejecuta en la linea de comando BCCL.CQ.CHEQUES
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("BCCL.CQ.CHEQUES", 1)
 
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/txtNumCheque'), '502004')
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarRegistro'))
-
-//WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnReversarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnHerramienta'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarCambiosEnElRegistro'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-
-txn = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert txn.contains('Txn Completa: ')
 
 //**************************************************************//
@@ -92,63 +76,40 @@ assert txn.contains('Txn Completa: ')
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login 
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(
-        2, 7))
-
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 7), findTestData('MainData/Users').getValue(2, 7))
 WebUI.maximizeWindow()
-
 WebUI.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.CQ.CHEQUES')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.CQ.CHEQUES')
+//Ejecuta en la linea de comando BCCL.CQ.CHEQUES
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("BCCL.CQ.CHEQUES", 1)
 
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/txtNumCheque'), '502004')
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnEditarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnModificarRegistro'))
 WebUI.selectOptionByIndex(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/cbEstadoCheque'), '9')
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAceptarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 WebUI.closeWindowIndex(1)
-
 WebUI.switchToWindowIndex(0)
-
 WebUI.click(findTestObject('02-Dashboard/btnLogout'))
 
-//WebUI.closeWindowIndex(0)
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login para autorizar dato y finalizar preparación de caso CHR05
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(
-        2, 9))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 9), findTestData('MainData/Users').getValue(2, 9))
 
 WebUI.maximizeWindow()
 
 WebUI.delay(15, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'BCCL.CQ.CHEQUES')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.CQ.CHEQUES')
-
+//Ejecuta en la linea de comando BCCL.CQ.CHEQUES
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("BCCL.CQ.CHEQUES", 1)
 WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/txtNumCheque'), '502004')
-
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarRegistro'))
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnHerramienta'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarCambiosEnElRegistro'))
-
-WebUI.verifyElementVisible(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-
-txn = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblTxnCompleta'))
-
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+txn = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert txn.contains('Txn Completa: ')
 
 ////login final de validacion
@@ -165,7 +126,7 @@ assert txn.contains('Txn Completa: ')
 //
 //WebUI.setText(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/txtNumCheque'), '502004')
 //
-//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarRegistro'))
+//WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 //
 //WebUI.maximizeWindow()
 //
@@ -173,7 +134,7 @@ assert txn.contains('Txn Completa: ')
 //
 //CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 //
-//WebUI.click(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/btnAutorizarCambiosEnElRegistro'))
+//WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAutorizaRegistro'))
 //
 //WebUI.verifyElementVisible(findTestObject('08-Cheques Rechazados/BCCL.CQ.CHEQUES/lblValorAnterior'))
 //
@@ -193,9 +154,7 @@ assert txn.contains('Txn Completa: ')
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

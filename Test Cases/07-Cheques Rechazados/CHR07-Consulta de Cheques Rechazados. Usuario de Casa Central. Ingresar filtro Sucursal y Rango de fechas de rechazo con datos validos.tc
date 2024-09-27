@@ -4,6 +4,5 @@
    <name>CHR07-Consulta de Cheques Rechazados. Usuario de Casa Central. Ingresar filtro Sucursal y Rango de fechas de rechazo con datos validos</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>a8dcd013-18c0-4fc5-b782-277924f7a503</testCaseGuid>
 </TestCaseEntity>

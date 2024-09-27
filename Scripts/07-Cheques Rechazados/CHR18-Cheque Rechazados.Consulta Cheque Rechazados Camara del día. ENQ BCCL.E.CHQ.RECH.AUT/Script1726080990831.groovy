@@ -59,17 +59,12 @@ assert cells[12].getText().contains('Numero de Cheque') : "Expected 'Numero de C
 assert cells[15].getText().contains('Motivo de Rechazo') : "Expected 'Motivo de Rechazo' but found ${cells[15].getText()}"
 assert cells[18].getText().contains('Descripcion del motivo de rechazo') : "Expected 'Descripcion del motivo de rechazo' but found ${cells[18].getText()}"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-
-
-

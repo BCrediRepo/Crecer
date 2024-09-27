@@ -4,6 +4,5 @@
    <name>CHR18-Cheque Rechazados.Consulta Cheque Rechazados Camara del día. ENQ BCCL.E.CHQ.RECH.AUT</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>325f9ed4-97db-4a98-9c87-1ff562bdc435</testCaseGuid>
 </TestCaseEntity>

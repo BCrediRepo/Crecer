@@ -25,7 +25,6 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?1', 1)
-WebUI.switchToWindowTitle('Temenos T24')
 def menuDesplegable = ['Sucursal Piloto', 'D3 - CC1', 'CC1 - Emision Chequera', 'Solicitudes de Chequeras / Boleteras']
 def link = 'SOLICITUD DE CHEQUERAS'
 

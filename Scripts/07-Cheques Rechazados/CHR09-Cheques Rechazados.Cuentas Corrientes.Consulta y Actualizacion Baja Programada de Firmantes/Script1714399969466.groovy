@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -24,35 +28,8 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 33), findTestData('MainData/Users').getValue(2, 33))
 WebUI.maximizeWindow()
 
-//Ingresar "?1" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?1')
-
-//Seleccionar "boton de buscar"
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
-//Seleccionar "Sucursal Piloto"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkSucursalPiloto'))
-	
-//Seleccionar "D3 - CC3"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Sucursal Piloto/lnkD3-CC3'))
-
-//Seleccionar "Cheques Rechazados"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Sucursal Piloto/D3-CC3/lnkChequesRechazados'))
-
-//Seleccionar "Cheques Rechazados Proceso"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Sucursal Piloto/D3-CC3/Cheques Rechazados/lnkChequesRechazadosProceso'))
-
-//Seleccionar "Cheques Rechazados"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Sucursal Piloto/D3-CC3/Cheques Rechazados/ChequesRechazadosProceso/lnkChequesRechazados'))
-
-//Seleccionar "Baja programada de firmantes"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Sucursal Piloto/D3-CC3/Cheques Rechazados/ChequesRechazadosProceso/Cheques Rechazados/lnkBajaProgramadadeFirmantes'))
-
-//Cambiar ventana "Baja Firmantes Programada"
-WebUI.switchToWindowTitle('Baja Firmantes Programada')
+//Ejecuta en la linea de comando menu ENQ BCCL.CQ.CHRECH.BAJA.FIR
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.CQ.CHRECH.BAJA.FIR", 1)
 
 //Seteo de Datos "SUCURSAL CUENTA"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -86,7 +63,7 @@ println(totalRegistros)
 fechaBaja = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/Baja Firmantes Programada/lblFechaParaBaja'))
 assert fechaBaja == "FECHA PARA BAJA"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()

@@ -4,6 +4,5 @@
    <name>CHR06-Cheques Rechazados.Consulta de Aviso al Librador en Casa Central</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>35cafee2-e684-46b7-a24b-fc5e958bcc31</testCaseGuid>
 </TestCaseEntity>

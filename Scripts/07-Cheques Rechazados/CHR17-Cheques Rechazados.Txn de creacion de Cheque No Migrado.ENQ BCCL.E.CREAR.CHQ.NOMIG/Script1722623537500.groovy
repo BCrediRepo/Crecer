@@ -41,13 +41,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Setear "ENQ BCCL.E.CREAR.CHQ.NOMIG" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CREAR.CHQ.NOMIG')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar a la ventana "ENQ BCCL.E.CREAR.CHQ.NOMIG"
-WebUI.switchToWindowIndex(1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CREAR.CHQ.NOMIG", 1)
 
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -92,12 +86,11 @@ assert cells[18].getText().contains('CQ.FEC.EST') : "Expected 'Importe' but foun
 assert cells[21].getText().contains('CQ.TIPO') : "Expected 'Fec Valor' but found ${cells[21].getText()}"
 assert cells[24].getText().contains('MENSAJE') : "Expected 'Fec Valor' but found ${cells[21].getText()}"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
