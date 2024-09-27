@@ -6,14 +6,15 @@
    <elementGuidId>6f8ad29f-9f8e-47e7-a3ae-c369851ea69b</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#fieldName\:ID\.COD\.OPER\:1\:11</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;fieldName:ID.COD.OPER:2:2&quot;]</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>5d2bd05f-3cfc-42e8-8679-8bcdd1da6c5b</webElementGuid>
+      <webElementGuid>90911629-2067-4a8a-90be-6c0085061540</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>675ed4f4-7daa-4915-bbdb-36d86532967a</webElementGuid>
+      <webElementGuid>17c87d8f-844a-48ff-b9aa-80f4c706c47b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>size</name>
       <type>Main</type>
       <value>5</value>
-      <webElementGuid>4beb59ef-2487-41eb-ab99-68a183dee812</webElementGuid>
+      <webElementGuid>1fd2a8a8-2413-4e2a-a1a7-8891d0063b19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fieldName:ID.COD.OPER:1:2</value>
-      <webElementGuid>728927e1-2719-45ba-9136-ef541c1859c4</webElementGuid>
+      <webElementGuid>a8655512-9588-484d-bddc-06caf4d8c691</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>fieldName:ID.COD.OPER:1:2</value>
-      <webElementGuid>9ef6cd23-8d72-4bb2-be64-546e9754ac64</webElementGuid>
+      <webElementGuid>7dc304ae-9d94-417f-b85e-3075874bb509</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +62,7 @@
       <name>tabname</name>
       <type>Main</type>
       <value>tab1</value>
-      <webElementGuid>582687cf-7349-442c-8d28-c2a30d82c519</webElementGuid>
+      <webElementGuid>bdc52951-7a83-4012-a901-ba23c20ca5c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +70,7 @@
       <name>value</name>
       <type>Main</type>
       <value>01783</value>
-      <webElementGuid>6a17dfe5-4a37-4911-b73f-177e83d12117</webElementGuid>
+      <webElementGuid>6a5013dd-e91f-46d1-afaf-5fd9218ff8c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dealbox dealbox_BCCLENQPARAMAGRP dealbox_BCCLENQPARAMAGRP_INPUT</value>
-      <webElementGuid>6b05e0c4-f7cd-4c22-b82e-6e681f90f746</webElementGuid>
+      <webElementGuid>859d5b02-0789-49be-b4a3-21155c616d25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>5</value>
-      <webElementGuid>63dc2f65-cbba-4f4b-941a-b1bdcd15066a</webElementGuid>
+      <webElementGuid>43272b39-f4ea-4f6f-878c-a0c88f9883f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -93,7 +94,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>0f935f2a-4500-46b8-a0ef-1ed31ddbe68d</webElementGuid>
+      <webElementGuid>07419f3a-9b21-42d3-a273-d0a805e27e8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>dropdown</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>3a0898b6-8c63-40ec-9a6d-0e77215b037a</webElementGuid>
+      <webElementGuid>1b7aa66a-3985-4908-995d-bb86ff521f3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <name>enrifieldname</name>
       <type>Main</type>
       <value>enri_ID.COD.OPER:1:1</value>
-      <webElementGuid>6f865e90-0c1b-412d-b807-f68f7de5251f</webElementGuid>
+      <webElementGuid>3e9cc7a6-50a1-4435-97a1-be36561e8a9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>invokeHelp(event,'ID.COD.OPER','issueToken');</value>
-      <webElementGuid>1ef1f2c2-f472-46c6-a266-8a001a54c818</webElementGuid>
+      <webElementGuid>d84e67c4-d0bb-4ece-ad69-0c8ed5c15cbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>clearEnrichment(event); FragmentUtil.formChangeHandler(); FragmentUtil.fieldChangeHandler(event);</value>
-      <webElementGuid>05c420ce-d37f-4594-9fc8-41bbf1f71c3b</webElementGuid>
+      <webElementGuid>52d1625a-9dcc-44b1-9203-6b89f19e322c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -133,7 +134,7 @@
       <name>ondblclick</name>
       <type>Main</type>
       <value>javascript:help('ID.COD.OPER','','','issueToken')</value>
-      <webElementGuid>916a2836-9db4-45d9-a976-171d8e2f94a7</webElementGuid>
+      <webElementGuid>12e2b657-0e64-4e8f-9b9b-b56fe8058513</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +142,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fieldName:ID.COD.OPER:1:2&quot;)</value>
-      <webElementGuid>5607fb48-f2ec-4ef5-a6aa-a47dcd196433</webElementGuid>
+      <webElementGuid>b11e8e6e-9707-476b-8fa5-08448cdbb5cf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -149,7 +150,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='fieldName:ID.COD.OPER:1:2']</value>
-      <webElementGuid>6e8c3b9f-05af-4941-ad93-70069ff2ac7c</webElementGuid>
+      <webElementGuid>78ba1931-cade-497e-83d9-683d8fc9cfec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,7 +158,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr[6]/td[3]/input</value>
-      <webElementGuid>6e570ed4-4a83-47d0-b955-2d717680f70e</webElementGuid>
+      <webElementGuid>ddfa054d-d59d-43ec-a723-037ac284af09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -165,7 +166,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[6]/td[3]/input</value>
-      <webElementGuid>2409a474-d94d-4cab-8db5-ccec28080706</webElementGuid>
+      <webElementGuid>91f3dcab-e9e0-45d9-ad27-47dc19cdae97</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -173,6 +174,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'fieldName:ID.COD.OPER:1:2' and @name = 'fieldName:ID.COD.OPER:1:2' and @type = 'text']</value>
-      <webElementGuid>357abb45-f6ed-4b4a-b43b-785faab05210</webElementGuid>
+      <webElementGuid>b44164cc-8337-4882-a174-6e23c3a7a6db</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>d8d35e7e-ed1c-4444-a433-b8e6e4e6563c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(33) > td:nth-child(3) > span:nth-child(1)</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tab1 > tbody:nth-child(1) > tr:nth-child(33) > td:nth-child(3) > span:nth-child(1)</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>e2bb7ea9-99fe-44ab-acef-2b5ab438a1d0</webElementGuid>
+      <webElementGuid>93406b5d-7b87-40d2-96e8-9e34a3cc29eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>disabled_dealbox disabled_dealbox_FUNDSTRANSFER disabled_dealbox_FUNDSTRANSFER_BCCLIMPTOSCOBCTA</value>
-      <webElementGuid>4a6f23a8-7f84-45e4-8200-066cd0815a24</webElementGuid>
+      <webElementGuid>c37f50c5-ff58-42e2-a0bd-68f56c550250</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>COB</value>
-      <webElementGuid>56048da7-ee48-4072-b1ac-05d3c0b25994</webElementGuid>
+      <webElementGuid>18b66516-4b26-4c3f-b306-08b46528fd56</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;tab1&quot;)/tbody[1]/tr[1]/td[3]/span[@class=&quot;disabled_dealbox disabled_dealbox_FUNDSTRANSFER disabled_dealbox_FUNDSTRANSFER_BCCLIMPTOSCOBCTA&quot;]</value>
-      <webElementGuid>d0887e22-c08b-41c8-8127-bd361f49d7e0</webElementGuid>
+      <webElementGuid>2aff9e21-8f8e-4ecc-9cc6-4f043839aa3b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='tab1']/tbody/tr/td[3]/span</value>
-      <webElementGuid>195fbc33-f35a-4628-905a-ad905a1407ba</webElementGuid>
+      <webElementGuid>ce55463a-c625-4b21-aa36-cf024fe06ae0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipo Operacion'])[1]/following::span[1]</value>
-      <webElementGuid>b0eb1309-3f03-4fd4-b076-03e2f3895c3f</webElementGuid>
+      <webElementGuid>d5140de3-5293-4d27-80e5-aed6727b6be0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Audit'])[1]/following::span[1]</value>
-      <webElementGuid>c8098e4b-9a73-41be-9376-85984a5ba625</webElementGuid>
+      <webElementGuid>b35fee51-f907-4df4-a37d-5925f73416ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Id. Persona Socio'])[1]/preceding::span[1]</value>
-      <webElementGuid>3486db50-8d4c-4f2e-b0cf-901a197eddef</webElementGuid>
+      <webElementGuid>5a60e97b-f0d3-4045-bb25-f3199f615af3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cuenta Debito'])[1]/preceding::span[2]</value>
-      <webElementGuid>1a02ee0a-77d3-49f9-a294-770b7df58399</webElementGuid>
+      <webElementGuid>b4a257e6-d421-4742-b11d-df3f471c1cbb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='COB']/parent::*</value>
-      <webElementGuid>fe6aa899-0243-48f1-8dd5-6ec39746640a</webElementGuid>
+      <webElementGuid>dbfc62c0-a2d1-4673-b71b-8ae366de821a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]/span</value>
-      <webElementGuid>246156b0-bdc3-4eca-9826-5b5c66d3a94f</webElementGuid>
+      <webElementGuid>029f7d47-88a6-4b33-850f-62a8be2f6768</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'COB' or . = 'COB')]</value>
-      <webElementGuid>659d26f0-cbd9-42d1-b165-10935e76536a</webElementGuid>
+      <webElementGuid>580493c8-0e18-4d17-8650-74b213a174e4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
