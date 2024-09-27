@@ -23,7 +23,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.support.ui.Select
 import org.openqa.selenium.Keys
 
-def numeroCheque = '75963482'
+def numeroCheque = '75963483'
 def numeroCuenta = '01192463327'
 
 //Configuracion de ambiente
@@ -34,13 +34,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Setear "ENQ BCCL.E.CQ.CHRECH.GO" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.GO')
-
-//Seleccionar boton buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar a la ventana "ALTA DE CHEQUE RECHAZADO"
-WebUI.switchToWindowIndex(1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CQ.CHRECH.GO", 1)
 
 //Seteo de Datos
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -98,7 +92,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 def menuDesplegable = ["Autorizaciones"]
-def link = "Autorizaciones pendientes"
+def link = "Autorizaciones Pendientes"
 
 //Navegar en el Dashboard
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
@@ -163,12 +157,11 @@ WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFI
 //Verificar "Txn Completa"
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

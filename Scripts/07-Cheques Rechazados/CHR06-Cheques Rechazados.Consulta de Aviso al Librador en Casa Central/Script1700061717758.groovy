@@ -25,12 +25,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
 WebUI.maximizeWindow()
 
-def menuDesplegable0 = ["Rechazo de Cheques", "Consultas"]
-def link0 = "Consulta de Avisos al Librador"
-//Si el menu que busco está en dashboard uso esta funcion
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
+def menuDesplegable = ["Rechazo de Cheques", "Consultas"]
+def link = "Consulta de Avisos al Librador"
 
-//Cambiar ventana "BCCL.E.CQ.CHRECH.AVI.LIBRADOR"
+//Si el menu que busco está en dashboard uso esta funcion
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.AVI.LIBRADOR')
 
 //Seteo de Datos "Sucursal", "Numero de Cheque"
@@ -66,12 +65,11 @@ println(TotalRegistros)
 fechaInformada = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.AVI.LIBRADOR/lblFechaInformadaalBCRA'))
 assert fechaInformada == 'Fecha Informada al BCRA'
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

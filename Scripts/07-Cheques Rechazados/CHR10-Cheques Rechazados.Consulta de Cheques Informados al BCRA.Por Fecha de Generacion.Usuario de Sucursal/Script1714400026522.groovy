@@ -32,14 +32,7 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Ingresar "308" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?308')
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?308', 1)
 def menuDesplegable = ["Rechazo de cheques", "Operatoria con BCRA"]
 def link = "Consulta de Cheques Informados al BCRA"
 
@@ -90,12 +83,11 @@ assert fechaGeneracion == "Ind Envio Bcra.1"
 cuentaSi = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.E.CQ.CHRECH.REP.BCRA/lblSI'))
 assert cuentaSi == "SI"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

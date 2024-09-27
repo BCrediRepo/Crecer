@@ -71,14 +71,12 @@ assert cells[9].getText().contains('Monto multa') : "Expected 'Monto multa' but 
 assert cells[12].getText().contains('Sucursal') : "Expected 'Sucursal' but found ${cells[12].getText()}"
 assert cells[15].getText().contains('Numero Cuenta') : "Expected 'Numero Cuenta' but found ${cells[15].getText()}"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

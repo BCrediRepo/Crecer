@@ -20,6 +20,7 @@ import org.openqa.selenium.Keys as Keys
 def suc='001'
 def fechaD='20220801'
 def fechaH='20220831'
+
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -27,10 +28,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,10), findTestData('MainData/Users').getValue(2,10))
 WebUI.maximizeWindow()
 
-def menuDesplegable0 = ["Rechazo de Cheques", "Consultas"]
-def link0 = "Cheques Rechazados"
+def menuDesplegable = ["Rechazo de Cheques", "Consultas"]
+def link = "Cheques Rechazados"
+
 //Si el menu que busco está en dashboard uso esta funcion
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.CHRECH.RECHAZADOS"
 WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
@@ -70,12 +72,11 @@ assert Fechrech == "Fecha rechazo"
 suc = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblSuc'))
 assert suc == "Suc"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

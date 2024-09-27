@@ -4,6 +4,5 @@
    <name>CHR11-Cheques rechazados.Consulta por Conciliacion de Multas. Usuario de Sucursal. Ingresar filtro conciliado y rango de fechas de cobro</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>476a3c83-f1a0-4cd6-864c-10e785e404a8</testCaseGuid>
 </TestCaseEntity>

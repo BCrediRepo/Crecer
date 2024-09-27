@@ -27,10 +27,11 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 
 WebUI.maximizeWindow()
 
-def menuDesplegable0 = ["Rechazo de cheques", "Consultas"]
-def link0 = "MULTAS PENDIENTES"
+def menuDesplegable = ["Rechazo de cheques", "Consultas"]
+def link = "MULTAS PENDIENTES"
+
 //Si el menu que busco está en dashboard uso esta funcion
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable0, link0)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar ventana "BCCL.CHRECH.MULTAS.PENDIENTES"
 WebUI.switchToWindowTitle('BCCL.CHRECH.MULTAS.PENDIENTES')
@@ -46,19 +47,15 @@ long startTime = System.currentTimeMillis()
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.verifyElementVisible(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.MULTAS.PENDIENTES/lnkSucursalGirada'))
-
 sucursal = WebUI.getText(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.MULTAS.PENDIENTES/lnkSucursalGirada'))
-
 assert sucursal.contains("089") == true 
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

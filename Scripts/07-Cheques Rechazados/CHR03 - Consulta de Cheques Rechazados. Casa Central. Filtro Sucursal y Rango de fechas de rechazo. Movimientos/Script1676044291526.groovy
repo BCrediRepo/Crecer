@@ -24,16 +24,12 @@ import java.util.Date as Date
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 10), findTestData('MainData/Users').getValue(
-        2, 10))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 10), findTestData('MainData/Users').getValue(2, 10))
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.CHRECH.RECHAZADOS')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.CHRECH.RECHAZADOS')
+//Ejecuta en la linea de comando ENQ BCCL.CHRECH.RECHAZADOS
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.CHRECH.RECHAZADOS", 1)
 
 //Seteo de Datos "Fecha rechazo desde", "Fecha rechazo hasta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -54,23 +50,17 @@ long endTime = System.currentTimeMillis()
 
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
-
 println(('Tiempo transcurrido: ' + elapsedTime) + ' milisegundos')
 
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
 sucursal = WebUI.getText(findTestObject('08-Cheques Rechazados/BCCL.CHRECH.RECHAZADOS/lblNumSuc'))
-
 assert sucursal.contains('001')
 
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
     CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
     CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-

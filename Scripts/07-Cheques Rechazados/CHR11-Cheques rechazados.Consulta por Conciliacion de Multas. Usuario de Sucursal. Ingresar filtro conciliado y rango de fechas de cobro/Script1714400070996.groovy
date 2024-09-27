@@ -24,29 +24,13 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 WebUI.maximizeWindow()
 
-//Ingresar "?308" en el buscador
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), '?308')
-
-//Seleccionar boton de buscar
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowTitle('Temenos T24')
-
+//Ingresar "308" en el buscador
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?308', 1)
 def menuDesplegable = ["Rechazo de cheques", "Consultas"]
 def link = "CONCILIACION DE MULTAS"
 
 //si el menú que busco está en Temenos T24, uso esta funcion
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
-//Seleccionar "Rechazo de Cheques"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/lnkRechazodecheques'))
-
-//Seleccionar "Consultas"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Rechazo de Cheques/lnkConsultas'))
-
-//Seleccionar "Concilación de multas"
-WebUI.click(findTestObject('Object Repository/08-Cheques Rechazados/Temenos T24/Rechazo de Cheques/Consultas/lnkConciliaciondeMultas'))
 
 //Cambiar ventana "CONSULTA DE CONCILIACION DE MULTAS"
 WebUI.switchToWindowTitle('CONSULTA DE CONCILIACION DE MULTAS')
@@ -87,12 +71,11 @@ assert sucursal == "Sucursal"
 fechaBccl = WebUI.getText(findTestObject('Object Repository/08-Cheques Rechazados/CONSULTA DE CONCILIACION DE MULTAS/lblFechaCobroBCCL'))
 assert fechaBccl == "Fecha Cobro BCCL"
 
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

@@ -26,12 +26,8 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,7), findTestData('MainData/Users').getValue(2,7))
 WebUI.maximizeWindow()
 
-
-WebUI.setText(findTestObject('02-Dashboard/txtDashboardBuscador'), 'ENQ BCCL.E.CQ.CHRECH.REP.BCRA')
-
-WebUI.click(findTestObject('02-Dashboard/btnDashboardGo'))
-
-WebUI.switchToWindowTitle('BCCL.E.CQ.CHRECH.REP.BCRA')
+//Ejecuta en la linea de comando ENQ BCCL.E.CQ.CHRECH.REP.BCRA
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.CQ.CHRECH.REP.BCRA", 1)
 
 //Seteo de Datos "Fec Rep Info"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
@@ -48,32 +44,25 @@ long endTime = System.currentTimeMillis()
 
 //Calcula la diferencia para obtener el tiempo transcurrido
 long elapsedTime = endTime - startTime
-
 println("Tiempo transcurrido: " + elapsedTime + " milisegundos")
-
 WebUI.maximizeWindow()
 
+//el caso se rompe porque nunca carga la ventana, ya fue reportado 
+//WebUI.delay(150)
+
 Fecha = WebUI.verifyTextPresent('Fech Rep', true)
-
 BCRA = WebUI.verifyTextPresent('Env BCRA', true)
-
 Cuenta = WebUI.verifyTextPresent('Cuenta', true)
 
 assert Fecha == true
-
 assert BCRA == true
-
 assert Cuenta == true
 
-
-//---------------------------------------------------------------------------------------------------------------------
-
-//Control de fin de script
+//----------------------------------------------Control de fin de script----------------------------------------------//
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

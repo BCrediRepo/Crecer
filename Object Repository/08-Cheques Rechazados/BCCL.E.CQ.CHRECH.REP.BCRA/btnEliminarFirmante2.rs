@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnEliminarFirmante3</name>
+   <name>btnEliminarFirmante2</name>
    <tag></tag>
    <elementGuidId>715d01be-d3a8-423f-8f11-0e197dbcfc9a</elementGuidId>
    <selectorCollection>
@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#mainTab > tbody:nth-child(1) > tr:nth-child(329) > td:nth-child(2) > a:nth-child(2) > img:nth-child(1)</value>
+         <value>#mainTab > tbody:nth-child(1) > tr:nth-child(28) > td:nth-child(2) > a:nth-child(2) > img:nth-child(1)</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -22,7 +22,6 @@
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>e6f3fbb8-51ff-4f70-a366-498d5bc2d257</webElementGuid>
+      <webElementGuid>9cad6de3-e2dd-4d2a-b475-08d32bdd919b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM</value>
-      <webElementGuid>e2fa8bc4-bafa-421c-8ab2-2ca19df6c556</webElementGuid>
+      <webElementGuid>cfa9c289-a6aa-4892-949d-80bc0126f95c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>src</name>
       <type>Main</type>
       <value>../plaf/images/bccl/deal/mvdelete.gif</value>
-      <webElementGuid>ac1a1a19-d428-45fe-b71a-5404ab7fe2e5</webElementGuid>
+      <webElementGuid>58a9d08a-12cf-4a1b-bfc7-e1e5b57a6250</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>Delete Value</value>
-      <webElementGuid>215b69eb-1dc1-487d-8988-406c36bd33bd</webElementGuid>
+      <webElementGuid>554fe2bd-9763-45bc-965c-1a6e5a3cb6ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +61,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Delete Value</value>
-      <webElementGuid>3aa830c4-d03f-494a-acab-e85b4b67435c</webElementGuid>
+      <webElementGuid>9d730222-94c7-43d3-a6e3-f48e6f6008b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainTab&quot;)/tbody[1]/tr[122]/td[@class=&quot;action_container action_container_BCCLCQCHRECHREPBCRA action_container_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]/a[2]/img[@class=&quot;ascell ascell_BCCLCQCHRECHREPBCRA ascell_BCCLCQCHRECHREPBCRA_MODFIRM&quot;]</value>
-      <webElementGuid>82877fe3-6ad7-4b04-9908-efcbdd2cfec2</webElementGuid>
+      <webElementGuid>68e2537f-6802-4da9-8af2-fff4e24621e6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='mainTab']/tbody/tr[122]/td[2]/a[2]/img</value>
-      <webElementGuid>0b4e1585-129f-44fe-ba21-caea06034e4a</webElementGuid>
+      <webElementGuid>8c8b7158-7f16-478a-b00b-68bb3cdd35b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>(//img[@alt='Delete Value'])[3]</value>
-      <webElementGuid>805afd53-6738-4599-bf1a-ad1b32f8cb51</webElementGuid>
+      <webElementGuid>1cc03117-8032-4d7f-b3bc-b22e62da4ec8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[122]/td[2]/a[2]/img</value>
-      <webElementGuid>def80f35-5703-4510-b940-a695411b3144</webElementGuid>
+      <webElementGuid>eaef2287-a84d-41ac-9fda-96bff1044a95</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '../plaf/images/bccl/deal/mvdelete.gif' and @alt = 'Delete Value' and @title = 'Delete Value']</value>
-      <webElementGuid>ab969c4e-d686-4368-8a07-3a3ca337c974</webElementGuid>
+      <webElementGuid>c0aa6df6-fb56-4ce4-8f67-f7237b167712</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
