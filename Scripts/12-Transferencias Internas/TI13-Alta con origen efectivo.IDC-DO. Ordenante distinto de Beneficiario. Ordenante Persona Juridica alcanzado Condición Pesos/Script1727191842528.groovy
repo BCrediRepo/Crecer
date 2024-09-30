@@ -19,34 +19,36 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//TEST CASE NAME: Devolución manual de Impuestos en efectivo. Socio. Usuario de Filial. Impuestos.  SELLOS otras Operatorias. 
-//Alcanzado en Córdoba. 04. Condición para el impuesto en la jurisdicción es AA
-
-//Configuracion de ambiente
+//Configuracion del ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 
-//Navegar por el menu Temenos T24
-def menuDesplegable = ["Impuestos", "Operatorias especiales", "Cobro Sellado (Suc Santa Fe y Cordoba)"]
-def link = "Devol. Sellado en Efec (Suc.Santa Fe/Cordoba)"
+def menuDesplegable = ["Transferencias Internas"]
+def link = "Alta Transf. Interna Origen Efectivo"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), '30708114584')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtNombrePersona'), 'TEST CRECER')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtProv.Jurisdiccion'), '10')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtBaseImponible'), '1,00')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtId.Alicuota'), 'SO04AA.20170426')
+//Completo los campos necesarios para el pase entre socios
+WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtSucursalDestino'), '074')
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'))
+WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdOrdenante'), '2000514092')
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtObservaciones'))
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/btnDrillDownMotivo'))
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/lblFAC'))
+WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtImporte'), '100')
+WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtIdBeneficiario'), '1000873562')
+WebUI.click(findTestObject('Object Repository/12-Transferencias Internas/01-Alta Transf. Interna Origen Efectivo/txtObservaciones'))
+CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
 WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
+//Valido que se haya completado la transaccion
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 

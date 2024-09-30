@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PES06-En la Filial.Cuenta debito Pesos. Cuenta credito Pesos.Cuentas Misma Titularidad. Excepcion del cobro del impuesto DN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42d57f43-c676-4b49-b13d-951d8434d171</testCaseGuid>
+</TestCaseEntity>

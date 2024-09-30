@@ -19,9 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//TEST CASE NAME: Devolución manual de Impuestos en efectivo. Socio. Usuario de Filial. Impuestos.  SELLOS otras Operatorias. 
-//Alcanzado en Córdoba. 04. Condición para el impuesto en la jurisdicción es AA
-
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -30,22 +27,24 @@ CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getV
 WebUI.maximizeWindow()
 
 //Navegar por el menu Temenos T24
-def menuDesplegable = ["Impuestos", "Operatorias especiales", "Cobro Sellado (Suc Santa Fe y Cordoba)"]
-def link = "Devol. Sellado en Efec (Suc.Santa Fe/Cordoba)"
+def menuDesplegable = ["Impuestos", "Cobro de Impuestos"]
+def link = "Cobro Impuestos en Cuenta (Socio)"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), '30708114584')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtNombrePersona'), 'TEST CRECER')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtProv.Jurisdiccion'), '10')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtBaseImponible'), '1,00')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtId.Alicuota'), 'SO04AA.20170426')
+//Seteo de datos
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtId.PersonaSocio'), 6)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtId.PersonaSocio'), '1003699096')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtCuentaDebito'), '00730029258')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtProv.Jurisdiccion'), '10')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtTipodeImpuesto'), 'SO')
+WebUI.click(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtMontoACobrar'))
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtMontoACobrar'), '2,40')
+WebUI.click(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtBaseImponible'))
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtBaseImponible'), '1,00')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/02-Cobro Impuestos en Cuenta (Socio)/txtAlicuota'), 'SO21AA.20220121')
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
-WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
-
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
 def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
@@ -61,3 +60,4 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
+
