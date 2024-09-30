@@ -18,47 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.By
-import org.openqa.selenium.WebElement
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.support.ui.Select
 
-def rellenarFormulario(String tabla, String variable, int posVariable, String valor, int posValor) {
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	for (WebElement row : rows) {
-		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
-		String cellText = cell.getText()
-		if (cellText.equals(variable)) {
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[posValor]
-			WebElement lnkElement = tdElement.findElement(By.tagName("input"))
-			lnkElement.sendKeys(valor)
-			return true
-		}
-	}
-	return false
-}
 
-def clickLinkBotonTabla(String tabla, String variable, int posVariable, int posLink) {
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id(tabla))
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	for (WebElement row : rows) {
-		WebElement cell = row.findElements(By.tagName("td"))[posVariable]
-		String cellText = cell.getText()
-		if (cellText.equals(variable)) {
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[posLink]
-			WebElement lnkElement = tdElement.findElement(By.tagName("a"))
-			lnkElement.click()
-			return true
-		}
-	}
-	return false
-}
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
@@ -74,18 +39,13 @@ CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link
 WebUI.switchToWindowIndex(2)
 WebUI.delay(5)
 def encontrado = false
-while(!encontrado) {
-	encontrado = rellenarFormulario('tab1', 'Carpeta', 0, '15071', 2)
-	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
-	encontrado = rellenarFormulario('tab1', 'Nombre del Socio', 0, 'TEST', 2)
-	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
-	encontrado = rellenarFormulario('tab1', 'Abogado', 0, '2098', 2)
-	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
-	encontrado = rellenarFormulario('tab1', 'Moneda', 0, 'ARS', 2)
-	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
-	WebUI.selectOptionByIndex(findTestObject('Object Repository/37-Posteo/BCCL.COBRANZAS.LEGALES/cbConcepto'), 1)
-	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
-	encontrado = rellenarFormulario('tab1', 'Importe.1', 0, '10', 2)
+while(!encontrado) {	
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Carpeta', 0, '15071', 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Nombre del Socio', 0, 'TEST', 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Abogado', 0, '2098', 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Moneda', 0, 'ARS', 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.seleccionCombobox'('tab1', 'Concepto.1', 0, 1, 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Importe.1', 0, '10', 2)
 	WebUI.click(findTestObject('Object Repository/37-Posteo/BCCL.COBRANZAS.LEGALES/rbTitular'))
 }
 
@@ -140,7 +100,7 @@ WebUI.maximizeWindow()
 
 encontrado = false
 while(!encontrado) {
-	encontrado = clickLinkBotonTabla('datadisplay', ftPosteo, 0, 8)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.clickLinkBotonTabla'('datadisplay', ftPosteo, 0, 8)
 }
 
 //Screenshot
