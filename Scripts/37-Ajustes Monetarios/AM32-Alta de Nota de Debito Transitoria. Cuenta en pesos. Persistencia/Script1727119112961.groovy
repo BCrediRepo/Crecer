@@ -1,8 +1,3 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,33 +11,36 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-
-//TEST CASE NAME: Devolución manual de Impuestos en efectivo. Socio. Usuario de Filial. Impuestos.  SELLOS otras Operatorias. 
-//Alcanzado en Córdoba. 04. Condición para el impuesto en la jurisdicción es AA
-
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
+ 
+//TEST NAME: Alta de Nota de Débito Ajuste. Cuenta en pesos. Persistencia
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
-
+ 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 3), findTestData('MainData/Users').getValue(2, 3))
 WebUI.maximizeWindow()
 
-//Navegar por el menu Temenos T24
-def menuDesplegable = ["Impuestos", "Operatorias especiales", "Cobro Sellado (Suc Santa Fe y Cordoba)"]
-def link = "Devol. Sellado en Efec (Suc.Santa Fe/Cordoba)"
+//Navegar por el menu de Ajustes Monetarios
+def menuDesplegable = ["Ajustes Monetarios"]
+def link = "Nota de Debito Transitoria"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowIndex(1)
-WebUI.maximizeWindow()
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtCUITCUIL'), '30708114584')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtNombrePersona'), 'TEST CRECER')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtProv.Jurisdiccion'), '10')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtBaseImponible'), '1,00')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/03-Devol. Sellado en Efec (Suc.Santa Fe-Cordoba)/txtId.Alicuota'), 'SO04AA.20170426')
+WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtNroCuenta'), '00730029258')
+WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'))
+WebUI.waitForElementVisible(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'), 3)
+WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'), '100')
+WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtConcepto'), '18299NTI')
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+
+//Acepto las Alertas y completo la transaccion
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
 WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
@@ -56,7 +54,7 @@ assert element.contains('Txn Completa:')
 void fTakeFailScreenshot() {
 	CustomKeywords.'pkgModules.kywGeneric.fFailStatus'()
 }
-
+ 
 @com.kms.katalon.core.annotation.TearDownIfPassed
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()

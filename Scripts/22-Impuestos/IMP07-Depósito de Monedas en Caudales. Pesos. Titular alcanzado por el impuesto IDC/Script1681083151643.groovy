@@ -25,18 +25,11 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
-WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Accedo al menu de Impuestos - Depósito de Monedas en Caudales
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 6)
-WebUI.setText(findTestObject('Object Repository/02-Dashboard/txtDashboardBuscador'), 'TELLER,RECAUDACION.MONEDAS')
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/btnDashboardGo'))
-
-//Switch a la ventana de Recaudacion de Monedas ingresando al nuebvo registro
-WebUI.switchToWindowTitle('TELLER')
+//Ejecutar en la linea de comando "TELLER,RECAUDACION.MONEDAS"
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("TELLER,RECAUDACION.MONEDAS", 1)
 WebUI.maximizeWindow()
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/btnNuevoRegistro'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/btnNuevoRegistro'))
 
@@ -46,22 +39,17 @@ WebUI.setText(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONE
 WebUI.click(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/txtCuentaCliente'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/txtCuentaCliente'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/txtCuentaCliente'), '00730029258')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/txtComentarios'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/txtComentarios'), 'TEST CRECER')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/lblDenominaciones'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/lblDenominaciones'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/txtCantidad.8'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/txtCantidad.8'), '1')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/btnValidarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/btnValidarRegistro'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/lblRecaudacionDeMonedas'), 6)
 WebUI.click(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/lblRecaudacionDeMonedas'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/btnAceptarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Valido que la transaccion haya finalizado con exito
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/lblTxnCompleta'), 6)
-def element = WebUI.getText(findTestObject('Object Repository/23-Impuestos/06-RECAUDACION.MONEDAS/lblTxnCompleta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------
@@ -75,5 +63,3 @@ void fTakeFailScreenshot() {
 void fPassScript() {
 	CustomKeywords.'pkgModules.kywGeneric.fPassStatus'()
 }
-
-

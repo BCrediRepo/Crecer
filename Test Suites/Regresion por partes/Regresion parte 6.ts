@@ -407,7 +407,7 @@
       <guid>dc2996ae-1cf6-429f-8ada-5e7b9bd2083b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP24-Cobro manual de Impuestos en cuenta Socio ImpuestoIDC Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP12-Cobro manual de Impuestos en cuenta Socio ImpuestoIDC Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -435,7 +435,7 @@
       <guid>d2865932-830e-4149-8abd-05a87d391e3a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP23-Cobro manual de Impuestos en cuenta Socio ImpuestoIVA Consumidor Final</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP11-Cobro manual de Impuestos en cuenta Socio ImpuestoIVA Consumidor Final</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

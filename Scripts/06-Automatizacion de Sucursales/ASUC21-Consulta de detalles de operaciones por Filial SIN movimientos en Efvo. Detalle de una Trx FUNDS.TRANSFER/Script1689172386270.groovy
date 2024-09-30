@@ -45,7 +45,7 @@ link = "DETALLE DE OPERACIONES SIN Efectivo (PARA EL"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
 WebUI.switchToWindowIndex(2)
 
-//Verifica titulo de Detalle de operaciones sin efectivo y Seteo de Datos "Moneda", "Usuario"
+//Seteo de Datos "Moneda", "Usuario"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Moneda', 'ARS')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Usuario', 'B.0043')

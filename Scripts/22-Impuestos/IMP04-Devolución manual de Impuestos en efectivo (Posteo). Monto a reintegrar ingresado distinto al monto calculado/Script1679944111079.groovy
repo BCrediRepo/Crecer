@@ -18,55 +18,40 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-//TEST CASE NAME: IMPUESTOS. Devolución manual de Impuestos en efectivo (Posteo). Monto a reintegrar ingresado distinto al monto calculado
 
+//TEST CASE NAME: IMPUESTOS. Devolución manual de Impuestos en efectivo (Posteo). Monto a reintegrar ingresado distinto al monto calculado
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
 
-//Accedo al menu de Impuestos - Devolucion de Impuestos
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkImpuestos'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkDevoluciondeImpuestos'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/lnkDevoluciondeImpuestos'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/02-Dashboard/21-Impuestos/04-Devolucion de Impuestos/lnkDevolucionImpuestosenEfectivo'), 6)
-WebUI.click(findTestObject('Object Repository/02-Dashboard/21-Impuestos/04-Devolucion de Impuestos/lnkDevolucionImpuestosenEfectivo'))
-
-//Switch a la ventana de Movimiento de Fondos y completo los campos
-WebUI.switchToWindowTitle('Movimiento de Fondos')
+//Navegar por el menu Temenos T24
+def menuDesplegable = ["Impuestos", "Devolucion de Impuestos"]
+def link = "Devolucion Impuestos en Efectivo (Socio / No"
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtCUITCUIL'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtCUITCUIL'), '30708114584')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtNombrePersona'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtNombrePersona'), 'TEST CRECER')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtProv.Jurisdiccion'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtProv.Jurisdiccion'), '10')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtTipodeImpuesto'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtTipodeImpuesto'), 'SE')
 WebUI.click(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtMontoaReintegrar'))
 WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtMontoaReintegrar'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtMontoaReintegrar'), '2,40')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtBaseImponible'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtBaseImponible'), '1,00')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtId.Alicuota'), 6)
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/txtId.Alicuota'), 'SE01AA.20150706')
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/select_OperatoriaOrigen'), 6)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/select_OperatoriaOrigen'), 1)
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'), 6)
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/btnValidarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/btnValidarRegistro'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/btnAceptarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/btnAceptarRegistro'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/lnkAceptarAlertas'), 6)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/lnkAceptarAlertas'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/lblTxnCompleta'), 6)
-def element = WebUI.getText(findTestObject('Object Repository/23-Impuestos/04-Devolucion Impuestos en Efectivo/lblTxnCompleta'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa:')
 
 //---------------------------------------------------------------------------------------------------------------------

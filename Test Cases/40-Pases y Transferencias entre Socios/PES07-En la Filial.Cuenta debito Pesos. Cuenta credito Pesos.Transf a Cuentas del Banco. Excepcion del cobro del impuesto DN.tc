@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PES07-En la Filial.Cuenta debito Pesos. Cuenta credito Pesos.Transf a Cuentas del Banco. Excepcion del cobro del impuesto DN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af905917-795d-4a4f-8fcd-3adf07679bf5</testCaseGuid>
+</TestCaseEntity>

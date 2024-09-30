@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>IMP11-Impuestos. Ajustes monetarios. Alta de Nota de Débito Ajuste. Cuenta sin bloqueos</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7d693563-09a4-4509-95b7-0893dad4627c</testCaseGuid>
-</TestCaseEntity>

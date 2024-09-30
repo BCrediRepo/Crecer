@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REM31-Remesas. Consulta de remesa predictiva por Sucursal y Fecha. ENQ BCCL.E.NOF.PREDIC.ATM.OPTICASH</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbc591ff-0dd2-4389-b619-e829cc6feed4</testCaseGuid>
+</TestCaseEntity>

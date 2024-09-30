@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>IMP14-Impuestos.Ajustes monetarios. Alta de Nota de Crédito Transitoria. Cuenta en pesos. Persistencia</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>fc3bdc6f-4062-4fe7-82ab-d8822d4de661</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IMP10-Txn de imp con posteo. Devolución de Impuestos en Cuenta Contable. Usuario del sector Impuestos. Alta de trn.SE alcanzado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4fcbcde-cc09-478a-91d4-c83f6e07cf02</testCaseGuid>
+</TestCaseEntity>
