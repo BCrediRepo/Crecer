@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>IMP27-Devolucion manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>51b07c8a-82b3-4053-835f-a083eef2324a</testCaseGuid>
-</TestCaseEntity>

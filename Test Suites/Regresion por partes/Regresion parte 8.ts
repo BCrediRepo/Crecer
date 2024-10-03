@@ -274,14 +274,14 @@
       <guid>991c9542-5b94-4433-ab5e-d640999cc80e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP28-Cobro manual de Impuestos en cuenta Socio ImpuestoIBP Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP16-Cobro manual de Impuestos en cuenta Socio ImpuestoIBP Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>986f0515-7f0f-4c9f-9bbd-abac69733bee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP29-Cobro manual de Impuestos en cuenta Socio ImpuestoIBR Cuenta con Saldo Suficientes</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP17-Cobro manual de Impuestos en cuenta Socio ImpuestoIBR Cuenta con Saldo Suficientes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -415,6 +415,41 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/17-Resumen de Cuenta/RC31-Resumen de Cuenta. Consulta por Sucursal. Consulta de Movimiento por Fecha. Detalle. Movimiento de Debito ingresado de Transferencia entre Socios</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7536aac5-324b-4b3b-a555-a3e5878bd991</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM30-Remesas. Consulta predictiva por Sucursal. ENQ BCCL.E.NOF.PREDIC.ATM.OPTICASH</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c01d53aa-1eca-4d2a-b2d7-ad7c3db508f0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/16-Remesas/REM31-Remesas. Consulta de remesa predictiva por Sucursal y Fecha. ENQ BCCL.E.NOF.PREDIC.ATM.OPTICASH</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3536baeb-b614-4613-b2b7-f31930bf2b31</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR18-Cheque Rechazados.Consulta Cheque Rechazados Camara del día. ENQ BCCL.E.CHQ.RECH.AUT</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2222485c-b636-4bd7-8c12-fcb2d54f4868</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR19-Consulta de Multas. Usuario de Sucursal. Multa conciliado Si.Fecha rechazo desde MENOR o IGUAL A 30 dias corridos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>585a1bbb-faff-4a55-b827-a8a23f2f5b43</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/07-Cheques Rechazados/CHR20-Cambio de motivo de rechazo. Rechazo de ONP pasa a SIN FONDOS. Modelo de cartas enviadas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

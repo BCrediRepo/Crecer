@@ -183,42 +183,42 @@
       <guid>6e99c2b4-d2ac-4b6f-bc3b-91842e7500e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP25-Devolucion manual de Impuestos en cuenta Socio ImpuestoIDC Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP13-Devolucion manual de Impuestos en cuenta Socio ImpuestoIDC Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a021a548-fa9e-4646-8468-5dcdfb741bbd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP26-Cobro manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP14-Cobro manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>943bc425-4d43-4e2e-bd79-b00567559548</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP27-Devolucion manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP15-Devolucion manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>36cd3fde-69a3-4f60-a66f-1ba7165ca18a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP28-Cobro manual de Impuestos en cuenta Socio ImpuestoIBP Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP16-Cobro manual de Impuestos en cuenta Socio ImpuestoIBP Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>cba26b22-310e-432e-99b8-be36cb88d78f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP29-Cobro manual de Impuestos en cuenta Socio ImpuestoIBR Cuenta con Saldo Suficientes</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP17-Cobro manual de Impuestos en cuenta Socio ImpuestoIBR Cuenta con Saldo Suficientes</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9bc1fe16-0fa6-487e-a87d-415eef2dfc44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP30-Devolucion manual de Impuestos en efectivo. Socio. Usuario de Filial. Impuestos SELLOS otras Operatorias. Alcanzado a sta fe 21. Condicion impuesto jurisdiccion es AA</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP18-Devolucion manual de Impuestos en efectivo. Socio. Usuario de Filial. Impuestos SELLOS otras Operatorias. Alcanzado a sta fe 21. Condicion impuesto jurisdiccion es AA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

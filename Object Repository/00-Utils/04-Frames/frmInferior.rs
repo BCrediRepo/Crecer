@@ -18,7 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>IFRAME</value>
-      <webElementGuid>8772bd5e-1069-477e-ab35-e4f7cb85f6e6</webElementGuid>
+      <webElementGuid>00e2ff97-87bc-4ff7-8dee-bee3912e0f9d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>xpath1704829146413</value>
-      <webElementGuid>38ef9f5d-458e-482e-b498-1a8c6f804dcd</webElementGuid>
+      <webElementGuid>9ce8f851-5f63-4925-9686-4881c836c9c1</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

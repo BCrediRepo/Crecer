@@ -414,21 +414,21 @@
       <guid>3763d96c-c441-4808-8063-bdc02ff04bf3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP25-Devolucion manual de Impuestos en cuenta Socio ImpuestoIDC Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP13-Devolucion manual de Impuestos en cuenta Socio ImpuestoIDC Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8618b5f1-bf19-4bbc-90d1-f2957464157d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP26-Cobro manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP14-Cobro manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>4cef8343-0966-4e44-8824-a14fdb0adc73</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/22-Impuestos/IMP27-Devolucion manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
+      <testCaseId>Test Cases/22-Impuestos/IMP15-Devolucion manual de Impuestos en cuenta Socio ImpuestoSELLOS Cuenta con Saldo Suficiente</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

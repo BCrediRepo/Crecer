@@ -18,34 +18,35 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import com.kms.katalon.core.testdata.TestDataFactory
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
 
 //Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,4), findTestData('MainData/Users').getValue(2,4))
+CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,5), findTestData('MainData/Users').getValue(2,5))
 WebUI.maximizeWindow()
 
-def menuDesplegable = ["Ajustes Monetarios"]
-def link = "Nota de Credito por Ajustes"
+//Accedo al menu de Impuestos - Devolucion de Impuestos
+def menuDesplegable = ["Impuestos", "Devolucion de Impuestos"]
+def link = "Devolucion Impuestos en Cuenta (Socio)"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowIndex(1)
 WebUI.maximizeWindow()
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtNroCuenta'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtNroCuenta'), GlobalVariable.vCSCuenta)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'), GlobalVariable.vCSImporte)
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtConcepto'), 6)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtConcepto'), GlobalVariable.vCSConcepto)
-WebUI.click(findTestObject('Object Repository/23-Impuestos/08-Nota de Credito por Ajustes/txtImporte'))
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'), 6)
-WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
-//Acepto las Alertas y completo la transaccion
-WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'), 6)
-WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+//Lleno datos Solicitados
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtId.PersonaSocio'), '1003699096')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtCuentaCredito'), '00730029258')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtProv.Jurisdiccion'), '21')
+WebUI.selectOptionByIndex(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/select_CRDBMovimiento'), 1)
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtTipodeImpuesto'), 'SE')
+WebUI.click(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtMontoaReintegrar'))
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtMontoaReintegrar'), '2,40')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtBaseImponible'), '1,00')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/txtId. Alicuota'), 'SE06AA.20150706')
+WebUI.selectOptionByIndex(findTestObject('Object Repository/23-Impuestos/05-Devolucion Impuestos en Cuenta/select_OperatoriaOrigen'), 2)
+
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
 def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))

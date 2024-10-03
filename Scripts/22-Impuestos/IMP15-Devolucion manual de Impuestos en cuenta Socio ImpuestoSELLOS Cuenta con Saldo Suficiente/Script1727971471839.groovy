@@ -24,11 +24,10 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1,3), findTestData('MainData/Users').getValue(2,3))
 WebUI.maximizeWindow()
 
-//Ejecuta en la linea de comando
-CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("BCCL.PERSONA", 1)
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('BCCL.PERSONA', 1)
 WebUI.maximizeWindow()
 
-//Ingresamos los datos y validamos "'Per Co Cprov'"
+//Ingresamos los datos
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/15-ARCHIVOS PERSONAS/txtBCCL.PERSONA'), '1000740898')
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
@@ -40,30 +39,28 @@ assert element.contains('Per Co Cprov')
 //Switch a la ventana Principal
 WebUI.switchToWindowIndex(0)
 
-//Ejecuta en la linea de comando
-CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("BCCL.ALICUOTAS", 2)
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('BCCL.ALICUOTAS', 2)
 WebUI.maximizeWindow()
 
-//Ingresamos los datos y validamos "Importe"
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/txtBCCL.ALICUOTAS'), 'DC00P0.20150706')
+//Ingresamos los datos
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/txtBCCL.ALICUOTAS'), 'SE01AA.20150706')
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/spanImporte'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/spanImporte'))
-def element2 = WebUI.getText(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/spanImporte'))
-assert element2.contains('Importe')
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/spanNumerales'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/spanNumerales'))
+def element2 = WebUI.getText(findTestObject('Object Repository/23-Impuestos/16-BCCL.ALICUOTAS/spanNumerales'))
+assert element2.contains('Numerales')
 
 //Switch a la ventana Principal
 WebUI.switchToWindowIndex(0)
 
-def menuDesplegable = ["Cuentas", "Consultas de Cuentas"]
-def link = "Consulta de Saldo al Dia"
+def menuDesplegable = ['Cuentas', 'Consultas de Cuentas']
+def link = 'Consulta de Saldo al Dia'
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 WebUI.switchToWindowIndex(3)
 WebUI.maximizeWindow()
 
-//Ingresamos la cuenta a consultar y validamos
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/txtCuenta'), '00895279312')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '00895279312')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'), 6)
@@ -74,27 +71,30 @@ assert element3.contains('Nro. de Cuenta')
 //Switch a la ventana Principal
 WebUI.switchToWindowIndex(0)
 
-def menuDesplegable2 = ["Impuestos", "Cobro de Impuestos"]
-def link2 = "Cobro Impuestos en Cuenta (Socio)"
+def menuDesplegable2 = ["Impuestos", "Devolucion de Impuestos"]
+def link2 = "Devolucion Impuestos en Cuenta (Socio)"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2, link2)
 WebUI.switchToWindowIndex(4)
 WebUI.maximizeWindow()
 
 //Seteo de Datos y validacion
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txt ID PersonaSocio'), '1000740898')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtCuentaDebito'), '00895279312')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtCuentaCredito'), '00895279312')
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtProv Jurisdiccion'), '00')
 WebUI.click(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/cbxMvtoGravadoOriginal'))
 WebUI.selectOptionByIndex(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/cbxMvtoGravadoOriginal'), 1)
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtTipo de impuesto'), 'DC')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtTipo de impuesto'), 'SE')
 WebUI.click(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtMonto a Cobrar'))
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtMonto a Cobrar'), '30')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtMonto a Cobrar'), '100')
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtBase Imponible'), '5000')
-WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtID Alicuota'), 'DC00P0.20150706')
+WebUI.setText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/txtID Alicuota'), 'SE01AA.20150706')
+WebUI.click(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/cbxOperatoriaOrigen'))
+WebUI.selectOptionByIndex(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/cbxOperatoriaOrigen'), 29)
 
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
+//Validamos Txn Completa
 WebUI.waitForElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'), 6)
 WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 def element4 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
@@ -126,17 +126,17 @@ CustomKeywords.'pkgModules.kywBusquedaMenu.clickearEnLinkDashboard'(link3)
 WebUI.switchToWindowIndex(5)
 WebUI.maximizeWindow()
 
-//Ingresamos la cuenta y validamos
+//Ingresamos la cuenta
 WebUI.setText(findTestObject('Object Repository/23-Impuestos/18-Movimientos por Fecha de Cuentas/txtNroDeCuenta'), '00895279312')
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkEjecutar'))
 
-def Estado = WebUI.getText(findTestObject('Object Repository/23-Impuestos/18-Movimientos por Fecha de Cuentas/lblACTIVA'))
-// Verifica el valor de check y reporta el resultado
-if (Estado == "ACTIVA") {
-	Estado ==  ("Checkpoint estado: Coincide")
-} else {
-	Estado == ("Checkpoint estado: No coincide")
-}
+//Click en btn ver detalle completo Txn
+WebUI.click(findTestObject('Object Repository/23-Impuestos/18-Movimientos por Fecha de Cuentas/btnVerDetalleCompletoTxn'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTransaction Type'), 6)
+WebUI.verifyElementVisible(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTransaction Type'))
+def element6 = WebUI.getText(findTestObject('Object Repository/23-Impuestos/17-Movimiento de Fondos/lblTransaction Type'))
+assert element6.contains('Transaction Type')
 
 //---------------------------------------------------------------------------------------------------------------------
 //Control de fin de script

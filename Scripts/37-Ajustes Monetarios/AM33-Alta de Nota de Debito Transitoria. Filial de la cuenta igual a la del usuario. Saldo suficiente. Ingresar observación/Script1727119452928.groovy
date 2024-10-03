@@ -58,11 +58,11 @@ CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable2
 WebUI.switchToWindowIndex(2)
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtNroCuenta'), '00730029258')
-WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'))
-WebUI.waitForElementVisible(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'), 3)
-WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtImporte'), '100')
-WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/Movimiento de Fondos/txtConcepto'), '18299NTI')
+WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/txtNroCuenta'), '00730029258')
+WebUI.click(findTestObject('23-Impuestos/11-Nota Debito Transitoria/txtImporte'))
+WebUI.waitForElementVisible(findTestObject('23-Impuestos/11-Nota Debito Transitoria/txtImporte'), 3)
+WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/txtImporte'), '100')
+WebUI.setText(findTestObject('23-Impuestos/11-Nota Debito Transitoria/txtConcepto'), '18299NTI')
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
