@@ -30,14 +30,15 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 66), findTestData('MainData/Users').getValue(2, 66))
 WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('?328', 1)
+
 menuDesplegable=['Posteo', 'Cobranza de Legales']
 link = 'Ingreso de Cobranzas'
-CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
+CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
 
 //Cambiar a la ventana "BCCL.COBRANZAS.LEGALES"
-WebUI.switchToWindowIndex(2)
-WebUI.delay(5)
+WebUI.switchToWindowIndex(1)
+
+WebUI.waitForPageLoad(5)
 def encontrado = false
 while(!encontrado) {	
 	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Carpeta', 0, '15071', 2)
