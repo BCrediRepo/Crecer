@@ -102,7 +102,7 @@ public class kywManejoDeTablas {
 	}
 
 	@Keyword
-	def seleccionComboboxConBotoncitoAzul(String tabla, String variable, int posVariable, int opcionIndex, int posCB) {
+	def seleccionComboboxConValidacion(String tabla, String variable, int posVariable, int opcionIndex, int posCB) {
 		WebElement table2 = DriverFactory.getWebDriver().findElement(By.id(tabla))
 		List<WebElement> rows2 = table2.findElements(By.tagName("tr"))
 		for (WebElement row2 : rows2) {

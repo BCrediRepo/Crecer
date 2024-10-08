@@ -40,7 +40,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/46-Movimientos Pend
 
 //Seteo de datos "CUENTA"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cancelado', 'SIN FONDOS')
+CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cancelado', 'SI')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Suc.', '015')
 
 //Maximizar ventana 

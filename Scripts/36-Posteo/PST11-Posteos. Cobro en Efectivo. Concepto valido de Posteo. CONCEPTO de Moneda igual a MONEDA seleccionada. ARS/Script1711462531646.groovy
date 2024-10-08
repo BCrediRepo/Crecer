@@ -52,7 +52,7 @@ WebUI.switchToWindowTitle('Movimiento de Fondos')
 
 def encontrado = false
 while(!encontrado) {
-	encontrado = rellenarFormulario('tab1', 'Moneda', 1, 'ARS', 3)
+	encontrado = rellenarFormulario('tab1', 'Moneda', 1, 'ARS', 3)	
 	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
 	encontrado = rellenarFormulario('tab1', 'Concepto', 1, '18450PMI', 3)
 	WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))

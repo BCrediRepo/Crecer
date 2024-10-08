@@ -17,47 +17,41 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Configuracion de ambiente
-CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+////Configuracion de ambiente
+//CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
+//
+////Login
+//CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 43), findTestData('MainData/Users').getValue(2, 43))
+//
+//WebUI.maximizeWindow()
+//CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+//
+////Consultamos el Saldo Previo de la cuenta
+//menuDesplegable = ['Cuentas', 'Consultas de Cuentas']
+//link = 'Consulta de Saldo al Dia'
+//CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionDashboard'(menuDesplegable, link)
+//
+//
+//WebUI.switchToWindowTitle('Saldos de Cuenta')
+//WebUI.maximizeWindow()
+//
+//WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkNuevaSeleccion'))
+//CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cuenta', '01020311343')
+//WebUI.delay(5)
+//
+//
+////Click en ejecutar
+//WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
+//
+////ASSERT
+//WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'), 6)
+//WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'))
+//
+//def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'))
+//
+//assert element.contains('Nro. de Cuenta')
 
-//Login
-CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 43), findTestData('MainData/Users').getValue(2, 43))
-
-WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Consultamos el Saldo Previo de la cuenta
-
-//Click en Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/lnkCuentas'))
-
-//Click en Consulta de Cuentas
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultasdeCuentas'))
-
-//Click en Consulta de Saldo al dia
-WebUI.click(findTestObject('Object Repository/02-Dashboard/37-Cuentas/lnkConsultadeSaldoalDia'))
-
-//Switch a la ventana Saldos de Cuenta
-WebUI.switchToWindowTitle('Saldos de Cuenta')
-
-//Maximizamos
-WebUI.maximizeWindow()
-
-//Completamos los datos para la consulta
-WebUI.setText(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/txtCuenta'), '01020311343')
-
-//Click en ejecutar
-WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
-
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'))
-
-def element = WebUI.getText(findTestObject('Object Repository/39-Cuentas/Saldos de Cuenta/lblNro.deCuenta'))
-
-assert element.contains('Nro. de Cuenta')
-
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
 //Configuracion de ambiente
 CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerIPRun, GlobalVariable.vServerNameRun)
@@ -65,57 +59,26 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 //Login
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 8), findTestData('MainData/Users').getValue(2, 8))
 
-WebUI.maximizeWindow()
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'('FUNDS.TRANSFER,BCCL.TRANS.FOND.MAP I F3', 1)
 
-//Click en Transferencia de Fondos - MAP
-WebUI.click(findTestObject('Object Repository/02-Dashboard/spanTransferencia de Fondos - MAP'))
-
-//Click en el link de Transferencia de Fondos - MAP
-WebUI.click(findTestObject('Object Repository/51-MAP/Transferencia de Fondos - MAP/lnkTransferencia de Fondos - MAP'))
-
-//Switch a la ventana Movimientos de Fondos
-WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-//Maximizamos
 WebUI.maximizeWindow()
 
-//Click en el dropdown
 WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnDropdown'))
-
-//Click en la opcion correspondiente
 WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/lblMAPMEPEXE-Transferencia MEP Exenta'))
 
-//Completamos el numero de cuenta debito
-WebUI.setText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtNro. de Cuenta Debito'), '01020311343')
-
-//Completamos el numero de cuenta credito
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtNro. de Cuenta Credito'))
-WebUI.setText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtNro. de Cuenta Credito'), '13490019758')
-
-//Completamos el importe
-WebUI.setText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtImporte'), '10')
-
-//Completamos las observaciones
-WebUI.setText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtObservaciones'), 'Pruebas123')
-
-//Click en Validar Registro
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnValidarRegistro'))
+def encontrado = false
+while(!encontrado) {
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Nro. de Cuenta Debito', 0, '01020311343', 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Nro. de Cuenta Credito', 0, '13490019758', 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Importe', 0, '10', 2)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.rellenarFormulario'('tab1', 'Observaciones', 0, 'Pruebas123', 2)
+}
 
 //Click en Aceptar Registro
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnAceptarRegistro'))
-
-//Click en Aceptar Alertas
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/lnkAceptar Alertas'))
-
-//ASSERT
-WebUI.waitForElementVisible(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/lblTxn Completa'), 6)
-WebUI.verifyElementVisible(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/lblTxn Completa'))
-
-//def element = WebUI.getText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/lblTxn Completa'))
-
-//assert element.contains('Txn Completa')
-
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
+def TxnInicial = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+assert TxnInicial.contains('Txn Completa')
 //---------------------------------------------------------------------------------------------------------------------
 
 //Control de fin de script
