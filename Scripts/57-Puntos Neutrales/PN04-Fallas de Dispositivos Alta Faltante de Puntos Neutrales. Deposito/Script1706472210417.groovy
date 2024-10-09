@@ -28,103 +28,51 @@ CustomKeywords.'pkgModules.kywGeneric.ConfigEnvironment'(GlobalVariable.vServerI
 CustomKeywords.'pkgModules.kywGeneric.Login'(findTestData('MainData/Users').getValue(1, 6), findTestData('MainData/Users').getValue(2, 6))
 WebUI.maximizeWindow()
 
-def menuDesplegable = ["Dispositivos", "Registro de Fallas en Dispositivos"]
-def link = "Alta de Faltantes Puntos Neutrales"
-
 //Ejecutar en la linea de comando "?327"
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("?327", 1)
 
-//Cambiar ventana "Temenos T24"
-WebUI.switchToWindowIndex(1)
-
-//Maximizar pantalla
-WebUI.maximizeWindow()
-
 //Navegar por el menu Temenos T24
+def menuDesplegable = ["Dispositivos", "Registro de Fallas en Dispositivos"]
+def link = "Alta de Faltantes Puntos Neutrales"
 CustomKeywords.'pkgModules.kywBusquedaMenu.navegacionMenu'(menuDesplegable, link)
-
-//Cambiar ventana "TELLER"
 WebUI.switchToWindowIndex(2)
 
-//Esperar elemento "txtMontoMN"
+//Seteo de Datos y validacion
 WebUI.waitForElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), 3)
-
-//Seleccionar "Monto MN"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'))
-
-//Setear "Monto MN"
 WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtMontoMN'), '100')
-
-//Maximizar ventana
-WebUI.maximizeWindow()
-
-//Seleccionar "Comentarios"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'))
-
-//Setear "Comentarios"
 WebUI.setText(findTestObject('Object Repository/17-Remesas/03-TELLER/txtComentarios'), 'PRUEBAS CRECER')
-
-//Seleccionar "DEPOSITO"
 WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/rbtnDeposito'))
-
-//Seleccionar "boton Drop down ID Dispositivo"
 WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/btnDropdownIdDispositivo'))
-
 //Seleccionar "70151"
 WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/lblidDispositivo70151'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Denominaciones CR"
 WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lblDenominaciones'))
-
-//Setear 1 en la posicion de CantidadCien
 WebUI.setText(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/txtCantidadCien'), '1')
 
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/01-CommandLine/USER.PROFILE/lnkAceptarAlertas'))
 
-//Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/btnAceptarRegistro'))
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Aceptar Alertas"
-WebUI.click(findTestObject('Object Repository/17-Remesas/03-TELLER/lnkAceptarAlertas'))
-
-//Definir Objeto
-Transaccion1 = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
-
-//Dividir la cadena por espacios en blanco y tomar elemento
+Transaccion1 = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 def partes = Transaccion1.split('\\s+')
 def trx1 = partes[2]
 assert Transaccion1.contains('Txn Completa:')
 
 //Setear en "Faltantes en Dispositivos Pn"
 WebUI.setText(findTestObject('Object Repository/00-Utils/06-ToolBar/txtTransactionId'), trx1)
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "boton Ver un Registro"
-WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/btnVerRegistro'))
-
-//Verificar "100,00"
-WebUI.verifyElementVisible(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/lblMonto'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnVerRegistro'))
 
 //Validar "100,00"
+WebUI.verifyElementVisible(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/lblMonto'))
 def element = WebUI.getText(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/lblMonto'))
 assert element.contains('100,00')
 
-//Verificar "DEPOSITO"
-WebUI.verifyElementVisible(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/lblDEPOSITO'))
-
 //Validar "DEPOSITO"
+WebUI.verifyElementVisible(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/lblDEPOSITO'))
 def element2 = WebUI.getText(findTestObject('Object Repository/58-Puntos Neutrales/01-TELLER/lblDEPOSITO'))
 assert element2.contains('DEPOSITO')
 
+//----------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {

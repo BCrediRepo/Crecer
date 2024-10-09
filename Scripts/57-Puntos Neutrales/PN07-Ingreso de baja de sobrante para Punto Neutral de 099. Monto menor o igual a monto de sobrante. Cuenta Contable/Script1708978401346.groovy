@@ -41,116 +41,50 @@ WebUI.maximizeWindow()
 //Ejecutar en la linea de comando "ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN"
 CustomKeywords.'pkgModules.kywBusquedaMenu.seteoCommandLine'("ENQ BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN", 1)
 
-//Cambiar ventana "BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN"
-WebUI.switchToWindowIndex(1)
-
 //Seteo de datos "Fecha Desde", "Sucursal", "Id Dispositivo", "Cartucho Gaveta"
 WebUI.click(findTestObject('00-Utils/02-Filtros/lnkNuevaSeleccion'))
-
-//Maximizar Ventana
-WebUI.maximizeWindow()
-
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Fecha Desde', '20200101')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Sucursal', '073')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Id Dispositivo', '70151')
 CustomKeywords.'pkgModules.kywSetDato.SeteoDato'('Cartucho/Gaveta', 'DEPOSITO')
-
-//Screenshot
-CustomKeywords.'pkgModules.kywScreenshot.takeScreenshotInScript'()
-
-//Seleccionar "Ejecutar"
 WebUI.click(findTestObject('Object Repository/00-Utils/02-Filtros/lnkEjecutar'))
 
 //Definir la variable trx1 como "variable"
 def variable = GlobalVariable.vTxn
 
-//Esta funcion es invocada cuando se pregunta si el elemento que se quiere encontrar fue localizado en la tabla. Retorna un valor boolean
-def buscarElementoEnTabla(String variable) {
-	
-	//Obtener elemento de la tabla
-	WebElement table = DriverFactory.getWebDriver().findElement(By.id("datadisplay"))
-	
-	//Obtener todas las filas de la tabla
-	List<WebElement> rows = table.findElements(By.tagName("tr"))
-	
-	//Desplegar la columna donde se muestra la info de las transacciones
-	WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
-	for (WebElement row : rows) {
-		
-		//Obtener tercer valor de la fila (índice 1, ya que las listas son base cero)
-		WebElement cell = row.findElements(By.tagName("td"))[1]
-
-		//Obtener texto
-		String cellText = cell.getText()
-		
-		//Comparar valor de la celda con el valor especifico
-		if (cellText.equals(variable)) {
-			
-			//Realizar acciones necesarias si se encuentra el valor
-			List<WebElement> tdList = row.findElements(By.tagName("td"))
-			WebElement tdElement = tdList[13]
-			WebElement comboBox = tdElement.findElement(By.tagName("select"))
-			
-			//Utilizar "Select" para interactuar con el comboBox
-			def select = new Select(comboBox)
-			select.selectByVisibleText("Baja Sobrante Dispositivo - O Banco")
-			
-			//Encontrar elemento 'img' dentro del enlace 'a'
-			WebElement imgElement = tdElement.findElement(By.cssSelector("a[title='Select Drilldown'] img"))
-			
-			//Seleccionar elemento 'img'
-			imgElement.click()
-			return true
-		}
-	}
-	return false
-}
+//Desplegar la columna donde se muestra la info de las transacciones
+WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnIdSobrante'))
 
 //Logica para buscar el elemento en la tabla
 def encontrado = false
-
 //Bucle para buscar en multiples páginas
 while (!encontrado) {
-	
 	//Logica para buscar el elemento en la tabla
-	encontrado = buscarElementoEnTabla(variable)
+	encontrado = CustomKeywords.'pkgModules.kywManejoDeTablas.seleccionComboboxConValidacion'('datadisplay', variable, 1, 1, 13)
 		
 	//Si no se encontro el valor, Seleccionar boton "Siguiente" y buscar nuevamente
 	if (!encontrado) {
-		
 		//Realizar busqueda nuevamente despues de Seleccionar "Siguiente"
-		WebUI.click(findTestObject('Object Repository/58-Puntos Neutrales/03-BCCL.E.BAJA.SOBRANTE.DISPO.GEOP.PN/btnSiguiente'))
-		
-		//Esperar 2 seg a que se cargue la pagina
+		WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnSiguiente'))
 		WebUI.delay(2)
 	}
 }
 
 //Cambiar ventana "Movimiento de Fondos"
 WebUI.switchToWindowTitle('Movimiento de Fondos')
-
-//Setear importe
 WebUI.setText(findTestObject('Object Repository/12-Transferencias Internas/Movimiento de Fondos/txtImporte'), '100')
-
-//Seleccionar campo de Observaciones
 WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtObservaciones'))
-
-//Setear Observaciones
 WebUI.setText(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/txtObservaciones'), 'PRUEBAS CRECER')
 
-//Seleccionar "boton Validar Registro"
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnValidarRegistro'))
-
-//Seleccionar "boton Aceptar Registro"
-WebUI.click(findTestObject('Object Repository/51-MAP/Movimiento de Fondos/btnAceptarRegistro'))
-
-//Verificar "Txn Completa"
-WebUI.verifyElementVisible(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnValidarRegistro'))
+WebUI.click(findTestObject('Object Repository/00-Utils/06-ToolBar/btnAceptarRegistro'))
 
 //Validar "Txn Completa"
-def element = WebUI.getText(findTestObject('Object Repository/17-Remesas/03-TELLER/lblTxnCompleta'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
+def element = WebUI.getText(findTestObject('Object Repository/00-Utils/07-Mensajes/lblTxnCompleta'))
 assert element.contains('Txn Completa')
 
+//-----------------------------------------------------------------------------------
 //Control de fin de script
 @com.kms.katalon.core.annotation.TearDownIfFailed
 void fTakeFailScreenshot() {
